@@ -168,6 +168,27 @@ modelli. Decisione rinviata a inizio Fase 3.
 
 ---
 
+### Q24 — Storage delle snapshot CoinGecko (global, top-N)
+Lo script `fetch_coingecko` salva `global_latest.parquet` e
+`top_20_latest.parquet` **sovrascritti** a ogni run. Va bene per uno
+snapshot "ultimo noto", ma per qualsiasi analisi temporale di dominance
+o di rotazione del top-N nel tempo serve **append**.
+
+Opzioni:
+- **A**: Mantenere `latest` e in parallelo appendere a un file storico
+  `global_history.parquet` / `top_20_history.parquet` (date come index).
+  Richiede schema stabile.
+- **B**: Salvare solo file datati (`global_YYYYMMDD.parquet`) e leggere
+  l'aggregato con un glob al volo. Più trasparente, più I/O.
+- **C**: DuckDB su questi snapshot (ADR-009 menziona DuckDB come
+  evoluzione naturale per file parquet che crescono).
+
+*Decisione rinviata*: serve davvero solo quando vorremo studiare la
+dominance come serie storica (Fase 2 o oltre). Per ora la fetch CoinGecko
+gira on-demand, lo snapshot serve a poco senza una pipeline schedulata.
+
+---
+
 ### Q23 — Volume aggregato tra venue diverse
 [ADR-021](./DECISIONS.md) compone OHLCV multi-source con later-source-wins,
 ma il volume viene preso "come arriva" dalla source vincente. Yahoo

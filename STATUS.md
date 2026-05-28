@@ -234,16 +234,51 @@
   - **code**: ingestion sources implementano `OHLCVDataSource`, il
     composer è puro pandas, downstream non sa dei provider
 
+### 2026-05-28 — Sessione 2 (cont.): CoinGecko come terzo provider
+- **Nuovo file** `src/ingestion/tier1/coingecko.py` con `CoinGeckoSource`
+  - **Non** implementa `OHLCVDataSource`: CoinGecko ritorna single-price
+    points, non OHLC. Forzare l'astrazione sarebbe lossy. Eredita solo
+    da `DataSource` (interfaccia minimale: `name`) ed espone metodi
+    specializzati
+  - Metodi: `fetch_market_chart()`, `fetch_global()`, `fetch_top_n()`
+  - **Retry con exponential backoff** su 429 (free tier free strict,
+    quota IP-shared sul sandbox). Default: 5 retry, base 30s →
+    60/120/240/480s. Configurabile.
+  - Supporto opzionale Demo API key via env `COINGECKO_API_KEY`
+- **Nuovo script** `src/ingestion/tier1/fetch_coingecko.py`: 5 asset +
+  global + top-20 con pacing 10s, ~50s totali
+- **9 nuovi test** (`tests/test_coingecko.py`): parser market_chart con
+  floor-to-date, dominance extraction, top-N ranking, retry recovery,
+  retry exhaustion, Demo key header. **29/29 pytest verde, lint pulito**
+- **Fetch reale via free tier (no API key)** completato:
+  - **BTC/ETH/SOL/LINK/POL** market chart: 365 righe ciascuno
+    (2025-05-29 → 2026-05-28; free tier limit)
+  - **Global snapshot**: BTC dominance 57.7%, ETH 9.4%, USDT 7.5%,
+    BNB 3.4%, XRP 3.2%; total market cap **$2.52T**; 17,401 cripto
+    attive globalmente
+  - **Top 20** by market cap: i nostri Tier 1 sono tutti dentro tranne
+    **POL (caduto fuori top 20)** — interessante perché in ADR-005 POL
+    era selezionato come Tier 1 dall'utente per ragioni indipendenti
+    dal rank di market cap; il dato conferma che POL ha perso peso
+    relativo nel 2025
+  - Cross-check BTC CG vs Yahoo (ultimi 30 giorni): mediana |diff%|
+    1.06% — coerente con il fatto che l'ultimo punto CG è "ora"
+    (orario fetch) mentre Yahoo è close UTC midnight
+- **Q24 aperta**: lo script attuale sovrascrive
+  `global_latest.parquet` ad ogni run. Per analisi temporale di
+  dominance servirà append. Decisione rinviata a quando avremo bisogno
+  di dominance storica (presumibilmente Fase 2+)
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
 1. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
-   - CoinGecko (top 20 dinamica + dominance + market cap)
    - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
    - Granularità intra-day via Binance già esposta ma non ancora usata
+   - Dominance time series (richiede Q24)
 2. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
 3. **Test su YahooFinanceSource** (mock di yfinance, no network) —
    simmetrico a quelli appena aggiunti per BinanceSource
