@@ -51,10 +51,44 @@ In quest'ordine:
 
 ## Stack & ambiente
 
-**Stack tecnologico**: ancora **da definire** (vedi `OPEN_QUESTIONS.md`).
-Probabile direzione: Python (ecosistema data science), ma da confermare.
+**Stack tecnologico** (definito in ADR-009):
+- **Python 3.12+** come linguaggio
+- **`uv`** come package & env manager
+- **Jupyter** notebook per esplorazione, script `.py` modulari per pipeline
+- **ruff** (lint+format), **pyright** (type check: basic di default, strict
+  per moduli core)
+- **pytest** quando ci sarà codice testabile
+- Data: **pandas** + **polars** (per performance), **DuckDB** se serve query SQL
+- ML: **scikit-learn**, **statsmodels**, **XGBoost**, **LightGBM**;
+  **PyTorch** se servirà deep learning
+- NLP: **Hugging Face transformers**, **sentence-transformers**, **spaCy**,
+  baseline **FinBERT** per sentiment finanziario
+- Viz: **matplotlib** + **seaborn** (statica), **plotly** (interattiva)
+- Storage iniziale: file **parquet** in `data/` (gitignored)
 
-**Stato attuale**: nessun codice ancora scritto. Siamo in **Fase 0 — Framing**.
+**Struttura cartelle** (convenzione):
+```
+src/          # moduli Python riusabili
+notebooks/    # esplorazione, EDA, prototipi
+data/raw/     # dati grezzi scaricati (gitignored)
+data/processed/  # dataset puliti pronti per modelli (gitignored)
+tests/        # test pytest
+```
+
+**Asset universe** (ADR-005):
+- **Tier 1** (priorità massima, deep analysis): BTC, ETH, SOL, LINK, POL
+- **Tier 2** (universe dinamica, analisi base): top 20 crypto by market cap
+- **Contesto** (non target): BTC dominance, DXY, S&P 500, NASDAQ, oro
+
+**Timeframe predittivi** (ADR-006):
+- **Breve**: 1–7 giorni, dati daily
+- **Medio**: 2–8 settimane, dati daily/weekly
+- **Lungo**: 3–12 mesi, dati weekly/monthly + macro
+
+**Output del sistema** (ADR-007): direzione, rendimento atteso, probabilità,
+volatilità attesa, confidence, top factors — per ogni asset × timeframe.
+
+**Stato attuale**: Fase 0 completata. Pronti per Fase 1 (esplorazione dati).
 
 ## Quando in dubbio
 

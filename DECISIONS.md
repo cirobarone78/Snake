@@ -83,12 +83,248 @@ inconsistenze.
 
 ---
 
+## ADR-004 — Scope: ricerca ora, live trading come obiettivo condizionale futuro
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q1
+
+**Contesto**: L'utente ha portafoglio reale crypto (~100€/mese DCA: 60% BTC,
+30% ETH, 10% altcoin a rotazione). L'interesse non è puramente accademico:
+se il sistema dimostrerà affidabilità out-of-sample, l'utente vuole arrivare
+a live trading.
+
+**Decisione**:
+- **Fase corrente (ricerca)**: nessuna esecuzione, nessuna chiamata ad
+  exchange con permessi di trading
+- **Sviluppo guidato dall'obiettivo finale**: progettare i moduli (data
+  pipeline, signal generator, risk manager) tenendo a mente che dovranno
+  reggere un eventuale path verso live, ma **senza** implementare integrazioni
+  premature
+- **Gate per il passaggio a paper trading**: completata Fase 4 con risultati
+  out-of-sample che battono benchmark passivo su almeno 12 mesi rolling
+- **Gate per il passaggio a live trading**: nuova ADR esplicita + minimo
+  3 mesi di paper trading con metriche documentate + risk management framework
+  formalizzato
+
+**Conseguenze**:
+- Le API key di lettura dati sono safe; quelle con permessi di trading
+  restano off-limits fino a nuova ADR
+- Aggiunto vincolo architetturale: separazione netta tra signal generation
+  e order execution (anche se l'execution non esiste ancora)
+- I costi di transazione (fee + slippage) vanno modellati realisticamente
+  fin dalla Fase 2 — non è esercizio teorico
+
+---
+
+## ADR-005 — Asset universe iniziale
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q2
+
+**Contesto**: Definire quali asset analizzare condiziona ingestion, storage
+e cross-asset analysis. L'utente ha esposizione reale a specifici asset crypto.
+
+**Decisione**: Universe a due livelli.
+
+**Tier 1 — "Held assets" (priorità massima)**:
+- BTC (Bitcoin)
+- ETH (Ethereum)
+- SOL (Solana)
+- LINK (Chainlink)
+- POL (Polygon, ex MATIC — rinominato sett. 2024)
+
+**Tier 2 — "Top 20 crypto by market cap"**: lista dinamica, ricalcolata
+periodicamente (es. mensile). Serve per:
+- Identificare segnali di rotazione settoriale
+- Cross-asset correlations
+- Benchmark relativi
+
+**Asset esterni (per contesto, non target predittivo iniziale)**:
+- BTC dominance, total crypto market cap
+- DXY (US Dollar Index)
+- S&P 500, NASDAQ (per correlazione macro)
+- Oro (safe-haven correlation)
+
+**Conseguenze**:
+- Pipeline di ingestion deve gestire un universe dinamico (top 20) +
+  un universe fisso (held)
+- Survivorship bias: la "top 20" oggi non era la top 20 di 5 anni fa.
+  Mantenere lista storica delle "top 20 at time t" per evitare bias nel backtest
+- Tier 1 ha priorità per profondità di analisi (on-chain, sentiment specifico);
+  Tier 2 inizialmente solo OHLCV + indicatori tecnici
+
+---
+
+## ADR-006 — Multi-timeframe predittivo
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q3
+
+**Contesto**: L'utente vuole segnali su breve, medio e lungo termine. Sono
+orizzonti con dinamiche, feature rilevanti e rumore molto diversi.
+
+**Decisione**: Modelli separati per tre orizzonti (operativamente definiti):
+
+| Orizzonte | Definizione | Granularità dati | Use case tipico |
+|---|---|---|---|
+| **Breve** | 1–7 giorni | dati giornalieri (chiusura UTC) | timing tattico DCA, evitare drawdown imminenti |
+| **Medio** | 2–8 settimane | dati giornalieri, feature settimanali | swing, rotazione tra asset |
+| **Lungo** | 3–12 mesi | dati settimanali/mensili, feature macro+cicli | allocazione strategica, posizionamento cicli halving |
+
+**Implicazioni operative**:
+- Target variable diversa per ogni orizzonte
+- Set di feature diverso: breve ⇒ sentiment + tecnico; medio ⇒ tecnico + on-chain;
+  lungo ⇒ macro + cicli + on-chain + regime
+- Training/validation split temporale rispettoso del timeframe (es. per il
+  lungo termine servono molti anni di storia)
+
+**Conseguenze**:
+- Lavoro di modellazione triplica (un modello per orizzonte)
+- Backtesting framework deve supportare valutazioni multi-orizzonte
+- Output finale aggrega o presenta separatamente le tre view
+- Possibili tensioni tra orizzonti (breve dice "sell", lungo dice "accumula"):
+  vanno presentate come informazione, non risolte arbitrariamente
+
+---
+
+## ADR-007 — Output del modello: multi-dimensionale
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q4
+
+**Contesto**: L'utente vuole il massimo dell'informazione. Le priorità sono
+direzione, rendimento atteso e probabilità.
+
+**Decisione**: Per ogni asset e per ogni orizzonte (breve/medio/lungo), il
+sistema produce:
+
+**Output primari (obbligatori)**:
+1. **Direzione**: classificazione `{up, down, sideways}` con soglia di
+   "sideways" definita per timeframe (es. ±2% per breve, ±10% per lungo)
+2. **Rendimento atteso**: stima puntuale del log-return atteso
+3. **Probabilità**: distribuzione di probabilità sulla direzione + probabilità
+   di movimento >X% (tail risk)
+
+**Output secondari (best-effort)**:
+4. **Volatilità attesa**: utile per dimensionare posizione e per asimmetria
+   rischio/rendimento
+5. **Confidence score**: meta-metrica che dice "quanto il modello è sicuro
+   di sé" (basata su agreement tra modelli, dispersione predittiva, regime
+   correntemente identificato)
+6. **Top contributing factors**: feature importance per il segnale specifico
+   (interpretabilità)
+
+**Conseguenze**:
+- Approccio modulare: ogni output può venire da un modello distinto
+  (classificazione, regressione, modello probabilistico, GARCH per volatilità)
+- O da un unico modello ensemble che produce tutto
+- Decisione di architettura modello rinviata a Fase 4
+
+---
+
+## ADR-008 — Budget dati: gratuiti prima, premium dopo conferma di necessità
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q5
+
+**Contesto**: Esistono dati gratuiti di buona qualità (specialmente OHLCV
+e on-chain base). Le sorgenti premium (Glassnode Pro, Nansen, Kaiko) sono
+costose ma offrono granularità superiore.
+
+**Decisione**:
+- **Fase 1–3**: solo sorgenti gratuite o free tier. Esempi accettabili:
+  - Market data: CoinGecko, Binance/Coinbase/Kraken public API, Yahoo Finance
+  - On-chain: Blockchain.com, mempool.space, Etherscan, Glassnode free tier
+  - News: RSS feed pubblici, CryptoPanic free tier
+  - Macro: FRED (Federal Reserve), Yahoo Finance, dati BCE pubblici
+- **Da Fase 4 in poi**: rivalutare. Se identifichiamo feature potenzialmente
+  predittive che richiedono dati premium, valutare investimento (budget
+  indicativo: fino a ~30€/mese, da confermare quando si presenta il caso)
+- Ogni eventuale acquisto di dati premium richiede una nuova ADR specifica
+
+**Conseguenze**:
+- Documentare per ogni fonte: rate limit, storico disponibile, licenza
+- Implementare caching aggressivo per non sprecare quote
+- Accettare che alcune analisi (es. flussi inter-exchange granulari) saranno
+  più povere o impossibili nelle prime fasi
+
+---
+
+## ADR-009 — Stack tecnologico
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q6
+
+**Contesto**: L'utente ha delegato la scelta. Vincoli: progetto data-science
+intensive, NLP, ML, possibile esposizione futura a esecuzione real-time.
+
+**Decisione**:
+
+**Linguaggio**: **Python 3.12+** (de facto standard per data science e ML;
+qualsiasi altra scelta sarebbe attrito senza beneficio)
+
+**Package & env manager**: **`uv`** (Astral) — moderno, ordini di grandezza
+più veloce di pip/poetry, sta diventando standard nella community
+
+**Esplorazione**: **Jupyter** notebook (`.ipynb`) per analisi e
+visualizzazione. Marimo considerato ma scartato per inerzia ecosistema
+
+**Codice "production-like"** (pipeline, moduli riusabili): script `.py`
+modulari, non notebook
+
+**Type checking**: **pyright** in modalità *basic* per default,
+*strict* per moduli core (data pipeline, signal generation)
+
+**Linting & formatting**: **ruff** (replace black + isort + flake8;
+ordini di grandezza più veloce)
+
+**Test**: **pytest** quando arriverà codice testabile (presumibilmente da
+Fase 2 in poi)
+
+**Data manipulation**: **pandas** + **polars** (pandas come standard;
+polars per dataset grandi o operazioni performance-critical)
+
+**ML classico**: **scikit-learn**, **statsmodels**, **XGBoost**,
+**LightGBM**
+
+**Deep learning** (se servirà, Fase 4+): **PyTorch** (più flessibile, più
+adottato in ricerca)
+
+**NLP**: **Hugging Face transformers**, **sentence-transformers**, **spaCy**.
+Modelli baseline: **FinBERT** per sentiment finanziario.
+Eventuale uso di **LLM API** (Anthropic/OpenAI) solo se baseline open-source
+non funziona — è la decisione da prendere in Fase 3
+
+**Visualizzazione**: **matplotlib** + **seaborn** per analisi statica,
+**plotly** per dashboard interattive
+
+**Backtesting**: da decidere in Fase 2 (opzioni: **vectorbt**, **backtrader**,
+o custom). Custom è probabile per controllo totale sul no-look-ahead
+
+**Storage** (inizialmente): file **parquet** in `data/` (gitignored). DB
+time-series valutato in seguito
+
+**Conseguenze**:
+- `pyproject.toml` + `uv.lock` come fonte di verità per dipendenze
+- Setup ambiente in Fase 1, prima ancora di scrivere codice utile
+- Convenzione cartelle: `src/` per moduli, `notebooks/` per esplorazione,
+  `data/raw/` `data/processed/` per dati (gitignored), `tests/` per test
+
+---
+
 <!--
 Template per nuove ADR:
 
 ## ADR-NNN — Titolo breve
 **Data**: YYYY-MM-DD
 **Stato**: Accepted
+**Risolve**: (riferimento a OPEN_QUESTIONS se applicabile)
 **Contesto**:
 **Decisione**:
 **Conseguenze**:

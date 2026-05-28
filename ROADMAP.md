@@ -6,7 +6,7 @@
 
 ---
 
-## Fase 0 — Framing & setup *(in corso)*
+## Fase 0 — Framing & setup ✅ *completata (2026-05-28)*
 
 **Obiettivo**: definire scope, principi e infrastruttura documentale prima di
 scrivere una singola riga di codice.
@@ -15,17 +15,15 @@ scrivere una singola riga di codice.
 - [x] Repository inizializzata e pulita
 - [x] `CLAUDE.md`, `VISION.md`, `ROADMAP.md`, `STATUS.md`, `DECISIONS.md`,
       `OPEN_QUESTIONS.md` creati
-- [ ] Risolte le decisioni critiche aperte in `OPEN_QUESTIONS.md`:
-  - [ ] Scope: trading reale vs solo segnali/ricerca
-  - [ ] Asset universe iniziale
-  - [ ] Timeframe predittivo
-  - [ ] Tipo di output del modello
-  - [ ] Budget per dati premium (sì/no)
-  - [ ] Stack tecnico
-- [ ] Definite metriche di successo concrete
-
-### Criterio di completamento
-Quando l'avvio di Fase 1 è possibile senza dover tornare a discutere lo scope.
+- [x] Risolte le decisioni critiche (ADR-004 ÷ ADR-009 in `DECISIONS.md`):
+  - [x] Scope: ricerca ora, live trading futuro condizionale (ADR-004)
+  - [x] Asset universe: Tier 1 (BTC/ETH/SOL/LINK/POL) + Tier 2 top 20 (ADR-005)
+  - [x] Timeframe: multi (breve/medio/lungo) (ADR-006)
+  - [x] Output: direzione + rendimento + probabilità (+ vol/conf/factors) (ADR-007)
+  - [x] Budget: gratuiti prima, premium dopo conferma (ADR-008)
+  - [x] Stack: Python 3.12 + uv + Jupyter + ruff + pandas/polars + sklearn/HF (ADR-009)
+- [ ] Definizione finale di metriche di successo concrete → spostata a Fase 2
+      (servono dati per calibrare soglie realistiche)
 
 ---
 

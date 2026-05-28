@@ -6,95 +6,18 @@
 
 ---
 
-## 🔴 Decisioni critiche da prendere prima della Fase 1
+## ✅ Decisioni critiche di Fase 0 — RISOLTE
 
-### Q1 — Scope finale: trading reale o solo ricerca?
-Anche se l'ADR-002 ha stabilito che partiamo come **ricerca**, vale la pena
-esplicitare l'ambizione finale.
+| # | Domanda | Risolta da |
+|---|---|---|
+| Q1 | Scope finale: trading reale o solo ricerca? | [ADR-004](./DECISIONS.md#adr-004--scope-ricerca-ora-live-trading-come-obiettivo-condizionale-futuro) |
+| Q2 | Asset universe iniziale | [ADR-005](./DECISIONS.md#adr-005--asset-universe-iniziale) |
+| Q3 | Timeframe predittivo | [ADR-006](./DECISIONS.md#adr-006--multi-timeframe-predittivo) |
+| Q4 | Tipo di output del modello | [ADR-007](./DECISIONS.md#adr-007--output-del-modello-multi-dimensionale) |
+| Q5 | Budget per dati premium | [ADR-008](./DECISIONS.md#adr-008--budget-dati-gratuiti-prima-premium-dopo-conferma-di-necessit) |
+| Q6 | Stack tecnologico | [ADR-009](./DECISIONS.md#adr-009--stack-tecnologico) |
 
-Opzioni:
-- **A**: solo ricerca e segnali (output: dashboard/report)
-- **B**: ricerca ora, paper trading in futuro
-- **C**: ricerca ora, live trading in futuro (con tutti i requisiti che implica:
-  risk management, broker integration, sicurezza, capital allocation)
-
-*Impatto*: determina molti requisiti tecnici e di sicurezza.
-
----
-
-### Q2 — Asset universe iniziale
-Su cosa concentrare l'effort iniziale di ingestion e analisi?
-
-Opzioni:
-- **A**: Solo Bitcoin (BTC) — più dati storici, mercato più maturo
-- **B**: BTC + ETH — coppia di riferimento crypto
-- **C**: Top 10 crypto per market cap
-- **D**: Top 10 + alcuni indici tradizionali (S&P 500, NASDAQ) per correlazione
-- **E**: Universe ampio (top 50+) — più rumore, più dati
-
-*Raccomandazione personale*: iniziare con **A** o **B**. Espandere solo dopo
-che la pipeline funziona.
-
----
-
-### Q3 — Timeframe predittivo
-Per quale orizzonte temporale produciamo segnali?
-
-Opzioni:
-- **A**: Intraday (minuti-ore) — richiede dati ad alta frequenza, latenza bassa
-- **B**: Daily (1-7 giorni) — più gestibile, meno rumore
-- **C**: Settimanale/mensile — meno operazioni, più analisi macro
-- **D**: Multi-timeframe (es. predire sia daily che weekly)
-
-*Raccomandazione*: partire **daily** è il sweet spot ricerca/complessità.
-
----
-
-### Q4 — Tipo di output del modello (target variable)
-Cosa prevediamo esattamente?
-
-Opzioni:
-- **A**: Direzione (up/down) — classificazione binaria
-- **B**: Rendimento atteso (regressione)
-- **C**: Probabilità di movimento >X% in N giorni
-- **D**: Volatilità attesa (utile anche se la direzione è incerta)
-- **E**: Combinazione (es. direzione + confidenza + volatilità)
-
-*Nota*: la scelta determina la "ground truth" usata in training e backtest.
-
----
-
-### Q5 — Budget per dati premium
-Alcune fonti (Glassnode, Nansen, Bloomberg, Kaiko, Coin Metrics Pro) hanno
-dati di qualità ma sono a pagamento. Free tier sono limitati.
-
-Opzioni:
-- **A**: Solo gratuiti (CoinGecko, Binance/Coinbase public API, Yahoo Finance,
-  RSS news feed, etc.) — fino a quando regge
-- **B**: Eventualmente piccolo budget per 1-2 fonti chiave (es. Glassnode Lite)
-- **C**: Budget significativo da subito
-
-*Raccomandazione*: **A** fino a Fase 3, poi rivalutare quando si conoscono i
-limiti concreti.
-
----
-
-### Q6 — Stack tecnologico
-Linguaggio e ecosistema.
-
-Opzioni:
-- **A**: **Python** (pandas, NumPy, scikit-learn, statsmodels, PyTorch/TF,
-  Hugging Face per NLP) — standard de facto per data science e ML
-- **B**: Python per analisi + Rust/Go per ingestion ad alta performance
-- **C**: R per statistica + Python per ML
-- **D**: JavaScript/TypeScript (stack moderno, ma debole su ML)
-
-*Raccomandazione*: **A**. Tutto il resto è prematura ottimizzazione.
-
-Sotto-decisioni se Python:
-- Package manager: `uv` (moderno, veloce) vs `poetry` vs `pip+venv`
-- Notebook: Jupyter vs Marimo
-- Type checking: mypy/pyright sì o no?
+**Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
 ---
 
@@ -104,12 +27,14 @@ Sotto-decisioni se Python:
 Come persistiamo i dati raccolti?
 
 Opzioni:
-- **A**: File parquet/CSV locali in `/data` (gitignored)
+- **A**: File parquet/CSV locali in `/data` (gitignored) — *direzione iniziale
+  per ADR-009*
 - **B**: SQLite per dati strutturati piccoli
 - **C**: DB time-series locale (DuckDB, TimescaleDB, InfluxDB)
 - **D**: Cloud object storage (S3-compatible)
 
-*Probabile*: iniziare con **A** (parquet), evolvere se serve.
+*Probabile evoluzione*: **A** → **DuckDB** (parquet-native, zero-config) se
+i dataset crescono. Decisione formale rinviata a Fase 1.
 
 ---
 
@@ -123,36 +48,73 @@ Opzioni:
 - **D**: API + client a scelta
 - **E**: Combinazione
 
+*Non urgente*: la forma di output dipende anche da cosa il sistema riuscirà
+effettivamente a produrre. Rinviata a fine Fase 4.
+
 ---
 
-### Q9 — Modello di "verità di base" per news
-Quando estraiamo sentiment da news, come validiamo che sia corretto?
+### Q9 — Modello di sentiment per news
+Quando estraiamo sentiment da news, quale tecnologia?
 
-- LLM commerciale (Claude/GPT API) ha costo per chiamata
-- Modelli open-source (FinBERT, sentence-transformers) sono gratuiti ma meno accurati
-- Labeling manuale è lento ma è ground truth
+- **A**: FinBERT / sentence-transformers (open-source, gratis, accuratezza media)
+- **B**: LLM commerciale (Anthropic/OpenAI API) per casi complessi (costo per chiamata)
+- **C**: Ibrido: open-source per il bulk, LLM per casi ad alta importanza
 
-*Decisione rinviata a Fase 3.*
+*Direzione*: partire con **A**, valutare **C** in Fase 3 se l'accuratezza
+non basta.
 
 ---
 
 ### Q10 — Frequenza di ingestion notizie
 Real-time vs batch giornaliero?
 
-*Decisione rinviata a Fase 3, dipende anche da Q3 (timeframe).*
+*Decisione rinviata a Fase 3*. Probabile: batch giornaliero per il primo
+modello (allineato con timeframe "breve" che è a granularità giornaliera).
+
+---
+
+### Q11 — Definizione operativa di "sideways"
+ADR-007 definisce indicativamente: ±2% per breve, ±10% per lungo. Vanno
+calibrate empiricamente sulla volatilità storica di ciascun asset
+(BTC vs SOL hanno scala diversa).
+
+*Decisione rinviata a Fase 2*, quando avremo dati e statistiche descrittive.
+
+---
+
+### Q12 — Allineamento temporale tra fonti
+Notizie, market data, on-chain, macro hanno frequenze e fusi orari diversi:
+
+- Chiusura giornaliera: in che fuso orario? UTC è standard ma le borse USA
+  chiudono alle 21:00 UTC, mentre crypto è 24/7
+- News: il timestamp è ora di pubblicazione o ora dell'evento?
+- Macro (es. CPI): pubblicato a date fisse, ma vale dal momento `t`
+
+*Decisione*: usare **UTC midnight** come "fine giornata" per il timeframe
+giornaliero. Da formalizzare in ADR appena tocchiamo il primo allineamento
+multi-source (Fase 3).
 
 ---
 
 ## 🟢 Domande di ricerca (non decisioni operative)
 
-Queste sono ipotesi da testare nel corso del progetto, non da risolvere a priori.
+Ipotesi da testare empiricamente nel corso del progetto.
 
-- Il sentiment delle news ha potere predittivo *lead* sui prezzi, o è solo *concomitante/lagging*?
-- Le notizie tech (es. annunci adoption, exploit, regulation) hanno impatto più forte di quelle macro?
-- I cicli di halving Bitcoin sono ancora predittivi nel 2026+ o sono "pricedin" dal mercato?
+- Il sentiment delle news ha potere predittivo *lead* sui prezzi, o è solo
+  *concomitante/lagging*?
+- Le notizie tech (es. annunci adoption, exploit, regulation) hanno impatto
+  più forte di quelle macro?
+- I cicli di halving Bitcoin sono ancora predittivi nel 2026+ o sono "priced
+  in" dal mercato?
 - Esistono regimi di mercato distinguibili sistematicamente?
-- L'integrazione multifattoriale aggiunge davvero valore o il tecnico puro è sufficiente?
+- L'integrazione multifattoriale aggiunge davvero valore o il tecnico puro
+  è sufficiente?
 - Quali sono i lag temporali tipici tra una notizia e la reazione di prezzo?
-- Le correlazioni cross-asset (BTC vs S&P, vs gold, vs DXY) sono stabili o regime-dependent?
+- Le correlazioni cross-asset (BTC vs S&P, vs gold, vs DXY) sono stabili
+  o regime-dependent?
+- Gli asset Tier 1 dell'utente (BTC, ETH, SOL, LINK, POL) hanno dinamiche
+  predittive diverse? Quali feature funzionano su quale asset?
+- I segnali sono coerenti tra breve/medio/lungo termine o frequentemente
+  divergenti?
 
 *Queste vanno trasformate in esperimenti specifici durante le fasi corrispondenti.*
