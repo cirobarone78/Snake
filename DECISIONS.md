@@ -1086,6 +1086,58 @@ del token fino ad oggi (2026).
 
 ---
 
+## ADR-020 — Binance via api.binance.us per restrizione geografica
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: parte operativa di Q21bis (gap recente POL) e la decisione
+implicita "quale Binance".
+
+**Contesto**: ADR-017 prevede Binance come sorgente Tier 1 per granularità
+intra-day e volumi di exchange. La sessione 2 ha verificato che
+`api.binance.com` risponde **HTTP 451 — restricted location** dalla
+regione di rete del nostro ambiente (esito coerente con i termini di
+servizio Binance, non con la network policy del sandbox).
+
+Per ADR-018 questa è una "scelta etico-legale": non tentiamo di aggirare
+il blocco geografico (VPN, proxy, fake-UA), perché la decisione di
+Binance è esplicita e nei suoi ToS.
+
+**Decisione**:
+- L'implementazione `BinanceSource` parametrizza il base URL.
+- **Default**: `https://api.binance.us` (entità USA-compliant, schema REST
+  identico a binance.com). Tutti i nostri Tier 1 pair sono disponibili
+  (BTCUSDT, ETHUSDT, SOLUSDT, LINKUSDT, POLUSDT, MATICUSDT).
+- In ambienti con accesso a binance.com, si può istanziare
+  `BinanceSource(base_url="https://api.binance.com")` senza altre
+  modifiche.
+- L'errore HTTP 451 viene rilevato esplicitamente e ri-lanciato come
+  `PermissionError` con messaggio che cita questo ADR.
+
+**Conseguenze**:
+- ✅ Sblocca l'integrazione Binance in questo ambiente con un solo flag
+- ✅ Apre dati granulari (klines intra-day) e cross-validation con Yahoo
+- ✅ Chiude la parte "fetch reale" di Q21bis: POLUSDT su binance.us
+  parte da 2025-01-16, copre quindi il gap che Yahoo non serviva
+- ⚠️ Universe più piccola di binance.com: alcuni asset (es. token non
+  registrati SEC) sono assenti. Non impatta i nostri 5 Tier 1 attuali,
+  ma da tenere a mente per future espansioni
+- ⚠️ Volumi binance.us << binance.com: per analisi di order flow / depth
+  che dipendono dal volume assoluto i numeri non sono rappresentativi
+  del mercato globale. Per il prezzo (che è oggetto della Fase 1) la
+  differenza è trascurabile (cross-validation BTC con Yahoo:
+  log-return correlation 0.996)
+- 🔄 Quando il sistema andrà fuori dal sandbox (deployment futuro),
+  basta cambiare la stringa del base URL — niente refactor
+
+**Riferimenti**:
+- POL/MATIC consistency validata (rapporto 0.998 ± 0.007 sull'overlap
+  2025-01-16 → 2025-03-24, log-return correlation 0.977)
+- BTC consistency Yahoo↔Binance.us su 2439 giorni comuni: differenza
+  % media 0.14%, mediana 0.07%, max 3.72% (un singolo outlier 2021-12-14)
+
+---
+
 <!--
 Template per nuove ADR:
 

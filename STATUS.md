@@ -164,19 +164,61 @@
   future a granularità più fine, costruire return crypto allineati alla
   cadenza dei mercati tradizionali
 
+### 2026-05-28 — Sessione 2 (cont.): Binance come secondo provider (ADR-020)
+- **Geo-block scoperto**: `api.binance.com` risponde HTTP 451 dall'IP del
+  sandbox (ToS Binance, non network policy). Per ADR-018 non aggirabile.
+- **Scelta**: `BinanceSource` con base URL configurabile, default
+  `api.binance.us`. Tutti i Tier 1 pair disponibili anche su .us.
+- **Nuovo file** `src/ingestion/tier1/binance.py`:
+  - Endpoint pubblico klines, no API key, no SDK
+  - Paginazione esplicita (limit 1000/call, loop fino a end)
+  - 451 → `PermissionError` con riferimento a ADR-020
+  - Schema OHLCV identico a quello di YahooFinanceSource (`open, high,
+    low, close, volume`, DatetimeIndex UTC)
+- **Refactor `fetch_tier1.py`**: ora accetta `--source {yahoo,binance,all}`
+  via CLI; `fetch_all()` parametrizzata sulla source (era hardcoded Yahoo).
+  Asset context (DXY/SPX/NDX/GOLD) saltati automaticamente su Binance
+  perché non hanno `binance_symbol` (corretto: Binance non lista indici)
+- **Test unitari** (`tests/test_binance.py`, 8 nuovi test, no network):
+  parsing klines, paginazione (mock 2 batch), 451→PermissionError,
+  ValueError su simbolo mancante, gestione empty response. **13/13
+  pytest verde**, ruff pulito
+- **Fetch reale via Binance.us**, 5/5 crypto Tier 1 scaricati:
+
+  | asset | Yahoo | Binance.us | overlap |
+  |---|---|---|---|
+  | BTC | 2018-01 → 2026-05 (3069) | 2019-09 → 2026-05 (2440) | 2439 |
+  | ETH | 2018-01 → 2026-05 (3069) | 2019-09 → 2026-05 (2440) | 2439 |
+  | SOL | 2020-04 → 2026-05 (2239) | 2020-09 → 2026-05 (2079) | 2079 |
+  | LINK | 2018-01 → 2026-05 (3069) | 2022-01 → 2026-05 (1596) | 1596 |
+  | **POL** | 2019-04 → 2025-03 (2158) | **2025-01 → 2026-05 (498)** | **68** |
+
+- **Cross-validation BTC**: differenza % media 0.14%, mediana 0.07%,
+  log-return correlation Yahoo↔Binance.us = **0.996**. I dati daily
+  Yahoo erano già di qualità eccellente, Binance.us conferma
+- **Cross-validation POL**: rapporto POL/MATIC sui 68 giorni di overlap
+  = 0.998 ± 0.007, log-return correlation 0.977 → i due ticker sono
+  operativamente lo stesso asset (rebrand 1:1 confermato dai dati)
+- **Q21bis chiusa via ADR-020**. Nuova Q22 aperta: come comporre
+  Yahoo+Binance in una "serie POL canonical" (decisione tecnica
+  rinviata al primo modulo che ne ha davvero bisogno, probabile
+  direzione: concatenazione con flag di provenance)
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
-1. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
-   - Binance public API (granularità intra-day)
+1. **Decidere Q22**: come comporre Yahoo + Binance per POL (e in
+   generale per asset multi-source)
+2. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
    - CoinGecko (top 20 dinamica + dominance + market cap)
    - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
-   - Binance chiude anche il gap residuo POL (Q21bis)
+   - Granularità intra-day via Binance già esposta ma non ancora usata
 2. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
-3. **Test su YahooFinanceSource** (mock di yfinance, no network)
+3. **Test su YahooFinanceSource** (mock di yfinance, no network) —
+   simmetrico a quelli appena aggiunti per BinanceSource
 4. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta

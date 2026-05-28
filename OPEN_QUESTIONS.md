@@ -20,6 +20,7 @@
 | Q14 | Exchange di riferimento per fee | [ADR-012](./DECISIONS.md) |
 | Q15 | Modello di slippage | [ADR-013](./DECISIONS.md) |
 | Q21 (parz.) | Mapping ticker POL su Yahoo | [ADR-019](./DECISIONS.md) |
+| Q21bis | Gap recente POL post-2025-03 | [ADR-020](./DECISIONS.md) (via Binance.us) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -166,20 +167,30 @@ modelli. Decisione rinviata a inizio Fase 3.
 
 ---
 
-### Q21bis — Gap recente POL (post 2025-03-24) — residuo aperto da Q21
-[ADR-019](./DECISIONS.md) ha scelto `MATIC-USD` come simbolo Yahoo per POL,
-estendendo lo storico a 6 anni (2019-04 → 2025-03). Resta scoperto il
-range **2025-03-24 → oggi (~14 mesi)**: Yahoo non lo serve né su POL-USD
-né su MATIC-USD.
+### Q22 — Composizione multi-source per POL (e in generale)
+[ADR-019](./DECISIONS.md) + [ADR-020](./DECISIONS.md) hanno chiuso il
+buco dati POL: Yahoo (MATIC-USD) copre 2019-04 → 2025-03, Binance.us
+(POLUSDT) copre 2025-01 → presente, con 68 giorni di overlap. Validazione
+mostra rapporto prezzi 0.998 ± 0.007, correlazione log-return 0.977 →
+le due serie sono **operativamente equivalenti**.
 
-Risolverà:
-- L'aggiunta di Binance (POLUSDT) e/o CoinGecko (`polygon-ecosystem-token`)
-  come sorgenti — già pianificato come prossimo step Fase 1 in STATUS.md
-- Decisione su come comporre Yahoo+Binance (concat vs single-source) andrà
-  presa quando avremo i dati Binance in mano (cfr. Conseguenze ADR-019)
+Resta aperta la decisione su **come comporre** le due fonti in un'unica
+serie utilizzabile a valle:
 
-*Non bloccante per EDA storica BTC/ETH*. Si attiverà come blocker se
-proviamo a fare feature engineering recente su POL.
+- **A**: Concatenazione semplice (Yahoo fino al cutover 2025-03,
+  Binance da lì) con flag di provenance per riga
+- **B**: Scegliere una sola fonte come "canonical" e usare l'altra come
+  fallback per i buchi
+- **C**: Tenere le due serie separate e fare merge solo on-demand nei
+  notebook (zero accoppiamento)
+- **D**: Re-baselining della serie Binance sul livello Yahoo al cutover,
+  per minimizzare il salto (utile se ratio ≠ 1)
+
+*Direzione probabile*: **A** con flag `source`, perché il ratio è
+~1 (no rebasing necessario) e tenerle separate (C) diventa fastidioso
+quando dovremo fare feature engineering. Decisione formale rinviata al
+primo modulo che ha davvero bisogno di una "POL series" unica
+(presumibilmente quando inizieremo le feature di Fase 2).
 
 ---
 
