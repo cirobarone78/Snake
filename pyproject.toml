@@ -1,0 +1,64 @@
+[project]
+name = "market-analysis"
+version = "0.1.0"
+description = "Experimental multifactor analysis of financial markets, crypto-first, asset-class-agnostic. See VISION.md."
+requires-python = ">=3.12"
+readme = "README.md"
+
+dependencies = [
+    "pandas>=2.2",
+    "polars>=1.0",
+    "pyarrow>=17.0",
+    "requests>=2.32",
+    "yfinance>=0.2.40",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "pydantic>=2.8",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.0",
+    "ipykernel>=6.29",
+    "ruff>=0.6",
+    "pyright>=1.1",
+    "pytest>=8.0",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # bugbear
+    "UP",  # pyupgrade
+    "SIM", # simplify
+    "RUF", # ruff-specific
+]
+ignore = [
+    "E501", # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"notebooks/*" = ["E402", "F401"]
+"tests/*" = ["B011"]
+
+[tool.pyright]
+include = ["src", "tests"]
+exclude = ["**/__pycache__", "notebooks", ".venv"]
+pythonVersion = "3.12"
+typeCheckingMode = "basic"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]

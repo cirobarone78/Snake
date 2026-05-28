@@ -9,125 +9,92 @@
 2026-05-28
 
 ## Fase corrente
-**Fase 0 — Framing & setup** ✅ *completata.*
-**Fase 1 — Esplorazione dati** ⏭️ *pronti per iniziare.*
+**Fase 1 — Esplorazione dati** ⏳ *in corso (parte fondazionale completata, fetch reale bloccato da network policy)*
 
 ## Cosa è stato fatto
 
-### 2026-05-28
+### 2026-05-28 — Sessione 1: framing & decisioni
 - Repository svuotata dal precedente progetto (gioco Snake)
-- Creati i 6 file di documentazione di base: `CLAUDE.md`, `VISION.md`,
-  `ROADMAP.md`, `STATUS.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md`
-- **Decisioni critiche di Fase 0 chiuse** (ADR-001 … ADR-009 in `DECISIONS.md`):
-  - Riutilizzo della repo "Snake" per il nuovo progetto (ADR-001)
-  - Natura del progetto: ricerca, non trading bot (ADR-002)
-  - Convenzioni linguistiche (ADR-003)
-  - Scope: ricerca ora, live trading come obiettivo condizionale futuro (ADR-004)
-  - Asset universe: Tier 1 (BTC, ETH, SOL, LINK, POL) + Tier 2 (top 20 dinamica) (ADR-005)
-  - Multi-timeframe predittivo: breve (1–7gg), medio (2–8sett), lungo (3–12mesi) (ADR-006)
-  - Output multi-dimensionale: direzione + rendimento + probabilità (+ vol, conf, factors) (ADR-007)
-  - Budget dati: gratuiti prima, premium dopo (ADR-008)
-  - Stack: Python 3.12+, uv, Jupyter, ruff, pyright, pandas/polars, scikit-learn, HuggingFace, PyTorch (ADR-009)
-- **Paper trading promosso a fase dedicata** (ADR-010):
-  - Nuova Fase 6 della roadmap (era "Output, dashboard" — diventata Fase 7)
-  - Principi non negoziabili: no look-ahead, costi reali (fee+slippage+latency),
-    stesso codebase paper/live, stato persistente, metriche coerenti col backtest
-  - Aggiunte Q13–Q15 in `OPEN_QUESTIONS.md` (capitale virtuale, exchange di
-    riferimento, modello slippage)
-- **Paper trading parametrizzato** (ADR-011, ADR-012, ADR-013):
-  - Multi-scenario con reset e fork (default: 1k / 10k / 100k EUR) (ADR-011)
-  - Due broker modellati: Binance (default) e Kraken (utente reale) (ADR-012)
-  - Slippage spread-proportional con floor 2 bps, market impact attivabile
-    per ordini grossi (ADR-013)
-- **Architettura asset-class-agnostic** (ADR-014):
-  - Tutti i moduli (data, features, models, backtest, broker) sono
-    `asset_class`-aware fin dalla Fase 1
-  - Implementazione effettiva: solo crypto fino a Fase 6 inclusa
-  - Espansione equity = Fase 8 dedicata, ma niente riscrittura
-  - Aggiunte Q16, Q17 (universe equity, broker equity) in `OPEN_QUESTIONS.md`
-- **Modulo didattico multi-livello** (ADR-015):
-  - Stream parallelo, cresce in `education/` insieme alle fasi tecniche
-  - 4 livelli: L1 principiante, L2 intermedio, L3 avanzato, L4 esperto/"wolf"
-  - Capitoli scritti quando l'argomento è "fresco" perché lo stiamo
-    implementando nel codice
-  - Aggiunta Q18 (granularità) in `OPEN_QUESTIONS.md`
-- **Ruolo dell'AI definito esplicitamente** (ADR-016):
-  - L'AI è **filtro e sintetizzatore** di informazione testuale, NON oracolo
-    predittivo. I segnali quantitativi vengono dai modelli ML, non da LLM
-  - Stack a due layer: Layer 1 (FinBERT, sentence-transformers, spaCy —
-    open-source, default, batch); Layer 2 (Claude API selettivo, con cap
-    budget 15 EUR/mese, caching aggressivo)
-  - Q19 e Q20 aperte (calibrazione cap, multi-provider) per Fase 3
-- **Tassonomia prioritizzata delle fonti dati** (ADR-017):
-  - 4 tier: Core (Fase 1-2), Estensione (Fase 3-4), Avanzata (Fase 4-5),
-    Premium (gate ADR-008)
-  - Esclusioni esplicite: Bloomberg Terminal, X API tier costosi, scraping
-    aggressivo
-  - Criterio di "potere incrementale" obbligatorio per ogni nuova fonte
-    (hypothesis, bias check, ortogonalità, costo/beneficio, drop policy)
-  - Fase 1 implementa **solo Tier 1**
-- **Etica e legalità nell'acquisizione dati** (ADR-018):
-  - Distinzione esplicita: **Categoria A** impossibile per natura
-    (insider info, dati riservati); **Categoria B** tecnicamente possibile
-    ma escluso per scelta etico-legale (leak, scraping aggressivo, dati
-    grey-market); **Categoria C** zona grigia da valutare caso per caso
-    (dataset accademici, web archive, dati pubblici con questioni GDPR)
-  - Riferimenti normativi: MAR UE 596/2014, GDPR, art. 615-ter c.p.
-  - Procedura per zona grigia: nota in `DECISIONS.md` con licenza,
-    provenienza, rischio, decisione
-  - Esclusioni di Categoria B sono **revisabili** con nuova ADR (non sono
-    "principi" assoluti); esclusioni Categoria A non lo sono per costruzione
-- **Aggiunto principio 9 in VISION.md**: "Selettività e qualità prima del
-  volume" + "L'AI è filtro e sintetizzatore, non oracolo"
+- Creati i 6 file di documentazione: `CLAUDE.md`, `VISION.md`, `ROADMAP.md`,
+  `STATUS.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md`
+- Chiuse le decisioni di Fase 0 e le successive (ADR-001 ÷ ADR-018, tutte
+  in `DECISIONS.md`)
+- Aggiunto modulo didattico come stream parallelo (ADR-015)
+- Definito ruolo dell'AI (ADR-016) e tassonomia fonti dati (ADR-017)
+- Chiarita distinzione "impossibile vs scelta etico-legale" (ADR-018)
+
+### 2026-05-28 — Sessione 1 (cont.): apertura Fase 1
+- **Setup ambiente**: `uv init` con Python 3.12.11 installato automaticamente,
+  dipendenze sincronizzate (pandas, polars, pyarrow, yfinance, pydantic,
+  jupyter, ruff, pyright, pytest, matplotlib, seaborn)
+- **`pyproject.toml`** configurato con ruff (line-length 100, ruleset E/W/F/I/B/UP/SIM/RUF)
+  e pyright basic mode (ADR-009)
+- **`.gitignore`** completa (data/, .env, venv, cache HF/uv, ipynb checkpoints)
+- **Struttura cartelle** creata: `src/{assets,ingestion/tier1,ai/{nlp_local,llm_api},execution}`,
+  `notebooks/`, `data/{raw,processed}/`, `tests/`, `config/`,
+  `education/L{1,2,3,4}_*/`, `docs/`
+- **Modello asset asset-class-agnostic** (`src/assets/asset.py`, ADR-014):
+  `Asset` pydantic model con `AssetClass`, `TradingCalendar`, simboli
+  multi-source (yahoo, binance, coingecko). Tier 1 (BTC/ETH/SOL/LINK/POL)
+  e context assets (DXY, SPX, NDX, GOLD) come costanti
+- **Interfaccia astratta `DataSource` / `OHLCVDataSource`** (`src/ingestion/base.py`)
+- **Prima implementazione concreta**: `YahooFinanceSource`
+  (`src/ingestion/tier1/yahoo_finance.py`) + `save_ohlcv_parquet` helper
+- **Entrypoint batch** per ingestion Tier 1 (`src/ingestion/tier1/fetch_tier1.py`)
+- **Inventario fonti Tier 1** completo in `docs/data_sources_tier1.md`
+- **Modulo didattico bootstrappato**:
+  - `education/README.md` (indice)
+  - `education/L{1,2,3,4}_*/README.md` (capitoli pianificati per livello)
+  - **Primo capitolo L1 pubblicato**: `01_asset_borsa_broker.md`
+- **Notebook EDA scaffold**: `notebooks/01_exploration_btc_eth.ipynb`
+  (statistiche descrittive, distribuzione log-return, ACF, volatility clustering)
+- **Test sanity** (`tests/test_assets.py`): 5 test passano
+- **Lint pulito**: ruff su src/ e tests/ tutto verde
+- **README di progetto** aggiornato con quickstart e network policy needed
 
 ## Cosa è in corso
-- Niente di attivo. Fine della sessione di framing.
-
-## Prossimo step (Fase 1)
-Inventario delle sorgenti dati **solo Tier 1** (ADR-017), setup ambiente,
-bootstrap educational. In ordine:
-
-1. **Setup ambiente Python**: `uv init`, `pyproject.toml`, `uv.lock`,
-   `.gitignore` con `data/`, `.env`, `__pycache__/`, `.venv/`, `*.ipynb_checkpoints`
-2. **Struttura cartelle**:
-   ```
-   src/ingestion/tier1/   # solo Tier 1 in Fase 1 (ADR-017)
-   src/ai/nlp_local/      # Layer 1 AI (ADR-016)
-   src/ai/llm_api/        # Layer 2 AI, scaffold non ancora attivo
-   src/execution/         # placeholder, Fase 6
-   notebooks/
-   data/raw/  data/processed/
-   tests/
-   education/L1_principiante/  L2_intermedio/  L3_avanzato/  L4_esperto/
-   config/                # sources.yaml e simili
-   ```
-3. **`education/README.md`** come indice navigabile dei livelli (ADR-015)
-4. **Implementazione Tier 1 (ADR-017)**:
-   - Market: Binance public API, Coinbase Pro, CoinGecko, Yahoo Finance
-   - On-chain base: Etherscan, Blockchain.com, mempool.space, Glassnode free
-   - News crypto: CryptoPanic free tier
-   - Macro: FRED
-   - Documentare per ciascuna: storico, rate limit, campi, licenza
-5. **Script di ingestion minimale** per OHLCV daily di BTC + ETH
-   → salvataggio in `data/raw/` come parquet. Codice asset-class-agnostic
-   (ADR-014)
-6. **Notebook di esplorazione**: statistiche descrittive, distribuzioni
-   rendimenti, autocorrelazione, stagionalità, finestre di halving Bitcoin
-7. **Primo capitolo educational L1**: "Cos'è un asset, una borsa, un broker"
-
-I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017).
+- Niente di attivo a fine sessione
 
 ## Blocker
-Nessuno.
+- 🛑 **Network policy dell'ambiente blocca outbound HTTPS** verso le fonti
+  dati. Verificato: `query2.finance.yahoo.com`, `api.binance.com`,
+  `api.coingecko.com` rispondono tutti `403 Host not in allowlist`.
+  Lo script di ingestion è funzionante (struttura, parsing, persistenza
+  validati) ma non può scaricare dati reali finché l'allowlist non viene
+  aggiornata.
+
+  **Cosa serve fare** (richiede intervento utente nella config ambiente
+  Claude Code on the web):
+  - Aprire la policy per i domini elencati in `docs/data_sources_tier1.md`
+    sezione "Prerequisiti operativi"
+  - Rilanciare `uv run python -m src.ingestion.tier1.fetch_tier1`
+  - Quindi eseguire il notebook EDA
+
+## Prossimo step (Fase 1, continua)
+
+1. **Sbloccare network** (utente lato config ambiente)
+2. **Verificare fetch reale**: rilanciare `fetch_tier1`, controllare row counts
+   e qualità dati (gap, NaN, copertura storica per ciascun asset)
+3. **Eseguire notebook EDA** su BTC + ETH; documentare findings (skew,
+   kurtosis, volatility clustering)
+4. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
+   - Binance public API (granularità intra-day)
+   - CoinGecko (top 20 dinamica + dominance + market cap)
+   - FRED (tassi, CPI, M2) — richiede API key gratuita
+   - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
+5. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
+6. **Test su YahooFinanceSource** (mock di yfinance, no network)
 
 ## Note per la prossima sessione
-- Le ADR-004 ÷ ADR-009 sono **già prese** — non rimetterle in discussione
-  salvo motivo concreto
-- Prima di scrivere codice di ingestion: **leggere ADR-005** per ricordare
-  i due tier di asset, e ADR-008 per limiti su API premium
-- Convenzioni cartelle (da ADR-009): `src/`, `notebooks/`, `data/raw/`,
-  `data/processed/`, `tests/`
-- I dati in `data/` e i `.env` non vanno in commit: predisporre `.gitignore`
-  come primo task
-- Verificare se `uv` è disponibile nell'ambiente, in caso installarlo come
-  prima cosa
+
+- Leggere PRIMA `CLAUDE.md` e questo file. Tutte le decisioni architetturali
+  e di scope sono fissate in ADR-001 ÷ ADR-018 (`DECISIONS.md`)
+- Non rimettere in discussione lo scope senza motivo concreto
+- Convenzioni cartelle e principio asset-class-agnostic (ADR-014): mai
+  hardcodare "crypto" — usare l'Asset model
+- Il codice della pipeline funziona, ha test che passano. Il prossimo step
+  *dipende dal network*, quindi conviene chiedere all'utente conferma che
+  l'allowlist sia stata aggiornata prima di rilanciare il fetch
+- I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
+- Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
+  implementare nulla finché Fase 3 / Fase 6 rispettivamente
