@@ -21,6 +21,7 @@
 | Q15 | Modello di slippage | [ADR-013](./DECISIONS.md) |
 | Q21 (parz.) | Mapping ticker POL su Yahoo | [ADR-019](./DECISIONS.md) |
 | Q21bis | Gap recente POL post-2025-03 | [ADR-020](./DECISIONS.md) (via Binance.us) |
+| Q22 | Composizione serie multi-source | [ADR-021](./DECISIONS.md) (concat + flag source) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -167,30 +168,25 @@ modelli. Decisione rinviata a inizio Fase 3.
 
 ---
 
-### Q22 — Composizione multi-source per POL (e in generale)
-[ADR-019](./DECISIONS.md) + [ADR-020](./DECISIONS.md) hanno chiuso il
-buco dati POL: Yahoo (MATIC-USD) copre 2019-04 → 2025-03, Binance.us
-(POLUSDT) copre 2025-01 → presente, con 68 giorni di overlap. Validazione
-mostra rapporto prezzi 0.998 ± 0.007, correlazione log-return 0.977 →
-le due serie sono **operativamente equivalenti**.
+### Q23 — Volume aggregato tra venue diverse
+[ADR-021](./DECISIONS.md) compone OHLCV multi-source con later-source-wins,
+ma il volume viene preso "come arriva" dalla source vincente. Yahoo
+aggrega cross-exchange (volume "globale" stimato), Binance.us riporta
+solo il volume sul proprio venue. **Non sono confrontabili in livello
+assoluto.**
 
-Resta aperta la decisione su **come comporre** le due fonti in un'unica
-serie utilizzabile a valle:
+Per la Fase 1 (descriptive stats, distribuzioni) il problema è marginale
+— il volume è una serie ausiliaria. Diventa rilevante quando:
+- Costruiamo feature di **liquidità relativa** (volume / market cap, o
+  rolling volume z-score) che assumono una scala stabile
+- Cerchiamo segnali da **volume spikes** (un picco di volume Binance.us
+  può essere un evento, ma il livello "0" pre-listing rende il
+  cambiamento artificiale)
 
-- **A**: Concatenazione semplice (Yahoo fino al cutover 2025-03,
-  Binance da lì) con flag di provenance per riga
-- **B**: Scegliere una sola fonte come "canonical" e usare l'altra come
-  fallback per i buchi
-- **C**: Tenere le due serie separate e fare merge solo on-demand nei
-  notebook (zero accoppiamento)
-- **D**: Re-baselining della serie Binance sul livello Yahoo al cutover,
-  per minimizzare il salto (utile se ratio ≠ 1)
-
-*Direzione probabile*: **A** con flag `source`, perché il ratio è
-~1 (no rebasing necessario) e tenerle separate (C) diventa fastidioso
-quando dovremo fare feature engineering. Decisione formale rinviata al
-primo modulo che ha davvero bisogno di una "POL series" unica
-(presumibilmente quando inizieremo le feature di Fase 2).
+*Direzione*: ignorare per ora. Quando attaccheremo feature volume-based
+in Fase 2, decidere se (a) normalizzare per provider con z-score
+within-source, (b) usare solo CoinGecko/CMC come fonte volume aggregata
+e dedicata, (c) costruire feature solo su return, non su volume assoluto.
 
 ---
 

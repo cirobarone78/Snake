@@ -204,14 +204,42 @@
   rinviata al primo modulo che ne ha davvero bisogno, probabile
   direzione: concatenazione con flag di provenance)
 
+### 2026-05-28 — Sessione 2 (cont.): composer multi-source (ADR-021)
+- **Nuovo modulo** `src/ingestion/composer.py` con `compose_ohlcv()`:
+  funzione pura, prende lista di `(DataFrame, source_name)` in ordine
+  di priorità crescente, ritorna serie unica + colonna `source` di
+  provenance per riga
+- **Policy di overlap**: later-listed source wins
+  (`drop_duplicates(keep="last")` sull'index). Naturale, swappa l'ordine
+  per ribaltare la priorità
+- **7 nuovi test unitari** (`tests/test_composer.py`): no-overlap,
+  overlap binario, overlap a 3 source, empty input, missing columns,
+  no source dei dati buoni. **Totale 20/20 pytest verde**
+- **Prima applicazione**: serie POL composta in
+  `data/processed/POL_1d.parquet`
+  - **2588 righe** complessive, 2019-04-28 → 2026-05-28 (full coverage!)
+  - Source breakdown: 2090 yahoo + 498 binance (dedup di 68 giorni
+    overlap)
+  - Math check: 2158 + 498 − 68 = 2588 ✓
+  - Binance vince come previsto nel cutover (gennaio 2025 in poi)
+- **Q22 chiusa** (ADR-021). Nuova Q23 aperta: come trattare il volume
+  multi-source (Yahoo cross-exchange vs Binance single-venue, scale
+  diverse). Non bloccante per Fase 1; da decidere quando faremo feature
+  volume-based in Fase 2
+- Architettura risultante: pipeline a 3 layer pulita
+  - **raw**: `data/raw/{provider}/{class}/{SYMBOL}_{interval}.parquet`
+    (gitignored, una entry per provider)
+  - **processed**: `data/processed/{SYMBOL}_{interval}.parquet`
+    (gitignored, una sola serie per asset, con `source` column)
+  - **code**: ingestion sources implementano `OHLCVDataSource`, il
+    composer è puro pandas, downstream non sa dei provider
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
-1. **Decidere Q22**: come comporre Yahoo + Binance per POL (e in
-   generale per asset multi-source)
-2. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
+1. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
    - CoinGecko (top 20 dinamica + dominance + market cap)
    - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key

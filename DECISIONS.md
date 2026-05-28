@@ -1138,6 +1138,69 @@ Binance è esplicita e nei suoi ToS.
 
 ---
 
+## ADR-021 — Composizione multi-source: concat con flag di provenance
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: Q22
+
+**Contesto**: Dopo ADR-019 + ADR-020 abbiamo, per POL, due serie storiche
+che insieme coprono dal 2019 al presente ma nessuna delle due da sola lo
+fa. Validazione (ADR-020) mostra che i prezzi sono operativamente
+equivalenti (ratio 0.998 ± 0.007 nei 68 giorni di overlap, log-return
+correlation 0.977).
+
+Servono regole esplicite per produrre una "serie POL canonical" che il
+feature engineering possa usare senza ricostruire la composizione ogni
+volta. Stesso problema si ripresenterà per qualunque asset multi-source
+(es. quando aggiungeremo CoinGecko per BTC dominance, o se in futuro
+splittiamo BTC tra Coinbase+Binance).
+
+**Decisione**:
+- Funzione pura `compose_ohlcv(sources)` in `src/ingestion/composer.py`.
+  Input: lista di `(DataFrame, source_name)` in ordine di **priorità
+  crescente**.
+- **Policy di overlap**: later-listed source wins. Quando due (o più)
+  serie hanno la stessa data, la più "fresca/autoritaria" (ultima in
+  lista) vince; la precedente viene scartata silenziosamente per quella
+  riga.
+- **Colonna `source`** aggiunta all'output: ogni riga porta il proprio
+  provenance label (`"yahoo"`, `"binance"`, ecc.). Mai perdere l'audit
+  trail.
+- **No re-baselining** del livello al cutover: per POL il ratio è ~1
+  (0.998), quindi una concatenazione semplice non crea salti visibili.
+  Se in futuro emergerà un asset con ratio significativamente diverso
+  da 1, si valuterà allora un adjustment di livello (separato dal
+  composer base).
+- Output persistito in `data/processed/{symbol}_{interval}.parquet`,
+  separato dai raw per provider.
+
+**Conseguenze**:
+- ✅ Feature engineering downstream opera su una sola serie per asset,
+  zero accoppiamento ai provider
+- ✅ La colonna `source` consente filtri di sanity ("usa solo Yahoo se
+  vuoi long history pulita", "salta i giorni Binance se sospetti
+  qualità diversa", ecc.) senza ri-ingest
+- ✅ Nuovi provider si aggiungono in coda alla lista → diventano
+  authoritative per l'overlap. Semantica naturale.
+- ⚠️ La policy "later wins" è una scelta di default. Asset con
+  qualità inversa (provider nuovo peggiore dei precedenti) chiederanno
+  un over-ride esplicito. Soluzione: invertire l'ordine in lista quando
+  si compongono — la funzione resta neutra
+- ⚠️ Non viene riconciliato il **volume** (le venue hanno scale diverse).
+  Il composer prende il volume dalla source vincente per ogni riga; va
+  bene come ordering ma non per analisi di market depth assoluta.
+  Documentare in `OPEN_QUESTIONS` quando diventerà rilevante
+- 💡 Per ora applicato solo a POL. Gli altri Tier 1 hanno copertura
+  Yahoo sufficiente e non beneficiano della composizione. Aggiungere
+  on demand
+
+**Output di prima applicazione**:
+- `data/processed/POL_1d.parquet`: 2588 righe, 2019-04-28 → 2026-05-28
+  (Yahoo 2090 + Binance 498 dopo dedup di 68 giorni di overlap)
+
+---
+
 <!--
 Template per nuove ADR:
 
