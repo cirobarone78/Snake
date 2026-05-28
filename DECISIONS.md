@@ -1042,6 +1042,50 @@ presa in considerazione, va aggiunta una nota in `DECISIONS.md`
 
 ---
 
+## ADR-019 — Mapping ticker per POL: usare MATIC-USD su Yahoo
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: Q21 (parzialmente — vedi "Conseguenze")
+
+**Contesto**: Il ticker `POL-USD` su Yahoo Finance — pur essendo il simbolo
+post-rebrand corretto per Polygon (rinominato MATIC→POL nel settembre 2024)
+— ha uno storico troncato a **2020-08-07 → 2023-10-31** (1181 righe, nessun
+dato successivo). Il vecchio simbolo `MATIC-USD`, invece, copre
+**2019-04-28 → 2025-03-24** (2158 righe, 0 gap), perché Yahoo ha continuato
+a popolarlo come ticker storico del pre-rebrand fino al cutover di marzo
+2025, dopo cui anche MATIC-USD è stato congelato.
+
+Nessun simbolo Yahoo, da solo, fornisce uno storico continuo dalla nascita
+del token fino ad oggi (2026).
+
+**Decisione**:
+- L'asset interno resta `POL` (simbolo canonico del progetto, riflette il
+  rebrand)
+- Sul provider Yahoo, mappiamo `POL.yahoo_symbol = "MATIC-USD"` per ottenere
+  lo storico più lungo e continuo disponibile da Yahoo
+- Su altri provider (Binance, CoinGecko, quando aggiunti), usiamo i simboli
+  post-rebrand (`POLUSDT`, `polygon-ecosystem-token`)
+- Il gap residuo (2025-03-24 → presente, ~14 mesi) sarà chiuso quando in
+  Fase 1 aggiungeremo Binance/CoinGecko come sorgenti
+
+**Conseguenze**:
+- ✅ Storico Yahoo per POL passa da ~3 anni a ~6 anni (utile per EDA storico)
+- ⚠️ POL su Yahoo è incompleto fino a quando non aggiungiamo altri provider:
+  qualsiasi feature engineering basato solo su Yahoo per POL deve trattare
+  i dati come "storici, non aggiornati"
+- ⚠️ Q21 non è completamente chiusa: il gap recente resta da risolvere via
+  multi-source (rimandato al punto 3 dello "Cosa serve fare" in STATUS.md)
+- 🔄 Quando in Fase 1+ avremo dati Binance, andrà valutato se concatenare
+  Yahoo (storico fino 2025-03) + Binance (da lì in poi) o se affidarsi a un
+  singolo provider (Binance copre POLUSDT post-2024 e MATICUSDT pre-2024,
+  decisione da prendere quando avremo i dati Binance in mano)
+- 💡 Lezione generale: il mapping `Asset → simbolo provider` non è 1:1
+  banale dopo eventi corporate (rebrand, merger, fork). Va trattato come
+  configurazione esplicita per ogni provider, non assunto come `f"{symbol}-USD"`
+
+---
+
 <!--
 Template per nuove ADR:
 

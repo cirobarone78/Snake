@@ -61,9 +61,11 @@
   9/9 asset scaricati in `data/raw/yahoo/{crypto,index,commodity}/`
   - BTC, ETH, LINK: 3069 righe, 2018-01-01 → 2026-05-27 (full)
   - SOL: 2239 righe, 2020-04-10 → 2026-05-27 (dal lancio Solana)
-  - **POL: 1181 righe, 2020-08-07 → 2023-10-31 — anomalia**
-    (vedi `OPEN_QUESTIONS.md` Q21: ticker POL-USD su Yahoo è troncato
-    post-rebrand MATIC→POL del 2024)
+  - **POL: 1181 righe iniziali sul ticker `POL-USD`, troncate a 2023-10-31**
+    → risolto con [ADR-019](./DECISIONS.md): switch a `MATIC-USD` come
+    simbolo Yahoo, ora 2158 righe (2019-04-28 → 2025-03-24, 0 gap).
+    Gap recente 2025-03-24 → oggi resta aperto come Q21bis (si chiude
+    quando aggiungeremo Binance/CoinGecko)
   - DXY, SPX, NDX, GOLD: ~2111-2113 righe, 2018-01-02 → 2026-05-27
     (mercato chiuso nei weekend, normale)
 - **Quality check superato**: 0 NaN, 0 gap "anomali" per tutti gli asset
@@ -78,18 +80,16 @@
 
 ## Prossimo step (Fase 1, continua)
 
-1. **Risolvere quirk POL** (vedi `OPEN_QUESTIONS.md` Q21): decidere se
-   passare a `MATIC-USD`, concatenare i due ticker, sostituire l'asset, o
-   switchare provider per POL
-2. **Eseguire notebook EDA** (`notebooks/01_exploration_btc_eth.ipynb`)
+1. **Eseguire notebook EDA** (`notebooks/01_exploration_btc_eth.ipynb`)
    su BTC + ETH; documentare findings (skew, kurtosis, volatility clustering)
-3. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
+2. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
    - Binance public API (granularità intra-day)
    - CoinGecko (top 20 dinamica + dominance + market cap)
    - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
-4. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
-5. **Test su YahooFinanceSource** (mock di yfinance, no network)
+   - Binance chiude anche il gap residuo POL (Q21bis)
+3. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
+4. **Test su YahooFinanceSource** (mock di yfinance, no network)
 
 ## Note per la prossima sessione
 

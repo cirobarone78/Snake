@@ -107,12 +107,10 @@ TIER1_ASSETS: list[Asset] = [
         quote_currency="USD",
         trading_calendar=TradingCalendar.CRYPTO_24_7,
         tier=1,
-        yahoo_symbol="POL-USD",
+        yahoo_symbol="MATIC-USD",
         binance_symbol="POLUSDT",
         coingecko_id="polygon-ecosystem-token",
-        # Renamed from MATIC in September 2024. Historical yahoo data may
-        # split across MATIC-USD (pre-rename) and POL-USD (post-rename).
-        notes="Renamed from MATIC to POL in September 2024. Historical join may need reconciliation.",
+        notes="Yahoo: POL-USD ticker is truncated at 2023-10-31; we pull the continuous history via MATIC-USD (pre-rebrand symbol). Internal canonical name remains POL (the asset after the Sep-2024 rebrand). See ADR-019.",
     ),
 ]
 

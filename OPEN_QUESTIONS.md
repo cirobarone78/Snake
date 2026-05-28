@@ -19,6 +19,7 @@
 | Q13 | Capitale virtuale del paper trading | [ADR-011](./DECISIONS.md) |
 | Q14 | Exchange di riferimento per fee | [ADR-012](./DECISIONS.md) |
 | Q15 | Modello di slippage | [ADR-013](./DECISIONS.md) |
+| Q21 (parz.) | Mapping ticker POL su Yahoo | [ADR-019](./DECISIONS.md) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -165,25 +166,20 @@ modelli. Decisione rinviata a inizio Fase 3.
 
 ---
 
-### Q21 — Ticker POL su Yahoo: storico troncato
-Il fetch Tier 1 (2026-05-28) ha scaricato `POL-USD` da Yahoo: 1181 righe,
-**range 2020-08-07 → 2023-10-31**, poi nessun dato. Su Yahoo, il ticker
-moderno post-migration MATIC→POL (2024) potrebbe essere mappato sotto un
-simbolo diverso, oppure lo storico continuativo è disponibile solo come
-`MATIC-USD` (pre-migration) concatenato con `POL-USD` (post-migration).
+### Q21bis — Gap recente POL (post 2025-03-24) — residuo aperto da Q21
+[ADR-019](./DECISIONS.md) ha scelto `MATIC-USD` come simbolo Yahoo per POL,
+estendendo lo storico a 6 anni (2019-04 → 2025-03). Resta scoperto il
+range **2025-03-24 → oggi (~14 mesi)**: Yahoo non lo serve né su POL-USD
+né su MATIC-USD.
 
-Da chiarire prima dell'EDA:
-- **A**: usare `MATIC-USD` come simbolo Yahoo e ribattezzare l'asset
-  internamente (rispettando la realtà del rebrand)
-- **B**: concatenare `MATIC-USD` (fino a 2024-Q3) + `POL-USD` (da 2024-Q3)
-  con flag di continuità
-- **C**: sostituire POL con un altro Tier 1 (es. AVAX, ADA) se la
-  discontinuità dati è troppo onerosa
-- **D**: switchare su Binance/CoinGecko per POL (probabilmente più puliti
-  sul rebrand)
+Risolverà:
+- L'aggiunta di Binance (POLUSDT) e/o CoinGecko (`polygon-ecosystem-token`)
+  come sorgenti — già pianificato come prossimo step Fase 1 in STATUS.md
+- Decisione su come comporre Yahoo+Binance (concat vs single-source) andrà
+  presa quando avremo i dati Binance in mano (cfr. Conseguenze ADR-019)
 
-*Decisione rinviata al prossimo touch-point con l'utente*. Per ora il file
-parquet POL_1d.parquet va trattato come incompleto.
+*Non bloccante per EDA storica BTC/ETH*. Si attiverà come blocker se
+proviamo a fare feature engineering recente su POL.
 
 ---
 
