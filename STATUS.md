@@ -103,13 +103,44 @@
 - Nessuna sorpresa metodologica nei dati: distribuzione si comporta come
   ci si aspetta da serie crypto, segnale che il fetch è pulito
 
+### 2026-05-28 — Sessione 2 (cont.): EDA estesa a tutti i Tier 1 crypto
+- Notebook refattorizzato per essere cross-asset (BTC/ETH/SOL/LINK/POL)
+- **Vol annualizzata cresce monotonicamente**: BTC 65% < ETH 85% <
+  LINK 115% ≈ SOL 119% < POL 136% → ordering di "rischiosità" coerente
+  con dimensione/maturità del progetto
+- **Skewness**: BTC/ETH marcatamente left-skewed (-0.95/-0.84), mentre
+  SOL/LINK/POL praticamente simmetriche o leggermente positive. Ipotesi
+  da testare: la skewness negativa di BTC/ETH potrebbe essere legata
+  alla loro maggiore "istituzionalizzazione" (selling pressure asimmetrica
+  dei grandi holder?)
+- **Kurtosis** (excess): tutti 7-16 → fat tails universali; POL ha la
+  kurtosis più alta (15.8) ma è anche la serie più rumorosa post-2025
+- **ACF(|r|) lag 1**: BTC/ETH 0.16, LINK 0.21, SOL 0.27, POL 0.26 →
+  **volatility clustering più forte nelle altcoin**. La predicibilità
+  della varianza scala con la dimensione/volatilità: utile per modellare
+  l'incertezza asset per asset
+- **Cross-asset correlations** (1809 giorni comuni 2020-04 → 2025-03):
+  - BTC ↔ ETH: 0.81 (blue-chip co-movement)
+  - ETH ↔ altcoin: 0.61-0.75 (ETH funziona da "hub" per le altcoin,
+    più correlata di BTC con il resto)
+  - LINK ↔ ETH: 0.75 (LINK è ETH-ecosystem heavy)
+  - SOL ↔ BTC: 0.53 (la meno correlata; coerente con narrativa
+    "Ethereum competitor")
+  - Nessuna coppia sotto 0.5 → diversificazione **moderata** in Tier 1,
+    non zero ma neanche scarsa
+- Aggiunta rolling 90-day correlation vs BTC per studiare la stabilità
+  delle correlazioni (visibile nel notebook)
+- **Bugfix incontrato**: il parquet salvato ha `timestamp` come index
+  (non come colonna) quando letto via pandas. Aggiornata `load_ohlcv`
+  nel notebook (vedi `notebooks/01_exploration_btc_eth.ipynb`)
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
-1. **Estendere EDA agli altri Tier 1** (SOL, LINK, POL): stessi grafici e
-   stessa tabella di descrittiva, confronto cross-asset
+1. **Estendere EDA ai context assets** (SPX, NDX, DXY, GOLD): correlazioni
+   rolling crypto vs macro, regimi di "risk-on/risk-off"
 2. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
    - Binance public API (granularità intra-day)
    - CoinGecko (top 20 dinamica + dominance + market cap)
