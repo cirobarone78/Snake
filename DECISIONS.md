@@ -857,13 +857,18 @@ concreti.
 
 ### Esclusioni esplicite (NON acquisiamo)
 
-| Fonte | Motivo |
-|---|---|
-| **Bloomberg Terminal** | Costo proibitivo (~24 000 EUR/anno) |
-| **Twitter / X API tier utili** | Costo proibitivo (~5 000 EUR/mese), policy volatile |
-| **Refinitiv Eikon** | Costo proibitivo |
-| **Insider data leaks, scraping aggressivo X** | Illegale o legalmente grigio |
-| **Dati real-time L2 order book per tutti gli asset** | Infrastruttura dedicata, fuori scope ricerca |
+| Fonte | Motivo | Tipo di esclusione |
+|---|---|---|
+| **Bloomberg Terminal** | Costo proibitivo (~24 000 EUR/anno) | Economica (rivisitabile con budget) |
+| **Twitter / X API tier utili** | Costo proibitivo (~5 000 EUR/mese), policy volatile | Economica (rivisitabile) |
+| **Refinitiv Eikon** | Costo proibitivo | Economica (rivisitabile) |
+| **Insider information** | Inaccessibile per natura + reato (MAR UE Art. 14) | Impossibile + illegale (ADR-018 Categoria A) |
+| **Leak già pubblici** (Panama Papers e simili) | Uso come signal vietato da MAR indipendentemente dall'origine | Scelta etico-legale (ADR-018 Categoria B) |
+| **Scraping aggressivo** (aggirare CAPTCHA, anti-bot, ToS) | Violazione ToS, rischio art. 615-ter c.p., IP ban | Scelta etico-legale (ADR-018 Categoria B) |
+| **Dati real-time L2 order book per tutti gli asset** | Infrastruttura dedicata, fuori scope ricerca | Tecnica + scope |
+
+**Vedi ADR-018** per la classificazione completa (impossibile vs scelta vs
+zona grigia) e la procedura di valutazione per fonti grey-zone.
 
 ### Criterio di "potere incrementale"
 
@@ -893,6 +898,147 @@ una riga di log).
 - Log centralizzato dei dati acquisiti con quality metrics
 - La Fase 1 implementa **solo Tier 1**. I tier successivi entrano dopo
   decisione esplicita sul valore aggiunto
+
+---
+
+## ADR-018 — Etica e legalità nell'acquisizione dati: impossibile vs scelta
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+
+**Contesto**: ADR-017 elenca "esclusioni esplicite" delle fonti dati che non
+acquisiamo. Tra queste comparivano "insider info, leak, scraping aggressivo
+— illegale o legalmente grigio", in una formulazione ambigua che mescola due
+ragioni profondamente diverse di esclusione:
+
+1. **Impossibilità tecnica**: fonti **non accessibili** in nessuna forma
+   legittima (sarebbe necessario commettere un reato per ottenerle)
+2. **Scelta etico-legale**: fonti **tecnicamente accessibili** ma che
+   scegliamo di non integrare per ragioni di legalità, etica, rischio
+   reputazionale o sistemico
+
+La differenza non è accademica: gli **impossibili tecnici sono fissi**, le
+**scelte sono revisabili** con una nuova ADR (es. se cambia la legge, o se
+emerge una via legalmente pulita). Inoltre esiste una **zona grigia** che
+richiede valutazione caso per caso e va resa esplicita per non risolverla
+in modo arbitrario sotto pressione.
+
+Riferimento normativo principale per l'ambito UE/IT (giurisdizione di
+riferimento del progetto): **Regolamento (UE) 596/2014** (Market Abuse
+Regulation, MAR), in particolare artt. 7 (definizione di inside information),
+8 (insider dealing), 14 (divieto di insider dealing). Anche **GDPR**
+(Reg. 2016/679) per qualsiasi dato personale, e **art. 615-ter c.p.**
+italiano (accesso abusivo a sistema informatico).
+
+**Decisione**: tre categorie esplicite con trattamento diverso.
+
+### Categoria A — Impossibile tecnicamente (e illegale)
+
+Fonti che richiederebbero un reato per essere ottenute. Non esiste una via
+legittima per acquisirle.
+
+| Fonte | Perché impossibile |
+|---|---|
+| **Insider information** (notizie materiali non pubbliche su aziende quotate o asset) | Per definizione non pubbliche; possedute solo dagli insider; arrivare a noi richiederebbe complicità nel reato di insider dealing |
+| **Documenti riservati di banche centrali pre-annuncio** | Sotto embargo, accesso fisicamente controllato |
+| **Order book private di market maker / dark pools** | Infrastruttura privata, non disponibile a soggetti esterni |
+| **Comunicazioni private** (Slack/email aziendali, chat di trading desk) | Confidenzialità contrattuale + segreto industriale |
+| **Dati ottenibili solo tramite hacking** (es. exchange internals, wallet privati) | Reato penale a prescindere dall'uso |
+
+**Revocabilità**: nessuna. Sono limiti fisici per costruzione. Se un giorno
+qualcosa di questi diventasse pubblico, riclassifichiamo nella relativa
+categoria (B o C).
+
+### Categoria B — Tecnicamente possibile ma scelta di non integrare
+
+Fonti accessibili in qualche forma, che scegliamo consapevolmente di non
+toccare.
+
+| Fonte | Tecnicamente accessibile perché | Perché la escludiamo |
+|---|---|---|
+| **Leak già pubblici** (Panama Papers, Pandora Papers, leak di SEC filings, breach di exchange) | Una volta pubblicati restano spesso online | MAR Art. 14 vieta l'uso di "inside information" *indipendentemente dall'origine*. Rischio penale, civile e reputazionale. Eticamente: lesivo del fair price discovery |
+| **Scraping aggressivo** (aggirare CAPTCHA, anti-bot, proxy rotation per violare rate limit) | Tools come Selenium/Playwright + servizi di proxy lo rendono fattibile | Violazione ToS (responsabilità contrattuale); possibile violazione di norme su accesso abusivo (art. 615-ter c.p. se ci sono misure di sicurezza aggirate); GDPR se ci sono dati personali; IP ban definitivo che ci toglierebbe anche l'accesso legittimo |
+| **API Twitter/X via account non legittimi** o reverse engineering dell'app | Tecnicamente fattibile | Violazione ToS, rischio account ban a cascata, scelte di Musk-era policy non garantiscono stabilità |
+| **Reverse engineering di app finanziarie chiuse** (es. interfaccia interna broker) | Spesso fattibile | Violazione ToS, possibili violazioni di copyright/DMCA-equivalenti |
+| **Acquisto di dataset di provenienza incerta** (es. mercato "grey" di dati on-chain etichettati) | Esistono fornitori non ufficiali | Catena di provenienza non verificabile = rischio legale ed etico |
+| **Dati personali scrapeable da social** (profili pubblici di trader specifici da seguire) | Tecnicamente fattibile | GDPR: il fatto che siano pubblicamente visibili non li rende liberamente processabili a fini di profilazione |
+
+**Revocabilità**: ognuna di queste esclusioni è **revisabile** con una nuova
+ADR se cambiano le condizioni che la giustificano (cambio di legge,
+disponibilità di una via legalmente pulita, mutamento del rischio
+reputazionale). Non è una "esclusione morale per sempre", è una decisione
+operativa tracciata.
+
+### Categoria C — Zona grigia (judgement call documentato caso per caso)
+
+Fonti che **non sono nettamente classificabili** e richiedono valutazione
+specifica al momento della valutazione. Quando una di queste fonti viene
+presa in considerazione, va aggiunta una nota in `DECISIONS.md`
+(non serve ADR completa) con la decisione e il razionale.
+
+| Tipologia | Considerazioni |
+|---|---|
+| **Dataset accademici con dati Twitter pre-2023** | Spesso raccolti legalmente quando le API erano permissive. Caso per caso: verificare la licenza del dataset, l'attualità dei dati, l'assenza di dati personali sensibili |
+| **Dataset Kaggle / HuggingFace con licenza permissiva** | Verificare provenienza dichiarata, licenza esplicita, eventuali clausole "research only" |
+| **Web archive (archive.org) di pagine ora paywalled** | Tecnicamente accessibili. Considerare se l'archivio era autorizzato dal publisher (archive.org rispetta robots.txt) |
+| **Forum e mailing list pubbliche** (es. Bitcoin-dev, ethereum-research) | OK se ricerca di interesse pubblico, attenzione ai dati personali |
+| **Telegram canali pubblici di "trader influencer"** | Pubblici ma con potenziali questioni GDPR per dati personali. Anonimizzare quando possibile |
+| **Discord pubblici di community crypto** | Stessa logica di Telegram |
+| **GitHub di progetti aperti** (es. monitoraggio commit attivity di protocolli) | Generalmente OK, GitHub ToS lo permettono |
+| **Filings ufficiali in forma machine-readable** (SEC EDGAR, ESMA) | Pubblici per design, integrazione benvenuta |
+
+**Procedura per zona grigia**:
+
+1. Quando si valuta una fonte di Categoria C, scrivere in `DECISIONS.md` una
+   voce in formato:
+   ```
+   ### Nota grey-zone YYYY-MM-DD — <fonte>
+   - Provenienza dichiarata: ...
+   - Licenza: ...
+   - Rischio identificato: ...
+   - Decisione: usare / non usare / usare con vincoli (quali)
+   - Riferimento ADR principale: ADR-018
+   ```
+2. Se la decisione è "non usare" e la fonte sembra strategica, considerare
+   se trovare un'alternativa di Categoria pulita
+3. Se la decisione è "usare con vincoli" (es. anonimizzazione, filtri),
+   i vincoli vanno implementati nel codice di ingestion
+
+### Procedura per riclassificare o revisare
+
+- **B → A**: se una fonte di Categoria B diventa fisicamente inaccessibile
+  (es. il sito chiude), spostarla in A
+- **B → C**: se emerge una via legalmente pulita per accedere a parte dei
+  dati (es. nuova API ufficiale), aprire una nota grey-zone
+- **C → integrazione**: se valutata positivamente, la fonte entra nella
+  tassonomia di ADR-017 al tier appropriato
+- **Revoca di esclusione B**: richiede nuova ADR che cita esplicitamente
+  questa ADR-018 e motiva il cambio di condizioni
+
+### Perché questa distinzione conta
+
+- **Per la trasparenza del progetto**: chi legge i file capisce che alcune
+  esclusioni sono **principi**, altre sono **opportunità di lavoro futuro**
+- **Per non rivisitare le decisioni sotto pressione**: quando arriva la
+  tentazione di "violare un ToS per un mese per vedere se il segnale c'è",
+  questa ADR è già la risposta documentata: no, e perché
+- **Per il valore del sistema**: un sistema che opera in chiarezza legale
+  ha valore di lungo termine, uno che opera in zona grigia è una bomba a
+  orologeria reputazionale
+
+**Conseguenze**:
+
+- Aggiornata sezione "Esclusioni esplicite" di ADR-017 con riferimento a
+  questa ADR
+- Nuovo template "Nota grey-zone" disponibile in `DECISIONS.md` per zona
+  grigia (sopra)
+- Il modulo `src/ingestion/` non deve mai contenere codice per scraping
+  aggressivo (no proxy rotation per aggirare rate limit, no CAPTCHA solver,
+  no fake user-agent oltre lo strettamente necessario per essere identificabili
+  come bot del nostro progetto). Convenzione: ogni richiesta HTTP usa un
+  `User-Agent` esplicito identificativo
+- Nessun dato personale (PII) viene memorizzato senza necessità documentata
+  e base giuridica chiara (GDPR Art. 6)
 
 ---
 

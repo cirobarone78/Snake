@@ -66,6 +66,17 @@
   - Criterio di "potere incrementale" obbligatorio per ogni nuova fonte
     (hypothesis, bias check, ortogonalità, costo/beneficio, drop policy)
   - Fase 1 implementa **solo Tier 1**
+- **Etica e legalità nell'acquisizione dati** (ADR-018):
+  - Distinzione esplicita: **Categoria A** impossibile per natura
+    (insider info, dati riservati); **Categoria B** tecnicamente possibile
+    ma escluso per scelta etico-legale (leak, scraping aggressivo, dati
+    grey-market); **Categoria C** zona grigia da valutare caso per caso
+    (dataset accademici, web archive, dati pubblici con questioni GDPR)
+  - Riferimenti normativi: MAR UE 596/2014, GDPR, art. 615-ter c.p.
+  - Procedura per zona grigia: nota in `DECISIONS.md` con licenza,
+    provenienza, rischio, decisione
+  - Esclusioni di Categoria B sono **revisabili** con nuova ADR (non sono
+    "principi" assoluti); esclusioni Categoria A non lo sono per costruzione
 - **Aggiunto principio 9 in VISION.md**: "Selettività e qualità prima del
   volume" + "L'AI è filtro e sintetizzatore, non oracolo"
 
