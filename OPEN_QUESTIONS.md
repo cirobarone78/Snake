@@ -136,6 +136,35 @@ per realismo pratico per l'utente).
 
 ---
 
+### Q19 — Budget LLM API: calibrazione del cap
+ADR-016 fissa un cap iniziale di **15 EUR/mese** per le chiamate LLM API
+(Layer 2). È un valore prudenziale, da calibrare in Fase 3 quando avremo:
+
+- Numero realistico di news/giorno che richiedono Layer 2 (cioè quelle che
+  Layer 1 non gestisce con confidence sufficiente)
+- Costo medio per chiamata su modelli effettivamente usati (Claude Sonnet vs
+  Haiku vs altri)
+- Hit rate del cache (più alto è il cache, più basso il costo effettivo)
+
+*Direzione*: rivedere il cap a inizio Fase 3, alzare/abbassare in base a
+dati reali. Decisione formale rinviata.
+
+---
+
+### Q20 — Provider LLM API: solo Anthropic o multi-provider
+ADR-016 propone Anthropic Claude come default. Vale la pena considerare:
+
+- **A**: Solo Claude (semplice, coerente, una sola chiave API, costo
+  prevedibile)
+- **B**: Claude + OpenAI come fallback (in caso di downtime / cap raggiunto)
+- **C**: Layer di astrazione su LiteLLM o simili → swappabile tra provider
+  in modo trasparente
+
+*Direzione*: **A** per partire, **C** se serviranno test comparativi tra
+modelli. Decisione rinviata a inizio Fase 3.
+
+---
+
 ### Q18 — Granularità del modulo didattico
 Quanto in profondità entriamo per ciascun livello (ADR-015)?
 

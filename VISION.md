@@ -67,6 +67,15 @@ significativo, batte un benchmark passivo (buy-and-hold) o un benchmark naïve
 5. **Honest reporting**: metriche out-of-sample, non in-sample
 6. **Costo zero finché possibile**: API gratuite prima di pagare per dati premium
 7. **Scope incrementale**: 1 asset, 1 timeframe, 1 fonte → poi espandere
+8. **Selettività e qualità prima del volume**: acquisiamo poche fonti ben
+   integrate, non molte mal correlate. L'80% del segnale viene dal 20% delle
+   fonti. Ogni nuova fonte deve giustificare il proprio inserimento con
+   un'analisi di **potere incrementale**: riduce il rumore? aggiunge segnale
+   ortogonale? o duplica qualcosa che già abbiamo? Vedi ADR-017
+9. **L'AI è filtro e sintetizzatore, non oracolo**: l'AI (LLM, modelli NLP)
+   serve a classificare, estrarre, riassumere informazione testuale.
+   Non genera segnali predittivi: quelli vengono dai modelli quantitativi
+   sui dati strutturati. Vedi ADR-016
 
 ## Stato finale immaginato
 

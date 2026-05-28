@@ -51,36 +51,60 @@
   - Capitoli scritti quando l'argomento è "fresco" perché lo stiamo
     implementando nel codice
   - Aggiunta Q18 (granularità) in `OPEN_QUESTIONS.md`
+- **Ruolo dell'AI definito esplicitamente** (ADR-016):
+  - L'AI è **filtro e sintetizzatore** di informazione testuale, NON oracolo
+    predittivo. I segnali quantitativi vengono dai modelli ML, non da LLM
+  - Stack a due layer: Layer 1 (FinBERT, sentence-transformers, spaCy —
+    open-source, default, batch); Layer 2 (Claude API selettivo, con cap
+    budget 15 EUR/mese, caching aggressivo)
+  - Q19 e Q20 aperte (calibrazione cap, multi-provider) per Fase 3
+- **Tassonomia prioritizzata delle fonti dati** (ADR-017):
+  - 4 tier: Core (Fase 1-2), Estensione (Fase 3-4), Avanzata (Fase 4-5),
+    Premium (gate ADR-008)
+  - Esclusioni esplicite: Bloomberg Terminal, X API tier costosi, scraping
+    aggressivo
+  - Criterio di "potere incrementale" obbligatorio per ogni nuova fonte
+    (hypothesis, bias check, ortogonalità, costo/beneficio, drop policy)
+  - Fase 1 implementa **solo Tier 1**
+- **Aggiunto principio 9 in VISION.md**: "Selettività e qualità prima del
+  volume" + "L'AI è filtro e sintetizzatore, non oracolo"
 
 ## Cosa è in corso
 - Niente di attivo. Fine della sessione di framing.
 
 ## Prossimo step (Fase 1)
-Inventario delle sorgenti dati + bootstrap educational. In ordine:
+Inventario delle sorgenti dati **solo Tier 1** (ADR-017), setup ambiente,
+bootstrap educational. In ordine:
 
 1. **Setup ambiente Python**: `uv init`, `pyproject.toml`, `uv.lock`,
    `.gitignore` con `data/`, `.env`, `__pycache__/`, `.venv/`, `*.ipynb_checkpoints`
-2. **Struttura cartelle**: `src/`, `notebooks/`, `data/raw/`, `data/processed/`,
-   `tests/`, `education/L1_principiante/`, `education/L2_intermedio/`,
-   `education/L3_avanzato/`, `education/L4_esperto/`
+2. **Struttura cartelle**:
+   ```
+   src/ingestion/tier1/   # solo Tier 1 in Fase 1 (ADR-017)
+   src/ai/nlp_local/      # Layer 1 AI (ADR-016)
+   src/ai/llm_api/        # Layer 2 AI, scaffold non ancora attivo
+   src/execution/         # placeholder, Fase 6
+   notebooks/
+   data/raw/  data/processed/
+   tests/
+   education/L1_principiante/  L2_intermedio/  L3_avanzato/  L4_esperto/
+   config/                # sources.yaml e simili
+   ```
 3. **`education/README.md`** come indice navigabile dei livelli (ADR-015)
-4. **Inventario sorgenti dati** per gli asset Tier 1 (BTC, ETH, SOL, LINK, POL):
-   - Market data: CoinGecko, Binance public API, Coinbase, Yahoo Finance
-     (per equity correlati). Documentare: storico disponibile, rate limit,
-     campi forniti, licenza
-   - On-chain (per BTC, ETH come prima istanza): Etherscan, Blockchain.com,
-     Glassnode free tier, mempool.space
-   - News: RSS feeds (Cointelegraph, CoinDesk, Reuters), CryptoPanic free tier
-   - Macro: FRED (Federal Reserve), ECB SDW, Yahoo Finance (DXY, indici)
-5. **Script di ingestion minimale** per OHLCV daily di 1-2 asset (BTC + ETH)
+4. **Implementazione Tier 1 (ADR-017)**:
+   - Market: Binance public API, Coinbase Pro, CoinGecko, Yahoo Finance
+   - On-chain base: Etherscan, Blockchain.com, mempool.space, Glassnode free
+   - News crypto: CryptoPanic free tier
+   - Macro: FRED
+   - Documentare per ciascuna: storico, rate limit, campi, licenza
+5. **Script di ingestion minimale** per OHLCV daily di BTC + ETH
    → salvataggio in `data/raw/` come parquet. Codice asset-class-agnostic
-   (ADR-014): tutti i parametri di asset class come configurazione, niente
-   hardcoded "crypto"
+   (ADR-014)
 6. **Notebook di esplorazione**: statistiche descrittive, distribuzioni
-   rendimenti, autocorrelazione, stagionalità, identificazione finestre di
-   halving Bitcoin
-7. **Primo capitolo educational L1**: "Cos'è un asset, una borsa, un broker" —
-   scritto in parallelo all'ingestion, perché tocca gli stessi concetti
+   rendimenti, autocorrelazione, stagionalità, finestre di halving Bitcoin
+7. **Primo capitolo educational L1**: "Cos'è un asset, una borsa, un broker"
+
+I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017).
 
 ## Blocker
 Nessuno.

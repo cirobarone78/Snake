@@ -670,6 +670,232 @@ consultabile sui concetti usati nel sistema.
 
 ---
 
+## ADR-016 — Ruolo dell'AI: filtro e sintetizzatore, non oracolo
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+
+**Contesto**: L'utente ha chiesto se l'app sarà in grado di acquisire e
+processare "tutte" le informazioni utili — finanziarie, generali, di
+qualsiasi tipo possa influenzare i mercati — anche tramite AI. È necessario
+fissare con onestà cosa l'AI farà nel sistema, cosa NON farà, e con quale
+stack e budget.
+
+Errori comuni da evitare:
+- Trattare gli LLM come oracoli predittivi ("chiediamo a Claude se BTC sale")
+- Sostituire i modelli quantitativi con generative AI
+- Spendere su API LLM senza un caching aggressivo
+- Dipendere esclusivamente da provider esterni per funzioni critiche
+
+**Decisione**: ruolo dell'AI definito in due layer, con confini espliciti.
+
+### Cosa l'AI FA nel sistema
+
+L'AI è impiegata esclusivamente sul **flusso di informazione testuale**
+(news, social, documenti) per:
+
+1. **Classificare** la rilevanza di news rispetto all'asset universe
+   (binary "relevant"/"noise" + topic class)
+2. **Estrarre entità** (NER): asset menzionati, persone, organizzazioni,
+   eventi, paesi
+3. **Calcolare sentiment** finanziario contestuale (per asset menzionato)
+4. **Riassumere** documenti lunghi (FOMC minutes, white paper, relazioni
+   trimestrali, lunghi thread di forum)
+5. **Tradurre** news non-inglesi per normalizzare il flusso
+6. **Topic modeling** e detection di narrative emergenti su finestre temporali
+7. **Anomaly detection** sul volume di news (picchi, divergenze)
+8. **Ricerca per similarità** ("cosa è successo in passato in situazioni
+   simili?") via embedding + RAG sull'archivio storico
+
+### Cosa l'AI NON FA
+
+1. **Non genera segnali predittivi diretti**: i segnali di direzione,
+   rendimento atteso e probabilità (ADR-007) vengono dai modelli ML
+   quantitativi (sklearn, XGBoost, eventualmente PyTorch) sui dati strutturati
+2. **Non sostituisce** statistica e backtesting rigoroso
+3. **Non decide** di eseguire trade (paper o reali)
+4. **Non interpreta** dati di mercato strutturati ("Claude, BTC è
+   ipercomprato?") — quello è dominio dei modelli quantitativi
+5. **Non è un componente real-time** mission-critical: la pipeline deve
+   degradare graziosamente se l'AI fallisce (rate limit, downtime API)
+
+### Stack AI a due layer
+
+**Layer 1 — Open-source, default, gratis, riproducibile, offline**:
+
+- **FinBERT** (o variante più recente, es. `ProsusAI/finbert`): sentiment
+  finanziario su frasi/titoli
+- **sentence-transformers** (es. `all-MiniLM-L6-v2` per velocità,
+  `multilingual-e5` per multi-lingua): embedding per RAG e similarity
+- **spaCy** (modello `en_core_web_lg` e `it_core_news_lg`): NER, parsing
+- **Hugging Face transformers**: classificazione zero-shot via BART/Flan-T5,
+  modelli specializzati al bisogno
+- Tutto in Python, eseguibile localmente o su GPU consumer
+
+Questo layer copre l'80% dei casi: classificazione rilevanza, NER, sentiment
+base, embedding per RAG.
+
+**Layer 2 — LLM API, selettivo, a pagamento, con budget cap**:
+
+- **Anthropic Claude API** (preferito, in coerenza con questo ambiente di lavoro)
+  o **OpenAI GPT API** come fallback
+- Usato SOLO per casi che il Layer 1 non gestisce bene:
+  - Summarization di documenti lunghi e complessi (>2 pagine)
+  - Classificazione fine di news ambigue dove FinBERT è incerto (low-confidence triage)
+  - Ricerca di analogie storiche e ragionamento qualitativo (RAG augmented)
+  - Detection di narrative emergenti che richiedono ragionamento (non solo pattern)
+- **Caching aggressivo obbligatorio**: ogni risposta API è cachata localmente
+  (file SQLite o parquet) con hash dell'input. La stessa elaborazione non si
+  paga due volte
+- **Budget cap mensile iniziale: 15 EUR/mese**. Quando si avvicina al limite,
+  pipeline degrada al solo Layer 1 senza interrompersi. Da calibrare in Fase 3
+  con dati reali di consumo
+- **Niente streaming, batch quando possibile**: ridurre overhead, sfruttare
+  caching server-side
+
+### Cosa NON acquisiamo (limiti esistenziali)
+
+Per onestà, riportiamo cosa il sistema **non potrà mai** acquisire:
+
+- Informazioni private, leak, insider trading (illegale, fuori scope)
+- Decisioni di banche centrali prima dell'annuncio (per definizione)
+- Dati Bloomberg Terminal (costo proibitivo ~24 000 EUR/anno)
+- Twitter/X API tier utili (costo proibitivo ~5 000 EUR/mese, in continuo
+  aumento). Da Fase 3 valutiamo alternative: scraping limitato (rischioso
+  legalmente), Mastodon/Bluesky come proxy, ignorare X del tutto
+- Dati real-time L2 order book (richiede infrastruttura dedicata, fuori scope
+  ricerca)
+- Black swan veri (per definizione imprevedibili)
+
+**Conseguenze**:
+
+- Modulo `src/ai/` con sotto-moduli `nlp_local/` (Layer 1) e `llm_api/`
+  (Layer 2) chiaramente separati
+- Interfaccia uniforme: il codice chiamante non sa se la classificazione viene
+  da Layer 1 o Layer 2 (decisione presa dal router interno in base a
+  confidence e budget)
+- File `.env` per chiavi API (mai in commit, già coperto in CLAUDE.md)
+- Modulo di tracking del budget speso (utility da implementare in Fase 3)
+- Cache layer condiviso tra Layer 1 e Layer 2
+- Pipeline deve essere testata anche in modalità "Layer 2 disabilitato" per
+  garantire degrado grazioso
+
+---
+
+## ADR-017 — Tassonomia prioritizzata delle fonti dati
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+
+**Contesto**: L'utente vuole un sistema che integri il maggior numero
+possibile di informazioni rilevanti. Per evitare l'errore di "acquisire tutto"
+(rumore, costi, overfitting, scope ingovernabile) servono **tier di priorità**
+chiari, ciascuno collegato alla fase della roadmap in cui viene integrato.
+Principio guida: ADR-014 (asset-class-agnostic), VISION principio 8
+(selettività > volume).
+
+**Decisione**: quattro tier di fonti, con criterio di **potere incrementale**
+da verificare prima di consolidare ogni fonte.
+
+### Tier 1 — Core (da implementare in Fase 1–2)
+
+Sono le fonti **indispensabili** per qualsiasi modello credibile.
+
+| Fonte | Categoria | Accesso | Note |
+|---|---|---|---|
+| **Binance Public API** | Market data crypto (OHLCV, depth) | Free, REST + WebSocket | Standard de facto, storico decennale |
+| **Coinbase Pro API** | Market data crypto secondario | Free | Per cross-check e ridondanza |
+| **CoinGecko** | Aggregato market data + metadata | Free tier limitato | Lista top 20, market cap, dominance |
+| **Yahoo Finance** | Equity & indici per contesto | Free | DXY, S&P 500, NASDAQ, oro (ADR-005) |
+| **Etherscan** | On-chain Ethereum base | Free tier | Transazioni, gas, balance, eventi |
+| **Blockchain.com / mempool.space** | On-chain Bitcoin base | Free | Hash rate, mempool, halving timeline |
+| **Glassnode free tier** | On-chain metrics aggregate | Free limitato | Active addresses, exchange flows base |
+| **FRED (Federal Reserve)** | Macro USA | Free, ampio storico | Tassi, inflazione, M2, treasury yields |
+| **CryptoPanic free tier** | News crypto aggregate | Free limitato | Triage iniziale del flusso news |
+
+### Tier 2 — Estensione (Fase 3–4)
+
+Fonti che aggiungono **segnale ortogonale** rispetto al Tier 1.
+
+| Fonte | Categoria | Accesso | Razionale |
+|---|---|---|---|
+| **RSS Cointelegraph / CoinDesk / The Block** | News crypto specializzate | Free | Più granulari di CryptoPanic |
+| **RSS Reuters / Bloomberg headlines / FT** | News finanza generale | Free (RSS) | Macro narrative, eventi globali |
+| **ECB SDW** | Macro europeo | Free | DXY è USA-centric, serve contesto EUR |
+| **Google Trends** | Attenzione/hype proxy | Free | Lead indicator per retail interest |
+| **Reddit API** | Social sentiment retail | Free, OAuth | r/cryptocurrency, r/wallstreetbets, r/CryptoMarkets |
+| **Hacker News API** | Sentiment tech | Free | Adoption signals, opinion leaders tech |
+| **TechCrunch / The Verge RSS** | News tech | Free | Annunci adoption, partnership, regulation tech |
+| **Telegram canali pubblici** | Social sentiment crypto | Free via bot | Selezionati, con filtro qualità |
+
+### Tier 3 — Avanzata (Fase 4–5, condizionata a valore aggiunto dimostrato)
+
+Fonti che richiedono **infrastruttura più complessa** o sono utili solo per
+analisi specifiche.
+
+| Fonte | Categoria | Accesso | Note |
+|---|---|---|---|
+| **GDELT** | Eventi globali geopolitici | Free, ma enorme | Database di eventi mondiali, utile per macro |
+| **RSS Politico / Foreign Affairs / Foreign Policy** | News geopolitica | Free | Per analisi macro/regulation |
+| **Calendario eventi** (Investing.com, Forex Factory) | Eventi calendarizzati | Free scraping | FOMC, halving, earnings, CPI release |
+| **Reddit r/CryptoMoonShots, altcoin-specifici** | Retail buzz altcoin | Free | Per Tier 2 asset (ADR-005) |
+| **Substack / Medium feeds selezionati** | Long-form analysis | Free RSS | Curatela necessaria |
+| **Earnings call transcripts** (per equity Fase 8) | Fondamentale equity | Free su SEC EDGAR | Solo quando entreremo in equity |
+
+### Tier 4 — Premium (gated da ADR-008)
+
+Fonti **a pagamento** valutabili solo se le precedenti dimostrano limiti
+concreti.
+
+| Fonte | Costo indicativo | Quando valutarla |
+|---|---|---|
+| **Glassnode Standard/Pro** | ~30–800 EUR/mese | Se on-chain free risulta insufficiente |
+| **Nansen** | ~150 EUR/mese | Per smart money tracking, gated da uso reale |
+| **CryptoQuant Pro** | ~30 EUR/mese | Per exchange flows granulari |
+| **Kaiko market data** | Custom | Per spread/order book storico (slippage modeling) |
+| **CryptoPanic Pro** | ~30 EUR/mese | Se Tier 2 news risulta limitante |
+
+### Esclusioni esplicite (NON acquisiamo)
+
+| Fonte | Motivo |
+|---|---|
+| **Bloomberg Terminal** | Costo proibitivo (~24 000 EUR/anno) |
+| **Twitter / X API tier utili** | Costo proibitivo (~5 000 EUR/mese), policy volatile |
+| **Refinitiv Eikon** | Costo proibitivo |
+| **Insider data leaks, scraping aggressivo X** | Illegale o legalmente grigio |
+| **Dati real-time L2 order book per tutti gli asset** | Infrastruttura dedicata, fuori scope ricerca |
+
+### Criterio di "potere incrementale"
+
+Prima di consolidare ogni nuova fonte:
+
+1. **Hypothesis**: scrivere quale segnale ci si aspetta che aggiunga, e in
+   quale fase del modello
+2. **Bias check**: la fonte è soggetta a survivorship bias? look-ahead? È
+   stata "scoperta" dopo aver visto il dato?
+3. **Orthogonality test**: la fonte è correlata >0.7 con fonti già presenti?
+   Se sì, probabilmente è duplicata
+4. **Cost/benefit**: il costo (denaro + complessità pipeline + manutenzione)
+   è giustificato dal segnale atteso?
+5. **Drop policy**: se a 3 mesi dall'integrazione non ha mostrato segnale,
+   si rimuove dalla pipeline
+
+Ogni decisione di **aggiungere o rimuovere una fonte** dopo la Fase 1 va
+documentata con una nota in `DECISIONS.md` (non serve ADR completa, basta
+una riga di log).
+
+**Conseguenze**:
+
+- `src/ingestion/` organizzato per tier, ciascuno con la sua sotto-cartella
+- Configurazione delle fonti in `config/sources.yaml` (o equivalente):
+  enable/disable, rate limit, schedule
+- Caching e rate-limiting condivisi tra tutte le fonti
+- Log centralizzato dei dati acquisiti con quality metrics
+- La Fase 1 implementa **solo Tier 1**. I tier successivi entrano dopo
+  decisione esplicita sul valore aggiunto
+
+---
+
 <!--
 Template per nuove ADR:
 
