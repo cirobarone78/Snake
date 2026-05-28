@@ -96,6 +96,59 @@ multi-source (Fase 3).
 
 ---
 
+### Q13 — Capitale virtuale iniziale del paper trading
+Quanti euro virtuali assegniamo al paper portfolio (ADR-010)?
+
+Opzioni:
+- **A**: Allineato al portafoglio reale dell'utente — ~1 200 EUR/anno DCA,
+  quindi capitale virtuale ~1 200 EUR aggiornato annualmente, o stock fittizio
+  iniziale 5 000 EUR
+- **B**: 10 000 EUR fissi all'inizio del paper trading
+- **C**: Più scenari paralleli (es. 1k / 10k / 100k) per vedere come scala
+  con la size — utile per analisi di slippage
+
+*Raccomandazione*: **B** come default, valutare **C** se vediamo che lo
+slippage modeling impatta i risultati.
+
+*Decisione rinviata a inizio Fase 6.*
+
+---
+
+### Q14 — Exchange di riferimento per fee e spread
+Le fee e gli spread differiscono tra exchange. Quale modelliamo?
+
+Opzioni:
+- **A**: Binance spot (fee 0.1% maker/taker base, alta liquidità) — *default proposto in ADR-010*
+- **B**: Coinbase Advanced Trade (fee più alte ma più "retail-friendly")
+- **C**: Kraken
+- **D**: Modelliamo più exchange e mostriamo P&L per ciascuno (più realistico
+  ma overhead)
+
+*Raccomandazione*: partire da **A**. Quando arriveremo al live (se), questa
+decisione condiziona anche il broker reale.
+
+*Decisione rinviata a inizio Fase 6.*
+
+---
+
+### Q15 — Modello di slippage e market impact
+Quanto realismo serve nella simulazione dell'impatto?
+
+Opzioni:
+- **A**: Slippage costante (es. sempre 5 bps) — semplice ma poco realistico
+- **B**: Slippage proporzionale al bid-ask spread storico — realistico per
+  ordini piccoli su asset liquidi (i nostri Tier 1)
+- **C**: Modello di impatto sub-lineare basato su volume (square-root law) —
+  serio ma richiede dati di order book
+- **D**: Slippage random calibrato sulla volatilità — onesto sull'incertezza
+
+*Raccomandazione*: **B** in Fase 6, considerare **C** o **D** se i risultati
+mostrano sensitività al modello.
+
+*Decisione rinviata a inizio Fase 6.*
+
+---
+
 ## 🟢 Domande di ricerca (non decisioni operative)
 
 Ipotesi da testare empiricamente nel corso del progetto.

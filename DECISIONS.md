@@ -318,6 +318,98 @@ time-series valutato in seguito
 
 ---
 
+## ADR-010 — Paper trading engine come feature integrale del sistema
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+
+**Contesto**: L'utente vuole poter "investire" su segnali generati dal sistema
+con un budget virtuale (euro fittizi), subendo gli stessi guadagni e perdite
+che subirebbe con denaro reale. Lo scopo è validare il sistema **senza
+rischiare capitale reale**, costituendo allo stesso tempo il gate verso un
+eventuale live trading (vedi ADR-004).
+
+**Decisione**: Il paper trading non è un add-on accessorio, ma una componente
+**centrale** della roadmap (nuova Fase 6 dedicata). I principi di design sono
+non negoziabili:
+
+### Principi non negoziabili
+
+1. **No look-ahead**: un ordine generato dal segnale al tempo `t` viene
+   simulato come eseguito al prossimo prezzo disponibile `t+1`, mai al prezzo
+   che ha generato il segnale. È l'errore più comune e annichilisce ogni
+   credibilità del test.
+
+2. **Costi reali**: ogni trade simulato applica:
+   - **Fee**: modello tarato sull'exchange di riferimento (default proposto:
+     Binance spot, 0.1% maker/taker — calibrabile)
+   - **Slippage**: modello iniziale lineare basato su bid-ask spread e size
+     dell'ordine; raffinabile con modelli di market impact
+   - **Funding rate** se in futuro entreranno strumenti derivati
+   - **Spread** tra denaro/lettera, non solo prezzo "fair"
+
+3. **Latenza simulata**: il segnale non si esegue istantaneamente. Margine
+   minimo: una candela del timeframe corrente (per "breve" daily ⇒ esecuzione
+   alla candela successiva).
+
+4. **Stesso codebase tra paper e live**: l'engine di esecuzione è uno solo.
+   Il modulo di execution ha due implementazioni intercambiabili dietro la
+   stessa interfaccia: `PaperBroker` (simulato) e `LiveBroker` (reale, mai
+   abilitato senza nuova ADR). Questo evita il "gap" tra paper e live, dove
+   in genere si scopre che il codice di backtest non regge in produzione.
+
+5. **Stato persistente e auditabile**: portfolio, posizioni aperte, storico
+   ordini, equity curve devono essere persistiti (parquet/SQLite) in modo
+   che ogni risultato sia **riproducibile** e **ispezionabile** giorni dopo.
+
+6. **Metriche coerenti col backtest** (Fase 2): Sharpe, Sortino, max
+   drawdown, hit rate, profit factor, time underwater, Calmar, ecc. Le stesse
+   metriche del backtest, applicate all'equity curve simulata. Così paper e
+   backtest sono confrontabili direttamente.
+
+7. **Verità è l'equity curve, non i singoli trade**: un singolo trade vincente
+   non dice niente. Il P&L cumulativo su molti trade indipendenti è quello
+   che conta.
+
+### Parametri operativi iniziali (calibrabili)
+
+| Parametro | Default proposto | Note |
+|---|---|---|
+| Capitale virtuale iniziale | 10 000 EUR | Da confermare; potrebbe essere allineato al portafoglio reale (~1 200 EUR/anno) o multiplo per testare scale |
+| Exchange di riferimento | Binance spot | Per modello fee e spread |
+| Direzione | Solo long inizialmente | Coerente col portafoglio reale dell'utente, no leverage, no short. Short via derivati introducibile in seguito con nuova ADR |
+| Tipi di ordine supportati | Market, Limit | Stop-loss e take-profit in seconda iterazione |
+| Position sizing | Percentuale fissa del capitale (configurabile) | Strategie più sofisticate (Kelly, vol-targeting) testabili in seguito |
+| Granularità di esecuzione | Una candela del timeframe del segnale | "Breve" daily ⇒ esecuzione daily |
+| Allocation across assets | Il segnale può proporre allocazione multi-asset | Es. "60% BTC, 30% ETH, 10% cash" |
+
+### Conseguenze
+
+- **Nuova Fase 6 in `ROADMAP.md`**, dedicata al paper trading engine. La
+  precedente "Fase 6 — Output, dashboard, sintesi" diventa Fase 7.
+- L'engine sarà un modulo `src/execution/` con interfaccia `Broker` astratta
+  e implementazioni `PaperBroker` (Fase 6) e `LiveBroker` (futuro, ADR esplicita)
+- La modellazione realistica dei costi è prerequisito: già richiesto dalla
+  Fase 2 (backtest), ora ancora più rilevante
+- Il paper trading "live" (su segnali generati in tempo reale, non storici)
+  richiede che la data pipeline sia anche eseguibile in modalità real-time
+  o quasi-real-time. Dipende da Q10 (frequenza ingestion notizie) e dal
+  timeframe scelto
+- **Open question aperta**: capitale virtuale iniziale (Q13), exchange di
+  riferimento (Q14), modello di slippage (Q15) — vedi `OPEN_QUESTIONS.md`
+
+### Cosa NON fa il paper trading
+
+- Non ti dice che "guadagnerai" davvero: un mese positivo in paper non
+  garantisce nulla nel mondo reale. Servono mesi e mesi di equity curve
+  positiva contro benchmark
+- Non sostituisce il backtest: il backtest è la fase di "ottimizzazione e
+  selezione", il paper trading è la fase di "validazione finale e onesta"
+- Non simula gli effetti psicologici reali del trading (paura/avidità).
+  Questo limite è inevitabile e va ricordato
+
+---
+
 <!--
 Template per nuove ADR:
 

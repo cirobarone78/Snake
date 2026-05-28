@@ -127,22 +127,70 @@ Capiamo se e quanto la contestualizzazione per regime migliora le predizioni.
 
 ---
 
-## Fase 6 — Output, dashboard, sintesi
+## Fase 6 — Paper trading engine
 
-**Obiettivo**: rendere il sistema **utile** e consultabile, non solo un insieme
-di notebook.
+**Obiettivo**: permettere all'utente di "investire" con un budget virtuale sui
+segnali generati dal sistema, simulando con realismo guadagni e perdite. È il
+**gate di validazione finale** prima di qualsiasi considerazione di live
+trading. Vedi ADR-010 per i principi non negoziabili.
 
 ### Deliverable
-- [ ] Decidere la forma di output (vedi `OPEN_QUESTIONS.md`):
-      dashboard web? report periodico? alerting?
-- [ ] Implementazione
-- [ ] Documentazione finale: insights, limitazioni, ipotesi non confermate
-- [ ] (Opzionale) Paper trading per validazione finale prima di qualsiasi
-      considerazione di uso reale
+- [ ] Modulo `src/execution/` con interfaccia `Broker` astratta
+- [ ] Implementazione `PaperBroker`:
+  - [ ] No look-ahead (ordine al tempo `t` ⇒ fill alla candela `t+1`)
+  - [ ] Modello fee tarato su Binance spot (default 0.1% maker/taker)
+  - [ ] Modello slippage lineare basato su spread e size
+  - [ ] Latenza simulata (almeno una candela del timeframe corrente)
+- [ ] Portfolio manager: posizioni, P&L realizzato e non-realizzato, equity curve
+- [ ] Persistenza completa (storico ordini, fill, snapshot portfolio) in
+      parquet/SQLite — risultati riproducibili e auditabili
+- [ ] Tipi di ordine: Market, Limit (Stop e TP in seconda iterazione)
+- [ ] Position sizing configurabile (percentuale fissa come baseline)
+- [ ] Long-only inizialmente (no leverage, no short)
+- [ ] Metriche calcolate sull'equity curve, **identiche** a quelle del backtest
+      di Fase 2 (Sharpe, Sortino, max drawdown, profit factor, ecc.)
+- [ ] Modalità di esecuzione:
+  - [ ] **Replay**: rieseguire segnali su dati storici (= backtest realistico)
+  - [ ] **Live-shadow**: ingerire dati real-time/quasi-real-time, generare
+        segnali e simulare esecuzione in continuo. Coerente col timeframe scelto
+- [ ] Configurazione iniziale (parametri esposti):
+  - Capitale virtuale di partenza
+  - Exchange di riferimento (per fee model)
+  - Allocazione/sizing policy
+  - Whitelist asset operabili
 
 ### Criterio di completamento
-Dato lo stato corrente dei mercati e delle notizie, il sistema produce un output
-sintetico, comprensibile e onesto sulla confidenza dei segnali.
+- Il paper trading gira in modalità live-shadow per **almeno 3 mesi**
+  consecutivi senza interventi manuali
+- L'equity curve generata viene confrontata con buy-and-hold sui Tier 1 e
+  con un benchmark naïve (es. DCA fisso)
+- Le metriche sono **honestly reportable**: drawdown massimo, periodi di
+  underwater, hit rate, Sharpe out-of-sample
+- Documentazione completa dei limiti del simulato vs reale (psicologia,
+  esecuzione di ordini grossi, ecc.)
+
+---
+
+## Fase 7 — Output, dashboard, sintesi
+
+**Obiettivo**: rendere il sistema **utile** e consultabile, non solo un insieme
+di notebook. È la fase di "consumo" del sistema da parte dell'utente.
+
+### Deliverable
+- [ ] Forma di output finale (decisione in `OPEN_QUESTIONS.md` Q8):
+      dashboard web? report periodico? alerting Telegram?
+- [ ] Visualizzazione segnali multi-orizzonte per asset (breve/medio/lungo
+      a colpo d'occhio)
+- [ ] Visualizzazione dello stato del paper portfolio: equity curve, posizioni,
+      P&L, metriche
+- [ ] Confronto continuo paper portfolio vs benchmark (DCA, buy-and-hold)
+- [ ] Diario degli insights e delle ipotesi non confermate
+- [ ] Documentazione finale del progetto
+
+### Criterio di completamento
+Dato lo stato corrente dei mercati e delle notizie, il sistema produce un
+output sintetico, comprensibile e onesto sulla confidenza dei segnali, e
+l'utente può consultare lo stato del paper portfolio in qualsiasi momento.
 
 ---
 
@@ -152,5 +200,10 @@ sintetico, comprensibile e onesto sulla confidenza dei segnali.
   di tornare in Fase 1 (nuove sorgenti dati). Va bene, basta tracciarlo in
   `STATUS.md`.
 - **Ogni fase può "fallire"**: scoprire che non c'è segnale è un risultato valido.
-- **Le fasi 5 e 6 sono condizionate**: ha senso affrontarle solo se le fasi
-  precedenti producono baseline funzionanti.
+- **Le fasi 5, 6 e 7 sono condizionate**: ha senso affrontarle solo se le fasi
+  precedenti producono baseline funzionanti. In particolare, **Fase 6 (paper
+  trading) ha senso solo se Fase 4 produce modelli che battono benchmark
+  out-of-sample**. Altrimenti staremmo simulando trade su segnali rumorosi.
+- **Eventuale Fase 8 — Live trading**: non in roadmap attuale. Richiede nuova
+  ADR esplicita, ≥3 mesi di paper trading positivo, risk management
+  formalizzato. Vedi ADR-004.

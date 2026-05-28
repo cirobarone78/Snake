@@ -28,6 +28,12 @@
   - Output multi-dimensionale: direzione + rendimento + probabilità (+ vol, conf, factors) (ADR-007)
   - Budget dati: gratuiti prima, premium dopo (ADR-008)
   - Stack: Python 3.12+, uv, Jupyter, ruff, pyright, pandas/polars, scikit-learn, HuggingFace, PyTorch (ADR-009)
+- **Paper trading promosso a fase dedicata** (ADR-010):
+  - Nuova Fase 6 della roadmap (era "Output, dashboard" — diventata Fase 7)
+  - Principi non negoziabili: no look-ahead, costi reali (fee+slippage+latency),
+    stesso codebase paper/live, stato persistente, metriche coerenti col backtest
+  - Aggiunte Q13–Q15 in `OPEN_QUESTIONS.md` (capitale virtuale, exchange di
+    riferimento, modello slippage)
 
 ## Cosa è in corso
 - Niente di attivo. Fine della sessione di framing.
