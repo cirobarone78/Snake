@@ -134,21 +134,52 @@
   (non come colonna) quando letto via pandas. Aggiornata `load_ohlcv`
   nel notebook (vedi `notebooks/01_exploration_btc_eth.ipynb`)
 
+### 2026-05-28 — Sessione 2 (cont.): EDA crypto vs macro context
+- Nuovo notebook `notebooks/02_crypto_vs_macro.ipynb`
+- Universo allargato: 5 crypto Tier 1 + 4 context asset (SPX, NDX, DXY,
+  GOLD). Allineamento sui **trading day comuni** (inner join sui log-return);
+  974 righe utili da 2020-04-14 a 2025-03-21
+- **Correlazioni daily medie**:
+  - Crypto ↔ SPX / NDX: **~0.39** (positive, regime "risk-on" comune
+    tra crypto e tech-equity USA)
+  - Crypto ↔ DXY: **~-0.21** (dollaro forte = crypto debole, link
+    moderato ma consistente)
+  - Crypto ↔ GOLD: **~0.08** (sostanzialmente zero a frequenza daily →
+    la narrativa "BTC = oro digitale" non regge come correlazione
+    contemporanea; eventualmente da testare a frequenze maggiori o in
+    sotto-periodi specifici)
+  - SPX ↔ NDX: 0.93 (info ridondante; un solo proxy equity USA può
+    bastare per features di livello macro)
+  - DXY ↔ GOLD: -0.42 (classica inverse, conferma sanità dati)
+- **Rolling 90d correlation**: std tra 0.10 e 0.17 su tutte le coppie
+  crypto-macro → **correlazioni regime-dependent**, non costanti. BTC vs
+  SPX media 0.38 ma oscilla tra ~0 e ~0.65. Quantificato in cell 7 del
+  notebook
+- Implicazione per la roadmap: lo "stato del mercato" (regime risk-on
+  vs risk-off) va trattato come variabile esplicita nel modello, non
+  marginalizzato. Ipotesi per Fase 2: clustering / regime-switching
+  sulle correlazioni rolling
+- **Caveat metodologico documentato**: l'inner-join sui trading day USA
+  somma il "weekend gap" del crypto al return del lunedì. Per analisi
+  future a granularità più fine, costruire return crypto allineati alla
+  cadenza dei mercati tradizionali
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
-1. **Estendere EDA ai context assets** (SPX, NDX, DXY, GOLD): correlazioni
-   rolling crypto vs macro, regimi di "risk-on/risk-off"
-2. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
+1. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
    - Binance public API (granularità intra-day)
    - CoinGecko (top 20 dinamica + dominance + market cap)
    - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
    - Binance chiude anche il gap residuo POL (Q21bis)
-3. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
-4. **Test su YahooFinanceSource** (mock di yfinance, no network)
+2. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
+3. **Test su YahooFinanceSource** (mock di yfinance, no network)
+4. **(Fase 2 preview)** Regime clustering / regime-switching sulle
+   correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
+   appena fatta
 
 ## Note per la prossima sessione
 
