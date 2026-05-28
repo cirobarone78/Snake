@@ -5,9 +5,14 @@
 ## Obiettivo
 
 Costruire un sistema sperimentale in grado di **analizzare in modo integrato e
-multifattoriale** i mercati finanziari (con focus particolare sulle criptovalute)
-per identificare **segnali probabilistici** sul possibile andamento di asset
-selezionati e di indici/aggregati di mercato.
+multifattoriale** i mercati finanziari per identificare **segnali probabilistici**
+sul possibile andamento di asset selezionati e di indici/aggregati di mercato,
+e validare questi segnali tramite **paper trading realistico** prima di
+qualsiasi considerazione di uso reale.
+
+**Ambito iniziale**: criptovalute (focus su BTC, ETH, SOL, LINK, POL + top 20).
+**Ambito esteso (futuro)**: mercato azionario tradizionale (equity, ETF, indici).
+L'architettura è già pensata asset-class-agnostic — vedi ADR-014.
 
 Le fonti di analisi spaziano oltre i puri dati di prezzo:
 
@@ -17,6 +22,10 @@ Le fonti di analisi spaziano oltre i puri dati di prezzo:
 - Sentiment estratto da notizie di **economia/finanza, tecnologia, politica,
   affari esteri** e dai social
 - Identificazione di **regimi di mercato** (bull/bear/sideways) e cambi di regime
+
+In parallelo, il progetto include un **modulo didattico multi-livello**
+(principiante → intermedio → avanzato → esperto) per costruire e mantenere
+la padronanza dei concetti su cui il sistema si basa. Vedi ADR-015.
 
 ## Mission
 
@@ -64,8 +73,17 @@ significativo, batte un benchmark passivo (buy-and-hold) o un benchmark naïve
 Idealmente, alla fine del progetto, esiste:
 
 - Un repository di codice riproducibile
-- Una pipeline che ingerisce dati eterogenei e li allinea temporalmente
-- Un set di modelli, dal più semplice al più complesso, con report comparativi
-- Una **dashboard** o report periodico che, dato lo stato attuale dei mercati e
-  delle notizie, riassume i segnali emersi e la loro confidenza storica
+- Una pipeline che ingerisce dati eterogenei (mercato, on-chain, macro, news)
+  e li allinea temporalmente
+- Un set di modelli predittivi per asset × orizzonte (breve/medio/lungo),
+  dal più semplice al più complesso, con report comparativi out-of-sample
+- Un **paper trading engine** che simula con realismo guadagni e perdite su
+  scenari multipli (capitali diversi, broker diversi: Binance e Kraken),
+  con storico auditabile e possibilità di reset
+- Una **dashboard** o report periodico che, dato lo stato attuale dei mercati,
+  riassume i segnali emersi, la loro confidenza storica e lo stato del paper
+  portfolio
+- Un **modulo didattico** in italiano, su 4 livelli, che spiega il mercato e
+  i concetti usati dal sistema con esempi sui dati reali del progetto
 - Un diario delle ipotesi testate, riuscite e fallite
+- (Estensione futura) Stesso sistema esteso al mercato azionario tradizionale

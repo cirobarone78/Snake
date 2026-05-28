@@ -34,16 +34,37 @@
     stesso codebase paper/live, stato persistente, metriche coerenti col backtest
   - Aggiunte Q13–Q15 in `OPEN_QUESTIONS.md` (capitale virtuale, exchange di
     riferimento, modello slippage)
+- **Paper trading parametrizzato** (ADR-011, ADR-012, ADR-013):
+  - Multi-scenario con reset e fork (default: 1k / 10k / 100k EUR) (ADR-011)
+  - Due broker modellati: Binance (default) e Kraken (utente reale) (ADR-012)
+  - Slippage spread-proportional con floor 2 bps, market impact attivabile
+    per ordini grossi (ADR-013)
+- **Architettura asset-class-agnostic** (ADR-014):
+  - Tutti i moduli (data, features, models, backtest, broker) sono
+    `asset_class`-aware fin dalla Fase 1
+  - Implementazione effettiva: solo crypto fino a Fase 6 inclusa
+  - Espansione equity = Fase 8 dedicata, ma niente riscrittura
+  - Aggiunte Q16, Q17 (universe equity, broker equity) in `OPEN_QUESTIONS.md`
+- **Modulo didattico multi-livello** (ADR-015):
+  - Stream parallelo, cresce in `education/` insieme alle fasi tecniche
+  - 4 livelli: L1 principiante, L2 intermedio, L3 avanzato, L4 esperto/"wolf"
+  - Capitoli scritti quando l'argomento è "fresco" perché lo stiamo
+    implementando nel codice
+  - Aggiunta Q18 (granularità) in `OPEN_QUESTIONS.md`
 
 ## Cosa è in corso
 - Niente di attivo. Fine della sessione di framing.
 
 ## Prossimo step (Fase 1)
-Inventario delle sorgenti dati. In ordine:
+Inventario delle sorgenti dati + bootstrap educational. In ordine:
 
 1. **Setup ambiente Python**: `uv init`, `pyproject.toml`, `uv.lock`,
    `.gitignore` con `data/`, `.env`, `__pycache__/`, `.venv/`, `*.ipynb_checkpoints`
-2. **Inventario sorgenti dati** per gli asset Tier 1 (BTC, ETH, SOL, LINK, POL):
+2. **Struttura cartelle**: `src/`, `notebooks/`, `data/raw/`, `data/processed/`,
+   `tests/`, `education/L1_principiante/`, `education/L2_intermedio/`,
+   `education/L3_avanzato/`, `education/L4_esperto/`
+3. **`education/README.md`** come indice navigabile dei livelli (ADR-015)
+4. **Inventario sorgenti dati** per gli asset Tier 1 (BTC, ETH, SOL, LINK, POL):
    - Market data: CoinGecko, Binance public API, Coinbase, Yahoo Finance
      (per equity correlati). Documentare: storico disponibile, rate limit,
      campi forniti, licenza
@@ -51,11 +72,15 @@ Inventario delle sorgenti dati. In ordine:
      Glassnode free tier, mempool.space
    - News: RSS feeds (Cointelegraph, CoinDesk, Reuters), CryptoPanic free tier
    - Macro: FRED (Federal Reserve), ECB SDW, Yahoo Finance (DXY, indici)
-3. **Script di ingestion minimale** per OHLCV daily di 1-2 asset (BTC + ETH)
-   → salvataggio in `data/raw/` come parquet
-4. **Notebook di esplorazione**: statistiche descrittive, distribuzioni
+5. **Script di ingestion minimale** per OHLCV daily di 1-2 asset (BTC + ETH)
+   → salvataggio in `data/raw/` come parquet. Codice asset-class-agnostic
+   (ADR-014): tutti i parametri di asset class come configurazione, niente
+   hardcoded "crypto"
+6. **Notebook di esplorazione**: statistiche descrittive, distribuzioni
    rendimenti, autocorrelazione, stagionalità, identificazione finestre di
    halving Bitcoin
+7. **Primo capitolo educational L1**: "Cos'è un asset, una borsa, un broker" —
+   scritto in parallelo all'ingestion, perché tocca gli stessi concetti
 
 ## Blocker
 Nessuno.

@@ -6,16 +6,19 @@
 
 ---
 
-## ✅ Decisioni critiche di Fase 0 — RISOLTE
+## ✅ Decisioni risolte
 
 | # | Domanda | Risolta da |
 |---|---|---|
-| Q1 | Scope finale: trading reale o solo ricerca? | [ADR-004](./DECISIONS.md#adr-004--scope-ricerca-ora-live-trading-come-obiettivo-condizionale-futuro) |
-| Q2 | Asset universe iniziale | [ADR-005](./DECISIONS.md#adr-005--asset-universe-iniziale) |
-| Q3 | Timeframe predittivo | [ADR-006](./DECISIONS.md#adr-006--multi-timeframe-predittivo) |
-| Q4 | Tipo di output del modello | [ADR-007](./DECISIONS.md#adr-007--output-del-modello-multi-dimensionale) |
-| Q5 | Budget per dati premium | [ADR-008](./DECISIONS.md#adr-008--budget-dati-gratuiti-prima-premium-dopo-conferma-di-necessit) |
-| Q6 | Stack tecnologico | [ADR-009](./DECISIONS.md#adr-009--stack-tecnologico) |
+| Q1 | Scope finale: trading reale o solo ricerca? | [ADR-004](./DECISIONS.md) |
+| Q2 | Asset universe iniziale | [ADR-005](./DECISIONS.md) |
+| Q3 | Timeframe predittivo | [ADR-006](./DECISIONS.md) |
+| Q4 | Tipo di output del modello | [ADR-007](./DECISIONS.md) |
+| Q5 | Budget per dati premium | [ADR-008](./DECISIONS.md) |
+| Q6 | Stack tecnologico | [ADR-009](./DECISIONS.md) |
+| Q13 | Capitale virtuale del paper trading | [ADR-011](./DECISIONS.md) |
+| Q14 | Exchange di riferimento per fee | [ADR-012](./DECISIONS.md) |
+| Q15 | Modello di slippage | [ADR-013](./DECISIONS.md) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -96,56 +99,57 @@ multi-source (Fase 3).
 
 ---
 
-### Q13 — Capitale virtuale iniziale del paper trading
-Quanti euro virtuali assegniamo al paper portfolio (ADR-010)?
+### Q16 — Universe equity per la futura Fase 8
+Quando estenderemo a equity tradizionale, su quale universe partiamo?
 
 Opzioni:
-- **A**: Allineato al portafoglio reale dell'utente — ~1 200 EUR/anno DCA,
-  quindi capitale virtuale ~1 200 EUR aggiornato annualmente, o stock fittizio
-  iniziale 5 000 EUR
-- **B**: 10 000 EUR fissi all'inizio del paper trading
-- **C**: Più scenari paralleli (es. 1k / 10k / 100k) per vedere come scala
-  con la size — utile per analisi di slippage
+- **A**: **S&P 500** (USA, large cap) — più dati, più ricerca, alta liquidità
+- **B**: **NASDAQ 100** (USA, tech-pesante) — overlap con interessi tech crypto
+- **C**: **FTSE MIB** (Italia) — coerente con la residenza dell'utente,
+  fiscalmente più accessibile in pratica
+- **D**: **Combinazione**: indici USA + alcuni titoli italiani liquidi
+- **E**: Solo **ETF** (S&P 500, MSCI World, settori specifici) come baseline
+  più semplice prima di passare a singoli titoli
 
-*Raccomandazione*: **B** come default, valutare **C** se vediamo che lo
-slippage modeling impatta i risultati.
+*Direzione iniziale (non vincolante)*: probabile **E** + alcuni nomi USA
+liquidi. **C** è interessante per uso pratico ma ha meno copertura di news.
 
-*Decisione rinviata a inizio Fase 6.*
+*Decisione rinviata a inizio Fase 8.*
 
 ---
 
-### Q14 — Exchange di riferimento per fee e spread
-Le fee e gli spread differiscono tra exchange. Quale modelliamo?
+### Q17 — Broker di riferimento per il paper trading equity
+Per modellare fee/spread su equity, quale broker simuliamo?
 
 Opzioni:
-- **A**: Binance spot (fee 0.1% maker/taker base, alta liquidità) — *default proposto in ADR-010*
-- **B**: Coinbase Advanced Trade (fee più alte ma più "retail-friendly")
-- **C**: Kraken
-- **D**: Modelliamo più exchange e mostriamo P&L per ciascuno (più realistico
-  ma overhead)
+- **A**: **Interactive Brokers** (IBKR) — standard de facto per retail
+  internazionale, fee competitive, modello tariffario complesso ma noto
+- **B**: **Degiro** — popolare in Italia, fee semplici, ma copertura asset
+  più limitata
+- **C**: **Fineco / Directa** — italiani, comodi per residenti, fee più alte
+- **D**: Multipli (come per crypto, modelliamo IBKR + uno italiano)
 
-*Raccomandazione*: partire da **A**. Quando arriveremo al live (se), questa
-decisione condiziona anche il broker reale.
+*Direzione iniziale*: probabile **D** (IBKR come benchmark + uno italiano
+per realismo pratico per l'utente).
 
-*Decisione rinviata a inizio Fase 6.*
+*Decisione rinviata a inizio Fase 8.*
 
 ---
 
-### Q15 — Modello di slippage e market impact
-Quanto realismo serve nella simulazione dell'impatto?
+### Q18 — Granularità del modulo didattico
+Quanto in profondità entriamo per ciascun livello (ADR-015)?
 
-Opzioni:
-- **A**: Slippage costante (es. sempre 5 bps) — semplice ma poco realistico
-- **B**: Slippage proporzionale al bid-ask spread storico — realistico per
-  ordini piccoli su asset liquidi (i nostri Tier 1)
-- **C**: Modello di impatto sub-lineare basato su volume (square-root law) —
-  serio ma richiede dati di order book
-- **D**: Slippage random calibrato sulla volatilità — onesto sull'incertezza
+- **A**: Sintetico — un solo file markdown per capitolo, ~1-2 pagine,
+  rimando a letture esterne
+- **B**: Esteso — più file per capitolo, esempi pratici sui dati del progetto,
+  esercizi
+- **C**: Ibrido — sintetico per L1/L2, esteso per L3/L4 dove l'utente vuole
+  davvero imparare a fare
 
-*Raccomandazione*: **B** in Fase 6, considerare **C** o **D** se i risultati
-mostrano sensitività al modello.
+*Raccomandazione*: **C**. L1/L2 sono "alfabetizzazione", L3/L4 sono il vero
+valore aggiunto del progetto.
 
-*Decisione rinviata a inizio Fase 6.*
+*Decisione rinviata a quando si scriverà il primo capitolo (Fase 1).*
 
 ---
 

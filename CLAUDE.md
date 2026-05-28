@@ -68,12 +68,23 @@ In quest'ordine:
 
 **Struttura cartelle** (convenzione):
 ```
-src/          # moduli Python riusabili
-notebooks/    # esplorazione, EDA, prototipi
-data/raw/     # dati grezzi scaricati (gitignored)
-data/processed/  # dataset puliti pronti per modelli (gitignored)
-tests/        # test pytest
+src/                       # moduli Python riusabili (asset-class-agnostic, ADR-014)
+notebooks/                 # esplorazione, EDA, prototipi
+data/raw/                  # dati grezzi scaricati (gitignored)
+data/processed/            # dataset puliti pronti per modelli (gitignored)
+tests/                     # test pytest
+education/                 # modulo didattico multi-livello (ADR-015)
+  L1_principiante/         # Investor 101
+  L2_intermedio/           # Smart Investor
+  L3_avanzato/             # Quantitative Investor
+  L4_esperto/              # Wolf / Professional
 ```
+
+**Principio architetturale chiave** (ADR-014): il codice è
+**asset-class-agnostic**. Non hardcodare assunzioni crypto-only (es. "il
+mercato è sempre aperto", "non ci sono dividendi"). Asset, broker, fee model,
+calendari sono configurazione. L'implementazione effettiva è solo crypto
+fino a Fase 6 inclusa, ma l'astrazione c'è già.
 
 **Asset universe** (ADR-005):
 - **Tier 1** (priorità massima, deep analysis): BTC, ETH, SOL, LINK, POL

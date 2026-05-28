@@ -410,6 +410,266 @@ non negoziabili:
 
 ---
 
+## ADR-011 — Paper trading: scenari multipli con possibilità di reset
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q13
+
+**Contesto**: ADR-010 ha richiesto di definire il capitale virtuale iniziale.
+L'utente vuole l'opzione **multi-scenario** (più portafogli paralleli con
+size diverse) e la possibilità di **riavviare** (resettare) gli scenari.
+
+**Decisione**:
+
+- Il `PaperBroker` supporta **N scenari indipendenti**, ciascuno identificato
+  da un `scenario_id` (es. `small_1k`, `mid_10k`, `large_100k`, o nomi
+  custom). Default proposti: 1 000 / 10 000 / 100 000 EUR.
+- Ogni scenario ha il proprio portfolio, storico ordini, equity curve.
+- Esiste un comando di **reset** che azzera uno scenario specifico (capitale
+  riportato all'iniziale, posizioni chiuse, storico archiviato e non
+  cancellato — l'archivio resta per audit/confronto).
+- Esiste un comando di **fork**: clonare uno scenario in un nuovo ID per
+  testare strategie alternative dallo stesso punto di partenza.
+- Lo storico degli scenari "archiviati" tramite reset resta consultabile.
+  Non si cancella mai nulla: l'archivio è valore per analisi a posteriori
+  (es. "cosa ha funzionato sul mio scenario 10k tra gen e mar 2027?").
+
+**Conseguenze**:
+
+- Schema dati con scenario_id come dimensione di partizionamento
+- Engine deve gestire più portfolio simultanei → necessità di state isolato
+  per scenario
+- UI futura (Fase 7) deve permettere selezione scenario e comparazione
+  side-by-side
+- Vincolo: gli scenari sono **paralleli**, non sequenziali. Tutti vedono
+  gli stessi segnali nello stesso momento, differiscono solo in capitale e
+  sizing — utile per studiare scaling
+
+---
+
+## ADR-012 — Paper trading: doppio modello broker, Binance e Kraken
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q14
+
+**Contesto**: ADR-010 proponeva Binance come exchange di riferimento per il
+modello fee. L'utente fa trading reale su **Kraken**. Per la futura
+transizione a live, modellare anche Kraken è prezioso.
+
+**Decisione**:
+
+- Modelliamo **due broker simulati** in parallelo: **Binance** e **Kraken**.
+- Default per scenari nuovi: **Binance** (più liquido, fee più bassa, è il
+  benchmark "best-case").
+- L'utente può creare scenari con broker = **Kraken** per simulare le
+  condizioni reali del suo exchange.
+- Il modello fee è **parametrizzato per broker**:
+  - Binance spot: ~0.10% maker/taker (default tier 0)
+  - Kraken spot: ~0.16% maker / ~0.26% taker (tier "Starter", calibrabile)
+- Il confronto Binance-vs-Kraken sullo stesso segnale mostra l'impatto reale
+  delle fee sulle metriche.
+
+**Conseguenze**:
+
+- Interfaccia `Broker` astratta espone configurazione fee parametrica
+- Aggiunta colonna `broker` nello schema scenari
+- Documentazione dei tier di fee con riferimenti ufficiali (vanno
+  ri-verificati prima dell'effettivo go-live, le fee cambiano)
+- Quando arriverà il momento del live trading reale, il default broker sarà
+  Kraken (allineato al portafoglio dell'utente). Decisione formale rinviata
+  alla futura ADR sul live trading
+
+---
+
+## ADR-013 — Modello di slippage: proporzionale al bid-ask spread
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: OPEN_QUESTIONS Q15
+
+**Contesto**: ADR-010 richiedeva di definire il modello di slippage del paper
+broker. L'utente ha delegato la scelta.
+
+**Decisione**: Modello a due componenti, semplice ma non ingenuo.
+
+```
+slippage_cost = max(half_spread_pct, base_cost_bps) * size_adjustment
+size_adjustment = 1 + impact_coeff * (order_value / avg_daily_volume)
+```
+
+Dove:
+
+- **`half_spread_pct`**: metà del bid-ask spread medio storico per
+  l'asset (rolling 30 giorni). Per asset Tier 1: tipicamente 1–5 bps su BTC/ETH,
+  più alto per SOL/LINK/POL
+- **`base_cost_bps`**: floor minimo per evitare slippage zero su asset
+  illiquidi senza dati di spread (default 2 bps)
+- **`impact_coeff`**: coefficiente di market impact (default 0 inizialmente:
+  per gli scenari fino a 100k EUR su asset Tier 1, l'impatto è trascurabile;
+  attiveremo il termine se passeremo a scenari grossi o asset illiquidi)
+- **`order_value`**: valore notional dell'ordine in EUR
+- **`avg_daily_volume`**: volume giornaliero medio dell'asset (rolling 30 giorni)
+
+**Direzione futura**: passare a un modello **square-root market impact** se
+i risultati mostreranno sensitività significativa al modello (tipico per
+ordini > 0.1% del volume giornaliero).
+
+**Conseguenze**:
+
+- Servono dati di spread (bid-ask) e volume per ogni asset, almeno daily
+- Per dati storici di spread su crypto: Kaiko (a pagamento) o approssimazione
+  via percentile inferiore di high-low (proxy gratuito)
+- Il modello è calibrabile per asset, non costante — necessario per essere
+  equo tra BTC e altcoin più piccole
+
+---
+
+## ADR-014 — Architettura asset-class-agnostic (preparare l'espansione a equity)
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+
+**Contesto**: L'utente ha espresso la volontà di estendere il sistema in
+futuro al **mercato azionario classico** (equity). Le borse tradizionali
+hanno proprietà diverse dal mercato crypto: orari di mercato, weekend e
+festività, dividendi, splits, gap di apertura, currency multiple, fiscalità
+diversa, regolamentazione diversa, set di dati e provider diversi.
+
+Far emergere queste differenze come "patch" su una codebase crypto-only
+sarebbe molto costoso. Va deciso ora il principio architetturale.
+
+**Decisione**: Tutti i moduli del sistema (data ingestion, feature
+engineering, models, backtesting, paper broker, dashboard) sono progettati
+per essere **asset-class-agnostic** fin dalla Fase 1.
+
+Concretamente:
+
+- `Asset` è una struttura prima classe con campi:
+  ```
+  symbol, asset_class, exchange, currency, trading_calendar,
+  fee_model, data_source, lot_size, tick_size
+  ```
+- `asset_class ∈ {crypto, equity, etf, forex, ...}` — enum estendibile
+- Il `trading_calendar` astrae 24/7 (crypto) vs 9:30–16:00 NY (NYSE) vs
+  9:00–17:30 Milano (Borsa Italiana) ecc.
+- I modelli ML non assumono nulla sulla asset class. Le feature possono
+  essere class-specific (on-chain solo per crypto, fondamentali solo per
+  equity) ma il framework le aggrega in modo uniforme.
+- Il `Broker` ha implementazioni `BinancePaperBroker`, `KrakenPaperBroker`
+  (ADR-012) e in futuro `IBKRPaperBroker` o simile per equity, dietro la
+  stessa interfaccia.
+
+**Fase di implementazione effettiva**: il sistema **gira solo su crypto**
+fino a paper trading consolidato (Fase 6). L'espansione equity diventa
+**Fase 8** della roadmap. Ma la Fase 1 (ingestion) e le successive sono
+scritte già asset-agnostic.
+
+**Conseguenze**:
+
+- Lieve overhead di astrazione fin dall'inizio, accettabile
+- Quando aggiungeremo equity, l'effort sarà focalizzato su:
+  data sources, fee models, calendari, gestione corporate actions —
+  NON riscrittura di pipeline
+- Vincolo per i contributori (Claude inclusa): non hardcodare assunzioni
+  crypto-only (es. "il mercato è sempre aperto", "non ci sono dividendi")
+- Le feature di sentiment/news sono già universalmente applicabili
+- L'universe equity (quale borsa, quali titoli) è una **Open Question**
+  da risolvere prima della Fase 8
+
+---
+
+## ADR-015 — Modulo didattico multi-livello come componente del progetto
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+
+**Contesto**: L'utente vuole un modulo didattico integrato che insegni il
+mercato azionario per livelli crescenti: principiante → intermedio →
+avanzato → "wolf of wall street" (esperto/pro). L'idea è duplice:
+formare l'utente stesso mentre il progetto cresce, e mantenere un riferimento
+consultabile sui concetti usati nel sistema.
+
+**Decisione**:
+
+- Il modulo didattico è una **componente di primo livello** del progetto,
+  non un add-on. Vive in `education/` come collezione di documenti markdown
+  organizzati per livello e tema, integrabili in futuro con notebook
+  Jupyter e con la dashboard finale (Fase 7).
+
+- **Quattro livelli**:
+
+  1. **Principiante** (`L1_principiante/`) — *"Investor 101"*
+     - Cos'è un asset, azione, obbligazione, crypto
+     - Borsa, exchange, broker, custodian
+     - Tipi di ordini (market, limit, stop)
+     - Lettura di un grafico OHLCV
+     - Fee, spread, slippage spiegati senza math
+     - Concetti base di portafoglio e diversificazione
+     - Fiscalità essenziale (capital gain) — solo concettuale, non consulenza
+
+  2. **Intermedio** (`L2_intermedio/`) — *"Smart Investor"*
+     - Indicatori tecnici (MA, MACD, RSI, BB) con esempi sui Tier 1
+     - Analisi fondamentale: bilanci, multipli, settori
+     - Risk management: position sizing, stop loss, drawdown
+     - Bias cognitivi (FOMO, loss aversion, anchoring)
+     - DCA vs lump sum
+     - Cicli di mercato e regimi
+     - Halving Bitcoin, on-chain basics
+
+  3. **Avanzato** (`L3_avanzato/`) — *"Quantitative Investor"*
+     - Backtesting onesto: look-ahead, survivorship, overfitting
+     - Modelli statistici (ARIMA, GARCH)
+     - ML in finanza (feature engineering, time-series CV)
+     - Sentiment analysis su news
+     - Derivati: futures, perpetuals, funding rate
+     - Volatility e modelli di volatilità
+     - Sharpe, Sortino, Calmar e quando ognuno conta
+
+  4. **Esperto / "Wolf"** (`L4_esperto/`) — *"Professional"*
+     - Market microstructure, order book dynamics
+     - Factor models (Fama-French, momentum, quality)
+     - Statistical arbitrage e pairs trading
+     - Reflexivity e behavioral finance avanzata
+     - Risk parity, Black-Litterman
+     - Deep learning per series temporali
+     - Considerazioni regolatorie e di compliance
+
+- **Principi di stesura**:
+  - Ogni contenuto include **esempi pratici sui dati del progetto stesso**
+    (es. "ecco cosa è successo a BTC il giorno del lancio degli ETF" usando
+    i nostri dati). Questa sinergia è il valore aggiunto rispetto a un
+    qualsiasi libro generico.
+  - I livelli sono **cumulativi**: chi legge L3 si assume conosca L1+L2.
+  - Lingua: **italiano** (coerente con ADR-003).
+  - Onestà: ogni capitolo include "cosa non ti sto dicendo" e "limiti di
+    questo approccio". Niente promesse di facile arricchimento.
+
+- **Cosa NON è il modulo**:
+  - Non è consulenza finanziaria personalizzata
+  - Non è un corso certificato
+  - Non è esauriente come un libro di testo: rimanda a letture esterne
+    (Hull, Tsay, Lopez de Prado, ecc.)
+
+- **Track parallelo**: il modulo didattico cresce in **parallelo** alle fasi
+  tecniche, non come fase dedicata. Si lavora su un capitolo quando il
+  contenuto è "fresco" (es. scrivere il capitolo su backtesting quando si
+  sta implementando la Fase 2, non prima e non a fine progetto).
+
+**Conseguenze**:
+
+- Nuova cartella `education/` con sottocartelle `L1_principiante/`,
+  `L2_intermedio/`, `L3_avanzato/`, `L4_esperto/`
+- Indice navigabile (`education/README.md`) creato all'inizio della Fase 1
+- Nessuna fase dedicata in roadmap: stream parallelo
+- Il modulo può essere consumato standalone (markdown) o integrato in
+  dashboard (Fase 7)
+- Vincolo per i contributori: quando si lavora su un argomento tecnico,
+  considerare se aggiunge un capitolo educational pertinente
+
+---
+
 <!--
 Template per nuove ADR:
 

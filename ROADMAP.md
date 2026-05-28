@@ -194,16 +194,98 @@ l'utente può consultare lo stato del paper portfolio in qualsiasi momento.
 
 ---
 
+## Fase 8 — Espansione al mercato azionario tradizionale (equity)
+
+**Obiettivo**: estendere il sistema, già validato su crypto via paper
+trading, al **mercato azionario classico** (equity, ETF, indici). Vedi
+ADR-014 per il principio architetturale: il sistema è già scritto
+asset-class-agnostic dalla Fase 1, quindi questa fase è
+**implementazione + adattamento**, non riscrittura.
+
+### Prerequisiti
+- Fasi 1–6 completate con paper trading crypto consolidato
+- Decisioni sull'universe equity prese (open question)
+
+### Deliverable
+- [ ] Decidere universe equity iniziale (S&P 500? NASDAQ 100? FTSE MIB
+      italiano? Combinazione?) — vedi `OPEN_QUESTIONS.md` Q16
+- [ ] Integrare sorgenti dati equity: Yahoo Finance (free, baseline),
+      Alpha Vantage, Polygon.io free tier
+- [ ] Gestione **trading calendar** (orari di mercato, weekend, festività)
+- [ ] Gestione **corporate actions**: dividendi, splits, spin-off
+- [ ] Estensione del sentiment/news per coprire equity-specifico (earnings,
+      analyst ratings, 10-K/10-Q se accessibili)
+- [ ] Estensione del paper broker per equity: nuovo `EquityPaperBroker` con
+      fee model di un broker realistico (proposta: Interactive Brokers,
+      che è uno standard di riferimento; calibrabile per altri)
+- [ ] Riallenamento modelli su asset equity con metriche dedicate
+- [ ] Comparazione **portfolio cross-asset** (crypto + equity nello stesso
+      paper portfolio)
+
+### Criterio di completamento
+Il sistema produce segnali e paper-trade su almeno una manciata di asset
+equity, con metriche out-of-sample paragonabili al crypto.
+
+---
+
+## Fase 9 (eventuale) — Live trading
+
+**Non in roadmap attiva.** Vedi ADR-004 per i gate:
+- ≥ 3 mesi di paper trading positivo vs benchmark
+- Risk management framework formalizzato
+- Nuova ADR esplicita
+- Conferma documentata dell'utente
+
+---
+
+## Stream parallelo — Modulo didattico
+
+Vedi ADR-015. Cresce in `education/` **in parallelo** alle fasi tecniche.
+Non ha una fase dedicata: si scrive un capitolo quando l'argomento è
+"fresco" perché lo stiamo toccando nel codice.
+
+**Quattro livelli**:
+- `L1_principiante/` — Investor 101
+- `L2_intermedio/` — Smart Investor
+- `L3_avanzato/` — Quantitative Investor
+- `L4_esperto/` — Wolf of Wall Street / Professional
+
+### Cosa va fatto nella Fase 1
+- [ ] Creare `education/README.md` come indice navigabile
+- [ ] Stub delle 4 cartelle di livello con un README ciascuna
+- [ ] Primo capitolo L1: "Cos'è un asset, una borsa, un broker"
+
+### Capitoli da scrivere mentre si lavora alle fasi tecniche
+- Durante Fase 1 (ingestion): L1 — basics di mercato, OHLCV, fee
+- Durante Fase 2 (backtest): L3 — backtesting onesto, look-ahead bias
+- Durante Fase 3 (NLP/news): L2 — bias cognitivi, FOMO; L3 — sentiment analysis
+- Durante Fase 4 (ML): L3 — ML in finanza, time-series CV
+- Durante Fase 5 (regimi/cicli): L2 — cicli; L3 — regime detection
+- Durante Fase 6 (paper trading): L1 — DCA vs lump sum; L2 — risk management
+- Durante Fase 7 (output): integrazione capitoli in dashboard
+- Durante Fase 8 (equity): L1 e L2 — equity basics, fondamentali
+
+I capitoli di **L4 ("Wolf")** sono scritti per ultimi e includono argomenti
+che probabilmente non implementeremo (es. market microstructure, HFT
+considerations) ma che vanno conosciuti per onestà intellettuale.
+
+---
+
 ## Note sulla roadmap
 
-- **Le fasi sono lineari ma rivisitabili**: scoperte in Fase 3 possono richiedere
-  di tornare in Fase 1 (nuove sorgenti dati). Va bene, basta tracciarlo in
-  `STATUS.md`.
-- **Ogni fase può "fallire"**: scoprire che non c'è segnale è un risultato valido.
-- **Le fasi 5, 6 e 7 sono condizionate**: ha senso affrontarle solo se le fasi
-  precedenti producono baseline funzionanti. In particolare, **Fase 6 (paper
-  trading) ha senso solo se Fase 4 produce modelli che battono benchmark
-  out-of-sample**. Altrimenti staremmo simulando trade su segnali rumorosi.
-- **Eventuale Fase 8 — Live trading**: non in roadmap attuale. Richiede nuova
-  ADR esplicita, ≥3 mesi di paper trading positivo, risk management
-  formalizzato. Vedi ADR-004.
+- **Le fasi sono lineari ma rivisitabili**: scoperte in Fase 3 possono
+  richiedere di tornare in Fase 1 (nuove sorgenti dati). Va bene, basta
+  tracciarlo in `STATUS.md`.
+- **Ogni fase può "fallire"**: scoprire che non c'è segnale è un risultato
+  valido.
+- **Le fasi 5, 6, 7, 8 sono condizionate**: ha senso affrontarle solo se le
+  fasi precedenti producono baseline funzionanti. In particolare:
+  - **Fase 6 (paper trading)** ha senso solo se Fase 4 produce modelli che
+    battono benchmark out-of-sample
+  - **Fase 8 (equity)** ha senso solo se Fase 6 dimostra che il sistema
+    funziona su crypto: estendere un sistema non-funzionante non lo fa
+    diventare funzionante
+- **Lo stream educational è disaccoppiato**: cresce in parallelo, non
+  blocca e non è bloccato dalle fasi tecniche.
+- **Eventuale Fase 9 — Live trading**: vedi sopra, condizionata e fuori
+  roadmap attiva.
