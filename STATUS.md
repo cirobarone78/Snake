@@ -300,6 +300,14 @@
   CoinGecko 9 + Composer 7 + Assets 5 = **36/36 pytest verde**,
   ruff pulito
 
+### 2026-05-28 — Sessione 2 (chiusura): educational L1.02
+- Pubblicato `education/L1_principiante/02_tipi_di_ordine.md`:
+  market / limit / stop / stop-limit / time-in-force, con esempi su
+  BTC e collegamento esplicito a ADR-013 (modello slippage) e ai dati
+  Binance che stiamo scaricando
+- L1 ora ha 2/10 capitoli pubblicati. Prossimo: L1.03 sulla lettura
+  dei grafici (candele, volume)
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
@@ -310,7 +318,8 @@
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
    - Granularità intra-day via Binance già esposta ma non ancora usata
    - Dominance time series (richiede Q24)
-2. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
+2. **Capitolo educational L1.03**: come si legge un grafico (candele,
+   volume) — L1.02 sui tipi di ordine completato a fine sessione 2
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro

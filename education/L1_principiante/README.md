@@ -7,7 +7,7 @@
 ## Capitoli
 
 1. [Cos'è un asset, una borsa, un broker](./01_asset_borsa_broker.md) ✅
-2. *(pianificato)* Tipi di ordine: market, limit, stop
+2. [Tipi di ordine: market, limit, stop](./02_tipi_di_ordine.md) ✅
 3. *(pianificato)* Come si legge un grafico di prezzo (candele, volume)
 4. *(pianificato)* Fee, spread, slippage spiegati senza matematica
 5. *(pianificato)* Portafoglio e diversificazione
