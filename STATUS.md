@@ -269,6 +269,37 @@
   dominance servirà append. Decisione rinviata a quando avremo bisogno
   di dominance storica (presumibilmente Fase 2+)
 
+### 2026-05-28 — Sessione 2 (cont.): EDA crypto-vs-macro + test Yahoo
+- **Eseguito `notebooks/02_crypto_vs_macro.ipynb`** sui 9 asset
+  (5 crypto + 4 macro), 974 trading day comuni (2020-04 → 2025-03):
+
+  Correlazioni statiche notevoli:
+  | | BTC | ETH | DXY | SPX | NDX | GOLD |
+  |---|---|---|---|---|---|---|
+  | BTC vs … | 1.00 | 0.83 | **-0.21** | **0.39** | 0.39 | 0.08 |
+  | ETH vs … | 0.83 | 1.00 | -0.22 | 0.39 | 0.38 | 0.10 |
+  | SPX ↔ NDX | | | | 0.93 | | |
+  | GOLD ↔ DXY | | | -0.42 | | | |
+
+  Conclusioni:
+  - **Crypto è risk-on**: positivo con tech equity, negativo con
+    dollaro. Non è "digital gold" (correlazione GOLD vicina a zero)
+  - **SPX/NDX co-muovono** (0.93): qualsiasi feature derivata da uno
+    è quasi-ridondante con l'altro
+  - **GOLD-DXY -0.42** conferma il dollaro come fattore principale
+    per oro, mentre lo è meno per crypto
+- **Rolling-90d statistics** (correlazione crypto vs macro):
+  std 0.12-0.17 → relazioni instabili, regime-dependent. Apre la
+  strada a regime-switching models in Fase 2
+- **7 nuovi test** per `YahooFinanceSource` (mock di yfinance, no
+  network): missing yahoo_symbol → ValueError, invalid interval →
+  ValueError, column rename + tz UTC normalization, tz conversion
+  (NY → UTC), NaN close drop, empty response → empty frame, kwargs
+  forwarding (auto_adjust + actions baked-in)
+- **Coverage simmetrica sui 3 provider**: Yahoo 7 + Binance 8 +
+  CoinGecko 9 + Composer 7 + Assets 5 = **36/36 pytest verde**,
+  ruff pulito
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
@@ -280,11 +311,11 @@
    - Granularità intra-day via Binance già esposta ma non ancora usata
    - Dominance time series (richiede Q24)
 2. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
-3. **Test su YahooFinanceSource** (mock di yfinance, no network) —
-   simmetrico a quelli appena aggiunti per BinanceSource
-4. **(Fase 2 preview)** Regime clustering / regime-switching sulle
+3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
-   appena fatta
+   appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
+   sono il segnale concreto che i regimi esistono e vale la pena
+   modellarli
 
 ## Note per la prossima sessione
 
