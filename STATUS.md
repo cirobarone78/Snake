@@ -9,7 +9,7 @@
 2026-05-28
 
 ## Fase corrente
-**Fase 1 — Esplorazione dati** ⏳ *in corso (parte fondazionale completata, fetch reale bloccato da network policy)*
+**Fase 1 — Esplorazione dati** ⏳ *in corso (fetch reale completato, EDA da fare)*
 
 ## Cosa è stato fatto
 
@@ -52,38 +52,44 @@
 - **Lint pulito**: ruff su src/ e tests/ tutto verde
 - **README di progetto** aggiornato con quickstart e network policy needed
 
+### 2026-05-28 — Sessione 2: fetch reale Yahoo Finance OK
+- Verifica connettività: `curl -sI https://query2.finance.yahoo.com/`
+  ritorna 429 (anti-bot edge contro UA scarno di curl); l'endpoint dati
+  `query1.finance.yahoo.com/v8/finance/chart/<SYM>` ritorna **200** con UA
+  browser. `yfinance` (via `curl-cffi`) passa senza problemi.
+- **`uv run python -m src.ingestion.tier1.fetch_tier1` completato**:
+  9/9 asset scaricati in `data/raw/yahoo/{crypto,index,commodity}/`
+  - BTC, ETH, LINK: 3069 righe, 2018-01-01 → 2026-05-27 (full)
+  - SOL: 2239 righe, 2020-04-10 → 2026-05-27 (dal lancio Solana)
+  - **POL: 1181 righe, 2020-08-07 → 2023-10-31 — anomalia**
+    (vedi `OPEN_QUESTIONS.md` Q21: ticker POL-USD su Yahoo è troncato
+    post-rebrand MATIC→POL del 2024)
+  - DXY, SPX, NDX, GOLD: ~2111-2113 righe, 2018-01-02 → 2026-05-27
+    (mercato chiuso nei weekend, normale)
+- **Quality check superato**: 0 NaN, 0 gap "anomali" per tutti gli asset
+- **Nota su network policy**: i 403 `host_not_allowed` riportati nella
+  sessione precedente sono spariti — l'ambiente attuale permette outbound
+  verso Yahoo. `fc.yahoo.com` (cookie/crumb endpoint usato da yfinance in
+  alcuni casi) è ancora `host_not_allowed` ma non è necessario per il
+  chart endpoint pubblico.
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
-## Blocker
-- 🛑 **Network policy dell'ambiente blocca outbound HTTPS** verso le fonti
-  dati. Verificato: `query2.finance.yahoo.com`, `api.binance.com`,
-  `api.coingecko.com` rispondono tutti `403 Host not in allowlist`.
-  Lo script di ingestion è funzionante (struttura, parsing, persistenza
-  validati) ma non può scaricare dati reali finché l'allowlist non viene
-  aggiornata.
-
-  **Cosa serve fare** (richiede intervento utente nella config ambiente
-  Claude Code on the web):
-  - Aprire la policy per i domini elencati in `docs/data_sources_tier1.md`
-    sezione "Prerequisiti operativi"
-  - Rilanciare `uv run python -m src.ingestion.tier1.fetch_tier1`
-  - Quindi eseguire il notebook EDA
-
 ## Prossimo step (Fase 1, continua)
 
-1. **Sbloccare network** (utente lato config ambiente)
-2. **Verificare fetch reale**: rilanciare `fetch_tier1`, controllare row counts
-   e qualità dati (gap, NaN, copertura storica per ciascun asset)
-3. **Eseguire notebook EDA** su BTC + ETH; documentare findings (skew,
-   kurtosis, volatility clustering)
-4. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
+1. **Risolvere quirk POL** (vedi `OPEN_QUESTIONS.md` Q21): decidere se
+   passare a `MATIC-USD`, concatenare i due ticker, sostituire l'asset, o
+   switchare provider per POL
+2. **Eseguire notebook EDA** (`notebooks/01_exploration_btc_eth.ipynb`)
+   su BTC + ETH; documentare findings (skew, kurtosis, volatility clustering)
+3. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
    - Binance public API (granularità intra-day)
    - CoinGecko (top 20 dinamica + dominance + market cap)
    - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
-5. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
-6. **Test su YahooFinanceSource** (mock di yfinance, no network)
+4. **Capitolo educational L1.02**: tipi di ordine (collegato al fetch reale)
+5. **Test su YahooFinanceSource** (mock di yfinance, no network)
 
 ## Note per la prossima sessione
 
@@ -92,9 +98,9 @@
 - Non rimettere in discussione lo scope senza motivo concreto
 - Convenzioni cartelle e principio asset-class-agnostic (ADR-014): mai
   hardcodare "crypto" — usare l'Asset model
-- Il codice della pipeline funziona, ha test che passano. Il prossimo step
-  *dipende dal network*, quindi conviene chiedere all'utente conferma che
-  l'allowlist sia stata aggiornata prima di rilanciare il fetch
+- Il codice della pipeline funziona, ha test che passano, e ora ha anche
+  dati reali in `data/raw/yahoo/` (gitignored). Il prossimo step naturale
+  è il notebook EDA, una volta risolto il dilemma POL
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente

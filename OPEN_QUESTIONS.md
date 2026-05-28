@@ -165,6 +165,28 @@ modelli. Decisione rinviata a inizio Fase 3.
 
 ---
 
+### Q21 — Ticker POL su Yahoo: storico troncato
+Il fetch Tier 1 (2026-05-28) ha scaricato `POL-USD` da Yahoo: 1181 righe,
+**range 2020-08-07 → 2023-10-31**, poi nessun dato. Su Yahoo, il ticker
+moderno post-migration MATIC→POL (2024) potrebbe essere mappato sotto un
+simbolo diverso, oppure lo storico continuativo è disponibile solo come
+`MATIC-USD` (pre-migration) concatenato con `POL-USD` (post-migration).
+
+Da chiarire prima dell'EDA:
+- **A**: usare `MATIC-USD` come simbolo Yahoo e ribattezzare l'asset
+  internamente (rispettando la realtà del rebrand)
+- **B**: concatenare `MATIC-USD` (fino a 2024-Q3) + `POL-USD` (da 2024-Q3)
+  con flag di continuità
+- **C**: sostituire POL con un altro Tier 1 (es. AVAX, ADA) se la
+  discontinuità dati è troppo onerosa
+- **D**: switchare su Binance/CoinGecko per POL (probabilmente più puliti
+  sul rebrand)
+
+*Decisione rinviata al prossimo touch-point con l'utente*. Per ora il file
+parquet POL_1d.parquet va trattato come incompleto.
+
+---
+
 ### Q18 — Granularità del modulo didattico
 Quanto in profondità entriamo per ciascun livello (ADR-015)?
 
