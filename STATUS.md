@@ -319,14 +319,51 @@
 
 ## Note per la prossima sessione
 
-- Leggere PRIMA `CLAUDE.md` e questo file. Tutte le decisioni architetturali
-  e di scope sono fissate in ADR-001 ÷ ADR-018 (`DECISIONS.md`)
+### Da fare per primo: FRED
+La prossima sessione apre la sorgente macro USA (FRED — Federal Reserve
+Economic Data). Per partire al volo:
+
+1. **API key (gratuita)** dell'utente: registrarsi su
+   https://fred.stlouisfed.org/docs/api/api_key.html, generare la key
+2. **Salvarla in `.env`** (già gitignored):
+   ```
+   FRED_API_KEY=la_tua_key_qui
+   ```
+   Il modulo userà `python-dotenv` (già in `pyproject.toml`) per
+   leggerla
+3. **Serie da scaricare per prime** (le più rilevanti per crypto/macro):
+   - `DFF` — Federal Funds Effective Rate (daily)
+   - `DGS10` — 10-Year Treasury Rate (daily)
+   - `DGS2` — 2-Year Treasury Rate (daily, per la 10Y-2Y curve)
+   - `CPIAUCSL` — CPI All Items (monthly)
+   - `M2SL` — M2 Money Supply (monthly)
+   - `UNRATE` — Unemployment Rate (monthly)
+   - `DTWEXBGS` — Broad Dollar Index (daily, alternativa al DXY di Yahoo)
+4. Pattern di implementazione: simmetrico a `CoinGeckoSource` —
+   eredita da `DataSource`, espone `fetch_series(series_id, start, end)`
+   → DataFrame con timestamp index e colonna `value`. Storage:
+   `data/raw/fred/{frequency}/{SERIES_ID}.parquet`
+5. Test con mock requests, no network
+
+### Contesto generale
+- Leggere PRIMA `CLAUDE.md` e questo file. Tutte le decisioni
+  architetturali e di scope sono fissate in ADR-001 ÷ ADR-021
+  (`DECISIONS.md`)
 - Non rimettere in discussione lo scope senza motivo concreto
 - Convenzioni cartelle e principio asset-class-agnostic (ADR-014): mai
   hardcodare "crypto" — usare l'Asset model
-- Il codice della pipeline funziona, ha test che passano, e ora ha anche
-  dati reali in `data/raw/yahoo/` (gitignored). Il prossimo step naturale
-  è il notebook EDA, una volta risolto il dilemma POL
+- Il codice della pipeline funziona, ha **36/36 test che passano**, e ha
+  dati reali da 3 provider in `data/raw/{yahoo,binance,coingecko}/`
+  (gitignored), + serie POL canonica in `data/processed/POL_1d.parquet`
+- I 3 provider esistenti sono il **reference pattern** per FRED: vedere
+  `src/ingestion/tier1/coingecko.py` per il template più recente (no
+  OHLCV, metodi specializzati, retry su 429, API key opzionale via env)
+- **Open question rilevanti**: Q24 (storage append per snapshot), Q23
+  (volume cross-venue), Q18 (granularità educational)
+- **Fase 2 hook empirico**: le std rolling 0.12-0.17 sulle correlazioni
+  crypto-macro nel notebook 02 dicono che i regimi esistono. Quando
+  apriremo Fase 2, partire da regime-switching o clustering su quelle
+  rolling correlations
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
