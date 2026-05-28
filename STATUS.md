@@ -75,13 +75,41 @@
   alcuni casi) è ancora `host_not_allowed` ma non è necessario per il
   chart endpoint pubblico.
 
+### 2026-05-28 — Sessione 2 (cont.): EDA BTC + ETH
+- Eseguito `notebooks/01_exploration_btc_eth.ipynb` con
+  `PYTHONPATH=. uv run jupyter nbconvert --execute` (3068 rendimenti
+  log-daily per asset, 2018-01-02 → 2026-05-27)
+- **Findings descrittivi** (fatti stilizzati della finanza tutti
+  confermati):
+
+  | | BTC | ETH |
+  |---|---|---|
+  | Mean log-return | 0.055%/d (~14% ann.) | 0.031%/d |
+  | Annualized vol | 64.8% | 85.1% |
+  | Skewness | -0.95 | -0.84 (entrambi left-skewed) |
+  | Kurtosis (excess) | 14.7 | 10.95 (Normal = 0 → fat tails) |
+  | Worst day | -46.5% | -55.1% |
+  | Best day | +17.2% | +23.1% |
+
+- **ACF — efficienza weak-form + volatility clustering**:
+  - `ACF(r)` lag 1: BTC -0.05, ETH -0.05 → rendimenti ~ unforecastable da
+    soli lag
+  - `ACF(|r|)` lag 1: BTC 0.16, ETH 0.16 → forte volatility clustering,
+    persistente a lag 5 (~0.12-0.13)
+  - Apre la strada a famiglia GARCH come baseline volatilità nelle fasi
+    successive
+- ETH è ~30% più volatile di BTC su base annualizzata (consistente con
+  ipotesi: "asset a maggiore beta ha più vol")
+- Nessuna sorpresa metodologica nei dati: distribuzione si comporta come
+  ci si aspetta da serie crypto, segnale che il fetch è pulito
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
-1. **Eseguire notebook EDA** (`notebooks/01_exploration_btc_eth.ipynb`)
-   su BTC + ETH; documentare findings (skew, kurtosis, volatility clustering)
+1. **Estendere EDA agli altri Tier 1** (SOL, LINK, POL): stessi grafici e
+   stessa tabella di descrittiva, confronto cross-asset
 2. **Aggiungere sorgenti Tier 1 mancanti** (in ordine di valore):
    - Binance public API (granularità intra-day)
    - CoinGecko (top 20 dinamica + dominance + market cap)
