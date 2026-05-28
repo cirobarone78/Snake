@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.pyright/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables and secrets (ADR-016 budget tracking, API keys)
+.env
+.env.local
+*.key
+*.pem
+
+# Data (ADR-009: parquet files in data/ are gitignored — too large, often licensed)
+data/raw/*
+data/processed/*
+data/cache/
+*.parquet
+*.csv
+*.feather
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
+.cache/
+.huggingface/
+models/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# uv
+.uv-cache/
+
+# OS
+Thumbs.db
