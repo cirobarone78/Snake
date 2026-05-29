@@ -10,7 +10,7 @@
 2. [Tipi di ordine: market, limit, stop](./02_tipi_di_ordine.md) ✅
 3. [Come si legge un grafico di prezzo (candele, volume)](./03_lettura_grafico.md) ✅
 4. [Fee, spread, slippage spiegati senza matematica](./04_fee_spread_slippage.md) ✅
-5. *(pianificato)* Portafoglio e diversificazione
+5. [Portafoglio e diversificazione](./05_portafoglio_diversificazione.md) ✅
 6. *(pianificato)* DCA (Dollar Cost Averaging) — pro e contro
 7. *(pianificato)* Volatilità e drawdown: cosa significano davvero
 8. *(pianificato)* Custodia: cold/hot wallet vs custodia su exchange
