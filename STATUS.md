@@ -379,8 +379,8 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
    - Dominance time series (richiede Q24)
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
-2. **Capitolo educational L1.06**: DCA (Dollar Cost Averaging) pro e
-   contro — L1.05 portafoglio/diversificazione completato in sessione 3
+2. **Capitolo educational L1.07**: volatilità e drawdown — L1.06 DCA
+   completato in sessione 3
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
@@ -478,8 +478,17 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   diversificazione funziona davvero; equal weight vs market cap vs
   convinzione vs risk-parity; ribilanciare come strategia contrarian;
   errori classici; cash come asset con opzionalità
-- L1 ora **5/10 capitoli pubblicati**. Prossimo: L1.06 su DCA
-  (Dollar Cost Averaging)
+
+### 2026-05-29 — Sessione 3 (cont.): educational L1.06
+- Pubblicato `education/L1_principiante/06_dca_dollar_cost_averaging.md`:
+  DCA vs lump sum, **risultato Vanguard onesto** (lump sum batte DCA
+  ~66% delle volte su 10 anni), perché il DCA è raccomandato comunque
+  per ragioni psicologiche e per chi ha solo flusso da stipendio,
+  variante value averaging, specificità crypto, collegamento esplicito
+  al fatto che **DCA sarà il benchmark più rilevante in Fase 6** —
+  battere buy-and-hold non basta, va battuto anche il DCA mensile
+- L1 ora **6/10 capitoli pubblicati**. Prossimo: L1.07 su volatilità
+  e drawdown
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente

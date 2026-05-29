@@ -11,7 +11,7 @@
 3. [Come si legge un grafico di prezzo (candele, volume)](./03_lettura_grafico.md) ✅
 4. [Fee, spread, slippage spiegati senza matematica](./04_fee_spread_slippage.md) ✅
 5. [Portafoglio e diversificazione](./05_portafoglio_diversificazione.md) ✅
-6. *(pianificato)* DCA (Dollar Cost Averaging) — pro e contro
+6. [DCA (Dollar Cost Averaging) — pro e contro](./06_dca_dollar_cost_averaging.md) ✅
 7. *(pianificato)* Volatilità e drawdown: cosa significano davvero
 8. *(pianificato)* Custodia: cold/hot wallet vs custodia su exchange
 9. *(pianificato)* Fiscalità essenziale (concettuale, non consulenza)
