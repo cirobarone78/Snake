@@ -374,8 +374,8 @@
    - Dominance time series (richiede Q24)
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
-2. **Capitolo educational L1.03**: come si legge un grafico (candele,
-   volume) — L1.02 sui tipi di ordine completato a fine sessione 2
+2. **Capitolo educational L1.04**: fee, spread, slippage senza
+   matematica — L1.03 sulla lettura del grafico completato in sessione 3
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
@@ -447,6 +447,16 @@
   sbagliate. Il count totale (540/1233 = 43.8%) è corretto, solo la
   tabella per-span no. Polish per la prossima volta che si tocca il
   notebook
+
+### 2026-05-29 — Sessione 3 (cont.): educational L1.03
+- Pubblicato `education/L1_principiante/03_lettura_grafico.md`:
+  candele OHLC, timeframe, scala log vs lineare, volume con caveat
+  cross-venue (collegamento esplicito a Q23), onestà su pattern di
+  analisi tecnica e hindsight bias, collegamento ai notebook EDA
+  esistenti come "alternativa quantitativa al guardare il grafico ad
+  occhio"
+- L1 ora **3/10 capitoli pubblicati**. Prossimo: L1.04 su fee, spread,
+  slippage senza matematica
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
