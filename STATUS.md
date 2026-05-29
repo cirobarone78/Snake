@@ -446,12 +446,17 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   signal generation serio servirà allineamento a release date (FRED
   ha l'API `vintagedates` per questo). Per la EDA descrittiva attuale,
   date di FRED OK
-- **Known issue minore** in `03_crypto_vs_fred_macro.ipynb` cell 8: il
+- ~~**Known issue minore** in `03_crypto_vs_fred_macro.ipynb` cell 8: il
   reporting "inversion spans >= 10 consecutive days" usa
   `idxmin/idxmax` su una boolean Series — restituisce posizioni
   sbagliate. Il count totale (540/1233 = 43.8%) è corretto, solo la
   tabella per-span no. Polish per la prossima volta che si tocca il
-  notebook
+  notebook~~ **Risolto in sessione 3**: refactor con run-length
+  encoding via groupby su DataFrame `{date, run}`. Output corretto:
+  1 sola span >=10 giorni, di **536 giorni dal 2022-07-06 al 2024-08-26**
+  — la più lunga inversione della curva 2Y-10Y della storia moderna USA.
+  Numeri consistenti col total count (4 giorni isolati in span da 1-9
+  giorni)
 
 ### 2026-05-29 — Sessione 3 (cont.): educational L1.03
 - Pubblicato `education/L1_principiante/03_lettura_grafico.md`:
