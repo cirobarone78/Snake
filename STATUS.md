@@ -374,8 +374,8 @@
    - Dominance time series (richiede Q24)
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
-2. **Capitolo educational L1.04**: fee, spread, slippage senza
-   matematica — L1.03 sulla lettura del grafico completato in sessione 3
+2. **Capitolo educational L1.05**: portafoglio e diversificazione —
+   L1.04 sui costi (fee/spread/slippage) completato in sessione 3
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
@@ -455,8 +455,17 @@
   analisi tecnica e hindsight bias, collegamento ai notebook EDA
   esistenti come "alternativa quantitativa al guardare il grafico ad
   occhio"
-- L1 ora **3/10 capitoli pubblicati**. Prossimo: L1.04 su fee, spread,
-  slippage senza matematica
+
+### 2026-05-29 — Sessione 3 (cont.): educational L1.04
+- Pubblicato `education/L1_principiante/04_fee_spread_slippage.md`:
+  i tre costi (fee dichiarata, spread invisibile, slippage
+  size-dependent) con esempi numerici concreti su BTC e su altcoin
+  illiquide; concetto di **round-trip cost** come metrica vera; trucco
+  "fee 0%" del PFOF spiegato; collegamento esplicito a ADR-012/ADR-013
+  (modello di slippage del paper trader) e ai limiti dei dati raw
+  che abbiamo (no bid/ask nei parquet → spread va stimato)
+- L1 ora **4/10 capitoli pubblicati**. Prossimo: L1.05 su
+  portafoglio e diversificazione
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
