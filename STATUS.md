@@ -6,7 +6,7 @@
 ---
 
 ## Ultimo aggiornamento
-2026-05-28
+2026-05-29
 
 ## Fase corrente
 **Fase 1 — Esplorazione dati** ⏳ *in corso (fetch reale completato, EDA da fare)*
@@ -308,16 +308,72 @@
 - L1 ora ha 2/10 capitoli pubblicati. Prossimo: L1.03 sulla lettura
   dei grafici (candele, volume)
 
+## Ultimo aggiornamento (sessione 3)
+2026-05-29
+
+### 2026-05-29 — Sessione 3: FRED come quarto provider Tier 1
+- **API key FRED** ottenuta gratis da
+  https://fredaccount.stlouisfed.org/apikeys, salvata in `.env`
+  (gitignored, verificato)
+- **Nuovo file** `src/ingestion/tier1/fred.py` con `FredSource`:
+  - Eredita solo da `DataSource` (FRED ritorna single-value series,
+    non OHLCV; stesso pattern di CoinGecko)
+  - Metodi: `fetch_series(series_id, observation_start, observation_end)`,
+    `fetch_series_info(series_id)`
+  - Validazione: senza `FRED_API_KEY` in env (o param esplicito)
+    rifiuta l'init con `ValueError`
+  - Gestione 400 con messaggio FRED (es. bad key) e 429 con retry
+    + backoff esponenziale (3 retry, base 5s)
+  - Conversione del sentinel `"."` → `NaN` (FRED indica così le
+    osservazioni mancanti)
+- **Nuovo script** `src/ingestion/tier1/fetch_fred.py`: 7 serie macro,
+  storage `data/raw/fred/{frequency}/{SERIES_ID}.parquet` (path-based
+  provenance per cadenza)
+- **12 nuovi test** (`tests/test_fred.py`, no network): init senza key
+  → ValueError, env vs explicit precedence, parser values + missing
+  sentinel + sort, fetch_series params, fetch_series_info metadata,
+  400 surfacing FRED error_message, 429 retry recovery + exhaustion.
+  **48/48 pytest verde, lint pulito**
+- **Fetch reale FRED** completato (~10 secondi totali):
+
+  | series | rows | freq | range | NaN | nota |
+  |---|---|---|---|---|---|
+  | DFF | 3070 | D | 2018-01-01 → 2026-05-28 | 0 | Fed funds rate |
+  | DGS2 | 2194 | D | 2018-01-01 → 2026-05-28 | 93 | 2Y Treasury |
+  | DGS10 | 2194 | D | 2018-01-01 → 2026-05-28 | 93 | 10Y Treasury |
+  | DTWEXBGS | 2190 | D | 2018-01-01 → 2026-05-22 | 96 | Broad Dollar |
+  | CPIAUCSL | 100 | M | 2018-01-01 → 2026-04-01 | 1 | CPI all items |
+  | M2SL | 100 | M | 2018-01-01 → 2026-04-01 | 0 | M2 money supply |
+  | UNRATE | 100 | M | 2018-01-01 → 2026-04-01 | 1 | Unemployment |
+
+  I NaN nelle daily series sono festività USA (93-96 in 8 anni = quadra)
+- **Insight già pronto: yield curve slope** (DGS10 − DGS2):
+  - Mean 2018-2026: **+0.25%**
+  - **Inverted nel 25.9% dei giorni** (segnale recessione classico)
+  - Slope corrente: ~0.46% (positivo, normal)
+- **Validazione cross-source DXY**:
+  - Yahoo DXY (paniere 6 major) ↔ FRED DTWEXBGS (paniere 26 partner)
+    su 2085 giorni comuni
+  - Level correlation **0.90**, log-return correlation **0.76**
+  - Alta ma non perfetta — sono effettivamente metriche diverse
+    (geographic mix), entrambe valide. Buon cross-check di
+    "dollaro strength"
+- Pipeline data ingestion **essenzialmente completa** per Fase 1:
+  4 provider (Yahoo + Binance.us + CoinGecko + FRED) coprono crypto
+  prices/volumes + global crypto market + US macro fundamentals.
+  Manca solo on-chain (Etherscan / Blockchain.com) come stretch goal
+
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
 ## Prossimo step (Fase 1, continua)
 
 1. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
-   - FRED (tassi, CPI, M2) — richiede API key gratuita
    - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
    - Granularità intra-day via Binance già esposta ma non ancora usata
    - Dominance time series (richiede Q24)
+   - Estendere `fetch_fred.py` con altre serie macro su demand
+     (housing, sentiment, ecc.) — base ormai c'è
 2. **Capitolo educational L1.03**: come si legge un grafico (candele,
    volume) — L1.02 sui tipi di ordine completato a fine sessione 2
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
@@ -328,32 +384,6 @@
 
 ## Note per la prossima sessione
 
-### Da fare per primo: FRED
-La prossima sessione apre la sorgente macro USA (FRED — Federal Reserve
-Economic Data). Per partire al volo:
-
-1. **API key (gratuita)** dell'utente: registrarsi su
-   https://fred.stlouisfed.org/docs/api/api_key.html, generare la key
-2. **Salvarla in `.env`** (già gitignored):
-   ```
-   FRED_API_KEY=la_tua_key_qui
-   ```
-   Il modulo userà `python-dotenv` (già in `pyproject.toml`) per
-   leggerla
-3. **Serie da scaricare per prime** (le più rilevanti per crypto/macro):
-   - `DFF` — Federal Funds Effective Rate (daily)
-   - `DGS10` — 10-Year Treasury Rate (daily)
-   - `DGS2` — 2-Year Treasury Rate (daily, per la 10Y-2Y curve)
-   - `CPIAUCSL` — CPI All Items (monthly)
-   - `M2SL` — M2 Money Supply (monthly)
-   - `UNRATE` — Unemployment Rate (monthly)
-   - `DTWEXBGS` — Broad Dollar Index (daily, alternativa al DXY di Yahoo)
-4. Pattern di implementazione: simmetrico a `CoinGeckoSource` —
-   eredita da `DataSource`, espone `fetch_series(series_id, start, end)`
-   → DataFrame con timestamp index e colonna `value`. Storage:
-   `data/raw/fred/{frequency}/{SERIES_ID}.parquet`
-5. Test con mock requests, no network
-
 ### Contesto generale
 - Leggere PRIMA `CLAUDE.md` e questo file. Tutte le decisioni
   architetturali e di scope sono fissate in ADR-001 ÷ ADR-021
@@ -361,18 +391,22 @@ Economic Data). Per partire al volo:
 - Non rimettere in discussione lo scope senza motivo concreto
 - Convenzioni cartelle e principio asset-class-agnostic (ADR-014): mai
   hardcodare "crypto" — usare l'Asset model
-- Il codice della pipeline funziona, ha **36/36 test che passano**, e ha
-  dati reali da 3 provider in `data/raw/{yahoo,binance,coingecko}/`
+- Il codice della pipeline funziona, ha **48/48 test che passano**, e ha
+  dati reali da 4 provider in `data/raw/{yahoo,binance,coingecko,fred}/`
   (gitignored), + serie POL canonica in `data/processed/POL_1d.parquet`
-- I 3 provider esistenti sono il **reference pattern** per FRED: vedere
-  `src/ingestion/tier1/coingecko.py` per il template più recente (no
-  OHLCV, metodi specializzati, retry su 429, API key opzionale via env)
+- I 4 provider esistenti sono il **reference pattern** per nuove fonti:
+  vedere `src/ingestion/tier1/fred.py` per il template più recente
+  (no OHLCV, metodi specializzati, retry su 429, API key obbligatoria
+  via env)
 - **Open question rilevanti**: Q24 (storage append per snapshot), Q23
   (volume cross-venue), Q18 (granularità educational)
 - **Fase 2 hook empirico**: le std rolling 0.12-0.17 sulle correlazioni
   crypto-macro nel notebook 02 dicono che i regimi esistono. Quando
   apriremo Fase 2, partire da regime-switching o clustering su quelle
   rolling correlations
+- **Nuovo dato disponibile per Fase 2**: yield curve slope FRED
+  (DGS10-DGS2) come potenziale feature regime — già inverted nel
+  25.9% dei giorni nel sample, segnale macro forte
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
