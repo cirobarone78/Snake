@@ -27,24 +27,66 @@ scrivere una singola riga di codice.
 
 ---
 
-## Fase 1 — Esplorazione dati
+## Fase 1 — Esplorazione dati ✅ *completata (2026-05-29)*
 
 **Obiettivo**: capire quali dati sono accessibili (gratis o low-cost), in che
 forma, con quale qualità.
 
 ### Deliverable
-- [ ] Inventario di sorgenti dati con: API, frequenza, storico disponibile,
-      licenza, costo, rate limit
-- [ ] Setup ambiente Python (o stack scelto) con virtualenv/poetry/uv
-- [ ] Script di ingestion **basico** per 1-2 asset (es. BTC, ETH) — solo OHLCV
-- [ ] Notebook di esplorazione: statistica descrittiva, distribuzioni di
-      rendimenti, autocorrelazioni, stagionalità, ciclo halving
-- [ ] Strategia di storage definita (file CSV/parquet locali → poi
-      eventualmente DB time-series)
+- [x] **Inventario di sorgenti dati** (`docs/data_sources_tier1.md` +
+      integrazioni concrete): Yahoo Finance, Binance.us (ADR-020),
+      CoinGecko, FRED — ciascuna con API, frequenza, storico, rate
+      limit, caveat documentati
+- [x] **Setup ambiente Python**: `uv` + Python 3.12, `pyproject.toml` con
+      ruff + pyright basic + pytest (ADR-009 confermato)
+- [x] **Script di ingestion** estesi oltre il deliverable minimo:
+  - Tutti i 5 Tier 1 crypto (BTC/ETH/SOL/LINK/POL) + context assets
+    (DXY/SPX/NDX/GOLD) via Yahoo
+  - Tutti i Tier 1 anche via Binance.us (cross-validation)
+  - Market chart + global dominance + top-20 dinamica via CoinGecko
+  - 7 serie macro USA (DFF, DGS2, DGS10, DTWEXBGS, CPIAUCSL, M2SL,
+    UNRATE) via FRED
+  - Composer multi-source (ADR-021) per asset con copertura provider
+    mista (caso POL chiuso)
+- [x] **Notebook di esplorazione** (3 notebook eseguiti, findings
+      documentati in `STATUS.md`):
+  - `01_exploration_btc_eth.ipynb`: stylized facts crypto su tutti i 5
+    Tier 1 (vol annualizzata 65-136%, fat tails, volatility clustering),
+    correlazioni cross-asset
+  - `02_crypto_vs_macro.ipynb`: crypto vs equity indices + DXY + GOLD
+    su 974 giorni comuni — crypto risk-on, non digital gold
+  - `03_crypto_vs_fred_macro.ipynb`: crypto vs tassi + curve slope +
+    CPI/M2/UNRATE — BTC vs CPI YoY mensile −0.40 (smonta narrativa
+    "inflation hedge")
+- [x] **Strategia di storage definita**: pipeline a 3 layer
+  - `data/raw/{provider}/{class}/{SYMBOL}_{interval}.parquet`
+  - `data/processed/{SYMBOL}_{interval}.parquet` con colonna `source`
+    per provenance (ADR-021)
+  - Tutto gitignored, retention policy locale
+- [x] **Test coverage**: 48/48 pytest verde, copertura simmetrica sui 4
+      provider (Yahoo, Binance, CoinGecko, FRED) + composer + assets
 
 ### Criterio di completamento
-Sappiamo esattamente quali sorgenti dati useremo, in che formato, con quali
-limiti.
+✅ Sappiamo esattamente quali sorgenti dati useremo, in che formato,
+con quali limiti. ADR-019, ADR-020, ADR-021 registrano le decisioni
+chiave emerse durante la fase (POL via MATIC-USD, Binance via .us,
+composer policy). Open question rimaste (Q23, Q24) non bloccano
+l'avanzamento alla Fase 2 — sono polish da affrontare quando il
+caso d'uso si presenta.
+
+### Cosa NON è stato fatto (e perché)
+- **On-chain (Etherscan, Blockchain.com)**: stretch goal Tier 1,
+  rimandato. Richiede API key Etherscan e una struttura dati diversa
+  (eventi blockchain non sono time series puro). Si farà a richiesta
+  durante Fase 4 (multifactor) quando le feature on-chain saranno
+  effettivamente usate
+- **Granularità intra-day via Binance**: l'interfaccia c'è già
+  (`BinanceSource` supporta tutti gli interval), ma `fetch_tier1.py`
+  estrae solo daily. Si attiverà se in Fase 2 si decide di lavorare
+  anche a 1h
+- **Stagionalità e ciclo halving**: analisi pianificate ma non
+  prioritarie per il completamento di Fase 1. Pre-tabellate come
+  esperimenti specifici per Fase 2 (regime detection)
 
 ---
 
@@ -53,17 +95,34 @@ limiti.
 **Obiettivo**: costruire l'infrastruttura di valutazione **prima** dei modelli
 complessi. Senza questa, qualsiasi risultato successivo è inattendibile.
 
+### Hook empirici dalla Fase 1
+La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
+- **Volatility clustering forte** (ACF(|r|) lag 1 = 0.16-0.27) → famiglia
+  GARCH/HAR è candidata naturale come baseline di varianza condizionata
+- **Correlazioni rolling instabili** (std 0.12-0.17) → regimi esistono,
+  il modello baseline deve essere valutato anche **regime-aware** non
+  solo full-sample
+- **BTC vs CPI YoY = −0.40** (e dollar headwind robusto) → almeno una
+  feature macro va affiancata al solo prezzo per testare se aggiunge
+  potere predittivo
+
 ### Deliverable
 - [ ] Indicatori tecnici classici implementati (MA, MACD, RSI, BB, ATR, OBV)
 - [ ] Framework di **backtesting walk-forward** con:
-  - Niente look-ahead bias (test esplicito)
-  - Costi di transazione inclusi (fee + slippage stimato)
+  - Niente look-ahead bias (test esplicito; per macro FRED → uso di
+    *release date* non *reference date*)
+  - Costi di transazione inclusi (fee + slippage stimato — modello
+    discusso in ADR-013, capitolo educational L1.04 come prerequisito
+    mentale)
   - Survivorship bias mitigato (se possibile)
   - Out-of-sample mandatory
 - [ ] Modello **baseline**: random walk + momentum semplice + ARIMA
 - [ ] Suite di metriche: Sharpe, Sortino, max drawdown, hit rate, profit factor,
       Calmar, time underwater
 - [ ] Confronto baseline vs buy-and-hold
+- [ ] **Regime detection** (eventualmente spostata qui da Fase 5 se i
+      regimi sono troppo importanti per essere ignorati a livello di
+      baseline)
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
@@ -250,10 +309,13 @@ Non ha una fase dedicata: si scrive un capitolo quando l'argomento è
 - `L3_avanzato/` — Quantitative Investor
 - `L4_esperto/` — Wolf of Wall Street / Professional
 
-### Cosa va fatto nella Fase 1
-- [ ] Creare `education/README.md` come indice navigabile
-- [ ] Stub delle 4 cartelle di livello con un README ciascuna
-- [ ] Primo capitolo L1: "Cos'è un asset, una borsa, un broker"
+### Cosa va fatto nella Fase 1 ✅ *completato (2026-05-29)*
+- [x] Creare `education/README.md` come indice navigabile
+- [x] Stub delle 4 cartelle di livello con un README ciascuna
+- [x] Primo capitolo L1: "Cos'è un asset, una borsa, un broker"
+- [x] **Bonus** (oltre il minimo di Fase 1): L1.02 tipi di ordine, L1.03
+      lettura grafico, L1.04 fee/spread/slippage. L1 ora 4/10 capitoli
+      pubblicati
 
 ### Capitoli da scrivere mentre si lavora alle fasi tecniche
 - Durante Fase 1 (ingestion): L1 — basics di mercato, OHLCV, fee

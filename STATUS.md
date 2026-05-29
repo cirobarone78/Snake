@@ -9,7 +9,12 @@
 2026-05-29
 
 ## Fase corrente
-**Fase 1 — Esplorazione dati** ⏳ *in corso (fetch reale completato, EDA da fare)*
+**Fase 1 — Esplorazione dati** ✅ *completata (2026-05-29)*
+→ pronti per **Fase 2 — Baseline tecnica & backtesting rigoroso**
+
+ROADMAP aggiornata: deliverable Fase 1 tutti spuntati, hook empirici
+da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
+−0.40) usati come vincoli per il design della Fase 2.
 
 ## Cosa è stato fatto
 
