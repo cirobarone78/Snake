@@ -374,9 +374,10 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
 ## Prossimo step (Fase 1, continua)
 
 1. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
-   - Etherscan + Blockchain.com (on-chain base) — Etherscan richiede API key
+   - Blockchain.com (BTC on-chain base) — non richiede API key
    - Granularità intra-day via Binance già esposta ma non ancora usata
-   - Dominance time series (richiede Q24)
+   - Snapshot history (richiede Q24) → particolarmente utile per gas
+     mainnet (Etherscan) e dominance (CoinGecko)
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
 2. **Educational stream**: livello L1 chiuso (10/10). I prossimi
@@ -506,6 +507,53 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   Sharpe/Sortino/Calmar, volatility clustering come ponte verso GARCH
   in Fase 2, collegamento esplicito ad ADR-007 (vol è dimensione di
   output del sistema)
+
+### 2026-05-29 — Sessione 3 (cont.): Etherscan come quinto provider Tier 1
+- **API key Etherscan** ottenuta gratis da
+  https://etherscan.io/myapikey, salvata in `.env` (gitignored)
+- **Nuovo file** `src/ingestion/tier1/etherscan.py` con `EtherscanSource`:
+  - Etherscan v2 multi-chain endpoint (chainid parametrizzato; default
+    Ethereum mainnet, supporto Polygon 137 disponibile)
+  - Eredita solo da `DataSource` (snapshot stato corrente, non OHLCV);
+    metodi: `fetch_eth_supply`, `fetch_eth_supply_components`,
+    `fetch_gas_oracle`, `fetch_eth_price`, `fetch_token_supply`
+  - **Envelope handling**: Etherscan ritorna HTTP 200 anche su errori
+    logici (status="0", message="NOTOK", result=reason). Il source
+    detecta e ri-lancia come `RuntimeError`
+  - **Wei stored as string**: i valori in wei (10^26+ per ETH supply,
+    10^27 per token supply) sfondano int64 → memorizzati come stringa
+    decimale per esattezza, accanto al float "human" (ETH/LINK/POL
+    interi) per analisi
+  - Retry+backoff esponenziale per 429 (3 retry, base 5s)
+  - Tier 1 ERC-20 contract addresses (LINK, POL post-rebrand) come
+    costanti del modulo; rimandare al modello Asset solo se servirà a
+    più moduli
+- **Nuovo script** `src/ingestion/tier1/fetch_etherscan.py`: 6 snapshot
+  in ~5 secondi
+- **12 nuovi test** (`tests/test_etherscan.py`, no network): envelope
+  parsing OK + envelope error mapping, wei string preservation,
+  retry recovery + exhaustion, params propagation. **60/60 pytest
+  verde, lint pulito**
+- **Fetch reale completato** (~5 secondi):
+  - **ETH supply 122,373,866** ETH (snapshot 2026-05-29)
+  - Components: 2.94M ETH in staking, **4.63M ETH bruciati cumulativi
+    post-EIP-1559**, 14.02M withdrawn post-Shapella → ETH è
+    deflationary on net per chi guarda burn vs issuance
+  - **Gas oracle 0.19 gwei** (safe/propose/fast tutti vicini) — il
+    gas mainnet 2026 è crollato per migrazione massiva su L2
+    (Optimism/Arbitrum/Base). Signal storico rilevante
+  - LINK supply 1B (hard cap confermato)
+  - POL supply 10.65B (compatibile con il rebrand MATIC→POL del 2024)
+- **Cross-check ETH price su 3 fonti** (snapshot odierno):
+  - Etherscan aggregated: $2,006.63
+  - Yahoo last close: $2,022.20 (−0.77% vs Etherscan)
+  - Binance.us last close: $1,985.71 (+1.05% vs Etherscan)
+  - Tutto entro ±1%, consistente con il fatto che le tre fonti hanno
+    snapshot intraday/EOD diversi ma allineati al momento
+- **Q24 estesa**: ora ci sono **cinque** snapshot da Etherscan
+  che vengono sovrascritti ogni run (oltre ai 2 di CoinGecko già
+  noti). La pipeline append-to-history per dominance / gas / supply
+  storica diventa ancora più desiderabile prima di Fase 2
 
 ### 2026-05-29 — Sessione 3 (chiusura): completamento L1 (capitoli 08-10)
 - **L1.08 Custodia**: not your keys not your coins, custodial vs hot
