@@ -379,8 +379,10 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
    - Dominance time series (richiede Q24)
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
-2. **Capitolo educational L1.08**: custodia (cold/hot wallet vs
-   exchange) — L1.07 volatilità/drawdown completato in sessione 3
+2. **Educational stream**: livello L1 chiuso (10/10). I prossimi
+   capitoli appartengono a L2 (Smart Investor) e si scriveranno
+   parallelamente alla Fase 2 (bias cognitivi, cicli/regimi, risk
+   management) o Fase 3 (sentiment, FOMO)
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
@@ -504,8 +506,32 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   Sharpe/Sortino/Calmar, volatility clustering come ponte verso GARCH
   in Fase 2, collegamento esplicito ad ADR-007 (vol è dimensione di
   output del sistema)
-- L1 ora **7/10 capitoli pubblicati**. Prossimo: L1.08 su custodia
-  (cold/hot wallet vs custodia su exchange)
+
+### 2026-05-29 — Sessione 3 (chiusura): completamento L1 (capitoli 08-10)
+- **L1.08 Custodia**: not your keys not your coins, custodial vs hot
+  vs cold wallet, casi storici (Mt.Gox/FTX/Celsius), seed phrase su
+  carta o acciaio mai cloud, multisig per importi grandi, 3 profili
+  pratici (500 EUR / 5-30k EUR / 50k+), collegamento al sistema (no
+  trading reale, API key sempre read-only)
+- **L1.09 Fiscalità essenziale**: disclaimer triplo (non consulenza,
+  evasione è reato), framework italiano (26% imposta sostitutiva +
+  quadro RW + IVAFE 0.2%), eventi tassabili (incluso swap
+  crypto→crypto), staking/airdrop/mining/hard fork, FIFO/LIFO/costo
+  medio, tool pratici (Koinly/CTC), DAC8 chiude la "crypto invisibile",
+  errori frequenti, collegamento al fatto che il sistema produce
+  rendimenti **lordi**
+- **L1.10 Cosa NON è il trading**: il capitolo "anti-fuffa" finale —
+  statistiche regolamentari (70-97% retail perde), promesse rosse
+  decodificate (rendimenti garantiti, "segreto nascosto", alta winrate
+  → tail catastrofica, backtest senza walk-forward = marketing),
+  modelli di business dei guru (affiliate/segnali/pump-and-dump),
+  survivorship bias, cosa funziona davvero (ETF + DCA + tempo), red
+  flags vs green flags, esplicito invito ad applicare lo **stesso
+  scetticismo al nostro progetto**
+
+- **L1 ora 10/10 capitoli pubblicati** — livello chiuso. Indice L1
+  aggiornato a "L1 completo (2026-05-29)" con pointer a L2 come
+  prossimo livello (scrivibile durante Fase 2-3)
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente

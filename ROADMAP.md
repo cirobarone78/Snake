@@ -313,9 +313,11 @@ Non ha una fase dedicata: si scrive un capitolo quando l'argomento è
 - [x] Creare `education/README.md` come indice navigabile
 - [x] Stub delle 4 cartelle di livello con un README ciascuna
 - [x] Primo capitolo L1: "Cos'è un asset, una borsa, un broker"
-- [x] **Bonus** (oltre il minimo di Fase 1): L1.02 tipi di ordine, L1.03
-      lettura grafico, L1.04 fee/spread/slippage. L1 ora 4/10 capitoli
-      pubblicati
+- [x] **Bonus L1 completo** (oltre il minimo di Fase 1):
+      tutti i 10 capitoli di L1 pubblicati durante la Sessione 3.
+      Asset/borsa/broker, tipi di ordine, lettura grafico,
+      fee/spread/slippage, portafoglio, DCA, vol/drawdown, custodia,
+      fiscalità, "cosa NON è il trading". L1 chiuso.
 
 ### Capitoli da scrivere mentre si lavora alle fasi tecniche
 - Durante Fase 1 (ingestion): L1 — basics di mercato, OHLCV, fee
