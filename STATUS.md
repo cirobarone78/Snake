@@ -407,6 +407,46 @@
 - **Nuovo dato disponibile per Fase 2**: yield curve slope FRED
   (DGS10-DGS2) come potenziale feature regime — già inverted nel
   25.9% dei giorni nel sample, segnale macro forte
+
+### 2026-05-29 — Sessione 3 (cont.): EDA crypto vs FRED macro
+- **Nuovo notebook** `notebooks/03_crypto_vs_fred_macro.ipynb`
+  (eseguito), focus su tassi USA + curve slope + CPI/M2/UNRATE che
+  Yahoo non dà. Stessa filosofia del 02 ma su variabili macro
+  fundamentals invece di equity indices
+- **Panel daily** (1232 giorni comuni 2020-04 → 2025-03):
+  - BTC vs ΔDTWEXBGS = **-0.18** (conferma headwind dollaro già visto
+    con DXY nel 02; due paniere indipendenti, stesso segnale)
+  - BTC vs Δrate (DFF, 2Y, 10Y): tutti ~0 → variazioni di tasso
+    *intraday* non muovono crypto; il segnale vive a frequenze più basse
+  - BTC vs Δslope curve = +0.054 (curva più ripida → BTC marginalmente
+    positivo, segnale debole)
+  - **Yield curve invertita nel 43.8% dei giorni del sample**
+    (vs 25.9% sull'intero 2018-2026, perché il window comune copre
+    l'episodio 2022-2024 in pieno)
+- **Panel monthly** (59 mesi, aggregando BTC EoM vs FRED monthly):
+  - **BTC vs CPI YoY = -0.40** ⚠️ **forte negativa**. Smonta la
+    narrativa "BTC = inflation hedge" almeno per il sample disponibile:
+    inflazione su → Fed hike → BTC giù. Stesso pattern visto nei dati
+    daily ma con segnale molto più forte alla frequenza giusta
+  - BTC vs M2 YoY = +0.18 (debole positiva, coerente con "money
+    printer go brrr")
+  - BTC vs Δunemployment = -0.04 (zero)
+  - M2 YoY vs Δunemployment = -0.60 (relazione macroeconomica classica)
+- **Insight metodologico**: la differenza tra correlazione daily ~0 e
+  monthly -0.40 è la conferma empirica che le **variabili macro
+  agiscono su orizzonti più lunghi**. Per i modelli predittivi serve
+  separare features ad alta vs bassa frequenza
+- **Look-ahead bias da risolvere in Fase 2**: CPI/M2/UNRATE sono
+  dated alla *reference month* ma pubblicate ~1-2 mesi dopo. Per
+  signal generation serio servirà allineamento a release date (FRED
+  ha l'API `vintagedates` per questo). Per la EDA descrittiva attuale,
+  date di FRED OK
+- **Known issue minore** in `03_crypto_vs_fred_macro.ipynb` cell 8: il
+  reporting "inversion spans >= 10 consecutive days" usa
+  `idxmin/idxmax` su una boolean Series — restituisce posizioni
+  sbagliate. Il count totale (540/1233 = 43.8%) è corretto, solo la
+  tabella per-span no. Polish per la prossima volta che si tocca il
+  notebook
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
