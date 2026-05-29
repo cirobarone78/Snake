@@ -379,8 +379,8 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
    - Dominance time series (richiede Q24)
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
-2. **Capitolo educational L1.07**: volatilità e drawdown — L1.06 DCA
-   completato in sessione 3
+2. **Capitolo educational L1.08**: custodia (cold/hot wallet vs
+   exchange) — L1.07 volatilità/drawdown completato in sessione 3
 3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
@@ -492,8 +492,20 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   variante value averaging, specificità crypto, collegamento esplicito
   al fatto che **DCA sarà il benchmark più rilevante in Fase 6** —
   battere buy-and-hold non basta, va battuto anche il DCA mensile
-- L1 ora **6/10 capitoli pubblicati**. Prossimo: L1.07 su volatilità
-  e drawdown
+
+### 2026-05-29 — Sessione 3 (cont.): educational L1.07
+- Pubblicato `education/L1_principiante/07_volatilita_drawdown.md`:
+  vol come "energia cinetica" simmetrica vs drawdown come "dolore
+  reale", tabella con vol annualizzata dei nostri Tier 1 (BTC 65%,
+  ETH 85%, LINK 115%, SOL 119%, POL 136% dai notebook EDA), max DD
+  storici BTC (−84% nel 2018, −77% nel 2022), recovery time + time
+  underwater, distinzione vol ≠ drawdown con esempio UST-Terra come
+  caso "bassa vol → alto DD latente nel tail", introduzione concettuale
+  Sharpe/Sortino/Calmar, volatility clustering come ponte verso GARCH
+  in Fase 2, collegamento esplicito ad ADR-007 (vol è dimensione di
+  output del sistema)
+- L1 ora **7/10 capitoli pubblicati**. Prossimo: L1.08 su custodia
+  (cold/hot wallet vs custodia su exchange)
 - I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
 - Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
