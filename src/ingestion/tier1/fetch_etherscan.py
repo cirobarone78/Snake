@@ -11,12 +11,10 @@ Fetches:
 - ERC-20 total supply for the Tier 1 tokens that live on Ethereum
   (LINK, POL). BTC and SOL are out of scope (different chains).
 
-Storage (overwrites on each run; Q24 caveat applies):
-- data/raw/etherscan/eth_supply_latest.parquet
-- data/raw/etherscan/eth_supply_components_latest.parquet
-- data/raw/etherscan/gas_oracle_latest.parquet
-- data/raw/etherscan/eth_price_latest.parquet
-- data/raw/etherscan/token_supply/{SYMBOL}_latest.parquet
+Storage (ADR-022: ``_latest`` overwrites, ``_history`` appends):
+- data/raw/etherscan/{label}_latest.parquet — current state
+- data/raw/etherscan/{label}_history.parquet — accumulated snapshots
+- data/raw/etherscan/token_supply/{SYMBOL}_{latest,history}.parquet
 """
 
 from __future__ import annotations
@@ -26,6 +24,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from src.ingestion.snapshot import write_snapshot
 from src.ingestion.tier1.etherscan import TIER1_ERC20_ETHEREUM, EtherscanSource
 
 logging.basicConfig(
@@ -50,22 +49,20 @@ def main() -> None:
     results: dict[str, str] = {}
 
     snapshots: list[tuple[str, str, callable]] = [  # type: ignore[type-arg]
-        ("eth_supply", "eth_supply_latest.parquet", src.fetch_eth_supply),
-        (
-            "eth_supply_components",
-            "eth_supply_components_latest.parquet",
-            src.fetch_eth_supply_components,
-        ),
-        ("gas_oracle", "gas_oracle_latest.parquet", src.fetch_gas_oracle),
-        ("eth_price", "eth_price_latest.parquet", src.fetch_eth_price),
+        ("eth_supply", "eth_supply", src.fetch_eth_supply),
+        ("eth_supply_components", "eth_supply_components", src.fetch_eth_supply_components),
+        ("gas_oracle", "gas_oracle", src.fetch_gas_oracle),
+        ("eth_price", "eth_price", src.fetch_eth_price),
     ]
 
-    for label, filename, method in snapshots:
+    for label, basename, method in snapshots:
         try:
             df = method()
-            out = data_dir / filename
-            df.to_parquet(out, engine="pyarrow", compression="snappy")
-            logger.info("Saved %s snapshot (%d rows) to %s", label, len(df), out)
+            write_snapshot(
+                df,
+                latest_path=data_dir / f"{basename}_latest.parquet",
+                history_path=data_dir / f"{basename}_history.parquet",
+            )
             results[label] = "OK"
         except Exception as exc:
             logger.exception("Failed %s: %s", label, exc)
@@ -74,9 +71,11 @@ def main() -> None:
     for symbol, contract in TIER1_ERC20_ETHEREUM.items():
         try:
             df = src.fetch_token_supply(contract_address=contract)
-            out = token_dir / f"{symbol}_latest.parquet"
-            df.to_parquet(out, engine="pyarrow", compression="snappy")
-            logger.info("Saved %s ERC-20 supply snapshot to %s", symbol, out)
+            write_snapshot(
+                df,
+                latest_path=token_dir / f"{symbol}_latest.parquet",
+                history_path=token_dir / f"{symbol}_history.parquet",
+            )
             results[f"token:{symbol}"] = "OK"
         except Exception as exc:
             logger.exception("Failed token supply %s: %s", symbol, exc)

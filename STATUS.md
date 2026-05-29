@@ -376,8 +376,9 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
 1. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
    - Blockchain.com (BTC on-chain base) — non richiede API key
    - Granularità intra-day via Binance già esposta ma non ancora usata
-   - Snapshot history (richiede Q24) → particolarmente utile per gas
-     mainnet (Etherscan) e dominance (CoinGecko)
+   - Schedulare l'esecuzione di `fetch_coingecko` / `fetch_etherscan`
+     (cron locale o GitHub Actions) per popolare history nel tempo —
+     pattern ora pronto via ADR-022
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
 2. **Educational stream**: livello L1 chiuso (10/10). I prossimi
@@ -554,6 +555,35 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   che vengono sovrascritti ogni run (oltre ai 2 di CoinGecko già
   noti). La pipeline append-to-history per dominance / gas / supply
   storica diventa ancora più desiderabile prima di Fase 2
+
+### 2026-05-29 — Sessione 3 (cont.): chiusura Q24 con ADR-022
+- **Nuovo modulo** `src/ingestion/snapshot.py` con `write_snapshot()`:
+  funzione pura, due modi
+  - **Single-row** (DataFrame con DatetimeIndex `snapshot_at`): dedup
+    sull'index, idempotente nello stesso minuto
+  - **Multi-row** (top-N indexed by `rank`, ecc.): aggiunge colonna
+    `snapshot_at`, dedup su `(snapshot_at, *primary_key)`
+- **Scrittura ordinata**: history first, latest after (un latest stale
+  è recuperabile dalla history; il contrario no)
+- **7 nuovi test** (`tests/test_snapshot.py`, no network): primo run
+  crea entrambi i file, history accumula timestamp distinti, idempotente
+  nello stesso minuto, multi-row con primary_key dedup, empty frame
+  skip, history sopravvive a cancellazione accidentale del latest.
+  **67/67 pytest verde, lint pulito**
+- **Integrazione** in `fetch_coingecko.py` (global + top-20) e
+  `fetch_etherscan.py` (5 snapshot single-row + 2 multi-row per
+  token supply). Fetch reali eseguiti:
+  - `global_history.parquet`: 1 riga (BTC dom 57.59%, ETH 9.49%,
+    USDT 7.42% — snapshot delle 22:13 UTC)
+  - `top_20_history.parquet`: 20 righe (rank 1-20 con `snapshot_at`)
+  - Etherscan 6 history files popolati
+- **Etherscan pacing fix**: il rate-limit dichiarato 5/sec è in realtà
+  3/sec osservato → `DEFAULT_SLEEP_BETWEEN_CALLS` da 0.25s a 0.4s.
+  Errore arrivava come envelope `status=0 + result="rate limit"`,
+  diverso da HTTP 429
+- **Q24 chiusa** (ADR-022). Pattern riutilizzabile per qualunque
+  futuro provider snapshot-based (Blockchain.com BTC on-chain,
+  FRED ALFRED vintages, ecc.)
 
 ### 2026-05-29 — Sessione 3 (chiusura): completamento L1 (capitoli 08-10)
 - **L1.08 Custodia**: not your keys not your coins, custodial vs hot

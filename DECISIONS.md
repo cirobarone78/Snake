@@ -1201,6 +1201,78 @@ splittiamo BTC tra Coinbase+Binance).
 
 ---
 
+## ADR-022 — Snapshot persistence: parallel "latest" + append "history"
+
+**Data**: 2026-05-29
+**Stato**: Accepted
+**Risolve**: Q24
+
+**Contesto**: A partire da Sessione 2 (CoinGecko, `global_latest.parquet`
++ `top_20_latest.parquet`) ed esteso in Sessione 3 (Etherscan: ETH supply,
+gas oracle, ETH price, ERC-20 supplies — 5 file in più), il sistema
+produce **snapshot di stato corrente** che ogni run sovrascriveva. Sette
+file potenzialmente preziosi venivano distrutti ad ogni fetch.
+
+La dominance time series, le supply storiche, il gas mainnet **sono
+feature naturali** per la Fase 2 (regime detection, on-chain signals). Se
+non li accumuliamo dal momento in cui li abbiamo a disposizione, perdiamo
+mesi di history che non torneranno (alcune di queste serie storiche
+non sono disponibili sui portali free).
+
+Q24 aveva quattro opzioni:
+- **A**: `_latest` overwrite + `_history` append in parallelo
+- **B**: solo file datati `{label}_YYYYMMDD.parquet` + glob al read
+- **C**: DuckDB su questi snapshot
+- **D**: solo latest, rinunciamo alla history
+
+**Decisione**: Opzione **A**.
+
+- Per ogni snapshot scrivo **due file** parallelamente:
+  - `{label}_latest.parquet`: sovrascritto, sempre lo stato più recente
+    (utile per query "qual è il valore corrente?")
+  - `{label}_history.parquet`: appended (utile per build di time
+    series dai snapshot ripetuti)
+- Implementazione: funzione pura `write_snapshot()` in
+  `src/ingestion/snapshot.py`. Due modi:
+  - **Single-row snapshot** (DataFrame con DatetimeIndex named
+    `snapshot_at`): dedup history sull'index, idempotente nello stesso
+    minuto
+  - **Multi-row snapshot** (DataFrame indexed da una primary key come
+    `rank` o `symbol`): passa `snapshot_at` + `primary_key=[…]`, la
+    funzione fa `reset_index()`, aggiunge la colonna `snapshot_at`, e
+    dedup history su `(snapshot_at, *primary_key)`
+- **Ordine di scrittura**: history first, latest after. Un latest stale
+  è recuperabile dalla history; il contrario no
+- Frequenza di esecuzione: a discrezione di chi lancia gli script. Per
+  popolare history serve eseguire periodicamente (cron, GitHub Actions
+  schedulata, o esecuzione manuale). Decisione di automation rimandata
+  a quando l'utente vorrà popolare history seriamente
+
+**Conseguenze**:
+- ✅ Gas, dominance, supply, prezzi snapshot ora accumulano time series
+  reali dal momento in cui si esegue il fetch
+- ✅ API stabile e testata (7 test unitari, no network), riutilizzabile
+  per qualsiasi futuro source snapshot-based
+- ✅ `_latest` continua a funzionare per le query single-state; consumer
+  esistenti non cambiano
+- ⚠️ History cresce indefinitamente. Per ora non serve gestione — i
+  snapshot single-row pesano pochissimo, anche 10 anni di snapshot
+  giornalieri = ~3.6k righe. Top-20 cresce di 20 righe/snapshot, ma
+  resta in MB anche con anni di history
+- ⚠️ Schema della history è fisso. Se in futuro Etherscan aggiunge
+  campi (es. ulteriori componenti di ETH supply), il read di history
+  vecchia avrà colonne `NaN`. Gestibile, ma da tenere a mente
+- 💡 Per snapshot ad alta frequenza in futuro (es. gas oracle ogni
+  minuto), si valuterà se passare a DuckDB (opzione C originale) o a
+  un layout partizionato per data. Per la Fase 1-2 attuale, parquet
+  semplici sono adeguati
+- Il pattern usato da CoinGecko (`global`, `top_20`) ed Etherscan
+  (5 snapshot) è subito disponibile per qualsiasi futuro provider
+  snapshot-based (es. Blockchain.com per BTC on-chain, FRED ALFRED
+  per macro vintages, ecc.)
+
+---
+
 <!--
 Template per nuove ADR:
 

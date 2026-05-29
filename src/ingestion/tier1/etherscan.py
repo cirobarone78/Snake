@@ -40,7 +40,7 @@ from src.ingestion.base import DataSource
 logger = logging.getLogger(__name__)
 
 DEFAULT_BASE_URL: Final[str] = "https://api.etherscan.io/v2/api"
-DEFAULT_SLEEP_BETWEEN_CALLS: Final[float] = 0.25  # 5/sec cap = 0.2s min
+DEFAULT_SLEEP_BETWEEN_CALLS: Final[float] = 0.4  # observed cap ~3/sec on free tier
 DEFAULT_MAX_RETRIES: Final[int] = 3
 DEFAULT_BACKOFF_BASE: Final[float] = 5.0
 

@@ -22,6 +22,7 @@
 | Q21 (parz.) | Mapping ticker POL su Yahoo | [ADR-019](./DECISIONS.md) |
 | Q21bis | Gap recente POL post-2025-03 | [ADR-020](./DECISIONS.md) (via Binance.us) |
 | Q22 | Composizione serie multi-source | [ADR-021](./DECISIONS.md) (concat + flag source) |
+| Q24 | Storage append per snapshot | [ADR-022](./DECISIONS.md) (latest + history) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -165,27 +166,6 @@ ADR-016 propone Anthropic Claude come default. Vale la pena considerare:
 
 *Direzione*: **A** per partire, **C** se serviranno test comparativi tra
 modelli. Decisione rinviata a inizio Fase 3.
-
----
-
-### Q24 — Storage delle snapshot CoinGecko (global, top-N)
-Lo script `fetch_coingecko` salva `global_latest.parquet` e
-`top_20_latest.parquet` **sovrascritti** a ogni run. Va bene per uno
-snapshot "ultimo noto", ma per qualsiasi analisi temporale di dominance
-o di rotazione del top-N nel tempo serve **append**.
-
-Opzioni:
-- **A**: Mantenere `latest` e in parallelo appendere a un file storico
-  `global_history.parquet` / `top_20_history.parquet` (date come index).
-  Richiede schema stabile.
-- **B**: Salvare solo file datati (`global_YYYYMMDD.parquet`) e leggere
-  l'aggregato con un glob al volo. Più trasparente, più I/O.
-- **C**: DuckDB su questi snapshot (ADR-009 menziona DuckDB come
-  evoluzione naturale per file parquet che crescono).
-
-*Decisione rinviata*: serve davvero solo quando vorremo studiare la
-dominance come serie storica (Fase 2 o oltre). Per ora la fetch CoinGecko
-gira on-demand, lo snapshot serve a poco senza una pipeline schedulata.
 
 ---
 

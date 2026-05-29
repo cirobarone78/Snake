@@ -16,8 +16,10 @@ batch via the source's ``sleep_between_calls``. With 5 Tier 1 + global
 
 Output layout (all under ``data/raw/coingecko/``):
 - ``crypto/{SYMBOL}_market_chart.parquet`` — time series per asset
-- ``global_latest.parquet`` — single-row snapshot (overwritten on each run)
-- ``top_{N}_latest.parquet`` — N-row snapshot (overwritten on each run)
+- ``global_latest.parquet`` / ``global_history.parquet`` — single-row
+  snapshot of global dominance + history of all past snapshots (ADR-022)
+- ``top_{N}_latest.parquet`` / ``top_{N}_history.parquet`` — N-row
+  snapshot of top-N by market cap + history with ``snapshot_at`` column
 """
 
 from __future__ import annotations
@@ -26,6 +28,7 @@ import logging
 from pathlib import Path
 
 from src.assets.asset import TIER1_ASSETS
+from src.ingestion.snapshot import write_snapshot
 from src.ingestion.tier1.coingecko import CoinGeckoSource
 
 logging.basicConfig(
@@ -69,17 +72,22 @@ def main() -> None:
 
     try:
         global_df = src.fetch_global()
-        global_out = data_dir / "global_latest.parquet"
-        global_df.to_parquet(global_out, engine="pyarrow", compression="snappy")
-        logger.info("Saved global snapshot to %s", global_out)
+        write_snapshot(
+            global_df,
+            latest_path=data_dir / "global_latest.parquet",
+            history_path=data_dir / "global_history.parquet",
+        )
     except Exception as exc:
         logger.exception("Failed to fetch /global: %s", exc)
 
     try:
         top_df = src.fetch_top_n(n=DEFAULT_TOP_N)
-        top_out = data_dir / f"top_{DEFAULT_TOP_N}_latest.parquet"
-        top_df.to_parquet(top_out, engine="pyarrow", compression="snappy")
-        logger.info("Saved top-%d snapshot to %s", DEFAULT_TOP_N, top_out)
+        write_snapshot(
+            top_df,
+            latest_path=data_dir / f"top_{DEFAULT_TOP_N}_latest.parquet",
+            history_path=data_dir / f"top_{DEFAULT_TOP_N}_history.parquet",
+            primary_key=["rank"],
+        )
     except Exception as exc:
         logger.exception("Failed to fetch /coins/markets: %s", exc)
 
