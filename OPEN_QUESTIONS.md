@@ -19,6 +19,10 @@
 | Q13 | Capitale virtuale del paper trading | [ADR-011](./DECISIONS.md) |
 | Q14 | Exchange di riferimento per fee | [ADR-012](./DECISIONS.md) |
 | Q15 | Modello di slippage | [ADR-013](./DECISIONS.md) |
+| Q21 (parz.) | Mapping ticker POL su Yahoo | [ADR-019](./DECISIONS.md) |
+| Q21bis | Gap recente POL post-2025-03 | [ADR-020](./DECISIONS.md) (via Binance.us) |
+| Q22 | Composizione serie multi-source | [ADR-021](./DECISIONS.md) (concat + flag source) |
+| Q24 | Storage append per snapshot | [ADR-022](./DECISIONS.md) (latest + history) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -162,6 +166,28 @@ ADR-016 propone Anthropic Claude come default. Vale la pena considerare:
 
 *Direzione*: **A** per partire, **C** se serviranno test comparativi tra
 modelli. Decisione rinviata a inizio Fase 3.
+
+---
+
+### Q23 — Volume aggregato tra venue diverse
+[ADR-021](./DECISIONS.md) compone OHLCV multi-source con later-source-wins,
+ma il volume viene preso "come arriva" dalla source vincente. Yahoo
+aggrega cross-exchange (volume "globale" stimato), Binance.us riporta
+solo il volume sul proprio venue. **Non sono confrontabili in livello
+assoluto.**
+
+Per la Fase 1 (descriptive stats, distribuzioni) il problema è marginale
+— il volume è una serie ausiliaria. Diventa rilevante quando:
+- Costruiamo feature di **liquidità relativa** (volume / market cap, o
+  rolling volume z-score) che assumono una scala stabile
+- Cerchiamo segnali da **volume spikes** (un picco di volume Binance.us
+  può essere un evento, ma il livello "0" pre-listing rende il
+  cambiamento artificiale)
+
+*Direzione*: ignorare per ora. Quando attaccheremo feature volume-based
+in Fase 2, decidere se (a) normalizzare per provider con z-score
+within-source, (b) usare solo CoinGecko/CMC come fonte volume aggregata
+e dedicata, (c) costruire feature solo su return, non su volume assoluto.
 
 ---
 

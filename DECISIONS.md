@@ -1042,6 +1042,237 @@ presa in considerazione, va aggiunta una nota in `DECISIONS.md`
 
 ---
 
+## ADR-019 — Mapping ticker per POL: usare MATIC-USD su Yahoo
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: Q21 (parzialmente — vedi "Conseguenze")
+
+**Contesto**: Il ticker `POL-USD` su Yahoo Finance — pur essendo il simbolo
+post-rebrand corretto per Polygon (rinominato MATIC→POL nel settembre 2024)
+— ha uno storico troncato a **2020-08-07 → 2023-10-31** (1181 righe, nessun
+dato successivo). Il vecchio simbolo `MATIC-USD`, invece, copre
+**2019-04-28 → 2025-03-24** (2158 righe, 0 gap), perché Yahoo ha continuato
+a popolarlo come ticker storico del pre-rebrand fino al cutover di marzo
+2025, dopo cui anche MATIC-USD è stato congelato.
+
+Nessun simbolo Yahoo, da solo, fornisce uno storico continuo dalla nascita
+del token fino ad oggi (2026).
+
+**Decisione**:
+- L'asset interno resta `POL` (simbolo canonico del progetto, riflette il
+  rebrand)
+- Sul provider Yahoo, mappiamo `POL.yahoo_symbol = "MATIC-USD"` per ottenere
+  lo storico più lungo e continuo disponibile da Yahoo
+- Su altri provider (Binance, CoinGecko, quando aggiunti), usiamo i simboli
+  post-rebrand (`POLUSDT`, `polygon-ecosystem-token`)
+- Il gap residuo (2025-03-24 → presente, ~14 mesi) sarà chiuso quando in
+  Fase 1 aggiungeremo Binance/CoinGecko come sorgenti
+
+**Conseguenze**:
+- ✅ Storico Yahoo per POL passa da ~3 anni a ~6 anni (utile per EDA storico)
+- ⚠️ POL su Yahoo è incompleto fino a quando non aggiungiamo altri provider:
+  qualsiasi feature engineering basato solo su Yahoo per POL deve trattare
+  i dati come "storici, non aggiornati"
+- ⚠️ Q21 non è completamente chiusa: il gap recente resta da risolvere via
+  multi-source (rimandato al punto 3 dello "Cosa serve fare" in STATUS.md)
+- 🔄 Quando in Fase 1+ avremo dati Binance, andrà valutato se concatenare
+  Yahoo (storico fino 2025-03) + Binance (da lì in poi) o se affidarsi a un
+  singolo provider (Binance copre POLUSDT post-2024 e MATICUSDT pre-2024,
+  decisione da prendere quando avremo i dati Binance in mano)
+- 💡 Lezione generale: il mapping `Asset → simbolo provider` non è 1:1
+  banale dopo eventi corporate (rebrand, merger, fork). Va trattato come
+  configurazione esplicita per ogni provider, non assunto come `f"{symbol}-USD"`
+
+---
+
+## ADR-020 — Binance via api.binance.us per restrizione geografica
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: parte operativa di Q21bis (gap recente POL) e la decisione
+implicita "quale Binance".
+
+**Contesto**: ADR-017 prevede Binance come sorgente Tier 1 per granularità
+intra-day e volumi di exchange. La sessione 2 ha verificato che
+`api.binance.com` risponde **HTTP 451 — restricted location** dalla
+regione di rete del nostro ambiente (esito coerente con i termini di
+servizio Binance, non con la network policy del sandbox).
+
+Per ADR-018 questa è una "scelta etico-legale": non tentiamo di aggirare
+il blocco geografico (VPN, proxy, fake-UA), perché la decisione di
+Binance è esplicita e nei suoi ToS.
+
+**Decisione**:
+- L'implementazione `BinanceSource` parametrizza il base URL.
+- **Default**: `https://api.binance.us` (entità USA-compliant, schema REST
+  identico a binance.com). Tutti i nostri Tier 1 pair sono disponibili
+  (BTCUSDT, ETHUSDT, SOLUSDT, LINKUSDT, POLUSDT, MATICUSDT).
+- In ambienti con accesso a binance.com, si può istanziare
+  `BinanceSource(base_url="https://api.binance.com")` senza altre
+  modifiche.
+- L'errore HTTP 451 viene rilevato esplicitamente e ri-lanciato come
+  `PermissionError` con messaggio che cita questo ADR.
+
+**Conseguenze**:
+- ✅ Sblocca l'integrazione Binance in questo ambiente con un solo flag
+- ✅ Apre dati granulari (klines intra-day) e cross-validation con Yahoo
+- ✅ Chiude la parte "fetch reale" di Q21bis: POLUSDT su binance.us
+  parte da 2025-01-16, copre quindi il gap che Yahoo non serviva
+- ⚠️ Universe più piccola di binance.com: alcuni asset (es. token non
+  registrati SEC) sono assenti. Non impatta i nostri 5 Tier 1 attuali,
+  ma da tenere a mente per future espansioni
+- ⚠️ Volumi binance.us << binance.com: per analisi di order flow / depth
+  che dipendono dal volume assoluto i numeri non sono rappresentativi
+  del mercato globale. Per il prezzo (che è oggetto della Fase 1) la
+  differenza è trascurabile (cross-validation BTC con Yahoo:
+  log-return correlation 0.996)
+- 🔄 Quando il sistema andrà fuori dal sandbox (deployment futuro),
+  basta cambiare la stringa del base URL — niente refactor
+
+**Riferimenti**:
+- POL/MATIC consistency validata (rapporto 0.998 ± 0.007 sull'overlap
+  2025-01-16 → 2025-03-24, log-return correlation 0.977)
+- BTC consistency Yahoo↔Binance.us su 2439 giorni comuni: differenza
+  % media 0.14%, mediana 0.07%, max 3.72% (un singolo outlier 2021-12-14)
+
+---
+
+## ADR-021 — Composizione multi-source: concat con flag di provenance
+
+**Data**: 2026-05-28
+**Stato**: Accepted
+**Risolve**: Q22
+
+**Contesto**: Dopo ADR-019 + ADR-020 abbiamo, per POL, due serie storiche
+che insieme coprono dal 2019 al presente ma nessuna delle due da sola lo
+fa. Validazione (ADR-020) mostra che i prezzi sono operativamente
+equivalenti (ratio 0.998 ± 0.007 nei 68 giorni di overlap, log-return
+correlation 0.977).
+
+Servono regole esplicite per produrre una "serie POL canonical" che il
+feature engineering possa usare senza ricostruire la composizione ogni
+volta. Stesso problema si ripresenterà per qualunque asset multi-source
+(es. quando aggiungeremo CoinGecko per BTC dominance, o se in futuro
+splittiamo BTC tra Coinbase+Binance).
+
+**Decisione**:
+- Funzione pura `compose_ohlcv(sources)` in `src/ingestion/composer.py`.
+  Input: lista di `(DataFrame, source_name)` in ordine di **priorità
+  crescente**.
+- **Policy di overlap**: later-listed source wins. Quando due (o più)
+  serie hanno la stessa data, la più "fresca/autoritaria" (ultima in
+  lista) vince; la precedente viene scartata silenziosamente per quella
+  riga.
+- **Colonna `source`** aggiunta all'output: ogni riga porta il proprio
+  provenance label (`"yahoo"`, `"binance"`, ecc.). Mai perdere l'audit
+  trail.
+- **No re-baselining** del livello al cutover: per POL il ratio è ~1
+  (0.998), quindi una concatenazione semplice non crea salti visibili.
+  Se in futuro emergerà un asset con ratio significativamente diverso
+  da 1, si valuterà allora un adjustment di livello (separato dal
+  composer base).
+- Output persistito in `data/processed/{symbol}_{interval}.parquet`,
+  separato dai raw per provider.
+
+**Conseguenze**:
+- ✅ Feature engineering downstream opera su una sola serie per asset,
+  zero accoppiamento ai provider
+- ✅ La colonna `source` consente filtri di sanity ("usa solo Yahoo se
+  vuoi long history pulita", "salta i giorni Binance se sospetti
+  qualità diversa", ecc.) senza ri-ingest
+- ✅ Nuovi provider si aggiungono in coda alla lista → diventano
+  authoritative per l'overlap. Semantica naturale.
+- ⚠️ La policy "later wins" è una scelta di default. Asset con
+  qualità inversa (provider nuovo peggiore dei precedenti) chiederanno
+  un over-ride esplicito. Soluzione: invertire l'ordine in lista quando
+  si compongono — la funzione resta neutra
+- ⚠️ Non viene riconciliato il **volume** (le venue hanno scale diverse).
+  Il composer prende il volume dalla source vincente per ogni riga; va
+  bene come ordering ma non per analisi di market depth assoluta.
+  Documentare in `OPEN_QUESTIONS` quando diventerà rilevante
+- 💡 Per ora applicato solo a POL. Gli altri Tier 1 hanno copertura
+  Yahoo sufficiente e non beneficiano della composizione. Aggiungere
+  on demand
+
+**Output di prima applicazione**:
+- `data/processed/POL_1d.parquet`: 2588 righe, 2019-04-28 → 2026-05-28
+  (Yahoo 2090 + Binance 498 dopo dedup di 68 giorni di overlap)
+
+---
+
+## ADR-022 — Snapshot persistence: parallel "latest" + append "history"
+
+**Data**: 2026-05-29
+**Stato**: Accepted
+**Risolve**: Q24
+
+**Contesto**: A partire da Sessione 2 (CoinGecko, `global_latest.parquet`
++ `top_20_latest.parquet`) ed esteso in Sessione 3 (Etherscan: ETH supply,
+gas oracle, ETH price, ERC-20 supplies — 5 file in più), il sistema
+produce **snapshot di stato corrente** che ogni run sovrascriveva. Sette
+file potenzialmente preziosi venivano distrutti ad ogni fetch.
+
+La dominance time series, le supply storiche, il gas mainnet **sono
+feature naturali** per la Fase 2 (regime detection, on-chain signals). Se
+non li accumuliamo dal momento in cui li abbiamo a disposizione, perdiamo
+mesi di history che non torneranno (alcune di queste serie storiche
+non sono disponibili sui portali free).
+
+Q24 aveva quattro opzioni:
+- **A**: `_latest` overwrite + `_history` append in parallelo
+- **B**: solo file datati `{label}_YYYYMMDD.parquet` + glob al read
+- **C**: DuckDB su questi snapshot
+- **D**: solo latest, rinunciamo alla history
+
+**Decisione**: Opzione **A**.
+
+- Per ogni snapshot scrivo **due file** parallelamente:
+  - `{label}_latest.parquet`: sovrascritto, sempre lo stato più recente
+    (utile per query "qual è il valore corrente?")
+  - `{label}_history.parquet`: appended (utile per build di time
+    series dai snapshot ripetuti)
+- Implementazione: funzione pura `write_snapshot()` in
+  `src/ingestion/snapshot.py`. Due modi:
+  - **Single-row snapshot** (DataFrame con DatetimeIndex named
+    `snapshot_at`): dedup history sull'index, idempotente nello stesso
+    minuto
+  - **Multi-row snapshot** (DataFrame indexed da una primary key come
+    `rank` o `symbol`): passa `snapshot_at` + `primary_key=[…]`, la
+    funzione fa `reset_index()`, aggiunge la colonna `snapshot_at`, e
+    dedup history su `(snapshot_at, *primary_key)`
+- **Ordine di scrittura**: history first, latest after. Un latest stale
+  è recuperabile dalla history; il contrario no
+- Frequenza di esecuzione: a discrezione di chi lancia gli script. Per
+  popolare history serve eseguire periodicamente (cron, GitHub Actions
+  schedulata, o esecuzione manuale). Decisione di automation rimandata
+  a quando l'utente vorrà popolare history seriamente
+
+**Conseguenze**:
+- ✅ Gas, dominance, supply, prezzi snapshot ora accumulano time series
+  reali dal momento in cui si esegue il fetch
+- ✅ API stabile e testata (7 test unitari, no network), riutilizzabile
+  per qualsiasi futuro source snapshot-based
+- ✅ `_latest` continua a funzionare per le query single-state; consumer
+  esistenti non cambiano
+- ⚠️ History cresce indefinitamente. Per ora non serve gestione — i
+  snapshot single-row pesano pochissimo, anche 10 anni di snapshot
+  giornalieri = ~3.6k righe. Top-20 cresce di 20 righe/snapshot, ma
+  resta in MB anche con anni di history
+- ⚠️ Schema della history è fisso. Se in futuro Etherscan aggiunge
+  campi (es. ulteriori componenti di ETH supply), il read di history
+  vecchia avrà colonne `NaN`. Gestibile, ma da tenere a mente
+- 💡 Per snapshot ad alta frequenza in futuro (es. gas oracle ogni
+  minuto), si valuterà se passare a DuckDB (opzione C originale) o a
+  un layout partizionato per data. Per la Fase 1-2 attuale, parquet
+  semplici sono adeguati
+- Il pattern usato da CoinGecko (`global`, `top_20`) ed Etherscan
+  (5 snapshot) è subito disponibile per qualsiasi futuro provider
+  snapshot-based (es. Blockchain.com per BTC on-chain, FRED ALFRED
+  per macro vintages, ecc.)
+
+---
+
 <!--
 Template per nuove ADR:
 

@@ -27,24 +27,76 @@ scrivere una singola riga di codice.
 
 ---
 
-## Fase 1 — Esplorazione dati
+## Fase 1 — Esplorazione dati ✅ *completata (2026-05-29)*
 
 **Obiettivo**: capire quali dati sono accessibili (gratis o low-cost), in che
 forma, con quale qualità.
 
 ### Deliverable
-- [ ] Inventario di sorgenti dati con: API, frequenza, storico disponibile,
-      licenza, costo, rate limit
-- [ ] Setup ambiente Python (o stack scelto) con virtualenv/poetry/uv
-- [ ] Script di ingestion **basico** per 1-2 asset (es. BTC, ETH) — solo OHLCV
-- [ ] Notebook di esplorazione: statistica descrittiva, distribuzioni di
-      rendimenti, autocorrelazioni, stagionalità, ciclo halving
-- [ ] Strategia di storage definita (file CSV/parquet locali → poi
-      eventualmente DB time-series)
+- [x] **Inventario di sorgenti dati** (`docs/data_sources_tier1.md` +
+      integrazioni concrete): Yahoo Finance, Binance.us (ADR-020),
+      CoinGecko, FRED, Etherscan — ciascuna con API, frequenza,
+      storico, rate limit, caveat documentati
+- [x] **Setup ambiente Python**: `uv` + Python 3.12, `pyproject.toml` con
+      ruff + pyright basic + pytest (ADR-009 confermato)
+- [x] **Script di ingestion** estesi oltre il deliverable minimo:
+  - Tutti i 5 Tier 1 crypto (BTC/ETH/SOL/LINK/POL) + context assets
+    (DXY/SPX/NDX/GOLD) via Yahoo
+  - Tutti i Tier 1 anche via Binance.us (cross-validation)
+  - Market chart + global dominance + top-20 dinamica via CoinGecko
+  - 7 serie macro USA (DFF, DGS2, DGS10, DTWEXBGS, CPIAUCSL, M2SL,
+    UNRATE) via FRED
+  - On-chain snapshot per ETH (supply, components staking/burnt/withdrawn,
+    gas oracle, prezzo Etherscan) e ERC-20 supply (LINK, POL) via
+    Etherscan
+  - Composer multi-source (ADR-021) per asset con copertura provider
+    mista (caso POL chiuso)
+  - Snapshot persistence con _latest + _history append (ADR-022) per
+    accumulare time series da snapshot ripetuti
+- [x] **Notebook di esplorazione** (3 notebook eseguiti, findings
+      documentati in `STATUS.md`):
+  - `01_exploration_btc_eth.ipynb`: stylized facts crypto su tutti i 5
+    Tier 1 (vol annualizzata 65-136%, fat tails, volatility clustering),
+    correlazioni cross-asset
+  - `02_crypto_vs_macro.ipynb`: crypto vs equity indices + DXY + GOLD
+    su 974 giorni comuni — crypto risk-on, non digital gold
+  - `03_crypto_vs_fred_macro.ipynb`: crypto vs tassi + curve slope +
+    CPI/M2/UNRATE — BTC vs CPI YoY mensile −0.40 (smonta narrativa
+    "inflation hedge"); yield curve invertita per 536 giorni
+    consecutivi 2022-07 → 2024-08
+- [x] **Strategia di storage definita**: pipeline a 3 layer
+  - `data/raw/{provider}/{class}/{SYMBOL}_{interval}.parquet`
+  - `data/processed/{SYMBOL}_{interval}.parquet` con colonna `source`
+    per provenance (ADR-021)
+  - Snapshot: `_latest.parquet` (overwrite) + `_history.parquet`
+    (append) in parallelo (ADR-022)
+  - Tutto gitignored, retention policy locale
+- [x] **Test coverage**: 67/67 pytest verde, copertura simmetrica sui 5
+      provider (Yahoo, Binance, CoinGecko, FRED, Etherscan) + composer
+      + snapshot helper + assets
 
 ### Criterio di completamento
-Sappiamo esattamente quali sorgenti dati useremo, in che formato, con quali
-limiti.
+✅ Sappiamo esattamente quali sorgenti dati useremo, in che formato,
+con quali limiti. ADR-019 ÷ ADR-022 registrano le decisioni chiave
+emerse durante la fase (POL via MATIC-USD, Binance via .us, composer
+policy, snapshot history). Open question rimaste (Q23 volume
+cross-venue, Q18 granularità educational) non bloccano l'avanzamento
+alla Fase 2.
+
+### Cosa NON è stato fatto (e perché)
+- **Blockchain.com (BTC on-chain)**: rimasto come stretch goal.
+  Etherscan copre ETH/LINK/POL ma non BTC che vive su una chain
+  diversa. Da fare a richiesta se in Fase 4 servirà
+- **Granularità intra-day via Binance**: l'interfaccia c'è già
+  (`BinanceSource` supporta tutti gli interval), ma `fetch_tier1.py`
+  estrae solo daily. Si attiverà se in Fase 2 si decide di lavorare
+  anche a 1h
+- **Schedulazione automatica fetch snapshot** (cron / GitHub Actions
+  per popolare history nel tempo): pattern pronto via ADR-022, ma
+  la schedulazione effettiva è decisione operativa rimandata
+- **Stagionalità e ciclo halving**: analisi pianificate ma non
+  prioritarie per il completamento di Fase 1. Pre-tabellate come
+  esperimenti specifici per Fase 2 (regime detection)
 
 ---
 
@@ -53,17 +105,34 @@ limiti.
 **Obiettivo**: costruire l'infrastruttura di valutazione **prima** dei modelli
 complessi. Senza questa, qualsiasi risultato successivo è inattendibile.
 
+### Hook empirici dalla Fase 1
+La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
+- **Volatility clustering forte** (ACF(|r|) lag 1 = 0.16-0.27) → famiglia
+  GARCH/HAR è candidata naturale come baseline di varianza condizionata
+- **Correlazioni rolling instabili** (std 0.12-0.17) → regimi esistono,
+  il modello baseline deve essere valutato anche **regime-aware** non
+  solo full-sample
+- **BTC vs CPI YoY = −0.40** (e dollar headwind robusto) → almeno una
+  feature macro va affiancata al solo prezzo per testare se aggiunge
+  potere predittivo
+
 ### Deliverable
 - [ ] Indicatori tecnici classici implementati (MA, MACD, RSI, BB, ATR, OBV)
 - [ ] Framework di **backtesting walk-forward** con:
-  - Niente look-ahead bias (test esplicito)
-  - Costi di transazione inclusi (fee + slippage stimato)
+  - Niente look-ahead bias (test esplicito; per macro FRED → uso di
+    *release date* non *reference date*)
+  - Costi di transazione inclusi (fee + slippage stimato — modello
+    discusso in ADR-013, capitolo educational L1.04 come prerequisito
+    mentale)
   - Survivorship bias mitigato (se possibile)
   - Out-of-sample mandatory
 - [ ] Modello **baseline**: random walk + momentum semplice + ARIMA
 - [ ] Suite di metriche: Sharpe, Sortino, max drawdown, hit rate, profit factor,
       Calmar, time underwater
 - [ ] Confronto baseline vs buy-and-hold
+- [ ] **Regime detection** (eventualmente spostata qui da Fase 5 se i
+      regimi sono troppo importanti per essere ignorati a livello di
+      baseline)
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
@@ -250,10 +319,15 @@ Non ha una fase dedicata: si scrive un capitolo quando l'argomento è
 - `L3_avanzato/` — Quantitative Investor
 - `L4_esperto/` — Wolf of Wall Street / Professional
 
-### Cosa va fatto nella Fase 1
-- [ ] Creare `education/README.md` come indice navigabile
-- [ ] Stub delle 4 cartelle di livello con un README ciascuna
-- [ ] Primo capitolo L1: "Cos'è un asset, una borsa, un broker"
+### Cosa va fatto nella Fase 1 ✅ *completato (2026-05-29)*
+- [x] Creare `education/README.md` come indice navigabile
+- [x] Stub delle 4 cartelle di livello con un README ciascuna
+- [x] Primo capitolo L1: "Cos'è un asset, una borsa, un broker"
+- [x] **Bonus L1 completo** (oltre il minimo di Fase 1):
+      tutti i 10 capitoli di L1 pubblicati durante la Sessione 3.
+      Asset/borsa/broker, tipi di ordine, lettura grafico,
+      fee/spread/slippage, portafoglio, DCA, vol/drawdown, custodia,
+      fiscalità, "cosa NON è il trading". L1 chiuso.
 
 ### Capitoli da scrivere mentre si lavora alle fasi tecniche
 - Durante Fase 1 (ingestion): L1 — basics di mercato, OHLCV, fee
