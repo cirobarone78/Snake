@@ -85,7 +85,12 @@ ADR-007 definisce indicativamente: ±2% per breve, ±10% per lungo. Vanno
 calibrate empiricamente sulla volatilità storica di ciascun asset
 (BTC vs SOL hanno scala diversa).
 
-*Decisione rinviata a Fase 2*, quando avremo dati e statistiche descrittive.
+*Decisione rinviata a Fase 4*. Le statistiche descrittive di Fase 1 ci
+sono già, ma la soglia operativa "sideways" serve solo quando un modello
+produrrà davvero l'output a 3 stati di ADR-007. I baseline di Fase 2
+(random walk / momentum) usano un segnale binario long/flat e non
+richiedono la calibrazione: rinviata al primo modello che implementa il
+contract ADR-007 completo.
 
 ---
 

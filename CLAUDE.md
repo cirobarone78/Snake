@@ -99,9 +99,8 @@ fino a Fase 6 inclusa, ma l'astrazione c'è già.
 **Output del sistema** (ADR-007): direzione, rendimento atteso, probabilità,
 volatilità attesa, confidence, top factors — per ogni asset × timeframe.
 
-**Stato attuale**: Fase 1 completata (2026-05-29). Pronti per Fase 2
-(baseline tecnica & backtesting rigoroso). Per il dettaglio aggiornato
-leggere sempre `STATUS.md`.
+**Stato attuale**: Fase 2 in corso (baseline tecnica & backtesting
+rigoroso). Per il dettaglio aggiornato leggere sempre `STATUS.md`.
 
 ## Quando in dubbio
 

@@ -12,10 +12,11 @@
 **Fase 2 — Baseline tecnica & backtesting rigoroso** 🔄 *in corso (avviata 2026-05-30)*
 Fase 1 ✅ completata (2026-05-29).
 
-Primo deliverable Fase 2 in piedi: **harness di valutazione** (engine
-custom, ADR-009) — metriche, walk-forward splitter no-look-ahead,
-benchmark passivi. Gli hook empirici da Fase 1 (volatility clustering,
-regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
+Fase 2 ben avviata: **harness di valutazione** (engine custom, ADR-009) +
+**cost model** + **indicatori tecnici** + **modelli baseline** +
+**notebook backtest OOS end-to-end**. Gli hook empirici da Fase 1
+(volatility clustering, regime instability, BTC vs CPI YoY −0.40) restano
+i vincoli di design.
 
 ## Cosa è stato fatto
 
@@ -479,6 +480,29 @@ regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 - 150/150 pytest ancora verde, ruff pulito (notebooks esclusi da lint)
 - **Prossimi step**: ARIMA (+`statsmodels`), decomposizione regime-aware
   delle metriche, IRR per confronto DCA corretto, sensibilità al lookback
+
+### 2026-05-30 — Sessione 4 (cont.): revisione di programma + CI
+- **Revisione di allineamento** (richiesta dall'utente: "ogni tanto rivedi
+  se il programma procede come dovrebbe"). Riletti VISION/OPEN_QUESTIONS/
+  ROADMAP/DECISIONS vs stato reale di codice/test/PR. Esito: allineamento
+  buono coi criteri di successo VISION (#2 framework backtesting, #3
+  baseline OOS, #4 documentare cosa non funziona — tutti onorati), scope
+  disciplinato, codice sano (150 test, ratio test/src ~0.6). Debiti
+  rilevati e affrontati:
+  - **CI assente** → aggiunta `.github/workflows/ci.yml` (uv + ruff su
+    src/tests + pytest, pyright bloccante sui moduli core puliti
+    backtest/features/models e informativo sul resto: ~147 finding
+    pre-esistenti di pandas-stubs in ingestion, tracciati come debito)
+  - **PR draft sovrapposte** → #3 (doc review) mergiata in `main`, #4
+    (Fase 2) rebasata su `main` aggiornato (history pulita)
+  - **Q11 "sideways"** mal etichettata Fase 2 → ri-tag a Fase 4 (serve solo
+    quando un modello produrrà l'output a 3 stati ADR-007; i baseline usano
+    segnale binario)
+  - **CLAUDE.md "Stato attuale"** → aggiornato a "Fase 2 in corso"
+  - Falso allarme verificato: il blocco `ADR-NNN` in fondo a DECISIONS.md è
+    un template dentro commento HTML, intenzionale — non toccato
+- **Nota CI**: pyright resta verde solo su `src/{backtest,features,models}`;
+  ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
 
 ## Prossimo step
 
