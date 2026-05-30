@@ -18,6 +18,14 @@ from src.backtest.benchmark import (
     buy_and_hold_returns,
     dca_equity,
 )
+from src.backtest.costs import (
+    BINANCE_SPOT,
+    KRAKEN_SPOT,
+    FeeModel,
+    SlippageModel,
+    TransactionCostModel,
+    estimate_half_spread_bps,
+)
 from src.backtest.metrics import (
     PerformanceSummary,
     annualized_return,
@@ -38,8 +46,13 @@ from src.backtest.metrics import (
 from src.backtest.splits import Split, split_frame, walk_forward_splits
 
 __all__ = [
+    "BINANCE_SPOT",
+    "KRAKEN_SPOT",
+    "FeeModel",
     "PerformanceSummary",
+    "SlippageModel",
     "Split",
+    "TransactionCostModel",
     "annualized_return",
     "annualized_volatility",
     "buy_and_hold_equity",
@@ -48,6 +61,7 @@ __all__ = [
     "dca_equity",
     "drawdown_series",
     "equity_curve",
+    "estimate_half_spread_bps",
     "hit_rate",
     "max_drawdown",
     "max_drawdown_duration",

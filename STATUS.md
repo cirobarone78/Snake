@@ -395,6 +395,23 @@ regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 - Sviluppo su branch dedicato `claude/phase-2-baseline-backtest` (da
   `main`); la doc review resta isolata in PR #3
 
+### 2026-05-30 — Sessione 4 (cont.): cost model (ADR-013)
+- **Nuovo modulo** `src/backtest/costs.py`:
+  - `FeeModel` maker/taker su notional; costanti `BINANCE_SPOT`
+    (0.10%/0.10%) e `KRAKEN_SPOT` (0.16%/0.26%) per ADR-012 (da
+    ri-verificare prima di un eventuale go-live)
+  - `SlippageModel` (ADR-013): rate = max(half_spread, base_cost_bps) ×
+    size_adj, con size_adj = 1 + impact_coeff·notional/ADV. Floor di
+    default 2 bps, market impact off di default (trascurabile fino a
+    ~100k EUR su Tier 1)
+  - `TransactionCostModel` = fee + slippage (il round-trip cost di L1.04)
+  - `estimate_half_spread_bps()`: proxy crudo di spread dal range OHLC
+    (non abbiamo bid/ask, Q23) — lower-quantile del range rolling come
+    stima conservativa del floor; da rivedere se arriveranno spread reali
+- **16 nuovi test** (`tests/test_costs.py`): fee maker/taker + sign,
+  floor vs spread, market impact, validazioni, proxy di spread. **118/118
+  pytest verde**, ruff pulito, pyright pulito su `src/backtest`
+
 ## Prossimo step
 
 1. **Apertura Fase 2** — Baseline tecnica & backtesting rigoroso (vedi

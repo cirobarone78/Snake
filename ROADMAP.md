@@ -123,11 +123,12 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
     (`src/backtest/splits.py`), invariante "test dopo train" forzata alla
     costruzione di `Split` e verificata nei test. Per macro FRED → uso di
     *release date* non *reference date* ancora da fare
-  - [ ] Costi di transazione inclusi (fee + slippage stimato — modello
-    discusso in ADR-013, capitolo educational L1.04 come prerequisito
-    mentale)
+  - [x] Costi di transazione inclusi (`src/backtest/costs.py`): fee
+    per-broker (Binance/Kraken, ADR-012) + slippage ADR-013
+    (max(half_spread, floor) × size_adj) + proxy di spread da range OHLC.
+    Capitolo educational L1.04 come prerequisito mentale
   - [ ] Survivorship bias mitigato (se possibile)
-  - [ ] Out-of-sample mandatory
+  - [ ] Out-of-sample mandatory (esecuzione end-to-end coi modelli baseline)
 - [ ] Modello **baseline**: random walk + momentum semplice + ARIMA
 - [x] **Suite di metriche** (`src/backtest/metrics.py`): Sharpe, Sortino,
       max drawdown (+ durata), Calmar, hit rate, profit factor, time
@@ -140,11 +141,13 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
       baseline)
 
 ### Stato (in corso, 2026-05-30)
-Primo deliverable consegnato: **harness di valutazione** (`src/backtest/`,
-engine custom per controllo totale su no-look-ahead). Metriche + walk-forward
-splitter + benchmark passivi, 35 test dedicati (102/102 totali verde). Manca
-il cost model (fee+slippage, ADR-013) per chiudere il framework, poi i modelli
-baseline.
+Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
+controllo totale su no-look-ahead) — metriche, walk-forward splitter,
+benchmark passivi — e **cost model** (fee per-broker + slippage ADR-013 +
+proxy di spread). 51 test dedicati (118/118 totali verde). Mancano per
+chiudere il framework: allineamento macro a *release date* (FRED) e
+l'esecuzione out-of-sample end-to-end coi **modelli baseline** (random walk /
+momentum / ARIMA) e gli **indicatori tecnici**.
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
