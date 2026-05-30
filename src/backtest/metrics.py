@@ -138,7 +138,8 @@ def max_drawdown(returns: pd.Series) -> float:
     r = _clean(returns)
     if r.empty:
         return _NAN
-    return float(drawdown_series(r).min())
+    dd: pd.Series = drawdown_series(r)
+    return float(dd.min())
 
 
 def max_drawdown_duration(returns: pd.Series) -> int:
@@ -173,7 +174,7 @@ def hit_rate(returns: pd.Series) -> float:
     """
     r = _clean(returns)
     nonzero = r[r != 0.0]
-    if nonzero.empty:
+    if len(nonzero) == 0:
         return _NAN
     return float((nonzero > 0.0).mean())
 
