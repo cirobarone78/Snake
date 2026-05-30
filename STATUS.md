@@ -451,10 +451,34 @@ regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
   strategy returns gross e con turnover (cost model zero vs non-zero),
   RW non tradea mai, directional accuracy (perfetta/metà/NaN su RW), MAE.
   **150/150 pytest verde**, ruff pulito, pyright pulito su `src/models`
-- **Prossimo step naturale**: notebook out-of-sample end-to-end che lega
-  indicatori → forecast baseline → walk-forward + costi → confronto vs
-  buy-and-hold/DCA sui dati reali Tier 1 (è il criterio di completamento
-  Fase 2). Poi eventualmente ARIMA + `statsmodels`
+### 2026-05-30 — Sessione 4 (cont.): notebook backtest OOS end-to-end
+- **`notebooks/04_baseline_backtest.ipynb`** (eseguito, output embedded):
+  chiude il criterio di completamento Fase 2. Pipeline reale su BTC/ETH/LINK
+  (Yahoo daily 2018-2026, scaricati con `fetch_tier1.py`):
+  indicatori/forecast → walk-forward expanding (train=365/test=90, metriche
+  solo sui test windows) → costi (Binance taker 0.10% + slippage 2 bps) →
+  confronto vs buy-and-hold + DCA. **Ipotesi H1-H3 scritte prima dei
+  risultati** (metodologia CLAUDE.md)
+- **Risultati reali OOS** (~2700 oss/asset):
+  - Directional accuracy momentum: BTC 0.515, ETH 0.503, LINK 0.488 →
+    edge marginale e **non robusto** (negativo su LINK)
+  - Random walk batte sempre momentum su MAE (forecaster puntuale): i
+    daily return sono rumore (H1 confermata)
+  - Momentum *net* batte buy-and-hold in Sharpe/drawdown su BTC (1.29 vs
+    0.96) ed ETH (1.16 vs 0.85) ma **non** su LINK (0.82 vs 0.96). Il
+    valore è **difensivo** (stare flat nei crash → MDD -0.50 vs -0.77 su
+    BTC), non direzionale. 2 su 3 → **non è un segnale** (CLAUDE.md)
+  - Costi erodono ~25-30% del return lordo, hit_rate netto < 0.50 (H3
+    confermata)
+- **Bias documentati nel notebook**: look-ahead evitato; survivorship
+  (BTC/ETH/LINK sono i vincitori → numeri ottimistici); DCA non
+  comparabile time-weighted (serve IRR money-weighted); metriche full-OOS
+  nascondono instabilità di regime
+- **Dati**: `data/raw/yahoo/` ripopolato (gitignored, fuori repo). Il
+  notebook resta tracciato con output embedded come 01/02/03
+- 150/150 pytest ancora verde, ruff pulito (notebooks esclusi da lint)
+- **Prossimi step**: ARIMA (+`statsmodels`), decomposizione regime-aware
+  delle metriche, IRR per confronto DCA corretto, sensibilità al lookback
 
 ## Prossimo step
 

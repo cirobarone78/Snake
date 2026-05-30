@@ -131,7 +131,11 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
     (max(half_spread, floor) × size_adj) + proxy di spread da range OHLC.
     Capitolo educational L1.04 come prerequisito mentale
   - [ ] Survivorship bias mitigato (se possibile)
-  - [ ] Out-of-sample mandatory (esecuzione end-to-end coi modelli baseline)
+  - [x] Out-of-sample mandatory: notebook `04_baseline_backtest.ipynb`
+    esegue end-to-end indicatori/forecast → walk-forward expanding (solo
+    test windows) → costi → confronto vs buy-and-hold/DCA su BTC/ETH/LINK
+    reali (2019-2026). Ipotesi scritte prima dei risultati, bias
+    documentati
 - [~] Modello **baseline**: random walk + momentum semplice + ARIMA
   - [x] Random walk (martingala, forecast = 0) e momentum (media mobile
     trailing dei rendimenti) in `src/models/baseline.py`, causali per
@@ -145,8 +149,10 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
       max drawdown (+ durata), Calmar, hit rate, profit factor, time
       underwater, total/annualized return & vol, `summarize()` aggregato.
       Annualizzazione parametrica (asset-class-agnostic, ADR-014)
-- [ ] Confronto baseline vs buy-and-hold (benchmark buy-and-hold + DCA già
-      pronti in `src/backtest/benchmark.py`; confronto da eseguire coi modelli)
+- [x] Confronto baseline vs buy-and-hold eseguito (notebook 04): momentum
+      net long-only batte buy-and-hold in Sharpe/drawdown su BTC ed ETH ma
+      **non** su LINK (2 su 3 → non è un segnale affidabile); il valore è
+      difensivo (stare flat nei crash), non direzionale (dir-acc ~50%)
 - [ ] **Regime detection** (eventualmente spostata qui da Fase 5 se i
       regimi sono troppo importanti per essere ignorati a livello di
       baseline)
@@ -159,11 +165,12 @@ proxy di spread), gli **indicatori tecnici** (`src/features/indicators.py`:
 SMA/EMA/MACD/RSI/Bollinger/ATR/OBV) e i **modelli baseline**
 (`src/models/baseline.py`: random walk + momentum, forecast→posizione,
 strategy returns net-of-cost, metriche directional accuracy/MAE). 150/150
-pytest verde, ruff + pyright puliti sui nuovi moduli. Mancano per chiudere
-la fase: ARIMA (serve `statsmodels`), allineamento macro a *release date*
-(FRED) e l'**esecuzione out-of-sample end-to-end** che lega indicatori →
-segnale → harness + costi → confronto vs buy-and-hold/DCA sui dati reali
-Tier 1.
+pytest verde, ruff + pyright puliti sui nuovi moduli. **Esecuzione
+out-of-sample end-to-end fatta** (notebook 04 su BTC/ETH/LINK reali): il
+momentum net batte buy-and-hold su 2 asset su 3 grazie alla riduzione di
+drawdown, non a un edge direzionale — risultato non robusto, da trattare
+solo come baseline. Mancano: ARIMA (serve `statsmodels`), allineamento
+macro a *release date* (FRED), e analisi regime-aware delle metriche.
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
