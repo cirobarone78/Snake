@@ -252,14 +252,17 @@ negativo sui dati attuali — da riconfermare su più storia).
 
 ---
 
-## Fase 4 — Modelli multifattoriali
+## Fase 4 — Modelli multifattoriali 🔄 *avviata (2026-05-30)*
 
 **Obiettivo**: combinare tecnico + sentiment + macro in modelli ML.
 
 ### Deliverable
-- [ ] Macro features: tassi, DXY, M2, yield treasury
+- [x] Macro features: tassi, DXY, M2, yield treasury — `src/features/macro_features.py`,
+      **point-in-time-safe** (publication lag per release date, chiude il debito
+      look-ahead del nb 03). Funzioni causali + 10 test offline
 - [ ] On-chain features (se accessibili): hash rate, active addresses, exchange flows
-- [ ] Feature engineering pipeline pulita e riproducibile
+- [~] Feature engineering pipeline pulita e riproducibile — macro + news (Fase 3)
+      + indicatori tecnici (Fase 2) sono i mattoni; manca il *join* multifattoriale
 - [ ] Modelli ML in ordine di complessità: logistic regression → gradient
       boosting (XGBoost/LightGBM) → eventuali deep learning (LSTM/Transformer)
 - [ ] Cross-validation temporale rigorosa

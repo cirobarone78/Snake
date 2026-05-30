@@ -9,18 +9,19 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion + sentiment Layer 1 +
-news history versionata **mergiati in `main`** (PR #6, squash `542fff6`). Cron
-giornaliero attivo. Aggiunte **feature news-derived** + **notebook lead/lag** su
-branch `claude/phase-3-news-features`. Fasi 0/1/2/2.1 ✅ in `main`.
+**Fase 4 (modelli multifattoriali) 🔄 avviata** — primo deliverable: **macro
+feature pipeline point-in-time-safe** da FRED (branch `claude/phase-4-multifactor`).
+**Fase 3 consolidata in `main`** (PR #6 `542fff6` + PR #7 `34c1af7`): ingestion,
+sentiment Layer 1, news history + cron, feature news-derived, notebook lead/lag,
+capitolo L2.06. Fasi 0/1/2/2.1 ✅ in `main`.
 **Q9 → ADR-023**, **Q12 → ADR-024**, **Q10 → ADR-025** chiuse.
 
-**🔬 Finding chiave (onestà metodologica)**: il `corr(news_count, |return|)
-= +0.32` visto su n=23 nella sessione precedente **è svanito a n=143**
-(market-wide, ~−0.07 a lag 1) → **era un artefatto di piccolo campione, NON un
-segnale**. Idem sentiment→return (rumore a tutti i lag). Con i dati attuali
-**nessun potere predittivo lead** del Layer 1. Non chiude la domanda (campione
-corto, VADER general-domain) ma ridimensiona e alza l'asticella per il Layer 2.
+**🔬 Finding Fase 3 (onestà metodologica)**: il `corr(news_count, |return|)
+= +0.32` visto su n=23 **è svanito a n=143** (market-wide, ~−0.07 a lag 1) →
+**artefatto di piccolo campione, NON un segnale**. Idem sentiment→return
+(rumore). Con i dati attuali **nessun potere predittivo lead** del Layer 1. La
+Fase 3 resta aperta "in attesa di dati" (cron ADR-025 accumula storia, nb 06
+riproducibile). Riprenderla quando la history avrà mesi densi.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
@@ -111,6 +112,28 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-30 — Sessione 10: consolidamento Fase 3 + apertura Fase 4 (macro)
+- **PR #7 mergiata in `main`** (squash `34c1af7`): feature news-derived,
+  notebook lead/lag, capitolo educational L2.06 (bias cognitivi). Fase 3
+  consolidata; resta aperta "in attesa di dati" (cron accumula storia)
+- **Fase 4 avviata** (branch `claude/phase-4-multifactor`). Primo deliverable:
+  `src/features/macro_features.py` — pipeline macro **point-in-time-safe** da FRED:
+  - `apply_publication_lag`: shifta ogni serie alla sua **release date** reale
+    (CPI/M2/UNRATE lag ~35-45g; daily rates lag 0) → chiude il debito look-ahead
+    su release-date segnalato nel nb 03 (ROADMAP riga 204)
+  - `to_daily` (step function, no back-fill), `align_macro_to_index` (ffill,
+    NaN prima della prima release → mai indovinato), `yoy_change` (l'orizzonte
+    YoY dove vive il segnale CPI per la EDA Fase 1)
+  - `build_macro_features`: fed_funds, rate_2y/10y, **yield_curve_slope**,
+    broad_dollar, **cpi_yoy**, m2_yoy, unemployment — tutte causali; degrada
+    con grazia se una serie manca su disco
+- **10 nuovi test** (`test_macro_features.py`): lag, no-back-fill, no-look-ahead
+  nell'align, YoY, end-to-end su FRED dir temporanea. **217/217 pytest verde**,
+  ruff + pyright core puliti
+- **Nota**: il fetch reale FRED richiede `FRED_API_KEY` (.env gitignored, non
+  persiste tra container) → il notebook su dati veri è subordinato al key, come
+  gli altri notebook data-dipendenti. Il modulo è testato offline su sintetici
 
 ### 2026-05-30 — Sessione 9: Fase 3 — feature news-derived + notebook lead/lag
 - **PR #6 mergiata in `main`** (squash `542fff6`): ingestion + Layer 1 + history
