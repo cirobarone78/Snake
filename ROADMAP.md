@@ -261,13 +261,17 @@ negativo sui dati attuali — da riconfermare su più storia).
       **point-in-time-safe** (publication lag per release date, chiude il debito
       look-ahead del nb 03). Funzioni causali + 10 test offline
 - [ ] On-chain features (se accessibili): hash rate, active addresses, exchange flows
-- [~] Feature engineering pipeline pulita e riproducibile — macro + news (Fase 3)
-      + indicatori tecnici (Fase 2) sono i mattoni; manca il *join* multifattoriale
-- [ ] Modelli ML in ordine di complessità: logistic regression → gradient
-      boosting (XGBoost/LightGBM) → eventuali deep learning (LSTM/Transformer)
-- [ ] Cross-validation temporale rigorosa
-- [ ] Feature importance analysis
-- [ ] Confronto out-of-sample vs baseline Fase 2
+- [x] Feature engineering pipeline pulita e riproducibile — `src/features/dataset.py`
+      (`assemble_design_matrix`: join tecnico+macro+news, lag 1 anti-look-ahead)
+- [~] Modelli ML in ordine di complessità: **logistic regression fatta**
+      (`src/models/multifactor.py`, walk-forward OOS, scaler fit-on-train).
+      Gradient boosting (XGBoost/LightGBM) → solo se un fattore mostra edge
+- [x] Cross-validation temporale rigorosa — walk-forward (riusa Fase 2), scaler
+      fit-on-train-only (no leakage di preprocessing)
+- [ ] Feature importance analysis — quando un modello mostrerà segnale
+- [~] Confronto out-of-sample vs baseline Fase 2 — fatto su BTC tecnico
+      (nb 07: accuracy OOS 0.497 ≈ coin-flip, **nessun edge**); da rifare col
+      fattore macro quando `FRED_API_KEY` è disponibile
 
 ### Criterio di completamento
 Sappiamo dire (con metriche, non con sensazioni) se l'integrazione
