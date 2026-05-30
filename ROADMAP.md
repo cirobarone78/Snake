@@ -203,10 +203,15 @@ a Fase 3. Affrontabili quando comodo, anche in parallelo ad altre fasi.
       del DCA non è comparabile time-weighted — vedi caveat notebook 04)
 - [ ] **Allineamento macro FRED a *release date*** (non reference date) nel
       walk-forward → serve quando si useranno feature macro nei modelli
-- [ ] **Robustezza cross-asset del filtro di regime**: perché protegge
-      BTC/ETH ma danneggia LINK (whipsaw nei bear)? Estendere a SOL/POL
-- [ ] **Sensibilità del momentum al `lookback`** (ora fisso a 30, non
-      stress-testato) → verificare che il risultato non sia un artefatto
+- [x] **Robustezza cross-asset del filtro di regime** (notebook 05):
+      esteso a SOL/POL. **Ipotesi "danno = whipsaw da volatilità" SMENTITA**
+      (corr vol↔Δsharpe bear = −0.09): il momentum protegge 4 asset su 5
+      *inclusi i due più volatili* (SOL, POL). LINK è un outlier specifico,
+      non spiegato dalla volatilità → indagine mirata aperta
+- [x] **Sensibilità del momentum al `lookback`** (notebook 05): griglia
+      5-150 su tutti e 5 i Tier 1. Edge **robusto** (collina, non picco) su
+      BTC/ETH/SOL/POL; `beats_bh` su 4-7 lookback su 8. LINK fragile (2/8).
+      Il risultato del notebook 04 non era un artefatto del parametro
 - [ ] **Pulizia debito pyright** ingestion (~147 finding pandas-stubs) per
       rendere la CI pyright-bloccante ovunque, non solo sui moduli core
 

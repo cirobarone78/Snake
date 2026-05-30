@@ -535,6 +535,33 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
   ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
 - **CI verde al primo run** (run 26679640442): ruff + pytest + pyright core
 
+### 2026-05-30 — Sessione 6: robustezza baseline (Fase 2.1)
+- **Scelta**: prima di aprire Fase 3, consolidare la robustezza dei baseline
+  (CLAUDE.md: "diffida dei backtest brillanti"). Due bandiere rosse del
+  notebook 04 chiuse
+- **Nuovo modulo testato** `src/backtest/walkforward.py`: promossa la logica
+  OOS inline del notebook 04 a codice riutilizzabile (`oos_strategy_returns`,
+  `oos_index_start`). **6 test** (`tests/test_walkforward.py`): selezione
+  solo test-windows, no overlap, RW flat, costi mordono, expanding==rolling
+  per le finestre OOS. Importato direttamente (non in `__init__`) per
+  evitare cicli con `models`
+- **Notebook 05** (`05_baseline_robustness.ipynb`, eseguito) su **tutti e 5**
+  i Tier 1. Ipotesi H5/H6 scritte prima dei numeri:
+  - **H5 (robustezza lookback) confermata 4/5**: Sharpe-vs-lookback è una
+    collina (non picco). `beats_bh`: POL 7/8, ETH 5/8, SOL 5/8, BTC 4/8,
+    **LINK 2/8** (fragile). Il risultato del notebook 04 non era artefatto
+  - **H6 (danno = whipsaw da volatilità) SMENTITA**: corr vol↔Δsharpe(bear)
+    = **−0.09**. Il momentum protegge 4/5 *inclusi i due più volatili*
+    (SOL vol 1.20, POL vol 1.41). LINK (vol 1.16) è l'unico che danneggia
+    (Δsharpe −0.94) → **outlier specifico di LINK, non pattern di vol**
+- **Esito netto**: l'edge difensivo è **più robusto del previsto**
+  (cross-asset + cross-lookback), e LINK è un caso studio isolato da
+  indagare (aggiunto a OPEN_QUESTIONS come Q25)
+- **160 → 166/166 pytest verde** (+6 walkforward), ruff pulito, pyright
+  core pulito
+- Branch dedicato `claude/phase-2.1-baseline-robustness` (da `main`
+  post-merge Fase 2)
+
 ### 2026-05-30 — Sessione 5: consolidamento Fase 2
 - **Scelta utente**: consolidare invece di aprire nuovi filoni. Fase 2
   marcata **completata** in ROADMAP/STATUS; i 6 residui spostati in una
