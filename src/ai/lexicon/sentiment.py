@@ -10,7 +10,7 @@ study whether sentiment predicts returns without look-ahead, we (1) aggregate
 to a daily mean per UTC calendar day, then (2) lag the daily feature by N days
 (default 1) before joining it to returns. So the feature used to explain the
 return realised over day ``D`` is built only from news published on/before day
-``D − N`` — the news is fully public before the return window opens.
+``D - N``: the news is fully public before the return window opens.
 
 All functions are pure over pandas objects, so they unit-test offline. The
 scorer is the only stateful piece; a module-level analyzer is reused to avoid
@@ -72,7 +72,7 @@ def daily_sentiment(scored: pd.DataFrame) -> pd.DataFrame:
             },
             index=pd.DatetimeIndex([], name="date", tz="UTC"),
         )
-    day = scored.index.floor("D")
+    day = pd.DatetimeIndex(scored.index).floor("D")
     grouped = scored["sentiment"].groupby(day)
     out = pd.DataFrame(
         {
@@ -117,6 +117,6 @@ def align_sentiment_returns(
     ret_idx = pd.DatetimeIndex(ret.index)
     if ret_idx.tz is None:
         ret_idx = ret_idx.tz_localize("UTC")
-    ret = pd.Series(ret.to_numpy(), index=ret_idx.floor("D"), name="return")
+    ret = pd.Series(ret.to_numpy(), index=pd.DatetimeIndex(ret_idx).floor("D"), name="return")
     joined = lagged.join(ret, how="inner")
     return joined.dropna(subset=["return", "mean_sentiment"])

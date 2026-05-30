@@ -22,7 +22,7 @@ from __future__ import annotations
 from typing import Final
 from urllib.parse import quote_plus
 
-from src.assets.asset import Asset, TIER1_ASSETS
+from src.assets.asset import TIER1_ASSETS, Asset
 from src.ingestion.news.rss import RSSNewsSource
 
 # General crypto newswires (broad market coverage). name -> feed URL.
