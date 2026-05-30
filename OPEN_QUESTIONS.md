@@ -213,6 +213,26 @@ valore aggiunto del progetto.
 
 ---
 
+### Q25 — Perché LINK resiste al filtro di regime/momentum?
+Emersa in Fase 2.1 (notebook 05). Il momentum trend-following protegge nei
+bear 4 asset Tier 1 su 5 (BTC/ETH/SOL/POL), riducendo il drawdown. **LINK è
+l'unico su cui danneggia** (Δsharpe bear −0.94 vs buy-and-hold). L'ipotesi
+"è whipsaw da volatilità" è **falsa**: SOL e POL sono più volatili di LINK
+ma vengono protetti (corr vol↔Δsharpe = −0.09). Quindi è qualcosa di
+**specifico di LINK**.
+
+Candidati da indagare:
+- Microstruttura del trend LINK 2019-2025 (range prolungati che generano
+  falsi segnali di trend?)
+- Eventi idiosincratici (es. staking launch, tokenomics) che rompono la
+  persistenza
+- È robusto al cambio di finestra del filtro di regime (SMA200 → altre)?
+
+*Non bloccante.* Candidata a indagine dedicata in Fase 2.1 residua o Fase 5
+(regimi). Importante non trattare LINK come gli altri finché non è capito.
+
+---
+
 ## 🟢 Domande di ricerca (non decisioni operative)
 
 Ipotesi da testare empiricamente nel corso del progetto.
