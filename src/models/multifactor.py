@@ -72,6 +72,12 @@ def fit_predict_walk_forward(
     """
     x = x.sort_index()
     y = y.reindex(x.index)
+    # guard: duplicate index labels would corrupt positional/label alignment of
+    # the stitched OOS series (keep the first occurrence, chronological)
+    if x.index.has_duplicates:
+        keep = ~x.index.duplicated(keep="first")
+        x = x[keep]
+        y = y[keep]
     n = len(x)
     splits = walk_forward_splits(n, train_size=train_size, test_size=test_size, expanding=expanding)
 
@@ -96,7 +102,9 @@ def fit_predict_walk_forward(
         test_index = x.index[sp.test_slice]
         proba_parts.append(pd.Series(p_up, index=test_index))
         pred_parts.append(pd.Series((p_up > 0.5).astype("float64"), index=test_index))
-        tgt_parts.append(cast("pd.Series", y.iloc[sp.test_slice]))
+        # build the target on the SAME positional test_index as the prediction,
+        # so the two series stay perfectly aligned (no reliance on y's own index)
+        tgt_parts.append(pd.Series(y_values[sp.test_slice], index=test_index))
 
     if not proba_parts:
         empty = pd.Series(dtype="float64")

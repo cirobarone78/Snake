@@ -269,13 +269,17 @@ negativo sui dati attuali — da riconfermare su più storia).
 - [x] Cross-validation temporale rigorosa — walk-forward (riusa Fase 2), scaler
       fit-on-train-only (no leakage di preprocessing)
 - [ ] Feature importance analysis — quando un modello mostrerà segnale
-- [~] Confronto out-of-sample vs baseline Fase 2 — fatto su BTC tecnico
-      (nb 07: accuracy OOS 0.497 ≈ coin-flip, **nessun edge**); da rifare col
-      fattore macro quando `FRED_API_KEY` è disponibile
+- [x] Confronto out-of-sample vs baseline Fase 2 — nb 07 (tecnico: 0.497 ≈
+      coin-flip) + nb 08 (tecnico vs tecnico+macro su indice comune n=2249:
+      0.5007 → 0.5060, delta nel rumore). **Nessun edge** in entrambi
 
-### Criterio di completamento
+### Criterio di completamento ✅ (risposta data)
 Sappiamo dire (con metriche, non con sensazioni) se l'integrazione
 multifattoriale aggiunge valore predittivo rispetto al tecnico puro.
+**Risposta (nb 08)**: a frequenza **daily** su BTC, l'aggiunta della macro **non
+aggiunge** valore predittivo direzionale (delta accuracy nel rumore). Coerente
+con la EDA Fase 1 (segnale macro mensile, ~0 daily). Resta aperto se conti a
+orizzonte mensile e/o con le news quando il cron avrà accumulato storia.
 
 ---
 
