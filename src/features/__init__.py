@@ -24,13 +24,23 @@ from src.features.indicators import (
     rsi,
     sma,
 )
+from src.features.regime import (
+    Regime,
+    classify_regime,
+    regime_fractions,
+    summarize_by_regime,
+)
 
 __all__ = [
+    "Regime",
     "atr",
     "bollinger_bands",
+    "classify_regime",
     "ema",
     "macd",
     "obv",
+    "regime_fractions",
     "rsi",
     "sma",
+    "summarize_by_regime",
 ]

@@ -503,6 +503,38 @@ i vincoli di design.
     un template dentro commento HTML, intenzionale — non toccato
 - **Nota CI**: pyright resta verde solo su `src/{backtest,features,models}`;
   ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
+- **CI verde al primo run** (run 26679640442): ruff + pytest + pyright core
+
+### 2026-05-30 — Sessione 4 (cont.): analisi regime-aware
+- **Scelta** (utente: "scegli tu il percorso migliore"): regime-aware invece
+  di ARIMA. Motivo: il notebook 04 aveva prodotto un risultato che
+  *richiedeva* approfondimento (il momentum vince solo difensivamente), ed
+  è una domanda di ricerca aperta (OPEN_QUESTIONS: "regimi distinguibili?").
+  ARIMA avrebbe aggiunto `statsmodels` per un baseline che le evidenze danno
+  per perdente; il debito pyright è manutenzione pura. Regime-aware sblocca
+  conoscenza
+- **Nuovo modulo** `src/features/regime.py`:
+  - `classify_regime` causale: bull se `close[t] >= SMA(window)[t]`, else
+    bear; warm-up = unknown (escluso, non indovinato). Default window 200
+  - `summarize_by_regime`: decompone uno stream di rendimenti per regime
+    (full/bull/bear) riusando `summarize`; allineamento causale
+  - `regime_fractions`: quota di tempo per regime
+  - **Proxy trasparente, non regime-switching model** (HMM resta Fase 5)
+- **10 nuovi test** (`tests/test_regime.py`): warm-up unknown, rising→bull,
+  falling→bear, **causalità** (barra futura non cambia label passate),
+  separazione bull/bear, esclusione unknown, fractions. **160/160 verde**,
+  ruff pulito, pyright pulito su `src/features`
+- **Notebook 04 esteso** (sezione 5b + H4 scritta prima dei numeri,
+  rieseguito): decomposizione per regime di buy_hold vs momentum_net
+- **Risultato chiave (H4 confermata su BTC/ETH, smentita su LINK)**:
+  - Bear BTC: momentum maxDD -0.64 vs B&H -0.92, Sharpe -0.44 vs -0.81 →
+    **protezione reale**. Idem ETH (-0.64 vs -0.95; -0.19 vs -0.62)
+  - Bull: momentum *sotto* B&H su tutti e tre (entra tardi, paga whipsaw)
+  - **LINK bear: momentum Sharpe -2.04 vs B&H -1.10** → il filtro di trend
+    viene fatto a pezzi dal whipsaw → spiega perché LINK perde nel
+    full-sample. La robustezza cross-asset va dimostrata, non assunta
+  - **Conseguenza**: il benchmark da battere è **regime-dependent**, non
+    uno scalare. Motiva la direzione regime-aware/per-asset di Fase 3+
 
 ## Prossimo step
 

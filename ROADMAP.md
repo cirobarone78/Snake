@@ -153,24 +153,30 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
       net long-only batte buy-and-hold in Sharpe/drawdown su BTC ed ETH ma
       **non** su LINK (2 su 3 → non è un segnale affidabile); il valore è
       difensivo (stare flat nei crash), non direzionale (dir-acc ~50%)
-- [ ] **Regime detection** (eventualmente spostata qui da Fase 5 se i
-      regimi sono troppo importanti per essere ignorati a livello di
-      baseline)
+- [x] **Regime detection** (anticipata da Fase 5: i regimi erano troppo
+      importanti per essere ignorati al livello di baseline). Classificatore
+      causale bull/bear price-vs-SMA200 (`src/features/regime.py`) +
+      decomposizione metriche per regime. Risultato chiave: l'edge del
+      momentum è **difensivo** (riduce drawdown nei bear su BTC/ETH) non
+      direzionale, e **non robusto** cross-asset (controproducente su LINK
+      per whipsaw). Un HMM/regime-switching resta candidato Fase 5
 
 ### Stato (in corso, 2026-05-30)
 Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
 controllo totale su no-look-ahead) — metriche, walk-forward splitter,
 benchmark passivi — il **cost model** (fee per-broker + slippage ADR-013 +
 proxy di spread), gli **indicatori tecnici** (`src/features/indicators.py`:
-SMA/EMA/MACD/RSI/Bollinger/ATR/OBV) e i **modelli baseline**
+SMA/EMA/MACD/RSI/Bollinger/ATR/OBV), i **modelli baseline**
 (`src/models/baseline.py`: random walk + momentum, forecast→posizione,
-strategy returns net-of-cost, metriche directional accuracy/MAE). 150/150
-pytest verde, ruff + pyright puliti sui nuovi moduli. **Esecuzione
-out-of-sample end-to-end fatta** (notebook 04 su BTC/ETH/LINK reali): il
-momentum net batte buy-and-hold su 2 asset su 3 grazie alla riduzione di
-drawdown, non a un edge direzionale — risultato non robusto, da trattare
-solo come baseline. Mancano: ARIMA (serve `statsmodels`), allineamento
-macro a *release date* (FRED), e analisi regime-aware delle metriche.
+strategy returns net-of-cost, metriche directional accuracy/MAE) e la
+**classificazione di regime** (`src/features/regime.py`, causale bull/bear
++ decomposizione metriche). 160/160 pytest verde, ruff + pyright puliti sui
+moduli core, **CI GitHub Actions verde**. **Esecuzione out-of-sample
+end-to-end + regime-aware fatta** (notebook 04 su BTC/ETH/LINK reali): il
+momentum net batte buy-and-hold su 2 asset su 3 con un edge **difensivo**
+(meno drawdown nei bear), non direzionale; la decomposizione per regime
+spiega perché fallisce su LINK (whipsaw nei bear). Mancano: ARIMA (serve
+`statsmodels`), allineamento macro a *release date* (FRED), IRR per DCA.
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
