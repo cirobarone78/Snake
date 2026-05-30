@@ -381,11 +381,11 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
      pattern ora pronto via ADR-022
    - Estendere `fetch_fred.py` con altre serie macro su demand
      (housing, sentiment, ecc.) — base ormai c'è
-2. **Educational stream**: livello L1 chiuso (10/10). I prossimi
+3. **Educational stream**: livello L1 chiuso (10/10). I prossimi
    capitoli appartengono a L2 (Smart Investor) e si scriveranno
    parallelamente alla Fase 2 (bias cognitivi, cicli/regimi, risk
    management) o Fase 3 (sentiment, FOMO)
-3. **(Fase 2 preview)** Regime clustering / regime-switching sulle
+4. **(Fase 2 preview)** Regime clustering / regime-switching sulle
    correlazioni rolling crypto-macro — direttamente ispirato dall'EDA
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
    sono il segnale concreto che i regimi esistono e vale la pena
@@ -594,8 +594,9 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   findings documentati; **snapshot history pattern** attivo (ADR-022);
   **POL canonical multi-source** (ADR-019/020/021); **L1 educational
   chiuso** (10/10); **67/67 pytest verde**, lint pulito
-- **Branch**: `claude/yahoo-finance-connection-2Qy92` (PR #2 draft).
-  Il nome è ormai bugiardo per la quantità di lavoro che contiene
+- **Branch**: PR #2 (`claude/yahoo-finance-connection-2Qy92`) mergiata
+  in `main` — chiude formalmente Fase 1 nel repo. Il lavoro di doc
+  review prosegue su `claude/review-project-docs-YlHSL`
 - **ADR registrati**: ADR-001 ÷ ADR-022 in `DECISIONS.md`
 - **`.env`** ha `FRED_API_KEY` e `ETHERSCAN_API_KEY` (gitignored).
   Entrambe sono nel transcript di sessione 3 — rigenerabili dai
