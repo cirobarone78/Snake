@@ -76,8 +76,8 @@ def fit_predict_walk_forward(
     # the stitched OOS series (keep the first occurrence, chronological)
     if x.index.has_duplicates:
         keep = ~x.index.duplicated(keep="first")
-        x = x[keep]
-        y = y[keep]
+        x = cast("pd.DataFrame", x[keep])
+        y = cast("pd.Series", y[keep])
     n = len(x)
     splits = walk_forward_splits(n, train_size=train_size, test_size=test_size, expanding=expanding)
 
