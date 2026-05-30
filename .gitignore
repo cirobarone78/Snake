@@ -37,9 +37,11 @@ data/cache/
 !data/processed/.gitkeep
 
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
+# Anchored to repo root so it ignores downloaded model weights only, not the
+# src/models/ source package.
 .cache/
 .huggingface/
-models/
+/models/
 
 # IDE
 .vscode/
