@@ -14,9 +14,45 @@ Fase 1 ✅ completata (2026-05-29).
 
 Fase 2 ben avviata: **harness di valutazione** (engine custom, ADR-009) +
 **cost model** + **indicatori tecnici** + **modelli baseline** +
-**notebook backtest OOS end-to-end**. Gli hook empirici da Fase 1
-(volatility clustering, regime instability, BTC vs CPI YoY −0.40) restano
+**notebook backtest OOS end-to-end** + **classificazione di regime**.
+Gli hook empirici da Fase 1 (volatility clustering, regime instability,
+BTC vs CPI YoY −0.40) restano
 i vincoli di design.
+
+## 🔭 Ripresa prossima sessione (leggere per primo)
+
+**Dove siamo**: Fase 2 sostanzialmente completa sul branch
+`claude/phase-2-baseline-backtest` (PR #4, draft, **CI verde** su HEAD
+`815931a`). Tutti i deliverable core consegnati: harness, cost model,
+indicatori, baseline, notebook OOS end-to-end, regime-aware. 160/160
+pytest verde, ruff pulito, pyright pulito su `src/{backtest,features,models}`,
+CI GitHub Actions attiva e verde.
+
+**Decisione in sospeso per l'utente**: promuovere PR #4 da draft a *ready*
+e marcare Fase 2 completa, spostando i residui a una **Fase 2.1**. La
+raccomandazione di fine sessione è questa (vedi sotto).
+
+**Residui Fase 2 (non bloccanti, candidabili a Fase 2.1)**:
+1. **ARIMA** come terzo baseline → richiede aggiungere `statsmodels` a
+   `pyproject.toml`. Evidenze del notebook 04 suggeriscono che perderà
+   contro il momentum, ma va testato per completezza del deliverable
+2. **IRR money-weighted** per un confronto DCA corretto (il `total_return`
+   del DCA non è comparabile time-weighted — vedi caveat notebook 04)
+3. **Allineamento macro FRED a *release date*** (non reference date) nel
+   walk-forward → serve quando si useranno feature macro nei modelli
+4. **Robustezza cross-asset del filtro di regime**: perché protegge
+   BTC/ETH ma è controproducente su LINK (whipsaw)? Estendere a SOL/POL
+5. **Sensibilità del momentum al `lookback`** (fissato a 30, non testato)
+6. **Pulizia debito pyright** ingestion (~147 finding pandas-stubs) per
+   rendere la CI pyright-bloccante ovunque, non solo sui moduli core
+
+**Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
+indicatori/regimi/risk si possono scrivere ora che il codice esiste.
+
+**Come far girare tutto**: `uv sync`, poi `uv run pytest -q`. Per i
+notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
+(dati gitignored). Notebook eseguiti con
+`cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
 

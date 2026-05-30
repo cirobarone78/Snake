@@ -131,6 +131,9 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
     (max(half_spread, floor) × size_adj) + proxy di spread da range OHLC.
     Capitolo educational L1.04 come prerequisito mentale
   - [ ] Survivorship bias mitigato (se possibile)
+  - [x] **CI riproducibile** (`.github/workflows/ci.yml`): ruff + pytest
+    bloccanti, pyright bloccante sui moduli core (backtest/features/models)
+    e informativo sul resto. Verde su ogni push/PR (VISION principio #2)
   - [x] Out-of-sample mandatory: notebook `04_baseline_backtest.ipynb`
     esegue end-to-end indicatori/forecast → walk-forward expanding (solo
     test windows) → costi → confronto vs buy-and-hold/DCA su BTC/ETH/LINK
