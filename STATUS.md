@@ -12,8 +12,9 @@
 **Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion news cablata su fonti
 reali + **sentiment Layer 1 (lessico/VADER)** scoring/aggregazione/allineamento,
 girati su dati veri. Sblocco rete confermato. Fasi 0, 1, 2 e 2.1 ✅ completate e
-in `main`. **Q9 → ADR-023** (Layer 1 lessico) e **Q12 → ADR-024**
-(publication-time + lag 1g) chiuse.
+in `main`. **Q9 → ADR-023** (Layer 1 lessico), **Q12 → ADR-024**
+(publication-time + lag 1g), **Q10 → ADR-025** (batch giornaliero + news history
+versionata) chiuse.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
@@ -59,17 +60,28 @@ il fallimento e Google News (aggregatore) garantisce la copertura.
   (aggregazione a giorno UTC: `mean_sentiment` + `news_count`),
   `lag_daily_features` / `align_sentiment_returns` (lag 1g anti-look-ahead,
   ADR-024). Dipendenza leggera `vaderSentiment` (no torch)
-- **10 nuovi test offline** (`test_sentiment.py`): sign/bounds, empty,
-  aggregazione, lag, anti-look-ahead nel join. **197/197 pytest verde**
+- **8 nuovi test offline** (`test_sentiment.py`): sign/bounds, empty,
+  aggregazione, lag, anti-look-ahead nel join
 - **Validato su dati veri**: 560 news scorate (range sensati, mean ~0,
   min −0.84 / max +0.79). Lead/lag BTC (n=23 giorni, indicativo): corr
   sentiment(D)↔return(D+1) **−0.10** (rumore, atteso); corr
   news_count(D)↔|return(D+1)| **+0.32** (il *volume* di notizie anticipa
   debolmente la volatilità — da verificare su storia più lunga)
 
+### News history versionata (ADR-025) — fatto
+- **Scelta utente**: accumulare storia news (i feed danno ~settimane). Storage =
+  **commit nel repo** con eccezione mirata ad ADR-009 → **ADR-025**; chiude Q10
+- `src/ingestion/news/history.py` (`to_compact` + `update_history`) +
+  `src/ingestion/news/update_history.py` (entrypoint schedulabile)
+- `.github/workflows/news-history.yml`: cron giornaliero 06:30 UTC, commit del
+  parquet con `[skip ci]`; `.gitignore` carve-out `!data/news_history/*.parquet`
+- **Seed reale committato**: `data/news_history/news.parquet`, **543 item**
+  compatti (~260KB), schema `item_id,source,title,url,sentiment` (no summary)
+- **4 nuovi test** (`test_news_history.py`); **199/199 pytest verde**
+
 ### Prossimi step Fase 3
-1. **Accumulare storia news** nel tempo (i feed danno solo le ultime ~settimane;
-   per un test lead/lag serio servono mesi → schedulare `fetch_news`)
+1. **Lasciar girare il cron** per accumulare mesi di storia (prerequisito per un
+   lead/lag statisticamente serio — ora n≈23 giorni, troppo pochi)
 2. Notebook lead/lag formale + correlazione/Granger sentiment & news-volume vs
    rendimenti/volatilità, su più asset, con valutazione onesta (incluso
    "nessun segnale")
@@ -86,6 +98,22 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-30 — Sessione 8: Fase 3 — connettori reali, sentiment Layer 1, news history
+- **Sblocco rete** (ambiente nuovo): news + huggingface.co + FinBERT tutti 200
+- **Ingestion cablata** (`feeds.py`/`persist.py`/`fetch_news.py`): Cointelegraph
+  + CoinDesk + Google News per asset; 560 item reali persistiti (gitignored).
+  Publisher nativi anti-bot instabili da IP datacenter → Google News backbone
+- **Q9 → ADR-023** (sentiment Layer 1 = VADER, no torch) + `src/ai/lexicon/`
+  (`score_text`, `score_news_frame`, `daily_sentiment`)
+- **Q12 → ADR-024** (publication-time + lag 1g) + `lag_daily_features`,
+  `align_sentiment_returns` (test anti-look-ahead)
+- **Q10 → ADR-025** (batch giornaliero + news history versionata): `history.py`,
+  `update_history.py`, workflow `news-history.yml`, carve-out gitignore.
+  Seed `data/news_history/news.parquet` committato (543 item, ~260KB)
+- **199/199 pytest verde**, ruff + format + pyright (news/ai + core) puliti
+- **Validazione onesta**: lead/lag BTC n≈23 (indicativo) → sentiment(D)↔
+  return(D+1) −0.10; news_count(D)↔|return(D+1)| +0.32. Serve più storia
 
 ### 2026-05-28 — Sessione 1: framing & decisioni
 - Repository svuotata dal precedente progetto (gioco Snake)

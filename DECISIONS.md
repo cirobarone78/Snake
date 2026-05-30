@@ -1273,6 +1273,105 @@ Q24 aveva quattro opzioni:
 
 ---
 
+## ADR-023 — Sentiment Layer 1: lessico (VADER) come punto di partenza
+
+**Data**: 2026-05-30
+**Stato**: Accepted
+**Risolve**: Q9
+
+**Contesto**: ADR-016 definisce una scala a layer per il testo. La Fase 3 ha
+bisogno di un primo scorer di sentiment sulle news. Opzioni (Q9): Layer 1
+lessico (VADER / Loughran-McDonald), Layer 2 transformer finance-tuned
+(FinBERT → `transformers`+`torch`, ~2-3 GB), Layer 3 LLM API (costo per
+chiamata). CLAUDE.md vieta dipendenze pesanti senza giustificazione; ADR-016
+prescrive di partire dal layer più economico e salire solo se un segnale
+misurato lo giustifica.
+
+**Decisione**: partire con **Layer 1 = VADER** (`vaderSentiment`):
+- Lexicon+rules, deterministico, nessun peso/GPU/API; dipendenza leggera (no torch)
+- Compound score in `[-1, +1]`; scoring sul **titolo** (i summary RSS sono rumorosi)
+- Modulo `src/ai/lexicon/` (Layer 1, distinto da `src/ai/nlp_local/` = Layer 2)
+- **Caveat onesto**: VADER è general-domain, non finance-tuned → è un *baseline*.
+  Salita a FinBERT (Layer 2) **solo** se il potere predittivo misurato lo
+  giustifica — decisione separata, futura ADR
+
+**Conseguenze**:
+- `score_text`, `score_news_frame`, `daily_sentiment` in `src/ai/lexicon/`
+- Nessun download di modelli, nessun budget LLM impegnato (Q19/Q20 restano aperte)
+- La promozione a Layer 2 è subordinata a evidenza empirica, non assunta
+
+## ADR-024 — Allineamento temporale news↔prezzo: publication-time + lag di sicurezza
+
+**Data**: 2026-05-30
+**Stato**: Accepted
+**Risolve**: Q12
+
+**Contesto**: per testare se il sentiment anticipa i prezzi serve un
+allineamento news↔return privo di look-ahead. I feed danno in modo affidabile
+solo il **publication time** (non l'event time). Una news pubblicata "durante"
+il giorno D è in parte già nel prezzo di D: usarla per spiegare il return di D
+introdurrebbe leakage intrabar.
+
+**Decisione**:
+1. Timestamp news = **publication time, UTC** (l'unico affidabile)
+2. Aggregazione a **giorno di calendario UTC** (`normalize()`): `mean_sentiment`
+   + `news_count` per giorno
+3. **Lag di sicurezza** di default **1 giorno**: la feature delle news del giorno
+   `D` viene etichettata `D+1` (`shift(freq="D")`) prima del join coi return. Il
+   return spiegato sul giorno `t` usa solo news pubblicate fino a fine `t-1`
+4. Coerente con ADR-007 (timeframe breve = daily) e con "UTC midnight = fine
+   giornata" (anticipato in Q12)
+
+**Conseguenze**:
+- `lag_daily_features` / `align_sentiment_returns` in `src/ai/lexicon/`, con test
+  esplicito anti-look-ahead
+- Il lag è un parametro: studi lead/lag potranno esplorare lag>1, ma il default
+  conservativo è 1 giorno
+- L'allineamento macro a *release date* (CPI/M2) resta un punto distinto del
+  backlog (Fase 2.1/4), non coperto qui
+
+## ADR-025 — News history versionata: eccezione mirata ad ADR-009
+
+**Data**: 2026-05-30
+**Stato**: Accepted
+**Risolve**: Q10 (frequenza ingestion = batch giornaliero)
+**In tensione con**: ADR-009 (dati in `data/` gitignored)
+
+**Contesto**: i feed news espongono solo le ultime ~settimane. Un test lead/lag
+serio del sentiment richiede **mesi** di storia. I container (sessione e runner
+CI) sono effimeri: senza persistenza durevole ogni fetch riparte da zero.
+ADR-009 tiene i parquet fuori dalla repo (dimensione, licenze), ma quella
+motivazione non si applica a *headline metadata*: titolo, URL, timestamp e
+sentiment precalcolato sono piccoli (un anno di fetch giornalieri ≈ pochi MB) e
+a basso rischio di licenza (no testo integrale dell'articolo).
+
+**Decisione**: eccezione **stretta e motivata** ad ADR-009. Un **singolo parquet
+compatto** versionato in `data/news_history/news.parquet`, alimentato da un job
+schedulato:
+- **Schema compatto**: `item_id, source, title, url, sentiment` (+ index
+  `published` UTC). **Si scarta il `summary`** (dimensione + zona grigia licenza;
+  il Layer 1 legge comunque solo il titolo, ADR-023)
+- **Carve-out** nel `.gitignore`: `!data/news_history/` + `!data/news_history/*.parquet`
+  (dopo la regola globale `*.parquet`)
+- **GitHub Actions** `news-history.yml`: cron giornaliero (06:30 UTC, Q10),
+  esegue `update_history`, committa il parquet con `[skip ci]`
+- Dedup su `item_id` (riusa `append_news`): una storia vista in run successive è
+  salvata una sola volta
+- Permessi workflow: `contents: write`; concurrency-group per evitare commit
+  sovrapposti
+
+**Conseguenze**:
+- ✅ La storia news cresce nel tempo nonostante i container effimeri
+- ✅ Sblocca il test lead/lag su orizzonte significativo (Fase 3)
+- ✅ Q10 chiusa (batch giornaliero), coerente con timeframe breve daily (ADR-006)
+- ⚠️ È l'unico dato versionato in `data/`: l'eccezione è **limitata a news
+  headline+sentiment**. Altri dataset restano gitignored (ADR-009 invariato)
+- ⚠️ Se la history diventasse grossa (improbabile per headline), si rivaluterà
+  uno storage esterno con nuova ADR
+- 🔁 Revocabile: rimuovere carve-out + workflow ripristina ADR-009 puro
+
+---
+
 <!--
 Template per nuove ADR:
 

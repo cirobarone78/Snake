@@ -25,6 +25,7 @@
 | Q24 | Storage append per snapshot | [ADR-022](./DECISIONS.md) (latest + history) |
 | Q9 | Modello di sentiment per news | [ADR-023](./DECISIONS.md) (Layer 1 lessico/VADER) |
 | Q12 | Allineamento temporale news↔prezzo | [ADR-024](./DECISIONS.md) (publication-time + lag) |
+| Q10 | Frequenza di ingestion notizie | [ADR-025](./DECISIONS.md) (batch giornaliero + history versionata) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -68,11 +69,10 @@ dipendenza pesante). Salita a FinBERT (Layer 2) subordinata a evidenza empirica.
 
 ---
 
-### Q10 — Frequenza di ingestion notizie
-Real-time vs batch giornaliero?
-
-*Decisione rinviata a Fase 3*. Probabile: batch giornaliero per il primo
-modello (allineato con timeframe "breve" che è a granularità giornaliera).
+### Q10 — Frequenza di ingestion notizie — ✅ RISOLTA → [ADR-025](./DECISIONS.md)
+**Batch giornaliero** (cron GitHub Actions 06:30 UTC) che alimenta la news
+history versionata. Coerente col timeframe breve daily (ADR-006) e col lag di
+allineamento (ADR-024).
 
 ---
 
