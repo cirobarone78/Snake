@@ -9,8 +9,11 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 3 (sentiment & notizie) 🔄 avviata** — bloccata da vincolo di rete
-(vedi sotto). Fasi 0, 1, 2 e 2.1 ✅ completate e in `main`.
+**Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion news cablata su fonti
+reali e girata su dati veri. Sblocco rete confermato. Fasi 0, 1, 2 e 2.1 ✅
+completate e in `main`. **Bivio aperto**: prima di introdurre lo stack NLP
+(transformers/torch) vanno chiuse Q9 (modello sentiment) e Q12 (allineamento
+temporale) — vedi OPEN_QUESTIONS.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
@@ -21,47 +24,44 @@ instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 
 ## 🔭 Ripresa prossima sessione (leggere per primo)
 
-### ⚠️ BLOCCO DA RISOLVERE: serve un AMBIENTE NUOVO
-La Fase 3 richiede fonti news (CoinDesk/Cointelegraph/Google News) e
-HuggingFace, che la **network policy ad allowlist** dell'ambiente blocca
-("Host not in allowlist"). L'utente **ha già aggiunto gli host all'allowlist**,
-ma la modifica ha effetto **solo su un ambiente creato dopo** la modifica —
-non sulla sessione in cui è stata fatta (il proxy
-`CLAUDE_CODE_PROXY_RESOLVES_HOSTS` è fissato all'avvio del container).
-**→ Avviare una NUOVA sessione/ambiente, poi verificare la raggiungibilità:**
-```
-uv run python -c "import urllib.request as u; print(u.urlopen(u.Request('https://www.coindesk.com/arc/outboundfeeds/rss/',headers={'User-Agent':'r'}),timeout=10).status)"
-```
-Host raggiungibili nella sessione attuale (vecchia policy): CoinGecko, FRED,
-Etherscan, Binance.us, Yahoo, PyPI. Bloccati: tutte le news + huggingface.co.
+### ✅ SBLOCCO RETE CONFERMATO (2026-05-30, ambiente nuovo)
+Gli host news + HuggingFace sono **raggiungibili** in questo ambiente
+(allowlist aggiornata attiva). Verifica eseguita su CoinDesk, Cointelegraph,
+Google News, huggingface.co e il modello `ProsusAI/finbert` → tutti HTTP 200.
+Caveat: **CoinDesk** risponde 200 ma serve un **muro anti-bot JS**
+("Please enable JS…"), non l'RSS → escluso per ADR-018 (non si aggira). Le
+sue storie restano coperte via Google News.
 
 ### Dove siamo
-- **`main`** = `c3f52d2` (Fasi 0/1/2/2.1 mergiate). 166/166 pytest, CI verde.
-- **Fase 3 avviata**: scaffold ingestion news in **PR #6** (draft, CI verde),
-  branch `claude/phase-3-sentiment-news`. `src/ingestion/news/`: `NewsItem`,
-  `NewsSource` ABC, `parse_rss` (RSS 2.0/Atom via stdlib, no nuove dep),
-  `RSSNewsSource`. 11 test offline su fixture. **Tutto testato ma NON ancora
-  eseguito su dati veri** (rete bloccata).
+- **`main`** = `c3f52d2` (Fasi 0/1/2/2.1 mergiate). CI verde.
+- **Fase 3, ingestion cablata e girata su dati veri** (branch
+  `claude/phase-3-sentiment-news`, PR #6 draft):
+  - `src/ingestion/news/feeds.py`: registry fonti — newswire generali
+    (Cointelegraph, Decrypt) + Google News per asset Tier 1 (≥2 fonti, ROADMAP)
+  - `src/ingestion/news/persist.py`: `append_news` (history append-only,
+    dedup su `item_id`, sort per `published`) — pura I/O su pandas
+  - `src/ingestion/news/fetch_news.py`: entrypoint
+    (`uv run python -m src.ingestion.news.fetch_news`); per-source parquet in
+    `data/raw/news/` (gitignored), partial-failure tollerata
+  - **Fetch reale OK**: 7 fonti, **560 item** persistiti
+    (cointelegraph 30, decrypt 30, googlenews_{btc,eth,sol,link,pol} 100 cad.),
+    timestamp maggio 2026, index UTC, dedup cross-fetch verificata (run 2: +0)
+  - **187/187 pytest verde** (+10: 5 feeds + 5 persist), ruff + format puliti,
+    pyright pulito su `src/ingestion/news`
 
-### Prossimi step Fase 3 (in ambiente con allowlist attiva)
-1. Verificare raggiungibilità host (comando sopra)
-2. Cablare i connettori concreti alle fonti reali + script fetch/persistenza
-   (sul modello di `fetch_tier1.py`), dati news gitignored
-3. **NLP pipeline**: scaricare FinBERT (HuggingFace), sentiment scoring
-   (ADR-016 Layer 1). Richiede aggiungere `transformers`+`torch` allo stack
-   → prima discutere (dipendenze pesanti, CLAUDE.md)
-4. Feature derivate (sentiment rolling, volume news, divergenza sentiment-prezzo)
-5. Test correlazione lead/lag sentiment vs rendimenti/volatilità
+### ⏸️ FERMO QUI: bivio NLP (decisione utente)
+Prima di aggiungere lo stack NLP (transformers/torch, dipendenze pesanti —
+CLAUDE.md) servono due decisioni (proposte presentate in chat):
+- **Q9** — modello sentiment: Lessico (Layer 1) vs FinBERT (Layer 2) vs ibrido
+- **Q12** — allineamento temporale news↔prezzo (publication-time + lag di
+  sicurezza): da formalizzare in ADR
+Q10 (frequenza ingestion) e Q19/Q20 (budget/provider LLM) restano secondarie.
 
-### Decisioni aperte da chiudere prima del NLP (OPEN_QUESTIONS)
-Q9 (modello sentiment: FinBERT vs LLM vs ibrido), Q10 (frequenza ingestion),
-Q12 (allineamento temporale news — già deciso publication-time nello scaffold,
-da formalizzare in ADR), Q19/Q20 (budget e provider LLM se si userà Layer 2).
-
-### Alternativa se la rete resta un problema
-Backlog **Fase 2.1** (gira con la rete attuale): caso LINK Q25, sensibilità
-già fatte, debito pyright ingestion. Oppure **Fase 4** macro features via
-FRED (raggiungibile).
+### Prossimi step Fase 3 (dopo la decisione Q9/Q12)
+1. Implementare il sentiment scoring scelto (ADR-016 Layer 1 → eventuale L2)
+2. Feature derivate (sentiment rolling, volume news, divergenza sentiment-prezzo)
+3. Notebook lead/lag + correlazione/Granger sentiment vs rendimenti/volatilità
+4. Valutazione onesta del potere predittivo (incluso "nessun segnale")
 
 **Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
 indicatori/regimi/risk si possono scrivere ora che il codice esiste.

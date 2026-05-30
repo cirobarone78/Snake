@@ -14,12 +14,16 @@ ADR-016 Layer 1) and lives elsewhere.
 from __future__ import annotations
 
 from src.ingestion.news.base import NewsItem, NewsSource, news_to_frame
+from src.ingestion.news.feeds import default_news_sources
+from src.ingestion.news.persist import append_news
 from src.ingestion.news.rss import RSSNewsSource, parse_rss
 
 __all__ = [
     "NewsItem",
     "NewsSource",
     "RSSNewsSource",
+    "append_news",
+    "default_news_sources",
     "news_to_frame",
     "parse_rss",
 ]
