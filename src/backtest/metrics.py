@@ -78,7 +78,8 @@ def annualized_volatility(
     r = _clean(returns)
     if len(r) < 2:
         return _NAN
-    return float(r.std(ddof=1)) * (periods_per_year**0.5)
+    sd = float(r.std(ddof=1))
+    return sd * (periods_per_year**0.5)
 
 
 def sharpe_ratio(
