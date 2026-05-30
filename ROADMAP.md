@@ -132,7 +132,15 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
     Capitolo educational L1.04 come prerequisito mentale
   - [ ] Survivorship bias mitigato (se possibile)
   - [ ] Out-of-sample mandatory (esecuzione end-to-end coi modelli baseline)
-- [ ] Modello **baseline**: random walk + momentum semplice + ARIMA
+- [~] Modello **baseline**: random walk + momentum semplice + ARIMA
+  - [x] Random walk (martingala, forecast = 0) e momentum (media mobile
+    trailing dei rendimenti) in `src/models/baseline.py`, causali per
+    costruzione (test di non-look-ahead), + mapping forecast→posizione
+    (long-only di default per spot ADR-012), strategy returns al netto
+    dei costi (turnover × cost model), e metriche di forecast
+    (directional accuracy, MAE)
+  - [ ] ARIMA: rimandato finché non si aggiunge `statsmodels` allo stack
+    installato (è in ADR-009 ma non ancora in `pyproject.toml`)
 - [x] **Suite di metriche** (`src/backtest/metrics.py`): Sharpe, Sortino,
       max drawdown (+ durata), Calmar, hit rate, profit factor, time
       underwater, total/annualized return & vol, `summarize()` aggregato.
@@ -147,11 +155,15 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
 Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
 controllo totale su no-look-ahead) — metriche, walk-forward splitter,
 benchmark passivi — il **cost model** (fee per-broker + slippage ADR-013 +
-proxy di spread) e gli **indicatori tecnici** (`src/features/indicators.py`:
-SMA/EMA/MACD/RSI/Bollinger/ATR/OBV). 134/134 pytest verde, ruff + pyright
-puliti sui nuovi moduli. Mancano per chiudere il framework: allineamento
-macro a *release date* (FRED) e l'esecuzione out-of-sample end-to-end coi
-**modelli baseline** (random walk / momentum / ARIMA).
+proxy di spread), gli **indicatori tecnici** (`src/features/indicators.py`:
+SMA/EMA/MACD/RSI/Bollinger/ATR/OBV) e i **modelli baseline**
+(`src/models/baseline.py`: random walk + momentum, forecast→posizione,
+strategy returns net-of-cost, metriche directional accuracy/MAE). 150/150
+pytest verde, ruff + pyright puliti sui nuovi moduli. Mancano per chiudere
+la fase: ARIMA (serve `statsmodels`), allineamento macro a *release date*
+(FRED) e l'**esecuzione out-of-sample end-to-end** che lega indicatori →
+segnale → harness + costi → confronto vs buy-and-hold/DCA sui dati reali
+Tier 1.
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.

@@ -432,6 +432,30 @@ regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 - Material di base per il futuro capitolo educational L2 sugli indicatori
   (ADR-015), da scrivere quando li useremo nei modelli baseline
 
+### 2026-05-30 — Sessione 4 (cont.): modelli baseline (opzione A, no statsmodels)
+- **Nuovo package** `src/models/` con `baseline.py`:
+  - `random_walk_forecast` (martingala: forecast = 0 ovunque, il null
+    "do nothing") e `momentum_forecast` (media mobile trailing dei
+    rendimenti, `shift(1)` per garantire causalità: f[t] usa solo r<t)
+  - `returns_from_prices`, `signal_from_forecast` (segno → posizione in
+    {-1,0,+1}, **long-only di default** per spot ADR-012, NaN→flat),
+    `strategy_returns` (gross = pos×ret; con cost model addebita
+    turnover |Δpos|×cost_rate, entry da flat al t0)
+  - Metriche di forecast: `directional_accuracy` (esclude periodi flat/NaN
+    → random walk dà NaN per costruzione, corretto) e `mean_absolute_error`
+  - **Scelta**: ARIMA rimandato per non aggiungere `statsmodels` ora
+    (è in ADR-009 ma non in `pyproject.toml`); random walk + momentum non
+    richiedono nuove dipendenze
+- **16 nuovi test** (`tests/test_baseline.py`): returns, RW all-zero,
+  momentum trailing-mean + causalità, signal sign/long-only/short/NaN,
+  strategy returns gross e con turnover (cost model zero vs non-zero),
+  RW non tradea mai, directional accuracy (perfetta/metà/NaN su RW), MAE.
+  **150/150 pytest verde**, ruff pulito, pyright pulito su `src/models`
+- **Prossimo step naturale**: notebook out-of-sample end-to-end che lega
+  indicatori → forecast baseline → walk-forward + costi → confronto vs
+  buy-and-hold/DCA sui dati reali Tier 1 (è il criterio di completamento
+  Fase 2). Poi eventualmente ARIMA + `statsmodels`
+
 ## Prossimo step
 
 1. **Apertura Fase 2** — Baseline tecnica & backtesting rigoroso (vedi
