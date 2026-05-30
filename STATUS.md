@@ -9,12 +9,19 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 4 (modelli multifattoriali) 🔄 avviata** — primo deliverable: **macro
-feature pipeline point-in-time-safe** da FRED (branch `claude/phase-4-multifactor`).
-**Fase 3 consolidata in `main`** (PR #6 `542fff6` + PR #7 `34c1af7`): ingestion,
-sentiment Layer 1, news history + cron, feature news-derived, notebook lead/lag,
-capitolo L2.06. Fasi 0/1/2/2.1 ✅ in `main`.
-**Q9 → ADR-023**, **Q12 → ADR-024**, **Q10 → ADR-025** chiuse.
+**Fase 4 (modelli multifattoriali) 🔄 in corso** — macro pipeline
+point-in-time-safe **in `main`** (PR #8 `3e13c0d`). Ora: **design matrix
+multifattoriale + primo modello** (logistic regression walk-forward OOS) su
+branch `claude/phase-4-model`. Fase 3 consolidata in `main` (PR #6/#7), cron news
+attivo. Fasi 0/1/2/2.1 ✅. **Q9/Q12/Q10 → ADR-023/024/025** chiuse.
+
+**🔬 Finding Fase 4 (barra onesta)**: il primo modello multifattoriale
+(logistic, **solo feature tecniche** finché manca `FRED_API_KEY`) su BTC dà
+**directional accuracy OOS 0.497** ≈ coin-flip, e la sua strategia net perde
+nettamente contro buy-and-hold (Sharpe 0.37 vs 0.98). **Nessun edge** — il
+risultato *giusto* (un'accuracy alta sarebbe sospetta di look-ahead). Il valore
+di Fase 4, se c'è, verrà dai **fattori ortogonali** (macro/news), non dal tecnico
+rimasticato. Prossimo: join macro+tecnico appena la chiave FRED è disponibile.
 
 **🔬 Finding Fase 3 (onestà metodologica)**: il `corr(news_count, |return|)
 = +0.32` visto su n=23 **è svanito a n=143** (market-wide, ~−0.07 a lag 1) →
@@ -112,6 +119,23 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-30 — Sessione 11: Fase 4 — design matrix + primo modello multifattoriale
+- **PR #8 mergiata in `main`** (`3e13c0d`): macro pipeline point-in-time-safe
+- **`scikit-learn` aggiunto** (era in ADR-009, non in pyproject — dip. leggera, no torch)
+- **`src/features/dataset.py`**: `technical_features` (SMA gap, MACD hist, RSI,
+  ATR%, ret), `directional_target`, `assemble_design_matrix` (join tecnico+macro+
+  news, **lag 1 su tutte le feature** → la riga t è lo stato di t-1, predice
+  direzione di t; rifiuta lag 0 che leakerebbe). 6 test
+- **`src/models/multifactor.py`**: `fit_predict_walk_forward` (logistic regression,
+  **scaler fit-on-train-only**, walk-forward expanding via `walk_forward_splits`,
+  OOS stitchate), `WalkForwardResult`, `positions_from_predictions`. 6 test
+  (segnale apprendibile → >0.9 OOS; rumore → ~0.5; troppo corto → vuoto)
+- **`notebooks/07_multifactor_model.ipynb`** (eseguito): H1-H3 prima, BTC reale.
+  **Accuracy OOS 0.497** (coin-flip), strategia net Sharpe 0.37 vs B&H 0.98 →
+  nessun edge col solo tecnico. Barra onesta, niente look-ahead nascosto
+- **229/229 pytest verde**, ruff + pyright core puliti
+- Branch `claude/phase-4-model`
 
 ### 2026-05-30 — Sessione 10: consolidamento Fase 3 + apertura Fase 4 (macro)
 - **PR #7 mergiata in `main`** (squash `34c1af7`): feature news-derived,
