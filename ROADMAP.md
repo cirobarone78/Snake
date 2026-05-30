@@ -100,7 +100,7 @@ alla Fase 2.
 
 ---
 
-## Fase 2 — Baseline tecnica & backtesting rigoroso
+## Fase 2 — Baseline tecnica & backtesting rigoroso ✅ *completata (2026-05-30)*
 
 **Obiettivo**: costruire l'infrastruttura di valutazione **prima** dei modelli
 complessi. Senza questa, qualsiasi risultato successivo è inattendibile.
@@ -164,7 +164,7 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
       direzionale, e **non robusto** cross-asset (controproducente su LINK
       per whipsaw). Un HMM/regime-switching resta candidato Fase 5
 
-### Stato (in corso, 2026-05-30)
+### Esito (completata 2026-05-30)
 Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
 controllo totale su no-look-ahead) — metriche, walk-forward splitter,
 benchmark passivi — il **cost model** (fee per-broker + slippage ADR-013 +
@@ -181,8 +181,38 @@ momentum net batte buy-and-hold su 2 asset su 3 con un edge **difensivo**
 spiega perché fallisce su LINK (whipsaw nei bear). Mancano: ARIMA (serve
 `statsmodels`), allineamento macro a *release date* (FRED), IRR per DCA.
 
-### Criterio di completamento
+### Criterio di completamento ✅
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
+**Raggiunto**: framework walk-forward no-look-ahead con costi, baseline
+(random walk + momentum) valutati out-of-sample su dati reali, metriche
+decomposte per regime, CI riproducibile verde. PR #4 consolidata.
+
+---
+
+## Fase 2.1 — Rifiniture baseline (non bloccante, opportunistica)
+
+**Obiettivo**: completare i residui di Fase 2 che non bloccano l'avanzamento
+a Fase 3. Affrontabili quando comodo, anche in parallelo ad altre fasi.
+
+### Deliverable
+- [ ] **ARIMA** come terzo baseline → richiede `statsmodels` in
+      `pyproject.toml`. Le evidenze del notebook 04 (daily return = rumore,
+      random walk vince su MAE) suggeriscono che perderà contro il momentum,
+      ma va testato per completezza
+- [ ] **IRR money-weighted** per un confronto DCA corretto (il `total_return`
+      del DCA non è comparabile time-weighted — vedi caveat notebook 04)
+- [ ] **Allineamento macro FRED a *release date*** (non reference date) nel
+      walk-forward → serve quando si useranno feature macro nei modelli
+- [ ] **Robustezza cross-asset del filtro di regime**: perché protegge
+      BTC/ETH ma danneggia LINK (whipsaw nei bear)? Estendere a SOL/POL
+- [ ] **Sensibilità del momentum al `lookback`** (ora fisso a 30, non
+      stress-testato) → verificare che il risultato non sia un artefatto
+- [ ] **Pulizia debito pyright** ingestion (~147 finding pandas-stubs) per
+      rendere la CI pyright-bloccante ovunque, non solo sui moduli core
+
+### Criterio di completamento
+Nessuno stringente: è un backlog di qualità. Si chiude quando i punti
+diventano rilevanti per le fasi successive o quando c'è banda per farli.
 
 ---
 

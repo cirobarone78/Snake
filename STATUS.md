@@ -9,42 +9,36 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 2 — Baseline tecnica & backtesting rigoroso** 🔄 *in corso (avviata 2026-05-30)*
-Fase 1 ✅ completata (2026-05-29).
+**Fase 2 ✅ completata (2026-05-30)** — pronti per **Fase 3 (sentiment &
+notizie)**. Fase 1 ✅ completata (2026-05-29).
 
-Fase 2 ben avviata: **harness di valutazione** (engine custom, ADR-009) +
-**cost model** + **indicatori tecnici** + **modelli baseline** +
-**notebook backtest OOS end-to-end** + **classificazione di regime**.
-Gli hook empirici da Fase 1 (volatility clustering, regime instability,
-BTC vs CPI YoY −0.40) restano
-i vincoli di design.
+Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
+(engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
+**modelli baseline** + **notebook backtest OOS end-to-end** +
+**classificazione di regime**. I residui non bloccanti sono in **Fase 2.1**
+(backlog di qualità, vedi ROADMAP). Gli hook empirici da Fase 1 (volatility
+clustering, regime instability, BTC vs CPI YoY −0.40) restano i vincoli di
+design per i modelli successivi.
 
 ## 🔭 Ripresa prossima sessione (leggere per primo)
 
-**Dove siamo**: Fase 2 sostanzialmente completa sul branch
-`claude/phase-2-baseline-backtest` (PR #4, draft, **CI verde** su HEAD
-`815931a`). Tutti i deliverable core consegnati: harness, cost model,
-indicatori, baseline, notebook OOS end-to-end, regime-aware. 160/160
-pytest verde, ruff pulito, pyright pulito su `src/{backtest,features,models}`,
-CI GitHub Actions attiva e verde.
+**Dove siamo**: **Fase 2 completata e consolidata**. Branch
+`claude/phase-2-baseline-backtest` (PR #4, **ready-for-review**, **CI verde**
+su HEAD `ee61842`). Deliverable core: harness, cost model, indicatori,
+baseline, notebook OOS end-to-end, regime-aware. 160/160 pytest verde, ruff
+pulito, pyright pulito su `src/{backtest,features,models}`, CI GitHub
+Actions verde.
 
-**Decisione in sospeso per l'utente**: promuovere PR #4 da draft a *ready*
-e marcare Fase 2 completa, spostando i residui a una **Fase 2.1**. La
-raccomandazione di fine sessione è questa (vedi sotto).
+**Prossimo bivio**: o si apre la **Fase 3 (sentiment & notizie)** — primo
+deliverable: pipeline ingestion notizie da ≥2 fonti + NLP baseline (FinBERG/
+sentence-transformers, ADR-016 Layer 1) — oppure si pesca dal backlog
+**Fase 2.1** se si preferisce rifinire i baseline prima di allargare.
+Decisione dell'utente a inizio sessione.
 
-**Residui Fase 2 (non bloccanti, candidabili a Fase 2.1)**:
-1. **ARIMA** come terzo baseline → richiede aggiungere `statsmodels` a
-   `pyproject.toml`. Evidenze del notebook 04 suggeriscono che perderà
-   contro il momentum, ma va testato per completezza del deliverable
-2. **IRR money-weighted** per un confronto DCA corretto (il `total_return`
-   del DCA non è comparabile time-weighted — vedi caveat notebook 04)
-3. **Allineamento macro FRED a *release date*** (non reference date) nel
-   walk-forward → serve quando si useranno feature macro nei modelli
-4. **Robustezza cross-asset del filtro di regime**: perché protegge
-   BTC/ETH ma è controproducente su LINK (whipsaw)? Estendere a SOL/POL
-5. **Sensibilità del momentum al `lookback`** (fissato a 30, non testato)
-6. **Pulizia debito pyright** ingestion (~147 finding pandas-stubs) per
-   rendere la CI pyright-bloccante ovunque, non solo sui moduli core
+**Backlog Fase 2.1 (non bloccante, vedi ROADMAP per dettaglio)**: ARIMA
+(+`statsmodels`), IRR money-weighted per DCA, allineamento macro FRED a
+release date, robustezza regime cross-asset (SOL/POL), sensibilità momentum
+al lookback, pulizia debito pyright ingestion.
 
 **Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
 indicatori/regimi/risk si possono scrivere ora che il codice esiste.
@@ -540,6 +534,14 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 - **Nota CI**: pyright resta verde solo su `src/{backtest,features,models}`;
   ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
 - **CI verde al primo run** (run 26679640442): ruff + pytest + pyright core
+
+### 2026-05-30 — Sessione 5: consolidamento Fase 2
+- **Scelta utente**: consolidare invece di aprire nuovi filoni. Fase 2
+  marcata **completata** in ROADMAP/STATUS; i 6 residui spostati in una
+  nuova sezione **Fase 2.1** (backlog di qualità non bloccante)
+- **PR #4 promossa da draft a ready-for-review** (CI verde su `ee61842`,
+  160/160 test). Il criterio di completamento Fase 2 è dichiarato raggiunto
+- Nessuna modifica al codice: solo allineamento documentale + stato PR
 
 ### 2026-05-30 — Sessione 4 (cont.): analisi regime-aware
 - **Scelta** (utente: "scegli tu il percorso migliore"): regime-aware invece
