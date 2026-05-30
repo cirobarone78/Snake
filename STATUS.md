@@ -6,15 +6,16 @@
 ---
 
 ## Ultimo aggiornamento
-2026-05-29
+2026-05-30
 
 ## Fase corrente
-**Fase 1 — Esplorazione dati** ✅ *completata (2026-05-29)*
-→ pronti per **Fase 2 — Baseline tecnica & backtesting rigoroso**
+**Fase 2 — Baseline tecnica & backtesting rigoroso** 🔄 *in corso (avviata 2026-05-30)*
+Fase 1 ✅ completata (2026-05-29).
 
-ROADMAP aggiornata: deliverable Fase 1 tutti spuntati, hook empirici
-da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
-−0.40) usati come vincoli per il design della Fase 2.
+Primo deliverable Fase 2 in piedi: **harness di valutazione** (engine
+custom, ADR-009) — metriche, walk-forward splitter no-look-ahead,
+benchmark passivi. Gli hook empirici da Fase 1 (volatility clustering,
+regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 
 ## Cosa è stato fatto
 
@@ -366,7 +367,33 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   Manca solo on-chain (Etherscan / Blockchain.com) come stretch goal
 
 ## Cosa è in corso
-- Niente di attivo a fine sessione
+
+### 2026-05-30 — Sessione 4: harness di valutazione Fase 2
+- **Nuovo package** `src/backtest/` (engine custom, ADR-009 — scelto
+  custom per controllo totale su no-look-ahead e futuro cost model):
+  - `metrics.py`: metriche su serie di rendimenti semplici periodici —
+    equity curve, total/annualized return, annualized vol, Sharpe,
+    Sortino (downside deviation), drawdown series + max drawdown +
+    durata, Calmar, hit rate, profit factor, time underwater, e
+    `summarize()` che le impacchetta in un `PerformanceSummary`.
+    Annualizzazione parametrica via `periods_per_year`
+    (asset-class-agnostic, ADR-014: 365 crypto / 252 equity), default
+    crypto-first ma overridable
+  - `splits.py`: walk-forward splitter rolling/expanding, posizionale
+    (index-agnostic). Invariante no-look-ahead (`test_start >=
+    train_end`) forzata alla costruzione di `Split`. `split_frame()`
+    helper iloc-based
+  - `benchmark.py`: buy-and-hold (equity + returns) e DCA (contributo
+    fisso a cadenza fissa, nessun look-ahead) — DCA è il benchmark che
+    conterà davvero in Fase 6 (vedi L1.06). Equity curve confrontabili
+    con quelle delle strategie via le stesse metriche
+- **35 nuovi test** (`test_metrics.py`, `test_splits.py`,
+  `test_benchmark.py`) su curve note + edge case (vol zero, serie vuota,
+  no-downside → Sortino NaN, wipe-out, cadenze DCA, invariante
+  anti-look-ahead). **102/102 pytest verde**, ruff pulito, pyright
+  pulito su `src/backtest`
+- Sviluppo su branch dedicato `claude/phase-2-baseline-backtest` (da
+  `main`); la doc review resta isolata in PR #3
 
 ## Prossimo step
 

@@ -118,21 +118,33 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
 
 ### Deliverable
 - [ ] Indicatori tecnici classici implementati (MA, MACD, RSI, BB, ATR, OBV)
-- [ ] Framework di **backtesting walk-forward** con:
-  - Niente look-ahead bias (test esplicito; per macro FRED → uso di
-    *release date* non *reference date*)
-  - Costi di transazione inclusi (fee + slippage stimato — modello
+- [~] Framework di **backtesting walk-forward** (engine custom) con:
+  - [x] Niente look-ahead bias: walk-forward splitter rolling/expanding
+    (`src/backtest/splits.py`), invariante "test dopo train" forzata alla
+    costruzione di `Split` e verificata nei test. Per macro FRED → uso di
+    *release date* non *reference date* ancora da fare
+  - [ ] Costi di transazione inclusi (fee + slippage stimato — modello
     discusso in ADR-013, capitolo educational L1.04 come prerequisito
     mentale)
-  - Survivorship bias mitigato (se possibile)
-  - Out-of-sample mandatory
+  - [ ] Survivorship bias mitigato (se possibile)
+  - [ ] Out-of-sample mandatory
 - [ ] Modello **baseline**: random walk + momentum semplice + ARIMA
-- [ ] Suite di metriche: Sharpe, Sortino, max drawdown, hit rate, profit factor,
-      Calmar, time underwater
-- [ ] Confronto baseline vs buy-and-hold
+- [x] **Suite di metriche** (`src/backtest/metrics.py`): Sharpe, Sortino,
+      max drawdown (+ durata), Calmar, hit rate, profit factor, time
+      underwater, total/annualized return & vol, `summarize()` aggregato.
+      Annualizzazione parametrica (asset-class-agnostic, ADR-014)
+- [ ] Confronto baseline vs buy-and-hold (benchmark buy-and-hold + DCA già
+      pronti in `src/backtest/benchmark.py`; confronto da eseguire coi modelli)
 - [ ] **Regime detection** (eventualmente spostata qui da Fase 5 se i
       regimi sono troppo importanti per essere ignorati a livello di
       baseline)
+
+### Stato (in corso, 2026-05-30)
+Primo deliverable consegnato: **harness di valutazione** (`src/backtest/`,
+engine custom per controllo totale su no-look-ahead). Metriche + walk-forward
+splitter + benchmark passivi, 35 test dedicati (102/102 totali verde). Manca
+il cost model (fee+slippage, ADR-013) per chiudere il framework, poi i modelli
+baseline.
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
