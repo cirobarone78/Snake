@@ -20,6 +20,7 @@ reloading the lexicon per call.
 from __future__ import annotations
 
 from functools import lru_cache
+from typing import Any, cast
 
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -61,7 +62,7 @@ def daily_sentiment(scored: pd.DataFrame) -> pd.DataFrame:
 
     Returns a frame indexed by a UTC ``DatetimeIndex`` named ``date`` (midnight),
     with columns ``mean_sentiment`` (daily average polarity) and ``news_count``
-    (number of items that day — itself a candidate "news volume" feature).
+    (number of items that day, itself a candidate "news volume" feature).
     Empty input yields a correctly-typed empty frame.
     """
     if scored.empty:
@@ -72,7 +73,8 @@ def daily_sentiment(scored: pd.DataFrame) -> pd.DataFrame:
             },
             index=pd.DatetimeIndex([], name="date", tz="UTC"),
         )
-    day = pd.DatetimeIndex(scored.index).floor("D")
+    # cast: pinned pandas-stubs omit normalize() on the index type
+    day = cast("Any", pd.DatetimeIndex(scored.index)).normalize()
     grouped = scored["sentiment"].groupby(day)
     out = pd.DataFrame(
         {
@@ -117,6 +119,7 @@ def align_sentiment_returns(
     ret_idx = pd.DatetimeIndex(ret.index)
     if ret_idx.tz is None:
         ret_idx = ret_idx.tz_localize("UTC")
-    ret = pd.Series(ret.to_numpy(), index=pd.DatetimeIndex(ret_idx).floor("D"), name="return")
+    day_idx = cast("Any", ret_idx).normalize()
+    ret = pd.Series(ret.to_numpy(), index=day_idx, name="return")
     joined = lagged.join(ret, how="inner")
     return joined.dropna(subset=["return", "mean_sentiment"])
