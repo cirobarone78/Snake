@@ -83,8 +83,7 @@ def _parse_atom_entry(entry: ET.Element, source: str) -> NewsItem | None:
     title = _text(entry.find(f"{_ATOM_NS}title"))
     guid = _text(entry.find(f"{_ATOM_NS}id"))
     published = _parse_datetime(
-        _text(entry.find(f"{_ATOM_NS}published"))
-        or _text(entry.find(f"{_ATOM_NS}updated"))
+        _text(entry.find(f"{_ATOM_NS}published")) or _text(entry.find(f"{_ATOM_NS}updated"))
     )
     summary = _text(entry.find(f"{_ATOM_NS}summary"))
     # Atom links carry the URL in an href attribute; prefer rel="alternate".
@@ -182,9 +181,7 @@ class RSSNewsSource(NewsSource):
         headers = {"User-Agent": self._user_agent}
         attempt = 0
         while True:
-            resp = self._session.get(
-                self._feed_url, headers=headers, timeout=self._timeout
-            )
+            resp = self._session.get(self._feed_url, headers=headers, timeout=self._timeout)
             if resp.status_code == 429:
                 attempt += 1
                 if attempt > self._max_retries:
@@ -195,7 +192,10 @@ class RSSNewsSource(NewsSource):
                 wait = self._backoff_base * (2 ** (attempt - 1))
                 logger.warning(
                     "RSS %s 429: retry %d/%d in %.0fs",
-                    self._name, attempt, self._max_retries, wait,
+                    self._name,
+                    attempt,
+                    self._max_retries,
+                    wait,
                 )
                 time.sleep(wait)
                 continue

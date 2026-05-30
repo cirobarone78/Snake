@@ -71,9 +71,7 @@ def news_to_frame(items: list[NewsItem]) -> pd.DataFrame:
     """
     cols = ["item_id", "source", "title", "url", "summary"]
     if not items:
-        return pd.DataFrame(
-            columns=cols, index=pd.DatetimeIndex([], name="published", tz="UTC")
-        )
+        return pd.DataFrame(columns=cols, index=pd.DatetimeIndex([], name="published", tz="UTC"))
     df = pd.DataFrame(
         {
             "item_id": [i.item_id for i in items],

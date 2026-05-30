@@ -28,7 +28,7 @@ from src.ingestion.news.rss import RSSNewsSource
 # General crypto newswires (broad market coverage). name -> feed URL.
 GENERAL_FEEDS: Final[dict[str, str]] = {
     "cointelegraph": "https://cointelegraph.com/rss",
-    "decrypt": "https://decrypt.co/feed",
+    "coindesk": "https://www.coindesk.com/arc/outboundfeeds/rss/",
 }
 
 # Google News exposes any search as an RSS feed; we aggregate per asset.

@@ -1,4 +1,3 @@
-# pyright: strict
 """Append-and-dedup persistence for news items (Fase 3).
 
 News is an append-only log: each fetch returns the most recent items, which

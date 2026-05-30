@@ -10,10 +10,10 @@
 
 ## Fase corrente
 **Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion news cablata su fonti
-reali e girata su dati veri. Sblocco rete confermato. Fasi 0, 1, 2 e 2.1 ✅
-completate e in `main`. **Bivio aperto**: prima di introdurre lo stack NLP
-(transformers/torch) vanno chiuse Q9 (modello sentiment) e Q12 (allineamento
-temporale) — vedi OPEN_QUESTIONS.
+reali + **sentiment Layer 1 (lessico/VADER)** scoring/aggregazione/allineamento,
+girati su dati veri. Sblocco rete confermato. Fasi 0, 1, 2 e 2.1 ✅ completate e
+in `main`. **Q9 → ADR-023** (Layer 1 lessico) e **Q12 → ADR-024**
+(publication-time + lag 1g) chiuse.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
@@ -28,16 +28,20 @@ instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 Gli host news + HuggingFace sono **raggiungibili** in questo ambiente
 (allowlist aggiornata attiva). Verifica eseguita su CoinDesk, Cointelegraph,
 Google News, huggingface.co e il modello `ProsusAI/finbert` → tutti HTTP 200.
-Caveat: **CoinDesk** risponde 200 ma serve un **muro anti-bot JS**
-("Please enable JS…"), non l'RSS → escluso per ADR-018 (non si aggira). Le
-sue storie restano coperte via Google News.
+Caveat: i feed publisher nativi (CoinDesk, Decrypt, …) sono **anti-bot
+instabili** da IP datacenter — lo stesso endpoint alterna RSS valido / 403 /
+muro JS a seconda della richiesta. Non si aggirano (ADR-018); il fetch tollera
+il fallimento e Google News (aggregatore) garantisce la copertura.
 
 ### Dove siamo
 - **`main`** = `c3f52d2` (Fasi 0/1/2/2.1 mergiate). CI verde.
 - **Fase 3, ingestion cablata e girata su dati veri** (branch
   `claude/phase-3-sentiment-news`, PR #6 draft):
   - `src/ingestion/news/feeds.py`: registry fonti — newswire generali
-    (Cointelegraph, Decrypt) + Google News per asset Tier 1 (≥2 fonti, ROADMAP)
+    (Cointelegraph, CoinDesk) + Google News per asset Tier 1 (≥2 fonti, ROADMAP).
+    **Nota anti-bot**: i feed dei publisher nativi sono instabili da IP
+    datacenter (200/403/JS-wall a rotazione); non si aggirano (ADR-018), il
+    fetch tollera il fallimento parziale e Google News fa da backbone affidabile
   - `src/ingestion/news/persist.py`: `append_news` (history append-only,
     dedup su `item_id`, sort per `published`) — pura I/O su pandas
   - `src/ingestion/news/fetch_news.py`: entrypoint
@@ -49,19 +53,29 @@ sue storie restano coperte via Google News.
   - **187/187 pytest verde** (+10: 5 feeds + 5 persist), ruff + format puliti,
     pyright pulito su `src/ingestion/news`
 
-### ⏸️ FERMO QUI: bivio NLP (decisione utente)
-Prima di aggiungere lo stack NLP (transformers/torch, dipendenze pesanti —
-CLAUDE.md) servono due decisioni (proposte presentate in chat):
-- **Q9** — modello sentiment: Lessico (Layer 1) vs FinBERT (Layer 2) vs ibrido
-- **Q12** — allineamento temporale news↔prezzo (publication-time + lag di
-  sicurezza): da formalizzare in ADR
-Q10 (frequenza ingestion) e Q19/Q20 (budget/provider LLM) restano secondarie.
+### Sentiment Layer 1 (lessico/VADER) — fatto
+- `src/ai/lexicon/sentiment.py` (+ `__init__`): `score_text` (VADER compound
+  [-1,1]), `score_news_frame` (scoring sul titolo), `daily_sentiment`
+  (aggregazione a giorno UTC: `mean_sentiment` + `news_count`),
+  `lag_daily_features` / `align_sentiment_returns` (lag 1g anti-look-ahead,
+  ADR-024). Dipendenza leggera `vaderSentiment` (no torch)
+- **10 nuovi test offline** (`test_sentiment.py`): sign/bounds, empty,
+  aggregazione, lag, anti-look-ahead nel join. **197/197 pytest verde**
+- **Validato su dati veri**: 560 news scorate (range sensati, mean ~0,
+  min −0.84 / max +0.79). Lead/lag BTC (n=23 giorni, indicativo): corr
+  sentiment(D)↔return(D+1) **−0.10** (rumore, atteso); corr
+  news_count(D)↔|return(D+1)| **+0.32** (il *volume* di notizie anticipa
+  debolmente la volatilità — da verificare su storia più lunga)
 
-### Prossimi step Fase 3 (dopo la decisione Q9/Q12)
-1. Implementare il sentiment scoring scelto (ADR-016 Layer 1 → eventuale L2)
-2. Feature derivate (sentiment rolling, volume news, divergenza sentiment-prezzo)
-3. Notebook lead/lag + correlazione/Granger sentiment vs rendimenti/volatilità
-4. Valutazione onesta del potere predittivo (incluso "nessun segnale")
+### Prossimi step Fase 3
+1. **Accumulare storia news** nel tempo (i feed danno solo le ultime ~settimane;
+   per un test lead/lag serio servono mesi → schedulare `fetch_news`)
+2. Notebook lead/lag formale + correlazione/Granger sentiment & news-volume vs
+   rendimenti/volatilità, su più asset, con valutazione onesta (incluso
+   "nessun segnale")
+3. Feature derivate (sentiment rolling, divergenza sentiment-prezzo)
+4. Solo **se** il Layer 1 mostra segnale: valutare FinBERT (Layer 2, ADR-016)
+   — decisione separata, dipendenze pesanti
 
 **Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
 indicatori/regimi/risk si possono scrivere ora che il codice esiste.
