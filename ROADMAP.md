@@ -221,32 +221,34 @@ diventano rilevanti per le fasi successive o quando c'è banda per farli.
 
 ---
 
-## Fase 3 — Sentiment & notizie 🔄 *avviata (2026-05-30), bloccata da allowlist*
+## Fase 3 — Sentiment & notizie 🔄 *in corso (2026-05-30)*
 
 **Obiettivo**: introdurre la dimensione "informativa" non-numerica.
 
-> ⚠️ **Vincolo operativo**: le fonti news (CoinDesk/Cointelegraph/Google News)
-> e HuggingFace sono dietro la network allowlist dell'ambiente. L'allowlist è
-> stata aggiornata ma richiede un **ambiente nuovo** per avere effetto. Lo
-> scaffold di ingestion è pronto e testato offline; l'esecuzione su dati reali
-> e il NLP partono dalla prossima sessione con rete attiva.
+> ✅ **Sblocco rete confermato**: news (Cointelegraph/CoinDesk/Google News) e
+> HuggingFace raggiungibili. I feed publisher nativi sono anti-bot instabili da
+> IP datacenter (non aggirati, ADR-018); Google News fa da backbone affidabile.
 
 ### Deliverable
-- [~] Pipeline ingestion notizie da almeno 2 fonti (RSS: CoinDesk,
-      Cointelegraph, Google News). **Scaffold testato offline** in
-      `src/ingestion/news/` (PR #6): `parse_rss` puro (RSS 2.0/Atom, stdlib),
-      `NewsItem`/`NewsSource`, `RSSNewsSource`. Manca: connettori cablati alle
-      fonti reali + esecuzione (richiede allowlist attiva)
-- [ ] NLP pipeline: sentiment scoring, entity recognition, topic classification
-- [ ] Feature derivate: sentiment medio rolling, volume notizie, divergenza
-      sentiment vs prezzo, picchi di volume informativo
-- [ ] Test di correlazione (con lead/lag) tra feature di sentiment e
-      rendimenti / volatilità futuri
+- [x] Pipeline ingestion notizie da ≥2 fonti (Cointelegraph + CoinDesk +
+      Google News per asset). `src/ingestion/news/` (PR #6, in `main`):
+      `parse_rss`, `feeds`, `persist`, `fetch_news`. Girata su dati reali (560 item)
+- [~] NLP pipeline: **sentiment scoring Layer 1 (VADER) fatto** (ADR-023,
+      `src/ai/lexicon/`). Entity recognition / topic classification: non fatti
+      (rinviati: l'evidenza non giustifica ancora di salire di complessità)
+- [x] Feature derivate: `src/features/news_features.py` — sentiment rolling,
+      variazione di tono, volume notizie + z-score (causali, testate)
+- [x] Test di correlazione lead/lag sentiment & news-volume vs rendimenti /
+      volatilità (`notebooks/06`). **Esito onesto: nessun segnale lead** con i
+      dati attuali (il +0.32 di n=23 svanisce a n=143 → artefatto). Da rieseguire
+      su storia più lunga (cron ADR-025 attivo)
 - [ ] Pipeline estendibile a Twitter/X, Reddit (se accesso disponibile)
+- [ ] Storia news densa (mesi) → rieseguire nb 06; per-asset su tutti i Tier 1
 
 ### Criterio di completamento
-Abbiamo dataset news-derived allineato temporalmente con dati di mercato, e
-abbiamo testato statisticamente se il sentiment ha potere predittivo.
+Abbiamo dataset news-derived allineato temporalmente con dati di mercato (✅), e
+abbiamo testato statisticamente se il sentiment ha potere predittivo (✅, esito
+negativo sui dati attuali — da riconfermare su più storia).
 
 ---
 
