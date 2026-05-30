@@ -1,0 +1,47 @@
+name: CI
+
+# Riproducibilità (VISION principio #2): ogni push e ogni PR deve passare
+# gli stessi check che giriamo localmente — lint, type-check, test.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      # Scope = src + tests, matching the project's ruff config (notebooks are
+      # excluded there and may carry exploratory style the lint doesn't gate).
+      - name: Lint (ruff)
+        run: uv run ruff check src tests
+
+      # Type-check is blocking ONLY on the modules we keep pyright-clean
+      # (backtest/features/models). The rest of the codebase carries
+      # pre-existing pandas-stubs noise (~147 findings) tracked as debt — we
+      # surface it below without failing the build.
+      - name: Type-check core modules (pyright, blocking)
+        run: uv run pyright src/backtest src/features src/models
+
+      - name: Type-check full project (pyright, informational)
+        run: uv run pyright || true
+
+      - name: Tests (pytest)
+        run: uv run pytest -q

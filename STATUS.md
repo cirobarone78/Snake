@@ -6,15 +6,47 @@
 ---
 
 ## Ultimo aggiornamento
-2026-05-29
+2026-05-30
 
 ## Fase corrente
-**Fase 1 — Esplorazione dati** ✅ *completata (2026-05-29)*
-→ pronti per **Fase 2 — Baseline tecnica & backtesting rigoroso**
+**Fase 2 ✅ completata (2026-05-30)** — pronti per **Fase 3 (sentiment &
+notizie)**. Fase 1 ✅ completata (2026-05-29).
 
-ROADMAP aggiornata: deliverable Fase 1 tutti spuntati, hook empirici
-da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
-−0.40) usati come vincoli per il design della Fase 2.
+Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
+(engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
+**modelli baseline** + **notebook backtest OOS end-to-end** +
+**classificazione di regime**. I residui non bloccanti sono in **Fase 2.1**
+(backlog di qualità, vedi ROADMAP). Gli hook empirici da Fase 1 (volatility
+clustering, regime instability, BTC vs CPI YoY −0.40) restano i vincoli di
+design per i modelli successivi.
+
+## 🔭 Ripresa prossima sessione (leggere per primo)
+
+**Dove siamo**: **Fase 2 completata e consolidata**. Branch
+`claude/phase-2-baseline-backtest` (PR #4, **ready-for-review**, **CI verde**
+su HEAD `ee61842`). Deliverable core: harness, cost model, indicatori,
+baseline, notebook OOS end-to-end, regime-aware. 160/160 pytest verde, ruff
+pulito, pyright pulito su `src/{backtest,features,models}`, CI GitHub
+Actions verde.
+
+**Prossimo bivio**: o si apre la **Fase 3 (sentiment & notizie)** — primo
+deliverable: pipeline ingestion notizie da ≥2 fonti + NLP baseline (FinBERG/
+sentence-transformers, ADR-016 Layer 1) — oppure si pesca dal backlog
+**Fase 2.1** se si preferisce rifinire i baseline prima di allargare.
+Decisione dell'utente a inizio sessione.
+
+**Backlog Fase 2.1 (non bloccante, vedi ROADMAP per dettaglio)**: ARIMA
+(+`statsmodels`), IRR money-weighted per DCA, allineamento macro FRED a
+release date, robustezza regime cross-asset (SOL/POL), sensibilità momentum
+al lookback, pulizia debito pyright ingestion.
+
+**Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
+indicatori/regimi/risk si possono scrivere ora che il codice esiste.
+
+**Come far girare tutto**: `uv sync`, poi `uv run pytest -q`. Per i
+notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
+(dati gitignored). Notebook eseguiti con
+`cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
 
@@ -366,7 +398,181 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
   Manca solo on-chain (Etherscan / Blockchain.com) come stretch goal
 
 ## Cosa è in corso
-- Niente di attivo a fine sessione
+
+### 2026-05-30 — Sessione 4: harness di valutazione Fase 2
+- **Nuovo package** `src/backtest/` (engine custom, ADR-009 — scelto
+  custom per controllo totale su no-look-ahead e futuro cost model):
+  - `metrics.py`: metriche su serie di rendimenti semplici periodici —
+    equity curve, total/annualized return, annualized vol, Sharpe,
+    Sortino (downside deviation), drawdown series + max drawdown +
+    durata, Calmar, hit rate, profit factor, time underwater, e
+    `summarize()` che le impacchetta in un `PerformanceSummary`.
+    Annualizzazione parametrica via `periods_per_year`
+    (asset-class-agnostic, ADR-014: 365 crypto / 252 equity), default
+    crypto-first ma overridable
+  - `splits.py`: walk-forward splitter rolling/expanding, posizionale
+    (index-agnostic). Invariante no-look-ahead (`test_start >=
+    train_end`) forzata alla costruzione di `Split`. `split_frame()`
+    helper iloc-based
+  - `benchmark.py`: buy-and-hold (equity + returns) e DCA (contributo
+    fisso a cadenza fissa, nessun look-ahead) — DCA è il benchmark che
+    conterà davvero in Fase 6 (vedi L1.06). Equity curve confrontabili
+    con quelle delle strategie via le stesse metriche
+- **35 nuovi test** (`test_metrics.py`, `test_splits.py`,
+  `test_benchmark.py`) su curve note + edge case (vol zero, serie vuota,
+  no-downside → Sortino NaN, wipe-out, cadenze DCA, invariante
+  anti-look-ahead). **102/102 pytest verde**, ruff pulito, pyright
+  pulito su `src/backtest`
+- Sviluppo su branch dedicato `claude/phase-2-baseline-backtest` (da
+  `main`); la doc review resta isolata in PR #3
+
+### 2026-05-30 — Sessione 4 (cont.): cost model (ADR-013)
+- **Nuovo modulo** `src/backtest/costs.py`:
+  - `FeeModel` maker/taker su notional; costanti `BINANCE_SPOT`
+    (0.10%/0.10%) e `KRAKEN_SPOT` (0.16%/0.26%) per ADR-012 (da
+    ri-verificare prima di un eventuale go-live)
+  - `SlippageModel` (ADR-013): rate = max(half_spread, base_cost_bps) ×
+    size_adj, con size_adj = 1 + impact_coeff·notional/ADV. Floor di
+    default 2 bps, market impact off di default (trascurabile fino a
+    ~100k EUR su Tier 1)
+  - `TransactionCostModel` = fee + slippage (il round-trip cost di L1.04)
+  - `estimate_half_spread_bps()`: proxy crudo di spread dal range OHLC
+    (non abbiamo bid/ask, Q23) — lower-quantile del range rolling come
+    stima conservativa del floor; da rivedere se arriveranno spread reali
+- **15 nuovi test** (`tests/test_costs.py`): fee maker/taker + sign,
+  floor vs spread, market impact, validazioni, proxy di spread. **117/117
+  pytest verde**, ruff pulito, pyright pulito su `src/backtest`
+
+### 2026-05-30 — Sessione 4 (cont.): indicatori tecnici
+- **Nuovo package** `src/features/` con `indicators.py`: SMA, EMA, MACD
+  (line/signal/hist), RSI (Wilder, gestione casi limite all-gain/all-loss
+  → 100/0 e flat → 50), Bollinger Bands (mid/upper/lower, std ddof=0),
+  ATR (Wilder, true range), OBV (volume firmato dalla direzione del close)
+  - Tutte funzioni pure su Series/OHLCV, **causali per costruzione**:
+    ogni valore a `t` usa solo dati ≤ `t` (rolling/ewm backward); le
+    posizioni iniziali a finestra non piena sono NaN (mai back-fill)
+  - Asset-class-agnostic (ADR-014): finestre in osservazioni, nessuna
+    assunzione di calendario o scala crypto
+- **17 nuovi test** (`tests/test_indicators.py`): valori noti SMA/EMA,
+  identità MACD hist = macd−signal, RSI bounded [0,100] + casi limite,
+  struttura Bollinger + collasso a std zero, ATR su range costante, OBV
+  signing, validazioni colonne/parametri, e **test esplicito di
+  non-look-ahead** (appendere una barra futura non cambia i valori
+  passati). **134/134 pytest verde**, ruff pulito, pyright pulito su
+  `src/features`
+- Material di base per il futuro capitolo educational L2 sugli indicatori
+  (ADR-015), da scrivere quando li useremo nei modelli baseline
+
+### 2026-05-30 — Sessione 4 (cont.): modelli baseline (opzione A, no statsmodels)
+- **Nuovo package** `src/models/` con `baseline.py`:
+  - `random_walk_forecast` (martingala: forecast = 0 ovunque, il null
+    "do nothing") e `momentum_forecast` (media mobile trailing dei
+    rendimenti, `shift(1)` per garantire causalità: f[t] usa solo r<t)
+  - `returns_from_prices`, `signal_from_forecast` (segno → posizione in
+    {-1,0,+1}, **long-only di default** per spot ADR-012, NaN→flat),
+    `strategy_returns` (gross = pos×ret; con cost model addebita
+    turnover |Δpos|×cost_rate, entry da flat al t0)
+  - Metriche di forecast: `directional_accuracy` (esclude periodi flat/NaN
+    → random walk dà NaN per costruzione, corretto) e `mean_absolute_error`
+  - **Scelta**: ARIMA rimandato per non aggiungere `statsmodels` ora
+    (è in ADR-009 ma non in `pyproject.toml`); random walk + momentum non
+    richiedono nuove dipendenze
+- **16 nuovi test** (`tests/test_baseline.py`): returns, RW all-zero,
+  momentum trailing-mean + causalità, signal sign/long-only/short/NaN,
+  strategy returns gross e con turnover (cost model zero vs non-zero),
+  RW non tradea mai, directional accuracy (perfetta/metà/NaN su RW), MAE.
+  **150/150 pytest verde**, ruff pulito, pyright pulito su `src/models`
+### 2026-05-30 — Sessione 4 (cont.): notebook backtest OOS end-to-end
+- **`notebooks/04_baseline_backtest.ipynb`** (eseguito, output embedded):
+  chiude il criterio di completamento Fase 2. Pipeline reale su BTC/ETH/LINK
+  (Yahoo daily 2018-2026, scaricati con `fetch_tier1.py`):
+  indicatori/forecast → walk-forward expanding (train=365/test=90, metriche
+  solo sui test windows) → costi (Binance taker 0.10% + slippage 2 bps) →
+  confronto vs buy-and-hold + DCA. **Ipotesi H1-H3 scritte prima dei
+  risultati** (metodologia CLAUDE.md)
+- **Risultati reali OOS** (~2700 oss/asset):
+  - Directional accuracy momentum: BTC 0.515, ETH 0.503, LINK 0.488 →
+    edge marginale e **non robusto** (negativo su LINK)
+  - Random walk batte sempre momentum su MAE (forecaster puntuale): i
+    daily return sono rumore (H1 confermata)
+  - Momentum *net* batte buy-and-hold in Sharpe/drawdown su BTC (1.29 vs
+    0.96) ed ETH (1.16 vs 0.85) ma **non** su LINK (0.82 vs 0.96). Il
+    valore è **difensivo** (stare flat nei crash → MDD -0.50 vs -0.77 su
+    BTC), non direzionale. 2 su 3 → **non è un segnale** (CLAUDE.md)
+  - Costi erodono ~25-30% del return lordo, hit_rate netto < 0.50 (H3
+    confermata)
+- **Bias documentati nel notebook**: look-ahead evitato; survivorship
+  (BTC/ETH/LINK sono i vincitori → numeri ottimistici); DCA non
+  comparabile time-weighted (serve IRR money-weighted); metriche full-OOS
+  nascondono instabilità di regime
+- **Dati**: `data/raw/yahoo/` ripopolato (gitignored, fuori repo). Il
+  notebook resta tracciato con output embedded come 01/02/03
+- 150/150 pytest ancora verde, ruff pulito (notebooks esclusi da lint)
+- **Prossimi step**: ARIMA (+`statsmodels`), decomposizione regime-aware
+  delle metriche, IRR per confronto DCA corretto, sensibilità al lookback
+
+### 2026-05-30 — Sessione 4 (cont.): revisione di programma + CI
+- **Revisione di allineamento** (richiesta dall'utente: "ogni tanto rivedi
+  se il programma procede come dovrebbe"). Riletti VISION/OPEN_QUESTIONS/
+  ROADMAP/DECISIONS vs stato reale di codice/test/PR. Esito: allineamento
+  buono coi criteri di successo VISION (#2 framework backtesting, #3
+  baseline OOS, #4 documentare cosa non funziona — tutti onorati), scope
+  disciplinato, codice sano (150 test, ratio test/src ~0.6). Debiti
+  rilevati e affrontati:
+  - **CI assente** → aggiunta `.github/workflows/ci.yml` (uv + ruff su
+    src/tests + pytest, pyright bloccante sui moduli core puliti
+    backtest/features/models e informativo sul resto: ~147 finding
+    pre-esistenti di pandas-stubs in ingestion, tracciati come debito)
+  - **PR draft sovrapposte** → #3 (doc review) mergiata in `main`, #4
+    (Fase 2) rebasata su `main` aggiornato (history pulita)
+  - **Q11 "sideways"** mal etichettata Fase 2 → ri-tag a Fase 4 (serve solo
+    quando un modello produrrà l'output a 3 stati ADR-007; i baseline usano
+    segnale binario)
+  - **CLAUDE.md "Stato attuale"** → aggiornato a "Fase 2 in corso"
+  - Falso allarme verificato: il blocco `ADR-NNN` in fondo a DECISIONS.md è
+    un template dentro commento HTML, intenzionale — non toccato
+- **Nota CI**: pyright resta verde solo su `src/{backtest,features,models}`;
+  ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
+- **CI verde al primo run** (run 26679640442): ruff + pytest + pyright core
+
+### 2026-05-30 — Sessione 5: consolidamento Fase 2
+- **Scelta utente**: consolidare invece di aprire nuovi filoni. Fase 2
+  marcata **completata** in ROADMAP/STATUS; i 6 residui spostati in una
+  nuova sezione **Fase 2.1** (backlog di qualità non bloccante)
+- **PR #4 promossa da draft a ready-for-review** (CI verde su `ee61842`,
+  160/160 test). Il criterio di completamento Fase 2 è dichiarato raggiunto
+- Nessuna modifica al codice: solo allineamento documentale + stato PR
+
+### 2026-05-30 — Sessione 4 (cont.): analisi regime-aware
+- **Scelta** (utente: "scegli tu il percorso migliore"): regime-aware invece
+  di ARIMA. Motivo: il notebook 04 aveva prodotto un risultato che
+  *richiedeva* approfondimento (il momentum vince solo difensivamente), ed
+  è una domanda di ricerca aperta (OPEN_QUESTIONS: "regimi distinguibili?").
+  ARIMA avrebbe aggiunto `statsmodels` per un baseline che le evidenze danno
+  per perdente; il debito pyright è manutenzione pura. Regime-aware sblocca
+  conoscenza
+- **Nuovo modulo** `src/features/regime.py`:
+  - `classify_regime` causale: bull se `close[t] >= SMA(window)[t]`, else
+    bear; warm-up = unknown (escluso, non indovinato). Default window 200
+  - `summarize_by_regime`: decompone uno stream di rendimenti per regime
+    (full/bull/bear) riusando `summarize`; allineamento causale
+  - `regime_fractions`: quota di tempo per regime
+  - **Proxy trasparente, non regime-switching model** (HMM resta Fase 5)
+- **10 nuovi test** (`tests/test_regime.py`): warm-up unknown, rising→bull,
+  falling→bear, **causalità** (barra futura non cambia label passate),
+  separazione bull/bear, esclusione unknown, fractions. **160/160 verde**,
+  ruff pulito, pyright pulito su `src/features`
+- **Notebook 04 esteso** (sezione 5b + H4 scritta prima dei numeri,
+  rieseguito): decomposizione per regime di buy_hold vs momentum_net
+- **Risultato chiave (H4 confermata su BTC/ETH, smentita su LINK)**:
+  - Bear BTC: momentum maxDD -0.64 vs B&H -0.92, Sharpe -0.44 vs -0.81 →
+    **protezione reale**. Idem ETH (-0.64 vs -0.95; -0.19 vs -0.62)
+  - Bull: momentum *sotto* B&H su tutti e tre (entra tardi, paga whipsaw)
+  - **LINK bear: momentum Sharpe -2.04 vs B&H -1.10** → il filtro di trend
+    viene fatto a pezzi dal whipsaw → spiega perché LINK perde nel
+    full-sample. La robustezza cross-asset va dimostrata, non assunta
+  - **Conseguenza**: il benchmark da battere è **regime-dependent**, non
+    uno scalare. Motiva la direzione regime-aware/per-asset di Fase 3+
 
 ## Prossimo step
 

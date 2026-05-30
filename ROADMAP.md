@@ -100,7 +100,7 @@ alla Fase 2.
 
 ---
 
-## Fase 2 — Baseline tecnica & backtesting rigoroso
+## Fase 2 — Baseline tecnica & backtesting rigoroso ✅ *completata (2026-05-30)*
 
 **Obiettivo**: costruire l'infrastruttura di valutazione **prima** dei modelli
 complessi. Senza questa, qualsiasi risultato successivo è inattendibile.
@@ -117,25 +117,102 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
   potere predittivo
 
 ### Deliverable
-- [ ] Indicatori tecnici classici implementati (MA, MACD, RSI, BB, ATR, OBV)
-- [ ] Framework di **backtesting walk-forward** con:
-  - Niente look-ahead bias (test esplicito; per macro FRED → uso di
-    *release date* non *reference date*)
-  - Costi di transazione inclusi (fee + slippage stimato — modello
-    discusso in ADR-013, capitolo educational L1.04 come prerequisito
-    mentale)
-  - Survivorship bias mitigato (se possibile)
-  - Out-of-sample mandatory
-- [ ] Modello **baseline**: random walk + momentum semplice + ARIMA
-- [ ] Suite di metriche: Sharpe, Sortino, max drawdown, hit rate, profit factor,
-      Calmar, time underwater
-- [ ] Confronto baseline vs buy-and-hold
-- [ ] **Regime detection** (eventualmente spostata qui da Fase 5 se i
-      regimi sono troppo importanti per essere ignorati a livello di
-      baseline)
+- [x] Indicatori tecnici classici implementati (`src/features/indicators.py`):
+      SMA, EMA, MACD, RSI (Wilder), Bollinger Bands, ATR (Wilder), OBV.
+      Funzioni pure su OHLCV, causali per costruzione (test di non-look-ahead),
+      asset-class-agnostic (finestre in osservazioni, ADR-014)
+- [~] Framework di **backtesting walk-forward** (engine custom) con:
+  - [x] Niente look-ahead bias: walk-forward splitter rolling/expanding
+    (`src/backtest/splits.py`), invariante "test dopo train" forzata alla
+    costruzione di `Split` e verificata nei test. Per macro FRED → uso di
+    *release date* non *reference date* ancora da fare
+  - [x] Costi di transazione inclusi (`src/backtest/costs.py`): fee
+    per-broker (Binance/Kraken, ADR-012) + slippage ADR-013
+    (max(half_spread, floor) × size_adj) + proxy di spread da range OHLC.
+    Capitolo educational L1.04 come prerequisito mentale
+  - [ ] Survivorship bias mitigato (se possibile)
+  - [x] **CI riproducibile** (`.github/workflows/ci.yml`): ruff + pytest
+    bloccanti, pyright bloccante sui moduli core (backtest/features/models)
+    e informativo sul resto. Verde su ogni push/PR (VISION principio #2)
+  - [x] Out-of-sample mandatory: notebook `04_baseline_backtest.ipynb`
+    esegue end-to-end indicatori/forecast → walk-forward expanding (solo
+    test windows) → costi → confronto vs buy-and-hold/DCA su BTC/ETH/LINK
+    reali (2019-2026). Ipotesi scritte prima dei risultati, bias
+    documentati
+- [~] Modello **baseline**: random walk + momentum semplice + ARIMA
+  - [x] Random walk (martingala, forecast = 0) e momentum (media mobile
+    trailing dei rendimenti) in `src/models/baseline.py`, causali per
+    costruzione (test di non-look-ahead), + mapping forecast→posizione
+    (long-only di default per spot ADR-012), strategy returns al netto
+    dei costi (turnover × cost model), e metriche di forecast
+    (directional accuracy, MAE)
+  - [ ] ARIMA: rimandato finché non si aggiunge `statsmodels` allo stack
+    installato (è in ADR-009 ma non ancora in `pyproject.toml`)
+- [x] **Suite di metriche** (`src/backtest/metrics.py`): Sharpe, Sortino,
+      max drawdown (+ durata), Calmar, hit rate, profit factor, time
+      underwater, total/annualized return & vol, `summarize()` aggregato.
+      Annualizzazione parametrica (asset-class-agnostic, ADR-014)
+- [x] Confronto baseline vs buy-and-hold eseguito (notebook 04): momentum
+      net long-only batte buy-and-hold in Sharpe/drawdown su BTC ed ETH ma
+      **non** su LINK (2 su 3 → non è un segnale affidabile); il valore è
+      difensivo (stare flat nei crash), non direzionale (dir-acc ~50%)
+- [x] **Regime detection** (anticipata da Fase 5: i regimi erano troppo
+      importanti per essere ignorati al livello di baseline). Classificatore
+      causale bull/bear price-vs-SMA200 (`src/features/regime.py`) +
+      decomposizione metriche per regime. Risultato chiave: l'edge del
+      momentum è **difensivo** (riduce drawdown nei bear su BTC/ETH) non
+      direzionale, e **non robusto** cross-asset (controproducente su LINK
+      per whipsaw). Un HMM/regime-switching resta candidato Fase 5
+
+### Esito (completata 2026-05-30)
+Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
+controllo totale su no-look-ahead) — metriche, walk-forward splitter,
+benchmark passivi — il **cost model** (fee per-broker + slippage ADR-013 +
+proxy di spread), gli **indicatori tecnici** (`src/features/indicators.py`:
+SMA/EMA/MACD/RSI/Bollinger/ATR/OBV), i **modelli baseline**
+(`src/models/baseline.py`: random walk + momentum, forecast→posizione,
+strategy returns net-of-cost, metriche directional accuracy/MAE) e la
+**classificazione di regime** (`src/features/regime.py`, causale bull/bear
++ decomposizione metriche). 160/160 pytest verde, ruff + pyright puliti sui
+moduli core, **CI GitHub Actions verde**. **Esecuzione out-of-sample
+end-to-end + regime-aware fatta** (notebook 04 su BTC/ETH/LINK reali): il
+momentum net batte buy-and-hold su 2 asset su 3 con un edge **difensivo**
+(meno drawdown nei bear), non direzionale; la decomposizione per regime
+spiega perché fallisce su LINK (whipsaw nei bear). Mancano: ARIMA (serve
+`statsmodels`), allineamento macro a *release date* (FRED), IRR per DCA.
+
+### Criterio di completamento ✅
+Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
+**Raggiunto**: framework walk-forward no-look-ahead con costi, baseline
+(random walk + momentum) valutati out-of-sample su dati reali, metriche
+decomposte per regime, CI riproducibile verde. PR #4 consolidata.
+
+---
+
+## Fase 2.1 — Rifiniture baseline (non bloccante, opportunistica)
+
+**Obiettivo**: completare i residui di Fase 2 che non bloccano l'avanzamento
+a Fase 3. Affrontabili quando comodo, anche in parallelo ad altre fasi.
+
+### Deliverable
+- [ ] **ARIMA** come terzo baseline → richiede `statsmodels` in
+      `pyproject.toml`. Le evidenze del notebook 04 (daily return = rumore,
+      random walk vince su MAE) suggeriscono che perderà contro il momentum,
+      ma va testato per completezza
+- [ ] **IRR money-weighted** per un confronto DCA corretto (il `total_return`
+      del DCA non è comparabile time-weighted — vedi caveat notebook 04)
+- [ ] **Allineamento macro FRED a *release date*** (non reference date) nel
+      walk-forward → serve quando si useranno feature macro nei modelli
+- [ ] **Robustezza cross-asset del filtro di regime**: perché protegge
+      BTC/ETH ma danneggia LINK (whipsaw nei bear)? Estendere a SOL/POL
+- [ ] **Sensibilità del momentum al `lookback`** (ora fisso a 30, non
+      stress-testato) → verificare che il risultato non sia un artefatto
+- [ ] **Pulizia debito pyright** ingestion (~147 finding pandas-stubs) per
+      rendere la CI pyright-bloccante ovunque, non solo sui moduli core
 
 ### Criterio di completamento
-Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
+Nessuno stringente: è un backlog di qualità. Si chiude quando i punti
+diventano rilevanti per le fasi successive o quando c'è banda per farli.
 
 ---
 
