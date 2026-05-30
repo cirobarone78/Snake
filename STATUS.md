@@ -9,12 +9,18 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion news cablata su fonti
-reali + **sentiment Layer 1 (lessico/VADER)** scoring/aggregazione/allineamento,
-girati su dati veri. Sblocco rete confermato. Fasi 0, 1, 2 e 2.1 ✅ completate e
-in `main`. **Q9 → ADR-023** (Layer 1 lessico), **Q12 → ADR-024**
-(publication-time + lag 1g), **Q10 → ADR-025** (batch giornaliero + news history
-versionata) chiuse.
+**Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion + sentiment Layer 1 +
+news history versionata **mergiati in `main`** (PR #6, squash `542fff6`). Cron
+giornaliero attivo. Aggiunte **feature news-derived** + **notebook lead/lag** su
+branch `claude/phase-3-news-features`. Fasi 0/1/2/2.1 ✅ in `main`.
+**Q9 → ADR-023**, **Q12 → ADR-024**, **Q10 → ADR-025** chiuse.
+
+**🔬 Finding chiave (onestà metodologica)**: il `corr(news_count, |return|)
+= +0.32` visto su n=23 nella sessione precedente **è svanito a n=143**
+(market-wide, ~−0.07 a lag 1) → **era un artefatto di piccolo campione, NON un
+segnale**. Idem sentiment→return (rumore a tutti i lag). Con i dati attuali
+**nessun potere predittivo lead** del Layer 1. Non chiude la domanda (campione
+corto, VADER general-domain) ma ridimensiona e alza l'asticella per il Layer 2.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
@@ -79,15 +85,22 @@ il fallimento e Google News (aggregatore) garantisce la copertura.
   compatti (~260KB), schema `item_id,source,title,url,sentiment` (no summary)
 - **4 nuovi test** (`test_news_history.py`); **199/199 pytest verde**
 
+### Feature news-derived + notebook lead/lag — fatto (branch corrente)
+- `src/features/news_features.py`: `rolling_mean_sentiment`, `sentiment_change`,
+  `news_volume_zscore` (causale, baseline shiftata, no leakage), `build_news_features`,
+  `lead_lag_table` (corr feature[t] vs target[t+k] **con n** per ogni lag). 8 test
+- `notebooks/06_news_sentiment_leadlag.ipynb` (eseguito, output embedded): H1-H3
+  scritte prima, analisi su BTC + market-wide news (n=143). **Esito: nessun
+  segnale lead** (vedi finding chiave sopra). Riproducibile (news committate)
+- **207/207 pytest verde**, ruff + format + pyright core puliti
+
 ### Prossimi step Fase 3
-1. **Lasciar girare il cron** per accumulare mesi di storia (prerequisito per un
-   lead/lag statisticamente serio — ora n≈23 giorni, troppo pochi)
-2. Notebook lead/lag formale + correlazione/Granger sentiment & news-volume vs
-   rendimenti/volatilità, su più asset, con valutazione onesta (incluso
-   "nessun segnale")
-3. Feature derivate (sentiment rolling, divergenza sentiment-prezzo)
-4. Solo **se** il Layer 1 mostra segnale: valutare FinBERT (Layer 2, ADR-016)
-   — decisione separata, dipendenze pesanti
+1. **Lasciar girare il cron** per accumulare mesi di storia, poi **rieseguire
+   nb 06** (è già pronto e riproducibile) per ricontrollare i lead/lag su n grande
+2. Quando la storia per-asset sarà densa: estendere nb 06 a tutti i Tier 1
+   (ora BTC è l'unico con abbastanza prezzi+news allineati)
+3. **Solo se** emergesse un segnale robusto: valutare FinBERT (Layer 2, ADR-016)
+   — decisione separata, dipendenze pesanti. Finora l'evidenza NON lo giustifica
 
 **Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
 indicatori/regimi/risk si possono scrivere ora che il codice esiste.
@@ -98,6 +111,22 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-30 — Sessione 9: Fase 3 — feature news-derived + notebook lead/lag
+- **PR #6 mergiata in `main`** (squash `542fff6`): ingestion + Layer 1 + history
+- **Nuovo modulo** `src/features/news_features.py` (causale, pyright-clean):
+  `rolling_mean_sentiment`, `sentiment_change`, `news_volume_zscore` (z-score con
+  baseline shiftata → no leakage same-day), `build_news_features`, `lead_lag_table`
+  (corr feature[t] vs target[t+k] **+ n** per ogni lag, mai un lag cherry-picked)
+- **8 test offline** (`test_news_features.py`): causalità, no-look-ahead, z-score
+  finito su varianza zero, recupero di un lead noto, report di n
+- **Notebook 06** (`06_news_sentiment_leadlag.ipynb`, eseguito): H1-H3 prima dei
+  numeri, BTC + market-wide news (n=143), allineamento ADR-024 esplicito
+- **Finding chiave**: il `+0.32` (news_count→|return|) di n=23 **svanisce a
+  n=143** → artefatto, non segnale. Nessun potere predittivo lead del Layer 1
+  con i dati attuali. Documentato apertamente (CLAUDE.md: tracciare cosa non funziona)
+- **207/207 pytest verde**, ruff + format + pyright core puliti. Branch
+  `claude/phase-3-news-features`
 
 ### 2026-05-30 — Sessione 8: Fase 3 — connettori reali, sentiment Layer 1, news history
 - **Sblocco rete** (ambiente nuovo): news + huggingface.co + FinBERT tutti 200
