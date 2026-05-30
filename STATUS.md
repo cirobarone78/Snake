@@ -408,8 +408,8 @@ regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
   - `estimate_half_spread_bps()`: proxy crudo di spread dal range OHLC
     (non abbiamo bid/ask, Q23) — lower-quantile del range rolling come
     stima conservativa del floor; da rivedere se arriveranno spread reali
-- **16 nuovi test** (`tests/test_costs.py`): fee maker/taker + sign,
-  floor vs spread, market impact, validazioni, proxy di spread. **118/118
+- **15 nuovi test** (`tests/test_costs.py`): fee maker/taker + sign,
+  floor vs spread, market impact, validazioni, proxy di spread. **117/117
   pytest verde**, ruff pulito, pyright pulito su `src/backtest`
 
 ## Prossimo step

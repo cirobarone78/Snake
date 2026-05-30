@@ -144,7 +144,7 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
 Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
 controllo totale su no-look-ahead) — metriche, walk-forward splitter,
 benchmark passivi — e **cost model** (fee per-broker + slippage ADR-013 +
-proxy di spread). 51 test dedicati (118/118 totali verde). Mancano per
+proxy di spread). 50 test dedicati Fase 2 (117/117 totali verde). Mancano per
 chiudere il framework: allineamento macro a *release date* (FRED) e
 l'esecuzione out-of-sample end-to-end coi **modelli baseline** (random walk /
 momentum / ARIMA) e gli **indicatori tecnici**.
