@@ -35,8 +35,8 @@ forma, con quale qualità.
 ### Deliverable
 - [x] **Inventario di sorgenti dati** (`docs/data_sources_tier1.md` +
       integrazioni concrete): Yahoo Finance, Binance.us (ADR-020),
-      CoinGecko, FRED — ciascuna con API, frequenza, storico, rate
-      limit, caveat documentati
+      CoinGecko, FRED, Etherscan — ciascuna con API, frequenza,
+      storico, rate limit, caveat documentati
 - [x] **Setup ambiente Python**: `uv` + Python 3.12, `pyproject.toml` con
       ruff + pyright basic + pytest (ADR-009 confermato)
 - [x] **Script di ingestion** estesi oltre il deliverable minimo:
@@ -46,8 +46,13 @@ forma, con quale qualità.
   - Market chart + global dominance + top-20 dinamica via CoinGecko
   - 7 serie macro USA (DFF, DGS2, DGS10, DTWEXBGS, CPIAUCSL, M2SL,
     UNRATE) via FRED
+  - On-chain snapshot per ETH (supply, components staking/burnt/withdrawn,
+    gas oracle, prezzo Etherscan) e ERC-20 supply (LINK, POL) via
+    Etherscan
   - Composer multi-source (ADR-021) per asset con copertura provider
     mista (caso POL chiuso)
+  - Snapshot persistence con _latest + _history append (ADR-022) per
+    accumulare time series da snapshot ripetuti
 - [x] **Notebook di esplorazione** (3 notebook eseguiti, findings
       documentati in `STATUS.md`):
   - `01_exploration_btc_eth.ipynb`: stylized facts crypto su tutti i 5
@@ -57,33 +62,38 @@ forma, con quale qualità.
     su 974 giorni comuni — crypto risk-on, non digital gold
   - `03_crypto_vs_fred_macro.ipynb`: crypto vs tassi + curve slope +
     CPI/M2/UNRATE — BTC vs CPI YoY mensile −0.40 (smonta narrativa
-    "inflation hedge")
+    "inflation hedge"); yield curve invertita per 536 giorni
+    consecutivi 2022-07 → 2024-08
 - [x] **Strategia di storage definita**: pipeline a 3 layer
   - `data/raw/{provider}/{class}/{SYMBOL}_{interval}.parquet`
   - `data/processed/{SYMBOL}_{interval}.parquet` con colonna `source`
     per provenance (ADR-021)
+  - Snapshot: `_latest.parquet` (overwrite) + `_history.parquet`
+    (append) in parallelo (ADR-022)
   - Tutto gitignored, retention policy locale
-- [x] **Test coverage**: 48/48 pytest verde, copertura simmetrica sui 4
-      provider (Yahoo, Binance, CoinGecko, FRED) + composer + assets
+- [x] **Test coverage**: 67/67 pytest verde, copertura simmetrica sui 5
+      provider (Yahoo, Binance, CoinGecko, FRED, Etherscan) + composer
+      + snapshot helper + assets
 
 ### Criterio di completamento
 ✅ Sappiamo esattamente quali sorgenti dati useremo, in che formato,
-con quali limiti. ADR-019, ADR-020, ADR-021 registrano le decisioni
-chiave emerse durante la fase (POL via MATIC-USD, Binance via .us,
-composer policy). Open question rimaste (Q23, Q24) non bloccano
-l'avanzamento alla Fase 2 — sono polish da affrontare quando il
-caso d'uso si presenta.
+con quali limiti. ADR-019 ÷ ADR-022 registrano le decisioni chiave
+emerse durante la fase (POL via MATIC-USD, Binance via .us, composer
+policy, snapshot history). Open question rimaste (Q23 volume
+cross-venue, Q18 granularità educational) non bloccano l'avanzamento
+alla Fase 2.
 
 ### Cosa NON è stato fatto (e perché)
-- **On-chain (Etherscan, Blockchain.com)**: stretch goal Tier 1,
-  rimandato. Richiede API key Etherscan e una struttura dati diversa
-  (eventi blockchain non sono time series puro). Si farà a richiesta
-  durante Fase 4 (multifactor) quando le feature on-chain saranno
-  effettivamente usate
+- **Blockchain.com (BTC on-chain)**: rimasto come stretch goal.
+  Etherscan copre ETH/LINK/POL ma non BTC che vive su una chain
+  diversa. Da fare a richiesta se in Fase 4 servirà
 - **Granularità intra-day via Binance**: l'interfaccia c'è già
   (`BinanceSource` supporta tutti gli interval), ma `fetch_tier1.py`
   estrae solo daily. Si attiverà se in Fase 2 si decide di lavorare
   anche a 1h
+- **Schedulazione automatica fetch snapshot** (cron / GitHub Actions
+  per popolare history nel tempo): pattern pronto via ADR-022, ma
+  la schedulazione effettiva è decisione operativa rimandata
 - **Stagionalità e ciclo halving**: analisi pianificate ma non
   prioritarie per il completamento di Fase 1. Pre-tabellate come
   esperimenti specifici per Fase 2 (regime detection)

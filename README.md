@@ -5,7 +5,9 @@ focus sulle criptovalute. Integra dati di mercato, on-chain, macro, cicli e
 sentiment estratto da notizie (finanza, tecnologia, geopolitica, politica)
 per identificare segnali probabilistici sull'andamento di asset selezionati.
 
-> **Stato**: Fase 1 in corso — esplorazione dati, sorgenti Tier 1.
+> **Stato**: Fase 1 ✅ completata (2026-05-29) — 5 data provider integrati,
+> 3 notebook EDA, snapshot history pattern (ADR-022), L1 educational chiuso
+> (10/10). Pronti per Fase 2 (baseline tecnica + backtesting walk-forward).
 
 ## Documentazione del progetto
 
@@ -28,15 +30,35 @@ Richiede [`uv`](https://docs.astral.sh/uv/) installato.
 # Installazione dipendenze (Python 3.12 incluso, gestito da uv)
 uv sync
 
-# Test e lint
+# Test e lint (67/67 al 2026-05-29)
 uv run pytest -v
 uv run ruff check src/ tests/
 
 # Fetch dati Tier 1 (richiede network access, vedi sotto)
+# Yahoo: crypto + indici + commodity (default)
 uv run python -m src.ingestion.tier1.fetch_tier1
+# Binance.us: cross-validation crypto (geo-blocked api.binance.com, ADR-020)
+uv run python -m src.ingestion.tier1.fetch_tier1 --source binance
+# CoinGecko: market chart + global dominance + top-20 (no API key needed)
+uv run python -m src.ingestion.tier1.fetch_coingecko
+# FRED: macro USA (tassi, CPI, M2, unemployment). Richiede FRED_API_KEY in .env
+uv run python -m src.ingestion.tier1.fetch_fred
+# Etherscan: ETH supply, gas, ERC-20 supply. Richiede ETHERSCAN_API_KEY in .env
+uv run python -m src.ingestion.tier1.fetch_etherscan
 
-# Esplorazione (Jupyter)
-uv run jupyter notebook notebooks/01_exploration_btc_eth.ipynb
+# Esplorazione (Jupyter): tre notebook EDA disponibili
+uv run jupyter notebook notebooks/
+```
+
+### API key gratuite (per FRED e Etherscan)
+
+- **FRED**: https://fredaccount.stlouisfed.org/apikeys
+- **Etherscan**: https://etherscan.io/myapikey
+
+Aggiungi in `.env` (gitignored) come:
+```
+FRED_API_KEY=...
+ETHERSCAN_API_KEY=...
 ```
 
 ### Network access

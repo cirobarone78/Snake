@@ -313,9 +313,6 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
 - L1 ora ha 2/10 capitoli pubblicati. Prossimo: L1.03 sulla lettura
   dei grafici (candele, volume)
 
-## Ultimo aggiornamento (sessione 3)
-2026-05-29
-
 ### 2026-05-29 — Sessione 3: FRED come quarto provider Tier 1
 - **API key FRED** ottenuta gratis da
   https://fredaccount.stlouisfed.org/apikeys, salvata in `.env`
@@ -371,9 +368,12 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
 ## Cosa è in corso
 - Niente di attivo a fine sessione
 
-## Prossimo step (Fase 1, continua)
+## Prossimo step
 
-1. **Aggiungere sorgenti Tier 1 mancanti rimanenti** (in ordine di valore):
+1. **Apertura Fase 2** — Baseline tecnica & backtesting rigoroso (vedi
+   ROADMAP). Hook empirici dalla Fase 1 documentati in "Note per la
+   prossima sessione" qui sotto
+2. **Stretch goal Fase 1** ancora aperti (non bloccanti per Fase 2):
    - Blockchain.com (BTC on-chain base) — non richiede API key
    - Granularità intra-day via Binance già esposta ma non ancora usata
    - Schedulare l'esecuzione di `fetch_coingecko` / `fetch_etherscan`
@@ -390,32 +390,6 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
    appena fatta. Le std rolling 0.12-0.17 dei rolling crypto vs macro
    sono il segnale concreto che i regimi esistono e vale la pena
    modellarli
-
-## Note per la prossima sessione
-
-### Contesto generale
-- Leggere PRIMA `CLAUDE.md` e questo file. Tutte le decisioni
-  architetturali e di scope sono fissate in ADR-001 ÷ ADR-021
-  (`DECISIONS.md`)
-- Non rimettere in discussione lo scope senza motivo concreto
-- Convenzioni cartelle e principio asset-class-agnostic (ADR-014): mai
-  hardcodare "crypto" — usare l'Asset model
-- Il codice della pipeline funziona, ha **48/48 test che passano**, e ha
-  dati reali da 4 provider in `data/raw/{yahoo,binance,coingecko,fred}/`
-  (gitignored), + serie POL canonica in `data/processed/POL_1d.parquet`
-- I 4 provider esistenti sono il **reference pattern** per nuove fonti:
-  vedere `src/ingestion/tier1/fred.py` per il template più recente
-  (no OHLCV, metodi specializzati, retry su 429, API key obbligatoria
-  via env)
-- **Open question rilevanti**: Q24 (storage append per snapshot), Q23
-  (volume cross-venue), Q18 (granularità educational)
-- **Fase 2 hook empirico**: le std rolling 0.12-0.17 sulle correlazioni
-  crypto-macro nel notebook 02 dicono che i regimi esistono. Quando
-  apriremo Fase 2, partire da regime-switching o clustering su quelle
-  rolling correlations
-- **Nuovo dato disponibile per Fase 2**: yield curve slope FRED
-  (DGS10-DGS2) come potenziale feature regime — già inverted nel
-  25.9% dei giorni nel sample, segnale macro forte
 
 ### 2026-05-29 — Sessione 3 (cont.): EDA crypto vs FRED macro
 - **Nuovo notebook** `notebooks/03_crypto_vs_fred_macro.ipynb`
@@ -610,6 +584,68 @@ da Fase 1 (volatility clustering, regime instability, BTC vs CPI YoY
 - **L1 ora 10/10 capitoli pubblicati** — livello chiuso. Indice L1
   aggiornato a "L1 completo (2026-05-29)" con pointer a L2 come
   prossimo livello (scrivibile durante Fase 2-3)
-- I tier 2, 3, 4 NON vanno toccati in Fase 1 (ADR-017)
-- Il modulo `src/ai/` e `src/execution/` sono solo placeholder; non
+
+## Note per la prossima sessione
+
+### Stato a fine sessione 3 (2026-05-29)
+- **Fase 1 chiusa** nella ROADMAP (criterio di completamento soddisfatto)
+- **5 data provider** integrati e funzionanti (Yahoo, Binance.us,
+  CoinGecko, FRED, Etherscan); **3 notebook EDA** eseguiti con
+  findings documentati; **snapshot history pattern** attivo (ADR-022);
+  **POL canonical multi-source** (ADR-019/020/021); **L1 educational
+  chiuso** (10/10); **67/67 pytest verde**, lint pulito
+- **Branch**: `claude/yahoo-finance-connection-2Qy92` (PR #2 draft).
+  Il nome è ormai bugiardo per la quantità di lavoro che contiene
+- **ADR registrati**: ADR-001 ÷ ADR-022 in `DECISIONS.md`
+- **`.env`** ha `FRED_API_KEY` e `ETHERSCAN_API_KEY` (gitignored).
+  Entrambe sono nel transcript di sessione 3 — rigenerabili dai
+  rispettivi portali se l'utente vuole ruotarle
+
+### Prima cosa da chiedere all'utente al riavvio
+Decisione di igiene del repo:
+1. **Mergiare PR #2 in main** (chiude formalmente Fase 1 nel repo)
+   e iniziare Fase 2 su **nuovo branch** con nome decente
+   (es. `claude/phase-2-baseline-backtest`) — *raccomandato*
+2. **Continuare sullo stesso branch** (più semplice, ma la PR diventa
+   sempre più ingestibile da rivedere)
+3. **Altro** (es. Blockchain.com per BTC on-chain prima di Fase 2,
+   o schedulare i fetch snapshot per popolare history nel tempo)
+
+### Se la scelta è "Fase 2" (più probabile)
+Hook empirici concreti da Fase 1 che vincolano il design:
+- **Volatility clustering** ACF(|r|) lag 1 = 0.16-0.27 → GARCH(1,1)
+  come baseline naturale per varianza condizionata
+- **Rolling correlation std 0.12-0.17** → regime detection
+  (HMM o clustering su rolling correlation vectors) probabilmente
+  da spostare avanti da Fase 5 a Fase 2
+- **BTC vs CPI YoY mensile = −0.40** → almeno una macro feature deve
+  essere nella shortlist baseline, non solo prezzo
+- **Yield curve slope FRED** già pronta come potenziale regime feature
+  (inverted 25.9% dei giorni 2018-2026, 536 giorni consecutivi
+  2022-07-06 → 2024-08-26)
+- **L1.04 fee/spread/slippage** è il prerequisito mentale per ADR-013
+  (modello di slippage del paper trader); ADR-007 fa di "vol attesa"
+  una dimensione di output del sistema
+
+### Promemoria operativi
+- Leggere PRIMA `CLAUDE.md` e questo file. Tutte le decisioni
+  architetturali in ADR-001 ÷ ADR-022 (`DECISIONS.md`). Non rimettere
+  in discussione lo scope senza motivo concreto
+- Convenzioni cartelle e principio asset-class-agnostic (ADR-014):
+  mai hardcodare "crypto" — usare l'Asset model
+- Open question rimaste: **Q23** (volume cross-venue, non bloccante
+  per Fase 2 a meno di feature volume-based), **Q18** (granularità
+  educational, non bloccante)
+- I 5 provider esistenti sono il **reference pattern** per nuove
+  fonti. Per snapshot single-state (es. blockchain stats), template
+  più recente: `src/ingestion/tier1/etherscan.py` + `fetch_etherscan.py`
+  con `write_snapshot()`. Per time series con API key, template:
+  `src/ingestion/tier1/fred.py`. Per cross-validated multi-source,
+  pattern composer: `src/ingestion/composer.py`
+- I tier 2, 3, 4 di asset NON vanno toccati in Fase 1 (ADR-017)
+- `src/ai/` e `src/execution/` sono solo placeholder: non
   implementare nulla finché Fase 3 / Fase 6 rispettivamente
+- Se servisse popolare la history Etherscan/CoinGecko nel tempo (per
+  avere serie storiche di gas / dominance prima di Fase 2), basta
+  schedulare i fetch (cron locale, GitHub Actions, ecc.). Pattern
+  pronto via ADR-022
