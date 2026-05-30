@@ -9,36 +9,59 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 2 ✅ completata (2026-05-30)** — pronti per **Fase 3 (sentiment &
-notizie)**. Fase 1 ✅ completata (2026-05-29).
+**Fase 3 (sentiment & notizie) 🔄 avviata** — bloccata da vincolo di rete
+(vedi sotto). Fasi 0, 1, 2 e 2.1 ✅ completate e in `main`.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
 **modelli baseline** + **notebook backtest OOS end-to-end** +
-**classificazione di regime**. I residui non bloccanti sono in **Fase 2.1**
-(backlog di qualità, vedi ROADMAP). Gli hook empirici da Fase 1 (volatility
-clustering, regime instability, BTC vs CPI YoY −0.40) restano i vincoli di
-design per i modelli successivi.
+**classificazione di regime**. Fase 2.1 (robustezza baseline) confermata su
+4/5 asset. Gli hook empirici da Fase 1 (volatility clustering, regime
+instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 
 ## 🔭 Ripresa prossima sessione (leggere per primo)
 
-**Dove siamo**: **Fase 2 completata e consolidata**. Branch
-`claude/phase-2-baseline-backtest` (PR #4, **ready-for-review**, **CI verde**
-su HEAD `ee61842`). Deliverable core: harness, cost model, indicatori,
-baseline, notebook OOS end-to-end, regime-aware. 160/160 pytest verde, ruff
-pulito, pyright pulito su `src/{backtest,features,models}`, CI GitHub
-Actions verde.
+### ⚠️ BLOCCO DA RISOLVERE: serve un AMBIENTE NUOVO
+La Fase 3 richiede fonti news (CoinDesk/Cointelegraph/Google News) e
+HuggingFace, che la **network policy ad allowlist** dell'ambiente blocca
+("Host not in allowlist"). L'utente **ha già aggiunto gli host all'allowlist**,
+ma la modifica ha effetto **solo su un ambiente creato dopo** la modifica —
+non sulla sessione in cui è stata fatta (il proxy
+`CLAUDE_CODE_PROXY_RESOLVES_HOSTS` è fissato all'avvio del container).
+**→ Avviare una NUOVA sessione/ambiente, poi verificare la raggiungibilità:**
+```
+uv run python -c "import urllib.request as u; print(u.urlopen(u.Request('https://www.coindesk.com/arc/outboundfeeds/rss/',headers={'User-Agent':'r'}),timeout=10).status)"
+```
+Host raggiungibili nella sessione attuale (vecchia policy): CoinGecko, FRED,
+Etherscan, Binance.us, Yahoo, PyPI. Bloccati: tutte le news + huggingface.co.
 
-**Prossimo bivio**: o si apre la **Fase 3 (sentiment & notizie)** — primo
-deliverable: pipeline ingestion notizie da ≥2 fonti + NLP baseline (FinBERG/
-sentence-transformers, ADR-016 Layer 1) — oppure si pesca dal backlog
-**Fase 2.1** se si preferisce rifinire i baseline prima di allargare.
-Decisione dell'utente a inizio sessione.
+### Dove siamo
+- **`main`** = `c3f52d2` (Fasi 0/1/2/2.1 mergiate). 166/166 pytest, CI verde.
+- **Fase 3 avviata**: scaffold ingestion news in **PR #6** (draft, CI verde),
+  branch `claude/phase-3-sentiment-news`. `src/ingestion/news/`: `NewsItem`,
+  `NewsSource` ABC, `parse_rss` (RSS 2.0/Atom via stdlib, no nuove dep),
+  `RSSNewsSource`. 11 test offline su fixture. **Tutto testato ma NON ancora
+  eseguito su dati veri** (rete bloccata).
 
-**Backlog Fase 2.1 (non bloccante, vedi ROADMAP per dettaglio)**: ARIMA
-(+`statsmodels`), IRR money-weighted per DCA, allineamento macro FRED a
-release date, robustezza regime cross-asset (SOL/POL), sensibilità momentum
-al lookback, pulizia debito pyright ingestion.
+### Prossimi step Fase 3 (in ambiente con allowlist attiva)
+1. Verificare raggiungibilità host (comando sopra)
+2. Cablare i connettori concreti alle fonti reali + script fetch/persistenza
+   (sul modello di `fetch_tier1.py`), dati news gitignored
+3. **NLP pipeline**: scaricare FinBERT (HuggingFace), sentiment scoring
+   (ADR-016 Layer 1). Richiede aggiungere `transformers`+`torch` allo stack
+   → prima discutere (dipendenze pesanti, CLAUDE.md)
+4. Feature derivate (sentiment rolling, volume news, divergenza sentiment-prezzo)
+5. Test correlazione lead/lag sentiment vs rendimenti/volatilità
+
+### Decisioni aperte da chiudere prima del NLP (OPEN_QUESTIONS)
+Q9 (modello sentiment: FinBERT vs LLM vs ibrido), Q10 (frequenza ingestion),
+Q12 (allineamento temporale news — già deciso publication-time nello scaffold,
+da formalizzare in ADR), Q19/Q20 (budget e provider LLM se si userà Layer 2).
+
+### Alternativa se la rete resta un problema
+Backlog **Fase 2.1** (gira con la rete attuale): caso LINK Q25, sensibilità
+già fatte, debito pyright ingestion. Oppure **Fase 4** macro features via
+FRED (raggiungibile).
 
 **Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
 indicatori/regimi/risk si possono scrivere ora che il codice esiste.
@@ -534,6 +557,28 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 - **Nota CI**: pyright resta verde solo su `src/{backtest,features,models}`;
   ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
 - **CI verde al primo run** (run 26679640442): ruff + pytest + pyright core
+
+### 2026-05-30 — Sessione 7: avvio Fase 3 (bloccata da allowlist)
+- **Fasi 2 e 2.1 mergiate in `main`** (PR #4 e #5 squash-merged, CI verde).
+  `main` = `c3f52d2`
+- **Avviata Fase 3** (sentiment & notizie). Primo deliverable (ingestion
+  news) costruito come **scaffold testato offline**:
+  - `src/ingestion/news/`: `NewsItem` (shape canonica tz-aware + dedup id),
+    `NewsSource` ABC, `parse_rss` (RSS 2.0/Atom via stdlib `xml.etree`, zero
+    nuove dipendenze), `RSSNewsSource` (fetch HTTP + backoff 429)
+  - **11 test** (`tests/test_news.py`) su fixture RSS/Atom inline: parsing,
+    dedup, skip malformati, invariante tz-aware, source con sessione fake.
+    **177/177 pytest verde**, ruff pulito, pyright pulito (`rss.py` strict)
+  - Q12 (allineamento temporale) deciso nello scaffold: si usa il
+    **publication-time** del feed (unico timestamp affidabile) → da
+    formalizzare in ADR
+  - PR #6 (draft, CI verde), branch `claude/phase-3-sentiment-news`
+- **BLOCCO scoperto**: network policy ad allowlist blocca news + HuggingFace.
+  L'utente ha aggiornato l'allowlist ma **non ha effetto sulla sessione
+  corrente** (proxy fissato all'avvio container) → serve ambiente nuovo
+- **Decisione utente**: pausa Fase 3, riprendere a pipeline completa in nuova
+  sessione con rete attiva (invece di accumulare codice non eseguito). Vedi
+  blocco "Ripresa prossima sessione" in testa per i dettagli operativi
 
 ### 2026-05-30 — Sessione 6: robustezza baseline (Fase 2.1)
 - **Scelta**: prima di aprire Fase 3, consolidare la robustezza dei baseline
