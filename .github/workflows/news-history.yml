@@ -1,0 +1,51 @@
+name: news-history
+
+# Fase 3 / ADR-025: accumulate a compact, versioned news history so lead/lag
+# studies have months of data despite feeds only exposing the last few weeks.
+# Daily batch (Q10 → ADR-024). Commits data only; uses [skip ci] so the data
+# commit does not re-trigger the main CI workflow.
+
+on:
+  schedule:
+    - cron: "30 6 * * *" # 06:30 UTC daily
+  workflow_dispatch: {}
+
+# Avoid overlapping runs piling commits on the same file.
+concurrency:
+  group: news-history
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Update news history
+        run: uv run python -m src.ingestion.news.update_history
+
+      - name: Commit updated history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/news_history; then
+            echo "No new news to commit."
+            exit 0
+          fi
+          git add data/news_history
+          git commit -m "data: update news history [skip ci]"
+          git push

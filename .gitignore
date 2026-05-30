@@ -36,6 +36,13 @@ data/cache/
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
+# News history (ADR-025): narrow, intentional exception to ADR-009. A single
+# compact parquet (headline metadata + Layer 1 sentiment, NO article body) is
+# committed so the scheduled job can accumulate months of history across
+# ephemeral containers. Small + low licensing risk. Must come after *.parquet.
+!data/news_history/
+!data/news_history/*.parquet
+
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
 # Anchored to repo root so it ignores downloaded model weights only, not the
 # src/models/ source package.

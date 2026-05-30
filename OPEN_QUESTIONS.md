@@ -23,6 +23,9 @@
 | Q21bis | Gap recente POL post-2025-03 | [ADR-020](./DECISIONS.md) (via Binance.us) |
 | Q22 | Composizione serie multi-source | [ADR-021](./DECISIONS.md) (concat + flag source) |
 | Q24 | Storage append per snapshot | [ADR-022](./DECISIONS.md) (latest + history) |
+| Q9 | Modello di sentiment per news | [ADR-023](./DECISIONS.md) (Layer 1 lessico/VADER) |
+| Q12 | Allineamento temporale news↔prezzo | [ADR-024](./DECISIONS.md) (publication-time + lag) |
+| Q10 | Frequenza di ingestion notizie | [ADR-025](./DECISIONS.md) (batch giornaliero + history versionata) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -60,23 +63,16 @@ effettivamente a produrre. Rinviata a fine Fase 4.
 
 ---
 
-### Q9 — Modello di sentiment per news
-Quando estraiamo sentiment da news, quale tecnologia?
-
-- **A**: FinBERT / sentence-transformers (open-source, gratis, accuratezza media)
-- **B**: LLM commerciale (Anthropic/OpenAI API) per casi complessi (costo per chiamata)
-- **C**: Ibrido: open-source per il bulk, LLM per casi ad alta importanza
-
-*Direzione*: partire con **A**, valutare **C** in Fase 3 se l'accuratezza
-non basta.
+### Q9 — Modello di sentiment per news — ✅ RISOLTA → [ADR-023](./DECISIONS.md)
+Scelto **Layer 1 = lessico (VADER)** come baseline (deterministico, nessuna
+dipendenza pesante). Salita a FinBERT (Layer 2) subordinata a evidenza empirica.
 
 ---
 
-### Q10 — Frequenza di ingestion notizie
-Real-time vs batch giornaliero?
-
-*Decisione rinviata a Fase 3*. Probabile: batch giornaliero per il primo
-modello (allineato con timeframe "breve" che è a granularità giornaliera).
+### Q10 — Frequenza di ingestion notizie — ✅ RISOLTA → [ADR-025](./DECISIONS.md)
+**Batch giornaliero** (cron GitHub Actions 06:30 UTC) che alimenta la news
+history versionata. Coerente col timeframe breve daily (ADR-006) e col lag di
+allineamento (ADR-024).
 
 ---
 
@@ -94,17 +90,11 @@ contract ADR-007 completo.
 
 ---
 
-### Q12 — Allineamento temporale tra fonti
-Notizie, market data, on-chain, macro hanno frequenze e fusi orari diversi:
-
-- Chiusura giornaliera: in che fuso orario? UTC è standard ma le borse USA
-  chiudono alle 21:00 UTC, mentre crypto è 24/7
-- News: il timestamp è ora di pubblicazione o ora dell'evento?
-- Macro (es. CPI): pubblicato a date fisse, ma vale dal momento `t`
-
-*Decisione*: usare **UTC midnight** come "fine giornata" per il timeframe
-giornaliero. Da formalizzare in ADR appena tocchiamo il primo allineamento
-multi-source (Fase 3).
+### Q12 — Allineamento temporale tra fonti — ✅ RISOLTA → [ADR-024](./DECISIONS.md)
+Per le news: **publication-time UTC**, aggregazione a giorno UTC, **lag di
+sicurezza 1 giorno** prima del join coi return (anti-look-ahead). UTC midnight
+resta il "fine giornata" del timeframe daily. L'allineamento di macro a *release
+date* (CPI/M2) resta un punto distinto del backlog Fase 2.1/4.
 
 ---
 

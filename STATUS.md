@@ -9,36 +9,85 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 2 ✅ completata (2026-05-30)** — pronti per **Fase 3 (sentiment &
-notizie)**. Fase 1 ✅ completata (2026-05-29).
+**Fase 3 (sentiment & notizie) 🔄 in corso** — ingestion news cablata su fonti
+reali + **sentiment Layer 1 (lessico/VADER)** scoring/aggregazione/allineamento,
+girati su dati veri. Sblocco rete confermato. Fasi 0, 1, 2 e 2.1 ✅ completate e
+in `main`. **Q9 → ADR-023** (Layer 1 lessico), **Q12 → ADR-024**
+(publication-time + lag 1g), **Q10 → ADR-025** (batch giornaliero + news history
+versionata) chiuse.
 
 Fase 2 chiusa con tutti i deliverable core: **harness di valutazione**
 (engine custom, ADR-009) + **cost model** + **indicatori tecnici** +
 **modelli baseline** + **notebook backtest OOS end-to-end** +
-**classificazione di regime**. I residui non bloccanti sono in **Fase 2.1**
-(backlog di qualità, vedi ROADMAP). Gli hook empirici da Fase 1 (volatility
-clustering, regime instability, BTC vs CPI YoY −0.40) restano i vincoli di
-design per i modelli successivi.
+**classificazione di regime**. Fase 2.1 (robustezza baseline) confermata su
+4/5 asset. Gli hook empirici da Fase 1 (volatility clustering, regime
+instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
 
 ## 🔭 Ripresa prossima sessione (leggere per primo)
 
-**Dove siamo**: **Fase 2 completata e consolidata**. Branch
-`claude/phase-2-baseline-backtest` (PR #4, **ready-for-review**, **CI verde**
-su HEAD `ee61842`). Deliverable core: harness, cost model, indicatori,
-baseline, notebook OOS end-to-end, regime-aware. 160/160 pytest verde, ruff
-pulito, pyright pulito su `src/{backtest,features,models}`, CI GitHub
-Actions verde.
+### ✅ SBLOCCO RETE CONFERMATO (2026-05-30, ambiente nuovo)
+Gli host news + HuggingFace sono **raggiungibili** in questo ambiente
+(allowlist aggiornata attiva). Verifica eseguita su CoinDesk, Cointelegraph,
+Google News, huggingface.co e il modello `ProsusAI/finbert` → tutti HTTP 200.
+Caveat: i feed publisher nativi (CoinDesk, Decrypt, …) sono **anti-bot
+instabili** da IP datacenter — lo stesso endpoint alterna RSS valido / 403 /
+muro JS a seconda della richiesta. Non si aggirano (ADR-018); il fetch tollera
+il fallimento e Google News (aggregatore) garantisce la copertura.
 
-**Prossimo bivio**: o si apre la **Fase 3 (sentiment & notizie)** — primo
-deliverable: pipeline ingestion notizie da ≥2 fonti + NLP baseline (FinBERG/
-sentence-transformers, ADR-016 Layer 1) — oppure si pesca dal backlog
-**Fase 2.1** se si preferisce rifinire i baseline prima di allargare.
-Decisione dell'utente a inizio sessione.
+### Dove siamo
+- **`main`** = `c3f52d2` (Fasi 0/1/2/2.1 mergiate). CI verde.
+- **Fase 3, ingestion cablata e girata su dati veri** (branch
+  `claude/phase-3-sentiment-news`, PR #6 draft):
+  - `src/ingestion/news/feeds.py`: registry fonti — newswire generali
+    (Cointelegraph, CoinDesk) + Google News per asset Tier 1 (≥2 fonti, ROADMAP).
+    **Nota anti-bot**: i feed dei publisher nativi sono instabili da IP
+    datacenter (200/403/JS-wall a rotazione); non si aggirano (ADR-018), il
+    fetch tollera il fallimento parziale e Google News fa da backbone affidabile
+  - `src/ingestion/news/persist.py`: `append_news` (history append-only,
+    dedup su `item_id`, sort per `published`) — pura I/O su pandas
+  - `src/ingestion/news/fetch_news.py`: entrypoint
+    (`uv run python -m src.ingestion.news.fetch_news`); per-source parquet in
+    `data/raw/news/` (gitignored), partial-failure tollerata
+  - **Fetch reale OK**: 7 fonti, **560 item** persistiti
+    (cointelegraph 30, decrypt 30, googlenews_{btc,eth,sol,link,pol} 100 cad.),
+    timestamp maggio 2026, index UTC, dedup cross-fetch verificata (run 2: +0)
+  - **187/187 pytest verde** (+10: 5 feeds + 5 persist), ruff + format puliti,
+    pyright pulito su `src/ingestion/news`
 
-**Backlog Fase 2.1 (non bloccante, vedi ROADMAP per dettaglio)**: ARIMA
-(+`statsmodels`), IRR money-weighted per DCA, allineamento macro FRED a
-release date, robustezza regime cross-asset (SOL/POL), sensibilità momentum
-al lookback, pulizia debito pyright ingestion.
+### Sentiment Layer 1 (lessico/VADER) — fatto
+- `src/ai/lexicon/sentiment.py` (+ `__init__`): `score_text` (VADER compound
+  [-1,1]), `score_news_frame` (scoring sul titolo), `daily_sentiment`
+  (aggregazione a giorno UTC: `mean_sentiment` + `news_count`),
+  `lag_daily_features` / `align_sentiment_returns` (lag 1g anti-look-ahead,
+  ADR-024). Dipendenza leggera `vaderSentiment` (no torch)
+- **8 nuovi test offline** (`test_sentiment.py`): sign/bounds, empty,
+  aggregazione, lag, anti-look-ahead nel join
+- **Validato su dati veri**: 560 news scorate (range sensati, mean ~0,
+  min −0.84 / max +0.79). Lead/lag BTC (n=23 giorni, indicativo): corr
+  sentiment(D)↔return(D+1) **−0.10** (rumore, atteso); corr
+  news_count(D)↔|return(D+1)| **+0.32** (il *volume* di notizie anticipa
+  debolmente la volatilità — da verificare su storia più lunga)
+
+### News history versionata (ADR-025) — fatto
+- **Scelta utente**: accumulare storia news (i feed danno ~settimane). Storage =
+  **commit nel repo** con eccezione mirata ad ADR-009 → **ADR-025**; chiude Q10
+- `src/ingestion/news/history.py` (`to_compact` + `update_history`) +
+  `src/ingestion/news/update_history.py` (entrypoint schedulabile)
+- `.github/workflows/news-history.yml`: cron giornaliero 06:30 UTC, commit del
+  parquet con `[skip ci]`; `.gitignore` carve-out `!data/news_history/*.parquet`
+- **Seed reale committato**: `data/news_history/news.parquet`, **543 item**
+  compatti (~260KB), schema `item_id,source,title,url,sentiment` (no summary)
+- **4 nuovi test** (`test_news_history.py`); **199/199 pytest verde**
+
+### Prossimi step Fase 3
+1. **Lasciar girare il cron** per accumulare mesi di storia (prerequisito per un
+   lead/lag statisticamente serio — ora n≈23 giorni, troppo pochi)
+2. Notebook lead/lag formale + correlazione/Granger sentiment & news-volume vs
+   rendimenti/volatilità, su più asset, con valutazione onesta (incluso
+   "nessun segnale")
+3. Feature derivate (sentiment rolling, divergenza sentiment-prezzo)
+4. Solo **se** il Layer 1 mostra segnale: valutare FinBERT (Layer 2, ADR-016)
+   — decisione separata, dipendenze pesanti
 
 **Stream educational**: L1 chiuso (10/10). I prossimi capitoli (L2) sugli
 indicatori/regimi/risk si possono scrivere ora che il codice esiste.
@@ -49,6 +98,22 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-30 — Sessione 8: Fase 3 — connettori reali, sentiment Layer 1, news history
+- **Sblocco rete** (ambiente nuovo): news + huggingface.co + FinBERT tutti 200
+- **Ingestion cablata** (`feeds.py`/`persist.py`/`fetch_news.py`): Cointelegraph
+  + CoinDesk + Google News per asset; 560 item reali persistiti (gitignored).
+  Publisher nativi anti-bot instabili da IP datacenter → Google News backbone
+- **Q9 → ADR-023** (sentiment Layer 1 = VADER, no torch) + `src/ai/lexicon/`
+  (`score_text`, `score_news_frame`, `daily_sentiment`)
+- **Q12 → ADR-024** (publication-time + lag 1g) + `lag_daily_features`,
+  `align_sentiment_returns` (test anti-look-ahead)
+- **Q10 → ADR-025** (batch giornaliero + news history versionata): `history.py`,
+  `update_history.py`, workflow `news-history.yml`, carve-out gitignore.
+  Seed `data/news_history/news.parquet` committato (543 item, ~260KB)
+- **199/199 pytest verde**, ruff + format + pyright (news/ai + core) puliti
+- **Validazione onesta**: lead/lag BTC n≈23 (indicativo) → sentiment(D)↔
+  return(D+1) −0.10; news_count(D)↔|return(D+1)| +0.32. Serve più storia
 
 ### 2026-05-28 — Sessione 1: framing & decisioni
 - Repository svuotata dal precedente progetto (gioco Snake)
@@ -534,6 +599,28 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 - **Nota CI**: pyright resta verde solo su `src/{backtest,features,models}`;
   ripulire ingestion dal rumore pandas-stubs è un task futuro a parte
 - **CI verde al primo run** (run 26679640442): ruff + pytest + pyright core
+
+### 2026-05-30 — Sessione 7: avvio Fase 3 (bloccata da allowlist)
+- **Fasi 2 e 2.1 mergiate in `main`** (PR #4 e #5 squash-merged, CI verde).
+  `main` = `c3f52d2`
+- **Avviata Fase 3** (sentiment & notizie). Primo deliverable (ingestion
+  news) costruito come **scaffold testato offline**:
+  - `src/ingestion/news/`: `NewsItem` (shape canonica tz-aware + dedup id),
+    `NewsSource` ABC, `parse_rss` (RSS 2.0/Atom via stdlib `xml.etree`, zero
+    nuove dipendenze), `RSSNewsSource` (fetch HTTP + backoff 429)
+  - **11 test** (`tests/test_news.py`) su fixture RSS/Atom inline: parsing,
+    dedup, skip malformati, invariante tz-aware, source con sessione fake.
+    **177/177 pytest verde**, ruff pulito, pyright pulito (`rss.py` strict)
+  - Q12 (allineamento temporale) deciso nello scaffold: si usa il
+    **publication-time** del feed (unico timestamp affidabile) → da
+    formalizzare in ADR
+  - PR #6 (draft, CI verde), branch `claude/phase-3-sentiment-news`
+- **BLOCCO scoperto**: network policy ad allowlist blocca news + HuggingFace.
+  L'utente ha aggiornato l'allowlist ma **non ha effetto sulla sessione
+  corrente** (proxy fissato all'avvio container) → serve ambiente nuovo
+- **Decisione utente**: pausa Fase 3, riprendere a pipeline completa in nuova
+  sessione con rete attiva (invece di accumulare codice non eseguito). Vedi
+  blocco "Ripresa prossima sessione" in testa per i dettagli operativi
 
 ### 2026-05-30 — Sessione 6: robustezza baseline (Fase 2.1)
 - **Scelta**: prima di aprire Fase 3, consolidare la robustezza dei baseline

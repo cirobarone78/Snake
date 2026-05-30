@@ -221,13 +221,22 @@ diventano rilevanti per le fasi successive o quando c'è banda per farli.
 
 ---
 
-## Fase 3 — Sentiment & notizie
+## Fase 3 — Sentiment & notizie 🔄 *avviata (2026-05-30), bloccata da allowlist*
 
 **Obiettivo**: introdurre la dimensione "informativa" non-numerica.
 
+> ⚠️ **Vincolo operativo**: le fonti news (CoinDesk/Cointelegraph/Google News)
+> e HuggingFace sono dietro la network allowlist dell'ambiente. L'allowlist è
+> stata aggiornata ma richiede un **ambiente nuovo** per avere effetto. Lo
+> scaffold di ingestion è pronto e testato offline; l'esecuzione su dati reali
+> e il NLP partono dalla prossima sessione con rete attiva.
+
 ### Deliverable
-- [ ] Pipeline ingestion notizie da almeno 2 fonti (es. CryptoPanic, RSS feed
-      Reuters/Bloomberg/altro)
+- [~] Pipeline ingestion notizie da almeno 2 fonti (RSS: CoinDesk,
+      Cointelegraph, Google News). **Scaffold testato offline** in
+      `src/ingestion/news/` (PR #6): `parse_rss` puro (RSS 2.0/Atom, stdlib),
+      `NewsItem`/`NewsSource`, `RSSNewsSource`. Manca: connettori cablati alle
+      fonti reali + esecuzione (richiede allowlist attiva)
 - [ ] NLP pipeline: sentiment scoring, entity recognition, topic classification
 - [ ] Feature derivate: sentiment medio rolling, volume notizie, divergenza
       sentiment vs prezzo, picchi di volume informativo
