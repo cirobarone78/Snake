@@ -412,6 +412,26 @@ regime instability, BTC vs CPI YoY −0.40) restano i vincoli di design.
   floor vs spread, market impact, validazioni, proxy di spread. **117/117
   pytest verde**, ruff pulito, pyright pulito su `src/backtest`
 
+### 2026-05-30 — Sessione 4 (cont.): indicatori tecnici
+- **Nuovo package** `src/features/` con `indicators.py`: SMA, EMA, MACD
+  (line/signal/hist), RSI (Wilder, gestione casi limite all-gain/all-loss
+  → 100/0 e flat → 50), Bollinger Bands (mid/upper/lower, std ddof=0),
+  ATR (Wilder, true range), OBV (volume firmato dalla direzione del close)
+  - Tutte funzioni pure su Series/OHLCV, **causali per costruzione**:
+    ogni valore a `t` usa solo dati ≤ `t` (rolling/ewm backward); le
+    posizioni iniziali a finestra non piena sono NaN (mai back-fill)
+  - Asset-class-agnostic (ADR-014): finestre in osservazioni, nessuna
+    assunzione di calendario o scala crypto
+- **17 nuovi test** (`tests/test_indicators.py`): valori noti SMA/EMA,
+  identità MACD hist = macd−signal, RSI bounded [0,100] + casi limite,
+  struttura Bollinger + collasso a std zero, ATR su range costante, OBV
+  signing, validazioni colonne/parametri, e **test esplicito di
+  non-look-ahead** (appendere una barra futura non cambia i valori
+  passati). **134/134 pytest verde**, ruff pulito, pyright pulito su
+  `src/features`
+- Material di base per il futuro capitolo educational L2 sugli indicatori
+  (ADR-015), da scrivere quando li useremo nei modelli baseline
+
 ## Prossimo step
 
 1. **Apertura Fase 2** — Baseline tecnica & backtesting rigoroso (vedi

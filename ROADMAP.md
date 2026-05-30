@@ -117,7 +117,10 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
   potere predittivo
 
 ### Deliverable
-- [ ] Indicatori tecnici classici implementati (MA, MACD, RSI, BB, ATR, OBV)
+- [x] Indicatori tecnici classici implementati (`src/features/indicators.py`):
+      SMA, EMA, MACD, RSI (Wilder), Bollinger Bands, ATR (Wilder), OBV.
+      Funzioni pure su OHLCV, causali per costruzione (test di non-look-ahead),
+      asset-class-agnostic (finestre in osservazioni, ADR-014)
 - [~] Framework di **backtesting walk-forward** (engine custom) con:
   - [x] Niente look-ahead bias: walk-forward splitter rolling/expanding
     (`src/backtest/splits.py`), invariante "test dopo train" forzata alla
@@ -143,11 +146,12 @@ La Fase 1 ha prodotto tre osservazioni che vincolano la Fase 2:
 ### Stato (in corso, 2026-05-30)
 Consegnati: **harness di valutazione** (`src/backtest/`, engine custom per
 controllo totale su no-look-ahead) — metriche, walk-forward splitter,
-benchmark passivi — e **cost model** (fee per-broker + slippage ADR-013 +
-proxy di spread). 50 test dedicati Fase 2 (117/117 totali verde). Mancano per
-chiudere il framework: allineamento macro a *release date* (FRED) e
-l'esecuzione out-of-sample end-to-end coi **modelli baseline** (random walk /
-momentum / ARIMA) e gli **indicatori tecnici**.
+benchmark passivi — il **cost model** (fee per-broker + slippage ADR-013 +
+proxy di spread) e gli **indicatori tecnici** (`src/features/indicators.py`:
+SMA/EMA/MACD/RSI/Bollinger/ATR/OBV). 134/134 pytest verde, ruff + pyright
+puliti sui nuovi moduli. Mancano per chiudere il framework: allineamento
+macro a *release date* (FRED) e l'esecuzione out-of-sample end-to-end coi
+**modelli baseline** (random walk / momentum / ARIMA).
 
 ### Criterio di completamento
 Possiamo confrontare qualsiasi nuovo modello con baseline solide e affidabili.
