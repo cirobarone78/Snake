@@ -12,9 +12,8 @@ Three honesty guards baked in (CLAUDE.md):
   require a minimum market cap so the ranking reflects real money rotating.
 - **Outlier-robust scoring**: a +422% category would dominate a z-score blend
   and bury genuine rotation. We standardise *by cross-sectional rank* (percentile
-  within the snapshot), which is naturally outlier-proof — the standard approach
-  in cross-sectional factor models. A pump just gets the top rank, not a score
-  that dwarfs everyone.
+  within the snapshot), which is naturally outlier-proof — a pump just gets the
+  top rank, not a score that dwarfs everyone.
 - **Volume-aware**: strength blends the move with turnover (volume/market-cap),
   so a category up on real trading beats one drifting up on thin volume.
 
@@ -28,6 +27,7 @@ from __future__ import annotations
 
 from typing import cast
 
+import numpy as np
 import pandas as pd
 
 # A category needs at least this market cap (USD) to count as "real rotation"
@@ -40,23 +40,23 @@ _OUT_COLS = [
 ]
 
 
-def _rank_pct(s: pd.Series) -> pd.Series:
+def _rank_pct(values: np.ndarray) -> np.ndarray:
     """Cross-sectional percentile rank in ``[0, 1]`` (outlier-robust).
 
-    Ties averaged; a single row or all-equal column -> 0.5 (neutral). NaNs keep
-    NaN. Unlike a z-score, an extreme outlier only ever reaches rank 1.0, so one
-    pump cannot dominate the blended score.
+    Ties get their average rank; a single element or all-equal input -> 0.5
+    (neutral). Unlike a z-score, an extreme outlier only ever reaches rank 1.0,
+    so one pump cannot dominate the blended score. NaNs are ranked as the
+    lowest (treated as weakest), which is fine for a strength ranking.
     """
-    if len(s) <= 1:
-        return pd.Series(0.5, index=s.index)
-    return cast("pd.Series", s.rank(pct=True, na_option="keep"))
+    n = len(values)
+    if n <= 1:
+        return np.full(n, 0.5)
+    order = np.argsort(np.argsort(values, kind="stable"), kind="stable").astype("float64")
+    return order / (n - 1)
 
 
 def _signal_label(score: float) -> str:
-    """Map a composite score in [0,1] to a coarse label.
-
-    Score is the average of two percentile ranks, so 0.5 is the median category.
-    """
+    """Map a composite score in [0,1] to a coarse label (0.5 = median category)."""
     if pd.isna(score):
         return "neutral"
     if score >= 0.85:
@@ -66,15 +66,9 @@ def _signal_label(score: float) -> str:
     return "neutral"
 
 
-def _prepare(categories: pd.DataFrame, min_market_cap: float) -> pd.DataFrame:
-    """Cap-filter and add the ``turnover`` column. Returns a copy (may be empty)."""
-    df = categories.copy()
-    df = df[df["market_cap"].fillna(0.0) >= min_market_cap]
-    if df.empty:
-        return df
-    mcap = df["market_cap"].where(df["market_cap"] > 0)
-    df["turnover"] = df["volume_24h"].fillna(0.0) / mcap
-    return df
+def _cap_filter(categories: pd.DataFrame, min_market_cap: float) -> pd.DataFrame:
+    mcap = categories["market_cap"].fillna(0.0).to_numpy(dtype="float64")
+    return cast("pd.DataFrame", categories.loc[mcap >= min_market_cap].copy())
 
 
 def screen_categories(
@@ -89,19 +83,25 @@ def screen_categories(
 
     ``score = mean(rank_pct(change_24h_pct), rank_pct(turnover))`` in ``[0, 1]``,
     where ``rank_pct`` is the cross-sectional percentile within the cap-filtered
-    snapshot. Returns the top ``top_n`` by score with ``turnover``, ``score`` and
-    a ``signal`` label (``hot`` >= 0.85, ``warm`` >= 0.65, else ``neutral``).
-    Pure function, no network.
+    snapshot and ``turnover = volume_24h / market_cap``. Returns the top
+    ``top_n`` by score with ``turnover``, ``score`` and a ``signal`` label
+    (``hot`` >= 0.85, ``warm`` >= 0.65, else ``neutral``). Pure, no network.
     """
     if categories.empty:
         return pd.DataFrame(columns=_OUT_COLS)
-    df = _prepare(categories, min_market_cap)
+    df = _cap_filter(categories, min_market_cap)
     if df.empty:
         return pd.DataFrame(columns=_OUT_COLS)
 
-    df["score"] = (_rank_pct(df["change_24h_pct"]) + _rank_pct(df["turnover"])) / 2.0
-    df = df.sort_values("score", ascending=False, na_position="last")
-    df["signal"] = df["score"].map(_signal_label)
+    mcap = df["market_cap"].to_numpy(dtype="float64")
+    vol = df["volume_24h"].fillna(0.0).to_numpy(dtype="float64")
+    change = df["change_24h_pct"].to_numpy(dtype="float64")
+    turnover = np.divide(vol, mcap, out=np.zeros_like(vol), where=mcap > 0)
+
+    df["turnover"] = turnover
+    df["score"] = (_rank_pct(change) + _rank_pct(turnover)) / 2.0
+    df = cast("pd.DataFrame", df.sort_values("score", ascending=False, na_position="last"))
+    df["signal"] = [_signal_label(float(s)) for s in df["score"].to_numpy()]
     df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
     keep = [c for c in _OUT_COLS if c in df.columns]
     return cast("pd.DataFrame", df[keep].head(top_n))
@@ -123,10 +123,10 @@ def screen_movers(
         empty = pd.DataFrame(columns=out_cols)
         return {"gainers": empty, "losers": empty.copy()}
 
-    df = categories.copy()
-    df = df[df["market_cap"].fillna(0.0) >= min_market_cap]
-    df = df[df["change_24h_pct"].notna()]
-    ranked = df.sort_values("change_24h_pct", ascending=False)
+    df = _cap_filter(categories, min_market_cap)
+    has_change = df["change_24h_pct"].notna().to_numpy()
+    df = cast("pd.DataFrame", df.loc[has_change])
+    ranked = cast("pd.DataFrame", df.sort_values("change_24h_pct", ascending=False))
     gainers = cast("pd.DataFrame", ranked.head(n)[out_cols].reset_index(drop=True))
     losers = cast("pd.DataFrame", ranked.tail(n)[out_cols].iloc[::-1].reset_index(drop=True))
     return {"gainers": gainers, "losers": losers}
