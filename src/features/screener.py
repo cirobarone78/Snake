@@ -36,7 +36,7 @@ DEFAULT_MIN_MARKET_CAP: float = 1e8
 
 _OUT_COLS = [
     "category_id", "name", "market_cap", "volume_24h",
-    "change_24h_pct", "turnover", "score", "signal",
+    "change_24h_pct", "top_coins", "turnover", "score", "signal",
 ]
 
 
