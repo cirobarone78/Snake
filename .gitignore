@@ -43,6 +43,12 @@ data/cache/
 !data/news_history/
 !data/news_history/*.parquet
 
+# Category rotation history (Fase 6, same rationale as ADR-025): a small daily
+# snapshot of crypto category market caps/moves, committed so the scheduled job
+# accumulates the rotation history that feeds the future probabilistic layer.
+!data/category_history/
+!data/category_history/*.parquet
+
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
 # Anchored to repo root so it ignores downloaded model weights only, not the
 # src/models/ source package.

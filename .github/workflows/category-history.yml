@@ -1,0 +1,49 @@
+name: category-history
+
+# Fase 6: accumulate a daily snapshot of crypto category (narrative) market caps
+# and moves, so the rotation history grows over time and can feed the future
+# probabilistic layer. Commits data only; [skip ci] avoids re-triggering CI.
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # 07:00 UTC daily (after the news job at 06:30)
+  workflow_dispatch: {}
+
+concurrency:
+  group: category-history
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Update category history
+        run: uv run python -m src.ingestion.tier1.fetch_categories
+
+      - name: Commit updated history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/category_history; then
+            echo "No category changes to commit."
+            exit 0
+          fi
+          git add data/category_history
+          git commit -m "data: update category history [skip ci]"
+          git push
