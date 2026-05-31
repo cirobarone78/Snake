@@ -223,25 +223,38 @@ Candidati da indagare:
 
 ---
 
-## 🟢 Domande di ricerca (non decisioni operative)
+## 🟢 Domande di ricerca (diario delle ipotesi testate — VISION)
 
-Ipotesi da testare empiricamente nel corso del progetto.
+Ipotesi testate empiricamente nel corso del progetto. **Esiti onesti registrati**
+(✅ risposta data / 🔄 aperta).
 
-- Il sentiment delle news ha potere predittivo *lead* sui prezzi, o è solo
-  *concomitante/lagging*?
-- Le notizie tech (es. annunci adoption, exploit, regulation) hanno impatto
-  più forte di quelle macro?
-- I cicli di halving Bitcoin sono ancora predittivi nel 2026+ o sono "priced
-  in" dal mercato?
-- Esistono regimi di mercato distinguibili sistematicamente?
-- L'integrazione multifattoriale aggiunge davvero valore o il tecnico puro
-  è sufficiente?
-- Quali sono i lag temporali tipici tra una notizia e la reazione di prezzo?
-- Le correlazioni cross-asset (BTC vs S&P, vs gold, vs DXY) sono stabili
-  o regime-dependent?
-- Gli asset Tier 1 dell'utente (BTC, ETH, SOL, LINK, POL) hanno dinamiche
-  predittive diverse? Quali feature funzionano su quale asset?
-- I segnali sono coerenti tra breve/medio/lungo termine o frequentemente
-  divergenti?
+- ✅ **Il sentiment news ha potere lead sui prezzi?** — **No** col campione
+  attuale (nb 06): `corr(sentiment, ret) ~0` a tutti i lag; il +0.32 di n=23 era
+  artefatto small-sample (svanito a n=143). In gran parte già scontato/lagging.
+- ✅ **I cicli di halving sono ancora predittivi nel 2026+?** — **No edge**
+  (nb 09): `halving_phase` non sposta l'accuracy → largamente "priced in".
+- ✅ **Esistono regimi distinguibili sistematicamente?** — **Sì, descrittivamente**
+  (nb 09): bull/bear × high/low vol partizionano nettamente rischio/rendimento
+  (bull_high_vol Sharpe 2.97 vs bear_high_vol −1.20). Ma *conoscerli* non dà edge
+  direzionale (sono già impliciti nel tecnico).
+- ✅ **L'integrazione multifattoriale aggiunge valore vs tecnico puro?** — **No
+  a frequenza daily** (nb 07/08): tecnico, +macro, +regime tutti ≈ coin-flip OOS.
+- 🔄 **La macro conta alla sua frequenza naturale (mensile)?** — **Indizio di sì
+  ma non validabile** (nb 10): `corr(cpi_yoy[t], ret[t+1]) = −0.26` (segno atteso,
+  persistente), ma n~45 OOS troppo piccolo. **Il segnale più promettente trovato.**
+  Validazione richiede cross-asset (equity/oro, decenni di storia mensile).
+- 🔄 Le notizie tech vs macro: impatto relativo — non ancora isolato (serve più
+  storia news + classificazione topic).
+- 🔄 Lag tipici notizia→reazione — non misurabile col campione news attuale.
+- 🔄 Correlazioni cross-asset stabili o regime-dependent? — **regime-dependent**
+  (Fase 1: rolling std 0.12-0.17); non riapprofondito.
+- 🔄 Dinamiche predittive diverse per asset Tier 1? — solo BTC testato a fondo;
+  cross-asset rinviato.
+- 🔄 Coerenza segnali breve/medio/lungo — solo breve (daily) e lungo (mensile)
+  toccati; il segnale mensile macro non ha analogo daily (frequenze diverse).
 
-*Queste vanno trasformate in esperimenti specifici durante le fasi corrispondenti.*
+*Sintesi*: dopo aver testato tecnico, macro, news, regimi e cicli, **nessun edge
+predittivo direzionale robusto** emerge a frequenza daily. L'unico indizio reale
+è la macro (inflazione) a frequenza **mensile**, ma il campione crypto (~100 mesi)
+è troppo corto per validarlo. Coerente con VISION #1: "meglio nessun segnale che
+un segnale falso convincente".
