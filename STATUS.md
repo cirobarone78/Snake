@@ -9,11 +9,22 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 4 (modelli multifattoriali) 🔄 — criterio di completamento RAGGIUNTO** —
-risposto con metriche alla domanda della fase. Branch `claude/phase-4-macro-eval`.
-Fase 3 consolidata in `main` (PR #6/#7); workflow cron news schedulato su `main`
-(non ancora eseguito: nessun commit-dati finora). Fasi 0/1/2/2.1 ✅.
+**Fase 5 (cicli & regimi) 🔄 — criterio di completamento RAGGIUNTO** — branch
+`claude/phase-5-regimes`. Fasi 0/1/2/2.1 ✅, Fasi 3 e 4 ✅ (criterio raggiunto,
+in `main`). Workflow cron news schedulato su `main` (non ancora eseguito).
 **Q9/Q12/Q10 → ADR-023/024/025** chiuse.
+
+**🔬 Finding Fase 5**: regimi vol (`classify_vol_regime`) + 4-stati
+(`combine_regimes`) + halving clock (`cycles.py`), tutti causali. Test
+conditioning (nb 09): accuracy OOS **0.498 → 0.510** (delta +0.0115, nel rumore)
+→ **nessun edge** dal sapere il regime. MA la **decomposizione** è netta: il
+rendimento BTC è fortemente regime-dipendente (bull_high_vol Sharpe **2.97** vs
+bear_high_vol **−1.20**); la media full-sample (0.64) mescola mondi opposti.
+Lezione: ogni metrica va letta **per regime**, mai in media.
+
+**🔬 Finding Fase 4 (criterio di completamento)**: con `FRED_API_KEY` ora
+disponibile, testato **tecnico vs tecnico+macro** su BTC (logistic walk-forward
+OOS, stesso indice comune n=2249): accuracy **0.5007 → 0.5060** (delta +0.005,
 
 **🔬 Finding Fase 4 (criterio di completamento)**: con `FRED_API_KEY` ora
 disponibile, testato **tecnico vs tecnico+macro** su BTC (logistic walk-forward
@@ -121,6 +132,24 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-31 — Sessione 13: Fase 5 — cicli, regimi & contestualizzazione
+- **`src/features/regime.py` esteso**: `classify_vol_regime` (vol alta/bassa via
+  soglia relativa causale, baseline shiftata anti-leakage), `combine_regimes`
+  (4-stati bull/bear × high/low vol), `summarize_by_regime` reso generico per
+  qualsiasi label set. Scelta: soglie trasparenti, **non HMM** (niente dipendenze
+  pesanti/scatole nere — coerente con la decisione di Fase 2)
+- **`src/features/cycles.py` (nuovo)**: halving clock causale — `days_since/to
+  halving`, `halving_phase` ciclica. Date halving come costanti (calendariali)
+- **Notebook 09** (`09_regimes_cycles.ipynb`, eseguito): H1-H3 prima.
+  - **Conditioning**: tecnico vs tecnico+regime, accuracy OOS 0.498 → 0.510
+    (delta +0.0115, nel rumore, n=2430) → nessun edge dal sapere il regime
+  - **Decomposizione** BTC per 4-stati: bull_high_vol Sharpe **+2.97**,
+    bull_low_vol +1.55, bear_low_vol −0.81, bear_high_vol **−1.20** → il
+    rendimento è fortemente regime-dipendente, la media (0.64) è un artefatto
+- **16 nuovi test** (`test_regime_vol.py` 7 + `test_cycles.py` 6 + esistenti),
+  **241/241 pytest verde**, ruff + pyright core puliti
+- Branch `claude/phase-5-regimes`
 
 ### 2026-05-30 — Sessione 12: Fase 4 — valutazione macro (criterio completamento)
 - **`FRED_API_KEY` fornita** dall'utente → `.env` (gitignored), fetch 7 serie FRED OK

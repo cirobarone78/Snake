@@ -43,6 +43,14 @@ class Regime(StrEnum):
     UNKNOWN = "unknown"  # SMA not yet defined (warm-up); excluded from metrics
 
 
+class VolRegime(StrEnum):
+    """Coarse volatility regime, classified causally from trailing realised vol."""
+
+    HIGH = "high_vol"
+    LOW = "low_vol"
+    UNKNOWN = "unknown"  # vol or its trailing baseline not yet defined (warm-up)
+
+
 def classify_regime(prices: pd.Series, window: int = 200) -> pd.Series:
     """Label each timestamp bull/bear by price vs its trailing SMA (causal).
 
@@ -66,6 +74,54 @@ def classify_regime(prices: pd.Series, window: int = 200) -> pd.Series:
     return cast("pd.Series", labels)
 
 
+def classify_vol_regime(
+    returns: pd.Series, vol_window: int = 30, baseline_window: int = 180
+) -> pd.Series:
+    """Label each timestamp high/low volatility, causally (no look-ahead).
+
+    Trailing realised volatility ``vol[t] = std(returns[t-vol_window+1 : t])`` is
+    compared to its own trailing **median** over ``baseline_window`` (shifted by
+    one so day ``t`` is not in its own baseline). ``high_vol`` when current vol
+    exceeds the baseline median, else ``low_vol``. A relative (self-referential)
+    threshold keeps it asset-class-agnostic — BTC and an equity index have very
+    different absolute vol, but each is "high" relative to its own recent norm.
+
+    Warm-up points (vol or baseline undefined) are ``unknown`` and excluded
+    downstream rather than guessed.
+    """
+    if vol_window <= 1:
+        raise ValueError("vol_window must be > 1")
+    if baseline_window <= 0:
+        raise ValueError("baseline_window must be positive")
+    r = returns.dropna()
+    vol = cast("pd.Series", r.rolling(vol_window).std(ddof=0))
+    # baseline uses vol values strictly before t (shift 1) to avoid self-inclusion
+    baseline = cast("pd.Series", vol.rolling(baseline_window).median()).shift(1)
+    labels = pd.Series(VolRegime.UNKNOWN.value, index=r.index, name="vol_regime")
+    defined = vol.notna() & baseline.notna()
+    is_high = defined & (vol > baseline)
+    is_low = defined & (vol <= baseline)
+    labels = labels.mask(is_high, VolRegime.HIGH.value)
+    labels = labels.mask(is_low, VolRegime.LOW.value)
+    return cast("pd.Series", labels)
+
+
+def combine_regimes(trend: pd.Series, vol: pd.Series) -> pd.Series:
+    """Cross trend (bull/bear) and vol (high/low) into a 4-state regime label.
+
+    Labels like ``bull_low_vol`` / ``bear_high_vol``. Any timestamp where either
+    component is ``unknown`` (warm-up) becomes ``unknown``. Aligned on the common
+    index. Useful to test whether the *combination* (e.g. bear+high-vol = crash)
+    carries more conditioning information than either axis alone.
+    """
+    t_aligned, v_aligned = trend.align(vol, join="inner")
+    out = pd.Series("unknown", index=t_aligned.index, name="regime_4state")
+    known = (t_aligned != Regime.UNKNOWN.value) & (v_aligned != VolRegime.UNKNOWN.value)
+    combined = t_aligned.astype(str) + "_" + v_aligned.astype(str)
+    out = out.mask(known, combined)
+    return cast("pd.Series", out)
+
+
 def summarize_by_regime(
     returns: pd.Series,
     regime: pd.Series,
@@ -73,24 +129,24 @@ def summarize_by_regime(
 ) -> dict[str, PerformanceSummary]:
     """Compute the full metric set within each regime, plus the full sample.
 
-    ``regime`` is aligned to ``returns`` on their common index. Only ``bull``
-    and ``bear`` segments are reported per-regime (``unknown`` warm-up points
-    are dropped). The ``'full'`` key holds the undecomposed summary, so callers
-    can see at a glance how much the average hides.
+    ``regime`` is aligned to ``returns`` on their common index. Every distinct
+    label except ``unknown`` (warm-up) gets its own summary; the ``'full'`` key
+    holds the undecomposed summary, so callers can see at a glance how much the
+    average hides. Works for any label scheme — trend (bull/bear), vol
+    (high_vol/low_vol), or the 4-state combination.
 
     The regime label must be the one **in effect for that return's period**.
-    Since ``classify_regime`` is causal (uses prices up to ``t``) and a return
-    at ``t`` spans ``t-1 -> t``, aligning on the same index attributes each
-    return to the regime knowable at its close — no look-ahead.
+    Since the classifiers are causal (use data up to ``t``) and a return at
+    ``t`` spans ``t-1 -> t``, aligning on the same index attributes each return
+    to the regime knowable at its close — no look-ahead.
     """
     r_aligned, g = returns.align(regime, join="inner")
     r = cast("pd.Series", r_aligned.dropna())
     g = g.reindex(r.index)
 
-    out: dict[str, PerformanceSummary] = {
-        "full": summarize(r, periods_per_year=periods_per_year)
-    }
-    for label in (Regime.BULL.value, Regime.BEAR.value):
+    out: dict[str, PerformanceSummary] = {"full": summarize(r, periods_per_year=periods_per_year)}
+    labels = [str(x) for x in pd.unique(g) if str(x) != "unknown"]
+    for label in sorted(labels):
         seg = cast("pd.Series", r[g == label])
         if len(seg) > 0:
             out[label] = summarize(seg, periods_per_year=periods_per_year)

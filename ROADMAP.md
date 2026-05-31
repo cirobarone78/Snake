@@ -283,20 +283,31 @@ orizzonte mensile e/o con le news quando il cron avrà accumulato storia.
 
 ---
 
-## Fase 5 — Cicli, regimi & contestualizzazione
+## Fase 5 — Cicli, regimi & contestualizzazione 🔄 *criterio raggiunto (2026-05-31)*
 
 **Obiettivo**: il mercato non è omogeneo nel tempo. Identificare regimi e
 adattare l'analisi.
 
 ### Deliverable
-- [ ] Detection di market regime (bull/bear/sideways/high-vol/low-vol) con
-      hidden Markov models o clustering
-- [ ] Analisi cicli specifici crypto: halving, anniversari, cicli on-chain
-- [ ] Modelli condizionati al regime
-- [ ] Test: i modelli funzionano meglio quando "sanno" il regime?
+- [x] Detection di market regime: trend bull/bear (Fase 2) + **vol high/low**
+      (`classify_vol_regime`, soglia relativa causale) + **4-stati**
+      (`combine_regimes`). Scelta deliberata: soglie trasparenti, **non** HMM
+      (niente scatole nere/dipendenze pesanti — coerente con ADR Fase 2)
+- [x] Analisi cicli specifici crypto: **halving clock** (`src/features/cycles.py`):
+      days since/to halving + `halving_phase` ciclica, puramente calendariali
+- [x] Modelli condizionati al regime: feature regime/ciclo aggiunte alla design
+      matrix (`is_bull`, `is_highvol`, `halving_phase`), laggate anti-look-ahead
+- [x] Test "i modelli migliorano se sanno il regime?": notebook 09, accuracy OOS
+      **0.498 → 0.510** (delta +0.0115, nel rumore su n=2430) → **conditioning
+      non dà edge**. Ma la **decomposizione** è netta: rendimento BTC fortemente
+      regime-dipendente (bull_high_vol Sharpe 2.97 vs bear_high_vol −1.20)
 
-### Criterio di completamento
+### Criterio di completamento ✅ (risposta data)
 Capiamo se e quanto la contestualizzazione per regime migliora le predizioni.
+**Risposta (nb 09)**: il *conditioning* non produce edge predittivo direzionale
+a daily (delta nel rumore), ma la *decomposizione* per regime è descrittivamente
+essenziale — i rendimenti sono fortemente regime-dipendenti, quindi ogni metrica
+va letta per regime, mai in media. Coerente con l'edge difensivo di Fase 2.1.
 
 ---
 
