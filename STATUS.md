@@ -9,19 +9,21 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 4 (modelli multifattoriali) 🔄 in corso** — macro pipeline
-point-in-time-safe **in `main`** (PR #8 `3e13c0d`). Ora: **design matrix
-multifattoriale + primo modello** (logistic regression walk-forward OOS) su
-branch `claude/phase-4-model`. Fase 3 consolidata in `main` (PR #6/#7), cron news
-attivo. Fasi 0/1/2/2.1 ✅. **Q9/Q12/Q10 → ADR-023/024/025** chiuse.
+**Fase 4 (modelli multifattoriali) 🔄 — criterio di completamento RAGGIUNTO** —
+risposto con metriche alla domanda della fase. Branch `claude/phase-4-macro-eval`.
+Fase 3 consolidata in `main` (PR #6/#7); workflow cron news schedulato su `main`
+(non ancora eseguito: nessun commit-dati finora). Fasi 0/1/2/2.1 ✅.
+**Q9/Q12/Q10 → ADR-023/024/025** chiuse.
 
-**🔬 Finding Fase 4 (barra onesta)**: il primo modello multifattoriale
-(logistic, **solo feature tecniche** finché manca `FRED_API_KEY`) su BTC dà
-**directional accuracy OOS 0.497** ≈ coin-flip, e la sua strategia net perde
-nettamente contro buy-and-hold (Sharpe 0.37 vs 0.98). **Nessun edge** — il
-risultato *giusto* (un'accuracy alta sarebbe sospetta di look-ahead). Il valore
-di Fase 4, se c'è, verrà dai **fattori ortogonali** (macro/news), non dal tecnico
-rimasticato. Prossimo: join macro+tecnico appena la chiave FRED è disponibile.
+**🔬 Finding Fase 4 (criterio di completamento)**: con `FRED_API_KEY` ora
+disponibile, testato **tecnico vs tecnico+macro** su BTC (logistic walk-forward
+OOS, stesso indice comune n=2249): accuracy **0.5007 → 0.5060** (delta +0.005,
+dentro il rumore). **La macro NON aggiunge valore predittivo direzionale a
+frequenza daily** — coerente con la EDA Fase 1 (segnale CPI vive a frequenza
+mensile, ~0 daily). Niente leakage (un bug avrebbe gonfiato il delta). Risultato
+**negativo, misurato e onesto**. Notebook 08. Direzioni vive: target mensile,
+news (quando il cron avrà accumulato), modelli non lineari **solo se** un fattore
+mostra segnale.
 
 **🔬 Finding Fase 3 (onestà metodologica)**: il `corr(news_count, |return|)
 = +0.32` visto su n=23 **è svanito a n=143** (market-wide, ~−0.07 a lag 1) →
@@ -119,6 +121,20 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-30 — Sessione 12: Fase 4 — valutazione macro (criterio completamento)
+- **`FRED_API_KEY` fornita** dall'utente → `.env` (gitignored), fetch 7 serie FRED OK
+- **Notebook 08** (`08_macro_value.ipynb`, eseguito): tecnico vs tecnico+macro,
+  stessa logistic walk-forward, confronto su indice OOS comune (n=2249).
+  **0.5007 → 0.5060** (delta +0.005, rumore). **La macro non aggiunge edge
+  direzionale a daily** — atteso (EDA Fase 1: macro è segnale mensile, ~0 daily).
+  Nessun leakage. Risposta al criterio di completamento Fase 4: *no, l'integrazione
+  tecnico+macro non aggiunge valore predittivo a frequenza daily su BTC*
+- **Fix `multifactor.py`**: guardia su index duplicati + target costruito sullo
+  stesso `test_index` posizionale della predizione (allineamento robusto)
+- **247/247 pytest verde**, ruff + pyright core puliti
+- **Cron news**: workflow schedulato su `main`, non ancora eseguito (nessun
+  commit-dati finora; partirà al prossimo trigger 06:30 UTC)
 
 ### 2026-05-30 — Sessione 11: Fase 4 — design matrix + primo modello multifattoriale
 - **PR #8 mergiata in `main`** (`3e13c0d`): macro pipeline point-in-time-safe
