@@ -49,11 +49,13 @@ def technical_features(ohlcv: pd.DataFrame) -> pd.DataFrame:
 
 
 def directional_target(close: pd.Series) -> pd.Series:
-    """Binary next-period direction: 1 if the period return is > 0 else 0.
+    """Binary direction of the return realised at each day: 1 if return > 0 else 0.
 
-    Defined on the *realised* return at each day (no shift here). The look-ahead
-    safety comes from lagging the features against this target in
-    ``assemble_design_matrix``, not from shifting the target.
+    This is the *current-period* direction (no shift here). It becomes a
+    *predictive* target only because the features are lagged against it in
+    ``assemble_design_matrix`` (so lagged features at label ``t`` predict this
+    day-``t`` direction). Keeping the shift in one place — on the features —
+    avoids the classic double-shift / sign-flip mistakes.
     """
     ret = cast("pd.Series", close.pct_change())
     return cast("pd.Series", ret.gt(0.0).astype("float64")).rename("target")
