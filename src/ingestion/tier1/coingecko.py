@@ -88,7 +88,9 @@ class CoinGeckoSource(DataSource):
         """
         logger.info(
             "Fetching market chart for %s (days=%d, vs=%s)",
-            coingecko_id, days, vs_currency,
+            coingecko_id,
+            days,
+            vs_currency,
         )
         payload = self._get(
             f"/coins/{coingecko_id}/market_chart",
@@ -116,9 +118,7 @@ class CoinGeckoSource(DataSource):
         row["total_volume_24h_usd"] = float(
             (payload.get("total_volume") or {}).get(DEFAULT_VS_CURRENCY, 0.0)
         )
-        row["active_cryptocurrencies"] = float(
-            payload.get("active_cryptocurrencies") or 0
-        )
+        row["active_cryptocurrencies"] = float(payload.get("active_cryptocurrencies") or 0)
         return pd.DataFrame([row], index=pd.DatetimeIndex([snapshot_at], name="snapshot_at"))
 
     def fetch_top_n(
@@ -158,6 +158,51 @@ class CoinGeckoSource(DataSource):
         df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
         return df
 
+    def fetch_categories(self, min_market_cap: float = 0.0) -> pd.DataFrame:
+        """Crypto categories (narratives) with market-cap-weighted 24h move.
+
+        CoinGecko's ``/coins/categories`` returns ~700 categories (AI, RWA,
+        gaming, L2, meme, ...) — the crypto analogue of equity sectors/themes.
+        Each carries aggregate ``market_cap``, ``volume_24h`` and the
+        market-cap-weighted ``market_cap_change_24h`` (%), plus the top-3 coins.
+
+        ``min_market_cap`` filters out micro-cap categories whose huge % moves
+        are pump noise, not rotation (e.g. a $5M "launchpad" category at +400%).
+        A sensible screener floor is ~1e8 (100M USD). Default 0 keeps all.
+
+        Output columns: ``category_id, name, market_cap, volume_24h,
+        change_24h_pct, top_coins``. Index: integer rank by market cap (1-based).
+        Snapshot, not time series — accumulate via ``write_snapshot``.
+        """
+        logger.info("Fetching CoinGecko /coins/categories (min_mcap=%.0f)", min_market_cap)
+        payload = self._get("/coins/categories")
+        rows = [
+            {
+                "category_id": c.get("id"),
+                "name": c.get("name"),
+                "market_cap": c.get("market_cap"),
+                "volume_24h": c.get("volume_24h"),
+                "change_24h_pct": c.get("market_cap_change_24h"),
+                "top_coins": ",".join(str(s) for s in (c.get("top_3_coins_id") or []) if s),
+            }
+            for c in payload
+            if (c.get("market_cap") or 0.0) >= min_market_cap
+        ]
+        df = pd.DataFrame(
+            rows,
+            columns=[
+                "category_id",
+                "name",
+                "market_cap",
+                "volume_24h",
+                "change_24h_pct",
+                "top_coins",
+            ],
+        )
+        df = df.sort_values("market_cap", ascending=False, na_position="last")
+        df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
+        return df
+
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         url = f"{self._base_url}{path}"
         headers = {"accept": "application/json"}
@@ -167,9 +212,7 @@ class CoinGeckoSource(DataSource):
 
         attempt = 0
         while True:
-            resp = self._session.get(
-                url, params=params, headers=headers, timeout=self._timeout
-            )
+            resp = self._session.get(url, params=params, headers=headers, timeout=self._timeout)
             if resp.status_code == 429:
                 attempt += 1
                 if attempt > self._max_retries:
@@ -181,7 +224,9 @@ class CoinGeckoSource(DataSource):
                 wait = self._backoff_base * (2 ** (attempt - 1))
                 logger.warning(
                     "CoinGecko 429: retry %d/%d in %.0fs",
-                    attempt, self._max_retries, wait,
+                    attempt,
+                    self._max_retries,
+                    wait,
                 )
                 time.sleep(wait)
                 continue
