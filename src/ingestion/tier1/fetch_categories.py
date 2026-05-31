@@ -17,6 +17,9 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
+import pandas as pd
+
+from src.features.screener_report import format_report_md
 from src.ingestion.snapshot import write_snapshot
 from src.ingestion.tier1.coingecko import CoinGeckoSource
 
@@ -31,6 +34,9 @@ logger = logging.getLogger(__name__)
 # committed history stays small and free of micro-cap pump noise.
 PERSIST_MIN_MARKET_CAP = 1e8
 DEFAULT_DATA_DIR = Path("data/category_history")
+# The auto-updated, human-readable briefing committed at repo root so it renders
+# on GitHub without running anything (the user's "vedere il report" need).
+REPORT_PATH = Path("REPORT.md")
 
 
 def main() -> None:
@@ -55,6 +61,12 @@ def main() -> None:
         PERSIST_MIN_MARKET_CAP / 1e6,
         ", ".join(df["name"].head(5).tolist()),
     )
+
+    # Write the readable Markdown briefing alongside the data, so GitHub shows
+    # an always-fresh report at the repo root after each scheduled run.
+    now = pd.Timestamp.now(tz="UTC").floor("min")
+    REPORT_PATH.write_text(format_report_md(df, snapshot_at=now), encoding="utf-8")
+    logger.info("Wrote readable briefing -> %s", REPORT_PATH)
 
 
 if __name__ == "__main__":

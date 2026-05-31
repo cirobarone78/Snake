@@ -36,14 +36,14 @@ jobs:
       - name: Update category history
         run: uv run python -m src.ingestion.tier1.fetch_categories
 
-      - name: Commit updated history
+      - name: Commit updated history + report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data/category_history; then
+          if git diff --quiet -- data/category_history REPORT.md; then
             echo "No category changes to commit."
             exit 0
           fi
-          git add data/category_history
-          git commit -m "data: update category history [skip ci]"
+          git add data/category_history REPORT.md
+          git commit -m "data: update category history + report [skip ci]"
           git push
