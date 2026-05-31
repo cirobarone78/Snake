@@ -93,3 +93,69 @@ def format_report(categories: pd.DataFrame, top_n: int = 8, movers_n: int = 5) -
         "previsione: il potere predittivo storico richiede l'accumulo della history."
     )
     return "\n".join(lines)
+
+
+def format_report_md(
+    categories: pd.DataFrame,
+    top_n: int = 8,
+    movers_n: int = 5,
+    snapshot_at: pd.Timestamp | str | None = None,
+) -> str:
+    """Build a GitHub-friendly **Markdown** screener briefing from a snapshot.
+
+    Same content as ``format_report`` but as Markdown tables, so it renders
+    nicely when committed as ``REPORT.md`` and viewed on GitHub (the user's
+    "vedere il report senza lanciare comandi"). ``snapshot_at`` stamps the
+    freshness; pure function, no I/O.
+    """
+    if categories.empty:
+        return "# Screener narrative crypto\n\n_Nessun dato di categoria disponibile._\n"
+
+    strong = screen_categories(categories, top_n=top_n)
+    movers = screen_movers(categories, n=movers_n)
+    stamp = str(snapshot_at)[:16] if snapshot_at is not None else "n/d"
+
+    out: list[str] = []
+    out.append("# 🧭 Screener narrative crypto")
+    out.append("")
+    out.append(f"_Foto del momento (snapshot: **{stamp} UTC**) — **non è una previsione.**_")
+    out.append("")
+
+    out.append("## 🔥 Narrative in forza ora")
+    out.append("")
+    out.append("| # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |")
+    out.append("|--:|---|:-:|--:|--:|--:|---|")
+    for i, row in enumerate(strong.to_dict("records"), start=1):
+        name = str(row["name"])
+        signal = str(row["signal"])
+        out.append(
+            f"| {i} | {name} | {signal} | "
+            f"{float(row['score']):.2f} | {float(row['change_24h_pct']):+.1f}% | "
+            f"{_fmt_mcap(float(row['market_cap']))} | {_lead_coins(row['top_coins'])} |"
+        )
+
+    out.append("")
+    out.append("## 📉 In calo / rischio ora")
+    out.append("")
+    out.append("| Narrativa | 24h | Mcap | Coin guida |")
+    out.append("|---|--:|--:|---|")
+    for row in movers["losers"].to_dict("records"):
+        name = str(row["name"])
+        out.append(
+            f"| {name} | {float(row['change_24h_pct']):+.1f}% | "
+            f"{_fmt_mcap(float(row['market_cap']))} | {_lead_coins(row['top_coins'])} |"
+        )
+
+    out.append("")
+    out.append("---")
+    out.append(
+        "> **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli "
+        "outlier; micro-cap filtrate come rumore. Questa è la **rotazione "
+        "attuale**, non una previsione: il potere predittivo storico richiede "
+        "l'accumulo della history (in corso)."
+    )
+    out.append("")
+    out.append("_Generato automaticamente dal workflow `category-history`._")
+    out.append("")
+    return "\n".join(out)
+

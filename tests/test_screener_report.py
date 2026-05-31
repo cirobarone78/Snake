@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from src.features.screener_report import format_report
+from src.features.screener_report import format_report, format_report_md
 
 
 def _categories() -> pd.DataFrame:
@@ -56,3 +56,30 @@ def test_report_lists_leading_coins() -> None:
     report = format_report(_categories())
     # leading coins of a strong narrative are shown
     assert "near" in report or "bittensor" in report
+
+
+# --- Markdown variant ---
+
+
+def test_report_md_has_markdown_tables_and_sections() -> None:
+    md = format_report_md(_categories(), snapshot_at="2026-05-31 07:00")
+    assert md.startswith("#")  # markdown heading
+    assert "| # | Narrativa |" in md  # strong table header
+    assert "Narrative in forza" in md
+    assert "In calo / rischio" in md
+    # freshness stamp surfaced
+    assert "2026-05-31 07:00" in md
+    # honest framing
+    assert "non è una previsione" in md.lower()
+
+
+def test_report_md_excludes_pump_and_shows_strong() -> None:
+    md = format_report_md(_categories())
+    assert "AI" in md
+    assert "MicroPump" not in md
+
+
+def test_report_md_empty() -> None:
+    md = format_report_md(pd.DataFrame())
+    assert md.startswith("#")
+    assert "Nessun dato" in md
