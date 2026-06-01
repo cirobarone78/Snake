@@ -6,12 +6,37 @@
 ---
 
 ## Ultimo aggiornamento
-2026-05-30
+2026-06-01
 
 ## Fase corrente
-**Fase 5 (cicli & regimi) 🔄 — criterio di completamento RAGGIUNTO** — branch
-`claude/phase-5-regimes`. Fasi 0/1/2/2.1 ✅, Fasi 3 e 4 ✅ (criterio raggiunto,
-in `main`). Workflow cron news schedulato su `main` (non ancora eseguito).
+**Screener narrative crypto (rotation/thematic) 🟢 attivo — in fase di ACCUMULO
+DATI.** Nuovo filone (riorientamento deciso dall'utente: non predire il singolo
+asset, ma individuare "quali narrative si muovono ORA" + rischi, con probabilità
+storiche — l'analogo crypto della rotazione settoriale equity). Fasi 0-5 ✅ in
+`main` (nucleo di ricerca: nessun edge predittivo direzionale daily; unico
+indizio = macro/inflazione a frequenza mensile, non validabile col campione).
+
+**Cosa è in piedi e FUNZIONA da solo:**
+- `src/ingestion/tier1/coingecko.py::fetch_categories` — ~700 categorie CoinGecko
+  (= mappa settoriale crypto), filtro min market cap
+- `src/features/screener.py` — `screen_categories` (score rank-based robusto agli
+  outlier: mossa 24h + turnover) + `screen_movers` (gainers/risк)
+- `src/features/screener_report.py` — `format_report` (testo) + `format_report_md`
+  (markdown); `screener_cli.py` per consultazione manuale
+- **`REPORT.md`** in radice repo — **auto-aggiornato dal cron**, consultabile su
+  GitHub senza lanciare nulla
+- **2 cron giornalieri ATTIVI e funzionanti** (verificato 2026-06-01): commit del
+  bot `data: update news/category history [skip ci]`. ⚠️ GitHub schedula con
+  **ritardo variabile** (es. workflow 07:00 → eseguito 12:36 UTC): è normale,
+  fidarsi del timestamp nel report
+
+**⏸️ IN ATTESA (decisione utente: "aspettiamo di accumulare un po'")**: il layer
+**probabilistico** ("data una categoria in stato 'hot', storicamente cosa è
+successo dopo?") NON va costruito ora — solo 2 snapshot categorie (31/05, 01/06).
+Servono settimane di history per evitare lo small-sample bias (vedi finding news
++0.32 → svanito). Il cron accumula da solo; riprendere quando ci sono ~4-8
+settimane di snapshot.
+
 **Q9/Q12/Q10 → ADR-023/024/025** chiuse.
 
 **🔬 Finding Fase 5**: regimi vol (`classify_vol_regime`) + 4-stati
