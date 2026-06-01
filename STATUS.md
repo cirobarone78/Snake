@@ -9,10 +9,20 @@
 2026-05-30
 
 ## Fase corrente
-**Fase 5 (cicli & regimi) 🔄 — criterio di completamento RAGGIUNTO** — branch
-`claude/phase-5-regimes`. Fasi 0/1/2/2.1 ✅, Fasi 3 e 4 ✅ (criterio raggiunto,
-in `main`). Workflow cron news schedulato su `main` (non ancora eseguito).
+**Nucleo di ricerca sostanzialmente chiuso** — Fasi 0/1/2/2.1/3/4/5 ✅ in `main`.
+Ultimo angolo testato: **orizzonte mensile** (branch `claude/phase-4-monthly`).
+Workflow cron news schedulato su `main` (non ancora eseguito).
 **Q9/Q12/Q10 → ADR-023/024/025** chiuse.
+
+**🔬 Finding orizzonte mensile (nb 10) — il segnale più promettente del progetto**:
+alla frequenza mensile (non daily) la macro mostra un **lead reale ma debole**:
+`corr(cpi_yoy[t], BTC ret[t+1]) = −0.26` (segno atteso, persistente a tutti i lag,
+picco contemporaneo −0.29 → in gran parte già scontato). Le altre macro a lag+1
+sono ~0: **solo l'inflazione porta segnale**. MA il modello direzionale mensile
+non ha edge (delta 0) perché **il campione è strutturalmente minuscolo**: 8 anni
+crypto = ~100 mesi, ~45 OOS, SE ~7pp. Conclusione onesta: *segnale plausibile ma
+non validabile col campione attuale*. Validazione richiede più DATI (cross-asset
+equity/oro con decenni di storia mensile), non più codice.
 
 **🔬 Finding Fase 5**: regimi vol (`classify_vol_regime`) + 4-stati
 (`combine_regimes`) + halving clock (`cycles.py`), tutti causali. Test
@@ -132,6 +142,21 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-05-31 — Sessione 14: orizzonte mensile (ultimo angolo di ricerca segnale)
+- **PR #11 (Fase 5) mergiata in `main`** (`21fc6da`)
+- **Notebook 10** (`10_monthly_horizon.ipynb`, eseguito): testato il segnale macro
+  alla sua frequenza naturale (mensile, non daily). BTC end-of-month + macro
+  point-in-time-safe campionata a fine mese. Riusa `lead_lag_table` e i moduli
+  esistenti (nessun codice src nuovo)
+- **Risultato chiave**: `corr(cpi_yoy[t], BTC ret[t+1]) = −0.26` (segno atteso,
+  persistente a tutti i lag, picco contemporaneo −0.29). Altre macro a lag+1 ~0
+  → **solo l'inflazione porta segnale lead**. Modello direzionale mensile: delta 0
+  (n~45 OOS, SE ~7pp → statisticamente inerte)
+- **Conclusione onesta**: il segnale macro mensile è *plausibile ma non
+  validabile* col campione crypto (~100 mesi). Muro strutturale di dati, non di
+  codice. Aggiornate le domande di ricerca in OPEN_QUESTIONS con gli esiti
+- **241/241 pytest verde**, ruff pulito. Branch `claude/phase-4-monthly`
 
 ### 2026-05-31 — Sessione 13: Fase 5 — cicli, regimi & contestualizzazione
 - **`src/features/regime.py` esteso**: `classify_vol_regime` (vol alta/bassa via
