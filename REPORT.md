@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-02 11:18 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-03 11:56 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | BRC-20 | hot | 0.97 | +6.5% | $105M | ordinals, sats-ordinals, multibit |
-| 2 | Decentralized Identifier (DID) | hot | 0.97 | +12.5% | $2.4B | worldcoin-wld, ethereum-name-service, billions-network |
-| 3 | Account Abstraction | hot | 0.97 | +8.9% | $511M | trust-wallet-token, home, iotex |
-| 4 | Four.meme Ecosystem (BNB Memes) | hot | 0.96 | +4.5% | $1.2B | bianrensheng, siren-2, test-3 |
-| 5 | Inscriptions | hot | 0.95 | +3.9% | $147M | ordinals, dmt-nat, sats-ordinals |
-| 6 | Data Availability | hot | 0.94 | +12.7% | $4.6B | near, unibase, celestia |
-| 7 | Fan Token | hot | 0.92 | +2.3% | $169M | croatian-ff-fan-token, santos-fc-fan-token, og-fan-token |
-| 8 | LRTfi | hot | 0.90 | +4.0% | $246M | pendle, thetanuts-finance, sommelier |
+| 1 | Four.meme Ecosystem (BNB Memes) | hot | 0.95 | +4.3% | $1.2B | bianrensheng, siren-2, test-3 |
+| 2 | BONK.fun Ecosystem | hot | 0.94 | +15.4% | $118M | useless-3, freya-by-virtuals, kori |
+| 3 | Decentralized Identifier (DID) | hot | 0.92 | +7.9% | $2.6B | worldcoin-wld, ethereum-name-service, billions-network |
+| 4 | Fan Token | hot | 0.90 | +0.6% | $164M | og-fan-token, croatian-ff-fan-token, santos-fc-fan-token |
+| 5 | Decentralized Finance (DeFi) | hot | 0.89 | +0.6% | $71.7B | staked-ether, hyperliquid, rain |
+| 6 | Data Availability | hot | 0.89 | +2.0% | $4.6B | near, celestia, unibase |
+| 7 | Fiat-backed Stablecoin | hot | 0.86 | -0.1% | $297.2B | tether, usd-coin, usds |
+| 8 | Stablecoins | hot | 0.85 | -0.2% | $314.5B | tether, usd-coin, usds |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Binance Buildkey TGE | -12.8% | $135M | river, zkpass, fight-2 |
-| Communication | -7.0% | $179M | helium, xpin-network, spacecoin-2 |
-| Trading Card RWA Platform | -6.6% | $101M | collector-crypt, collect-on-fanable, ready |
-| Appchains | -6.6% | $246M | dydx-chain, cartesi, geode-chain |
-| Gaming Platform | -6.4% | $320M | gala, unipoly, deapcoin |
+| Binance Buildkey TGE | -15.1% | $127M | river, zkpass, fight-2 |
+| Bitcoin Fork | -13.9% | $5.4B | bitcoin-cash, bitcoin-cash-sv, ecash |
+| AI Framework | -11.8% | $1.8B | virtual-protocol, unibase, eigenlayer |
+| TON Meme | -10.3% | $115M | notcoin, dogs-2, utya |
+| IP | -10.1% | $154M | story-2, beatswap, onbuff |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
