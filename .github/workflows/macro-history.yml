@@ -1,0 +1,51 @@
+name: macro-history
+
+# Fase 8: accumulate a daily snapshot of the FRED macro climate (rates, dollar,
+# inflation, unemployment) + write REPORT_MACRO.md. Macro is the backdrop that
+# conditions all markets. Needs the FRED_API_KEY repository secret.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1-5" # 08:00 UTC weekdays (FRED updates on business days)
+  workflow_dispatch: {}
+
+concurrency:
+  group: macro-history
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Update macro history
+        run: uv run python -m src.ingestion.tier1.fetch_macro
+
+      - name: Commit updated history + report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/macro_history REPORT_MACRO.md; then
+            echo "No macro changes to commit."
+            exit 0
+          fi
+          git add data/macro_history REPORT_MACRO.md
+          git commit -m "data: update macro history + report [skip ci]"
+          git push

@@ -55,6 +55,11 @@ data/cache/
 !data/sector_history/
 !data/sector_history/*.parquet
 
+# Macro climate history (Fase 8, same rationale as ADR-025): small daily snapshot
+# of FRED macro levels, committed so the scheduled job builds the macro history.
+!data/macro_history/
+!data/macro_history/*.parquet
+
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
 # Anchored to repo root so it ignores downloaded model weights only, not the
 # src/models/ source package.
