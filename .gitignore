@@ -49,6 +49,12 @@ data/cache/
 !data/category_history/
 !data/category_history/*.parquet
 
+# Equity sector rotation history (Fase 8, same rationale as ADR-025): small daily
+# snapshot of sector/theme ETF momentum, committed so the scheduled job builds
+# the equity rotation history.
+!data/sector_history/
+!data/sector_history/*.parquet
+
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
 # Anchored to repo root so it ignores downloaded model weights only, not the
 # src/models/ source package.
