@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-03 11:56 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-04 10:38 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Four.meme Ecosystem (BNB Memes) | hot | 0.95 | +4.3% | $1.2B | bianrensheng, siren-2, test-3 |
-| 2 | BONK.fun Ecosystem | hot | 0.94 | +15.4% | $118M | useless-3, freya-by-virtuals, kori |
-| 3 | Decentralized Identifier (DID) | hot | 0.92 | +7.9% | $2.6B | worldcoin-wld, ethereum-name-service, billions-network |
-| 4 | Fan Token | hot | 0.90 | +0.6% | $164M | og-fan-token, croatian-ff-fan-token, santos-fc-fan-token |
-| 5 | Decentralized Finance (DeFi) | hot | 0.89 | +0.6% | $71.7B | staked-ether, hyperliquid, rain |
-| 6 | Data Availability | hot | 0.89 | +2.0% | $4.6B | near, celestia, unibase |
-| 7 | Fiat-backed Stablecoin | hot | 0.86 | -0.1% | $297.2B | tether, usd-coin, usds |
-| 8 | Stablecoins | hot | 0.85 | -0.2% | $314.5B | tether, usd-coin, usds |
+| 1 | Decentralized Identifier (DID) | hot | 0.95 | +15.4% | $2.5B | worldcoin-wld, ethereum-name-service, billions-network |
+| 2 | Layer 3 (L3) | hot | 0.94 | +9.3% | $144M | degen-base, orbs, cartesi |
+| 3 | Four.meme Ecosystem (BNB Memes) | hot | 0.93 | +12.4% | $1.3B | bianrensheng, siren-2, test-3 |
+| 4 | USD Stablecoin | hot | 0.92 | -0.4% | $306.3B | tether, usd-coin, usds |
+| 5 | Fiat-backed Stablecoin | hot | 0.92 | -0.4% | $296.2B | tether, usd-coin, usds |
+| 6 | Stablecoins | hot | 0.91 | -0.5% | $313.4B | tether, usd-coin, usds |
+| 7 | Base Meme | hot | 0.88 | +2.0% | $269M | based-brett, toshi, degen-base |
+| 8 | Yearn Ecosystem | hot | 0.88 | -0.8% | $130M | yearn-finance, sushi, weth-yvault |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Binance Buildkey TGE | -15.1% | $127M | river, zkpass, fight-2 |
-| Bitcoin Fork | -13.9% | $5.4B | bitcoin-cash, bitcoin-cash-sv, ecash |
-| AI Framework | -11.8% | $1.8B | virtual-protocol, unibase, eigenlayer |
-| TON Meme | -10.3% | $115M | notcoin, dogs-2, utya |
-| IP | -10.1% | $154M | story-2, beatswap, onbuff |
+| TimeFi | -23.3% | $221M | pieverse |
+| Parallelized EVM | -11.9% | $666M | sei-network, monad, pharos-network |
+| TON Meme | -11.9% | $100M | notcoin, dogs-2, utya |
+| Sports | -11.8% | $527M | chiliz, flow, croatian-ff-fan-token |
+| Dex Aggregator | -11.1% | $940M | jupiter-exchange-solana, home, 1inch |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
