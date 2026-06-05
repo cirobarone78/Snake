@@ -1372,6 +1372,34 @@ schedulato:
 
 ---
 
+## ADR-026 — Ticker Yahoo per POL: da MATIC-USD a POL28321-USD
+
+**Data**: 2026-06-05
+**Stato**: Accepted
+**Estende**: ADR-019 (mapping ticker POL)
+
+**Contesto**: lo strumento di attribuzione eventi ha rivelato che POL non
+restituiva più dati da Yahoo (`MATIC-USD: possibly delisted`). Indagando:
+sia `POL-USD` che `MATIC-USD` ora tornano vuoti su Yahoo. Il vecchio dato
+`MATIC-USD` si era **congelato** (~marzo 2026) restando bloccato a ~0.22 senza
+aggiornarsi — un dato *stale* che mascherava il vero crollo di POL.
+
+**Decisione**: usare `yahoo_symbol="POL28321-USD"`, l'unico ticker Yahoo che
+restituisce il feed POL vivo. **Cross-validato 1:1**: Yahoo POL28321-USD =
+0.0838 == CoinGecko `polygon-ecosystem-token` = 0.0838 (stesso giorno). È
+effettivamente POL.
+
+**Conseguenze**:
+- ✅ POL di nuovo analizzabile (prezzo reale ~0.084, non lo stale 0.22)
+- ✅ Cross-source confermato (Yahoo == CoinGecko)
+- ⚠️ Lezione: un ticker che "funziona" ma è congelato è peggio di uno che
+  fallisce — il fallimento è visibile, lo stale no. Da valutare un check di
+  freschezza (ultimo dato troppo vecchio → warning) come hardening futuro
+- 🔁 La storia frammentata di POL (POL-USD → MATIC-USD → POL28321-USD) resta il
+  caso d'uso principale del composer multi-source (ADR-021)
+
+---
+
 <!--
 Template per nuove ADR:
 
