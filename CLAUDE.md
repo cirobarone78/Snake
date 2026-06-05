@@ -90,6 +90,10 @@ fino a Fase 6 inclusa, ma l'astrazione c'è già.
 - **Tier 1** (priorità massima, deep analysis): BTC, ETH, SOL, LINK, POL
 - **Tier 2** (universe dinamica, analisi base): top 20 crypto by market cap
 - **Contesto** (non target): BTC dominance, DXY, S&P 500, NASDAQ, oro
+- **Equity sector/theme ETFs** (`src/assets/sectors.py`): ~20 ETF settoriali/
+  tematici (semis, energia, nucleare, difesa, …) attivi per **screener di
+  rotazione** (`sector_screener` → `REPORT_EQUITY.md`) e **attribuzione eventi**
+  (rif. mercato S&P 500). Anticipo pragmatico della Fase 8 su richiesta utente
 
 **Timeframe predittivi** (ADR-006):
 - **Breve**: 1–7 giorni, dati daily
@@ -99,8 +103,16 @@ fino a Fase 6 inclusa, ma l'astrazione c'è già.
 **Output del sistema** (ADR-007): direzione, rendimento atteso, probabilità,
 volatilità attesa, confidence, top factors — per ogni asset × timeframe.
 
-**Stato attuale**: Fase 2 in corso (baseline tecnica & backtesting
-rigoroso). Per il dettaglio aggiornato leggere sempre `STATUS.md`.
+**Stato attuale**: Fasi 0–5 in `main` (nucleo di ricerca: nessun edge predittivo
+direzionale daily). Filone attivo: **screener di rotazione + report auto-aggiornati
++ attribuzione eventi** (crypto e equity), con raccolta dati continua via cron
+GitHub Actions (news crypto+equity, categorie, settori, macro). Per il dettaglio
+aggiornato leggere sempre `STATUS.md`.
+
+**Raccolta news** (ADR-023/025/027): un solo cron giornaliero accumula sia news
+**crypto** (`googlenews_<coin>` + newswire) sia **equity** (`googlenews_<settore>`,
+query in dominio azionario) nello stesso parquet versionato. Sentiment = VADER
+(Layer 1), simmetrico → cattura sia crolli sia balzi.
 
 ## Quando in dubbio
 

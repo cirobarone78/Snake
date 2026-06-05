@@ -1393,10 +1393,47 @@ effettivamente POL.
 - ✅ POL di nuovo analizzabile (prezzo reale ~0.084, non lo stale 0.22)
 - ✅ Cross-source confermato (Yahoo == CoinGecko)
 - ⚠️ Lezione: un ticker che "funziona" ma è congelato è peggio di uno che
-  fallisce — il fallimento è visibile, lo stale no. Da valutare un check di
-  freschezza (ultimo dato troppo vecchio → warning) come hardening futuro
+  fallisce — il fallimento è visibile, lo stale no. → **Implementato** il check
+  di freschezza (`src/ingestion/freshness.py`, PR #22): i cron di raccolta
+  segnalano `STALE FEED` se l'ultimo dato supera la soglia
 - 🔁 La storia frammentata di POL (POL-USD → MATIC-USD → POL28321-USD) resta il
   caso d'uso principale del composer multi-source (ADR-021)
+
+---
+
+## ADR-027 — News azionarie: Google News per-settore nella stessa pipeline
+
+**Data**: 2026-06-05
+**Stato**: Accepted
+**Estende**: ADR-017 (tassonomia fonti), ADR-023 (sentiment Layer 1)
+
+**Contesto**: l'attribuzione eventi è stata estesa agli ETF settoriali equity
+(Fase 8), ma lo storico news era **solo crypto** (`googlenews_<coin>` +
+Cointelegraph/CoinDesk). Per un ETF azionario quegli articoli sono fuorvianti,
+quindi l'attribuzione mostrava solo lo split market-wide/settore-specifico
+(rif. S&P 500) senza catalizzatori. Serviva un canale news azionario, evitando
+però dipendenze pesanti o un secondo sistema parallelo.
+
+**Decisione**: riusare **identica** la pipeline crypto (Google News RSS → VADER
+→ history versionata ADR-025), aggiungendo **una ricerca Google News curata per
+ogni ETF settoriale/tematico** (`SECTOR_NEWS_QUERIES` in `feeds.py`), con nome
+sorgente `googlenews_<symbol>` come per le crypto. Le query sono in dominio
+azionario e **non** contengono il qualificatore "crypto". Il singolo cron news
+giornaliero (`news-history.yml`) accumula così entrambi gli universi nello stesso
+parquet. L'attribuzione sugli ETF aggancia queste news, mantenendo riferimento di
+mercato S&P 500 e soglia "giornata grande" all'1% (vs ~3% crypto).
+
+**Conseguenze**:
+- ✅ Attribuzione eventi completa anche su equity: classificazione + catalizzatori
+- ✅ Zero nuove dipendenze: stessa infra, stesso scorer VADER general-domain
+- ✅ Sentiment simmetrico già esistente → cattura sia crolli sia balzi positivi
+- ⚠️ Lo storico equity parte da zero (come le crypto a inizio Fase 3): per
+  settimane molti movimenti ETF mostreranno "nessuna news nella finestra" finché
+  la storia non si addensa. La classificazione market-wide/settore regge intanto
+- ⚠️ VADER è general-domain: baseline onesta, non un modello finance-tuned; si
+  sale di complessità (FinBERT, ADR-016) solo se un segnale misurato lo giustifica
+- 🔗 La query per settore è curata a mano per alta pertinenza; nuovi ETF aggiunti
+  a `SECTOR_ETFS` senza voce in `SECTOR_NEWS_QUERIES` usano un fallback dal nome
 
 ---
 

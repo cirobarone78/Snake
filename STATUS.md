@@ -6,15 +6,26 @@
 ---
 
 ## Ultimo aggiornamento
-2026-06-01
+2026-06-05
 
 ## Fase corrente
-**Screener narrative crypto (rotation/thematic) 🟢 attivo — in fase di ACCUMULO
-DATI.** Nuovo filone (riorientamento deciso dall'utente: non predire il singolo
-asset, ma individuare "quali narrative si muovono ORA" + rischi, con probabilità
-storiche — l'analogo crypto della rotazione settoriale equity). Fasi 0-5 ✅ in
-`main` (nucleo di ricerca: nessun edge predittivo direzionale daily; unico
-indizio = macro/inflazione a frequenza mensile, non validabile col campione).
+**Screener di rotazione + attribuzione eventi + report auto-aggiornati 🟢 attivo
+— in fase di ACCUMULO DATI**, ora su **due universi: crypto ed equity (ETF
+settoriali)**. Riorientamento deciso dall'utente: non predire il singolo asset,
+ma individuare "cosa si muove ORA" + rischi + **catalizzatori** degli eventi,
+con probabilità storiche. Fasi 0-5 ✅ in `main` (nucleo di ricerca: nessun edge
+predittivo direzionale daily; unico indizio = macro/inflazione mensile, non
+validabile col campione).
+
+**Sessione 14 (2026-06-05)** — 3 PR mergiate in `main` + 1 in review:
+- **#22 freshness check** (`src/ingestion/freshness.py`): intercetta i feed
+  *congelati* (lezione POL/MATIC, ADR-026), guard nei cron di raccolta
+- **#23 attribuzione eventi → equity ETF**: `attribution_cli` ora gira anche
+  sugli ETF settoriali (rif. mercato S&P 500, soglia 1% vs 3% crypto); il motore
+  è simmetrico → cattura sia crolli sia **balzi positivi**
+- **#24 fonte news azionaria** (in review, CI verde): Google News per-settore
+  nella stessa pipeline (ADR-027); il cron news ora accumula crypto + equity
+- POL sistemato a monte (#21, ADR-026): `MATIC-USD` congelato → `POL28321-USD`
 
 **Cosa è in piedi e FUNZIONA da solo:**
 - `src/ingestion/tier1/coingecko.py::fetch_categories` — ~700 categorie CoinGecko
