@@ -19,6 +19,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from src.features.report_json import crypto_report_dict, write_report_json
 from src.features.screener_report import format_report_md
 from src.ingestion.snapshot import write_snapshot
 from src.ingestion.tier1.coingecko import CoinGeckoSource
@@ -37,6 +38,8 @@ DEFAULT_DATA_DIR = Path("data/category_history")
 # The auto-updated, human-readable briefing committed at repo root so it renders
 # on GitHub without running anything (the user's "vedere il report" need).
 REPORT_PATH = Path("REPORT.md")
+# Machine-readable twin for the static dashboard (Fase 7).
+JSON_PATH = Path("public/data/crypto_report.json")
 
 
 def main() -> None:
@@ -67,6 +70,10 @@ def main() -> None:
     now = pd.Timestamp.now(tz="UTC").floor("min")
     REPORT_PATH.write_text(format_report_md(df, snapshot_at=now), encoding="utf-8")
     logger.info("Wrote readable briefing -> %s", REPORT_PATH)
+
+    # Dashboard JSON twin, from the same structured snapshot (no Markdown parsing).
+    write_report_json(crypto_report_dict(df, generated_at=now), JSON_PATH)
+    logger.info("Wrote dashboard JSON -> %s", JSON_PATH)
 
 
 if __name__ == "__main__":

@@ -40,10 +40,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data/category_history REPORT.md; then
+          if git diff --quiet -- data/category_history REPORT.md public/data/crypto_report.json; then
             echo "No category changes to commit."
             exit 0
           fi
-          git add data/category_history REPORT.md
+          git add data/category_history REPORT.md public/data/crypto_report.json
           git commit -m "data: update category history + report [skip ci]"
           git push

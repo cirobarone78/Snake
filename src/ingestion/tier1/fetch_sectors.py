@@ -17,6 +17,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.assets.sectors import SECTOR_ETFS
+from src.features.report_json import equity_report_dict, write_report_json
 from src.features.sector_report import format_sector_report_md
 from src.features.sector_screener import build_sector_frame, screen_sectors
 from src.ingestion.freshness import check_freshness, last_timestamp_of
@@ -32,6 +33,7 @@ logger = logging.getLogger(__name__)
 
 DATA_DIR = Path("data/sector_history")
 REPORT_PATH = Path("REPORT_EQUITY.md")
+JSON_PATH = Path("public/data/equity_report.json")
 # ~3 months of daily bars is plenty for 5d/21d momentum + a safety margin.
 FETCH_START = "2025-09-01"
 
@@ -74,6 +76,10 @@ def main() -> None:
 
     now = pd.Timestamp.now(tz="UTC").floor("min")
     REPORT_PATH.write_text(format_sector_report_md(frame, snapshot_at=now), encoding="utf-8")
+
+    # Dashboard JSON twin, from the same structured snapshot (no Markdown parsing).
+    write_report_json(equity_report_dict(frame, generated_at=now), JSON_PATH)
+    logger.info("Wrote dashboard JSON -> %s", JSON_PATH)
 
     top = screen_sectors(frame, top_n=3)
     logger.info(
