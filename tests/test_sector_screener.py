@@ -4,7 +4,14 @@ from __future__ import annotations
 
 import pandas as pd
 
+from src.assets.sectors import get_sector_by_symbol
 from src.features.sector_screener import build_sector_frame, screen_sectors
+
+
+def test_get_sector_by_symbol() -> None:
+    assert get_sector_by_symbol("SEMIS") is not None
+    assert get_sector_by_symbol("SEMIS").asset_class.value == "etf"  # type: ignore[union-attr]
+    assert get_sector_by_symbol("NOPE") is None
 
 
 def _close(trend: float, n: int = 30, start: float = 100.0) -> pd.Series:

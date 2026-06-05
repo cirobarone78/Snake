@@ -167,3 +167,11 @@ SECTOR_ETFS: list[Asset] = [
         yahoo_symbol="GDX",
     ),
 ]
+
+
+def get_sector_by_symbol(symbol: str) -> Asset | None:
+    """Look up a sector/theme ETF by its project label (e.g. 'SEMIS', 'ENERGY')."""
+    for etf in SECTOR_ETFS:
+        if etf.symbol == symbol:
+            return etf
+    return None

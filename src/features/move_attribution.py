@@ -177,12 +177,15 @@ def attribute_moves(
     z_threshold: float = 2.5,
     window_days: int = 3,
     top_k: int = 5,
+    market_threshold_pct: float = 3.0,
 ) -> list[AbnormalMove]:
     """End-to-end: detect abnormal moves and attach classification + candidate news.
 
-    ``market_close`` is an optional market reference series (e.g. BTC) used to
-    tell market-wide moves from asset-specific ones. Returns one ``AbnormalMove``
-    per flagged day, newest first.
+    ``market_close`` is an optional market reference series (e.g. BTC for crypto,
+    the S&P 500 for equities) used to tell market-wide moves from asset-specific
+    ones. ``market_threshold_pct`` is the size a market-reference day must reach to
+    count as "the whole market moved" — ~3% fits crypto, ~1% fits equities. Returns
+    one ``AbnormalMove`` per flagged day, newest first.
     """
     flagged = detect_abnormal_moves(close, vol_window=vol_window, z_threshold=z_threshold)
     market_ret = (
@@ -198,7 +201,9 @@ def attribute_moves(
         if market_ret is not None and d in market_ret.index:
             val = market_ret.loc[d]
             mkt_pct = float(val) * 100.0 if pd.notna(val) else None
-        classification = classify_move(_f(row["return_pct"]), mkt_pct)
+        classification = classify_move(
+            _f(row["return_pct"]), mkt_pct, market_threshold_pct=market_threshold_pct
+        )
         events = associate_events(
             d, _f(row["return_pct"]), news, asset_source, window_days, top_k
         )
