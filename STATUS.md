@@ -27,6 +27,19 @@ validabile col campione).
   nella stessa pipeline (ADR-027); il cron news ora accumula crypto + equity
 - POL sistemato a monte (#21, ADR-026): `MATIC-USD` congelato → `POL28321-USD`
 
+**🔬 Finding layer probabilistico (Sessione 15, 2026-06-05)** — primo mattone del
+"dato lo stato di rotazione, storicamente cosa è successo?":
+`src/features/conditional_outcomes.py` ricostruisce lo stato **point-in-time da
+anni di prezzi** (momentum a `lookback`, rank cross-sectional → bucket weak/mid/
+strong) e misura la distribuzione del **rendimento forward** condizionata, vs
+baseline. Eseguito su 20 ETF settoriali 2012→2026 (CLI `rotation_history_cli`):
+**il bucket `strong` NON batte la baseline** (5g +0.1pp hit-rate, 21g −0.6pp, 63g
+**−2.1pp** → a 1 trimestre fa peggio). Il bucket `mid` è il più "sano" (hit-rate
+più alto, std più bassa); `weak` ha la coda sinistra peggiore. **H1 (momentum di
+settore persiste) non supportata**; semmai gli estremi portano più rischio di
+coda. Coerente col filo del progetto (nessun edge direzionale facile). Caveat: n =
+osservazioni giornaliere **sovrapposte** → indicativo, non significativo.
+
 **Cosa è in piedi e FUNZIONA da solo:**
 - `src/ingestion/tier1/coingecko.py::fetch_categories` — ~700 categorie CoinGecko
   (= mappa settoriale crypto), filtro min market cap
