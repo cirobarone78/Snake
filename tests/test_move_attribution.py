@@ -117,7 +117,7 @@ def test_attribute_moves_end_to_end() -> None:
         close, _news(), asset_source="googlenews_btc", market_close=market, vol_window=20
     )
     assert len(moves) >= 1
-    shock = [m for m in moves if m.date == close.index[50]][0]
+    shock = next(m for m in moves if m.date == close.index[50])
     assert shock.return_pct < -20
     assert shock.classification == "market-wide"  # both fell
     assert shock.market_return_pct is not None
@@ -129,5 +129,5 @@ def test_attribute_moves_asset_specific_when_market_calm() -> None:
     moves = attribute_moves(
         close, _news(), asset_source="googlenews_btc", market_close=market, vol_window=20
     )
-    shock = [m for m in moves if m.date == close.index[50]][0]
+    shock = next(m for m in moves if m.date == close.index[50])
     assert shock.classification == "asset-specific"
