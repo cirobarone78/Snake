@@ -140,6 +140,48 @@ def _label_at(series: pd.Series, date: object) -> str:
     return "unknown"
 
 
+def forward_observations(
+    panel_close: pd.DataFrame,
+    horizon: int = 21,
+    step: int = 1,
+    extra_states: dict[str, pd.Series] | None = None,
+) -> pd.DataFrame:
+    """Per-asset forward-return observations with attached per-date states.
+
+    Like ``rotation_observations`` but **without** cross-sectional momentum
+    bucketing, so it keeps each asset's full history — the right tool for a small
+    universe (e.g. the 5 crypto majors) or a calendar/market state such as the
+    halving phase or a market regime, where the conditioning variable is the
+    ``extra_states`` label, not a within-universe rank.
+
+    Long-form: ``date, symbol, fwd_ret`` plus one column per ``extra_states`` key
+    (``"unknown"`` when the date is missing). ``step`` subsamples dates
+    (``step=horizon`` -> non-overlapping forward windows). No look-ahead: the
+    outcome is realised after the (calendar/regime) state at the date.
+    """
+    if step <= 0:
+        raise ValueError("step must be positive")
+    panel = cast("pd.DataFrame", panel_close.sort_index()).astype("float64")
+    fwd = panel.shift(-horizon) / panel - 1.0
+    extra = extra_states or {}
+    base_cols = ["date", "symbol", "fwd_ret"]
+
+    rows: list[dict[str, object]] = []
+    for date in panel.index[::step]:
+        extra_vals = {name: _label_at(ser, date) for name, ser in extra.items()}
+        for sym in panel.columns:
+            f = fwd.at[date, sym]
+            if pd.notna(f):
+                row: dict[str, object] = {
+                    "date": date,
+                    "symbol": sym,
+                    "fwd_ret": float(cast("float", f)),
+                }
+                row.update(extra_vals)
+                rows.append(row)
+    return pd.DataFrame(rows, columns=base_cols + list(extra.keys()))
+
+
 def conditional_outcome_table(
     observations: pd.DataFrame,
     state_col: str | list[str] = "bucket",

@@ -9,6 +9,7 @@ import pytest
 from src.features.conditional_outcomes import (
     bucket_labels,
     conditional_outcome_table,
+    forward_observations,
     forward_return,
     momentum,
     rotation_observations,
@@ -151,6 +152,31 @@ def test_extra_states_attached_and_conditioned() -> None:
     table = conditional_outcome_table(obs, state_col=["bucket", "regime"])
     assert any(" | " in s for s in table["state"] if s != "ALL")
     assert table["state"].tolist()[-1] == "ALL"
+
+
+def test_forward_observations_keeps_full_history_and_states() -> None:
+    # only 2 assets: rotation (needs >=3) would be empty, but per-asset works
+    panel = _panel(n=40, n_assets=2)
+    phase = pd.Series(
+        ["early"] * 20 + ["late"] * 20, index=panel.index, name="halving_phase"
+    )
+    obs = forward_observations(panel, horizon=5, extra_states={"halving_phase": phase})
+    assert not obs.empty
+    assert set(obs["symbol"].unique()) == {"A0", "A1"}
+    assert set(obs["halving_phase"].unique()) <= {"early", "late", "unknown"}
+    # forward returns are realised (no NaN), tail dates dropped
+    assert obs["fwd_ret"].notna().all()
+    assert obs["date"].max() <= panel.index[-6]
+    # can condition by the calendar state alone
+    table = conditional_outcome_table(obs, state_col="halving_phase")
+    assert "ALL" in table["state"].tolist()
+
+
+def test_forward_observations_nonoverlapping_step() -> None:
+    panel = _panel(n=60, n_assets=3)
+    obs = forward_observations(panel, horizon=10, step=10)
+    dates = pd.Index(sorted(obs["date"].unique()))
+    assert ((dates[1:] - dates[:-1]) >= pd.Timedelta(days=10)).all()
 
 
 def test_split_by_date_is_chronological_and_disjoint() -> None:

@@ -46,6 +46,22 @@ Eseguito su 20 ETF settoriali 2012→2026 (CLI `rotation_history_cli`):
 Caveat onestà: `n` in modalità plain = osservazioni **sovrapposte** (indicativo);
 le conclusioni qui citate sono quelle che reggono anche con `step=horizon` + OOS.
 
+**🔬 Finding cicli crypto (stessa sessione)** — motore puntato sul panel Tier1
+(BTC/ETH/SOL/LINK/POL) con `forward_observations` (per-asset, no cross-section) +
+stato = **fase halving** (early/mid/late) e **regime BTC**. CLI
+`crypto_cycle_cli`. Storico 2018→2026:
+- **La fase di ciclo condiziona FORTE** (molto più del momentum equity). Forward
+  126g: early mediana **+23%** (hit 0.64), late **+18%** (hit 0.66), **mid mediana
+  −29%, hit 0.21**. Il pattern "mid = zona pericolo" è **OOS-stabile in direzione**
+  (mid resta ultimo in train E test a 21/63/126g; early/late si scambiano).
+- Regime BTC: `bull_high_vol` il migliore; `bear_low_vol`/`bull_low_vol` i deboli.
+- **📍 Stato attuale (2026-06-05): fase MID (~776g dall'ultimo halving) + regime
+  bear_low_vol → DOPPIAMENTE sfavorevole storicamente.** Contestualizza il crollo
+  crypto osservato dall'utente: siamo nella fase che storicamente è andata peggio.
+- ⚠️ **Caveat forte (CLAUDE.md)**: ~1.5-2 cicli di halving = essenzialmente 2 bear
+  (2018, 2022). **DESCRITTIVO, non un edge provato**: il pattern è reale in-sample
+  e direzionalmente OOS-stabile, ma 2 cicli non sono significatività statistica.
+
 **Cosa è in piedi e FUNZIONA da solo:**
 - `src/ingestion/tier1/coingecko.py::fetch_categories` — ~700 categorie CoinGecko
   (= mappa settoriale crypto), filtro min market cap
