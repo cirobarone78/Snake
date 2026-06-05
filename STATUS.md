@@ -27,18 +27,24 @@ validabile col campione).
   nella stessa pipeline (ADR-027); il cron news ora accumula crypto + equity
 - POL sistemato a monte (#21, ADR-026): `MATIC-USD` congelato → `POL28321-USD`
 
-**🔬 Finding layer probabilistico (Sessione 15, 2026-06-05)** — primo mattone del
-"dato lo stato di rotazione, storicamente cosa è successo?":
-`src/features/conditional_outcomes.py` ricostruisce lo stato **point-in-time da
-anni di prezzi** (momentum a `lookback`, rank cross-sectional → bucket weak/mid/
-strong) e misura la distribuzione del **rendimento forward** condizionata, vs
-baseline. Eseguito su 20 ETF settoriali 2012→2026 (CLI `rotation_history_cli`):
-**il bucket `strong` NON batte la baseline** (5g +0.1pp hit-rate, 21g −0.6pp, 63g
-**−2.1pp** → a 1 trimestre fa peggio). Il bucket `mid` è il più "sano" (hit-rate
-più alto, std più bassa); `weak` ha la coda sinistra peggiore. **H1 (momentum di
-settore persiste) non supportata**; semmai gli estremi portano più rischio di
-coda. Coerente col filo del progetto (nessun edge direzionale facile). Caveat: n =
-osservazioni giornaliere **sovrapposte** → indicativo, non significativo.
+**🔬 Finding layer probabilistico (Sessione 15, 2026-06-05)** — "dato lo stato di
+rotazione, storicamente cosa è successo?": `src/features/conditional_outcomes.py`
+ricostruisce lo stato **point-in-time da anni di prezzi** (momentum, rank
+cross-sectional → bucket weak/mid/strong; opz. arricchito con regime/halving) e
+misura la distribuzione del **rendimento forward** condizionata, vs baseline.
+Eseguito su 20 ETF settoriali 2012→2026 (CLI `rotation_history_cli`):
+- **Momentum da solo NON dà edge.** Bucket `strong` ≈ baseline a 5/21g; a **63g
+  fa peggio** (−2.1pp hit-rate). Validazione: con finestre **non sovrapposte** la
+  differenza svanisce, e **OOS train/test** il `strong` resta ultimo a 63g in
+  entrambe le metà → l'unico segnale stabile è *negativo* (non inseguire i settori
+  più forti per un hold di 3 mesi). **H1 rifiutata, confermata OOS.**
+- **È il REGIME a condizionare, non il momentum.** Stato arricchito momentum ×
+  regime S&P 500: i forward più alti arrivano dopo **bear_high_vol** (rimbalzo:
+  21g media +3%, 63g **+7%**), il pericolo è **bear_low_vol** (strong|bear_low_vol
+  forward **negativo**, hit-rate 0.47). Asse informativo = regime, coerente col
+  finding Fase 5 (rendimenti fortemente regime-dipendenti).
+Caveat onestà: `n` in modalità plain = osservazioni **sovrapposte** (indicativo);
+le conclusioni qui citate sono quelle che reggono anche con `step=horizon` + OOS.
 
 **Cosa è in piedi e FUNZIONA da solo:**
 - `src/ingestion/tier1/coingecko.py::fetch_categories` — ~700 categorie CoinGecko

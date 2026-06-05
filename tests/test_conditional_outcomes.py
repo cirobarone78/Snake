@@ -13,6 +13,8 @@ from src.features.conditional_outcomes import (
     momentum,
     rotation_observations,
     rotation_outcomes,
+    split_by_date,
+    state_ranking,
 )
 
 
@@ -123,6 +125,57 @@ def test_conditional_table_counts_and_baseline() -> None:
 
 def test_conditional_table_empty() -> None:
     assert conditional_outcome_table(pd.DataFrame()).empty
+
+
+def test_step_yields_nonoverlapping_dates() -> None:
+    panel = _panel(n=120)
+    obs = rotation_observations(panel, lookback=10, horizon=10, n_buckets=3, step=10)
+    dates = pd.Index(sorted(obs["date"].unique()))
+    gaps = dates[1:] - dates[:-1]
+    # consecutive observation dates are >= horizon apart -> windows don't overlap
+    assert (gaps >= pd.Timedelta(days=10)).all()
+
+
+def test_extra_states_attached_and_conditioned() -> None:
+    panel = _panel(n=80)
+    # a per-date regime label, flipping halfway
+    regime = pd.Series(
+        ["bull"] * 40 + ["bear"] * 40, index=panel.index, name="regime"
+    )
+    obs = rotation_observations(
+        panel, lookback=10, horizon=5, n_buckets=3, extra_states={"regime": regime}
+    )
+    assert "regime" in obs.columns
+    assert set(obs["regime"].unique()) <= {"bull", "bear", "unknown"}
+    # composite conditioning: bucket x regime produces 'weak | bull'-style states
+    table = conditional_outcome_table(obs, state_col=["bucket", "regime"])
+    assert any(" | " in s for s in table["state"] if s != "ALL")
+    assert table["state"].tolist()[-1] == "ALL"
+
+
+def test_split_by_date_is_chronological_and_disjoint() -> None:
+    panel = _panel(n=100)
+    obs = rotation_observations(panel, lookback=10, horizon=5, n_buckets=3)
+    train, test = split_by_date(obs, train_frac=0.5)
+    assert not train.empty and not test.empty
+    assert train["date"].max() < test["date"].min()  # strictly earlier, no overlap
+    assert len(train) + len(test) == len(obs)
+
+
+def test_split_by_date_degenerate() -> None:
+    train, test = split_by_date(pd.DataFrame(), train_frac=0.5)
+    assert train.empty and test.empty
+
+
+def test_state_ranking_orders_by_hit_rate() -> None:
+    obs = pd.DataFrame(
+        {
+            "bucket": ["weak", "weak", "strong", "strong"],
+            "fwd_ret": [-0.1, -0.2, 0.1, 0.3],
+        }
+    )
+    table = conditional_outcome_table(obs, labels=["weak", "mid", "strong"])
+    assert state_ranking(table) == ["strong", "weak"]  # strong hit_rate 1.0 > weak 0.0
 
 
 def test_rotation_outcomes_end_to_end_shape() -> None:
