@@ -27,6 +27,41 @@ validabile col campione).
   nella stessa pipeline (ADR-027); il cron news ora accumula crypto + equity
 - POL sistemato a monte (#21, ADR-026): `MATIC-USD` congelato → `POL28321-USD`
 
+**🔬 Finding layer probabilistico (Sessione 15, 2026-06-05)** — "dato lo stato di
+rotazione, storicamente cosa è successo?": `src/features/conditional_outcomes.py`
+ricostruisce lo stato **point-in-time da anni di prezzi** (momentum, rank
+cross-sectional → bucket weak/mid/strong; opz. arricchito con regime/halving) e
+misura la distribuzione del **rendimento forward** condizionata, vs baseline.
+Eseguito su 20 ETF settoriali 2012→2026 (CLI `rotation_history_cli`):
+- **Momentum da solo NON dà edge.** Bucket `strong` ≈ baseline a 5/21g; a **63g
+  fa peggio** (−2.1pp hit-rate). Validazione: con finestre **non sovrapposte** la
+  differenza svanisce, e **OOS train/test** il `strong` resta ultimo a 63g in
+  entrambe le metà → l'unico segnale stabile è *negativo* (non inseguire i settori
+  più forti per un hold di 3 mesi). **H1 rifiutata, confermata OOS.**
+- **È il REGIME a condizionare, non il momentum.** Stato arricchito momentum ×
+  regime S&P 500: i forward più alti arrivano dopo **bear_high_vol** (rimbalzo:
+  21g media +3%, 63g **+7%**), il pericolo è **bear_low_vol** (strong|bear_low_vol
+  forward **negativo**, hit-rate 0.47). Asse informativo = regime, coerente col
+  finding Fase 5 (rendimenti fortemente regime-dipendenti).
+Caveat onestà: `n` in modalità plain = osservazioni **sovrapposte** (indicativo);
+le conclusioni qui citate sono quelle che reggono anche con `step=horizon` + OOS.
+
+**🔬 Finding cicli crypto (stessa sessione)** — motore puntato sul panel Tier1
+(BTC/ETH/SOL/LINK/POL) con `forward_observations` (per-asset, no cross-section) +
+stato = **fase halving** (early/mid/late) e **regime BTC**. CLI
+`crypto_cycle_cli`. Storico 2018→2026:
+- **La fase di ciclo condiziona FORTE** (molto più del momentum equity). Forward
+  126g: early mediana **+23%** (hit 0.64), late **+18%** (hit 0.66), **mid mediana
+  −29%, hit 0.21**. Il pattern "mid = zona pericolo" è **OOS-stabile in direzione**
+  (mid resta ultimo in train E test a 21/63/126g; early/late si scambiano).
+- Regime BTC: `bull_high_vol` il migliore; `bear_low_vol`/`bull_low_vol` i deboli.
+- **📍 Stato attuale (2026-06-05): fase MID (~776g dall'ultimo halving) + regime
+  bear_low_vol → DOPPIAMENTE sfavorevole storicamente.** Contestualizza il crollo
+  crypto osservato dall'utente: siamo nella fase che storicamente è andata peggio.
+- ⚠️ **Caveat forte (CLAUDE.md)**: ~1.5-2 cicli di halving = essenzialmente 2 bear
+  (2018, 2022). **DESCRITTIVO, non un edge provato**: il pattern è reale in-sample
+  e direzionalmente OOS-stabile, ma 2 cicli non sono significatività statistica.
+
 **Cosa è in piedi e FUNZIONA da solo:**
 - `src/ingestion/tier1/coingecko.py::fetch_categories` — ~700 categorie CoinGecko
   (= mappa settoriale crypto), filtro min market cap
