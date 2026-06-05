@@ -6,14 +6,14 @@ recent abnormal moves, each labelled market-wide / asset-specific and — for cr
 with the move).
 
 Works on two universes:
-  * **Crypto** (BTC/ETH/SOL/LINK/POL): market reference = BTC, news = the crypto
-    news history we collect, asset-named source up-weighted.
+  * **Crypto** (BTC/ETH/SOL/LINK/POL): market reference = BTC, news = the per-coin
+    Google News feed, asset-named source up-weighted.
   * **Equity sector/theme ETFs** (e.g. SEMIS, ENERGY, URANIUM): market reference =
     S&P 500, with a lower market threshold (an equity market day is "big" at ~1%,
-    not 3%). News attribution is intentionally OFF here: our news history is
-    crypto-only, so attaching it to an ETF would be misleading (VISION #1). For
-    ETFs the deliverable is the honest market-wide / sector-specific split until an
-    equity news source is wired in.
+    not 3%). News = the per-sector Google News feed (``feeds.py``). Both feeds land
+    under ``googlenews_<symbol>`` in the same history, which accumulates daily — so
+    early on an equity sector may still have no rows in a move's window, and the
+    honest market-wide / sector-specific split carries the attribution until then.
 
 Honest by design (VISION #1): it lists *candidate* catalysts ranked by
 plausibility — association, not proven causation. A move with no news attached is
@@ -38,6 +38,11 @@ from src.features.move_attribution import attribute_moves
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
 NEWS_PATH = Path("data/news_history/news.parquet")
+
+# General (non-asset-specific) crypto newswires. Relevant context for any coin,
+# but NOT for an equity ETF — keeping them class-scoped stops crypto headlines
+# from being attached to a stock-sector move.
+CRYPTO_NEWSWIRES = {"cointelegraph", "coindesk"}
 
 
 def _resolve_asset(symbol: str) -> Asset | None:
@@ -66,15 +71,18 @@ def main() -> None:
     market_asset = get_asset_by_symbol(market_symbol)
     market_threshold_pct = 3.0 if is_crypto else 1.0
 
-    # News attribution only for crypto (our news history is crypto-only).
-    if is_crypto:
-        if not NEWS_PATH.exists():
-            raise SystemExit(f"News history not found at {NEWS_PATH}.")
-        news = pd.read_parquet(NEWS_PATH)
-        asset_source: str | None = f"googlenews_{asset.symbol.lower()}"
-    else:
-        news = pd.DataFrame()
-        asset_source = None
+    # News history now covers both universes (a per-crypto and per-sector Google
+    # News feed each land under ``googlenews_<symbol>``). The history accumulates
+    # daily, so early on an equity sector may still have no rows in its window.
+    news = pd.read_parquet(NEWS_PATH) if NEWS_PATH.exists() else pd.DataFrame()
+    asset_source: str | None = f"googlenews_{asset.symbol.lower()}"
+    # Only consider sources relevant to THIS asset: its own feed, plus the general
+    # crypto newswires for a coin. Without this, while the equity news history is
+    # still filling up, an ETF move would get crypto headlines attached — exactly
+    # the cross-universe contamination we must avoid (VISION #1).
+    relevant = {asset_source} | (CRYPTO_NEWSWIRES if is_crypto else set())
+    if not news.empty:
+        news = news[news["source"].isin(relevant)]
 
     start = (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=args.days + 40)).date().isoformat()
     src = YahooFinanceSource()
@@ -111,18 +119,12 @@ def main() -> None:
         elif is_crypto:
             print("    • nessuna news associata (possibile evento di leva/liquidazioni)")
         else:
-            print("    • news azionarie non ancora collegate (solo classificazione)")
+            print("    • nessuna news nella finestra (storico in accumulo o nessun titolo)")
         print()
-    if is_crypto:
-        print(
-            "Nota: eventi CANDIDATI ordinati per plausibilità (vicinanza + sentiment "
-            "coerente). Associazione, non causazione."
-        )
-    else:
-        print(
-            "Nota: per gli ETF azionari mostriamo solo market-wide vs settore-specifico "
-            "(rif. S&P 500). La fonte news azionaria non è ancora collegata."
-        )
+    print(
+        "Nota: eventi CANDIDATI ordinati per plausibilità (vicinanza + sentiment "
+        "coerente). Associazione, non causazione."
+    )
 
 
 if __name__ == "__main__":

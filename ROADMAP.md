@@ -386,6 +386,15 @@ ADR-014 per il principio architetturale: il sistema è già scritto
 asset-class-agnostic dalla Fase 1, quindi questa fase è
 **implementazione + adattamento**, non riscrittura.
 
+> 🟡 **Anticipo pragmatico (2026-06-05)**: su richiesta utente è stato avviato un
+> primo tassello equity **fuori dall'ordine stretto dei prerequisiti** (il paper
+> trading crypto non è ancora consolidato), perché serviva *ora* per "vedere cosa
+> si muove in borsa e perché". Già in `main`: **screener di rotazione settoriale**
+> (~20 ETF, `REPORT_EQUITY.md` auto-aggiornato), **attribuzione eventi** sugli ETF
+> (rif. S&P 500) e **fonte news azionaria** (Google News per-settore, ADR-027). Il
+> grosso della Fase 8 (paper broker equity, calendari, corporate actions,
+> riallenamento modelli) resta subordinato ai prerequisiti.
+
 ### Prerequisiti
 - Fasi 1–6 completate con paper trading crypto consolidato
 - Decisioni sull'universe equity prese (open question)
@@ -397,8 +406,10 @@ asset-class-agnostic dalla Fase 1, quindi questa fase è
       Alpha Vantage, Polygon.io free tier
 - [ ] Gestione **trading calendar** (orari di mercato, weekend, festività)
 - [ ] Gestione **corporate actions**: dividendi, splits, spin-off
-- [ ] Estensione del sentiment/news per coprire equity-specifico (earnings,
-      analyst ratings, 10-K/10-Q se accessibili)
+- [~] Estensione del sentiment/news per coprire equity-specifico: **fatto a
+      livello settoriale** (Google News per-settore, ADR-027, stessa pipeline
+      VADER) → attribuzione eventi sugli ETF ha un canale news. Earnings/analyst
+      ratings/10-K-10-Q più granulari restano da fare
 - [ ] Estensione del paper broker per equity: nuovo `EquityPaperBroker` con
       fee model di un broker realistico (proposta: Interactive Brokers,
       che è uno standard di riferimento; calibrabile per altri)
