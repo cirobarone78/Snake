@@ -19,6 +19,7 @@ import pandas as pd
 from src.assets.sectors import SECTOR_ETFS
 from src.features.sector_report import format_sector_report_md
 from src.features.sector_screener import build_sector_frame, screen_sectors
+from src.ingestion.freshness import check_freshness, last_timestamp_of
 from src.ingestion.snapshot import write_snapshot
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
@@ -48,6 +49,13 @@ def main() -> None:
         if ohlcv.empty:
             logger.warning("No data for %s", asset.symbol)
             continue
+        # Freshness guard (ADR-026): a frozen ticker keeps returning old bars
+        # and silently poisons the snapshot — make staleness loud.
+        fresh = check_freshness(
+            last_timestamp_of(ohlcv), max_age_days=5, name=asset.symbol
+        )
+        if not fresh.is_fresh:
+            logger.warning("STALE FEED: %s", fresh.message())
         closes[asset.symbol] = ohlcv["close"]
         names[asset.symbol] = asset.name
 
