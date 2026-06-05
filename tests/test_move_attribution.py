@@ -65,6 +65,18 @@ def test_classify_opposite_direction_is_asset_specific() -> None:
     assert classify_move(-10.0, +4.0) == "asset-specific"
 
 
+def test_classify_equity_threshold_makes_small_market_day_count() -> None:
+    # an equity sector ETF +2.5% on a +1.5% S&P day: with the equity-sized
+    # threshold (1%) this is market-wide; with the crypto default (3%) it isn't.
+    assert classify_move(2.5, 1.5, market_threshold_pct=1.0) == "market-wide"
+    assert classify_move(2.5, 1.5) == "asset-specific"
+
+
+def test_classify_positive_market_wide() -> None:
+    # surges are handled too: asset +8%, market +6% same direction -> market-wide
+    assert classify_move(8.0, 6.0) == "market-wide"
+
+
 # --- association ---
 
 
@@ -131,3 +143,25 @@ def test_attribute_moves_asset_specific_when_market_calm() -> None:
     )
     shock = next(m for m in moves if m.date == close.index[50])
     assert shock.classification == "asset-specific"
+
+
+def test_attribute_moves_equity_threshold_marks_market_wide() -> None:
+    # equity-sized shock: ETF -4%, S&P -2.5% same day (market explains >= half the
+    # move). Crypto default (3%) would call it asset-specific because 2.5% < 3%;
+    # the equity threshold (1%) correctly calls it market-wide.
+    close = _calm_then_shock(shock_day=50, shock=-0.04)
+    market = _calm_then_shock(shock_day=50, shock=-0.025)
+    moves = attribute_moves(
+        close, pd.DataFrame(), market_close=market, vol_window=20, market_threshold_pct=1.0
+    )
+    shock = next(m for m in moves if m.date == close.index[50])
+    assert shock.classification == "market-wide"
+    # no news frame -> no candidate events, but the move is still classified
+    assert shock.candidate_events == []
+
+    # same data, crypto-sized threshold -> the 2.5% market day is "too small"
+    crypto_view = attribute_moves(
+        close, pd.DataFrame(), market_close=market, vol_window=20, market_threshold_pct=3.0
+    )
+    crypto_shock = next(m for m in crypto_view if m.date == close.index[50])
+    assert crypto_shock.classification == "asset-specific"
