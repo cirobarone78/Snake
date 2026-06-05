@@ -39,6 +39,11 @@ from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
 NEWS_PATH = Path("data/news_history/news.parquet")
 
+# General (non-asset-specific) crypto newswires. Relevant context for any coin,
+# but NOT for an equity ETF — keeping them class-scoped stops crypto headlines
+# from being attached to a stock-sector move.
+CRYPTO_NEWSWIRES = {"cointelegraph", "coindesk"}
+
 
 def _resolve_asset(symbol: str) -> Asset | None:
     """Find an asset across the crypto/context universe and the sector ETFs."""
@@ -71,6 +76,13 @@ def main() -> None:
     # daily, so early on an equity sector may still have no rows in its window.
     news = pd.read_parquet(NEWS_PATH) if NEWS_PATH.exists() else pd.DataFrame()
     asset_source: str | None = f"googlenews_{asset.symbol.lower()}"
+    # Only consider sources relevant to THIS asset: its own feed, plus the general
+    # crypto newswires for a coin. Without this, while the equity news history is
+    # still filling up, an ETF move would get crypto headlines attached — exactly
+    # the cross-universe contamination we must avoid (VISION #1).
+    relevant = {asset_source} | (CRYPTO_NEWSWIRES if is_crypto else set())
+    if not news.empty:
+        news = news[news["source"].isin(relevant)]
 
     start = (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=args.days + 40)).date().isoformat()
     src = YahooFinanceSource()
