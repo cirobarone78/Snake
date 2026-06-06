@@ -1,0 +1,15 @@
+# Cloudflare Workers config for the static dashboard (Fase 7).
+#
+# The project is a "Workers Build" connected to this repo. A static site is
+# deployed as a Worker that only serves assets — no server code — by pointing the
+# assets directory at `public/`. Without this file the Workers build has nothing
+# to deploy and fails. The site auto-redeploys on each push to the production
+# branch; the daily crons keep the JSON data under public/data fresh.
+name = "market-vision"
+compatibility_date = "2025-06-01"
+
+[assets]
+directory = "./public"
+# Single index.html with in-page tabs: serve it for any path so a refresh on a
+# deep link still loads the app.
+not_found_handling = "single-page-application"
