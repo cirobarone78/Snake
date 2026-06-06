@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Market Rotation Dashboard</title>
+  <meta name="description" content="Osservatorio educativo delle rotazioni di mercato. Non è consulenza finanziaria." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <h1>Market Rotation Dashboard</h1>
+          <p class="tagline">Osservatorio educativo delle rotazioni di mercato</p>
+        </div>
+      </div>
+      <p class="disclaimer-bar">Snapshot a fini educativi e di ricerca. Non è consulenza finanziaria, non sono raccomandazioni di acquisto o vendita.</p>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Sezioni">
+    <div class="container tabs-inner">
+      <button class="tab is-active" data-tab="overview">Panoramica</button>
+      <button class="tab" data-tab="crypto">Crypto</button>
+      <button class="tab" data-tab="equity">Settori azionari</button>
+      <button class="tab" data-tab="method">Metodo e limiti</button>
+      <button class="tab" data-tab="learn">Impara</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- PANORAMICA -->
+    <section id="overview" class="panel is-active">
+      <div class="section-head">
+        <h2>Cosa si sta muovendo</h2>
+        <p class="updated" id="overview-updated"></p>
+      </div>
+
+      <div class="explainer card">
+        <h3>In parole semplici</h3>
+        <p>Questa pagina mostra, giorno per giorno, <strong>quali settori e narrative di mercato si stanno muovendo di più rispetto agli altri</strong> — la cosiddetta <em>rotazione</em>. È una fotografia del presente, costruita su dati pubblici. Non dice cosa accadrà domani: aiuta solo a capire dove sta andando l'attenzione del mercato adesso.</p>
+      </div>
+
+      <div class="overview-grid">
+        <div>
+          <h3 class="mini-title">Narrative crypto in forza</h3>
+          <ul class="ranklist" id="overview-crypto"></ul>
+        </div>
+        <div>
+          <h3 class="mini-title">Settori azionari in forza</h3>
+          <ul class="ranklist" id="overview-equity"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRYPTO -->
+    <section id="crypto" class="panel">
+      <div class="section-head">
+        <h2>Narrative crypto</h2>
+        <p class="updated" id="crypto-updated"></p>
+      </div>
+      <p class="section-note">Le narrative più forti per <em>forza relativa</em> (movimento recente + scambi), filtrando le micro-cap come rumore.</p>
+      <div class="cards" id="crypto-cards"></div>
+    </section>
+
+    <!-- EQUITY -->
+    <section id="equity" class="panel">
+      <div class="section-head">
+        <h2>Settori e temi azionari</h2>
+        <p class="updated" id="equity-updated"></p>
+      </div>
+      <p class="section-note">I settori e i temi (via ETF) più forti per momentum a 5 giorni e ~1 mese.</p>
+      <div class="cards" id="equity-cards"></div>
+    </section>
+
+    <!-- METODO -->
+    <section id="method" class="panel">
+      <div class="section-head"><h2>Metodo e limiti</h2></div>
+      <div class="prose card">
+        <h3>Cosa fa questo strumento</h3>
+        <p>Osserva la <strong>forza relativa</strong> di settori, temi ed ecosistemi: chi si sta muovendo di più, ora, rispetto agli altri. È un osservatorio descrittivo, pensato per imparare e fare ricerca.</p>
+        <h3>Cosa non fa</h3>
+        <ul>
+          <li>Non fa previsioni certe. I risultati sono <strong>snapshot</strong>, non profezie.</li>
+          <li>Non dà segnali di acquisto o vendita, né prezzi obiettivo.</li>
+          <li>Non va usato come unica base per decisioni di investimento.</li>
+        </ul>
+        <h3>Limiti da tenere a mente</h3>
+        <ul>
+          <li>Un movimento recente può essere <strong>rumore</strong> o temporaneo.</li>
+          <li>La validazione storica diventa affidabile solo con dati sufficienti: su pochi casi i numeri ingannano.</li>
+          <li>Le fonti dati possono avere ritardi, errori o limiti.</li>
+        </ul>
+        <h3>Cosa abbiamo imparato finora (onestamente)</h3>
+        <p>Dalla ricerca alla base di questo progetto: <strong>non esiste un "segnale" direzionale facile</strong> a frequenza giornaliera. Inseguire ciò che è più forte non ha dato un vantaggio ripetibile. Conta molto di più il <strong>regime di mercato</strong> (fasi di calma o di stress): è lì che i rendimenti futuri cambiano davvero. Per questo il tono qui è prudente per scelta.</p>
+      </div>
+    </section>
+
+    <!-- IMPARA -->
+    <section id="learn" class="panel">
+      <div class="section-head">
+        <h2>Impara</h2>
+        <p class="updated">Modulo didattico in italiano, dal principiante all'avanzato.</p>
+      </div>
+      <div id="education"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Educational snapshot. Not financial advice. Not a buy/sell recommendation.</p>
+      <p class="muted">Generato automaticamente dai dati del progetto. <span id="footer-updated"></span></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
