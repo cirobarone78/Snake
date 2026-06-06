@@ -228,6 +228,18 @@ function rotationCard(item, kind) {
     card.appendChild(wrap);
   }
 
+  if (typeof item.data_confidence === "number") {
+    const cst = (item.confidence_status || "valid").toLowerCase();
+    const wrap = el("div", "strength confidence");
+    wrap.title = item.confidence_reason || "";
+    const track = el("div", "track");
+    const fill = el("div", `fill conf-${cst}`);
+    fill.style.width = `${Math.round(item.data_confidence * 100)}%`;
+    track.appendChild(fill); wrap.appendChild(track);
+    wrap.appendChild(el("span", "pct", `dato ${(item.data_confidence * 100).toFixed(0)}`));
+    card.appendChild(wrap);
+  }
+
   const metrics = el("div", "metrics");
   if (kind === "crypto") {
     metrics.appendChild(metric("24 ore", item.change_24h));

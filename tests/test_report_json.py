@@ -52,9 +52,11 @@ def test_crypto_payload_shape_and_disclaimer() -> None:
     top = payload["items"][0]
     assert top["rank"] == 1
     assert set(top) == {
-        "rank", "name", "status", "strength", "change_24h", "market_cap", "leader", "note"
+        "rank", "name", "status", "strength", "data_confidence", "confidence_status",
+        "confidence_reason", "change_24h", "market_cap", "leader", "note"
     }
     assert top["leader"] == "FET"  # first of the comma-joined leaders
+    assert 0.0 <= top["data_confidence"] <= 1.0
 
 
 def test_crypto_missing_market_cap_is_null_not_invented() -> None:
@@ -81,7 +83,8 @@ def test_equity_payload_shape_and_ticker() -> None:
     semis = next(it for it in payload["items"] if it["name"].startswith("Semiconductors"))
     assert semis["ticker"] == "SMH"  # resolved from the sector universe
     assert set(semis) == {
-        "rank", "name", "ticker", "status", "strength", "change_5d", "change_1m", "spark", "note"
+        "rank", "name", "ticker", "status", "strength", "data_confidence", "confidence_status",
+        "confidence_reason", "change_5d", "change_1m", "spark", "note"
     }
     assert semis["change_5d"] == 4.6
 
