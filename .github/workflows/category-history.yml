@@ -36,14 +36,18 @@ jobs:
       - name: Update category history
         run: uv run python -m src.ingestion.tier1.fetch_categories
 
+      - name: Build market series (dashboard hero chart)
+        run: uv run python -m src.ingestion.tier1.build_market_series
+
       - name: Commit updated history + report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data/category_history REPORT.md public/data/crypto_report.json; then
+          PATHS="data/category_history REPORT.md public/data/crypto_report.json public/data/market_series.json"
+          if git diff --quiet -- $PATHS; then
             echo "No category changes to commit."
             exit 0
           fi
-          git add data/category_history REPORT.md public/data/crypto_report.json
+          git add $PATHS
           git commit -m "data: update category history + report [skip ci]"
           git push

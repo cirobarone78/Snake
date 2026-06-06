@@ -17,6 +17,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.assets.sectors import SECTOR_ETFS
+from src.features.market_series import sparkline_values
 from src.features.report_json import equity_report_dict, write_report_json
 from src.features.sector_report import format_sector_report_md
 from src.features.sector_screener import build_sector_frame, screen_sectors
@@ -78,7 +79,9 @@ def main() -> None:
     REPORT_PATH.write_text(format_sector_report_md(frame, snapshot_at=now), encoding="utf-8")
 
     # Dashboard JSON twin, from the same structured snapshot (no Markdown parsing).
-    write_report_json(equity_report_dict(frame, generated_at=now), JSON_PATH)
+    # Embed a short close-price sparkline per sector from the data already fetched.
+    spark = {sym: sparkline_values(s, window=60) for sym, s in closes.items()}
+    write_report_json(equity_report_dict(frame, generated_at=now, spark=spark), JSON_PATH)
     logger.info("Wrote dashboard JSON -> %s", JSON_PATH)
 
     top = screen_sectors(frame, top_n=3)

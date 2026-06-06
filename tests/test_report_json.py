@@ -81,7 +81,7 @@ def test_equity_payload_shape_and_ticker() -> None:
     semis = next(it for it in payload["items"] if it["name"].startswith("Semiconductors"))
     assert semis["ticker"] == "SMH"  # resolved from the sector universe
     assert set(semis) == {
-        "rank", "name", "ticker", "status", "strength", "change_5d", "change_1m", "note"
+        "rank", "name", "ticker", "status", "strength", "change_5d", "change_1m", "spark", "note"
     }
     assert semis["change_5d"] == 4.6
 
@@ -89,6 +89,16 @@ def test_equity_payload_shape_and_ticker() -> None:
 def test_equity_empty_input_yields_empty_items() -> None:
     payload = equity_report_dict(pd.DataFrame())
     assert payload["items"] == []
+
+
+def test_equity_embeds_sparkline_when_provided() -> None:
+    spark = {"SEMIS": [10.0, 11.0, 12.0], "ENERGY": [5.0, 4.0]}
+    payload = equity_report_dict(_sectors(), spark=spark)
+    semis = next(it for it in payload["items"] if it["name"].startswith("Semiconductors"))
+    assert semis["spark"] == [10.0, 11.0, 12.0]
+    # missing symbol -> null, not invented
+    other = equity_report_dict(_sectors(), spark={})
+    assert other["items"][0]["spark"] is None
 
 
 # --- writer ---

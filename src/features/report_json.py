@@ -87,8 +87,14 @@ def equity_report_dict(
     sector_frame: pd.DataFrame,
     top_n: int = 10,
     generated_at: pd.Timestamp | str | None = None,
+    spark: dict[str, list[float]] | None = None,
 ) -> dict[str, Any]:
-    """Dashboard JSON payload for the equity sector/theme rotation snapshot."""
+    """Dashboard JSON payload for the equity sector/theme rotation snapshot.
+
+    ``spark`` optionally maps a sector symbol to a short close-price series, embedded
+    per item as ``spark`` so each card can draw a real mini price chart.
+    """
+    spark = spark or {}
     items: list[dict[str, Any]] = []
     if not sector_frame.empty:
         strong = screen_sectors(sector_frame, top_n=top_n)
@@ -104,6 +110,7 @@ def equity_report_dict(
                     "strength": _round(_num(row["score"]), 4),
                     "change_5d": _round(_num(row["ret_5d_pct"]), 2),
                     "change_1m": _round(_num(row["ret_21d_pct"]), 2),
+                    "spark": spark.get(symbol) or None,
                     "note": None,
                 }
             )
