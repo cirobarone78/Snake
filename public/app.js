@@ -5,7 +5,11 @@ const SOURCES = {
   equity: "data/equity_report.json",
   education: "data/education.json",
   market: "data/market_series.json",
+  events: "data/events.json",
 };
+
+const CLASS_LABEL = { "market-wide": "Di mercato", "asset-specific": "Specifico dell'asset", unknown: "Da definire" };
+const CLASS_CLASS = { "market-wide": "market", "asset-specific": "specific", unknown: "unknown" };
 
 const STATUS_LABEL = {
   hot: "In forza", warm: "In rafforzamento", neutral: "Neutrale", weak: "In calo", risk: "Rischio",
@@ -18,14 +22,15 @@ document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   setupTabs();
-  const [crypto, equity, education, market] = await Promise.all([
+  const [crypto, equity, education, market, events] = await Promise.all([
     fetchJSON(SOURCES.crypto), fetchJSON(SOURCES.equity),
-    fetchJSON(SOURCES.education), fetchJSON(SOURCES.market),
+    fetchJSON(SOURCES.education), fetchJSON(SOURCES.market), fetchJSON(SOURCES.events),
   ]);
   renderTicker(market);
   renderHero(market);
   renderCrypto(crypto);
   renderEquity(equity);
+  renderEvents(events);
   renderOverview(crypto, equity);
   renderEducation(education);
   renderFooter(crypto, equity, market);
@@ -290,6 +295,69 @@ function fillRanklist(id, data, kind) {
     li.appendChild(el("span", `ri-change ${pctClass(change)}`, fmtPct(change)));
     ul.appendChild(li);
   });
+}
+
+/* ---------- Events (move attribution) ---------- */
+function renderEvents(data) {
+  setUpdated("events-updated", data);
+  const root = document.getElementById("events-list");
+  root.innerHTML = "";
+  if (!data || !Array.isArray(data.assets) || data.assets.every((a) => !a.moves || a.moves.length === 0)) {
+    root.appendChild(el("p", "empty", "Nessun movimento anomalo recente, o storico news ancora in accumulo."));
+    return;
+  }
+  data.assets.forEach((asset) => {
+    if (!asset.moves || asset.moves.length === 0) return;
+    const block = el("div", "event-asset");
+    const head = el("div", "event-asset-head");
+    head.appendChild(el("span", "sym", asset.symbol));
+    head.appendChild(el("h3", "", asset.name));
+    block.appendChild(head);
+    asset.moves.forEach((m) => block.appendChild(moveCard(m)));
+    root.appendChild(block);
+  });
+}
+
+function moveCard(m) {
+  const card = el("div", "move-card");
+  const head = el("div", "move-head");
+  head.appendChild(el("span", "move-date", fmtDay(m.date)));
+  head.appendChild(el("span", `move-chg ${pctClass(m.return_pct)}`, fmtPct(m.return_pct)));
+  const cls = m.classification || "unknown";
+  head.appendChild(el("span", `class-badge ${CLASS_CLASS[cls] || "unknown"}`, CLASS_LABEL[cls] || cls));
+  if (typeof m.market_return_pct === "number") head.appendChild(el("span", "move-mkt", `mercato ${fmtPct(m.market_return_pct)}`));
+  card.appendChild(head);
+
+  if (Array.isArray(m.events) && m.events.length > 0) {
+    const ul = el("ul", "events-ul");
+    m.events.forEach((e) => {
+      const li = document.createElement("li");
+      li.appendChild(sentimentDot(e.sentiment));
+      const txt = el("div");
+      const title = el("div", "event-title");
+      if (e.url) {
+        const a = document.createElement("a");
+        a.href = e.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = e.title || "(senza titolo)";
+        title.appendChild(a);
+      } else { title.textContent = e.title || "(senza titolo)"; }
+      txt.appendChild(title);
+      txt.appendChild(el("div", "event-src", e.source || ""));
+      li.appendChild(txt);
+      ul.appendChild(li);
+    });
+    card.appendChild(ul);
+  } else {
+    card.appendChild(el("p", "no-news", "Nessuna notizia nella finestra (possibile evento di leva/liquidazioni, o storico ancora in accumulo)."));
+  }
+  return card;
+}
+
+function sentimentDot(s) {
+  const dot = el("span", "sent-dot");
+  let color = "var(--neutral)";
+  if (typeof s === "number") color = s > 0.05 ? "var(--pos)" : s < -0.05 ? "var(--neg)" : "var(--neutral)";
+  dot.style.background = color;
+  return dot;
 }
 
 /* ---------- Education ---------- */
