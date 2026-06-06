@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Market Rotation Dashboard</title>
   <meta name="description" content="Osservatorio educativo delle rotazioni di mercato. Non è consulenza finanziaria." />
+  <meta name="color-scheme" content="dark light" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="aurora" aria-hidden="true"></div>
+
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true"></span>
         <div>
-          <h1>Market Rotation Dashboard</h1>
-          <p class="tagline">Osservatorio educativo delle rotazioni di mercato</p>
+          <h1>Market Rotation</h1>
+          <p class="tagline">Osservatorio delle rotazioni di mercato</p>
         </div>
       </div>
-      <p class="disclaimer-bar">Snapshot a fini educativi e di ricerca. Non è consulenza finanziaria, non sono raccomandazioni di acquisto o vendita.</p>
+      <p class="disclaimer-bar">Snapshot educativo. Non è consulenza finanziaria né una raccomandazione di acquisto o vendita.</p>
     </div>
   </header>
 
@@ -34,14 +37,25 @@
   <main class="container">
     <!-- PANORAMICA -->
     <section id="overview" class="panel is-active">
-      <div class="section-head">
-        <h2>Cosa si sta muovendo</h2>
-        <p class="updated" id="overview-updated"></p>
+      <div class="ticker" id="ticker"></div>
+
+      <div class="hero card">
+        <div class="hero-head">
+          <div>
+            <p class="hero-label" id="hero-name">Mercato</p>
+            <p class="hero-value"><span id="hero-last">—</span> <span class="hero-change" id="hero-change"></span></p>
+          </div>
+          <div class="chips" id="hero-chips"></div>
+        </div>
+        <div class="chart-wrap">
+          <svg id="hero-chart" class="chart" viewBox="0 0 720 240" preserveAspectRatio="none" role="img" aria-label="Grafico andamento"></svg>
+        </div>
+        <p class="chart-foot" id="hero-foot"></p>
       </div>
 
       <div class="explainer card">
         <h3>In parole semplici</h3>
-        <p>Questa pagina mostra, giorno per giorno, <strong>quali settori e narrative di mercato si stanno muovendo di più rispetto agli altri</strong> — la cosiddetta <em>rotazione</em>. È una fotografia del presente, costruita su dati pubblici. Non dice cosa accadrà domani: aiuta solo a capire dove sta andando l'attenzione del mercato adesso.</p>
+        <p>Questa pagina mostra <strong>quali settori e narrative si stanno muovendo di più rispetto agli altri</strong> — la cosiddetta <em>rotazione</em>. È una fotografia del presente su dati pubblici, non una previsione: aiuta a capire dove si sta spostando l'attenzione del mercato adesso.</p>
       </div>
 
       <div class="overview-grid">
@@ -72,7 +86,7 @@
         <h2>Settori e temi azionari</h2>
         <p class="updated" id="equity-updated"></p>
       </div>
-      <p class="section-note">I settori e i temi (via ETF) più forti per momentum a 5 giorni e ~1 mese.</p>
+      <p class="section-note">I settori e i temi (via ETF) più forti per momentum a 5 giorni e ~1 mese, con l'andamento recente.</p>
       <div class="cards" id="equity-cards"></div>
     </section>
 
@@ -91,7 +105,7 @@
         <h3>Limiti da tenere a mente</h3>
         <ul>
           <li>Un movimento recente può essere <strong>rumore</strong> o temporaneo.</li>
-          <li>La validazione storica diventa affidabile solo con dati sufficienti: su pochi casi i numeri ingannano.</li>
+          <li>La validazione storica è affidabile solo con dati sufficienti: su pochi casi i numeri ingannano.</li>
           <li>Le fonti dati possono avere ritardi, errori o limiti.</li>
         </ul>
         <h3>Cosa abbiamo imparato finora (onestamente)</h3>
