@@ -33,6 +33,7 @@ def test_payload_shape_and_disclaimer() -> None:
     assert payload["disclaimer"] == DISCLAIMER
     asset = payload["assets"][0]
     assert asset["symbol"] == "BTC"
+    assert asset["universe"] == "crypto"
     move = asset["moves"][0]
     assert move["date"] == "2026-06-02"
     assert move["return_pct"] == -6.5
@@ -47,6 +48,14 @@ def test_move_without_news_has_empty_events() -> None:
         [{"symbol": "SOL", "name": "Solana", "moves": [_move(-9.0, "asset-specific", False)]}]
     )
     assert payload["assets"][0]["moves"][0]["events"] == []
+
+
+def test_universe_passthrough() -> None:
+    payload = build_events_payload(
+        [{"symbol": "SEMIS", "name": "Semiconductors", "universe": "equity",
+          "moves": [_move(-4.0, "market-wide", False)]}]
+    )
+    assert payload["assets"][0]["universe"] == "equity"
 
 
 def test_empty_assets() -> None:
