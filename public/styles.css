@@ -276,7 +276,14 @@ details.chapter[open] > summary::before { transform: rotate(45deg); }
 .events-ul { list-style: none; margin: 11px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .events-ul li { display: flex; align-items: flex-start; gap: 9px; font-size: 13.5px; line-height: 1.45; }
 .sent-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex: 0 0 auto; }
+.event-meta { display: flex; align-items: center; gap: 8px; margin-top: 3px; flex-wrap: wrap; }
 .event-src { color: var(--text-soft); font-family: var(--mono); font-size: 11px; }
+.etag { font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; letter-spacing: 0.02em;
+  color: var(--text); background: rgba(154,163,189,0.16); box-shadow: inset 0 0 0 1px var(--hairline); }
+.etag-hack, .etag-legal { color: var(--neg); background: rgba(255,107,129,0.14); box-shadow: inset 0 0 0 1px rgba(255,107,129,0.3); }
+.etag-regulation, .etag-geopolitical { color: var(--accent-3); background: rgba(192,132,252,0.14); box-shadow: inset 0 0 0 1px rgba(192,132,252,0.3); }
+.etag-fed, .etag-inflation, .etag-macro { color: var(--warm); background: rgba(255,209,102,0.14); box-shadow: inset 0 0 0 1px rgba(255,209,102,0.3); }
+.etag-etf_flow, .etag-listing, .etag-upgrade, .etag-partnership, .etag-earnings { color: var(--accent); background: rgba(94,234,212,0.14); box-shadow: inset 0 0 0 1px rgba(94,234,212,0.3); }
 .event-title a { color: var(--text); text-decoration: none; }
 .event-title a:hover { color: var(--accent); }
 .no-news { color: var(--text-soft); font-size: 13px; margin: 10px 0 0; }

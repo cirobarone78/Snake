@@ -7,7 +7,8 @@ name: news-history
 
 on:
   schedule:
-    - cron: "30 6 * * *" # 06:30 UTC daily
+    # Every 6h so the dashboard "Eventi" stay fresh (public repo -> Actions free).
+    - cron: "30 */6 * * *" # 00:30 / 06:30 / 12:30 / 18:30 UTC
   workflow_dispatch: {}
 
 # Avoid overlapping runs piling commits on the same file.

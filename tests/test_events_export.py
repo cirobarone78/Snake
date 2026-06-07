@@ -39,6 +39,7 @@ def test_payload_shape_and_disclaimer() -> None:
     assert move["classification"] == "market-wide"
     assert move["events"][0]["title"] == "Big news"
     assert move["events"][0]["sentiment"] == -0.7
+    assert move["events"][0]["event_type"] == "other"
 
 
 def test_move_without_news_has_empty_events() -> None:
