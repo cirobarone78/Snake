@@ -115,7 +115,8 @@ function renderTicker(market) {
 }
 
 /* ---------- Hero chart ---------- */
-let HERO = { series: [], active: 0 };
+let HERO = { series: [], active: 0, tf: "3m" };
+const TIMEFRAMES = [["1m", "1 mese", 31], ["3m", "3 mesi", 92], ["6m", "6 mesi", 184], ["1y", "1 anno", 100000]];
 
 function renderHero(market) {
   const chips = document.getElementById("hero-chips");
@@ -135,18 +136,43 @@ function renderHero(market) {
     });
     chips.appendChild(chip);
   });
+
+  const tfRow = document.getElementById("hero-tf");
+  tfRow.innerHTML = "";
+  TIMEFRAMES.forEach(([key, label]) => {
+    const chip = el("button", "chip tf" + (key === HERO.tf ? " is-active" : ""), label);
+    chip.addEventListener("click", () => {
+      HERO.tf = key;
+      [...tfRow.children].forEach((c) => c.classList.toggle("is-active", c.textContent === label));
+      drawHero();
+    });
+    tfRow.appendChild(chip);
+  });
+
   drawHero();
 }
 
 function drawHero() {
   const s = HERO.series[HERO.active];
   if (!s) return;
-  const pts = s.points || [];
+  const full = s.points || [];
+  // slice to the selected timeframe by calendar days
+  const tf = TIMEFRAMES.find((t) => t[0] === HERO.tf) || TIMEFRAMES[3];
+  let pts = full;
+  if (full.length > 1) {
+    const lastT = new Date(full[full.length - 1].t).getTime();
+    const cutoff = lastT - tf[2] * 86400000;
+    pts = full.filter((p) => new Date(p.t).getTime() >= cutoff);
+    if (pts.length < 2) pts = full.slice(-2);
+  }
+  const vals0 = pts.map((p) => p.v);
+  const change = vals0.length > 1 && vals0[0] ? (vals0[vals0.length - 1] / vals0[0] - 1) * 100 : null;
+
   document.getElementById("hero-name").textContent = s.name || s.symbol;
   document.getElementById("hero-last").textContent = fmtNum(s.last);
   const chg = document.getElementById("hero-change");
-  chg.textContent = `${fmtPct(s.change_pct)} · 1 anno`;
-  chg.className = `hero-change ${pctClass(s.change_pct)}`;
+  chg.textContent = `${fmtPct(change)} · ${tf[1]}`;
+  chg.className = `hero-change ${pctClass(change)}`;
 
   const svg = document.getElementById("hero-chart");
   const W = 720, H = 240, padT = 16, padB = 24, padX = 6;
@@ -155,7 +181,7 @@ function drawHero() {
   const span = max - min || 1;
   const x = (i) => padX + (i / Math.max(pts.length - 1, 1)) * (W - 2 * padX);
   const y = (v) => H - padB - ((v - min) / span) * (H - padT - padB);
-  const down = (s.change_pct ?? 0) < 0;
+  const down = (change ?? 0) < 0;
   const stroke = down ? "url(#gNeg)" : "url(#gPos)";
   const fill = down ? "url(#gNegFill)" : "url(#gPosFill)";
 
