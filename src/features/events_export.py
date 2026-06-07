@@ -15,6 +15,7 @@ from typing import Any
 
 import pandas as pd
 
+from src.features.event_classify import classify_event
 from src.features.move_attribution import AbnormalMove
 
 DISCLAIMER = (
@@ -27,13 +28,15 @@ def _move_to_dict(move: AbnormalMove) -> dict[str, Any]:
     """One abnormal move as a JSON-friendly record."""
     events: list[dict[str, Any]] = []
     for e in move.candidate_events:
+        title = str(e.get("title", ""))
         events.append(
             {
                 "source": str(e.get("source", "")),
-                "title": str(e.get("title", "")),
+                "title": title,
                 "url": str(e.get("url", "")),
                 "sentiment": e.get("sentiment"),
                 "relevance": e.get("relevance"),
+                "event_type": classify_event(title),
             }
         )
     return {

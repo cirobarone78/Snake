@@ -10,6 +10,12 @@ const SOURCES = {
 
 const CLASS_LABEL = { "market-wide": "Di mercato", "asset-specific": "Specifico dell'asset", unknown: "Da definire" };
 const CLASS_CLASS = { "market-wide": "market", "asset-specific": "specific", unknown: "unknown" };
+const EVENT_TYPE_LABEL = {
+  hack: "Hack/Exploit", regulation: "Regolatorio", legal: "Legale", fed: "Fed/Tassi",
+  inflation: "Inflazione", macro: "Macro", geopolitical: "Geopolitico", etf_flow: "Flussi ETF",
+  earnings: "Earnings", listing: "Listing", delisting: "Delisting", upgrade: "Upgrade",
+  partnership: "Partnership", other: "Altro",
+};
 
 const STATUS_LABEL = {
   hot: "In forza", warm: "In rafforzamento", neutral: "Neutrale", weak: "In calo", risk: "Rischio",
@@ -353,7 +359,11 @@ function moveCard(m) {
         title.appendChild(a);
       } else { title.textContent = e.title || "(senza titolo)"; }
       txt.appendChild(title);
-      txt.appendChild(el("div", "event-src", e.source || ""));
+      const meta = el("div", "event-meta");
+      const etype = (e.event_type || "other").toLowerCase();
+      if (etype !== "other") meta.appendChild(el("span", `etag etag-${etype}`, EVENT_TYPE_LABEL[etype] || etype));
+      meta.appendChild(el("span", "event-src", e.source || ""));
+      txt.appendChild(meta);
       li.appendChild(txt);
       ul.appendChild(li);
     });
