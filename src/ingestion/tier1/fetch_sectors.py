@@ -79,9 +79,18 @@ def main() -> None:
     REPORT_PATH.write_text(format_sector_report_md(frame, snapshot_at=now), encoding="utf-8")
 
     # Dashboard JSON twin, from the same structured snapshot (no Markdown parsing).
-    # Embed a short close-price sparkline per sector from the data already fetched.
+    # Embed a short close-price sparkline per sector + the age of each feed's last
+    # bar, so the JSON carries a per-item data_confidence (freshness-driven).
     spark = {sym: sparkline_values(s, window=60) for sym, s in closes.items()}
-    write_report_json(equity_report_dict(frame, generated_at=now, spark=spark), JSON_PATH)
+    freshness_days: dict[str, float] = {}
+    for sym, s in closes.items():
+        res = check_freshness(last_timestamp_of(s.to_frame()), max_age_days=9999, name=sym, now=now)
+        if res.age_days is not None:
+            freshness_days[sym] = res.age_days
+    write_report_json(
+        equity_report_dict(frame, generated_at=now, spark=spark, freshness_days=freshness_days),
+        JSON_PATH,
+    )
     logger.info("Wrote dashboard JSON -> %s", JSON_PATH)
 
     top = screen_sectors(frame, top_n=3)

@@ -23,6 +23,7 @@ import pandas as pd
 from src.assets.sectors import get_sector_by_symbol
 from src.features.screener import screen_categories
 from src.features.sector_screener import screen_sectors
+from src.quality.data_quality import crypto_item_confidence, equity_item_confidence
 
 DISCLAIMER = "Educational snapshot, not financial advice. No buy/sell recommendations."
 
@@ -63,15 +64,24 @@ def crypto_report_dict(
     if not categories.empty:
         strong = screen_categories(categories, top_n=top_n)
         for i, row in enumerate(strong.to_dict("records"), start=1):
+            market_cap = _num(row["market_cap"])
+            change_24h = _num(row["change_24h_pct"])
+            leader = _first_coin(row.get("top_coins"))
+            conf = crypto_item_confidence(
+                market_cap, has_change=change_24h is not None, has_leader=leader is not None
+            )
             items.append(
                 {
                     "rank": i,
                     "name": str(row["name"]),
                     "status": str(row["signal"]),
                     "strength": _round(_num(row["score"]), 4),
-                    "change_24h": _round(_num(row["change_24h_pct"]), 2),
-                    "market_cap": _num(row["market_cap"]),
-                    "leader": _first_coin(row.get("top_coins")),
+                    "data_confidence": conf.score,
+                    "confidence_status": conf.status,
+                    "confidence_reason": conf.reason,
+                    "change_24h": _round(change_24h, 2),
+                    "market_cap": market_cap,
+                    "leader": leader,
                     "note": None,
                 }
             )
@@ -88,19 +98,32 @@ def equity_report_dict(
     top_n: int = 10,
     generated_at: pd.Timestamp | str | None = None,
     spark: dict[str, list[float]] | None = None,
+    freshness_days: dict[str, float] | None = None,
 ) -> dict[str, Any]:
     """Dashboard JSON payload for the equity sector/theme rotation snapshot.
 
     ``spark`` optionally maps a sector symbol to a short close-price series, embedded
     per item as ``spark`` so each card can draw a real mini price chart.
+    ``freshness_days`` maps a symbol to the age (days) of its latest bar, used to
+    compute the per-item ``data_confidence``.
     """
     spark = spark or {}
+    freshness_days = freshness_days or {}
     items: list[dict[str, Any]] = []
     if not sector_frame.empty:
         strong = screen_sectors(sector_frame, top_n=top_n)
         for i, row in enumerate(strong.to_dict("records"), start=1):
             symbol = str(row["symbol"])
             asset = get_sector_by_symbol(symbol)
+            change_5d = _num(row["ret_5d_pct"])
+            change_1m = _num(row["ret_21d_pct"])
+            # Missing age -> 0.0 (report is built right after fetch); fetch_sectors
+            # passes real ages so a frozen feed is still caught.
+            conf = equity_item_confidence(
+                freshness_days.get(symbol, 0.0),
+                has_5d=change_5d is not None,
+                has_21d=change_1m is not None,
+            )
             items.append(
                 {
                     "rank": i,
@@ -108,8 +131,11 @@ def equity_report_dict(
                     "ticker": asset.yahoo_symbol if asset is not None else None,
                     "status": str(row["signal"]),
                     "strength": _round(_num(row["score"]), 4),
-                    "change_5d": _round(_num(row["ret_5d_pct"]), 2),
-                    "change_1m": _round(_num(row["ret_21d_pct"]), 2),
+                    "data_confidence": conf.score,
+                    "confidence_status": conf.status,
+                    "confidence_reason": conf.reason,
+                    "change_5d": _round(change_5d, 2),
+                    "change_1m": _round(change_1m, 2),
                     "spark": spark.get(symbol) or None,
                     "note": None,
                 }

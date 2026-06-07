@@ -193,6 +193,10 @@ main { padding: 26px 0 60px; }
 .strength .track { flex: 1; height: 6px; border-radius: 3px; background: rgba(154,163,189,0.16); overflow: hidden; }
 .strength .fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); box-shadow: 0 0 12px rgba(124,140,255,0.5); }
 .strength .pct { font-family: var(--mono); font-size: 11.5px; color: var(--text-soft); }
+.confidence .fill { background: linear-gradient(90deg, #34e0a1, #5eead4); box-shadow: none; }
+.confidence .fill.conf-suspicious { background: linear-gradient(90deg, #ffd166, #f0a93b); }
+.confidence .fill.conf-low, .confidence .fill.conf-stale { background: linear-gradient(90deg, #ff8aa0, #ff6b81); }
+.confidence { cursor: help; }
 
 /* Overview ranklists */
 .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
