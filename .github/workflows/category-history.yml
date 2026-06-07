@@ -39,11 +39,14 @@ jobs:
       - name: Build market series (dashboard hero chart)
         run: uv run python -m src.ingestion.tier1.build_market_series
 
+      - name: Build data health (cross-source price check)
+        run: uv run python -m src.ingestion.tier1.build_data_health
+
       - name: Commit updated history + report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          PATHS="data/category_history REPORT.md public/data/crypto_report.json public/data/market_series.json"
+          PATHS="data/category_history REPORT.md public/data/crypto_report.json public/data/market_series.json public/data/data_health.json"
           if git diff --quiet -- $PATHS; then
             echo "No category changes to commit."
             exit 0

@@ -6,7 +6,10 @@ const SOURCES = {
   education: "data/education.json",
   market: "data/market_series.json",
   events: "data/events.json",
+  health: "data/data_health.json",
 };
+
+const HEALTH_LABEL = { match: "OK", mismatch: "Divergenza", single_source: "Fonte unica" };
 
 const CLASS_LABEL = { "market-wide": "Di mercato", "asset-specific": "Specifico dell'asset", unknown: "Da definire" };
 const CLASS_CLASS = { "market-wide": "market", "asset-specific": "specific", unknown: "unknown" };
@@ -28,12 +31,14 @@ document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   setupTabs();
-  const [crypto, equity, education, market, events] = await Promise.all([
+  const [crypto, equity, education, market, events, health] = await Promise.all([
     fetchJSON(SOURCES.crypto), fetchJSON(SOURCES.equity),
     fetchJSON(SOURCES.education), fetchJSON(SOURCES.market), fetchJSON(SOURCES.events),
+    fetchJSON(SOURCES.health),
   ]);
   renderTicker(market);
   renderHero(market);
+  renderHealth(health);
   renderCrypto(crypto);
   renderEquity(equity);
   renderEvents(events);
@@ -338,6 +343,29 @@ function fillRanklist(id, data, kind) {
     const change = kind === "crypto" ? item.change_24h : item.change_5d;
     li.appendChild(el("span", `ri-change ${pctClass(change)}`, fmtPct(change)));
     ul.appendChild(li);
+  });
+}
+
+/* ---------- Data health (cross-source) ---------- */
+function renderHealth(data) {
+  const card = document.getElementById("health-card");
+  const grid = document.getElementById("health-grid");
+  if (!card || !grid) return;
+  if (!data || !Array.isArray(data.assets) || data.assets.length === 0) { card.hidden = true; return; }
+  card.hidden = false;
+  grid.innerHTML = "";
+  data.assets.forEach((a) => {
+    const st = (a.status || "single_source").toLowerCase();
+    const item = el("div", "health-item");
+    const dot = el("span", `health-dot h-${st}`);
+    item.appendChild(dot);
+    const txt = el("div");
+    txt.appendChild(el("div", "health-sym", a.symbol));
+    const div = typeof a.divergence_pct === "number" ? `Δ ${a.divergence_pct.toFixed(1)}%` : "—";
+    txt.appendChild(el("div", "health-meta", `${HEALTH_LABEL[st] || st} · ${div}`));
+    item.appendChild(txt);
+    item.title = a.reason || "";
+    grid.appendChild(item);
   });
 }
 
