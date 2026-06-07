@@ -350,15 +350,25 @@ function renderEvents(data) {
     root.appendChild(el("p", "empty", "Nessun movimento anomalo recente, o storico news ancora in accumulo."));
     return;
   }
-  data.assets.forEach((asset) => {
-    if (!asset.moves || asset.moves.length === 0) return;
-    const block = el("div", "event-asset");
-    const head = el("div", "event-asset-head");
-    head.appendChild(el("span", "sym", asset.symbol));
-    head.appendChild(el("h3", "", asset.name));
-    block.appendChild(head);
-    asset.moves.forEach((m) => block.appendChild(moveCard(m)));
-    root.appendChild(block);
+  const groups = [
+    ["crypto", "Crypto"],
+    ["equity", "Settori azionari"],
+  ];
+  groups.forEach(([key, label]) => {
+    const inGroup = data.assets.filter(
+      (a) => (a.universe || "crypto") === key && a.moves && a.moves.length > 0
+    );
+    if (inGroup.length === 0) return;
+    root.appendChild(el("h3", "events-group", label));
+    inGroup.forEach((asset) => {
+      const block = el("div", "event-asset");
+      const head = el("div", "event-asset-head");
+      head.appendChild(el("span", "sym", asset.symbol));
+      head.appendChild(el("h3", "", asset.name));
+      block.appendChild(head);
+      asset.moves.forEach((m) => block.appendChild(moveCard(m)));
+      root.appendChild(block);
+    });
   });
 }
 

@@ -67,6 +67,7 @@ def build_events_payload(
             {
                 "symbol": entry["symbol"],
                 "name": entry["name"],
+                "universe": entry.get("universe", "crypto"),
                 "moves": [_move_to_dict(m) for m in moves],
             }
         )
