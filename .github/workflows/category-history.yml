@@ -2,7 +2,9 @@ name: category-history
 
 # Fase 6: accumulate a daily snapshot of crypto category (narrative) market caps
 # and moves, so the rotation history grows over time and can feed the future
-# probabilistic layer. Commits data only; [skip ci] avoids re-triggering CI.
+# probabilistic layer. Commits data only. The bot pushes with GITHUB_TOKEN, which
+# does not re-trigger our CI (GitHub anti-recursion), and Cloudflare redeploys the
+# fresh data — so no CI-skip token is used (one would also stop the Cloudflare build).
 
 on:
   schedule:
@@ -52,5 +54,5 @@ jobs:
             exit 0
           fi
           git add $PATHS
-          git commit -m "data: update category history + report [skip ci]"
+          git commit -m "data: update category history + report"
           git push
