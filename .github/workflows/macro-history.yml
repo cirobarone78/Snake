@@ -47,5 +47,5 @@ jobs:
             exit 0
           fi
           git add data/macro_history REPORT_MACRO.md
-          git commit -m "data: update macro history + report [skip ci]"
+          git commit -m "data: update macro history + report [skip actions]"
           git push
