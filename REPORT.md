@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-08 11:57 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-09 10:34 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Four.meme Ecosystem (BNB Memes) | hot | 0.97 | +14.9% | $1.8B | siren-2, bianrensheng, hakimi |
-| 2 | Decentralized Identifier (DID) | hot | 0.94 | +10.6% | $2.5B | worldcoin-wld, ethereum-name-service, billions-network |
-| 3 | Modular Blockchain | hot | 0.94 | +10.9% | $516M | celestia, movement, skale |
-| 4 | Buidlpad Launchpad | hot | 0.94 | +19.7% | $465M | falcon-finance-ff, sahara-ai, lombard-protocol |
-| 5 | AI Framework | hot | 0.94 | +9.6% | $1.7B | virtual-protocol, unibase, eigenlayer |
-| 6 | Binance HODLer Airdrops | hot | 0.91 | +8.5% | $2.4B | pudgy-penguins, falcon-finance-ff, plasma |
-| 7 | Data Availability | hot | 0.91 | +14.0% | $3.6B | near, unibase, celestia |
-| 8 | Terminal of Truths | hot | 0.90 | +10.1% | $131M | fartcoin, goatseus-maximus, aiwithdaddyissues |
+| 1 | Decentralized Identifier (DID) | hot | 0.97 | +5.3% | $2.6B | worldcoin-wld, ethereum-name-service, billions-network |
+| 2 | Binance Wallet IDO | hot | 0.95 | +6.3% | $1.7B | midnight-3, velvet, sentient |
+| 3 | Inscriptions | hot | 0.93 | +8.9% | $140M | ordinals, dmt-nat, sats-ordinals |
+| 4 | Modular Blockchain | hot | 0.93 | +1.8% | $504M | celestia, movement, seda-2 |
+| 5 | AI Framework | hot | 0.92 | +1.9% | $1.7B | virtual-protocol, unibase, eigenlayer |
+| 6 | Sports | hot | 0.92 | +2.3% | $513M | chiliz, flow, croatian-ff-fan-token |
+| 7 | Pump.fun Ecosystem | hot | 0.91 | +5.2% | $1.4B | fartcoin, ai-rig-complex, would |
+| 8 | Restaking | hot | 0.91 | +2.2% | $820M | wrapped-eeth, kelp-dao-restaked-eth, lombard-staked-btc |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Account Abstraction | -12.3% | $398M | trust-wallet-token, home, iotex |
-| Chinese Meme | -4.9% | $891M | bianrensheng, meme-horse, jixiangma |
-| Dex Aggregator | -4.4% | $866M | jupiter-exchange-solana, home, 1inch |
-| Echo Launchpad | -4.3% | $4.2B | lab, plasma |
-| Bitcoin Fork | -3.9% | $4.5B | bitcoin-cash, bitcoin-cash-sv, ecash |
+| Buidlpad Launchpad | -18.2% | $377M | falcon-finance-ff, sahara-ai, lombard-protocol |
+| Echo Launchpad | -16.8% | $3.5B | lab, plasma |
+| Analytics | -13.3% | $4.7B | lab, pyth-network, the-graph |
+| Chinese Meme | -12.1% | $834M | bianrensheng, meme-horse, jixiangma |
+| Launchpad | -10.5% | $6.0B | lab, pump-fun, jupiter-exchange-solana |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
