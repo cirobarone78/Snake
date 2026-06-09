@@ -2,8 +2,9 @@ name: news-history
 
 # Fase 3 / ADR-025: accumulate a compact, versioned news history so lead/lag
 # studies have months of data despite feeds only exposing the last few weeks.
-# Commits data only; uses [skip actions] so the data commit does not re-trigger
-# our GitHub CI, while (unlike [skip ci]) still letting Cloudflare deploy it.
+# Commits data only. The bot pushes with GITHUB_TOKEN, which does not re-trigger
+# our CI (GitHub anti-recursion), and Cloudflare redeploys the fresh data — so no
+# CI-skip token is used (one would also stop the Cloudflare build).
 
 on:
   schedule:
@@ -52,5 +53,5 @@ jobs:
             exit 0
           fi
           git add $PATHS
-          git commit -m "data: update news history + events [skip actions]"
+          git commit -m "data: update news history + events"
           git push
