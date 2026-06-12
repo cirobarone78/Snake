@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-11 11:22 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-12 11:01 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Curve Ecosystem | hot | 0.95 | +18.3% | $569M | curve-dao-token, convex-finance, frax-share |
-| 2 | Bridge Governance Tokens | hot | 0.94 | +6.2% | $411M | thorchain, debridge, stargate-finance |
-| 3 | Base Meme | hot | 0.93 | +7.6% | $268M | degen-base, based-brett, toshi |
-| 4 | TON Meme | hot | 0.92 | +5.0% | $104M | notcoin, dogs-2, utya |
-| 5 | Account Abstraction | hot | 0.91 | +2.5% | $406M | trust-wallet-token, home, iotex |
-| 6 | Binance Wallet IDO | hot | 0.90 | +12.3% | $1.9B | midnight-3, velvet, sentient |
-| 7 | Inscriptions | hot | 0.89 | +2.4% | $136M | ordinals, dmt-nat, sats-ordinals |
-| 8 | NFT Marketplace | hot | 0.89 | +7.8% | $156M | blur, magic-eden, collect-on-fanable |
+| 1 | PolitiFi | hot | 0.98 | +22.7% | $621M | official-trump, melania-meme, constitutiondao |
+| 2 | Bridge Governance Tokens | hot | 0.92 | +8.3% | $423M | thorchain, debridge, stargate-finance |
+| 3 | Communication | hot | 0.92 | +8.2% | $114M | helium, spacecoin-2, xpin-network |
+| 4 | Curve Ecosystem | hot | 0.92 | +13.2% | $561M | curve-dao-token, convex-finance, frax-share |
+| 5 | Decentralized Identifier (DID) | hot | 0.90 | +7.7% | $2.5B | worldcoin-wld, ethereum-name-service, billions-network |
+| 6 | Virtuals Protocol Ecosystem | hot | 0.89 | +12.7% | $648M | virtual-protocol, ribbita-by-virtuals, robo-token-2 |
+| 7 | Binance Wallet IDO | hot | 0.88 | +23.2% | $2.3B | velvet, midnight-3, sentient |
+| 8 | Solana Meme | hot | 0.88 | +8.8% | $3.0B | official-trump, pudgy-penguins, bonk |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Echo Launchpad | -15.7% | $2.6B | lab, plasma |
-| Four.meme Ecosystem (BNB Memes) | -12.5% | $1.3B | bianrensheng, siren-2, test-3 |
-| Seigniorage | -10.6% | $300M | frax, terrausd, frax-share |
-| Analytics | -10.5% | $3.8B | lab, pyth-network, the-graph |
-| Launchpad | -8.8% | $5.1B | lab, jupiter-exchange-solana, pump-fun |
+| VPN | -16.5% | $526M | beldex, nym, sentinel |
+| Four.meme Ecosystem (BNB Memes) | -16.3% | $1.2B | bianrensheng, siren-2, test-3 |
+| Name Service | -10.8% | $734M | beldex, ethereum-name-service, bonfida |
+| Masternodes | -6.7% | $1.1B | beldex, dash, ontology |
+| Chinese Meme | -4.8% | $795M | bianrensheng, meme-horse, jixiangma |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
