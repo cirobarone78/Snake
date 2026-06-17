@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-16 12:12 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-17 11:47 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Decentralized Identifier (DID) | hot | 0.98 | +15.9% | $3.1B | worldcoin-wld, ethereum-name-service, billions-network |
-| 2 | Liquid Staking Governance Tokens | hot | 0.98 | +21.0% | $955M | jito-governance-token, lido-dao, kinetiq |
-| 3 | Prediction Market Tools | hot | 0.97 | +13.4% | $108M | unifai-network, based-one, heyanon |
-| 4 | Liquid Staking | hot | 0.95 | +8.9% | $1.8B | staked-ether, wrapped-steth, wrapped-beacon-eth |
-| 5 | Terminal of Truths | hot | 0.91 | +6.4% | $150M | fartcoin, goatseus-maximus, aiwithdaddyissues |
-| 6 | BTCfi Protocol | hot | 0.90 | +4.0% | $507M | pendle, babylon, lombard-protocol |
-| 7 | Tokenized Stock | hot | 0.90 | +3.9% | $1.2B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, micron-technology-ondo-tokenized-stock |
-| 8 | Index Coop Defi Index | hot | 0.88 | +11.8% | $3.6B | weth, uniswap, aave |
+| 1 | Index Coop Defi Index | hot | 0.96 | +9.4% | $3.8B | weth, uniswap, aave |
+| 2 | Murad Picks | hot | 0.96 | +17.9% | $545M | spx6900, mog-coin, popcat |
+| 3 | Decentralized Identifier (DID) | hot | 0.96 | +6.8% | $3.1B | worldcoin-wld, ethereum-name-service, billions-network |
+| 4 | Stock market-themed | hot | 0.96 | +25.0% | $418M | spx6900, stonks-4, game-stop |
+| 5 | Bridged-Tokens | hot | 0.94 | +22.0% | $451M | binance-bridged-usdt-bnb-smart-chain, usdt0, binance-bridged-usdc-bnb-smart-chain |
+| 6 | Automated Market Maker (AMM) | hot | 0.94 | +8.4% | $5.0B | uniswap, pump-fun, aerodrome-finance |
+| 7 | Yield Farming | hot | 0.92 | +5.4% | $5.8B | uniswap, aave, pancakeswap-token |
+| 8 | Bridge Governance Tokens | hot | 0.92 | +5.4% | $400M | thorchain, debridge, axelar |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Arcade Games | -40.8% | $951M | audiera, hamster-kombat, pepecoin-2 |
-| Telegram Apps | -32.2% | $1.4B | audiera, floki, catizen |
-| Gaming (GameFi) | -12.4% | $4.6B | audiera, the9bit, floki |
-| NFT | -9.6% | $6.0B | render-token, audiera, fetch-ai |
-| Venice Ecosystem | -8.0% | $822M | venice-token, diem, morpheusai |
+| Arcade Games | -53.6% | $545M | audiera, hamster-kombat, pepecoin-2 |
+| Telegram Apps | -39.8% | $956M | audiera, floki, catizen |
+| Gaming (GameFi) | -13.8% | $4.2B | audiera, the9bit, floki |
+| NFT | -12.3% | $5.4B | render-token, audiera, fetch-ai |
+| Trading Card RWA Platform | -8.8% | $100M | collector-crypt, collect-on-fanable, ready |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
