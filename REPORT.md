@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-19 11:22 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-20 10:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Olympus Pro Ecosystem | hot | 0.98 | +10.7% | $104M | synapse-2, spell-token, alchemix |
-| 2 | Four.meme Ecosystem (BNB Memes) | hot | 0.97 | +9.2% | $914M | bianrensheng, siren-2, hakimi |
-| 3 | Tokenized Stock | hot | 0.97 | +1.7% | $1.2B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, micron-technology-ondo-tokenized-stock |
-| 4 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.95 | +4.2% | $457M | ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf, invesco-qqq-etf-ondo-tokenized-etf |
-| 5 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.95 | +4.2% | $457M | ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf, invesco-qqq-etf-ondo-tokenized-etf |
-| 6 | Binance Wallet IDO | hot | 0.94 | +1.1% | $1.7B | midnight-3, velvet, sentient |
-| 7 | Intent | hot | 0.91 | -0.1% | $267M | cow-protocol, debridge, synapse-2 |
-| 8 | Fan Token | hot | 0.90 | -0.1% | $152M | croatian-ff-fan-token, atletico-madrid, og-fan-token |
+| 1 | Breeding | hot | 0.99 | +18.4% | $199M | axie-infinity, cryptozoon, frenpet |
+| 2 | Axie Infinity Ecosystem | hot | 0.99 | +17.5% | $216M | axie-infinity, smooth-love-potion |
+| 3 | Card Games | hot | 0.98 | +15.6% | $242M | axie-infinity, echelon-prime, gods-unchained |
+| 4 | Gaming Governance Token | hot | 0.96 | +9.3% | $505M | axie-infinity, apecoin, illuvium |
+| 5 | Inscriptions | hot | 0.95 | +7.3% | $137M | ordinals, dmt-nat, sats-ordinals |
+| 6 | Gaming Utility Token | hot | 0.95 | +8.1% | $721M | axie-infinity, the-sandbox, apecoin |
+| 7 | Simulation Games | hot | 0.95 | +9.5% | $314M | the-sandbox, decentraland, my-neighbor-alice |
+| 8 | Four.meme Ecosystem (BNB Memes) | hot | 0.92 | +2.8% | $917M | bianrensheng, siren-2, hakimi |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Stock market-themed | -15.9% | $346M | spx6900, stonks-4, game-stop |
-| Bridged-Tokens | -15.2% | $377M | binance-bridged-usdt-bnb-smart-chain, usdt0, binance-bridged-usdc-bnb-smart-chain |
-| Murad Picks | -13.5% | $465M | spx6900, mog-coin, popcat |
-| Ether.fi Ecosystem | -11.9% | $313M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
-| Liquid Restaking Governance Tokens | -10.1% | $578M | ether-fi, pendle, kernel-2 |
+| Echo Launchpad | -29.3% | $4.1B | lab, plasma |
+| Analytics | -24.1% | $5.3B | lab, pyth-network, the-graph |
+| Launchpad | -19.6% | $6.8B | lab, jupiter-exchange-solana, pump-fun |
+| EUR Stablecoin | -16.1% | $739M | euro-coin, societe-generale-forge-eurcv, eurite |
+| Quest-to-Earn | -10.6% | $216M | billions-network, prize-protocol, project-galaxy |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
