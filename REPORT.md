@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-21 10:28 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-22 12:49 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Axie Infinity Ecosystem | hot | 0.99 | +19.5% | $218M | axie-infinity, smooth-love-potion |
-| 2 | Simulation Games | hot | 0.98 | +14.9% | $328M | the-sandbox, decentraland, my-neighbor-alice |
-| 3 | Breeding | hot | 0.98 | +20.6% | $202M | axie-infinity, cryptozoon, frenpet |
-| 4 | Gaming Governance Token | hot | 0.96 | +11.6% | $514M | axie-infinity, apecoin, illuvium |
-| 5 | Card Games | hot | 0.96 | +16.9% | $245M | axie-infinity, echelon-prime, gods-unchained |
-| 6 | Gaming Utility Token | hot | 0.95 | +10.7% | $731M | axie-infinity, the-sandbox, apecoin |
-| 7 | NFT Marketplace | hot | 0.94 | +5.7% | $158M | blur, magic-eden, collect-on-fanable |
-| 8 | Tokenized Assets | hot | 0.91 | +3.8% | $21.2B | hashnote-usyc, tether-gold, blackrock-usd-institutional-digital-liquidity-fund |
+| 1 | Olympus Pro Ecosystem | hot | 0.99 | +30.9% | $132M | synapse-2, spell-token, alchemix |
+| 2 | Intent | hot | 0.97 | +14.3% | $311M | cow-protocol, debridge, synapse-2 |
+| 3 | Prediction Market Tools | hot | 0.96 | +14.4% | $108M | unifai-network, based-one, heyanon |
+| 4 | Cybersecurity | hot | 0.96 | +69.1% | $182M | arcium, goplus-security, certik |
+| 5 | Bridge Governance Tokens | hot | 0.95 | +9.6% | $440M | thorchain, debridge, synapse-2 |
+| 6 | Appchains | hot | 0.95 | +8.0% | $202M | dydx-chain, cartesi, geode-chain |
+| 7 | Restaking | hot | 0.91 | +6.1% | $1.0B | wrapped-eeth, kelp-dao-restaked-eth, lombard-staked-btc |
+| 8 | PolitiFi | hot | 0.91 | +4.6% | $578M | official-trump, melania-meme, constitutiondao |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Gaming Marketplace | -71.5% | $138M | immutable-x, overtake, open-loot |
-| EUR Stablecoin | -16.0% | $747M | euro-coin, societe-generale-forge-eurcv, eurite |
-| Tokenized Silver | -11.4% | $221M | kinesis-silver, matrixdock-silver, silver-rstock |
-| Arcade Games | -6.5% | $522M | audiera, hamster-kombat, pepecoin-2 |
-| Gaming (GameFi) | -6.2% | $3.8B | audiera, floki, axie-infinity |
+| Gaming Marketplace | -72.1% | $136M | immutable-x, overtake, open-loot |
+| Insurance | -11.9% | $235M | re, nxm, wrapped-nxm |
+| Fan Token | -9.9% | $139M | atletico-madrid, og-fan-token, santos-fc-fan-token |
+| Gaming (GameFi) | -9.5% | $3.8B | audiera, floki, axie-infinity |
+| Breeding | -8.8% | $186M | axie-infinity, cryptozoon, frenpet |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
