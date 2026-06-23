@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-22 12:49 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-23 10:36 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Olympus Pro Ecosystem | hot | 0.99 | +30.9% | $132M | synapse-2, spell-token, alchemix |
-| 2 | Intent | hot | 0.97 | +14.3% | $311M | cow-protocol, debridge, synapse-2 |
-| 3 | Prediction Market Tools | hot | 0.96 | +14.4% | $108M | unifai-network, based-one, heyanon |
-| 4 | Cybersecurity | hot | 0.96 | +69.1% | $182M | arcium, goplus-security, certik |
-| 5 | Bridge Governance Tokens | hot | 0.95 | +9.6% | $440M | thorchain, debridge, synapse-2 |
-| 6 | Appchains | hot | 0.95 | +8.0% | $202M | dydx-chain, cartesi, geode-chain |
-| 7 | Restaking | hot | 0.91 | +6.1% | $1.0B | wrapped-eeth, kelp-dao-restaked-eth, lombard-staked-btc |
-| 8 | PolitiFi | hot | 0.91 | +4.6% | $578M | official-trump, melania-meme, constitutiondao |
+| 1 | Cybersecurity | hot | 1.00 | +72.1% | $186M | arcium, goplus-security, certik |
+| 2 | Olympus Pro Ecosystem | hot | 0.99 | +17.2% | $128M | synapse-2, spell-token, thorswap |
+| 3 | Intent | hot | 0.97 | +8.6% | $305M | cow-protocol, debridge, synapse-2 |
+| 4 | Bridge Governance Tokens | hot | 0.95 | +5.2% | $430M | thorchain, debridge, synapse-2 |
+| 5 | Four.meme Ecosystem (BNB Memes) | hot | 0.93 | +0.9% | $903M | bianrensheng, siren-2, lobster-2 |
+| 6 | Appchains | hot | 0.92 | +6.7% | $200M | dydx-chain, geode-chain, cartesi |
+| 7 | Tokenized Assets | hot | 0.88 | -0.8% | $20.9B | hashnote-usyc, tether-gold, blackrock-usd-institutional-digital-liquidity-fund |
+| 8 | USD Stablecoin | hot | 0.85 | -0.0% | $303.1B | tether, usd-coin, usds |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Gaming Marketplace | -72.1% | $136M | immutable-x, overtake, open-loot |
-| Insurance | -11.9% | $235M | re, nxm, wrapped-nxm |
-| Fan Token | -9.9% | $139M | atletico-madrid, og-fan-token, santos-fc-fan-token |
-| Gaming (GameFi) | -9.5% | $3.8B | audiera, floki, axie-infinity |
-| Breeding | -8.8% | $186M | axie-infinity, cryptozoon, frenpet |
+| InfoFi | -9.6% | $251M | origintrail, kaito, cookie |
+| Decentralized Science (DeSci) | -8.5% | $301M | origintrail, bio-protocol, the-innovation-game |
+| Trading Card RWA Platform | -8.4% | $102M | collector-crypt, collect-on-fanable, ready |
+| Account Abstraction | -7.6% | $346M | trust-wallet-token, home, iotex |
+| Prediction Market Tools | -7.4% | $102M | unifai-network, based-one, heyanon |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
