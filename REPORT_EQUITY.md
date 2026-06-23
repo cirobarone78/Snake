@@ -1,29 +1,29 @@
 # 🏛️ Screener settori / temi equity
 
-_Foto del momento (snapshot: **2026-06-22 13:11 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-23 10:46 UTC**) — **non è una previsione.**_
 
 ## 🔥 Settori in forza ora
 
 | # | Settore / tema | Segnale | Forza | 5g | ~1 mese |
 |--:|---|:-:|--:|--:|--:|
-| 1 | Semiconductors (SMH) | hot | 1.00 | +8.3% | +21.3% |
-| 2 | Biotech (XBI) | hot | 0.89 | +6.0% | +11.0% |
-| 3 | Technology (XLK) | warm | 0.84 | +4.5% | +10.5% |
-| 4 | Industrials (XLI) | warm | 0.76 | +3.3% | +7.2% |
-| 5 | Uranium/Nuclear (URA) | warm | 0.71 | +6.6% | +1.2% |
-| 6 | Aerospace & Defense (ITA) | warm | 0.66 | +1.3% | +9.5% |
-| 7 | Financials (XLF) | neutral | 0.61 | +1.8% | +4.8% |
-| 8 | Materials (XLB) | neutral | 0.58 | +1.2% | +5.6% |
-| 9 | Gold Miners (GDX) | neutral | 0.55 | +6.2% | -1.5% |
-| 10 | Cybersecurity (CIBR) | neutral | 0.50 | -1.1% | +5.1% |
+| 1 | Biotech (XBI) | hot | 0.97 | +9.1% | +10.9% |
+| 2 | Semiconductors (SMH) | hot | 0.97 | +7.9% | +18.5% |
+| 3 | Technology (XLK) | hot | 0.89 | +4.1% | +8.6% |
+| 4 | Industrials (XLI) | warm | 0.82 | +3.4% | +6.7% |
+| 5 | Clean Energy (ICLN) | warm | 0.66 | +3.7% | +0.8% |
+| 6 | Aerospace & Defense (ITA) | neutral | 0.63 | +0.8% | +5.6% |
+| 7 | Financials (XLF) | neutral | 0.63 | +1.0% | +4.3% |
+| 8 | Robotics & AI (BOTZ) | neutral | 0.55 | +3.3% | -2.3% |
+| 9 | Materials (XLB) | neutral | 0.55 | -0.7% | +4.2% |
+| 10 | Utilities (XLU) | neutral | 0.55 | +1.1% | +1.1% |
 
 ## 📉 In calo / rischio ora
 
 | Settore / tema | 5g | ~1 mese |
 |---|--:|--:|
-| Communication Svcs (XLC) | -2.4% | -5.5% |
-| Energy (XLE) | -5.9% | -12.3% |
-| Oil & Gas E&P (XOP) | -6.2% | -14.1% |
+| Communication Svcs (XLC) | -4.0% | -7.7% |
+| Energy (XLE) | -5.4% | -8.9% |
+| Oil & Gas E&P (XOP) | -5.9% | -10.9% |
 
 ---
 > **Forza** = momentum 5g + ~1 mese (rank-based, robusto agli outlier). Settori via ETF liquidi (no selezione di singoli titoli). Rotazione **attuale**, non una previsione.
