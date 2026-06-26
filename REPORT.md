@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-25 10:15 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-26 10:22 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Olympus Pro Ecosystem | hot | 0.99 | +17.1% | $150M | synapse-2, spell-token, alchemix |
-| 2 | Fan Token | hot | 0.98 | +10.1% | $145M | atletico-madrid, og-fan-token, paris-saint-germain-fan-token |
-| 3 | Intent | hot | 0.95 | +5.8% | $326M | cow-protocol, synapse-2, debridge |
-| 4 | Bridge Governance Tokens | hot | 0.93 | +4.2% | $451M | thorchain, synapse-2, debridge |
-| 5 | Sports | hot | 0.90 | +1.4% | $421M | chiliz, flow, atletico-madrid |
-| 6 | Tokenized Stock | hot | 0.90 | +0.6% | $1.2B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, micron-technology-ondo-tokenized-stock |
-| 7 | Echo Launchpad | hot | 0.89 | +17.5% | $5.6B | lab, plasma |
-| 8 | Index Coop Defi Index | hot | 0.89 | +4.4% | $3.6B | weth, uniswap, aave |
+| 1 | bStocks Ecosystem | hot | 0.96 | +18.9% | $118M | spacex-bstocks-tokenized-stock, micron-technology-bstock, sandisk-bstocks-tokenized-stock |
+| 2 | Fan Token | hot | 0.95 | +4.9% | $140M | atletico-madrid, og-fan-token, santos-fc-fan-token |
+| 3 | Olympus Pro Ecosystem | hot | 0.92 | +2.4% | $143M | synapse-2, spell-token, thorswap |
+| 4 | Four.meme Ecosystem (BNB Memes) | hot | 0.92 | +2.8% | $902M | bianrensheng, siren-2, czs-dog |
+| 5 | IP | hot | 0.91 | +2.2% | $129M | story-2, beatswap, camp-network |
+| 6 | Synthetic | hot | 0.88 | +4.3% | $285M | stp-network, havven, metronome-synth-eth |
+| 7 | Impossible Finance Launchpad | hot | 0.87 | +1.6% | $122M | aethir, carv, fuel-network |
+| 8 | Gaming Governance Token | hot | 0.86 | +2.3% | $473M | axie-infinity, apecoin, illuvium |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Arcade Games | -21.6% | $557M | audiera, hamster-kombat, pepecoin-2 |
-| Telegram Apps | -14.9% | $921M | audiera, floki, catizen |
-| Insurance | -13.9% | $201M | re, nxm, re-protocol-reusde |
-| Meme | -11.7% | $25.3B | dogecoin, shiba-inu, pepe |
-| Cybersecurity | -10.9% | $157M | arcium, goplus-security, certik |
+| Superstate Ecosystem | -12.7% | $784M | superstate-short-duration-us-government-securities-fund-ustb, superstate-uscc, galaxy-digital-inc-class-a-common-stock |
+| NFTFi | -11.3% | $104M | blur, synfutures, punkstrategy |
+| Meme | -10.9% | $24.6B | dogecoin, shiba-inu, memecore |
+| Insurance | -10.4% | $191M | re, nxm, re-protocol-reusde |
+| Neobank | -8.6% | $2.3B | mantle, ether-fi, plasma |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
