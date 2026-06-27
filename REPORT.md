@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-26 10:22 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-27 09:28 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | bStocks Ecosystem | hot | 0.96 | +18.9% | $118M | spacex-bstocks-tokenized-stock, micron-technology-bstock, sandisk-bstocks-tokenized-stock |
-| 2 | Fan Token | hot | 0.95 | +4.9% | $140M | atletico-madrid, og-fan-token, santos-fc-fan-token |
-| 3 | Olympus Pro Ecosystem | hot | 0.92 | +2.4% | $143M | synapse-2, spell-token, thorswap |
-| 4 | Four.meme Ecosystem (BNB Memes) | hot | 0.92 | +2.8% | $902M | bianrensheng, siren-2, czs-dog |
-| 5 | IP | hot | 0.91 | +2.2% | $129M | story-2, beatswap, camp-network |
-| 6 | Synthetic | hot | 0.88 | +4.3% | $285M | stp-network, havven, metronome-synth-eth |
-| 7 | Impossible Finance Launchpad | hot | 0.87 | +1.6% | $122M | aethir, carv, fuel-network |
-| 8 | Gaming Governance Token | hot | 0.86 | +2.3% | $473M | axie-infinity, apecoin, illuvium |
+| 1 | Zoo-Themed | hot | 0.93 | +5.2% | $100M | peanut-the-squirrel, moo-deng, bnbtiger |
+| 2 | Terminal of Truths | hot | 0.92 | +7.1% | $142M | fartcoin, goatseus-maximus, aiwithdaddyissues |
+| 3 | Lending/Borrowing Protocols | hot | 0.92 | +9.6% | $3.7B | aave, morpho, olympus |
+| 4 | Liquid Staking Governance Tokens | hot | 0.92 | +8.0% | $873M | jito-governance-token, lido-dao, kinetiq |
+| 5 | Binance Wallet IDO | hot | 0.91 | +11.3% | $1.8B | midnight-3, velvet, bas |
+| 6 | Cybersecurity | hot | 0.91 | +3.7% | $164M | arcium, goplus-security, certik |
+| 7 | Impossible Finance Launchpad | hot | 0.90 | +5.0% | $125M | aethir, carv, fuel-network |
+| 8 | Index Coop Defi Index | hot | 0.90 | +6.4% | $3.8B | weth, uniswap, aave |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Superstate Ecosystem | -12.7% | $784M | superstate-short-duration-us-government-securities-fund-ustb, superstate-uscc, galaxy-digital-inc-class-a-common-stock |
-| NFTFi | -11.3% | $104M | blur, synfutures, punkstrategy |
-| Meme | -10.9% | $24.6B | dogecoin, shiba-inu, memecore |
-| Insurance | -10.4% | $191M | re, nxm, re-protocol-reusde |
-| Neobank | -8.6% | $2.3B | mantle, ether-fi, plasma |
+| IP | -17.8% | $121M | story-2, beatswap, camp-network |
+| VPN | -6.8% | $658M | beldex, nym, sentinel |
+| Ether.fi Ecosystem | -5.7% | $331M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
+| Parallelized EVM | -5.4% | $642M | sei-network, monad, pharos-network |
+| Decentralized Identifier (DID) | -5.1% | $2.3B | worldcoin-wld, ethereum-name-service, billions-network |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
