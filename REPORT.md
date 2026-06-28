@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-06-27 09:28 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-06-28 09:56 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Zoo-Themed | hot | 0.93 | +5.2% | $100M | peanut-the-squirrel, moo-deng, bnbtiger |
-| 2 | Terminal of Truths | hot | 0.92 | +7.1% | $142M | fartcoin, goatseus-maximus, aiwithdaddyissues |
-| 3 | Lending/Borrowing Protocols | hot | 0.92 | +9.6% | $3.7B | aave, morpho, olympus |
-| 4 | Liquid Staking Governance Tokens | hot | 0.92 | +8.0% | $873M | jito-governance-token, lido-dao, kinetiq |
-| 5 | Binance Wallet IDO | hot | 0.91 | +11.3% | $1.8B | midnight-3, velvet, bas |
-| 6 | Cybersecurity | hot | 0.91 | +3.7% | $164M | arcium, goplus-security, certik |
-| 7 | Impossible Finance Launchpad | hot | 0.90 | +5.0% | $125M | aethir, carv, fuel-network |
-| 8 | Index Coop Defi Index | hot | 0.90 | +6.4% | $3.8B | weth, uniswap, aave |
+| 1 | Insurance | hot | 0.97 | +6.4% | $201M | re, nxm, re-protocol-reusde |
+| 2 | Olympus Pro Ecosystem | hot | 0.97 | +5.3% | $144M | synapse-2, spell-token, thorswap |
+| 3 | Music | hot | 0.96 | +17.3% | $103M | ravedao, audius, limewire-token |
+| 4 | TimeFi | hot | 0.95 | +14.5% | $207M | pieverse |
+| 5 | Binance Wallet IDO | hot | 0.94 | +22.5% | $2.1B | velvet, midnight-3, bas |
+| 6 | Intent | hot | 0.94 | +3.9% | $323M | cow-protocol, debridge, synapse-2 |
+| 7 | Fan Token | hot | 0.94 | +3.0% | $145M | atletico-madrid, og-fan-token, paris-saint-germain-fan-token |
+| 8 | Pump.fun Ecosystem | hot | 0.92 | +4.6% | $1.5B | fartcoin, ai-rig-complex, would |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| IP | -17.8% | $121M | story-2, beatswap, camp-network |
-| VPN | -6.8% | $658M | beldex, nym, sentinel |
-| Ether.fi Ecosystem | -5.7% | $331M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
-| Parallelized EVM | -5.4% | $642M | sei-network, monad, pharos-network |
-| Decentralized Identifier (DID) | -5.1% | $2.3B | worldcoin-wld, ethereum-name-service, billions-network |
+| Chinese Meme | -20.2% | $701M | bianrensheng, meme-horse, osk |
+| Four.meme Ecosystem (BNB Memes) | -19.5% | $733M | bianrensheng, siren-2, czs-dog |
+| Echo Launchpad | -10.2% | $5.8B | lab, plasma |
+| Analytics | -8.6% | $6.9B | lab, pyth-network, the-graph |
+| Launchpad | -7.0% | $8.6B | lab, jupiter-exchange-solana, pump-fun |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
