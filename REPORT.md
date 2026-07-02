@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-07-01 10:41 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-07-02 10:10 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | bStocks Ecosystem | hot | 0.99 | +8.4% | $157M | spacex-bstocks-tokenized-stock, micron-technology-bstock, circle-internet-group-bstock |
-| 2 | Prediction Market Tools | hot | 0.98 | +9.2% | $105M | unifai-network, based-one, heyanon |
-| 3 | Appchains | hot | 0.97 | +12.9% | $245M | dydx-chain, geode-chain, cartesi |
-| 4 | Tokenized Stock | hot | 0.96 | +0.4% | $1.3B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, spacex-bstocks-tokenized-stock |
-| 5 | BONK.fun Ecosystem | hot | 0.93 | +1.6% | $100M | useless-3, freya-by-virtuals, kori |
-| 6 | Tokenized Assets | hot | 0.92 | -0.2% | $20.7B | hashnote-usyc, tether-gold, blackrock-usd-institutional-digital-liquidity-fund |
-| 7 | Intent | hot | 0.90 | -0.2% | $353M | synapse-2, cow-protocol, debridge |
-| 8 | Terminal of Truths | hot | 0.88 | +1.8% | $156M | fartcoin, goatseus-maximus, aiwithdaddyissues |
+| 1 | Tokenized Stock | hot | 0.95 | +7.8% | $1.4B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, spacex-bstocks-tokenized-stock |
+| 2 | NFT Marketplace | hot | 0.94 | +8.5% | $145M | blur, magic-eden, collect-on-fanable |
+| 3 | bStocks Ecosystem | hot | 0.93 | +7.0% | $167M | spacex-bstocks-tokenized-stock, micron-technology-bstock, circle-internet-group-bstock |
+| 4 | BTCfi Protocol | hot | 0.92 | +9.6% | $491M | pendle, babylon, lombard-protocol |
+| 5 | BackedFi xStocks Ecosystem | hot | 0.92 | +19.0% | $592M | strategy-pp-variable-xstock, bending-spoons-xstock, tesla-xstock |
+| 6 | Meme | hot | 0.91 | +6.2% | $26.0B | dogecoin, shiba-inu, memecore |
+| 7 | Card Games | hot | 0.90 | +6.0% | $221M | axie-infinity, echelon-prime, gods-unchained |
+| 8 | LSDFi | hot | 0.90 | +13.3% | $348M | pendle, babylon, solayer |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Echo Launchpad | -38.8% | $3.0B | lab, plasma |
-| Analytics | -31.2% | $4.2B | lab, pyth-network, the-graph |
-| Launchpad | -24.5% | $5.8B | lab, jupiter-exchange-solana, pump-fun |
-| Music | -20.9% | $104M | ravedao, audius, beatswap |
-| Insurance | -11.9% | $199M | re, nxm, re-protocol-reusde |
+| DeFAI | -34.1% | $938M | velvet, cortex-2, derive |
+| Echo Launchpad | -31.7% | $3.1B | lab, plasma |
+| Analytics | -25.0% | $4.2B | lab, pyth-network, the-graph |
+| Binance Wallet IDO | -23.5% | $1.6B | midnight-3, velvet, sentient |
+| AI Applications | -18.4% | $1.9B | venice-token, velvet, pieverse |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
