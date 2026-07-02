@@ -374,7 +374,9 @@ function renderEvents(data) {
   setUpdated("events-updated", data);
   const root = document.getElementById("events-list");
   root.innerHTML = "";
+  if (data && data.market_pulse) root.appendChild(pulseBar(data.market_pulse));
   if (!data || !Array.isArray(data.assets) || data.assets.every((a) => !a.moves || a.moves.length === 0)) {
+    // With the pulse above, an empty list reads as "calm market", not "broken".
     root.appendChild(el("p", "empty", "Nessun movimento anomalo recente, o storico news ancora in accumulo."));
     return;
   }
@@ -400,13 +402,33 @@ function renderEvents(data) {
   });
 }
 
+function pulseBar(pulse) {
+  const bar = el("div", "pulse-bar");
+  const entries = [["crypto", pulse.crypto], ["equity", pulse.equity]].filter(([, p]) => p);
+  entries.forEach(([, p]) => {
+    const item = el("div", "pulse-item");
+    item.appendChild(el("span", "pulse-bench", p.benchmark || ""));
+    if (typeof p.return_pct === "number")
+      item.appendChild(el("span", `move-chg ${pctClass(p.return_pct)}`, `oggi ${fmtPct(p.return_pct)}`));
+    if (typeof p.max_abs_z_recent === "number")
+      item.appendChild(el("span", "pulse-meta", `max |z| ${p.recent_days || 10}gg: ${p.max_abs_z_recent}`));
+    if (typeof p.days_since_last_major === "number")
+      item.appendChild(el("span", "pulse-meta",
+        p.days_since_last_major === 0 ? "evento major oggi" : `ultimo evento major: ${p.days_since_last_major}gg fa`));
+    bar.appendChild(item);
+  });
+  return bar;
+}
+
 function moveCard(m) {
-  const card = el("div", "move-card");
+  const notable = m.severity === "notable";
+  const card = el("div", notable ? "move-card move-notable" : "move-card");
   const head = el("div", "move-head");
   head.appendChild(el("span", "move-date", fmtDay(m.date)));
   head.appendChild(el("span", `move-chg ${pctClass(m.return_pct)}`, fmtPct(m.return_pct)));
   const cls = m.classification || "unknown";
   head.appendChild(el("span", `class-badge ${CLASS_CLASS[cls] || "unknown"}`, CLASS_LABEL[cls] || cls));
+  if (notable) head.appendChild(el("span", "class-badge notable", "Degno di nota"));
   if (typeof m.market_return_pct === "number") head.appendChild(el("span", "move-mkt", `mercato ${fmtPct(m.market_return_pct)}`));
   card.appendChild(head);
 
