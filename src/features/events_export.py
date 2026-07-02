@@ -44,6 +44,7 @@ def _move_to_dict(move: AbnormalMove) -> dict[str, Any]:
         "return_pct": round(move.return_pct, 2),
         "zscore": round(move.zscore, 2),
         "classification": move.classification,
+        "severity": move.severity,
         "market_return_pct": (
             round(move.market_return_pct, 2) if move.market_return_pct is not None else None
         ),
@@ -51,14 +52,39 @@ def _move_to_dict(move: AbnormalMove) -> dict[str, Any]:
     }
 
 
+def days_since_last_major(
+    asset_moves: list[dict[str, Any]], as_of: pd.Timestamp
+) -> int | None:
+    """Days between ``as_of`` and the most recent *major* move across all assets.
+
+    ``None`` when no major move exists in the retained window. Feeds the
+    "quiet market" line: an explicit "no abnormal move for N days" beats a
+    silently unchanging dashboard.
+    """
+    latest: pd.Timestamp | None = None
+    for entry in asset_moves:
+        for m in entry.get("moves", []):
+            if getattr(m, "severity", "major") != "major":
+                continue
+            if latest is None or m.date > latest:
+                latest = m.date
+    if latest is None:
+        return None
+    return max((as_of.normalize() - latest.normalize()).days, 0)
+
+
 def build_events_payload(
     asset_moves: list[dict[str, Any]],
     generated_at: pd.Timestamp | str | None = None,
+    market_pulse: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Assemble the events payload.
 
     ``asset_moves`` is a list of ``{symbol, name, moves}`` where ``moves`` is a
-    list of ``AbnormalMove`` (newest first). Returns the dashboard JSON dict.
+    list of ``AbnormalMove`` (newest first). ``market_pulse`` (optional) is the
+    per-benchmark "today" picture plus quiet-market counters, shown so an empty
+    event list reads as "calm market", not "broken pipeline". Returns the
+    dashboard JSON dict.
     """
     assets: list[dict[str, Any]] = []
     for entry in asset_moves:
@@ -74,9 +100,12 @@ def build_events_payload(
     stamp = pd.Timestamp(generated_at) if generated_at is not None else pd.Timestamp.now(tz="UTC")
     if stamp.tzinfo is None:
         stamp = stamp.tz_localize("UTC")
-    return {
+    payload: dict[str, Any] = {
         "generated_at": stamp.isoformat(),
         "title": "Eventi e movimenti",
         "disclaimer": DISCLAIMER,
         "assets": assets,
     }
+    if market_pulse is not None:
+        payload["market_pulse"] = market_pulse
+    return payload

@@ -62,6 +62,23 @@ SECTOR_NEWS_QUERIES: Final[dict[str, str]] = {
     "GOLD_MINERS": "gold mining stocks",
 }
 
+# World / macro / geopolitics aggregations (VISION: "politica, affari esteri").
+# Every prior source is coin- or sector-specific, so a market-wide day could
+# only ever be "explained" by sector headlines — the world-events channel these
+# queries add is what lets move attribution surface Fed / geopolitics / global
+# catalysts on market-wide moves. Keyed by source suffix (googlenews_<key>).
+WORLD_NEWS_QUERIES: Final[dict[str, str]] = {
+    "world": "geopolitics global markets impact",
+    "fed": "Federal Reserve interest rates decision",
+    "macro": "US economy inflation recession outlook",
+}
+
+# Source names of the world/macro pool, for attribution weighting on
+# market-wide moves (move_attribution.associate_events market_sources).
+WORLD_SOURCE_NAMES: Final[frozenset[str]] = frozenset(
+    f"googlenews_{key}" for key in WORLD_NEWS_QUERIES
+)
+
 # Google News exposes any search as an RSS feed; we aggregate per asset.
 _GOOGLE_NEWS_RSS: Final[str] = (
     "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
@@ -123,10 +140,27 @@ def sector_news_sources(assets: list[Asset] = SECTOR_ETFS) -> list[RSSNewsSource
     ]
 
 
+def world_news_sources() -> list[RSSNewsSource]:
+    """One Google News source per world/macro query, named ``googlenews_<key>``."""
+    return [
+        RSSNewsSource(
+            name=f"googlenews_{key}",
+            feed_url=google_news_feed_url(query),
+        )
+        for key, query in WORLD_NEWS_QUERIES.items()
+    ]
+
+
 def default_news_sources() -> list[RSSNewsSource]:
     """All feeds ingested by default.
 
     General crypto newswires + per-crypto-asset aggregations + per-equity-sector
-    aggregations, so the single daily news cron accumulates both universes.
+    aggregations + world/macro aggregations, so the single daily news cron
+    accumulates all universes and the world-events channel.
     """
-    return general_news_sources() + asset_news_sources() + sector_news_sources()
+    return (
+        general_news_sources()
+        + asset_news_sources()
+        + sector_news_sources()
+        + world_news_sources()
+    )

@@ -165,3 +165,129 @@ def test_attribute_moves_equity_threshold_marks_market_wide() -> None:
     )
     crypto_shock = next(m for m in crypto_view if m.date == close.index[50])
     assert crypto_shock.classification == "asset-specific"
+
+
+# --- regime-robust triggers (dual trigger + severity tiers) ---
+
+
+def _high_vol_series(n: int = 60, shock_day: int = 50, shock: float = -0.05) -> pd.Series:
+    """Deterministic ±3% alternating returns (3% daily vol), one shock day.
+
+    In this regime a -5% day scores |z| ~= 1.7 — *below* the 2.5 threshold —
+    which is exactly the self-blinding failure the absolute floor must fix.
+    """
+    ret = np.array([0.03 if i % 2 == 0 else -0.03 for i in range(n)])
+    ret[shock_day] = shock
+    idx = pd.date_range("2026-01-01", periods=n, freq="D", tz="UTC")
+    price = 100 * np.cumprod(1 + ret)
+    return pd.Series(price, index=idx)
+
+
+def test_z_only_trigger_misses_big_move_in_high_vol_regime() -> None:
+    # documents the failure mode: -5% day, 3% vol -> |z| < 2.5 -> not flagged
+    close = _high_vol_series(shock=-0.05)
+    flagged = detect_abnormal_moves(close, vol_window=20, z_threshold=2.5)
+    assert close.index[50] not in flagged.index
+
+
+def test_return_floor_flags_big_move_in_high_vol_regime() -> None:
+    close = _high_vol_series(shock=-0.05)
+    flagged = detect_abnormal_moves(
+        close, vol_window=20, z_threshold=2.5, return_floor_pct=4.0
+    )
+    assert close.index[50] in flagged.index
+    row = flagged.loc[close.index[50]]
+    assert row["severity"] == "major"  # absolute floor -> full-confidence tier
+    assert abs(row["zscore"]) < 2.5  # and indeed z alone would not have fired
+
+
+def test_notable_tier_between_thresholds() -> None:
+    # -6.5% on 3% vol -> |z| ~ 2.2: notable (>=1.5) but not major (<2.5)
+    close = _high_vol_series(shock=-0.065)
+    flagged = detect_abnormal_moves(
+        close, vol_window=20, z_threshold=2.5, notable_z=1.5
+    )
+    assert close.index[50] in flagged.index
+    assert flagged.loc[close.index[50], "severity"] == "notable"
+
+
+def test_notable_z_must_be_below_threshold() -> None:
+    close = _high_vol_series()
+    try:
+        detect_abnormal_moves(close, z_threshold=2.5, notable_z=2.5)
+        raise AssertionError("expected ValueError")
+    except ValueError:
+        pass
+
+
+def test_severity_column_always_present() -> None:
+    close = _calm_then_shock(shock_day=50, shock=-0.25)
+    flagged = detect_abnormal_moves(close, vol_window=20, z_threshold=2.5)
+    assert "severity" in flagged.columns
+    assert (flagged["severity"] == "major").all()
+
+
+# --- world/macro sources on market-wide moves ---
+
+
+def _world_vs_generic_news(day: str) -> pd.DataFrame:
+    idx = pd.DatetimeIndex([day, day], tz="UTC", name="published")
+    return pd.DataFrame(
+        {
+            "source": ["googlenews_world", "cointelegraph"],
+            "title": ["Geopolitical shock rattles markets", "Crypto daily roundup"],
+            "url": ["w", "g"],
+            "sentiment": [-0.5, -0.5],
+        },
+        index=idx,
+    )
+
+
+def test_world_sources_upweighted_on_market_wide_moves() -> None:
+    move_date = pd.Timestamp("2026-02-20", tz="UTC")
+    news = _world_vs_generic_news("2026-02-20")
+    events = associate_events(
+        move_date, -8.0, news, asset_source="googlenews_btc",
+        market_sources={"googlenews_world"}, classification="market-wide",
+    )
+    by_source = {str(e["source"]): float(e["relevance"]) for e in events}
+    # same recency and sentiment: the world source must outrank the generic one
+    assert by_source["googlenews_world"] > by_source["cointelegraph"]
+
+
+def test_world_sources_not_upweighted_on_asset_specific_moves() -> None:
+    move_date = pd.Timestamp("2026-02-20", tz="UTC")
+    news = _world_vs_generic_news("2026-02-20")
+    events = associate_events(
+        move_date, -8.0, news, asset_source="googlenews_btc",
+        market_sources={"googlenews_world"}, classification="asset-specific",
+    )
+    by_source = {str(e["source"]): float(e["relevance"]) for e in events}
+    # asset-specific day: a world headline is just another generic source
+    assert by_source["googlenews_world"] == by_source["cointelegraph"]
+
+
+def test_attribute_moves_carries_severity_and_floor() -> None:
+    close = _high_vol_series(shock=-0.05)
+    market = _high_vol_series(shock=-0.045)
+    moves = attribute_moves(
+        close, pd.DataFrame(), market_close=market, vol_window=20,
+        return_floor_pct=4.0, notable_z=1.5,
+    )
+    shock = next(m for m in moves if m.date == close.index[50])
+    assert shock.severity == "major"
+
+
+# --- market pulse ---
+
+
+def test_market_pulse_shape() -> None:
+    from src.features.move_attribution import market_pulse
+
+    close = _calm_then_shock(shock_day=50, shock=-0.25)
+    pulse = market_pulse(close, vol_window=20, recent_days=10)
+    assert set(pulse) == {"date", "return_pct", "zscore", "max_abs_z_recent", "recent_days"}
+    assert pulse["recent_days"] == 10
+    # the shock (day 50 of 60) is inside the 10-day window -> big recent max |z|
+    assert float(pulse["max_abs_z_recent"]) > 2.5
+    assert pulse["date"] == str(close.index[-1].date())

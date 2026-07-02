@@ -70,8 +70,28 @@ def test_sector_sources_one_per_etf_named_by_symbol() -> None:
 
 
 def test_default_sources_combine_all_universes() -> None:
-    total = len(GENERAL_FEEDS) + len(TIER1_ASSETS) + len(SECTOR_ETFS)
+    from src.ingestion.news.feeds import WORLD_NEWS_QUERIES
+
+    total = len(GENERAL_FEEDS) + len(TIER1_ASSETS) + len(SECTOR_ETFS) + len(WORLD_NEWS_QUERIES)
     sources = default_news_sources()
     assert len(sources) == total
-    # names are unique across crypto + equity (no symbol collision)
+    # names are unique across crypto + equity + world (no symbol collision)
     assert len({s.name for s in sources}) == total
+
+
+def test_world_sources_named_and_in_default() -> None:
+    from src.ingestion.news.feeds import (
+        WORLD_NEWS_QUERIES,
+        WORLD_SOURCE_NAMES,
+        default_news_sources,
+        world_news_sources,
+    )
+
+    sources = world_news_sources()
+    names = {s.name for s in sources}
+    # one source per query, named googlenews_<key>, and the registry matches
+    assert names == {f"googlenews_{k}" for k in WORLD_NEWS_QUERIES}
+    assert names == set(WORLD_SOURCE_NAMES)
+    # the daily cron picks them up via the default bundle
+    default_names = {s.name for s in default_news_sources()}
+    assert names <= default_names
