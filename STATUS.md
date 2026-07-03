@@ -204,6 +204,28 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-03 — Sessione (cont.): D1 pre-registrato, BLOCCATO da allowlist
+- **PR #40 (C1+C2+D2) mergiata** in `main` (`150cd6d`)
+- **D1 (VADER vs FinBERT) avviato con pre-registrazione verificabile**:
+  notebook 12 committato (`4e842f0`) **prima** che esistesse qualsiasi
+  score FinBERT — H1 (accordo polarità <80%), H2 (FinBERT meglio
+  same-day), H3 (nessun lead, coerente con nb 06), regola di adozione
+  (≥+50% relativo su BTC **ed** ETH, o lead emergente; altrimenti VADER)
+- **BLOCCO scoperto**: `huggingface.co` è in allowlist ma i **CDN dei
+  pesi no** → il download del modello si appende (2h18m a 0% CPU prima
+  del kill). Host da aggiungere: `us.aws.cdn.hf.co` (403),
+  `cas-bridge.xethub.hf.co` (403), `cas-server.xethub.hf.co`,
+  `cdn-lfs.huggingface.co` (502) — o wildcard `*.hf.co` +
+  `*.huggingface.co`. **Effetto solo in un ambiente NUOVO** (proxy
+  fissato all'avvio, come già visto per Yahoo/news)
+- **Per riprendere D1** (sessione con rete ok): `uv pip install torch
+  transformers` (tooling venv, NON pyproject), poi
+  `uv run --no-sync python notebooks/score_finbert_cache.py` (crea
+  `data/cache/finbert_scores.parquet`, ~7k titoli su CPU), poi eseguire
+  il notebook 12 con `--no-sync` e compilare il verdetto. ⚠️ `uv run`
+  senza `--no-sync` DISINSTALLA i pacchetti ad-hoc (risync al lockfile)
+- D3 (calibrazione soglie) resta in attesa di settimane di osservazione
+
 ### 2026-07-02 — Sessione (cont.): backlog C1+C2+D2
 - **C1**: cron news da 6h a **3h** (8 run/giorno, 00:30/03:30/…/21:30 UTC)
 - **C2**: `market_series.json` da 4 a **10 serie** (tutti i Tier 1 + SPX/
