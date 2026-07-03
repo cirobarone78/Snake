@@ -204,6 +204,32 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-03 — Sessione (cont.): D1 ESEGUITO — verdetto: si resta su VADER
+- **Sblocco**: l'utente ha aggiunto i CDN HF all'allowlist e (novità
+  rispetto ai casi Yahoo/news) il proxy li ha attivati **senza ambiente
+  nuovo**. PR #41 (pre-registrazione) era già mergiata; scoring eseguito
+  su **6.971 titoli** (185s CPU) → `data/cache/finbert_scores.parquet`
+- **Notebook 12 completato con verdetto** (branch `claude/d1-verdict`):
+  - **H1 ✓**: accordo di polarità **49.7%** (previsto <80%), 11.6%
+    polarità opposte. FinBERT legge il lessico finanziario (es. "BTC
+    lower as markets gain": VADER +0.84 ingannato, FinBERT −0.90) ma
+    non è infallibile ("fear gauge surges" → positivo)
+  - **H2 direzionalmente ✓ ma barra NON superata**: same-day Spearman
+    BTC 0.517 vs 0.379 (+36%), ETH 0.476 vs 0.256-n.s. (+86%). La regola
+    pre-registrata chiedeva ≥+50% su ENTRAMBI → BTC +36% < 50%
+  - **H3 ✓**: nessun lead (p≥0.5 per entrambi); reverse forte (0.32-0.58,
+    p≤0.03) → la stampa insegue il prezzo (conferma nb 06)
+  - **Decisione: si RESTA su VADER** — i pali non si spostano post-hoc.
+    Primo risultato concreto pro-FinBERT (descrittivo, non predittivo),
+    da riverificare
+- **Follow-up registrato in ROADMAP**: rieseguire nb 12 a campione
+  raddoppiato (n≈80-90 giorni, ~fine agosto 2026); barra superata su
+  entrambi → ADR di adozione. Per rieseguire: `uv pip install torch
+  transformers`, `uv run --no-sync python notebooks/score_finbert_cache.py`,
+  poi nb 12 con `--no-sync`
+- Caveat: n=39-45 giorni (CI larghi); allineamento same-day = misura
+  descrittiva, non tradabile (ADR-024)
+
 ### 2026-07-03 — Sessione (cont.): D1 pre-registrato, BLOCCATO da allowlist
 - **PR #40 (C1+C2+D2) mergiata** in `main` (`150cd6d`)
 - **D1 (VADER vs FinBERT) avviato con pre-registrazione verificabile**:
