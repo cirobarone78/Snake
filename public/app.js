@@ -59,14 +59,23 @@ async function fetchJSON(path) {
 function setupTabs() {
   const tabs = document.querySelectorAll(".tab");
   const panels = document.querySelectorAll(".panel");
-  tabs.forEach((tab) => tab.addEventListener("click", () => {
+  const activate = (name, scroll) => {
+    const tab = [...tabs].find((t) => t.dataset.tab === name);
+    if (!tab) return;
     tabs.forEach((t) => t.classList.remove("is-active"));
     panels.forEach((p) => p.classList.remove("is-active"));
     tab.classList.add("is-active");
-    const target = document.getElementById(tab.dataset.tab);
+    const target = document.getElementById(name);
     if (target) target.classList.add("is-active");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  tabs.forEach((tab) => tab.addEventListener("click", () => {
+    activate(tab.dataset.tab, true);
+    history.replaceState(null, "", `#${tab.dataset.tab}`);
   }));
+  // Deep link: #events opens the Eventi tab directly.
+  const hash = (location.hash || "").slice(1);
+  if (hash && document.getElementById(hash)) activate(hash, false);
 }
 
 /* ---------- Formatting ---------- */
@@ -369,7 +378,13 @@ function renderHealth(data) {
   });
 }
 
-/* ---------- Events (move attribution) ---------- */
+/* ---------- Events (move attribution) ----------
+   A chronological timeline (newest day first) with a filter row, instead of a
+   wall of per-asset cards: with the v2 thresholds the raw list runs to 150+
+   moves, unreadable without filtering. State lives in EVENTS_STATE; every
+   control re-renders only the list. */
+const EVENTS_STATE = { moves: [], universe: "all", severity: "major", etype: "all", asset: "all" };
+
 function renderEvents(data) {
   setUpdated("events-updated", data);
   const root = document.getElementById("events-list");
@@ -380,26 +395,131 @@ function renderEvents(data) {
     root.appendChild(el("p", "empty", "Nessun movimento anomalo recente, o storico news ancora in accumulo."));
     return;
   }
-  const groups = [
-    ["crypto", "Crypto"],
-    ["equity", "Settori azionari"],
-  ];
-  groups.forEach(([key, label]) => {
-    const inGroup = data.assets.filter(
-      (a) => (a.universe || "crypto") === key && a.moves && a.moves.length > 0
-    );
-    if (inGroup.length === 0) return;
-    root.appendChild(el("h3", "events-group", label));
-    inGroup.forEach((asset) => {
-      const block = el("div", "event-asset");
-      const head = el("div", "event-asset-head");
-      head.appendChild(el("span", "sym", asset.symbol));
-      head.appendChild(el("h3", "", asset.name));
-      block.appendChild(head);
-      asset.moves.forEach((m) => block.appendChild(moveCard(m)));
-      root.appendChild(block);
+  // Flatten to one row per move, carrying the asset identity on each card.
+  EVENTS_STATE.moves = [];
+  data.assets.forEach((a) => (a.moves || []).forEach((m) => EVENTS_STATE.moves.push({
+    universe: a.universe || "crypto", symbol: a.symbol, name: a.name, ...m,
+  })));
+  root.appendChild(eventsFilterBar());
+  const list = el("div", "events-timeline");
+  list.id = "events-timeline";
+  root.appendChild(list);
+  renderEventsList();
+}
+
+function moveEventTypes(m) {
+  return (m.events || []).map((e) => (e.event_type || "other").toLowerCase());
+}
+
+function filteredMoves() {
+  const s = EVENTS_STATE;
+  return s.moves.filter((m) =>
+    (s.universe === "all" || m.universe === s.universe)
+    && (s.severity === "all" || (m.severity || "major") === s.severity)
+    && (s.asset === "all" || m.symbol === s.asset)
+    && (s.etype === "all" || moveEventTypes(m).includes(s.etype))
+  );
+}
+
+function eventsFilterBar() {
+  const s = EVENTS_STATE;
+  const bar = el("div", "efilters");
+
+  const seg = (label, options, key) => {
+    const group = el("div", "efilter-group");
+    group.appendChild(el("span", "efilter-label", label));
+    const row = el("div", "efilter-seg");
+    options.forEach(([value, text]) => {
+      const b = el("button", "chip" + (s[key] === value ? " is-active" : ""), text);
+      b.addEventListener("click", () => {
+        s[key] = value;
+        [...row.children].forEach((c, i) => c.classList.toggle("is-active", options[i][0] === value));
+        renderEventsList();
+      });
+      row.appendChild(b);
     });
+    group.appendChild(row);
+    return group;
+  };
+
+  const nMajor = s.moves.filter((m) => (m.severity || "major") === "major").length;
+  const nNotable = s.moves.length - nMajor;
+  bar.appendChild(seg("Universo", [["all", "Tutti"], ["crypto", "Crypto"], ["equity", "Azionario"]], "universe"));
+  bar.appendChild(seg("Rilevanza", [
+    ["major", `Major (${nMajor})`],
+    ["notable", `Degni di nota (${nNotable})`],
+    ["all", "Tutti"],
+  ], "severity"));
+
+  const sel = (label, options, key) => {
+    const group = el("div", "efilter-group");
+    group.appendChild(el("span", "efilter-label", label));
+    const select = el("select", "efilter-select");
+    options.forEach(([value, text]) => {
+      const o = el("option", "", text);
+      o.value = value;
+      if (s[key] === value) o.selected = true;
+      select.appendChild(o);
+    });
+    select.addEventListener("change", () => { s[key] = select.value; renderEventsList(); });
+    group.appendChild(select);
+    return group;
+  };
+
+  const assets = [...new Map(s.moves.map((m) => [m.symbol, m.name])).entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]));
+  bar.appendChild(sel("Asset", [["all", "Tutti"], ...assets.map(([sym, name]) => [sym, `${sym} — ${name}`])], "asset"));
+
+  const types = [...new Set(s.moves.flatMap(moveEventTypes))].filter((t) => t !== "other").sort();
+  if (types.length > 0) {
+    bar.appendChild(sel("Tipo evento", [["all", "Tutti"], ...types.map((t) => [t, EVENT_TYPE_LABEL[t] || t])], "etype"));
+  }
+
+  const meta = el("div", "efilter-meta");
+  meta.id = "efilter-meta";
+  bar.appendChild(meta);
+  return bar;
+}
+
+function renderEventsList() {
+  const list = document.getElementById("events-timeline");
+  if (!list) return;
+  list.innerHTML = "";
+  const moves = filteredMoves().sort((a, b) =>
+    b.date.localeCompare(a.date)
+    || (a.severity === b.severity ? 0 : a.severity === "major" ? -1 : 1)
+    || Math.abs(b.return_pct) - Math.abs(a.return_pct)
+  );
+
+  const meta = document.getElementById("efilter-meta");
+  const days = new Set(moves.map((m) => m.date));
+  if (meta) meta.textContent = moves.length
+    ? `${moves.length} movimenti in ${days.size} giornate`
+    : "";
+
+  if (moves.length === 0) {
+    list.appendChild(el("p", "empty", "Nessun movimento con questi filtri. Prova ad allargare la rilevanza o il periodo."));
+    return;
+  }
+
+  let currentDay = null;
+  moves.forEach((m) => {
+    if (m.date !== currentDay) {
+      currentDay = m.date;
+      const dayMoves = moves.filter((x) => x.date === currentDay);
+      const head = el("div", "day-head");
+      head.appendChild(el("span", "day-date", fmtDayLong(currentDay)));
+      head.appendChild(el("span", "day-count", `${dayMoves.length} ${dayMoves.length === 1 ? "movimento" : "movimenti"}`));
+      list.appendChild(head);
+    }
+    list.appendChild(moveCard(m));
   });
+}
+
+function fmtDayLong(t) {
+  const d = new Date(t);
+  return Number.isNaN(d.getTime()) ? t
+    : d.toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 }
 
 function pulseBar(pulse) {
@@ -424,7 +544,12 @@ function moveCard(m) {
   const notable = m.severity === "notable";
   const card = el("div", notable ? "move-card move-notable" : "move-card");
   const head = el("div", "move-head");
-  head.appendChild(el("span", "move-date", fmtDay(m.date)));
+  if (m.symbol) {
+    const chip = el("span", "move-asset");
+    chip.appendChild(el("strong", "", m.symbol));
+    if (m.name && m.name !== m.symbol) chip.appendChild(el("span", "move-asset-name", m.name));
+    head.appendChild(chip);
+  }
   head.appendChild(el("span", `move-chg ${pctClass(m.return_pct)}`, fmtPct(m.return_pct)));
   const cls = m.classification || "unknown";
   head.appendChild(el("span", `class-badge ${CLASS_CLASS[cls] || "unknown"}`, CLASS_LABEL[cls] || cls));
