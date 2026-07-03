@@ -15,7 +15,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.assets.asset import get_asset_by_symbol
+from src.assets.asset import Asset, get_asset_by_symbol
+from src.assets.sectors import SECTOR_ETFS
 from src.features.market_series import build_market_series
 from src.features.report_json import write_report_json
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
@@ -24,17 +25,40 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name
 logger = logging.getLogger(__name__)
 
 JSON_PATH = Path("public/data/market_series.json")
-# Display label per headline symbol.
-HEADLINE: dict[str, str] = {"BTC": "Bitcoin", "ETH": "Ethereum", "SPX": "S&P 500", "GOLD": "Oro"}
+# Display label per headline symbol. C2 of the Fase 7 backlog: all Tier 1
+# crypto + the context indices + the two most-watched sector ETFs. The hero
+# chart shows one series at a time behind chips, so more series = more chips,
+# not a cluttered chart.
+HEADLINE: dict[str, str] = {
+    "BTC": "Bitcoin",
+    "ETH": "Ethereum",
+    "SOL": "Solana",
+    "LINK": "Chainlink",
+    "POL": "Polygon",
+    "SPX": "S&P 500",
+    "NDX": "NASDAQ 100",
+    "GOLD": "Oro",
+    "TECH": "Tech (XLK)",
+    "SEMIS": "Semi (SMH)",
+}
 FETCH_START = "2025-01-01"
+
+
+def _lookup(symbol: str) -> Asset | None:
+    """Resolve a symbol from the Tier 1/context registry or the sector ETFs."""
+    asset = get_asset_by_symbol(symbol)
+    if asset is not None:
+        return asset
+    return next((a for a in SECTOR_ETFS if a.symbol == symbol), None)
 
 
 def main() -> None:
     src = YahooFinanceSource()
     closes: dict[str, pd.Series] = {}
     for symbol in HEADLINE:
-        asset = get_asset_by_symbol(symbol)
+        asset = _lookup(symbol)
         if asset is None:
+            logger.warning("Unknown headline symbol %s, skipped", symbol)
             continue
         try:
             ohlcv = src.fetch_ohlcv(asset, start=FETCH_START, interval="1d")

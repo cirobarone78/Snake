@@ -8,8 +8,9 @@ name: news-history
 
 on:
   schedule:
-    # Every 6h so the dashboard "Eventi" stay fresh (public repo -> Actions free).
-    - cron: "30 */6 * * *" # 00:30 / 06:30 / 12:30 / 18:30 UTC
+    # Every 3h so the dashboard "Eventi" stay fresh (public repo -> Actions free).
+    # C1 of the Fase 7 backlog (ADR-028 follow-up): was every 6h.
+    - cron: "30 */3 * * *" # 00:30 / 03:30 / ... / 21:30 UTC
   workflow_dispatch: {}
 
 # Avoid overlapping runs piling commits on the same file.

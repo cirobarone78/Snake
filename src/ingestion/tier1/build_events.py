@@ -25,6 +25,7 @@ from src.assets.asset import TIER1_ASSETS, Asset, get_asset_by_symbol
 from src.assets.sectors import SECTOR_ETFS
 from src.features.events_export import build_events_payload, days_since_last_major
 from src.features.move_attribution import attribute_moves, market_pulse
+from src.features.news_volume import annotate_moves_with_coverage, daily_news_volume
 from src.features.report_json import write_report_json
 from src.ingestion.news.feeds import WORLD_SOURCE_NAMES
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
@@ -89,6 +90,11 @@ def _attribute_universe(
             market_sources=set(WORLD_SOURCE_NAMES),
         )
         moves = [m for m in moves if m.date >= cutoff][:MAX_MOVES]
+        # D2: annotate each move with the asset feed's same-day coverage — a
+        # price move plus a headline-count spike is a stronger event marker.
+        counts = daily_news_volume(news_all, asset_source)
+        if not counts.empty:
+            moves = annotate_moves_with_coverage(moves, counts)
         if skip_empty and not moves:
             continue
         out.append({"symbol": asset.symbol, "name": asset.name, "universe": universe, "moves": moves})
