@@ -377,9 +377,16 @@ di notebook. È la fase di "consumo" del sistema da parte dell'utente.
 - [x] **(C1)** Cron news da 6h a 3h — freschezza della sezione Eventi
 - [x] **(C2)** `market_series.json` da 4 a 10 serie: tutti i Tier 1 +
       NDX + Tech (XLK) + Semi (SMH). La UI è a chip (una serie alla volta)
-- [ ] **(D1)** Test empirico VADER vs FinBERT sui ~20k titoli archiviati:
+- [~] **(D1)** Test empirico VADER vs FinBERT sui ~20k titoli archiviati:
       ADR-023 subordinava l'upgrade all'evidenza, ora i dati per misurare
-      ci sono
+      ci sono. **Ipotesi e regola di decisione pre-registrate e committate
+      prima di qualsiasi risultato** (notebook 12, verificabile in git).
+      **BLOCCATO da allowlist**: huggingface.co è aperto ma i CDN dei pesi
+      no (`us.aws.cdn.hf.co` 403, `cas-bridge.xethub.hf.co` 403,
+      `cdn-lfs.huggingface.co` 502). Per sbloccare: aggiungere quegli host
+      (o `*.hf.co` + `*.huggingface.co`) all'allowlist e usare un
+      **ambiente nuovo**; poi `uv pip install torch transformers`
+      (tooling, non pyproject) ed eseguire scoring + notebook 12
 - [x] **(D2)** Spike di volume di copertura (`src/features/news_volume.py`):
       conteggio titoli/giorno vs baseline rolling causale con floor di
       Poisson (feed costanti) e `min_count` (feed sottili). Annota ogni
