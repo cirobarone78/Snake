@@ -1437,6 +1437,51 @@ mercato S&P 500 e soglia "giornata grande" all'1% (vs ~3% crypto).
 
 ---
 
+## ADR-028 — Attribuzione eventi v2: trigger doppio, severità, canale world-news
+
+**Data**: 2026-07-02
+**Stato**: Accepted
+**Estende**: ADR-024/025/027 (pipeline news + attribuzione)
+
+**Contesto**: la dashboard "Eventi" è rimasta senza nuove correlazioni per
+giorni nonostante la pipeline fosse sana (news e cron regolari). Diagnosi su
+dati reali: (1) il trigger **solo z-score** (|z| ≥ 2.5 su vol rolling 30gg) si
+auto-acceca nei regimi ad alta volatilità — il *volatility clustering*
+documentato in Fase 1 gonfia la baseline, così nel bear 2026 BTC richiedeva
+±7%/giorno per fare evento e giornate da −4% risultavano "normali"; (2) tutte
+le fonti news erano coin/settore-specific: la correlazione "borsa ↔ evento del
+mondo" (Fed, geopolitica) **non poteva emergere per costruzione**, malgrado la
+VISION la preveda.
+
+**Decisione**:
+1. **Trigger doppio**: un giorno è evento *major* se |z| ≥ 2.5 **oppure**
+   |return| ≥ soglia assoluta per-universo (4% crypto, 2.5% ETF equity).
+   La soglia assoluta è regime-robusta per definizione.
+2. **Severità a livelli**: nuovo tier *notable* (1.5 ≤ |z| < 2.5), campo
+   `severity` su ogni move — la dashboard degrada con grazia nei periodi calmi
+   invece di andare in silenzio binario.
+3. **Market pulse**: `events.json` espone per benchmark (BTC, SPX) il quadro
+   di oggi (return, z, max|z| 10gg) e i giorni dall'ultimo evento major — il
+   silenzio diventa "mercato calmo da N giorni", non "pipeline rotta".
+4. **Canale world-news**: 3 fonti Google News (`googlenews_world/fed/macro`,
+   query geopolitica/Fed/macro USA) nello stesso cron e parquet (ADR-025);
+   nei movimenti classificati **market-wide** queste fonti sono pesate quanto
+   la fonte asset-specific nell'attribuzione (su una giornata di mercato, un
+   titolo Fed è plausibile almeno quanto uno di coin).
+
+**Conseguenze**:
+- ✅ Replay sui 30gg correnti: eventi per asset da 1-3 a 4-6; BTC recupera i
+  giorni −4.0%/−4.5% di inizio giugno che la soglia z ignorava
+- ✅ Il "nessun evento" ora è informazione esplicita (pulse), non ambiguità
+- ✅ Il canale world abilita finalmente l'attribuzione mondo↔mercato; storico
+  world parte da zero (stesso rodaggio di ADR-027 per l'equity)
+- ⚠️ Le soglie assolute (4%/2.5%) sono giudizio a priori, non fittate; da
+  rivedere se producono troppi/troppo pochi eventi (misurare, poi calibrare)
+- ⚠️ Più eventi mostrati = più responsabilità del disclaimer: associazione,
+  non causa (invariato da ADR-024)
+
+---
+
 <!--
 Template per nuove ADR:
 

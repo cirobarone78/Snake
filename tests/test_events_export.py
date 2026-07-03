@@ -62,3 +62,55 @@ def test_empty_assets() -> None:
     payload = build_events_payload([])
     assert payload["assets"] == []
     assert "generated_at" in payload
+
+
+# --- severity + market pulse (regime-robust attribution v2) ---
+
+
+def test_severity_defaults_to_major_and_passes_through() -> None:
+    payload = build_events_payload(
+        [{"symbol": "BTC", "name": "Bitcoin", "moves": [_move(-6.5, "market-wide", False)]}]
+    )
+    assert payload["assets"][0]["moves"][0]["severity"] == "major"
+
+    notable = AbnormalMove(
+        date=pd.Timestamp("2026-06-03", tz="UTC"),
+        return_pct=-2.1,
+        zscore=-1.8,
+        market_return_pct=-1.5,
+        classification="market-wide",
+        severity="notable",
+    )
+    payload = build_events_payload([{"symbol": "BTC", "name": "Bitcoin", "moves": [notable]}])
+    assert payload["assets"][0]["moves"][0]["severity"] == "notable"
+
+
+def test_market_pulse_in_payload_when_provided() -> None:
+    pulse = {"crypto": {"benchmark": "BTC", "return_pct": 1.6, "zscore": 0.9,
+                        "max_abs_z_recent": 1.4, "days_since_last_major": 25}}
+    payload = build_events_payload([], market_pulse=pulse)
+    assert payload["market_pulse"] == pulse
+    # and absent when not provided (older consumers unaffected)
+    assert "market_pulse" not in build_events_payload([])
+
+
+def test_days_since_last_major_counts_only_major() -> None:
+    from src.features.events_export import days_since_last_major
+
+    major = _move(-6.5, "market-wide", False)  # 2026-06-02, severity major
+    notable = AbnormalMove(
+        date=pd.Timestamp("2026-06-04", tz="UTC"),
+        return_pct=-2.0,
+        zscore=-1.7,
+        market_return_pct=None,
+        classification="unknown",
+        severity="notable",
+    )
+    entries = [{"symbol": "BTC", "name": "Bitcoin", "moves": [major, notable]}]
+    as_of = pd.Timestamp("2026-06-05", tz="UTC")
+    # the more recent notable move must NOT reset the counter
+    assert days_since_last_major(entries, as_of) == 3
+    # no major anywhere -> None
+    only_notable = [{"symbol": "BTC", "name": "Bitcoin", "moves": [notable]}]
+    assert days_since_last_major(only_notable, as_of) is None
+    assert days_since_last_major([], as_of) is None

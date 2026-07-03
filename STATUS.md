@@ -6,7 +6,7 @@
 ---
 
 ## Ultimo aggiornamento
-2026-06-05
+2026-07-02
 
 ## Fase corrente
 **Screener di rotazione + attribuzione eventi + report auto-aggiornati 🟢 attivo
@@ -203,6 +203,30 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-07-02 — Sessione: attribuzione eventi v2 (ADR-028)
+- **Problema segnalato dall'utente**: nessuna correlazione borsa↔evento da
+  giorni. Diagnosi su dati reali: pipeline sana (news/eventi aggiornati),
+  ma (1) il trigger solo-z si auto-acceca nei regimi volatili — nel bear
+  2026 BTC richiedeva ±7%/giorno per |z|≥2.5, giornate da −4% "normali";
+  (2) nessuna fonte world/geopolitica in archivio → la correlazione col
+  "mondo" non poteva emergere per costruzione
+- **Fix (ADR-028)**, tutto in `move_attribution`/`events_export`/
+  `build_events`/`feeds`:
+  - trigger doppio: |z|≥2.5 OR |ret|≥floor (4% crypto / 2.5% ETF)
+  - severità major/notable (notable = 1.5≤|z|<2.5)
+  - `market_pulse` in events.json (return/z di oggi + max|z| 10gg +
+    giorni dall'ultimo major per universo) → il silenzio diventa
+    "mercato calmo", non "pipeline rotta"
+  - 3 fonti world (`googlenews_world/fed/macro`) nello stesso cron;
+    pesate quanto la fonte asset nei giorni market-wide
+- **Replay validazione** (serie committate, 30gg): eventi 1-3 → 4-6 per
+  asset; BTC recupera −4.0%/−4.5% di inizio giugno. 372/372 pytest,
+  ruff pulito, pyright 0 su src/features (gate CI)
+- **Planning registrato in ROADMAP** (backlog Fase 7): cron 3h, più serie
+  dashboard, test VADER vs FinBERT, news-volume spike, calibrazione soglie
+- Nota ambiente: Yahoo bloccato nella sessione (proxy allowlist); i cron
+  Actions non ne risentono. Validazione fatta offline su dati committati
 
 ### 2026-05-31 — Sessione 13: Fase 5 — cicli, regimi & contestualizzazione
 - **`src/features/regime.py` esteso**: `classify_vol_regime` (vol alta/bassa via

@@ -23,9 +23,10 @@ import pandas as pd
 
 from src.assets.asset import TIER1_ASSETS, Asset, get_asset_by_symbol
 from src.assets.sectors import SECTOR_ETFS
-from src.features.events_export import build_events_payload
-from src.features.move_attribution import attribute_moves
+from src.features.events_export import build_events_payload, days_since_last_major
+from src.features.move_attribution import attribute_moves, market_pulse
 from src.features.report_json import write_report_json
+from src.ingestion.news.feeds import WORLD_SOURCE_NAMES
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -37,6 +38,14 @@ CRYPTO_NEWSWIRES = {"cointelegraph", "coindesk"}
 
 LOOKBACK_DAYS = 90
 Z_THRESHOLD = 2.5
+# Lower-confidence tier: |z| in [NOTABLE_Z, Z_THRESHOLD) shows as "notable" so
+# the dashboard degrades gracefully in calm stretches instead of going silent.
+NOTABLE_Z = 1.5
+# Regime-robust absolute floors (a z-only trigger self-blinds when the rolling
+# vol is inflated by a turbulent regime — e.g. bear-market BTC needs ±7%/day to
+# reach |z|=2.5). Any day at/above the floor is an event regardless of z.
+RETURN_FLOOR_PCT_CRYPTO = 4.0
+RETURN_FLOOR_PCT_EQUITY = 2.5
 MAX_MOVES = 6
 
 
@@ -54,6 +63,7 @@ def _attribute_universe(
 ) -> list[dict[str, Any]]:
     """Attribute recent abnormal moves for one universe of assets."""
     threshold = 3.0 if is_crypto else 1.0
+    floor = RETURN_FLOOR_PCT_CRYPTO if is_crypto else RETURN_FLOOR_PCT_EQUITY
     out: list[dict[str, Any]] = []
     for asset in assets:
         try:
@@ -64,11 +74,19 @@ def _attribute_universe(
         if close.empty:
             continue
         asset_source = f"googlenews_{asset.symbol.lower()}"
-        relevant = {asset_source} | (CRYPTO_NEWSWIRES if is_crypto else set())
+        # World/macro sources are always in the candidate pool; the attribution
+        # weighting only promotes them on market-wide days.
+        relevant = (
+            {asset_source}
+            | (CRYPTO_NEWSWIRES if is_crypto else set())
+            | set(WORLD_SOURCE_NAMES)
+        )
         news = news_all[news_all["source"].isin(relevant)] if not news_all.empty else news_all
         moves = attribute_moves(
             close, news, asset_source=asset_source, market_close=market,
             z_threshold=Z_THRESHOLD, window_days=2, top_k=3, market_threshold_pct=threshold,
+            return_floor_pct=floor, notable_z=NOTABLE_Z,
+            market_sources=set(WORLD_SOURCE_NAMES),
         )
         moves = [m for m in moves if m.date >= cutoff][:MAX_MOVES]
         if skip_empty and not moves:
@@ -105,7 +123,24 @@ def main() -> None:
     )
 
     now = pd.Timestamp.now(tz="UTC").floor("min")
-    write_report_json(build_events_payload(crypto + equity, generated_at=now), JSON_PATH)
+    pulse: dict[str, Any] = {}
+    if btc is not None and not btc.empty:
+        pulse["crypto"] = {
+            **market_pulse(btc),
+            "benchmark": "BTC",
+            "days_since_last_major": days_since_last_major(crypto, now),
+        }
+    if spx is not None and not spx.empty:
+        pulse["equity"] = {
+            **market_pulse(spx),
+            "benchmark": "SPX",
+            "days_since_last_major": days_since_last_major(equity, now),
+        }
+
+    write_report_json(
+        build_events_payload(crypto + equity, generated_at=now, market_pulse=pulse or None),
+        JSON_PATH,
+    )
     total = sum(len(a["moves"]) for a in crypto + equity)
     logger.info(
         "Wrote %s (%d crypto, %d equity assets, %d moves)",
