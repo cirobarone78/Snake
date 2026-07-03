@@ -374,14 +374,21 @@ di notebook. È la fase di "consumo" del sistema da parte dell'utente.
 ### Backlog eventi/dashboard (da revisione 2026-07-02, ADR-028)
 - [x] Attribuzione v2: trigger doppio (z OR return assoluto), severità
       major/notable, market pulse, canale world-news (ADR-028)
-- [ ] **(C1)** Cron news da 6h a 3h — freschezza della sezione Eventi
-- [ ] **(C2)** `market_series.json` da 4 serie a tutti i Tier 1 + ETF
-      principali per la dashboard
+- [x] **(C1)** Cron news da 6h a 3h — freschezza della sezione Eventi
+- [x] **(C2)** `market_series.json` da 4 a 10 serie: tutti i Tier 1 +
+      NDX + Tech (XLK) + Semi (SMH). La UI è a chip (una serie alla volta)
 - [ ] **(D1)** Test empirico VADER vs FinBERT sui ~20k titoli archiviati:
       ADR-023 subordinava l'upgrade all'evidenza, ora i dati per misurare
       ci sono
-- [ ] **(D2)** Spike di volume di copertura (n. titoli/giorno per asset)
-      come segnale-evento complementare al sentiment
+- [x] **(D2)** Spike di volume di copertura (`src/features/news_volume.py`):
+      conteggio titoli/giorno vs baseline rolling causale con floor di
+      Poisson (feed costanti) e `min_count` (feed sottili). Annota ogni
+      move con `coverage {count, zscore, spike}` → badge in dashboard.
+      Validato su dati reali: XLK 5/6 (−6.7%) → spike z=8.4; POL 5/6
+      (−10.5%) → nessuno spike (crollo senza notizie, stampa il giorno
+      dopo) — i due segnali si completano. Caveat: nel periodo di rampa
+      dei feed (fine maggio) gli spike riflettono la maturazione
+      dell'archivio, artefatto che svanisce col tempo
 - [ ] **(D3)** Calibrare le soglie assolute ADR-028 (4%/2.5%) dopo qualche
       settimana di eventi osservati
 

@@ -39,6 +39,8 @@ class AbnormalMove:
     market_return_pct: float | None  # same-day move of the market reference
     classification: str  # "market-wide" | "asset-specific" | "unknown"
     severity: str = "major"  # "major" | "notable" (lower-confidence tier)
+    # Same-day news-coverage stats {count, zscore, spike} — see news_volume.
+    coverage: dict[str, object] | None = None
     candidate_events: list[dict[str, object]] = field(default_factory=list)
 
 

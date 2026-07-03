@@ -39,7 +39,7 @@ def _move_to_dict(move: AbnormalMove) -> dict[str, Any]:
                 "event_type": classify_event(title),
             }
         )
-    return {
+    out: dict[str, Any] = {
         "date": move.date.date().isoformat(),
         "return_pct": round(move.return_pct, 2),
         "zscore": round(move.zscore, 2),
@@ -50,6 +50,9 @@ def _move_to_dict(move: AbnormalMove) -> dict[str, Any]:
         ),
         "events": events,
     }
+    if move.coverage is not None:
+        out["coverage"] = move.coverage
+    return out
 
 
 def days_since_last_major(

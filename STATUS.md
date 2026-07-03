@@ -204,6 +204,24 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-02 — Sessione (cont.): backlog C1+C2+D2
+- **C1**: cron news da 6h a **3h** (8 run/giorno, 00:30/03:30/…/21:30 UTC)
+- **C2**: `market_series.json` da 4 a **10 serie** (tutti i Tier 1 + SPX/
+  NDX/GOLD + XLK/SMH); lookup esteso al registro settori nel builder
+- **D2**: nuovo `src/features/news_volume.py` — volume di copertura come
+  segnale-evento: conteggio titoli/giorno per fonte (giorni vuoti = 0),
+  z-score causale con **floor di Poisson** `max(std, sqrt(mean), 1)`
+  (senza, un burst su feed a conteggio costante avrebbe z indefinito) e
+  `min_count=5` contro i falsi spike dei feed sottili. `build_events`
+  annota ogni move con `coverage {count, zscore, spike}` → badge "Picco
+  copertura" in dashboard. **10 test**. Validazione su storico reale:
+  XLK 5/6 spike z=8.4 coincidente col −6.7%; POL 5/6 (−10.5%) senza
+  spike → conferma il caso "crollo senza notizie" e la complementarità
+  dei segnali. Caveat rampa feed di fine maggio documentato in ROADMAP
+- **382/382 pytest**, ruff pulito, pyright 0 su src/features (gate CI)
+- **D1 (FinBERT)**: HuggingFace raggiungibile in questa sessione →
+  fattibile; in coda come esperimento separato
+
 ### 2026-07-02 — Sessione: attribuzione eventi v2 (ADR-028)
 - **Problema segnalato dall'utente**: nessuna correlazione borsa↔evento da
   giorni. Diagnosi su dati reali: pipeline sana (news/eventi aggiornati),

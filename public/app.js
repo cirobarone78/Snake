@@ -429,6 +429,8 @@ function moveCard(m) {
   const cls = m.classification || "unknown";
   head.appendChild(el("span", `class-badge ${CLASS_CLASS[cls] || "unknown"}`, CLASS_LABEL[cls] || cls));
   if (notable) head.appendChild(el("span", "class-badge notable", "Degno di nota"));
+  if (m.coverage && m.coverage.spike)
+    head.appendChild(el("span", "class-badge coverage", `Picco copertura (${m.coverage.count} titoli)`));
   if (typeof m.market_return_pct === "number") head.appendChild(el("span", "move-mkt", `mercato ${fmtPct(m.market_return_pct)}`));
   card.appendChild(head);
 
