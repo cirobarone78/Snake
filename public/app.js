@@ -8,6 +8,7 @@ const SOURCES = {
   events: "data/events.json",
   health: "data/data_health.json",
   paper: "data/paper_report.json",
+  replay: "data/paper_replay.json",
 };
 
 const HEALTH_LABEL = { match: "OK", mismatch: "Divergenza", single_source: "Fonte unica" };
@@ -35,10 +36,10 @@ document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   setupTabs();
-  const [crypto, equity, education, market, events, health, paper] = await Promise.all([
+  const [crypto, equity, education, market, events, health, paper, replay] = await Promise.all([
     fetchJSON(SOURCES.crypto), fetchJSON(SOURCES.equity),
     fetchJSON(SOURCES.education), fetchJSON(SOURCES.market), fetchJSON(SOURCES.events),
-    fetchJSON(SOURCES.health), fetchJSON(SOURCES.paper),
+    fetchJSON(SOURCES.health), fetchJSON(SOURCES.paper), fetchJSON(SOURCES.replay),
   ]);
   renderTicker(market);
   renderHero(market);
@@ -47,6 +48,7 @@ async function init() {
   renderEquity(equity);
   renderEvents(events);
   renderPaper(paper);
+  renderReplay(replay);
   renderOverview(crypto, equity);
   renderEducation(education);
   renderFooter(crypto, equity, market);
@@ -749,6 +751,57 @@ function paperOrders(orders) {
   });
   box.appendChild(list);
   return box;
+}
+
+/* ---------- Paper replay (historical, in-sample) ----------
+   Backward-looking illustration of the SAME strategy through the SAME broker.
+   Kept visually distinct from the forward live scenarios and labelled as
+   in-sample so it can't be mistaken for the forward track record. */
+function renderReplay(data) {
+  const root = document.getElementById("paper-replay");
+  if (!root) return;
+  root.innerHTML = "";
+  if (!data || !data.scenario) return;  // absent until the first cron run
+  const s = data.scenario;
+
+  const head = el("div", "replay-head");
+  const title = el("div");
+  title.appendChild(el("h3", "replay-title", data.title || "Replay storico"));
+  title.appendChild(el("p", "replay-sub",
+    "Stessa strategia, stesso broker (costi + fill a t+1), eseguita sullo storico. "
+    + "Backward-looking e in-sample: mostra il comportamento passato, non è il track record forward."));
+  head.appendChild(title);
+  head.appendChild(el("div", `paper-return ${pctClass(s.return_pct)}`, fmtPct(s.return_pct)));
+
+  const card = el("div", "replay-card");
+  card.appendChild(head);
+
+  const curve = Array.isArray(s.curve) ? s.curve : [];
+  if (curve.length > 1) {
+    const first = curve[0], last = curve[curve.length - 1];
+    const meta = el("div", "replay-meta");
+    meta.appendChild(el("span", "", `dal ${fmtDay(first.t)} al ${fmtDay(last.t)}`));
+    meta.appendChild(el("span", "", `${curve.length} giorni`));
+    if (typeof data.lookback === "number") meta.appendChild(el("span", "", `lookback ${data.lookback}g`));
+    if (Array.isArray(data.symbols) && data.symbols.length) meta.appendChild(el("span", "", data.symbols.join(" · ")));
+    card.appendChild(meta);
+
+    const chart = el("div", "replay-chart");
+    chart.innerHTML = sparklineSVG(curve.map((p) => p.v));
+    if (chart.firstElementChild) card.appendChild(chart);
+  }
+
+  if (s.metrics) {
+    const m = s.metrics;
+    const row = el("div", "paper-metrics");
+    row.appendChild(paperMetric("Sharpe", m.sharpe === null || m.sharpe === undefined ? "—" : NF.format(m.sharpe)));
+    row.appendChild(paperMetric("Max drawdown", m.max_drawdown_pct === null || m.max_drawdown_pct === undefined ? "—" : `${m.max_drawdown_pct.toFixed(1)}%`));
+    row.appendChild(paperMetric("Tempo sott'acqua", m.time_underwater_pct === null || m.time_underwater_pct === undefined ? "—" : `${m.time_underwater_pct.toFixed(0)}%`));
+    row.appendChild(paperMetric("Giorni", `${m.n_days}`));
+    card.appendChild(row);
+  }
+
+  root.appendChild(card);
 }
 
 /* ---------- Education ---------- */

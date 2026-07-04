@@ -71,12 +71,17 @@ def run_daily(
     store: ScenarioStore,
     history: dict[str, pd.DataFrame],
     lookback: int = DEFAULT_LOOKBACK,
+    scenario_ids: list[str] | None = None,
 ) -> dict[str, dict[str, Any]]:
     """Advance every scenario to the last completed bar in ``history``.
 
     ``history`` maps symbol -> OHLC frame (daily, tz-aware index) up to and
     including the decision bar ``T``. Returns a per-scenario summary dict
     (for logging/reporting). Idempotent per ``T``.
+
+    ``scenario_ids`` selects which scenarios to advance; ``None`` (the cron
+    default) ensures and advances the ADR-011 defaults. The replay engine
+    passes its own single scenario so it drives the exact same per-bar path.
     """
     if not history:
         raise ValueError("empty history")
@@ -87,8 +92,9 @@ def run_daily(
         s: float(cast("float", df.sort_index()["close"].iloc[-1])) for s, df in history.items()
     }
 
+    ids = scenario_ids if scenario_ids is not None else ensure_default_scenarios(store)
     summaries: dict[str, dict[str, Any]] = {}
-    for scenario_id in ensure_default_scenarios(store):
+    for scenario_id in ids:
         state = store.load(scenario_id)
         if state.last_processed is not None and state.last_processed >= t_last:
             logger.info("%s: already processed %s, no-op", scenario_id, t_last.date())
@@ -167,19 +173,17 @@ def run_daily(
 PAPER_REPORT_PATH = "public/data/paper_report.json"
 
 
-def main() -> None:
-    """Fetch Tier 1 daily bars and advance the paper scenarios (cron entry)."""
-    from pathlib import Path
+def fetch_tier1_history(start: str) -> dict[str, pd.DataFrame]:
+    """Tier 1 daily bars from ``start`` (ISO date), completed bars only.
 
+    Shared by the live-shadow cron and the replay engine so both run on the
+    same data path. Drops today's partial bar (only completed daily bars may
+    fill orders) and skips symbols that fail to fetch, logging what's missing.
+    """
     from src.assets.asset import TIER1_ASSETS
-    from src.execution.report import build_paper_report
-    from src.features.report_json import write_report_json
     from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
     src = YahooFinanceSource()
-    start = (
-        (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=DEFAULT_LOOKBACK * 4)).date().isoformat()
-    )
     history: dict[str, pd.DataFrame] = {}
     for asset in TIER1_ASSETS:
         try:
@@ -189,7 +193,6 @@ def main() -> None:
             continue
         if df.empty:
             continue
-        # drop today's partial bar: only completed daily bars may fill orders
         today = pd.Timestamp.now(tz="UTC").normalize()
         df = df.loc[df.index < today]
         if not df.empty:
@@ -198,6 +201,20 @@ def main() -> None:
     if len(history) < len(TIER1_ASSETS):
         missing = {a.symbol for a in TIER1_ASSETS} - set(history)
         logger.warning("missing history for %s — proceeding without them", sorted(missing))
+    return history
+
+
+def main() -> None:
+    """Fetch Tier 1 daily bars and advance the paper scenarios (cron entry)."""
+    from pathlib import Path
+
+    from src.execution.report import build_paper_report
+    from src.features.report_json import write_report_json
+
+    start = (
+        (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=DEFAULT_LOOKBACK * 4)).date().isoformat()
+    )
+    history = fetch_tier1_history(start)
     if not history:
         raise SystemExit("no price history available, aborting run")
 
