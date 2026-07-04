@@ -7,6 +7,7 @@ const SOURCES = {
   market: "data/market_series.json",
   events: "data/events.json",
   health: "data/data_health.json",
+  paper: "data/paper_report.json",
 };
 
 const HEALTH_LABEL = { match: "OK", mismatch: "Divergenza", single_source: "Fonte unica" };
@@ -26,15 +27,18 @@ const STATUS_LABEL = {
 
 const NF = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 2 });
 const NF0 = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 0 });
+const EUR0 = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+const EUR2 = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
+const ORDER_STATUS_LABEL = { pending: "in attesa", filled: "eseguito", cancelled: "annullato", rejected: "rifiutato" };
 
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   setupTabs();
-  const [crypto, equity, education, market, events, health] = await Promise.all([
+  const [crypto, equity, education, market, events, health, paper] = await Promise.all([
     fetchJSON(SOURCES.crypto), fetchJSON(SOURCES.equity),
     fetchJSON(SOURCES.education), fetchJSON(SOURCES.market), fetchJSON(SOURCES.events),
-    fetchJSON(SOURCES.health),
+    fetchJSON(SOURCES.health), fetchJSON(SOURCES.paper),
   ]);
   renderTicker(market);
   renderHero(market);
@@ -42,6 +46,7 @@ async function init() {
   renderCrypto(crypto);
   renderEquity(equity);
   renderEvents(events);
+  renderPaper(paper);
   renderOverview(crypto, equity);
   renderEducation(education);
   renderFooter(crypto, equity, market);
@@ -593,6 +598,157 @@ function sentimentDot(s) {
   if (typeof s === "number") color = s > 0.05 ? "var(--pos)" : s < -0.05 ? "var(--neg)" : "var(--neutral)";
   dot.style.background = color;
   return dot;
+}
+
+/* ---------- Paper trading (Fase 6) ----------
+   Portafogli VIRTUALI: la strategia difensiva di momentum eseguita in avanti,
+   fuori campione, col modello di costi del progetto. I portafogli nascono al
+   primo run del cron notturno; prima di allora la sezione lo dice invece di
+   mostrare zeri. */
+function fmtEur(v, cents) {
+  if (v === null || v === undefined || Number.isNaN(v)) return "—";
+  return (cents ? EUR2 : EUR0).format(v);
+}
+
+function renderPaper(data) {
+  setUpdated("paper-updated", data);
+  const disc = document.getElementById("paper-disclaimer");
+  if (disc) disc.textContent = (data && data.disclaimer) || "";
+  const root = document.getElementById("paper-cards");
+  root.innerHTML = "";
+  if (!data || !Array.isArray(data.scenarios) || data.scenarios.length === 0) {
+    root.appendChild(el("p", "empty",
+      "I portafogli virtuali nascono al primo aggiornamento notturno (cron 00:40 UTC). Ancora nessun dato: torna dopo il primo ciclo."));
+    return;
+  }
+  const grid = el("div", "paper-grid");
+  data.scenarios.forEach((s) => grid.appendChild(paperCard(s)));
+  root.appendChild(grid);
+}
+
+function paperStat(label, value, cls) {
+  const m = el("div", "paper-stat");
+  m.appendChild(el("div", "label", label));
+  m.appendChild(el("div", `value ${cls || ""}`, value));
+  return m;
+}
+
+function paperCard(s) {
+  const card = el("div", "paper-card");
+
+  const head = el("div", "paper-head");
+  const left = el("div");
+  left.appendChild(el("div", "paper-name", fmtEur(s.initial_cash)));
+  left.appendChild(el("div", "paper-sub", s.last_processed ? `al ${fmtDay(s.last_processed)}` : "in attesa del primo run"));
+  head.appendChild(left);
+  const badge = el("div", `paper-return ${pctClass(s.return_pct)}`, fmtPct(s.return_pct));
+  head.appendChild(badge);
+  card.appendChild(head);
+
+  const stats = el("div", "paper-stats");
+  stats.appendChild(paperStat("Valore", fmtEur(s.equity, true)));
+  stats.appendChild(paperStat("Liquidità", fmtEur(s.cash, true)));
+  stats.appendChild(paperStat("P/L realizzato", fmtEur(s.realized_pnl, true), pctClass(s.realized_pnl)));
+  stats.appendChild(paperStat("Commissioni", fmtEur(s.fees_paid, true)));
+  card.appendChild(stats);
+
+  if (s.fully_marked === false) {
+    card.appendChild(el("p", "paper-note", "Valorizzazione parziale: prezzo non disponibile per alcuni asset."));
+  }
+
+  if (Array.isArray(s.curve) && s.curve.length > 1) {
+    const holder = el("div", "paper-spark");
+    holder.innerHTML = sparklineSVG(s.curve.map((p) => p.v));
+    if (holder.firstElementChild) card.appendChild(holder);
+  }
+
+  if (s.metrics) {
+    const m = s.metrics;
+    const row = el("div", "paper-metrics");
+    row.appendChild(paperMetric("Sharpe", m.sharpe === null || m.sharpe === undefined ? "—" : NF.format(m.sharpe)));
+    row.appendChild(paperMetric("Max drawdown", m.max_drawdown_pct === null || m.max_drawdown_pct === undefined ? "—" : `${m.max_drawdown_pct.toFixed(1)}%`));
+    row.appendChild(paperMetric("Tempo sott'acqua", m.time_underwater_pct === null || m.time_underwater_pct === undefined ? "—" : `${m.time_underwater_pct.toFixed(0)}%`));
+    row.appendChild(paperMetric("Giorni", `${m.n_days}`));
+    card.appendChild(row);
+  } else {
+    card.appendChild(el("p", "paper-note", "Metriche di rischio dopo qualche giorno di storico (servono ≥5 osservazioni)."));
+  }
+
+  card.appendChild(paperPositions(s.positions));
+
+  const targets = s.targets && Object.keys(s.targets).length ? s.targets : null;
+  if (targets) {
+    const wrap = el("div", "paper-targets");
+    wrap.appendChild(el("span", "paper-targets-label", "Target"));
+    Object.entries(targets).sort((a, b) => a[0].localeCompare(b[0])).forEach(([sym, w]) => {
+      wrap.appendChild(el("span", "chip", `${sym} ${(w * 100).toFixed(0)}%`));
+    });
+    card.appendChild(wrap);
+  }
+
+  if (Array.isArray(s.recent_orders) && s.recent_orders.length) {
+    card.appendChild(paperOrders(s.recent_orders));
+  }
+  return card;
+}
+
+function paperMetric(label, value) {
+  const m = el("div", "paper-metric");
+  m.appendChild(el("div", "label", label));
+  m.appendChild(el("div", "value", value));
+  return m;
+}
+
+function paperPositions(positions) {
+  const box = el("div", "paper-positions");
+  box.appendChild(el("h4", "paper-subtitle", "Posizioni"));
+  if (!Array.isArray(positions) || positions.length === 0) {
+    box.appendChild(el("p", "paper-note", "Nessuna posizione aperta: interamente in liquidità (posizione difensiva)."));
+    return box;
+  }
+  const table = el("table", "paper-table");
+  const thead = el("tr");
+  ["Asset", "Quantità", "Prezzo medio", "Prezzo", "Valore", "P/L"].forEach((h, i) => {
+    thead.appendChild(el("th", i === 0 ? "" : "num", h));
+  });
+  const head = document.createElement("thead");
+  head.appendChild(thead);
+  table.appendChild(head);
+  const body = document.createElement("tbody");
+  positions.forEach((p) => {
+    const tr = el("tr");
+    tr.appendChild(el("td", "", p.symbol));
+    tr.appendChild(el("td", "num", fmtNum(p.qty)));
+    tr.appendChild(el("td", "num", fmtEur(p.avg_cost, true)));
+    tr.appendChild(el("td", "num", p.price === null ? "—" : fmtEur(p.price, true)));
+    tr.appendChild(el("td", "num", p.value === null ? "—" : fmtEur(p.value, true)));
+    tr.appendChild(el("td", `num ${pctClass(p.pnl_pct)}`, p.pnl_pct === null ? "—" : fmtPct(p.pnl_pct)));
+    body.appendChild(tr);
+  });
+  table.appendChild(body);
+  const wrap = el("div", "paper-table-wrap");
+  wrap.appendChild(table);
+  box.appendChild(wrap);
+  return box;
+}
+
+function paperOrders(orders) {
+  const box = el("details", "paper-orders");
+  const summary = document.createElement("summary");
+  summary.textContent = `Ultimi ordini (${orders.length})`;
+  box.appendChild(summary);
+  const list = el("ul", "paper-order-list");
+  [...orders].reverse().forEach((o) => {
+    const li = el("li", `paper-order ${o.side === "buy" ? "buy" : "sell"}`);
+    li.appendChild(el("span", "po-date", o.created_at));
+    li.appendChild(el("span", "po-side", o.side === "buy" ? "Acquisto" : "Vendita"));
+    li.appendChild(el("span", "po-sym", o.symbol));
+    li.appendChild(el("span", "po-qty", fmtNum(o.qty)));
+    li.appendChild(el("span", `po-status st-${o.status}`, ORDER_STATUS_LABEL[o.status] || o.status));
+    list.appendChild(li);
+  });
+  box.appendChild(list);
+  return box;
 }
 
 /* ---------- Education ---------- */

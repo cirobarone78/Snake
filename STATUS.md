@@ -204,6 +204,28 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-04 — Sessione (cont.): Fase 6 PR-3 — paper report + tab dashboard
+- **`src/execution/report.py`**: `build_paper_report(store, marks)` trasforma
+  lo stato committato (ADR-029) nel payload `public/data/paper_report.json`.
+  Per ogni scenario: equity mark-to-market (con flag `fully_marked` se manca
+  un prezzo, invece di far crashare tutto il report), cash, return %, P&L
+  realizzato, commissioni, posizioni, target, **metriche di rischio con le
+  STESSE funzioni Fase 2** (`summarize`: sharpe, max drawdown, tempo
+  sott'acqua) — mostrate solo con ≥5 punti di curva, altrimenti lo dice; curva
+  equity e ultimi 10 ordini.
+- **`live_shadow.main()`**: dopo `run_daily` scrive il report ai prezzi di
+  chiusura su cui ha deciso; **`paper-shadow.yml`** committa anche
+  `public/data/paper_report.json`.
+- **Dashboard tab "Paper trading"** (`index.html` + `app.js` + `styles.css`):
+  card per scenario 1k/10k/100k con badge return, stat, sparkline equity,
+  riga metriche, tabella posizioni (scroll-safe nella card), target chip,
+  ultimi ordini in `<details>`. Empty state onesto: "i portafogli nascono al
+  primo run del cron". Verificato con screenshot headless (dark/light/mobile).
+- **4 nuovi test** report builder. **412/412 pytest**, ruff pulito, pyright 0
+  (src/execution mantenuto a 0).
+- **Fase 6 completa lato osservabilità**: manca solo la modalità **replay**
+  (segnali storici attraverso il broker) come ultimo pezzo opzionale.
+
 ### 2026-07-04 — Sessione (cont.): Fase 6 PR-2 — live-shadow runner + cron
 - **PR #48 (nucleo) mergiata**; costruito il runner che accende i portafogli:
   - `strategy.py`: momentum difensivo Tier 1 — equal weight sugli asset con

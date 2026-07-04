@@ -45,9 +45,7 @@ MIN_TRADE_EQUITY_FRAC = 0.01
 CAPITAL_UTILIZATION = 0.97
 
 
-def _bars_after(
-    history: dict[str, pd.DataFrame], after: pd.Timestamp | None
-) -> list[Bar]:
+def _bars_after(history: dict[str, pd.DataFrame], after: pd.Timestamp | None) -> list[Bar]:
     """All bars strictly after ``after``, across symbols, in time order."""
     bars: list[Bar] = []
     for symbol, df in history.items():
@@ -109,9 +107,7 @@ def run_daily(
         # we trade on SIGNAL CHANGES (plus self-healing after rejected fills),
         # never on daily drift — chasing the exact weight every day is
         # rebalance drag, i.e. guaranteed fee churn for no signal.
-        closes_hist = {
-            s: cast("pd.Series", df.sort_index()["close"]) for s, df in history.items()
-        }
+        closes_hist = {s: cast("pd.Series", df.sort_index()["close"]) for s, df in history.items()}
         targets = momentum_target_weights(closes_hist, lookback=lookback)
         equity = state.portfolio.equity(closes_at_t)
         pending_symbols = {o.symbol for o in broker.pending}
@@ -126,9 +122,7 @@ def run_daily(
             # self-heal: signal already on but the position is missing/half
             # (e.g. a fill bounced on a big gap) and nothing is in flight
             underfilled = (
-                target_w > 0
-                and current_val < 0.5 * target_val
-                and symbol not in pending_symbols
+                target_w > 0 and current_val < 0.5 * target_val and symbol not in pending_symbols
             )
             if not (signal_changed or underfilled):
                 continue
@@ -142,8 +136,12 @@ def run_daily(
             if qty <= 0:
                 continue
             order = Order(
-                scenario_id=scenario_id, symbol=symbol, side=side,
-                order_type=OrderType.MARKET, qty=qty, created_at=t_last,
+                scenario_id=scenario_id,
+                symbol=symbol,
+                side=side,
+                order_type=OrderType.MARKET,
+                qty=qty,
+                created_at=t_last,
             )
             new_orders.append(broker.submit(order))
         state.last_targets = {s: w for s, w in targets.items() if w > 0}
@@ -166,13 +164,22 @@ def run_daily(
     return summaries
 
 
+PAPER_REPORT_PATH = "public/data/paper_report.json"
+
+
 def main() -> None:
     """Fetch Tier 1 daily bars and advance the paper scenarios (cron entry)."""
+    from pathlib import Path
+
     from src.assets.asset import TIER1_ASSETS
+    from src.execution.report import build_paper_report
+    from src.features.report_json import write_report_json
     from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
     src = YahooFinanceSource()
-    start = (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=DEFAULT_LOOKBACK * 4)).date().isoformat()
+    start = (
+        (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=DEFAULT_LOOKBACK * 4)).date().isoformat()
+    )
     history: dict[str, pd.DataFrame] = {}
     for asset in TIER1_ASSETS:
         try:
@@ -197,6 +204,11 @@ def main() -> None:
     store = ScenarioStore()
     summaries = run_daily(store, history)
     logger.info("live-shadow run complete: %s", {k: v.get("equity") for k, v in summaries.items()})
+
+    # dashboard payload: mark-to-market at the same closes the run decided on
+    marks = {s: float(df.sort_index()["close"].iloc[-1]) for s, df in history.items()}
+    write_report_json(build_paper_report(store, marks), Path(PAPER_REPORT_PATH))
+    logger.info("wrote paper report -> %s", PAPER_REPORT_PATH)
 
 
 if __name__ == "__main__":
