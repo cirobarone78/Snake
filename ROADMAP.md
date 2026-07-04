@@ -377,16 +377,17 @@ di notebook. È la fase di "consumo" del sistema da parte dell'utente.
 - [x] **(C1)** Cron news da 6h a 3h — freschezza della sezione Eventi
 - [x] **(C2)** `market_series.json` da 4 a 10 serie: tutti i Tier 1 +
       NDX + Tech (XLK) + Semi (SMH). La UI è a chip (una serie alla volta)
-- [~] **(D1)** Test empirico VADER vs FinBERT sui ~20k titoli archiviati:
-      ADR-023 subordinava l'upgrade all'evidenza, ora i dati per misurare
-      ci sono. **Ipotesi e regola di decisione pre-registrate e committate
-      prima di qualsiasi risultato** (notebook 12, verificabile in git).
-      **BLOCCATO da allowlist**: huggingface.co è aperto ma i CDN dei pesi
-      no (`us.aws.cdn.hf.co` 403, `cas-bridge.xethub.hf.co` 403,
-      `cdn-lfs.huggingface.co` 502). Per sbloccare: aggiungere quegli host
-      (o `*.hf.co` + `*.huggingface.co`) all'allowlist e usare un
-      **ambiente nuovo**; poi `uv pip install torch transformers`
-      (tooling, non pyproject) ed eseguire scoring + notebook 12
+- [x] **(D1)** Test empirico VADER vs FinBERT (notebook 12, eseguito su
+      6.971 titoli dopo sblocco allowlist CDN HF). Ipotesi e regola di
+      adozione **pre-registrate in git prima dei risultati**. Esito:
+      accordo di polarità solo 49.7% (H1 ✓); FinBERT correla meglio
+      same-day su entrambi (BTC ρ 0.517 vs 0.379, +36%; ETH 0.476 vs
+      0.256 n.s., +86%) ma la **barra pre-registrata (≥+50% su entrambi)
+      NON è superata** → **si resta su VADER** (i pali non si spostano
+      post-hoc). Nessun lead per nessuno dei due (H3 ✓, conferma nb 06);
+      la stampa insegue il prezzo. **Follow-up**: rieseguire nb 12 a
+      campione raddoppiato (n≈80-90 giorni, ~fine agosto 2026); se la
+      barra è superata su entrambi → ADR di adozione FinBERT
 - [x] **(D2)** Spike di volume di copertura (`src/features/news_volume.py`):
       conteggio titoli/giorno vs baseline rolling causale con floor di
       Poisson (feed costanti) e `min_count` (feed sottili). Annota ogni
