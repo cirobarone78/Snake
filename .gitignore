@@ -60,6 +60,12 @@ data/cache/
 !data/macro_history/
 !data/macro_history/*.parquet
 
+# Paper trading state (Fase 6, ADR-029): committed so the live-shadow track
+# record — the deliverable of the phase — survives ephemeral cron containers.
+# Small JSON state + compact parquet audit trails; resets archive, never delete.
+!data/paper/
+!data/paper/**
+
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
 # Anchored to repo root so it ignores downloaded model weights only, not the
 # src/models/ source package.

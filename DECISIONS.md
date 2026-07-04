@@ -1482,6 +1482,36 @@ VISION la preveda.
 
 ---
 
+## ADR-029 — Stato del paper trading versionato nel repo
+
+**Data**: 2026-07-04
+**Stato**: Accepted
+**Estende**: ADR-010/011 (paper trading), ADR-025 (pattern history versionata)
+
+**Contesto**: la Fase 6 richiede che il paper trading giri in **live-shadow
+per mesi senza interventi manuali** (criterio di completamento). I job girano
+su container effimeri (GitHub Actions): senza persistenza esterna, ogni run
+ripartirebbe da zero e il track record — che È il deliverable della fase —
+non esisterebbe.
+
+**Decisione**: lo stato dei portafogli paper vive in **`data/paper/`,
+committato** nel repo (eccezione mirata ad ADR-009, stesso razionale di
+ADR-025): `scenarios.json` (registry), per scenario `state.json` (portfolio +
+ultimo bar processato), `orders.parquet` (audit trail completo),
+`equity.parquet` (curva, append idempotente per bar). I **reset** spostano i
+file in `_archive/` — non si cancella mai nulla (ADR-011). File piccoli
+(KB), nessun problema di licenza (è output nostro).
+
+**Conseguenze**:
+- ✅ Il track record sopravvive ai container e resta auditabile via git
+  (ogni commit del cron è uno snapshot verificabile)
+- ✅ Riproducibilità: chiunque cloni il repo vede l'intera storia degli ordini
+- ⚠️ Un solo writer sequenziale (il cron): la concorrenza non è gestita, per
+  scelta — se un giorno servisse, si passa a uno store esterno con lock
+- 🔗 Prima applicazione: `src/execution/` (PaperBroker, ScenarioStore)
+
+---
+
 <!--
 Template per nuove ADR:
 

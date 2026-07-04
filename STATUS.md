@@ -204,6 +204,33 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-04 — Sessione (cont.): APERTA LA FASE 6 — nucleo PaperBroker
+- **Decisione** (utente, dopo verifica dati: "i pochi dati bloccano solo
+  le ri-validazioni, non i prossimi step"): partire con la Fase 6 — il
+  paper trading è forward-looking, genera il proprio track record
+- **`src/execution/` implementato** (PR-1 del nucleo):
+  - `orders.py`: Order (market/limit, audit completo: created/filled/
+    rejected + motivo)
+  - `portfolio.py`: cassa, posizioni average-cost, P&L realizzato/non,
+    equity con mark obbligatorio (niente prezzi a zero silenziosi)
+  - `paper_broker.py`: `Broker` ABC + `PaperBroker` — **no-look-ahead
+    strutturale** (ordine a t → fill a t+1 all'open, guardia
+    `created_at >= bar.ts` testata), fee+slippage via lo **stesso
+    `TransactionCostModel` dei backtest** (ADR-012/013), long-only con
+    reject auditabile, sizing `qty_for_cash_fraction`, latenza = 1 barra
+  - `scenarios.py`: `ScenarioStore` ADR-011 — default 1k/10k/100k EUR,
+    **reset che archivia** (mai cancellare), **fork**, persistenza
+    state.json + orders/equity parquet con append idempotente per bar
+- **ADR-029**: stato paper **committato** in `data/paper/` (razionale
+  ADR-025: il track record deve sopravvivere ai container effimeri);
+  eccezione .gitignore **verificata con check-ignore** (lezione src/models)
+- **18 nuovi test** (no-look-ahead, limit con gap, costi, reject
+  long-only/cassa, average cost, reset/fork/idempotenza). **400/400
+  pytest**, ruff pulito, pyright 0 anche su src/execution
+- **Prossime PR Fase 6**: modalità **replay**, runner **live-shadow**
+  (cron giornaliero: DCA benchmark + momentum sui Tier 1), sezione
+  dashboard del paper portfolio, metriche Fase 2 sull'equity curve
+
 ### 2026-07-04 — Sessione (cont.): educational L2 da 1/10 a 8/10
 - **Tre PR mergiate** (#44, #45, #46), sette nuovi capitoli L2, tutti
   fondati su codice e risultati reali del repo (principio ADR-015):

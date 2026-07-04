@@ -319,18 +319,18 @@ segnali generati dal sistema, simulando con realismo guadagni e perdite. È il
 trading. Vedi ADR-010 per i principi non negoziabili.
 
 ### Deliverable
-- [ ] Modulo `src/execution/` con interfaccia `Broker` astratta
-- [ ] Implementazione `PaperBroker`:
-  - [ ] No look-ahead (ordine al tempo `t` ⇒ fill alla candela `t+1`)
-  - [ ] Modello fee tarato su Binance spot (default 0.1% maker/taker)
-  - [ ] Modello slippage lineare basato su spread e size
-  - [ ] Latenza simulata (almeno una candela del timeframe corrente)
-- [ ] Portfolio manager: posizioni, P&L realizzato e non-realizzato, equity curve
-- [ ] Persistenza completa (storico ordini, fill, snapshot portfolio) in
-      parquet/SQLite — risultati riproducibili e auditabili
-- [ ] Tipi di ordine: Market, Limit (Stop e TP in seconda iterazione)
-- [ ] Position sizing configurabile (percentuale fissa come baseline)
-- [ ] Long-only inizialmente (no leverage, no short)
+- [x] Modulo `src/execution/` con interfaccia `Broker` astratta
+- [~] Implementazione `PaperBroker` (nucleo in PR, latenza=1 barra implicita nel fill a t+1):
+  - [x] No look-ahead (ordine al tempo `t` ⇒ fill alla candela `t+1`, all'**open**; guardia `created_at >= bar.ts` testata)
+  - [x] Modello fee tarato su Binance spot (riusa `TransactionCostModel` ADR-012 — stesso modello dei backtest)
+  - [x] Modello slippage (ADR-013, peggiora il prezzo nel verso del trade)
+  - [x] Latenza simulata: una candela, strutturale nel fill a t+1
+- [x] Portfolio manager: posizioni (average cost), P&L realizzato/non, equity, fee cumulate
+- [x] Persistenza completa (`ScenarioStore`: state.json + orders/equity parquet,
+      committata in `data/paper/` per sopravvivere ai container — ADR-029)
+- [x] Tipi di ordine: Market, Limit (Stop e TP in seconda iterazione)
+- [x] Position sizing configurabile (frazione di cassa, `qty_for_cash_fraction`)
+- [x] Long-only inizialmente (sell > held e buy > cash **rigettati**, auditabile)
 - [ ] Metriche calcolate sull'equity curve, **identiche** a quelle del backtest
       di Fase 2 (Sharpe, Sortino, max drawdown, profit factor, ecc.)
 - [ ] Modalità di esecuzione:
