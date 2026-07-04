@@ -6,7 +6,7 @@
 ---
 
 ## Ultimo aggiornamento
-2026-07-02
+2026-07-04
 
 ## Fase corrente
 **Screener di rotazione + attribuzione eventi + report auto-aggiornati 🟢 attivo
@@ -203,6 +203,44 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-07-04 — Sessione (cont.): educational L2 da 1/10 a 8/10
+- **Tre PR mergiate** (#44, #45, #46), sette nuovi capitoli L2, tutti
+  fondati su codice e risultati reali del repo (principio ADR-015):
+  - **L2.01 Indicatori tecnici** (indicators.py + verità empiriche nb 04/05:
+    accuracy ~50%, valore = difensivo; "10 indicatori = 1 informazione")
+  - **L2.04 Risk management** (trailing_stop.py, size dallo stop, caso
+    reale coi livelli ATR, "lo stop è un'assicurazione": +0.5% vs +18.9%
+    medio ma −3% vs −33% nel peggior decile)
+  - **L2.05 Drawdown e time underwater** (BTC −77% MaxDD a +49% CAGR col
+    95% dei giorni sott'acqua; matematica convessa del recupero; Calmar)
+  - **L2.08 Cicli e regimi** (4-stati nb 09: Sharpe +2.97↔−1.20, la media
+    è un artefatto; il regime è contesto, non profezia: 0.498→0.510)
+  - **L2.09 Halving** (pattern misurato picchi ~520-550g, ciclo attuale a
+    −49% vs −66/−68% storici; caveat n=3 "bussola non mappa")
+  - **L2.02 Volumi** (OBV, trappola Q23 cross-venue, volume di attenzione
+    col caso tech/POL, floor di Poisson)
+  - **L2.07 DCA vs lump sum** (misurato su BTC 2018-2026, 68 finestre 3y:
+    LS vince 71% e mediana +161% vs +102%, ma peggior ingresso LS +1% vs
+    +103% DCA → assicurazione sul timing; DCA negativo nel 4% dei casi
+    dove LS mai → il rischio si sposta, non si elimina)
+- **Restano L2.03 (fondamentale) e L2.10 (on-chain)**: rimandati finché il
+  progetto non costruisce il materiale corrispondente (regola del corso)
+- education.json rigenerato a ogni batch; capitoli visibili nel tab Impara
+
+### 2026-07-03 — Sessione (cont.): UI Eventi v3 (feedback utente)
+- **Feedback**: "interfaccia ostica, dati buttati lì senza filtri".
+  Diagnosi: il tab Eventi era a **150 move-card** raggruppate per asset
+  (effetto soglie v2), senza ordine temporale né filtri
+- **Redesign** (PR #43, mergiata): timeline cronologica per giornata
+  (più recente in alto, card con identità asset), **barra filtri**
+  (universo, rilevanza con conteggi vivi, asset, tipo evento, contatore),
+  default solo-major, deep-link ai tab via hash (`#events`)
+- Verificato in Chromium headless su dati reali a 1280px e **390px CSS
+  reali** (via device-scale-factor 2 — scoperto che il window-size
+  headless ha un floor di 500px: l'apparente overflow mobile era il crop
+  del PNG, non un bug CSS; verificato con pagina di controllo)
+- Solo `public/`, zero backend
 
 ### 2026-07-03 — Sessione (cont.): D1 ESEGUITO — verdetto: si resta su VADER
 - **Sblocco**: l'utente ha aggiunto i CDN HF all'allowlist e (novità
