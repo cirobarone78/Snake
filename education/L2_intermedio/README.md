@@ -1,7 +1,7 @@
 # L2 — Intermedio · *Smart Investor*
 
 > Capitoli scritti man mano che i temi corrispondenti vengono toccati nel
-> codice del progetto. **4/10 pubblicati.**
+> codice del progetto. **6/10 pubblicati.**
 
 ## Capitoli
 
@@ -15,6 +15,8 @@
    ✅ pubblicato (2026-07-03; codice: `metrics.py`, numeri reali dal notebook 04)
 6. **[Bias cognitivi: FOMO, loss aversion, anchoring, recency bias](./06_bias_cognitivi.md)** — ✅ pubblicato (2026-05-30, Fase 3)
 7. DCA vs lump sum: i numeri reali, non le opinioni — *pianificato*
-8. Cicli e regimi di mercato: bull, bear, sideways — *pianificato*
-9. Il ciclo halving di Bitcoin: cosa è e cosa non promette — *pianificato*
+8. **[Cicli e regimi di mercato: bull, bear, sideways](./08_cicli_regimi.md)** —
+   ✅ pubblicato (2026-07-04; codice: `regime.py`, evidenze: nb 09 + layer probabilistico)
+9. **[Il ciclo halving di Bitcoin: cosa è e cosa non promette](./09_ciclo_halving.md)** —
+   ✅ pubblicato (2026-07-04; codice: `cycles.py`, evidenze: notebook 11)
 10. On-chain metrics di base: hash rate, exchange flows, active addresses — *pianificato*
