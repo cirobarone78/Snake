@@ -204,6 +204,26 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-04 — Sessione (cont.): Fase 6 PR-2 — live-shadow runner + cron
+- **PR #48 (nucleo) mergiata**; costruito il runner che accende i portafogli:
+  - `strategy.py`: momentum difensivo Tier 1 — equal weight sugli asset con
+    momentum positivo, cash quando tutto è negativo. **LINK incluso**
+    (escluderlo dopo nb 05 = cherry-picking post-hoc, Q25 aperta)
+  - `live_shadow.py` `run_daily`: pending persistenti cross-run (order_id →
+    uuid, upsert su orders.parquet), processa i bar arretrati, decide a T,
+    ordina (fill al run successivo), snapshot equity, rerun idempotente
+  - Due lezioni di design emerse da test falliti (documentate nel codice):
+    (1) sizing 100% al close → reject sull'open superiore di domani →
+    **riserva cassa 3%** (CAPITAL_UTILIZATION 0.97); (2) ribilanciamento
+    quotidiano al target = **rebalance drag** → trade solo sui **cambi di
+    segnale** (last_targets persistito) + self-heal su fill rigettati
+  - Workflow `paper-shadow.yml`: cron 00:40 UTC, committa `data/paper/`
+- **8 nuovi test runner**. **408/408 pytest**, ruff pulito, pyright 0
+- **Al merge**: il primo cron crea gli scenari 1k/10k/100k e parte il
+  conteggio del criterio "3 mesi live-shadow senza interventi"
+- **Prossime PR**: replay mode, paper_report.json + sezione dashboard,
+  metriche Fase 2 sull'equity
+
 ### 2026-07-04 — Sessione (cont.): APERTA LA FASE 6 — nucleo PaperBroker
 - **Decisione** (utente, dopo verifica dati: "i pochi dati bloccano solo
   le ri-validazioni, non i prossimi step"): partire con la Fase 6 — il

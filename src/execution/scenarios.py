@@ -28,13 +28,13 @@ from __future__ import annotations
 
 import json
 import shutil
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, cast
 
 import pandas as pd
 
-from src.execution.orders import Order
+from src.execution.orders import Order, OrderStatus
 from src.execution.portfolio import Portfolio
 
 DEFAULT_ROOT = Path("data/paper")
@@ -54,6 +54,9 @@ class ScenarioState:
     initial_cash: float
     portfolio: Portfolio
     last_processed: pd.Timestamp | None = None
+    # Target weights decided on the last run: the strategy trades on signal
+    # CHANGES, not on daily drift (rebalance drag = pure fee churn).
+    last_targets: dict[str, float] = field(default_factory=dict)
 
 
 class ScenarioStore:
@@ -111,11 +114,13 @@ class ScenarioStore:
             if parsed is pd.NaT:
                 raise ValueError(f"corrupt last_processed in scenario {scenario_id!r}")
             last_ts = cast("pd.Timestamp", parsed)
+        raw_targets = raw.get("last_targets") or {}
         return ScenarioState(
             scenario_id=scenario_id,
             initial_cash=float(raw["initial_cash"]),
             portfolio=Portfolio.from_record(raw["portfolio"]),
             last_processed=last_ts,
+            last_targets={str(k): float(v) for k, v in raw_targets.items()},
         )
 
     def save(self, state: ScenarioState) -> None:
@@ -125,6 +130,7 @@ class ScenarioStore:
             "initial_cash": state.initial_cash,
             "portfolio": state.portfolio.to_record(),
             "last_processed": str(state.last_processed) if state.last_processed is not None else None,
+            "last_targets": state.last_targets,
         }
         (d / "state.json").write_text(json.dumps(payload, indent=2))
 
@@ -161,17 +167,29 @@ class ScenarioStore:
     # -- time series appends -------------------------------------------------
 
     def append_orders(self, scenario_id: str, orders: list[Order]) -> None:
+        """Upsert by ``order_id``: a re-saved order (e.g. pending -> filled on a
+        later run) replaces its previous record instead of duplicating it."""
         if not orders:
             return
         path = self.root / scenario_id / "orders.parquet"
         new = pd.DataFrame([o.to_record() for o in orders])
         if path.exists():
-            new = pd.concat([pd.read_parquet(path), new], ignore_index=True)
+            prev = pd.read_parquet(path)
+            prev = prev[~prev["order_id"].isin(list(new["order_id"]))]
+            new = pd.concat([prev, new], ignore_index=True)
         new.to_parquet(path, index=False)
 
     def orders(self, scenario_id: str) -> pd.DataFrame:
         path = self.root / scenario_id / "orders.parquet"
         return pd.read_parquet(path) if path.exists() else pd.DataFrame()
+
+    def load_pending(self, scenario_id: str) -> list[Order]:
+        """Rebuild the still-working orders (cross-run continuity of t+1 fills)."""
+        df = self.orders(scenario_id)
+        if df.empty:
+            return []
+        pending = df[df["status"] == OrderStatus.PENDING.value]
+        return [Order.from_record(dict(r)) for _, r in pending.iterrows()]
 
     def append_equity(self, scenario_id: str, ts: pd.Timestamp, equity: float, cash: float) -> None:
         path = self.root / scenario_id / "equity.parquet"

@@ -13,12 +13,16 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import StrEnum
-from itertools import count
-from typing import Final
+from uuid import uuid4
 
 import pandas as pd
 
-_ORDER_SEQ: Final = count(1)
+
+def _new_order_id() -> str:
+    """Process-independent id: pending orders survive across cron runs, so a
+    per-process counter would collide between runs. 12 hex chars are plenty
+    for a single sequential writer."""
+    return uuid4().hex[:12]
 
 
 class Side(StrEnum):
@@ -54,7 +58,7 @@ class Order:
     qty: float
     created_at: pd.Timestamp
     limit_price: float | None = None
-    order_id: int = field(default_factory=lambda: next(_ORDER_SEQ))
+    order_id: str = field(default_factory=_new_order_id)
     status: OrderStatus = OrderStatus.PENDING
     filled_at: pd.Timestamp | None = None
     fill_price: float | None = None
@@ -86,3 +90,30 @@ class Order:
             "fee_paid": self.fee_paid,
             "reject_reason": self.reject_reason,
         }
+
+    @classmethod
+    def from_record(cls, rec: dict[str, object]) -> Order:
+        """Rebuild an order from its parquet record (cross-run pending)."""
+
+        def _opt_float(v: object) -> float | None:
+            return None if v is None or pd.isna(v) else float(v)  # type: ignore[arg-type]
+
+        def _opt_ts(v: object) -> pd.Timestamp | None:
+            return None if v is None or pd.isna(v) else pd.Timestamp(v)  # type: ignore[arg-type]
+
+        reject = rec.get("reject_reason")
+        return cls(
+            scenario_id=str(rec["scenario_id"]),
+            symbol=str(rec["symbol"]),
+            side=Side(str(rec["side"])),
+            order_type=OrderType(str(rec["order_type"])),
+            qty=float(rec["qty"]),  # type: ignore[arg-type]
+            created_at=pd.Timestamp(rec["created_at"]),  # type: ignore[arg-type]
+            limit_price=_opt_float(rec.get("limit_price")),
+            order_id=str(rec["order_id"]),
+            status=OrderStatus(str(rec["status"])),
+            filled_at=_opt_ts(rec.get("filled_at")),
+            fill_price=_opt_float(rec.get("fill_price")),
+            fee_paid=_opt_float(rec.get("fee_paid")),
+            reject_reason=None if reject is None or pd.isna(reject) else str(reject),  # type: ignore[arg-type]
+        )
