@@ -333,15 +333,16 @@ trading. Vedi ADR-010 per i principi non negoziabili.
 - [x] Long-only inizialmente (sell > held e buy > cash **rigettati**, auditabile)
 - [ ] Metriche calcolate sull'equity curve, **identiche** a quelle del backtest
       di Fase 2 (Sharpe, Sortino, max drawdown, profit factor, ecc.)
-- [ ] Modalità di esecuzione:
+- [~] Modalità di esecuzione:
   - [ ] **Replay**: rieseguire segnali su dati storici (= backtest realistico)
-  - [ ] **Live-shadow**: ingerire dati real-time/quasi-real-time, generare
-        segnali e simulare esecuzione in continuo. Coerente col timeframe scelto
-- [ ] Configurazione iniziale (parametri esposti):
-  - Capitale virtuale di partenza
-  - Exchange di riferimento (per fee model)
-  - Allocazione/sizing policy
-  - Whitelist asset operabili
+  - [x] **Live-shadow**: runner giornaliero (`src/execution/live_shadow.py`) +
+        cron `paper-shadow.yml` (00:40 UTC). Strategia: momentum difensivo
+        Tier 1 (LINK incluso — niente cherry-pick post-hoc, Q25 aperta),
+        trade solo su cambi di segnale (no rebalance drag), riserva cassa 3%
+        per i gap overnight, pending persistenti cross-run, rerun idempotente
+- [x] Configurazione iniziale (parametri esposti): capitale per scenario
+      (registry ADR-011), cost model (default Binance ADR-012), lookback
+      strategia, utilizzo capitale, soglia min-trade; universo = Tier 1
 
 ### Criterio di completamento
 - Il paper trading gira in modalità live-shadow per **almeno 3 mesi**
