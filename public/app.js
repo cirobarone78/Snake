@@ -11,7 +11,10 @@ const SOURCES = {
   replay: "data/paper_replay.json",
 };
 
-const HEALTH_LABEL = { match: "OK", mismatch: "Divergenza", single_source: "Fonte unica" };
+const HEALTH_LABEL = { match: "Fonti concordi", mismatch: "Divergenza", single_source: "Fonte unica" };
+// A health check that can't see its own staleness is a smoke alarm with a dead
+// battery: if the cron stops, the dots stay green forever. Flag past this age.
+const HEALTH_STALE_HOURS = 36;
 
 const CLASS_LABEL = { "market-wide": "Di mercato", "asset-specific": "Specifico dell'asset", unknown: "Da definire" };
 const CLASS_CLASS = { "market-wide": "market", "asset-specific": "specific", unknown: "unknown" };
@@ -97,6 +100,16 @@ function pctClass(v) {
 function fmtNum(v) {
   if (v === null || v === undefined || Number.isNaN(v)) return "—";
   return Math.abs(v) >= 100 ? NF0.format(v) : NF.format(v);
+}
+function fmtPrice(v) {
+  if (v === null || v === undefined || Number.isNaN(v)) return "—";
+  const d = Math.abs(v) >= 100 ? 0 : Math.abs(v) >= 1 ? 2 : 4;
+  return v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+}
+function ageHours(iso) {
+  if (!iso) return null;
+  const t = new Date(iso).getTime();
+  return Number.isNaN(t) ? null : (Date.now() - t) / 3600000;
 }
 function fmtMcap(v) {
   if (v === null || v === undefined || Number.isNaN(v)) return null;
@@ -362,22 +375,42 @@ function fillRanklist(id, data, kind) {
   });
 }
 
-/* ---------- Data health (cross-source) ---------- */
+/* ---------- Data health (cross-source) ----------
+   Two independent price sources agreeing to ~0% IS the healthy signal, so the
+   dots and divergence barely move — which reads as "frozen". Show the price
+   (changes daily) and the update time as proof of life, and flag the card if
+   it stops updating (self-staleness), so a dead cron is finally visible. */
 function renderHealth(data) {
   const card = document.getElementById("health-card");
   const grid = document.getElementById("health-grid");
   if (!card || !grid) return;
   if (!data || !Array.isArray(data.assets) || data.assets.length === 0) { card.hidden = true; return; }
   card.hidden = false;
+
+  const age = ageHours(data.generated_at);
+  const stale = age !== null && age > HEALTH_STALE_HOURS;
+  card.classList.toggle("is-stale", stale);
+
+  const head = card.querySelector(".health-head");
+  const old = head && head.querySelector(".health-fresh");
+  if (old) old.remove();
+  if (head && data.generated_at) {
+    const tag = el("span", "health-fresh" + (stale ? " stale" : ""),
+      stale ? `⚠ non aggiornato da ${Math.round(age)}h` : `aggiornato ${fmtDate(data.generated_at)}`);
+    head.appendChild(tag);
+  }
+
   grid.innerHTML = "";
   data.assets.forEach((a) => {
     const st = (a.status || "single_source").toLowerCase();
     const item = el("div", "health-item");
-    const dot = el("span", `health-dot h-${st}`);
-    item.appendChild(dot);
-    const txt = el("div");
-    txt.appendChild(el("div", "health-sym", a.symbol));
-    const div = typeof a.divergence_pct === "number" ? `Δ ${a.divergence_pct.toFixed(1)}%` : "—";
+    item.appendChild(el("span", `health-dot h-${st}${stale ? " h-stale" : ""}`));
+    const txt = el("div", "health-txt");
+    const top = el("div", "health-top");
+    top.appendChild(el("span", "health-sym", a.symbol));
+    if (typeof a.yahoo === "number") top.appendChild(el("span", "health-price", `$${fmtPrice(a.yahoo)}`));
+    txt.appendChild(top);
+    const div = typeof a.divergence_pct === "number" ? `Δ ${NF.format(a.divergence_pct)}%` : "—";
     txt.appendChild(el("div", "health-meta", `${HEALTH_LABEL[st] || st} · ${div}`));
     item.appendChild(txt);
     item.title = a.reason || "";

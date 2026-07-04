@@ -204,6 +204,21 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-04 — Sessione (cont.): card "Salute fonti dati" — vitalità visibile
+- **Segnalazione utente**: "questi valori sono fermi da mesi". **Indagine**:
+  NON è un bug — il JSON si aggiorna ogni giorno (prezzi BTC 62.4k→61.6k→61.0k,
+  Yahoo≠CoinGecko, `generated_at` di oggi). Era un problema di **UI**: la card
+  mostrava solo pallino verde + divergenza arrotampeata a 1 decimale → e siccome
+  due fonti buone concordano a <0,1%, usciva sempre "0.0%" (paradosso del
+  rilevatore di fumo: silenzio = sano, ma indistinguibile da scarico).
+- **Fix (solo dashboard)**: la card ora mostra il **prezzo** (cambia ogni
+  giorno = prova di vitalità) e l'**orario di aggiornamento**; "0%" riformulato
+  in **"Fonti concordi"** (lo zero legge come buono). Aggiunta **guardia di
+  auto-staleness**: se `generated_at` > 36h la card e i pallini diventano ambra
+  con "⚠ non aggiornato da Nh" — così un cron **morto** è finalmente visibile
+  (prima la UI avrebbe mostrato pallini verdi per sempre). Disciplina ADR-026
+  applicata anche qui. Verificato con screenshot (fresco + stale, dark/light).
+
 ### 2026-07-04 — Sessione (cont.): Fase 6 — replay storico (ultimo pezzo)
 - **`src/execution/replay.py`**: fa passare la stessa strategia difensiva di
   momentum attraverso lo **stesso broker** del paper trading (stessi costi,

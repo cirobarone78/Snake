@@ -134,13 +134,20 @@ main { padding: 26px 0 60px; }
 .health-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
 .health-head h3 { margin: 0; font-size: 16px; font-weight: 700; }
 .health-sub { color: var(--text-soft); font-size: 12.5px; }
-.health-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.health-fresh { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--text-soft); }
+.health-fresh.stale { color: var(--warm); font-weight: 600; }
+.health-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
 .health-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--hairline); border-radius: 12px; cursor: help; }
+.health-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.health-top { display: flex; align-items: baseline; gap: 8px; }
 .health-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
 .health-dot.h-match { background: var(--pos); box-shadow: 0 0 8px var(--pos); }
 .health-dot.h-mismatch { background: var(--neg); box-shadow: 0 0 8px var(--neg); }
 .health-dot.h-single_source { background: var(--neutral); }
+.health-dot.h-stale { background: var(--warm); box-shadow: none; }
+.health.is-stale { border-color: color-mix(in srgb, var(--warm) 40%, var(--hairline)); }
 .health-sym { font-family: var(--mono); font-weight: 650; font-size: 14px; }
+.health-price { font-family: var(--mono); font-size: 12.5px; color: var(--text); }
 .health-meta { color: var(--text-soft); font-size: 11.5px; }
 
 /* Hero chart */
