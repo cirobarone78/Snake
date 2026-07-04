@@ -45,9 +45,7 @@ MIN_TRADE_EQUITY_FRAC = 0.01
 CAPITAL_UTILIZATION = 0.97
 
 
-def _bars_after(
-    history: dict[str, pd.DataFrame], after: pd.Timestamp | None
-) -> list[Bar]:
+def _bars_after(history: dict[str, pd.DataFrame], after: pd.Timestamp | None) -> list[Bar]:
     """All bars strictly after ``after``, across symbols, in time order."""
     bars: list[Bar] = []
     for symbol, df in history.items():
@@ -73,12 +71,17 @@ def run_daily(
     store: ScenarioStore,
     history: dict[str, pd.DataFrame],
     lookback: int = DEFAULT_LOOKBACK,
+    scenario_ids: list[str] | None = None,
 ) -> dict[str, dict[str, Any]]:
     """Advance every scenario to the last completed bar in ``history``.
 
     ``history`` maps symbol -> OHLC frame (daily, tz-aware index) up to and
     including the decision bar ``T``. Returns a per-scenario summary dict
     (for logging/reporting). Idempotent per ``T``.
+
+    ``scenario_ids`` selects which scenarios to advance; ``None`` (the cron
+    default) ensures and advances the ADR-011 defaults. The replay engine
+    passes its own single scenario so it drives the exact same per-bar path.
     """
     if not history:
         raise ValueError("empty history")
@@ -89,8 +92,9 @@ def run_daily(
         s: float(cast("float", df.sort_index()["close"].iloc[-1])) for s, df in history.items()
     }
 
+    ids = scenario_ids if scenario_ids is not None else ensure_default_scenarios(store)
     summaries: dict[str, dict[str, Any]] = {}
-    for scenario_id in ensure_default_scenarios(store):
+    for scenario_id in ids:
         state = store.load(scenario_id)
         if state.last_processed is not None and state.last_processed >= t_last:
             logger.info("%s: already processed %s, no-op", scenario_id, t_last.date())
@@ -109,9 +113,7 @@ def run_daily(
         # we trade on SIGNAL CHANGES (plus self-healing after rejected fills),
         # never on daily drift — chasing the exact weight every day is
         # rebalance drag, i.e. guaranteed fee churn for no signal.
-        closes_hist = {
-            s: cast("pd.Series", df.sort_index()["close"]) for s, df in history.items()
-        }
+        closes_hist = {s: cast("pd.Series", df.sort_index()["close"]) for s, df in history.items()}
         targets = momentum_target_weights(closes_hist, lookback=lookback)
         equity = state.portfolio.equity(closes_at_t)
         pending_symbols = {o.symbol for o in broker.pending}
@@ -126,9 +128,7 @@ def run_daily(
             # self-heal: signal already on but the position is missing/half
             # (e.g. a fill bounced on a big gap) and nothing is in flight
             underfilled = (
-                target_w > 0
-                and current_val < 0.5 * target_val
-                and symbol not in pending_symbols
+                target_w > 0 and current_val < 0.5 * target_val and symbol not in pending_symbols
             )
             if not (signal_changed or underfilled):
                 continue
@@ -142,8 +142,12 @@ def run_daily(
             if qty <= 0:
                 continue
             order = Order(
-                scenario_id=scenario_id, symbol=symbol, side=side,
-                order_type=OrderType.MARKET, qty=qty, created_at=t_last,
+                scenario_id=scenario_id,
+                symbol=symbol,
+                side=side,
+                order_type=OrderType.MARKET,
+                qty=qty,
+                created_at=t_last,
             )
             new_orders.append(broker.submit(order))
         state.last_targets = {s: w for s, w in targets.items() if w > 0}
@@ -166,13 +170,20 @@ def run_daily(
     return summaries
 
 
-def main() -> None:
-    """Fetch Tier 1 daily bars and advance the paper scenarios (cron entry)."""
+PAPER_REPORT_PATH = "public/data/paper_report.json"
+
+
+def fetch_tier1_history(start: str) -> dict[str, pd.DataFrame]:
+    """Tier 1 daily bars from ``start`` (ISO date), completed bars only.
+
+    Shared by the live-shadow cron and the replay engine so both run on the
+    same data path. Drops today's partial bar (only completed daily bars may
+    fill orders) and skips symbols that fail to fetch, logging what's missing.
+    """
     from src.assets.asset import TIER1_ASSETS
     from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
     src = YahooFinanceSource()
-    start = (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=DEFAULT_LOOKBACK * 4)).date().isoformat()
     history: dict[str, pd.DataFrame] = {}
     for asset in TIER1_ASSETS:
         try:
@@ -182,7 +193,6 @@ def main() -> None:
             continue
         if df.empty:
             continue
-        # drop today's partial bar: only completed daily bars may fill orders
         today = pd.Timestamp.now(tz="UTC").normalize()
         df = df.loc[df.index < today]
         if not df.empty:
@@ -191,12 +201,31 @@ def main() -> None:
     if len(history) < len(TIER1_ASSETS):
         missing = {a.symbol for a in TIER1_ASSETS} - set(history)
         logger.warning("missing history for %s — proceeding without them", sorted(missing))
+    return history
+
+
+def main() -> None:
+    """Fetch Tier 1 daily bars and advance the paper scenarios (cron entry)."""
+    from pathlib import Path
+
+    from src.execution.report import build_paper_report
+    from src.features.report_json import write_report_json
+
+    start = (
+        (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=DEFAULT_LOOKBACK * 4)).date().isoformat()
+    )
+    history = fetch_tier1_history(start)
     if not history:
         raise SystemExit("no price history available, aborting run")
 
     store = ScenarioStore()
     summaries = run_daily(store, history)
     logger.info("live-shadow run complete: %s", {k: v.get("equity") for k, v in summaries.items()})
+
+    # dashboard payload: mark-to-market at the same closes the run decided on
+    marks = {s: float(df.sort_index()["close"].iloc[-1]) for s, df in history.items()}
+    write_report_json(build_paper_report(store, marks), Path(PAPER_REPORT_PATH))
+    logger.info("wrote paper report -> %s", PAPER_REPORT_PATH)
 
 
 if __name__ == "__main__":

@@ -2,8 +2,11 @@ name: paper-shadow
 
 # Fase 6 (ADR-010/011/029): advance the paper-trading scenarios by one daily
 # bar. Orders decided today fill tomorrow (no look-ahead); the committed state
-# in data/paper/ is the live-shadow track record — the phase deliverable.
-# Commits data only (same anti-recursion note as news-history.yml).
+# in data/paper/ is the live-shadow track record — the phase deliverable. The
+# run also refreshes public/data/paper_report.json (the dashboard payload) and
+# public/data/paper_replay.json (backward-looking historical replay of the same
+# strategy through the same broker). Commits data only (same anti-recursion
+# note as news-history.yml).
 
 on:
   schedule:
@@ -38,14 +41,17 @@ jobs:
       - name: Advance paper scenarios
         run: uv run python -m src.execution.live_shadow
 
+      - name: Refresh historical replay
+        run: uv run python -m src.execution.replay
+
       - name: Commit paper state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data/paper && [ -z "$(git status --porcelain data/paper)" ]; then
+          git add data/paper public/data/paper_report.json public/data/paper_replay.json
+          if git diff --cached --quiet; then
             echo "No paper-state changes to commit."
             exit 0
           fi
-          git add data/paper
           git commit -m "data: advance paper-trading scenarios"
           git push

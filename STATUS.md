@@ -204,6 +204,52 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-07-04 — Sessione (cont.): Fase 6 — replay storico (ultimo pezzo)
+- **`src/execution/replay.py`**: fa passare la stessa strategia difensiva di
+  momentum attraverso lo **stesso broker** del paper trading (stessi costi,
+  stesso fill a t+1), **bar per bar sullo storico**, riusando `run_daily`
+  (refactor minimo: `run_daily` ora accetta `scenario_ids`; fetch Tier1
+  estratto in `fetch_tier1_history`). Doppia natura, dichiarata:
+  **backward-looking e IN-SAMPLE** (le Fasi 2-5 hanno già escluso edge
+  direzionale sul momentum daily → il replay illustra il *comportamento*, NON è
+  il track record forward) + **consistency check** (live e replay condividono
+  un'unica implementazione → non possono divergere in silenzio). Test di
+  equivalenza: `replay == run_daily steppato giorno per giorno`, curve equity
+  identiche.
+- Stato replay **non** persistito nella repo (store in temp dir usa e getta):
+  `data/paper/` resta riservata agli scenari live. Output = solo
+  `public/data/paper_replay.json`.
+- **Cron** `paper-shadow.yml`: step aggiuntivo che rigenera il replay e lo
+  committa (fresco fino a ieri).
+- **Dashboard**: sezione "Replay storico" nel tab Paper, visivamente distinta
+  (bordo tratteggiato) con etichetta esplicita backward-looking/in-sample,
+  curva equity full-width, finestra/lookback/simboli e riga metriche Fase 2.
+- **5 nuovi test**. **417/417 pytest**, ruff pulito, pyright 0 su src/execution.
+- **Con questo la Fase 6 è completa** (nucleo + live-shadow + report/dashboard
+  + replay). Va su **PR #50** insieme al tab Paper.
+
+### 2026-07-04 — Sessione (cont.): Fase 6 PR-3 — paper report + tab dashboard
+- **`src/execution/report.py`**: `build_paper_report(store, marks)` trasforma
+  lo stato committato (ADR-029) nel payload `public/data/paper_report.json`.
+  Per ogni scenario: equity mark-to-market (con flag `fully_marked` se manca
+  un prezzo, invece di far crashare tutto il report), cash, return %, P&L
+  realizzato, commissioni, posizioni, target, **metriche di rischio con le
+  STESSE funzioni Fase 2** (`summarize`: sharpe, max drawdown, tempo
+  sott'acqua) — mostrate solo con ≥5 punti di curva, altrimenti lo dice; curva
+  equity e ultimi 10 ordini.
+- **`live_shadow.main()`**: dopo `run_daily` scrive il report ai prezzi di
+  chiusura su cui ha deciso; **`paper-shadow.yml`** committa anche
+  `public/data/paper_report.json`.
+- **Dashboard tab "Paper trading"** (`index.html` + `app.js` + `styles.css`):
+  card per scenario 1k/10k/100k con badge return, stat, sparkline equity,
+  riga metriche, tabella posizioni (scroll-safe nella card), target chip,
+  ultimi ordini in `<details>`. Empty state onesto: "i portafogli nascono al
+  primo run del cron". Verificato con screenshot headless (dark/light/mobile).
+- **4 nuovi test** report builder. **412/412 pytest**, ruff pulito, pyright 0
+  (src/execution mantenuto a 0).
+- **Fase 6 completa lato osservabilità**: manca solo la modalità **replay**
+  (segnali storici attraverso il broker) come ultimo pezzo opzionale.
+
 ### 2026-07-04 — Sessione (cont.): Fase 6 PR-2 — live-shadow runner + cron
 - **PR #48 (nucleo) mergiata**; costruito il runner che accende i portafogli:
   - `strategy.py`: momentum difensivo Tier 1 — equal weight sugli asset con
