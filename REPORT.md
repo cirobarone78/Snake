@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-07-04 09:22 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-07-05 09:41 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | TON Meme | hot | 0.98 | +17.6% | $115M | notcoin, utya, dogs-2 |
-| 2 | Card Games | hot | 0.95 | +5.8% | $239M | axie-infinity, alien-worlds, echelon-prime |
-| 3 | Frog-Themed | hot | 0.95 | +8.7% | $1.6B | pepe, ape-and-pepe, turbo |
-| 4 | Simulation Games | hot | 0.94 | +6.2% | $291M | decentraland, the-sandbox, my-neighbor-alice |
-| 5 | The Boy’s Club | hot | 0.93 | +9.3% | $1.5B | pepe, ape-and-pepe, based-brett |
-| 6 | Pump.fun Ecosystem | hot | 0.93 | +7.9% | $1.8B | fartcoin, the-black-bull, would |
-| 7 | Solana Meme | hot | 0.92 | +7.4% | $3.4B | bonk, pudgy-penguins, official-trump |
-| 8 | Play To Earn | hot | 0.90 | +4.9% | $1.7B | floki, axie-infinity, decentraland |
+| 1 | Four.meme Ecosystem (BNB Memes) | hot | 0.98 | +11.4% | $974M | bianrensheng, siren-2, hakimi |
+| 2 | TON Meme | hot | 0.97 | +14.3% | $119M | notcoin, utya, dogs-2 |
+| 3 | Ether.fi Ecosystem | hot | 0.95 | +11.7% | $389M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
+| 4 | Cybersecurity | hot | 0.94 | +1.8% | $160M | arcium, goplus-security, qanplatform |
+| 5 | Arcade Games | hot | 0.93 | +5.2% | $905M | audiera, hamster-kombat, pepecoin-2 |
+| 6 | Restaking | hot | 0.92 | +4.7% | $984M | wrapped-eeth, kelp-dao-restaked-eth, lombard-staked-btc |
+| 7 | Liquid Restaking Governance Tokens | hot | 0.92 | +5.5% | $668M | ether-fi, pendle, kernel-2 |
+| 8 | Insurance | hot | 0.90 | +1.1% | $216M | re, nxm, wrapped-nxm |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Echo Launchpad | -15.2% | $3.3B | lab, plasma |
-| Analytics | -11.4% | $4.5B | lab, pyth-network, the-graph |
-| Olympus Pro Ecosystem | -9.2% | $160M | synapse-2, spell-token, thorswap |
-| Arcade Games | -8.5% | $949M | audiera, hamster-kombat, pepecoin-2 |
-| Launchpad | -8.1% | $6.3B | lab, jupiter-exchange-solana, pump-fun |
+| Venice Ecosystem | -11.1% | $634M | venice-token, diem, dolphin-2 |
+| Olympus Pro Ecosystem | -8.2% | $149M | synapse-2, spell-token, thorswap |
+| Terminal of Truths | -7.9% | $172M | fartcoin, goatseus-maximus, aiwithdaddyissues |
+| Parody Meme | -5.8% | $182M | would, troll-2, memecoin-3 |
+| BONK.fun Ecosystem | -5.6% | $102M | useless-3, freya-by-virtuals, fih |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
