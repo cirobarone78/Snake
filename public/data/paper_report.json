@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-07-05T04:44:11.833547+00:00",
+  "title": "Paper trading",
+  "disclaimer": "Portafogli VIRTUALI (paper trading): nessun denaro reale. Ordini simulati col modello di costi del progetto, eseguiti alla barra successiva. Non è consulenza finanziaria.",
+  "scenarios": [
+    {
+      "scenario_id": "large_100k",
+      "initial_cash": 100000.0,
+      "equity": 100000.0,
+      "cash": 100000.0,
+      "return_pct": 0.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "fully_marked": true,
+      "last_processed": "2026-07-03",
+      "positions": [],
+      "targets": {
+        "SOL": 1.0
+      },
+      "metrics": null,
+      "curve": [
+        {
+          "t": "2026-07-03",
+          "v": 100000.0
+        }
+      ],
+      "recent_orders": [
+        {
+          "created_at": "2026-07-03",
+          "symbol": "SOL",
+          "side": "buy",
+          "qty": 1178.900456,
+          "status": "pending",
+          "fill_price": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "mid_10k",
+      "initial_cash": 10000.0,
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "return_pct": 0.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "fully_marked": true,
+      "last_processed": "2026-07-03",
+      "positions": [],
+      "targets": {
+        "SOL": 1.0
+      },
+      "metrics": null,
+      "curve": [
+        {
+          "t": "2026-07-03",
+          "v": 10000.0
+        }
+      ],
+      "recent_orders": [
+        {
+          "created_at": "2026-07-03",
+          "symbol": "SOL",
+          "side": "buy",
+          "qty": 117.890046,
+          "status": "pending",
+          "fill_price": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "small_1k",
+      "initial_cash": 1000.0,
+      "equity": 1000.0,
+      "cash": 1000.0,
+      "return_pct": 0.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "fully_marked": true,
+      "last_processed": "2026-07-03",
+      "positions": [],
+      "targets": {
+        "SOL": 1.0
+      },
+      "metrics": null,
+      "curve": [
+        {
+          "t": "2026-07-03",
+          "v": 1000.0
+        }
+      ],
+      "recent_orders": [
+        {
+          "created_at": "2026-07-03",
+          "symbol": "SOL",
+          "side": "buy",
+          "qty": 11.789005,
+          "status": "pending",
+          "fill_price": null
+        }
+      ]
+    }
+  ]
+}
