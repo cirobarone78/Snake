@@ -1,6 +1,6 @@
 # 🏛️ Screener settori / temi equity
 
-_Foto del momento (snapshot: **2026-07-03 10:14 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-07-06 11:48 UTC**) — **non è una previsione.**_
 
 ## 🔥 Settori in forza ora
 
