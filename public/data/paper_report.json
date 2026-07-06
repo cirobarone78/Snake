@@ -1,19 +1,28 @@
 {
-  "generated_at": "2026-07-05T04:44:11.833547+00:00",
+  "generated_at": "2026-07-06T04:55:38.782120+00:00",
   "title": "Paper trading",
   "disclaimer": "Portafogli VIRTUALI (paper trading): nessun denaro reale. Ordini simulati col modello di costi del progetto, eseguiti alla barra successiva. Non è consulenza finanziaria.",
   "scenarios": [
     {
       "scenario_id": "large_100k",
       "initial_cash": 100000.0,
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "return_pct": 0.0,
+      "equity": 99140.18,
+      "cash": 2883.39,
+      "return_pct": -0.86,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 97.02,
       "fully_marked": true,
-      "last_processed": "2026-07-03",
-      "positions": [],
+      "last_processed": "2026-07-04",
+      "positions": [
+        {
+          "symbol": "SOL",
+          "qty": 1178.90045558,
+          "avg_cost": 82.379,
+          "price": 81.6496,
+          "value": 96256.79,
+          "pnl_pct": -0.89
+        }
+      ],
       "targets": {
         "SOL": 1.0
       },
@@ -22,6 +31,10 @@
         {
           "t": "2026-07-03",
           "v": 100000.0
+        },
+        {
+          "t": "2026-07-04",
+          "v": 99140.18
         }
       ],
       "recent_orders": [
@@ -30,22 +43,31 @@
           "symbol": "SOL",
           "side": "buy",
           "qty": 1178.900456,
-          "status": "pending",
-          "fill_price": null
+          "status": "filled",
+          "fill_price": 82.2967
         }
       ]
     },
     {
       "scenario_id": "mid_10k",
       "initial_cash": 10000.0,
-      "equity": 10000.0,
-      "cash": 10000.0,
-      "return_pct": 0.0,
+      "equity": 9914.02,
+      "cash": 288.34,
+      "return_pct": -0.86,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 9.7,
       "fully_marked": true,
-      "last_processed": "2026-07-03",
-      "positions": [],
+      "last_processed": "2026-07-04",
+      "positions": [
+        {
+          "symbol": "SOL",
+          "qty": 117.89004556,
+          "avg_cost": 82.379,
+          "price": 81.6496,
+          "value": 9625.68,
+          "pnl_pct": -0.89
+        }
+      ],
       "targets": {
         "SOL": 1.0
       },
@@ -54,6 +76,10 @@
         {
           "t": "2026-07-03",
           "v": 10000.0
+        },
+        {
+          "t": "2026-07-04",
+          "v": 9914.02
         }
       ],
       "recent_orders": [
@@ -62,22 +88,31 @@
           "symbol": "SOL",
           "side": "buy",
           "qty": 117.890046,
-          "status": "pending",
-          "fill_price": null
+          "status": "filled",
+          "fill_price": 82.2967
         }
       ]
     },
     {
       "scenario_id": "small_1k",
       "initial_cash": 1000.0,
-      "equity": 1000.0,
-      "cash": 1000.0,
-      "return_pct": 0.0,
+      "equity": 991.4,
+      "cash": 28.83,
+      "return_pct": -0.86,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 0.97,
       "fully_marked": true,
-      "last_processed": "2026-07-03",
-      "positions": [],
+      "last_processed": "2026-07-04",
+      "positions": [
+        {
+          "symbol": "SOL",
+          "qty": 11.78900456,
+          "avg_cost": 82.379,
+          "price": 81.6496,
+          "value": 962.57,
+          "pnl_pct": -0.89
+        }
+      ],
       "targets": {
         "SOL": 1.0
       },
@@ -86,6 +121,10 @@
         {
           "t": "2026-07-03",
           "v": 1000.0
+        },
+        {
+          "t": "2026-07-04",
+          "v": 991.4
         }
       ],
       "recent_orders": [
@@ -94,8 +133,8 @@
           "symbol": "SOL",
           "side": "buy",
           "qty": 11.789005,
-          "status": "pending",
-          "fill_price": null
+          "status": "filled",
+          "fill_price": 82.2967
         }
       ]
     }
