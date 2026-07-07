@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-07-06 11:26 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-07-07 10:25 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Yield Aggregator | hot | 0.96 | +4.6% | $249M | convex-finance, yearn-finance, bella-protocol |
-| 2 | Parallelized EVM | hot | 0.95 | +2.4% | $668M | sei-network, monad, pharos-network |
-| 3 | bStocks Ecosystem | hot | 0.95 | +5.1% | $193M | spacex-bstocks-tokenized-stock, micron-technology-bstock, circle-internet-group-bstock |
-| 4 | Cybersecurity | hot | 0.95 | +4.2% | $159M | arcium, goplus-security, qanplatform |
-| 5 | Gaming Marketplace | hot | 0.95 | +2.5% | $136M | immutable-x, overtake, open-loot |
-| 6 | Yearn Ecosystem | hot | 0.92 | +8.1% | $121M | yearn-finance, sushi, weth-yvault |
-| 7 | Tokenized Stock | hot | 0.92 | +0.7% | $1.4B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, spacex-bstocks-tokenized-stock |
-| 8 | Bank-Issued Stablecoin | hot | 0.88 | +1.0% | $194M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
+| 1 | NFTFi | hot | 0.99 | +16.7% | $130M | blur, synfutures, punkstrategy |
+| 2 | NFT Marketplace | hot | 0.98 | +15.9% | $166M | blur, magic-eden, collect-on-fanable |
+| 3 | bStocks Ecosystem | hot | 0.98 | +24.7% | $230M | spacex-bstocks-tokenized-stock, micron-technology-bstock, sandisk-bstocks-tokenized-stock |
+| 4 | Yearn Ecosystem | hot | 0.98 | +14.8% | $130M | yearn-finance, sushi, weth-yvault |
+| 5 | Yield Aggregator | hot | 0.96 | +8.5% | $259M | convex-finance, yearn-finance, bella-protocol |
+| 6 | Parallelized EVM | hot | 0.94 | +5.4% | $688M | sei-network, monad, pharos-network |
+| 7 | Insurance | hot | 0.94 | +4.5% | $229M | re, nxm, wrapped-nxm |
+| 8 | Tokenized Stock | hot | 0.93 | +1.7% | $1.4B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, spacex-bstocks-tokenized-stock |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Arcade Games | -12.4% | $818M | audiera, hamster-kombat, pepecoin-2 |
-| Four.meme Ecosystem (BNB Memes) | -11.1% | $905M | bianrensheng, siren-2, hakimi |
-| Chinese Meme | -9.5% | $879M | bianrensheng, meme-horse, osk |
-| Telegram Apps | -9.4% | $1.2B | audiera, floki, catizen |
-| PolitiFi | -7.0% | $518M | official-trump, melania-meme, constitutiondao |
+| Echo Launchpad | -12.8% | $4.8B | lab, plasma |
+| Analytics | -10.3% | $6.0B | lab, pyth-network, the-graph |
+| Launchpad | -8.5% | $7.8B | lab, jupiter-exchange-solana, pump-fun |
+| Venice Ecosystem | -7.5% | $608M | venice-token, diem, morpheusai |
+| TON Meme | -7.4% | $115M | notcoin, utya, dogs-2 |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
