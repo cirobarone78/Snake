@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T22:38:00+00:00",
+  "generated_at": "2026-07-08T03:55:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -479,7 +479,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -0.92,
+            "zscore": -0.94,
             "spike": false
           }
         }
@@ -490,6 +490,45 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-07-08",
+          "return_pct": -4.07,
+          "zscore": -1.64,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.08,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "A Dangerous Threat Faces Bitcoin, XRP, ETH and SOL, Alphractal CEO Warns - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd3RXaWFVZDZTYXR6c1dqbjUwa1ZCS2VSd3JIX0pJc2YweTZBWE9wc0dpMGlwQVhBT2FtNUpVYmFXd25YNWZWMi1pMHlScEppeTVUQVN5dllNWHRwc2dLNTdGTE1SY1hvYkhSYmxGM1JpUUtQV1liSnBoR2dpb3RqSV9DSS1GeHFr?oc=5",
+              "sentiment": -0.784,
+              "relevance": 0.714,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Price Near $80 as Exchange Outflows Lift Bullish Bets - The Coin Republic",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRTc0MlZId05EbVpBNUhybU1sZzZPNGo1Z0UwbmlkblAybEswaDVWVUVGeEZyMnoxdjcwemxlajBTeU1adzRhMTc2ZldDeHFsaVktZ052dUpRVGlQcDJ6aHBzZzlJM1d2V3NYZmZPZnlaTlBDR0N3ZktDZVZiWm1iZHFVbmJFa1hmN3g4WWJEMWFjak5fc1R4YUE5djhQcGtvWnY3YUVR0gGrAUFVX3lxTE5YMXlld1lhSmZJT2ppTUZVZXBoeGpCYkVRZkMtcVg2SXhLNTdoMmg5TEdtV2lPQkNGSUV5WXVYcjcyYVJyX3BZaWJYX3BLRTlwRW9qMFNLR180TWlodnJqN0M3ZDBoYVcyclJyNllTTm1sRktKOHcwYUtjNTZSUjlsMGhsNnE3XzJjMVpnODdZemFRcEdMXzlaVmFPOHZITFBfdW9ubHR2NkR3Zw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "CFTC charges commodity, crypto pool operator with $14M fraud",
+              "url": "https://cointelegraph.com/news/cftc-charges-commodity-crypto-pool-operator-with-14m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.71,
+              "relevance": 0.53,
+              "event_type": "legal"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.57,
+            "spike": false
+          }
+        },
         {
           "date": "2026-07-02",
           "return_pct": 4.21,
@@ -684,45 +723,6 @@
             "zscore": -0.14,
             "spike": false
           }
-        },
-        {
-          "date": "2026-06-11",
-          "return_pct": 5.8,
-          "zscore": 2.55,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 3.44,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "4 Best Cryptos to Buy Now for Huge Profits: BlockDAG, Zcash, XRP, & Solana! - The Portugal News",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS0RmSFc1UTdOelB1ZHJkVTJpMDY2YThCdmdYMWFJV3dwRlpjdTZtQTludHVYbWNWVVpBZXNoM1VXbVVHbmN2N0gtTHZaMndDODdHTlFNaHgwQlNmQlBab1dsR2p0X2h3T3lqMTBCd1NNaXdFZi1NbWV6NHZ3b0FHVlctSlJidTEySTRlTVotM09WSnBPR3JLMl9POWVtcUFkbE9jTGpuU2c2WFpMcVJ1eXlidWFrSHBhZ2hTR3JpTWhKdw?oc=5",
-              "sentiment": 0.866,
-              "relevance": 0.946,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "The 4 Best Cryptos to Buy Right Now Before the Next Massive Rally: BlockDAG, Solana, Arbitrum, & Zcash - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOVV9NZFgxXzRtcGZKdHdXZ1lITFdoeUk1MXRNb1ctOGxsaS0wUXdWem9qcFNZVGs3ZHpWazE2dXpoTHotaTgzZkZyRUVMUnVmclRjOXJZR0c4Y0hBczhJOEpQdlM5OWZ5NE9LeXNpUlFwVVh5bW5GTW1GWFpXbl95dWxNUjZjdUU3Sm9lMWs3aTU4Zzd0bFFILXNXdXpWUnFTZzFQYXFBOXlxRGR6b0tKUkNtY3F3R25raF9HS1NCc2d1dDBiVG8xZnRfQ3RhcDdnT2lyMnV4M3pKdHE2SFRiM0g1ZEtSaDZHZEtBZkxSYTVPTXphY3V5VGpmdDFHZFpubGc?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Best Solana Prediction Markets For Real Money 2026: Your Front-Row Seat to Accurate Crypto Predictions - TheLines.com",
-              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FbW4xalhGdXY0ZDRXQ0IxX2I0emdoYURYUzE1ZnhSYWhIWktzNGU0VV84U2N6dm5QVUVwTU11VTRaZ1hhU3JKSUxSR0ZHOVI4dGpYMzFlYzBQQW14N2o0c1VIMk5yR1YxaVE?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 31,
-            "zscore": 1.25,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-07-08",
+          "return_pct": -4.16,
+          "zscore": -1.82,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.08,
+          "events": [
+            {
+              "source": "cointelegraph",
+              "title": "CFTC charges commodity, crypto pool operator with $14M fraud",
+              "url": "https://cointelegraph.com/news/cftc-charges-commodity-crypto-pool-operator-with-14m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.71,
+              "relevance": 0.53,
+              "event_type": "legal"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "Nigel Farage to resign from UK Parliament amid crypto “gift” scandal, will stand in by-election",
+              "url": "https://cointelegraph.com/news/nigel-farage-resigns-crypto-donation-scandal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.649,
+              "relevance": 0.396,
+              "event_type": "other"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "Bitcoin bulls battle for $63K as Micron stock eyes 10% drop in US chip sell-off",
+              "url": "https://cointelegraph.com/markets/bitcoin-bulls-battle-for-63k-as-micron-stock-eyes-10-drop-in-us-chip-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.572,
+              "relevance": 0.377,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-07-02",
           "return_pct": 5.32,
@@ -923,45 +962,6 @@
           "coverage": {
             "count": 7,
             "zscore": 0.65,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-06-02",
-          "return_pct": -7.47,
-          "zscore": -3.31,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -6.47,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink's 3.8-Point Drop Explained by Broad Crypto Risk-Off - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1tc1dQM3A5djJBSTJPTC1MNWVJLWpmWHE5LTVtY0NTb0hIdEkyZHV0alB6V004dzgtX1pMRGo5UXhLbXMwTS16bHZTd1JqUU1GOV9RQ0pMZ0s1VVo2cl8waUNxM2hwODdobzlMN2V0UUs?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "1 reason to buy Chainlink (LINK) right now -- and 1 reason to wait - MSN",
-              "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQMDh4RUliaUFSUWo0WjlBNTF5RWxvdVJwajRYVHBEYzk1cXVrMmJyUXZHdmwxUmx3aHdOU2RVdlh5MUltb0M0djBlV05QY01MT1lzTUVpTkkweVFCMHdtNkFYajVpcUdRdmd3UEJ4QTJ2aTFpTVNOMVN5XzM2cVhWc3d2MjdkMEJCU0xBTHVDR05pMWZ3Z1RLRlg2cm82d2ZkM0NoYlI2ZzhwNXFuMmNkMDQ0SWVFM1cweU5nV21QeThsbGdaZllEREV0N00zd1lFMEhJYzNUeml2RGxJOUo2aXhPUXRSNDM1bmVMTDhKcVF6T2ctbmFxa3VXRjJZczFSQmFuMFl0MzV6ekNtSVFadmQ0ZHFPQ2toVG5GWDlUVnhWX1JlaTVmUnRsUmRJWVk0UUhTYmNaUVhXa2psOVhtYkxOTVJqT1hoaXc?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Central banks for the world's major economies meet to set rates this month - marketplace.org",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWnNBZURMdUJrZUtrdlRSeEVkUnhwLXAzOGhEbjdpWjlPQk5xRFhLZ3QxQnY3ZGZISE1tREt1ZEx5UWhjcS1yMjFCRk5ET2dVblc3ZDR4Zk1jRUZjWmpWTUxhXzVfV016Y3EwakxoTmlONENqYTlEam10N1ZEeWFFNUhwVEkzQ2N1d2FuQWV1cUVkaHYtZW1Xc1JPTzgwdVZTQkNQSw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 0.05,
             "spike": false
           }
         }
@@ -1443,7 +1443,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 0.68,
+            "zscore": 0.67,
             "spike": false
           }
         }
@@ -1480,16 +1480,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Energy Sector Outlook: Delek US Holdings (DK) and Kinder Morgan (KMI) Lead EPS Revisions - GuruFocus",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNEdXdmhkZDNOZGlyNy1rYWwxbHB3MnlpXzRIN19NeFAxRFpSOGp1NUdGeGhmSUs4dWZQSFNWanFuVG53X0xhQ0E1WXFlX0RoVDgxd3Q5TEIxRVNYLXI2Q0pRUENlblJ6aFFEbXFseHBvVE9MNkJYVm1jb0hELWFoSUhqdFFkUC1RTl9qRktGS1poeE5VX0N2TDUtS0hEX1pZR1I5MXRqRXQwSm5RS1ZZNG1UVEdrMUQtVmlVREdiTQ?oc=5",
-              "sentiment": 0.649,
-              "relevance": 0.859,
+              "title": "Vitesse Energy and Chord Energy Shares Skyrocket, What You Need To Know - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkgwaW01di1lR0oxRlBGVzZQSjNzRU5sWTF2bDhNTHhWSzdYRWJyUlR1LUYycXI4X2Z1ZENKZDhYX0tSWk13akR6V1N4LWV6RnMzdHRldF9xeXRIcFpFS3V0LTlZay1heUxrTjNZMmFoYU9KSUJnQkRrRElianVVYVpsazE5UkUyVkFQSUYtVlZjMFJHay03TFpnT3Rtcm9QYmZ6ZUQ1LUd6T01SakRHYVZNaTFjOXh6T2pBVzQ3cjQ0VEw4c2dDVQ?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": -0.23,
+            "count": 15,
+            "zscore": -0.11,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 24,
-            "zscore": 1.96,
+            "count": 23,
+            "zscore": 1.84,
             "spike": false
           }
         },
@@ -1558,16 +1558,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "The Smartest Energy Stocks to Buy With $100 Right Now - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdXAweThjMVpXblRZcUNwQlg2VlpjMk5WcVBING4yZVpQenVGYmVlalhaRk5MRHN6S01jQ2VnX0VvTXRrbEk2dkZ3S1UwcnNRTGJQOElIM2JBQ09nQnlmM3JPQ3d3VkhvTHlXVTkxbVhlaDI2ZGJodElPVDh0VE1oT3FHd1NrSkc1WnJMQWRHbjFDNlNKNEFmek0yQQ?oc=5",
-              "sentiment": 0.727,
+              "title": "Top 3 Energy Dividend Stocks for Reliable Income in 2026 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOa2JOTW1Qank1WWgtc2dCTVQ0aUtjRHFtdzA3RGg3RWJORlk2VWZUSXFvbHVIY1ZTSWRTQUlMcVBsRktlTlJKeHZQZWp1VWM3YzhrdndneTE2RGI4bEFYZ3dPLUowSldYdzhDTjI5N0drbmJMNlJpOXhZWDczWnUxRGlTQ2tMc2xHb2thdU1WR0QwZlI4WTRWcw?oc=5",
+              "sentiment": 0.44,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
             "count": 10,
-            "zscore": 4.96,
+            "zscore": 4.94,
             "spike": true
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
+              "title": "7 Best Renewable Energy Stocks to Buy - U.S. News - Money",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPekZlajQ3aGFfUFc3QlFnX3Q0RDJqdTZxaEdLb0t6dHIzZTJHY29kY2pjWWVDNnRsblAzd3lZNTFhckxRTDc4OXAtOFZGeFdSYzdtRVktb3E2NkcySWlvQnctSFlwa2ExMU5PLS1WcTFXTXZlYlRlaFlfWlpzaG12NnBNeXdsUQ?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
               "title": "3 Energy Stocks Worth Holding for 10 Years - The Motley Fool",
               "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZnFoUEpEY240TXhVOHZUN1pUVGVoODI3cTZRZng0OHZmQVpoYUFGcWlfOWV3ZjVJQ21wNHNKXzl2YzNGd2V3N2V3eGNKVFg1V2ozb0VtM1RlSkFFRGFMdEVGT2RiQm02WG5vcjZDRVlxR0Rqc0Y3N0NhR2RGOEFKOUtWRFYxQXVjT2gxWEZn?oc=5",
               "sentiment": 0.026,
               "relevance": 0.4,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "S&P 500 Energy Stocks Are Up 33% This Year — Analysts Think 5 Will Jump - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeGxMSVBXZTI3T3BYQkpXVkxsczlIazlmVjhtZDlVYUg4SVlaRXF6eG9fSHFLemhoUG1lRkhTYkE5LWFneHVGb3pGSVlnSXowdDhvNVJyYXhJclFLRkJNNGVwaWhnbHhUeTRjQjRyLThLU19jZWVFb1dIeklkc3p4NnVEMzZ6RExxMmFoM2F2ZnMwZFdHMHpyeE5LMlkyYngtUjJ4Vko4dER5c3lFbVotbFFxRDRrajZ5Y2tKbndMMVlVUQ?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.4,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.26,
+            "count": 2,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 3.86,
+            "zscore": 3.74,
             "spike": true
           }
         },
@@ -1659,18 +1659,18 @@
           "events": [
             {
               "source": "googlenews_energy",
-              "title": "The 3 Best Nuclear Energy Industry Stocks to Buy in 2026 - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPV3QxOXRuN0NwNEVpbE9kVTRzckFOSVFvMTRlSnNmdjBjbXhtclVad2N4STcxTkFlZmNqc1hZOGpwS1NVQnpVWjVrZDkzaWZldmJjSVU3Z3V3T2I4UU9FWjJQMGpWV3pFZHcxdHp2X0ZYWGlzcTVZZVl2LTF3dERVbEJNM085RS01LVI5QW9KUHBnQnJXMnB5Zg?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.611,
+              "title": "The 3 Best Nuclear Energy Industry Stocks to Buy in 2026 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZkVpdWY0NVNtbkJnbk5IUDhVaWd4YlZDR1VIN2tsZk9tRkF2VjgxWU9SUTBrSy1ibF9IMi1xS2xPWXVRM2FwOGFUNDZObkNkZzlxVEgyay1YTUVqMDhNNmhxb1JTSnl3b3FqOE11LWNJd2hHMDdaWXNDa2ZqVTRQd3NCRDZVVDR1ZE9UblY1dFRjMDVuTS1waWhnVQ?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.697,
               "event_type": "other"
             },
             {
               "source": "googlenews_energy",
-              "title": "The reasons Robin Energy (RBNE) could be underpriced (Technical Weakness) 2026-05-11 - getLinesFromResByArray error: size == 0 - lwvtexas.org",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS0I5ZE80SFl5b0xzelVTajlHTVlWSlZhT19QRDFVcFpBb0pKWWZJQk5PaGpTREw2ZXFpMHV6V3dVWE90UVUzUnVQUkxiVHdjdE15Tm9iU0kyMFhJb3BDR0FjVjlWcW5nVmh1UHpadHlxWGIxWE9TYXczVFRBVUVIZVlDQVBBSndwVDJhWkVJSjFGZUZIaXp3NE1uZU5BZ1RzZW9PT0hmNm1La2VnckdnQ05ydUtra3hJcW5XS1NB?oc=5",
-              "sentiment": -0.527,
-              "relevance": 0.6,
+              "title": "The 3 Best Nuclear Energy Industry Stocks to Buy in 2026 - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPV3QxOXRuN0NwNEVpbE9kVTRzckFOSVFvMTRlSnNmdjBjbXhtclVad2N4STcxTkFlZmNqc1hZOGpwS1NVQnpVWjVrZDkzaWZldmJjSVU3Z3V3T2I4UU9FWjJQMGpWV3pFZHcxdHp2X0ZYWGlzcTVZZVl2LTF3dERVbEJNM085RS01LVI5QW9KUHBnQnJXMnB5Zg?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.611,
               "event_type": "other"
             },
             {
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": 1.23,
+            "zscore": 1.13,
             "spike": false
           }
         }
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.17,
+            "zscore": 0.16,
             "spike": false
           }
         },
@@ -1830,16 +1830,16 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Hope Bancorp and East West Bank Stocks Trade Up, What You Need To Know - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZHR6RFRVQnI4OUo0NGhjcEVxaG1qY0tGbEZpeklXTkE5QzhGWk5pelZaUjJ0UmpZTGlmcmFXR2dYaXBaWlpnbkM4Zm4xUWtKZ2FFUVNVblhWRVpMX0VIdlhoN3gtUnVEWGlsSGFvVWlzbVZuM2U2dUdJS2tjR1JfR19JT2I2dFRHaUZxRzQ2Q195aFFRWHVYRm5Yc1d0WmhDMlNvMkNTWkY4bDdocXV6LVpRY3VVaEhOUDZWLVNuYWZzUHNiQzBuaGJ5TQ?oc=5",
+              "title": "Hope Bancorp and East West Bank Stocks Trade Up, What You Need To Know - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYjFxVmVPWVF5a3pFWkxIZWlDV0FNWVZNYlh6NEJJdmVVR0txYnVmQ0dWN0tzQ3RUcTNUVTlTVTZYSndxd3BlSjQtUGdnUnBVMXZjZ0dOZjBHMHYwOC0yal92MXBFUTZ0blExbzNpN24ySWQ0RUNXSlRqbzlyTnVzdTBlSXVncDFvbi1EUE9tOFpqSld2UDdN?oc=5",
               "sentiment": 0.44,
               "relevance": 0.776,
               "event_type": "other"
             },
             {
               "source": "googlenews_finance",
-              "title": "Hope Bancorp and East West Bank Stocks Trade Up, What You Need To Know - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYjFxVmVPWVF5a3pFWkxIZWlDV0FNWVZNYlh6NEJJdmVVR0txYnVmQ0dWN0tzQ3RUcTNUVTlTVTZYSndxd3BlSjQtUGdnUnBVMXZjZ0dOZjBHMHYwOC0yal92MXBFUTZ0blExbzNpN24ySWQ0RUNXSlRqbzlyTnVzdTBlSXVncDFvbi1EUE9tOFpqSld2UDdN?oc=5",
+              "title": "Hope Bancorp and East West Bank Stocks Trade Up, What You Need To Know - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZHR6RFRVQnI4OUo0NGhjcEVxaG1qY0tGbEZpeklXTkE5QzhGWk5pelZaUjJ0UmpZTGlmcmFXR2dYaXBaWlpnbkM4Zm4xUWtKZ2FFUVNVblhWRVpMX0VIdlhoN3gtUnVEWGlsSGFvVWlzbVZuM2U2dUdJS2tjR1JfR19JT2I2dFRHaUZxRzQ2Q195aFFRWHVYRm5Yc1d0WmhDMlNvMkNTWkY4bDdocXV6LVpRY3VVaEhOUDZWLVNuYWZzUHNiQzBuaGJ5TQ?oc=5",
               "sentiment": 0.44,
               "relevance": 0.776,
               "event_type": "other"
@@ -1877,9 +1877,9 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "These 7 private and public banking stocks have an upside of up to 23% in one year, according to analysts - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQcGFmZ2hxQnVWQnNaSDdUWFZsLVZ6elFPYXJOakdydVhCM0dvU3MtUGpsbnVwS0txanFqSDNvU3RvNDJ6eTRSUWI3S3R3QUh6ODExd0c3T0hXUXdyRmxUcmhjNUlhTXdQTFhEaDZfYnM5am9CUUI5ZXNfZGpvc2VjZXRnWGliV2ZwdlNwNUNwT2N4eFN3VDhqc3NSRW5lQ1hIVHhMTU5wWjVNTzRFbWtTNzl1X3hja2VIUFpydnlCbHc0bXd1YUlFbHd4Y1EyNkVqX3RsMGlMVS1LMmpzV2FCdjg2Ulk3eTNYVDltV2JZb0ZlSUpidUNncG1NR3BWR0tCVVNsX3J2Z9IBjAJBVV95cUxPZ2J6emlDQWtPa3pRNENHUmJqWWhlUXlvX0puQTNIQWo0bHd4cmV0QW1TaVIxcUx2ZXVDcjRSN3M5Vk14bjRKMll3NUx2ZlN5QUZidE9NbU5mcU94S2JXSm5SZlVLM19EVmV5OTYtVWZqWFFiN3ZWTnZyeVlMOTk5VjJ3aDJhbG1Ud0syanRIZUZwNmdZblRtRWV6cnN3WnJlSXNSZWN5bVRhUjd2MVk5dGJrRVpHWTNOQ050ZUxGbXVLYlpjVU43T21LbnhZY016Tzh0Rnhxbmd1YkZ6UlM5bVJ5amMxSUtWbm1vR3JFYVk4dmgweXkyQy1NMlkxb3AtRlg0Y1VPY29iUkJu?oc=5",
-              "sentiment": 0.0,
+              "title": "Butterfield Bank and Provident Financial Services Shares Are Falling, What You Need To Know - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPak9ITElneUE2UVFXVGx6Nkk3S3NuRVNWRFBLa2J5UjlUQURuSGI5OVJQRDNaUkU5M2MzRHRNN0FJcUd0cTBwb19CU2JrV1RzYncwR2ZDbG51OWs5OVo4VTI2TXNGaFhOdFoyX29XNHhOTWI4X21mUHJFN1AyOWhYSzJUeWNQMDJmaDQxTmdXS0lxcUh1YU5FSmtsOWttejdoTzZwRE9nYlZzdzE4WlE0?oc=5",
+              "sentiment": 0.153,
               "relevance": 0.6,
               "event_type": "other"
             }
@@ -1916,8 +1916,8 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "3 Foreign Bank Stocks to Keep an Eye on Despite Industry Headwinds - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaHR3TWlRSWxWSHAtVThWd2FNNkZlZ1ZCRzBvMEU4d2gxWllsVFVVSGt4U054Wmh0OVhXMDRlV3dMRnlUbXRTSEtNcFhFVHNBUlFSZkdSdVJpblRuNFF3U2xOcGh4WktOb3ZJb1RMWWNuSmFrZU5IQndLZHFLSnV4aUMwOURLOW12X2ZULVpITGs4MjJwWWM4QndnYTM1RzRJUUZMZlkxUGtkMnNEV2s0ZTYtMTV6NW9DOWdONEU5ZFhEZmp2TWcxM0lyZjM4Z2VzOGVndkpfa0FEdG45cFd5T0MyczQ?oc=5",
+              "title": "3 Foreign Bank Stocks to Keep an Eye on Despite Industry Headwinds - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcFk2ZWkwcWYySElHaDJVTG1COXdaLWp2c3k2eUtra1VYZ2Z0NDg2WWlhcFFpbFNwR3Z1bGU3TDBvSHNXWEg2SWsxMmpLeG5lbUhuTXEzaVNMT2U3V3dJVXY0N0lHcVpDR1NhUm0xejBNa09Yak83aHdSSjF4Rk9OdzdzWVpoN2FnMnVobUlLNWZOV2RvSWc?oc=5",
               "sentiment": 0.0,
               "relevance": 0.4,
               "event_type": "other"
@@ -2032,11 +2032,11 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Today’s News: SpaceX Soars Past Amazon and Trump’s Construction Woes Mount - U.S. News & World Report",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMlQtbGhvekxjTWZUbnExRzBYVFUyQWlJanJwVzFOaEpyRUJSeEdVemREUW9TMDE0V193SVpER3YycWF0QkVZSUozeTVGdG9EN2pBaFg1X3F2SDJDU2dCSklENUhBemlpbHVZUHRsR2Q5UjhydkpXT0NJRXkzWGl2Z0dTQ3N5TzBZcWxiLTFJOGsweUk0MjI2akNRN2lHemtYSEJFcnZnMXVTZDNBNEFfemRjNHI0cUhuaExkejJnbWY3blF0Y3gzODlHNA?oc=5",
+              "title": "Fed predictions for 2026: What experts say about the possibility of rate cuts this year - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOTNEWW9YbkJOT3A4YjhPMlZZY29YMjc1X29fMDkzMDdQczlEQkpfT0g5NjhtcVdKSWhqZTc2OG1WX3VyU3lWQWkwUHRUR3JrR2U0YXdJdDMwN1ZNcDdPWW5Db3JPeWdqRzNzemhhWXEzcFBxSUV1WndyYjJDSHRjLW5pS0NLUEJHbEFUVXJDdDVaNkEwb25IeTlWcWJkUHBH?oc=5",
               "sentiment": -0.296,
               "relevance": 0.718,
-              "event_type": "other"
+              "event_type": "fed"
             },
             {
               "source": "googlenews_fed",
@@ -2211,8 +2211,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.01,
+            "count": 16,
+            "zscore": 0.09,
             "spike": false
           }
         },
@@ -2320,11 +2320,11 @@
             },
             {
               "source": "googlenews_industrial",
-              "title": "Water Infrastructure Q1 Earnings: Watts Water Technologies (NYSE:WTS) is the Best in the Biz - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPdkNELTQxa1NEYmtucWNhVVR0ckEwTWdrOHNDR3doQmRZOUU0M1FRV3ZXR09QSDE2bEQ2NHh5Zmp6b1phYVFBclFlQ3M2VXl4T0VuRk5nZU5lQjl3LWU0Um9CYllyWTlldEN4NXZwRm9nb0pFaE9BS0Fpa2hlZkhmY2ZqeXFqSkVPM2o1RmxaaHJFRFRQQXh3ZmRzMVF1NXoxSHV5aUp3d0FsSi1vdGlyQXdjM1Q1XzNOb2RlN2pBaDFObURvSnh5NGhLdmtqdWxWejJIOV9hVzFUbzJY?oc=5",
+              "title": "The Best AI Stocks to Buy Now - Morningstar",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5MSWticmVUcmhzVVpBMWg0bFpvRGpXR1FIdzhKMmVOdVVETlV0MzVfemFuMzBwX3Q2Ykh4TFRjakstUDZVX2N6NEpsSWxZZU54bTZnQmNMal9Fdkw3ei04N2htZldJYkhl?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
-              "event_type": "earnings"
+              "event_type": "other"
             }
           ],
           "coverage": {
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.81,
+            "zscore": 0.8,
             "spike": false
           }
         },
@@ -2531,7 +2531,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.79,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -2553,24 +2553,24 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Is American States Water (AWR) Stock Outpacing Its Utilities Peers This Year? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnhkaDJ0MUk4eVh5Tko3MF93REhIcTZ1V3dwNXJOLWhraEp5aGNEVlFBc2hPa1JsNFdEU3NPVUk3cTlkZ0dmY3hUNTJNR242Z013U3FHQUFTUThYV2ZyUVF2d0FqRDhSSDlHNXk0QmR2WVBWMnV2eTdpN1dsNkNOcmhxekRneTNHQmxQWE54dDRjd0NwNkxxWmNBVEw?oc=5",
-              "sentiment": 0.0,
+              "title": "The Best Utilities Stocks to Buy - Morningstar",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16YTBNdXhpMzRCa243djdPX2FYczJQY2h0Y0FUdXpNRjJ5U09YR3hNSHl0d1JudkVTbUNObVZRcDdKVnM0dWEwNEpRODJFOWpSak5NclRLRG0xTFRSSFZkMllmcHFOYncwcXJ4Qg?oc=5",
+              "sentiment": 0.637,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_utilities",
-              "title": "The Best Utilities Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16YTBNdXhpMzRCa243djdPX2FYczJQY2h0Y0FUdXpNRjJ5U09YR3hNSHl0d1JudkVTbUNObVZRcDdKVnM0dWEwNEpRODJFOWpSak5NclRLRG0xTFRSSFZkMllmcHFOYncwcXJ4Qg?oc=5",
-              "sentiment": 0.637,
+              "title": "Is American States Water (AWR) Stock Outpacing Its Utilities Peers This Year? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnhkaDJ0MUk4eVh5Tko3MF93REhIcTZ1V3dwNXJOLWhraEp5aGNEVlFBc2hPa1JsNFdEU3NPVUk3cTlkZ0dmY3hUNTJNR242Z013U3FHQUFTUThYV2ZyUVF2d0FqRDhSSDlHNXk0QmR2WVBWMnV2eTdpN1dsNkNOcmhxekRneTNHQmxQWE54dDRjd0NwNkxxWmNBVEw?oc=5",
+              "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
             "count": 4,
-            "zscore": 1.44,
+            "zscore": 1.42,
             "spike": false
           }
         },
@@ -2600,8 +2600,8 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Top 3 Utilities Stocks That May Rocket Higher in May - Consolidated Water Co (NASDAQ:CWCO), Hawaiian Elec - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaHUxZnhTdW5kN04wdE5tU2lWbzluOVpHQVppUlUwVzhLREZ6QW9zbVJTY0E3RXdwZUJNeXI0TjNYMHFFM2NhSHg1UWpkZWpRTHVsTXlPN2tlcDUwVjE5amdfQVBRRmlvZ3FDQmxVNnNqZ1E0S2JtMVRNT0htQnJSR3F5NHJiMU5IZmVfU2lCZDJxcUJfRWJDQzdWM1VBbWVzdW1VbEozR2V5RHlmOUpHV0ZHaThXWnAw?oc=5",
+              "title": "Top high flyer stocks among utilities sector (XLU:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU3p1VGNfS2lXUk9iRlhTMzJXZ0RrcEFiaXZtTlVPZnRNZjE1anl6N0RROEFtZWdVaHRaaEM3NkRuam41WHJ3YXM3UkdTQmJzVVRIeldlUHAtTEFRRk5EVmIxcnVvMUtsRjFkT3VqMnNNbnduanZPLVNfQ2tGMDBHNVp2X1dQLVdMTXc?oc=5",
               "sentiment": 0.202,
               "relevance": 0.2,
               "event_type": "other"
@@ -2639,9 +2639,9 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Oklo is the best performing utilities stock in April (XLU:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOXVZUWIwX3hSWTZYb0Z6M2x5bXk1S01FYkFoaTcta25tclo1NGIzaUE1SmNwcmpJdFdVcTVFS3dxTl9VcUFkLVE3bG9jajlBbjE5ZG14d3NJOWpFOVRRUnBuc3FWeWJRSnRWVFk4SDFwZnBKV3NBUjZOSjY0TG1BVnlzN3dJbHhRT016NEpBLUVsOXpv?oc=5",
-              "sentiment": 0.637,
+              "title": "Is Southern (SO) Pricing In Too Much Growth After Recent Utility Sector Rate Debates? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQN2dBMzdxQnQ4RUhxRFB3bUkya2hORjZ3cTZfdnFkSWpkNDRGSEwxTHdCZEw1WU1fNmRhcmQtNXlaWXNKcy1aRUtfU1ZQaVpVVG1kUGVPMngyb0x0VDAtOUpRaW43RXdZVTlIanNkNWtGM2dyOUdhVktlX2FzaGZWTmJSNkZxck1ibldwazhvdWNmOXE1MmJOS0txd2VhZw?oc=5",
+              "sentiment": 0.382,
               "relevance": 0.2,
               "event_type": "other"
             }
@@ -3035,16 +3035,16 @@
             },
             {
               "source": "googlenews_discretionary",
-              "title": "Q1 Earnings Highs And Lows: AMC Networks (NASDAQ:AMCX) Vs The Rest Of The Consumer Discretionary - Broadcasting Stocks - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNdHBTc3M5Mmg5RkJJeDl1Ym56NGdUc0hXcFNRSzBHaWZYR1BqV1huZWdzR2g3RmJIMThEa2xkNjg3clVjUnBWaFpTeE9lMV8xd0VkT1JyXzNrWWJhVFI5bVB1cVdXcDRCMjc3WHRoeGVVY08zenIyM2I2M2phNjRnbm9TVWRKNi0wcVQ2aVU3eFVuSWItY1ZzZ25aUlRhM09Zb2gwam5DTHJZc2VZSF96OEZxRWZrNlFHRkdPUXBJbTRRdW5vTGxZQVY5VXdfaXRlcWVJSVExbnBoclM3R3psTzFXaVU4UXRTcV9ZOERTZ0V2VDUwWVdMN3VSd0dVa1Fx?oc=5",
+              "title": "Q1 Earnings Highs And Lows: Cable One (NYSE:CABO) Vs The Rest Of The Consumer Discretionary - Wireless, Cable and Satellite Stocks - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQTXR6M1FXb0owYnMzUmxZQU9aaVhRV3AybEt2WElIek15QnIwTW5odnFISFBKdy1VbVM2U1JKc1g5LVh0YWlpcXVabjdxM25keXJYbGNPVFZTOVdhNHozOEhDQmQ3dTltSWs4dEdrV25lYXpPOWxhVDdfeTFPNHo2TGdlSzR2a3ZHOTVsbUdFWHBOdFAxVEJDR1lSQnBQU180aGViZHA3QWlNajJBQjdnMExEZXhfSlBDc3F6NFZrUWM4UmMyX3NJclJMMWplMHFPR2FJTG1sdDVWeGNfZWhWYmk4eGJKN19GVnZVc3E3RmttTUR4SXlUZDB1ckR1bFdOLXQwbTUzRmZtYUZy?oc=5",
               "sentiment": -0.202,
               "relevance": 0.681,
               "event_type": "earnings"
             },
             {
               "source": "googlenews_discretionary",
-              "title": "Q1 Earnings Highs And Lows: Cable One (NYSE:CABO) Vs The Rest Of The Consumer Discretionary - Wireless, Cable and Satellite Stocks - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQTXR6M1FXb0owYnMzUmxZQU9aaVhRV3AybEt2WElIek15QnIwTW5odnFISFBKdy1VbVM2U1JKc1g5LVh0YWlpcXVabjdxM25keXJYbGNPVFZTOVdhNHozOEhDQmQ3dTltSWs4dEdrV25lYXpPOWxhVDdfeTFPNHo2TGdlSzR2a3ZHOTVsbUdFWHBOdFAxVEJDR1lSQnBQU180aGViZHA3QWlNajJBQjdnMExEZXhfSlBDc3F6NFZrUWM4UmMyX3NJclJMMWplMHFPR2FJTG1sdDVWeGNfZWhWYmk4eGJKN19GVnZVc3E3RmttTUR4SXlUZDB1ckR1bFdOLXQwbTUzRmZtYUZy?oc=5",
+              "title": "Q1 Earnings Highs And Lows: AMC Networks (NASDAQ:AMCX) Vs The Rest Of The Consumer Discretionary - Broadcasting Stocks - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNdHBTc3M5Mmg5RkJJeDl1Ym56NGdUc0hXcFNRSzBHaWZYR1BqV1huZWdzR2g3RmJIMThEa2xkNjg3clVjUnBWaFpTeE9lMV8xd0VkT1JyXzNrWWJhVFI5bVB1cVdXcDRCMjc3WHRoeGVVY08zenIyM2I2M2phNjRnbm9TVWRKNi0wcVQ2aVU3eFVuSWItY1ZzZ25aUlRhM09Zb2gwam5DTHJZc2VZSF96OEZxRWZrNlFHRkdPUXBJbTRRdW5vTGxZQVY5VXdfaXRlcWVJSVExbnBoclM3R3psTzFXaVU4UXRTcV9ZOERTZ0V2VDUwWVdMN3VSd0dVa1Fx?oc=5",
               "sentiment": -0.202,
               "relevance": 0.681,
               "event_type": "earnings"
@@ -3121,8 +3121,8 @@
             },
             {
               "source": "googlenews_discretionary",
-              "title": "These large-cap US consumer discretionary stocks screen among the sector’s cheapest on valuation - MSN",
-              "url": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxQWjlzNmw2MndBQU9RS1BZeENhTFItVkFwVWFTNjZocF9BUXFvenZBYkZxWGdNRm8zU25MR2RwcEZnSHcxcW4tMGRSZGFtemkyLTlQZDBqUTR2UjVJWVRTOXZvVVNiUTF6N28yM3h1MlRFMXhWdE5LeDlDWmE2SXBGcmZPQzRDNjNWdzI2a1FNUk5laklJVS0zTUVfRmd5ZTQxbnBBeURPZGFlZGdyeWlLdThWcVZBNnk3OXBLZElCTURVcDVBLWM1eWx0eFhnanlsX1NtMmZ4UXFVZXlwaklKSjZYOXgzMWk0MW1MLVFzUWlxbkRRY2xfZE0wa3JKQ0lkMVlxVHVGNUFwVk0td2M0UGJsLXF2bzB6ZW9iNG8zVElKdHR5TW5sb25MRy1oZTk1RjJ2d2hPWHB3SjRYbHNCTmFyTHZORVZacTY3ZW51T1VmMTlBTTlZRFRDdHA2cTdXRWZuUVVlQmswZGRpQTBYTDlRSEkxeDFzSUVn?oc=5",
+              "title": "10 Consumer Discretionary Stocks Moving In Monday's Intraday Session - Sahm",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT0pRcTVrWjA0VE5QbVV1QlNDZnNqSnpRM3hSRVVnV214ZnVlY0x3THpGejdSaGZKcG1kMkt0MzZnS0psU1lBb3g0dTdtMjhlZjZQelFkQjVfV3JYWnVhU25hQXRwYmtzbTR0U3dPT09Ha0lWdUhEWGFJSlUxTEJSX0RrSUFyX3dKRElFWWNXU2ZBZW1fM2F6cHVpNjF0eFRLZnpVUk1rYmIxdEZHUXlpTkVTVk9OU3ZBaXFJ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -3276,19 +3276,19 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "Reflecting On Home Construction Materials Stocks’ Q1 Earnings: Fortune Brands (NYSE:FBIN) - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSDVVQUNwS0d4OTY0dGJnN2RxRWd1UlFWX3NDUC1iaUxJbFFIWVE0N3FqZlZiM1l0d2ZEcTVXVlp1blB5Ri1YQ0s5a3dSRmJUd09HZkdBcnFUbzVCOVR1andLOGlOVkRHMVlzQW5KcFRmOWFjYzdWNUNiOGx0UXpTczA1UkdYSVY3dXlwSlM0UnRqelg2bEg1bDVJRXF4bzAzWDNOa0ZTdWY0anNBSFkxVk5rY3RNdF9zaUlwazk3VWFWZTNwZXFXYTJadHVXM1lnWVNOemt0dUo?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_materials",
               "title": "Is Sensient Technologies (SXT) Stock Outpacing Its Basic Materials Peers This Year? - Yahoo Finance UK",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ3RvUU9kN2JMaXZaOXNvYXdEU3FvbEdaMU5yVUhaeFVGcmY2N1dVNjU0dG4tYnFRMFprZXB5NmVPdFppWkJsaHhPTmM5aEpiYmtleTFGb2MtbVF3Tlo5NDQzbTJzQkkyY2dtbHFmMDNXcndYbHI0R2xHYW1YS1drUWJtOFZIWjNWTDJkZmlKeTlIejBh?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_materials",
+              "title": "Reflecting On Home Construction Materials Stocks’ Q1 Earnings: Fortune Brands (NYSE:FBIN) - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSDVVQUNwS0d4OTY0dGJnN2RxRWd1UlFWX3NDUC1iaUxJbFFIWVE0N3FqZlZiM1l0d2ZEcTVXVlp1blB5Ri1YQ0s5a3dSRmJUd09HZkdBcnFUbzVCOVR1andLOGlOVkRHMVlzQW5KcFRmOWFjYzdWNUNiOGx0UXpTczA1UkdYSVY3dXlwSlM0UnRqelg2bEg1bDVJRXF4bzAzWDNOa0ZTdWY0anNBSFkxVk5rY3RNdF9zaUlwazk3VWFWZTNwZXFXYTJadHVXM1lnWVNOemt0dUo?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "earnings"
             }
           ],
           "coverage": {
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.27,
+            "zscore": 1.28,
             "spike": false
           }
         },
@@ -3495,7 +3495,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 2.15,
+            "zscore": 2.17,
             "spike": false
           }
         },
@@ -3534,7 +3534,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 5.04,
+            "zscore": 5.13,
             "spike": true
           }
         },
@@ -3556,24 +3556,24 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Best Office REITs for 2026 and How to Invest - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc2FPY29sb19jY0d3RTd1VDFkaDRCVEVpVUwwZTZiM2hCTmxVSTYzTWJ6c2lDWnYyWGllS05jM1RTVmd4bGMwZ3VRVy1YbGZJZkxzTXUyLWwtd2ZlSUd0MGVtZ18ybFRsQXE2N0VfTnVKZlpKVjlEaDViY3RmWmhDX2hVRmhfcTFPRTNkT1RpMFc2LXUwbjdoZ3Z0aTRmcHM?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.727,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
               "title": "4 Best Real Estate ETFs for 2026 and How to Invest - The Motley Fool",
               "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE15NW15cGZTVnRiWkFhRVRxMmlGbFZlUFVoTXdHVlE0U2p2ZEpDd3ZpN0JvcERTQlRuRlhFVWtpM3JCXzhsVFZSN1o2a0RiZlhQRWhHaEhIdTRHTzhNNENnNU9HSjZsd0s4MkFGem51MGtVZkhiTGc?oc=5",
               "sentiment": 0.318,
               "relevance": 0.727,
               "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "Best Office REITs for 2026 and How to Invest - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc2FPY29sb19jY0d3RTd1VDFkaDRCVEVpVUwwZTZiM2hCTmxVSTYzTWJ6c2lDWnYyWGllS05jM1RTVmd4bGMwZ3VRVy1YbGZJZkxzTXUyLWwtd2ZlSUd0MGVtZ18ybFRsQXE2N0VfTnVKZlpKVjlEaDViY3RmWmhDX2hVRmhfcTFPRTNkT1RpMFc2LXUwbjdoZ3Z0aTRmcHM?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.727,
+              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 5,
-            "zscore": 2.98,
+            "zscore": 3.16,
             "spike": true
           }
         },
@@ -3658,7 +3658,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.99,
+            "zscore": 1.0,
             "spike": false
           }
         },
@@ -3696,8 +3696,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": 0.86,
+            "count": 10,
+            "zscore": 0.66,
             "spike": false
           }
         },
@@ -3789,16 +3789,16 @@
           "events": [
             {
               "source": "googlenews_commserv",
-              "title": "The Largest Communications Services Companies by Market Cap in July 2026 - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vSTlaNVZqTHM2WWJzMV9Fdm1mNXBHNkY0UXVXM1ZBang2c0I5MnRNeEdNTmo1ZjRibk1RV1g4T0RpY3R0dURxbE1yOEhmOEJzS3NWUlBiTENiS1poNHNKdUM0anlUTFhXR1NwUUZyWE0?oc=5",
+              "title": "Buy 2 Vanguard Index Funds to Beat the S&P 500 in the Next Year, According to Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeFNKYjBKUE92ckMzaEtmX3VFRHpTbDJVZEo0d2xmX3hfSzkzSEJIUXF6akIzZ3dtczdoTVRWQ3R5aFRxanJWT3pkQmpFdmxsMlpGZ21zUlFMM2pUXzY3VFNzUW5kcDRwZlAxTkhEelVhcFhpUlZrVW9ub3hUQjN0NTBpUERwQXBlVm54NllpWS1QbWNUam5KXw?oc=5",
               "sentiment": -0.44,
               "relevance": 0.776,
               "event_type": "other"
             },
             {
               "source": "googlenews_commserv",
-              "title": "Buy 2 Vanguard Index Funds to Beat the S&P 500 in the Next Year, According to Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeFNKYjBKUE92ckMzaEtmX3VFRHpTbDJVZEo0d2xmX3hfSzkzSEJIUXF6akIzZ3dtczdoTVRWQ3R5aFRxanJWT3pkQmpFdmxsMlpGZ21zUlFMM2pUXzY3VFNzUW5kcDRwZlAxTkhEelVhcFhpUlZrVW9ub3hUQjN0NTBpUERwQXBlVm54NllpWS1QbWNUam5KXw?oc=5",
+              "title": "The Largest Communications Services Companies by Market Cap in July 2026 - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vSTlaNVZqTHM2WWJzMV9Fdm1mNXBHNkY0UXVXM1ZBang2c0I5MnRNeEdNTmo1ZjRibk1RV1g4T0RpY3R0dURxbE1yOEhmOEJzS3NWUlBiTENiS1poNHNKdUM0anlUTFhXR1NwUUZyWE0?oc=5",
               "sentiment": -0.44,
               "relevance": 0.776,
               "event_type": "other"
@@ -3844,9 +3844,9 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "Bandwidth (BAND) Leads Communication Services with Strong EPS Re - GuruFocus",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNkNpcFQ1NGd5VFo0VmhvVUJSQ0liT1Vrb0VKeXhUS3VzeXRxRWRIdGZ2a2w1aGRsR0xNZGlkcTdhd3VQOUxvV2o0Q0FrZ1NmeEJBU1J6ZzhMZVdjLTZSaGhkMXdwdC1VUERCemY5b2Flb0RzaEgwdzhfbnh3aHJscDR4enU5a2Z2Rk53c0ZrNk5EMHpTM2hEekc0b05LM1ZnZmt2aWFQN09QNkprY2hUMjhpMnJOXzN6YzNYZjhWSHp6M0V0?oc=5",
-              "sentiment": 0.511,
+              "title": "Wall Street Analysts Are Bullish on Top Communication Services Picks - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOS0w2c19xeWZhbktKYkJqWWVLMkc1cFpudTd6RHRlMWs5RmtNZFZTdm1XQzlUajJHNDc1dl9KdkJjQ2xfbmlUTjN1MkUxbG9DQWNNMS1UWk1yOXlFT1RNbVNGZ184WFAwX0x3N0QzMUFpdThvOERrTFpkV3MyNHV3Njllc1E5S3dVRzNMdlJ1Z0wzS0ZuN3drRXpmWWRvVHdYa3dKSHhqVmdzQmNpOTJxM2N5QVVZTkFhOGN6LUFEY2dIbnczMmFzc2ZqMlRsMU5Da2ZxZHpVbWpKdzl3eFBTeGk3VkhOYTMt?oc=5",
+              "sentiment": 0.202,
               "relevance": 0.6,
               "event_type": "other"
             }
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 83,
-            "zscore": 0.82,
+            "count": 93,
+            "zscore": 1.15,
             "spike": false
           }
         },
@@ -3976,8 +3976,8 @@
             }
           ],
           "coverage": {
-            "count": 92,
-            "zscore": 1.47,
+            "count": 93,
+            "zscore": 1.5,
             "spike": false
           }
         },
@@ -4132,15 +4132,15 @@
             {
               "source": "googlenews_uranium",
               "title": "VanEck Uranium ETF vs Vanguard Energy ETF: Is Nuclear the Better Buy Over Oil & Gas in 2026? - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQRmUtOHRPT2RPTndwQnN4dDhyeGZtdHY4NVZEbDVGcHl4aUh5bFRYVEROMWtONU9zRk9INjNEVWoyWXBmOGl4TnZGeVAwNnA0Tjg5MGV5MDBCc1BLQzN3c09ZcEdqR1NfQ3BkNzRsTzNKUEhOdW4zOEVMZjZqUTIzREtqaXEwdmlvWlB3UVVrYnV1b1hUdU5jQmprY1FaTTNOejFhbEtVZmppX2k0bXpOSG9xN2ZEa2tOMk1vaVJKaTU1VGt5c241eWVhb1RvN0hIN3ZNb0VHRlNqZmhDMndHSlhtVXpBMFE1Q2JZNWZkQ20wTVVkcVctcHV2WQ?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQV0ljZjZ6NkpyalV2Tk0zdnM3eS1iQkU5bmtzWWlnSkFZZmUzMXpHaWRUZnd6UXZwX1h5dkZIU0p1eXlIenNrM1cwUW1BbWR1dUFUX3pSbndhTnRvRW1rRHY2Y1NXZXdrSnQ2dlc3THhBWnVqdEdMeEp0NERKSXVfUFRyNzNHY1U4Uko0SzJPdWUyeUVBWTN6VFFoekYyXzNvY0dwWkVzS2szMFhUSkp0eFVZSFpia3c2Ul83NVJrcmMzSENhRTAzVzRjOHh6dTZFSHNVcC1pVUF1ZU50TXhRY3FEd0ZKUmdoWUFkQTRxTWtONmY3MGMzRDVjZktfS3lSUHc?oc=5",
               "sentiment": 0.612,
               "relevance": 0.6,
               "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.09,
+            "count": 6,
+            "zscore": 0.37,
             "spike": false
           }
         },
@@ -4335,7 +4335,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.56,
+            "zscore": 0.57,
             "spike": false
           }
         }
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.04,
+            "zscore": 0.09,
             "spike": false
           }
         },
@@ -4403,24 +4403,24 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "9 Best Hydrogen Stocks for 2026 and How to Invest - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSUtqd09LYnZ3Q1NCMEdmbC1BOEpSLXFPYXdLbW0wUEdTWFQyNlBkWHpIVFMwTC1IWFYxYlhhMWVISHZRRG9DWGhucHlQTTRmYnE3S3JIbUFic1I5WFFQR2twRl95NnN5dV9VX0xHWl8tOElyS2tHM2x5dG1LdzU0NWpRSHlBT1l2MFE?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
+              "title": "Best Energy Stocks to Buy for July 2026 - Zacks Investment Research",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9UblRJRjJLcFNnRXVZczZpWjVVSnptc0tYdVBtMlRWeWl1QlNRc2JxOWJWU1pzTjNHZldaMHVQVTJOSVpEYzZOVlNOWDRzXzJjTmlCSVBsNDBWaW8wejR0WDlMdWY0N1M3cVBrSW12QQ?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.4,
               "event_type": "other"
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "5 Best Energy Stocks for 2026 and How to Invest - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4dUpSeHdMcVY4cnJubW5KSl9yTjJtVGM1SG5XSVJ2UERLbU9oY2pNelpRQ2VRNF9wZFRRajRaWXhQS1VuQzA5RDZHMkgzZlhKbzdWWWVvR0tUem95bjR3SW9HMGRicW5tMDNDbThLQ1JtOWpD?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.6,
+              "title": "Top 5 Renewable Energy Stocks (July 2026) - NerdWallet",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbG45b1ptTmZ5ZFBqQUJYTjc3TFlpSlRaRTZoVndvVDBrQ1EzYzNmS1lMaDFrdUJWY0JHVDlSeElHSnJIOFhnN1l1Q1BDaFh0ay10aUR1ZXF1dm9kN2NFWjMtSVQtZXZxNnVIcm8tYUpNNFd1X1hRanlSMFdYUE4xeVQyZw?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.4,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.04,
+            "count": 1,
+            "zscore": -0.69,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.67,
+            "zscore": -0.65,
             "spike": false
           }
         },
@@ -4471,14 +4471,6 @@
           "severity": "major",
           "market_return_pct": -0.05,
           "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "5 Best Solar Stocks to Buy Today | Investing - U.S. News - Money",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBGRVlrQS1ndzNVblBOeURSU3JJQ0lzR3FGNUNNMkdFXzFXei1LUlBhZ0pzTFhaUEdmdEVBVWdOTDRWNDF4QllrY012OHZfVUFMQnFhN1RNSE9EQzRnSFE1c2dlWnRBdHlEMmhReGhR?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
             {
               "source": "googlenews_cleanenergy",
               "title": "Montauk Renewables Friday sector context, shares track North American renewables peers - Ad-hoc-news.de",
@@ -4494,11 +4486,19 @@
               "sentiment": 0.273,
               "relevance": 0.4,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Green Energy Stocks End Mixed As Renewable And Battery Segments Move In Opposite Directions (25 June 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWTE5SEhHcFZiR3BVUDZhcFIweW5SZDNYeGRsVDVYRTJtRUZGdVI5X3BXWWM0WEN5eDZvT08tZ3V4d3VNOGhkY1AtbGkzNW83OGtEM09oa3BOeDlfOTg3THdfSXVGejZyQVpZWGMydTNZQU90Q1Y1bEx6VWQ5bUQzOWQwSlNlRnVROVRxcmhBTG5lWWlVd19EM2V5T0hPdG1DS3h6a0VjYVJld3JNc2JIV0sySXByUVVBSFk0bFNsRThlWjdHWWJidGZIRDF4QkdnaHVFS1Z4VDM?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.4,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.47,
+            "count": 1,
+            "zscore": -0.83,
             "spike": false
           }
         },
@@ -4537,7 +4537,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.05,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -4576,7 +4576,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 3.22,
+            "zscore": 3.33,
             "spike": true
           }
         }
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 21,
-            "zscore": 0.13,
+            "count": 25,
+            "zscore": 0.51,
             "spike": false
           }
         },
@@ -4660,8 +4660,8 @@
             }
           ],
           "coverage": {
-            "count": 38,
-            "zscore": 3.49,
+            "count": 39,
+            "zscore": 3.62,
             "spike": true
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 30,
-            "zscore": 3.16,
+            "zscore": 3.18,
             "spike": true
           }
         },
@@ -4739,7 +4739,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 2.81,
+            "zscore": 2.83,
             "spike": true
           }
         },
@@ -4768,17 +4768,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Week Ahead for FX, Bonds: U.S. Inflation Data Due, ECB Likely to Raise Rates - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFpTUFEzemRuMWdNakQxSzlTR3dPSlppTXBlMHE3VF9ZNUI4eXllLU54X3JsQkk2UWVwUkwwR2NrRFktNVJxVDhLSHRTNVFJWEtQb1Brc2tqWmUxX3pxTUxKWTFGaDBPS3hiamZNRlVPZHhrRnZQYUpNM1lUWXdPX185cUNlODU0VnJHempNbk9QYUZQR2t3a1Vtelg5bmlQczFubmZkM0NNamtSc1E?oc=5",
-              "sentiment": 0.0,
+              "source": "googlenews_oilgas",
+              "title": "The Top 8 Canadian Oil Stocks, Ranked In Order - Sure Dividend",
+              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB6SEpwSlRhejRWZFJyc19QMFd3b0VrTlN4ZW43WHQzdUtwZXpCbjZrLUxCT1I1b3k5aERzM0FuUWJTVnAxbjYxNFJRSVpHaW54cl9XVFQ0R0NLRURqZmc?oc=5",
+              "sentiment": 0.477,
               "relevance": 0.6,
-              "event_type": "inflation"
+              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 15,
-            "zscore": 3.51,
+            "zscore": 3.58,
             "spike": true
           }
         },
@@ -4800,19 +4800,19 @@
             },
             {
               "source": "googlenews_oilgas",
-              "title": "Big Oil Racks Up Windfall Profits While Consumers Pay Higher Prices - Groundwork Collaborative",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbEhkLXE4cHN5cXkxbmRCdmZZVU02Q0E1MmItcVlHckdzV0RZSkZQb0NlMlJYeUFfX1UzSDktS05LT1VJOFR3bUhOdUhBMG5QNmVuT3E0Z0psZnljQk1CbDFWRmRHeENGVkJ4WU5WbGFxUVRmZHQ2UWQzRmpMeFNlRWc2TnR3S0ZVZzZ3YlpNV253RE1SQTFWZzM2LURXbGlDdHN4d2hZdk5oeFB0aUE?oc=5",
-              "sentiment": 0.361,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
               "title": "5 TSX Energy Stocks to Buy as Oil Pulls Back on Ceasefire News - Yahoo! Finance Canada",
               "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9USm5wQ1BSbEFkbGJVZ3ByVl9xTUp6cndkUmZ4ZlpTNDdlb1FScURqN2VKRVdWVkxmbE9WRkM1THh6YUg3UGVyZ0hEVGJkeEZvck1mbmd1X1dLTEczOEdzeHhCYTl1U2RFYUExM2FhUWI5OUcySGhuSnFMNnE?oc=5",
               "sentiment": 0.338,
               "relevance": 0.6,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "Why Natural Gas Stocks Still Yield More Than Most Dividend ETFs - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRWd0QUY5dEtSVWcwZ2JtcHJXbHB0MlFqam5xeFI5YjJFQUk1c3J3SjlyTFpTQ3g3ZG50WHdIem5kODMxVkFhanEzdlNHeWtyeGRoMjAzNFNLQ2dlb3d6M3FrLUV3WDEzQkJwd0pWQU9UNXpMbHloVjNxZl9QNE9XazJxd1JnWFpRMEJoY0hnOHJ1X2JHNzhWaWR5WEVoZ09LY05lNmk0cVRfRHc?oc=5",
+              "sentiment": 0.361,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
             }
           ],
           "coverage": {
@@ -4862,8 +4862,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.08,
+            "count": 9,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -4994,16 +4994,16 @@
           "events": [
             {
               "source": "googlenews_defense",
-              "title": "Why Rocket Lab (RKLB) Stock Is Trading Lower Today - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNFgwTkppMDJITjQzYkpvbHpDWTNjMWtXanJFUkxRaVRiUGRYNG04dEVvc1NUU1IxY2JMcnhDRHlfR0x4S2dkUWhqTEkwUzZjSWUyTFJyZE8yUmdHVkNyTVRfZC1Xd0lpLWRSTXc4ZzlzOFpfN3ppeTF2clFhbFVUdVhZaEIxZEU5Z3FLU1BuOWNhdEZlUUFLY1JUVFM1QTNvaW4zZDhzc0lOUEh3TlE?oc=5",
+              "title": "Why Rocket Lab (RKLB) Stock Is Trading Lower Today - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbzdoM3hTOTh3MDAyeE5YYlR2ZjJ3eTVheVY3VjAxSXRHci0zN0hRT0t5VkMtQlpDUzU4SEZFdC10YVJOX3lBamVINDBVSWJ5Y3dzcXlFVndaOGp1Mmh4UjctdWRWVzZJYzZyQlUycWRjVUdhRnhhMERlVFduN19tRVVWbk5tR09VVGdFZWVOMXBMdUFGNzNJMFdEZFFUbGo2cmI3UWgxZ25aQmdCZ0oxUjRB?oc=5",
               "sentiment": -0.296,
               "relevance": 0.718,
               "event_type": "other"
             },
             {
               "source": "googlenews_defense",
-              "title": "Why Rocket Lab (RKLB) Stock Is Trading Lower Today - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbzdoM3hTOTh3MDAyeE5YYlR2ZjJ3eTVheVY3VjAxSXRHci0zN0hRT0t5VkMtQlpDUzU4SEZFdC10YVJOX3lBamVINDBVSWJ5Y3dzcXlFVndaOGp1Mmh4UjctdWRWVzZJYzZyQlUycWRjVUdhRnhhMERlVFduN19tRVVWbk5tR09VVGdFZWVOMXBMdUFGNzNJMFdEZFFUbGo2cmI3UWgxZ25aQmdCZ0oxUjRB?oc=5",
+              "title": "Why Rocket Lab (RKLB) Stock Is Trading Lower Today - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNFgwTkppMDJITjQzYkpvbHpDWTNjMWtXanJFUkxRaVRiUGRYNG04dEVvc1NUU1IxY2JMcnhDRHlfR0x4S2dkUWhqTEkwUzZjSWUyTFJyZE8yUmdHVkNyTVRfZC1Xd0lpLWRSTXc4ZzlzOFpfN3ppeTF2clFhbFVUdVhZaEIxZEU5Z3FLU1BuOWNhdEZlUUFLY1JUVFM1QTNvaW4zZDhzc0lOUEh3TlE?oc=5",
               "sentiment": -0.296,
               "relevance": 0.718,
               "event_type": "other"
@@ -5049,11 +5049,11 @@
             },
             {
               "source": "googlenews_defense",
-              "title": "3 Defense Stocks to Buy in May - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2RmVDd4LUZublEyTzcxaGFhNGxGRzdMNzc4TzRFYzVzWmp2YThpRlY4M0JmMV9oWGhiVzd3LXM2M1NEd1MzdEJISmZKQmRrYWJ2Z3RjalVyVlltMzRfYUZUTUx1dmFvOFBfa3dvYk15SE12N2xzWGhGMXhtYUI2azJCVGJzVGNwVHE1VUtNWmJsYTQ?oc=5",
-              "sentiment": 0.128,
+              "title": "RBC Q1 Deep Dive: Aerospace and Defense Momentum Drives Revenue Growth, Margin Outlook Stable - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNLW9uX2RyWVR2eTBiSnU0RlJ3QkhXdnNVQl9CVlBQMEZGWmRpU05iVV9seVRFY2ZSbFUyYzNCbzV0UTU5Qms2U3dIdGZHa01iUFNiM1psMGF2Mk01eVhHUGFyazBjSWQ5VDM5S3ZhT24yNzhRZWtyTXBOcXpIOFNfbGhzNWNuTExPdE1MUVdSYXlxNmdBdlEyeS1WNkZIUzJBMGFtTS1sUXZ5eXdOVFJZR3VDV0tyN2hnSGR6aGxERXJLQU9Na0JwdDhrOVEwNjhxUDRvel9iRFRpOWRMNGRYSnc2MWUwYUU?oc=5",
+              "sentiment": 0.649,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "earnings"
             }
           ],
           "coverage": {
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.56,
+            "zscore": -0.61,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.46,
+            "zscore": 0.44,
             "spike": false
           }
         },
@@ -5165,16 +5165,16 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "The 5 Best-Performing AI Stocks in June 2026 - NerdWallet",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ0RPel9KWms3MVEtWUk0eXpGNnlUR3UxSFNFc0ltbEsyZDJBa0VpVTBtQVRTZmNoeTJWVWdSM3k3VllueXRZcjRCdVhfZXZLZ1lxY0J4WGI4SEdCc3BmWTFpXzVseWhuQzcxZEtmeDVjb09oN3NEQW5fUGhnam1iZjN1V3Z2QWNlazNuaXFPSQ?oc=5",
+              "title": "Alibaba Group: Qwen-Robot Triggers Full-Stack Physical AI Inflection Point; Reiterate BUY - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQzdNMlowendaOGEzRE83a250T1VQbURaci1aV2dOSklKanNoVXRIWFM0NHRxUEZPWTM2TGg1ZWNzZklfb0F1eEJlWlFUS3oxMlJSUjRXZGpRYTRYR0JKYUcxM1FiNXh2b3liYzZvYWZESU1RNmVyUXA0VHEwYW0xSml5U2J1ZktGTVVYQVNMejlUMzJ2Q2hmamdwOFZvTjZIbWRKSUh5aG1TR0FUem51bHVISzJEN2VEZ1UtLVB0UWJLX1Q3Z0RrdnR1SlRIWXc?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_robotics",
-              "title": "Alibaba Group: Qwen-Robot Triggers Full-Stack Physical AI Inflection Point; Reiterate BUY - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQzdNMlowendaOGEzRE83a250T1VQbURaci1aV2dOSklKanNoVXRIWFM0NHRxUEZPWTM2TGg1ZWNzZklfb0F1eEJlWlFUS3oxMlJSUjRXZGpRYTRYR0JKYUcxM1FiNXh2b3liYzZvYWZESU1RNmVyUXA0VHEwYW0xSml5U2J1ZktGTVVYQVNMejlUMzJ2Q2hmamdwOFZvTjZIbWRKSUh5aG1TR0FUem51bHVISzJEN2VEZ1UtLVB0UWJLX1Q3Z0RrdnR1SlRIWXc?oc=5",
+              "title": "The 5 Best-Performing AI Stocks in June 2026 - NerdWallet",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ0RPel9KWms3MVEtWUk0eXpGNnlUR3UxSFNFc0ltbEsyZDJBa0VpVTBtQVRTZmNoeTJWVWdSM3k3VllueXRZcjRCdVhfZXZLZ1lxY0J4WGI4SEdCc3BmWTFpXzVseWhuQzcxZEtmeDVjb09oN3NEQW5fUGhnam1iZjN1V3Z2QWNlazNuaXFPSQ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.27,
+            "zscore": -0.29,
             "spike": false
           }
         },
@@ -5221,7 +5221,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.84,
+            "zscore": -0.85,
             "spike": false
           }
         },
@@ -5282,24 +5282,24 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "Which Robotics Stock Most Likely Gets Acquired? 3 Targets Wall Street Is Watching - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNc2RiWnMyNHo3R1hNWjNTUVBXbGlYOXZiQWtaaGRkdXlGUGZfeXdnVWozVnVHZmx5di1jd2VGXy0wMmUzRkhQMFBCV1NqYUp3OVpDSlNfUHZ1WGNaR2NSUGFGbmcwZ1FoWk9ZZXN2QXNfVGRRaVZJQmtzVVJSQkdjM00wbklXYlRiVWFuYkhtVElYWmc0MlFRdHNOUVdZRHMxUzZkMVRHdzZ2NTl4RFRPeW5VYnpnV1FETDZqWHlONVRWdw?oc=5",
+              "title": "3 Robotics Stocks in the M&A Spotlight in 2026 - AOL.com",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE44eUQyN0dNdjNpVHZRa05FSkFidGxzR2JsYTZKTXF3dk9UaUxLa1JEdFdtbnd5ZUxGUlUyWERjY0hzSEJUU0hRb0RhbFZubDl4clJhNkpyTEJWT1kwSFBGamdhQjZYd0pNTnA4MlVVbXQxeHJIVU01RDVoZThWZw?oc=5",
               "sentiment": 0.0,
-              "relevance": 0.4,
+              "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_robotics",
-              "title": "Wall Street Pounds the Table: Tesla’s Future Is Not in Cars — It’s Robotics - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY3NXOHlIT2o2Mjk2Q1hYWkJKUGt1N056ZFdNZG1QVmN2R3djMU8xNENjOFcwVjlfU3dldHd1TFg3aGhTbHZjeFFEa0ZsQ1ZzYjE1a2U4ajNnUU9PLWZJVUpTajBqc3AtMEpZSEc3YXNaaFJwdWxfN3V6SFMwUTNLMHZsc2N2U3E3bFZGSklGTjR4eHQyUEZ2aWF3MXkwT3lFaEVmR0R1dDRxR2F0MUVFLVRVeEY?oc=5",
+              "title": "YY Group turns cleaning shifts into AI data for humanoid robots - Stock Titan",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNN3RpVFRsemExVkxJZkhBclJnX29QTVlFdnlyMkVVNmhNWDVOZGItbzdTOWFxT0ZZMlNKQ3VLdU9VRllFOTZobkdibDVER3VtMm9BVkFDbGdCN2MtS0d5bGFKRmZNOVVBaURMY09QcDRoVTVyaDEyOXVuLUJmTmlkTlRWcjFPU0ZGVWxZNFNFWUtCR3MtQmM5RVBEckpFU2tYc2NZMUgtMTVqQWx0UzU4S2tUYw?oc=5",
               "sentiment": 0.0,
               "relevance": 0.4,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.89,
+            "count": 2,
+            "zscore": -0.65,
             "spike": false
           }
         }
@@ -5337,7 +5337,7 @@
             {
               "source": "googlenews_cyber",
               "title": "Spotting Winners: Okta (NASDAQ:OKTA) And Cybersecurity Stocks In Q1 - FinancialContent",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUzU5T2l4NUc5YTUwdThCbTdycVcwTG82eGJCMWxBTEtTcWRaMTloNDA1UXZxY0czdm5RblBFamhXb1ZpU3E3R01NMU5kZXRwa2VEZ0ZvUW1FdWtUQVJSWHJjM1hTRlVDVTdZRzg5M3RrMG1zQUhhSlA5Wlh3ZmtyUlVRTS1qUVVzLXF6NTN3bk1LY0ppV0YxYVVNX3FDVXgxbFhEeTc4c2VESHdHelJ0b2RPakZGTDF3a2JyS1JYWThmaThjUzhjQ2JIeEtvYmM?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOGlwYmhlSk5CWDhISnlRTDQyeUJYcFNuazdEazhpTzM2THdxaFo0b2E1bkQzNkxXeWlsOV9YVGg5eGxZcng2ekxickxDb3JkNU55OW1WM3JUZVlqcGhKQ096RjlMWndSQkZvQkFzdS1PVEJobTcweFg5aEZLdGYwTjlTY2hROW40WDB0Uk9ubnRPd2dpZ1Z5cGdHcHVDVkNQb1Y3azVCUFFrc25yemdNYklzVGFvMTNuNUFXT1k3aUk4ZDA?oc=5",
               "sentiment": 0.477,
               "relevance": 0.791,
               "event_type": "other"
@@ -5686,16 +5686,16 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "Relay Therapeutics (RLAY) is One of the Best AI Driven Biotech Stocks, Here is Why - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU3h2OXBrU2Y2QktqYmhBT2NnUEJQajJmbDE0dEpPN3ZaTDQxVTNoTjVNSG0wc01yamtfM2xPNVhuQWNWT2pWaGdNclZvYjJpTEpYZmJKUEN5YWFTZE16U2VvVVdUU3lCc2o0SGo1OW5HdmlXT1l0VnAzVGV2MEN3SkdRbFFJWEpzN2o1eURSLUNSOFBMVjhpT0Q1RW5sQUl4OWpN?oc=5",
+              "title": "Crinetics Pharmaceuticals (CRNX) is One of the Best AI Driven Biotech Stocks, Here is Why - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc1pxd2JOTkxfeW8tMS1IdF9ZOGNaX1pZV0NxaEhxLVVmVU1JbW5pcGZ2WExaUEdZSkFvQ2JBYTFZcWtnaDNpUzE2NU5aeEhUSnphdUhXQk02MFlrbE9ROXNrY3RTbGtITzFLMGc3UEtYQ0wzUWZySGd3M0NGeWc3dnotN2haQTdEZWJsQUx6cFBKeVVTZFhsaldFM1VDUjYwUF84VjFNV05SXzNM?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
               "event_type": "other"
             },
             {
               "source": "googlenews_biotech",
-              "title": "Crinetics Pharmaceuticals (CRNX) is One of the Best AI Driven Biotech Stocks, Here is Why - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc1pxd2JOTkxfeW8tMS1IdF9ZOGNaX1pZV0NxaEhxLVVmVU1JbW5pcGZ2WExaUEdZSkFvQ2JBYTFZcWtnaDNpUzE2NU5aeEhUSnphdUhXQk02MFlrbE9ROXNrY3RTbGtITzFLMGc3UEtYQ0wzUWZySGd3M0NGeWc3dnotN2haQTdEZWJsQUx6cFBKeVVTZFhsaldFM1VDUjYwUF84VjFNV05SXzNM?oc=5",
+              "title": "Relay Therapeutics (RLAY) is One of the Best AI Driven Biotech Stocks, Here is Why - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU3h2OXBrU2Y2QktqYmhBT2NnUEJQajJmbDE0dEpPN3ZaTDQxVTNoTjVNSG0wc01yamtfM2xPNVhuQWNWT2pWaGdNclZvYjJpTEpYZmJKUEN5YWFTZE16U2VvVVdUU3lCc2o0SGo1OW5HdmlXT1l0VnAzVGV2MEN3SkdRbFFJWEpzN2o1eURSLUNSOFBMVjhpT0Q1RW5sQUl4OWpN?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
               "event_type": "other"
@@ -5772,8 +5772,8 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "JPMorgan Says Buy the Dip in These 2 Large-Cap Biotech Stocks - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeUxOVDdmcW80UzkyOW9XSS1JZkwwMGNucmltV3hoLTAyUkpFaEFEdXZ4RWlBVHZ6VXc1b05lWTBqMzZ6M1NGMGU2TWlfR2VmalNGZlU5ZHpkTUVqcVY0VXBJSzZPVG9Qb2NsaTNFcTkwWTFFVUxvaUFVc3ZmVG9NYkJkVkprczBmdnd5dTNtQ25vSUVaVjVr?oc=5",
+              "title": "Krystal Biotech Stock Soars 16% in Three Months: Here's Why - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUkZWa1loOWhBVUZuQnZmRV8zUmg4Y19hMzdlTWloQnYwRlNMQkVUZTNiajU4X21VZ1lMVUNybVZVNWwtNmxLcUVhM2dnNUtIdG1Kalo4dGZVOEFzSGRxVWJZb0JqMDItZDhSaU9hd3dUeXJ5TTZKYmpjN1c5UzVJM1h4NE04VGhkZGg5clVSVmtqZFNtSGZBdHpiS3hoTmZu?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -5802,18 +5802,18 @@
           "events": [
             {
               "source": "googlenews_gold_miners",
-              "title": "ASX Gold Stocks Rebound Sharply After Weak US Jobs Data Reignites Rate-Cut Bets - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVzRzTFdfOVNhRDlHSnJTVEhJTTZMMVU1MkhhOGRMZllxMHQ1NDFfMzVaOUxEUEc3Q1ZVX19JRUtnZkhKTFhQV0RzRmd1ZXczRFkyVVJ0ZEJTb2paVldzazk4NGhiRVc5QmtRZElnUlMzem0tNzdqaWZLdHgycU1TT0x1TjNLYnBIdFRyekVocGlrS1lzUEgwTldzTUd6eFZUZzl0N0lLdmw0RFBmUy1zWTlUMkE1SGxkQXJ3?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
+              "title": "Agnico Eagle Mines (AEM) Suffers a Larger Drop Than the General Market: Key Insights - Yahoo Finance Singapore",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeDFDaHlMQklPcUNDQzFVTHlManVSV2lxM2RJTnBXTm9FWmRZcndkSnJqajFDZkNvTjVrMFltMzQ2bWlXbzNjMXJuX0Q3cDQxRUpGUHBlWnNNeElRVkNFTkJmZXZwSXFMNDJCV1ZFSW1xNm9UanVobHNLMDhfMXVRQmJFaW51dw?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.855,
               "event_type": "other"
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Northern Star Resources (ASX:NST) Slides Amid Weakness Across Materials Stocks - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONnRNNV94VTk5c0d4NFRhZ19ONUN0MHgxcnpRcU9ZRmJRX2F4V0NOcTdMUTRBRVBJcmh0alN2X2dJMndqQWctY1RoNC1SMjM0SU9WcmhDaGJKTWpvZlpOZVpsc0t3ZTFxSnFONnRYNFVrSm50NDFtSEFLbWNpaUp2Vk1XZkpTMUdMaGw0clJkcGg1cmQ3QkUxT0xacmphYnh5U0F3Z0dGOXBWRktPTVZJ?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
+              "title": "ASX Gold Stocks Rebound Sharply After Weak US Jobs Data Reignites Rate-Cut Bets - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVzRzTFdfOVNhRDlHSnJTVEhJTTZMMVU1MkhhOGRMZllxMHQ1NDFfMzVaOUxEUEc3Q1ZVX19JRUtnZkhKTFhQV0RzRmd1ZXczRFkyVVJ0ZEJTb2paVldzazk4NGhiRVc5QmtRZElnUlMzem0tNzdqaWZLdHgycU1TT0x1TjNLYnBIdFRyekVocGlrS1lzUEgwTldzTUd6eFZUZzl0N0lLdmw0RFBmUy1zWTlUMkE1SGxkQXJ3?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
               "event_type": "other"
             },
             {
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 28,
-            "zscore": 0.6,
+            "count": 30,
+            "zscore": 0.76,
             "spike": false
           }
         },
@@ -6031,13 +6031,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-07-07",
-      "return_pct": -0.66,
-      "zscore": -0.47,
+      "date": "2026-07-08",
+      "return_pct": -2.08,
+      "zscore": -1.27,
       "max_abs_z_recent": 1.43,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 5
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-07-07",
@@ -6046,7 +6046,7 @@
       "max_abs_z_recent": 1.63,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
