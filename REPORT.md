@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-07-22 09:25 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-07-23 09:23 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Insurance | hot | 0.99 | +9.2% | $189M | nxm, re, wrapped-nxm |
-| 2 | Rollups-as-a-Service (RaaS) | hot | 0.98 | +6.2% | $151M | espresso, altlayer, ankr |
-| 3 | Tokenized Stock | hot | 0.97 | +4.2% | $1.8B | fgrs-figure-tokenized-stock, strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock |
-| 4 | bStocks Ecosystem | hot | 0.97 | +6.2% | $403M | spacex-bstocks-tokenized-stock, micron-technology-bstock, sandisk-bstocks-tokenized-stock |
-| 5 | Binance Wallet IDO | hot | 0.92 | +3.7% | $1.5B | midnight-3, velvet, sentient |
-| 6 | AI Framework | hot | 0.89 | +4.4% | $1.7B | virtual-protocol, unibase, eigenlayer |
-| 7 | Gaming Marketplace | hot | 0.87 | +3.3% | $126M | immutable-x, overtake, open-loot |
-| 8 | Stablecoin Issuer | hot | 0.87 | +2.9% | $6.5B | world-liberty-financial, sky, aave |
+| 1 | Insurance | hot | 0.98 | +77.1% | $205M | nxm, re, wrapped-nxm |
+| 2 | Bridged DAI | hot | 0.96 | +35.5% | $825M | polygon-pos-bridged-dai-polygon-pos, anubis-bridged-dai-anubis, makerdao-arbitrum-bridged-dai-arbitrum-one |
+| 3 | BTCfi Protocol | hot | 0.94 | +7.8% | $599M | pendle, lorenzo-protocol, babylon |
+| 4 | bStocks Ecosystem | hot | 0.94 | +4.8% | $421M | spacex-bstocks-tokenized-stock, micron-technology-bstock, sandisk-bstocks-tokenized-stock |
+| 5 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.93 | +4.6% | $490M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 6 | Four.meme Ecosystem (BNB Memes) | hot | 0.93 | +6.0% | $790M | bianrensheng, siren-2, lobster-2 |
+| 7 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.93 | +4.7% | $490M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 8 | Tokenized Stock | hot | 0.90 | +3.6% | $1.8B | fgrs-figure-tokenized-stock, strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Robinhood Chain Meme | -10.7% | $105M | cash-cat, tendies-2, yolo-2 |
-| Intent | -8.2% | $293M | debridge, cow-protocol, synapse-2 |
-| BTCfi Protocol | -7.2% | $563M | pendle, lorenzo-protocol, babylon |
-| Olympus Pro Ecosystem | -6.3% | $105M | synapse-2, spell-token, thorswap |
-| Fan Token | -6.0% | $134M | atletico-madrid, og-fan-token, paris-saint-germain-fan-token |
+| Liquid Staked BTC | -26.8% | $1.4B | clbtc, lombard-staked-btc, merlin-s-seal-btc |
+| Liquid Staked SOL | -6.7% | $2.9B | binance-staked-sol, jito-staked-sol, jupiter-staked-sol |
+| Trading Card RWA Platform | -6.5% | $308M | collector-crypt, collect-on-fanable, ready |
+| Cat-Themed | -6.2% | $397M | cash-cat, toshi, popcat |
+| Yield Optimizer | -4.7% | $158M | convex-finance, singularry, alpha-fi |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
