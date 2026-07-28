@@ -1,27 +1,29 @@
 # 🏛️ Screener settori / temi equity
 
-_Foto del momento (snapshot: **2026-07-27 10:54 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-07-28 10:05 UTC**) — **non è una previsione.**_
 
 ## 🔥 Settori in forza ora
 
 | # | Settore / tema | Segnale | Forza | 5g | ~1 mese |
 |--:|---|:-:|--:|--:|--:|
-| 1 | Oil & Gas E&P (XOP) | hot | 1.00 | +5.5% | +13.3% |
-| 2 | Energy (XLE) | hot | 0.89 | +4.1% | +9.0% |
-| 3 | Utilities (XLU) | warm | 0.68 | +1.6% | +2.5% |
-| 4 | Aerospace & Defense (ITA) | warm | 0.68 | +3.2% | +1.0% |
-| 5 | Health Care (XLV) | warm | 0.66 | -0.2% | +6.1% |
-| 6 | Industrials (XLI) | neutral | 0.63 | +1.0% | +2.1% |
-| 7 | Biotech (XBI) | neutral | 0.63 | +0.2% | +3.5% |
-| 8 | Gold Miners (GDX) | neutral | 0.58 | +5.1% | -3.4% |
-| 9 | Financials (XLF) | neutral | 0.53 | -1.6% | +3.6% |
-| 10 | Uranium/Nuclear (URA) | neutral | 0.50 | +5.2% | -9.8% |
+| 1 | Aerospace & Defense (ITA) | warm | 0.84 | +6.4% | +2.8% |
+| 2 | Health Care (XLV) | warm | 0.76 | +2.6% | +5.0% |
+| 3 | Gold Miners (GDX) | warm | 0.76 | +7.1% | +0.1% |
+| 4 | Energy (XLE) | warm | 0.74 | +0.7% | +7.9% |
+| 5 | Financials (XLF) | warm | 0.74 | +1.5% | +6.4% |
+| 6 | Oil & Gas E&P (XOP) | warm | 0.66 | -0.6% | +9.3% |
+| 7 | Real Estate (XLRE) | neutral | 0.63 | +1.2% | +2.6% |
+| 8 | Industrials (XLI) | neutral | 0.63 | +2.9% | -0.5% |
+| 9 | Utilities (XLU) | neutral | 0.58 | +1.6% | -0.4% |
+| 10 | Materials (XLB) | neutral | 0.55 | +2.7% | -0.9% |
 
 ## 📉 In calo / rischio ora
 
 | Settore / tema | 5g | ~1 mese |
 |---|--:|--:|
-| Consumer Discretionary (XLY) | -7.3% | -4.4% |
+| Consumer Discretionary (XLY) | -3.3% | -2.2% |
+| Clean Energy (ICLN) | -1.8% | -12.2% |
+| Semiconductors (SMH) | -1.8% | -13.9% |
 
 ---
 > **Forza** = momentum 5g + ~1 mese (rank-based, robusto agli outlier). Settori via ETF liquidi (no selezione di singoli titoli). Rotazione **attuale**, non una previsione.
