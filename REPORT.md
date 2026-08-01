@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-07-31 09:43 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-01 09:05 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.96 | +2.4% | $557M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.95 | +2.4% | $558M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 3 | Prediction Market Tools | hot | 0.95 | +3.8% | $116M | unifai-network, based-one, heyanon |
-| 4 | Robinhood Chain Meme | hot | 0.94 | +3.5% | $131M | cash-cat, pipedog, little-john |
-| 5 | Binance Wallet IDO | hot | 0.92 | +1.7% | $1.8B | midnight-3, apriori, velvet |
-| 6 | CeFi | hot | 0.92 | +1.5% | $389M | vision-3, swissborg, momentum-3 |
-| 7 | Account Abstraction | hot | 0.91 | +1.9% | $280M | trust-wallet-token, home, skale |
-| 8 | Unitas Ecosystem | hot | 0.91 | +1.4% | $108M | usdu, unitas, unitas-gold |
+| 1 | Inscriptions | hot | 0.98 | +5.8% | $138M | ordinals, dmt-nat, sats-ordinals |
+| 2 | Card Games | hot | 0.96 | +5.7% | $201M | axie-infinity, gods-unchained, echelon-prime |
+| 3 | Fan Token | hot | 0.94 | +3.2% | $144M | croatian-ff-fan-token, atletico-madrid, og-fan-token |
+| 4 | Sports | hot | 0.93 | +3.3% | $409M | chiliz, scor, flow |
+| 5 | LSDFi | hot | 0.93 | +2.8% | $324M | pendle, babylon, dinero-2 |
+| 6 | Gaming Governance Token | hot | 0.92 | +2.5% | $445M | axie-infinity, apecoin, illuvium |
+| 7 | BTCfi Protocol | hot | 0.92 | +1.9% | $477M | pendle, babylon, bedrock-token |
+| 8 | Frog-Themed | hot | 0.86 | +1.6% | $1.6B | pepe, ape-and-pepe, turbo |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Real World Assets (RWA) | -32.1% | $44.0B | figure-heloc, chainlink, stellar |
-| bStocks Ecosystem | -9.5% | $516M | spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock, micron-technology-bstock |
-| Made in USA | -8.1% | $249.2B | usd-coin, ripple, solana |
-| Synthetic | -7.9% | $330M | havven, stp-network, metronome-synth-eth |
-| Rollups-as-a-Service (RaaS) | -7.0% | $136M | espresso, altlayer, ankr |
+| Tokenized Stock | -18.3% | $1.5B | fgrs-figure-tokenized-stock, strategy-pp-variable-xstock, spacex-bstocks-tokenized-stock |
+| BackedFi xStocks Ecosystem | -14.2% | $574M | strategy-pp-variable-xstock, bending-spoons-xstock, tesla-xstock |
+| bStocks Ecosystem | -12.9% | $451M | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, micron-technology-bstock |
+| Trading Card RWA Platform | -11.0% | $314M | collector-crypt, collect-on-fanable, ready |
+| Tokenized Silver | -9.9% | $200M | kinesis-silver, matrixdock-silver, silver-rstock |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
