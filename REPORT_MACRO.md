@@ -1,14 +1,14 @@
 # 🌡️ Clima macro (USA)
 
-_Foto del momento (snapshot: **2026-07-31 10:37 UTC**) — contesto, **non una previsione.**_
+_Foto del momento (snapshot: **2026-08-03 11:21 UTC**) — contesto, **non una previsione.**_
 
 **Lettura di fondo: 🟢 risk-on (favorevole)**
 
 | Indicatore | Valore | Δ ~30g |
 |---|--:|--:|
 | Fed funds rate | 3.63 | +0.00 |
-| 2Y Treasury | 4.22 | +0.12 |
-| 10Y Treasury | 4.67 | +0.29 |
+| 2Y Treasury | 4.23 | +0.09 |
+| 10Y Treasury | 4.68 | +0.24 |
 | Broad dollar index | 120.71 | -0.70 |
 | CPI (inflation level) | 332.57 | -1.41 |
 | M2 money supply | 23155.20 | +99.60 |
