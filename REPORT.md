@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-08-06 09:38 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-07 08:12 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Robinhood Chain Meme | hot | 0.98 | +22.7% | $238M | cash-cat, pipedog, tendies-2 |
-| 2 | bStocks Ecosystem | hot | 0.98 | +7.6% | $527M | spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock, micron-technology-bstock |
-| 3 | Layer 3 (L3) | hot | 0.97 | +9.7% | $131M | degen-base, cartesi, orbs |
-| 4 | Appchains | hot | 0.94 | +7.9% | $158M | dydx-chain, cartesi, geode-chain |
-| 5 | Card Games | hot | 0.93 | +4.8% | $206M | axie-infinity, echelon-prime, gods-unchained |
-| 6 | Account Abstraction | hot | 0.93 | +2.4% | $308M | trust-wallet-token, home, biconomy |
-| 7 | Cat-Themed | hot | 0.91 | +9.4% | $475M | cash-cat, toshi, popcat |
-| 8 | Energy | hot | 0.91 | +4.2% | $112M | power-ledger, novachargex-coin, energy-web-token |
+| 1 | bStocks Ecosystem | hot | 0.99 | +9.4% | $567M | spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock, micron-technology-bstock |
+| 2 | Rollups-as-a-Service (RaaS) | hot | 0.98 | +5.4% | $140M | espresso, altlayer, ankr |
+| 3 | LSDFi | hot | 0.96 | +4.8% | $325M | pendle, babylon, dinero-2 |
+| 4 | RPG | hot | 0.95 | +4.2% | $303M | floki, big-time, illuvium |
+| 5 | Account Abstraction | hot | 0.95 | +4.1% | $320M | trust-wallet-token, biconomy, home |
+| 6 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.93 | +3.1% | $547M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 7 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.93 | +3.1% | $547M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 8 | Echo Launchpad | hot | 0.91 | +4.5% | $251M | plasma, lab |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Crypto-Backed Tokens | -99.2% | $400M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| Bridged-Tokens | -98.8% | $308M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| Liquid Staking | -97.3% | $1.3B | staked-ether, wrapped-steth, wrapped-beacon-eth |
-| Ether.fi Ecosystem | -91.5% | $345M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
-| Restaking | -86.5% | $865M | wrapped-eeth, kelp-dao-restaked-eth, lombard-staked-btc |
+| Celebrity-Themed | -64.8% | $114M | yzy, bulla-3, kekius-maximus |
+| CeFi | -11.3% | $316M | swissborg, vision-3, peoples-reserve-network |
+| Privacy Blockchain | -9.0% | $5.6B | canton-network, beldex, midnight-3 |
+| Payment Solutions | -7.6% | $2.7B | stable-2, dash, reallink |
+| TON Meme | -5.8% | $132M | notcoin, utya, sixseven |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
