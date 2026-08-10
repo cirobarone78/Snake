@@ -1,27 +1,27 @@
 # 🏛️ Screener settori / temi equity
 
-_Foto del momento (snapshot: **2026-08-07 08:34 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-10 08:57 UTC**) — **non è una previsione.**_
 
 ## 🔥 Settori in forza ora
 
 | # | Settore / tema | Segnale | Forza | 5g | ~1 mese |
 |--:|---|:-:|--:|--:|--:|
-| 1 | Gold Miners (GDX) | hot | 1.00 | +9.3% | +14.1% |
-| 2 | Cybersecurity (CIBR) | hot | 0.89 | +7.1% | +5.2% |
-| 3 | Uranium/Nuclear (URA) | warm | 0.82 | +8.8% | +3.7% |
-| 4 | Aerospace & Defense (ITA) | warm | 0.71 | +5.0% | +4.3% |
-| 5 | Robotics & AI (BOTZ) | warm | 0.68 | +5.8% | +2.6% |
-| 6 | Financials (XLF) | warm | 0.66 | +1.4% | +5.2% |
-| 7 | Consumer Discretionary (XLY) | neutral | 0.61 | +5.1% | +2.4% |
-| 8 | Technology (XLK) | neutral | 0.58 | +5.5% | +2.2% |
-| 9 | Materials (XLB) | neutral | 0.53 | +1.0% | +4.0% |
-| 10 | Semiconductors (SMH) | neutral | 0.50 | +6.0% | -3.6% |
+| 1 | Gold Miners (GDX) | hot | 1.00 | +21.3% | +18.6% |
+| 2 | Uranium/Nuclear (URA) | hot | 0.95 | +14.9% | +6.0% |
+| 3 | Materials (XLB) | warm | 0.76 | +4.8% | +5.2% |
+| 4 | Cybersecurity (CIBR) | warm | 0.68 | +6.6% | +3.8% |
+| 5 | Aerospace & Defense (ITA) | warm | 0.68 | +4.6% | +4.6% |
+| 6 | Robotics & AI (BOTZ) | warm | 0.66 | +6.8% | +2.7% |
+| 7 | Technology (XLK) | neutral | 0.55 | +7.2% | +1.4% |
+| 8 | Semiconductors (SMH) | neutral | 0.50 | +7.8% | -4.1% |
+| 9 | Consumer Discretionary (XLY) | neutral | 0.50 | +3.2% | +2.6% |
+| 10 | Energy (XLE) | neutral | 0.45 | -3.4% | +4.9% |
 
 ## 📉 In calo / rischio ora
 
 | Settore / tema | 5g | ~1 mese |
 |---|--:|--:|
-| Utilities (XLU) | -2.9% | -4.4% |
+| Utilities (XLU) | -1.7% | -3.4% |
 
 ---
 > **Forza** = momentum 5g + ~1 mese (rank-based, robusto agli outlier). Settori via ETF liquidi (no selezione di singoli titoli). Rotazione **attuale**, non una previsione.
