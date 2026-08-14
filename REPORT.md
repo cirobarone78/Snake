@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-08-13 08:19 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-14 08:14 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | BTCfi Protocol | hot | 0.97 | +5.4% | $474M | pendle, bedrock-token, babylon |
-| 2 | Crypto-Backed Tokens | hot | 0.96 | +2.6% | $403M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 3 | Virtuals Protocol Ecosystem | hot | 0.95 | +8.7% | $624M | virtual-protocol, ribbita-by-virtuals, robo-token-2 |
-| 4 | Fan Token | hot | 0.93 | +2.6% | $146M | croatian-ff-fan-token, atletico-madrid, og-fan-token |
-| 5 | Robotics | hot | 0.93 | +4.0% | $629M | virtual-protocol, geodnet, peaq-2 |
-| 6 | Robinhood Chain Meme | hot | 0.93 | +48.4% | $441M | cash-cat, dogbull, degen-base |
-| 7 | Bridged-Tokens | hot | 0.91 | +1.2% | $298M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| 8 | Pump.fun Ecosystem | hot | 0.86 | +4.8% | $1.4B | would, fartcoin, the-black-bull |
+| 1 | Binance Wallet IDO | hot | 0.98 | +11.8% | $1.9B | velvet, midnight-3, akedo |
+| 2 | AI Applications | hot | 0.94 | +8.8% | $2.2B | venice-token, velvet, pieverse |
+| 3 | Ether.fi Ecosystem | hot | 0.94 | +14.7% | $424M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
+| 4 | Cybersecurity | hot | 0.94 | +7.0% | $156M | goplus-security, arcium, qanplatform |
+| 5 | Account Abstraction | hot | 0.93 | +0.6% | $326M | trust-wallet-token, home, biconomy |
+| 6 | RPG | hot | 0.91 | +0.7% | $275M | floki, illuvium, endurance |
+| 7 | Insurance | hot | 0.91 | +3.2% | $162M | nxm, re, wrapped-nxm |
+| 8 | Terminal of Truths | hot | 0.90 | +3.4% | $152M | fartcoin, goatseus-maximus, aiwithdaddyissues |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Gaming Marketplace | -55.0% | $121M | immutable-x, overtake, open-loot |
-| Cybersecurity | -22.7% | $146M | goplus-security, arcium, qanplatform |
-| Arcade Games | -21.4% | $357M | audiera, hamster-kombat, frenpet |
-| NFTFi | -18.0% | $132M | blur, fake-world-assets, public-meme-token |
-| Metagovernance | -16.9% | $163M | convex-finance, dinero-2, index-cooperative |
+| Trading Bots | -69.8% | $102M | antfun, tradoor, altcoinist-token |
+| Communication | -38.9% | $153M | xpin-network, helium, spacecoin-2 |
+| Arcade Games | -20.4% | $285M | audiera, hamster-kombat, frenpet |
+| Wallets | -15.1% | $2.4B | beldex, kaspa, trust-wallet-token |
+| Decentralized Science (DeSci) | -13.6% | $275M | origintrail, bio-protocol, the-innovation-game |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
