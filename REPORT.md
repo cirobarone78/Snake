@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-08-18 07:36 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-19 07:36 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Cybersecurity | hot | 0.97 | +5.6% | $192M | goplus-security, arcium, qanplatform |
-| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.94 | +3.5% | $557M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 3 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.94 | +3.5% | $557M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 4 | bStocks Ecosystem | hot | 0.93 | +1.5% | $453M | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, micron-technology-bstock |
-| 5 | Tokenized Stock | hot | 0.89 | +1.1% | $1.9B | fgrs-figure-tokenized-stock, strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock |
-| 6 | BTCfi Protocol | hot | 0.87 | +1.1% | $456M | pendle, bedrock-token, babylon |
-| 7 | Trading Bots | hot | 0.87 | +1.8% | $101M | antfun, tradoor, altcoinist-token |
-| 8 | AI Agents | hot | 0.86 | +2.5% | $2.6B | venice-token, virtual-protocol, fetch-ai |
+| 1 | Ansem.io Ecosystem | hot | 0.97 | +nan% | $105M | the-black-bull, bulls-s-eye, bullshit-coin |
+| 2 | bStocks Ecosystem | hot | 0.92 | +2.0% | $462M | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, micron-technology-bstock |
+| 3 | Bridged-Tokens | hot | 0.92 | +1.9% | $299M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
+| 4 | Binance Wallet IDO | hot | 0.91 | +6.0% | $1.7B | midnight-3, velvet, akedo |
+| 5 | RPG | hot | 0.89 | +1.5% | $280M | floki, endurance, illuvium |
+| 6 | Bank-Issued Stablecoin | hot | 0.87 | +3.5% | $219M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
+| 7 | Fan Token | hot | 0.86 | +1.1% | $138M | croatian-ff-fan-token, og-fan-token, atletico-madrid |
+| 8 | AI Meme | hot | 0.86 | +6.1% | $699M | ribbita-by-virtuals, fartcoin, turbo |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Quest-to-Earn | -25.6% | $107M | billions-network, prize-protocol, project-galaxy |
-| DeFAI | -19.1% | $828M | velvet, ribbita-by-virtuals, derive |
-| Binance Wallet IDO | -14.0% | $1.6B | midnight-3, velvet, akedo |
-| Arcade Games | -12.0% | $129M | audiera, hamster-kombat, frenpet |
-| Decentralized Identifier (DID) | -9.6% | $1.7B | worldcoin-wld, ethereum-name-service, bas |
+| Crypto-Backed Tokens | -16.8% | $323M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| Arcade Games | -15.9% | $108M | audiera, hamster-kombat, frenpet |
+| Cybersecurity | -14.6% | $164M | goplus-security, arcium, qanplatform |
+| Metagovernance | -14.2% | $142M | convex-finance, dinero-2, index-cooperative |
+| Tokenized Stock | -12.8% | $1.7B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, bending-spoons-xstock |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
