@@ -1911,6 +1911,143 @@ introdurle ora significherebbe pagarne il costo prima di averne bisogno.
 
 ---
 
+## ADR-034 — Ranking ETF: esito della validazione pre-registrata
+
+**Data**: 2026-08-24
+**Stato**: Accepted — **esito misurato e registrato** (barra di adozione NON superata)
+**Contesto operativo**: `docs/PIANO_SVILUPPO.md` §2.1 e §5 (WP3). Le ipotesi qui
+sotto sono state committate in `6b3ffd3`, **prima** che esistesse il codice che
+le misura (`5423c88`, `4fdd673`) e prima di qualunque risultato: il timestamp git
+è la prova della pre-registrazione. L'esito è stato aggiunto dopo, senza toccare
+una sola soglia.
+
+**Contesto**: il progetto ha già pagato il prezzo di concludere dopo aver visto i
+dati. Il caso `news_count`/`|return|` (correlazione +0,32 su n=23, svanita a
+−0,07 con n=143) e il notebook 12 su FinBERT sono in `STATUS.md` proprio come
+promemoria: una soglia scelta *dopo* aver guardato i risultati non è una soglia,
+è una descrizione. `CLAUDE.md` lo mette tra i punti non negoziabili — «le ipotesi
+vanno scritte **prima** di vedere i risultati, non dopo».
+
+WP2 ha consegnato il panel (93 517 righe × 27 colonne, 20 ETF settoriali + SPY,
+2005→2026) e con esso la **baseline climatologica**: l'outperformance
+incondizionata vs SPY è 0,489 a 20 sedute e 0,482 a 60. È il numero da battere,
+ed è noto prima di aver addestrato qualsiasi cosa.
+
+**Decisione**: si adottano come **pali fissi** le ipotesi e le soglie qui sotto,
+copiate **verbatim** da `docs/PIANO_SVILUPPO.md` §2.1. Non si spostano dopo aver
+visto i risultati. Se una variante viene provata e fallisce, viene elencata nel
+report anche se fallita.
+
+### Ipotesi pre-registrate (verbatim da §2.1)
+
+- **H1**: il ranking per momentum relativo 60gg ha IC di Spearman medio OOS > 0
+  a 20 sedute sull'universo D1.
+- **H2**: la logistica regolarizzata sulle feature di WP2 batte il momentum puro
+  in Brier score OOS (probabilità calibrate su train con isotonic).
+- **H3**: lo spread top-quintile − bottom-quintile, **al netto dei costi** D6, è
+  positivo in *entrambe* le metà temporali dell'OOS.
+- **Metrica primaria**: Brier score vs baseline climatologica (frequenza storica
+  di outperformance nel train) + IC Spearman. Le altre metriche (§WP3) sono
+  diagnostiche.
+- **Barra di adozione** (il modello entra nel paper portfolio di WP4 solo se):
+  IC Spearman medio OOS ≥ 0.03 **e** H3 vera **e** Brier ≤ baseline
+  climatologica. Altrimenti WP4 procede con il **momentum semplice** come regola
+  dichiaratamente non-predittiva (il ledger e l'infrastruttura valgono comunque)
+  e l'esito negativo viene documentato in STATUS/ADR come da convenzione.
+
+### Protocollo di validazione, fissato ora
+
+Anche il *come* si misura va congelato prima, altrimenti la scelta del protocollo
+diventa essa stessa un grado di libertà da sfruttare a posteriori:
+
+1. **Walk-forward con embargo**: il test di ogni fold inizia `embargo = horizon`
+   osservazioni dopo la fine del train. Senza embargo l'ultima riga di train ha
+   un target che si realizza *dentro* il test: contaminazione, non predizione.
+2. **Campionamento settimanale** del panel (lunedì), coerente con D5.
+3. **Calibrazione isotonic fit solo sul train** del fold, mai sul test.
+4. **Due metà temporali OOS** valutate separatamente: H3 richiede che il segno
+   tenga in *entrambe*, non in media.
+5. **Controlli negativi obbligatori**: `RandomRanker` con seed e
+   `ClimatologyBaseline`. Se un modello non batte il caso, il confronto con le
+   altre baseline non significa nulla.
+
+### Esito misurato (run del 2026-08-24, `docs/REPORT_RANKING.md`)
+
+Panel WP2, 93 517 righe, campionamento settimanale (1 020 lunedì), walk-forward
+train 156 / test 52 settimane con embargo pari all'orizzonte. 14 950 previsioni
+OOS per modello e orizzonte.
+
+| Modello | IC Spearman (20g) | t | Brier | ECE | TMB netto |
+|---|---:|---:|---:|---:|---:|
+| `momentum` (H1) | 0,0010 | 0,08 | 0,2510 | 0,025 | −0,0052 |
+| `logistic` (H2) | 0,0300 | 2,50 | 0,2638 | 0,077 | +0,0008 |
+| `ridge` | 0,0309 | 2,57 | 0,2558 | 0,051 | +0,0014 |
+| `random` (controllo) | 0,0022 | 0,26 | 0,2506 | 0,016 | −0,0024 |
+| `climatology` (controllo) | — | — | **0,2501** | 0,009 | −0,0033 |
+
+- **H1 — vera *come scritta*, ma il numero è rumore.** IC del momentum = 0,0010
+  con t = 0,08: letteralmente > 0, statisticamente indistinguibile da zero, e
+  **inferiore a quello del ranker casuale** (0,0022). L'ipotesi chiedeva solo
+  `IC > 0` senza magnitudine, quindi passa; la soglia non è stata spostata a
+  posteriori. Si registra invece la lezione: *un'ipotesi senza magnitudine è
+  quasi gratis da superare*, e in una futura pre-registrazione va evitata.
+- **H2 — falsa.** La logistica ha Brier 0,2638 contro 0,2510 del momentum: non lo
+  batte, lo peggiora. A 60 sedute il divario si allarga (0,2794 vs 0,2527).
+- **H3 — falsa.** Lo spread top−bottom al netto dei costi è positivo nella prima
+  metà OOS (+0,0051 per `ridge`) e **negativo nella seconda** (−0,0022). A 60
+  sedute l'IC stesso cambia segno tra le due metà (+0,057 → −0,047).
+- **Barra di adozione: NON superata.** Richiedeva IC ≥ 0,03 **e** H3 **e** Brier
+  ≤ climatologia: la prima condizione è soddisfatta (`ridge` 0,0309), le altre
+  due no.
+
+> **Riproducibilità.** Il report si rigenera con un comando, ma non è
+> bit-identico tra run: il panel viene ricostruito da Yahoo ogni volta e la barra
+> del giorno corrente si aggiorna, spostando i numeri alla **quarta cifra
+> decimale** (es. IC di `ridge` 0,0308 → 0,0309 a dieci minuti di distanza).
+> Nessun verdetto cambia, ma i numeri citati qui sono quelli del report
+> committato in `368f2b0`. Per un confronto esatto serve fissare lo snapshot del
+> panel, non solo il codice.
+
+### Cosa dice davvero questo risultato
+
+Non è un "niente". I due modelli lineari mostrano un IC intorno a **0,03 con
+t ≈ 2,5**: un accenno di capacità di ordinamento cross-sectional, l'unica cosa in
+tutto il run che non somigli al caso. Ma non sopravvive a nessuno dei tre
+controlli che contano:
+
+1. **Non regge nel tempo.** Positivo nella prima metà OOS, svanito o invertito
+   nella seconda. Un segno che tiene in una sola metà è un regime, non un edge.
+2. **Le probabilità sono peggio di una costante.** Tutti i modelli hanno Brier
+   *superiore* alla climatologia (0,2501). La reliability table è il dato più
+   netto del run: nella banda 0,90–1,00 la logistica predice 0,974 e si realizza
+   **0,461**. Il modello è spettacolarmente troppo sicuro proprio dove pretende
+   di saperne di più. La calibrazione isotonic, fit sul train, non trasferisce
+   OOS — perché la relazione che apprende non è stabile.
+3. **I costi mangiano quel che resta.** Il TMB lordo di `ridge` è +0,0038, il
+   netto +0,0014: il 63% dell'edge lordo è commissioni e slippage, e comunque non
+   regge in entrambe le metà.
+
+Il **momentum relativo è indistinguibile dal caso** (0,0010 vs 0,0022): conferma
+diretta, ora su base probabilistica e con costi, del risultato già in `STATUS.md`
+— inseguire i settori forti non paga.
+
+**Conseguenze**:
+
+- **WP4 procede con il momentum semplice**, dichiaratamente *non predittivo*,
+  esattamente come §2.1 prescriveva per questo caso. Il prediction ledger e
+  l'infrastruttura di portafoglio restano pienamente giustificati: servono a
+  **misurare** onestamente, non a guadagnare.
+- Nessun modello entra in produzione con probabilità presentate come affidabili.
+  Dato ADR-032 (il prodotto è *probabilità calibrate*), pubblicare questi numeri
+  come tali sarebbe la cosa peggiore che il sistema possa fare.
+- L'IC ≈ 0,03 di `ridge`/`logistic` resta un filo da tirare **solo** con un
+  protocollo che ne accerti la stabilità (più fold, orizzonti diversi, feature
+  ablation). Non è un mandato per aggiungere modelli più potenti: un learner più
+  forte sulle stesse feature renderebbe solo più facile nascondere l'overfitting
+  (D11 resta in vigore).
+- Metodologico, da riportare nella prossima pre-registrazione: **ogni ipotesi
+  deve avere una magnitudine**, non solo un segno.
+
 <!--
 Template per nuove ADR:
 
