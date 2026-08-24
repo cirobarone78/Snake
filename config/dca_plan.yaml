@@ -27,5 +27,12 @@ sleeve:
     LINK: 0.3333
     POL: 0.3333
 
-# Quantità realmente possedute, per asset. Esempio: SOL: 0.0421
-holdings_units: {}
+# Quantità realmente possedute, per asset (solo quota satellite: è l'unica su
+# cui il sistema esprime una preferenza). Derivate dal portafoglio reale
+# fotografato il 2026-08-24 (valori in EUR / prezzo EUR del momento): buona
+# approssimazione, non un estratto conto. Sostituire con le quantità esatte
+# dell'exchange quando comodo.
+holdings_units:
+  SOL: 0.5965
+  LINK: 4.1410
+  POL: 158.3252

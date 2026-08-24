@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T13:46:25.816889+00:00",
+  "generated_at": "2026-08-24T15:16:55.858930+00:00",
   "title": "Piano di accumulo",
   "disclaimer": "Contenuto educativo, non consulenza finanziaria. Nessuna previsione: la scelta proposta serve a rispettare l'allocazione decisa, non a indovinare quale asset salirà.",
   "plan": {
@@ -14,45 +14,45 @@
       "POL",
       "SOL"
     ],
-    "holdings_estimated": true
+    "holdings_estimated": false
   },
   "sleeve_eur": 10.0,
-  "holdings_estimated": true,
-  "holdings_note": "I pesi qui sotto sono **stimati** replicando il piano dalla data di inizio: il sistema non conosce le quantità realmente possedute. Inserendole in `config/dca_plan.yaml` (`holdings_units`) lo scarto dal target diventa esatto.",
-  "pick": "LINK",
+  "holdings_estimated": false,
+  "holdings_note": null,
+  "pick": "POL",
   "items": [
     {
       "rank": 1,
-      "symbol": "LINK",
-      "price": 11.664,
-      "weight_now": 0.3002,
+      "symbol": "POL",
+      "price": 0.11542,
+      "weight_now": 0.148,
       "weight_target": 0.3333,
-      "gap_pp": 3.31,
-      "discount": 0.9307,
+      "gap_pp": 18.53,
+      "discount": 1.0,
       "score": 1.0,
-      "reason": "mildly_underweight",
-      "reason_it": "è leggermente sotto peso rispetto al target"
+      "reason": "underweight_vs_target",
+      "reason_it": "è il più sotto peso rispetto al target"
     },
     {
       "rank": 2,
-      "symbol": "SOL",
-      "price": 95.400002,
-      "weight_now": 0.3234,
-      "weight_target": 0.3334,
-      "gap_pp": 1.0,
-      "discount": 0.9445,
+      "symbol": "LINK",
+      "price": 11.664,
+      "weight_now": 0.3912,
+      "weight_target": 0.3333,
+      "gap_pp": -5.79,
+      "discount": 0.9307,
       "score": 0.5,
       "reason": "not_selected",
       "reason_it": "non selezionato questo mese"
     },
     {
       "rank": 3,
-      "symbol": "POL",
-      "price": 0.11542,
-      "weight_now": 0.3764,
-      "weight_target": 0.3333,
-      "gap_pp": -4.31,
-      "discount": 1.0,
+      "symbol": "SOL",
+      "price": 95.400002,
+      "weight_now": 0.4609,
+      "weight_target": 0.3334,
+      "gap_pp": -12.75,
+      "discount": 0.9445,
       "score": 0.0,
       "reason": "not_selected",
       "reason_it": "non selezionato questo mese"

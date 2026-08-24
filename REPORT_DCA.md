@@ -1,16 +1,14 @@
 # Piano di accumulo
 
-## Quota da 10€: **LINK**
+## Quota da 10€: **POL**
 
-Motivo: è leggermente sotto peso rispetto al target.
-
-> ⚠️ I pesi qui sotto sono **stimati** replicando il piano dalla data di inizio: il sistema non conosce le quantità realmente possedute. Inserendole in `config/dca_plan.yaml` (`holdings_units`) lo scarto dal target diventa esatto.
+Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | LINK | 30.0% | 33.3% | +3.3 pp | 93% | 1.000 |
-| 2 | SOL | 32.3% | 33.3% | +1.0 pp | 94% | 0.500 |
-| 3 | POL | 37.6% | 33.3% | -4.3 pp | 100% | 0.000 |
+| 1 | POL | 14.8% | 33.3% | +18.5 pp | 100% | 1.000 |
+| 2 | LINK | 39.1% | 33.3% | -5.8 pp | 93% | 0.500 |
+| 3 | SOL | 46.1% | 33.3% | -12.7 pp | 94% | 0.000 |
 
 ### Cosa dice la verifica storica
 
