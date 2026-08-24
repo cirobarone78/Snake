@@ -1657,6 +1657,128 @@ era aritmeticamente giusto e privo di significato.
 
 ---
 
+## ADR-032 — Direzione di prodotto: market intelligence probabilistica (ranking ETF)
+
+**Data**: 2026-08-24
+**Stato**: Accepted
+**Contesto operativo**: `docs/PIANO_SVILUPPO.md` (commissionato dall'utente lo
+stesso giorno). Questa ADR registra la direzione; il piano ne è l'esecuzione.
+
+**Contesto**: le Fasi 0–5 hanno prodotto un risultato netto e negativo: **non
+c'è edge direzionale daily** né dal tecnico, né dal tecnico+macro, né dal
+sentiment Layer 1, né dal momentum cross-sectional sui settori (i numeri sono in
+`STATUS.md`, sezione "Risultati empirici consolidati"). Quello che invece ha
+mostrato struttura è il **condizionamento**: il rendimento cambia natura per
+regime e per fase di ciclo, al punto che la media full-sample è un artefatto.
+
+Il repo si è quindi allargato in ampiezza — screener di rotazione, attribuzione
+eventi, report auto-aggiornati, piano di accumulo, paper trading — senza che
+esistesse **un prodotto predittivo dichiarato** su cui misurarsi. Ampiezza senza
+un bersaglio è il modo più comodo per non scoprire mai di non avere segnale.
+
+Serviva scegliere un bersaglio che fosse: (a) **cross-sectional** invece che
+direzionale, perché "quale sale di più" è una domanda più facile e più utile di
+"il mercato sale?"; (b) **probabilistico e calibrato**, perché una probabilità
+si può falsificare mentre un "compra ora" no; (c) su un universo con **storia
+lunga e pulita** (ETF settoriali dal 2012, contro ~1,5 cicli di halving crypto).
+
+**Decisione**: il primo prodotto predittivo del progetto è un **ranking
+cross-sectional di ETF settoriali con probabilità calibrate di sovraperformare
+il benchmark**. Non "quanto salirà il mercato", ma "dato lo stato di oggi, con
+che probabilità questo settore batte SPY nelle prossime 20 sedute, e quanto è
+incerta quella stima".
+
+Vincoli che fanno parte della decisione, non contorno:
+
+1. **La probabilità è il prodotto**, non un accessorio del segnale. Deve essere
+   calibrata (isotonic su train) e misurata con **Brier score** contro la
+   baseline climatologica, non con l'accuracy.
+2. **Ipotesi pre-registrate** (H1–H3 del piano §2.1, copiate verbatim
+   nell'ADR-034 prima del primo backtest) e **barra di adozione fissata prima**:
+   IC di Spearman medio OOS ≥ 0,03 **e** spread top−bottom quintile positivo al
+   netto dei costi in **entrambe** le metà dell'OOS **e** Brier ≤ climatologica.
+   Sotto la barra, il paper portfolio parte comunque ma con **momentum semplice
+   dichiarato non-predittivo**: vale l'infrastruttura, non si finge l'edge.
+3. **Validazione con embargo/purging** nel walk-forward: `walk_forward_splits`
+   oggi non ce l'ha, e senza embargo un target a 20 sedute sporca il fold di test.
+4. **Nessun "compra ora"** in output, in nessuna vista (rif. ADR-002, ADR-016):
+   probabilità, incertezza e fattori che la spiegano.
+5. **Un LLM non produce mai un numero di segnale** (rif. ADR-016): al più
+   estrae e classifica eventi, con audit di fonte/timestamp/hash/versione prompt.
+
+**Decisioni operative allegate** (default adottati dal piano §2; l'utente può
+emendarli finché il WP che li usa non è partito, dopo cambiarli significa rifare
+il WP):
+
+| # | Decisione | Default | Usata da |
+|---|---|---|---|
+| D1 | Universo | i 20 ETF di `SECTOR_ETFS` | WP2 |
+| D2 | Benchmark | **SPY** (nuovo `Asset`, ETF, yahoo `SPY`) | WP2 |
+| D3 | Orizzonte | **20 sedute** primario, 60 secondario | WP2–3 |
+| D4 | Target primario | `P(excess_return > 0)` a 20 sedute | WP3 |
+| D5 | Frequenza decisione | settimanale, lunedì pre-apertura | WP4 |
+| D6 | Portafoglio paper | top 5 equal-weight, cap 20%/asset, fill t+1, `default_cost_model()` | WP4 |
+| D7 | Soglia di confidenza | nessun acquisto se `P(outperform) < 0,55` per il 5° classificato | WP4 |
+
+D4, D7 e D8 (storage, ADR-033) restano **soggette a conferma esplicita
+dell'utente**; le altre valgono come default operativi. D9 (provider LLM) non è
+decisa e tiene WP6 bloccato.
+
+**Ipotesi pre-registrate** (piano §2.1, riportate qui perché il vincolo di
+`CLAUDE.md` è che le ipotesi si scrivano **prima** dei risultati):
+
+- **H1**: il ranking per momentum relativo 60g ha IC di Spearman medio OOS > 0 a
+  20 sedute sull'universo D1.
+- **H2**: la logistica regolarizzata sulle feature di WP2 batte il momentum puro
+  in Brier score OOS.
+- **H3**: lo spread top-quintile − bottom-quintile, **al netto dei costi**, è
+  positivo in *entrambe* le metà temporali dell'OOS.
+
+Nota di coerenza: H1 riguarda il momentum **relativo a 60g su orizzonte 20
+sedute**, mentre il finding già acquisito ("il momentum non dà edge") è misurato
+per **bucket a 63 sedute**. Non è la stessa misura, quindi H1 non è già decisa —
+ma l'evidenza esistente rende un esito negativo il più probabile, ed è scritto
+qui prima di guardare i risultati.
+
+**Contesto misurato — crescita del repository** (rilevato in WP0; è il contesto
+che l'**ADR-033** deve citare):
+
+| Path | Blob distinti | MiB cumulati | % |
+|---|---:|---:|---:|
+| `data/news_history/news.parquet` | 479 | 7 532,7 | **97,5%** |
+| `public/data/events.json` | 473 | 131,5 | 1,7% |
+| `data/category_history/categories_history.parquet` | 86 | 24,7 | 0,3% |
+| `public/data/market_series.json` | 81 | 16,5 | 0,2% |
+| `STATUS.md` | 71 | 2,9 | 0,04% |
+
+Totale: 2 927 blob, **7 727 MiB** non compressi, pack di **1,17 GiB**, su 812
+commit di cui **676 (83%) automatici**. Un solo file riscritto integralmente a
+ogni run del cron spiega il 97,5% del peso.
+
+**Conseguenze**:
+- ✅ Il progetto ha finalmente **una previsione falsificabile** e una barra
+  scritta prima: da qui in poi si può dire "ha funzionato" o "non ha funzionato"
+  senza spostare i pali (precedente da non ripetere: nb 12 / FinBERT).
+- ✅ L'equity ETF diventa il terreno primario di ricerca: storia lunga, universo
+  stabile, benchmark ovvio. Il crypto resta coperto da screener, DCA e cicli.
+- ⚠️ **Non è una promessa di rendimento.** L'esito più probabile, viste le Fasi
+  0–5, è che le baseline non superino la barra: in quel caso vince
+  l'infrastruttura (ledger, calibrazione, paper portfolio) e l'esito negativo
+  viene pubblicato come gli altri.
+- ⚠️ La calibrazione impone rigore in più: split con embargo, isotonic **fittata
+  solo sul train**, niente riuso del test per scegliere le soglie.
+- 🔒 Numeri ADR **riservati**: 033 (storage, WP1), 034 (esito baseline e
+  ipotesi verbatim, WP3), 035 (event intelligence, WP6, gated su D9).
+- 🚫 Fuori scope: rename della repository (D10), storage esterno dei dati (rinviato
+  in ADR-033), nuove dipendenze per WP0–WP5 (D11: logistica, ridge e isotonic
+  sono già in scikit-learn).
+- 📌 Le serie FRED **non** entrano nel condizionamento in questa fase (D12): il
+  regime è calcolato dai soli prezzi, già causale. Quando entreranno, sarà con
+  regola di ritardo di pubblicazione ≥ 45 giorni, mai col valore revisionato alla
+  data di riferimento.
+
+---
+
 <!--
 Template per nuove ADR:
 

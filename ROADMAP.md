@@ -3,6 +3,11 @@
 > Fasi in ordine. Ogni fase ha obiettivi, deliverable e criteri di "fatto".
 > Stato di completamento aggiornato qui. Date indicative omesse: si procede a
 > milestone, non a calendario.
+>
+> **Nota di numerazione (2026-08-24)**: la Fase 9 è ora "Ranking ETF
+> probabilistico" (ADR-032, work package in `docs/PIANO_SVILUPPO.md`). Il "Live
+> trading", che occupava quel numero, è diventato **Fase 10** — resta condizionato
+> agli stessi gate di ADR-004, non è stato riaperto né avvicinato.
 
 ---
 
@@ -494,7 +499,63 @@ equity, con metriche out-of-sample paragonabili al crypto.
 
 ---
 
-## Fase 9 (eventuale) — Live trading
+## Fase 9 — Ranking ETF probabilistico 🔄 *avviata (2026-08-24)*
+
+**Primo prodotto predittivo dichiarato del progetto** (ADR-032). Non "il mercato
+sale?", ma: *dato lo stato di oggi, con che probabilità questo ETF settoriale
+batte SPY nelle prossime 20 sedute, e quanto è incerta quella stima?*
+
+Il piano operativo, con decisioni pre-registrate (D1–D12), mappa dei componenti
+riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
+[`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md). Ogni WP = un branch = una PR.
+
+### Deliverable (un work package ciascuno)
+
+- [x] **WP0** — Riconciliazione e direzione: `STATUS.md` compresso (< 200 righe)
+      con cronaca in `docs/STATUS_ARCHIVIO.md`, crescita git misurata, **ADR-032**
+      registrata, README riallineato, questa sezione
+- [ ] **WP1** — Contenere la crescita del repository: **ADR-033** (partizionamento
+      mensile degli storici in-repo, `Proposed` → `Accepted` solo con l'ok
+      dell'utente su D8), lettura multi-partizione trasparente, migrazione one-shot
+- [ ] **WP2** — Dataset ETF point-in-time: `SPY` nel registry asset,
+      `src/features/etf_dataset.py` (feature causali, target excess return 20/60
+      sedute vs SPY, regime da prezzi), CLI riproducibile
+- [ ] **WP3** — Baseline di ranking, validazione e calibrazione: walk-forward
+      **con embargo/purging**, probabilità calibrate (isotonic sul solo train),
+      risposta onesta a H1–H3, **ADR-034** con le ipotesi verbatim
+- [ ] **WP4** — Paper portfolio settimanale + **prediction ledger** immutabile
+      (fill t+1, costi reali, soglia di confidenza D7)
+- [ ] **WP5** — Dashboard: viste "Opportunità" e "Modello". Probabilità e
+      incertezza, **mai** un "compra ora"
+- [ ] **WP6** — Event intelligence 🔒 *gated*: non parte finché l'utente non
+      decide provider e budget LLM (D9). **ADR-035** riservata
+- [ ] **WP7** — Estensione alle azioni 🔒 *gated* su prerequisiti misurabili
+      (≥ 8 settimane di run settimanali stabili, WP1 attivo, provider
+      fondamentali point-in-time, universe policy con delisting)
+- [ ] **WP-T** — Debito typing (filler, parallelo, spezzabile)
+- [ ] **WP-N** — Lint dei notebook (filler, opzionale)
+
+### Barra di adozione (fissata prima dei risultati, ADR-032 / piano §2.1)
+
+Il modello entra nel paper portfolio di WP4 **solo se**: IC di Spearman medio OOS
+≥ 0,03 **e** spread top−bottom quintile positivo al netto dei costi in *entrambe*
+le metà dell'OOS **e** Brier score ≤ baseline climatologica.
+
+Altrimenti WP4 procede con il **momentum semplice dichiarato non-predittivo**:
+l'infrastruttura (ledger, calibrazione, portafoglio) vale comunque, e l'esito
+negativo viene pubblicato come tutti gli altri. **I pali non si spostano
+post-hoc** (precedente da non ripetere: nb 12 / FinBERT).
+
+### Criterio di completamento
+
+Il sistema pubblica ogni settimana un ranking con probabilità **calibrate** e un
+registro delle previsioni passate confrontabile con l'esito realizzato — che il
+modello superi o meno la barra di adozione. La risposta "nessun edge" è un
+completamento valido, purché misurata e documentata.
+
+---
+
+## Fase 10 (eventuale) — Live trading
 
 **Non in roadmap attiva.** Vedi ADR-004 per i gate:
 - ≥ 3 mesi di paper trading positivo vs benchmark
@@ -558,5 +619,5 @@ considerations) ma che vanno conosciuti per onestà intellettuale.
     diventare funzionante
 - **Lo stream educational è disaccoppiato**: cresce in parallelo, non
   blocca e non è bloccato dalle fasi tecniche.
-- **Eventuale Fase 9 — Live trading**: vedi sopra, condizionata e fuori
+- **Eventuale Fase 10 — Live trading**: vedi sopra, condizionata e fuori
   roadmap attiva.
