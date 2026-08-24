@@ -1675,3 +1675,63 @@ Misurata in WP0 e archiviata: storia completa 812 commit su `main`, di cui **676
 riscritto integralmente a ogni run). Tabella completa in **ADR-032** e in
 [`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md); è il contesto da citare
 nell'**ADR-033** (WP1).
+
+
+## Crescita del repository — narrativa completa di WP1 (spostata qui in WP4)
+
+> Era in `STATUS.md`; spostata qui quando il file ha superato le 200 righe.
+> In `STATUS.md` resta il riassunto con il link a questa sezione.
+
+Un solo file spiega il 97,5% del peso: `news.parquet` era riscritto
+**integralmente** a ogni run del cron (479 volte dal 2026-05-30), ≈ 26 MB a copia.
+Il costo per run **cresceva con la storia**: crescita quadratica nel tempo.
+
+**Risolto in WP1** (ADR-033, D8 confermata): la storia news è partizionata per
+mese di pubblicazione (`data/news_history/news_YYYY-MM.parquet`), il cron
+riscrive **solo le partizioni toccate**, i mesi passati sono blob immutabili. La
+storia git **non** è stata riscritta — l'1,17 GiB già speso resta.
+
+⚠️ **Il partizionamento da solo non bastava.** Il primo run reale del cron
+(`bc12ad2`) ha riscritto 20 partizioni su 92 e 26,86 MB: **−0,4%**, zero
+risparmio. Causa: i feed datano le notizie al giorno, quindi 88 righe su 101
+condividono il `published`; `sort_index()` è stabile e su quelle righe conservava
+l'ordine di *arrivo*, che cambia a ogni run per via del dedup `keep="last"`.
+Stesse righe, byte diversi, blob nuovo ogni volta. Corretto con un ordine di
+scrittura totale `(published, item_id)`, determinato dal contenuto.
+
+| Run del cron | Partizioni riscritte | Byte | Δ vs monolite |
+|---|---:|---:|---:|
+| prima della correzione (misurato) | 20 su 92 | 26,86 MB | **−0,4%** |
+| rifetch puro, nessuna storia nuova | 0 | 0 MB | −100% |
+| +120 storie nuove (volume reale/3h) | 1 | 6,28 MB | **−76,6%** |
+
+Il punto non è la percentuale ma la forma: il costo del monolite cresce senza
+limite, quello della partizione è **limitato a un mese di news e si azzera ogni
+primo del mese**. Lezione trasferibile: un'ottimizzazione che si appoggia alla
+deduplicazione dei contenuti richiede una **serializzazione deterministica**, e
+questo non lo si vede dal codice — i 14 test iniziali confrontavano i byte solo
+su input identici e passavano tutti.
+
+
+## WP2 — validazione live del panel (era in STATUS.md, spostata qui in WP4)
+
+> In `STATUS.md` resta il riassunto con il link a questa sezione.
+
+Il panel su cui WP3 ha addestrato le baseline: `SPY` nel registry (benchmark D2),
+`src/features/etf_dataset.py` (19 feature causali, target excess return 20/60
+sedute vs SPY, regime 4-stati), CLI `build_etf_dataset`, 24 test offline — il più
+importante è quello di **causalità**. Narrativa completa in
+[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md) e nella PR #56; le
+semplificazioni dichiarate sono nel docstring del modulo.
+
+**Validazione live**: 21/21 ticker, **93 517 righe × 27 colonne**, 2005-01-03 →
+2026-08-24. Le date di quotazione cadono dove attese (XLC 2018-06-19, BOTZ
+2016-09-13, CIBR 2015-07-07, XLRE 2015-10-08, URA 2010-11-05, ICLN 2008-06-25,
+ITA 2006-05-05); gli 11 SPDR originali dal 2005-01-03, 5 444 righe. Le feature
+mancanti sono solo warm-up: stesse ~1 500 celle NaN in assoluto su ogni simbolo,
+cambia solo il denominatore (1,5% storie lunghe, 3,9% XLC).
+
+**Da sapere**: `pyright: strict` puro non è raggiungibile su un modulo
+pandas-heavy (`pandas` non ha `py.typed`); i moduli nuovi sono strict **meno le
+quattro regole** che ne derivano. Per lo strict pieno servirebbe `pandas-stubs`
+come dip. dev — da ADR, non da WP.

@@ -5,18 +5,18 @@
 > Chi riprende il lavoro (umano o agente) legge questo file per primo, e tiene
 > questo file **sotto le 200 righe**: se cresce, la cronaca si sposta in archivio.
 
-**Ultimo aggiornamento**: 2026-08-24 — WP3 (validazione del ranking): esito **negativo**, registrato
+**Ultimo aggiornamento**: 2026-08-24 — WP4: paper portfolio settimanale + prediction ledger, sulla regola **non predittiva**
 
 ---
 
 ## Dove siamo
 
-- **Branch di lavoro**: `claude/wp3-ranking` (PR #58) — base `main` con PR #52,
-  WP0, **WP1** (#55) e **WP2** (#56) mergiati. La PR #57 (documentazione) è mergiata.
-- **Test**: 566 passati (`uv run pytest -q`), ruff pulito, pyright pulito sui
-  moduli core e su `src/ingestion/news`.
-- **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**; WP0/WP1/WP2
-  chiusi, **WP3 misurato** (esito sotto, negativo), **il prossimo è WP4**. Il piano operativo è
+- **Branch di lavoro**: `claude/wp4-paper-b9d6g9` — base `main` con PR #52, WP0,
+  **WP1** (#55/#59), **WP2** (#56) e **WP3** (#58) mergiati.
+- **Test**: 651 passati (`uv run pytest -q`), ruff pulito, pyright pulito sui
+  moduli core, su `src/execution` e su `src/ingestion/news`.
+- **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**; WP0/WP1/WP2/WP3
+  chiusi, **WP4 implementato** (sotto), **il prossimo è WP5** (dashboard). Il piano operativo è
   [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md): è il riferimento per tutti
   i WP successivi, con decisioni pre-registrate D1–D12 e ipotesi H1–H3 scritte
   **prima** di qualunque backtest.
@@ -36,6 +36,7 @@
 | `dca.yml` | giornaliero | ⏳ mergiato con la PR #52, **primo run ancora da osservare** |
 | `etf-dataset.yml` | solo manuale | 🟢 **primo run verde** (21/21 ticker, 93 517 righe) |
 | `ranking-backtest.yml` | su push ai modelli | 🟢 attivo (WP3): ricostruisce il panel e rigenera il report |
+| `etf-ranking.yml` | lunedì 07:00 UTC | ⏳ **nuovo (WP4)**: primo run da lanciare a mano (`workflow_dispatch`) |
 
 I cron committano con `[skip ci]`. GitHub schedula con **ritardo variabile** (un
 cron delle 07:00 può girare alle 12:36 UTC): fidarsi del timestamp nel report.
@@ -47,33 +48,27 @@ negativi contano quanto i positivi e restano qui apposta.
 
 - **Nessun edge di ranking cross-sectional sugli ETF settoriali** (WP3, ADR-034,
   validazione **pre-registrata**: ipotesi committate prima del codice che le
-  misura). Walk-forward con embargo, 14 950 previsioni OOS per modello,
-  probabilità calibrate isotonic sul solo train. **Barra di adozione NON superata.**
-  - Il **momentum relativo 60g è indistinguibile dal caso**: IC Spearman `0,0010`
-    (t = 0,08) contro `0,0022` del ranker casuale. H1 passa solo perché formulata
-    come `IC > 0` senza magnitudine — lezione registrata in ADR-034: *un'ipotesi
-    senza magnitudine è quasi gratis da superare*.
-  - **Logistica e ridge mostrano IC ≈ 0,03 (t ≈ 2,5)**, l'unica cosa non-casuale
-    del run, ma **non regge**: positiva nella prima metà OOS, svanita o invertita
-    nella seconda (a 60 sedute l'IC cambia segno, +0,057 → −0,047).
-  - **Le probabilità sono peggio di una costante**: il Brier di *tutti* i modelli
-    è sopra la climatologia (0,2501). Il dato più netto è la reliability table:
-    dove la logistica predice **0,974** si realizza **0,461**. La calibrazione
-    isotonic fit sul train **non trasferisce OOS**.
-  - **I costi mangiano il resto**: TMB lordo `ridge` +0,0038 → netto +0,0014
-    (−63%), e comunque negativo nella seconda metà.
-  - Conferma, ora su base probabilistica e al netto dei costi, del risultato
-    descrittivo già noto (bucket `strong` ≈ baseline a 5/21 sedute, **peggio a 63**,
-    −2,1 pp di hit-rate): **non inseguire i settori più forti**.
-  - **Conseguenza**: WP4 procede col **momentum semplice dichiarato
-    non-predittivo**, come §2.1 prescriveva per questo caso. Report:
-    [`docs/REPORT_RANKING.md`](./docs/REPORT_RANKING.md).
-- **Battere SPY è più difficile di quanto sembri.** Sul panel WP2 (2005→2026,
-  20 ETF settoriali) l'outperformance **incondizionata** vs SPY è **0,489 a 20
-  sedute** (n=93 117) e **0,482 a 60** (n=92 317): il settore mediano batte SPY
-  meno di una volta su due — nel periodo l'S&P cap-weighted è stato trainato
-  dalle mega-cap. È la **baseline climatologica** che H2 deve battere in Brier
-  score, piantata *prima* di modellare (WP3).
+  misura). Walk-forward con embargo, 14 950 previsioni OOS per modello.
+  **Barra di adozione NON superata.** In breve — dettaglio in ADR-034 e in
+  [`docs/REPORT_RANKING.md`](./docs/REPORT_RANKING.md):
+  - il **momentum relativo 60g è indistinguibile dal caso**: IC Spearman `0,0010`
+    (t = 0,08) contro `0,0022` del ranker casuale. H1 passa solo perché scritta
+    come `IC > 0` senza magnitudine — *un'ipotesi senza magnitudine è quasi
+    gratis da superare*, lezione registrata;
+  - logistica e ridge mostrano IC ≈ `0,03` (t ≈ 2,5), l'unica cosa non-casuale del
+    run, ma **positiva nella prima metà OOS e svanita o invertita nella seconda**;
+  - **le probabilità sono peggio di una costante**: il Brier di *tutti* i modelli
+    supera la climatologia (0,2501); dove la logistica predice **0,974** si
+    realizza **0,461**. La calibrazione isotonic non trasferisce OOS;
+  - **i costi mangiano il resto**: TMB lordo `ridge` +0,0038 → netto +0,0014;
+  - conferma su base probabilistica del risultato descrittivo già noto: **non
+    inseguire i settori più forti**. **Conseguenza**: WP4 procede col momentum
+    semplice dichiarato non-predittivo, come §2.1 prescriveva.
+- **Battere SPY è più difficile di quanto sembri.** Sul panel WP2 (2005→2026)
+  l'outperformance **incondizionata** vs SPY è **0,489 a 20 sedute** (n=93 117) e
+  **0,482 a 60**: il settore mediano batte SPY meno di una volta su due — nel
+  periodo l'S&P cap-weighted è stato trainato dalle mega-cap. È la **baseline
+  climatologica** che H2 doveva battere, piantata *prima* di modellare.
 
 - **Nessun edge direzionale daily.** Modelli tecnici e tecnico+macro su BTC in
   walk-forward OOS: accuracy 0.5007 → 0.5060 (n=2249) — dentro il rumore. La
@@ -107,103 +102,128 @@ negativi contano quanto i positivi e restano qui apposta.
 
 ## Fase 9 — WP2: dataset ETF point-in-time (fatto)
 
-Il panel su cui WP3 ha addestrato le baseline: `SPY` nel registry (benchmark D2),
-`src/features/etf_dataset.py` (19 feature causali, target excess return 20/60
-sedute vs SPY, regime 4-stati), CLI `build_etf_dataset`, 24 test offline — il più
-importante è quello di **causalità**. Narrativa completa in
-[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md) e nella PR #56; le
-semplificazioni dichiarate sono nel docstring del modulo.
-
-**Validazione live**: 21/21 ticker, **93 517 righe × 27 colonne**, 2005-01-03 →
-2026-08-24. Le date di quotazione cadono dove attese (XLC 2018-06-19, BOTZ
-2016-09-13, CIBR 2015-07-07, XLRE 2015-10-08, URA 2010-11-05, ICLN 2008-06-25,
-ITA 2006-05-05); gli 11 SPDR originali dal 2005-01-03, 5 444 righe. Le feature
-mancanti sono solo warm-up: stesse ~1 500 celle NaN in assoluto su ogni simbolo,
-cambia solo il denominatore (1,5% storie lunghe, 3,9% XLC).
+Il panel su cui WP3 ha addestrato le baseline e su cui WP4 decide ogni settimana:
+`SPY` nel registry (benchmark D2), `src/features/etf_dataset.py` (19 feature
+causali, target excess return 20/60 sedute vs SPY, regime 4-stati), CLI
+`build_etf_dataset`, 24 test offline — il più importante è quello di **causalità**.
+Validato live: 21/21 ticker, **93 517 righe × 27 colonne**, 2005-01-03 →
+2026-08-24, date di quotazione dove attese, missing solo da warm-up. Dettaglio in
+[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md).
 
 **Da sapere**: `pyright: strict` puro non è raggiungibile su un modulo
 pandas-heavy (`pandas` non ha `py.typed`); i moduli nuovi sono strict **meno le
 quattro regole** che ne derivano. Per lo strict pieno servirebbe `pandas-stubs`
 come dip. dev — da ADR, non da WP.
+
+## Fase 9 — WP4: paper portfolio settimanale + prediction ledger (fatto)
+
+Il primo pezzo di infrastruttura che produce un **track record forward**, su una
+regola dichiarata non predittiva — quella che la barra di WP3 ha lasciato in piedi.
+
+- **Ledger** (`src/execution/prediction_ledger.py`): JSONL append-only in
+  `data/predictions/etf_ranking.jsonl` (versionato, una riga per previsione).
+  Scritta **prima** che l'esito esista; l'unico campo che può cambiare dopo è
+  `outcome`, una volta sola, quando l'orizzonte è maturato su *entrambe* le gambe
+  (asset e benchmark). Il backfill riscrive dai dict grezzi e un test verifica che
+  nulla tranne `outcome` sia cambiato. Identità rafforzata rispetto al piano: un
+  duplicato è rifiutato anche su `(data_cutoff, asset, horizon)`, così un retry
+  del cron non lascia due righe sulla stessa barra fra cui scegliere.
+- **Niente probabilità non calibrate** (ADR-036): i tre campi di previsione
+  restano nel contratto ma un validatore pydantic **rifiuta** un valore non nullo
+  quando `predictive` è `false`, e `confidence` vale `not_applicable`. Al loro
+  posto: `selection_score`, `selection_rank`, `realized_vol_60` — stato osservato,
+  con nomi che lo dicono.
+- **Regola** (`etf_rotation.py`): top 5 per `rel_ret_60`, equal weight, cap 20%.
+  **Soglia D7 disattivata** (ADR-036): gatta su una probabilità calibrata, che non
+  esiste; sul rank percentile non scatterebbe mai (il 5° di 20 sta a 0,80 ogni
+  settimana), sarebbe un filtro finto. Il meccanismo resta testato per il giorno in
+  cui un modello passerà la barra.
+- **Payload + workflow**: `ranking_report.json` e `ranking_model.json` dichiarano
+  `predictive: false`, la regola per esteso e il verdetto ADR-034; i campi di
+  previsione escono `null`. Fail-safe: feed stale o validazione più vecchia di
+  6 mesi ⇒ `status: "stale"`, nessuna riga di ledger e **nessun ribilanciamento**.
+
+**Da sapere**: il portafoglio è **sempre investito** quando ci sono 5 storie
+utilizzabili — è una rotazione *relativa* contro SPY, non un market-timer. Se
+batterà SPY, **la prima ipotesi da falsificare è la fortuna**: la regola è già
+stata misurata come indistinguibile dal caso.
+
+**Validazione live: ancora da fare.** In sandbox Yahoo è bloccato, quindi il
+percorso felice è coperto solo dai test end-to-end offline (feed stub); il
+fail-safe invece è stato eseguito davvero (fetch fallito ⇒ payload `stale`, zero
+righe, zero ordini). **Il primo run vero va lanciato a mano** su `etf-ranking`.
+
 ## Crescita del repository (risolta in WP1)
 
-Un solo file spiega il 97,5% del peso: `news.parquet` era riscritto
-**integralmente** a ogni run del cron (479 volte dal 2026-05-30), ≈ 26 MB a copia.
-Il costo per run **cresceva con la storia**: crescita quadratica nel tempo.
+`news.parquet` era riscritto **integralmente** a ogni run del cron (≈ 26 MB a
+copia, 479 volte): costo per run crescente, cioè crescita quadratica. Risolto in
+WP1 (ADR-033): partizionamento mensile + **ordine di scrittura deterministico**
+`(published, item_id)` — senza il secondo, il primo non risparmiava nulla
+(−0,4% misurato). Oggi: −76,6% per run con volume di news reale, e soprattutto un
+costo **limitato a un mese** che si azzera ogni primo del mese. La storia git non
+è stata riscritta: l'1,17 GiB già speso resta. Misure e tabella completa in
+[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md).
 
-**Risolto in WP1** (ADR-033, D8 confermata): la storia news è partizionata per
-mese di pubblicazione (`data/news_history/news_YYYY-MM.parquet`), il cron
-riscrive **solo le partizioni toccate**, i mesi passati sono blob immutabili. La
-storia git **non** è stata riscritta — l'1,17 GiB già speso resta.
-
-⚠️ **Il partizionamento da solo non bastava.** Il primo run reale del cron
-(`bc12ad2`) ha riscritto 20 partizioni su 92 e 26,86 MB: **−0,4%**, zero
-risparmio. Causa: i feed datano le notizie al giorno, quindi 88 righe su 101
-condividono il `published`; `sort_index()` è stabile e su quelle righe conservava
-l'ordine di *arrivo*, che cambia a ogni run per via del dedup `keep="last"`.
-Stesse righe, byte diversi, blob nuovo ogni volta. Corretto con un ordine di
-scrittura totale `(published, item_id)`, determinato dal contenuto.
-
-| Run del cron | Partizioni riscritte | Byte | Δ vs monolite |
-|---|---:|---:|---:|
-| prima della correzione (misurato) | 20 su 92 | 26,86 MB | **−0,4%** |
-| rifetch puro, nessuna storia nuova | 0 | 0 MB | −100% |
-| +120 storie nuove (volume reale/3h) | 1 | 6,28 MB | **−76,6%** |
-
-Il punto non è la percentuale ma la forma: il costo del monolite cresce senza
-limite, quello della partizione è **limitato a un mese di news e si azzera ogni
-primo del mese**. Lezione trasferibile: un'ottimizzazione che si appoggia alla
-deduplicazione dei contenuti richiede una **serializzazione deterministica**, e
-questo non lo si vede dal codice — i 14 test iniziali confrontavano i byte solo
-su input identici e passavano tutti.
+> Lezione trasferibile: un'ottimizzazione che si appoggia alla deduplicazione dei
+> contenuti richiede una **serializzazione deterministica**, e non si vede dal
+> codice — i 14 test iniziali confrontavano i byte solo su input identici.
 
 ## Blocchi e attese
 
-- **U2 — conferma utente su D4 e D7** (`docs/PIANO_SVILUPPO.md` §2): D8 **risolta**
-  (ADR-033 `Accepted`). **D7** (soglia di confidenza) e **D4** servono a WP4 e
-  restano da confermare — dopo l'esito di WP3, D7 vale sul fallback momentum.
+- **U2 — D4 resta da confermare** (`docs/PIANO_SVILUPPO.md` §2): D8 **risolta**
+  (ADR-033), **D7 risolta** (ADR-036: disattivata, non è applicabile senza una
+  probabilità calibrata). **D4** (target primario) è servita a WP3 ed è rilevante
+  solo per una futura ri-validazione, non per il fallback di WP4.
 - **U3 — D9 (provider/budget LLM)**: WP6 resta **gated**.
 - **U5 — allowlist `api.llama.fi`**: senza, il tab DCA misura *se* esiste un
   meccanismo di cattura del valore, non *quanto* valga. Il client DefiLlama non è
-  stato scritto di proposito: codice verso un host irraggiungibile non è
-  verificabile e si romperebbe nel cron.
+  stato scritto di proposito: codice verso un host irraggiungibile si romperebbe
+  nel cron.
 - **U4 — `holdings_units` reali in `config/dca_plan.yaml`**: finché è `{}` la
   posizione è **stimata**; report e JSON lo dichiarano.
 - **Sandbox con egress-allowlist**: `fc.yahoo.com`, `api.llama.fi`,
   `api.tokenterminal.com`, `api.dune.com` **bloccati in locale**, funzionanti in CI
   → ogni nuovo modulo di fetch si sviluppa **fixture-first**, validazione live
-  delegata al workflow. WP2 e WP3 ne sono i due casi.
+  delegata al workflow. WP2, WP3 e WP4 ne sono i casi.
 - **WP7 (azioni)** gated su prerequisiti misurabili (piano §5).
-- **`category_history` NON partizionato** (annotato da WP1, fuori perimetro): stessa
-  dinamica ma 0,3% del totale, e passa dal `write_snapshot` generico di ADR-022,
-  condiviso con altri cinque call site. Partizionarlo significa cambiare l'API
-  comune: serve una ADR dedicata.
-- **Verifica live di WP1** rinviata al primo run del cron post-merge (osservabile
-  solo in Actions; offline coperta da 14 test).
+- **Questo file è a 238 righe, sopra il tetto di 200** che si è dato in WP0. In
+  WP4 sono già state spostate in archivio la narrativa della crescita repo e la
+  validazione live di WP2 (−50 righe), ma WP3 e WP4 hanno aggiunto risultati veri.
+  Il prossimo giro di compressione tocca a "Risultati empirici consolidati": le
+  voci pre-Fase 9 (sentiment, cicli, DCA, fondamentali) sono tutte già in ADR e
+  report, e possono diventare una riga con link. **Non** si comprimono cancellando
+  esiti negativi: restano qui apposta.
+- **`category_history` NON partizionato** (annotato da WP1, fuori perimetro):
+  stessa dinamica ma 0,3% del totale, e passa dal `write_snapshot` generico di
+  ADR-022, condiviso con altri cinque call site: serve una ADR dedicata.
 
 ## Prossime attività
 
-1. **WP4** — paper portfolio settimanale + **prediction ledger** immutabile, con
-   il **momentum semplice** come regola: la barra di WP3 non è stata superata e
-   §2.1 prescrive esattamente questo fallback. Servono **D4** e **D7** confermate.
-2. **Osservare il primo run del cron `news-history`**: deve riscrivere solo
-   `news_2026-08.parquet` (il `git status --porcelain` delle partizioni è ora
-   stampato nel log del workflow). È l'unica verifica di WP1 non fattibile offline.
-3. **WP5** — viste "Opportunità" e "Modello" in dashboard. Attenzione: dopo WP3
-   la vista "Modello" mostra un esito **negativo**, e va disegnata per dirlo
-   chiaramente invece di nasconderlo (`public/data/ranking_backtest.json` è pronto).
-5. **Filler non bloccanti**: WP-T (debito typing su `src/execution/`, poi
-   ingestion) e WP-N (lint dei notebook).
+1. **Primo run di `etf-ranking`** a mano (`workflow_dispatch`): è l'unica verifica
+   di WP4 non fattibile offline (Yahoo bloccato in sandbox). Attese: 20 righe ×2
+   orizzonti nel ledger, 5 ordini pendenti nello scenario `etf_top5`, payload con
+   `status: "ok"`. Un `status: "stale"` al primo colpo va letto come guasto del
+   feed, non come bug della regola.
+2. **WP5** — viste "Opportunità" e "Modello" in dashboard, sui payload di WP4
+   (contratto e test di schema già scritti). La vista "Modello" deve mostrare un
+   esito **negativo** e dirlo chiaramente: `predictive: false`,
+   `adoption_bar.passed: false` e i campi di probabilità `null` sono già nel
+   payload apposta.
+3. **Osservare il primo run del cron `news-history`**: deve riscrivere solo
+   `news_2026-08.parquet`. È l'unica verifica di WP1 non fattibile offline.
+4. **Filler non bloccanti**: WP-T (debito typing su `src/ingestion/`) e WP-N
+   (lint dei notebook).
 
 ## Come far girare tutto
 
 ```bash
 uv sync --frozen
-uv run pytest -q                      # 566 test
+uv run pytest -q                      # 651 test
 uv run ruff check src tests
-uv run pyright src/backtest src/features src/models
+uv run pyright src/backtest src/features src/models src/execution
 uv run python -m src.ingestion.tier1.build_etf_dataset     # panel WP2 (Yahoo: gira in CI)
 uv run python -m src.ingestion.tier1.ranking_backtest_cli  # validazione WP3
+uv run python -m src.ingestion.tier1.etf_ranking_cli       # rotazione WP4 (Yahoo: gira in CI)
 ```
 
 I notebook richiedono prima `fetch_tier1` (dati gitignored) e si eseguono con
@@ -213,6 +233,6 @@ I notebook richiedono prima `fetch_tier1` (dati gitignored) e si eseguono con
 
 - **Cronaca 2026-05-28 → oggi**: [`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md)
   · **Piano dei WP**: [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md)
-- **Decisioni**: `DECISIONS.md` (ADR-001 → **ADR-034**) — **ADR-035 riservata** a
-  WP6, non usarla per altro
+- **Decisioni**: `DECISIONS.md` (ADR-001 → **ADR-036**) — **ADR-035 resta
+  riservata** a WP6, non usarla per altro: WP4 ha preso il numero successivo
 - **Domande aperte**: `OPEN_QUESTIONS.md` · **Fasi**: `ROADMAP.md`

@@ -531,12 +531,19 @@ riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
       **Esito: barra di adozione NON superata** — WP4 procede col momentum
       semplice dichiarato non-predittivo, come previsto da §2.1. Report:
       [`docs/REPORT_RANKING.md`](./docs/REPORT_RANKING.md)
-- [ ] **WP4** — Paper portfolio settimanale + **prediction ledger** immutabile
-      (fill t+1, costi reali, soglia di confidenza D7)
+- [x] **WP4** — Paper portfolio settimanale + **prediction ledger** immutabile:
+      JSONL append-only scritto *prima* dell'esito (`data/predictions/`), outcome
+      backfillato solo a orizzonte maturato e una volta sola, rotazione top-5
+      equal-weight con cap 20% e fill t+1 ai costi del progetto, workflow
+      `etf-ranking` del lunedì. Sulla regola **non predittiva** del fallback §2.1:
+      niente probabilità nel ledger (la calibrazione ha fallito OOS) e **soglia
+      D7 disattivata**, con la motivazione in **ADR-036** — il meccanismo resta
+      testato per il giorno in cui un modello passerà la barra
 - [ ] **WP5** — Dashboard: viste "Opportunità" e "Modello". Probabilità e
       incertezza, **mai** un "compra ora"
 - [ ] **WP6** — Event intelligence 🔒 *gated*: non parte finché l'utente non
-      decide provider e budget LLM (D9). **ADR-035** riservata
+      decide provider e budget LLM (D9). **ADR-035 resta riservata** a questo WP:
+      WP4 ha preso ADR-036 proprio per non consumarla
 - [ ] **WP7** — Estensione alle azioni 🔒 *gated* su prerequisiti misurabili
       (≥ 8 settimane di run settimanali stabili, WP1 attivo, provider
       fondamentali point-in-time, universe policy con delisting)
@@ -560,6 +567,13 @@ Il sistema pubblica ogni settimana un ranking con probabilità **calibrate** e u
 registro delle previsioni passate confrontabile con l'esito realizzato — che il
 modello superi o meno la barra di adozione. La risposta "nessun edge" è un
 completamento valido, purché misurata e documentata.
+
+**Stato dopo WP4**: il registro settimanale esiste e gira; le **probabilità
+calibrate no**, e non esisteranno finché un modello non supererà la barra
+(ADR-034/036). Il criterio è quindi soddisfatto nella sua seconda metà — quella
+che conta metodologicamente — e apertamente non soddisfatto nella prima. Il
+sistema lo dichiara nei suoi stessi payload invece di rimediare con un numero
+inventato.
 
 ---
 
