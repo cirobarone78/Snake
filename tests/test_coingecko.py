@@ -155,3 +155,29 @@ def test_fetch_market_chart_passes_params() -> None:
     assert "/coins/bitcoin/market_chart" in args[0]
     assert kwargs["params"] == {"vs_currency": "eur", "days": 180}
     assert not df.empty
+
+
+def test_fetch_markets_returns_the_extra_screening_fields() -> None:
+    session = MagicMock()
+    session.get.return_value = _resp([
+        {
+            "id": "bitcoin", "symbol": "btc", "name": "Bitcoin",
+            "market_cap": 1e12, "market_cap_rank": 1, "current_price": 100000.0,
+            "total_volume": 3e10, "price_change_percentage_24h": 1.4,
+            "ath_change_percentage": -38.0, "atl_date": "2013-07-05T16:00:00.000Z",
+        },
+        {
+            "id": "ethereum", "symbol": "eth", "name": "Ethereum",
+            "market_cap": 3e11, "market_cap_rank": 2, "current_price": 2500.0,
+            "total_volume": 1.7e10, "price_change_percentage_24h": 2.1,
+            "ath_change_percentage": -49.0, "atl_date": "2015-10-19T16:00:00.000Z",
+        },
+    ])
+    src = CoinGeckoSource(session=session, sleep_between_calls=0)
+    df = src.fetch_markets(n=2)
+    assert list(df.index) == [1, 2]
+    # Upper-cased so it joins against the project's canonical symbols.
+    assert df.loc[1, "symbol"] == "BTC"
+    assert df.loc[1, "coingecko_id"] == "bitcoin"
+    assert df.loc[2, "atl_date"] == "2015-10-19T16:00:00.000Z"
+    assert df.loc[1, "ath_change_pct"] == -38.0

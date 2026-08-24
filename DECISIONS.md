@@ -1512,6 +1512,75 @@ file in `_archive/` — non si cancella mai nulla (ADR-011). File piccoli
 
 ---
 
+## ADR-030 — Piano di accumulo: la scelta sulla quota satellite è ribilanciamento, non previsione
+
+**Data**: 2026-08-24
+**Stato**: Accepted
+**Estende**: ADR-005 (asset universe), ADR-007 (output del sistema)
+
+**Contesto**: richiesta esplicita dell'utente — il piano reale è 100€/mese
+(60 BTC, 30 ETH, 10 su **uno** tra SOL/LINK/POL) e serviva che il sistema
+dicesse (a) quale dei tre conviene comprare e (b) quali altre crypto valutare
+per un accumulo a 5-10 anni. La domanda "quale conviene" è, letteralmente, una
+domanda predittiva — ed è esattamente quella a cui le Fasi 0-5 hanno risposto
+**no**: nessun edge direzionale daily su questo universo.
+
+**Decisione**: implementare la funzione, ma **cambiando la domanda** in una a
+cui si può rispondere onestamente. La regola (`src/features/dca_advisor.py`) non
+esprime alcuna vista direzionale: sceglie l'asset **più sotto peso rispetto al
+target** dell'allocazione. È aritmetica di ribilanciamento, non una scommessa.
+
+La regola è stata validata (`src/features/dca_backtest.py`) replicando i flussi
+di cassa reali su 2020-04 → 2026-08 (77 acquisti mensili, commissioni 0.5%),
+contro: divisione in parti uguali, rotazione, momentum, buy-the-dip, singolo
+asset, e un controllo casuale a 200 semi. Risultati:
+
+| | rendimento | allocazione |
+|---|---|---|
+| regola vs split (periodo) | 1.013 | drift 80 pp vs 102 pp |
+| regola vs split (1ª metà) | 1.19 | — |
+| regola vs split (2ª metà, OOS) | 0.91 | drift 5.3 pp vs 30.5 pp |
+| percentile vs 200 estrazioni casuali | 54.5° | — |
+
+Lettura: **sul rendimento la regola non ha alcun edge** — 54° percentile contro
+il caso, e il rapporto con lo split si alterna fra le due metà, che è la firma
+del rumore. **Sull'allocazione l'effetto è reale e regge OOS.** Quindi la regola
+resta, ma il suo scopo dichiarato è la disciplina di allocazione.
+
+Due sotto-decisioni derivate:
+- **`DEFAULT_GAP_WEIGHT = 1.0`**: la componente "sconto" (comprare chi è più in
+  basso nel proprio range) era al **96° percentile in-sample** e **ultima** nella
+  metà out-of-sample — miraggio da campione. Non guida più il punteggio: rompe
+  solo i pareggi esatti.
+- **Il momentum è documentato come la scelta peggiore** (40.5° percentile, sotto
+  il caso). È l'istinto più comune e va detto, non lasciato implicito.
+
+Per le candidate a lungo termine (`src/features/dca_candidates.py`): filtri
+**meccanici** (già in portafoglio, stablecoin/pegged, wrapped/derivati, soglia di
+capitalizzazione, banda di liquidità su volume/market cap), nessun giudizio di
+merito, e la **lista degli scarti con il motivo** restituita insieme alla
+shortlist. L'età è derivata dalla data di minimo storico ed è deliberatamente
+**a senso unico**: alza il punteggio, non esclude mai (un minimo recente non
+significa moneta giovane — Zcash è del 2016 e il dato la darebbe a 2 anni).
+
+**Conseguenze**:
+- ✅ La richiesta è soddisfatta senza promettere previsioni: `REPORT_DCA.md`,
+  `public/data/dca_report.json` e il tab "Piano di accumulo" della dashboard
+- ✅ I numeri della validazione **viaggiano dentro l'output**: il tab non può
+  mostrare la scelta senza mostrare che non produce rendimento extra
+- ✅ Un esperimento fallito documentato (la componente sconto), come da CLAUDE.md
+- ⚠️ 77 acquisti mensili sono **decine** di osservazioni, non migliaia: la
+  conclusione "nessun edge" è solida, un'eventuale conclusione opposta non lo
+  sarebbe stata
+- ⚠️ **Survivorship bias non risolvibile** sulle candidate: la classifica di oggi
+  contiene solo i sopravvissuti, e le monete morte non sono nei dati. La soglia
+  di capitalizzazione è un indizio, non una garanzia
+- ⚠️ Senza `holdings_units` in `config/dca_plan.yaml` la posizione è **stimata**
+  replicando il piano; l'output lo dichiara invece di far finta di saperlo
+- 🔗 Nessun trade reale, in nessun ambiente (vincolo CLAUDE.md invariato)
+
+---
+
 <!--
 Template per nuove ADR:
 

@@ -39,12 +39,21 @@ def _round(value: float | None, ndigits: int) -> float | None:
     return None if value is None else round(value, ndigits)
 
 
-def _iso(generated_at: pd.Timestamp | str | None) -> str:
-    """ISO-8601 UTC timestamp; defaults to now."""
+def iso_timestamp(generated_at: pd.Timestamp | str | None) -> str:
+    """ISO-8601 UTC timestamp; defaults to now.
+
+    Public because every report payload in the project stamps itself the same
+    way, and a second copy of this would be a second thing to get wrong.
+    """
     ts = pd.Timestamp(generated_at) if generated_at is not None else pd.Timestamp.now(tz="UTC")
     if ts.tzinfo is None:
         ts = ts.tz_localize("UTC")
     return ts.isoformat()
+
+
+def _iso(generated_at: pd.Timestamp | str | None) -> str:
+    """Backwards-compatible alias for :func:`iso_timestamp`."""
+    return iso_timestamp(generated_at)
 
 
 def _first_coin(raw: object) -> str | None:

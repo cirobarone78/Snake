@@ -46,6 +46,12 @@ uv run python -m src.ingestion.tier1.fetch_fred
 # Etherscan: ETH supply, gas, ERC-20 supply. Richiede ETHERSCAN_API_KEY in .env
 uv run python -m src.ingestion.tier1.fetch_etherscan
 
+# Piano di accumulo: quale asset della quota satellite + candidate a lungo
+# termine. Legge config/dca_plan.yaml, scrive REPORT_DCA.md + il JSON del tab
+uv run python -m src.ingestion.tier1.dca_cli
+# Rifà da zero il backtest che valida (e ridimensiona) quella scelta
+uv run python -m src.ingestion.tier1.dca_cli --validate
+
 # Esplorazione (Jupyter): tre notebook EDA disponibili
 uv run jupyter notebook notebooks/
 ```
@@ -91,7 +97,7 @@ notebooks/                 # esplorazione, EDA
 data/raw/                  # dati grezzi (gitignored)
 data/processed/            # dataset puliti (gitignored)
 tests/                     # pytest
-config/                    # configurazione (es. sources.yaml in iter successive)
+config/                    # configurazione (dca_plan.yaml: il piano di accumulo)
 education/                 # modulo didattico (ADR-015)
   L1_principiante/         # Investor 101
   L2_intermedio/           # Smart Investor

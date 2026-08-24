@@ -444,3 +444,56 @@ details.chapter[open] > summary::before { transform: rotate(45deg); }
 .replay-meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--mono); font-size: 12px; color: var(--text-soft); }
 .replay-chart { line-height: 0; }
 .replay-chart .spark { width: 100%; height: 88px; }
+
+/* Piano di accumulo */
+.dca-card { margin-bottom: 18px; }
+.dca-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin: 6px 0 4px; }
+.dca-pick-symbol {
+  margin: 0; font-family: var(--mono); font-size: 34px; font-weight: 700; letter-spacing: -0.02em;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.dca-pick-why { margin: 0; color: var(--text-soft); font-size: 14.5px; }
+.dca-warn {
+  margin: 10px 0 0; padding: 10px 13px; border-radius: 12px; font-size: 13px; line-height: 1.5;
+  color: var(--warm); background: rgba(255, 209, 102, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 209, 102, 0.28);
+}
+.dca-sub { color: var(--text-soft); font-size: 13.5px; line-height: 1.55; margin: 4px 0 14px; }
+.dca-list { margin-top: 16px; }
+.dca-row { gap: 14px; }
+.dca-row.is-pick { border-color: rgba(124, 140, 255, 0.42); box-shadow: 0 0 16px rgba(124, 140, 255, 0.16); }
+.dca-bars { flex: 1; min-width: 120px; }
+.wbar { display: flex; align-items: center; gap: 9px; }
+.wtrack { position: relative; flex: 1; height: 6px; border-radius: 3px; background: rgba(154, 163, 189, 0.16); }
+.wfill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+/* The target marker is the point of the bar: it shows the plan, not the market. */
+.wtarget { position: absolute; top: -3px; width: 2px; height: 12px; background: var(--text-soft); border-radius: 1px; }
+.wpct { font-family: var(--mono); font-size: 11.5px; color: var(--text-soft); min-width: 44px; text-align: right; }
+.dca-gap { font-family: var(--mono); font-weight: 650; font-size: 13.5px; min-width: 62px; text-align: right; cursor: help; }
+.dca-evidence { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.dca-ev { padding: 13px 15px; border-radius: 13px; border: 1px solid var(--hairline); }
+.dca-ev-pos { border-color: rgba(52, 224, 161, 0.32); background: rgba(52, 224, 161, 0.07); }
+.dca-ev-neg { border-color: rgba(255, 107, 129, 0.3); background: rgba(255, 107, 129, 0.06); }
+.dca-ev-title { margin: 0 0 6px; font-size: 13.5px; font-weight: 700; }
+.dca-ev-body { margin: 0; font-size: 12.8px; line-height: 1.55; color: var(--text-soft); }
+.dca-cand { gap: 14px; flex-wrap: wrap; }
+.dca-cand-name { flex: 1; min-width: 160px; display: flex; flex-direction: column; gap: 5px; }
+.dca-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.dca-tag {
+  font-size: 10.5px; font-weight: 650; letter-spacing: 0.02em; padding: 2px 8px; border-radius: 999px;
+  color: var(--text-soft); background: rgba(154, 163, 189, 0.14);
+}
+.dca-tag.is-div { color: var(--pos); background: rgba(52, 224, 161, 0.13); }
+.dca-rejected { margin: 14px 0 0; }
+.dca-caveats { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px; }
+.dca-caveats li { color: var(--text-soft); font-size: 13.5px; line-height: 1.55; }
+
+@media (max-width: 720px) {
+  /* Narrow screens: symbol and gap keep the first line, the bar drops below at
+     full width. Left inline, the gap wrapped to two lines mid-row. */
+  .dca-row { flex-wrap: wrap; row-gap: 10px; }
+  .dca-bars { flex-basis: 100%; order: 3; min-width: 0; }
+  .dca-gap { min-width: 0; white-space: nowrap; }
+  .dca-cand .metric { min-width: 68px; }
+}

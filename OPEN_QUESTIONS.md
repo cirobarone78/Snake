@@ -223,6 +223,28 @@ Candidati da indagare:
 
 ---
 
+### Q26 — La quota satellite resta a 3 asset, o ne assorbe uno dalla shortlist?
+Emersa con ADR-030. Lo screen candidate produce nomi che superano i filtri
+meccanici (dimensione, liquidità, età dimostrabile), ma **allargare la quota
+satellite non è una decisione tecnica**: significa spalmare 10€/mese su 4 o 5
+asset invece di 3, quindi accumulare più lentamente su ciascuno.
+
+Il trade-off, in chiaro:
+- **Restare a 3**: posizioni che crescono a una velocità apprezzabile; la
+  diversificazione la fa già il core BTC/ETH (90% del versamento)
+- **Allargare**: meno dipendenza dal destino di un singolo progetto, ma con
+  10€/mese divisi in 5 si accumulano cifre che le commissioni erodono
+
+Nota di onestà: **il sistema non ha modo di rispondere**. Non c'è alcun
+risultato in questo progetto che dica quale delle due sia migliore, e le
+candidate non sono ordinate per qualità ma per dimensione, età e liquidità.
+
+*Decisione dell'utente, non del sistema.* Se la risposta è "allargare", va
+aggiornato `config/dca_plan.yaml` (`sleeve.target_weights`) e registrata la
+scelta qui o in DECISIONS.md.
+
+---
+
 ## 🟢 Domande di ricerca (non decisioni operative)
 
 Ipotesi da testare empiricamente nel corso del progetto.

@@ -6,7 +6,7 @@
 ---
 
 ## Ultimo aggiornamento
-2026-07-04
+2026-08-24
 
 ## Fase corrente
 **Screener di rotazione + attribuzione eventi + report auto-aggiornati 🟢 attivo
@@ -203,6 +203,49 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-08-24 — Sessione: piano di accumulo (ADR-030) — richiesta utente
+
+**Richiesta**: il piano reale dell'utente è 100€/mese (60 BTC, 30 ETH, 10 su
+**uno** tra SOL/LINK/POL, da ottobre 2025, ~1000€ investiti). Voleva che l'app
+(a) dicesse giorno per giorno quale dei tre conviene comprare e (b) suggerisse
+altre crypto per un accumulo a 5-10 anni.
+
+**Come è stata riformulata**: "quale conviene" è una domanda predittiva, ed è
+quella a cui le Fasi 0-5 hanno già risposto **no**. Invece di fingere un edge,
+la regola implementata non esprime alcuna vista direzionale: sceglie l'asset
+**più sotto peso rispetto al target**. Ribilanciamento, non previsione.
+
+**Verdetto della validazione** (`dca_backtest`, flussi reali 2020-04 → 2026-08,
+77 acquisti, fee 0.5%, controllo casuale a 200 semi):
+- **Rendimento: nessun edge.** 54.5° percentile contro il caso. Rapporto con lo
+  split in parti uguali 1.013 sul periodo, ma 1.19 / 0.91 nelle due metà — si
+  alterna, quindi è rumore. **Detto esplicitamente nell'output, non nascosto.**
+- **Allocazione: effetto reale e OOS-stabile.** Distanza finale dal target
+  80 pp vs 102 pp dello split; nella metà out-of-sample **5.3 pp vs 30.5 pp**.
+- **Il momentum è la scelta peggiore**: 40.5° percentile, *sotto* il caso.
+- **Esperimento fallito documentato**: la componente "sconto" (buy-the-dip) era
+  al 96° percentile in-sample e **ultima** OOS → rimossa dal punteggio di
+  default (`DEFAULT_GAP_WEIGHT = 1.0`), resta solo come rompi-pareggio.
+
+**Nuovi moduli**: `dca_advisor`, `dca_backtest`, `dca_candidates`, `dca_report`,
+CLI `dca_cli`, `CoinGeckoSource.fetch_markets`, config `config/dca_plan.yaml`,
+cron `dca.yml` (giornaliero), tab dashboard "Piano di accumulo",
+`REPORT_DCA.md`. 45 test nuovi (462 totali verdi), ruff + pyright puliti.
+
+**Da sapere alla prossima sessione**:
+- `config/dca_plan.yaml` ha `holdings_units: {}` → la posizione è **stimata**
+  replicando il piano. L'utente deve inserire le quantità reali perché lo scarto
+  dal target diventi esatto; report e JSON dichiarano quando è una stima.
+- Il primo `REPORT_DCA.md` / `dca_report.json` committati sono stati generati
+  **offline** da prezzi CoinGecko/Yahoo in cache (in questa sessione l'egress
+  verso `fc.yahoo.com`, che yfinance usa per il bootstrap cookie, era bloccato
+  dalla policy di rete). Il cron `dca.yml` li rigenera in CI, dove yfinance
+  funziona come per gli altri cron.
+- Lo screen candidate è **survivorship-biased per costruzione** e non è
+  risolvibile con questi dati: la classifica di oggi contiene solo i
+  sopravvissuti. È scritto nel modulo, nel report e nel tab.
+
 
 ### 2026-07-04 — Sessione (cont.): card "Salute fonti dati" — vitalità visibile
 - **Segnalazione utente**: "questi valori sono fermi da mesi". **Indagine**:

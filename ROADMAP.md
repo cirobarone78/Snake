@@ -401,6 +401,31 @@ di notebook. È la fase di "consumo" del sistema da parte dell'utente.
 - [ ] **(D3)** Calibrare le soglie assolute ADR-028 (4%/2.5%) dopo qualche
       settimana di eventi osservati
 
+### Piano di accumulo (richiesta utente 2026-08-24, ADR-030)
+- [x] **Advisor quota satellite** (`src/features/dca_advisor.py`): quale tra
+      SOL/LINK/POL riceve i 10€ del mese. **Non è una previsione**: sceglie il
+      più sotto peso rispetto al target (ribilanciamento, aritmetica)
+- [x] **Validazione con flussi reali** (`src/features/dca_backtest.py`):
+      2020-04 → 2026-08, 77 acquisti, fee 0.5%, contro split/rotazione/momentum/
+      buy-the-dip/singolo asset + controllo casuale a 200 semi. Esito:
+      **nessun edge di rendimento** (54.5° percentile vs il caso; rapporto con
+      lo split 1.19 in-sample e 0.91 OOS → rumore), ma **vantaggio reale e
+      OOS-stabile sull'allocazione** (drift dal target 5.3 pp vs 30.5 pp nella
+      metà out-of-sample). Il momentum è la strategia **peggiore** (40.5°,
+      sotto il caso). Componente buy-the-dip: 96° percentile in-sample, ultima
+      OOS → **rimossa dal default**, resta solo come rompi-pareggio
+- [x] **Screen candidate long-horizon** (`src/features/dca_candidates.py`):
+      filtri meccanici (stablecoin/pegged, wrapped, soglia cap, banda di
+      liquidità) su top-100 CoinGecko, con la lista degli scarti e il motivo.
+      Nessun giudizio di merito; survivorship bias dichiarato, non risolto
+- [x] **Superfici di consumo**: `REPORT_DCA.md`, `public/data/dca_report.json`,
+      tab dashboard "Piano di accumulo", cron giornaliero `dca.yml`,
+      configurazione in `config/dca_plan.yaml`
+- [ ] Inserire in `config/dca_plan.yaml` le **quantità realmente possedute**:
+      finché `holdings_units` è vuoto la posizione è stimata replicando il piano
+- [ ] Rivalutare fra qualche mese se la disciplina di allocazione si vede anche
+      sulla finestra reale dell'utente (da 2025-10: campione ancora minuscolo)
+
 ### Criterio di completamento
 Dato lo stato corrente dei mercati e delle notizie, il sistema produce un
 output sintetico, comprensibile e onesto sulla confidenza dei segnali, e

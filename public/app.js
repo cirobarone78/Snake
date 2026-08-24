@@ -9,6 +9,7 @@ const SOURCES = {
   health: "data/data_health.json",
   paper: "data/paper_report.json",
   replay: "data/paper_replay.json",
+  dca: "data/dca_report.json",
 };
 
 const HEALTH_LABEL = { match: "Fonti concordi", mismatch: "Divergenza", single_source: "Fonte unica" };
@@ -31,6 +32,10 @@ const STATUS_LABEL = {
 
 const NF = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 2 });
 const NF0 = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 0 });
+// Fixed-decimal variants: a column of "+3,31 pp" next to "+1 pp" reads as a
+// different kind of number, so the aligned metrics pin their decimals.
+const NF1 = new Intl.NumberFormat("it-IT", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const NF2 = new Intl.NumberFormat("it-IT", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const EUR0 = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
 const EUR2 = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
 const ORDER_STATUS_LABEL = { pending: "in attesa", filled: "eseguito", cancelled: "annullato", rejected: "rifiutato" };
@@ -39,10 +44,11 @@ document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   setupTabs();
-  const [crypto, equity, education, market, events, health, paper, replay] = await Promise.all([
+  const [crypto, equity, education, market, events, health, paper, replay, dca] = await Promise.all([
     fetchJSON(SOURCES.crypto), fetchJSON(SOURCES.equity),
     fetchJSON(SOURCES.education), fetchJSON(SOURCES.market), fetchJSON(SOURCES.events),
     fetchJSON(SOURCES.health), fetchJSON(SOURCES.paper), fetchJSON(SOURCES.replay),
+    fetchJSON(SOURCES.dca),
   ]);
   renderTicker(market);
   renderHero(market);
@@ -52,6 +58,7 @@ async function init() {
   renderEvents(events);
   renderPaper(paper);
   renderReplay(replay);
+  renderDca(dca);
   renderOverview(crypto, equity);
   renderEducation(education);
   renderFooter(crypto, equity, market);
@@ -352,6 +359,161 @@ function renderCards(container, data, kind) {
     return;
   }
   data.items.forEach((item) => container.appendChild(rotationCard(item, kind)));
+}
+
+/* ---------- Piano di accumulo ---------- */
+// The pick is deliberately rendered *with* its own refutation: the backtest says
+// the rule earns no return edge, only allocation discipline. Showing the choice
+// without that evidence would read as a forecast, which it is not.
+function renderDca(data) {
+  const pickRoot = document.getElementById("dca-pick");
+  const evidenceRoot = document.getElementById("dca-evidence");
+  const candRoot = document.getElementById("dca-candidates");
+  const caveatRoot = document.getElementById("dca-caveats");
+  [pickRoot, evidenceRoot, candRoot, caveatRoot].forEach((n) => { if (n) n.innerHTML = ""; });
+  if (!pickRoot) return;
+  if (!data) {
+    pickRoot.appendChild(el("p", "empty", "Dati non ancora disponibili. Verranno aggiornati al prossimo ciclo di raccolta."));
+    return;
+  }
+  setUpdated("dca-updated", data);
+  pickRoot.appendChild(dcaPickCard(data));
+  if (data.evidence) evidenceRoot.appendChild(dcaEvidenceCard(data.evidence));
+  if (Array.isArray(data.candidates) && data.candidates.length) {
+    candRoot.appendChild(dcaCandidatesCard(data));
+  }
+  if (Array.isArray(data.caveats) && data.caveats.length) {
+    caveatRoot.appendChild(dcaCaveatsCard(data.caveats));
+  }
+}
+
+function dcaPickCard(data) {
+  const card = el("div", "card dca-card");
+  const budget = data.sleeve_eur == null ? "" : ` da ${EUR0.format(data.sleeve_eur)}`;
+  // Not "buy this today" — "if you were making this month's purchase now, this
+  // is the leg that is furthest below plan". The wording carries that.
+  card.appendChild(el("p", "mini-title", `Quota${budget} — se comprassi oggi`));
+  const top = (data.items || [])[0];
+  const head = el("div", "dca-head");
+  head.appendChild(el("p", "dca-pick-symbol", data.pick || "—"));
+  if (top && top.reason_it) head.appendChild(el("p", "dca-pick-why", top.reason_it));
+  card.appendChild(head);
+  if (data.holdings_estimated && data.holdings_note) {
+    card.appendChild(el("p", "dca-warn", data.holdings_note.replace(/\*\*/g, "").replace(/`/g, "")));
+  }
+  const list = el("ul", "ranklist dca-list");
+  (data.items || []).forEach((item) => list.appendChild(dcaAssetRow(item, item.symbol === data.pick)));
+  card.appendChild(list);
+  return card;
+}
+
+function dcaAssetRow(item, isPick) {
+  const li = el("li", isPick ? "dca-row is-pick" : "dca-row");
+  li.appendChild(el("span", "ri-rank", String(item.rank)));
+  li.appendChild(el("span", "ri-name", item.symbol));
+  // Two bars: where the weight sits now against where the plan wants it.
+  const bars = el("div", "dca-bars");
+  bars.appendChild(weightBar(item.weight_now, item.weight_target));
+  li.appendChild(bars);
+  const gap = el("span", "dca-gap");
+  if (item.gap_pp == null) {
+    gap.textContent = "n/d";
+  } else {
+    gap.textContent = `${item.gap_pp > 0 ? "+" : ""}${NF2.format(item.gap_pp)} pp`;
+    gap.classList.add(item.gap_pp > 0 ? "pos" : "neg");
+  }
+  gap.title = "Scarto dal peso obiettivo: positivo = sotto peso, quindi tocca a lui.";
+  li.appendChild(gap);
+  return li;
+}
+
+function weightBar(now, target) {
+  const wrap = el("div", "wbar");
+  const track = el("div", "wtrack");
+  const fill = el("div", "wfill");
+  const pct = now == null ? 0 : Math.max(0, Math.min(1, now));
+  fill.style.width = `${(pct * 100).toFixed(1)}%`;
+  track.appendChild(fill);
+  if (target != null) {
+    const mark = el("div", "wtarget");
+    mark.style.left = `${(Math.max(0, Math.min(1, target)) * 100).toFixed(1)}%`;
+    mark.title = `Obiettivo ${(target * 100).toFixed(1)}%`;
+    track.appendChild(mark);
+  }
+  wrap.appendChild(track);
+  wrap.appendChild(el("span", "wpct", now == null ? "n/d" : `${(now * 100).toFixed(1)}%`));
+  return wrap;
+}
+
+function dcaEvidenceCard(ev) {
+  const card = el("div", "card dca-card");
+  card.appendChild(el("p", "mini-title", "Cosa dice la verifica storica"));
+  const sub = ev.window
+    ? `Backtest sui flussi reali (${ev.window}, ${ev.n_purchases} acquisti, commissioni ${ev.fee_pct}%).`
+    : "";
+  if (sub) card.appendChild(el("p", "dca-sub", sub));
+  const grid = el("div", "dca-evidence");
+  grid.appendChild(evidenceItem(
+    "neg", "Rendimento: nessun vantaggio",
+    `${ev.random_percentile}° percentile contro 200 estrazioni casuali. Rapporto con la divisione in parti uguali ${ev.vs_split_full} sul periodo, ma ${ev.vs_split_first_half} nella prima metà e ${ev.vs_split_second_half} nella seconda: si alterna, quindi è rumore.`,
+  ));
+  grid.appendChild(evidenceItem(
+    "pos", "Allocazione: vantaggio reale",
+    `Distanza finale dal target ${ev.weight_drift_pp_rule} pp contro ${ev.weight_drift_pp_split} pp della divisione fissa. Nella metà out-of-sample ${ev.weight_drift_pp_rule_oos} pp contro ${ev.weight_drift_pp_split_oos} pp.`,
+  ));
+  grid.appendChild(evidenceItem(
+    "neg", "Comprare il più forte è la scelta peggiore",
+    `Il momentum sta al ${ev.momentum_random_percentile}° percentile, sotto il caso: è l'istinto più comune ed è quello che ha reso meno.`,
+  ));
+  card.appendChild(grid);
+  return card;
+}
+
+function evidenceItem(tone, title, body) {
+  const item = el("div", `dca-ev dca-ev-${tone}`);
+  item.appendChild(el("p", "dca-ev-title", title));
+  item.appendChild(el("p", "dca-ev-body", body));
+  return item;
+}
+
+function dcaCandidatesCard(data) {
+  const card = el("div", "card dca-card");
+  card.appendChild(el("p", "mini-title", "Candidate per un accumulo a lungo termine"));
+  card.appendChild(el("p", "dca-sub", "Monete che superano i filtri meccanici: dimensione, liquidità reale, età minima dimostrabile. Nessun giudizio su tecnologia o prospettive — sono i nomi da studiare, non da comprare al buio."));
+  const list = el("ul", "ranklist");
+  data.candidates.forEach((c) => list.appendChild(candidateRow(c)));
+  card.appendChild(list);
+  const summary = data.rejected_summary || {};
+  const labels = data.rejected_labels || {};
+  const parts = Object.keys(summary).map((k) => `${labels[k] || k}: ${summary[k]}`);
+  if (parts.length) card.appendChild(el("p", "dca-sub dca-rejected", `Escluse dal filtro — ${parts.join(" · ")}.`));
+  return card;
+}
+
+function candidateRow(c) {
+  const li = el("li", "dca-cand");
+  li.appendChild(el("span", "ri-rank", String(c.rank)));
+  const nameWrap = el("div", "dca-cand-name");
+  nameWrap.appendChild(el("span", "ri-name", `${c.symbol} · ${c.name}`));
+  const tags = el("div", "dca-tags");
+  if (c.flags_it) c.flags_it.split(",").forEach((f) => tags.appendChild(el("span", "dca-tag", f.trim())));
+  if (c.diversifying) tags.appendChild(el("span", "dca-tag is-div", "diversifica"));
+  if (tags.childNodes.length) nameWrap.appendChild(tags);
+  li.appendChild(nameWrap);
+  li.appendChild(metricRaw("Cap.", fmtMcap(c.market_cap)));
+  li.appendChild(metricRaw("Liquidità", c.turnover == null ? "n/d" : `${(c.turnover * 100).toFixed(1)}%`));
+  li.appendChild(metricRaw("Età min.", c.min_age_years == null ? "n/d" : `${NF1.format(c.min_age_years)} anni`));
+  li.appendChild(metric("Da max", c.ath_change_pct));
+  return li;
+}
+
+function dcaCaveatsCard(caveats) {
+  const card = el("div", "card dca-card");
+  card.appendChild(el("p", "mini-title", "Limiti"));
+  const ul = el("ul", "dca-caveats");
+  caveats.forEach((c) => ul.appendChild(el("li", null, c)));
+  card.appendChild(ul);
+  return card;
 }
 
 /* ---------- Overview ranklists ---------- */

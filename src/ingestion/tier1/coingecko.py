@@ -41,6 +41,9 @@ DEFAULT_BASE_URL: Final[str] = "https://api.coingecko.com/api/v3"
 DEFAULT_VS_CURRENCY: Final[str] = "usd"
 DEFAULT_DAYS: Final[int] = 365
 DEFAULT_TOP_N: Final[int] = 20
+# Wider universe for the DCA candidate screen: the filters cut hard, so the pool
+# has to start well past the handful of names everyone already holds.
+DEFAULT_MARKETS_N: Final[int] = 100
 
 # Free-tier polite throttle. With a Demo key this could be lower.
 DEFAULT_SLEEP_BETWEEN_CALLS: Final[float] = 10.0
@@ -155,6 +158,79 @@ class CoinGeckoSource(DataSource):
             for c in payload
         ]
         df = pd.DataFrame(rows)
+        df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
+        return df
+
+    def fetch_markets(
+        self,
+        n: int = DEFAULT_MARKETS_N,
+        vs_currency: str = DEFAULT_VS_CURRENCY,
+    ) -> pd.DataFrame:
+        """Top N coins with the extra fields a long-horizon screen needs.
+
+        ``fetch_top_n`` deliberately stays a small, stable universe snapshot for
+        Tier 2 (ADR-005). The DCA candidate screen needs three things it does not
+        carry: ``atl_date`` (a lower bound on how long the coin has existed —
+        there is no track record to judge without it), ``ath_change_percentage``
+        (how far below its peak it trades) and ``coingecko_id`` (to join against
+        the category map). Rather than widen ``fetch_top_n`` and its callers, this
+        is a separate, richer read of the same endpoint.
+
+        Output columns: ``coingecko_id, symbol, name, market_cap,
+        market_cap_rank, current_price, total_volume, price_change_24h_pct,
+        ath_change_pct, atl_date``. Index: integer rank (1-based).
+        Snapshot, not time series.
+        """
+        logger.info("Fetching top %d coin markets (vs=%s)", n, vs_currency)
+        rows: list[dict[str, Any]] = []
+        # The endpoint caps per_page at 250, so a wider screen needs paging.
+        per_page = min(250, max(1, n))
+        page = 1
+        while len(rows) < n:
+            payload = self._get(
+                "/coins/markets",
+                params={
+                    "vs_currency": vs_currency,
+                    "order": "market_cap_desc",
+                    "per_page": per_page,
+                    "page": page,
+                },
+            )
+            if not payload:
+                break
+            for c in payload:
+                rows.append(
+                    {
+                        "coingecko_id": c.get("id"),
+                        "symbol": str(c.get("symbol") or "").upper(),
+                        "name": c.get("name"),
+                        "market_cap": c.get("market_cap"),
+                        "market_cap_rank": c.get("market_cap_rank"),
+                        "current_price": c.get("current_price"),
+                        "total_volume": c.get("total_volume"),
+                        "price_change_24h_pct": c.get("price_change_percentage_24h"),
+                        "ath_change_pct": c.get("ath_change_percentage"),
+                        "atl_date": c.get("atl_date"),
+                    }
+                )
+            if len(payload) < per_page:
+                break
+            page += 1
+        df = pd.DataFrame(
+            rows[:n],
+            columns=[
+                "coingecko_id",
+                "symbol",
+                "name",
+                "market_cap",
+                "market_cap_rank",
+                "current_price",
+                "total_volume",
+                "price_change_24h_pct",
+                "ath_change_pct",
+                "atl_date",
+            ],
+        )
         df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
         return df
 
