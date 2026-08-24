@@ -35,7 +35,7 @@
 | `macro-history.yml` | giornaliero | 🟢 attivo (2026-08-24) |
 | `paper-shadow.yml` | giornaliero | 🟢 attivo (2026-08-24) |
 | `dca.yml` | giornaliero | ⏳ mergiato con la PR #52, **primo run ancora da osservare** |
-| `etf-dataset.yml` | solo manuale | ⏳ aggiunto in WP2, **primo run ancora da fare** |
+| `etf-dataset.yml` | solo manuale | ⏳ aggiunto in WP2, **primo run possibile solo post-merge** |
 
 I cron committano con `[skip ci]`. GitHub schedula con **ritardo variabile** (un
 cron delle 07:00 può girare alle 12:36 UTC): fidarsi del timestamp nel report,
@@ -108,7 +108,8 @@ baseline. Nessun risultato empirico qui — WP2 costruisce il dataset, non lo in
   + `etf_panel_meta.json` (gitignored: derivati, ricostruibili dal comando).
 - **`etf-dataset.yml`, solo `workflow_dispatch`**: la sandbox non raggiunge Yahoo,
   quindi la validazione live della CLI passa da qui. Non è un cron: il panel non
-  si committa, e il runner ricorrente è di WP4.
+  si committa, e il runner ricorrente è di WP4. Dispatchabile solo dopo il merge
+  (vedi Prossime attività).
 - **24 test offline**, sintetici e deterministici. Il test che conta è quello di
   **causalità**: ricostruito il panel su una storia troncata a `t`, ogni feature
   fino a `t` è identica a quella del panel completo. Un secondo test verifica il
@@ -161,9 +162,12 @@ tempo.
 
 ## Prossime attività
 
-1. **Far girare `etf-dataset` una volta** (dispatch manuale) e leggere il report
-   di copertura nel job summary: è la prima verifica che i 20 ticker + SPY
-   scarichino davvero e che le storie corte compaiano dove attese.
+1. **Far girare `etf-dataset` una volta, subito dopo il merge di WP2** e leggere
+   il report di copertura nel job summary: è la prima verifica che i 20 ticker +
+   SPY scarichino davvero e che le storie corte compaiano dove attese. ⚠️ GitHub
+   espone `workflow_dispatch` **solo per i file già sul branch di default**:
+   dal branch della PR il dispatch risponde 404, quindi il primo run è
+   necessariamente post-merge.
 2. **WP1** — ADR-033 (`Proposed`) sul partizionamento mensile degli storici, poi
    implementazione **solo dopo l'ok utente su D8**. È l'intervento che ferma la
    crescita da 7,5 GiB di blob riscritti.
