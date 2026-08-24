@@ -162,6 +162,7 @@ def verdicts(results: list[dict[str, Any]], horizon: int) -> dict[str, Any]:
     log = by_name.get("logistic", {})
 
     mom_ic = float(mom.get("overall", {}).get("ic_spearman", float("nan")))
+    mom_ic_t = float(mom.get("overall", {}).get("ic_t", float("nan")))
     h1 = bool(mom_ic > 0.0)
 
     log_brier = float(log.get("overall", {}).get("brier", float("nan")))
@@ -197,7 +198,7 @@ def verdicts(results: list[dict[str, Any]], horizon: int) -> dict[str, Any]:
     )
     return {
         "horizon": horizon,
-        "H1_momentum_ic_positive": h1, "H1_value": mom_ic,
+        "H1_momentum_ic_positive": h1, "H1_value": mom_ic, "H1_t": mom_ic_t,
         "H2_logistic_beats_momentum_brier": h2,
         "H2_logistic_brier": log_brier, "H2_momentum_brier": mom_brier,
         "H3_tmb_net_positive_both_halves": h3, "H3_best_model": best_name,
@@ -238,12 +239,24 @@ def format_report(
     if v20:
         lines += [
             f"- **H1** (IC Spearman del momentum 60g > 0 a 20 sedute): {_yes(v20['H1_momentum_ic_positive'])} "
-            f"— IC = `{_fmt(v20['H1_value'])}`",
+            f"— IC = `{_fmt(v20['H1_value'])}` (t = `{_fmt(v20.get('H1_t'), 2)}`)",
             f"- **H2** (la logistica batte il momentum in Brier): {_yes(v20['H2_logistic_beats_momentum_brier'])} "
             f"— logistica `{_fmt(v20['H2_logistic_brier'])}` vs momentum `{_fmt(v20['H2_momentum_brier'])}`",
             f"- **H3** (spread top-bottom netto costi > 0 in *entrambe* le metà OOS): "
             f"{_yes(v20['H3_tmb_net_positive_both_halves'])} — modello migliore: `{v20['H3_best_model']}`",
             "",
+        ]
+        h1_t = float(v20.get("H1_t", float("nan")))
+        if v20["H1_momentum_ic_positive"] and pd.notna(h1_t) and abs(h1_t) < 2.0:
+            lines += [
+                "> ⚠️ **H1 passa come scritta, ma il numero è rumore.** L'ipotesi",
+                f"> pre-registrata chiedeva solo `IC > 0`, senza magnitudine: `{_fmt(v20['H1_value'])}`",
+                f"> con t = `{_fmt(h1_t, 2)}` non è distinguibile da zero. La soglia non viene",
+                "> spostata a posteriori — si registra che era formulata debolmente. È la",
+                "> barra di adozione, che una magnitudine ce l'ha, a fare il lavoro vero.",
+                "",
+            ]
+        lines += [
             f"### Barra di adozione: {'✅ **SUPERATA**' if v20['adoption_bar_passed'] else '❌ **NON superata**'}",
             "",
             f"Richiede IC ≥ {IC_BAR} **e** H3 vera **e** Brier ≤ climatologia. "
