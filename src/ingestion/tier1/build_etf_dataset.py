@@ -97,8 +97,12 @@ def _fetch_close_volume(
     return closes, volumes
 
 
-def _benchmark_regime(benchmark: pd.Series) -> pd.Series:
+def benchmark_regime(benchmark: pd.Series) -> pd.Series:
     """4-state ``trend x vol`` regime from benchmark prices only (decision D12).
+
+    Public because the weekly rotation runner (WP4) rebuilds the same panel from
+    bars it has already fetched, and a second definition of "the regime" would be
+    a second thing to keep in sync.
 
     Both classifiers are causal (trailing SMA, trailing realised vol vs its own
     trailing median), so the label at ``t`` is knowable at ``t``. No macro series
@@ -130,7 +134,7 @@ def build(start: str = DEFAULT_START) -> tuple[pd.DataFrame, pd.DataFrame] | Non
     volume_frame = pd.DataFrame(volumes)
     features = build_feature_panel(close_frame, volume_frame, benchmark)
     targets = build_targets(close_frame, benchmark, horizons=DEFAULT_HORIZONS)
-    panel = assemble(features, targets, _benchmark_regime(benchmark))
+    panel = assemble(features, targets, benchmark_regime(benchmark))
     return panel, coverage_report(panel)
 
 

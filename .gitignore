@@ -66,6 +66,11 @@ data/cache/
 !data/paper/
 !data/paper/**
 
+# Prediction ledger (WP4): data/predictions/*.jsonl is COMMITTED on purpose and
+# needs no rule here — it is only listed so a future blanket `data/*` ignore does
+# not silently swallow it. One small JSON line per weekly prediction, written
+# before the outcome exists; the git history is part of the audit trail.
+
 # AI model caches (ADR-016 Layer 1: HuggingFace, sentence-transformers)
 # Anchored to repo root so it ignores downloaded model weights only, not the
 # src/models/ source package.

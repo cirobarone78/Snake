@@ -26,6 +26,7 @@
 | Q9 | Modello di sentiment per news | [ADR-023](./DECISIONS.md) (Layer 1 lessico/VADER) |
 | Q12 | Allineamento temporale news↔prezzo | [ADR-024](./DECISIONS.md) (publication-time + lag) |
 | Q10 | Frequenza di ingestion notizie | [ADR-025](./DECISIONS.md) (batch giornaliero + history versionata) |
+| D7 (piano §2) | Soglia di confidenza del paper portfolio | [ADR-036](./DECISIONS.md) (disattivata: senza probabilità calibrata non è applicabile) |
 
 **Fase 0 sbloccata**: possiamo iniziare Fase 1.
 
@@ -267,6 +268,32 @@ Due domande distinte, e vanno separate:
    regola sulla quota satellite è stata dichiarata priva di edge.
 
 *Non bloccante.* La scheda funziona anche senza; semplicemente non gradua.
+
+---
+
+### Q28 — Quando e come si ri-apre la validazione del ranking?
+Emersa con WP4. Il paper portfolio gira ogni lunedì su una regola **misurata come
+non predittiva** (ADR-034) e accumula un ledger di previsioni con esito. Prima o
+poi quel ledger sarà abbastanza lungo da dire qualcosa — ma *quanto* è abbastanza,
+e cosa si misura, va deciso **prima** di guardarlo, altrimenti si ripete
+esattamente l'errore che ADR-034 documenta.
+
+Tre cose da fissare in anticipo, in una pre-registrazione come quella di §2.1:
+
+1. **Quante settimane** di forward prima di rimisurare (a 20 sedute, previsioni
+   emesse settimanalmente e sovrapposte: il campione indipendente cresce molto più
+   lentamente di quanto suggerisca il conteggio delle righe).
+2. **Quale ipotesi**, con **magnitudine** — la lezione esplicita di ADR-034: `IC > 0`
+   è quasi gratis da superare, e infatti il momentum ci è passato pur essendo
+   sotto il ranker casuale.
+3. **Cosa succede se passa**: riattivare D7 con la sua soglia originale è già
+   previsto da ADR-036, ma serve una ADR che dichiari il modello adottato.
+
+Nota di cautela già scritta nel payload: se il portafoglio dovesse battere SPY
+nelle prime settimane, **la prima ipotesi da falsificare è la fortuna**.
+
+*Non bloccante*: nulla dipende da questa risposta finché il ledger è corto. Ma va
+risolta prima di guardare i numeri, non dopo.
 
 ---
 

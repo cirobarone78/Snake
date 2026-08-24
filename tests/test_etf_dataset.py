@@ -463,10 +463,10 @@ def test_cli_fetch_skips_failed_and_empty_symbols() -> None:
 
 
 def test_cli_regime_is_a_four_state_label_from_prices_only() -> None:
-    from src.ingestion.tier1.build_etf_dataset import _benchmark_regime
+    from src.ingestion.tier1.build_etf_dataset import benchmark_regime
 
     bench = _benchmark(600)
-    regime = _benchmark_regime(bench)
+    regime = benchmark_regime(bench)
     labels = set(regime.unique())
     assert labels <= {
         "bull_low_vol", "bull_high_vol", "bear_low_vol", "bear_high_vol", "unknown"

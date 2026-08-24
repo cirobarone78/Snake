@@ -2084,6 +2084,103 @@ diretta, ora su base probabilistica e con costi, del risultato già in `STATUS.m
 - Metodologico, da riportare nella prossima pre-registrazione: **ogni ipotesi
   deve avere una magnitudine**, non solo un segno.
 
+---
+
+## ADR-036 — La soglia di confidenza D7 è disattivata nel fallback non-predittivo
+
+**Data**: 2026-08-24
+**Stato**: Accepted
+**Contesto operativo**: `docs/PIANO_SVILUPPO.md` §2.1 e §5 (WP4). Segue ADR-034.
+**Nota di numerazione**: il numero 035 resta **riservato a WP6** (event
+intelligence, gated su D9) come da piano §5; questa decisione prende quindi il
+primo numero libero successivo.
+
+**Contesto**
+
+Il piano pre-registra due cose che, dopo l'esito di ADR-034, non possono
+convivere:
+
+- **D6/D7**: «top 5 equal-weight, cap 20%/asset» e «nessun acquisto se
+  `P(outperform) < 0,55` per il 5° classificato → si resta in liquidità
+  parziale».
+- **§2.1, barra di adozione**: se la barra non è superata, «WP4 procede con il
+  **momentum semplice** come regola dichiaratamente non-predittiva».
+
+La barra **non è stata superata** (ADR-034). La conseguenza operativa è che in
+produzione non esiste alcun `P(outperform)`: il momentum relativo a 60 sedute ha
+IC OOS `0,0010` (t = 0,08), *sotto* il ranker casuale, e la calibrazione isotonic
+non trasferisce fuori campione — nella banda 0,90–1,00 la logistica predice
+`0,974` e si realizza `0,461`.
+
+D7 è una soglia **su una probabilità calibrata**. Senza quella probabilità la
+regola non è "conservativa": è indefinita. Le tre strade possibili erano
+
+1. applicare D7 al rank percentile del momentum, come se fosse una probabilità;
+2. applicare D7 a una probabilità prodotta comunque da logistic/isotonic;
+3. disattivare D7 e dichiararlo.
+
+Le prime due sono la stessa cosa vista da due lati: **rietichettare un numero
+non calibrato come probabilità**. La (1) è la peggiore — il rank percentile del
+5° classificato su 20 titoli vale `0,80` per costruzione (16ª posizione su 20 in
+ordine crescente), ogni settimana, qualunque cosa faccia il mercato: la soglia
+`0,55` non scatterebbe *mai* e produrrebbe un filtro finto, che sembra prudenza
+e non è nulla. La (2)
+pubblicherebbe come affidabili proprio i numeri che ADR-034 ha misurato come
+peggiori di una costante.
+
+**Decisione**
+
+1. **D7 è disattivata** nel percorso di produzione di WP4. La regola settimanale
+   è, per intero: *top 5 per `rel_ret_60`, equal weight, cap 20% per asset*. La
+   liquidità residua nasce solo quando meno di 5 simboli hanno uno score
+   definito (storia corta, warm-up), mai da una soglia di confidenza.
+2. **Il meccanismo resta nel codice e testato**, non cancellato:
+   `target_weights(..., confidence_threshold=None)` accetta una soglia e la
+   applica correttamente quando è diversa da `None`. Il default di produzione è
+   `None`. Se un modello supererà la barra di adozione in futuro, riattivare D7
+   sarà una riga di configurazione più una ADR, non una reimplementazione.
+3. **Il ledger non scrive probabilità non calibrate.** `probability_outperform`,
+   `expected_excess_return` e `expected_volatility` restano nel contratto ma sono
+   `null` sotto una regola non-predittiva, e un validatore **rifiuta** la
+   scrittura di un valore non nullo quando `predictive` è `false`. Al loro posto
+   il ledger registra ciò che la regola usa davvero — lo score di selezione, il
+   rank nell'universo, la volatilità realizzata a 60 sedute — con nomi che
+   dicono che sono **stato osservato**, non previsione.
+4. **`confidence` non è una stima**: sotto la regola non-predittiva vale
+   `not_applicable`. Non "bassa": "bassa" implica una scala calibrata.
+4-bis. **L'identità di una riga è la barra di decisione, non solo l'istante di
+   emissione.** Il piano chiedeva append idempotente su
+   `(emitted_at, asset, horizon)`; il ledger rifiuta un duplicato anche su
+   `(data_cutoff, asset, horizon)`. Motivo concreto: un retry del cron due ore
+   dopo porta un `emitted_at` nuovo ma parla della stessa barra, e due righe
+   sulla stessa previsione lascerebbero a chi legge in futuro la libertà di
+   scegliere quella che gli conviene. Il vincolo è un soprainsieme di quello
+   richiesto, non una deroga.
+5. **Ogni output verso dashboard e report dichiara la non-predittività** in modo
+   esplicito e in italiano: `predictive: false`, la descrizione testuale della
+   regola e il rinvio ad ADR-034 viaggiano dentro il payload, non in una nota a
+   piè di pagina che un renderer può omettere.
+
+**Conseguenze**
+
+- Il portafoglio paper è **sempre investito** quando l'universo ha almeno 5
+  storie utilizzabili. È coerente con ciò che misura: una rotazione *relativa*
+  contro SPY, non un market-timer. La liquidità parziale prevista da D7 era un
+  effetto della probabilità, e la probabilità non c'è.
+- Il track record di WP4 misura **l'infrastruttura e la regola nulla**, non un
+  edge. Se il paper portfolio batterà SPY, la prima ipotesi da falsificare sarà
+  la fortuna: la regola è già stata misurata come indistinguibile dal caso.
+- Non si perde il posto per D7: il giorno in cui una probabilità calibrata
+  esisterà, la soglia torna attiva con la sua semantica originale.
+- Chi legge il ledger a posteriori vede la differenza tra "non lo sapevamo" e
+  "abbiamo stimato zero": i campi di previsione sono `null`, non `0.5`.
+
+**Alternativa scartata**: mappare D7 su una soglia di momentum assoluto (es.
+«nessun acquisto se `rel_ret_60 < 0`»). Sarebbe un parametro nuovo, scelto dopo
+aver visto i risultati di ADR-034 e mai pre-registrato — esattamente lo
+spostamento dei pali che `CLAUDE.md` vieta. Se lo si vorrà provare, si
+pre-registra e si misura, non lo si infila nel fallback.
+
 <!--
 Template per nuove ADR:
 
