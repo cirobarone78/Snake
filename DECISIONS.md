@@ -1838,19 +1838,55 @@ i container di Actions sono effimeri. Il problema è *come* la si scrive.
    ancora presente, ordinandolo prima delle partizioni. Un checkout precedente al
    commit di migrazione non perde storia.
 
-**Effetto misurato** (26,6 MB il monolite, 6,14 MB la partizione di 2026-08 al
-24 agosto):
+**Effetto atteso al merge** — poi smentito dalla misura reale, vedi
+l'aggiornamento sotto: 26,66 MB → 6,14 MB per run (−77,0%), con proiezione a
+−87% sui 30 giorni successivi.
 
-| Metrica | Prima | Dopo | Δ |
-|---|---:|---:|---:|
-| Blob riscritto per run, oggi | 26,66 MB | 6,14 MB | **−77,0%** |
-| Blob per run, media sui prossimi 30 giorni | ~31,4 MB | ~4,0 MB | **−87,2%** |
-| Costo per run fra 12 mesi (proiezione a ~8 MB/mese) | ~119 MB | ~4 MB | **−96,6%** |
-
-Il numero che conta non è la percentuale di oggi ma la **forma della curva**: il
+Il numero che conta non è comunque la percentuale ma la **forma della curva**: il
 costo per run del monolite cresce senza limite, quello della partizione è
 **limitato a un mese di news (~8 MB) e si azzera ogni primo del mese**. Da
 crescita quadratica a crescita lineare.
+
+### Aggiornamento 2026-08-24 — il partizionamento da solo non bastava
+
+Il primo run reale del cron dopo il merge (`bc12ad2`, 19:09 UTC) ha riscritto
+**20 partizioni su 92 e 26,86 MB**: rispetto al monolite, **−0,4%**. Nessun
+risparmio. La verifica live era stata programmata proprio per questo, e ha
+ripagato: il ragionamento era corretto, l'implementazione no.
+
+**Causa.** In 17 delle 20 partizioni riscritte le righe erano **le stesse**
+(Δ righe = 0): cambiavano solo i byte. I feed datano quasi tutte le notizie al
+giorno, quindi la maggioranza delle righe di una partizione condivide il
+timestamp — misurato: **88 su 101** in un mese reale. `sort_index()` è un sort
+*stabile*: sulle righe a pari `published` conserva l'ordine di input. E l'ordine
+di input cambia a ogni run, perché la deduplicazione con `keep="last"` sposta in
+coda ogni storia ri-fetchata. Stesse righe, layout diverso, ogni volta → git
+vede un blob nuovo → il partizionamento non risparmiava niente.
+
+**Correzione.** L'ordine di scrittura ora è **`(published, item_id)`**, totale e
+determinato dal contenuto (`sort_canonical` in `persist.py`). Il file diventa
+una funzione pura delle righe che contiene: una partizione immutata si
+serializza identica e git non la ristora. Le 92 partizioni esistenti sono state
+normalizzate una volta (28 riordinate, 50 377 righe invariate, nessun `item_id`
+perso).
+
+**Effetto misurato dopo la correzione**, simulando un run del cron sulle
+partizioni reali:
+
+| Scenario del run | Partizioni riscritte | Byte riscritti | Δ vs monolite |
+|---|---:|---:|---:|
+| Prima della correzione (run reale `bc12ad2`) | 20 su 92 | 26,86 MB | **−0,4%** |
+| Rifetch puro, nessuna storia nuova | **0** | 0 MB | −100% |
+| +120 storie nuove nel mese corrente (volume reale osservato) | **1** | 6,28 MB | **−76,6%** |
+
+**Lezione, che vale oltre questo caso**: un'ottimizzazione basata sulla
+deduplicazione dei contenuti richiede che la serializzazione sia **deterministica
+rispetto al contenuto**. Non lo si può dedurre dal codice — i 14 test iniziali
+verificavano la byte-identità solo su input identici, e passavano. Serviva
+l'ordine di arrivo variabile del mondo reale. Quattro test di regressione ora
+riproducono quel pattern: rifetch in ordine sparso, rifetch parziale, inserimento
+di una riga nuova, e due directory alimentate in ordini opposti che devono
+risultare identiche byte per byte.
 
 **Alternative valutate e rinviate** (dall'handoff §4.1). Nessuna è stata scartata
 perché sbagliata: sono state scartate perché il partizionamento basta, e

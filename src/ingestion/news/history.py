@@ -29,6 +29,12 @@ feed re-publishing a story under a new date: the stale copy stays in its old
 partition (rewriting it would defeat the point) and the read keeps the row from
 the later month.
 
+**Byte stability is load-bearing here**, not a nicety. Partitioning only saves
+anything if an unchanged partition serialises to the *same bytes*, so git
+recognises it as the same blob and stores nothing. That requires a total,
+content-determined row order — see ``sort_canonical`` in ``persist``, and the
+first-run measurement that forced it.
+
 Pure functions over pandas frames, so they unit-test offline.
 """
 
@@ -41,7 +47,7 @@ from typing import cast
 import pandas as pd
 
 from src.ai.lexicon.sentiment import score_news_frame
-from src.ingestion.news.persist import append_news
+from src.ingestion.news.persist import append_news, sort_canonical
 
 # Columns kept in the versioned history (no ``summary`` — see module docstring).
 COMPACT_COLUMNS = ["item_id", "source", "title", "url", "sentiment"]
@@ -124,7 +130,7 @@ def read_news_history(directory: str | Path = DEFAULT_HISTORY_DIR) -> pd.DataFra
     frames = [cast("pd.DataFrame", pd.read_parquet(path)) for path in files]
     combined = frames[0] if len(frames) == 1 else pd.concat(frames)
     combined = combined[~combined["item_id"].duplicated(keep="last")]
-    return cast("pd.DataFrame", combined.sort_index())
+    return sort_canonical(cast("pd.DataFrame", combined))
 
 
 def empty_history() -> pd.DataFrame:
