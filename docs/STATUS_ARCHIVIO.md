@@ -1582,3 +1582,96 @@ cron**. Pack: **1,17 GiB**; contenuto blob non compresso: **7 727 MiB** su 2 927
 Un solo file spiega il 97,5% del peso: `news.parquet` è riscritto **integralmente**
 a ogni run del cron (479 volte dal 2026-05-30), oggi ≈ 26 MB a copia. La tabella
 è riportata anche in **ADR-032** ed è il contesto da citare nell'**ADR-033** (WP1).
+
+
+## WP2 — Dataset ETF point-in-time (2026-08-24, dettaglio)
+
+> Spostato qui da `STATUS.md` per tenerlo sotto le 200 righe che si autoimpone.
+> Il riassunto e i risultati della validazione restano nella fotografia corrente.
+> La motivazione completa delle scelte è nel docstring di `src/features/etf_dataset.py`
+> e nel corpo della PR #56.
+
+## Cosa ha fatto WP2 (dataset ETF point-in-time)
+
+Il primo pezzo di **codice** della Fase 9: il panel su cui WP3 addestrerà le
+baseline. Nessun risultato empirico qui — WP2 costruisce il dataset, non lo interroga.
+
+- **`SPY` nel registry asset** (tier 3): benchmark di D2, gemello *comprabile* di
+  `SPX` (un indice non si detiene).
+- **`src/features/etf_dataset.py`** (nuovo, funzioni pure, nessuna rete):
+  `build_feature_panel` (19 feature causali), `build_targets` (excess return e
+  segno a 20/60 sedute vs SPY), `assemble` (join + regime 4-stati per data),
+  `coverage_report`, `dataset_metadata`. Long-form `(date, symbol)`.
+- **`src/ingestion/tier1/build_etf_dataset.py`**: CLI che scarica i 20 `SECTOR_ETFS`
+  + SPY da Yahoo dal 2005 e scrive `data/processed/etf_panel.parquet` +
+  `etf_panel_meta.json` (gitignored: derivati, ricostruibili dal comando).
+- **`etf-dataset.yml`, solo `workflow_dispatch`**: la sandbox non raggiunge Yahoo,
+  quindi la validazione live della CLI passa da qui. Non è un cron: il panel non si
+  committa, il runner ricorrente è WP4. **Primo run fatto** (post-merge, esito sotto).
+- **24 test offline**, sintetici e deterministici. Il test che conta è quello di
+  **causalità**: ricostruito il panel su una storia troncata a `t`, ogni feature
+  fino a `t` è identica a quella del panel completo. Un secondo verifica il
+  contrario sul target (perturbare una barra futura *deve* muovere
+  `excess_ret_20`): così il primo non passa per un errore di confronto.
+
+**Semplificazioni dichiarate** (nel docstring del modulo, non nascoste): prezzi
+`auto_adjust` ⇒ rendimenti di fatto **total return** (standard per la forza
+relativa, ma un quote price-only non li replica); universo = ETF **esistenti oggi**
+⇒ survivorship residuo basso ma non nullo, di direzione ottimistica; storie corte
+(XLC 2018, BOTZ/CIBR ~2016, URA 2010, ICLN 2008, ITA 2006) **tenute** con NaN sulle
+finestre lunghe, perché escluderle rimodellerebbe l'universo nel tempo.
+
+**Validazione live del panel** (run `etf-dataset` del 2026-08-24, post-merge — era
+l'attività #1 di questa milestone, ora **chiusa**):
+
+- **21/21 ticker scaricati**, nessun feed mancante o congelato. Panel:
+  **93 517 righe × 27 colonne** (2 id + `close` + 19 feature + 4 target + `regime`),
+  2005-01-03 → 2026-08-24.
+- **Le date di quotazione cadono dove attese**, che è la verifica vera: XLC
+  2018-06-19, BOTZ 2016-09-13, CIBR 2015-07-07, XLRE 2015-10-08, URA 2010-11-05,
+  ICLN 2008-06-25, ITA 2006-05-05; gli 11 SPDR originali partono tutti dal
+  2005-01-03 con 5 444 righe.
+- **La quota di feature mancanti è solo warm-up**, non buchi di dati: 1,5% sulle
+  storie lunghe, 3,9% su XLC. Il numero di celle NaN è lo stesso in assoluto
+  (~1 500, la somma delle finestre); cambia solo il denominatore. Un feed rotto
+  avrebbe dato un profilo diverso.
+- **Baseline climatologica per WP3** (il numero che H2 deve battere in Brier):
+  l'outperformance incondizionata è **0,489 a 20 sedute** (n=93 117) e **0,482 a
+  60** (n=92 317). Entrambe **sotto 0,5**: il settore mediano batte SPY meno di
+  una volta su due: nel periodo l'S&P cap-weighted è stato trainato dalle
+  mega-cap, e un ranking settoriale parte in svantaggio rispetto a "compra SPY".
+  È il palo giusto da piantare *prima* di modellare, non dopo.
+- Mix di regime sul panel: `bull_low_vol` 44 575 · `bull_high_vol` 28 765 ·
+  `bear_high_vol` 15 291 · `bear_low_vol` 2 786 · `unknown` 2 100 (warm-up SPY).
+
+**Da sapere alla prossima sessione**:
+
+- `pyright: strict` puro non è raggiungibile su un modulo pandas-heavy: `pandas`
+  non ha `py.typed`, quindi in strict *ogni* membro pandas diventa unknown (74
+  errori, nessuno imputabile a questo codice; li portano anche i moduli strict
+  esistenti, es. `src/ingestion/snapshot.py`). Il modulo è `strict` **meno le
+  quattro regole** che nascono solo da quella mancanza. Per lo strict pieno
+  servirebbe `pandas-stubs` come dip. dev: decisione da ADR, non da WP.
+- `outperform_h` è il **segno stretto** dell'excess (1.0 se > 0), NaN dove
+  l'excess è NaN: la coda non realizzata è dato mancante, non una perdita. D4
+  resta da confermare, ma il dataset espone entrambe le forme (regressiva e
+  binaria) a 20 e 60 sedute → WP3 non è bloccato.
+- **Fuori perimetro, annotato e non toccato** (§0.2 del piano): `combine_regimes`
+  perde la prima barra (il classificatore di volatilità non ha un rendimento lì).
+  `assemble` la etichetta `unknown` — corretto, ma è un'asimmetria da conoscere.
+
+
+## Crescita del repository — inquadramento pre-WP1 (superato)
+
+> Questa sezione precedeva la risoluzione di WP1 e faceva ancora da "contesto per
+> l'ADR-033". Superata: l'ADR-033 è `Accepted` e il partizionamento è in `main`.
+> Conservata per continuità; la misura originale di WP0 è più sotto e in ADR-032.
+
+## Crescita del repository
+
+Misurata in WP0 e archiviata: storia completa 812 commit su `main`, di cui **676
+(83%) automatici dei cron**; pack **1,17 GiB**, contenuto blob non compresso
+**7 727 MiB**, di cui **97,5% un solo file** (`data/news_history/news.parquet`,
+riscritto integralmente a ogni run). Tabella completa in **ADR-032** e in
+[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md); è il contesto da citare
+nell'**ADR-033** (WP1).
