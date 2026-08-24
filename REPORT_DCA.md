@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 14.8% | 33.3% | +18.5 pp | 100% | 1.000 |
-| 2 | LINK | 39.1% | 33.3% | -5.8 pp | 93% | 0.500 |
-| 3 | SOL | 46.1% | 33.3% | -12.7 pp | 94% | 0.000 |
+| 1 | POL | 14.9% | 33.3% | +18.4 pp | 100% | 1.000 |
+| 2 | LINK | 38.9% | 33.3% | -5.6 pp | 93% | 0.500 |
+| 3 | SOL | 46.1% | 33.3% | -12.8 pp | 94% | 0.000 |
 
 ### Cosa dice la verifica storica
 
