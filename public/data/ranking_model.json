@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-08-24T21:03:11.700083+00:00",
+  "title": "Modello di ranking ETF — stato della validazione",
+  "status": "ok",
+  "status_reason": null,
+  "predictive": false,
+  "model_adopted": null,
+  "rule": "momentum_rel_60",
+  "rule_version": "momentum_rel_60@1",
+  "rule_description": "Top 5 ETF per momentum relativo a 60 sedute contro SPY, equal weight, cap 20% per asset. Nessuna soglia di confidenza (ADR-036).",
+  "dataset_version": "2e2113cb9fde599d",
+  "non_predictive_notice": "⚠️ Questa classifica NON è una previsione. La barra di adozione di WP3 non è stata superata: il momentum relativo a 60 sedute è risultato indistinguibile dal caso fuori campione (IC 0,0010, t = 0,08) e nessuna probabilità calibrata è disponibile. I campi di probabilità restano vuoti apposta (ADR-036).",
+  "non_predictive_reason": "Regola NON predittiva. ADR-034: la barra di adozione non è stata superata — IC Spearman OOS del momentum 0,0010 (t = 0,08), sotto il ranker casuale, e Brier peggiore della climatologia per ogni modello. Nessuna probabilità calibrata è disponibile, quindi non ne viene pubblicata nessuna (ADR-036).",
+  "adoption_bar": {
+    "passed": false,
+    "reference": "ADR-034",
+    "requirement": "IC Spearman OOS ≥ 0,03 E spread top-bottom netto costi positivo in entrambe le metà OOS E Brier ≤ climatologia.",
+    "outcome": "Non superata: solo la prima condizione è soddisfatta. Il segno del TMB non regge nella seconda metà OOS e il Brier di ogni modello è peggiore della climatologia (0,2501)."
+  },
+  "calibration": {
+    "available": false,
+    "method": "isotonic (WP3)",
+    "reason": "La calibrazione isotonic, fit sul solo train, non trasferisce fuori campione: nella banda 0,90-1,00 la logistica predice 0,974 e si realizza 0,461. Nessuna probabilità viene pubblicata."
+  },
+  "confidence_threshold": null,
+  "confidence_threshold_note": "D7 disattivata (ADR-036): una soglia su una probabilità che non esiste sarebbe un filtro finto.",
+  "validation": {
+    "generated_at": "2026-08-24T20:11:07.297674+00:00",
+    "train_weeks": 156,
+    "test_weeks": 52,
+    "ic_bar": 0.03,
+    "verdict_20d": {
+      "horizon": 20,
+      "H1_momentum_ic_positive": true,
+      "H1_value": 0.0010032055098588843,
+      "H1_t": 0.08182605614388905,
+      "H2_logistic_beats_momentum_brier": false,
+      "H2_logistic_brier": 0.2638107801774961,
+      "H2_momentum_brier": 0.25102510434893827,
+      "H3_tmb_net_positive_both_halves": false,
+      "H3_best_model": "ridge",
+      "adoption_bar_passed": false,
+      "best_ic": 0.030808130827852782,
+      "best_brier": 0.25579735774729506,
+      "climatology_brier": 0.2500590428922457
+    },
+    "age_days": 0.0
+  },
+  "scenario": {
+    "scenario_id": "etf_top5",
+    "initial_cash": 10000.0,
+    "cash": 10000.0,
+    "equity": 10000.0,
+    "return_pct": 0.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.0,
+    "positions": [],
+    "last_processed": "2026-08-21 04:00:00+00:00",
+    "equity_points": 1,
+    "started_at": "2026-08-21 04:00:00+00:00"
+  },
+  "benchmarks": {
+    "start": "2026-08-21 04:00:00+00:00",
+    "initial_capital": 10000.0,
+    "spy_buy_and_hold": null,
+    "equal_weight": null
+  },
+  "freshness": [
+    {
+      "name": "SPY",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "TECH",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "ENERGY",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "FINANCE",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "HEALTH",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "INDUSTRIAL",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "UTILITIES",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "STAPLES",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "DISCRETIONARY",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "MATERIALS",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "REALESTATE",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "COMMSERV",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "SEMIS",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "URANIUM",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "CLEANENERGY",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "OILGAS",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "DEFENSE",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "ROBOTICS",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "CYBER",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "BIOTECH",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    },
+    {
+      "name": "GOLD_MINERS",
+      "last_timestamp": "2026-08-21 04:00:00+00:00",
+      "age_days": 3.71,
+      "is_fresh": true
+    }
+  ],
+  "scoreboard": [
+    {
+      "horizon_days": 20,
+      "n_resolved": 0,
+      "n_pending": 20,
+      "selected": {
+        "n": 0,
+        "hit_rate": null,
+        "mean_excess": null
+      },
+      "universe": {
+        "n": 0,
+        "hit_rate": null,
+        "mean_excess": null
+      },
+      "caveat": "Conteggi grezzi, non un verdetto: la regola è già stata misurata come indistinguibile dal caso, quindi un hit rate sopra 0,5 su poche settimane è compatibile con la fortuna."
+    },
+    {
+      "horizon_days": 60,
+      "n_resolved": 0,
+      "n_pending": 20,
+      "selected": {
+        "n": 0,
+        "hit_rate": null,
+        "mean_excess": null
+      },
+      "universe": {
+        "n": 0,
+        "hit_rate": null,
+        "mean_excess": null
+      },
+      "caveat": "Conteggi grezzi, non un verdetto: la regola è già stata misurata come indistinguibile dal caso, quindi un hit rate sopra 0,5 su poche settimane è compatibile con la fortuna."
+    }
+  ],
+  "ledger": {
+    "path": "data/predictions/etf_ranking.jsonl",
+    "rows": 40
+  },
+  "disclaimer": "Portafoglio VIRTUALE (paper trading): nessun denaro reale, nessuna raccomandazione di acquisto o vendita. La regola di selezione è stata misurata come NON predittiva (ADR-034): serve a validare l'infrastruttura di misura, non a generare rendimento."
+}
