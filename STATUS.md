@@ -103,43 +103,40 @@ baseline. Nessun risultato empirico qui — WP2 costruisce il dataset, non lo in
   `build_feature_panel` (19 feature causali), `build_targets` (excess return e
   segno a 20/60 sedute vs SPY), `assemble` (join + regime 4-stati per data),
   `coverage_report`, `dataset_metadata`. Long-form `(date, symbol)`.
-- **`src/ingestion/tier1/build_etf_dataset.py`**: CLI che scarica i 20
-  `SECTOR_ETFS` + SPY da Yahoo dal 2005 e scrive `data/processed/etf_panel.parquet`
-  + `etf_panel_meta.json` (gitignored: derivati, ricostruibili dal comando).
+- **`src/ingestion/tier1/build_etf_dataset.py`**: CLI che scarica i 20 `SECTOR_ETFS`
+  + SPY da Yahoo dal 2005 e scrive `data/processed/etf_panel.parquet` +
+  `etf_panel_meta.json` (gitignored: derivati, ricostruibili dal comando).
 - **`etf-dataset.yml`, solo `workflow_dispatch`**: la sandbox non raggiunge Yahoo,
-  quindi la validazione live della CLI passa da qui. Non è un cron: il panel non
-  si committa, e il runner ricorrente è di WP4. Dispatchabile solo dopo il merge
-  (vedi Prossime attività).
+  quindi la validazione live della CLI passa da qui (dispatchabile solo post-merge,
+  vedi sotto). Non è un cron: il panel non si committa, il runner ricorrente è WP4.
 - **24 test offline**, sintetici e deterministici. Il test che conta è quello di
   **causalità**: ricostruito il panel su una storia troncata a `t`, ogni feature
-  fino a `t` è identica a quella del panel completo. Un secondo test verifica il
+  fino a `t` è identica a quella del panel completo. Un secondo verifica il
   contrario sul target (perturbare una barra futura *deve* muovere
   `excess_ret_20`): così il primo non passa per un errore di confronto.
 
 **Semplificazioni dichiarate** (nel docstring del modulo, non nascoste): prezzi
 `auto_adjust` ⇒ rendimenti di fatto **total return** (standard per la forza
-relativa, ma un quote price-only non li replica); universo = ETF **esistenti
-oggi** ⇒ survivorship residuo basso ma non nullo, di direzione ottimistica;
-storie corte (XLC 2018, BOTZ/CIBR ~2016, URA 2010, ICLN 2008, ITA 2006) **tenute**
-con NaN sulle finestre lunghe, perché escluderle rimodellerebbe l'universo nel
-tempo.
+relativa, ma un quote price-only non li replica); universo = ETF **esistenti oggi**
+⇒ survivorship residuo basso ma non nullo, di direzione ottimistica; storie corte
+(XLC 2018, BOTZ/CIBR ~2016, URA 2010, ICLN 2008, ITA 2006) **tenute** con NaN sulle
+finestre lunghe, perché escluderle rimodellerebbe l'universo nel tempo.
 
 **Da sapere alla prossima sessione**:
 
 - `pyright: strict` puro non è raggiungibile su un modulo pandas-heavy: `pandas`
   non ha `py.typed`, quindi in strict *ogni* membro pandas diventa unknown (74
-  errori, nessuno imputabile a questo codice; anche i moduli strict esistenti,
-  es. `src/ingestion/snapshot.py`, ne portano). Il modulo è `strict` **meno le
-  quattro regole** che derivano solo da quella mancanza. Per lo strict pieno
+  errori, nessuno imputabile a questo codice; li portano anche i moduli strict
+  esistenti, es. `src/ingestion/snapshot.py`). Il modulo è `strict` **meno le
+  quattro regole** che nascono solo da quella mancanza. Per lo strict pieno
   servirebbe `pandas-stubs` come dip. dev: decisione da ADR, non da WP.
 - `outperform_h` è il **segno stretto** dell'excess (1.0 se > 0), NaN dove
   l'excess è NaN: la coda non realizzata è dato mancante, non una perdita. D4
   resta da confermare, ma il dataset espone entrambe le forme (regressiva e
   binaria) a 20 e 60 sedute → WP3 non è bloccato.
 - **Fuori perimetro, annotato e non toccato** (§0.2 del piano): `combine_regimes`
-  perde la prima barra della serie (il classificatore di volatilità non ha un
-  rendimento lì). `assemble` la etichetta `unknown` — corretto, ma è
-  un'asimmetria da conoscere.
+  perde la prima barra (il classificatore di volatilità non ha un rendimento lì).
+  `assemble` la etichetta `unknown` — corretto, ma è un'asimmetria da conoscere.
 
 ## Blocchi e attese
 
@@ -162,12 +159,11 @@ tempo.
 
 ## Prossime attività
 
-1. **Far girare `etf-dataset` una volta, subito dopo il merge di WP2** e leggere
-   il report di copertura nel job summary: è la prima verifica che i 20 ticker +
-   SPY scarichino davvero e che le storie corte compaiano dove attese. ⚠️ GitHub
-   espone `workflow_dispatch` **solo per i file già sul branch di default**:
-   dal branch della PR il dispatch risponde 404, quindi il primo run è
-   necessariamente post-merge.
+1. **Far girare `etf-dataset` subito dopo il merge di WP2** e leggere il report di
+   copertura nel job summary: è la prima verifica che i 20 ticker + SPY scarichino
+   davvero e che le storie corte compaiano dove attese. ⚠️ GitHub espone
+   `workflow_dispatch` **solo per i file già sul branch di default** (dal branch
+   della PR risponde 404), quindi il primo run è necessariamente post-merge.
 2. **WP1** — ADR-033 (`Proposed`) sul partizionamento mensile degli storici, poi
    implementazione **solo dopo l'ok utente su D8**. È l'intervento che ferma la
    crescita da 7,5 GiB di blob riscritti.
