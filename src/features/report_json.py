@@ -15,6 +15,7 @@ offline.
 from __future__ import annotations
 
 import json
+import math
 from pathlib import Path
 from typing import Any, cast
 
@@ -157,8 +158,35 @@ def equity_report_dict(
     }
 
 
+def json_safe(value: Any) -> Any:
+    """Recursively replace non-finite floats with ``None``.
+
+    ``json.dumps`` writes NaN and Infinity as bare ``NaN``/``Infinity`` tokens.
+    Python reads them back, but they are **not** valid JSON: ``JSON.parse``
+    throws, so one undefined metric takes a whole dashboard view offline with
+    no error message. It happened — the Spearman IC of the climatology ranker
+    is undefined (a constant has no variance) and that single NaN made
+    ``ranking_backtest.json`` unreadable in the browser. ``null`` is the
+    honest encoding of "not defined", and it is what this module's docstring
+    promised from the start.
+    """
+    if isinstance(value, float):
+        return None if math.isnan(value) or math.isinf(value) else value
+    if isinstance(value, dict):
+        return {str(k): json_safe(v) for k, v in cast("dict[Any, Any]", value).items()}
+    if isinstance(value, (list, tuple)):
+        return [json_safe(v) for v in cast("list[Any]", list(value))]
+    return value
+
+
 def write_report_json(payload: dict[str, Any], path: str | Path) -> None:
-    """Write a payload as pretty, UTF-8 JSON (creating parent dirs)."""
+    """Write a payload as pretty, UTF-8 JSON (creating parent dirs).
+
+    ``allow_nan=False`` is the guard: after ``json_safe`` nothing non-finite
+    should be left, and if a future payload smuggles one in we want a loud
+    ``ValueError`` here rather than a silently broken dashboard tab.
+    """
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    text = json.dumps(json_safe(payload), indent=2, ensure_ascii=False, allow_nan=False)
+    p.write_text(text + "\n", encoding="utf-8")

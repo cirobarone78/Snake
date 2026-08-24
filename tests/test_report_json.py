@@ -115,3 +115,44 @@ def test_write_report_json_is_valid_and_roundtrips(tmp_path: Path) -> None:
     loaded = json.loads(out.read_text(encoding="utf-8"))
     assert loaded["title"] == payload["title"]
     assert loaded["items"][0]["rank"] == 1
+
+
+def test_write_report_json_encodes_non_finite_as_null(tmp_path: Path) -> None:
+    """NaN/Infinity must land as JSON ``null``, never as bare ``NaN`` tokens.
+
+    A bare ``NaN`` is valid Python and invalid JSON: the browser's
+    ``JSON.parse`` throws and the dashboard view goes silently blank. This
+    caught a real one — the climatology ranker has no variance, so its
+    Spearman IC is undefined and it took the whole "Modello" view offline.
+    """
+    payload: dict[str, object] = {
+        "scalar": float("nan"),
+        "inf": float("inf"),
+        "neg_inf": float("-inf"),
+        "nested": {"values": [1.0, float("nan"), 3.0], "np": np.float64("nan")},
+        "fine": 0.5,
+    }
+    out = tmp_path / "payload.json"
+    write_report_json(payload, out)
+
+    text = out.read_text(encoding="utf-8")
+    assert "NaN" not in text
+    assert "Infinity" not in text
+    loaded = json.loads(text)  # strict: json.loads accepts NaN, so also assert above
+    assert loaded["scalar"] is None
+    assert loaded["inf"] is None
+    assert loaded["neg_inf"] is None
+    assert loaded["nested"]["values"] == [1.0, None, 3.0]
+    assert loaded["nested"]["np"] is None
+    assert loaded["fine"] == 0.5
+
+
+def test_committed_dashboard_payloads_are_strict_json() -> None:
+    """Every payload the dashboard fetches must parse under strict JSON rules."""
+    for path in sorted(Path("public/data").glob("*.json")):
+        text = path.read_text(encoding="utf-8")
+        json.loads(text, parse_constant=_reject_constant)
+
+
+def _reject_constant(name: str) -> float:
+    raise AssertionError(f"non-finite constant {name!r} in a committed payload")

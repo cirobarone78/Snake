@@ -539,8 +539,16 @@ riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
       niente probabilità nel ledger (la calibrazione ha fallito OOS) e **soglia
       D7 disattivata**, con la motivazione in **ADR-036** — il meccanismo resta
       testato per il giorno in cui un modello passerà la barra
-- [ ] **WP5** — Dashboard: viste "Opportunità" e "Modello". Probabilità e
-      incertezza, **mai** un "compra ora"
+- [x] **WP5** — Dashboard: viste "Opportunità" e "Modello", sul contratto dei
+      payload di WP4. Nessuna colonna di probabilità (i campi sono `null` per
+      ADR-036): la vista mostra la **classifica descrittiva** per momentum con
+      `selection_score`/`selection_rank`, banner di non-predittività sempre a
+      schermo, righe espandibili con lo stato osservato e gli esiti già risolti,
+      stato `stale` ed empty state espliciti. La vista "Modello" riporta il
+      verdetto ADR-034 testualmente, le metriche OOS per modello e metà, e la
+      **reliability table** con la banda in cui la logistica stimava 0,97 e
+      l'evento si verificava 0,46 — l'argomento visivo del perché le probabilità
+      non vengono pubblicate. Mai un "compra ora"
 - [ ] **WP6** — Event intelligence 🔒 *gated*: non parte finché l'utente non
       decide provider e budget LLM (D9). **ADR-035 resta riservata** a questo WP:
       WP4 ha preso ADR-036 proprio per non consumarla

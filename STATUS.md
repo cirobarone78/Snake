@@ -5,18 +5,19 @@
 > Chi riprende il lavoro (umano o agente) legge questo file per primo, e tiene
 > questo file **sotto le 200 righe**: se cresce, la cronaca si sposta in archivio.
 
-**Ultimo aggiornamento**: 2026-08-24 — WP4: paper portfolio settimanale + prediction ledger, sulla regola **non predittiva**
+**Ultimo aggiornamento**: 2026-08-24 — WP5: viste "Opportunità" e "Modello" in dashboard, senza probabilità
 
 ---
 
 ## Dove siamo
 
-- **Branch di lavoro**: `claude/wp4-paper-b9d6g9` — base `main` con PR #52, WP0,
-  **WP1** (#55/#59), **WP2** (#56) e **WP3** (#58) mergiati.
-- **Test**: 651 passati (`uv run pytest -q`), ruff pulito, pyright pulito sui
+- **Branch di lavoro**: `claude/wp5-dashboard-9vll2i` — base `main` con PR #52,
+  WP0, **WP1** (#55/#59), **WP2** (#56), **WP3** (#58) e **WP4** (#60) mergiati.
+- **Test**: 661 passati (`uv run pytest -q`), ruff pulito, pyright pulito sui
   moduli core, su `src/execution` e su `src/ingestion/news`.
-- **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**; WP0/WP1/WP2/WP3
-  chiusi, **WP4 implementato** (sotto), **il prossimo è WP5** (dashboard). Il piano operativo è
+- **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**; WP0→WP4
+  chiusi, **WP5 implementato** (sotto). Restano solo i WP gated (WP6 su D9, WP7
+  sui prerequisiti) e i filler WP-T/WP-N. Il piano operativo è
   [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md): è il riferimento per tutti
   i WP successivi, con decisioni pre-registrate D1–D12 e ipotesi H1–H3 scritte
   **prima** di qualunque backtest.
@@ -153,6 +154,53 @@ percorso felice è coperto solo dai test end-to-end offline (feed stub); il
 fail-safe invece è stato eseguito davvero (fetch fallito ⇒ payload `stale`, zero
 righe, zero ordini). **Il primo run vero va lanciato a mano** su `etf-ranking`.
 
+## Fase 9 — WP5: viste "Opportunità" e "Modello" (fatto)
+
+La dashboard ora dice, in italiano e senza scorciatoie, ciò che WP3 ha misurato.
+
+- **"Opportunità"** (nuovo tab, `public/index.html` + `app.js` + `styles.css`):
+  tabella ordinabile su tutte le colonne, righe espandibili. **Nessuna colonna di
+  probabilità** — i campi sono `null` per contratto (ADR-036), quindi la
+  classifica è per `selection_score`/`selection_rank` (momentum relativo a 60
+  sedute) ed è etichettata **classifica descrittiva** ovunque. Il banner di
+  non-predittività (`non_predictive_notice` + `non_predictive_reason`) sta nel
+  flusso della pagina sopra la tabella, **non** in un tooltip: un test lo verifica.
+- **Riga espansa**: "probabilità stimata / rendimento atteso / volatilità attesa =
+  non disponibile" *dichiarato*, non omesso, con il perché; stato osservato
+  (momentum, percentile, vol 60g, prezzo, regime, età del dato, peso), fattori,
+  esiti già risolti di quell'ETF dal ledger, tre caveat.
+- **"Modello"** (stessa vista, sotto la tabella): verdetto ADR-034 **testuale**
+  (requisito vs esito), calibrazione non disponibile con la ragione, periodo e
+  finestra di addestramento, metriche OOS per modello con IC per metà, Brier e Δ
+  vs climatologia, e la **reliability table + grafico SVG**: la banda in cui la
+  logistica stimava **0,97** e l'evento si verificava **0,46** è evidenziata ed è
+  il motivo, scritto, per cui la dashboard non pubblica probabilità.
+- **Stati**: `status: "stale"` ⇒ banner "dati non aggiornati, nessun nuovo ranking
+  emesso" con la ragione; payload assente ⇒ empty state, **nessun crash**
+  (verificato con i payload intercettati a 404: zero errori JS).
+- **Verifica visiva**: Playwright/Chromium in tema chiaro, scuro e mobile 390px;
+  screenshot in `docs/screenshots/wp5/` e nella PR. Ordinamento, espansione da
+  tastiera e i selettori orizzonte/modello provati in un run interattivo.
+
+**Bug reale trovato dalla dashboard (fuori perimetro, ma bloccante)**:
+`public/data/ranking_backtest.json` conteneva **18 token `NaN`** — l'IC di
+Spearman della climatologia è indefinito (un ranker costante non ha varianza).
+`json.dumps` li scrive come `NaN`, che Python rilegge ma **non è JSON valido**:
+`JSON.parse` lanciava e l'intera vista "Modello" restava vuota, senza errore
+visibile. Corretto alla sorgente in `src/features/report_json.py` (`json_safe` +
+`allow_nan=False`, cioè la regola che il docstring del modulo prometteva già:
+«un campo NaN è `null`»), artefatto riscritto col writer corretto (18 righe
+`NaN` → `null`, nient'altro) e due test: uno sul writer, uno che rifiuta
+costanti non finite in *tutti* i payload committati.
+
+**Fuori perimetro, annotato e non fatto**: il piano chiedeva anche la
+"distribuzione storica in condizioni simili" da `conditional_outcomes` nella riga
+espansa. Quel dato **non esiste nel contratto di WP4** (`rotation_report.py` non
+lo produce) e aggiungerlo significherebbe estendere il payload e rigenerarlo:
+sarebbe un WP4-bis. La riga espansa mostra quindi lo stato osservato e gli esiti
+del ledger; la frequenza di base storica (0,489 a 20 sedute) resta scritta nei
+caveat come numero, non come distribuzione.
+
 ## Crescita del repository (risolta in WP1)
 
 `news.parquet` era riscritto **integralmente** a ogni run del cron (≈ 26 MB a
@@ -186,9 +234,10 @@ costo **limitato a un mese** che si azzera ogni primo del mese. La storia git no
   → ogni nuovo modulo di fetch si sviluppa **fixture-first**, validazione live
   delegata al workflow. WP2, WP3 e WP4 ne sono i casi.
 - **WP7 (azioni)** gated su prerequisiti misurabili (piano §5).
-- **Questo file è a 238 righe, sopra il tetto di 200** che si è dato in WP0. In
-  WP4 sono già state spostate in archivio la narrativa della crescita repo e la
-  validazione live di WP2 (−50 righe), ma WP3 e WP4 hanno aggiunto risultati veri.
+- **Questo file è sopra il tetto di 200 righe** che si è dato in WP0 (WP5 ne ha
+  aggiunte ~45). In WP4 sono già state spostate in archivio la narrativa della
+  crescita repo e la validazione live di WP2 (−50 righe), ma WP3, WP4 e WP5
+  hanno aggiunto risultati veri.
   Il prossimo giro di compressione tocca a "Risultati empirici consolidati": le
   voci pre-Fase 9 (sentiment, cicli, DCA, fondamentali) sono tutte già in ADR e
   report, e possono diventare una riga con link. **Non** si comprimono cancellando
@@ -204,11 +253,11 @@ costo **limitato a un mese** che si azzera ogni primo del mese. La storia git no
    orizzonti nel ledger, 5 ordini pendenti nello scenario `etf_top5`, payload con
    `status: "ok"`. Un `status: "stale"` al primo colpo va letto come guasto del
    feed, non come bug della regola.
-2. **WP5** — viste "Opportunità" e "Modello" in dashboard, sui payload di WP4
-   (contratto e test di schema già scritti). La vista "Modello" deve mostrare un
-   esito **negativo** e dirlo chiaramente: `predictive: false`,
-   `adoption_bar.passed: false` e i campi di probabilità `null` sono già nel
-   payload apposta.
+2. **Rivedere le viste WP5 con dati veri**: oggi la classifica gira sul payload
+   del primo run e il ledger non ha ancora esiti risolti, quindi "Esiti delle
+   classifiche già emesse" e lo scoreboard forward sono vuoti per costruzione.
+   Vanno riguardati dopo ~4 settimane di run, quando le prime righe a 20 sedute
+   si chiudono.
 3. **Osservare il primo run del cron `news-history`**: deve riscrivere solo
    `news_2026-08.parquet`. È l'unica verifica di WP1 non fattibile offline.
 4. **Filler non bloccanti**: WP-T (debito typing su `src/ingestion/`) e WP-N
@@ -218,7 +267,7 @@ costo **limitato a un mese** che si azzera ogni primo del mese. La storia git no
 
 ```bash
 uv sync --frozen
-uv run pytest -q                      # 651 test
+uv run pytest -q                      # 661 test
 uv run ruff check src tests
 uv run pyright src/backtest src/features src/models src/execution
 uv run python -m src.ingestion.tier1.build_etf_dataset     # panel WP2 (Yahoo: gira in CI)
