@@ -23,6 +23,7 @@
 - Sezione "Ripresa prossima sessione" del 2026-05-30 (ormai storica)
 - Cronaca completa delle sessioni: 2026-05-28 → 2026-08-24
 - Sezioni "Cosa è in corso" / "Prossimo step" / "Note per la prossima sessione"
+- Tabella della crescita del repository misurata in WP0 (spostata qui in WP2)
   così com'erano, con le loro date
 
 ---
@@ -1558,3 +1559,26 @@ Hook empirici concreti da Fase 1 che vincolano il design:
   avere serie storiche di gas / dominance prima di Fase 2), basta
   schedulare i fetch (cron locale, GitHub Actions, ecc.). Pattern
   pronto via ADR-022
+
+---
+
+## Crescita del repository — misura di WP0 (2026-08-24)
+
+> Spostata qui da `STATUS.md` durante WP2, per rispettarne il limite di 200
+> righe. La stessa tabella è in **ADR-032**.
+
+Storia completa, 812 commit su `main`, di cui **676 (83%) commit automatici dei
+cron**. Pack: **1,17 GiB**; contenuto blob non compresso: **7 727 MiB** su 2 927 blob.
+
+| Path | Blob distinti | MiB cumulati | % del totale |
+|---|---:|---:|---:|
+| `data/news_history/news.parquet` | 479 | 7 532,7 | **97,5%** |
+| `public/data/events.json` | 473 | 131,5 | 1,7% |
+| `data/category_history/categories_history.parquet` | 86 | 24,7 | 0,3% |
+| `public/data/market_series.json` | 81 | 16,5 | 0,2% |
+| `STATUS.md` | 71 | 2,9 | 0,04% |
+| tutto il resto | — | ~19 | 0,2% |
+
+Un solo file spiega il 97,5% del peso: `news.parquet` è riscritto **integralmente**
+a ogni run del cron (479 volte dal 2026-05-30), oggi ≈ 26 MB a copia. La tabella
+è riportata anche in **ADR-032** ed è il contesto da citare nell'**ADR-033** (WP1).

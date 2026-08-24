@@ -520,9 +520,11 @@ riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
       API invariata per i consumatori), migrazione one-shot delle 50 129 righe in
       92 partizioni. Blob riscritto per run del cron: −77% oggi, −87% in media
       sui prossimi 30 giorni, e soprattutto **limitato** invece che crescente
-- [ ] **WP2** — Dataset ETF point-in-time: `SPY` nel registry asset,
-      `src/features/etf_dataset.py` (feature causali, target excess return 20/60
-      sedute vs SPY, regime da prezzi), CLI riproducibile
+- [x] **WP2** — Dataset ETF point-in-time: `SPY` nel registry asset,
+      `src/features/etf_dataset.py` (19 feature causali, target excess return
+      20/60 sedute vs SPY, regime 4-stati da soli prezzi), CLI riproducibile
+      `src/ingestion/tier1/build_etf_dataset.py` + workflow `etf-dataset`
+      (manuale) per la validazione live
 - [ ] **WP3** — Baseline di ranking, validazione e calibrazione: walk-forward
       **con embargo/purging**, probabilità calibrate (isotonic sul solo train),
       risposta onesta a H1–H3, **ADR-034** con le ipotesi verbatim

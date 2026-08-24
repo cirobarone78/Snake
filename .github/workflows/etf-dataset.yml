@@ -1,0 +1,71 @@
+name: etf-dataset
+
+# WP2 (ADR-032): build the point-in-time ETF panel from Yahoo and publish the
+# coverage report. Manual only, by design:
+#
+# - the panel is **derived data** (gitignored, rebuildable from this command), so
+#   there is nothing to commit and no reason to run it on a schedule yet — the
+#   recurring runner belongs to WP4, together with the decision it feeds;
+# - the development sandbox cannot reach Yahoo (`fc.yahoo.com` is blocked by the
+#   egress allowlist), so this workflow *is* the live validation of the CLI.
+#
+# The panel is uploaded as an artifact so a later job (or a human) can inspect
+# the build without re-fetching 20 years of bars.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: etf-dataset-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Build the ETF panel
+        run: uv run python -m src.ingestion.tier1.build_etf_dataset
+
+      # The coverage table is the thing a human reads to decide whether to trust
+      # the build, so it goes in the job summary, not only in the log.
+      - name: Coverage report
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          meta = json.loads(pathlib.Path("data/processed/etf_panel_meta.json").read_text())
+          print("## ETF panel\n")
+          print(f"- righe: **{meta['rows']}** · simboli: **{meta['n_symbols']}** "
+                f"· periodo: {meta['date_start']} -> {meta['date_end']}")
+          print(f"- schema `{meta['schema_hash']}` (v{meta['schema_version']}) "
+                f"· benchmark {meta['benchmark']} · orizzonti {meta['horizons']}\n")
+          print("| simbolo | righe | da | a | feature mancanti |")
+          print("|---|---:|---|---|---:|")
+          for row in meta["coverage"]:
+              print(f"| {row['symbol']} | {row['rows']} | {row['first_date']} "
+                    f"| {row['last_date']} | {row['missing_feature_pct']:.1f}% |")
+          PY
+
+      - name: Upload panel
+        uses: actions/upload-artifact@v4
+        with:
+          name: etf-panel
+          path: |
+            data/processed/etf_panel.parquet
+            data/processed/etf_panel_meta.json
+          retention-days: 14
