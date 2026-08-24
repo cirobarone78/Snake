@@ -5,18 +5,18 @@
 > Chi riprende il lavoro (umano o agente) legge questo file per primo, e tiene
 > questo file **sotto le 200 righe**: se cresce, la cronaca si sposta in archivio.
 
-**Ultimo aggiornamento**: 2026-08-24 — sessione WP2 (dataset ETF point-in-time)
+**Ultimo aggiornamento**: 2026-08-24 — sessioni WP1 (storage partizionato) e WP2 (dataset ETF point-in-time)
 
 ---
 
 ## Dove siamo
 
-- **Branch di lavoro**: `claude/wp2-dataset-etf-6m03fa` — base `main` = `66c9eae`
-  (WP0 e la PR #52 mergiati).
-- **Test**: 507 passati (`uv run pytest -q`), ruff pulito, pyright pulito su
-  `src/backtest src/features src/models`.
-- **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**, work package
-  **WP2** (questa sessione); WP1 non è ancora partito. Il piano operativo è
+- **Branch di lavoro**: `claude/wp2-dataset-etf-6m03fa` (PR #56) — base `main`
+  con la PR #52, WP0 e **WP1** già mergiati.
+- **Test**: 517 passati (`uv run pytest -q`), ruff pulito, pyright pulito sui
+  moduli core e su `src/ingestion/news`.
+- **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**; WP0 e WP1
+  chiusi, **WP2** in PR (questa). Il piano operativo è
   [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md): è il riferimento per tutti
   i WP successivi, con decisioni pre-registrate D1–D12 e ipotesi H1–H3 scritte
   **prima** di qualunque backtest.
@@ -138,11 +138,35 @@ finestre lunghe, perché escluderle rimodellerebbe l'universo nel tempo.
   perde la prima barra (il classificatore di volatilità non ha un rendimento lì).
   `assemble` la etichetta `unknown` — corretto, ma è un'asimmetria da conoscere.
 
+## Crescita del repository (risolta in WP1)
+
+Un solo file spiega il 97,5% del peso: `news.parquet` era riscritto
+**integralmente** a ogni run del cron (479 volte dal 2026-05-30), ≈ 26 MB a copia.
+Il costo per run **cresceva con la storia**: crescita quadratica nel tempo.
+
+**Risolto in WP1** (ADR-033, D8 confermata): la storia news è partizionata per
+mese di pubblicazione (`data/news_history/news_YYYY-MM.parquet`), il cron
+riscrive **solo le partizioni toccate** e i mesi passati diventano blob
+immutabili. Migrazione one-shot verificata: 50 129 righe, schema e hash per
+colonna identici, indice identico; 92 partizioni. La storia git **non** è stata
+riscritta — l'1,17 GiB già speso resta, la decisione vale sul futuro.
+
+| Blob riscritto per run del cron | Prima | Dopo | Δ |
+|---|---:|---:|---:|
+| oggi (24 ago, partizione quasi piena) | 26,66 MB | 6,14 MB | −77,0% |
+| media sui prossimi 30 giorni | ~31,4 MB | ~4,0 MB | −87,2% |
+| proiezione a 12 mesi (~8 MB/mese) | ~119 MB | ~4 MB | −96,6% |
+
+Il punto non è la percentuale ma la forma: il costo del monolite cresce senza
+limite, quello della partizione è **limitato a un mese di news e si azzera ogni
+primo del mese**.
+
 ## Blocchi e attese
 
-- **U2 — conferma utente su D4, D7, D8** (`docs/PIANO_SVILUPPO.md` §2): D8
-  (partizionamento mensile dei parquet) blocca l'**implementazione** di WP1;
-  l'ADR-033 può nascere `Proposed` senza attendere. D4/D7 servono a WP3/WP4.
+- **U2 — conferma utente su D4 e D7** (`docs/PIANO_SVILUPPO.md` §2): D8
+  **risolta** (partizionamento mensile confermato, ADR-033 `Accepted`, WP1
+  chiuso). D4 (target primario) e D7 (soglia di confidenza) servono a WP3/WP4 e
+  restano da confermare.
 - **U3 — D9 (provider e budget LLM)**: WP6 resta **gated**, non si parte.
 - **U5 — allowlist `api.llama.fi`**: senza, il tab DCA misura *se* esiste un
   meccanismo di cattura del valore, non *quanto* valga. Il client DefiLlama non è
@@ -156,6 +180,16 @@ finestre lunghe, perché escluderle rimodellerebbe l'universo nel tempo.
   **fixture-first**, validazione live delegata al workflow.
 - **WP7 (azioni)** gated su prerequisiti misurabili (piano §5): nessun codice
   speculativo prima.
+- **`category_history` NON partizionato** (annotato da WP1, fuori perimetro).
+  `categories_history.parquet` ha la stessa dinamica ma pesa lo 0,3% del totale,
+  ed è scritto dal `write_snapshot` generico di ADR-022 — condiviso con macro,
+  settori, CoinGecko ed Etherscan. Partizionarlo significa cambiare l'API comune
+  e i suoi sei call site: non è il "se banale" previsto dal piano. Se un giorno
+  quel file diventa un problema, si applica lo stesso schema a `write_snapshot`
+  con una ADR dedicata.
+- **Verifica live di WP1 rinviata al primo run del cron post-merge**: che il
+  workflow riscriva davvero solo la partizione corrente si può osservare solo in
+  Actions. Offline è coperto da 14 test.
 
 ## Prossime attività
 
@@ -164,9 +198,9 @@ finestre lunghe, perché escluderle rimodellerebbe l'universo nel tempo.
    davvero e che le storie corte compaiano dove attese. ⚠️ GitHub espone
    `workflow_dispatch` **solo per i file già sul branch di default** (dal branch
    della PR risponde 404), quindi il primo run è necessariamente post-merge.
-2. **WP1** — ADR-033 (`Proposed`) sul partizionamento mensile degli storici, poi
-   implementazione **solo dopo l'ok utente su D8**. È l'intervento che ferma la
-   crescita da 7,5 GiB di blob riscritti.
+2. **Osservare il primo run del cron `news-history`**: deve riscrivere solo
+   `news_2026-08.parquet` (il `git status --porcelain` delle partizioni è ora
+   stampato nel log del workflow). È l'unica verifica di WP1 non fattibile offline.
 3. **WP3** — walk-forward **con embargo/purging** (`src/backtest/splits.py` oggi
    non ce l'ha), baseline di ranking, calibrazione, risposta onesta a H1–H3.
    Parte dal panel di WP2: `build_etf_dataset` è il suo input riproducibile.
@@ -179,7 +213,7 @@ finestre lunghe, perché escluderle rimodellerebbe l'universo nel tempo.
 
 ```bash
 uv sync --frozen
-uv run pytest -q                      # 507 test
+uv run pytest -q                      # 517 test
 uv run ruff check src tests
 uv run pyright src/backtest src/features src/models
 uv run python -m src.ingestion.tier1.build_etf_dataset   # WP2 (richiede Yahoo: in CI)
@@ -194,6 +228,6 @@ I notebook richiedono prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 - **Cronaca completa delle sessioni 2026-05-28 → 2026-08-24**:
   [`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md)
 - **Piano dei work package**: [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md)
-- **Decisioni**: `DECISIONS.md` (ADR-001 → ADR-032) — **ADR-033/034/035 sono
-  riservate** ai WP1/WP3/WP6: non usarle per altro
+- **Decisioni**: `DECISIONS.md` (ADR-001 → ADR-033) — **ADR-034/035 sono
+  riservate** ai WP3/WP6: non usarle per altro
 - **Domande aperte**: `OPEN_QUESTIONS.md` · **Fasi**: `ROADMAP.md`
