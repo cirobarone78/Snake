@@ -127,23 +127,35 @@ quattro regole** che ne derivano. Per lo strict pieno servirebbe `pandas-stubs`
 come dip. dev — da ADR, non da WP.
 ## Crescita del repository (risolta in WP1)
 
-Un solo file spiegava il 97,5% del peso (misura WP0, tabella in ADR-032 e in
-archivio): `news.parquet` riscritto **integralmente** a ogni run del cron (479
-volte dal 2026-05-30), ≈ 26 MB a copia, con costo per run **crescente con la
-storia**. **Risolto in WP1** (ADR-033, D8 confermata): partizionamento per mese
-(`news_YYYY-MM.parquet`), il cron riscrive **solo le partizioni toccate**, i mesi
-passati diventano blob immutabili. Migrazione one-shot verificata: 50 129 righe,
-schema/hash per colonna e indice identici, 92 partizioni. La storia git **non** è
-stata riscritta: l'1,17 GiB già speso resta, la decisione vale sul futuro.
+Un solo file spiega il 97,5% del peso: `news.parquet` era riscritto
+**integralmente** a ogni run del cron (479 volte dal 2026-05-30), ≈ 26 MB a copia.
+Il costo per run **cresceva con la storia**: crescita quadratica nel tempo.
 
-| Blob riscritto per run del cron | Prima | Dopo | Δ |
+**Risolto in WP1** (ADR-033, D8 confermata): la storia news è partizionata per
+mese di pubblicazione (`data/news_history/news_YYYY-MM.parquet`), il cron
+riscrive **solo le partizioni toccate**, i mesi passati sono blob immutabili. La
+storia git **non** è stata riscritta — l'1,17 GiB già speso resta.
+
+⚠️ **Il partizionamento da solo non bastava.** Il primo run reale del cron
+(`bc12ad2`) ha riscritto 20 partizioni su 92 e 26,86 MB: **−0,4%**, zero
+risparmio. Causa: i feed datano le notizie al giorno, quindi 88 righe su 101
+condividono il `published`; `sort_index()` è stabile e su quelle righe conservava
+l'ordine di *arrivo*, che cambia a ogni run per via del dedup `keep="last"`.
+Stesse righe, byte diversi, blob nuovo ogni volta. Corretto con un ordine di
+scrittura totale `(published, item_id)`, determinato dal contenuto.
+
+| Run del cron | Partizioni riscritte | Byte | Δ vs monolite |
 |---|---:|---:|---:|
-| oggi (24 ago, partizione quasi piena) | 26,66 MB | 6,14 MB | −77,0% |
-| media sui prossimi 30 giorni | ~31,4 MB | ~4,0 MB | −87,2% |
-| proiezione a 12 mesi (~8 MB/mese) | ~119 MB | ~4 MB | −96,6% |
+| prima della correzione (misurato) | 20 su 92 | 26,86 MB | **−0,4%** |
+| rifetch puro, nessuna storia nuova | 0 | 0 MB | −100% |
+| +120 storie nuove (volume reale/3h) | 1 | 6,28 MB | **−76,6%** |
 
 Il punto non è la percentuale ma la forma: il costo del monolite cresce senza
-limite, quello della partizione è **limitato a un mese e si azzera il primo**.
+limite, quello della partizione è **limitato a un mese di news e si azzera ogni
+primo del mese**. Lezione trasferibile: un'ottimizzazione che si appoggia alla
+deduplicazione dei contenuti richiede una **serializzazione deterministica**, e
+questo non lo si vede dal codice — i 14 test iniziali confrontavano i byte solo
+su input identici e passavano tutti.
 
 ## Blocchi e attese
 

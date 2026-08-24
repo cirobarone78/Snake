@@ -23,8 +23,9 @@ def append_news(frame: pd.DataFrame, path: str | Path) -> pd.DataFrame:
 
     On re-fetch the same story (same ``item_id``) is kept once. The *newly
     fetched* version wins (``keep="last"``) so an updated title/summary refreshes
-    in place. The merged history is sorted ascending by ``published`` and
-    written back. Returns the merged frame.
+    in place. The merged history is written back in the canonical order of
+    ``sort_canonical`` — byte-stable, so an unchanged file stays identical.
+    Returns the merged frame.
 
     An empty ``frame`` is a no-op: the existing history (if any) is returned
     unchanged, never truncated.
@@ -42,8 +43,34 @@ def append_news(frame: pd.DataFrame, path: str | Path) -> pd.DataFrame:
         combined = frame
 
     combined = combined[~combined["item_id"].duplicated(keep="last")]
-    combined = combined.sort_index()
+    combined = sort_canonical(cast("pd.DataFrame", combined))
 
     path.parent.mkdir(parents=True, exist_ok=True)
     combined.to_parquet(path)
     return cast("pd.DataFrame", combined)
+
+
+def sort_canonical(frame: pd.DataFrame) -> pd.DataFrame:
+    """Order rows by ``(published, item_id)`` — a total order, independent of arrival.
+
+    Sorting by ``published`` alone is *not* enough, and the difference is not
+    cosmetic. Feeds date most headlines to the day, so the vast majority of rows
+    in a partition share a timestamp (measured: 88 of 101 in one real month).
+    ``sort_index`` is stable, so those tied rows keep whatever order the input
+    happened to have — and the input order changes on every run, because
+    deduplication with ``keep="last"`` moves each re-fetched story to the end.
+
+    Same rows, different byte layout, every single time. That silently defeated
+    the whole point of ADR-033: the first cron run after partitioning rewrote 20
+    of 92 partitions and 26.9MB, 17 of them with **zero** row changes. Adding
+    ``item_id`` (unique) to the sort key makes the file a pure function of its
+    contents, so an unchanged partition serialises to identical bytes and git
+    stores no new blob.
+    """
+    if frame.empty:
+        return frame
+    index_name = frame.index.name
+    ordered = frame.reset_index().sort_values(
+        ["published", "item_id"], kind="stable", ignore_index=True
+    )
+    return cast("pd.DataFrame", ordered.set_index(index_name))

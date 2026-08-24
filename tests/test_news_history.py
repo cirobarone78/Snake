@@ -18,6 +18,7 @@ from src.ingestion.news.history import (
     to_compact,
     update_history,
 )
+from src.ingestion.news.persist import sort_canonical
 
 
 def _item(
@@ -156,8 +157,12 @@ def test_migration_preserves_rows_and_schema(tmp_path: Path) -> None:
     assert len(migrated) == len(compact)
     assert list(migrated.columns) == list(compact.columns)
     # Column-by-column round-trip: no row silently mangled by the split.
+    # Compare in the canonical order the partitions are written in — sorting the
+    # expectation by ``published`` alone would leave same-day rows tied and the
+    # comparison would depend on input order, which is exactly what we removed.
+    canonical = sort_canonical(compact)
     for column in compact.columns:
-        expected = compact.sort_index()[column].reset_index(drop=True)
+        expected = canonical[column].reset_index(drop=True)
         actual = migrated[column].reset_index(drop=True)
         pd.testing.assert_series_equal(expected, actual, check_names=False)
 
@@ -177,3 +182,79 @@ def test_legacy_monolith_is_still_readable_alongside_partitions(tmp_path: Path) 
         LEGACY_FILENAME,
         "news_2025-02.parquet",
     ]
+
+
+# --- ADR-033: byte stability (regressione dal primo run reale del cron) ------
+
+
+def _tied_item(item_id: str, day: int, month: int = 1) -> NewsItem:
+    """A headline dated to the day — the shape feeds actually deliver."""
+    return NewsItem(
+        item_id=item_id,
+        source="test",
+        title=f"Headline {item_id}",
+        url=f"https://example.com/{item_id}",
+        published=datetime(2025, month, day, 7, 0, tzinfo=UTC),
+        summary="dropped by to_compact",
+    )
+
+
+def test_refetch_in_different_order_leaves_bytes_identical(tmp_path: Path) -> None:
+    """The bug that made the first live run rewrite 26.9MB.
+
+    Feeds date most headlines to the day, so rows tie on ``published``, and the
+    dedup moves each re-fetched story to the end of the frame. With a sort on
+    ``published`` alone — stable, hence input-order-preserving — the same rows
+    serialised differently on every run, so git stored a new blob every time and
+    partitioning saved nothing. The order must come from the content, not from
+    the order of arrival.
+    """
+    items = [_tied_item(f"i{n}", 5) for n in range(12)]
+    update_history(news_to_frame(items), tmp_path)
+    before = partition_path(tmp_path, "2025-01").read_bytes()
+
+    # Same stories, arriving in a different order — as a feed re-serves them.
+    reshuffled = [items[7], items[0], items[11], *items[1:7], *items[8:11]]
+    update_history(news_to_frame(reshuffled), tmp_path)
+
+    assert partition_path(tmp_path, "2025-01").read_bytes() == before
+
+
+def test_partial_refetch_leaves_bytes_identical(tmp_path: Path) -> None:
+    """A run that re-sees only *some* of a month's stories must not rewrite it."""
+    items = [_tied_item(f"i{n}", 5) for n in range(12)]
+    update_history(news_to_frame(items), tmp_path)
+    before = partition_path(tmp_path, "2025-01").read_bytes()
+
+    update_history(news_to_frame([items[9], items[2], items[5]]), tmp_path)
+
+    assert partition_path(tmp_path, "2025-01").read_bytes() == before
+
+
+def test_an_added_story_does_not_disturb_the_order_of_the_others(tmp_path: Path) -> None:
+    """A genuinely new row is appended; the rest keep their canonical places."""
+    items = [_tied_item(f"i{n}", 5) for n in range(6)]
+    update_history(news_to_frame(items), tmp_path)
+
+    update_history(news_to_frame([_tied_item("i9", 5)]), tmp_path)
+    history = read_news_history(tmp_path)
+
+    assert len(history) == 7
+    # (published, item_id) is a total order: same timestamp -> item_id decides.
+    assert list(history["item_id"]) == sorted(history["item_id"])
+
+
+def test_write_order_is_independent_of_arrival_order(tmp_path: Path) -> None:
+    """Two directories fed the same stories in different orders match byte for byte."""
+    items = [_tied_item(f"i{n}", 5) for n in range(10)]
+    forward, backward = tmp_path / "fwd", tmp_path / "bwd"
+
+    update_history(news_to_frame(items[:5]), forward)
+    update_history(news_to_frame(items[5:]), forward)
+    update_history(news_to_frame(items[5:][::-1]), backward)
+    update_history(news_to_frame(items[:5][::-1]), backward)
+
+    assert (
+        partition_path(forward, "2025-01").read_bytes()
+        == partition_path(backward, "2025-01").read_bytes()
+    )
