@@ -69,10 +69,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- docs/REPORT_RANKING.md public/data/ranking_backtest.json; then
+          # `git add` first, then check the INDEX: `git diff` alone ignores
+          # untracked files, so the very first run would silently commit nothing.
+          git add docs/REPORT_RANKING.md public/data/ranking_backtest.json
+          if git diff --cached --quiet -- docs/REPORT_RANKING.md public/data/ranking_backtest.json; then
             echo "Report unchanged; nothing to commit."
             exit 0
           fi
-          git add docs/REPORT_RANKING.md public/data/ranking_backtest.json
           git commit -m "data: refresh the ranking validation report [skip ci]"
           git push
