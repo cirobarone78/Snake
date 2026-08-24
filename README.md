@@ -1,26 +1,43 @@
 # Multifactor Market Analysis
 
-Sistema sperimentale di **analisi multifattoriale dei mercati finanziari** con
-focus sulle criptovalute. Integra dati di mercato, on-chain, macro, cicli e
-sentiment estratto da notizie (finanza, tecnologia, geopolitica, politica)
-per identificare segnali probabilistici sull'andamento di asset selezionati.
+> ⚠️ **Questa repository non contiene un gioco Snake.** Il nome è un residuo del
+> progetto che occupava la repo prima del 2026-05-28 (vedi ADR-001) e non ha
+> alcun legame con il contenuto attuale. Rinominarla è possibile ma non è una
+> priorità (ADR-032, D10).
 
-> **Stato**: Fase 1 ✅ completata (2026-05-29) — 5 data provider integrati,
-> 3 notebook EDA, snapshot history pattern (ADR-022), L1 educational chiuso
-> (10/10). Pronti per Fase 2 (baseline tecnica + backtesting walk-forward).
+Sistema sperimentale di **analisi multifattoriale dei mercati finanziari**, nato
+sulle criptovalute e oggi esteso agli ETF settoriali azionari. Integra dati di
+mercato, on-chain, macro, cicli e sentiment estratto da notizie (finanza,
+tecnologia, geopolitica, politica) per cercare segnali **probabilistici**
+sull'andamento di asset selezionati.
+
+È **ricerca quantitativa, non un trading bot**: il rigore metodologico viene
+prima dei risultati, e gli esperimenti falliti sono documentati quanto quelli
+riusciti — con la stessa evidenza.
+
+> **Stato (2026-08-24)**: Fasi 0–8 chiuse o in accumulo dati; nessun edge
+> predittivo direzionale daily trovato finora (il dettaglio misurato è in
+> [`STATUS.md`](./STATUS.md)). È in corso la **Fase 9 — ranking ETF
+> probabilistico** (ADR-032): probabilità calibrate di sovraperformance vs SPY a
+> 20/60 sedute. Il piano operativo, in work package autonomi con ipotesi e barra
+> di adozione scritte **prima** dei risultati, è in
+> [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md).
 
 ## Documentazione del progetto
 
 Prima di lavorare su questo progetto, leggere in quest'ordine:
 
 1. [`CLAUDE.md`](./CLAUDE.md) — istruzioni operative per ogni sessione
-2. [`STATUS.md`](./STATUS.md) — dove siamo ora
+2. [`STATUS.md`](./STATUS.md) — dove siamo ora (la cronaca delle sessioni
+   passate sta in [`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md))
 3. [`VISION.md`](./VISION.md) — obiettivo e principi
 4. [`ROADMAP.md`](./ROADMAP.md) — fasi e deliverable
 5. [`OPEN_QUESTIONS.md`](./OPEN_QUESTIONS.md) — decisioni ancora aperte
 6. [`DECISIONS.md`](./DECISIONS.md) — decisioni già prese (ADR)
-7. [`docs/data_sources_tier1.md`](./docs/data_sources_tier1.md) — inventario fonti dati
-8. [`education/`](./education/) — modulo didattico multi-livello
+7. [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md) — piano operativo della
+   Fase 9 in work package (uno per PR)
+8. [`docs/data_sources_tier1.md`](./docs/data_sources_tier1.md) — inventario fonti dati
+9. [`education/`](./education/) — modulo didattico multi-livello
 
 ## Quickstart
 
@@ -30,9 +47,9 @@ Richiede [`uv`](https://docs.astral.sh/uv/) installato.
 # Installazione dipendenze (Python 3.12 incluso, gestito da uv)
 uv sync
 
-# Test e lint (67/67 al 2026-05-29)
-uv run pytest -v
-uv run ruff check src/ tests/
+# Test e lint (483/483 al 2026-08-24)
+uv run pytest -q
+uv run ruff check src tests
 
 # Fetch dati Tier 1 (richiede network access, vedi sotto)
 # Yahoo: crypto + indici + commodity (default)
@@ -106,7 +123,8 @@ education/                 # modulo didattico (ADR-015)
   L2_intermedio/           # Smart Investor
   L3_avanzato/             # Quantitative Investor
   L4_esperto/              # Wolf of Wall Street / Professional
-docs/                      # documentazione tecnica (inventario fonti, ...)
+docs/                      # documentazione tecnica (piano di sviluppo,
+                           #   archivio di STATUS, inventario fonti, ...)
 ```
 
 ## Natura del progetto
