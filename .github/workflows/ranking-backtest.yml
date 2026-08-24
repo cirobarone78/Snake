@@ -1,0 +1,80 @@
+name: ranking-backtest
+
+# WP3 (ADR-034): runs the pre-registered ranking validation and commits its
+# report. Not a cron — the report is a *result*, and it should change only when
+# the code that produces it changes, so a schedule would just add noise to the
+# git history. It re-runs on a push that touches the models, the metrics or the
+# runner, which keeps docs/REPORT_RANKING.md honest with the code that made it.
+#
+# The panel is rebuilt from scratch here rather than cached: the development
+# sandbox cannot reach Yahoo (fc.yahoo.com is blocked by the egress allowlist),
+# so CI is the only place the whole chain can actually run.
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "src/models/etf_ranker.py"
+      - "src/models/calibration.py"
+      - "src/backtest/ranking_metrics.py"
+      - "src/backtest/ranking_backtest.py"
+      - "src/backtest/splits.py"
+      - "src/features/etf_dataset.py"
+      - "src/ingestion/tier1/ranking_backtest_cli.py"
+      - ".github/workflows/ranking-backtest.yml"
+
+concurrency:
+  group: ranking-backtest-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Build the ETF panel (WP2)
+        run: uv run python -m src.ingestion.tier1.build_etf_dataset
+
+      - name: Run the pre-registered validation
+        run: uv run python -m src.ingestion.tier1.ranking_backtest_cli
+
+      - name: Report to the job summary
+        run: cat docs/REPORT_RANKING.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload report + raw results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ranking-backtest
+          path: |
+            docs/REPORT_RANKING.md
+            public/data/ranking_backtest.json
+          retention-days: 30
+
+      - name: Commit the report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # `git add` first, then check the INDEX: `git diff` alone ignores
+          # untracked files, so the very first run would silently commit nothing.
+          git add docs/REPORT_RANKING.md public/data/ranking_backtest.json
+          if git diff --cached --quiet -- docs/REPORT_RANKING.md public/data/ranking_backtest.json; then
+            echo "Report unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "data: refresh the ranking validation report [skip ci]"
+          git push

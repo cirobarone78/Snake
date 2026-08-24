@@ -525,9 +525,12 @@ riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
       20/60 sedute vs SPY, regime 4-stati da soli prezzi), CLI riproducibile
       `src/ingestion/tier1/build_etf_dataset.py` + workflow `etf-dataset`
       (manuale) per la validazione live
-- [ ] **WP3** — Baseline di ranking, validazione e calibrazione: walk-forward
+- [x] **WP3** — Baseline di ranking, validazione e calibrazione: walk-forward
       **con embargo/purging**, probabilità calibrate (isotonic sul solo train),
-      risposta onesta a H1–H3, **ADR-034** con le ipotesi verbatim
+      risposta onesta a H1–H3, **ADR-034** con le ipotesi verbatim.
+      **Esito: barra di adozione NON superata** — WP4 procede col momentum
+      semplice dichiarato non-predittivo, come previsto da §2.1. Report:
+      [`docs/REPORT_RANKING.md`](./docs/REPORT_RANKING.md)
 - [ ] **WP4** — Paper portfolio settimanale + **prediction ledger** immutabile
       (fill t+1, costi reali, soglia di confidenza D7)
 - [ ] **WP5** — Dashboard: viste "Opportunità" e "Modello". Probabilità e
