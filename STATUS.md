@@ -12,7 +12,7 @@
 ## Dove siamo
 
 - **Branch di lavoro**: `claude/wp3-ranking` (PR #58) — base `main` con PR #52,
-  WP0, **WP1** (#55) e **WP2** (#56) mergiati. Aperta anche la PR #57 (documentazione).
+  WP0, **WP1** (#55) e **WP2** (#56) mergiati. La PR #57 (documentazione) è mergiata.
 - **Test**: 566 passati (`uv run pytest -q`), ruff pulito, pyright pulito sui
   moduli core e su `src/ingestion/news`.
 - **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**; WP0/WP1/WP2
@@ -68,6 +68,13 @@ negativi contano quanto i positivi e restano qui apposta.
   - **Conseguenza**: WP4 procede col **momentum semplice dichiarato
     non-predittivo**, come §2.1 prescriveva per questo caso. Report:
     [`docs/REPORT_RANKING.md`](./docs/REPORT_RANKING.md).
+- **Battere SPY è più difficile di quanto sembri.** Sul panel WP2 (2005→2026,
+  20 ETF settoriali) l'outperformance **incondizionata** vs SPY è **0,489 a 20
+  sedute** (n=93 117) e **0,482 a 60** (n=92 317): il settore mediano batte SPY
+  meno di una volta su due — nel periodo l'S&P cap-weighted è stato trainato
+  dalle mega-cap. È la **baseline climatologica** che H2 deve battere in Brier
+  score, piantata *prima* di modellare (WP3).
+
 - **Nessun edge direzionale daily.** Modelli tecnici e tecnico+macro su BTC in
   walk-forward OOS: accuracy 0.5007 → 0.5060 (n=2249) — dentro il rumore. La
   macro **non** aggiunge potere predittivo a frequenza daily (il segnale CPI vive
