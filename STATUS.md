@@ -62,24 +62,21 @@ negativi contano quanto i positivi e restano qui apposta.
     isotonic fit sul train **non trasferisce OOS**.
   - **I costi mangiano il resto**: TMB lordo `ridge` +0,0038 → netto +0,0014
     (−63%), e comunque negativo nella seconda metà.
-  - Conferma, ora su base probabilistica e al netto dei costi, del risultato
-    descrittivo già noto (bucket `strong` ≈ baseline a 5/21 sedute, **peggio a 63**,
-    −2,1 pp di hit-rate): **non inseguire i settori più forti**.
+  - Conferma, su base probabilistica e al netto dei costi, del risultato
+    descrittivo già noto: **non inseguire i settori più forti**.
   - **Conseguenza**: WP4 procede col **momentum semplice dichiarato
     non-predittivo**, come §2.1 prescriveva per questo caso. Report:
     [`docs/REPORT_RANKING.md`](./docs/REPORT_RANKING.md).
-- **Battere SPY è più difficile di quanto sembri.** Sul panel WP2 (2005→2026,
-  20 ETF settoriali) l'outperformance **incondizionata** vs SPY è **0,489 a 20
-  sedute** (n=93 117) e **0,482 a 60** (n=92 317): il settore mediano batte SPY
-  meno di una volta su due — nel periodo l'S&P cap-weighted è stato trainato
-  dalle mega-cap. È la **baseline climatologica** che H2 deve battere in Brier
-  score, piantata *prima* di modellare (WP3).
-
-- **Nessun edge direzionale daily.** Modelli tecnici e tecnico+macro su BTC in
-  walk-forward OOS: accuracy 0.5007 → 0.5060 (n=2249) — dentro il rumore. La
-  macro **non** aggiunge potere predittivo a frequenza daily (il segnale CPI vive
-  a frequenza mensile). Nessun leakage: un bug avrebbe gonfiato il delta.
-- **Il sentiment news (VADER, Layer 1) non anticipa nulla** con i dati attuali:
+- **Battere SPY è più difficile di quanto sembri.** Sul panel WP2 l'outperformance
+  **incondizionata** vs SPY è **0,489 a 20 sedute** (n=93 117) e **0,482 a 60**
+  (n=92 317): il settore mediano batte SPY meno di una volta su due — l'S&P
+  cap-weighted è stato trainato dalle mega-cap. È la **baseline climatologica**
+  piantata prima di modellare, e **nessun modello di WP3 l'ha battuta**.
+- **Nessun edge direzionale daily.** Tecnici e tecnico+macro su BTC in
+  walk-forward OOS: accuracy 0.5007 → 0.5060 (n=2249), dentro il rumore. La macro
+  **non** aggiunge potere predittivo a frequenza daily (il segnale CPI vive a
+  frequenza mensile). Nessun leakage: un bug avrebbe gonfiato il delta.
+- **Il sentiment news (VADER, Layer 1) non anticipa nulla**:
   `corr(news_count, |return|) = +0.32` su n=23 è **svanito a n=143** (≈ −0.07 a
   lag 1). Artefatto di piccolo campione, e caso di studio permanente su quanto
   costa concludere presto.
@@ -110,16 +107,12 @@ negativi contano quanto i positivi e restano qui apposta.
 Il panel su cui WP3 ha addestrato le baseline: `SPY` nel registry (benchmark D2),
 `src/features/etf_dataset.py` (19 feature causali, target excess return 20/60
 sedute vs SPY, regime 4-stati), CLI `build_etf_dataset`, 24 test offline — il più
-importante è quello di **causalità**. Narrativa completa in
-[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md) e nella PR #56; le
-semplificazioni dichiarate sono nel docstring del modulo.
-
-**Validazione live**: 21/21 ticker, **93 517 righe × 27 colonne**, 2005-01-03 →
-2026-08-24. Le date di quotazione cadono dove attese (XLC 2018-06-19, BOTZ
-2016-09-13, CIBR 2015-07-07, XLRE 2015-10-08, URA 2010-11-05, ICLN 2008-06-25,
-ITA 2006-05-05); gli 11 SPDR originali dal 2005-01-03, 5 444 righe. Le feature
-mancanti sono solo warm-up: stesse ~1 500 celle NaN in assoluto su ogni simbolo,
-cambia solo il denominatore (1,5% storie lunghe, 3,9% XLC).
+importante è quello di **causalità**. Validato live: **21/21 ticker, 93 517 righe
+× 27 colonne**, 2005-01-03 → 2026-08-24, con le date di quotazione dove attese e
+le feature mancanti riconducibili al solo warm-up. Dettaglio completo, coperture
+per simbolo e semplificazioni dichiarate in
+[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md), nella PR #56 e nel
+docstring del modulo.
 
 **Da sapere**: `pyright: strict` puro non è raggiungibile su un modulo
 pandas-heavy (`pandas` non ha `py.typed`); i moduli nuovi sono strict **meno le
