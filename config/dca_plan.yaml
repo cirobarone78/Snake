@@ -27,5 +27,21 @@ sleeve:
     LINK: 0.3333
     POL: 0.3333
 
-# Quantità realmente possedute, per asset. Esempio: SOL: 0.0421
-holdings_units: {}
+# Quantità realmente possedute, per asset — QUANTITÀ ESATTE lette dalle schede
+# dell'exchange il 2026-08-24. Il sistema usa oggi solo la quota satellite
+# (SOL/LINK/POL); BTC ed ETH sono registrate per completezza e per usi futuri.
+holdings_units:
+  BTC: 0.009951
+  ETH: 0.13263
+  SOL: 0.59501
+  LINK: 4.10498
+  POL: 159.3624
+
+# Posizioni FUORI dal piano (quantità esatte dell'exchange, 2026-08-24),
+# registrate per completezza: il sistema non le usa e non esprime preferenze.
+# DOGE e PEPE sono meme coin senza meccanismo di cattura del valore (ADR-031);
+# USDG è una stablecoin (liquidità di servizio).
+off_plan_holdings:
+  PEPE: 1922053
+  DOGE: 22.49
+  USDG: 6.25
