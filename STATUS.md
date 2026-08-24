@@ -204,6 +204,20 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-08-24 — Sessione (cont.): piano operativo per il ranking ETF probabilistico
+
+Su commissione dell'utente, a partire da un handoff di analisi esterna (Codex),
+è stato scritto **`docs/PIANO_SVILUPPO.md`**: piano in work package autonomi
+(WP0–WP7 + filler) per evolvere il sistema in un motore di ranking ETF
+cross-sectional con probabilità calibrate vs SPY a 20/60 sedute. Ogni WP è
+pensato per essere eseguito da un agente separato, con mappa dei componenti
+**verificata sulle firme reali**, decisioni pre-registrate (D1–D12), ipotesi
+H1–H3 e barra di adozione scritte PRIMA di qualunque backtest (§2.1 del piano).
+
+Da sapere: il piano richiede il **merge della PR #52** come prerequisito (U1) e
+le conferme utente U2/U3 elencate nella §7 del piano. Le ADR 032–035 sono
+riservate dai WP; non usarle per altro.
+
 ### 2026-08-24 — Sessione (cont.): fondamentali dei progetti (ADR-031)
 
 **Correzione su feedback utente.** Lo screen candidate di ADR-030 ordinava per
