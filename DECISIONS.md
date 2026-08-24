@@ -1980,8 +1980,8 @@ OOS per modello e orizzonte.
 | Modello | IC Spearman (20g) | t | Brier | ECE | TMB netto |
 |---|---:|---:|---:|---:|---:|
 | `momentum` (H1) | 0,0010 | 0,08 | 0,2510 | 0,025 | −0,0052 |
-| `logistic` (H2) | 0,0299 | 2,50 | 0,2638 | 0,077 | +0,0008 |
-| `ridge` | 0,0308 | 2,56 | 0,2558 | 0,051 | +0,0014 |
+| `logistic` (H2) | 0,0300 | 2,50 | 0,2638 | 0,077 | +0,0008 |
+| `ridge` | 0,0309 | 2,57 | 0,2558 | 0,051 | +0,0014 |
 | `random` (controllo) | 0,0022 | 0,26 | 0,2506 | 0,016 | −0,0024 |
 | `climatology` (controllo) | — | — | **0,2501** | 0,009 | −0,0033 |
 
@@ -1997,8 +1997,16 @@ OOS per modello e orizzonte.
   metà OOS (+0,0051 per `ridge`) e **negativo nella seconda** (−0,0022). A 60
   sedute l'IC stesso cambia segno tra le due metà (+0,057 → −0,047).
 - **Barra di adozione: NON superata.** Richiedeva IC ≥ 0,03 **e** H3 **e** Brier
-  ≤ climatologia: la prima condizione è soddisfatta (`ridge` 0,0308), le altre
+  ≤ climatologia: la prima condizione è soddisfatta (`ridge` 0,0309), le altre
   due no.
+
+> **Riproducibilità.** Il report si rigenera con un comando, ma non è
+> bit-identico tra run: il panel viene ricostruito da Yahoo ogni volta e la barra
+> del giorno corrente si aggiorna, spostando i numeri alla **quarta cifra
+> decimale** (es. IC di `ridge` 0,0308 → 0,0309 a dieci minuti di distanza).
+> Nessun verdetto cambia, ma i numeri citati qui sono quelli del report
+> committato in `368f2b0`. Per un confronto esatto serve fissare lo snapshot del
+> panel, non solo il codice.
 
 ### Cosa dice davvero questo risultato
 
