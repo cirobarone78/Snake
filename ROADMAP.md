@@ -517,9 +517,11 @@ riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
 - [ ] **WP1** — Contenere la crescita del repository: **ADR-033** (partizionamento
       mensile degli storici in-repo, `Proposed` → `Accepted` solo con l'ok
       dell'utente su D8), lettura multi-partizione trasparente, migrazione one-shot
-- [ ] **WP2** — Dataset ETF point-in-time: `SPY` nel registry asset,
-      `src/features/etf_dataset.py` (feature causali, target excess return 20/60
-      sedute vs SPY, regime da prezzi), CLI riproducibile
+- [x] **WP2** — Dataset ETF point-in-time: `SPY` nel registry asset,
+      `src/features/etf_dataset.py` (19 feature causali, target excess return
+      20/60 sedute vs SPY, regime 4-stati da soli prezzi), CLI riproducibile
+      `src/ingestion/tier1/build_etf_dataset.py` + workflow `etf-dataset`
+      (manuale) per la validazione live
 - [ ] **WP3** — Baseline di ranking, validazione e calibrazione: walk-forward
       **con embargo/purging**, probabilità calibrate (isotonic sul solo train),
       risposta onesta a H1–H3, **ADR-034** con le ipotesi verbatim

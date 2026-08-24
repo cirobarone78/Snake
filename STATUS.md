@@ -5,17 +5,18 @@
 > Chi riprende il lavoro (umano o agente) legge questo file per primo, e tiene
 > questo file **sotto le 200 righe**: se cresce, la cronaca si sposta in archivio.
 
-**Ultimo aggiornamento**: 2026-08-24 — sessione WP0 (riconciliazione)
+**Ultimo aggiornamento**: 2026-08-24 — sessione WP2 (dataset ETF point-in-time)
 
 ---
 
 ## Dove siamo
 
-- **Branch di lavoro**: `claude/wp0-riconciliazione-pj6gvj` — base `main` = `f07dd3d`
-  (merge della PR #52, prerequisito U1 del piano: **fatto**).
-- **Test**: 483 passati (`uv run pytest -q`), ruff pulito.
+- **Branch di lavoro**: `claude/wp2-dataset-etf-6m03fa` — base `main` = `66c9eae`
+  (WP0 e la PR #52 mergiati).
+- **Test**: 507 passati (`uv run pytest -q`), ruff pulito, pyright pulito su
+  `src/backtest src/features src/models`.
 - **Milestone corrente**: **Fase 9 — Ranking ETF probabilistico**, work package
-  **WP0** (questa sessione). Il piano operativo è
+  **WP2** (questa sessione); WP1 non è ancora partito. Il piano operativo è
   [`docs/PIANO_SVILUPPO.md`](./docs/PIANO_SVILUPPO.md): è il riferimento per tutti
   i WP successivi, con decisioni pre-registrate D1–D12 e ipotesi H1–H3 scritte
   **prima** di qualunque backtest.
@@ -34,6 +35,7 @@
 | `macro-history.yml` | giornaliero | 🟢 attivo (2026-08-24) |
 | `paper-shadow.yml` | giornaliero | 🟢 attivo (2026-08-24) |
 | `dca.yml` | giornaliero | ⏳ mergiato con la PR #52, **primo run ancora da osservare** |
+| `etf-dataset.yml` | solo manuale | ⏳ aggiunto in WP2, **primo run ancora da fare** |
 
 I cron committano con `[skip ci]`. GitHub schedula con **ritardo variabile** (un
 cron delle 07:00 può girare alle 12:36 UTC): fidarsi del timestamp nel report,
@@ -81,23 +83,62 @@ negativi contano quanto i positivi e restano qui apposta.
   risolvibile con questi dati: la classifica di oggi contiene solo i sopravvissuti.
   È scritto nel modulo, nel report e nel tab.
 
-## Crescita del repository (misurata in WP0)
+## Crescita del repository
 
-Storia completa, 812 commit su `main`, di cui **676 (83%) commit automatici dei
-cron**. Pack: **1,17 GiB**; contenuto blob non compresso: **7 727 MiB** su 2 927 blob.
+Misurata in WP0 e archiviata: storia completa 812 commit su `main`, di cui **676
+(83%) automatici dei cron**; pack **1,17 GiB**, contenuto blob non compresso
+**7 727 MiB**, di cui **97,5% un solo file** (`data/news_history/news.parquet`,
+riscritto integralmente a ogni run). Tabella completa in **ADR-032** e in
+[`docs/STATUS_ARCHIVIO.md`](./docs/STATUS_ARCHIVIO.md); è il contesto da citare
+nell'**ADR-033** (WP1).
 
-| Path | Blob distinti | MiB cumulati | % del totale |
-|---|---:|---:|---:|
-| `data/news_history/news.parquet` | 479 | 7 532,7 | **97,5%** |
-| `public/data/events.json` | 473 | 131,5 | 1,7% |
-| `data/category_history/categories_history.parquet` | 86 | 24,7 | 0,3% |
-| `public/data/market_series.json` | 81 | 16,5 | 0,2% |
-| `STATUS.md` | 71 | 2,9 | 0,04% |
-| tutto il resto | — | ~19 | 0,2% |
+## Cosa ha fatto WP2 (dataset ETF point-in-time)
 
-Un solo file spiega il 97,5% del peso: `news.parquet` è riscritto **integralmente**
-a ogni run del cron (479 volte dal 2026-05-30), oggi ≈ 26 MB a copia. La tabella
-è riportata anche in **ADR-032** ed è il contesto da citare nell'**ADR-033** (WP1).
+Il primo pezzo di **codice** della Fase 9: il panel su cui WP3 addestrerà le
+baseline. Nessun risultato empirico qui — WP2 costruisce il dataset, non lo interroga.
+
+- **`SPY` nel registry asset** (tier 3): benchmark di D2, gemello *comprabile* di
+  `SPX` (un indice non si detiene).
+- **`src/features/etf_dataset.py`** (nuovo, funzioni pure, nessuna rete):
+  `build_feature_panel` (19 feature causali), `build_targets` (excess return e
+  segno a 20/60 sedute vs SPY), `assemble` (join + regime 4-stati per data),
+  `coverage_report`, `dataset_metadata`. Long-form `(date, symbol)`.
+- **`src/ingestion/tier1/build_etf_dataset.py`**: CLI che scarica i 20
+  `SECTOR_ETFS` + SPY da Yahoo dal 2005 e scrive `data/processed/etf_panel.parquet`
+  + `etf_panel_meta.json` (gitignored: derivati, ricostruibili dal comando).
+- **`etf-dataset.yml`, solo `workflow_dispatch`**: la sandbox non raggiunge Yahoo,
+  quindi la validazione live della CLI passa da qui. Non è un cron: il panel non
+  si committa, e il runner ricorrente è di WP4.
+- **24 test offline**, sintetici e deterministici. Il test che conta è quello di
+  **causalità**: ricostruito il panel su una storia troncata a `t`, ogni feature
+  fino a `t` è identica a quella del panel completo. Un secondo test verifica il
+  contrario sul target (perturbare una barra futura *deve* muovere
+  `excess_ret_20`): così il primo non passa per un errore di confronto.
+
+**Semplificazioni dichiarate** (nel docstring del modulo, non nascoste): prezzi
+`auto_adjust` ⇒ rendimenti di fatto **total return** (standard per la forza
+relativa, ma un quote price-only non li replica); universo = ETF **esistenti
+oggi** ⇒ survivorship residuo basso ma non nullo, di direzione ottimistica;
+storie corte (XLC 2018, BOTZ/CIBR ~2016, URA 2010, ICLN 2008, ITA 2006) **tenute**
+con NaN sulle finestre lunghe, perché escluderle rimodellerebbe l'universo nel
+tempo.
+
+**Da sapere alla prossima sessione**:
+
+- `pyright: strict` puro non è raggiungibile su un modulo pandas-heavy: `pandas`
+  non ha `py.typed`, quindi in strict *ogni* membro pandas diventa unknown (74
+  errori, nessuno imputabile a questo codice; anche i moduli strict esistenti,
+  es. `src/ingestion/snapshot.py`, ne portano). Il modulo è `strict` **meno le
+  quattro regole** che derivano solo da quella mancanza. Per lo strict pieno
+  servirebbe `pandas-stubs` come dip. dev: decisione da ADR, non da WP.
+- `outperform_h` è il **segno stretto** dell'excess (1.0 se > 0), NaN dove
+  l'excess è NaN: la coda non realizzata è dato mancante, non una perdita. D4
+  resta da confermare, ma il dataset espone entrambe le forme (regressiva e
+  binaria) a 20 e 60 sedute → WP3 non è bloccato.
+- **Fuori perimetro, annotato e non toccato** (§0.2 del piano): `combine_regimes`
+  perde la prima barra della serie (il classificatore di volatilità non ha un
+  rendimento lì). `assemble` la etichetta `unknown` — corretto, ma è
+  un'asimmetria da conoscere.
 
 ## Blocchi e attese
 
@@ -120,14 +161,15 @@ a ogni run del cron (479 volte dal 2026-05-30), oggi ≈ 26 MB a copia. La tabel
 
 ## Prossime attività
 
-1. **WP1** — ADR-033 (`Proposed`) sul partizionamento mensile degli storici, poi
+1. **Far girare `etf-dataset` una volta** (dispatch manuale) e leggere il report
+   di copertura nel job summary: è la prima verifica che i 20 ticker + SPY
+   scarichino davvero e che le storie corte compaiano dove attese.
+2. **WP1** — ADR-033 (`Proposed`) sul partizionamento mensile degli storici, poi
    implementazione **solo dopo l'ok utente su D8**. È l'intervento che ferma la
    crescita da 7,5 GiB di blob riscritti.
-2. **WP2** — dataset ETF point-in-time: `SPY` nel registry asset,
-   `src/features/etf_dataset.py` (feature causali + target excess return 20/60
-   sedute vs SPY), CLI riproducibile.
 3. **WP3** — walk-forward **con embargo/purging** (`src/backtest/splits.py` oggi
    non ce l'ha), baseline di ranking, calibrazione, risposta onesta a H1–H3.
+   Parte dal panel di WP2: `build_etf_dataset` è il suo input riproducibile.
 4. **WP4/WP5** — paper portfolio settimanale + prediction ledger, poi le viste
    "Opportunità" e "Modello" in dashboard.
 5. **Filler non bloccanti**: WP-T (debito typing su `src/execution/`, poi
@@ -137,9 +179,10 @@ a ogni run del cron (479 volte dal 2026-05-30), oggi ≈ 26 MB a copia. La tabel
 
 ```bash
 uv sync --frozen
-uv run pytest -q                      # 483 test
+uv run pytest -q                      # 507 test
 uv run ruff check src tests
 uv run pyright src/backtest src/features src/models
+uv run python -m src.ingestion.tier1.build_etf_dataset   # WP2 (richiede Yahoo: in CI)
 ```
 
 I notebook richiedono prima `uv run python -m src.ingestion.tier1.fetch_tier1`

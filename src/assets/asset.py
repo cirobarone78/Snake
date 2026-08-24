@@ -155,6 +155,19 @@ CONTEXT_ASSETS: list[Asset] = [
         tier=3,
         yahoo_symbol="GC=F",
     ),
+    Asset(
+        symbol="SPY",
+        asset_class=AssetClass.ETF,
+        name="SPDR S&P 500 ETF Trust",
+        quote_currency="USD",
+        trading_calendar=TradingCalendar.NYSE,
+        tier=3,
+        yahoo_symbol="SPY",
+        notes="Benchmark of the probabilistic ETF ranking (decision D2, ADR-032). "
+        "The tradeable twin of SPX (^GSPC): an index cannot be held, so excess "
+        "returns are measured against the fund an investor could actually buy, "
+        "dividends and tracking difference included.",
+    ),
 ]
 
 
