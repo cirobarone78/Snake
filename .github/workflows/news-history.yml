@@ -44,15 +44,23 @@ jobs:
       - name: Build events (move attribution for the dashboard)
         run: uv run python -m src.ingestion.tier1.build_events
 
+      # ADR-033: the history is partitioned by publication month, so a run only
+      # rewrites the partition(s) it actually touched — normally just the current
+      # month. Staging by changed file (not by "today's month") is deliberate: a
+      # run on the 1st still lands late items in the previous month's partition,
+      # and a feed occasionally surfaces an old article. Past months stay
+      # byte-identical and git never stores them again.
       - name: Commit updated history + events
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           PATHS="data/news_history public/data/events.json"
-          if git diff --quiet -- $PATHS; then
+          if git diff --quiet -- $PATHS && [ -z "$(git ls-files --others --exclude-standard -- $PATHS)" ]; then
             echo "No news/events changes to commit."
             exit 0
           fi
+          echo "Partitions rewritten this run:"
+          git status --porcelain -- data/news_history
           git add $PATHS
           git commit -m "data: update news history + events"
           git push

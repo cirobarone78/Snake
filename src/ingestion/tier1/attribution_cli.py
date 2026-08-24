@@ -28,16 +28,16 @@ Run:
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
 
 import pandas as pd
 
 from src.assets.asset import Asset, AssetClass, get_asset_by_symbol
 from src.assets.sectors import get_sector_by_symbol
 from src.features.move_attribution import attribute_moves
+from src.ingestion.news.history import DEFAULT_HISTORY_DIR, read_news_history
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
-NEWS_PATH = Path("data/news_history/news.parquet")
+NEWS_DIR = DEFAULT_HISTORY_DIR
 
 # General (non-asset-specific) crypto newswires. Relevant context for any coin,
 # but NOT for an equity ETF — keeping them class-scoped stops crypto headlines
@@ -74,7 +74,8 @@ def main() -> None:
     # News history now covers both universes (a per-crypto and per-sector Google
     # News feed each land under ``googlenews_<symbol>``). The history accumulates
     # daily, so early on an equity sector may still have no rows in its window.
-    news = pd.read_parquet(NEWS_PATH) if NEWS_PATH.exists() else pd.DataFrame()
+    # ADR-033: monthly partitions, concatenated transparently by the reader.
+    news = read_news_history(NEWS_DIR)
     asset_source: str | None = f"googlenews_{asset.symbol.lower()}"
     # Only consider sources relevant to THIS asset: its own feed, plus the general
     # crypto newswires for a coin. Without this, while the equity news history is

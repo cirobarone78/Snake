@@ -2,14 +2,15 @@
 
 import time
 
-import pandas as pd
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+from src.ingestion.news.history import read_news_history
 
 OUT = "data/cache/finbert_scores.parquet"
 SOURCES = ["googlenews_btc", "googlenews_eth", "cointelegraph", "coindesk"]
 
-news = pd.read_parquet("data/news_history/news.parquet")
+news = read_news_history()  # ADR-033: monthly partitions, concatenated transparently
 rel = news[news["source"].isin(SOURCES)].copy()
 titles = rel["title"].astype(str).tolist()
 print(f"scoring {len(titles)} headlines with ProsusAI/finbert (CPU)...", flush=True)

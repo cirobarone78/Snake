@@ -28,12 +28,13 @@ from src.features.move_attribution import attribute_moves, market_pulse
 from src.features.news_volume import annotate_moves_with_coverage, daily_news_volume
 from src.features.report_json import write_report_json
 from src.ingestion.news.feeds import WORLD_SOURCE_NAMES
+from src.ingestion.news.history import DEFAULT_HISTORY_DIR, read_news_history
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 logger = logging.getLogger(__name__)
 
-NEWS_PATH = Path("data/news_history/news.parquet")
+NEWS_DIR = DEFAULT_HISTORY_DIR
 JSON_PATH = Path("public/data/events.json")
 CRYPTO_NEWSWIRES = {"cointelegraph", "coindesk"}
 
@@ -102,9 +103,10 @@ def _attribute_universe(
 
 
 def main() -> None:
-    if not NEWS_PATH.exists():
-        raise SystemExit(f"News history not found at {NEWS_PATH}.")
-    news_all = pd.read_parquet(NEWS_PATH)
+    # ADR-033: the history is a set of monthly partitions; the reader hides that.
+    news_all = read_news_history(NEWS_DIR)
+    if news_all.empty:
+        raise SystemExit(f"News history not found (or empty) under {NEWS_DIR}.")
 
     start = (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=LOOKBACK_DAYS + 40)).date().isoformat()
     src = YahooFinanceSource()

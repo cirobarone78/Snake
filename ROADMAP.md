@@ -514,9 +514,12 @@ riutilizzabili e ipotesi H1–H3 scritte **prima** di qualunque backtest, è in
 - [x] **WP0** — Riconciliazione e direzione: `STATUS.md` compresso (< 200 righe)
       con cronaca in `docs/STATUS_ARCHIVIO.md`, crescita git misurata, **ADR-032**
       registrata, README riallineato, questa sezione
-- [ ] **WP1** — Contenere la crescita del repository: **ADR-033** (partizionamento
-      mensile degli storici in-repo, `Proposed` → `Accepted` solo con l'ok
-      dell'utente su D8), lettura multi-partizione trasparente, migrazione one-shot
+- [x] **WP1** — Contenere la crescita del repository: **ADR-033** *Accepted*
+      (D8 confermata dall'utente), storia news partizionata per mese di
+      pubblicazione, lettura multi-partizione trasparente (`read_news_history`,
+      API invariata per i consumatori), migrazione one-shot delle 50 129 righe in
+      92 partizioni. Blob riscritto per run del cron: −77% oggi, −87% in media
+      sui prossimi 30 giorni, e soprattutto **limitato** invece che crescente
 - [ ] **WP2** — Dataset ETF point-in-time: `SPY` nel registry asset,
       `src/features/etf_dataset.py` (feature causali, target excess return 20/60
       sedute vs SPY, regime da prezzi), CLI riproducibile
