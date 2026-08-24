@@ -65,6 +65,52 @@ REJECT_IT: dict[str, str] = {
     "turnover_anomaly": "volume anomalo rispetto alla capitalizzazione",
 }
 
+ACCRUAL_IT: dict[str, str] = {
+    "fee_burn": "le commissioni bruciano offerta",
+    "staking_yield": "chi mette in staking incassa le commissioni",
+    "buyback": "i ricavi finanziano riacquisti del token",
+    "work_token": "serve possederlo per fornire il servizio",
+    "gas_only": "serve per transare, ma non cattura ricavi",
+    "monetary": "tesi monetaria: non cattura ricavi per scelta",
+    "governance_only": "dà solo diritto di voto, nessun flusso",
+    "none": "nessun legame fra prezzo e attività della rete",
+    "unknown": "non ancora studiato",
+}
+
+EMISSION_IT: dict[str, str] = {
+    "deflationary": "offerta in calo",
+    "capped": "offerta con tetto massimo",
+    "low_inflation": "inflazione contenuta",
+    "high_inflation": "inflazione alta",
+    "unlock_overhang": "sblocchi importanti ancora davanti",
+    "unknown": "emissione non verificata",
+}
+
+DEV_IT: dict[str, str] = {
+    "active": "sviluppo attivo",
+    "moderate": "sviluppo moderato",
+    "low": "sviluppo rado",
+    "thin": "quasi nessuno sviluppo",
+    "quiet_or_stale": "nessun commit recente, ma dato forse non aggiornato",
+    "no_repo_data": "repository non mappato: dato assente",
+}
+
+VERDICT_IT: dict[str, str] = {
+    "capture_present": "Il token cattura valore dalla rete",
+    "capture_but_thin_dev": "Cattura valore, ma quasi nessuno sviluppo",
+    "monetary_thesis": "Tesi monetaria (non cattura ricavi, per scelta)",
+    "governance_only": "Solo governance: nessun flusso al detentore",
+    "no_value_capture": "Nessun meccanismo di cattura del valore",
+    "unresearched": "Economia del token non ancora studiata",
+}
+
+# Order the dossier so the reader meets the projects with a working mechanism
+# first and the ones without it last — the point is the reason, not the rank.
+VERDICT_ORDER: tuple[str, ...] = (
+    "capture_present", "capture_but_thin_dev", "monetary_thesis",
+    "unresearched", "governance_only", "no_value_capture",
+)
+
 FLAG_IT: dict[str, str] = {
     "meme": "meme coin",
     "exchange_token": "token di exchange",
@@ -80,14 +126,23 @@ CAVEATS: tuple[str, ...] = (
     "Serve a mantenere l'allocazione, non a guadagnare di più.",
     "Comprare l'asset più forte del momento ('momentum') è risultato peggiore del "
     "caso (40° percentile): è l'istinto più comune ed è quello che ha reso meno.",
-    "Le candidate sono filtrate su criteri meccanici (dimensione, liquidità, età "
-    "minima dimostrabile). Nessun giudizio su tecnologia, team o prospettive.",
+    "La scheda dei progetti descrive **come è fatto** il token: chi cattura il "
+    "valore, quanta offerta deve ancora arrivare, se qualcuno lo sviluppa. Non è "
+    "una previsione e non è stata validata su dati storici — non esiste una serie "
+    "abbastanza lunga e pulita per farlo.",
+    "Manca il dato più importante: i **ricavi di protocollo**. Le fonti che li "
+    "pubblicano (DefiLlama, Token Terminal) sono bloccate dalla policy di rete di "
+    "questo ambiente. Senza, si può dire *se* un meccanismo di cattura esiste, non "
+    "*quanto* valga: un burn enorme e uno simbolico oggi hanno lo stesso punteggio.",
+    "L'economia dei token è **curata a mano** (con fonte e data), non scaricata da "
+    "un'API. Copre i nomi principali; per gli altri il verdetto è "
+    "'non studiato', che non è la stessa cosa di 'non ha fondamenta'.",
     "Survivorship bias: la classifica di oggi contiene solo chi è sopravvissuto. "
     "Gran parte della top 100 del 2018 non esiste più, e quelle monete non "
     "compaiono in questi dati.",
     "Su orizzonti di 5-10 anni le singole altcoin hanno un tasso di mortalità "
-    "storicamente alto. La soglia di capitalizzazione è un indizio di solidità, "
-    "non una garanzia.",
+    "storicamente alto. Fondamenta solide riducono il rischio, non lo annullano: "
+    "Bitcoin nel 2011 non avrebbe superato nessuno screen fondamentale.",
 )
 
 
@@ -109,6 +164,23 @@ def _num(value: object) -> float | None:
 
 def _round(value: float | None, ndigits: int) -> float | None:
     return None if value is None else round(value, ndigits)
+
+
+def _percent_article(pct: float) -> str:
+    """Italian percentage with the right article ("l'80%", "il 65%")."""
+    rounded = round(pct)
+    article = "l'" if str(rounded).startswith(("8", "11")) else "il "
+    return f"{article}{rounded}%"
+
+
+def _text(value: object) -> str | None:
+    """Non-empty string, else ``None`` — a blank cell is missing, not empty."""
+    return value if isinstance(value, str) and value else None
+
+
+def _int(value: object) -> int | None:
+    n = _num(value)
+    return None if n is None else int(n)
 
 
 def _pct(value: object, digits: int = 1) -> str:
@@ -199,29 +271,14 @@ def format_report(
 
     if candidates is not None and not candidates.empty:
         lines += [
-            "## Candidate per un accumulo a lungo termine",
+            "## Progetti: cosa c'è dietro il token",
             "",
-            "Monete che superano i filtri meccanici. Nessun giudizio di merito: "
-            "sono i nomi da studiare, non da comprare al buio.",
+            "Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi "
+            "tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta "
+            "ancora sviluppando. Descrizione, non previsione.",
             "",
-            "| # | Asset | Cap. | Liquidità | Età min. | Da max | Note |",
-            "|---|-------|------|-----------|----------|--------|------|",
         ]
-        for row in candidates.to_dict("records"):
-            turnover = _num(row["turnover"])
-            age = _num(row["min_age_years"])
-            notes = _flags_it(row.get("flags"))
-            if row.get("diversifying"):
-                notes = f"{notes}, diversifica" if notes else "diversifica"
-            lines.append(
-                f"| {row['rank']} | {row['symbol']} ({row['name']}) "
-                f"| {_fmt_mcap(row['market_cap'])} "
-                f"| {'n/a' if turnover is None else f'{turnover * 100:.1f}%'} "
-                f"| {'n/a' if age is None else f'{age:.1f} anni'} "
-                f"| {_pct(row['ath_change_pct'], 0)} "
-                f"| {notes or '-'} |"
-            )
-        lines.append("")
+        lines += _dossier_lines(candidates)
 
     if rejected is not None and not rejected.empty:
         counts = rejected["reason"].value_counts()
@@ -236,6 +293,74 @@ def format_report(
     lines += [f"- {c}" for c in CAVEATS]
     lines += ["", f"> {DISCLAIMER}", ""]
     return "\n".join(lines)
+
+
+def _dossier_lines(candidates: pd.DataFrame) -> list[str]:
+    """Per-project dossier, grouped by verdict so the *reason* leads, not the rank."""
+    records = candidates.to_dict("records")
+    lines: list[str] = []
+    seen: set[str] = set()
+    ordered = [
+        *(v for v in VERDICT_ORDER if any(str(r.get("verdict")) == v for r in records)),
+        *sorted({str(r.get("verdict")) for r in records} - set(VERDICT_ORDER)),
+    ]
+    for verdict in ordered:
+        group = [r for r in records if str(r.get("verdict")) == verdict]
+        if not group:
+            continue
+        lines += [f"### {VERDICT_IT.get(verdict, verdict)}", ""]
+        for row in group:
+            symbol = str(row.get("symbol") or "")
+            if symbol in seen:
+                continue
+            seen.add(symbol)
+            lines += _dossier_entry(row)
+        lines.append("")
+    return lines
+
+
+def _dossier_entry(row: dict[str, Any]) -> list[str]:
+    """One project's card: what it is, who captures the value, what dilutes it."""
+    symbol = str(row.get("symbol") or "")
+    name = str(row.get("name") or "")
+    what = row.get("what_it_does")
+    lines = [f"**{symbol} — {name}**", ""]
+    if isinstance(what, str) and what:
+        lines += [what, ""]
+    accrual = str(row.get("accrual") or "unknown")
+    note = row.get("accrual_note")
+    detail = f" {note}" if isinstance(note, str) and note else ""
+    lines.append(f"- **Cattura del valore**: {ACCRUAL_IT.get(accrual, accrual)}.{detail}")
+
+    emission = str(row.get("emission") or "unknown")
+    fdv = _num(row.get("fdv_ratio"))
+    dilution = EMISSION_IT.get(emission, emission)
+    if fdv is not None and fdv > 1.01:
+        # FDV/mcap is the readable form of "how much supply is still to come".
+        dilution += f" — valutazione diluita {fdv:.2f} volte la capitalizzazione attuale"
+    lines.append(f"- **Offerta**: {dilution}.")
+
+    dev = str(row.get("dev_status") or "no_repo_data")
+    commits = _num(row.get("commits_4w"))
+    dev_text = DEV_IT.get(dev, dev)
+    if commits is not None and dev not in {"no_repo_data"}:
+        dev_text += f" ({commits:.0f} commit in 4 settimane)"
+    lines.append(f"- **Sviluppo**: {dev_text}.")
+
+    age = _num(row.get("age_years"))
+    if age is not None:
+        source = str(row.get("age_source") or "")
+        qualifier = " almeno" if source == "atl_lower_bound" else ""
+        lines.append(f"- **Età**:{qualifier} {age:.1f} anni.")
+
+    confidence = _num(row.get("confidence"))
+    if confidence is not None and confidence < 1.0:
+        lines.append(
+            "- ⚠️ Scheda incompleta: nota solo per "
+            f"{_percent_article(confidence * 100)} dei criteri."
+        )
+    lines.append("")
+    return lines
 
 
 def dca_report_dict(
@@ -271,23 +396,38 @@ def dca_report_dict(
         )
 
     candidate_items: list[dict[str, Any]] = []
-    for row in candidates.to_dict("records") if candidates is not None and not candidates.empty else []:
-        flags = row.get("flags")
+    candidate_rows = (
+        candidates.to_dict("records") if candidates is not None and not candidates.empty else []
+    )
+    for row in candidate_rows:
+        accrual = str(row.get("accrual") or "unknown")
+        emission = str(row.get("emission") or "unknown")
+        dev = str(row.get("dev_status") or "no_repo_data")
+        verdict = str(row.get("verdict") or "unresearched")
         candidate_items.append(
             {
-                "rank": int(row["rank"]),
-                "symbol": str(row["symbol"]),
-                "name": str(row["name"]),
-                "market_cap": _num(row["market_cap"]),
-                "market_cap_rank": _round(_num(row["market_cap_rank"]), 0),
-                "turnover": _round(_num(row["turnover"]), 5),
-                "min_age_years": _round(_num(row["min_age_years"]), 2),
-                "ath_change_pct": _round(_num(row["ath_change_pct"]), 2),
-                "categories": str(row["categories"]) if isinstance(row["categories"], str) else None,
-                "flags": str(flags) if isinstance(flags, str) else None,
-                "flags_it": _flags_it(flags) or None,
-                "diversifying": bool(row["diversifying"]),
-                "score": _round(_num(row["score"]), 4),
+                "rank": int(row["rank"]) if row.get("rank") is not None else None,
+                "symbol": str(row.get("symbol") or ""),
+                "name": str(row.get("name") or ""),
+                "what_it_does": _text(row.get("what_it_does")),
+                "accrual": accrual,
+                "accrual_it": ACCRUAL_IT.get(accrual, accrual),
+                "accrual_note": _text(row.get("accrual_note")),
+                "emission": emission,
+                "emission_it": EMISSION_IT.get(emission, emission),
+                "fdv_ratio": _round(_num(row.get("fdv_ratio")), 3),
+                "circulating_pct": _round(_num(row.get("circulating_pct")), 2),
+                "dev_status": dev,
+                "dev_status_it": DEV_IT.get(dev, dev),
+                "commits_4w": _int(row.get("commits_4w")),
+                "age_years": _round(_num(row.get("age_years")), 2),
+                "age_source": _text(row.get("age_source")),
+                "verdict": verdict,
+                "verdict_it": VERDICT_IT.get(verdict, verdict),
+                "score": _round(_num(row.get("score")), 4),
+                "confidence": _round(_num(row.get("confidence")), 4),
+                "market_cap": _num(row.get("market_cap")),
+                "categories": _text(row.get("categories")),
             }
         )
 
@@ -311,6 +451,7 @@ def dca_report_dict(
         "candidates": candidate_items,
         "rejected_summary": rejected_summary,
         "rejected_labels": dict(REJECT_IT),
+        "verdict_order": list(VERDICT_ORDER),
         "caveats": list(CAVEATS),
     }
 

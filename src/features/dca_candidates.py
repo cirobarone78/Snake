@@ -1,15 +1,20 @@
 """Candidate screen for a long-horizon accumulation plan (which coins even qualify).
 
-The question this answers is **not** "which coin will do well over 5-10 years" —
-nobody can answer that, and this project does not pretend to (VISION #1). It is
-the much narrower, answerable one:
+This module is a **pre-filter, not a ranker**. It answers:
 
-    Of the coins large enough to see, which ones clear the objective filters
-    you would want satisfied *before* committing a small sum every month for
-    years — and which are disqualified, and why?
+    Of the coins large enough to see, which ones are even the right *kind* of
+    thing to consider — and which are disqualified, and why?
 
-So the output is a **shortlist with reasons**, plus an explicit rejection log.
-Every filter is mechanical and checkable; none of them is a forecast.
+It used to also score and rank the survivors, by market cap, liquidity and age.
+That was wrong, and wrong in an instructive way: those are properties of the
+ticker, not of the project behind it, so the ranking put Dogecoin second — big,
+liquid, eleven years old, and with nothing underneath. Ranking now lives in
+``src/features/fundamentals.py``, which asks what the thing does and who captures
+its value. Here the survivors come out ordered by market cap and nothing else,
+because market cap is a fact about size and this module claims nothing more.
+
+The output is a **filtered universe with an explicit rejection log**. Every
+filter is mechanical and checkable; none of them is a forecast.
 
 The filters, and what each is actually for:
 
@@ -27,6 +32,12 @@ The filters, and what each is actually for:
 - **Turnover ceiling** — the opposite failure: volume far above cap is a
   pump or wash trading, not a market.
 
+What these filters explicitly do *not* test is whether the project does anything.
+A network with no users, no revenue and no development can clear every one of
+them. That question is the whole subject of ``fundamentals.py``, and this module
+is only the cheap first pass that narrows the universe before the expensive
+per-coin calls that answer it.
+
 **Survivorship bias — read this before using the output.** The screen sees
 today's ranking, which is *by construction* the list of coins that survived. The
 2018 top-100 is mostly gone; the names that vanished are not in the input, so
@@ -38,7 +49,8 @@ the ones worth researching", never as "these will work".
 Age is reported as ``min_age_years``, derived from the all-time-low date, and it
 is deliberately **one-sided**: an old ATL proves the coin is at least that old,
 but a recent ATL proves nothing (a 2016 coin that made a new low last year looks
-young). It therefore raises a candidate's score and never rejects one.
+young, and POL — a 2024 rebrand of a 2019 token — looks months old). It is passed
+through as a fallback for the real genesis date and never rejects anything.
 
 Pure functions over pandas; the caller supplies the snapshot, so this is
 unit-testable offline with no network.
@@ -60,10 +72,6 @@ DEFAULT_MIN_MARKET_CAP: float = 1e9
 # could actually leave; above the ceiling it is a pump, not liquidity.
 DEFAULT_MIN_TURNOVER: float = 0.01
 DEFAULT_MAX_TURNOVER: float = 1.5
-
-# Turnover past this adds no real safety, so the liquidity score saturates here
-# instead of rewarding whatever happens to be churning hardest today.
-_TURNOVER_CAP: float = 0.15
 
 # Name patterns for tokens that are a claim on another asset rather than a
 # separate bet. Matched on the human name, case-insensitive.
@@ -106,26 +114,10 @@ _PEG_MAX_DAILY_MOVE_PCT: float = 1.5
 _OUT_COLS = [
     "symbol", "name", "coingecko_id", "market_cap", "market_cap_rank",
     "turnover", "min_age_years", "ath_change_pct", "categories", "flags",
-    "diversifying", "score", "rank",
+    "diversifying", "rank",
 ]
 
 _REJECT_COLS = ["symbol", "name", "market_cap", "reason"]
-
-
-def _rank_pct(values: np.ndarray) -> np.ndarray:
-    """Cross-sectional percentile rank in ``[0, 1]`` (outlier-robust).
-
-    Same construction used across the screeners: an extreme value tops out at
-    1.0 instead of dominating a blended score. NaNs rank lowest.
-    """
-    n = len(values)
-    if n <= 1:
-        return np.full(n, 0.5)
-    finite = np.where(np.isnan(values), -np.inf, values)
-    if np.all(finite == finite[0]):
-        return np.full(n, 0.5)
-    order = np.argsort(np.argsort(finite, kind="stable"), kind="stable").astype("float64")
-    return order / (n - 1)
 
 
 def _matches(text: str, patterns: tuple[str, ...]) -> bool:
@@ -180,8 +172,13 @@ def coin_categories(categories: pd.DataFrame) -> dict[str, list[str]]:
     return mapping
 
 
-def _min_age_years(atl_date: object, as_of: pd.Timestamp) -> float:
-    """Lower bound on the coin's age, in years, from its all-time-low date."""
+def min_age_years(atl_date: object, as_of: pd.Timestamp) -> float:
+    """Lower bound on the coin's age, in years, from its all-time-low date.
+
+    Public because ``fundamentals`` uses it as the fallback when the provider has
+    no genesis date. A *lower* bound only: a recent all-time low says nothing
+    about when the coin was created.
+    """
     if atl_date is None or (isinstance(atl_date, float) and np.isnan(atl_date)):
         return float("nan")
     try:
@@ -203,18 +200,19 @@ def screen_candidates(
     top_n: int = 10,
     as_of: pd.Timestamp | str | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Shortlist and rejection log from a coin-markets snapshot.
+    """Filtered universe and rejection log from a coin-markets snapshot.
 
     ``markets`` is the output of ``CoinGeckoSource.fetch_markets``. Returns
-    ``(shortlist, rejected)``: the shortlist ranked best-first and capped at
-    ``top_n``, and every excluded coin with the reason it failed — the rejections
-    are half the answer, so they are returned rather than dropped.
+    ``(survivors, rejected)``: the coins that cleared every filter, ordered by
+    **market cap and nothing else**, capped at ``top_n``; and every excluded coin
+    with the reason it failed — the rejections are half the answer, so they are
+    returned rather than dropped.
 
-    The score blends three rank percentiles: size (survivorship proxy, 0.45),
-    demonstrable track record (0.35) and liquidity (0.20, saturating). None of
-    them is predictive, and the ``diversifying`` flag — whether the coin's
-    categories overlap what is already held — is reported separately rather than
-    folded into the number.
+    There is deliberately no quality score here. Ordering by size is a statement
+    about size; ranking these coins against each other requires knowing what they
+    do, which is ``fundamentals.profile_frame``'s job. ``top_n`` exists because
+    the next stage costs one API call per coin, so the universe has to be cut
+    somewhere — cutting by size is the least opinionated cut available.
     """
     if markets.empty:
         return pd.DataFrame(columns=_OUT_COLS), pd.DataFrame(columns=_REJECT_COLS)
@@ -276,7 +274,7 @@ def screen_candidates(
                 "market_cap": market_cap,
                 "market_cap_rank": _num(row.get("market_cap_rank")),
                 "turnover": round(turnover, 5),
-                "min_age_years": round(_min_age_years(row.get("atl_date"), now), 2),
+                "min_age_years": round(min_age_years(row.get("atl_date"), now), 2),
                 "ath_change_pct": _num(row.get("ath_change_pct")),
                 "categories": ", ".join(cats) if cats else None,
                 "flags": ", ".join(context_flags(cats)) if cats else None,
@@ -291,14 +289,8 @@ def screen_candidates(
         return pd.DataFrame(columns=_OUT_COLS), reject_frame
 
     out = pd.DataFrame(kept)
-    size = _rank_pct(out["market_cap"].to_numpy(dtype="float64"))
-    age = _rank_pct(out["min_age_years"].to_numpy(dtype="float64"))
-    liquidity = _rank_pct(
-        np.minimum(out["turnover"].to_numpy(dtype="float64"), _TURNOVER_CAP)
-    )
-    out["score"] = np.round(0.45 * size + 0.35 * age + 0.20 * liquidity, 4)
     out = out.sort_values(
-        ["score", "market_cap"], ascending=[False, False], kind="stable"
+        ["market_cap", "symbol"], ascending=[False, True], kind="stable"
     ).head(top_n)
     out["rank"] = np.arange(1, len(out) + 1)
     out.index = pd.RangeIndex(start=1, stop=len(out) + 1, name="rank")

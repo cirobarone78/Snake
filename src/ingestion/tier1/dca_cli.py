@@ -27,13 +27,14 @@ import yaml
 from src.assets.asset import Asset, get_asset_by_symbol
 from src.features.dca_advisor import advise
 from src.features.dca_backtest import compare, random_control, split_halves
-from src.features.dca_candidates import screen_candidates
+from src.features.dca_candidates import min_age_years, screen_candidates
 from src.features.dca_report import (
     dca_report_dict,
     format_report,
     write_markdown,
     write_report_json,
 )
+from src.features.fundamentals import profile_frame
 from src.ingestion.freshness import check_freshness, last_timestamp_of
 from src.ingestion.tier1.yahoo_finance import YahooFinanceSource
 
@@ -90,7 +91,7 @@ def fetch_panel(symbols: list[str], start: str = FETCH_START) -> pd.DataFrame:
             continue
         fresh = check_freshness(last_timestamp_of(ohlcv), max_age_days=MAX_AGE_DAYS, name=symbol)
         if not fresh.is_fresh:
-            logger.warning("Feed non aggiornato per %s: %s", symbol, fresh.reason)
+            logger.warning("Feed non aggiornato per %s: %s", symbol, fresh.message())
             continue
         closes[symbol] = cast("pd.Series", ohlcv["close"])
     if not closes:
@@ -122,22 +123,74 @@ def replay_units(
     return cast("dict[str, float]", result["units"])
 
 
+# One CoinGecko call per coin, throttled: the shortlist has to stay small enough
+# that a daily cron finishes without tripping the free-tier limit.
+MAX_PROFILED: int = 25
+
+# Verdicts that always make the report even when they fall outside the top N.
+# A shortlist that quietly drops them shows only what passed, which teaches the
+# reader nothing about where the bar actually is.
+DISQUALIFYING_VERDICTS: tuple[str, ...] = ("no_value_capture", "governance_only")
+
+
 def _candidates(
     held: list[str], top_n: int
 ) -> tuple[pd.DataFrame | None, pd.DataFrame | None]:
-    """Screen long-horizon candidates; ``(None, None)`` if the fetch fails."""
+    """Filter the universe, then profile the survivors on fundamentals.
+
+    Two stages on purpose: the mechanical filters are one cheap call over the
+    whole top-100, and the fundamental profile costs a call per coin. Ranking
+    comes from the second stage — the first only decides who is worth the call.
+
+    ``(None, None)`` if the market snapshot fails; a failure in the *profiling*
+    stage still returns the filtered universe, unranked, rather than nothing.
+    """
     from src.ingestion.tier1.coingecko import CoinGeckoSource
 
+    source = CoinGeckoSource()
     try:
-        markets = CoinGeckoSource().fetch_markets()
+        markets = source.fetch_markets()
     except Exception:
-        logger.exception("Fetch CoinGecko fallito: sezione candidate omessa")
+        logger.exception("Fetch CoinGecko fallito: sezione progetti omessa")
         return None, None
     categories = pd.read_parquet(CATEGORIES_PATH) if CATEGORIES_PATH.exists() else None
-    shortlist, rejected = screen_candidates(
-        markets, held_symbols=held, categories=categories, top_n=top_n
+    survivors, rejected = screen_candidates(
+        markets, held_symbols=held, categories=categories, top_n=min(top_n * 2, MAX_PROFILED)
     )
-    return shortlist, rejected
+    if survivors.empty:
+        return survivors, rejected
+
+    coin_ids = [str(c) for c in survivors["coingecko_id"] if c]
+    try:
+        details = source.fetch_coin_details(coin_ids)
+    except Exception:
+        logger.exception("Dettagli CoinGecko falliti: nessuna scheda fondamentale")
+        return survivors, rejected
+    if details.empty:
+        return survivors, rejected
+
+    # Genesis dates are missing for many coins; carry the all-time-low lower
+    # bound across so the profile has a fallback age instead of a blank.
+    now = pd.Timestamp.now(tz="UTC")
+    fallback = {
+        str(r.get("coingecko_id")): min_age_years(r.get("atl_date"), now)
+        for r in markets.to_dict("records")
+    }
+    details["min_age_years"] = [fallback.get(str(c)) for c in details["coingecko_id"]]
+    caps = {str(r.get("coingecko_id")): r.get("market_cap") for r in survivors.to_dict("records")}
+
+    profiled = profile_frame(details)
+    if profiled.empty:
+        return survivors, rejected
+    profiled["market_cap"] = [caps.get(str(c)) for c in profiled["coingecko_id"]]
+    # Keep the top of the ranking, but never truncate away the projects that
+    # failed on fundamentals: seeing *why* something is disqualified is the point
+    # of the section, and those rows sort last precisely because they failed.
+    head = profiled.head(top_n)
+    disqualified = profiled.loc[profiled["verdict"].isin(list(DISQUALIFYING_VERDICTS))]
+    shown = pd.concat([head, disqualified]).drop_duplicates(subset="symbol", keep="first")
+    shown["rank"] = range(1, len(shown) + 1)
+    return shown, rejected
 
 
 def _validate(panel: pd.DataFrame) -> None:

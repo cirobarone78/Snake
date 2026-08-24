@@ -478,33 +478,73 @@ function evidenceItem(tone, title, body) {
 
 function dcaCandidatesCard(data) {
   const card = el("div", "card dca-card");
-  card.appendChild(el("p", "mini-title", "Candidate per un accumulo a lungo termine"));
-  card.appendChild(el("p", "dca-sub", "Monete che superano i filtri meccanici: dimensione, liquidità reale, età minima dimostrabile. Nessun giudizio su tecnologia o prospettive — sono i nomi da studiare, non da comprare al buio."));
-  const list = el("ul", "ranklist");
-  data.candidates.forEach((c) => list.appendChild(candidateRow(c)));
-  card.appendChild(list);
+  card.appendChild(el("p", "mini-title", "Progetti: cosa c'è dietro il token"));
+  card.appendChild(el("p", "dca-sub", "Per ogni progetto: cosa fa, se e come il valore che produce arriva a chi tiene il token, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione."));
+  // Grouped by verdict, not by rank: the reason a project sits where it does is
+  // the information, and a flat leaderboard hides it.
+  const order = Array.isArray(data.verdict_order) ? data.verdict_order : [];
+  const present = [...new Set(data.candidates.map((c) => c.verdict))];
+  const groups = [...order.filter((v) => present.includes(v)), ...present.filter((v) => !order.includes(v))];
+  groups.forEach((verdict) => {
+    const rows = data.candidates.filter((c) => c.verdict === verdict);
+    if (!rows.length) return;
+    card.appendChild(el("p", "dca-group", rows[0].verdict_it || verdict));
+    const list = el("div", "dca-projects");
+    rows.forEach((c) => list.appendChild(projectCard(c)));
+    card.appendChild(list);
+  });
   const summary = data.rejected_summary || {};
   const labels = data.rejected_labels || {};
   const parts = Object.keys(summary).map((k) => `${labels[k] || k}: ${summary[k]}`);
-  if (parts.length) card.appendChild(el("p", "dca-sub dca-rejected", `Escluse dal filtro — ${parts.join(" · ")}.`));
+  if (parts.length) card.appendChild(el("p", "dca-sub dca-rejected", `Escluse prima ancora di guardare i fondamentali — ${parts.join(" · ")}.`));
   return card;
 }
 
-function candidateRow(c) {
-  const li = el("li", "dca-cand");
-  li.appendChild(el("span", "ri-rank", String(c.rank)));
-  const nameWrap = el("div", "dca-cand-name");
-  nameWrap.appendChild(el("span", "ri-name", `${c.symbol} · ${c.name}`));
-  const tags = el("div", "dca-tags");
-  if (c.flags_it) c.flags_it.split(",").forEach((f) => tags.appendChild(el("span", "dca-tag", f.trim())));
-  if (c.diversifying) tags.appendChild(el("span", "dca-tag is-div", "diversifica"));
-  if (tags.childNodes.length) nameWrap.appendChild(tags);
-  li.appendChild(nameWrap);
-  li.appendChild(metricRaw("Cap.", fmtMcap(c.market_cap)));
-  li.appendChild(metricRaw("Liquidità", c.turnover == null ? "n/d" : `${(c.turnover * 100).toFixed(1)}%`));
-  li.appendChild(metricRaw("Età min.", c.min_age_years == null ? "n/d" : `${NF1.format(c.min_age_years)} anni`));
-  li.appendChild(metric("Da max", c.ath_change_pct));
-  return li;
+function projectCard(c) {
+  const box = el("div", `dca-project v-${(c.verdict || "unresearched").replace(/_/g, "-")}`);
+  const head = el("div", "dca-project-head");
+  head.appendChild(el("span", "dca-project-sym", c.symbol));
+  head.appendChild(el("span", "dca-project-name", c.name));
+  box.appendChild(head);
+  if (c.what_it_does) box.appendChild(el("p", "dca-project-what", c.what_it_does));
+
+  const accrual = [c.accrual_it, c.accrual_note].filter(Boolean).join(". ");
+  box.appendChild(projectLine("Cattura del valore", accrual));
+
+  let supply = c.emission_it || "";
+  if (c.fdv_ratio != null && c.fdv_ratio > 1.01) {
+    supply += `${supply ? " — " : ""}valutazione diluita ${NF2.format(c.fdv_ratio)} volte la capitalizzazione`;
+  }
+  box.appendChild(projectLine("Offerta", supply));
+
+  let dev = c.dev_status_it || "";
+  if (c.commits_4w != null && c.dev_status !== "no_repo_data") {
+    dev += ` (${NF0.format(c.commits_4w)} commit in 4 settimane)`;
+  }
+  box.appendChild(projectLine("Sviluppo", dev));
+
+  if (c.age_years != null) {
+    const qualifier = c.age_source === "atl_lower_bound" ? "almeno " : "";
+    box.appendChild(projectLine("Età", `${qualifier}${NF1.format(c.age_years)} anni`));
+  }
+  if (c.confidence != null && c.confidence < 1) {
+    box.appendChild(el("p", "dca-project-warn", `Scheda incompleta: nota solo per ${pctArticle(c.confidence * 100)} dei criteri.`));
+  }
+  return box;
+}
+
+// "l'80%" but "il 65%": Italian elides the article before a vowel sound.
+function pctArticle(pct) {
+  const n = Math.round(pct);
+  const article = /^(8|11)/.test(String(n)) ? "l'" : "il ";
+  return `${article}${n}%`;
+}
+
+function projectLine(label, value) {
+  const row = el("p", "dca-project-line");
+  row.appendChild(el("span", "dca-project-label", label));
+  row.appendChild(el("span", "dca-project-value", value || "n/d"));
+  return row;
 }
 
 function dcaCaveatsCard(caveats) {

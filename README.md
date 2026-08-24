@@ -83,6 +83,9 @@ includere almeno:
 - `api.glassnode.com`
 - `api.stlouisfed.org` (FRED)
 - `cryptopanic.com`
+- `api.llama.fi` (DefiLlama: fees, revenue e TVL dei protocolli — **non ancora
+  sbloccato**, vedi ADR-031: senza, la scheda fondamentale dei progetti misura
+  solo *se* un meccanismo di cattura del valore esiste, non quanto valga)
 
 ## Struttura
 

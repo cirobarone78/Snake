@@ -477,14 +477,31 @@ details.chapter[open] > summary::before { transform: rotate(45deg); }
 .dca-ev-neg { border-color: rgba(255, 107, 129, 0.3); background: rgba(255, 107, 129, 0.06); }
 .dca-ev-title { margin: 0 0 6px; font-size: 13.5px; font-weight: 700; }
 .dca-ev-body { margin: 0; font-size: 12.8px; line-height: 1.55; color: var(--text-soft); }
-.dca-cand { gap: 14px; flex-wrap: wrap; }
-.dca-cand-name { flex: 1; min-width: 160px; display: flex; flex-direction: column; gap: 5px; }
-.dca-tags { display: flex; gap: 5px; flex-wrap: wrap; }
-.dca-tag {
-  font-size: 10.5px; font-weight: 650; letter-spacing: 0.02em; padding: 2px 8px; border-radius: 999px;
-  color: var(--text-soft); background: rgba(154, 163, 189, 0.14);
+.dca-group {
+  margin: 22px 0 12px; font-size: 13px; font-weight: 700; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--text-soft);
 }
-.dca-tag.is-div { color: var(--pos); background: rgba(52, 224, 161, 0.13); }
+.dca-projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.dca-project {
+  padding: 16px 18px; border-radius: 14px; border: 1px solid var(--hairline);
+  display: flex; flex-direction: column; gap: 9px;
+}
+/* The left edge carries the verdict, so the reason is visible before reading. */
+.dca-project.v-capture-present { border-left: 3px solid var(--pos); }
+.dca-project.v-capture-but-thin-dev { border-left: 3px solid var(--warm); }
+.dca-project.v-monetary-thesis { border-left: 3px solid var(--accent); }
+.dca-project.v-governance-only { border-left: 3px solid var(--warm); }
+.dca-project.v-no-value-capture { border-left: 3px solid var(--neg); }
+.dca-project.v-unresearched { border-left: 3px solid var(--neutral); }
+.dca-project-head { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
+.dca-project-sym { font-family: var(--mono); font-size: 16px; font-weight: 700; }
+.dca-project-name { color: var(--text-soft); font-size: 13px; }
+.dca-project-what { margin: 0; font-size: 13.5px; line-height: 1.5; }
+.dca-project-line { margin: 0; font-size: 12.8px; line-height: 1.55; }
+.dca-project-label { color: var(--text-soft); font-weight: 650; }
+.dca-project-label::after { content: ": "; }
+.dca-project-value { color: var(--text); }
+.dca-project-warn { margin: 2px 0 0; font-size: 12px; color: var(--warm); }
 .dca-rejected { margin: 14px 0 0; }
 .dca-caveats { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px; }
 .dca-caveats li { color: var(--text-soft); font-size: 13.5px; line-height: 1.55; }

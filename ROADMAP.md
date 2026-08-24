@@ -418,6 +418,22 @@ di notebook. È la fase di "consumo" del sistema da parte dell'utente.
       filtri meccanici (stablecoin/pegged, wrapped, soglia cap, banda di
       liquidità) su top-100 CoinGecko, con la lista degli scarti e il motivo.
       Nessun giudizio di merito; survivorship bias dichiarato, non risolto
+- [x] **Fondamentali dei progetti** (ADR-031, correzione su feedback utente): lo
+      screen ordinava su proprietà del *ticker* (dimensione, liquidità, età) e
+      metteva Dogecoin secondo. Ora `dca_candidates` è un puro pre-filtro senza
+      punteggio, e `src/features/fundamentals.py` classifica su **cattura del
+      valore** (registro curato in `src/assets/token_economics.py`),
+      **diluizione**, **sviluppo** e **track record**, con `confidence` pari al
+      peso degli assi realmente noti. Report e dashboard passano da classifica a
+      **scheda per progetto** raggruppata per verdetto
+- [ ] **Sbloccare `api.llama.fi` nella policy di rete** (serve un intervento
+      dell'utente sull'ambiente): senza i ricavi di protocollo si misura *se*
+      un meccanismo di cattura esiste, non *quanto* valga. Sbloccato l'host si
+      aggiungono fees, revenue, TVL e il rapporto P/F, e il client si può
+      scrivere **e testare** invece che a scatola chiusa
+- [ ] Rivedere periodicamente il registro curato: ogni voce ha `verified_on`,
+      e l'economia dei token cambia (il fee switch di Uniswap è il caso da
+      tenere d'occhio)
 - [x] **Superfici di consumo**: `REPORT_DCA.md`, `public/data/dca_report.json`,
       tab dashboard "Piano di accumulo", cron giornaliero `dca.yml`,
       configurazione in `config/dca_plan.yaml`

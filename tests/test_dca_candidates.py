@@ -97,30 +97,41 @@ def test_screen_rejects_each_class_with_its_own_reason() -> None:
 
 
 def test_screen_keeps_the_coins_that_clear_every_filter() -> None:
-    shortlist, _ = screen_candidates(
+    survivors, _ = screen_candidates(
         _markets(), held_symbols=["BTC"], min_market_cap=1e9, as_of=AS_OF
     )
-    assert set(shortlist["symbol"]) == {"ADA", "XMR"}
-    assert list(shortlist["rank"]) == [1, 2]
+    assert set(survivors["symbol"]) == {"ADA", "XMR"}
+    assert list(survivors["rank"]) == [1, 2]
+
+
+def test_survivors_are_ordered_by_size_and_carry_no_quality_score() -> None:
+    # This module ranked on size+age+liquidity once and put a meme coin second.
+    # It now orders by market cap and makes no claim beyond that.
+    survivors, _ = screen_candidates(
+        _markets(), held_symbols=["BTC"], min_market_cap=1e9, as_of=AS_OF
+    )
+    assert "score" not in survivors.columns
+    caps = list(survivors["market_cap"])
+    assert caps == sorted(caps, reverse=True)
 
 
 def test_min_age_is_measured_from_the_all_time_low_date() -> None:
-    shortlist, _ = screen_candidates(
+    survivors, _ = screen_candidates(
         _markets(), held_symbols=["BTC"], min_market_cap=1e9, as_of=AS_OF
     )
-    xmr = shortlist.loc[shortlist["symbol"] == "XMR"].iloc[0]
+    xmr = survivors.loc[survivors["symbol"] == "XMR"].iloc[0]
     assert 10.5 < float(xmr["min_age_years"]) < 11.5  # ATL Jan 2015
 
 
 def test_diversifying_flags_only_categories_absent_from_the_holdings() -> None:
-    shortlist, _ = screen_candidates(
+    survivors, _ = screen_candidates(
         _markets(),
         held_symbols=["BTC"],
         categories=_categories(),
         min_market_cap=1e9,
         as_of=AS_OF,
     )
-    flags = dict(zip(shortlist["symbol"], shortlist["diversifying"], strict=True))
+    flags = dict(zip(survivors["symbol"], survivors["diversifying"], strict=True))
     assert flags["XMR"] is True  # Privacy Coins: not covered by BTC
     assert flags["ADA"] is False  # shares Layer 1 (L1) with BTC
 
@@ -135,5 +146,5 @@ def test_turnover_ceiling_rejects_volume_anomalies() -> None:
 
 
 def test_screen_on_empty_snapshot_returns_empty_frames() -> None:
-    shortlist, rejected = screen_candidates(pd.DataFrame())
-    assert shortlist.empty and rejected.empty
+    survivors, rejected = screen_candidates(pd.DataFrame())
+    assert survivors.empty and rejected.empty

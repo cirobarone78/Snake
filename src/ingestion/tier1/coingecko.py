@@ -28,7 +28,7 @@ from __future__ import annotations
 import logging
 import os
 import time
-from typing import Any, Final
+from typing import Any, Final, cast
 
 import pandas as pd
 import requests
@@ -233,6 +233,76 @@ class CoinGeckoSource(DataSource):
         )
         df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
         return df
+
+    def fetch_coin_details(self, coin_ids: list[str]) -> pd.DataFrame:
+        """Per-coin detail rows for a fundamental profile (one call per coin).
+
+        ``/coins/{id}`` carries what the markets endpoint does not: the genesis
+        date (a real age, rather than the all-time-low lower bound), the supply
+        split that reveals how much is still to be issued, and the provider's
+        developer statistics. Rate limits make this expensive, so callers pass a
+        shortlist, not the whole universe.
+
+        A coin that fails is **skipped with a warning**, not filled with zeros:
+        ``fundamentals`` treats missing fields as unknown, and a fabricated zero
+        would read as a failed project instead of an unread one.
+
+        Output columns: ``coingecko_id, symbol, name, market_cap,
+        fully_diluted_valuation, circulating_supply, total_supply, max_supply,
+        genesis_date, categories, stars, forks, pr_contributors, commits_4w``.
+        """
+        rows: list[dict[str, Any]] = []
+        for coin_id in coin_ids:
+            try:
+                payload = self._get(
+                    f"/coins/{coin_id}",
+                    params={
+                        "localization": "false",
+                        "tickers": "false",
+                        "market_data": "true",
+                        "community_data": "false",
+                        "developer_data": "true",
+                        "sparkline": "false",
+                    },
+                )
+            except Exception:
+                logger.exception("Coin detail fetch failed for %s: skipped", coin_id)
+                continue
+            # ``_get`` is typed Any; pin the shapes so strict mode can read the
+            # nested lookups below instead of degrading them all to Unknown.
+            coin = cast("dict[str, Any]", payload)
+            market = cast("dict[str, Any]", coin.get("market_data") or {})
+            dev = cast("dict[str, Any]", coin.get("developer_data") or {})
+            market_cap = cast("dict[str, Any]", market.get("market_cap") or {})
+            fdv = cast("dict[str, Any]", market.get("fully_diluted_valuation") or {})
+            categories = cast("list[Any]", coin.get("categories") or [])
+            rows.append(
+                {
+                    "coingecko_id": coin.get("id"),
+                    "symbol": str(coin.get("symbol") or "").upper(),
+                    "name": coin.get("name"),
+                    "market_cap": market_cap.get("usd"),
+                    "fully_diluted_valuation": fdv.get("usd"),
+                    "circulating_supply": market.get("circulating_supply"),
+                    "total_supply": market.get("total_supply"),
+                    "max_supply": market.get("max_supply"),
+                    "genesis_date": coin.get("genesis_date"),
+                    "categories": ", ".join(str(c) for c in categories if c),
+                    "stars": dev.get("stars"),
+                    "forks": dev.get("forks"),
+                    "pr_contributors": dev.get("pull_request_contributors"),
+                    "commits_4w": dev.get("commit_count_4_weeks"),
+                }
+            )
+        return pd.DataFrame(
+            rows,
+            columns=[
+                "coingecko_id", "symbol", "name", "market_cap",
+                "fully_diluted_valuation", "circulating_supply", "total_supply",
+                "max_supply", "genesis_date", "categories", "stars", "forks",
+                "pr_contributors", "commits_4w",
+            ],
+        )
 
     def fetch_categories(self, min_market_cap: float = 0.0) -> pd.DataFrame:
         """Crypto categories (narratives) with market-cap-weighted 24h move.

@@ -245,6 +245,31 @@ scelta qui o in DECISIONS.md.
 
 ---
 
+### Q27 — Quanto vale davvero un meccanismo di cattura del valore?
+Emersa con ADR-031. La scheda fondamentale sa dire **se** un token cattura il
+valore prodotto dal protocollo (burn, staking, riacquisti, work token), ma non
+**quanto**: un burn enorme e uno simbolico prendono lo stesso punteggio. È il
+motivo per cui NEAR ed Ethereum compaiono a pari merito, il che è chiaramente
+sbagliato.
+
+Il dato che risolverebbe la questione — ricavi di protocollo, TVL, rapporto
+prezzo/commissioni — esiste ed è gratuito (DefiLlama), ma `api.llama.fi` è
+**bloccato dalla policy di rete** di questo ambiente.
+
+Due domande distinte, e vanno separate:
+1. **Operativa**: sbloccare l'host? Decisione dell'utente sull'ambiente.
+2. **Metodologica, e più interessante**: una volta avuti i ricavi, un rapporto
+   prezzo/commissioni basso indica davvero qualcosa? Nelle azioni il P/E basso
+   ha una letteratura enorme e contrastata; nei protocolli crypto la storia è
+   lunga pochi anni e piena di sopravvissuti. **Il rischio concreto è
+   confezionare un P/E crypto e trattarlo come se fosse validato.** Se lo si
+   introduce, va introdotto come descrizione, con la stessa onestà con cui la
+   regola sulla quota satellite è stata dichiarata priva di edge.
+
+*Non bloccante.* La scheda funziona anche senza; semplicemente non gradua.
+
+---
+
 ## 🟢 Domande di ricerca (non decisioni operative)
 
 Ipotesi da testare empiricamente nel corso del progetto.

@@ -1581,6 +1581,82 @@ significa moneta giovane — Zcash è del 2016 e il dato la darebbe a 2 anni).
 
 ---
 
+## ADR-031 — Le candidate si giudicano sui fondamenti del progetto, non sulle proprietà del ticker
+
+**Data**: 2026-08-24
+**Stato**: Accepted
+**Corregge**: ADR-030 (sezione candidate)
+
+**Contesto**: lo screen introdotto con ADR-030 ordinava le candidate su
+capitalizzazione, liquidità ed età. Feedback dell'utente, immediato e corretto:
+quelle sono proprietà **del ticker**, non del progetto che ci sta dietro. Con
+quel punteggio Dogecoin usciva secondo — grande, liquido, undici anni di storia,
+e sotto niente che leghi il prezzo a un'attività della rete. L'utente ha
+precisato che DOGE era solo l'esempio: il punto è che i titoli scelti devono
+avere **basi solide alle spalle**.
+
+Nota su cosa NON era il bug: il punteggio non conteneva momentum (rimosso in
+ADR-030 perché risultato peggiore del caso). DOGE non usciva perché saliva, ma
+perché lo screen non aveva alcuna nozione di *cosa faccia* un progetto — il che
+è peggio.
+
+**Decisione**: separare le due responsabilità.
+
+1. `dca_candidates` diventa un **puro pre-filtro**. Mantiene i filtri meccanici
+   (già in portafoglio, stablecoin/pegged, wrapped, soglia di capitalizzazione,
+   banda di liquidità) e **perde il punteggio**: i sopravvissuti escono ordinati
+   per capitalizzazione e nient'altro, perché ordinare per dimensione è
+   un'affermazione sulla dimensione e questo modulo non ne fa altre.
+2. `src/features/fundamentals.py` fa il ranking su quattro assi: **cattura del
+   valore**, **diluizione**, **sviluppo**, **track record**.
+3. `src/assets/token_economics.py` è un registro **curato a mano** — con
+   meccanismo, fonte e data di verifica — perché nessuna API gratuita risponde
+   alla domanda "il valore prodotto arriva a chi tiene il token".
+
+Tre regole che nascono da errori commessi mentre lo si costruiva:
+
+- **Sconosciuto non è zero.** Ogni asse può essere ignoto, gli assi ignoti sono
+  esclusi dalla media invece che imputati, e la riga porta una `confidence` pari
+  al peso di ciò che si sapeva davvero. Un progetto non studiato non deve
+  sembrare un progetto bocciato.
+- **La tesi monetaria è esente dall'asse cattura, non penalizzata da esso.**
+  Bitcoin non cattura ricavi di protocollo ed è l'asset di maggior successo della
+  categoria; un punteggio che lo mettesse ultimo su "cattura del valore" sarebbe
+  rotto in una direzione nuova, non riparato.
+- **Zero commit recenti è una domanda, non un verdetto.** Monero e Aave
+  riportano entrambi zero commit in quattro settimane e sono entrambi vivi: il
+  dato a monte dipende da quale repository il provider ha mappato e invecchia.
+  Un repo silenzioso con una lunga storia di contributori è etichettato
+  *quiet_or_stale* e vale **ignoto**, mai "morto".
+
+Una soglia `DEFAULT_MIN_CONFIDENCE = 0.5` nasce da un caso concreto: Bitcoin Cash
+prendeva 1.0 sulla sola diluizione e finiva quinto, davanti a Solana. Il numero
+era aritmeticamente giusto e privo di significato.
+
+**Conseguenze**:
+- ✅ Il report non è più una classifica ma una **scheda per progetto**, raggruppata
+  per verdetto: cosa fa, chi cattura il valore, quanta offerta deve arrivare, chi
+  lo sviluppa. Il motivo viaggia col nome
+- ✅ I progetti **scartati sui fondamentali** restano sempre visibili anche se
+  fuori dal top-N: vedere dov'è l'asticella vale quanto vedere chi la supera
+- ⚠️ **Manca il dato più importante: i ricavi di protocollo.** `api.llama.fi`,
+  Token Terminal e Dune sono **bloccati dalla policy di rete** dell'ambiente
+  (403 al CONNECT). Senza, si misura *se* un meccanismo di cattura esiste, non
+  *quanto* valga — un burn enorme e uno simbolico oggi prendono lo stesso
+  punteggio, ed è il motivo per cui NEAR compare a pari merito con Ethereum.
+  Sbloccando `api.llama.fi` si aggiungono fees, revenue, TVL e il rapporto P/F
+- ⚠️ **Niente backtest, e non è colpa della fretta**: la storia di fee e
+  valutazioni dei protocolli è lunga pochi anni ed è piena di sopravvissuti.
+  A differenza della regola sulla quota satellite (ADR-030), qui **non si può
+  dire che questi assi battano il caso**. Descrivono, non predicono
+- ⚠️ Il registro curato copre i nomi principali e **invecchia**: `verified_on`
+  dice quando un umano ha controllato l'ultima volta
+- 🔗 Il client DefiLlama **non è stato scritto**: codice HTTP contro un host
+  irraggiungibile non è verificabile, e si romperebbe nel cron. Si scrive quando
+  l'host è raggiungibile
+
+---
+
 <!--
 Template per nuove ADR:
 

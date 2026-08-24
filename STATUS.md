@@ -204,6 +204,46 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 
 ## Cosa è stato fatto
 
+### 2026-08-24 — Sessione (cont.): fondamentali dei progetti (ADR-031)
+
+**Correzione su feedback utente.** Lo screen candidate di ADR-030 ordinava per
+capitalizzazione, liquidità ed età — proprietà **del ticker**, non del progetto.
+Con quel punteggio Dogecoin usciva secondo. L'utente ha chiarito che DOGE era
+solo l'esempio: i titoli scelti devono avere **basi solide alle spalle**.
+
+**Cosa è cambiato**:
+- `dca_candidates` è ora un **puro pre-filtro** senza punteggio: i sopravvissuti
+  escono ordinati per capitalizzazione e basta
+- `src/features/fundamentals.py` fa il ranking su cattura del valore, diluizione,
+  sviluppo e track record, con `confidence` = peso degli assi realmente noti
+- `src/assets/token_economics.py`: registro **curato a mano** (meccanismo, fonte,
+  `verified_on`) di come — e se — il token cattura il valore del protocollo
+- Report e tab dashboard: da classifica a **scheda per progetto**, raggruppata
+  per verdetto. I progetti scartati sui fondamentali restano sempre visibili
+
+**Tre trappole trovate strada facendo, tutte già codificate**:
+- **Sconosciuto non è zero**: gli assi ignoti sono esclusi dalla media, non
+  imputati. Un progetto non studiato non deve sembrare bocciato
+- **La tesi monetaria è esente dall'asse cattura**: Bitcoin non cattura ricavi ed
+  è l'asset di maggior successo. Penalizzarlo sarebbe un bug nuovo
+- **Zero commit non è "morto"**: Monero e Aave riportano 0 commit in 4 settimane
+  e sono vivissimi (dato del provider stantio). Etichettato `quiet_or_stale` e
+  trattato come ignoto
+
+**⚠️ DA FARE — richiede un intervento dell'utente sull'ambiente**: manca il dato
+più importante, i **ricavi di protocollo**. `api.llama.fi` (DefiLlama), Token
+Terminal e Dune rispondono **403 al CONNECT**: bloccati dalla policy di rete.
+Senza, si misura *se* esiste un meccanismo di cattura, non *quanto* valga — ed è
+il motivo per cui NEAR compare a pari merito con Ethereum. Aggiungendo
+`api.llama.fi` all'allowlist si sbloccano fees, revenue, TVL e il rapporto P/F.
+Il client DefiLlama **non è stato scritto di proposito**: codice HTTP contro un
+host irraggiungibile non è verificabile e si romperebbe nel cron.
+
+**Nota metodologica**: a differenza di ADR-030, qui **non c'è backtest e non è
+possibile farne uno onesto** — la storia di fee e valutazioni dei protocolli è
+lunga pochi anni ed è piena di sopravvissuti. Questi assi descrivono i progetti,
+non predicono i rendimenti, e il report lo dice.
+
 ### 2026-08-24 — Sessione: piano di accumulo (ADR-030) — richiesta utente
 
 **Richiesta**: il piano reale dell'utente è 100€/mese (60 BTC, 30 ETH, 10 su

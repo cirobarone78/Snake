@@ -13,6 +13,7 @@ from src.features.dca_report import (
     format_report,
     write_markdown,
 )
+from src.features.fundamentals import profile_frame
 from tests.test_dca_backtest import _panel
 
 
@@ -21,9 +22,31 @@ def _ranked() -> pd.DataFrame:
 
 
 def _candidates() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Profiled projects plus the pre-filter's rejection log, as the CLI builds them."""
     from tests.test_dca_candidates import AS_OF, _markets
 
-    return screen_candidates(_markets(), held_symbols=["BTC"], min_market_cap=1e9, as_of=AS_OF)
+    markets = _markets()
+    survivors, rejected = screen_candidates(
+        markets, held_symbols=["BTC"], min_market_cap=1e9, as_of=AS_OF
+    )
+    details = pd.DataFrame(
+        [
+            {
+                "symbol": row["symbol"], "name": row["name"],
+                "coingecko_id": row["coingecko_id"],
+                "market_cap": row["market_cap"],
+                "fully_diluted_valuation": row["market_cap"] * 1.2,
+                "circulating_supply": 100.0, "total_supply": 120.0,
+                "commits_4w": 30, "pr_contributors": 120, "stars": 5000,
+                "genesis_date": "2017-09-16", "categories": "Layer 1 (L1)",
+                "as_of": AS_OF,
+            }
+            for row in survivors.to_dict("records")
+        ]
+    )
+    profiled = profile_frame(details, min_confidence=0.0)
+    profiled["rank"] = range(1, len(profiled) + 1)
+    return profiled, rejected
 
 
 def test_report_names_the_pick_and_every_sleeve_asset() -> None:
@@ -49,12 +72,40 @@ def test_report_warns_when_the_position_is_only_estimated() -> None:
     assert "stimati" in format_report(_ranked(), holdings_estimated=True)
 
 
-def test_report_lists_candidates_and_their_rejection_counts() -> None:
+def test_report_shows_the_project_dossier_and_the_rejection_counts() -> None:
     shortlist, rejected = _candidates()
     text = format_report(_ranked(), shortlist, rejected)
-    assert "Candidate per un accumulo" in text
+    assert "Progetti: cosa c'è dietro il token" in text
     assert "XMR" in text
+    assert "Cattura del valore" in text
     assert "già in portafoglio" in text
+
+
+def test_report_groups_projects_by_verdict_and_explains_each() -> None:
+    from src.features.dca_report import VERDICT_IT
+
+    ranked = _ranked()
+    profiled = profile_frame(
+        pd.DataFrame(
+            [
+                {"symbol": "DOGE", "coingecko_id": "dogecoin", "name": "Dogecoin",
+                 "market_cap": 1e10, "fully_diluted_valuation": 1.1e10,
+                 "commits_4w": 0, "pr_contributors": 161, "stars": 14334,
+                 "genesis_date": "2013-12-08"},
+                {"symbol": "ETH", "coingecko_id": "ethereum", "name": "Ethereum",
+                 "market_cap": 3e11, "fully_diluted_valuation": 3e11,
+                 "commits_4w": 41, "pr_contributors": 906, "stars": 44422,
+                 "genesis_date": "2015-07-30"},
+            ]
+        ),
+        min_confidence=0.0,
+    )
+    profiled["rank"] = range(1, len(profiled) + 1)
+    text = format_report(ranked, profiled)
+    assert VERDICT_IT["no_value_capture"] in text
+    assert VERDICT_IT["capture_present"] in text
+    # The reason must travel with the name, not just a rank.
+    assert "nessun legame fra prezzo e attività della rete" in text
 
 
 def test_report_handles_an_empty_ranking() -> None:
@@ -69,6 +120,8 @@ def test_payload_mirrors_the_markdown_fields() -> None:
     assert payload["pick"] == ranked.iloc[0]["symbol"]
     assert len(payload["items"]) == len(ranked)
     assert len(payload["candidates"]) == len(shortlist)
+    assert payload["candidates"][0]["verdict_it"]
+    assert payload["verdict_order"]
     assert payload["evidence"]["random_percentile"] == EVIDENCE["random_percentile"]
     assert payload["caveats"] == list(CAVEATS)
     assert payload["rejected_summary"]["already_held"] == 1
