@@ -1,0 +1,50 @@
+name: dca
+
+# Piano di accumulo: aggiorna ogni giorno la scelta sulla quota satellite e lo
+# screen delle candidate a lungo termine. Il core (BTC/ETH) non viene toccato:
+# è una decisione dell'utente, non del sistema. Commit di REPORT_DCA.md e del
+# JSON che alimenta il tab della dashboard.
+
+on:
+  schedule:
+    - cron: "10 6 * * *" # 06:10 UTC, ogni giorno (crypto: mercato sempre aperto)
+  workflow_dispatch: {}
+
+concurrency:
+  group: dca
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Build accumulation-plan briefing
+        run: uv run python -m src.ingestion.tier1.dca_cli
+
+      - name: Commit report + dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- REPORT_DCA.md public/data/dca_report.json; then
+            echo "No DCA changes to commit."
+            exit 0
+          fi
+          git add REPORT_DCA.md public/data/dca_report.json
+          git commit -m "data: update accumulation plan report"
+          git push

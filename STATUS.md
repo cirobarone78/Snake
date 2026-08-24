@@ -6,7 +6,7 @@
 ---
 
 ## Ultimo aggiornamento
-2026-07-04
+2026-08-24
 
 ## Fase corrente
 **Screener di rotazione + attribuzione eventi + report auto-aggiornati 🟢 attivo
@@ -203,6 +203,103 @@ notebook serve prima `uv run python -m src.ingestion.tier1.fetch_tier1`
 `cd notebooks && PYTHONPATH=.. uv run jupyter nbconvert --execute --inplace <nb>`.
 
 ## Cosa è stato fatto
+
+### 2026-08-24 — Sessione (cont.): piano operativo per il ranking ETF probabilistico
+
+Su commissione dell'utente, a partire da un handoff di analisi esterna (Codex),
+è stato scritto **`docs/PIANO_SVILUPPO.md`**: piano in work package autonomi
+(WP0–WP7 + filler) per evolvere il sistema in un motore di ranking ETF
+cross-sectional con probabilità calibrate vs SPY a 20/60 sedute. Ogni WP è
+pensato per essere eseguito da un agente separato, con mappa dei componenti
+**verificata sulle firme reali**, decisioni pre-registrate (D1–D12), ipotesi
+H1–H3 e barra di adozione scritte PRIMA di qualunque backtest (§2.1 del piano).
+
+Da sapere: il piano richiede il **merge della PR #52** come prerequisito (U1) e
+le conferme utente U2/U3 elencate nella §7 del piano. Le ADR 032–035 sono
+riservate dai WP; non usarle per altro.
+
+### 2026-08-24 — Sessione (cont.): fondamentali dei progetti (ADR-031)
+
+**Correzione su feedback utente.** Lo screen candidate di ADR-030 ordinava per
+capitalizzazione, liquidità ed età — proprietà **del ticker**, non del progetto.
+Con quel punteggio Dogecoin usciva secondo. L'utente ha chiarito che DOGE era
+solo l'esempio: i titoli scelti devono avere **basi solide alle spalle**.
+
+**Cosa è cambiato**:
+- `dca_candidates` è ora un **puro pre-filtro** senza punteggio: i sopravvissuti
+  escono ordinati per capitalizzazione e basta
+- `src/features/fundamentals.py` fa il ranking su cattura del valore, diluizione,
+  sviluppo e track record, con `confidence` = peso degli assi realmente noti
+- `src/assets/token_economics.py`: registro **curato a mano** (meccanismo, fonte,
+  `verified_on`) di come — e se — il token cattura il valore del protocollo
+- Report e tab dashboard: da classifica a **scheda per progetto**, raggruppata
+  per verdetto. I progetti scartati sui fondamentali restano sempre visibili
+
+**Tre trappole trovate strada facendo, tutte già codificate**:
+- **Sconosciuto non è zero**: gli assi ignoti sono esclusi dalla media, non
+  imputati. Un progetto non studiato non deve sembrare bocciato
+- **La tesi monetaria è esente dall'asse cattura**: Bitcoin non cattura ricavi ed
+  è l'asset di maggior successo. Penalizzarlo sarebbe un bug nuovo
+- **Zero commit non è "morto"**: Monero e Aave riportano 0 commit in 4 settimane
+  e sono vivissimi (dato del provider stantio). Etichettato `quiet_or_stale` e
+  trattato come ignoto
+
+**⚠️ DA FARE — richiede un intervento dell'utente sull'ambiente**: manca il dato
+più importante, i **ricavi di protocollo**. `api.llama.fi` (DefiLlama), Token
+Terminal e Dune rispondono **403 al CONNECT**: bloccati dalla policy di rete.
+Senza, si misura *se* esiste un meccanismo di cattura, non *quanto* valga — ed è
+il motivo per cui NEAR compare a pari merito con Ethereum. Aggiungendo
+`api.llama.fi` all'allowlist si sbloccano fees, revenue, TVL e il rapporto P/F.
+Il client DefiLlama **non è stato scritto di proposito**: codice HTTP contro un
+host irraggiungibile non è verificabile e si romperebbe nel cron.
+
+**Nota metodologica**: a differenza di ADR-030, qui **non c'è backtest e non è
+possibile farne uno onesto** — la storia di fee e valutazioni dei protocolli è
+lunga pochi anni ed è piena di sopravvissuti. Questi assi descrivono i progetti,
+non predicono i rendimenti, e il report lo dice.
+
+### 2026-08-24 — Sessione: piano di accumulo (ADR-030) — richiesta utente
+
+**Richiesta**: il piano reale dell'utente è 100€/mese (60 BTC, 30 ETH, 10 su
+**uno** tra SOL/LINK/POL, da ottobre 2025, ~1000€ investiti). Voleva che l'app
+(a) dicesse giorno per giorno quale dei tre conviene comprare e (b) suggerisse
+altre crypto per un accumulo a 5-10 anni.
+
+**Come è stata riformulata**: "quale conviene" è una domanda predittiva, ed è
+quella a cui le Fasi 0-5 hanno già risposto **no**. Invece di fingere un edge,
+la regola implementata non esprime alcuna vista direzionale: sceglie l'asset
+**più sotto peso rispetto al target**. Ribilanciamento, non previsione.
+
+**Verdetto della validazione** (`dca_backtest`, flussi reali 2020-04 → 2026-08,
+77 acquisti, fee 0.5%, controllo casuale a 200 semi):
+- **Rendimento: nessun edge.** 54.5° percentile contro il caso. Rapporto con lo
+  split in parti uguali 1.013 sul periodo, ma 1.19 / 0.91 nelle due metà — si
+  alterna, quindi è rumore. **Detto esplicitamente nell'output, non nascosto.**
+- **Allocazione: effetto reale e OOS-stabile.** Distanza finale dal target
+  80 pp vs 102 pp dello split; nella metà out-of-sample **5.3 pp vs 30.5 pp**.
+- **Il momentum è la scelta peggiore**: 40.5° percentile, *sotto* il caso.
+- **Esperimento fallito documentato**: la componente "sconto" (buy-the-dip) era
+  al 96° percentile in-sample e **ultima** OOS → rimossa dal punteggio di
+  default (`DEFAULT_GAP_WEIGHT = 1.0`), resta solo come rompi-pareggio.
+
+**Nuovi moduli**: `dca_advisor`, `dca_backtest`, `dca_candidates`, `dca_report`,
+CLI `dca_cli`, `CoinGeckoSource.fetch_markets`, config `config/dca_plan.yaml`,
+cron `dca.yml` (giornaliero), tab dashboard "Piano di accumulo",
+`REPORT_DCA.md`. 45 test nuovi (462 totali verdi), ruff + pyright puliti.
+
+**Da sapere alla prossima sessione**:
+- `config/dca_plan.yaml` ha `holdings_units: {}` → la posizione è **stimata**
+  replicando il piano. L'utente deve inserire le quantità reali perché lo scarto
+  dal target diventi esatto; report e JSON dichiarano quando è una stima.
+- Il primo `REPORT_DCA.md` / `dca_report.json` committati sono stati generati
+  **offline** da prezzi CoinGecko/Yahoo in cache (in questa sessione l'egress
+  verso `fc.yahoo.com`, che yfinance usa per il bootstrap cookie, era bloccato
+  dalla policy di rete). Il cron `dca.yml` li rigenera in CI, dove yfinance
+  funziona come per gli altri cron.
+- Lo screen candidate è **survivorship-biased per costruzione** e non è
+  risolvibile con questi dati: la classifica di oggi contiene solo i
+  sopravvissuti. È scritto nel modulo, nel report e nel tab.
+
 
 ### 2026-07-04 — Sessione (cont.): card "Salute fonti dati" — vitalità visibile
 - **Segnalazione utente**: "questi valori sono fermi da mesi". **Indagine**:

@@ -223,6 +223,53 @@ Candidati da indagare:
 
 ---
 
+### Q26 — La quota satellite resta a 3 asset, o ne assorbe uno dalla shortlist?
+Emersa con ADR-030. Lo screen candidate produce nomi che superano i filtri
+meccanici (dimensione, liquidità, età dimostrabile), ma **allargare la quota
+satellite non è una decisione tecnica**: significa spalmare 10€/mese su 4 o 5
+asset invece di 3, quindi accumulare più lentamente su ciascuno.
+
+Il trade-off, in chiaro:
+- **Restare a 3**: posizioni che crescono a una velocità apprezzabile; la
+  diversificazione la fa già il core BTC/ETH (90% del versamento)
+- **Allargare**: meno dipendenza dal destino di un singolo progetto, ma con
+  10€/mese divisi in 5 si accumulano cifre che le commissioni erodono
+
+Nota di onestà: **il sistema non ha modo di rispondere**. Non c'è alcun
+risultato in questo progetto che dica quale delle due sia migliore, e le
+candidate non sono ordinate per qualità ma per dimensione, età e liquidità.
+
+*Decisione dell'utente, non del sistema.* Se la risposta è "allargare", va
+aggiornato `config/dca_plan.yaml` (`sleeve.target_weights`) e registrata la
+scelta qui o in DECISIONS.md.
+
+---
+
+### Q27 — Quanto vale davvero un meccanismo di cattura del valore?
+Emersa con ADR-031. La scheda fondamentale sa dire **se** un token cattura il
+valore prodotto dal protocollo (burn, staking, riacquisti, work token), ma non
+**quanto**: un burn enorme e uno simbolico prendono lo stesso punteggio. È il
+motivo per cui NEAR ed Ethereum compaiono a pari merito, il che è chiaramente
+sbagliato.
+
+Il dato che risolverebbe la questione — ricavi di protocollo, TVL, rapporto
+prezzo/commissioni — esiste ed è gratuito (DefiLlama), ma `api.llama.fi` è
+**bloccato dalla policy di rete** di questo ambiente.
+
+Due domande distinte, e vanno separate:
+1. **Operativa**: sbloccare l'host? Decisione dell'utente sull'ambiente.
+2. **Metodologica, e più interessante**: una volta avuti i ricavi, un rapporto
+   prezzo/commissioni basso indica davvero qualcosa? Nelle azioni il P/E basso
+   ha una letteratura enorme e contrastata; nei protocolli crypto la storia è
+   lunga pochi anni e piena di sopravvissuti. **Il rischio concreto è
+   confezionare un P/E crypto e trattarlo come se fosse validato.** Se lo si
+   introduce, va introdotto come descrizione, con la stessa onestà con cui la
+   regola sulla quota satellite è stata dichiarata priva di edge.
+
+*Non bloccante.* La scheda funziona anche senza; semplicemente non gradua.
+
+---
+
 ## 🟢 Domande di ricerca (non decisioni operative)
 
 Ipotesi da testare empiricamente nel corso del progetto.

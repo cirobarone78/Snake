@@ -28,7 +28,7 @@ from __future__ import annotations
 import logging
 import os
 import time
-from typing import Any, Final
+from typing import Any, Final, cast
 
 import pandas as pd
 import requests
@@ -41,6 +41,9 @@ DEFAULT_BASE_URL: Final[str] = "https://api.coingecko.com/api/v3"
 DEFAULT_VS_CURRENCY: Final[str] = "usd"
 DEFAULT_DAYS: Final[int] = 365
 DEFAULT_TOP_N: Final[int] = 20
+# Wider universe for the DCA candidate screen: the filters cut hard, so the pool
+# has to start well past the handful of names everyone already holds.
+DEFAULT_MARKETS_N: Final[int] = 100
 
 # Free-tier polite throttle. With a Demo key this could be lower.
 DEFAULT_SLEEP_BETWEEN_CALLS: Final[float] = 10.0
@@ -157,6 +160,149 @@ class CoinGeckoSource(DataSource):
         df = pd.DataFrame(rows)
         df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
         return df
+
+    def fetch_markets(
+        self,
+        n: int = DEFAULT_MARKETS_N,
+        vs_currency: str = DEFAULT_VS_CURRENCY,
+    ) -> pd.DataFrame:
+        """Top N coins with the extra fields a long-horizon screen needs.
+
+        ``fetch_top_n`` deliberately stays a small, stable universe snapshot for
+        Tier 2 (ADR-005). The DCA candidate screen needs three things it does not
+        carry: ``atl_date`` (a lower bound on how long the coin has existed —
+        there is no track record to judge without it), ``ath_change_percentage``
+        (how far below its peak it trades) and ``coingecko_id`` (to join against
+        the category map). Rather than widen ``fetch_top_n`` and its callers, this
+        is a separate, richer read of the same endpoint.
+
+        Output columns: ``coingecko_id, symbol, name, market_cap,
+        market_cap_rank, current_price, total_volume, price_change_24h_pct,
+        ath_change_pct, atl_date``. Index: integer rank (1-based).
+        Snapshot, not time series.
+        """
+        logger.info("Fetching top %d coin markets (vs=%s)", n, vs_currency)
+        rows: list[dict[str, Any]] = []
+        # The endpoint caps per_page at 250, so a wider screen needs paging.
+        per_page = min(250, max(1, n))
+        page = 1
+        while len(rows) < n:
+            payload = self._get(
+                "/coins/markets",
+                params={
+                    "vs_currency": vs_currency,
+                    "order": "market_cap_desc",
+                    "per_page": per_page,
+                    "page": page,
+                },
+            )
+            if not payload:
+                break
+            for c in payload:
+                rows.append(
+                    {
+                        "coingecko_id": c.get("id"),
+                        "symbol": str(c.get("symbol") or "").upper(),
+                        "name": c.get("name"),
+                        "market_cap": c.get("market_cap"),
+                        "market_cap_rank": c.get("market_cap_rank"),
+                        "current_price": c.get("current_price"),
+                        "total_volume": c.get("total_volume"),
+                        "price_change_24h_pct": c.get("price_change_percentage_24h"),
+                        "ath_change_pct": c.get("ath_change_percentage"),
+                        "atl_date": c.get("atl_date"),
+                    }
+                )
+            if len(payload) < per_page:
+                break
+            page += 1
+        df = pd.DataFrame(
+            rows[:n],
+            columns=[
+                "coingecko_id",
+                "symbol",
+                "name",
+                "market_cap",
+                "market_cap_rank",
+                "current_price",
+                "total_volume",
+                "price_change_24h_pct",
+                "ath_change_pct",
+                "atl_date",
+            ],
+        )
+        df.index = pd.RangeIndex(start=1, stop=len(df) + 1, name="rank")
+        return df
+
+    def fetch_coin_details(self, coin_ids: list[str]) -> pd.DataFrame:
+        """Per-coin detail rows for a fundamental profile (one call per coin).
+
+        ``/coins/{id}`` carries what the markets endpoint does not: the genesis
+        date (a real age, rather than the all-time-low lower bound), the supply
+        split that reveals how much is still to be issued, and the provider's
+        developer statistics. Rate limits make this expensive, so callers pass a
+        shortlist, not the whole universe.
+
+        A coin that fails is **skipped with a warning**, not filled with zeros:
+        ``fundamentals`` treats missing fields as unknown, and a fabricated zero
+        would read as a failed project instead of an unread one.
+
+        Output columns: ``coingecko_id, symbol, name, market_cap,
+        fully_diluted_valuation, circulating_supply, total_supply, max_supply,
+        genesis_date, categories, stars, forks, pr_contributors, commits_4w``.
+        """
+        rows: list[dict[str, Any]] = []
+        for coin_id in coin_ids:
+            try:
+                payload = self._get(
+                    f"/coins/{coin_id}",
+                    params={
+                        "localization": "false",
+                        "tickers": "false",
+                        "market_data": "true",
+                        "community_data": "false",
+                        "developer_data": "true",
+                        "sparkline": "false",
+                    },
+                )
+            except Exception:
+                logger.exception("Coin detail fetch failed for %s: skipped", coin_id)
+                continue
+            # ``_get`` is typed Any; pin the shapes so strict mode can read the
+            # nested lookups below instead of degrading them all to Unknown.
+            coin = cast("dict[str, Any]", payload)
+            market = cast("dict[str, Any]", coin.get("market_data") or {})
+            dev = cast("dict[str, Any]", coin.get("developer_data") or {})
+            market_cap = cast("dict[str, Any]", market.get("market_cap") or {})
+            fdv = cast("dict[str, Any]", market.get("fully_diluted_valuation") or {})
+            categories = cast("list[Any]", coin.get("categories") or [])
+            rows.append(
+                {
+                    "coingecko_id": coin.get("id"),
+                    "symbol": str(coin.get("symbol") or "").upper(),
+                    "name": coin.get("name"),
+                    "market_cap": market_cap.get("usd"),
+                    "fully_diluted_valuation": fdv.get("usd"),
+                    "circulating_supply": market.get("circulating_supply"),
+                    "total_supply": market.get("total_supply"),
+                    "max_supply": market.get("max_supply"),
+                    "genesis_date": coin.get("genesis_date"),
+                    "categories": ", ".join(str(c) for c in categories if c),
+                    "stars": dev.get("stars"),
+                    "forks": dev.get("forks"),
+                    "pr_contributors": dev.get("pull_request_contributors"),
+                    "commits_4w": dev.get("commit_count_4_weeks"),
+                }
+            )
+        return pd.DataFrame(
+            rows,
+            columns=[
+                "coingecko_id", "symbol", "name", "market_cap",
+                "fully_diluted_valuation", "circulating_supply", "total_supply",
+                "max_supply", "genesis_date", "categories", "stars", "forks",
+                "pr_contributors", "commits_4w",
+            ],
+        )
 
     def fetch_categories(self, min_market_cap: float = 0.0) -> pd.DataFrame:
         """Crypto categories (narratives) with market-cap-weighted 24h move.

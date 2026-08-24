@@ -1,0 +1,31 @@
+# Piano di accumulo — configurazione.
+#
+# Questo file descrive il piano REALE dell'utente. Il core (BTC/ETH) è fisso e
+# non viene mai messo in discussione dal sistema: l'unica decisione ricorrente è
+# su quale asset della quota satellite far cadere il versamento del mese.
+#
+# `holdings_units` sono le quantità effettivamente possedute (non euro). Se
+# lasciato vuoto, il sistema stima la posizione replicando il piano da
+# `start_date` e lo dichiara esplicitamente nel report: è un'approssimazione,
+# non un estratto conto. Compilarlo rende il calcolo dello scarto dal target
+# esatto invece che stimato.
+
+monthly_eur: 100
+start_date: "2025-10-01"
+
+# Allocazione fissa: nessuna scelta da fare, nessun modello coinvolto.
+core:
+  BTC: 60
+  ETH: 30
+
+# La quota su cui il sistema esprime una preferenza mensile.
+sleeve:
+  budget_eur: 10
+  # Target interno alla quota satellite (somma normalizzata a 1).
+  target_weights:
+    SOL: 0.3334
+    LINK: 0.3333
+    POL: 0.3333
+
+# Quantità realmente possedute, per asset. Esempio: SOL: 0.0421
+holdings_units: {}
