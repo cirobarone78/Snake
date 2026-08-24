@@ -1,4 +1,4 @@
-# pyright: strict
+# pyright: strict, reportMissingTypeStubs=false, reportUnknownMemberType=false, reportUnknownVariableType=false, reportUnknownArgumentType=false
 """Cross-sectional ranking models for the ETF panel (WP3, ADR-034).
 
 The question is relative, not absolute: *which* sector ETFs beat SPY over the

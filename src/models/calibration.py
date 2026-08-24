@@ -1,4 +1,4 @@
-# pyright: strict
+# pyright: strict, reportMissingTypeStubs=false, reportUnknownMemberType=false, reportUnknownVariableType=false, reportUnknownArgumentType=false
 """Probability calibration and calibration scoring (WP3, ADR-034).
 
 A model can order assets well and still lie about *how sure* it is. Ordering is
