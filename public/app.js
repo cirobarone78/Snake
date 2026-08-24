@@ -10,6 +10,9 @@ const SOURCES = {
   paper: "data/paper_report.json",
   replay: "data/paper_replay.json",
   dca: "data/dca_report.json",
+  ranking: "data/ranking_report.json",
+  rankingModel: "data/ranking_model.json",
+  rankingBacktest: "data/ranking_backtest.json",
 };
 
 const HEALTH_LABEL = { match: "Fonti concordi", mismatch: "Divergenza", single_source: "Fonte unica" };
@@ -44,11 +47,13 @@ document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
   setupTabs();
-  const [crypto, equity, education, market, events, health, paper, replay, dca] = await Promise.all([
+  const [crypto, equity, education, market, events, health, paper, replay, dca,
+    ranking, rankingModel, rankingBacktest] = await Promise.all([
     fetchJSON(SOURCES.crypto), fetchJSON(SOURCES.equity),
     fetchJSON(SOURCES.education), fetchJSON(SOURCES.market), fetchJSON(SOURCES.events),
     fetchJSON(SOURCES.health), fetchJSON(SOURCES.paper), fetchJSON(SOURCES.replay),
-    fetchJSON(SOURCES.dca),
+    fetchJSON(SOURCES.dca), fetchJSON(SOURCES.ranking), fetchJSON(SOURCES.rankingModel),
+    fetchJSON(SOURCES.rankingBacktest),
   ]);
   renderTicker(market);
   renderHero(market);
@@ -59,6 +64,8 @@ async function init() {
   renderPaper(paper);
   renderReplay(replay);
   renderDca(dca);
+  renderRanking(ranking);
+  renderRankingModel(rankingModel, rankingBacktest);
   renderOverview(crypto, equity);
   renderEducation(education);
   renderFooter(crypto, equity, market);
@@ -84,6 +91,12 @@ function setupTabs() {
     tab.classList.add("is-active");
     const target = document.getElementById(name);
     if (target) target.classList.add("is-active");
+    // Nove tab non entrano in 390px: senza questo, su mobile la tab attiva
+    // resta fuori schermo e la pagina sembra aperta su un'altra sezione.
+    const strip = tab.parentElement;
+    if (strip && strip.scrollWidth > strip.clientWidth) {
+      strip.scrollTo({ left: tab.offsetLeft - (strip.clientWidth - tab.offsetWidth) / 2, behavior: scroll ? "smooth" : "auto" });
+    }
     if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
   };
   tabs.forEach((tab) => tab.addEventListener("click", () => {
@@ -1073,6 +1086,746 @@ function chapterFromHtml(title, html) {
   body.innerHTML = html; // trusted: built at build time from our own repo
   details.appendChild(body);
   return details;
+}
+
+/* ---------- Opportunità: classifica descrittiva degli ETF settoriali (WP5) ----------
+   The payload declares `predictive: false` and ships every forecast field as
+   null (ADR-036). This renderer is built around that fact: no probability
+   column exists, the non-predictive notice is rendered as a permanent banner
+   (never a tooltip), and the "Modello" section below carries the numbers that
+   justify the omission. Sorting and row expansion are the only interactions. */
+
+const RANKING_STATE = { report: null, sort: { key: "rank", dir: "asc" }, open: new Set() };
+const MODEL_STATE = { model: null, backtest: null, horizon: 20, curve: "logistic" };
+
+const REGIME_LABEL = {
+  bull_low_vol: "rialzista, volatilità bassa",
+  bull_high_vol: "rialzista, volatilità alta",
+  bear_low_vol: "ribassista, volatilità bassa",
+  bear_high_vol: "ribassista, volatilità alta",
+  unknown: "non determinato",
+};
+const FACTOR_LABEL = {
+  rel_ret_60: "rendimento relativo a 60 sedute contro SPY",
+  rel_ret_20: "rendimento relativo a 20 sedute contro SPY",
+  rel_ret_126: "rendimento relativo a 126 sedute contro SPY",
+};
+const FACTOR_DIRECTION = { positive: "sopra il benchmark", negative: "sotto il benchmark" };
+const MODEL_LABEL = {
+  momentum: "Momentum rel. 60g",
+  logistic: "Logistica",
+  ridge: "Ridge",
+  random: "Ranker casuale",
+  climatology: "Climatologia",
+};
+const CONFIDENCE_LABEL = {
+  not_applicable: "non applicabile",
+  low: "bassa",
+  medium: "media",
+  high: "alta",
+};
+// Data older than this many days means the weekly run has been looking at a
+// frozen feed: worth flagging in the row even when the payload is "ok".
+const RANK_STALE_DAYS = 8;
+
+const RANK_COLUMNS = [
+  { key: "rank", label: "#", cls: "num", type: "num" },
+  { key: "name", label: "ETF", cls: "", type: "str" },
+  { key: "selection_score", label: "Momentum rel. 60g", cls: "num", type: "num" },
+  { key: "selection_rank_pct", label: "Percentile", cls: "num", type: "num" },
+  { key: "realized_vol_60", label: "Vol. 60g", cls: "num", type: "num" },
+  { key: "close", label: "Prezzo", cls: "num", type: "num" },
+  { key: "freshness_days", label: "Dati", cls: "num", type: "num" },
+  { key: "target_weight", label: "Peso", cls: "num", type: "num" },
+];
+
+function fmtSignedPct(v, digits) {
+  if (v === null || v === undefined || Number.isNaN(v)) return "—";
+  const n = v * 100;
+  return `${n > 0 ? "+" : ""}${(digits === 1 ? NF1 : NF2).format(n)}%`;
+}
+function fmtPlainPct(v, digits) {
+  if (v === null || v === undefined || Number.isNaN(v)) return "—";
+  return `${(digits === 0 ? NF0 : digits === 1 ? NF1 : NF2).format(v * 100)}%`;
+}
+function fmtDays(v) {
+  if (v === null || v === undefined || Number.isNaN(v)) return "—";
+  return `${NF1.format(v)} g`;
+}
+function fmtRatio(v, digits) {
+  if (v === null || v === undefined || Number.isNaN(v)) return "—";
+  return v.toLocaleString("it-IT", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+}
+function regimeLabel(code) {
+  return REGIME_LABEL[code] || REGIME_LABEL.unknown;
+}
+
+function renderRanking(report) {
+  RANKING_STATE.report = report;
+  RANKING_STATE.open = new Set();
+  setUpdated("ranking-updated", report);
+
+  const banners = document.getElementById("ranking-banners");
+  const meta = document.getElementById("ranking-meta");
+  const table = document.getElementById("ranking-table");
+  const past = document.getElementById("ranking-past");
+  const foot = document.getElementById("ranking-disclaimer");
+  if (!banners || !meta || !table || !past || !foot) return;
+  [banners, meta, table, past, foot].forEach((n) => { n.innerHTML = ""; });
+
+  // Payload assente: stato vuoto esplicito, mai una pagina rotta.
+  if (!report) {
+    banners.appendChild(el("p", "empty",
+      "Dati non ancora disponibili: la classifica viene emessa dal ciclo settimanale (lunedì mattina). Torna dopo il primo aggiornamento."));
+    return;
+  }
+
+  banners.appendChild(nonPredictiveBanner(report));
+  if (report.status && report.status !== "ok") banners.appendChild(staleBanner(report));
+
+  meta.appendChild(rankingMeta(report));
+
+  const items = Array.isArray(report.items) ? report.items : [];
+  if (items.length === 0) {
+    table.appendChild(el("p", "empty", report.status && report.status !== "ok"
+      ? "Nessuna classifica emessa in questo ciclo: i dati di prezzo non erano abbastanza recenti per calcolarla."
+      : "Nessun ETF classificabile in questo ciclo."));
+  } else {
+    table.appendChild(rankingTable());
+  }
+
+  past.appendChild(pastPredictionsBlock(report));
+  foot.appendChild(el("p", "rk-fineprint", report.disclaimer || ""));
+}
+
+function nonPredictiveBanner(report) {
+  const box = el("div", "rk-banner rk-banner-notice");
+  box.setAttribute("role", "note");
+  box.appendChild(el("p", "rk-banner-title", "Classifica descrittiva, non una previsione"));
+  if (report.non_predictive_notice) box.appendChild(el("p", "rk-banner-text", report.non_predictive_notice));
+  if (report.non_predictive_reason) box.appendChild(el("p", "rk-banner-text muted", report.non_predictive_reason));
+  return box;
+}
+
+function staleBanner(report) {
+  const box = el("div", "rk-banner rk-banner-stale");
+  box.setAttribute("role", "alert");
+  box.appendChild(el("p", "rk-banner-title", "Dati non aggiornati, nessun nuovo ranking emesso"));
+  box.appendChild(el("p", "rk-banner-text",
+    report.stale_notice || "Dati non aggiornati: nessun nuovo ranking è stato emesso e il portafoglio non è stato ribilanciato."));
+  if (report.status_reason) box.appendChild(el("p", "rk-banner-text muted", report.status_reason));
+  return box;
+}
+
+function metaItem(label, value, note) {
+  const cell = el("div", "rk-meta-item");
+  cell.appendChild(el("span", "rk-meta-label", label));
+  cell.appendChild(el("span", "rk-meta-value", value));
+  if (note) cell.appendChild(el("span", "rk-meta-note", note));
+  return cell;
+}
+
+function rankingMeta(report) {
+  const card = el("div", "card rk-meta");
+  const grid = el("div", "rk-meta-grid");
+  grid.appendChild(metaItem("Regola", report.rule_version || "—", report.rule_description || ""));
+  grid.appendChild(metaItem("Dati al", report.as_of ? fmtDay(report.as_of) : "—",
+    report.benchmark ? `benchmark ${report.benchmark}` : ""));
+  grid.appendChild(metaItem("Regime di mercato", regimeLabel(report.regime),
+    "classificato dai soli prezzi (trend × volatilità)"));
+  const notScoreable = Array.isArray(report.not_scoreable) ? report.not_scoreable : [];
+  grid.appendChild(metaItem("Universo", `${report.universe_size ?? 0} ETF`,
+    !report.universe_size ? "nessun ETF classificato in questo ciclo"
+      : notScoreable.length ? `non classificabili: ${notScoreable.join(", ")}` : "tutti classificabili"));
+  grid.appendChild(metaItem("Liquidità del paper portfolio",
+    report.cash_weight === null || report.cash_weight === undefined ? "—" : fmtPlainPct(report.cash_weight, 0),
+    "portafoglio virtuale, nessun denaro reale"));
+  grid.appendChild(metaItem("Probabilità stimata", "non disponibile",
+    report.confidence_threshold_note || "nessuna probabilità calibrata sotto questa regola"));
+  card.appendChild(grid);
+  return card;
+}
+
+function sortedItems() {
+  const items = [...(RANKING_STATE.report.items || [])];
+  const { key, dir } = RANKING_STATE.sort;
+  const col = RANK_COLUMNS.find((c) => c.key === key) || RANK_COLUMNS[0];
+  const sign = dir === "asc" ? 1 : -1;
+  items.sort((a, b) => {
+    const x = a[col.key], y = b[col.key];
+    // I valori mancanti restano in fondo in entrambi i versi: un "—" in cima
+    // sembrerebbe un primo posto.
+    const xNull = x === null || x === undefined, yNull = y === null || y === undefined;
+    if (xNull && yNull) return (a.rank || 0) - (b.rank || 0);
+    if (xNull) return 1;
+    if (yNull) return -1;
+    if (col.type === "str") return sign * String(x).localeCompare(String(y), "it");
+    return sign * (Number(x) - Number(y));
+  });
+  return items;
+}
+
+function rankingTable() {
+  const wrap = el("div", "card rk-table-card");
+  const scroller = el("div", "rk-table-wrap");
+  const table = el("table", "rk-table");
+
+  const thead = document.createElement("thead");
+  const hrow = el("tr");
+  RANK_COLUMNS.forEach((col) => {
+    const th = el("th", col.cls);
+    const active = RANKING_STATE.sort.key === col.key;
+    const btn = el("button", `rk-sort${active ? " is-active" : ""}`, col.label);
+    btn.type = "button";
+    btn.setAttribute("aria-label", `Ordina per ${col.label}`);
+    if (active) btn.appendChild(el("span", "rk-sort-arrow", RANKING_STATE.sort.dir === "asc" ? "▲" : "▼"));
+    btn.addEventListener("click", () => {
+      const s = RANKING_STATE.sort;
+      if (s.key === col.key) s.dir = s.dir === "asc" ? "desc" : "asc";
+      else { s.key = col.key; s.dir = col.key === "rank" || col.key === "name" ? "asc" : "desc"; }
+      const root = document.getElementById("ranking-table");
+      root.innerHTML = "";
+      root.appendChild(rankingTable());
+    });
+    th.appendChild(btn);
+    hrow.appendChild(th);
+  });
+  thead.appendChild(hrow);
+  table.appendChild(thead);
+
+  const body = document.createElement("tbody");
+  sortedItems().forEach((item) => {
+    body.appendChild(rankingRow(item));
+    body.appendChild(rankingDetailRow(item));
+  });
+  table.appendChild(body);
+
+  scroller.appendChild(table);
+  wrap.appendChild(scroller);
+  wrap.appendChild(el("p", "rk-fineprint",
+    "Clicca su una riga per aprire i dati osservati e gli esiti passati di quell'ETF. Le intestazioni ordinano la tabella."));
+  return wrap;
+}
+
+function rankingRow(item) {
+  const key = item.asset;
+  const tr = el("tr", `rk-row${item.selected ? " is-selected" : ""}`);
+  tr.tabIndex = 0;
+  tr.setAttribute("role", "button");
+  tr.setAttribute("aria-expanded", RANKING_STATE.open.has(key) ? "true" : "false");
+
+  const rank = el("td", "num rk-rank");
+  rank.appendChild(el("span", "rk-caret", RANKING_STATE.open.has(key) ? "▾" : "▸"));
+  rank.appendChild(el("span", "", `${item.rank ?? "—"}`));
+  tr.appendChild(rank);
+
+  const name = el("td", "rk-name");
+  name.appendChild(el("span", "rk-name-main", item.name || item.asset));
+  if (item.ticker) name.appendChild(el("span", "rk-ticker", item.ticker));
+  if (item.selected) name.appendChild(el("span", "rk-tag", "in portafoglio virtuale"));
+  tr.appendChild(name);
+
+  tr.appendChild(el("td", `num ${pctClass(item.selection_score)}`, fmtSignedPct(item.selection_score, 1)));
+  tr.appendChild(el("td", "num", item.selection_rank_pct === null || item.selection_rank_pct === undefined
+    ? "—" : `${NF0.format(item.selection_rank_pct * 100)}°`));
+  tr.appendChild(el("td", "num", fmtPlainPct(item.realized_vol_60, 1)));
+  tr.appendChild(el("td", "num", fmtRatio(item.close, 2)));
+
+  const fresh = el("td", "num");
+  const days = item.freshness_days;
+  const stale = days !== null && days !== undefined && days > RANK_STALE_DAYS;
+  fresh.appendChild(el("span", stale ? "rk-fresh-warn" : "", fmtDays(days)));
+  tr.appendChild(fresh);
+
+  tr.appendChild(el("td", "num", item.target_weight ? fmtPlainPct(item.target_weight, 0) : "—"));
+
+  const toggle = () => toggleRankingRow(key);
+  tr.addEventListener("click", toggle);
+  tr.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); toggle(); }
+  });
+  return tr;
+}
+
+function toggleRankingRow(key) {
+  if (RANKING_STATE.open.has(key)) RANKING_STATE.open.delete(key);
+  else RANKING_STATE.open.add(key);
+  const root = document.getElementById("ranking-table");
+  root.innerHTML = "";
+  root.appendChild(rankingTable());
+}
+
+function rankingDetailRow(item) {
+  const tr = el("tr", "rk-detail-row");
+  if (!RANKING_STATE.open.has(item.asset)) tr.hidden = true;
+  const td = el("td", "rk-detail-cell");
+  td.colSpan = RANK_COLUMNS.length;
+  td.appendChild(rankingDetail(item));
+  tr.appendChild(td);
+  return tr;
+}
+
+function detailFact(label, value) {
+  const row = el("div", "rk-fact");
+  row.appendChild(el("span", "rk-fact-label", label));
+  row.appendChild(el("span", "rk-fact-value", value));
+  return row;
+}
+
+function rankingDetail(item) {
+  const box = el("div", "rk-detail");
+
+  const forecast = el("div", "rk-detail-block rk-detail-forecast");
+  forecast.appendChild(el("h4", "rk-detail-title", "Probabilità e attese"));
+  forecast.appendChild(detailFact("Probabilità stimata di battere il benchmark", "non disponibile"));
+  forecast.appendChild(detailFact("Rendimento in eccesso atteso", "non disponibile"));
+  forecast.appendChild(detailFact("Volatilità attesa", "non disponibile"));
+  forecast.appendChild(detailFact("Confidenza", CONFIDENCE_LABEL[item.confidence] || "non applicabile"));
+  forecast.appendChild(el("p", "rk-fineprint",
+    "Non è un dato mancante per un errore: la validazione fuori campione non ha prodotto probabilità affidabili, quindi non ne viene pubblicata nessuna (ADR-034/036). Non è sufficiente per un segnale."));
+  box.appendChild(forecast);
+
+  const observed = el("div", "rk-detail-block");
+  observed.appendChild(el("h4", "rk-detail-title", "Stato osservato oggi"));
+  observed.appendChild(detailFact("Momentum relativo a 60 sedute", fmtSignedPct(item.selection_score, 2)));
+  observed.appendChild(detailFact("Posizione nella classifica",
+    `${item.rank ?? "—"} su ${RANKING_STATE.report.universe_size ?? "—"}`));
+  observed.appendChild(detailFact("Percentile cross-sezionale",
+    item.selection_rank_pct === null || item.selection_rank_pct === undefined
+      ? "—" : `${NF0.format(item.selection_rank_pct * 100)}°`));
+  observed.appendChild(detailFact("Volatilità realizzata a 60 sedute", fmtPlainPct(item.realized_vol_60, 1)));
+  observed.appendChild(detailFact("Ultima chiusura", fmtRatio(item.close, 2)));
+  observed.appendChild(detailFact("Regime di mercato", regimeLabel(item.regime)));
+  observed.appendChild(detailFact("Età del dato di prezzo", fmtDays(item.freshness_days)));
+  observed.appendChild(detailFact("Peso nel portafoglio virtuale",
+    item.target_weight ? fmtPlainPct(item.target_weight, 0) : "nessuno"));
+  const factors = Array.isArray(item.top_factors) ? item.top_factors : [];
+  if (factors.length) {
+    observed.appendChild(detailFact("Fattori che determinano la posizione", factors
+      .map((f) => `${FACTOR_LABEL[f.name] || f.name} (${FACTOR_DIRECTION[f.direction] || f.direction})`)
+      .join("; ")));
+  }
+  box.appendChild(observed);
+
+  box.appendChild(assetOutcomes(item.asset));
+
+  const caveat = el("div", "rk-detail-block rk-detail-caveat");
+  caveat.appendChild(el("h4", "rk-detail-title", "Cosa tenere a mente"));
+  const list = el("ul", "rk-caveats");
+  [
+    "La stessa regola, misurata fuori campione su 14 950 osservazioni, si è comportata come il caso: essere in cima a questa tabella non ha mostrato alcun vantaggio storico ripetibile.",
+    "Storicamente, in condizioni simili, il settore mediano ha battuto SPY meno di una volta su due (0,489 a 20 sedute): la classifica non sposta questa frequenza di base.",
+    "L'ordinamento cambia ogni settimana; inseguirlo genera costi di transazione che il backtest ha misurato come sufficienti a mangiare lo spread lordo.",
+  ].forEach((t) => list.appendChild(el("li", "", t)));
+  caveat.appendChild(list);
+  box.appendChild(caveat);
+
+  return box;
+}
+
+function assetOutcomes(asset) {
+  const box = el("div", "rk-detail-block");
+  box.appendChild(el("h4", "rk-detail-title", "Classifiche passate di questo ETF, con esito"));
+  const rows = (RANKING_STATE.report.past_predictions || []).filter((r) => r.asset === asset);
+  if (!rows.length) {
+    box.appendChild(el("p", "rk-fineprint",
+      "Nessun esito ancora risolto: ogni riga emessa si chiude solo dopo l'orizzonte (20 o 60 sedute). Il track record forward parte da qui e resterà visibile anche quando sarà sfavorevole."));
+    return box;
+  }
+  const table = el("table", "rk-mini-table");
+  const head = document.createElement("thead");
+  const hr = el("tr");
+  ["Emessa il", "Orizzonte", "Posizione", "Rendimento in eccesso", "Esito"].forEach((h, i) => {
+    hr.appendChild(el("th", i === 0 ? "" : "num", h));
+  });
+  head.appendChild(hr);
+  table.appendChild(head);
+  const body = document.createElement("tbody");
+  rows.slice(0, 12).forEach((r) => {
+    const tr = el("tr");
+    tr.appendChild(el("td", "", fmtDay(r.emitted_at)));
+    tr.appendChild(el("td", "num", `${r.horizon_days} sedute`));
+    tr.appendChild(el("td", "num", r.selection_rank ? `${r.selection_rank}°` : "—"));
+    tr.appendChild(el("td", `num ${pctClass(r.excess_return)}`, fmtSignedPct(r.excess_return, 2)));
+    tr.appendChild(el("td", "num", r.outperformed === null || r.outperformed === undefined
+      ? "—" : (r.outperformed ? "sopra il benchmark" : "sotto il benchmark")));
+    body.appendChild(tr);
+  });
+  table.appendChild(body);
+  const wrap = el("div", "rk-table-wrap");
+  wrap.appendChild(table);
+  box.appendChild(wrap);
+  return box;
+}
+
+function pastPredictionsBlock(report) {
+  const card = el("div", "card rk-past");
+  card.appendChild(el("h3", "rk-h3", "Esiti delle classifiche già emesse"));
+  const rows = Array.isArray(report.past_predictions) ? report.past_predictions : [];
+  if (!rows.length) {
+    card.appendChild(el("p", "rk-fineprint",
+      "Nessuna riga risolta finora. Ogni settimana il sistema registra la classifica emessa e la chiude a 20 e 60 sedute: gli esiti compariranno qui man mano, favorevoli o meno."));
+    return card;
+  }
+  const hits = rows.filter((r) => r.outperformed === true).length;
+  card.appendChild(el("p", "rk-fineprint",
+    `${rows.length} righe risolte, di cui ${hits} sopra il benchmark. Conteggi grezzi su un campione piccolo: non sono un verdetto.`));
+  const table = el("table", "rk-mini-table");
+  const head = document.createElement("thead");
+  const hr = el("tr");
+  ["Emessa il", "ETF", "Orizzonte", "Posizione", "In portafoglio", "Rendimento in eccesso", "Esito"].forEach((h, i) => {
+    hr.appendChild(el("th", i <= 1 ? "" : "num", h));
+  });
+  head.appendChild(hr);
+  table.appendChild(head);
+  const body = document.createElement("tbody");
+  rows.slice(0, 30).forEach((r) => {
+    const tr = el("tr");
+    tr.appendChild(el("td", "", fmtDay(r.emitted_at)));
+    tr.appendChild(el("td", "", r.asset));
+    tr.appendChild(el("td", "num", `${r.horizon_days}`));
+    tr.appendChild(el("td", "num", r.selection_rank ? `${r.selection_rank}°` : "—"));
+    tr.appendChild(el("td", "num", r.selected ? "sì" : "no"));
+    tr.appendChild(el("td", `num ${pctClass(r.excess_return)}`, fmtSignedPct(r.excess_return, 2)));
+    tr.appendChild(el("td", "num", r.outperformed === null || r.outperformed === undefined
+      ? "—" : (r.outperformed ? "sopra" : "sotto")));
+    body.appendChild(tr);
+  });
+  table.appendChild(body);
+  const wrap = el("div", "rk-table-wrap");
+  wrap.appendChild(table);
+  card.appendChild(wrap);
+  return card;
+}
+
+/* ---------- Modello: cosa è stato validato e cosa ha fallito (WP5) ---------- */
+
+function renderRankingModel(model, backtest) {
+  MODEL_STATE.model = model;
+  MODEL_STATE.backtest = backtest;
+  setUpdated("model-updated", model);
+
+  const verdict = document.getElementById("model-verdict");
+  const training = document.getElementById("model-training");
+  const metrics = document.getElementById("model-metrics");
+  const reliability = document.getElementById("model-reliability");
+  const forward = document.getElementById("model-forward");
+  if (!verdict || !training || !metrics || !reliability || !forward) return;
+  [verdict, training, metrics, reliability, forward].forEach((n) => { n.innerHTML = ""; });
+
+  if (!model && !backtest) {
+    verdict.appendChild(el("p", "empty",
+      "Stato della validazione non ancora disponibile: comparirà dopo il primo ciclo settimanale."));
+    return;
+  }
+
+  if (model) {
+    if (model.status && model.status !== "ok") verdict.appendChild(staleBanner({
+      stale_notice: "Dati non aggiornati: nessun nuovo ranking è stato emesso e le metriche qui sotto restano quelle dell'ultimo ciclo valido.",
+      status_reason: model.status_reason,
+    }));
+    verdict.appendChild(verdictCard(model));
+    training.appendChild(trainingCard(model, backtest));
+  }
+  if (backtest) {
+    metrics.appendChild(metricsCard());
+    reliability.appendChild(reliabilityCard());
+  } else {
+    metrics.appendChild(el("p", "rk-fineprint",
+      "Il report completo della validazione (metriche per modello e reliability) non è disponibile in questo momento; il verdetto qui sopra viene dal payload del ciclo settimanale."));
+  }
+  if (model) forward.appendChild(forwardCard(model));
+}
+
+function verdictCard(model) {
+  const card = el("div", "card rk-verdict");
+  const bar = model.adoption_bar || {};
+  const head = el("div", "rk-verdict-head");
+  head.appendChild(el("h3", "rk-h3", `Verdetto ${bar.reference || "ADR-034"}: barra di adozione non superata`));
+  head.appendChild(el("span", "rk-verdict-pill", bar.passed ? "superata" : "non superata"));
+  card.appendChild(head);
+
+  const grid = el("div", "rk-verdict-grid");
+  const req = el("div", "rk-verdict-block");
+  req.appendChild(el("h4", "rk-detail-title", "Cosa serviva per adottare il modello"));
+  req.appendChild(el("p", "rk-verdict-text", bar.requirement || "—"));
+  grid.appendChild(req);
+  const out = el("div", "rk-verdict-block");
+  out.appendChild(el("h4", "rk-detail-title", "Cosa è successo"));
+  out.appendChild(el("p", "rk-verdict-text", bar.outcome || "—"));
+  grid.appendChild(out);
+  const cal = el("div", "rk-verdict-block");
+  cal.appendChild(el("h4", "rk-detail-title", "Calibrazione delle probabilità"));
+  const calibration = model.calibration || {};
+  cal.appendChild(el("p", "rk-verdict-text",
+    `${calibration.available ? "Disponibile" : "Non disponibile"} — metodo: ${calibration.method || "—"}. ${calibration.reason || ""}`));
+  grid.appendChild(cal);
+  const thr = el("div", "rk-verdict-block");
+  thr.appendChild(el("h4", "rk-detail-title", "Soglia di confidenza"));
+  thr.appendChild(el("p", "rk-verdict-text", model.confidence_threshold_note || "—"));
+  grid.appendChild(thr);
+  card.appendChild(grid);
+
+  if (model.non_predictive_reason) {
+    card.appendChild(el("p", "rk-fineprint", model.non_predictive_reason));
+  }
+  return card;
+}
+
+function trainingCard(model, backtest) {
+  const card = el("div", "card rk-meta");
+  const grid = el("div", "rk-meta-grid");
+  const validation = model.validation || {};
+  const folds = firstResultFolds(backtest);
+  const trainStart = folds.length ? folds[0].train_start : null;
+  const testEnd = folds.length ? folds[folds.length - 1].test_end : null;
+
+  grid.appendChild(metaItem("Periodo coperto dalla validazione",
+    trainStart && testEnd ? `${trainStart} → ${testEnd}` : "—",
+    folds.length ? `${folds.length} fold walk-forward con embargo` : "walk-forward con embargo"));
+  grid.appendChild(metaItem("Finestra di addestramento",
+    validation.train_weeks ? `${validation.train_weeks} settimane` : "—",
+    validation.test_weeks ? `test fuori campione: ${validation.test_weeks} settimane per fold` : ""));
+  grid.appendChild(metaItem("Ultimo ricalcolo della validazione",
+    validation.generated_at ? fmtDate(validation.generated_at) : (backtest && backtest.generated_at ? fmtDate(backtest.generated_at) : "—"),
+    validation.age_days === null || validation.age_days === undefined ? "" : `${fmtDays(validation.age_days)} fa`));
+  grid.appendChild(metaItem("Modello adottato",
+    model.model_adopted || "nessuno",
+    model.rule_version ? `in produzione gira la regola ${model.rule_version}` : ""));
+  grid.appendChild(metaItem("Versione del dataset", model.dataset_version || "—",
+    backtest && backtest.panel_rows ? `${NF0.format(backtest.panel_rows)} righe di panel, ${NF0.format(backtest.weekly_rows)} settimanali` : ""));
+  grid.appendChild(metaItem("Feature disponibili",
+    backtest && Array.isArray(backtest.features) ? `${backtest.features.length}` : "—",
+    "tutte causali: calcolate solo con dati disponibili alla data"));
+  card.appendChild(grid);
+  return card;
+}
+
+function firstResultFolds(backtest) {
+  if (!backtest || !Array.isArray(backtest.results) || !backtest.results.length) return [];
+  const r = backtest.results.find((x) => Array.isArray(x.folds) && x.folds.length);
+  return r ? r.folds : [];
+}
+
+function horizonChips(current, onPick) {
+  const row = el("div", "chips rk-chips");
+  [20, 60].forEach((h) => {
+    const chip = el("button", `chip${h === current ? " is-active" : ""}`, `${h} sedute`);
+    chip.type = "button";
+    chip.addEventListener("click", () => onPick(h));
+    row.appendChild(chip);
+  });
+  return row;
+}
+
+function resultsFor(horizon) {
+  const bt = MODEL_STATE.backtest;
+  if (!bt || !Array.isArray(bt.results)) return [];
+  return bt.results.filter((r) => Number(r.horizon) === Number(horizon));
+}
+
+function metricsCard() {
+  const card = el("div", "card rk-model-card");
+  const head = el("div", "rk-card-head");
+  head.appendChild(el("h3", "rk-h3", "Metriche fuori campione"));
+  head.appendChild(horizonChips(MODEL_STATE.horizon, (h) => {
+    MODEL_STATE.horizon = h;
+    const root = document.getElementById("model-metrics");
+    root.innerHTML = ""; root.appendChild(metricsCard());
+    const rel = document.getElementById("model-reliability");
+    rel.innerHTML = ""; rel.appendChild(reliabilityCard());
+  }));
+  card.appendChild(head);
+  card.appendChild(el("p", "rk-fineprint",
+    "Ogni riga è un modello messo alla prova su dati mai visti in addestramento, con embargo fra train e test. L'IC di Spearman misura quanto l'ordinamento assomiglia a quello realizzato; il Brier misura l'errore delle probabilità (più basso è meglio) e va confrontato con la climatologia, cioè la frequenza storica di base."));
+
+  const rows = resultsFor(MODEL_STATE.horizon);
+  if (!rows.length) {
+    card.appendChild(el("p", "rk-fineprint", "Nessun risultato per questo orizzonte."));
+    return card;
+  }
+  const table = el("table", "rk-table rk-metrics-table");
+  const head2 = document.createElement("thead");
+  const hr = el("tr");
+  ["Modello", "IC Spearman", "t", "IC 1ª metà", "IC 2ª metà", "Brier", "Δ vs climatologia", "Hit rate", "Spread top−bottom netto"]
+    .forEach((h, i) => hr.appendChild(el("th", i === 0 ? "" : "num", h)));
+  head2.appendChild(hr);
+  table.appendChild(head2);
+  const body = document.createElement("tbody");
+  const climatology = rows.find((r) => r.model === "climatology");
+  const climBrier = climatology ? climatology.overall.brier : null;
+  rows.forEach((r) => {
+    const o = r.overall || {};
+    const tr = el("tr", r.model === "momentum" ? "is-live" : "");
+    const name = el("td", "");
+    name.appendChild(el("span", "", MODEL_LABEL[r.model] || r.model));
+    if (r.model === "momentum") name.appendChild(el("span", "rk-tag", "regola in produzione"));
+    tr.appendChild(name);
+    tr.appendChild(el("td", "num", fmtRatio(o.ic_spearman, 4)));
+    tr.appendChild(el("td", "num", fmtRatio(o.ic_t, 2)));
+    tr.appendChild(el("td", "num", fmtRatio(r.first_half ? r.first_half.ic_spearman : null, 4)));
+    tr.appendChild(el("td", "num", fmtRatio(r.second_half ? r.second_half.ic_spearman : null, 4)));
+    tr.appendChild(el("td", "num", fmtRatio(o.brier, 4)));
+    const delta = climBrier === null || o.brier === undefined ? null : o.brier - climBrier;
+    tr.appendChild(el("td", `num ${delta === null ? "" : (delta <= 0 ? "pos" : "neg")}`,
+      delta === null ? "—" : `${delta > 0 ? "+" : ""}${fmtRatio(delta, 4)}`));
+    tr.appendChild(el("td", "num", fmtPlainPct(o.hit_rate, 1)));
+    tr.appendChild(el("td", `num ${pctClass(o.tmb_net_mean)}`, fmtSignedPct(o.tmb_net_mean, 2)));
+    body.appendChild(tr);
+  });
+  table.appendChild(body);
+  const wrap = el("div", "rk-table-wrap");
+  wrap.appendChild(table);
+  card.appendChild(wrap);
+
+  const first = rows[0] || {};
+  card.appendChild(el("p", "rk-fineprint",
+    `${NF0.format(first.n_predictions || 0)} osservazioni fuori campione per modello, su ${first.n_folds || 0} fold, con embargo di ${first.embargo_weeks || 0} settimane fra addestramento e test. Un Δ positivo rispetto alla climatologia significa: peggio di una costante.`));
+  return card;
+}
+
+function reliabilityCard() {
+  const card = el("div", "card rk-model-card");
+  const head = el("div", "rk-card-head");
+  head.appendChild(el("h3", "rk-h3", "Affidabilità delle probabilità (reliability)"));
+  const rows = resultsFor(MODEL_STATE.horizon);
+  const available = rows.map((r) => r.model).filter((m) => m !== "random");
+  if (!available.includes(MODEL_STATE.curve)) MODEL_STATE.curve = available[0];
+  const chips = el("div", "chips rk-chips");
+  available.forEach((m) => {
+    const chip = el("button", `chip${m === MODEL_STATE.curve ? " is-active" : ""}`, MODEL_LABEL[m] || m);
+    chip.type = "button";
+    chip.addEventListener("click", () => {
+      MODEL_STATE.curve = m;
+      const root = document.getElementById("model-reliability");
+      root.innerHTML = ""; root.appendChild(reliabilityCard());
+    });
+    chips.appendChild(chip);
+  });
+  head.appendChild(chips);
+  card.appendChild(head);
+  card.appendChild(el("p", "rk-fineprint",
+    "Ogni banda raccoglie le stime di probabilità del modello e le confronta con la frequenza realmente osservata. Se le stime fossero affidabili i punti starebbero sulla diagonale: questo grafico è il motivo per cui la dashboard non pubblica probabilità."));
+
+  const row = rows.find((r) => r.model === MODEL_STATE.curve);
+  const bins = row && Array.isArray(row.reliability) ? row.reliability.filter((b) => b.n > 0) : [];
+  if (!bins.length) {
+    card.appendChild(el("p", "rk-fineprint", "Nessuna banda disponibile per questo modello."));
+    return card;
+  }
+  const chart = el("div", "rk-reliability-chart");
+  chart.innerHTML = reliabilitySVG(bins);
+  card.appendChild(chart);
+
+  const worst = bins.reduce((a, b) => (Math.abs(b.gap) > Math.abs(a.gap) ? b : a), bins[0]);
+  card.appendChild(el("p", "rk-reliability-callout",
+    `Banda più lontana dalla realtà: dove ${MODEL_LABEL[MODEL_STATE.curve] || MODEL_STATE.curve} stimava in media ${fmtRatio(worst.mean_predicted, 2)}, l'evento si è verificato ${fmtRatio(worst.observed_frequency, 2)} delle volte (${NF0.format(worst.n)} osservazioni). Una probabilità del genere non è un'informazione: è un errore con due decimali.`));
+
+  const table = el("table", "rk-table rk-metrics-table rk-rel-table");
+  const thead = document.createElement("thead");
+  const hr = el("tr");
+  ["Banda", "Osservazioni", "Probabilità stimata (media)", "Frequenza osservata", "Scarto"]
+    .forEach((h, i) => hr.appendChild(el("th", i === 0 ? "" : "num", h)));
+  thead.appendChild(hr);
+  table.appendChild(thead);
+  const body = document.createElement("tbody");
+  bins.forEach((b) => {
+    const tr = el("tr", b === worst ? "is-worst" : "");
+    tr.appendChild(el("td", "", `${fmtRatio(b.lower, 2)} – ${fmtRatio(b.upper, 2)}`));
+    tr.appendChild(el("td", "num", NF0.format(b.n)));
+    tr.appendChild(el("td", "num", fmtRatio(b.mean_predicted, 3)));
+    tr.appendChild(el("td", "num", fmtRatio(b.observed_frequency, 3)));
+    tr.appendChild(el("td", `num ${Math.abs(b.gap) >= 0.1 ? "neg" : ""}`,
+      `${b.gap > 0 ? "+" : ""}${fmtRatio(b.gap, 3)}`));
+    body.appendChild(tr);
+  });
+  table.appendChild(body);
+  const wrap = el("div", "rk-table-wrap");
+  wrap.appendChild(table);
+  card.appendChild(wrap);
+  return card;
+}
+
+function reliabilitySVG(bins) {
+  const W = 460, H = 300, pad = 52;
+  const x = (v) => pad + v * (W - pad - 14);
+  const y = (v) => H - pad - v * (H - pad - 14);
+  const parts = [];
+  parts.push(`<svg viewBox="0 0 ${W} ${H}" class="rk-svg" role="img" aria-label="Grafico di affidabilità: probabilità stimata contro frequenza osservata">`);
+  // Griglia + assi
+  for (let g = 0; g <= 4; g += 1) {
+    const v = g / 4;
+    parts.push(`<line x1="${x(0).toFixed(1)}" y1="${y(v).toFixed(1)}" x2="${x(1).toFixed(1)}" y2="${y(v).toFixed(1)}" class="rk-grid" />`);
+    parts.push(`<text x="${(pad - 8).toFixed(1)}" y="${(y(v) + 4).toFixed(1)}" class="rk-axis" text-anchor="end">${fmtRatio(v, 2)}</text>`);
+    parts.push(`<text x="${x(v).toFixed(1)}" y="${(H - pad + 18).toFixed(1)}" class="rk-axis" text-anchor="middle">${fmtRatio(v, 2)}</text>`);
+  }
+  parts.push(`<line x1="${x(0)}" y1="${y(0)}" x2="${x(1)}" y2="${y(1)}" class="rk-diagonal" />`);
+  parts.push(`<text x="${x(0.62).toFixed(1)}" y="${(y(0.62) - 8).toFixed(1)}" class="rk-axis rk-axis-hint">stime affidabili</text>`);
+  const maxN = Math.max(...bins.map((b) => b.n), 1);
+  const points = bins.map((b) => `${x(b.mean_predicted).toFixed(1)},${y(b.observed_frequency).toFixed(1)}`).join(" ");
+  parts.push(`<polyline points="${points}" class="rk-curve" />`);
+  bins.forEach((b) => {
+    const r = 3 + 6 * Math.sqrt(b.n / maxN);
+    parts.push(`<circle cx="${x(b.mean_predicted).toFixed(1)}" cy="${y(b.observed_frequency).toFixed(1)}" r="${r.toFixed(1)}" class="rk-dot"><title>banda ${fmtRatio(b.lower, 2)}–${fmtRatio(b.upper, 2)}: stimato ${fmtRatio(b.mean_predicted, 3)}, osservato ${fmtRatio(b.observed_frequency, 3)} su ${b.n} osservazioni</title></circle>`);
+  });
+  parts.push(`<text x="${x(0.5).toFixed(1)}" y="${(H - 6).toFixed(1)}" class="rk-axis rk-axis-title" text-anchor="middle">probabilità stimata dal modello</text>`);
+  parts.push(`<text x="12" y="${y(0.5).toFixed(1)}" class="rk-axis rk-axis-title" text-anchor="middle" transform="rotate(-90 12 ${y(0.5).toFixed(1)})">frequenza osservata</text>`);
+  parts.push("</svg>");
+  return parts.join("");
+}
+
+function forwardCard(model) {
+  const card = el("div", "card rk-model-card");
+  card.appendChild(el("h3", "rk-h3", "Backtest e portafoglio virtuale: due cose diverse"));
+  card.appendChild(el("p", "rk-verdict-text",
+    "Le metriche qui sopra vengono da una simulazione storica su dati mai visti in addestramento. Il portafoglio virtuale qui sotto è invece un track record in avanti: parte dalla data di attivazione, gira una volta a settimana e registra ogni riga prima di conoscerne l'esito. Il primo è già chiuso e dice che la regola non ha edge; il secondo serve a verificare che l'infrastruttura di misura funzioni, non a smentirlo."));
+
+  const board = el("div", "rk-score-grid");
+  (model.scoreboard || []).forEach((s) => {
+    const box = el("div", "rk-score");
+    box.appendChild(el("h4", "rk-detail-title", `Orizzonte ${s.horizon_days} sedute`));
+    box.appendChild(detailFact("Righe risolte", `${s.n_resolved}`));
+    box.appendChild(detailFact("Righe ancora aperte", `${s.n_pending}`));
+    box.appendChild(detailFact("Hit rate selezionati",
+      s.selected && s.selected.hit_rate !== null && s.selected.hit_rate !== undefined
+        ? `${fmtPlainPct(s.selected.hit_rate, 1)} su ${s.selected.n}` : "non ancora calcolabile"));
+    box.appendChild(detailFact("Hit rate universo",
+      s.universe && s.universe.hit_rate !== null && s.universe.hit_rate !== undefined
+        ? `${fmtPlainPct(s.universe.hit_rate, 1)} su ${s.universe.n}` : "non ancora calcolabile"));
+    box.appendChild(el("p", "rk-fineprint", s.caveat || ""));
+    board.appendChild(box);
+  });
+  if (board.childElementCount) card.appendChild(board);
+
+  const scenario = model.scenario;
+  const bench = model.benchmarks || {};
+  if (scenario) {
+    const grid = el("div", "rk-meta-grid");
+    grid.appendChild(metaItem("Portafoglio virtuale", fmtEur(scenario.equity, true),
+      `capitale iniziale ${fmtEur(scenario.initial_cash, true)} · ${fmtPct(scenario.return_pct)}`));
+    grid.appendChild(metaItem("Liquidità", fmtEur(scenario.cash, true),
+      `commissioni pagate ${fmtEur(scenario.fees_paid, true)}`));
+    grid.appendChild(metaItem("Ultimo ciclo elaborato",
+      scenario.last_processed ? fmtDay(scenario.last_processed) : "—",
+      scenario.started_at ? `attivo dal ${fmtDay(scenario.started_at)}` : ""));
+    grid.appendChild(metaItem("SPY comprato e tenuto",
+      bench.spy_buy_and_hold ? fmtEur(bench.spy_buy_and_hold.equity, true) : "finestra troppo corta",
+      bench.spy_buy_and_hold ? `${fmtPct(bench.spy_buy_and_hold.return_pct)} sulla stessa finestra` : "servono almeno due sedute"));
+    grid.appendChild(metaItem("Universo equipesato",
+      bench.equal_weight ? fmtEur(bench.equal_weight.equity, true) : "finestra troppo corta",
+      bench.equal_weight ? `${fmtPct(bench.equal_weight.return_pct)} sulla stessa finestra` : "servono almeno due sedute"));
+    const fresh = Array.isArray(model.freshness) ? model.freshness : [];
+    const staleFeeds = fresh.filter((f) => f.is_fresh === false);
+    grid.appendChild(metaItem("Fonti dati controllate", `${fresh.length}`,
+      staleFeeds.length ? `non aggiornate: ${staleFeeds.map((f) => f.name).join(", ")}` : "tutte entro la soglia di freschezza"));
+    card.appendChild(grid);
+  }
+  if (model.ledger) {
+    card.appendChild(el("p", "rk-fineprint",
+      `Registro delle classifiche emesse: ${NF0.format(model.ledger.rows || 0)} righe in ${model.ledger.path}. Ogni riga è scritta prima di conoscerne l'esito e non viene mai riscritta.`));
+  }
+  card.appendChild(el("p", "rk-fineprint", model.disclaimer || ""));
+  return card;
 }
 
 /* ---------- Footer ---------- */

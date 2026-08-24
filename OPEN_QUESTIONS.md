@@ -295,6 +295,35 @@ nelle prime settimane, **la prima ipotesi da falsificare è la fortuna**.
 *Non bloccante*: nulla dipende da questa risposta finché il ledger è corto. Ma va
 risolta prima di guardare i numeri, non dopo.
 
+### Q29 — La riga espansa della classifica merita la distribuzione condizionata?
+
+*(emersa in WP5, dashboard)*
+
+Il piano (§WP5) chiedeva, nella riga espandibile di "Opportunità", la
+**distribuzione storica dei rendimenti in condizioni simili** da
+`conditional_outcomes`. Non è stata implementata: il contratto di WP4
+(`src/execution/rotation_report.py`) non la produce, e calcolarla nel browser non
+si può — servirebbe estendere il payload e rigenerarlo, cioè un WP4-bis.
+
+Le opzioni, quando si deciderà:
+
+1. **Aggiungerla al payload** (per asset: quantili del forward return a 20/60
+   sedute condizionati a regime × bucket di momentum, con `n`). Costo: campo nuovo
+   nel contratto, test di schema, un ricalcolo settimanale in più.
+2. **Lasciarla fuori** e tenere, come oggi, la sola frequenza di base storica
+   (0,489 a 20 sedute) scritta nei caveat.
+3. **Spostarla nella vista "Modello"**, una volta sola per l'universo invece che
+   per riga: è una proprietà del campione, non dell'ETF di questa settimana.
+
+Argomento a favore del rinvio: la regola è già misurata come non predittiva, e una
+distribuzione condizionata per asset è esattamente il tipo di grafico che *sembra*
+un segnale. Argomento contro: è l'unico modo per mostrare quanta incertezza c'è
+attorno alla riga, che è il mandato della vista.
+
+*Non bloccante.*
+
+---
+
 ---
 
 ## 🟢 Domande di ricerca (non decisioni operative)

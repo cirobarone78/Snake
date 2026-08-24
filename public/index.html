@@ -29,6 +29,7 @@
       <button class="tab is-active" data-tab="overview">Panoramica</button>
       <button class="tab" data-tab="crypto">Crypto</button>
       <button class="tab" data-tab="equity">Settori azionari</button>
+      <button class="tab" data-tab="opportunita">Opportunità</button>
       <button class="tab" data-tab="dca">Piano di accumulo</button>
       <button class="tab" data-tab="events">Eventi</button>
       <button class="tab" data-tab="paper">Paper trading</button>
@@ -110,6 +111,31 @@
       </div>
       <p class="section-note">Movimenti bruschi recenti — crypto e settori azionari — classificati <strong>di mercato</strong> (si muoveva tutto) o <strong>specifici</strong>, con le notizie più plausibili associate e il tipo di evento. Associazione, non causa. <em>Le news azionarie sono partite da poco: per i settori all'inizio vedrai più classificazione che notizie.</em></p>
       <div id="events-list"></div>
+    </section>
+
+    <!-- OPPORTUNITÀ + MODELLO (WP5) -->
+    <section id="opportunita" class="panel">
+      <div class="section-head">
+        <h2>Opportunità</h2>
+        <p class="updated" id="ranking-updated"></p>
+      </div>
+      <p class="section-note">Classifica <strong>descrittiva</strong> dei venti ETF settoriali per momentum relativo a 60 sedute contro SPY: dice chi <em>si è mosso</em> di più finora, non chi farà meglio da qui in avanti. La sezione <strong>Modello</strong>, subito sotto la tabella, spiega con i numeri perché qui non trovi colonne di probabilità.</p>
+      <div id="ranking-banners"></div>
+      <div id="ranking-meta"></div>
+      <div id="ranking-table"></div>
+      <div id="ranking-past"></div>
+      <div id="ranking-disclaimer"></div>
+
+      <div class="section-head model-head">
+        <h2>Modello</h2>
+        <p class="updated" id="model-updated"></p>
+      </div>
+      <p class="section-note">Stato della validazione fuori campione della regola di ranking: cosa è stato misurato, cosa ha fallito e perché nessuna probabilità viene pubblicata.</p>
+      <div id="model-verdict"></div>
+      <div id="model-training"></div>
+      <div id="model-metrics"></div>
+      <div id="model-reliability"></div>
+      <div id="model-forward"></div>
     </section>
 
     <!-- PIANO DI ACCUMULO -->
