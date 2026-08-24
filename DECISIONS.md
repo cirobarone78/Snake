@@ -1911,6 +1911,76 @@ introdurle ora significherebbe pagarne il costo prima di averne bisogno.
 
 ---
 
+## ADR-034 — Ranking ETF: esito della validazione pre-registrata
+
+**Data**: 2026-08-24
+**Stato**: Proposed — **ipotesi registrate, esito non ancora misurato**
+**Contesto operativo**: `docs/PIANO_SVILUPPO.md` §2.1 e §5 (WP3). Questo commit
+esiste **prima** di qualunque backtest: il timestamp git è la prova della
+pre-registrazione. L'esito verrà aggiunto in un commit successivo, **qualunque
+esso sia**.
+
+**Contesto**: il progetto ha già pagato il prezzo di concludere dopo aver visto i
+dati. Il caso `news_count`/`|return|` (correlazione +0,32 su n=23, svanita a
+−0,07 con n=143) e il notebook 12 su FinBERT sono in `STATUS.md` proprio come
+promemoria: una soglia scelta *dopo* aver guardato i risultati non è una soglia,
+è una descrizione. `CLAUDE.md` lo mette tra i punti non negoziabili — «le ipotesi
+vanno scritte **prima** di vedere i risultati, non dopo».
+
+WP2 ha consegnato il panel (93 517 righe × 27 colonne, 20 ETF settoriali + SPY,
+2005→2026) e con esso la **baseline climatologica**: l'outperformance
+incondizionata vs SPY è 0,489 a 20 sedute e 0,482 a 60. È il numero da battere,
+ed è noto prima di aver addestrato qualsiasi cosa.
+
+**Decisione**: si adottano come **pali fissi** le ipotesi e le soglie qui sotto,
+copiate **verbatim** da `docs/PIANO_SVILUPPO.md` §2.1. Non si spostano dopo aver
+visto i risultati. Se una variante viene provata e fallisce, viene elencata nel
+report anche se fallita.
+
+### Ipotesi pre-registrate (verbatim da §2.1)
+
+- **H1**: il ranking per momentum relativo 60gg ha IC di Spearman medio OOS > 0
+  a 20 sedute sull'universo D1.
+- **H2**: la logistica regolarizzata sulle feature di WP2 batte il momentum puro
+  in Brier score OOS (probabilità calibrate su train con isotonic).
+- **H3**: lo spread top-quintile − bottom-quintile, **al netto dei costi** D6, è
+  positivo in *entrambe* le metà temporali dell'OOS.
+- **Metrica primaria**: Brier score vs baseline climatologica (frequenza storica
+  di outperformance nel train) + IC Spearman. Le altre metriche (§WP3) sono
+  diagnostiche.
+- **Barra di adozione** (il modello entra nel paper portfolio di WP4 solo se):
+  IC Spearman medio OOS ≥ 0.03 **e** H3 vera **e** Brier ≤ baseline
+  climatologica. Altrimenti WP4 procede con il **momentum semplice** come regola
+  dichiaratamente non-predittiva (il ledger e l'infrastruttura valgono comunque)
+  e l'esito negativo viene documentato in STATUS/ADR come da convenzione.
+
+### Protocollo di validazione, fissato ora
+
+Anche il *come* si misura va congelato prima, altrimenti la scelta del protocollo
+diventa essa stessa un grado di libertà da sfruttare a posteriori:
+
+1. **Walk-forward con embargo**: il test di ogni fold inizia `embargo = horizon`
+   osservazioni dopo la fine del train. Senza embargo l'ultima riga di train ha
+   un target che si realizza *dentro* il test: contaminazione, non predizione.
+2. **Campionamento settimanale** del panel (lunedì), coerente con D5.
+3. **Calibrazione isotonic fit solo sul train** del fold, mai sul test.
+4. **Due metà temporali OOS** valutate separatamente: H3 richiede che il segno
+   tenga in *entrambe*, non in media.
+5. **Controlli negativi obbligatori**: `RandomRanker` con seed e
+   `ClimatologyBaseline`. Se un modello non batte il caso, il confronto con le
+   altre baseline non significa nulla.
+
+**Conseguenze**:
+
+- Se la barra di adozione **non** è superata, WP4 procede col momentum semplice
+  dichiarato non-predittivo. Non è un fallimento del work package: è il suo
+  esito, e l'infrastruttura (ledger, portafoglio, report) vale comunque.
+- L'esito negativo va documentato con lo stesso dettaglio di uno positivo — è la
+  convenzione del progetto, e la sezione "cosa NON ha funzionato" del report è
+  obbligatoria, non decorativa.
+- Questa ADR resta `Proposed` finché non contiene i numeri. Alla chiusura di WP3
+  passa ad `Accepted` con l'esito allegato.
+
 <!--
 Template per nuove ADR:
 
