@@ -2148,6 +2148,14 @@ peggiori di una costante.
    dicono che sono **stato osservato**, non previsione.
 4. **`confidence` non è una stima**: sotto la regola non-predittiva vale
    `not_applicable`. Non "bassa": "bassa" implica una scala calibrata.
+4-bis. **L'identità di una riga è la barra di decisione, non solo l'istante di
+   emissione.** Il piano chiedeva append idempotente su
+   `(emitted_at, asset, horizon)`; il ledger rifiuta un duplicato anche su
+   `(data_cutoff, asset, horizon)`. Motivo concreto: un retry del cron due ore
+   dopo porta un `emitted_at` nuovo ma parla della stessa barra, e due righe
+   sulla stessa previsione lascerebbero a chi legge in futuro la libertà di
+   scegliere quella che gli conviene. Il vincolo è un soprainsieme di quello
+   richiesto, non una deroga.
 5. **Ogni output verso dashboard e report dichiara la non-predittività** in modo
    esplicito e in italiano: `predictive: false`, la descrizione testuale della
    regola e il rinvio ad ADR-034 viaggiano dentro il payload, non in una nota a

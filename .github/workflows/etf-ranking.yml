@@ -1,0 +1,79 @@
+name: etf-ranking
+
+# WP4 (ADR-034/036): the weekly sector-ETF rotation. Monday pre-open (decision
+# D5) the runner ranks the universe, writes one ledger row per symbol BEFORE the
+# outcome exists, backfills the outcomes whose horizon has matured, rebalances
+# the paper scenario and refreshes the two dashboard payloads.
+#
+# The rule it runs is declared NON-predictive: WP3's adoption bar was not passed,
+# so what this workflow accumulates is a forward measurement record, not a
+# signal. That is the whole point — the ledger is only worth anything if it was
+# written before the market answered, and a cron is what makes that credible.
+#
+# Everything it produces is committed: the JSONL ledger (one small line per
+# prediction, git-friendly by design), the scenario state (ADR-029) and the JSON
+# payloads. The bot's GITHUB_TOKEN push does not re-trigger CI (GitHub
+# anti-recursion).
+#
+# The runner exits non-zero on its fail-safe (stale feed, or a validation report
+# older than six months). It still writes `status: "stale"` payloads first, so
+# the dashboard says why it did not update — and those are committed too, before
+# the job is allowed to fail.
+
+on:
+  schedule:
+    # Monday 07:00 UTC, pre-open (D5). GitHub schedules with a variable delay;
+    # the payload timestamp is the one to trust, not the cron line.
+    - cron: "0 7 * * 1"
+  workflow_dispatch: {}
+
+concurrency:
+  group: etf-ranking
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Run the weekly rotation
+        id: rotate
+        continue-on-error: true
+        run: uv run python -m src.ingestion.tier1.etf_ranking_cli
+
+      - name: Commit ledger, scenario and payloads
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # add first, then inspect the INDEX: `git diff` alone ignores untracked
+          # files, so the very first run would silently commit nothing.
+          git add data/predictions data/paper \
+                  public/data/ranking_report.json public/data/ranking_model.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed this run."
+            exit 0
+          fi
+          git commit -m "data: weekly ETF rotation (paper) [skip ci]"
+          git push
+
+      - name: Fail if the run hit its fail-safe
+        if: steps.rotate.outcome == 'failure'
+        run: |
+          echo "The rotation runner aborted (stale data or stale validation)." >&2
+          echo "Stale payloads were written and committed; no rebalance happened." >&2
+          exit 1

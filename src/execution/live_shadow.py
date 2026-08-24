@@ -45,8 +45,13 @@ MIN_TRADE_EQUITY_FRAC = 0.01
 CAPITAL_UTILIZATION = 0.97
 
 
-def _bars_after(history: dict[str, pd.DataFrame], after: pd.Timestamp | None) -> list[Bar]:
-    """All bars strictly after ``after``, across symbols, in time order."""
+def bars_after(history: dict[str, pd.DataFrame], after: pd.Timestamp | None) -> list[Bar]:
+    """All bars strictly after ``after``, across symbols, in time order.
+
+    Public because the weekly ETF rotation runner replays bars exactly the same
+    way (src/execution/etf_rotation.py): two copies of this loop would be two
+    places for the no-look-ahead ordering to drift.
+    """
     bars: list[Bar] = []
     for symbol, df in history.items():
         frame = df.sort_index()
@@ -106,7 +111,7 @@ def run_daily(
 
         # 1. fills: every bar after last_processed, oldest first
         touched: list[Order] = []
-        for bar in _bars_after(history, state.last_processed):
+        for bar in bars_after(history, state.last_processed):
             touched.extend(broker.process_bar(bar))
 
         # 2. decide as of T. The strategy is "long while momentum is positive":
