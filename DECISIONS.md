@@ -1779,6 +1779,138 @@ ogni run del cron spiega il 97,5% del peso.
 
 ---
 
+## ADR-033 — Storage storico: partizionamento mensile dei parquet in-repo
+
+**Data**: 2026-08-24
+**Stato**: Accepted (D8 confermata dall'utente il 2026-08-24)
+**Contesto operativo**: `docs/PIANO_SVILUPPO.md` §5, WP1. Decisione pre-registrata
+**D8**, che il piano lasciava all'utente: confermata prima dell'implementazione.
+
+**Contesto**: la misura di WP0 non lascia margini di interpretazione. Su 812
+commit di `main`, **676 (83%) sono commit automatici dei cron**; il pack git pesa
+**1,17 GiB** e il contenuto non compresso dei blob **7 727 MiB** su 2 927 blob.
+Un solo file spiega quasi tutto:
+
+| Path | Blob distinti | MiB cumulati | % del totale |
+|---|---:|---:|---:|
+| `data/news_history/news.parquet` | 479 | 7 532,7 | **97,5%** |
+| `public/data/events.json` | 473 | 131,5 | 1,7% |
+| `data/category_history/categories_history.parquet` | 86 | 24,7 | 0,3% |
+| `public/data/market_series.json` | 81 | 16,5 | 0,2% |
+| `STATUS.md` | 71 | 2,9 | 0,04% |
+| tutto il resto | — | ~19 | 0,2% |
+
+La causa non è il volume dei dati — la storia news compatta è **26,6 MB, 50 129
+righe** — ma la **forma della scrittura**. Un parquet si riscrive per intero a
+ogni append: il cron gira ogni 3 ore (8 volte al giorno) e ogni run deposita in
+git un blob nuovo, quasi identico al precedente e **grande quanto tutta la
+storia**. Il costo per run non è costante: **cresce con la storia stessa**. È una
+crescita quadratica nel tempo, e a fine 2026 il repo sarebbe stato ingestibile
+per una ragione puramente meccanica, non per la quantità di informazione.
+
+Il vincolo di partenza (ADR-025) resta valido e non è in discussione: la storia
+news **deve** essere versionata, perché i feed espongono solo poche settimane e
+i container di Actions sono effimeri. Il problema è *come* la si scrive.
+
+**Decisione**: la storia news è **partizionata per mese di pubblicazione** —
+`data/news_history/news_YYYY-MM.parquet` — e resta **dentro il repo**.
+
+1. **Scrittura**: `update_history()` raggruppa gli item entranti per mese e
+   riscrive **solo le partizioni toccate**, normalmente il mese corrente. I mesi
+   passati diventano blob immutabili che git non ristora mai più.
+2. **Lettura trasparente**: `read_news_history()` concatena le partizioni e
+   restituisce **un solo frame**, con la stessa forma di prima. I consumatori
+   (`build_events`, `attribution_cli`, gli script dei notebook) non conoscono il
+   layout: l'API è invariata.
+3. **Dedup su due livelli**, e la distinzione è sostanziale: `append_news`
+   deduplica *dentro* la partizione in scrittura, `read_news_history` deduplica
+   *fra* partizioni in lettura. Il secondo copre il caso raro in cui un feed
+   ripubblica una storia con data diversa: la copia vecchia resta nel suo mese
+   (riscriverlo vanificherebbe tutto) e la lettura tiene la riga del mese più
+   recente.
+4. **Migrazione one-shot**: il monolite è stato diviso in 92 partizioni. La
+   storia git **non viene riscritta**: i vecchi blob restano dove sono, questa è
+   una decisione sul futuro, non una pulizia del passato. La migrazione è
+   idempotente ed è invocata anche da `update_history.py` all'avvio, così un
+   worktree anteriore alla migrazione si converte da solo invece di riscrivere
+   silenziosamente il file da 26 MB.
+5. **Il monolite resta leggibile**: `read_news_history` include `news.parquet` se
+   ancora presente, ordinandolo prima delle partizioni. Un checkout precedente al
+   commit di migrazione non perde storia.
+
+**Effetto misurato** (26,6 MB il monolite, 6,14 MB la partizione di 2026-08 al
+24 agosto):
+
+| Metrica | Prima | Dopo | Δ |
+|---|---:|---:|---:|
+| Blob riscritto per run, oggi | 26,66 MB | 6,14 MB | **−77,0%** |
+| Blob per run, media sui prossimi 30 giorni | ~31,4 MB | ~4,0 MB | **−87,2%** |
+| Costo per run fra 12 mesi (proiezione a ~8 MB/mese) | ~119 MB | ~4 MB | **−96,6%** |
+
+Il numero che conta non è la percentuale di oggi ma la **forma della curva**: il
+costo per run del monolite cresce senza limite, quello della partizione è
+**limitato a un mese di news (~8 MB) e si azzera ogni primo del mese**. Da
+crescita quadratica a crescita lineare.
+
+**Alternative valutate e rinviate** (dall'handoff §4.1). Nessuna è stata scartata
+perché sbagliata: sono state scartate perché il partizionamento basta, e
+introdurle ora significherebbe pagarne il costo prima di averne bisogno.
+
+- **Cloudflare R2 / object storage esterno**: risolve il problema alla radice e
+  si integra con il worker già in uso. Costo: credenziali da gestire nei cron, un
+  layer di fetch da scrivere e testare, e i dati escono dal repo — cioè si perde
+  la proprietà che li rende oggi riproducibili da un semplice `git clone`.
+  **Rinviata**: da riconsiderare se la storia supera i ~500 MB o se serviranno i
+  corpi degli articoli.
+- **Git LFS**: sposta i blob fuori dal pack ma introduce una quota, un passo di
+  setup per ogni clone e un fallimento silenzioso (file-puntatore) per chi non ha
+  LFS. **Rinviata**: il rapporto beneficio/attrito è sfavorevole per file da
+  pochi MB.
+- **Release artifact / GitHub Releases**: gratuito e fuori dal pack, ma perde il
+  versionamento fine (un artifact per release, non per run) e richiede comunque
+  un layer di download. **Rinviata**.
+- **Database esterno (DuckDB remoto, Postgres)**: la soluzione "giusta" per un
+  sistema in produzione; qui aggiungerebbe un servizio da mantenere a un progetto
+  di ricerca che gira su cron gratuiti. **Rinviata** esplicitamente a quando
+  esisterà un prodotto con utenti, non prima.
+- **Riscrittura della storia git** (`filter-repo`): recupererebbe l'1,17 GiB già
+  speso. **Esclusa**, non rinviata: invalida ogni clone e ogni riferimento a
+  commit esistente, per un beneficio una tantum su un repo che comunque non
+  ricrescerà più a quel ritmo.
+
+**Conseguenze**:
+- ✅ La crescita del repo passa da quadratica a lineare, senza storage esterno,
+  senza credenziali nuove, senza riscrivere la storia e senza toccare la raccolta
+  dati. `git clone` resta sufficiente a riprodurre tutto.
+- ✅ L'API per i consumatori è invariata: chi legge la storia chiama una funzione
+  e riceve un frame, come prima.
+- ⚠️ Il numero di file cresce: 92 partizioni oggi, +1 al mese. 89 di esse sono
+  mesi antichi con 1–30 righe (Google News restituisce ogni tanto un articolo
+  vecchio) e pesano ~1,2 MB in totale. Rumore in `ls`, irrilevante per git.
+- ⚠️ `read_news_history()` legge N file invece di 1. A 92 partizioni il costo è
+  trascurabile; se un giorno diventasse un problema, il passo successivo è un
+  dataset parquet partizionato (pyarrow `dataset`) sulla stessa struttura di
+  file, non un cambio di formato.
+- ⚠️ **Il commit del cron non può selezionare "il mese corrente" per data**: un
+  run del giorno 1 deposita ancora item nel mese precedente, e un feed può
+  esporre un articolo vecchio. Il workflow committa quindi le partizioni
+  **effettivamente modificate**, e verifica anche i file *untracked* — senza quel
+  controllo, la partizione nuova del primo del mese sarebbe invisibile a
+  `git diff` e non verrebbe mai committata.
+- 🚫 **`category_history` non è stato partizionato** (perimetro WP1: "stesso
+  pattern *se banale*, altrimenti annotare e fermarsi"). Non è banale: quel file
+  è scritto dal `write_snapshot` generico di ADR-022, condiviso con macro,
+  settori, CoinGecko ed Etherscan; partizionarlo significa cambiare l'API comune
+  e i suoi sei call site. Costo alto, beneficio 0,3% del peso. Se un giorno la
+  dinamica si ripete su quel file, si applica lo stesso schema a `write_snapshot`
+  con una ADR dedicata.
+- 📌 Leva non usata e disponibile: le partizioni usano la compressione di default
+  (snappy). Passare a zstd ridurrebbe ancora il blob per run, ma tocca
+  `append_news`, condiviso — vale una decisione a sé, non un effetto collaterale
+  di questa.
+
+---
+
 <!--
 Template per nuove ADR:
 
