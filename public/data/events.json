@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:25:00+00:00",
+  "generated_at": "2026-08-25T10:01:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -973,45 +973,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-08-25",
-          "return_pct": 4.65,
-          "zscore": 0.74,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 2.06,
-          "events": [
-            {
-              "source": "cointelegraph",
-              "title": "BNB Chain activates Pasteur hard fork to strengthen bridge security",
-              "url": "https://cointelegraph.com/news/bnb-chain-pasteur-hard-fork-bridge-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": 0.511,
-              "relevance": 0.483,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.4,
-              "event_type": "other"
-            },
-            {
-              "source": "coindesk",
-              "title": "Bitcoin steadies near $78,000 as gold rallies, altcoins consolidate after best week in 3 years",
-              "url": "https://www.coindesk.com/markets/2026/08/24/bitcoin-steadies-near-usd78-000-as-gold-rallies-altcoins-consolidate-after-best-week-in-3-years",
-              "sentiment": 0.637,
-              "relevance": 0.393,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 0,
-            "zscore": null,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-08-24",
           "return_pct": 6.35,
           "zscore": 1.22,
@@ -1203,6 +1164,45 @@
           "coverage": {
             "count": 1,
             "zscore": -0.64,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-07-23",
+          "return_pct": -3.77,
+          "zscore": -1.83,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -1.6,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Binance Will Support the Polygon (POL) Network Upgrade & Hard Fork - 2026-07-29 - Binance",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdHRxcWVtNDFGVXhiMjByUWNZRW5faFh1VG9HRDU5VUU2bVVHZTMyZzhqX1RvZG5veVpLNDdDWXhvWmViR28xdUdNR04zVHh0cEZBM0RCVDhEYy1jc0x3ak8wN0M4amtJOFdCNVpDZi1hcS14LWJlZG1WcF96OVZLYmpHeHllV0U?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.6,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Binance Announces It Will Support Network Upgrade and Hard Fork of This Altcoin - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4wOWU0VC0yRFRRSlRfQ2JYZGQxWHVsLUFQc3dMS1puS2ZLa0gwS2tycm5YRjY3N1NqazVLVkw0TnoxSGlRN1hMdFZKVXppU0dtSjhpUnNVNA?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.6,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "POL (ex-MATIC): Ithaca hardfork goes live on Polygon mainnet - 29 Jul 2026 - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWHo3ZGZhX2l3VUYxbF9xWWhGeXBuejZjSzd6OG9BTnJ1c3dXWFVaVWlMeUM5aElzVTZURXpjSUx3Sng0dFo4ajhKc3lfbUI0X2lNajNWc0t1dXBjRmZROFlTUEM4VVBOQ21QRHlzOG94dFU4c3RGTElsQVRpYWYwMlB0OEJFZkczMVZmbW1CQ3VFdWJHOFdXV3VsQnJGS2JjOXozUDBhVl81NXR4YzNabzNFRVJNcU1nRjBHLVNkNG12NWp5N2lyYm9CUnpadw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "upgrade"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.09,
             "spike": false
           }
         }
@@ -6032,12 +6032,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-25",
-      "return_pct": 2.06,
-      "zscore": 0.59,
+      "return_pct": 0.17,
+      "zscore": -0.24,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-08-24",
