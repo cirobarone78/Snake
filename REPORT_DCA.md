@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 14.9% | 33.3% | +18.4 pp | 100% | 1.000 |
-| 2 | LINK | 38.9% | 33.3% | -5.6 pp | 93% | 0.500 |
-| 3 | SOL | 46.1% | 33.3% | -12.8 pp | 94% | 0.000 |
+| 1 | POL | 15.0% | 33.3% | +18.3 pp | 100% | 1.000 |
+| 2 | LINK | 37.8% | 33.3% | -4.5 pp | 95% | 0.500 |
+| 3 | SOL | 47.2% | 33.3% | -13.9 pp | 100% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -92,15 +92,6 @@ Token della piattaforma Binance e gas della BNB Chain.
 - **Sviluppo**: quasi nessuno sviluppo (0 commit in 4 settimane).
 - **Età**: 9.1 anni.
 
-**AAVE — Aave**
-
-Protocollo di prestito on-chain fra i più grandi per depositi.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
-- **Sviluppo**: quasi nessuno sviluppo (0 commit in 4 settimane).
-- **Età**: almeno 5.8 anni.
-
 
 ### Tesi monetaria (non cattura ricavi, per scelta)
 
@@ -125,6 +116,17 @@ Fork di Bitcoin con blocchi più rapidi; nessuna differenziazione forte.
 - ⚠️ Scheda incompleta: nota solo per il 60% dei criteri.
 
 
+### Economia del token non ancora studiata
+
+**GRAM — Gram (prev. Toncoin)**
+
+- **Cattura del valore**: non ancora studiato.
+- **Offerta**: emissione non verificata — valutazione diluita 1.89 volte la capitalizzazione attuale.
+- **Sviluppo**: sviluppo attivo (98 commit in 4 settimane).
+- **Età**: almeno 4.9 anni.
+- ⚠️ Scheda incompleta: nota solo per il 60% dei criteri.
+
+
 ### Solo governance: nessun flusso al detentore
 
 **UNI — Uniswap**
@@ -144,7 +146,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
+- **Offerta**: inflazione alta.
 - **Sviluppo**: nessun commit recente, ma dato forse non aggiornato (0 commit in 4 settimane).
 - **Età**: 12.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -152,9 +154,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 27
-- stablecoin o token ancorato: 21
-- volume troppo basso rispetto alla capitalizzazione: 9
+- capitalizzazione sotto la soglia: 28
+- stablecoin o token ancorato: 19
+- volume troppo basso rispetto alla capitalizzazione: 10
 - già in portafoglio: 5
 
 ## Limiti
