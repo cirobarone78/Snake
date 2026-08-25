@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:09:00+00:00",
+  "generated_at": "2026-08-25T07:25:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 99,
-            "zscore": 1.77,
+            "count": 98,
+            "zscore": 1.72,
             "spike": false
           }
         },
@@ -490,45 +490,6 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-08-25",
-          "return_pct": 6.05,
-          "zscore": 1.96,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 3.39,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "3 Best Cryptos for Long-term Gains: SOL, ETH, and BTC - KuCoin",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZDdveHNyU3JvNFZCUEtuSnFYUnhFOUw2ZEhmZ3c0NGdBbnpQb1dsdWNZY080Wm1KazRFWFlFblFoMGNTcGg5MDRGTmhqSkNWU0lOZzMzd0RRRl9KOWRQUlBHWWZ2bHZ4aTQtV0VXVnF4cnljQi1UNVRlTzl3ODdjRFNXVU5FLTBCM3ZFSg?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.706,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "SOL Strategies Stock Rallies 8.38% as Solana Infrastructure Growth, Houdini Expansion and Crypto Momentum Lift Optimism - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVVF6LS10MW91MGhvQlJLODRabmh2UlhqdG1VcUE3bDBMQ2p3bk4zMkF5OXJVdGdJN1NoTjVPeFUyRVlqcl9JZ0VZRXlIRUJPTWgxdmVVUzVRZndYT0JqOXFZNm1CRmh4cW1KX1JOblVpSGdKYTM2STlTWU9NZGdabm5Ibk5HU1Y1RHpZcllvaGQ2Zm1CMXpib2FXbmxERWF2Z1hVaGdSR2dEd2RiNXpaZF9HSWFmamFuSjcxTjFCenREZ2huMk9nLVlaWnRScDc4U0dzZzE4VE8tX2sxNEJMcm1MSkI0dw?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.691,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana's real-world asset ecosystem tops $4B wi... - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTElvN1gxaU5HU0cwSS1FNFlEc3JvZ081bnc0bkIwOXYwQUwxWWtKaG84X2hhLUhvamJBMFhrUnZ2QWJkX0JWNmNidGxoaG9yMnRIUHBYNXhYcWo1YmVaUzRjVzFrSTM4cV9jME4yc0lPNUlFaGlXdm93NFJrUThuMWZmbUdQc0dwX1J5NHJRc0I2TDFGYWU1Z2RaYzN5MW9s?oc=5",
-              "sentiment": 0.7,
-              "relevance": 0.68,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 3,
-            "zscore": -1.96,
-            "spike": false
-          }
-        },
         {
           "date": "2026-08-21",
           "return_pct": 6.87,
@@ -721,6 +682,45 @@
           "coverage": {
             "count": 14,
             "zscore": -1.03,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-07-01",
+          "return_pct": 5.25,
+          "zscore": 1.48,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 2.47,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana News: SOL Strength in Showcase as Mainnet Bags 1 Billion Non-Vote Transactions - The Coin Republic",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN2E0YVkwRThEWXdEMDMtWUN4QnNBOE4zQnlROE1senZmVFdWTFNUMGc5ZTVYa3dCTDhKNkw3U2RKMnJNc0JtS0ZqSDkwa09yM2FTNURVTUEzcXBzWU1YSEFVdkZKM25vN3d6OW9oTzdUQmNfZGFHZ0JoYnZTc0txaU1QN3ZnMTdMZ0NqMThxYkRXUjB0WVZ4azg4S2JINHpfRVdFSnp1VGJjUl9BNmRpRUxMa2pSV3d6SmZZX2toSmRmNS1nRDFj0gHMAUFVX3lxTFBuS0hsZlZNc2FwQ2lGTHJ5WkhvRk5WWFdadEp4WGE4eW1iY2ZUaU43Zy1wQjdYODEtZDRrS0hLT1JJZ0tVZThkMVAwUS1vM3BYQ2hBem92a0ZuQnpvU0tJZDdaMGdZZDZRTXU0dnhGR0wybXNVMTlobFBGUG5yQWJlN05DeExZQ1FjMDR1WVVSUTJyejJvS1p5ZThlaW1lZ0JrYWtrWlRUMmQxWG9weTlIY1Buekk2MERwenlabTlvVW1oaWdUWjNjR1Z3MQ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Price Forecast: Retail confidence backs SOL testing 50-day EMA breakout near $75 - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdjVWRFdfLTlJOUVsYWdLZThJa3RtVDNBQ19MaTlIWDUyMmtGZVlTQS0yMWpMY1VVYng1dXVKbW5EcGZuUkFfVzA1WDUzSEFGVEFYZGNmWDNxTjNMbWlCNmU3NzNUcFdTeEsxWk5UVzFaZVgzRmpqcDB2b1pWcFZUdGZ6T2tOa1diSnN2ckRIUnR2Tm52YVpfRTU5M29HOGxGeWV4My10MnRCREVpX0Z3QW5OVXpiY0FJVllzcGJ5Zkt6OEJzc2hxZmJwYjFXQ3FWM3FiVHh0dzFoUGlrakE?oc=5",
+              "sentiment": 0.477,
+              "relevance": 0.791,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Forward Industries Shares Spike as Leading Solana Treasury Adds $38 Million in SOL - Decrypt",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQWliUzNKYzlpUkRvUUs2MU4tcnBlSDIxU1RlaE9QMWZvNG5oQnFJMHVlMmNlVGxSRTVrekxiOUVyYldud3hlVmt4cmZ5QTNEWjBFTjZ4RHdPeEZsNFBreF9UMkV3X2Y1c0dRQ29XcUxua2lkOXFjSV9uQU9UV1pWNFZYMVdUeWltSjRmd0hldmFzLVXSAZsBQVVfeXFMT1NvenM4ZHkzeWdVS3hxMTM1aG9UX2owTTRxRDNmT18wY0d1bUIwNFlOTFF2YlE1bDdPdHJUYzFMRllkZm1JOTNUTVc1aHJNV3NnSnJkM21VTFZxUk55M1hPMnEteDN1eV9fSUZ2NGtOcktHTXRxSmJfRjY3OFdSNzF4WE1HNFA1VEFGampPQWFjTXpvcEZUUE9jZ3M?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 14,
+            "zscore": -1.09,
             "spike": false
           }
         }
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 7.38,
-          "zscore": 1.46,
+          "return_pct": 4.65,
+          "zscore": 0.74,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 3.39,
+          "market_return_pct": 2.06,
           "events": [
             {
               "source": "cointelegraph",
@@ -989,11 +989,42 @@
               "event_type": "upgrade"
             },
             {
+              "source": "googlenews_pol",
+              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.4,
+              "event_type": "other"
+            },
+            {
               "source": "coindesk",
               "title": "Bitcoin steadies near $78,000 as gold rallies, altcoins consolidate after best week in 3 years",
               "url": "https://www.coindesk.com/markets/2026/08/24/bitcoin-steadies-near-usd78-000-as-gold-rallies-altcoins-consolidate-after-best-week-in-3-years",
               "sentiment": 0.637,
               "relevance": 0.393,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-08-24",
+          "return_pct": 6.35,
+          "zscore": 1.22,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 1.56,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.6,
               "event_type": "other"
             },
             {
@@ -1001,13 +1032,21 @@
               "title": "Convert 0.01 POL (Polygon Ecosystem Token) to USD (United States Dollar) - Bybit",
               "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE53OW1GM19GSTRWbWxBam54SlpYa3gzOHZpV0lGeFJ3bTc4d3J0RV9QVnN5a0JuT21kMnNvQU4tbjVwZk5DOFpYaFJwYWQ2eExCTEdZeTZtVWw?oc=5",
               "sentiment": 0.421,
-              "relevance": 0.369,
+              "relevance": 0.569,
+              "event_type": "other"
+            },
+            {
+              "source": "coindesk",
+              "title": "Bitcoin steadies near $78,000 as gold rallies, altcoins consolidate after best week in 3 years",
+              "url": "https://www.coindesk.com/markets/2026/08/24/bitcoin-steadies-near-usd78-000-as-gold-rallies-altcoins-consolidate-after-best-week-in-3-years",
+              "sentiment": 0.637,
+              "relevance": 0.513,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -0.66,
             "spike": false
           }
         },
@@ -1036,17 +1075,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_pol",
-              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "googlenews_macro",
+              "title": "Wall Street week ahead: Reports on consumer confidence and inflation on tap - AP News",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWVVzc05uLUJ1Wk9tQThEQnYxR2Rza2txazJid1Z0Z1UzOGlPTTJiX2FEUXBaZl8xSGtEenRJQnhxdmR5TGFuT3lfNXdBa3kzZlJUNTNseVBZYnhmdzBZUWNKenYtOXhncm03V3JRbXVIWTVaMk1rV3BHV2ZmV0JwLThyVUlWdnFQbXJxdzY4OUxTRDJTLXRiYkpQZ3c1V1UwS1dR?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.483,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.44,
+            "count": 2,
+            "zscore": -0.55,
             "spike": false
           }
         },
@@ -1085,7 +1124,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.34,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -1163,46 +1202,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.67,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-23",
-          "return_pct": -3.77,
-          "zscore": -1.83,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -1.6,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Binance Will Support the Polygon (POL) Network Upgrade & Hard Fork - 2026-07-29 - Binance",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdHRxcWVtNDFGVXhiMjByUWNZRW5faFh1VG9HRDU5VUU2bVVHZTMyZzhqX1RvZG5veVpLNDdDWXhvWmViR28xdUdNR04zVHh0cEZBM0RCVDhEYy1jc0x3ak8wN0M4amtJOFdCNVpDZi1hcS14LWJlZG1WcF96OVZLYmpHeHllV0U?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Binance Announces It Will Support Network Upgrade and Hard Fork of This Altcoin - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4wOWU0VC0yRFRRSlRfQ2JYZGQxWHVsLUFQc3dMS1puS2ZLa0gwS2tycm5YRjY3N1NqazVLVkw0TnoxSGlRN1hMdFZKVXppU0dtSjhpUnNVNA?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "POL (ex-MATIC): Ithaca hardfork goes live on Polygon mainnet - 29 Jul 2026 - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWHo3ZGZhX2l3VUYxbF9xWWhGeXBuejZjSzd6OG9BTnJ1c3dXWFVaVWlMeUM5aElzVTZURXpjSUx3Sng0dFo4ajhKc3lfbUI0X2lNajNWc0t1dXBjRmZROFlTUEM4VVBOQ21QRHlzOG94dFU4c3RGTElsQVRpYWYwMlB0OEJFZkczMVZmbW1CQ3VFdWJHOFdXV3VsQnJGS2JjOXozUDBhVl81NXR4YzNabzNFRVJNcU1nRjBHLVNkNG12NWp5N2lyYm9CUnpadw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.08,
+            "zscore": -0.64,
             "spike": false
           }
         }
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 40,
-            "zscore": 2.23,
+            "zscore": 2.22,
             "spike": false
           }
         },
@@ -2250,8 +2250,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.08,
+            "count": 21,
+            "zscore": 0.17,
             "spike": false
           }
         },
@@ -3198,24 +3198,24 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "James Hardie Industries (ASX:JHX) Shares Rally—Is the Building Materials Giant Back on Investors' Radar? - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTkpfSm1rQUNtS0ZsUlNUbkRPUGxVeWdIZjIwaE5JN3phemdXYXZZaTlVb05hR0t2elVWclhPZ0M4eEdHN3gxZnphZ1EzOGxXTFlNUmNGYldSajQtVTJQdXdfOFRWRE50TXBRcDNwNUk2emxFbmlmWjdrRWRFWHM3YlVzNnBhVGtlSjR2dk1IQmhzUXNWTW1mWURtQU14a0VUSVQ5dlVPaW41QzN1bGNEbXJrakxtR050OGZmQTFJTHluVlVrRHNMWldlUW1MUQ?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
+              "title": "Trending Industry Today: MP Materials Leads Gains In Rare Earth Stocks - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONk5SWEtDWmRXOURab3doM19lV3AxWnVyakwzTEY2b1F3SVdFbEwyeUtsTDNkTHVZQy1QRmI1OVB2SW9ud1FaRUFTb0VubUdJeGZyWTNWTFBCSkp2cjQyeHROTzRad003YUszNVhneFJTZHJlTC14VElyZXQycVpDS1VJTlROOC1Na29fajd2UWxwN0t0RWZmZFo0VFVZMjBWelVPMVQ0MA?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
               "event_type": "other"
             },
             {
               "source": "googlenews_materials",
-              "title": "Greatland Resources (ASX:GGP) Shares Outperform the Materials Sector—What Should Investors Watch Next? - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbFhMMmlINVlzRjMtQzc5SmVNeW1GZ0w5dUF6dnp1dHhYemszVUpuRVZWUU5ackpZcjg0SlpYY1B1MGoteFVESFI4SUtIMEpETG8wSXVBNm0xbkQ0VmZIUlVRVmxmcHhzX3J6cDk4QTZCSnh6ek8tRUR2MFVaaWw3ZFBOTktUQVNTcjV1Q2NIS2pUYkpSYkhrSUZqd295OVZPdk9XQWstS3JjaS1QNmcwRjM3c2Q0NGxJWGRIZ2E0c3RVOFJjNXllb0E4akE?oc=5",
+              "title": "James Hardie Industries (ASX:JHX) Shares Rally—Is the Building Materials Giant Back on Investors' Radar? - Kalkine",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTkpfSm1rQUNtS0ZsUlNUbkRPUGxVeWdIZjIwaE5JN3phemdXYXZZaTlVb05hR0t2elVWclhPZ0M4eEdHN3gxZnphZ1EzOGxXTFlNUmNGYldSajQtVTJQdXdfOFRWRE50TXBRcDNwNUk2emxFbmlmWjdrRWRFWHM3YlVzNnBhVGtlSjR2dk1IQmhzUXNWTW1mWURtQU14a0VUSVQ5dlVPaW41QzN1bGNEbXJrakxtR050OGZmQTFJTHluVlVrRHNMWldlUW1MUQ?oc=5",
               "sentiment": 0.296,
               "relevance": 0.718,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.43,
+            "count": 9,
+            "zscore": 0.68,
             "spike": false
           }
         },
@@ -3416,8 +3416,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.02,
+            "count": 6,
+            "zscore": 0.36,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.16,
+            "zscore": 0.15,
             "spike": false
           }
         },
@@ -4218,7 +4218,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.51,
+            "zscore": -0.53,
             "spike": false
           }
         },
@@ -4257,7 +4257,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.06,
+            "zscore": 0.05,
             "spike": false
           }
         },
@@ -4296,7 +4296,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.09,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-25",
-      "return_pct": 3.39,
-      "zscore": 1.19,
+      "return_pct": 2.06,
+      "zscore": 0.59,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
