@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T13:29:00+00:00",
+  "generated_at": "2026-08-25T16:09:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -525,7 +525,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 2.0,
+            "zscore": 2.01,
             "spike": false
           }
         },
@@ -564,7 +564,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 1.12,
+            "zscore": 1.13,
             "spike": false
           }
         },
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 4.09,
-          "zscore": 0.61,
+          "return_pct": 6.92,
+          "zscore": 1.27,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.42,
+          "market_return_pct": 0.5,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Price Forecast: POL Extends Rally As Network Growth Steadies - Bitcoin World",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUVNXcVlrN0wxM2RBVFRKaU9OakctMTNnN1duRmNzbklHOHRQd3JTaC0yQ2N6TnRaaTN6UGFMTXJhMW5MOF96VFZiNGJ0Yk9Cem9GMGo2eF9YQ3hZX2pKV2t5c0FZXzRhZ1l1ZUszNkFyRjBja3FJM1o4dDNZTUJxTg?oc=5",
+              "sentiment": 0.477,
+              "relevance": 0.791,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_pol",
               "title": "Why is Polygon rallying? - FXStreet",
@@ -995,19 +1003,11 @@
               "sentiment": 0.273,
               "relevance": 0.509,
               "event_type": "upgrade"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "BNB Chain activates Pasteur hard fork to strengthen bridge security",
-              "url": "https://cointelegraph.com/news/bnb-chain-pasteur-hard-fork-bridge-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": 0.511,
-              "relevance": 0.483,
-              "event_type": "upgrade"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.67,
+            "count": 2,
+            "zscore": -0.57,
             "spike": false
           }
         },
@@ -2329,7 +2329,7 @@
           ],
           "coverage": {
             "count": 25,
-            "zscore": 0.9,
+            "zscore": 0.91,
             "spike": false
           }
         },
@@ -2368,7 +2368,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.39,
+            "zscore": 0.4,
             "spike": false
           }
         },
@@ -2407,7 +2407,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.69,
+            "zscore": 0.7,
             "spike": false
           }
         }
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.13,
+            "zscore": 0.09,
             "spike": false
           }
         },
@@ -2491,8 +2491,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.45,
+            "count": 8,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -2609,7 +2609,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 1.02,
+            "zscore": 0.99,
             "spike": false
           }
         },
@@ -4106,6 +4106,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-08-25",
+          "return_pct": 5.08,
+          "zscore": 1.68,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.26,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Nuclear Energy Stocks For Reliable Power As Oil Prices Rise - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQc1ZldkxfdGZsYmhqUWF5cnViY0FnQnFFam9jM1dBeTFVaE45TVdwQklpckVXT2oxUDNPNDVFVDZKajRoNlE2QzBZQzRMdDh5UVowTEF1LW1aOTRyTy0tY1Z6NmhwQlpaNVdVeGNHS1k0clBESlRiZy1CUXhIMFRCYjA5alJUYmMtaTdnWHlQNjZPLWNxNHEwV29OejcyeVdSOW9HLWtDTEFVaFJtSGhQZ0MtSENIOFZOMnAzYVJCeGJLLWZLVWJhdFpRdlXSAdIBQVVfeXFMUEpvNGR0OXZrS1ktNF9QNTZpOGpFbmhYUzhvTXlDWXZhVWxkX1l3Z3JGX3djalZQS1RrSVRwYnJPa19jOGRZcmFncmx2X2VlZjRsZzNCSW5xdmJUaXcyQzhKM2hSNlh3OWVxMHd1NTYxdGVWY01BbklTRlpxUlJ2aUdKdlFwTVRLNVRJLS1hejFQcDFxSGttd3hyckt5Q2ROTHE0RllDWnFEdTdVc3NOUnBTajVWQllta3dTNWJ0R3ZYVzJCMUQxd3NqWkV5bDNqa0Nn?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Nuclear Stocks Rebound on an Oversold Bounce: Uranium Energy Jumps 6%, NuScale Power and Oklo Climb 5% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPb3N6cjI4OFhTMnhNdkZ4dkhQSTJQblJjZGxHZTh6V1dvVGlVWFQya1RPRjItV1FyUzktTHM0VUpEOG1QclBoUmhuSmFTNTdyaEFPclM5a21PLTNaX3JPTlFBZW1MbXktdDd3eVl5QTY5QXV4YjkwM1BaS0ttLUppSERxY3hEZlRMZ2t3VFF2clJCSFY3UWpjdmI2a3g3bzdjYkhFRF9xWnFzQUY5RkxyV19DYURDV2ppN0p3YUdlNEN2cXhxOEU1VmI4ODRXMVdmRHhjZlRINlBYdw?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "NexGen Energy Stock Climbs 5.82% as Rook I Construction and Uranium Momentum Strengthen Bullish Sentiment - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZFI1YXhvaWRNbGxTd2FYQTBkM1Fnd1NsREx2UnJqbVMwWG1qWURBQUFPdVJtQVR3SkxNV1pYS2EzOU45aXl2dXFmQW0tSVpMX0FyeUgycU1UMHFEYURwdlloM1ZiS2Zxd2E5MWxrQTBlWlZkcFprSDRZQ0t2V1V4Y1NXRnNaZFA5OVpvS19rRjNocElHUkhkRVFFQTNRZWRuYUU4a2RZWkMtTDhpSHZKU09UUjRxX3FXTUNVR2lhaVd0eDQ3SkZXcFhQbTVuTFU?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.611,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.86,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-21",
           "return_pct": 5.09,
           "zscore": 1.75,
@@ -4297,45 +4336,6 @@
           "coverage": {
             "count": 7,
             "zscore": 0.08,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-04",
-          "return_pct": 4.12,
-          "zscore": 1.74,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.79,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Which ASX Nuclear Stocks Could Benefit From The Energy Security Shift? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQUZBQ1NlaTk4dXh1WnJEWGhXUVB4TnUtUUEtMkFBZEZueWY5bkJLdnZqTXBKbl9JaW1tdUI4S1FFWDdRc1owVmpnNzk1dzBzamlJT0hlZ3ZLV1dSZWFOVUVCczVIMklDeHJZcXItS0tLcnBVVVJEdXlrdkVCT3JtR1U0QUo4RTBKRm9lT2ZaSW5uSXlvajNrZEN3dmJuRzNjdnlWdlpDS0dYbzJkdTRQVQ?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Boss Energy Stock And 2 Nuclear Energy Picks With High Uranium Price Leverage - webull.com",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5haW9wMzVYTndlQTUwQWNHUEVXcmw4cVA0QXJjNHN2R0o4VjhHbzBGelEtajdkV2J3Yml6b0NrS3NLZVJyeWNza2czX29XZ0x5dDNtUFhKdm8?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Boss Energy Stock And 2 Nuclear Energy Picks With High Uranium Price Leverage - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQ01zUXRVRTlOdEtuNlBqNmpVTlgxWkQ0MFpZY2xYZ1dfeUdWLTFjOUk1Y3g3RFVaYlRsNFBoR3RGTHEtR2RCSVduSFNzTU1TSTNCTkNrSXUyOFpxUll5VTgxRW5pdTRpaUNDcEVLU1JpUlVNSXpxeU5FZnlHYjJjS3dvMm1MeFd3YjFJTjE2LU5SQjlpN20tQUYtM3VETHhxUklCcV92cGRFTkNuSWhCbzNweTJaY0tfaTBwSDBJbzFkVUtFT1l6UEZhN3hTZ9IB0wFBVV95cUxOZW8xeFZxUUM5S0xqZkFMVGh3a3dZY0VRY1dfTWptbUVwdnFFWUtTQXptZl9DVWNteXM1X2N3OW5STldQV0FwdG1OR1czMm01UmNpeW1kb0JVVzRmYTdyeTlFREVHbnJoUVM1bXgyaUVtTS1JOVpna3VSRk5HajBVeXRkUkxlMFlUc2ZBVTJUSkdNY3BkMEh0bzZBci1kN0RaTUhQakY3LVZiX3hvelNrSmNJS1d6d254aHVZX2lCUWRLR1JuczlhcXlnRXg5WUdhWTI0?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 9,
-            "zscore": 0.84,
             "spike": false
           }
         }
@@ -5552,6 +5552,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-08-25",
+          "return_pct": 2.92,
+          "zscore": 1.42,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.26,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "These Two Biotech Stocks Recorded Fresh Milestones Today – What’s Driving Today’s Gains? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTFEU0I2UHZHa05YalVESEF2cW8zVHdDLW5Wc0NNUHhKVkJOZ244VlVGSUF3TGt1TzJwbGxzbTYzYWw5TDQwc3JmSGFtWmdZMlpDQVpNeHQyZE5WYzBPTkFIOWp6LWJ1d2tfbkV4WmRrX0Iyb2l1U0pyX2E3cmRHM25MS1BLZkVVR0JrT1BRRU40ZzI3N1RZTEM2UUYzNElJaC1QemIxYw?oc=5",
+              "sentiment": 0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Touyun Biotech To Issue 123 Million New Shares At Hk$0.122 Per Share - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQN1pTbTFwcFVsSTNKaXA1WEU3OWlzMDlkcEVYOFppbFcxcTFEQWl2RXVXd0lJb1ZyMVVyVW9iZ3EzcDdWV2RMQzFSVkdxcG5TaGZNZk9DNWhwSWxlTFVrVlF1X1B4NGlzeTFTcm9wMTA1Z0FUUHNRRENSR216WXV3M0pnai1pOGhwN2VVal9ZdDRzS3lfV1lXVVlxZWwtekZlckd3WE51TDM5cmNydUdnc09QdXF1N2stSDl2azJIYWpyR0lJRGJVSHA4RUs4Y0htX3gzMg?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "TG Therapeutics, Inc. (TGTX) Stock Analysis: Exploring a 28% Potential Upside with Innovative Biotech Solutions - DirectorsTalk Interviews",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPTVdSMzdya3RVY1c5R1ZTR1FoM2VLWHNnNUNfTkVpczd5UFB0b2VIX25YWERTQXQ5TVZYaGVaVHg4RzBzcE1tSkN2NnpETEI2YVpIRG04NUpEaU92dmlnWF9lcTZNRjlRbzFoSV8yY254dHcwTzRkNEEyX3lnNkVvaENER0tNWE5WeWJ6dlpWVnM2Q3ZOWHV2ZGdSbmcwX0NQMlE5aHdrX3VEbHhqbVJXMWtWOGJGNWptVUQ0Z3RCWUt6U3A1bTBOV3p6cVlsVlJERWJ0dVJmTWliWFdFNVRFblowTjVsWkREWHdMaQ?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.623,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 8,
+            "zscore": -0.76,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-20",
           "return_pct": -3.64,
           "zscore": -1.98,
@@ -5743,45 +5782,6 @@
           "coverage": {
             "count": 8,
             "zscore": -1.14,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-10",
-          "return_pct": -3.2,
-          "zscore": -2.06,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.42,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "Is This Biotech Stock a Buy Near Its 52-Week High? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOUpWTFVzU0dnalh5S1UwTzFQWUVLWnAxcFlZVG5LRldIV2xoaHF5ZVo1eVpNalRkc3VpRGxnUERhcXN1TjdHUmRzYzdpUmN5QVcxXzVjRGNqQjc3VllUYjFCVVp3VFBNT21STm5mM1R3MU1kanlqQTA1SUJsSVZjRDVucnFIekFYTU9fX3hQQl9JazBLc3Fr?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "3 Reasons to Buy CRISPR Therapeutics Stock - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWi1mWjg4TzRWQjVkanFDQ2x5YzI0OFZpbWZsSVRHaDZsdzczX0hIalM4cU9xbHFjVkdJUXFCOXFsTUtFWDF2cVVMOXRlWElIRkxsU242LUFJck9JR29HbDJKTFhLcjdhTUJERlN3RVZ0VklNYXBvSG1YaE5zdnVUQlNlWDJjcU5HSjZtcW9R?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Forget AI. This Biotech Stock’s Taking Off Right Now - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XdTBmclRkQzVJVHYwS2JyVlVYazRxTE9fSjFWR2MzN2lpM05UeFFvcml3akpQOHJWV3FNZ01DNEVCaXJNMDlOYndreFZNdmVTZ25mbWRKeFBwOXk2a0pRb1RKeWpYd3h5ZzNtd2M2aFUxdk9XcFpJWElid0JiSHc?oc=5",
-              "sentiment": -0.226,
-              "relevance": 0.691,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 34,
-            "zscore": 1.71,
             "spike": false
           }
         }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-25",
-      "return_pct": -0.42,
-      "zscore": -0.5,
+      "return_pct": 0.5,
+      "zscore": -0.09,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-08-24",
-      "return_pct": -0.28,
-      "zscore": -0.42,
+      "date": "2026-08-25",
+      "return_pct": 0.26,
+      "zscore": 0.26,
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 4
+      "days_since_last_major": 0
     }
   }
 }
