@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T02:01:00+00:00",
+  "generated_at": "2026-08-25T04:09:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 5.13,
-          "zscore": 1.61,
-          "classification": "asset-specific",
+          "return_pct": 6.05,
+          "zscore": 1.96,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.62,
+          "market_return_pct": 3.39,
           "events": [
             {
               "source": "googlenews_sol",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 3,
+            "zscore": -1.96,
             "spike": false
           }
         },
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 5.52,
-          "zscore": 1.02,
+          "return_pct": 7.38,
+          "zscore": 1.46,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 2.62,
+          "market_return_pct": 3.39,
           "events": [
+            {
+              "source": "cointelegraph",
+              "title": "BNB Chain activates Pasteur hard fork to strengthen bridge security",
+              "url": "https://cointelegraph.com/news/bnb-chain-pasteur-hard-fork-bridge-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": 0.511,
+              "relevance": 0.483,
+              "event_type": "upgrade"
+            },
             {
               "source": "coindesk",
               "title": "Bitcoin steadies near $78,000 as gold rallies, altcoins consolidate after best week in 3 years",
@@ -994,14 +1002,6 @@
               "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE53OW1GM19GSTRWbWxBam54SlpYa3gzOHZpV0lGeFJ3bTc4d3J0RV9QVnN5a0JuT21kMnNvQU4tbjVwZk5DOFpYaFJwYWQ2eExCTEdZeTZtVWw?oc=5",
               "sentiment": 0.421,
               "relevance": 0.369,
-              "event_type": "other"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "Strive buys 1,110 Bitcoin for $81.5M, holdings top 21K BTC; ASST shares surge 11%",
-              "url": "https://cointelegraph.com/news/strive-buys-1110-bitcoin-for-815m-holdings-top-21k-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": 0.459,
-              "relevance": 0.35,
               "event_type": "other"
             }
           ],
@@ -1202,7 +1202,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.07,
+            "zscore": -0.08,
             "spike": false
           }
         }
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": 1.24,
+            "count": 11,
+            "zscore": 1.53,
             "spike": false
           }
         },
@@ -3899,7 +3899,7 @@
           ],
           "coverage": {
             "count": 98,
-            "zscore": 1.26,
+            "zscore": 1.27,
             "spike": false
           }
         },
@@ -3977,7 +3977,7 @@
           ],
           "coverage": {
             "count": 104,
-            "zscore": 0.75,
+            "zscore": 0.76,
             "spike": false
           }
         },
@@ -4054,8 +4054,8 @@
             }
           ],
           "coverage": {
-            "count": 146,
-            "zscore": 2.06,
+            "count": 145,
+            "zscore": 2.03,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 2.1,
+            "zscore": 1.95,
             "spike": false
           }
         },
@@ -5586,7 +5586,7 @@
           ],
           "coverage": {
             "count": 30,
-            "zscore": 2.19,
+            "zscore": 2.17,
             "spike": false
           }
         },
@@ -5624,8 +5624,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.91,
+            "count": 21,
+            "zscore": 1.04,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-25",
-      "return_pct": 2.62,
-      "zscore": 0.85,
+      "return_pct": 3.39,
+      "zscore": 1.19,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
