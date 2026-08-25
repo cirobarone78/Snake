@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T19:09:00+00:00",
+  "generated_at": "2026-08-25T21:54:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 4.32,
-          "zscore": 0.67,
+          "return_pct": 5.8,
+          "zscore": 1.01,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.13,
+          "market_return_pct": -0.48,
           "events": [
             {
               "source": "googlenews_pol",
@@ -1455,6 +1455,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-08-25",
+          "return_pct": -1.66,
+          "zscore": -1.53,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.32,
+          "events": [
+            {
+              "source": "googlenews_energy",
+              "title": "Nuclear Energy Stocks Backed By AI Data Center Power Demand - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdERpMExFSXFqNW1xUWtERG1ELVQ4MWtMYVZIUWVjZEFJSFQtRE9ZalhBSzJRVVZGc0hSbV9tWjdfR2ZOaXF4SVBxelNFMWRHMFlUU1Y3TE1aS2xNOUNjbTQxNlF3OG5rSkRCUDk0N3Q4TGVLOXFRNHBMT2xIRG9BVWREcFRnUVM3Z1NubjYtSjdrUXFNd0kwYjlJb2g0TllLSWNlX1NzUmZ4Yi03ZW9ZNkVvbkUya3pwczhFVjI4akI2NVQ5LTY0Qk1GajhvZ9IB0wFBVV95cUxOTHFLZlVJdnR6MEx4MGZDLUFyeWxOSTlKNEdPZmlqTzZvUnhxdzBkdTA2YmdvZUlDd2NkRXk1MzJ0a0FnTTEzMDZyWHR5M2dmTVNJS2FNdmx1OEY3QTc0bmJzcUZCUW1iMzVhS2R5Q1FTcXhVdGlRdEtMaU93cnlUZjRYUkRSYXpCdXpzRFo5TzAyRTBNLTVlc28yVGJrX3dOUVZWRzZMZ2VROW1kZHd2bEJrZnhuRG5ORlQ1X3BRc0lCcUZLNUFyTlhUX0RVU2toMWJr?oc=5",
+              "sentiment": 0.178,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Snam stock holds steady as Italian energy names ease - Ad-hoc-news.de",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRVBRMlBmVmdWUC1BLUpfZUhSby1GbHF6aTBGcW5OYUVORGF1a3gwMHZOM2NwSWNPbzNVbXJTRmpRSXh6VDF6OFgyYjcxSWlmMGtjWDFxUHFLNzd0VUVHZ0p2STBnLTdFZ0MwdU1iOXVMX2psMVNfVEJKcUdldUpaNnNaUTNIRjBXa1NnZGVvRG5Oajkyd3dmWW5TbFBhUW15ckU1TFpUeUM4X1hhcHR3QjE4dS1WQQ?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Trump's Energy Portfolio Gains Up to $15.5M, Democratic Report Shows - Briefs Finance",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdXBrQTI1cC01SUNRazVicUx5eXJQQVNiZVp0d1ZhdzY3WDNndVNlT3BVeWwycTU4SVd2N0R1UnlVTVJUS0pWMzlUVFVRaklZNFNwSVZHNEN5T0ZmbTRjN0VzXzQ0d2FoLVRqdkJxUkRLQ29YQ2p5b0MyY1hma1NDM1lJby1CUGxId0R0V3R4MEJndw?oc=5",
+              "sentiment": 0.542,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 8,
+            "zscore": -0.95,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-10",
           "return_pct": 4.66,
           "zscore": 3.46,
@@ -1648,45 +1687,6 @@
             "zscore": 0.11,
             "spike": false
           }
-        },
-        {
-          "date": "2026-06-15",
-          "return_pct": -3.48,
-          "zscore": -2.06,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.65,
-          "events": [
-            {
-              "source": "googlenews_energy",
-              "title": "US energy shares slump as Iran deal lowers Hormuz supply disruption risk - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWGdORndSNmJ6YmJOQUVzbVJVTWlJck93NG5hMExyLUZ1SFNHTk9NZmRJdDRJaElsMklBTnEyMUJqaDFneVZ3QzBrWVJ6WFNoTXMwQ0xzUmJfYzFTRGs4UWJlZ3FENktZeTg0elNGaWpPT1AxRTFQb08teXlyRDZFZGdOQ21jUzJGOEVwcWN6dkFJS09WaGJtT01KbHo3MVNwaEVMM0E3WjNyWENWX1R3?oc=5",
-              "sentiment": -0.202,
-              "relevance": 0.681,
-              "event_type": "geopolitical"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "The Warning From Energy Executives That's Turning Heads - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeG10VnVLbExjN1NhdmNsODdvYXQ5WjF3S1pnRzVzVVRhckU3NzB5dUttWE9EVVdyTlVtbm5NejJ3MFR6T0h5TkxLbVJWVjZtSHJ1TGFjR2I1NVNrX3JzZFI3SE1pOUc0TzJWUWRnbkZBQ09CbUtTUlZwUGwzcGJvbV90N01rZWhIWUtKNndlS21jVnFSVnBlSmpjY3Fwdw?oc=5",
-              "sentiment": -0.077,
-              "relevance": 0.631,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Why Energy Stocks Keep Dominating Market Discussions? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRjBJVkNnOHgxUVY4cDl4RmhUX2FISUt3WE1Fem9YaDhSZkd1cWZheW14c0VMSkFWa1l4NHIyNWNaTC1US3NYSHhvalVPeHV0bXNCWjNCUVQzaFVXZVRVc3V0V3pDY2dCb2xab2t3OGZVbk9OYWpjcUlYa2I2VFpEV0o1X2h4MXhtVVRfWjZ5amIxaW5pVHVZV0Rn?oc=5",
-              "sentiment": -0.026,
-              "relevance": 0.61,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 25,
-            "zscore": 2.09,
-            "spike": false
-          }
         }
       ]
     },
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.53,
+            "zscore": 1.54,
             "spike": false
           }
         },
@@ -1769,7 +1769,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.6,
+            "zscore": -0.62,
             "spike": false
           }
         },
@@ -1808,7 +1808,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.25,
+            "zscore": 0.24,
             "spike": false
           }
         },
@@ -4107,12 +4107,20 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 5.21,
-          "zscore": 1.73,
+          "return_pct": 5.36,
+          "zscore": 1.79,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.24,
+          "market_return_pct": 0.32,
           "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Cameco vs. Uranium Energy: Which Uranium Stock Wins the Nuclear Restart? - AOL.com",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVBJT092ZXhMT1d5N1pzZ09ENGJRYXZaV2E5TWxqaTFYRnZNUzYxYjlvdm5rWUxMMlZqdjdieUdHYjNST2YzckpjajVQRDE1NW5JM3p4bVpmVHhUeWQyWTNOcW1CRGc5MmJ3VnVybERxZTFLVEZURGtMZHpNR3JGclJRMTZtdkNuTjUtNENneXh1UGZ4bXJma003U0JBNFpOV1E0YkwwdzktZWZOTjhDVm4tSkJlZXRKRHk5cDhpOEpTMUcxQlE?oc=5",
+              "sentiment": 0.7,
+              "relevance": 0.88,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_uranium",
               "title": "Nuclear Energy Stocks For Reliable Power As Oil Prices Rise - simplywall.st",
@@ -4128,19 +4136,11 @@
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Nuclear Stocks Rebound on an Oversold Bounce: Uranium Energy Jumps 6%, NuScale Power and Oklo Climb 5% - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPb3N6cjI4OFhTMnhNdkZ4dkhQSTJQblJjZGxHZTh6V1dvVGlVWFQya1RPRjItV1FyUzktTHM0VUpEOG1QclBoUmhuSmFTNTdyaEFPclM5a21PLTNaX3JPTlFBZW1MbXktdDd3eVl5QTY5QXV4YjkwM1BaS0ttLUppSERxY3hEZlRMZ2t3VFF2clJCSFY3UWpjdmI2a3g3bzdjYkhFRF9xWnFzQUY5RkxyV19DYURDV2ppN0p3YUdlNEN2cXhxOEU1VmI4ODRXMVdmRHhjZlRINlBYdw?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.54,
+            "count": 7,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.43,
+            "zscore": 0.42,
             "spike": false
           }
         },
@@ -4218,7 +4218,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.14,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -4257,7 +4257,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.54,
+            "zscore": -0.55,
             "spike": false
           }
         },
@@ -4296,7 +4296,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.04,
+            "zscore": 0.03,
             "spike": false
           }
         },
@@ -4863,7 +4863,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.98,
+            "zscore": 0.92,
             "spike": false
           }
         },
@@ -4902,7 +4902,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.09,
+            "zscore": 0.05,
             "spike": false
           }
         },
@@ -4941,7 +4941,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.65,
+            "zscore": -1.67,
             "spike": false
           }
         },
@@ -4963,24 +4963,24 @@
             },
             {
               "source": "googlenews_defense",
-              "title": "Why GE (NYSE:GE) Is Looking Interesting In The Aerospace And Defense Sector - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTBlajZLZmwybVpUYmd3NENWVWxsLWE5R0Vfa3o4WnVVaUQ5TW9qLWtGNlFBMGZaeTB2cDJXOG9PZzZiU3VDWFN3QzZPSkVDOXNzREVmNGVfYzM4NXFiQUpFOXM3RWN5azJKcjBfdzI1aFp5NmxWa3laX056bDI1aEduM1A3YnR1M3B2WlcyVnA?oc=5",
-              "sentiment": 0.494,
+              "title": "7 Best Defense Stocks to Buy Now - US News Money",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5NXdkOHFBUzZuVUo4TmZrb0F2Yng4VGExSlVZa3BUMzFyOU1lVl9Gc0l5SUxzUmpnbllaOTViRnZfWGxxNm00Q3RLODhCMjFRRVR4Y1pvMUVLNVE2VF9IRDdGb2JfYWh6cE4xUHg4c0hYNUdyb1ZLUk5CSWhibXc?oc=5",
+              "sentiment": 0.691,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_defense",
-              "title": "Promising Defense Stocks To Follow Today - July 29th - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT3c3ZzNDYXpYdUNtcGZ6SDFpaVpwMkl2Y3NXV3h2YkVUTjR3M180MkJsdHFFVlV1dzhaeEx4RThKT25HNTlGNE5MVWNvM3JuQ0kwX2xsZmprWlo0SHA5WUZFT05WSmg2V1ZmbVE0dTNMcnljVkhVSl9VSElGazNadnpOZ2tHbzhFaVFqWjZVaklvMWNYM1ppcm1yLUEtZjNtSnZvTktVbw?oc=5",
+              "title": "Why GE (NYSE:GE) Is Looking Interesting In The Aerospace And Defense Sector - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTBlajZLZmwybVpUYmd3NENWVWxsLWE5R0Vfa3o4WnVVaUQ5TW9qLWtGNlFBMGZaeTB2cDJXOG9PZzZiU3VDWFN3QzZPSkVDOXNzREVmNGVfYzM4NXFiQUpFOXM3RWN5azJKcjBfdzI1aFp5NmxWa3laX056bDI1aEduM1A3YnR1M3B2WlcyVnA?oc=5",
               "sentiment": 0.494,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -1.56,
+            "count": 4,
+            "zscore": -1.34,
             "spike": false
           }
         },
@@ -5019,7 +5019,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.74,
+            "zscore": -0.71,
             "spike": false
           }
         },
@@ -5058,7 +5058,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 0.11,
+            "zscore": 0.14,
             "spike": false
           }
         }
@@ -5553,11 +5553,11 @@
       "moves": [
         {
           "date": "2026-08-25",
-          "return_pct": 2.76,
-          "zscore": 1.34,
+          "return_pct": 3.0,
+          "zscore": 1.46,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.24,
+          "market_return_pct": 0.32,
           "events": [
             {
               "source": "googlenews_biotech",
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": -0.53,
+            "count": 12,
+            "zscore": -0.3,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-25",
-      "return_pct": 0.13,
-      "zscore": -0.25,
+      "return_pct": -0.48,
+      "zscore": -0.52,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-08-25",
-      "return_pct": 0.24,
-      "zscore": 0.23,
+      "return_pct": 0.32,
+      "zscore": 0.33,
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
