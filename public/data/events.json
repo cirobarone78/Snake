@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T10:01:00+00:00",
+  "generated_at": "2026-08-25T13:29:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -401,7 +401,7 @@
           ],
           "coverage": {
             "count": 101,
-            "zscore": 1.66,
+            "zscore": 1.67,
             "spike": false
           }
         },
@@ -440,7 +440,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": -1.4,
+            "zscore": -1.41,
             "spike": false
           }
         },
@@ -478,8 +478,8 @@
             }
           ],
           "coverage": {
-            "count": 102,
-            "zscore": 2.07,
+            "count": 101,
+            "zscore": 2.02,
             "spike": false
           }
         }
@@ -973,6 +973,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-08-25",
+          "return_pct": 4.09,
+          "zscore": 0.61,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.42,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Why is Polygon rallying? - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMGpGd2NFTDFkdU1OY3F5VU1ZdHRDd1FZT0pSNmlhMHZTSnl5ZFp3ak1LNFVmUjBKWFdyMjNZRlFSRzNVNkFjOXk2b2NvcW5TVnhaNE10UG1hV0tQQmFJY3R0RmNBQU40NGlBdXVkZjRYMVg3dHE5NFFvM2EyWTRzd1VoX015QzlKcFBtS1h3OFktelpYX1hEZ0ZqeDBfUkU5bHJDV1oyQl9lUUNCUE1ia0JjcTRLVDZsbGRCNDhWR3cxM0h0TnJjX3pIeDltSEpJaFl5Z1k3SzJzSC1fdTlaeA?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Volatility: Whale Flows, Protocol Launch, Market Dynamics - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15RDUzMFdDOXRiZUtMZUwtbG9KNjJjaWJKN19RSXRVMzFCOEZFVWhPWUN5U1JqeW9ONkUtWnJlaFpWSEFibENwekFyTHdfRFE3R04xaGZ0czBiNTFhSVFvZHBSMHpxZG9UdTZnQzVZYTY?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.509,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "BNB Chain activates Pasteur hard fork to strengthen bridge security",
+              "url": "https://cointelegraph.com/news/bnb-chain-pasteur-hard-fork-bridge-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": 0.511,
+              "relevance": 0.483,
+              "event_type": "upgrade"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.67,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-24",
           "return_pct": 6.35,
           "zscore": 1.22,
@@ -982,11 +1021,11 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.6,
-              "event_type": "other"
+              "title": "Polygon Volatility: Whale Flows, Protocol Launch, Market Dynamics - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15RDUzMFdDOXRiZUtMZUwtbG9KNjJjaWJKN19RSXRVMzFCOEZFVWhPWUN5U1JqeW9ONkUtWnJlaFpWSEFibENwekFyTHdfRFE3R04xaGZ0czBiNTFhSVFvZHBSMHpxZG9UdTZnQzVZYTY?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "upgrade"
             },
             {
               "source": "googlenews_pol",
@@ -1007,7 +1046,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.66,
+            "zscore": -0.67,
             "spike": false
           }
         },
@@ -1036,17 +1075,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_macro",
-              "title": "Wall Street week ahead: Reports on consumer confidence and inflation on tap - AP News",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWVVzc05uLUJ1Wk9tQThEQnYxR2Rza2txazJid1Z0Z1UzOGlPTTJiX2FEUXBaZl8xSGtEenRJQnhxdmR5TGFuT3lfNXdBa3kzZlJUNTNseVBZYnhmdzBZUWNKenYtOXhncm03V3JRbXVIWTVaMk1rV3BHV2ZmV0JwLThyVUlWdnFQbXJxdzY4OUxTRDJTLXRiYkpQZ3c1V1UwS1dR?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.483,
-              "event_type": "inflation"
+              "source": "googlenews_pol",
+              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.55,
+            "count": 3,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -1166,45 +1205,6 @@
             "zscore": -0.64,
             "spike": false
           }
-        },
-        {
-          "date": "2026-07-23",
-          "return_pct": -3.77,
-          "zscore": -1.83,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -1.6,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Binance Will Support the Polygon (POL) Network Upgrade & Hard Fork - 2026-07-29 - Binance",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdHRxcWVtNDFGVXhiMjByUWNZRW5faFh1VG9HRDU5VUU2bVVHZTMyZzhqX1RvZG5veVpLNDdDWXhvWmViR28xdUdNR04zVHh0cEZBM0RCVDhEYy1jc0x3ak8wN0M4amtJOFdCNVpDZi1hcS14LWJlZG1WcF96OVZLYmpHeHllV0U?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Binance Announces It Will Support Network Upgrade and Hard Fork of This Altcoin - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4wOWU0VC0yRFRRSlRfQ2JYZGQxWHVsLUFQc3dMS1puS2ZLa0gwS2tycm5YRjY3N1NqazVLVkw0TnoxSGlRN1hMdFZKVXppU0dtSjhpUnNVNA?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "POL (ex-MATIC): Ithaca hardfork goes live on Polygon mainnet - 29 Jul 2026 - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWHo3ZGZhX2l3VUYxbF9xWWhGeXBuejZjSzd6OG9BTnJ1c3dXWFVaVWlMeUM5aElzVTZURXpjSUx3Sng0dFo4ajhKc3lfbUI0X2lNajNWc0t1dXBjRmZROFlTUEM4VVBOQ21QRHlzOG94dFU4c3RGTElsQVRpYWYwMlB0OEJFZkczMVZmbW1CQ3VFdWJHOFdXV3VsQnJGS2JjOXozUDBhVl81NXR4YzNabzNFRVJNcU1nRjBHLVNkNG12NWp5N2lyYm9CUnpadw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.09,
-            "spike": false
-          }
         }
       ]
     },
@@ -1287,7 +1287,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": -0.79,
+            "zscore": -0.78,
             "spike": false
           }
         },
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": 0.17,
+            "zscore": 0.18,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.95,
+            "zscore": 1.89,
             "spike": false
           }
         },
@@ -5586,7 +5586,7 @@
           ],
           "coverage": {
             "count": 30,
-            "zscore": 2.17,
+            "zscore": 2.18,
             "spike": false
           }
         },
@@ -5624,8 +5624,8 @@
             }
           ],
           "coverage": {
-            "count": 21,
-            "zscore": 1.04,
+            "count": 20,
+            "zscore": 0.91,
             "spike": false
           }
         },
@@ -5827,7 +5827,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 1.04,
+            "zscore": 1.03,
             "spike": false
           }
         },
@@ -5865,8 +5865,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.49,
+            "count": 36,
+            "zscore": 1.57,
             "spike": false
           }
         },
@@ -5905,7 +5905,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 1.7,
+            "zscore": 1.68,
             "spike": false
           }
         },
@@ -5944,7 +5944,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": -0.22,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -5982,8 +5982,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": 0.18,
+            "count": 23,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -6032,12 +6032,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-25",
-      "return_pct": 0.17,
-      "zscore": -0.24,
+      "return_pct": -0.42,
+      "zscore": -0.5,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-08-24",
