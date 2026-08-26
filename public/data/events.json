@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T02:09:00+00:00",
+  "generated_at": "2026-08-26T04:10:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 165,
-            "zscore": 1.3,
+            "count": 164,
+            "zscore": 1.27,
             "spike": false
           }
         },
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-08-26",
-          "return_pct": 6.05,
-          "zscore": 1.07,
+          "return_pct": 4.58,
+          "zscore": 0.73,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.27,
+          "market_return_pct": 0.27,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Why is POL up? Polygon’s 690% exchange outflows, $20M bridged netflows & more… - AMBCrypto",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWlBicUtHajlWallFRkhXNVBjUEVNNE5iVWsxWlJBVzdwejQtckk4SDI1Y0dobllRSUpfTUpLeHhhZmFNanI1UVVzZXBRdDBkeGdaV0FHR21UMVRrSmtqcVJRangwNVFqZjdKMzYzMVpXSThBblJGWHAtUHloZnduVDdSMW5iNDJuVTBUVVR4MGVWWTF0ajZsSQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            },
             {
               "source": "googlenews_pol",
               "title": "Polygon Price Forecast: POL Extends Rally As Network Growth Steadies - Bitcoin World",
@@ -995,19 +1003,11 @@
               "sentiment": 0.477,
               "relevance": 0.591,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon (POL) Surges 5% on Inflows, Deflationary Narrative - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yMG1UdEJsdUs0b3VzRTlia2RQbkozY1NMeWdCcFhzd2JDOFZDbzc4QmwxckFzU3NiWHdDT3VaY0g1Z1JGRHJyMlNjZHVqanN5UlhzLVU5cHJGWVJlOW50OWVKdDF6MlU2bGNEb0NWb0I?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.4,
-              "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -0.7,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -0.83,
+            "count": 8,
+            "zscore": -0.95,
             "spike": false
           }
         },
@@ -4139,8 +4139,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.48,
+            "count": 8,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.77,
+            "zscore": 1.82,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": 0.17,
+            "count": 17,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-26",
-      "return_pct": -0.27,
-      "zscore": -0.43,
+      "return_pct": 0.27,
+      "zscore": -0.19,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
