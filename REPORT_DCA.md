@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 15.0% | 33.3% | +18.3 pp | 100% | 1.000 |
-| 2 | LINK | 37.8% | 33.3% | -4.5 pp | 95% | 0.500 |
-| 3 | SOL | 47.2% | 33.3% | -13.9 pp | 100% | 0.000 |
+| 1 | POL | 15.6% | 33.3% | +17.8 pp | 100% | 1.000 |
+| 2 | LINK | 37.8% | 33.3% | -4.4 pp | 87% | 0.500 |
+| 3 | SOL | 46.6% | 33.3% | -13.3 pp | 96% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -80,17 +80,14 @@ Exchange di derivati on-chain con volumi elevati.
 - **Età**: almeno 1.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
+**XRP — XRP**
 
-### Cattura valore, ma quasi nessuno sviluppo
+Rete di pagamento e regolamento transfrontaliero.
 
-**BNB — BNB**
-
-Token della piattaforma Binance e gas della BNB Chain.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: quasi nessuno sviluppo (0 commit in 4 settimane).
-- **Età**: 9.1 anni.
+- **Cattura del valore**: serve per transare, ma non cattura ricavi. Le commissioni sono bruciate ma sono minuscole. Il punto critico è l'offerta: una quota rilevante è ancora in escrow presso l'emittente e viene rilasciata nel tempo.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.59 volte la capitalizzazione attuale.
+- **Sviluppo**: sviluppo rado (4 commit in 4 settimane).
+- **Età**: almeno 12.3 anni.
 
 
 ### Tesi monetaria (non cattura ricavi, per scelta)
@@ -146,7 +143,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: nessun commit recente, ma dato forse non aggiornato (0 commit in 4 settimane).
 - **Età**: 12.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -154,7 +151,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 28
+- capitalizzazione sotto la soglia: 29
 - stablecoin o token ancorato: 19
 - volume troppo basso rispetto alla capitalizzazione: 10
 - già in portafoglio: 5
