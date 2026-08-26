@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T13:34:00+00:00",
+  "generated_at": "2026-08-26T16:39:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-08-26",
-          "return_pct": -5.07,
-          "zscore": -1.55,
+          "return_pct": -9.45,
+          "zscore": -2.56,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.32,
+          "market_return_pct": -0.7,
           "events": [
             {
               "source": "googlenews_pol",
@@ -5793,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-08-26",
+          "return_pct": -2.64,
+          "zscore": -1.21,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.19,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Legacy Gold Mines Stock Under Pressure — Can Baner Drilling Overcome Rising Execution Risk? - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYU5fZ3dtOFhQOXphSjRPc2NVRGJoc24tV3dDX192OTNzV1RVMDR1QlZxYmJnZkZtLW1BQmxNMUdycThkV0JMREFMdzY1VFNnemk3OF9ORmpiNkhOWlR6NFY1TkV2bTRlY3ZCTTA5OHZndENuS21pdFNTSnRTOXRQYVZOMk01OHVlUVNDS2V0VkFBQlNsb1c3eExQZHBMT3ZSaW9nS2FvV2pGeEJiVDdfeGhmWWRDSkQxME1B?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Global Gold Mining (ASX:GGM) Faces Sharp Volatility Amid Small-Cap Market Pressure - Kalkine",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPck1ZcXVHaWliZ2hhLVdWclBQOXpvMEl1TjJqck1sR1N1aWN3WVA4YmI0R3NRQ2JYUDZuZ2ZUWEE5VUlTNmI5WXVfR3kzcUJ4MTZidEI5WDBjQVVkVU5mczRXN0dNV1gxUjVhcWg4ZFdXZWpETHdfSGFKQ25sY2lOLW9EM0MzX0ZGTGM5Qm9NMkNRZnR6TVdxWl96S3RDQ2ljSHF2UURxRVRDaW9wb2cyMGs5bWEyVnpmWDcybTViSWdHQQ?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "3 ASX Mining Stocks With Lower Risk Profiles In A Volatile Rate Market - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYlkydkVpREhLeXdIamxRZHZHMnZIMjRKRENlYy1zNXk1ZFg0bUV3UU10WHJKUFFSRkdQcHlOODNmcUtOWWVEendfSXlPWkZzSXdBcUlWNGZQQ2lXUV91OGZaazZGemROQ2RDRnlJNWkzNXlteWxodU5ZUmI1LVJxOUh2SmFKeDByNHFKVUplbHhzUVQwWTBCR0R4bDkzek9PNjd4S2hoUVFxWnNvclRialJtZWVPa2VaVllXMWpmdXhkeXptX3laTEEyREVXN19pcGZZZG1n0gHbAUFVX3lxTE5CMndhcGVScEJEYzFpUHVVcTJ6VEktbGdRaVVCRVFYOHNEdWdIZXpLdUdKS21JclhJRTE4WGx0MWtjekdnQ1VqamtYeWRsb3A0ZXBIVzNxN1NLTTB4Y1hFbXV5eklSYTBOSk1LYjROQk5Oekk5dnZSQVFTSmU3b0plUk1DOWxQSU9Yb3NKRDA5S1Z6M2I4NVNyYU16TDN4NmhOUTZid2Z5XzdHNEtzU2FvZTZRYmk5U0dKMXltRnY1UFpqVjQzMkIxb2x5TFd2YmJ5ZmZQM1Y1M3FMUQ?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.604,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 9,
+            "zscore": -1.05,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-21",
           "return_pct": 2.98,
           "zscore": 0.62,
@@ -5986,45 +6025,6 @@
             "zscore": 0.27,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-07",
-          "return_pct": 7.11,
-          "zscore": 2.43,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.62,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold Miners Kept The FTSE’s Winning Streak Alive - Finimize",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcFBMZ0Noc09GLVhYUk94WFFYSnF1VUUyc3Vmc05wMEt5ZjVCUWJkcGRxcWxNOXRjTDlreVdJbV9Pd3JfM2F5aEpMWWppWUh3YnU0eGZqSU9pUVJRRmRVcFFPQnNrNXB1NUl1ZDV0LTgtcmM0bGQ0X0JTNF9vUThHeTZB?oc=5",
-              "sentiment": 0.718,
-              "relevance": 0.887,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Hong Kong Market Close (08.07) | Hang Seng Index Gains 0.54%; Healthcare and PCB Stocks Strong Throughout the Day; Gold Mining Stocks All Rise - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSktjall1ZndwU1ZDYjdqZHVQSkdfenlhek9pV3ZnT2c4RFFuZ0NldDNaVWhCY3Vib0ZYRzkyNGVBdDFBaWp2R0duckRrU3I3UFJ4c2hONHBLRmxRcjh3T1h3cFF0OHVoME9vcFBmLVJQb3diWHIxRW5wN0Fxb3doUmhTUUo1NU9ndGhRd2dWSlA1Q2d0Wml3?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "B2Gold (TSX: BTO) Makes TSX Top Gainer as Gold Price Gains and News of Granting of Fekola Regional Exploitation Permit - investorideas.com",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMms0ZGRMVmxUeGlRMDVGaGR6bG9PM1h0Zm1tdEZHRlNkR2luSkp4TDNXNUpiQUJJNUw4Qmhfd0s1dHNsOW95VUVXMzJ4d0V2N0lhYWdaN0FHWThLNEFKVE1jWnR2SkloOEV6UlVtLVdGUGxvSWVGRzlnMGVlOGZHN3FGS2t4am83clZkMDBQREJNNzYtNjNFUG0yMjI?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 30,
-            "zscore": 1.13,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-26",
-      "return_pct": -0.32,
-      "zscore": -0.42,
+      "return_pct": -0.7,
+      "zscore": -0.58,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,12 +6041,12 @@
     },
     "equity": {
       "date": "2026-08-26",
-      "return_pct": -0.04,
-      "zscore": -0.13,
+      "return_pct": -0.19,
+      "zscore": -0.33,
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
