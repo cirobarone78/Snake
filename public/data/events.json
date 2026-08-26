@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T16:39:00+00:00",
+  "generated_at": "2026-08-26T20:33:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-08-26",
-          "return_pct": -9.45,
-          "zscore": -2.56,
+          "return_pct": -12.54,
+          "zscore": -3.27,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.7,
+          "market_return_pct": -0.28,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.621,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_pol",
               "title": "Why is POL up? Polygon’s 690% exchange outflows, $20M bridged netflows & more… - AMBCrypto",
@@ -995,19 +1003,11 @@
               "sentiment": 0.511,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "coindesk",
-              "title": "Strategy cuts net leverage to near zero as cash nearly matches convertible debt",
-              "url": "https://www.coindesk.com/markets/2026/08/26/strategy-cuts-net-leverage-to-near-zero-as-cash-nearly-matches-convertible-debt",
-              "sentiment": -0.572,
-              "relevance": 0.497,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.59,
+            "count": 3,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.17,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -1114,17 +1114,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_pol",
-              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "googlenews_macro",
+              "title": "Wall Street week ahead: Reports on consumer confidence and inflation on tap - AP News",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWVVzc05uLUJ1Wk9tQThEQnYxR2Rza2txazJid1Z0Z1UzOGlPTTJiX2FEUXBaZl8xSGtEenRJQnhxdmR5TGFuT3lfNXdBa3kzZlJUNTNseVBZYnhmdzBZUWNKenYtOXhncm03V3JRbXVIWTVaMk1rV3BHV2ZmV0JwLThyVUlWdnFQbXJxdzY4OUxTRDJTLXRiYkpQZ3c1V1UwS1dR?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.483,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.45,
+            "count": 2,
+            "zscore": -0.55,
             "spike": false
           }
         },
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 1.19,
+            "zscore": 1.17,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.56,
+            "zscore": -0.57,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 98,
-            "zscore": 1.27,
+            "count": 99,
+            "zscore": 1.3,
             "spike": false
           }
         },
@@ -5079,16 +5079,16 @@
           "events": [
             {
               "source": "googlenews_robotics",
-              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZXZ1Uk1LcUlCWGNXaloyWDFPYW1hTV9wMHRmQk9GeG8zRXJVQ25IdGNlazdCc2hDaU0wR0RaX2c2dXM5R0MxTFhFVk1mSUZfeTlqYnpYaER5VFlmSzVqSWlkdTl6RTIwOF9FRWlwQlNCdjNoak1yRGpwSXBYVTdaVkhjT3FYT0o0YmNpNDF3UlAzWlRnNXRCeFVBdnlVTEdicHA4NXJmT2hMV2FFX2M5LXZsOTN3a1ZTbnIzaWg4cC1DSDJKMDZrTmdDM1ktYWUzc1BoZjBkazVSNk1HNXdIUE93?oc=5",
+              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT2VSVmstRTVHUUNoQUo0azJ5bXhrSE4tSUt3amtyTEJFVGk5cndUWmw2cmlkOG10T0NXWVEtM3lTZFRDNWVZZXFjV3ZCMEp4M2hGWVZzZ3Y2cE12a3R3VzFKNUhLMTFnU2ZkODJQT0tyamtsSlY5YlAtYWNWcmZEcFdaZDEtbThMWXJIRlI2MnZCTURLbFpqZTZqNTdIeDNTcnc?oc=5",
               "sentiment": -0.459,
               "relevance": 0.784,
               "event_type": "other"
             },
             {
               "source": "googlenews_robotics",
-              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT2VSVmstRTVHUUNoQUo0azJ5bXhrSE4tSUt3amtyTEJFVGk5cndUWmw2cmlkOG10T0NXWVEtM3lTZFRDNWVZZXFjV3ZCMEp4M2hGWVZzZ3Y2cE12a3R3VzFKNUhLMTFnU2ZkODJQT0tyamtsSlY5YlAtYWNWcmZEcFdaZDEtbThMWXJIRlI2MnZCTURLbFpqZTZqNTdIeDNTcnc?oc=5",
+              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZXZ1Uk1LcUlCWGNXaloyWDFPYW1hTV9wMHRmQk9GeG8zRXJVQ25IdGNlazdCc2hDaU0wR0RaX2c2dXM5R0MxTFhFVk1mSUZfeTlqYnpYaER5VFlmSzVqSWlkdTl6RTIwOF9FRWlwQlNCdjNoak1yRGpwSXBYVTdaVkhjT3FYT0o0YmNpNDF3UlAzWlRnNXRCeFVBdnlVTEdicHA4NXJmT2hMV2FFX2M5LXZsOTN3a1ZTbnIzaWg4cC1DSDJKMDZrTmdDM1ktYWUzc1BoZjBkazVSNk1HNXdIUE93?oc=5",
               "sentiment": -0.459,
               "relevance": 0.784,
               "event_type": "other"
@@ -5794,12 +5794,20 @@
       "moves": [
         {
           "date": "2026-08-26",
-          "return_pct": -2.64,
-          "zscore": -1.21,
+          "return_pct": -2.94,
+          "zscore": -1.3,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.19,
+          "market_return_pct": -0.02,
           "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Fury Gold Mines Stock Faces Renewed Pressure as Exploration Promise Meets Execution Risk - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQN0xHNkdfT0dhNGNOS3ByRGptdGhNeXd5dzNnX0hHVlUyeVFqdnJWd1hJVk8wQXpDbzdabVVMNnRERzJXc19rbEt3LVBnVnlnSGZwZ0c5d2xscnpBcXU0NzZLNFlwNWJXdXVDbnRNU3VzVG95bzFPWW03MDNyN09ReDFxNDZxMzZhSUlKazhrQ256a2VYczFOeEhuN2w4cUZxSW00cDRIUGNSam05NGhiYWRRbHZHMHcySVBj?oc=5",
+              "sentiment": -0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_gold_miners",
               "title": "Legacy Gold Mines Stock Under Pressure — Can Baner Drilling Overcome Rising Execution Risk? - kalkine.ca",
@@ -5810,24 +5818,16 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Global Gold Mining (ASX:GGM) Faces Sharp Volatility Amid Small-Cap Market Pressure - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPck1ZcXVHaWliZ2hhLVdWclBQOXpvMEl1TjJqck1sR1N1aWN3WVA4YmI0R3NRQ2JYUDZuZ2ZUWEE5VUlTNmI5WXVfR3kzcUJ4MTZidEI5WDBjQVVkVU5mczRXN0dNV1gxUjVhcWg4ZFdXZWpETHdfSGFKQ25sY2lOLW9EM0MzX0ZGTGM5Qm9NMkNRZnR6TVdxWl96S3RDQ2ljSHF2UURxRVRDaW9wb2cyMGs5bWEyVnpmWDcybTViSWdHQQ?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "3 ASX Mining Stocks With Lower Risk Profiles In A Volatile Rate Market - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYlkydkVpREhLeXdIamxRZHZHMnZIMjRKRENlYy1zNXk1ZFg0bUV3UU10WHJKUFFSRkdQcHlOODNmcUtOWWVEendfSXlPWkZzSXdBcUlWNGZQQ2lXUV91OGZaazZGemROQ2RDRnlJNWkzNXlteWxodU5ZUmI1LVJxOUh2SmFKeDByNHFKVUplbHhzUVQwWTBCR0R4bDkzek9PNjd4S2hoUVFxWnNvclRialJtZWVPa2VaVllXMWpmdXhkeXptX3laTEEyREVXN19pcGZZZG1n0gHbAUFVX3lxTE5CMndhcGVScEJEYzFpUHVVcTJ6VEktbGdRaVVCRVFYOHNEdWdIZXpLdUdKS21JclhJRTE4WGx0MWtjekdnQ1VqamtYeWRsb3A0ZXBIVzNxN1NLTTB4Y1hFbXV5eklSYTBOSk1LYjROQk5Oekk5dnZSQVFTSmU3b0plUk1DOWxQSU9Yb3NKRDA5S1Z6M2I4NVNyYU16TDN4NmhOUTZid2Z5XzdHNEtzU2FvZTZRYmk5U0dKMXltRnY1UFpqVjQzMkIxb2x5TFd2YmJ5ZmZQM1Y1M3FMUQ?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.604,
+              "title": "Newmont: Investors Punished Barrick For This Deal (NYSE:NEM) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQml0TV9RRWk1RFlUZEI1R0lqcUozY2VOMXViTVNFcHNkOGloLUpUUnhlQzlTTTZxTE4zQ1l4dXJTX1ZUMjlJcXNKTUpGR1hwWjhqclRhZWowb1NBTks0bmF5MmVFcjl5ckNuMGYxTWNPUVZ0YTRreVl4bHNvY3c0a2ZSUURleVNIa0FURlp1VnZOZzQ?oc=5",
+              "sentiment": -0.459,
+              "relevance": 0.784,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -1.05,
+            "count": 22,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-26",
-      "return_pct": -0.7,
-      "zscore": -0.58,
+      "return_pct": -0.28,
+      "zscore": -0.4,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-08-26",
-      "return_pct": -0.19,
-      "zscore": -0.33,
+      "return_pct": -0.02,
+      "zscore": -0.11,
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
