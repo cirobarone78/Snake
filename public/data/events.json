@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:10:00+00:00",
+  "generated_at": "2026-08-26T07:26:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-08-26",
-          "return_pct": 4.58,
-          "zscore": 0.73,
+          "return_pct": 4.29,
+          "zscore": 0.66,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.27,
+          "market_return_pct": -0.02,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon surges 14% with strong buying and aims for $0.18 resistance after bullish market shift. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOHhnamlYYTlkbE1Ic280WkNPQUxpVzFhLTludUw5dzlGQVU5cXBhY2haOHdrd1M2bXJHb3QySXpSckFUMnZLdG1TcUt4dE5xdFhWOVprRW5xa1VyeXRpLTRkQ3RNN3VyZzJqN3djSFhSUTBsVkthSXZBSWdxV2FkdHFzV3lSbFNOc0xWYXpqUXlDMFpCdVBLQ2VR?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_pol",
               "title": "Why is POL up? Polygon’s 690% exchange outflows, $20M bridged netflows & more… - AMBCrypto",
@@ -995,19 +1003,11 @@
               "sentiment": 0.477,
               "relevance": 0.591,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Price Forecast: POL Extends Rally as Network Growth Steadies - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUFRsSlRGZURKNGpOaGxNb0VsTnhMOXUycE1aOFhMbktORVhKbkNvb3lKaGQxbHZzd05FY2ZjN0NVWlZ1bWIxN29FcXNidi1HaFk3d2EtRU5oekNmY3RSUl9TZG16RHRhX2VRNWVaUnQ5RnJPOWxrOGRlYXRkMVFVb3ZjMkVHbzFBRndENFhB?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.591,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.7,
+            "count": 2,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -1769,7 +1769,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.63,
+            "zscore": -0.64,
             "spike": false
           }
         },
@@ -1808,7 +1808,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.25,
+            "zscore": 0.24,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-26",
-      "return_pct": 0.27,
-      "zscore": -0.19,
+      "return_pct": -0.02,
+      "zscore": -0.32,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
