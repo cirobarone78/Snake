@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 15.6% | 33.3% | +17.8 pp | 100% | 1.000 |
-| 2 | LINK | 37.8% | 33.3% | -4.4 pp | 87% | 0.500 |
-| 3 | SOL | 46.6% | 33.3% | -13.3 pp | 96% | 0.000 |
+| 1 | POL | 13.2% | 33.3% | +20.1 pp | 75% | 1.000 |
+| 2 | LINK | 37.5% | 33.3% | -4.2 pp | 99% | 0.500 |
+| 3 | SOL | 49.2% | 33.3% | -15.9 pp | 100% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -66,7 +66,7 @@ Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
 Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.45 volte la capitalizzazione attuale.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.44 volte la capitalizzazione attuale.
 - **Sviluppo**: sviluppo attivo (86 commit in 4 settimane).
 - **Età**: almeno 11.5 anni.
 
@@ -143,7 +143,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
+- **Offerta**: inflazione alta.
 - **Sviluppo**: nessun commit recente, ma dato forse non aggiornato (0 commit in 4 settimane).
 - **Età**: 12.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -151,9 +151,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 29
-- stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 10
+- capitalizzazione sotto la soglia: 28
+- stablecoin o token ancorato: 20
+- volume troppo basso rispetto alla capitalizzazione: 11
 - già in portafoglio: 5
 
 ## Limiti
