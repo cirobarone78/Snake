@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-08-26 07:44 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-27 18:05 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 0.99 | +17.8% | $391M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 2 | Bridged-Tokens | hot | 0.96 | +4.7% | $619M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| 3 | Terminal of Truths | hot | 0.95 | +8.3% | $219M | fartcoin, goatseus-maximus, aiwithdaddyissues |
-| 4 | Account Abstraction | hot | 0.94 | +4.9% | $331M | trust-wallet-token, iotex, home |
-| 5 | Pons Launchpad | hot | 0.94 | +23.8% | $124M | pons, thinking-cat, yolo-2 |
-| 6 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.93 | +6.3% | $582M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 7 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.93 | +6.2% | $582M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 8 | Fixed Interest | hot | 0.91 | +4.7% | $352M | pendle, termmax, saffron-finance |
+| 1 | Crypto-Backed Tokens | hot | 0.99 | +19.3% | $393M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
+| 2 | PolitiFi | hot | 0.98 | +17.5% | $850M | official-trump, melania-meme, constitutiondao |
+| 3 | Avalanche L1 | hot | 0.95 | +11.1% | $196M | beam-2, nexpace, apertum |
+| 4 | Solana Meme | hot | 0.95 | +12.8% | $4.0B | official-trump, pudgy-penguins, bonk |
+| 5 | Bridged-Tokens | hot | 0.95 | +9.5% | $675M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
+| 6 | Binance Launchpool | hot | 0.92 | +8.6% | $6.3B | sui, ethena, ether-fi |
+| 7 | Terminal of Truths | hot | 0.92 | +10.4% | $234M | fartcoin, goatseus-maximus, aiwithdaddyissues |
+| 8 | IP Meme | hot | 0.90 | +7.8% | $990M | pudgy-penguins, apecoin, troll-2 |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Runes | -13.4% | $146M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
-| Bitcoin Meme | -13.1% | $142M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
-| Metagovernance | -9.0% | $188M | convex-finance, dinero-2, index-cooperative |
-| Parody Meme | -8.8% | $155M | would, troll-2, bulla-3 |
-| Yield Optimizer | -7.8% | $219M | convex-finance, singularry, stake-dao |
+| Quest-to-Earn | -19.0% | $131M | prize-protocol, billions-network, project-galaxy |
+| Layer 0 (L0) | -5.9% | $3.8B | polkadot, internet-computer, cosmos |
+| Ether.fi Ecosystem | -3.4% | $556M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
+| Buidlpad Launchpad | -3.3% | $366M | falcon-finance-ff, lombard-protocol, sahara-ai |
+| RUB Stablecoin | -2.6% | $452M | a7a5, rubx |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
