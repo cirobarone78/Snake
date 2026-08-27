@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T20:33:00+00:00",
+  "generated_at": "2026-08-27T00:58:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -284,7 +284,7 @@
           ],
           "coverage": {
             "count": 93,
-            "zscore": 1.47,
+            "zscore": 1.46,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 98,
-            "zscore": 1.72,
+            "count": 99,
+            "zscore": 1.76,
             "spike": false
           }
         },
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-08-27",
+          "return_pct": 4.31,
+          "zscore": 1.3,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.16,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana price rises 14% in a week, testing $100 resistance amid strong market and network factors - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZFR2R09iUWNFSHpQR09pVmVDc2VodHJkMmJWM2dsV29scDVnUHBkc3pHRTV5SGZjNkdlakdPbDVsTWJ5eVh2NGZldVNmdFg0V0ZCLUhWemh5dW80TGJxS3Y1QllxdWFrRkVBTnJ1RFJKZ0swZmhtb0N0ZUJnMWx2aEZENmIybWRRUDRzeFdSak15SG9OTU1fMGltSlZSNGljLUE?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.604,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Set a Record in Everything Except the Part Holders Care About - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1hbVE5MUJ6R3JHMVp3c25PY1VON25BNGNkU3MwU1BGUERBMlFWNjdrN3k0emg2R2kyV1I2SFZYX24xeVlkVl9rb3Vwb0pmd2VjMnJKczgwYjlYVFZ4ODBlV2wyR0tLcWcyY29oSUdCS0RicVB6?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.598,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana price forms bullish setup above $96 support - Crypto News",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1IakJPWW1nYzJ6OHVnR1MwM0Fmdk5WSzh6eHlPVF82dThhT2d1bjYzU0pVRV9RSU1BWmdKYWwzUWxFN0Y1MGdLSWhKTGY3UUUxMjNHMG9NTV9VNmxJY3RjUzlzM2hnY0N1Z3B5YURyamVFSkNkbC14YTN3?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.561,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-21",
           "return_pct": 6.87,
           "zscore": 2.56,
@@ -525,7 +564,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 2.01,
+            "zscore": 2.02,
             "spike": false
           }
         },
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 14,
             "zscore": -1.03,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-01",
-          "return_pct": 5.25,
-          "zscore": 1.48,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 2.47,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Solana News: SOL Strength in Showcase as Mainnet Bags 1 Billion Non-Vote Transactions - The Coin Republic",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN2E0YVkwRThEWXdEMDMtWUN4QnNBOE4zQnlROE1senZmVFdWTFNUMGc5ZTVYa3dCTDhKNkw3U2RKMnJNc0JtS0ZqSDkwa09yM2FTNURVTUEzcXBzWU1YSEFVdkZKM25vN3d6OW9oTzdUQmNfZGFHZ0JoYnZTc0txaU1QN3ZnMTdMZ0NqMThxYkRXUjB0WVZ4azg4S2JINHpfRVdFSnp1VGJjUl9BNmRpRUxMa2pSV3d6SmZZX2toSmRmNS1nRDFj0gHMAUFVX3lxTFBuS0hsZlZNc2FwQ2lGTHJ5WkhvRk5WWFdadEp4WGE4eW1iY2ZUaU43Zy1wQjdYODEtZDRrS0hLT1JJZ0tVZThkMVAwUS1vM3BYQ2hBem92a0ZuQnpvU0tJZDdaMGdZZDZRTXU0dnhGR0wybXNVMTlobFBGUG5yQWJlN05DeExZQ1FjMDR1WVVSUTJyejJvS1p5ZThlaW1lZ0JrYWtrWlRUMmQxWG9weTlIY1Buekk2MERwenlabTlvVW1oaWdUWjNjR1Z3MQ?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Forecast: Retail confidence backs SOL testing 50-day EMA breakout near $75 - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdjVWRFdfLTlJOUVsYWdLZThJa3RtVDNBQ19MaTlIWDUyMmtGZVlTQS0yMWpMY1VVYng1dXVKbW5EcGZuUkFfVzA1WDUzSEFGVEFYZGNmWDNxTjNMbWlCNmU3NzNUcFdTeEsxWk5UVzFaZVgzRmpqcDB2b1pWcFZUdGZ6T2tOa1diSnN2ckRIUnR2Tm52YVpfRTU5M29HOGxGeWV4My10MnRCREVpX0Z3QW5OVXpiY0FJVllzcGJ5Zkt6OEJzc2hxZmJwYjFXQ3FWM3FiVHh0dzFoUGlrakE?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.791,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Forward Industries Shares Spike as Leading Solana Treasury Adds $38 Million in SOL - Decrypt",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQWliUzNKYzlpUkRvUUs2MU4tcnBlSDIxU1RlaE9QMWZvNG5oQnFJMHVlMmNlVGxSRTVrekxiOUVyYldud3hlVmt4cmZ5QTNEWjBFTjZ4RHdPeEZsNFBreF9UMkV3X2Y1c0dRQ29XcUxua2lkOXFjSV9uQU9UV1pWNFZYMVdUeWltSjRmd0hldmFzLVXSAZsBQVVfeXFMT1NvenM4ZHkzeWdVS3hxMTM1aG9UX2owTTRxRDNmT18wY0d1bUIwNFlOTFF2YlE1bDdPdHJUYzFMRllkZm1JOTNUTVc1aHJNV3NnSnJkM21VTFZxUk55M1hPMnEteDN1eV9fSUZ2NGtOcktHTXRxSmJfRjY3OFdSNzF4WE1HNFA1VEFGampPQWFjTXpvcEZUUE9jZ3M?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 14,
-            "zscore": -1.09,
             "spike": false
           }
         }
@@ -973,19 +973,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-08-26",
-          "return_pct": -12.54,
-          "zscore": -3.27,
+          "date": "2026-08-27",
+          "return_pct": -12.03,
+          "zscore": -3.16,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.28,
+          "market_return_pct": 0.16,
           "events": [
             {
               "source": "googlenews_pol",
               "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
               "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
               "sentiment": -0.052,
-              "relevance": 0.621,
+              "relevance": 0.421,
               "event_type": "other"
             },
             {
@@ -993,7 +993,7 @@
               "title": "Why is POL up? Polygon’s 690% exchange outflows, $20M bridged netflows & more… - AMBCrypto",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWlBicUtHajlWallFRkhXNVBjUEVNNE5iVWsxWlJBVzdwejQtckk4SDI1Y0dobllRSUpfTUpLeHhhZmFNanI1UVVzZXBRdDBkeGdaV0FHR21UMVRrSmtqcVJRangwNVFqZjdKMzYzMVpXSThBblJGWHAtUHloZnduVDdSMW5iNDJuVTBUVVR4MGVWWTF0ajZsSQ?oc=5",
               "sentiment": 0.0,
-              "relevance": 0.6,
+              "relevance": 0.4,
               "event_type": "etf_flow"
             },
             {
@@ -1001,13 +1001,13 @@
               "title": "Polygon surges 14% with strong buying and aims for $0.18 resistance after bullish market shift. - Pluang",
               "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOHhnamlYYTlkbE1Ic280WkNPQUxpVzFhLTludUw5dzlGQVU5cXBhY2haOHdrd1M2bXJHb3QySXpSckFUMnZLdG1TcUt4dE5xdFhWOVprRW5xa1VyeXRpLTRkQ3RNN3VyZzJqN3djSFhSUTBsVkthSXZBSWdxV2FkdHFzV3lSbFNOc0xWYXpqUXlDMFpCdVBLQ2VR?oc=5",
               "sentiment": 0.511,
-              "relevance": 0.6,
+              "relevance": 0.4,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.49,
+            "count": 0,
+            "zscore": null,
             "spike": false
           }
         },
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.61,
+            "zscore": -0.62,
             "spike": false
           }
         },
@@ -3495,7 +3495,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.84,
+            "zscore": 1.82,
             "spike": false
           }
         },
@@ -3534,7 +3534,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.6,
+            "zscore": -0.61,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 99,
-            "zscore": 1.3,
+            "count": 100,
+            "zscore": 1.34,
             "spike": false
           }
         },
@@ -4140,7 +4140,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.49,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -5810,24 +5810,24 @@
             },
             {
               "source": "googlenews_gold_miners",
+              "title": "Agnico Eagle Mines (TSX:AEM) Slides as Gold Sentiment Weakens and Investors Assess Production Risks - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMWY0RmJybFRRT1hROU1lNG5QazhmbmV4c2hVd25wRFp1RkFyY25rUWdYb0tRazJEcDFSY1F4N0UxZVQ3WXJOWWNUZ20xU25Dbm1CR2xmcmowcTVFZEs1ZC1Jb1lUNUxUb3RWaGdUUjdlWFBSQTVCeW1NX3JuSXJhMWp6TWMteTQtMUtnTUVXSUl1MnB3QVVra3J6VS1tTWxRMV9Ha0syZU1XWF8zU1NQU1l6SlY5QnE1bHdLcUNJUW5KVlZva0E?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
               "title": "Legacy Gold Mines Stock Under Pressure — Can Baner Drilling Overcome Rising Execution Risk? - kalkine.ca",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYU5fZ3dtOFhQOXphSjRPc2NVRGJoc24tV3dDX192OTNzV1RVMDR1QlZxYmJnZkZtLW1BQmxNMUdycThkV0JMREFMdzY1VFNnemk3OF9ORmpiNkhOWlR6NFY1TkV2bTRlY3ZCTTA5OHZndENuS21pdFNTSnRTOXRQYVZOMk01OHVlUVNDS2V0VkFBQlNsb1c3eExQZHBMT3ZSaW9nS2FvV2pGeEJiVDdfeGhmWWRDSkQxME1B?oc=5",
               "sentiment": -0.511,
               "relevance": 0.804,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Newmont: Investors Punished Barrick For This Deal (NYSE:NEM) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQml0TV9RRWk1RFlUZEI1R0lqcUozY2VOMXViTVNFcHNkOGloLUpUUnhlQzlTTTZxTE4zQ1l4dXJTX1ZUMjlJcXNKTUpGR1hwWjhqclRhZWowb1NBTks0bmF5MmVFcjl5ckNuMGYxTWNPUVZ0YTRreVl4bHNvY3c0a2ZSUURleVNIa0FURlp1VnZOZzQ?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": 0.13,
+            "count": 28,
+            "zscore": 0.68,
             "spike": false
           }
         },
@@ -5866,7 +5866,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 1.03,
+            "zscore": 1.02,
             "spike": false
           }
         },
@@ -6022,7 +6022,7 @@
           ],
           "coverage": {
             "count": 23,
-            "zscore": 0.27,
+            "zscore": 0.26,
             "spike": false
           }
         }
@@ -6031,9 +6031,9 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-08-26",
-      "return_pct": -0.28,
-      "zscore": -0.4,
+      "date": "2026-08-27",
+      "return_pct": 0.16,
+      "zscore": -0.21,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6046,7 +6046,7 @@
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
