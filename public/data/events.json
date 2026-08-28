@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T00:31:00+00:00",
+  "generated_at": "2026-08-28T12:06:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -492,18 +492,65 @@
       "moves": [
         {
           "date": "2026-08-28",
-          "return_pct": 7.44,
-          "zscore": 2.32,
+          "return_pct": -3.07,
+          "zscore": -1.53,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.8,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Ethereum and Solana are hosting trillions in dollar volume, yet their native tokens risk losing direct consumer demand - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM1Z4MHhCeFpYT0x3U1dyV3Rjci13MjZpaUJyM21TWDlNOThBeGNwTC1lVTB3VGhjVFF4M2VIbUZYZDhRRkxmMkdJajMzX1ZvQ0NMOFRxbHRNZUhPRTlwTVFRRDdVSHdEcFZEQVlfT19renp2ZldRRVRWSnpsbGpkTkhieWRBT2dHSGd1dWlUQXFJTGdKaXVGUXpkMnBLTjdBd19DMUdOdw?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Price Today Analysis: Overbought Warning on Daily Chart - The Cryptonomist",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcmpra3dBc2kxLTM3Vlp1aHlGLXQ3WU05YTlaRENYUjM2Qk9yMEtBbERYLVM4eG1YeDl5MkZIWl9vZzBEYTdvNlVlQzZ3Q3ZGTVJndmZtNzg1NG9ZOHo2RzNXYnlScDhEbEV6dnY3UjhRV0t3V2t4d2h3MzRCLXhTXzZzdlRRTTJqMjlxYzBR?oc=5",
+              "sentiment": -0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "BTC, SOL price: Bitcoin loses $80,000, solana above $100 ahead of Jackson Hole - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPS1JjbnlMN1U5NEYzZkVtLThOOExlbDFXaEpnN2ViVHFtYjFnOEMzWXVBdjI5OTNZY09GWEVGeDg1N0NkQ2xfdGNvRnFnSkZMQUltRVlPSTNoc1BFUHJhSTFHSjNlTWxUenBXSEY4eVZKTElQcWIzcHFBblJZNVRmaDRZWllDVkJOLU5aTWVMZkpuWEplQk5DcmUtVnB0UEVjQW1qRWhSV3hNWU15VE5LZVgxRG5HQzRJemhnRTRBZmNrejdGLTcw?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 22,
+            "zscore": -0.68,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "return_pct": 6.89,
+          "zscore": 2.12,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 1.75,
+          "market_return_pct": 1.56,
           "events": [
             {
               "source": "googlenews_sol",
               "title": "Bitcoin is having a great month—but Solana is doing even better as coin soars above $100 - Fortune",
               "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16TGJUTC1QbmhNVkxzOFdISEZ3Y0hkTWs2YUJtUjE1VnhxbU5iWDU4Q2M2bFA2T2dXcVNkTE14S2NVTUFBXy1yZFA4eFE1ek8xYVZrNTd0Rm9iUmJWdzV2Zi0tV0JXWHhlT1Z3UHZLWmRBeUFGeDJ4VnY2SjNwTlk?oc=5",
               "sentiment": 0.791,
-              "relevance": 0.716,
+              "relevance": 0.916,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Bitcoin is having a great month—but Solana is doing even better as coin soars above $100 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZU5DNkdxSlVZa1VPRUVKeEVRM09qNnhlOU1ybmZFUlA2eXN4WWR2d0ZKSVkzcFVjY2xFTGJTelRfOUJKTkNZSDhXY1pnQTJRMjl1bUFaU0xaWUJvOWQ1MzFndjBHbUU0c2ZZeHF5b1kxQXhQRlNaUjJIRk9GRUN1dmFtOVY2UU5pbk1hVDBVZ0R3WVhtSGdIeXFlcS1IV2M?oc=5",
+              "sentiment": 0.791,
+              "relevance": 0.916,
               "event_type": "other"
             },
             {
@@ -511,21 +558,13 @@
               "title": "Solana Gains Institutional Rise, Hyperliquid Breaks its ATH! Now Analysts Are Spotlighting Apeing as the Best Upcoming Crypto Presale - StreetInsider",
               "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQa3hPT2M1OFlPM1BGaTJNanR0SlFRQnRKVFVKQmJ6VWVlV09PaHBuWFdseTQ0eDZyYy0tVDAwb0FvQWJKWlR5SGI5alBuVU9zVHFJWTM4VkMycGpBc2FCNjROSkQwaHZZdktBekVudWZoSFYzUDV4RG5pMlRFQnF5aGQxVHc4Mlc0NDhMZFB5Wnc4RnVGY1FSTFRTX0RUc0pPcGRfTkpwS3RiYXdSeDlkSUZVNDZYOGZMU3Q0RkQ3Q1M4b0dTZjV5WGYzRFR2M0NWX0Y0SHhJa2huMTJJWVdwTkcwRm4tLXhxQWMtbmIwQjdWSGpvdndUUzU3ZWk3dnJleXNWNEowajRRbUxNa2xYZmotWEZPelMydnpod0pSa1AxRFE?oc=5",
               "sentiment": 0.784,
-              "relevance": 0.714,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana hits 8-month high above $109, gaining 45% vs Bitcoin amid strong network activity. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOU1ZndDZPMGdfRlFQcHZJTFMwOTd0VXNFR0lSejdlNTc0T2ZwNmxUOWtCWDJMVzFBR242QzdpaXBlUVppM0tERzA0LXBWYy1XUG9pMlR3cFUtZ2ZVN3VxNkdjVEhlOFJxWDcwaXZEczJNX0NybWZUaXQ0eExNNDNyZy1YRGptXzREb1dTelNKOW1OSFJRTnYtV2RiVGgtYWhadm9BSw?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.691,
+              "relevance": 0.914,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 66,
+            "zscore": 2.21,
             "spike": false
           }
         },
@@ -563,8 +602,8 @@
             }
           ],
           "coverage": {
-            "count": 51,
-            "zscore": 1.3,
+            "count": 50,
+            "zscore": 1.23,
             "spike": false
           }
         },
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 14,
             "zscore": -0.47,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-27",
-          "return_pct": -3.21,
-          "zscore": -1.5,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.47,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Prediction: SOL Stuck In Neutral As Demand Fails To Materialize - Bitcoin World",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84MnBHVW1xRno0dm5oa2J2aG9PdmF4aThxU2ZSc3YzUjFSWmduYmNjT2M4TWEwTVlUTGZTNWN5M3MyUUxQZGF5Qi0tZldCUkJabmlKMWM3cld6aWRPLXN2V3lOUlJDb0dieFFPbXVFa1M?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Prediction: SOL Stuck in Neutral as Demand Fails to Materialize - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9venlqaFU4aTlfanNscHJ2TFI4TjlaZFRlTzRISzVvMGtkdF9GQ1R0aWtIc0lyS2diZ1hXTE1LYURCYlNwZ2NwMk9Sc2xJcDVCZy00b0N2R1h4UjdPZnBldGRpX2Noc1JwNC1fVXRHUkprekUwUi1lbjlBVllEdw?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana and Hyperliquid ETFs Continue to See New Inflows. Should Investors Be Bullish on SOL and HYPE? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZmpqZWp6TFFwcVBmOXNUSlI5SWZvZjV2MkkwSEtWWDdHa0N4TDlSaGZ2YUJjNFNrVTRlODdFa1l5Q1k0alIzVTdZODdKN2drRVZNeW5fZjhSRmNCdUFUX0otSmppeVZCdXRSdGtwRUdVVEUxVzc4cnoxUGxQUlpJS3N5SF9QUi1lODI4Ulk4akQ4ZkRyTzZhbA?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "etf_flow"
-            }
-          ],
-          "coverage": {
-            "count": 27,
-            "zscore": 1.52,
             "spike": false
           }
         }
@@ -1231,24 +1231,24 @@
             },
             {
               "source": "googlenews_tech",
+              "title": "3 \"Strong Buy\" Tech Stocks at the Top of Our List - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNR0pLRk9ydHllS25ueHJ4aDd2OXlHb29FbTlJakVYamZVNUhDLUtiV1JlT3pYQXExbWFVQ3h2bXEzaWdiQ3hDa1l0VWoyV3RHN3cxSzRTOG52SWd4c1JHdWs3SDZxTlNsSksxajQxenJMNWpicG9zTlVWMkY5d2Z0LU42TTFNUTBLUjBidXdaRy1hNWljN2lOQ0FXZDh5WFNIb29TbW4tN2RjdHZnMGo5UnRHMVJzX3poUXhjUDJaUWZJbkxQOGlZVGhNZHlmTEU?oc=5",
+              "sentiment": 0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
               "title": "Are Computer and Technology Stocks Lagging ALLIENT INC (ALNT) This Year? - qz.com",
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU3EzamhvM25uOWoxVFV1d1NrX004RkVvTE1zbF93V1Z5YVZqakNiOFdUTS1RVjU4dUxGTkV6SWd4ZW1JTTdua1paN251SXBzZHJkSjBQdFo3eWZxQ0tjTFlYMHZzRE81REVyclVLaDNLdVU4TXZSN191eUYtTkM2aE9Pd1ZFS0ZBMGNvaw?oc=5",
               "sentiment": -0.273,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Nvidia Earnings Send Chip Stocks Higher, But Reported New Trump Tariff Plans Could Broaden The Trade Fight - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQa2lnNnZHazQ4YUhreEd1bVVsNzNjNVBqbW8tNjlHaTRhaFMxRGdpbFlVaGd4NUNpbHlkVGoyOWV5RmZRYzB4bnFoNHBwbFBTNnZRSzhOMWNwZVJtX3JRdU5lZkpOUlNBSEZCVWROak5fT0xkZlJEb19TWGpRVi16MnBnMTY5d2hDS0hCUFp2YWZOcWQ4bzFZUmFxd3B2dV9LWW44ZFIyaHZGSmZpZzFnbWhaeHM5ck5PSGloVTdibWxlSVcyYm50dFFqeWZsa2xkTHJMMmxSemRiNWhEMWktY2V6QXpWTWdXYmxNSjRwb0E0TTc5Z2U3d2xn?oc=5",
-              "sentiment": -0.527,
-              "relevance": 0.6,
-              "event_type": "geopolitical"
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": 0.81,
+            "count": 12,
+            "zscore": 1.02,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 2.05,
+            "count": 36,
+            "zscore": 2.16,
             "spike": false
           }
         },
@@ -1752,16 +1752,16 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Regional Banks Stocks Q2 Results: Benchmarking Citizens Financial Group (NYSE:CFG) - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSHlZa1dVNmRMckxrNVRKQlZ6ZWx4MmhqMlNMUXhTQkR4VHhzWVJmN2NmTU5LTjZaMEpCVkZNVXA2b2QwZ1VmOGhETEVRdU9PejY4cDBxSUJva2pDVHBaOUJaRm9KZlFyNGlOOE84SE1yb2txWmt1NmJFZTBwZUFtbGVUMDltWTNPbkhJSXVlYnR0SVFfbGtOc05YSWxuelJvcDRfS1JQRjkzTlZLYVhkQnZacGQtRWhqNDRaNXBOVmRrcHpQM3ZtaVVIWTBEUDg?oc=5",
-              "sentiment": 0.0,
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
+              "sentiment": 0.285,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_finance",
-              "title": "Royal Bank of Canada (TSX:RY): Is the Outlook Shifting? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZWlfYkpRcDRHLWlwUXlJb3hKLTJCb2FlOURPalNlOFFqOEVPU05mQXZ4R29QTUxPV2tzMHpIbWNicngzVnNFa0d0cXRIM3Ytb3I0ZmVxQkttemI2RDBrX3MyWFFvekxyeWZHNWUxdlAyQ0N1enQyanVJc1dBOEhwbVhobEVHaWhTTDAybkRJal9DU1RXTlFsRFJaRQ?oc=5",
+              "title": "Regional Banks Stocks Q2 Results: Benchmarking Citizens Financial Group (NYSE:CFG) - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSHlZa1dVNmRMckxrNVRKQlZ6ZWx4MmhqMlNMUXhTQkR4VHhzWVJmN2NmTU5LTjZaMEpCVkZNVXA2b2QwZ1VmOGhETEVRdU9PejY4cDBxSUJva2pDVHBaOUJaRm9KZlFyNGlOOE84SE1yb2txWmt1NmJFZTBwZUFtbGVUMDltWTNPbkhJSXVlYnR0SVFfbGtOc05YSWxuelJvcDRfS1JQRjkzTlZLYVhkQnZacGQtRWhqNDRaNXBOVmRrcHpQM3ZtaVVIWTBEUDg?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.64,
+            "zscore": 1.65,
             "spike": false
           }
         },
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 1.19,
+            "zscore": 1.17,
             "spike": false
           }
         },
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 0.45,
+            "zscore": 0.44,
             "spike": false
           }
         }
@@ -2329,7 +2329,7 @@
           ],
           "coverage": {
             "count": 25,
-            "zscore": 0.9,
+            "zscore": 0.91,
             "spike": false
           }
         },
@@ -2368,7 +2368,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.39,
+            "zscore": 0.4,
             "spike": false
           }
         },
@@ -2407,7 +2407,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.69,
+            "zscore": 0.7,
             "spike": false
           }
         }
@@ -2609,7 +2609,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 1.02,
+            "zscore": 0.99,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.58,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": -0.67,
+            "count": 38,
+            "zscore": -0.51,
             "spike": false
           }
         },
@@ -4209,8 +4209,8 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Cameco (TSX:CCO): Is Nuclear Power Set to Surge? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTXRJR0t0Q3NneTVpNUhudjI4V2hlMmNkcTlDaEVWelB6MzZxVDdtZnhqZ3k5NS1JMkREaW5Bc1dCTVJmUlJuYy1YbUVQQzVtQllBM0ZpUVh0cWNNakJjTDRGellmWXRrUXBjMEtVSFVabkpIZjJ6dlc2RTREcVZOMXpibDJkcUQ0YU9fdVh3?oc=5",
+              "title": "NuScale Power and Oklo Drop 5%, Centrus Energy Sinks 6%: What's Behind the Nuclear Stock Selloff? - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZkxKeUp3ek9HVFJGTHc3OC1rU2dYQUZOVkYzUXV1TElfaF93TW1QNEpybWdsbW5wWG9Ga2ZON0U3emU3by1TZnJlTGp6dTV2Y1l4NC04TFFCWXNuTUx5TTFyb1FVVGRyOXNzQzBrMl9LNU0ybW9mRjh0Q0hDU3B1NWJlZWRvWndrMEJmTGhnTkRacU5feGw0Ylc4Mm5mTVBzRDlaMGdCcnRsNWRuU1R6MVJXRTRfN0YxbWJUcDhMZ2xyb2xLWlo4TzNYTTFXc0pz?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.15,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.92,
+            "zscore": -0.95,
             "spike": false
           }
         },
@@ -4901,8 +4901,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.03,
+            "count": 6,
+            "zscore": -0.2,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.77,
+            "zscore": 1.73,
             "spike": false
           }
         },
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": 5.66,
+            "count": 55,
+            "zscore": 7.28,
             "spike": true
           }
         },
@@ -5384,7 +5384,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.81,
+            "zscore": -0.8,
             "spike": false
           }
         },
@@ -5423,7 +5423,7 @@
           ],
           "coverage": {
             "count": 23,
-            "zscore": 0.85,
+            "zscore": 0.86,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 0.3,
+            "count": 16,
+            "zscore": 0.18,
             "spike": false
           }
         },
@@ -5742,7 +5742,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 1.05,
+            "zscore": 1.06,
             "spike": false
           }
         },
@@ -5935,8 +5935,8 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "London stocks gain as gold miners shine - Euronext Markets",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcUx3M29ncWIydXN3NXJxaDVHQ0RrYjA0aU5pWTRmYVhYWnhoZzEtSWN2S3dmUGVVTk5qSERiQkMwR1FPV0JDXzR5cGtxU3A1WW9LQ21hNnF5bXNjN0o4Zl9TTHpfb1phTDZxMDNqNTh4dkdMeloxX2RLTzhuT01pU09EQ3AxQTQ?oc=5",
+              "title": "London stocks gain as gold miners shine - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLTBoNEs0YWdiZnRmc1BhZG5hMWVHN2dNQ0h6YTRqekdHY0wxR0FCeTlQWTNmNFlURks1Zm9HT3prTExrYmJYWFZtN29GZ2tQMlg1dGh0RFAwLTA0TzFzRW5yMWJUMnVIVFVrMmhZUDcwWVdsWHRlRV9ybkRST2VlYkMyOUhZTTk5Q3FUeDNEdWprajZEYUxybVFHdHV1b0paOXZFcUR1bFljM2ds?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
               "event_type": "other"
@@ -6032,12 +6032,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-28",
-      "return_pct": 1.75,
-      "zscore": 0.45,
+      "return_pct": -0.8,
+      "zscore": -0.71,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-08-27",
