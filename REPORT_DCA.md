@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.2% | 33.3% | +20.1 pp | 75% | 1.000 |
-| 2 | LINK | 37.5% | 33.3% | -4.2 pp | 99% | 0.500 |
-| 3 | SOL | 49.2% | 33.3% | -15.9 pp | 100% | 0.000 |
+| 1 | POL | 13.7% | 33.3% | +19.7 pp | 72% | 1.000 |
+| 2 | LINK | 37.2% | 33.3% | -3.9 pp | 86% | 0.500 |
+| 3 | SOL | 49.1% | 33.3% | -15.8 pp | 87% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -24,14 +24,15 @@ Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene
 
 ### Il token cattura valore dalla rete
 
-**NEAR — NEAR Protocol**
+**TRX — TRON**
 
-Layer 1 con forte spinta su AI e astrazione delle catene.
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 
-- **Cattura del valore**: le commissioni bruciano offerta. Il 70% delle commissioni è bruciato, il resto va ai validatori; emissione del 5% annuo che lavora in senso opposto.
-- **Offerta**: inflazione contenuta.
-- **Sviluppo**: sviluppo attivo (103 commit in 4 settimane).
-- **Età**: almeno 5.8 anni.
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: 9.0 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
 
@@ -39,18 +40,9 @@ Layer 1 di smart contract; adozione DeFi finora modesta.
 
 - **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato da commissioni e riserva monetaria. La cattura esiste, ma è proporzionale all'uso della rete, che è la variabile debole.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.20 volte la capitalizzazione attuale.
-- **Sviluppo**: nessun commit recente, ma dato forse non aggiornato (0 commit in 4 settimane).
+- **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 6.5 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**TRX — TRON**
-
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
-
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: sviluppo moderato (19 commit in 4 settimane).
-- **Età**: 9.0 anni.
 
 **SUI — Sui**
 
@@ -58,8 +50,9 @@ Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
 
 - **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato dalle commissioni, ma meno della metà dell'offerta è circolante: gli sblocchi programmati sono il fattore dominante sul prezzo.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 2.45 volte la capitalizzazione attuale.
-- **Sviluppo**: sviluppo attivo (219 commit in 4 settimane).
+- **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 2.9 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XLM — Stellar**
 
@@ -67,8 +60,9 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.44 volte la capitalizzazione attuale.
-- **Sviluppo**: sviluppo attivo (86 commit in 4 settimane).
+- **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 11.5 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **HYPE — Hyperliquid**
 
@@ -86,42 +80,9 @@ Rete di pagamento e regolamento transfrontaliero.
 
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Le commissioni sono bruciate ma sono minuscole. Il punto critico è l'offerta: una quota rilevante è ancora in escrow presso l'emittente e viene rilasciata nel tempo.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.59 volte la capitalizzazione attuale.
-- **Sviluppo**: sviluppo rado (4 commit in 4 settimane).
+- **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 12.3 anni.
-
-
-### Tesi monetaria (non cattura ricavi, per scelta)
-
-**ZEC — Zcash**
-
-Moneta con privacy opzionale basata su prove a conoscenza zero.
-
-- **Cattura del valore**: tesi monetaria: non cattura ricavi per scelta. Nessuna cattura di ricavi. Stesso rischio di delisting della privacy.
-- **Offerta**: offerta con tetto massimo.
-- **Sviluppo**: sviluppo attivo (34 commit in 4 settimane).
-- **Età**: 9.8 anni.
-- ⚠️ Scheda incompleta: nota solo per il 60% dei criteri.
-
-**LTC — Litecoin**
-
-Fork di Bitcoin con blocchi più rapidi; nessuna differenziazione forte.
-
-- **Cattura del valore**: tesi monetaria: non cattura ricavi per scelta. Come Bitcoin non cattura ricavi, ma senza l'effetto rete che rende quella tesi credibile per Bitcoin.
-- **Offerta**: offerta con tetto massimo.
-- **Sviluppo**: sviluppo rado (1 commit in 4 settimane).
-- **Età**: 14.9 anni.
-- ⚠️ Scheda incompleta: nota solo per il 60% dei criteri.
-
-
-### Economia del token non ancora studiata
-
-**GRAM — Gram (prev. Toncoin)**
-
-- **Cattura del valore**: non ancora studiato.
-- **Offerta**: emissione non verificata — valutazione diluita 1.89 volte la capitalizzazione attuale.
-- **Sviluppo**: sviluppo attivo (98 commit in 4 settimane).
-- **Età**: almeno 4.9 anni.
-- ⚠️ Scheda incompleta: nota solo per il 60% dei criteri.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
 ### Solo governance: nessun flusso al detentore
@@ -132,8 +93,9 @@ Il principale exchange decentralizzato per volume.
 
 - **Cattura del valore**: dà solo diritto di voto, nessun flusso. Il caso di scuola: il protocollo genera commissioni enormi, che vanno ai fornitori di liquidità e non ai detentori di UNI. Il 'fee switch' che girerebbe una quota al token è oggetto di governance da anni.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.43 volte la capitalizzazione attuale.
-- **Sviluppo**: quasi nessuno sviluppo (0 commit in 4 settimane).
-- **Età**: almeno 5.9 anni.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 6.0 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
 ### Nessun meccanismo di cattura del valore
@@ -143,8 +105,8 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
-- **Sviluppo**: nessun commit recente, ma dato forse non aggiornato (0 commit in 4 settimane).
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
@@ -154,7 +116,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 - capitalizzazione sotto la soglia: 28
 - stablecoin o token ancorato: 20
 - volume troppo basso rispetto alla capitalizzazione: 11
-- già in portafoglio: 5
+- già in portafoglio: 6
 
 ## Limiti
 
