@@ -221,6 +221,9 @@ def test_full_run_writes_ledger_scenario_and_payloads(tmp_path, monkeypatch) -> 
     frames["SPY"] = _ohlcv(400, last="2026-08-21", drift=0.0005)
 
     monkeypatch.setattr(cli, "YahooFinanceSource", lambda: StubSource(frames))
+    # freeze the clock next to the fixtures: real wall-clock time would walk
+    # past the staleness fail-safe and flip this test red for no code change
+    monkeypatch.setattr(cli, "_utc_now", lambda: NOW)
     monkeypatch.setattr(cli, "REPORT_PATH", tmp_path / "ranking_report.json")
     monkeypatch.setattr(cli, "MODEL_PATH", tmp_path / "ranking_model.json")
     monkeypatch.setattr(cli, "VALIDATION_PATH", tmp_path / "missing.json")
@@ -269,6 +272,7 @@ def test_second_run_on_the_same_date_adds_nothing(tmp_path, monkeypatch) -> None
     _write_validation(tmp_path / "validation.json", "2026-08-20T00:00:00+00:00")
 
     monkeypatch.setattr(cli, "YahooFinanceSource", lambda: StubSource(frames))
+    monkeypatch.setattr(cli, "_utc_now", lambda: NOW)
     monkeypatch.setattr(cli, "REPORT_PATH", tmp_path / "ranking_report.json")
     monkeypatch.setattr(cli, "MODEL_PATH", tmp_path / "ranking_model.json")
     monkeypatch.setattr(cli, "VALIDATION_PATH", tmp_path / "validation.json")

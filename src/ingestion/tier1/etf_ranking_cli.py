@@ -242,6 +242,16 @@ def _freshness_payload(checks: list[FreshnessResult]) -> list[dict[str, Any]]:
     ]
 
 
+def _utc_now() -> pd.Timestamp:
+    """Injection point for the run's clock.
+
+    The fail-safe compares every feed against this moment; a test that stubs the
+    feeds with fixed dates must be able to freeze it too, or the fixtures rot as
+    wall-clock time walks past the staleness threshold.
+    """
+    return pd.Timestamp.now(tz="UTC")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the weekly ETF rotation (WP4).")
     parser.add_argument("--ledger", type=Path, default=DEFAULT_LEDGER_PATH)
@@ -254,7 +264,7 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    now = pd.Timestamp.now(tz="UTC")
+    now = _utc_now()
     start = (now - pd.Timedelta(days=int(cast("int", args.lookback_days)))).date().isoformat()
     source = YahooFinanceSource()
 
