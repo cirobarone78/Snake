@@ -5,7 +5,7 @@
 > Chi riprende il lavoro (umano o agente) legge questo file per primo, e tiene
 > questo file **sotto le 200 righe**: se cresce, la cronaca si sposta in archivio.
 
-**Ultimo aggiornamento**: 2026-08-28 — piano di accumulo: NEAR quarta gamba fissa (ADR-037); verificato il fix byte-stability del cron news (#59)
+**Ultimo aggiornamento**: 2026-08-28 — NEAR quarta gamba fissa (ADR-037, #62); livello divulgativo "In parole semplici" su Opportunità/Modello (feedback utente: gergo incomprensibile e crypto/equity non distinte — estenderlo alle altre tab è lavoro aperto)
 
 ---
 
