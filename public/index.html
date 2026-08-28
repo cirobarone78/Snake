@@ -120,6 +120,26 @@
         <p class="updated" id="ranking-updated"></p>
       </div>
       <p class="section-note">Classifica <strong>descrittiva</strong> dei venti ETF settoriali per momentum relativo a 60 sedute contro SPY: dice chi <em>si è mosso</em> di più finora, non chi farà meglio da qui in avanti. La sezione <strong>Modello</strong>, subito sotto la tabella, spiega con i numeri perché qui non trovi colonne di probabilità.</p>
+      <details class="plain-help">
+        <summary>📖 In parole semplici: cosa stai guardando</summary>
+        <div class="plain-help-body">
+          <p><strong>Questa pagina parla di borsa americana, non di criptovalute.</strong> Le crypto del piano personale sono nella scheda «Piano di accumulo». Qui il sistema osserva 20 <strong>ETF settoriali</strong>: un ETF è un paniere che raggruppa in un colpo solo le azioni di un intero settore (energia, microchip, banche, difesa…), così si punta sul settore senza dover scegliere le singole aziende.</p>
+          <p>La tabella li mette in fila rispondendo a una sola domanda: <em>negli ultimi tre mesi, quale settore si è mosso meglio e quale peggio rispetto alla borsa americana nel suo complesso?</em> Il metro di paragone è SPY, il fondo che replica le 500 maggiori aziende USA.</p>
+          <p><strong>Il limite, che è la cosa più importante da capire:</strong> sapere chi ha corso finora non dice chi correrà da qui in avanti. L'abbiamo verificato sui nostri dati — la sezione «Modello» più in basso mostra i numeri — e per questo qui non trovi probabilità né promesse.</p>
+          <dl class="plain-glossary">
+            <dt>ETF</dt><dd>fondo quotato in borsa che replica un paniere di azioni; si scambia come una singola azione.</dd>
+            <dt>SPY (benchmark)</dt><dd>l'ETF delle 500 maggiori aziende USA (indice S&amp;P 500): rappresenta «il mercato nel suo complesso» ed è il termine di confronto per tutto il resto.</dd>
+            <dt>Momentum rel. 60g</dt><dd>quanto l'ETF ha reso in più o in meno rispetto a SPY nelle ultime 60 sedute (circa 3 mesi). +5% = cinque punti meglio del mercato in quel periodo.</dd>
+            <dt>Seduta</dt><dd>un giorno in cui la borsa è aperta: weekend e festività non contano, quindi 60 sedute ≈ 3 mesi di calendario.</dd>
+            <dt>Percentile</dt><dd>posizione relativa da 0 a 100: percentile 90 = meglio del 90% degli altri ETF della lista in quel momento.</dd>
+            <dt>Vol. 60g (volatilità)</dt><dd>quanto il prezzo oscilla: alta = montagne russe, bassa = strada piana. Misura l'ampiezza degli scossoni, non la loro direzione.</dd>
+            <dt>Peso</dt><dd>la fetta di portafoglio virtuale assegnata all'ETF nel ciclo corrente (solo i primi 5 in classifica ne ricevono una).</dd>
+            <dt>Regime di mercato</dt><dd>il clima generale del momento, letto dai soli prezzi: mercato in salita o in discesa, con scossoni forti o deboli.</dd>
+            <dt>Paper portfolio</dt><dd>portafoglio-esperimento con denaro finto: serve a misurare la regola sul campo senza rischiare un euro vero.</dd>
+            <dt>Dati</dt><dd>quanti giorni fa risale l'ultimo prezzo disponibile per quell'ETF: un numero alto segnala un dato vecchio, non un problema dell'ETF.</dd>
+          </dl>
+        </div>
+      </details>
       <div id="ranking-banners"></div>
       <div id="ranking-meta"></div>
       <div id="ranking-table"></div>
@@ -131,6 +151,19 @@
         <p class="updated" id="model-updated"></p>
       </div>
       <p class="section-note">Stato della validazione fuori campione della regola di ranking: cosa è stato misurato, cosa ha fallito e perché nessuna probabilità viene pubblicata.</p>
+      <details class="plain-help">
+        <summary>📖 In parole semplici: perché qui non trovi probabilità</summary>
+        <div class="plain-help-body">
+          <p>Abbiamo messo alla prova la regola sul passato: le abbiamo chiesto di ordinare gli ETF e poi abbiamo confrontato quell'ordine con ciò che è successo davvero nei mesi seguenti. Risultato: <strong>l'ordine di oggi non aiuta ad anticipare l'ordine di domani</strong> più di quanto farebbe un'estrazione a sorte. E quando i modelli provavano a stimare probabilità, i numeri erano fuorvianti: dove uno diceva «97% di fiducia», l'evento accadeva meno di una volta su due.</p>
+          <p>Un'app onesta, davanti a questa misura, mostra la classifica come <em>descrizione del passato</em> e si ferma lì. Le tabelle qui sotto sono la documentazione tecnica di quella verifica.</p>
+          <dl class="plain-glossary">
+            <dt>Fuori campione (out-of-sample)</dt><dd>la regola viene giudicata su dati che non ha mai visto durante la messa a punto — come un compito in classe con esercizi nuovi, non quelli svolti a casa.</dd>
+            <dt>IC (correlazione di ranking)</dt><dd>quanto l'ordine proposto somiglia all'ordine dei risultati reali: 0 = nessuna relazione, cioè come tirare a sorte.</dd>
+            <dt>Brier score</dt><dd>voto alle probabilità dichiarate: più è basso meglio è. Se è peggiore di quello di chi risponde sempre «50 e 50», le probabilità non valgono nulla.</dd>
+            <dt>Calibrazione</dt><dd>onestà dei numeri: se dico «70%» dieci volte, l'evento deve accadere circa 7 volte. Qui non accadeva, ed è il motivo per cui nessuna probabilità viene pubblicata.</dd>
+          </dl>
+        </div>
+      </details>
       <div id="model-verdict"></div>
       <div id="model-training"></div>
       <div id="model-metrics"></div>

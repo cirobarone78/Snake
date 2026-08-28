@@ -96,6 +96,20 @@ def test_ui_language_never_promises_a_forecast() -> None:
             assert found is None, f"linguaggio vietato in {name}: {found.group(0) if found else ''}"
 
 
+def test_plain_language_help_covers_the_ranking_jargon() -> None:
+    """The most technical tab carries a plain-language layer (user feedback,
+    2026-08-28: "leggendo le sezioni spesso non capisco niente"). The glossary
+    must define the jargon the table headers actually use, and the box must
+    open by saying the page is about US equities, not crypto — the single
+    biggest reported confusion."""
+    panel = _opportunita_panel()
+    assert panel.count('class="plain-help"') == 2, "un box per Opportunità e uno per Modello"
+    assert "non di criptovalute" in panel
+    for term in ("ETF", "SPY", "Momentum", "Percentile", "volatilità", "Peso",
+                 "Brier", "Fuori campione", "Calibrazione"):
+        assert term.lower() in panel.lower(), f"glossario senza il termine: {term}"
+
+
 def test_ui_uses_the_prescribed_wording() -> None:
     block = _wp5_block() + _opportunita_panel()
     for phrase in ("classifica descrittiva", "Probabilità stimata", "non è sufficiente per un segnale"):
