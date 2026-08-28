@@ -2181,6 +2181,40 @@ aver visto i risultati di ADR-034 e mai pre-registrato — esattamente lo
 spostamento dei pali che `CLAUDE.md` vieta. Se lo si vorrà provare, si
 pre-registra e si misura, non lo si infila nel fallback.
 
+## ADR-037 — Il piano di accumulo aggiunge NEAR come quarta gamba fissa
+
+**Data**: 2026-08-28
+**Stato**: Accepted
+**Contesto**: L'utente ha chiesto quali crypto aggiungere al piano reale
+(100€/mese: 60 BTC, 30 ETH, 10 sulla quota satellite SOL/LINK/POL). Lo screener
+fondamentale (ADR-031, report del 2026-08-27) classifica NEAR prima tra le
+candidate: unico progetto con tutti i criteri verdi contemporaneamente —
+cattura del valore reale (70% delle commissioni bruciato), sviluppo attivo,
+offerta interamente circolante, scheda completa (confidence 1.0). L'utente ha
+deciso di aggiungerlo con **10€/mese in più**, senza toccare le gambe esistenti.
+
+**Decisione**:
+
+1. Il budget mensile passa da 100€ a **110€**; NEAR entra nel blocco `core`
+   della config (60 BTC / 30 ETH / 10 NEAR): allocazione **fissa**, nessuna
+   decisione mensile del sistema, come per BTC ed ETH.
+2. La quota satellite resta invariata (10€ su SOL/LINK/POL con pick mensile
+   dell'advisor). NEAR **non** entra nella rotazione: la scelta dell'utente è
+   una gamba stabile, non un quarto candidato al pick.
+3. Essendo nel piano, NEAR è escluso automaticamente dallo screener candidate
+   (`already_held`), come le altre posizioni.
+
+**Conseguenze**:
+
+- La scelta è **informata dai fondamentali, non da una previsione**: lo
+  screener descrive come è fatto il token, non dove andrà il prezzo (caveat di
+  ADR-031 invariati). Nessuna promessa di rendimento è implicata.
+- `holdings_units.NEAR` parte a 0 finché il primo acquisto reale non viene
+  registrato; i report continuano a usare le quantità esatte per la sola quota
+  satellite.
+- Se in futuro NEAR dovesse entrare nella rotazione o cambiare peso, è una
+  nuova decisione dell'utente da registrare, non un aggiustamento del sistema.
+
 <!--
 Template per nuove ADR:
 

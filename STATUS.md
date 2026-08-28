@@ -5,7 +5,7 @@
 > Chi riprende il lavoro (umano o agente) legge questo file per primo, e tiene
 > questo file **sotto le 200 righe**: se cresce, la cronaca si sposta in archivio.
 
-**Ultimo aggiornamento**: 2026-08-24 — WP5: viste "Opportunità" e "Modello" in dashboard, senza probabilità
+**Ultimo aggiornamento**: 2026-08-28 — piano di accumulo: NEAR quarta gamba fissa (ADR-037); verificato il fix byte-stability del cron news (#59)
 
 ---
 
@@ -93,6 +93,10 @@ negativi contano quanto i positivi e restano qui apposta.
   **reale e OOS-stabile sull'allocazione** (distanza dal target 5,3 pp vs 30,5 pp
   nella metà OOS). Il momentum come regola di scelta è la peggiore (40,5°,
   *sotto* il caso); "buy-the-dip" era 96° in-sample e **ultima OOS** → rimossa.
+- **Piano reale (ADR-037, 2026-08-28)**: budget a **110€/mese** — NEAR aggiunto
+  come quarta gamba fissa da 10€ (prima tra le candidate dello screener
+  fondamentale, tutti i criteri verdi). Non entra nella rotazione satellite;
+  `holdings_units.NEAR` resta 0 fino al primo acquisto reale.
 - **Fondamentali dei progetti (ADR-031)**: descrivono, non predicono; nessun
   backtest onesto è possibile (storia corta, piena di sopravvissuti). Tre trappole
   codificate: sconosciuto ≠ zero; la tesi monetaria (BTC) è esente dall'asse
