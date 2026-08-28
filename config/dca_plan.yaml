@@ -1,8 +1,8 @@
 # Piano di accumulo — configurazione.
 #
-# Questo file descrive il piano REALE dell'utente. Il core (BTC/ETH) è fisso e
-# non viene mai messo in discussione dal sistema: l'unica decisione ricorrente è
-# su quale asset della quota satellite far cadere il versamento del mese.
+# Questo file descrive il piano REALE dell'utente. Il core (BTC/ETH/NEAR) è
+# fisso e non viene mai messo in discussione dal sistema: l'unica decisione
+# ricorrente è su quale asset della quota satellite far cadere il versamento.
 #
 # `holdings_units` sono le quantità effettivamente possedute (non euro). Se
 # lasciato vuoto, il sistema stima la posizione replicando il piano da
@@ -10,13 +10,17 @@
 # non un estratto conto. Compilarlo rende il calcolo dello scarto dal target
 # esatto invece che stimato.
 
-monthly_eur: 100
+monthly_eur: 110
 start_date: "2025-10-01"
 
 # Allocazione fissa: nessuna scelta da fare, nessun modello coinvolto.
+# NEAR aggiunto il 2026-08-28 su decisione dell'utente (ADR-037): quarta gamba
+# fissa da 10€, scelta informata dallo screener fondamentale (ADR-031), che da
+# ora lo esclude dalle candidate perché parte del piano.
 core:
   BTC: 60
   ETH: 30
+  NEAR: 10
 
 # La quota su cui il sistema esprime una preferenza mensile.
 sleeve:
@@ -33,6 +37,7 @@ sleeve:
 holdings_units:
   BTC: 0.009951
   ETH: 0.13263
+  NEAR: 0.0  # gamba aggiunta il 2026-08-28, primo acquisto non ancora eseguito
   SOL: 0.59501
   LINK: 4.10498
   POL: 159.3624
