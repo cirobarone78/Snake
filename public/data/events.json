@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T07:17:00+00:00",
+  "generated_at": "2026-08-29T14:38:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,12 +10,28 @@
       "moves": [
         {
           "date": "2026-08-29",
-          "return_pct": -3.48,
-          "zscore": -1.92,
+          "return_pct": -3.16,
+          "zscore": -1.78,
           "classification": "market-wide",
           "severity": "notable",
-          "market_return_pct": -3.48,
+          "market_return_pct": -3.16,
           "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Taliban Declare War on Bitcoin: Crypto Banned in Afghanistan as a “Scam” - Bitcoin Foundation",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQR0M2VmlkY1hYQ1pUcWRoMHRLUENmMzMzQmRvMHUxUVRKa050LXNOZnhNLVBPaTJGaGw0Rk9IWlF3NHRNMlQxRC05YlhIel9rTlppZ2ZuY2dLa2I3ZktaMWhzZV9HSzVJWngyQk9UQ2lnZUdCM2trX3MzbHBVVi1oUFBJTWE4NXM2N3FQT09ZaDVGWmo0cDRkaUxvazg3bG96UDEwNjF4YWNGRGtwbkY0TVlrS3FINFE?oc=5",
+              "sentiment": -0.784,
+              "relevance": 0.914,
+              "event_type": "regulation"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin’s failed $81,000 breakout just put $75,000 back on the table - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVlVQVk1KMFlOcDlvTWNPMkF5bFpPeFd0ZndaQmU0cXl5ZWFnemlaQ0NRWDJuLUpPZXpPVFRDdFFMb3NFdnlwajQ3Qzc4VHh6VVFyRi1TWFRZN3BtdlNpajl6Qi1JLUFMajQzZE5WRXNRbnBfbW9iaGJqY05YajRzRVU0TTB0dmE5Yk40aWI5aHJqQQ?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_btc",
               "title": "Billionaire Hedge Fund Investor Ray Dalio Now Advises Holding a Small Amount of Bitcoin. Here's Why He's Wrong. - Yahoo Finance",
@@ -23,27 +39,11 @@
               "sentiment": -0.477,
               "relevance": 0.791,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Arthur Hayes Predicted $250,000 Bitcoin. But Another Investor Says the Plan Behind It Is Already Failing - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQNG1jRk05N2lfRVZPdnBkSzdUTURCSUtwQjFuRVRxQ05vVENqb1lqbzB6RGdKMlVZTXNrSnJ0dm1DVkJMaXNvaTVjZlJNalpURW1YNTByRTdnb1VfOVNZaGY1cnRtRk02UmZEdlk2dVFRZzh0NTRQVGtZTlg0WGdwVFlybnZPNXFVX3ZxckZ0LTI2cW1GbDhDLXN4RzNhMk5USkViZE9WSXc0c3NpektGdDBSM1NMTjIxVng2dS1TOVBTTjFPM0pGNXJDalVoVHhaRkZtLVJDOXhpT2pOOFlKSU4zZDVlek1RQThsTk5lWHdCQQ?oc=5",
-              "sentiment": -0.665,
-              "relevance": 0.666,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Arthur Hayes Predicted $250,000 Bitcoin. But Another Investor Says the Plan Behind It Is Already Failing - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZkdTV1NuRlVQSWpUNGhKWVR2Vkc5RGFjeS1WS2xKMEszWFpZbDBLa1RJMHNfT1huLTZjeVFTU29qTHZIclo2RDQ1SUZCTzFhamtwWDljWnRJUWNiMUFMM2tuOVJhTldFU1UtQmRFbXV5cElxcXZYamhvX0lrdEtEZmtaMTNTa1QtNUZmakIzNU1IdWRMZGV5ekdiZw?oc=5",
-              "sentiment": -0.665,
-              "relevance": 0.666,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": -3.06,
+            "count": 31,
+            "zscore": -2.57,
             "spike": false
           }
         },
@@ -492,12 +492,20 @@
       "moves": [
         {
           "date": "2026-08-29",
-          "return_pct": -5.0,
-          "zscore": -2.19,
+          "return_pct": -4.18,
+          "zscore": -1.91,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.48,
+          "market_return_pct": -3.16,
           "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Trump-Backed Brand's GOLD Token Collapses on Solana, Sparking Scam Speculation - KuCoin",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTkZyR3N0YTBkSXhWMUY2bEw3MG9jVjhGd2xXUXRJQ3pyUFQ4NXFQUGo4RUVTT0xoOVU3aE4xU3hSZlJFVTRRN0FkZXZsa2tqSDFoc0k4Vzg5RU5Zd1A1ZXNPNV9hMzd4R0NIQ1lNQlFfQ3d0SzVDakVaMUIwS0pNazNndTdnOFlYSGJJaHlqLW9XQmZLaElLVUVMVVE2LVR0Z2FndF91akRaYlo3VXJPcQ?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_sol",
               "title": "Avici Says 1,685 Users Lost $500,859 In Rain Card Contract Exploit - The Defiant",
@@ -508,24 +516,16 @@
             },
             {
               "source": "googlenews_sol",
-              "title": "Ethereum and Solana are hosting trillions in dollar volume, yet their native tokens risk losing direct consumer demand - CryptoSlate",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM1Z4MHhCeFpYT0x3U1dyV3Rjci13MjZpaUJyM21TWDlNOThBeGNwTC1lVTB3VGhjVFF4M2VIbUZYZDhRRkxmMkdJajMzX1ZvQ0NMOFRxbHRNZUhPRTlwTVFRRDdVSHdEcFZEQVlfT19renp2ZldRRVRWSnpsbGpkTkhieWRBT2dHSGd1dWlUQXFJTGdKaXVGUXpkMnBLTjdBd19DMUdOdw?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.655,
+              "title": "This New AI Agent Platform Could Send Solana's Price Higher in September and Beyond - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdDA0Ym5NbWlyRm0xUVFZMjJPZ3AzOUJKcUZhaVlneUhPTEduaVFKSm1paUtCbkR6MW15NnAwUVdBUDJZZ3RreDBDRzd6MmsyT3dHa3BhRHN6MjBoanNsOHZLZ2tJTHFIZ1BOT1BpRXZYZGtoMWozSUtOQVJDTndOalMyaWtsdE1jcjhUSWlLWElFNGhtVHZEWg?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Bitwise Solana ETF Surpasses $1 Billion AUM, SOL Price Rises - KuCoin",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbVUyQUZOUUtWaWxleGd0ZGNrUV9QckVkdzNqRHkydG93SlpIRlg2bkJRemdYQWtSbWpKcUdPUlc0cFBOaEdnSmhjMVBLdEZzakRYbnEwZm9xQUUtdDFWbGMtNEt4WWFxWFBHSU1Cbm1IWXJEc1F6LUpLZTRyejFiRjlUX21pNWRxczRiVkdCanA0cWdDaWww?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -1.65,
+            "count": 17,
+            "zscore": -1.0,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 67,
-            "zscore": 2.26,
+            "count": 66,
+            "zscore": 2.19,
             "spike": false
           }
         },
@@ -602,8 +602,8 @@
             }
           ],
           "coverage": {
-            "count": 51,
-            "zscore": 1.3,
+            "count": 53,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-08-29",
-          "return_pct": -5.2,
-          "zscore": -1.82,
+          "return_pct": -4.46,
+          "zscore": -1.61,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.48,
+          "market_return_pct": -3.16,
           "events": [
             {
               "source": "googlenews_link",
@@ -749,24 +749,24 @@
             },
             {
               "source": "googlenews_fed",
+              "title": "Fed Rate Hike in September 2026 is Now More Likely Than Not - Norada Real Estate Investments",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTUJuUFhPT001NS1uQjBkVWt1VGs0UXRNLTUwSThmS2RKcVFrTU41eWg1Z1VJNzdfNE5HZ2FPdzNpOUJMelEzNEctRmllYWRjYnB5dU1IRVlLZVdTaXhvaFBuSlg3Njd2Q0g2MEpPZWFvcnJQOWMwQzF1NVJRWkNkYzVCRUlnLXNDTVFPSkQzOWxJUl9sdURPMDdaNFNkN1U?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
               "title": "Fed chair Warsh warns inflation fight is not over as markets eye rate hikes - VIDEO - Latest news from Azerbaijan",
               "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUFZqY0dTTjNHcjA4OWtUSWxVZ2h2eHN3Q0NhNkh0dGtzX1BuTHlyRW9tMzBXUGNQdzZ4cHVrUVNHZ3Q3LThLY0JOZjYyUmJoSEZwUjNlN0Q1eEVLRENDcm5CbXdHVmQyczl0cnFIUXNmeThSMjlscXpsWEFtY3o2aHhQUTJmdjhMZWRRVnpwcUtPa1pUM0tYd3R0YkJvcDNxdHZabA?oc=5",
               "sentiment": -0.459,
               "relevance": 0.584,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says - BBC",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GNTVKcDg0ejZUa2J6R3VtYXFETzdfd2FRRndtN2VGTVBxemRfLVRzRHRiRzJ5eGNNTUVWSGJtLVcwLW80bUZTZDliWllLVW1DNEQ3YnUyVXktSFJJ?oc=5",
-              "sentiment": -0.276,
-              "relevance": 0.51,
-              "event_type": "fed"
             }
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.01,
+            "zscore": -1.02,
             "spike": false
           }
         },
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 2.16,
+            "zscore": 2.15,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 0.73,
+            "zscore": 0.72,
             "spike": false
           }
         },
@@ -1644,8 +1644,8 @@
             }
           ],
           "coverage": {
-            "count": 39,
-            "zscore": 2.6,
+            "count": 40,
+            "zscore": 2.72,
             "spike": true
           }
         },
@@ -1954,24 +1954,24 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Global Market: China, Hong Kong stocks rebound as healthcare and tech shares rally - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSm9TU2ZOTGxFZGM1VVI2dEJ1a0xVYlc1RUp0WnpUNUJ6cGw4cXU3MkhDb3hDZFlzcDVheVRCWlF4Nnhra0J3YmhkbmhhWU9mQWNhbF9tWjZRQk1uV1I2STJyX0djSjNKck9DSGY1eFpfdm5kbVhEWE94ZVJ2TEdTNGNtcnhHejRlZjdoeTZwcHhFRng4UzNlSDVpNG12b1diWEdXbG5ZQjRMRWh4NkZfMXc5QldrUFR0Q2VVa1NOQzJid2J6bEVSYzk3YWFlTXg5LXVnR2Y3UlAwTjFWYXp0SFg3cmFGYVJIaXRpS1RR0gHzAUFVX3lxTE1INjQ2cHlJd1hsYS1ObkdSZEV0OHNENTNjSG8xeWtBclZGUWJVSFY3NEUyMUVDZjVDZ0JFbEVGcXZRODRnaWV0dHFUR3J6UHkwLXF1X3o4OVlOZHVDVEtoX2FLQkhzMWk3M0xlcDJhN2hieXpLajBBd2hQU1F2WXJZZ0lYMV9lc29FYXBmbVJ3aEMycS1pMF9MUk5ZWnNBNDBNSUFjb0VYelhfUGI3dDVZMU1IQ0d4MkhTLWFicU1nYlBFaHpkVGkwNi02WW5neXJHT0lZOTlSVkV6YzMxMlBOQlRTVGVPYVBRNlNMelU1UFprOA?oc=5",
-              "sentiment": 0.296,
+              "title": "Wall Street rises as yields ease, Moderna lifts healthcare stocks - The Straits Times",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYzBQT2pndkZKYVZSQmowS1paRUVIY3V5Y3FMakVvT0NNRXFra0RHQmg1Q25ycHUxNWtJNlNPMGVjUER3UlNNMkFqYkczcDJpZENnOHdZT0Nob053VUl5ZmxyNzgxN1BiVHJkUlpPZ1JyQVdZSDB2MV9kNlJxS0w0WkoyNlU1Z2Fyc2FCQUdYUnpBLVBRclNodW5RLWNVTDRNeVRhZTJnVWFIMm9MYmJtYUFSMXdGUklJ?oc=5",
+              "sentiment": 0.361,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_health",
-              "title": "Adheris Health Ltd (ASX: AHE) Share Price Rises on the ASX Health Care Sector – 20 August 2026 Update - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUHZTWkFzcWdKc1RFaVlJUWVnTE4yWGIxMzVha2pjMWZWUVNqMGdnTERETVdla3JaZjRhYVlEN0x1dEctaGJRUTM4cGVBcnp3dHhWanlBcTliU2I1Tk9DcGVKZzl5N0dvNWJhdHRmSGJoRk5qYXNUREtISWdhcVo5S1RDclVlM1gzOUNmaE9aSElkZXI2XzNraHVRZnlMSHcwTnpZZV9ueWFDOXlqSWZSXzc0bTdHeDZkVTI4RTY2X3hUc0lXQTNUSENabnFZTElJ?oc=5",
-              "sentiment": 0.66,
+              "title": "Global Market: China, Hong Kong stocks rebound as healthcare and tech shares rally - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSm9TU2ZOTGxFZGM1VVI2dEJ1a0xVYlc1RUp0WnpUNUJ6cGw4cXU3MkhDb3hDZFlzcDVheVRCWlF4Nnhra0J3YmhkbmhhWU9mQWNhbF9tWjZRQk1uV1I2STJyX0djSjNKck9DSGY1eFpfdm5kbVhEWE94ZVJ2TEdTNGNtcnhHejRlZjdoeTZwcHhFRng4UzNlSDVpNG12b1diWEdXbG5ZQjRMRWh4NkZfMXc5QldrUFR0Q2VVa1NOQzJid2J6bEVSYzk3YWFlTXg5LXVnR2Y3UlAwTjFWYXp0SFg3cmFGYVJIaXRpS1RR0gHzAUFVX3lxTE1INjQ2cHlJd1hsYS1ObkdSZEV0OHNENTNjSG8xeWtBclZGUWJVSFY3NEUyMUVDZjVDZ0JFbEVGcXZRODRnaWV0dHFUR3J6UHkwLXF1X3o4OVlOZHVDVEtoX2FLQkhzMWk3M0xlcDJhN2hieXpLajBBd2hQU1F2WXJZZ0lYMV9lc29FYXBmbVJ3aEMycS1pMF9MUk5ZWnNBNDBNSUFjb0VYelhfUGI3dDVZMU1IQ0d4MkhTLWFicU1nYlBFaHpkVGkwNi02WW5neXJHT0lZOTlSVkV6YzMxMlBOQlRTVGVPYVBRNlNMelU1UFprOA?oc=5",
+              "sentiment": 0.296,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": -0.29,
+            "count": 11,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -2009,8 +2009,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.0,
+            "count": 11,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.08,
+            "zscore": 0.09,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 39,
-            "zscore": -0.48,
+            "count": 40,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -4123,16 +4123,16 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Nuclear Energy Stocks For Reliable Power As Oil Prices Rise - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQc1ZldkxfdGZsYmhqUWF5cnViY0FnQnFFam9jM1dBeTFVaE45TVdwQklpckVXT2oxUDNPNDVFVDZKajRoNlE2QzBZQzRMdDh5UVowTEF1LW1aOTRyTy0tY1Z6NmhwQlpaNVdVeGNHS1k0clBESlRiZy1CUXhIMFRCYjA5alJUYmMtaTdnWHlQNjZPLWNxNHEwV29OejcyeVdSOW9HLWtDTEFVaFJtSGhQZ0MtSENIOFZOMnAzYVJCeGJLLWZLVWJhdFpRdlXSAdIBQVVfeXFMUEpvNGR0OXZrS1ktNF9QNTZpOGpFbmhYUzhvTXlDWXZhVWxkX1l3Z3JGX3djalZQS1RrSVRwYnJPa19jOGRZcmFncmx2X2VlZjRsZzNCSW5xdmJUaXcyQzhKM2hSNlh3OWVxMHd1NTYxdGVWY01BbklTRlpxUlJ2aUdKdlFwTVRLNVRJLS1hejFQcDFxSGttd3hyckt5Q2ROTHE0RllDWnFEdTdVc3NOUnBTajVWQllta3dTNWJ0R3ZYVzJCMUQxd3NqWkV5bDNqa0Nn?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
+              "title": "Foremost Clean Energy Stock Rises 6.41% as Athabasca Uranium Discovery Momentum Strengthens Investor Optimism - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaG5nMUI0TmhfUF8wTEIycnBqZWNzOUJ5bURNNUZCUHVxeUR4dXF1NEliTGdWN0w2X3h2bWMyOFJEYkc4aUplUTFkWnp4aDJETlpJakk3bGd0R2VBQ0JtZnpGVl9NeDcxR2I5U0VGTnVsRmVtMlJwVVhjWDI3SkpoSlA0LVlQR0VjdGM2d1JkeEt0b3pGRmp4WU95b0NRSk5BeUJNVlZ6MkVGaXd3WTFtRy1FTkhjeUp5dlJ5R19rcmo4ZVh0T1JURDlHd1Y3enZCQ1dSbQ?oc=5",
+              "sentiment": 0.883,
+              "relevance": 0.753,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
               "title": "Nuclear Energy Stocks For Reliable Power As Oil Prices Rise - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSm80ZHQ5dmtLWS00X1A1Nmk4akVuaFhTOG9NeUNZdmFVbGRfWXdnckZfd2NqVlBLVGtJVHBick9rX2M4ZFlyYWdybHZfZWVmNGxnM0JJbnF2YlRpdzJDOEozaFI2WHc5ZXEwd3U1NjF0ZVZjTUFuSVNGWnFSUnZpR0p2UXBNVEs1VEktLWF6MVBwMXFIa213eHJyS3lDZE5McTRGWUNacUR1N1Vzc05ScFNqNVZCWW1rd1M1YnRHdlhXMkIxRDF3c2paRXlsM2prQ2fSAdIBQVVfeXFMUEpvNGR0OXZrS1ktNF9QNTZpOGpFbmhYUzhvTXlDWXZhVWxkX1l3Z3JGX3djalZQS1RrSVRwYnJPa19jOGRZcmFncmx2X2VlZjRsZzNCSW5xdmJUaXcyQzhKM2hSNlh3OWVxMHd1NTYxdGVWY01BbklTRlpxUlJ2aUdKdlFwTVRLNVRJLS1hejFQcDFxSGttd3hyckt5Q2ROTHE0RllDWnFEdTdVc3NOUnBTajVWQllta3dTNWJ0R3ZYVzJCMUQxd3NqWkV5bDNqa0Nn?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQc1ZldkxfdGZsYmhqUWF5cnViY0FnQnFFam9jM1dBeTFVaE45TVdwQklpckVXT2oxUDNPNDVFVDZKajRoNlE2QzBZQzRMdDh5UVowTEF1LW1aOTRyTy0tY1Z6NmhwQlpaNVdVeGNHS1k0clBESlRiZy1CUXhIMFRCYjA5alJUYmMtaTdnWHlQNjZPLWNxNHEwV29OejcyeVdSOW9HLWtDTEFVaFJtSGhQZ0MtSENIOFZOMnAzYVJCeGJLLWZLVWJhdFpRdlXSAdIBQVVfeXFMUEpvNGR0OXZrS1ktNF9QNTZpOGpFbmhYUzhvTXlDWXZhVWxkX1l3Z3JGX3djalZQS1RrSVRwYnJPa19jOGRZcmFncmx2X2VlZjRsZzNCSW5xdmJUaXcyQzhKM2hSNlh3OWVxMHd1NTYxdGVWY01BbklTRlpxUlJ2aUdKdlFwTVRLNVRJLS1hejFQcDFxSGttd3hyckt5Q2ROTHE0RllDWnFEdTdVc3NOUnBTajVWQllta3dTNWJ0R3ZYVzJCMUQxd3NqWkV5bDNqa0Nn?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
@@ -4140,7 +4140,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.46,
+            "zscore": 0.45,
             "spike": false
           }
         },
@@ -4739,7 +4739,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 0.64,
+            "zscore": 0.63,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.78,
+            "zscore": -0.79,
             "spike": false
           }
         },
@@ -5260,7 +5260,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.12,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -5299,7 +5299,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.25,
+            "zscore": -0.26,
             "spike": false
           }
         }
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 56,
-            "zscore": 7.26,
+            "count": 57,
+            "zscore": 7.42,
             "spike": true
           }
         },
@@ -5655,8 +5655,8 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "These Two Biotech Stocks Recorded Fresh Milestones Today – What’s Driving Today’s Gains? - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZktBUDR1NzM0YW5pN1NGVGNXSjcwRXowNDIzaUZGM3pKNzEyX25vYVh5R2h6SXIwREM5bFpMUXU4dndFNHBSWV9WMzh2c1FXOUVocEV1QXhXMV9iNXNjUkFiOU9MT2V0MFlDUW1zYWdrdDh4X3MwQnYyWWpQczNhbTZOMlVJWDA0ZUR6WnFQLUlSTTFkWGp5WkV3bkVYN1Z3aXlWMld3VElNTlROaGd0ZTJSamVMSmZ1TlNsWXdjNEwxT2FhcjBKdHJEY0drSDJEOEZXcHRJc29TYjM2OGo0?oc=5",
+              "title": "These Two Biotech Stocks Recorded Fresh Milestones Today – What’s Driving Today’s Gains? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTy1nYUZoS2lrajdMNTV0MEZYaXh4U1NuRXpsV3BCNHExbWREX1gxUjZKQ2RuaWg0TEM0MVZQZlpuQWwxdzllQlJxaU96dXE3c3gyUUR1RlZ1aFFvbkZWLWRxeVltbUlkZ18xQmJSd2xWU1ZFYUJOMWZDZno4aHFaVy1zdTdzSFlmTUpOTGwyZlZkZnczRGNPYTZn?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
               "event_type": "other"
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-29",
-      "return_pct": -3.48,
-      "zscore": -1.92,
+      "return_pct": -3.16,
+      "zscore": -1.78,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
