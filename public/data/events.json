@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T14:38:00+00:00",
+  "generated_at": "2026-08-29T18:45:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-08-29",
-          "return_pct": -3.16,
-          "zscore": -1.78,
-          "classification": "market-wide",
+          "return_pct": -2.62,
+          "zscore": -1.54,
+          "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": -3.16,
+          "market_return_pct": -2.62,
           "events": [
             {
               "source": "googlenews_btc",
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": -2.57,
+            "count": 50,
+            "zscore": -2.04,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-08-29",
-          "return_pct": -4.18,
-          "zscore": -1.91,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.16,
+          "return_pct": -3.8,
+          "zscore": -1.78,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -2.62,
           "events": [
             {
               "source": "googlenews_sol",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": -1.0,
+            "count": 23,
+            "zscore": -0.64,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-08-29",
-          "return_pct": -4.46,
-          "zscore": -1.61,
-          "classification": "market-wide",
+          "return_pct": -4.31,
+          "zscore": -1.57,
+          "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -3.16,
+          "market_return_pct": -2.62,
           "events": [
             {
               "source": "googlenews_link",
@@ -748,25 +748,25 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Fed Rate Hike in September 2026 is Now More Likely Than Not - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTUJuUFhPT001NS1uQjBkVWt1VGs0UXRNLTUwSThmS2RKcVFrTU41eWg1Z1VJNzdfNE5HZ2FPdzNpOUJMelEzNEctRmllYWRjYnB5dU1IRVlLZVdTaXhvaFBuSlg3Njd2Q0g2MEpPZWFvcnJQOWMwQzF1NVJRWkNkYzVCRUlnLXNDTVFPSkQzOWxJUl9sdURPMDdaNFNkN1U?oc=5",
+              "source": "googlenews_link",
+              "title": "Chainlink: Uptrend vs Bitcoin Signals Dip Buy - blockchain.news",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVS1ITG1mUmpGSWJwM1I1ZmN1SGVMdXBuX1VDRV80bzJwU2pzakx0WHBIaTJpMDZJSVJWcWVlY2N5M3BKd1ZJSUh0VUdMWlpxdmplLTlfR1NqZm5KR2cxU2U2bXR0VGtiYW80WVhlc1lITm9yYk9VY2xUSXVzdWQ5cmdzanE?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
-              "event_type": "fed"
+              "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Fed chair Warsh warns inflation fight is not over as markets eye rate hikes - VIDEO - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUFZqY0dTTjNHcjA4OWtUSWxVZ2h2eHN3Q0NhNkh0dGtzX1BuTHlyRW9tMzBXUGNQdzZ4cHVrUVNHZ3Q3LThLY0JOZjYyUmJoSEZwUjNlN0Q1eEVLRENDcm5CbXdHVmQyczl0cnFIUXNmeThSMjlscXpsWEFtY3o2aHhQUTJmdjhMZWRRVnpwcUtPa1pUM0tYd3R0YkJvcDNxdHZabA?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.584,
-              "event_type": "fed"
+              "source": "cointelegraph",
+              "title": "Trump-promoted brand touts GOLD before token collapse",
+              "url": "https://cointelegraph.com/news/trump-linked-account-list-gold-token-crash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.511,
+              "relevance": 0.483,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -1.02,
+            "count": 2,
+            "zscore": -0.97,
             "spike": false
           }
         },
@@ -805,7 +805,7 @@
           ],
           "coverage": {
             "count": 23,
-            "zscore": 0.24,
+            "zscore": 0.23,
             "spike": false
           }
         },
@@ -883,7 +883,7 @@
           ],
           "coverage": {
             "count": 25,
-            "zscore": 0.42,
+            "zscore": 0.41,
             "spike": false
           }
         },
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 2.34,
+            "zscore": 2.32,
             "spike": false
           }
         },
@@ -2444,9 +2444,9 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Eversource Energy stock holds above $72 as utilities debate refunds and rates - Ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMFBNV3FQQVFRNTlLYWhONC1pZHVPVnRmUDVyajJpOE1wS19ySzkwVmVKQ1dLUXo3b21wOGxoYk91UzRsYW05ZEtZY1BlcmZwMlNRWVFXSC0yZW5kYk5JSEVlVnBQSllhX1pCTVcyQTc3dEFjbmFQQzhaaFpVX0tYcGRlQVVOSjJGTlZtYXNWb3VJVkwydXlRdVYyZEtKNk45VlFwM0FKTHRyYU82MzdsalZjRG5fTVNBdHlZRmdQTGtIeHF0WWxoY0M5cy11QQ?oc=5",
-              "sentiment": 0.273,
+              "title": "Is Ameren (AEE) Outperforming Other Utilities Stocks This Year? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcUlSS2hHUmlFS0QzSFA2dFp0RjE1c2NjOGIzMnoyOUhERzh1YjdRV1JKTFVzbHJYQ2NzUi1rWWJTaWJiSThycU5VQlB4WkloazZKRkRSU3U5elZjUFlFRXBGa3FCT0laOGlPQ0NmVjZpUUc3dGFHMzBDOXVESUtDYldZQ1N4REhNQUJBT0VrVU5ZU3lIOXVOckVraDU5QUtHaEhTanpWTVo?oc=5",
+              "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             }
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.62,
+            "zscore": -0.63,
             "spike": false
           }
         },
@@ -3495,7 +3495,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.82,
+            "zscore": 1.8,
             "spike": false
           }
         },
@@ -3899,7 +3899,7 @@
           ],
           "coverage": {
             "count": 40,
-            "zscore": -0.45,
+            "zscore": -0.46,
             "spike": false
           }
         },
@@ -5586,7 +5586,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.18,
+            "zscore": 0.19,
             "spike": false
           }
         },
@@ -5624,8 +5624,8 @@
             }
           ],
           "coverage": {
-            "count": 30,
-            "zscore": 2.18,
+            "count": 29,
+            "zscore": 2.05,
             "spike": false
           }
         },
@@ -5663,8 +5663,8 @@
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.77,
+            "count": 20,
+            "zscore": 0.91,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-29",
-      "return_pct": -3.16,
-      "zscore": -1.78,
+      "return_pct": -2.62,
+      "zscore": -1.54,
       "max_abs_z_recent": 5.9,
       "recent_days": 10,
       "benchmark": "BTC",
