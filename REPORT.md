@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-08-28 19:15 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-29 12:57 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Bank-Issued Stablecoin | hot | 0.97 | +5.6% | $232M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| 2 | PolitiFi | hot | 0.97 | +1.1% | $829M | official-trump, melania-meme, constitutiondao |
-| 3 | bStocks Ecosystem | hot | 0.94 | +0.4% | $505M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
-| 4 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.93 | +0.8% | $583M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 5 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.93 | +0.8% | $583M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 6 | Fiat-backed Stablecoin | hot | 0.90 | +0.1% | $276.8B | tether, usd-coin, usds |
-| 7 | Crypto-Backed Tokens | hot | 0.90 | -1.2% | $388M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
-| 8 | USD Stablecoin | hot | 0.89 | +0.1% | $287.7B | tether, usd-coin, usds |
+| 1 | Crypto-Backed Tokens | hot | 1.00 | +22.8% | $408M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
+| 2 | Communication | hot | 0.97 | +22.1% | $169M | helium, xpin-network, spacecoin-2 |
+| 3 | InfoFi | hot | 0.96 | +1.4% | $254M | origintrail, kaito, bubblemaps |
+| 4 | Bank-Issued Stablecoin | hot | 0.96 | +5.6% | $232M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
+| 5 | Arcade Games | hot | 0.95 | +4.3% | $102M | audiera, pepecoin-2, hamster-kombat |
+| 6 | Account Abstraction | hot | 0.94 | +3.6% | $338M | trust-wallet-token, iotex, home |
+| 7 | bStocks Ecosystem | hot | 0.93 | +0.8% | $506M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
+| 8 | Pons Launchpad | hot | 0.91 | +35.1% | $166M | pons, thinking-cat, yolo-2 |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Robinhood Chain Meme | -13.8% | $417M | cash-cat, degen-base, pipedog |
-| Cat-Themed | -12.4% | $719M | cash-cat, purr-2, wiki-cat |
-| Terminal of Truths | -11.2% | $209M | fartcoin, goatseus-maximus, aiwithdaddyissues |
-| NFT Marketplace | -10.9% | $175M | blur, magic-eden, collect-on-fanable |
-| Runes | -10.4% | $147M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
+| Ansem.io Ecosystem | -13.2% | $145M | the-black-bull, bullshit-coin, solangeles |
+| Runes | -11.7% | $140M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
+| Bitcoin Meme | -11.4% | $137M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
+| Stock market-themed | -7.9% | $510M | spx6900, dowge, stonks-4 |
+| Bitcoin Fork | -6.8% | $5.4B | bitcoin-cash, bitcoin-cash-sv, ecash |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
