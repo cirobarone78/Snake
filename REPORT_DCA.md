@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.7% | 33.3% | +19.7 pp | 72% | 1.000 |
+| 1 | POL | 13.4% | 33.3% | +19.9 pp | 68% | 1.000 |
 | 2 | LINK | 37.2% | 33.3% | -3.9 pp | 86% | 0.500 |
-| 3 | SOL | 49.1% | 33.3% | -15.8 pp | 87% | 0.000 |
+| 3 | SOL | 49.4% | 33.3% | -16.0 pp | 88% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -32,6 +32,16 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.0 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**AAVE — Aave**
+
+Protocollo di prestito on-chain fra i più grandi per depositi.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 5.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -71,7 +81,7 @@ Exchange di derivati on-chain con volumi elevati.
 - **Cattura del valore**: i ricavi finanziano riacquisti del token. Una quota delle commissioni finanzia riacquisti del token — cattura diretta e insolita nel settore. Contro: circolante intorno a un quarto del totale, quindi sblocchi molto pesanti davanti, e codice del motore non pubblico.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 4.29 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 1.7 anni.
+- **Età**: almeno 1.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XRP — XRP**
@@ -114,8 +124,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 28
-- stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 11
+- stablecoin o token ancorato: 19
+- volume troppo basso rispetto alla capitalizzazione: 16
 - già in portafoglio: 6
 
 ## Limiti
