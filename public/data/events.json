@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T23:31:00+00:00",
+  "generated_at": "2026-08-30T05:40:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-08-28",
+          "return_pct": -3.02,
+          "zscore": -1.72,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -3.02,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Arthur Hayes Predicted $250,000 Bitcoin. But Another Investor Says the Plan Behind It Is Already Failing - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQNG1jRk05N2lfRVZPdnBkSzdUTURCSUtwQjFuRVRxQ05vVENqb1lqbzB6RGdKMlVZTXNrSnJ0dm1DVkJMaXNvaTVjZlJNalpURW1YNTByRTdnb1VfOVNZaGY1cnRtRk02UmZEdlk2dVFRZzh0NTRQVGtZTlg0WGdwVFlybnZPNXFVX3ZxckZ0LTI2cW1GbDhDLXN4RzNhMk5USkViZE9WSXc0c3NpektGdDBSM1NMTjIxVng2dS1TOVBTTjFPM0pGNXJDalVoVHhaRkZtLVJDOXhpT2pOOFlKSU4zZDVlek1RQThsTk5lWHdCQQ?oc=5",
+              "sentiment": -0.665,
+              "relevance": 0.866,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Arthur Hayes Predicted $250,000 Bitcoin. But Another Investor Says the Plan Behind It Is Already Failing - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZkdTV1NuRlVQSWpUNGhKWVR2Vkc5RGFjeS1WS2xKMEszWFpZbDBLa1RJMHNfT1huLTZjeVFTU29qTHZIclo2RDQ1SUZCTzFhamtwWDljWnRJUWNiMUFMM2tuOVJhTldFU1UtQmRFbXV5cElxcXZYamhvX0lrdEtEZmtaMTNTa1QtNUZmakIzNU1IdWRMZGV5ekdiZw?oc=5",
+              "sentiment": -0.665,
+              "relevance": 0.866,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin (BTC) Rejected at $80K, Ripple’s XRP Plunges Hard as Rally Cools: Market Watch - CryptoPotato",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM3lVSWhRakt4c3g3ektJNHJ1elFabEFyaUNoMlVjTGM5ZU1UVGgtUURXNVVGZWNSUFlSc0FwYU5vdmNNLXZkd3ZNdVpKNXlUeEhiLWE5cG1TZV9Fb2owYURMY0c1UkVRYUtQS1hhS19HRHl4VnhBQU56MFN4dkpsOGZtOUFTaXRTQVp6dWtqeXM5ZEFsTnVsLVdsYTAwd2JLQTFfS2hXNWo4Zw?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 103,
+            "zscore": -0.58,
+            "spike": false
+          }
+        },
         {
           "date": "2026-08-21",
           "return_pct": 7.26,
@@ -200,45 +239,6 @@
           "coverage": {
             "count": 147,
             "zscore": 0.91,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-27",
-          "return_pct": -2.47,
-          "zscore": -1.78,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.47,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Cardano (ADA) Founder Charles Hoskinson Issues Critical Warning for Bitcoin (BTC): “If It Cannot Adapt, It Could Lose Its Leadership!” - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DX1lmTEFmZjRCUHh1bHZkT0ltem9xMm9CQWN0cnpDVDNUX1Rqb2dEX2xyQV9SVUlDZVRjSUdhb1IyQWVvYUFDRUNzQ0Q3MXhRckJjXzN3OHk?oc=5",
-              "sentiment": -0.771,
-              "relevance": 0.908,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Shiba Inu Says Reports of Its Death 'Greatly Exaggerated' as SHIB Explodes 22% in a Week — What's Driving the Surge? - Yahoo Finance UK",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUThlTmlSWEFLZTRiQ0pheDBfX2NFTXFSa0RfWi11OWo2R2YxR2hudEVMeVdZV1VPVnpFY2U5Q01BYlJmTFk2dU96ZGJDb3VpOThIai1BWDFNbXZlbUpNVnpYVmcwWlVhVjhWelIyQUhpcUZtQ2pLUWotN0pHT3lQVEpBNA?oc=5",
-              "sentiment": -0.68,
-              "relevance": 0.872,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Shiba Inu Says Reports of Its Death 'Greatly Exaggerated' as SHIB Explodes 22% in a Week — What's Driving - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYU00Uk9pcHh2Um1SOGFMMzJnLXNjMks5ZElCZkhVT0JIOS1tZXo5eV9ibEpCYWdNYjFTSWUxZGNZUURHTG9jaUhOQmFlX1c1Mks5Y3RoVHNTTkFmUXlBdk15RTY3TDAwenA2eVdRR2NjUmRXVWFESjBqZWxjNk8taS1PTzk2OF9OZGVEaGUyZ2JzLXN0dTM2TVk5d3JBQ09nbldZbw?oc=5",
-              "sentiment": -0.68,
-              "relevance": 0.872,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 144,
-            "zscore": 0.85,
             "spike": false
           }
         }
@@ -491,41 +491,41 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-08-29",
-          "return_pct": -3.22,
-          "zscore": -1.58,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.48,
+          "date": "2026-08-28",
+          "return_pct": -4.65,
+          "zscore": -2.07,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.02,
           "events": [
             {
               "source": "googlenews_sol",
-              "title": "Trump-Backed Brand's GOLD Token Collapses on Solana, Sparking Scam Speculation - KuCoin",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTkZyR3N0YTBkSXhWMUY2bEw3MG9jVjhGd2xXUXRJQ3pyUFQ4NXFQUGo4RUVTT0xoOVU3aE4xU3hSZlJFVTRRN0FkZXZsa2tqSDFoc0k4Vzg5RU5Zd1A1ZXNPNV9hMzd4R0NIQ1lNQlFfQ3d0SzVDakVaMUIwS0pNazNndTdnOFlYSGJJaHlqLW9XQmZLaElLVUVMVVE2LVR0Z2FndF91akRaYlo3VXJPcQ?oc=5",
-              "sentiment": -0.71,
-              "relevance": 0.884,
+              "title": "Ethereum and Solana are hosting trillions in dollar volume, yet their native tokens risk losing direct consumer demand - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM1Z4MHhCeFpYT0x3U1dyV3Rjci13MjZpaUJyM21TWDlNOThBeGNwTC1lVTB3VGhjVFF4M2VIbUZYZDhRRkxmMkdJajMzX1ZvQ0NMOFRxbHRNZUhPRTlwTVFRRDdVSHdEcFZEQVlfT19renp2ZldRRVRWSnpsbGpkTkhieWRBT2dHSGd1dWlUQXFJTGdKaXVGUXpkMnBLTjdBd19DMUdOdw?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.855,
               "event_type": "other"
             },
             {
               "source": "googlenews_sol",
-              "title": "Avici Says 1,685 Users Lost $500,859 In Rain Card Contract Exploit - The Defiant",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRW5iZFZfOHVXYzVhLVVaQk41UVdraExqdlBGU1hlUldRVmM0R0YzU2FlbGdqSFZQbzdTV3lkMUR1cUdTWVdWQVU5WG1tWDVybVdzU1VoZGRXZE53WHoxbDdWZXBkUzloRVF4d2JSR3VhMEJGcjBndndhUmxCbmtJQXVuZXV1ME14Zy1mcERoZVFGa2ZaY1ZtQXQwX2RrZFhxZE1wdzc4bnFYX1dibTdvYk9FY1VLQWpyWEE?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
+              "title": "Avici attack drains over $1M from Solana users - Crypto News",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KS25lR1Z6TGJZWmdqNklMTV9HbjlCVThHMVJmWThHaWc0WWFMbmxQRU1LQVV5NVFPTVgzdjd6RHdzNWJCbEZjdmtSZlhqMERjaXF3OWticEI0ekRQS0pWUUFTSDhYQWVROTgzTnR3cERnY0xXaEZldVpuTjZiS1U?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
               "event_type": "hack"
             },
             {
-              "source": "googlenews_sol",
-              "title": "This New AI Agent Platform Could Send Solana's Price Higher in September and Beyond - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdDA0Ym5NbWlyRm0xUVFZMjJPZ3AzOUJKcUZhaVlneUhPTEduaVFKSm1paUtCbkR6MW15NnAwUVdBUDJZZ3RreDBDRzd6MmsyT3dHa3BhRHN6MjBoanNsOHZLZ2tJTHFIZ1BOT1BpRXZYZGtoMWozSUtOQVJDTndOalMyaWtsdE1jcjhUSWlLWElFNGhtVHZEWg?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
+              "source": "googlenews_fed",
+              "title": "Fed chair Warsh warns inflation fight is not over as markets eye rate hikes - VIDEO - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUFZqY0dTTjNHcjA4OWtUSWxVZ2h2eHN3Q0NhNkh0dGtzX1BuTHlyRW9tMzBXUGNQdzZ4cHVrUVNHZ3Q3LThLY0JOZjYyUmJoSEZwUjNlN0Q1eEVLRENDcm5CbXdHVmQyczl0cnFIUXNmeThSMjlscXpsWEFtY3o2aHhQUTJmdjhMZWRRVnpwcUtPa1pUM0tYd3R0YkJvcDNxdHZabA?oc=5",
+              "sentiment": -0.459,
+              "relevance": 0.784,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 26,
-            "zscore": -0.47,
+            "count": 63,
+            "zscore": 1.85,
             "spike": false
           }
         },
@@ -732,41 +732,41 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-08-29",
-          "return_pct": -4.14,
-          "zscore": -1.52,
-          "classification": "asset-specific",
+          "date": "2026-08-28",
+          "return_pct": -4.28,
+          "zscore": -1.56,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.48,
+          "market_return_pct": -3.02,
           "events": [
             {
-              "source": "googlenews_link",
-              "title": "Crypto’s Next Breakout Story? Chainlink and XRP Rally – Apeing’s $0.0001 Stage 1 Could Take the #1 Spot Among Top 100x Crypto Picks - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPaU5VUWYzQ1VhdE1DUUIwd2I0VnJZR1Q1UGs0UHBmUEZfN2dVTTZoRlYyNF9namdlTHFkN3Z4dU1WUmI3cHZwWXZ6TmlEVFk1WEt5bWN3Z25xRHlmb1NzVHFEc1lScWV5NXhpMlFDZFk2MHo5ZFhqaFNSM1dQa3JPV3I4UG5ySEVaN19rZ1haenR3a3NBa0JyYUZoWUVGVkRoc2xGSDQyUXU1RWxMQjBFTmFRcEZNSUx2cDhBcUxoN1lDWC1LeHFmZWFCYm04eDIyeWh1bi1weTNlbGRITlpGakF0NFFOYkZQZFZjWkZkejdGZ3VUNThfUUFQWnNkZzFVTHpqdkFtNzFYVEhKZGd6RkluXzZwd2RxeXc4SE9qLXdiNFRMM0U3RHcyZXhJQmM2VFYyM1NJbmZUU1JjLUpWYzlrVVZHZUk?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "googlenews_fed",
+              "title": "Fed chair Warsh warns inflation fight is not over as markets eye rate hikes - VIDEO - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUFZqY0dTTjNHcjA4OWtUSWxVZ2h2eHN3Q0NhNkh0dGtzX1BuTHlyRW9tMzBXUGNQdzZ4cHVrUVNHZ3Q3LThLY0JOZjYyUmJoSEZwUjNlN0Q1eEVLRENDcm5CbXdHVmQyczl0cnFIUXNmeThSMjlscXpsWEFtY3o2aHhQUTJmdjhMZWRRVnpwcUtPa1pUM0tYd3R0YkJvcDNxdHZabA?oc=5",
+              "sentiment": -0.459,
+              "relevance": 0.784,
+              "event_type": "fed"
             },
             {
-              "source": "googlenews_link",
-              "title": "Chainlink: Uptrend vs Bitcoin Signals Dip Buy - blockchain.news",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVS1ITG1mUmpGSWJwM1I1ZmN1SGVMdXBuX1VDRV80bzJwU2pzakx0WHBIaTJpMDZJSVJWcWVlY2N5M3BKd1ZJSUh0VUdMWlpxdmplLTlfR1NqZm5KR2cxU2U2bXR0VGtiYW80WVhlc1lITm9yYk9VY2xUSXVzdWQ5cmdzanE?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "googlenews_fed",
+              "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says - BBC",
+              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GNTVKcDg0ejZUa2J6R3VtYXFETzdfd2FRRndtN2VGTVBxemRfLVRzRHRiRzJ5eGNNTUVWSGJtLVcwLW80bUZTZDliWllLVW1DNEQ3YnUyVXktSFJJ?oc=5",
+              "sentiment": -0.276,
+              "relevance": 0.71,
+              "event_type": "fed"
             },
             {
-              "source": "cointelegraph",
-              "title": "Trump-promoted brand touts GOLD before token collapse",
-              "url": "https://cointelegraph.com/news/trump-linked-account-list-gold-token-crash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.511,
-              "relevance": 0.483,
+              "source": "googlenews_fed",
+              "title": "RBNZ And BoC Rate Decisions Loom As US NFP Takes Center Stage - Bitcoin World",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzdk1JTVVSSmVLenU3enRBUDVUUHZvbGhDejRTa2VLT0s1NC1CeS1XRUgtVDJGdGktN0VseGdGYWVUYlk5SGRDNUNad2VremV0NGxGUDU4OTVNRGk3NWcybVNMaGxNYkxXOXY4WDZaMFFPWHZhNHppbA?oc=5",
+              "sentiment": -0.226,
+              "relevance": 0.691,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.96,
+            "count": 14,
+            "zscore": -0.3,
             "spike": false
           }
         },
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.49,
+            "zscore": -0.5,
             "spike": false
           }
         },
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.35,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.58,
+            "zscore": -0.59,
             "spike": false
           }
         },
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 2.12,
+            "zscore": 2.11,
             "spike": false
           }
         },
@@ -1769,7 +1769,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.65,
+            "zscore": -0.67,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 0.13,
+            "zscore": 0.12,
             "spike": false
           }
         },
@@ -2088,7 +2088,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 2.16,
+            "zscore": 2.14,
             "spike": false
           }
         },
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 1.19,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 0.45,
+            "zscore": 0.44,
             "spike": false
           }
         }
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 2.32,
+            "zscore": 2.31,
             "spike": false
           }
         },
@@ -4863,7 +4863,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.9,
+            "zscore": 0.89,
             "spike": false
           }
         },
@@ -4875,14 +4875,6 @@
           "severity": "notable",
           "market_return_pct": 0.21,
           "events": [
-            {
-              "source": "googlenews_defense",
-              "title": "3 Defence And Aerospace Stocks Linked To Rising NATO Security Demand - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbGQ4S1p3cVAzankwNnhsYkEzLWg4eXByLWNNX1ZkTFVxdjRBbDJRYldVbFIxUnpHLVJ4alNMMGx6MXhLb3dVS0FxVDlqUXdOamxNWl9uZWgwaDdtT25uZFdTekYyTGVOdzRobWh1TDFYazktS2xTbWRiZjlXU1ZoUXZES01hR05VQjFaRnl3ejNpclctRmdPNzYzblBfZjZIQjlITk1pQTVBZEY0WjgwUU4xdXRJWHhTV2tMa0tVRC1YN05pZUN0dUFRaHZYNW_SAdQBQVVfeXFMUE5ldDYxMVRUOXN2cEFMWERXNHRaRmFDMVc0Z09HY3cwUDVtY01OVVhlbWJmX2RFU1NtX1FNYW83V2FVZEZjUlB5dmdMNVJ0bjR4MDd1LTRlX3ZzMjVOOGk5dkdUQUtzQXRja3E1bXhvcWlNRHBlRURLX2RZNTdwUHpBcVBUTm02R0szcTJtVG5sekNOVHdVY3FfMVZmUTMtOTU3dnlJa0FKV2VtUndUMnRsSEF1YVdTd09reUM3cmk0M3JxMDRTeW5zSXhiZnBiQ2N4STg?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
             {
               "source": "googlenews_defense",
               "title": "Aerospace and Defense Stocks Q2 Highlights: Cadre (NYSE:CDRE) - StockStory",
@@ -4898,11 +4890,19 @@
               "sentiment": 0.128,
               "relevance": 0.6,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_defense",
+              "title": "3 Defence And Aerospace Stocks Linked To Rising NATO Security Demand - Sahm",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR1owUWpwZHA2YTVxaXN0enI0Sk0zUmNWSTJKSzBwRTF4emtrVC02UHYzV1gzMU1BREZid2ZkdUp6Z0EtbTZZZXNBS1RjdVphSnM0bEtiRmw3UkxmQzI0bDFWNUhCRzA3Z0VETkFHdDI3M2hBUm5SWVpYbFJ2Mm92MW1qODB4bXVhMHlLaWJBYWlCMzI3M190ckNqWVNWbmw0bEhoNmFYeHg3MTNNd3FFN2s3ZUNMWHVvNE56Zw?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.2,
+            "count": 5,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -5501,7 +5501,7 @@
           ],
           "coverage": {
             "count": 66,
-            "zscore": 6.44,
+            "zscore": 6.43,
             "spike": true
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.69,
+            "count": 20,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -5608,24 +5608,24 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "These Two Biotech Stocks Recorded Fresh Milestones Today – What’s Driving Today’s Gains? - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTFEU0I2UHZHa05YalVESEF2cW8zVHdDLW5Wc0NNUHhKVkJOZ244VlVGSUF3TGt1TzJwbGxzbTYzYWw5TDQwc3JmSGFtWmdZMlpDQVpNeHQyZE5WYzBPTkFIOWp6LWJ1d2tfbkV4WmRrX0Iyb2l1U0pyX2E3cmRHM25MS1BLZkVVR0JrT1BRRU40ZzI3N1RZTEM2UUYzNElJaC1QemIxYw?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
               "title": "Touyun Biotech To Issue 123 Million New Shares At Hk$0.122 Per Share - TradingView",
               "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQN1pTbTFwcFVsSTNKaXA1WEU3OWlzMDlkcEVYOFppbFcxcTFEQWl2RXVXd0lJb1ZyMVVyVW9iZ3EzcDdWV2RMQzFSVkdxcG5TaGZNZk9DNWhwSWxlTFVrVlF1X1B4NGlzeTFTcm9wMTA1Z0FUUHNRRENSR216WXV3M0pnai1pOGhwN2VVal9ZdDRzS3lfV1lXVVlxZWwtekZlckd3WE51TDM5cmNydUdnc09QdXF1N2stSDl2azJIYWpyR0lJRGJVSHA4RUs4Y0htX3gzMg?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "QUICK SPARK: Nvidia-Backed Biotech Says AI Could Make Biology Programmable - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOb1RFeDg2OHVMZExaeUpRTU5FdGpjTWRPTV9NamFkWXNHMUV1SGYyMTRrRmhvMFRXQTlDY2ZmQXJ6TVNIUWsyeXRzRE0xMFFWZG1IcnFwRGdodlc3TWhEQTR2QVlzZEdjSmR4UlhXWElVYU53NHpkQ3pZcThJWkZpZnFKc0VIUDBlaDlXZC1TZndhdkJfd0dMcXo2U2xrZlZYNE5FLTlUdmY5cUlHMkdtUk9KQUlEcmNadGRsWGE1dS1CWThob1A2eHNleTc?oc=5",
+              "sentiment": 0.389,
+              "relevance": 0.755,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 0.31,
+            "count": 16,
+            "zscore": 0.19,
             "spike": false
           }
         },
@@ -6031,13 +6031,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-08-29",
-      "return_pct": -2.48,
-      "zscore": -1.48,
-      "max_abs_z_recent": 5.9,
+      "date": "2026-08-30",
+      "return_pct": 0.38,
+      "zscore": -0.13,
+      "max_abs_z_recent": 3.54,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-08-28",
@@ -6046,7 +6046,7 @@
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     }
   }
 }
