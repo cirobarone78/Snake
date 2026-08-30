@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-08-29 12:57 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-08-30 12:36 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 1.00 | +22.8% | $408M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
-| 2 | Communication | hot | 0.97 | +22.1% | $169M | helium, xpin-network, spacecoin-2 |
-| 3 | InfoFi | hot | 0.96 | +1.4% | $254M | origintrail, kaito, bubblemaps |
-| 4 | Bank-Issued Stablecoin | hot | 0.96 | +5.6% | $232M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| 5 | Arcade Games | hot | 0.95 | +4.3% | $102M | audiera, pepecoin-2, hamster-kombat |
-| 6 | Account Abstraction | hot | 0.94 | +3.6% | $338M | trust-wallet-token, iotex, home |
-| 7 | bStocks Ecosystem | hot | 0.93 | +0.8% | $506M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
-| 8 | Pons Launchpad | hot | 0.91 | +35.1% | $166M | pons, thinking-cat, yolo-2 |
+| 1 | Communication | hot | 0.99 | +30.6% | $224M | helium, xpin-network, spacecoin-2 |
+| 2 | Bridged Stablecoin | hot | 0.98 | +10.6% | $115M | binance-bridged-usdt-bnb-smart-chain, usdt0, binance-bridged-usdc-bnb-smart-chain |
+| 3 | Pons Launchpad | hot | 0.98 | +60.6% | $272M | pons, thinking-cat, yolo-2 |
+| 4 | Bridged-Tokens | hot | 0.96 | +6.8% | $643M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
+| 5 | Capital Launchpad (Kaito) | hot | 0.96 | +7.2% | $106M | espresso, boundless, limitless-3 |
+| 6 | Bridged DAI | hot | 0.95 | +10.6% | $115M | polygon-pos-bridged-dai-polygon-pos, anubis-bridged-dai-anubis, dai-on-pulsechain |
+| 7 | Robinhood Chain Meme | hot | 0.95 | +11.5% | $506M | cash-cat, degen-base, pipedog |
+| 8 | Index Coop Defi Index | hot | 0.93 | +11.0% | $5.9B | weth, uniswap, aave |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Ansem.io Ecosystem | -13.2% | $145M | the-black-bull, bullshit-coin, solangeles |
-| Runes | -11.7% | $140M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
-| Bitcoin Meme | -11.4% | $137M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
-| Stock market-themed | -7.9% | $510M | spx6900, dowge, stonks-4 |
-| Bitcoin Fork | -6.8% | $5.4B | bitcoin-cash, bitcoin-cash-sv, ecash |
+| Tokenized Assets | -48.7% | $24.0B | figure-heloc, blackrock-usd-institutional-digital-liquidity-fund, hashnote-usyc |
+| Real World Assets (RWA) | -32.2% | $47.1B | figure-heloc, chainlink, stellar |
+| BackedFi xStocks Ecosystem | -13.9% | $691M | strategy-pp-variable-xstock, bending-spoons-xstock, circle-xstock |
+| Metagovernance | -6.8% | $211M | convex-finance, dinero-2, index-cooperative |
+| Made in USA | -5.6% | $305.1B | ripple, usd-coin, solana |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
