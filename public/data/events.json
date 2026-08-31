@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T05:55:00+00:00",
+  "generated_at": "2026-08-31T14:17:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 63,
-            "zscore": 1.85,
+            "count": 64,
+            "zscore": 1.92,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-08-31",
-          "return_pct": -11.24,
-          "zscore": -2.75,
+          "return_pct": -18.54,
+          "zscore": -4.33,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.21,
+          "market_return_pct": 0.07,
           "events": [
             {
               "source": "googlenews_pol",
@@ -997,17 +997,17 @@
               "event_type": "other"
             },
             {
-              "source": "coindesk",
-              "title": "Bitcoin barely blinks as U.S. hits Iran, sending oil higher and stocks lower",
-              "url": "https://www.coindesk.com/markets/2026/08/31/bitcoin-barely-blinks-as-u-s-hits-iran-sending-oil-higher-and-stocks-lower",
-              "sentiment": -0.296,
-              "relevance": 0.431,
-              "event_type": "geopolitical"
+              "source": "googlenews_pol",
+              "title": "Polygon Labs fixes major security flaws in two hard forks, POL trades below $0.10 - Bitget",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8yOGs2TjBaVDRuTGU1NFJuc0t4a3J0VEdiVXJ2REpLUkg1RlU1R3hvLVFNU29iWXluN1BVdUtDMUdIem56MDc0b0pRRlZpZEVEWkw1MW0wZUJlcHdsdjhnbE5UWdIBY0FVX3lxTE8yOGs2TjBaVDRuTGU1NFJuc0t4a3J0VEdiVXJ2REpLUkg1RlU1R3hvLVFNU29iWXluN1BVdUtDMUdIem56MDc0b0pRRlZpZEVEWkw1MW0wZUJlcHdsdjhnbE5UWQ?oc=5",
+              "sentiment": 0.317,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.6,
+            "count": 6,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.59,
+            "count": 10,
+            "zscore": -0.72,
             "spike": false
           }
         },
@@ -2419,6 +2419,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-08-31",
+          "return_pct": -1.83,
+          "zscore": -1.86,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.46,
+          "events": [
+            {
+              "source": "googlenews_utilities",
+              "title": "Utility Stocks Are Known for Being “Boring,” but This Canadian Stock Has Quietly Rallied 24% - NAI500",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZWFwVndRNmlFUHd3RTlfZTRRaXcyelFBM2t6NzhXUVNuUWpFZzRnTUttdEo4X3hFWG9zV2E1TUQ0Yk9zbzQ1dllILU9aVDFETHZMcjBpTEVKRGxvRzdxMWtMNFVFTDRoOVczZ3ZlMmp2c3JOd1JCTlNxQ05CbDlhNHZVZHgxd1FMT1BEOC1LT0ZtZEdaUWFQTjh0LU9XSWwxZVkzVlV4V1Z1c0tKa05KRFVLa2ZvcTcxSGpXX1Z3?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "Ten top-performing utilities stocks as August comes to a close (XLU:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdldLWmRIYzhKWFN5bWVkR01rNVppYnpUaWltdDVzZnBTTHhWVmFQaTRYWS04aTdvUmxiQWREOGxESXB3NnphVUZoODE1WXl3Q2Y2UW9TNXJvR2NEWURqRUtNWmRyM3A4WkZabWFlUkNXenZCUm5lQUItYTFlN3FXcHFLREZRT01YSWtENTJZcEtWX24zalRJTWI2NHBjZ0VOUUE?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Asian stocks slide as Fed rate hike bets rise, oil prices jump - thereport.live",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQclhXaW5xanJZZTItdzRBS09GWERyT2ZfdW5BNkZRZlVpVUh1QldnMS1oV2ZCNFBvcVdpbzlfODBxeDVWaEEta1Bwbm9vcF9peTJxVlVwNlA1WUZNd0JRUm5DWWlfOGJqM0lhMHlRWUx5UFFYTkhrakNjcjhrWnRtM3E3ejVXYzdBQVdEdkxzYTNVLUczZlJEa0xGcGQ5NzFK?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.36,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.56,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-21",
           "return_pct": -2.28,
           "zscore": -2.79,
@@ -2453,7 +2492,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.09,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -2610,45 +2649,6 @@
           "coverage": {
             "count": 10,
             "zscore": 1.02,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-06-08",
-          "return_pct": -1.87,
-          "zscore": -1.54,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.3,
-          "events": [
-            {
-              "source": "googlenews_utilities",
-              "title": "Deutsche Bank cuts targets for utility stocks as Labour leadership speculation rises - Sharecast.com",
-              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPMkxQWDVXXzFhaVpvZHUwbGRwT2xWVUVCWkxOUG9wVGdONFBWeEtLZTRxcmRTcFVJOWhSTTBKRkJEMk1DV3VyRUlESlpfRW1NNkdRV3FqSENTMGQwcGs3OVJoYlBMSUxnTU92YXYyQzlSZ2I0UDJFN2hhN3laLUl2RXl4R2dETjRfai05Y181cFlLTnh4VVZ5ckVlVnc1eU9rN1c5SVF3aEc0RWRVYXA0ZWdkT2FBak1UZDA3c3V1cVcxbDAyYXlZYnZtTmJDUVpscVZJQUFEb2RVUmFWdXVKbXBxM2lmR3hk?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "LNT vs. AEE: Which Electric Utility Stock Offers Better Growth in 2026? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQV9adEZRN1VfNVo5T0NJNXlNSm1hOXFyV1Bjd0VNREE0c05fSDgzdDVoZEdFQnpVSGNGRGpUOUx0bjlMb2tocThxVFpXb3RuYl9CS1hpYVlsN2VreVhhWTlWbWtIYjF5S3NUS3JHN1I1MDRiel9fQkR4WFJBMDVKRldiaGtMOHNWVkxwMl9TWnIzLWNoNFRv?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "LNT vs. AEE: Which Electric Utility Stock Offers Better Growth in 2026? - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRk1OdlJPZUJvRDlRNHBUNzJOdDhsQ3J1cElqLWs0Q3EzRndxNVhwbTV4eGZsZXFQTzJHTFRtQ0M1Y2RxdXQxLU9BZkNZbkJpcjdEcU5SRWFsTjVfeXkxTF9wdmhLS0cxWTRRV3NTMVUtM21USFpnTEI2eGh5cXBQa2FkaElydW15czFRaGthUFhXNEY2d3hNaFlrdWRlaDJyaGt2TDJkb3BLbldTM2pUVWlqWnFIMExZdXhYSmFXNWJEdw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 0.68,
             "spike": false
           }
         }
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.64,
+            "zscore": -0.65,
             "spike": false
           }
         },
@@ -4178,8 +4178,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.43,
+            "count": 8,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -5345,7 +5345,7 @@
           ],
           "coverage": {
             "count": 58,
-            "zscore": 7.48,
+            "zscore": 7.38,
             "spike": true
           }
         },
@@ -6032,17 +6032,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-08-31",
-      "return_pct": 0.21,
-      "zscore": -0.21,
+      "return_pct": 0.07,
+      "zscore": -0.26,
       "max_abs_z_recent": 3.54,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-08-28",
-      "return_pct": -0.25,
-      "zscore": -0.44,
+      "date": "2026-08-31",
+      "return_pct": -0.46,
+      "zscore": -0.78,
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
