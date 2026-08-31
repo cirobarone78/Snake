@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T23:42:00+00:00",
+  "generated_at": "2026-08-31T05:55:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 107,
-            "zscore": -0.47,
+            "count": 108,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 64,
-            "zscore": 1.92,
+            "count": 63,
+            "zscore": 1.85,
             "spike": false
           }
         },
@@ -564,7 +564,7 @@
           ],
           "coverage": {
             "count": 69,
-            "zscore": 2.39,
+            "zscore": 2.38,
             "spike": false
           }
         },
@@ -642,7 +642,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 2.01,
+            "zscore": 2.0,
             "spike": false
           }
         },
@@ -681,7 +681,7 @@
           ],
           "coverage": {
             "count": 42,
-            "zscore": 1.21,
+            "zscore": 1.2,
             "spike": false
           }
         },
@@ -973,41 +973,41 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-08-30",
-          "return_pct": -10.11,
-          "zscore": -2.51,
+          "date": "2026-08-31",
+          "return_pct": -11.24,
+          "zscore": -2.75,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.59,
+          "market_return_pct": 0.21,
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon (POL) Drops 4% on Security Disclosures and Social Media - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5tX0dOTE9BbmYzYWt2aXlQNzVkVm05SDIzMER2OUlhSzgyVjhkS0tBVm1JdDY1ckNwYlNxRC1zT0g4MndmVFMwX3g4c1Fta1llWFB0UHBWblpVTFpnOEs5dFhHMXVncC1DaTlUUUZNUXM?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.6,
+              "title": "Polygon Patches Multiple Vulnerabilities Through Austin and Kyoto: An Incident That Never Happened but Reveals the Risks of High-Performance Blockchains - MEXC",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNem4wbUs4dmlBVERYekIzQ3Z0NXhSSXphdnFZSXAzc3h4SXlKTktRRjZyVG4wWEt1Qnp1SGVhYW1sYXBuakoyeFpvSFRDLVczWkEybFBIckkxbERBeDJxeDVSMGdvamtDc3hmaWM3VWtyaDJhaWQxSXZndWw4SGNTcEctQU1WYVpJejRIYkIxX0tELVFBSWdmN0xkZ1RmTU16MHc4OWZwekVXNXZzendPb2MyX1M?oc=5",
+              "sentiment": -0.45,
+              "relevance": 0.78,
               "event_type": "other"
             },
             {
               "source": "googlenews_pol",
-              "title": "Polygon discloses security flaws fixed in recent hard forks - Bitget",
-              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQaDJialNwT0hzTVVudUNVUGlCbGl2eG5VRmVnQ0t2b085eC1UUGpfVlFFVEFzNHFzOXo2M3dHT0loQnhFZGdFTm1OX3NJVUJTVkQwZlRZLTM5ZkJwRlJCTjVuONIBY0FVX3lxTFBQaDJialNwT0hzTVVudUNVUGlCbGl2eG5VRmVnQ0t2b085eC1UUGpfVlFFVEFzNHFzOXo2M3dHT0loQnhFZGdFTm1OX3NJVUJTVkQwZlRZLTM5ZkJwRlJCTjVuOA?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.6,
+              "title": "Polygon Drops 9% Amid Technical Weakness and Disclosures - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPelhXQS05ZjNfRUU2VXRPWnEycXBMSWZROEJydlc4Q082VkV0a3JDV05kLVE0UkcwallqdExMT0lPM21mMTllSjZhellwSFBUUTU1bUFtSEhZVWtZWUFYai1jTTF0UXVzWnpVeW9pM04?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
               "event_type": "other"
             },
             {
-              "source": "googlenews_pol",
-              "title": "Walmart-Backed OnePay Adds Solana, Arbitrum and More to Crypto Platform - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLWNqRHc4UzZFOGd1VVdxcDd2Ul9Ra3lUZlRmSFRYMFNIWUNCVllRZDd3MkIwNEhyNDI3Nk53ZWZ4d21YOVQzNU1mN0tPclhFTHllRm1zdDRRQ0tiOUMzTWo4X3pLVEhXTEN1MnB1ZnlPWmJoYThNWWtUTXJ0aVpQRXJybS14LUYzX3p6dmxET18wcUNCa1dFYlpGcTg3NmN5eHUtUkN3NWV4TG5INlE0V3J3?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "coindesk",
+              "title": "Bitcoin barely blinks as U.S. hits Iran, sending oil higher and stocks lower",
+              "url": "https://www.coindesk.com/markets/2026/08/31/bitcoin-barely-blinks-as-u-s-hits-iran-sending-oil-higher-and-stocks-lower",
+              "sentiment": -0.296,
+              "relevance": 0.431,
+              "event_type": "geopolitical"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.39,
+            "count": 2,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.49,
+            "zscore": -0.5,
             "spike": false
           }
         },
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.58,
+            "zscore": -0.59,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.21,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -1.42,
+            "zscore": -1.44,
             "spike": false
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.84,
+            "zscore": -0.85,
             "spike": false
           }
         },
@@ -3495,7 +3495,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.8,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 39,
-            "zscore": -0.46,
+            "count": 41,
+            "zscore": -0.38,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.33,
+            "count": 45,
+            "zscore": -0.3,
             "spike": false
           }
         },
@@ -4140,7 +4140,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.32,
+            "zscore": -1.3,
             "spike": false
           }
         },
@@ -5251,7 +5251,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "5 Best Robotics ETFs to Buy in 2026 - U.S. News Money",
+              "title": "5 Best Robotics ETFs to Buy in 2026 - US News Money",
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ycXoybWdHd1JQUHRjdFdvbGJ3WDVzVjNyWHJMQjdPTHNsM0pobUx5U1hKazF1TG9ZRHI1ZTNValFkeVh6bUlLLTNxNm1WN0I0cXRTUk01U3ZsUUNLemgwZjVmT251OTJOQlVtRUg0aWhuczA2ZGlqRw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.6,
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 57,
-            "zscore": 7.32,
+            "count": 58,
+            "zscore": 7.48,
             "spike": true
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.69,
+            "count": 20,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -6031,9 +6031,9 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-08-30",
-      "return_pct": -0.59,
-      "zscore": -0.55,
+      "date": "2026-08-31",
+      "return_pct": 0.21,
+      "zscore": -0.21,
       "max_abs_z_recent": 3.54,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6046,7 +6046,7 @@
       "max_abs_z_recent": 1.26,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 3
     }
   }
 }
