@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-01 12:21 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-02 11:57 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 0.99 | +18.6% | $424M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
-| 2 | BONK.fun Ecosystem | hot | 0.99 | +39.4% | $128M | useless-3, fih, kori |
-| 3 | Rollup | hot | 0.98 | +14.8% | $1.6B | arbitrum, optimism, starknet |
-| 4 | Bridged-Tokens | hot | 0.95 | +5.2% | $640M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| 5 | Pons Launchpad | hot | 0.94 | +7.1% | $333M | pons, thinking-cat, yolo-2 |
-| 6 | Modular Blockchain | hot | 0.92 | +5.3% | $530M | celestia, movement, cartesi |
-| 7 | Account Abstraction | hot | 0.92 | +5.7% | $358M | trust-wallet-token, iotex, home |
-| 8 | Index Coop Defi Index | hot | 0.92 | +9.7% | $6.4B | weth, uniswap, aave |
+| 1 | Robinhood Chain Meme | hot | 0.96 | +11.4% | $597M | cash-cat, goose-token, degen-base |
+| 2 | Binance HODLer Airdrops | hot | 0.93 | +1.1% | $2.3B | pudgy-penguins, falcon-finance-ff, plasma |
+| 3 | Prediction Market Tools | hot | 0.92 | +20.4% | $148M | unifai-network, based-one, heyanon |
+| 4 | Buidlpad Launchpad | hot | 0.91 | +23.0% | $426M | falcon-finance-ff, lombard-protocol, sahara-ai |
+| 5 | Storage | hot | 0.91 | +3.3% | $1.5B | filecoin, bittorrent, arweave |
+| 6 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.89 | -0.0% | $592M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 7 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.89 | -0.0% | $592M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 8 | BTCfi Protocol | hot | 0.88 | -0.2% | $619M | pendle, threshold-network-token, bedrock-token |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Elon Musk-Inspired | -9.0% | $13.0B | dogecoin, dogelon-mars, elonxcat |
-| Communication | -7.8% | $215M | helium, xpin-network, spacecoin-2 |
-| Buidlpad Launchpad | -7.4% | $346M | falcon-finance-ff, lombard-protocol, sahara-ai |
-| 4chan-Themed | -7.4% | $15.8B | dogecoin, pepe, spx6900 |
-| Impossible Finance Launchpad | -7.0% | $135M | aethir, carv, brickken |
+| Ansem.io Ecosystem | -16.9% | $104M | the-black-bull, bullshit-coin, solangeles |
+| Trading Card RWA Platform | -14.0% | $207M | collector-crypt, collect-on-fanable, ready |
+| Communication | -11.5% | $193M | helium, xpin-network, spacecoin-2 |
+| Stock market-themed | -9.7% | $515M | spx6900, dowge, game-stop |
+| Bridged-Tokens | -9.5% | $590M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
