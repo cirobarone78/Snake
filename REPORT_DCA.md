@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.4% | 33.3% | +21.0 pp | 42% | 1.000 |
-| 2 | LINK | 38.2% | 33.3% | -4.9 pp | 78% | 0.500 |
-| 3 | SOL | 49.5% | 33.3% | -16.1 pp | 76% | 0.000 |
+| 1 | POL | 12.2% | 33.3% | +21.2 pp | 44% | 1.000 |
+| 2 | LINK | 38.2% | 33.3% | -4.9 pp | 84% | 0.500 |
+| 3 | SOL | 49.6% | 33.3% | -16.3 pp | 81% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -115,7 +115,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
+- **Offerta**: inflazione alta.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -125,7 +125,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - capitalizzazione sotto la soglia: 28
 - stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 12
+- volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
 
 ## Limiti
