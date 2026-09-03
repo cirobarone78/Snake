@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T21:13:00+00:00",
+  "generated_at": "2026-09-03T23:25:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,12 +10,20 @@
       "moves": [
         {
           "date": "2026-09-03",
-          "return_pct": 5.57,
-          "zscore": 2.16,
+          "return_pct": 5.02,
+          "zscore": 1.92,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.57,
+          "market_return_pct": 5.02,
           "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Crypto market cap jumps $135B as Bitcoin nears $81K, signaling strong market optimism - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQzByczNxRll2RWc0T0VxTzFsNlBOWng2NUNmeVk1Q2dOdk5oMDVTVnc4dFNjYS1BY3NwZVdHblBfUWlDVWFYTVJ2ZXZ1ZlNRWGU3NU9faHhLMXE1V0RJN3BtWnE3RmpBb3pqSlpjX3l6Tlo5clBhc2c1ZnJ6Tm8wYUdMc3E4NVo4NmNZZUtTS1NDVHhWQThuUU1NZ2I?oc=5",
+              "sentiment": 0.778,
+              "relevance": 0.911,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_btc",
               "title": "Bitcoin ETFs post best month of 2026 as BTC gains 25% in August - Altcoin Buzz",
@@ -31,19 +39,11 @@
               "sentiment": 0.532,
               "relevance": 0.813,
               "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin ETFs gain $100M as Ethereum, XRP, and S... - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeFJuU19BQm5HdXBjYUYxT0F0WlQ0cUpyeUhWV0ttRGdsOWxUYl82MlVueUMxTTl3elM4TTR1ajBoR1NlNHZpaTVWQXp0WmJXc1BQV2pPYVNFRmlSVC1yeVI2dUxJN2JYa2lmZVBKdGdLMnJRRU44cDE5UXhPc2Z2NzNVTm5ydVRzTFEzbWt0QUQzb3BfYWM2WFBEeWo?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 96,
-            "zscore": -0.83,
+            "count": 105,
+            "zscore": -0.57,
             "spike": false
           }
         },
@@ -81,8 +81,8 @@
             }
           ],
           "coverage": {
-            "count": 111,
-            "zscore": -0.36,
+            "count": 110,
+            "zscore": -0.38,
             "spike": false
           }
         },
@@ -160,7 +160,7 @@
           ],
           "coverage": {
             "count": 173,
-            "zscore": 1.58,
+            "zscore": 1.57,
             "spike": false
           }
         },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-09-03",
-          "return_pct": 4.94,
-          "zscore": 1.08,
+          "return_pct": 4.43,
+          "zscore": 0.94,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.57,
+          "market_return_pct": 5.02,
           "events": [
             {
               "source": "googlenews_eth",
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 52,
-            "zscore": -0.53,
+            "count": 61,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -491,45 +491,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-03",
-          "return_pct": 4.88,
-          "zscore": 1.18,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 5.57,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Top Altcoins Price Prediction: Ripple, Cardano, Solana – Bulls defend key support levels - Mitrade",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTDlWUm0wVVRYVVdqdXZEbWtIWGtQZTNfQUpCNFdPbThSU0k1Q1lDZXNjSUs2ZHY2bmdlVHEyWXpHWGFReDIyRmpIaTlleXhPeDBiWWRTNnBnSTdrenlKOHcwSmozTjEzU1R3b3JXeThwQjM1NXZaS1hXT2FSX1dMT1lHOA?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "FBM KLCI extends gains as investors await Bank Negara rate decision - The Star",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQjNkMzZQQkUwMTlub3JWWVRhSWE0NjZNOHN5N2JBb2IwWlhHT3RLWEIyM3A1UWE0WUdkaGhuZm4xam5wYTgxUnJGTEFCTFVnd0Vod2ZDOWJyckI1V00zMXQyRG04VXY0LWx2Wi1mQ3hfNGtWa05sR3NYY0h2NlpRUmZWR2d3S2VaWV9yRk1yREk4Wkh1RHB1Q1c1ODlhR0VPeE1TV0lyZTJEcXQ4dDJyczBvcjVPdDBWcVE4NVMyQzJZYVVDRUJn?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed’s Waller Leans Toward Holding Rates If Inflation Improving - bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORXlIcnZvV2lid3FGVjYtajNzbGlaMW5KLU5JVk5NWlJ0UGlyME5hUzZ5dmJkMHBaellQU09tUEo5NExTeHAtQUM0cGRXUmV1d1pWV1hZc3VaZHUyNzZEcF9ERFU0R0FZZU00Y0pyMkcwLUJ5UDRURnRiRm80TzY2WEZkc3loQnoxUFdwVDViYklNNmhQVnc0OTk1TG1RVFVJaTZSNjhUenU2eTdJbTZlOVctVQ?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 24,
-            "zscore": -0.92,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-08-30",
           "return_pct": -3.57,
           "zscore": -1.55,
@@ -723,6 +684,45 @@
             "zscore": 1.96,
             "spike": false
           }
+        },
+        {
+          "date": "2026-08-19",
+          "return_pct": 10.83,
+          "zscore": 6.79,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 7.09,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Officials See Interest Rate Hike as ‘Necessary’ If Inflation Doesn’t Ease Soon - Realtor.com",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNajJYbXlHUDhCUEJReEN0MWRkMmJLX2VMTEZIWkR4Zmh2X1puZmdDcFRYOXFNUjZEQWt3bzlVc3A4SUtPWVVIOUlQb0FaUXBtWVAzV2lVbG16UGZnVTlScTJYdVBwVWJtWkJSekRmSXo0cGVYSFpGaEdJYXZVMGN1SFNYSTlTWmtsNDhCWlRaU1VlbkJLQW9Yb2tucw?oc=5",
+              "sentiment": 0.67,
+              "relevance": 0.868,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "3 Altcoins Grayscale Says Could Win From New US Token Rules - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmZmFqdXVwQkhXYmU0bVEwVHQwT05wNjJtWFNNc3FDNGM5MFNyYUx6ejkwS2dvcHRGUDlIRThzeno4ckRKQ09aa3hLNFdwRVppS3BOUU9Ed3dtd0YwRnk1NTF6Rk1WaFlCcDhkRHNR?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "3 Altcoins Grayscale Says Could Win From New US Token Rules - CryptoRank",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcEFtcWVwaWpHdDhDMlhSTnROMTR6YmY2UGRTM2Nsbk5GeDBsWG1KNEdWQzhuVER2UUVSSGF2WGpOclVHalV5VlZjT2pCOUhsYUhJVC1lelBaTTRsS3lhUl9QVk1YbU5CeU55OG9iZkp4OFItaThaeWlZZ3hpLTRVUg?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 44,
+            "zscore": 1.35,
+            "spike": false
+          }
         }
       ]
     },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-09-03",
-          "return_pct": 7.17,
-          "zscore": 1.72,
+          "return_pct": 6.17,
+          "zscore": 1.44,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.57,
+          "market_return_pct": 5.02,
           "events": [
             {
               "source": "googlenews_fed",
@@ -749,7 +749,7 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Fed’s Waller Leans Toward Holding Rates If Inflation Improving - bloomberg.com",
+              "title": "Fed’s Waller Leans Toward Holding Rates If Inflation Improving - Bloomberg.com",
               "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORXlIcnZvV2lid3FGVjYtajNzbGlaMW5KLU5JVk5NWlJ0UGlyME5hUzZ5dmJkMHBaellQU09tUEo5NExTeHAtQUM0cGRXUmV1d1pWV1hZc3VaZHUyNzZEcF9ERFU0R0FZZU00Y0pyMkcwLUJ5UDRURnRiRm80TzY2WEZkc3loQnoxUFdwVDViYklNNmhQVnc0OTk1TG1RVFVJaTZSNjhUenU2eTdJbTZlOVctVQ?oc=5",
               "sentiment": 0.421,
               "relevance": 0.769,
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.88,
+            "zscore": -0.89,
             "spike": false
           }
         },
@@ -835,7 +835,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink Price Forecast: LINK hits seven-month highs amid strong DeFi, institutional demand - FXStreet",
+              "title": "Chainlink Price Forecast: LINK hits seven-month highs amid strong DeFi, institutional demand - fxstreet.com",
               "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNXd3b19sdW1HdTU3MWFXekZFUFZhczc0RzRHX1RUZG1RU3VOcWtKVkh6RXRyZlc5Rk0zLTl6bFk4ODI1R3VDTmFuTC00X0YtaG1mOEpBMzN3MnRXZlVvMUJ0R0VqejJRandGRTM0QzR5VFh1dXVucVVGS2llNlJQU0JzTmp0b3AxUUh2TVBpdzc4eHd3NWY2Z2JIeElLcVladE14Q1ExSWN2cFp0Q054dmt3TkNVcVJDRGFpS3hDXzEwRzY0S25wRS0wRVVCcWNrSmxJVHU0amxpNk10Y2FrU282R1o?oc=5",
               "sentiment": 0.421,
               "relevance": 0.769,
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": -0.86,
+            "zscore": -0.85,
             "spike": false
           }
         },
@@ -1713,7 +1713,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "HDFC Bank fell 26% in the last 1 year while SBI gained: Which mutual funds are betting big on the top 5 lenders? - Livemint",
+              "title": "HDFC Bank fell 26% in the last 1 year while SBI gained: Which mutual funds are betting big on the top 5 lenders? - livemint.com",
               "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOT0dWSU5uTFREZU9JQlJIcmdwbFpZVkgtQTZOdEd0cEJWRTF1Q00tVUNaZEtIUkw3eUhqemRTLTZTU3dMckwxRlpLVkZBWmJQSG1NVlo5Z3FJR0U3Q3IySXJGbVVVci1Dczl5bm1sOVNqMFVaQTZOZy1MMld5Q2lySWRoa0RzTEQ3VG1NeE50ay1QNnlCLXRUTjQ0Zng3aFlfQTV2ckRfa3NiWFdZMk02bUNTVUNtRVdrQWZ6WnU4TXlKVTJrWXk2UkI1dElWTlVpMnRzNzZ4LVZ2WllQdmdKaXg3dU5QNHoxaHFUZ1pzZ1MwVXRtX29ZZE9oTFZBRnpjaWVWc190dHXSAY4CQVVfeXFMTlluNHF2a0JIdzdOcG4wRXZRcngxWWhqLWhiLXlka3ZDZk9UNk5LSTNwR0V6bDFHa3hma3pqWkxDSEpMdXNBRGIwWTFTSnRpS2NodjktNS0tSmY1NHc5d2hXVF9XVGd4NTFocFUyOVRab2s5a2p3M2wzWVVUWE56V29lTEJMTzdPb01yN1hJQ3hCUjlXb2tyVm5qbDZDTlFranYwUVN2cEYwS1p2NzZrUkgyVF81YmZBOVZ0OHotT2x1bkZwdlZaZmlnR0RIR2tleVZxaWI2SEIyekZnMW1hM24yLXpqbUNqT1N0TEEtQUpNdXRFaUw3LThqTFk0VUJPTGNMLVlYeWJYd3Fya1ln?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.75,
+            "count": 4,
+            "zscore": -0.47,
             "spike": false
           }
         },
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 45,
-            "zscore": 2.67,
+            "zscore": 2.68,
             "spike": true
           }
         },
@@ -2250,8 +2250,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": 0.25,
+            "count": 21,
+            "zscore": 0.15,
             "spike": false
           }
         },
@@ -2290,7 +2290,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.21,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -2329,7 +2329,7 @@
           ],
           "coverage": {
             "count": 25,
-            "zscore": 0.93,
+            "zscore": 0.92,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.01,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.67,
+            "zscore": 0.66,
             "spike": false
           }
         },
@@ -2522,7 +2522,7 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - finance.yahoo.com",
+              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0FtcHQ0RnZLekdMbkNmdmhGNFdreXJQSGVUX1NBdThUN3haX19EaGg1QUdtb1hCdy1rc0Q5aXUtMXZPQy04ZWNwbDBMUnhja2FWOUhaaWpKWHMyLVBxUkF6ZFNYbWxwclpybHBwMTd1VmF6N2JHa2JKenVEcXRZWHQ5Tm9aT3V6NEhCVFA0WlhDSEw1QThTUFBISXdrYXBmN2c?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2531,7 +2531,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.48,
+            "zscore": 0.47,
             "spike": false
           }
         },
@@ -2570,7 +2570,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.08,
+            "zscore": -1.09,
             "spike": false
           }
         },
@@ -2609,7 +2609,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.45,
+            "zscore": 1.43,
             "spike": false
           }
         }
@@ -3368,17 +3368,17 @@
               "event_type": "fed"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Fed’s Waller Leans Toward Holding Rates If Inflation Improving - bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORXlIcnZvV2lid3FGVjYtajNzbGlaMW5KLU5JVk5NWlJ0UGlyME5hUzZ5dmJkMHBaellQU09tUEo5NExTeHAtQUM0cGRXUmV1d1pWV1hZc3VaZHUyNzZEcF9ERFU0R0FZZU00Y0pyMkcwLUJ5UDRURnRiRm80TzY2WEZkc3loQnoxUFdwVDViYklNNmhQVnc0OTk1TG1RVFVJaTZSNjhUenU2eTdJbTZlOVctVQ?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "fed"
+              "source": "googlenews_realestate",
+              "title": "Hamborner REIT stock holds steady as insider purchase underscores confidence - AD HOC NEWS",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb3JhbERoV0xQX0VmVzRTV0NrWm11dEFJcmVZcWJxVzRtR0VGTW1NRGsydV8zZUNHMG5OQlB0MWRRZ1FuVG5aQ2lzUi1RbWJfckdKTGl1XzdCelRDVXluRUNYeVV1UGxWcEVMb25CcVBqalAwYXlCQnIwSUNscEg1TUo1cHRKUTV1VTA0dUNmejZLX0tGSjFwYjF4aThFLUxBN3IydnFiVmM1eW13Q09NajVIbXc0aDhjN3E5a29VeHN5RW1td3pz?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -1.48,
+            "count": 2,
+            "zscore": -1.18,
             "spike": false
           }
         },
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.65,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.64,
+            "zscore": -0.66,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 46,
-            "zscore": -0.27,
+            "count": 47,
+            "zscore": -0.24,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 101,
-            "zscore": 1.37,
+            "count": 102,
+            "zscore": 1.39,
             "spike": false
           }
         },
@@ -4016,7 +4016,7 @@
           ],
           "coverage": {
             "count": 104,
-            "zscore": 0.76,
+            "zscore": 0.75,
             "spike": false
           }
         },
@@ -4076,11 +4076,11 @@
           "events": [
             {
               "source": "googlenews_uranium",
-              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - ETF Database",
+              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - etfdb.com",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnB3WHJhajlfN0xZMk9SWU8wV0hYcG5vWkpwWGhjQ3EtSW95dU9sQl9mUll4R0g4d1ZIbnFTVFFMV0FiNlpsM3R4NWViN0RLYmtIanZjRi14QWpVRzduUXBWZl9obkJKRFdqTGlORXo2akFhUEI2UXlrSTdycFZZZWtydDR4TDFOTWhjbVFqaFNIN3ctd3lySWx4bzZRUQ?oc=5",
               "sentiment": 0.226,
               "relevance": 0.691,
-              "event_type": "etf_flow"
+              "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
@@ -4101,7 +4101,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.93,
+            "zscore": -0.94,
             "spike": false
           }
         },
@@ -4140,7 +4140,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.06,
+            "zscore": -0.07,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.79,
+            "zscore": -0.8,
             "spike": false
           }
         },
@@ -4287,7 +4287,7 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "NuScale Power and Oklo Drop 5%, Centrus Energy Sinks 6%: What's Behind the Nuclear Stock Selloff? - 247wallst.com",
+              "title": "NuScale Power and Oklo Drop 5%, Centrus Energy Sinks 6%: What's Behind the Nuclear Stock Selloff? - 24/7 Wall St.",
               "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZkxKeUp3ek9HVFJGTHc3OC1rU2dYQUZOVkYzUXV1TElfaF93TW1QNEpybWdsbW5wWG9Ga2ZON0U3emU3by1TZnJlTGp6dTV2Y1l4NC04TFFCWXNuTUx5TTFyb1FVVGRyOXNzQzBrMl9LNU0ybW9mRjh0Q0hDU3B1NWJlZWRvWndrMEJmTGhnTkRacU5feGw0Ylc4Mm5mTVBzRDlaMGdCcnRsNWRuU1R6MVJXRTRfN0YxbWJUcDhMZ2xyb2xLWlo4TzNYTTFXc0pz?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -4799,7 +4799,7 @@
           "events": [
             {
               "source": "googlenews_defense",
-              "title": "Applied Aerospace & Defense (NYSE:AADX) Sets New 12-Month Low - Here's Why - marketbeat.com",
+              "title": "Applied Aerospace & Defense (NYSE:AADX) Sets New 12-Month Low - Here's Why - MarketBeat",
               "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1R5OHJCWURKc2E2bTVrWWZCTDNnbFJzQW5Vc0ZPUUhDQVBacTEtaUdnTWlJUHRJdHNGVzkzQnRHZFBnVEZCcHJzNEV6SXM2dzB3dFU4c09sTHYyX2FUNVgzZUliTWJBZXBJVlhMTTlhRWtTSm9EMnEyNXRkWnpINjFpdzVlMnNKNUZwZmdTUlJ0NjBncGVIaUZjTERtLVhYQXhfVFFXZVhKWGVQeHFwVTNST0Z6ekduVnNDZw?oc=5",
               "sentiment": -0.153,
               "relevance": 0.661,
@@ -4824,7 +4824,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.86,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -4863,7 +4863,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.23,
+            "zscore": -0.24,
             "spike": false
           }
         },
@@ -4941,7 +4941,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -1.34,
+            "zscore": -1.33,
             "spike": false
           }
         },
@@ -4980,7 +4980,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.74,
+            "zscore": -0.73,
             "spike": false
           }
         },
@@ -5019,7 +5019,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 0.11,
+            "zscore": 0.1,
             "spike": false
           }
         }
@@ -5212,7 +5212,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - U.S. News Money",
+              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - US News Money",
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ycXoybWdHd1JQUHRjdFdvbGJ3WDVzVjNyWHJMQjdPTHNsM0pobUx5U1hKazF1TG9ZRHI1ZTNValFkeVh6bUlLLTNxNm1WN0I0cXRTUk01U3ZsUUNLemgwZjVmT251OTJOQlVtRUg0aWhuczA2ZGlqRw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.6,
@@ -5297,7 +5297,7 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Palo Alto's $1 Trillion Warning Puts These ETFs in Focus - Palo Alto Networks (NASDAQ:PANW) - benzinga.com",
+              "title": "Palo Alto's $1 Trillion Warning Puts These ETFs in Focus - Palo Alto Networks (NASDAQ:PANW) - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRDNqM0pwMWhGbkhoNU5YeXdnNi1zNUdoRHF4UmdFVmYzb0ZSTGR0TDNQQkJ3VExLWC1KRlFoTUR1cEpGTmhzN2RmLWNrTDBIa0VBdEhDOGU1bGRFN0o0blh3QU5ub0FxeS04NHpYVHVock85NVRyRVE4cnB1dHhJZThwd1gwN25JSFhXekZYVU4tVWF0U0dBcER5WUVaTF9UYUM3WE1UcFVoQmxPcW9JSVg0OXFJYmdUbnJ0NDI4M0k4TWtZMzg1Q2xnVQ?oc=5",
               "sentiment": -0.34,
               "relevance": 0.736,
@@ -5547,7 +5547,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.79,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -5586,7 +5586,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.28,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -5625,7 +5625,7 @@
           ],
           "coverage": {
             "count": 30,
-            "zscore": 2.13,
+            "zscore": 2.1,
             "spike": false
           }
         },
@@ -5664,7 +5664,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.88,
+            "zscore": 0.86,
             "spike": false
           }
         },
@@ -5787,8 +5787,8 @@
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.72,
+            "count": 33,
+            "zscore": 0.8,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 39,
-            "zscore": 1.42,
+            "count": 40,
+            "zscore": 1.51,
             "spike": false
           }
         },
@@ -5993,9 +5993,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-03",
-      "return_pct": 5.57,
-      "zscore": 2.16,
-      "max_abs_z_recent": 2.16,
+      "return_pct": 5.02,
+      "zscore": 1.92,
+      "max_abs_z_recent": 1.92,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
