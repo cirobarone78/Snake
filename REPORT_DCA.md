@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.2% | 33.3% | +21.2 pp | 44% | 1.000 |
-| 2 | LINK | 38.2% | 33.3% | -4.9 pp | 84% | 0.500 |
-| 3 | SOL | 49.6% | 33.3% | -16.3 pp | 81% | 0.000 |
+| 1 | POL | 11.8% | 33.3% | +21.5 pp | 47% | 1.000 |
+| 2 | LINK | 39.1% | 33.3% | -5.8 pp | 100% | 0.500 |
+| 3 | SOL | 49.0% | 33.3% | -15.7 pp | 89% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -24,6 +24,16 @@ Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene
 
 ### Il token cattura valore dalla rete
 
+**BNB — BNB**
+
+Token della piattaforma Binance e gas della BNB Chain.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
+- **Offerta**: offerta in calo.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: 9.2 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
 **TRX — TRON**
 
 Layer 1 usato soprattutto per il transito di stablecoin (USDT).
@@ -32,16 +42,6 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.0 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**AAVE — Aave**
-
-Protocollo di prestito on-chain fra i più grandi per depositi.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 5.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -124,8 +124,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 28
-- stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 14
+- stablecoin o token ancorato: 18
+- volume troppo basso rispetto alla capitalizzazione: 11
 - già in portafoglio: 6
 
 ## Limiti
