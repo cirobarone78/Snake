@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.8% | 33.3% | +21.5 pp | 47% | 1.000 |
-| 2 | LINK | 39.1% | 33.3% | -5.8 pp | 100% | 0.500 |
-| 3 | SOL | 49.0% | 33.3% | -15.7 pp | 89% | 0.000 |
+| 1 | POL | 12.1% | 33.3% | +21.2 pp | 49% | 1.000 |
+| 2 | LINK | 38.8% | 33.3% | -5.5 pp | 95% | 0.500 |
+| 3 | SOL | 49.1% | 33.3% | -15.7 pp | 86% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -42,6 +42,16 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.0 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**AAVE — Aave**
+
+Protocollo di prestito on-chain fra i più grandi per depositi.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 5.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -115,7 +125,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -125,7 +135,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - capitalizzazione sotto la soglia: 28
 - stablecoin o token ancorato: 18
-- volume troppo basso rispetto alla capitalizzazione: 11
+- volume troppo basso rispetto alla capitalizzazione: 15
 - già in portafoglio: 6
 
 ## Limiti
