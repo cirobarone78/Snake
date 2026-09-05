@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-04 11:58 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-05 11:07 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | BONK.fun Ecosystem | hot | 0.99 | +56.7% | $273M | useless-3, kori, scamcoin |
-| 2 | Bridged-Tokens | hot | 0.98 | +18.2% | $716M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| 3 | Robinhood Chain Stocks Ecosystem | hot | 0.98 | +17.9% | $116M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
-| 4 | Crypto-Backed Tokens | hot | 0.97 | +15.8% | $419M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 5 | Robinhood Chain Meme | hot | 0.96 | +18.8% | $1.1B | cash-cat, artificial-inu-3, a-meme-coin |
-| 6 | Stock market-themed | hot | 0.95 | +39.4% | $727M | spx6900, a-meme-coin, dowge |
-| 7 | Pons Launchpad | hot | 0.94 | +31.0% | $556M | pons, thinking-cat, yolo-2 |
-| 8 | Tokenized Stocks | hot | 0.93 | +9.7% | $2.0B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, circle-internet-group-bstock |
+| 1 | Robinhood Chain Stocks Ecosystem | hot | 0.99 | +26.7% | $146M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 2 | Buidlpad Launchpad | hot | 0.97 | +10.8% | $459M | falcon-finance-ff, lombard-protocol, sahara-ai |
+| 3 | Masternodes | hot | 0.96 | +15.1% | $1.6B | dash, beldex, ontology |
+| 4 | Pons Launchpad | hot | 0.96 | +19.7% | $629M | pons, thinking-cat, yolo-2 |
+| 5 | Prediction Market Tools | hot | 0.92 | +12.7% | $133M | unifai-network, based-one, heyanon |
+| 6 | Gaming Platform | hot | 0.90 | +2.2% | $220M | gala, deapcoin, unipoly |
+| 7 | Binance HODLer Airdrops | hot | 0.89 | +2.1% | $2.5B | pudgy-penguins, falcon-finance-ff, plasma |
+| 8 | Capital Launchpad (Kaito) | hot | 0.89 | +1.7% | $105M | espresso, boundless, limitless-3 |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Trading Card RWA Platform | -16.6% | $180M | collector-crypt, collect-on-fanable, ready |
-| TimeFi | -5.3% | $290M | pieverse |
-| Unitas Ecosystem | -4.6% | $148M | unitas, usdu, unitas-gold |
-| SocialFi | -2.9% | $2.5B | pump-fun, reallink, antfun |
-| Superstate Ecosystem | -1.5% | $836M | superstate-short-duration-us-government-securities-fund-ustb, superstate-uscc |
+| RPG | -71.9% | $100M | illuvium, big-time, endurance |
+| Telegram Apps | -49.5% | $261M | audiera, catizen, zylo-ecosystem |
+| Stock market-themed | -15.7% | $612M | spx6900, a-meme-coin, dowge |
+| Play To Earn | -15.1% | $1.4B | axie-infinity, decentraland, the-sandbox |
+| Crypto-Backed Tokens | -13.4% | $363M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
