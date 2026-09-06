@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T23:07:00+00:00",
+  "generated_at": "2026-09-06T04:57:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 73,
-            "zscore": 0.32,
+            "count": 72,
+            "zscore": 0.28,
             "spike": false
           }
         },
@@ -603,7 +603,7 @@
           ],
           "coverage": {
             "count": 65,
-            "zscore": 2.09,
+            "zscore": 2.1,
             "spike": false
           }
         },
@@ -680,8 +680,8 @@
             }
           ],
           "coverage": {
-            "count": 55,
-            "zscore": 2.04,
+            "count": 54,
+            "zscore": 1.96,
             "spike": false
           }
         },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-06",
+          "return_pct": 4.45,
+          "zscore": 0.86,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.26,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "$340B Milestone: Chainlink Reveals Massive Growth in Onchain Real-World Assets - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE45TW91SHlXTkROSEZ0U3Y2eVl2S0tscXVVMEZOZ0s4X3UxVmlpb2h5NTA2Rk1ZV1h4QlF0RWl1OXZXVkRyeE12NVBjMlh5REtEZ3hzcTE1dw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.604,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink (LINK) Surges 3.2% on Institutional Adoption, Tech Breakout - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SWnJFSlhjMDVSVFZWbnFUQTlQVWZENFcwTkNGVGVlcl9zemdBbkljQ09idjJMTjVTVTJXOEw4enNPelduX1hDT28zNjU2alFTVVlZLTBpZERnNWpMVFZGQV9YajZtTXpHc24wQXQteGk?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Price Rally Accelerates — Can Bulls Flip $12 Into Support? - Coinpedia",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSTd5ektoTkZWWGd0Mm1xX0NQeWpLcHZqTk1NSVJyQWs5STYyM1ljSXZjVHdLYnVQR3JBSWVXeTdsYnhIeEpBUzBRRldpMExnNU1rMDNhNnA1ZW9hZXFUcmlNOEFZdEljbzJzWVZkMU54d2VkLU5FVWR4V180R0hpbW5oWkQtdjRCdlc5V2ZlU1BhZHFDaVBUeTctVzBqVm9hdlJaVjdndFZYQdIBqgFBVV95cUxNSTd5ektoTkZWWGd0Mm1xX0NQeWpLcHZqTk1NSVJyQWs5STYyM1ljSXZjVHdLYnVQR3JBSWVXeTdsYnhIeEpBUzBRRldpMExnNU1rMDNhNnA1ZW9hZXFUcmlNOEFZdEljbzJzWVZkMU54d2VkLU5FVWR4V180R0hpbW5oWkQtdjRCdlc5V2ZlU1BhZHFDaVBUeTctVzBqVm9hdlJaVjdndFZYQQ?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.561,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.2,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-03",
           "return_pct": 6.58,
@@ -925,45 +964,6 @@
             "zscore": 0.4,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-11",
-          "return_pct": 5.8,
-          "zscore": 2.42,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.56,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Crypto Market Update August 11: Chainlink Tops Gains as XRP and Cardano Retest Support Levels - CoinGape",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcEZqYllLRno0V1cwc1M2N2I2c1ZuZlRQcU4xc2w2eGNqcHB2dXhpYjl6UVJRWkNOZ2FHLTI5R3JmU2FfbDlRS0MweDVXaV90NGdGakZuLVNvUVhWa2RvWEgzTmFORVluMUZMdnM3WmVDU0lMa2VYSjJRNGZ6Qld5TlYzRnlRMGxHVUpjY1Y0U29HNjd3eUdvV0xiUVJITHlYZy1RNEZCUHpBc0FlUnAw?oc=5",
-              "sentiment": 0.813,
-              "relevance": 0.925,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Is Chainlink Crypto Ready for the Top 5? Why LINK Could Be the Next Major Altcoin to Break Out - Bitcoin Foundation",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQTRKR1k3YXVudUxQTGx3amxyb3BnZXpNV0lWb2hUSDJTeGh5bnVHeXlFdUM0Y252dkF1Skhwd2ItWHgzYmtORjhuNjdkN0JfLUc2alNlNklQOFRGOTFzT3ZiaC1pcnRHX1VqZjFpWkdhb0RDQ2I0Qi16d1p6M0xLSV9FT2VRamNaUzdOdnpucXFBb1M4RXN0bUxRSUYwTHNoUktxWkxYYmpzeC0xdGlObGxWZ1J6V28zbkN3eUJicG5KdkRNOHJRdENUNDhrTFl3b3lPRw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Posts 5% Gain, Keeping Oracle Demand In Trader Focus - Yellow.com",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdks2ZjlKem1UQVZpcnZENnRVd1NvNmUyNEN6SUVqakxmWG1nNHRWTVZJal9uQkUxTUx6SDlwNm5feHdHcVdBT0pJaXNIUXdyenh3N1BDZUY5QkhEa0wwSERLaXhveWJ4b2xKMHNqbDh3MF9ZeFkwRHBpazM2cC1jd1dR?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 64,
-            "zscore": 2.92,
-            "spike": true
-          }
         }
       ]
     },
@@ -973,19 +973,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-05",
-          "return_pct": 5.05,
-          "zscore": 0.81,
+          "date": "2026-09-06",
+          "return_pct": 6.97,
+          "zscore": 1.17,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.12,
+          "market_return_pct": 0.26,
           "events": [
             {
               "source": "googlenews_pol",
               "title": "Polygon CEO Triggers Crypto Community With Vacation Take and Schools Critics - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYnpMa2VNMlBMNFNRRzUyVHJIUEEtUGthbmRNb2pucW5XeWlUQjRwNzRqRDhGeFhQY2R5WVlCaGVxSDBMS2ZmUkhJbTVCZFh5Q1hVWEpfSktKOXE5dWNnaExHUWI2V1hiQUVZMFBGM2VnWkNvdmFsREpwT1loQXBOQVBfMGtQS0ZMMzdnN2ttcy1FSTZWWWY4bWp0NUljQ0VZUWE0TQ?oc=5",
               "sentiment": -0.296,
-              "relevance": 0.6,
+              "relevance": 0.4,
               "event_type": "other"
             },
             {
@@ -993,7 +993,7 @@
               "title": "XRP Ledger has fewer active accounts than last year, but bigger trades and more value",
               "url": "https://www.coindesk.com/markets/2026/09/05/xrp-ledger-has-fewer-active-accounts-but-bigger-trades-and-more-value",
               "sentiment": 0.659,
-              "relevance": 0.518,
+              "relevance": 0.398,
               "event_type": "other"
             },
             {
@@ -1001,13 +1001,13 @@
               "title": "Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
               "url": "https://cointelegraph.com/markets/bitcoin-etf-inflows-3-8-billion-strongest-three-week-run-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
               "sentiment": 0.44,
-              "relevance": 0.466,
+              "relevance": 0.346,
               "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.84,
+            "count": 0,
+            "zscore": null,
             "spike": false
           }
         },
@@ -1021,7 +1021,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon Slashes Block Time To 1.75 Seconds, Lifts TPS Ceiling 14% - yellow.com",
+              "title": "Polygon Slashes Block Time To 1.75 Seconds, Lifts TPS Ceiling 14% - Yellow.com",
               "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX3hOSXNheS1ObWRaQkMxMnZ0OV9RMlRXZEdoMWlxZk1ITDg4ak92eXNNVkg4SnZuWGZGM3F0RUYxbXdwcG1Cb1NtUGQxMk1TZ0h0V0pvbFg1ay1BN2d5c2JFYmhibkV3dWJ4NzFUYUMwNkd3azl4cjR3N1l3M0E2U1NodDJ4MFE?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
@@ -1045,8 +1045,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": 0.18,
+            "count": 11,
+            "zscore": 0.28,
             "spike": false
           }
         },
@@ -1085,7 +1085,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.22,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -1239,8 +1239,8 @@
             },
             {
               "source": "googlenews_tech",
-              "title": "US Stock Futures Climb as Nvidia’s Outlook Lifts Tech Sector - Bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMzE0Yk81bWNFcFJkdjlUcHZlQTlBd3NSdjNBa1lKVXIwYm11TFZUNXhMbGsyQ2ZpUWFacG04dnMxeml3c2dObXU0bmFGRVZuUHd6YnR2RTNRd3V6c2ZYSkZ0WnZRdkxkZ0VsbkRiREJoLTFJMHhVVm9XRDFMQzBiT2trenBjMmtrRlpyeGlWd1E4a1Mwcmt4cGRiU1lLX2xuMUdMaGE2OUNXZXd5Y1d3TQ?oc=5",
+              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - Fox Business",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Za2c4aWh6NnlubERiS3ZvY0dfckotcWRmTjQtZnEtd2R4T0xMN0hucXNTZEFYS1JSc19rbmRMazJRdVdrM3lxWmlwendlc05Ob2pvaVlVNWV5TXM?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -1799,7 +1799,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - financialpost.com",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
               "sentiment": 0.285,
               "relevance": 0.6,
@@ -1985,7 +1985,7 @@
           "events": [
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - moomoo.com",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Moomoo",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDh1ZHBFTGdMSWNFQVNpelBuRlhJc3BIczRmYWhFa3lFOVdvelZDaXlkZUtIMkplMFI5aXVmRmhFMUZQNmVxLUR4UDRzSjNvTjBybjNyQkFzUmNfa3Bxcy1VMmQ5X3RSVWhqYjBnc2sxeXlEN0lubzNsdlg2RnhFcVBMNFNHUlNfems0dU1MQUVmS0t6TjZRRA?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2071,7 +2071,7 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - moomoo.com",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Moomoo",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGJfbXppMEtzcy0wRDhFWGN3c24zTjQxb0loN01wS3RhS0ZtcFhnTTlfbEJUWUdmYng1SGdjeUxuWXBfQnVNS0pUQ1ljQXFTdHh6Q3NYVUgxSXhmZG83TEtWSDM3STkzVFJXcE9wYTZTaGNlUFE2X0dWeGhVWnlmalRsMVhTcU1HSFp4SE5VWW9mZVBnMkMwOA?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": 1.29,
+            "zscore": 1.3,
             "spike": false
           }
         },
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.57,
+            "zscore": 0.58,
             "spike": false
           }
         }
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 45,
-            "zscore": 2.67,
+            "zscore": 2.68,
             "spike": true
           }
         },
@@ -3016,45 +3016,6 @@
             "zscore": 1.48,
             "spike": false
           }
-        },
-        {
-          "date": "2026-06-11",
-          "return_pct": 2.48,
-          "zscore": 2.33,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": 1.75,
-          "events": [
-            {
-              "source": "googlenews_discretionary",
-              "title": "Consumer Discretionary Stocks Show Strong Momentum: Traeger, Inc. (COOK) Leads the Pack - GuruFocus",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMUdlbFF5bEVUWUVkR1VzLW5HVThSeWZvcTlDeVd0WDJQLS1QUXA2SmRiR1RYX29PQ3M2ZlotenlveTd5YWU1WjYzenZFb1Q2Tk5ZQXB2aDlrZ1VIQWppbmsyUFVub28waGFYb2xwT2xuUzhlTXpkbmFFUk5rQWpWYl9sMFdaWUlFQXkxSnMzRlE4bTZlcERSdU1aY2QwcnRfd3FKbFY0Y0p0RTRMMGszSlFDTWVIX3JMNjFaNUlnQmVGbDB4UWt0ZjROdlF5UQ?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "General Motors leads consumer discretionary stocks with longest strong buy streak - MSN",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc1BWLTNTaTFibU9JRUxldi1mRTRLcmE0ZUdUbnIxSmZBaGFBd0JhTDVvRWlZLWhVem9TcjJYZFVEYm5rUm5Lbm5CeE5WZmdUTktmbkZOVElTb0Z3OS1ES3hQOUd2dWotRzhLa3kzV2hQYmxOdERWMVR6RjVfS0ZpeFZ6WnlkZ0FfMy1MM3I2YkVPUXc1b3N2YmIzOW5QVFR5aUNteGRVMlNGZlNFYTFxazJZQXVIMnRrck1sdElyYlZnQU81YmQ4MFhHeEdOMjJT?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "General Motors leads consumer discretionary stocks with longest strong buy streak - MSN",
-              "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxOdmZncEJobkZOQ18xek9RbEphR2NFVnA0OENhbE1iMkctUHpXdzFvcm9qM21jeVltWFdCU0JuLWpaa1VmQTlmdS1kLWJCME9XbjlVdkt0cDZIYUtQLTNXdi00N3MxYzRJMThHMWNtVFg0OVhnZGFsdWgzN2pmRER6RXdSbGpiT20yUllBSDBnWjdhS2daWnZ5MENZMzlKR3h4cEFRMk9IQ21sUlZuTVJma1M4Mmg1cENvTV9adlJZckRGOEZnODhtV253U3RVRkNXUHQ3ZGtkNFJKelNxTU9famFKN2xwZlZMQVdkOV9yWlBSQ2loUFJoVG9MOG1IMXUyMlJjV2NUcFI5MW04N3BiZnY0SUd6OXdrOE9FRTNzcEo5VVRZbnhndE1ncmgxSmFtUTdRbGU3Tnljek9LdXhuX2FDY0k0aVJEcWNVN2huUFdiUXVWN0lucnBPSHktNWZMQm91RGpvdw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 30,
-            "zscore": 2.36,
-            "spike": false
-          }
         }
       ]
     },
@@ -3098,7 +3059,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.42,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -3137,7 +3098,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.9,
+            "zscore": 0.93,
             "spike": false
           }
         },
@@ -3176,7 +3137,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.1,
+            "zscore": 0.11,
             "spike": false
           }
         },
@@ -3215,7 +3176,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.33,
+            "zscore": 0.35,
             "spike": false
           }
         },
@@ -3254,7 +3215,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.18,
+            "zscore": 0.19,
             "spike": false
           }
         },
@@ -3293,7 +3254,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.48,
+            "zscore": 0.49,
             "spike": false
           }
         }
@@ -3369,7 +3330,7 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - Barron's",
+              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - barrons.com",
               "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3VhcUd0NDk0VWNEeGg4bzlGNWxralRpZ05aeHhBZjZYY2Z5c05SMGNUWXBKbEhVLXBPVy1OTk1WMjliT1VvUGw4Ri1pNGVEQmZqQm05RFIwWFNwRFVDVW9ucGMxMjhCcjQ0T1VWQ0dnSkpGdHg4dnA3Vm54Y3ExYWxGdElBaDBr?oc=5",
               "sentiment": 0.459,
               "relevance": 0.784,
@@ -4053,16 +4014,16 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Cameco Stock Slips 0.25% as Uranium Volatility, Valuation Risk and Execution Concerns Temper Nuclear-Energy Optimism - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOXFlakh1dXdIM0JYRDhPQ3U5N0tfU3pFMjNrYWY1UUVFb3lfTUgxSlcxNWRLcEtnV2owQ1VZa3dub0xuX1BHazdEMWxIaU8xZkhqMnU2blpDOWQ3UHhqRzhjUXRBN3hFZnRZVHdoeXJhM2VaX01qM1pvVHhPYUJqOGN2SmZmSFFJNmcwUW9GS2IxZHYyZEUxUi1HRmlVb3BmaV9zel91VTRmZC1wTmtLZUlNOXRZb3FBejBfcWNMQ1RWbzNpUWFNNzlEUjBRYndhWEVKazdlYVpjZlFB?oc=5",
-              "sentiment": -0.103,
+              "title": "Why Uranium Stocks Are Falling as U.S. Production Triples - Crude Oil Prices Today | OilPrice.com",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMXJENndCOEtTSHNtZmlCLWVraUtXQktjSlY4M3VaajFyS0x5NVZua0ZPOWstaGRJbV9pZ1VhUU1DVXJGSURfdE5BX0piTjlQQk0wOTZsa3FKZHgyeFZaaXpoM2ZJcGUzMkRZTU5RZGhCcU1nQUNEVTJObmdaQTRUWUt4YmZkNDhabEhRYk14eGdzNlM5VmNoZldfNFkyUUZzaUR3V3hLTjY4MDVTNENwR25pU3HSAboBQVVfeXFMUEtSNld0cXdNMWRXTFY3TlZYdGgxb2d5b1pJejF6QUFwQWE4djRmbVN6RU1uU1NseGxrVVhEbWFNdWhlR1BnVGFlQ2NhbFlzODFvZFdKVDBhazZUazg3a0w3cV91NXAyRm1sbGNIcFZ2WVdyRDlBMEpPbExRX0ZuMjNDbzI2U0FicTVzbFJidFo3ckZMRnJiU3ZOanB5dzMxVFloeFBHQ2R6eldmeXh4SUwxVTJoWG1pWjJR?oc=5",
+              "sentiment": -0.649,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -1.04,
+            "count": 4,
+            "zscore": -0.72,
             "spike": false
           }
         },
@@ -4101,7 +4062,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.8,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -4140,7 +4101,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.83,
+            "zscore": -0.82,
             "spike": false
           }
         },
@@ -4785,7 +4746,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.79,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -4824,7 +4785,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.26,
+            "zscore": -0.27,
             "spike": false
           }
         },
@@ -5079,7 +5040,7 @@
           "events": [
             {
               "source": "googlenews_robotics",
-              "title": "GOOGL Expands Gemini Into Robotics As Big Tech Races To Build Physical AI — New Robot AI Can Tap Google Search For Real-World Tasks - Stocktwits",
+              "title": "GOOGL Expands Gemini Into Robotics As Big Tech Races To Build Physical AI — New Robot AI Can Tap Google Search For Real-World Tasks - stocktwits.com",
               "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMnZGcE1FLVVRWWpxMkkyVE5kcFlPSjhBbVFCaEstbjNwWF9BQXBaRDA3eEF5M29scEhLLVl4amNZRXI4VDQycHVVTVprQ3dPZFI3dEFmTkpVR0l6M0lsTVJhQkhyWDhpdWJWUEtrZ2VKdFM3SGs0VkdHRERkbmYtSWxaTjFYOEZrODZway02dXhKclh4S0Mxc0tEcHJiX1M1UnhtR3l2S09IUkwwN1paMFBNbmU0RlpwQUV0M0NtYXRMUWNqbklF?oc=5",
               "sentiment": 0.103,
               "relevance": 0.641,
@@ -5173,7 +5134,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - U.S. News Money",
+              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - US News Money",
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ycXoybWdHd1JQUHRjdFdvbGJ3WDVzVjNyWHJMQjdPTHNsM0pobUx5U1hKazF1TG9ZRHI1ZTNValFkeVh6bUlLLTNxNm1WN0I0cXRTUk01U3ZsUUNLemgwZjVmT251OTJOQlVtRUg0aWhuczA2ZGlqRw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.6,
@@ -5306,7 +5267,7 @@
           ],
           "coverage": {
             "count": 33,
-            "zscore": 1.56,
+            "zscore": 1.55,
             "spike": false
           }
         },
@@ -5344,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 60,
-            "zscore": 7.23,
+            "count": 61,
+            "zscore": 7.37,
             "spike": true
           }
         },
@@ -5499,7 +5460,7 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "These Two Biotech Stocks Recorded Fresh Milestones Today – What’s Driving Today’s Gains? - Stocktwits",
+              "title": "These Two Biotech Stocks Recorded Fresh Milestones Today – What’s Driving Today’s Gains? - stocktwits.com",
               "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTFEU0I2UHZHa05YalVESEF2cW8zVHdDLW5Wc0NNUHhKVkJOZ244VlVGSUF3TGt1TzJwbGxzbTYzYWw5TDQwc3JmSGFtWmdZMlpDQVpNeHQyZE5WYzBPTkFIOWp6LWJ1d2tfbkV4WmRrX0Iyb2l1U0pyX2E3cmRHM25MS1BLZkVVR0JrT1BRRU40ZzI3N1RZTEM2UUYzNElJaC1QemIxYw?oc=5",
               "sentiment": 0.572,
               "relevance": 0.6,
@@ -5586,7 +5547,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 2.24,
+            "zscore": 2.23,
             "spike": false
           }
         },
@@ -5639,7 +5600,7 @@
           "events": [
             {
               "source": "googlenews_biotech",
-              "title": "Josh Brown's \"Best Stocks in the Market\": Biotech - CNBC",
+              "title": "Josh Brown's \"Best Stocks in the Market\": Biotech - cnbc.com",
               "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPamcwY0pndng0T1JQdHJ2MExZZUFJaXFqcUc4MjRGa2t2cC1fT1lnbmdnSkYzS3F3TjRtRTZNUFIwQm4xd1VCTWdJdFdTYVhfdnJHWEJfR01oVnZyZ21wUnJqVHNxNGVBcUhZd1ZwQ1E4ME1iOVA2aS1pUTU1NV93S05VWDROUks5U0lqQndHNDlHZw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -5664,7 +5625,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.77,
+            "zscore": -0.76,
             "spike": false
           }
         },
@@ -5748,8 +5709,8 @@
             }
           ],
           "coverage": {
-            "count": 38,
-            "zscore": 1.2,
+            "count": 41,
+            "zscore": 1.46,
             "spike": false
           }
         },
@@ -5788,7 +5749,7 @@
           ],
           "coverage": {
             "count": 43,
-            "zscore": 1.76,
+            "zscore": 1.77,
             "spike": false
           }
         },
@@ -5826,8 +5787,8 @@
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": 0.76,
+            "count": 30,
+            "zscore": 0.67,
             "spike": false
           }
         },
@@ -5953,9 +5914,9 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-09-05",
-      "return_pct": 0.12,
-      "zscore": -0.25,
+      "date": "2026-09-06",
+      "return_pct": 0.26,
+      "zscore": -0.19,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5968,7 +5929,7 @@
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     }
   }
 }
