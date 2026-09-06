@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T15:38:00+00:00",
+  "generated_at": "2026-09-06T20:39:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 76,
-            "zscore": 0.44,
+            "count": 77,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -732,6 +732,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-06",
+          "return_pct": 4.66,
+          "zscore": 0.89,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.14,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "$340B Milestone: Chainlink Reveals Massive Growth in Onchain Real-World Assets - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE45TW91SHlXTkROSEZ0U3Y2eVl2S0tscXVVMEZOZ0s4X3UxVmlpb2h5NTA2Rk1ZV1h4QlF0RWl1OXZXVkRyeE12NVBjMlh5REtEZ3hzcTE1dw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.604,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink (LINK) Surges 3.2% on Institutional Adoption, Tech Breakout - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SWnJFSlhjMDVSVFZWbnFUQTlQVWZENFcwTkNGVGVlcl9zemdBbkljQ09idjJMTjVTVTJXOEw4enNPelduX1hDT28zNjU2alFTVVlZLTBpZERnNWpMVFZGQV9YajZtTXpHc24wQXQteGk?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "XRP Is Down 24% This Year and Chainlink Is Down 4%. Is Adoption the Reason for the Gap? - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQb2xmempYemxHeHhTcnVKR2h3T1Z1cTFWN1loLTdhYktuRF9sZmI0LVprMUUzS0NycHBNRXFLNjdiSHJQRVA0amNpSFVQbTl3OVN3TFU5aWh3d09IN1VNWWF5SmJjVW5aUlRUTU9CY042c2VHVGdocFkwWV9Edkg4bWRzS2RtRTE4N2VXTGtaYUljZ2JTby1peXloS0gxdDBJUEkxMnhqS2hRNEtKbkRPbjI3bXNiQ2xxcHdzanpwLTNIOXR4VzIyc3lxbHNRTWRJQjNYbkI1a1Vldw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -1.03,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-03",
           "return_pct": 6.58,
           "zscore": 1.55,
@@ -749,7 +788,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink teams with Bottomline to boost secure cross-border payments for 1,200+ banks. - Pluang",
+              "title": "Chainlink teams with Bottomline to boost secure cross-border payments for 1,200+ banks. - pluang.com",
               "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYjRfbGY3WEUtcUxkeDBlbWpaemNwVVEtcHhtbFdyQjlrYy1OQ0Y1cmRtNHlJUmdsUndHNW9TcUNDYWNvWlp3RHpYcnJXd0N2a1JsbWtLUW9jVWFldExvX0ZoZWNrekJrMERsaC1HTGpSQ0R0akE4S2VvTWF5UTJwTkw5WXRvbkdNeDYteGQ2NlB1TzZCcmRYc0pB?oc=5",
               "sentiment": 0.625,
               "relevance": 0.85,
@@ -924,45 +963,6 @@
             "count": 25,
             "zscore": 0.4,
             "spike": false
-          }
-        },
-        {
-          "date": "2026-08-11",
-          "return_pct": 5.8,
-          "zscore": 2.42,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.56,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Crypto Market Update August 11: Chainlink Tops Gains as XRP and Cardano Retest Support Levels - CoinGape",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcEZqYllLRno0V1cwc1M2N2I2c1ZuZlRQcU4xc2w2eGNqcHB2dXhpYjl6UVJRWkNOZ2FHLTI5R3JmU2FfbDlRS0MweDVXaV90NGdGakZuLVNvUVhWa2RvWEgzTmFORVluMUZMdnM3WmVDU0lMa2VYSjJRNGZ6Qld5TlYzRnlRMGxHVUpjY1Y0U29HNjd3eUdvV0xiUVJITHlYZy1RNEZCUHpBc0FlUnAw?oc=5",
-              "sentiment": 0.813,
-              "relevance": 0.925,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Is Chainlink Crypto Ready for the Top 5? Why LINK Could Be the Next Major Altcoin to Break Out - Bitcoin Foundation",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQTRKR1k3YXVudUxQTGx3amxyb3BnZXpNV0lWb2hUSDJTeGh5bnVHeXlFdUM0Y252dkF1Skhwd2ItWHgzYmtORjhuNjdkN0JfLUc2alNlNklQOFRGOTFzT3ZiaC1pcnRHX1VqZjFpWkdhb0RDQ2I0Qi16d1p6M0xLSV9FT2VRamNaUzdOdnpucXFBb1M4RXN0bUxRSUYwTHNoUktxWkxYYmpzeC0xdGlObGxWZ1J6V28zbkN3eUJicG5KdkRNOHJRdENUNDhrTFl3b3lPRw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Posts 5% Gain, Keeping Oracle Demand In Trader Focus - Yellow.com",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdks2ZjlKem1UQVZpcnZENnRVd1NvNmUyNEN6SUVqakxmWG1nNHRWTVZJal9uQkUxTUx6SDlwNm5feHdHcVdBT0pJaXNIUXdyenh3N1BDZUY5QkhEa0wwSERLaXhveWJ4b2xKMHNqbDh3MF9ZeFkwRHBpazM2cC1jd1dR?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 64,
-            "zscore": 2.92,
-            "spike": true
           }
         }
       ]
@@ -1326,7 +1326,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": -0.74,
+            "zscore": -0.73,
             "spike": false
           }
         },
@@ -1418,7 +1418,7 @@
           "events": [
             {
               "source": "googlenews_tech",
-              "title": "Global markets trade negative amid tech stock decline, all eyes turn to US nonfarm payrolls - Anadolu Ajansı",
+              "title": "Global markets trade negative amid tech stock decline, all eyes turn to US nonfarm payrolls - aa.com.tr",
               "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOT2xpMVBYYUREYnZLR0w2UEpNbEt0X1o0ZnlWM0paeC1MbmVfcVJYeE9mQzBId0FOUGZqUEt5VkNwY0VlcHlZZWREcGpEZ01LUmtwQjlab1p6M29lM0dDM3ZWSWxnZUlKdjQtTUFBN0gyaE9uTk5QdkwybUs2WEhSeFdFMEJYc0tVYlRUQnA3cXhNb1ItcVFwU3ljOE9JM1JxZ2lWYnQxVTRVVkk3WW1KRzlVTkptN013emZ1dzVnZ0xOTzBJa0F4S3pfaw?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 2.83,
+            "zscore": 2.81,
             "spike": true
           }
         },
@@ -3781,8 +3781,8 @@
             }
           ],
           "coverage": {
-            "count": 63,
-            "zscore": 0.7,
+            "count": 64,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -4661,7 +4661,7 @@
           ],
           "coverage": {
             "count": 45,
-            "zscore": 2.28,
+            "zscore": 2.29,
             "spike": false
           }
         },
@@ -4746,7 +4746,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.77,
+            "zscore": 0.78,
             "spike": false
           }
         },
@@ -4785,7 +4785,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.27,
+            "zscore": -0.26,
             "spike": false
           }
         },
@@ -5134,7 +5134,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - US News Money",
+              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - U.S. News Money",
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ycXoybWdHd1JQUHRjdFdvbGJ3WDVzVjNyWHJMQjdPTHNsM0pobUx5U1hKazF1TG9ZRHI1ZTNValFkeVh6bUlLLTNxNm1WN0I0cXRTUk01U3ZsUUNLemgwZjVmT251OTJOQlVtRUg0aWhuczA2ZGlqRw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.6,
@@ -5228,7 +5228,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 0.86,
+            "zscore": 0.85,
             "spike": false
           }
         },
@@ -5267,7 +5267,7 @@
           ],
           "coverage": {
             "count": 34,
-            "zscore": 1.63,
+            "zscore": 1.61,
             "spike": false
           }
         },
@@ -5305,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 61,
-            "zscore": 7.37,
+            "count": 62,
+            "zscore": 7.52,
             "spike": true
           }
         },
@@ -5600,7 +5600,7 @@
           "events": [
             {
               "source": "googlenews_biotech",
-              "title": "Josh Brown's \"Best Stocks in the Market\": Biotech - CNBC",
+              "title": "Josh Brown's \"Best Stocks in the Market\": Biotech - cnbc.com",
               "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPamcwY0pndng0T1JQdHJ2MExZZUFJaXFqcUc4MjRGa2t2cC1fT1lnbmdnSkYzS3F3TjRtRTZNUFIwQm4xd1VCTWdJdFdTYVhfdnJHWEJfR01oVnZyZ21wUnJqVHNxNGVBcUhZd1ZwQ1E4ME1iOVA2aS1pUTU1NV93S05VWDROUks5U0lqQndHNDlHZw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -5709,8 +5709,8 @@
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": 1.63,
+            "count": 44,
+            "zscore": 1.71,
             "spike": false
           }
         },
@@ -5915,12 +5915,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-06",
-      "return_pct": -0.19,
-      "zscore": -0.39,
+      "return_pct": 0.14,
+      "zscore": -0.25,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-09-04",
