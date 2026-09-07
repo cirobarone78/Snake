@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.9% | 33.3% | +21.4 pp | 53% | 1.000 |
-| 2 | LINK | 39.0% | 33.3% | -5.7 pp | 100% | 0.500 |
-| 3 | SOL | 49.0% | 33.3% | -15.7 pp | 94% | 0.000 |
+| 1 | POL | 11.7% | 33.3% | +21.6 pp | 54% | 1.000 |
+| 2 | LINK | 41.0% | 33.3% | -7.7 pp | 100% | 0.500 |
+| 3 | SOL | 47.3% | 33.3% | -13.9 pp | 92% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -117,15 +117,15 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
 - **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 12.7 anni.
+- **Età**: 12.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 27
-- stablecoin o token ancorato: 18
-- volume troppo basso rispetto alla capitalizzazione: 15
+- capitalizzazione sotto la soglia: 26
+- stablecoin o token ancorato: 19
+- volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
 
 ## Limiti
