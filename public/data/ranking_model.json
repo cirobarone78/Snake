@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T21:03:11.700083+00:00",
+  "generated_at": "2026-09-07T13:16:49.836887+00:00",
   "title": "Modello di ranking ETF — stato della validazione",
   "status": "ok",
   "status_reason": null,
@@ -25,7 +25,7 @@
   "confidence_threshold": null,
   "confidence_threshold_note": "D7 disattivata (ADR-036): una soglia su una probabilità che non esiste sarebbe un filtro finto.",
   "validation": {
-    "generated_at": "2026-08-24T20:11:07.297674+00:00",
+    "generated_at": "2026-08-28T01:02:51.998480+00:00",
     "train_weeks": 156,
     "test_weeks": 52,
     "ic_bar": 0.03,
@@ -35,161 +35,205 @@
       "H1_value": 0.0010032055098588843,
       "H1_t": 0.08182605614388905,
       "H2_logistic_beats_momentum_brier": false,
-      "H2_logistic_brier": 0.2638107801774961,
+      "H2_logistic_brier": 0.2637945396017373,
       "H2_momentum_brier": 0.25102510434893827,
       "H3_tmb_net_positive_both_halves": false,
       "H3_best_model": "ridge",
       "adoption_bar_passed": false,
-      "best_ic": 0.030808130827852782,
-      "best_brier": 0.25579735774729506,
+      "best_ic": 0.03082078264971513,
+      "best_brier": 0.25581124588071824,
       "climatology_brier": 0.2500590428922457
     },
-    "age_days": 0.0
+    "age_days": 10.5
   },
   "scenario": {
     "scenario_id": "etf_top5",
     "initial_cash": 10000.0,
-    "cash": 10000.0,
-    "equity": 10000.0,
-    "return_pct": 0.0,
+    "cash": 288.68,
+    "equity": 10099.58,
+    "return_pct": 1.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.0,
-    "positions": [],
-    "last_processed": "2026-08-21 04:00:00+00:00",
-    "equity_points": 1,
+    "fees_paid": 9.7,
+    "positions": [
+      {
+        "symbol": "BTC",
+        "qty": 0.02495008,
+        "avg_cost": 77842.1892,
+        "price": null,
+        "value": null
+      },
+      {
+        "symbol": "ETH",
+        "qty": 0.78739649,
+        "avg_cost": 2466.5975,
+        "price": null,
+        "value": null
+      },
+      {
+        "symbol": "LINK",
+        "qty": 168.23864935,
+        "avg_cost": 11.5451,
+        "price": null,
+        "value": null
+      },
+      {
+        "symbol": "POL",
+        "qty": 17774.84643549,
+        "avg_cost": 0.1093,
+        "price": null,
+        "value": null
+      },
+      {
+        "symbol": "SOL",
+        "qty": 20.32643197,
+        "avg_cost": 95.5556,
+        "price": null,
+        "value": null
+      }
+    ],
+    "last_processed": "2026-09-05 00:00:00+00:00",
+    "equity_points": 13,
     "started_at": "2026-08-21 04:00:00+00:00"
   },
   "benchmarks": {
     "start": "2026-08-21 04:00:00+00:00",
     "initial_capital": 10000.0,
-    "spy_buy_and_hold": null,
-    "equal_weight": null
+    "spy_buy_and_hold": {
+      "equity": 10058.38,
+      "return_pct": 0.58,
+      "points": 11
+    },
+    "equal_weight": {
+      "equity": 9922.17,
+      "return_pct": -0.78,
+      "points": 11
+    }
   },
   "freshness": [
     {
       "name": "SPY",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "TECH",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "ENERGY",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "FINANCE",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "HEALTH",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "INDUSTRIAL",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "UTILITIES",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "STAPLES",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "DISCRETIONARY",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "MATERIALS",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "REALESTATE",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "COMMSERV",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "SEMIS",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "URANIUM",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "CLEANENERGY",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "OILGAS",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "DEFENSE",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "ROBOTICS",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "CYBER",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "BIOTECH",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     },
     {
       "name": "GOLD_MINERS",
-      "last_timestamp": "2026-08-21 04:00:00+00:00",
-      "age_days": 3.71,
+      "last_timestamp": "2026-09-04 04:00:00+00:00",
+      "age_days": 3.39,
       "is_fresh": true
     }
   ],
@@ -197,7 +241,7 @@
     {
       "horizon_days": 20,
       "n_resolved": 0,
-      "n_pending": 20,
+      "n_pending": 60,
       "selected": {
         "n": 0,
         "hit_rate": null,
@@ -213,7 +257,7 @@
     {
       "horizon_days": 60,
       "n_resolved": 0,
-      "n_pending": 20,
+      "n_pending": 60,
       "selected": {
         "n": 0,
         "hit_rate": null,
@@ -229,7 +273,7 @@
   ],
   "ledger": {
     "path": "data/predictions/etf_ranking.jsonl",
-    "rows": 40
+    "rows": 120
   },
   "disclaimer": "Portafoglio VIRTUALE (paper trading): nessun denaro reale, nessuna raccomandazione di acquisto o vendita. La regola di selezione è stata misurata come NON predittiva (ADR-034): serve a validare l'infrastruttura di misura, non a generare rendimento."
 }
