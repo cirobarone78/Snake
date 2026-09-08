@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T11:35:00+00:00",
+  "generated_at": "2026-09-08T16:50:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1937,6 +1937,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-08",
+          "return_pct": -2.18,
+          "zscore": -2.09,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.36,
+          "events": [
+            {
+              "source": "googlenews_health",
+              "title": "3 ASX healthcare shares to buy with 25% to 100% upside as sector rebound races higher - The Motley Fool Australia",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTmRNOGpsUVltSWxXWDR0UXZJSi16VUJvT21NN2dsY0ZOS2I4Mkk1ZFlaTzZ3MGpFMVFNZldiNTg4UWpiUmxhd0w4cE1vbkUyNzZRWDI1YjBnQjhkT2JqWGh0WnFHRTZVWEJQMnNDOGNEMl9XWl92ckNxR1hIbEFWMGlKblZncTlMT201Uk5qZVFQbjNHcDRyekRnd1o5RmR4MGNHOE8xeGpmQ3hBbG0xZWQ5dFYwblNQeVhJ?oc=5",
+              "sentiment": -0.178,
+              "relevance": 0.671,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "Universal Health Services (NYSE:UHS): Is Its Low Valuation A Trap? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYXVNS2xucWZha2NtblluMUQ5cElMWUJNSjBsdlU3Y01SanU0dl9DUFZEZGxWUGRQSUJzYmJVZnRWbWlwMlV1N3JRTENUYmFfUGVGQnVWNHprSGpvUHJ6WHUyYnctc3VuRmRZb1FWRDhSdmR1RGYybmJqUDZpOGYxQnR4cXkxaFN2ZkM0ZUJEc0RTczU2a21QTlltN25HWWlCSlRSZkRVbEVxTGM?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.611,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "Citi Names its Top Pick in China Healthcare Sector - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTy1QWm9RTDJrWGozSU95YjdoX2tWM2owT2stRXJEUi1JeXVVejhXWVMyMDhhVGVGcEpIUjJGaGF4WjhlM2tRc2tsVVNMOW82ZndiNG80SnpySVZLdHdlZnJ1bko0cUQ3cDZpLXEwMTgxX05vYTBFc1Y1MnplcnlUNUY0R19NcGNTMXlwTDBLZEhkMmRTUUx6QWVKZTVqd1JOVTFmZWRhNmUtY0F6cklab0pn?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -1.18,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-20",
           "return_pct": -1.87,
           "zscore": -1.83,
@@ -2128,45 +2167,6 @@
           "coverage": {
             "count": 21,
             "zscore": 1.3,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-14",
-          "return_pct": -1.93,
-          "zscore": -1.72,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.38,
-          "events": [
-            {
-              "source": "googlenews_health",
-              "title": "Top Bluechip Stocks to Watch: CSL (ASX:CSL) Faces the Healthcare Test - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWg3WFliVDdaMXdCYnVwNGVvSHZCaWF5RmlONDJXaTVBV1ZGZUhKMFU0WE5GaElTQUxUaFdhMTkxWmIwc2d0cU50bkpGZ2NfelEzMjNlc0RsMkpOWVhhaEd5SE1KZ3JtSWNpSlgzaXV4V09kbklsWUFDYmJxZUxJYXJrekpKNmc3R25CQmxwVTlLNl9SRzgzUk9lazVWV1o2VkpiSHZSOGM2YWxGWnc?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Top Healthcare Stocks to Watch: Is Cochlear (ASX:COH) Facing a Demand Test? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeW1lYi1Ucy1Kd2x5QWxhMllwOXFaYXhxTWtoVmJ6YmhLcmZaX2xtSmtQTm9YQWNGLTF4V1NNSHU4eDF0VWVxMkNkMzJfMWRSZktOY19SQXRFaVJmc3RqVGxMaHpueGR2ZUFNQWFTdWJXMlJTWWJ5Um5OaEhyOFNmLWc2Nk1aQ1VMaHUxUGhlVHRKQXlzVkJ4Vnk1VU5CbnRJWUY0b3dRSllwZ0JyQzllVjdVN0Q2eEE?oc=5",
-              "sentiment": 0.077,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Why Is Johnson & Johnson (NYSE:JNJ) a Dow Jones Mainstay? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVGpDTVpqSG9nWFBYeWpIRGdtM0p5N0hKRzk4QWFOSFZiQjVSZm1qR2ZMTTJEdmZIYkVteURFd0xRczlZYnZHdDlrYThfa3NjN1JMcUs0b1pUZU5PVnM0NEtuX3VDYjByQTllSGNVaUlPWXMwV1M5ZDNQa1BxT25kaHRSdHdiN2FGQ0R5b21rWmF5dDBLQ0k3dGpmNA?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": 0.58,
             "spike": false
           }
         }
@@ -2418,6 +2418,45 @@
       "name": "Utilities (XLU)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-08",
+          "return_pct": 1.04,
+          "zscore": 1.58,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.36,
+          "events": [
+            {
+              "source": "googlenews_utilities",
+              "title": "ASX Midday Sector Update: Utilities Stocks Advance, Information Technology Sector Struggles - marketscreener.com",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSFFfQ3BvdWNHNVJjaWRqd01BakVRdXdvQ0JaOHlENXdzd3podXotcHp3MmpnRTFhaVBGMVJfb1RFS1JvN0NRdGdPYnJvRmp6dXJlcV84YXJucDhkZVZCeENOcHM1VTBhZkUwdnBTd1ZFeTUtbUxiWF90Wi1wSFB5aUZ4UWJuMEpzd2x0RVAwSDgyQUluTEdOSW1ndDcwVUZhVjZkN0JSSUxGMWdSZ3hiR195RERfYzVnaGhVRjZzVlRXVkM5eUlYOUxjaUxIblRWaENmYndWQThjQQ?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "ENGIE stock heads into the open after a recent Euronext slide - AD HOC NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVzI0UmVFZ05IeG15S04yWTQxZ1lid0NucU1leXpNN0pvem9OMGpwdHZsYTZHaFh3Rzc1TllUX3hEVE1uMU9oUmgtak9WYjBQY3F1S3dfSFUtbUxZNjllbzRqaGo0YVBrd1ZmdXVObXFETlIwdnp6Q1JHck1mX3VuZWw2aXRvOFpqYUlrZWRyeWoySzg3Q25CbkxEeHJtaDNtQlVONEZTMnhJYkppRmdtOTRCMUhKQURsdi1Cak5BQ29PZw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "ASX Utilities Stocks to Watch in September 2026: AGL, LGI and Rivco in Focus - Kalkine",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNekFfSFIyLXMyVE9iVzZ2ZWxpZnRKdThtaE5fUWJFSVA2dzhJblhzZTNCRjNkNDdWUGVlc3dDa05lcFU5NHhkQmo4RTZDVzhuX1lTcnJBMTF6SHBnRGpMUjE3bGN4c3lfMDhDTWFXT29UejFHRXhLS2xUWHhiV1FSZ2VwWDhSRGtiQ2toQlhCS3dYVGFsalg5b0dUYmxTVXNBV3NfV0k5X1k5bXJBNFp4VHVR?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.21,
+            "spike": false
+          }
+        },
         {
           "date": "2026-08-21",
           "return_pct": -2.28,
@@ -3989,6 +4028,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-08",
+          "return_pct": 4.32,
+          "zscore": 1.3,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.36,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "NexGen Energy (TSX:NXE): A Closer Look At The Energy Stocks Story - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOFJIclVPeWxEQlVqUm1pbEI0S3hVclFsb09KUzhVcEpQTEx5eGVYYkpQTmZlaVMtLWxHak1ZVnNKS1BKR2o0LUlXcWhzS2h1SjU5ZVMxeVVLVWdoT3VKcHoxcHdONm1KbVNKMWZDcHJydWRiMTB5WGxZZjFBdExEajdOUmtqVTZuN3Q2dVVreUY4b3ZNdDhhY2lrUlBEcHBISGgtcTNR?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.598,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Strong U.S. Jobs Data Fuels Bets on Fed Rate Hike Next Week; Gold Falls Below $4,400 - finance.biggo.com",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9yZkREeE1HVExXQzg5UVo5Q3lyNXJBek83RTBZTTBXUlM4M3c1Y3I4eHlqcUN2OHdVNDlQbFRHSE1lZzliLVZOR3kyaGxiLXBkYU16b1BSUGg3SjRjZnJ1V29TVDk5TmhRRDlSMEZHN1lRVFFlb3c?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.363,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Euro holds steady above 1.1600 as markets brace for US inflation data and ECB rate decision - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXhTOHFCdGh0UDBzTnZyNmFBeFh3UHZXNFlqS3VvSXczN2NadVczS19PeVlIVVNLMGlNLVdtUUdjVHhJeGJTQVdkYkY5LWlkMUN2bjY1eURROG5TSXFtN096QzhKWUwwa2FicmlDVnY3cXd5TVUzR2ZfNHpqUWxpaWFUbzZvRUQyTjlzbTZGbmlwMlM2d2RlNEx6SjJ4RENjbGxrWkVqUlRQZWZfeE5vc29lQkVhN1Nxc1B5b18tQzE3ZU9od1RBUWJkXzFuZw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.36,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-03",
           "return_pct": 3.11,
           "zscore": 0.95,
@@ -4182,45 +4260,6 @@
             "zscore": 0.85,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-20",
-          "return_pct": -2.6,
-          "zscore": -1.04,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.87,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Cameco Stock And 2 Nuclear Energy Picks Worth Watching - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaV9KZHlMN2gzNVRUQi1abG1NSVAyNXJWQkdtSkMtbUJ3X3dmNDA1Uk5nYWM1cXAxZUlrTnBPd19FeExoQmhGbWVyaTlGeEhobDBUc0w4TUpIVV92OWhNdFhPRnhZbUU5ZVdJaG1ZX2RQQmQ5cktOcDgwRFVYckhxT1V0M0kyYklBZFBoZUlMYjZrMDVHNnpGZ2sxaXZOaXpMZU1mQ1JKdEtNSVlhTW5vR2JUbzVES1phUlFSWNIBwgFBVV95cUxNcVJHaDN4bEpKdnpmejNpOGp3V29DSFA1UEI0dTVrTEY4LWZFSXktX3Y0djJQVHJuSGNsTEJ3VU9hel8zWWRKcERMd2gwSUZhalB5ckxnZFk0dVd2WU9DVmhrWlA5WWlrejVuczhjeFo3UE10R0xhT0daZHVSY3l3VzFIRDIzQmt0ZXEtT3lYZmc1Qm5Oc0hQWm82bEk5V2xGLTIzS3h6cG9BbnVPUGd3ZzN4Q2dncmNEcnpjUXI2OXJGQQ?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Cameco Stock And 2 Nuclear Energy Picks Worth Watching - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcVJHaDN4bEpKdnpmejNpOGp3V29DSFA1UEI0dTVrTEY4LWZFSXktX3Y0djJQVHJuSGNsTEJ3VU9hel8zWWRKcERMd2gwSUZhalB5ckxnZFk0dVd2WU9DVmhrWlA5WWlrejVuczhjeFo3UE10R0xhT0daZHVSY3l3VzFIRDIzQmt0ZXEtT3lYZmc1Qm5Oc0hQWm82bEk5V2xGLTIzS3h6cG9BbnVPUGd3ZzN4Q2dncmNEcnpjUXI2OXJGQdIBwgFBVV95cUxNcVJHaDN4bEpKdnpmejNpOGp3V29DSFA1UEI0dTVrTEY4LWZFSXktX3Y0djJQVHJuSGNsTEJ3VU9hel8zWWRKcERMd2gwSUZhalB5ckxnZFk0dVd2WU9DVmhrWlA5WWlrejVuczhjeFo3UE10R0xhT0daZHVSY3l3VzFIRDIzQmt0ZXEtT3lYZmc1Qm5Oc0hQWm82bEk5V2xGLTIzS3h6cG9BbnVPUGd3ZzN4Q2dncmNEcnpjUXI2OXJGQQ?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "NuScale Power and Oklo Drop 5%, Centrus Energy Sinks 6%: What's Behind the Nuclear Stock Selloff? - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZkxKeUp3ek9HVFJGTHc3OC1rU2dYQUZOVkYzUXV1TElfaF93TW1QNEpybWdsbW5wWG9Ga2ZON0U3emU3by1TZnJlTGp6dTV2Y1l4NC04TFFCWXNuTUx5TTFyb1FVVGRyOXNzQzBrMl9LNU0ybW9mRjh0Q0hDU3B1NWJlZWRvWndrMEJmTGhnTkRacU5feGw0Ylc4Mm5mTVBzRDlaMGdCcnRsNWRuU1R6MVJXRTRfN0YxbWJUcDhMZ2xyb2xLWlo4TzNYTTFXc0pz?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 6,
-            "zscore": -0.08,
-            "spike": false
-          }
         }
       ]
     },
@@ -4229,6 +4268,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-08",
+          "return_pct": 3.38,
+          "zscore": 2.1,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.36,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Indian Markets Fall As Renewable Energy Stocks Show Mixed Performance (08 September 2026) - solarquarter.com",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOHdoeUpkZ2VlSUFLX0RRTElROTJTVlZiLUpXTndOX1BRdTRBSGo4NmdPLVpDb245NXlIRWtITkt5aWw5RFRwMW5JWlBTcGwzb1Z1YmsxMUtQNFRCaVlmZTNRQy10YjZONDdtc0s0cGtPQnB2UVBZTmszUVkzN0l6d3pOOVc4WWFUa1F6cHE5bFFualNfTVB0NVlzMGRCMnIyQnZxMXZqTkhOLWdhS3M1WGc2UlNGRTdsOGEwT1JjWFpsdw?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Forget AI Stocks: This Clean-Power Play Is the Real Winner - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQc0lvQkJteXNJZTRFajdwcUo5MXRHX3dtNnhzcXFWQ0dmYjF5ZVY5enZxZWlaRDBoM2x2WjJ4dmtJRFJGTTREa0xldlBTZDh4YjNwWmpla0RTU3A1bWVJQ3NUNEVRWUlpLUFmQjJUUVFDa3UwQmt3cmRSWHZOdS1QdXl1SlFpVG1idWQ5Z3l4Zkowc09Gam53angwakxHcFktaTJYRWo0NlFPLVF5RmRCZzl0TEpnRnpkNFdNREVZSjZ5ajhKNlpBbWNGRFNsbTBhS3lMMjlWa1J4QQ?oc=5",
+              "sentiment": 0.649,
+              "relevance": 0.459,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Price Shock Is Boon for Oil Stocks, Curse for Renewables - EnergyNow.com",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ2NGMEpDUGtBOVUtTGVKdmdzdkRuZ2JCNnEwczNpNkdCeVB0bDNlYzdPNk11djZXalljaS1GMTlheXpoRlRQWHJiOXNHaDhRNU5zYndJQkJJRWNZLUtjakdBUk5CS1p6OGtvZ2ctZUFxYWtJUkxKbkJPNEM1ZnJqU3VVVHZQY3VQSHZueHVoMA?oc=5",
+              "sentiment": -0.727,
+              "relevance": 0.4,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.68,
+            "spike": false
+          }
+        },
         {
           "date": "2026-08-04",
           "return_pct": 2.5,
@@ -4421,45 +4499,6 @@
           "coverage": {
             "count": 5,
             "zscore": 1.23,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-16",
-          "return_pct": -3.83,
-          "zscore": -1.18,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Can NextEra's Battery Storage Boost the Clean Energy Transition? - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeUZVRTh1bXJrS1V0OE1pLTJPSmNHRlBBWVNBc1Q1SC1lTkVvSXIzbzZteDV6RkQwaEt4RmpZUHdBYWxXREZhcWlaWjlLN1ctLXZfSXppcHJmMUxaSDFPSUczX0M3RFVUQVhFRm5hODd2M2RNZk55YmVOaDQ3TThoS291dUcyLWhkOW5ZcklYRXZSTkpFMm5kU3hKN0ZVZ21uVlhfMWtacmlGQ2hSTy1nNzZQNDBmclNWZUdR?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "First Solar stock reflects resilient demand amid U.S. clean energy push - Ad Hoc News",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV0MxUi1PMDMtcTVwZE96cERGSEYxZFdJanRBUGx3b3I1N3IxOWJKWng3TVAwR3RseVE3cVVxYmJNVnMzQ1FGQ3AwQmtndlNiSVl1Y0RTSWw4bF93YWcyS0o2am5BeHdKd2ZubDR0b2xQaDNJcnotaTdKNmF1eG5CMmJqcnUzT2JyenAtY1BRWWliYlFlWkF4S3BZbFJfUjNPaDJ3TXZ5TWhCVWZtN1J5WnpBNmpScTFOczdHMkZnQU5LSmFQVEdyXw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Iran Oil Shock Spills Into Demand Inflation, Lifting Fed Rate-Hike Odds to 73% by September - Tech Times",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNFRNTkV3Z3ZzQWhBUEFtaGMxdkVpZFlwckpUdnF5bWV4NGhzdGNDVlM1QjFWWXFTVnNkNExHZUlTSmZ1d0E2aGRITThzMFpyMlQ2Q0pLaXF1QlFRTkZNZlJYdzNYeHBQdE0taWN4bzFZM25lWTd1Y0RxSl9DTXR0OTVJZEpSWWFpS2hmYkZHSVJBQWh2R3VTSVZpRmt1WkM1dDlNU1ZRMVV1N1BFQzY3N21ZSkZYMm00QkxlbmVrN3pGX1lEU0ZVVnlLVERkUQ?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.474,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 2,
-            "zscore": -0.54,
             "spike": false
           }
         }
@@ -5915,21 +5954,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-08",
-      "return_pct": -0.85,
-      "zscore": -0.62,
+      "return_pct": -0.32,
+      "zscore": -0.41,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 2
     },
     "equity": {
-      "date": "2026-09-04",
-      "return_pct": -0.38,
-      "zscore": -0.73,
+      "date": "2026-09-08",
+      "return_pct": -0.36,
+      "zscore": -0.69,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 4
+      "days_since_last_major": 0
     }
   }
 }
