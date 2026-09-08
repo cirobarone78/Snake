@@ -1,6 +1,6 @@
 # 🌡️ Clima macro (USA)
 
-_Foto del momento (snapshot: **2026-09-07 13:58 UTC**) — contesto, **non una previsione.**_
+_Foto del momento (snapshot: **2026-09-08 12:37 UTC**) — contesto, **non una previsione.**_
 
 **Lettura di fondo: 🟢 risk-on (favorevole)**
 
