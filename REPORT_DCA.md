@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.7% | 33.3% | +21.6 pp | 54% | 1.000 |
-| 2 | LINK | 41.0% | 33.3% | -7.7 pp | 100% | 0.500 |
-| 3 | SOL | 47.3% | 33.3% | -13.9 pp | 92% | 0.000 |
+| 1 | POL | 12.0% | 33.3% | +21.3 pp | 53% | 1.000 |
+| 2 | LINK | 40.2% | 33.3% | -6.9 pp | 89% | 0.500 |
+| 3 | SOL | 47.8% | 33.3% | -14.4 pp | 86% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -34,14 +34,14 @@ Token della piattaforma Binance e gas della BNB Chain.
 - **Età**: 9.2 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
-**AAVE — Aave**
+**TRX — TRON**
 
-Protocollo di prestito on-chain fra i più grandi per depositi.
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 5.8 anni.
+- **Età**: 9.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -123,9 +123,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 26
-- stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 14
+- capitalizzazione sotto la soglia: 27
+- stablecoin o token ancorato: 18
+- volume troppo basso rispetto alla capitalizzazione: 13
 - già in portafoglio: 6
 
 ## Limiti
