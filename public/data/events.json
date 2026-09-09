@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:50:00+00:00",
+  "generated_at": "2026-09-09T21:05:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -720,7 +720,7 @@
           ],
           "coverage": {
             "count": 44,
-            "zscore": 1.35,
+            "zscore": 1.34,
             "spike": false
           }
         }
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-09",
+          "return_pct": -5.76,
+          "zscore": -1.77,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.15,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink surge revives 'XRP overtake' talk, but market cap gap still wide - digitaltoday.co.kr",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMDdiQnY3NkliRWpCV0V0eFhZTnlKTmNOTlBteVZ5eUJ5T3JEd0VOWG5kMTlIVExndjFhZmhnTTNHNUkza1NaaHpnU0pDNEl2OEt0cDRNRU9DeFR2NF9oeHhzUVM4bm93ZGNJWHJXRE90U2phT3pwZFF6Q0c3dmtXNHdCRGhfSWtFUGJ1UnEwMTVOeWJuSUJUZHJ6djFsNzVaSG1Nc0RjRDJqc0t5M0VvOTdlbw?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Price LINK TA LINK Technical Analysis - Altcoin Buzz",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQXBQTjNWRXNRdi1JVTRDbW9YVDRnemlVdThfcXpGc3VGYTdjNWpzQUx0c3VmZS1oVlcyeEFRQXNIZW9Hc3E5RDVNOUhhd21KNE8yYVpHcUdxeXdnSTJVdXFWalZQLUt1dTdzMUZOcV92X2ItcEIxRWlidXRyMUotNDVaQ1FmRERXSWlwMkhEUkpNMVdkSDU5Q0JTR0p3SUJNVk5TRUhkYndDbVdRUEdkN05yNzBOMXA4eEE?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink surges 51% as bullish breakout points to $18 - CoinJournal",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTFFTSTFQMzBfQUhnS254akFWOGR0WjFvMW95UDRaT3hTRXhGdmo0NlRJTnFacVNoSnJkYWZJZ1dNV3QwMV9mVXNCUmR5Z2VpZEl1T3N3d21zakNyNGgzVEM4SXNaS0puVGE2Nk9uRnFha2F6Q1hCUHF2Ukx1YTkyejI0Qjg2aTAydHc?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 9,
+            "zscore": -0.67,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-06",
           "return_pct": 9.75,
@@ -923,45 +962,6 @@
           "coverage": {
             "count": 20,
             "zscore": 0.06,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-15",
-          "return_pct": 5.54,
-          "zscore": 2.32,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.08,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Bitwise Chainlink ETF gains $1.5M weekly inflows despite 48% loss since January launch - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSWdMbFJoTkJVZGtrWm9BcTRwcnk3M0RGcEVCMmlnTWwzTUQ0N0NqZ0RzZnA2VEZqbkV3aW9aZWoyZUE5THlKZkV5XzVGQld2WmZHd21yRVNraWJ0QVRtM203akJNVzFyQ25ORnNtNXdqb2R0YnE0UnpLUWdqZlFKV0swWEpnd3VrNnBMMnVJU000dXM?oc=5",
-              "sentiment": 0.521,
-              "relevance": 0.808,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Shows Signs of a Reinvigorated Uptrend - OneSafe.io",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBOSzFJTlNKS3lGZm9iVTlPSzgzVXpVMXRsZHptazZING02eDRrZFdfZHI4RVpFcldQR0xGVUdrdnc0XzF0V1JrSl82eTNiMzVpa2ZncmpTb1ZLemNXWktOZzhFa0xzdXM1NXE0OA?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Approaches $9 as Holder Count Reaches Record 3.96 Million - finance.biggo.com",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3dF9mbGdMQms3Mkt2N09JYmF0YXZjZEhTSG9adFVwaGFzNXN2SnZzc1NtemhTM3dTQmtsUEVydmk2Ukg0eTdmazJUb0l0R0VxM2pUc1d3LUJiWEJQd2pWdnlKcE9nWnE5MjcyNnF0LWp1M0o2S2c?oc=5",
-              "sentiment": 0.052,
-              "relevance": 0.621,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 25,
-            "zscore": 0.4,
             "spike": false
           }
         }
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 27,
-            "zscore": 1.47,
+            "zscore": 1.48,
             "spike": false
           }
         }
@@ -3330,7 +3330,7 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - barrons.com",
+              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - Barron's",
               "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3VhcUd0NDk0VWNEeGg4bzlGNWxralRpZ05aeHhBZjZYY2Z5c05SMGNUWXBKbEhVLXBPVy1OTk1WMjliT1VvUGw4Ri1pNGVEQmZqQm05RFIwWFNwRFVDVW9ucGMxMjhCcjQ0T1VWQ0dnSkpGdHg4dnA3Vm54Y3ExYWxGdElBaDBr?oc=5",
               "sentiment": 0.459,
               "relevance": 0.784,
@@ -3338,8 +3338,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.87,
+            "count": 7,
+            "zscore": 0.57,
             "spike": false
           }
         },
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.68,
+            "zscore": 1.72,
             "spike": false
           }
         },
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.25,
+            "zscore": -1.27,
             "spike": false
           }
         },
@@ -3711,7 +3711,7 @@
           "events": [
             {
               "source": "googlenews_commserv",
-              "title": "Analysts Are Neutral on Top Communication Services Stocks: Cineplex (CPXGF), AMC Entertainment (AMC) - The Globe and Mail",
+              "title": "Analysts Are Neutral on Top Communication Services Stocks: Cineplex (CPXGF), AMC Entertainment (AMC) - theglobeandmail.com",
               "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNWVdTZkFYQ3VQejBMQmRGbHZhZThRMG5jQ0YzYnBfaUNkQnNsa0NOeWlYbVNETEV2Vk01V2QxdGthRDk5bDJPc2NjT3RFSVRfTEVUSGNsLVlvSkpsMTdHRFdjZWFub0VpYzdJLWxtVHZ1RWxUMVR2dTVnXzNjVElZaGJFbi1GaW51cXlNbWMxekNsdzh2MHpmQ2tHLVRnb0E1VVp2a2dCTWpRMWVNV1gxNWtha0tTTDA5MmxfcjRaNmN4ejZ1MkF3dndpRHE3WWxLNW9EeXZWVV9EQTZWVXg5bFBqOVdDYzJFcU0zU0R6SVQ2QzR0bnZPbzFFcXh4S0xQelJFQ3lCTGlIUQ?oc=5",
               "sentiment": 0.557,
               "relevance": 0.823,
@@ -3998,7 +3998,7 @@
           "events": [
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Currently.com",
+              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - currently.att.yahoo.com",
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVQ3NDRReTNjdUh6V3I4MV9MdU13NHFfZ2FOMkY5TFd4RHFySnVRam12ZDBqN3ltRXcwRm14d1VSR1U1SUdkMXpycF9JMFJMc00wVHBncUtwMXFPeEZsQ0o4TzktRW10SDZlMS1CV3FJZ0wzTWJqODlVQm9rTy1WZGtZd0c?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.16,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -4035,6 +4035,14 @@
           "severity": "major",
           "market_return_pct": 1.06,
           "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Investment Opportunities in Nuclear Energy Stocks - Intellectia AI",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOblpMNVdHcjZhZENSMkZSazBBU1lQM2tFTjY3U0VUV04yZ2Q5U3VEWlVfV2VkbVd5OUNRSTlYaElpSk1ZcVdQSWZBM3VLMUNZZkNkdEZjYUl0NTRnMFBwM2xzdHd6dURQazAwVU5mVTBVdDNwUEJLVEZXZ0tBMTR2N1VGOGRXeUNYZTZn?oc=5",
+              "sentiment": 0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_uranium",
               "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - ETF Database",
@@ -4050,19 +4058,11 @@
               "sentiment": 0.026,
               "relevance": 0.61,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Why Uranium Stocks Are Falling as U.S. Production Triples - Crude Oil Prices Today | OilPrice.com",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMXJENndCOEtTSHNtZmlCLWVraUtXQktjSlY4M3VaajFyS0x5NVZua0ZPOWstaGRJbV9pZ1VhUU1DVXJGSURfdE5BX0piTjlQQk0wOTZsa3FKZHgyeFZaaXpoM2ZJcGUzMkRZTU5RZGhCcU1nQUNEVTJObmdaQTRUWUt4YmZkNDhabEhRYk14eGdzNlM5VmNoZldfNFkyUUZzaUR3V3hLTjY4MDVTNENwR25pU3HSAboBQVVfeXFMUEtSNld0cXdNMWRXTFY3TlZYdGgxb2d5b1pJejF6QUFwQWE4djRmbVN6RU1uU1NseGxrVVhEbWFNdWhlR1BnVGFlQ2NhbFlzODFvZFdKVDBhazZUazg3a0w3cV91NXAyRm1sbGNIcFZ2WVdyRDlBMEpPbExRX0ZuMjNDbzI2U0FicTVzbFJidFo3ckZMRnJiU3ZOanB5dzMxVFloeFBHQ2R6eldmeXh4SUwxVTJoWG1pWjJR?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.73,
+            "count": 5,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -5126,7 +5126,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "Buy 5 Large-Cap Stocks With Extensive Robotics Applications for 2H 2026 - The Globe and Mail",
+              "title": "Buy 5 Large-Cap Stocks With Extensive Robotics Applications for 2H 2026 - theglobeandmail.com",
               "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcEd5V3M0RlNCdDhkSVMtYnZ1OVNaN3kwZFJCakg0dW5uUzczcjFQUVRlRlpWRUk5WEdWM1B4R21XTndVT3lVeUpfWHRBTmJMN3NJalY0alhhSTBIWUlDSjlyWi1URkg4alpMcnF4YkR1a1FJTmh4dTBkcmQwR2tKQnRvWjBiYmdPd3hFcUhIa19QcEdxS3lYb3pHZ0FyeFBIZnk4YnBqZzRPUTdCa21IVEJETWtaRTJIdG9lbXRTdDk1TGJIVmFLaWtNa2RYbXd1WmU1S3lTNm9IWlladjVJQ1hjd3J2d01UUmJr?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -5134,7 +5134,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - US News Money",
+              "title": "5 Best Robotics ETFs to Buy in 2026 | Investing - U.S. News - Money",
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ycXoybWdHd1JQUHRjdFdvbGJ3WDVzVjNyWHJMQjdPTHNsM0pobUx5U1hKazF1TG9ZRHI1ZTNValFkeVh6bUlLLTNxNm1WN0I0cXRTUk01U3ZsUUNLemgwZjVmT251OTJOQlVtRUg0aWhuczA2ZGlqRw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.6,
@@ -5710,7 +5710,7 @@
           ],
           "coverage": {
             "count": 44,
-            "zscore": 1.7,
+            "zscore": 1.71,
             "spike": false
           }
         },
@@ -5749,7 +5749,7 @@
           ],
           "coverage": {
             "count": 43,
-            "zscore": 1.76,
+            "zscore": 1.77,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.95,
+            "count": 31,
+            "zscore": 0.86,
             "spike": false
           }
         },
@@ -5915,17 +5915,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-09",
-      "return_pct": 0.39,
-      "zscore": -0.11,
+      "return_pct": -0.15,
+      "zscore": -0.33,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-09-09",
-      "return_pct": -0.41,
-      "zscore": -0.71,
+      "return_pct": -0.48,
+      "zscore": -0.81,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
