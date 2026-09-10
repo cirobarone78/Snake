@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T11:40:00+00:00",
+  "generated_at": "2026-09-10T16:37:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -757,7 +757,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Convert 10000 TRY (Turkish Lira) to LINK (Chainlink) - bybit.com",
+              "title": "Convert 10000 TRY (Turkish Lira) to LINK (Chainlink) - Bybit",
               "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFByd2Yxa0htZnI0akFvcjQ0Z294dWd2MFZkTzBocm9aeUF6VEMzd25KSVhYSjkydU5jLXN2SkdkNjRsMF9femtuWm5ldUMyN084U3RuVGF1T1EwRkhqNTZNcA?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -974,12 +974,28 @@
       "moves": [
         {
           "date": "2026-09-10",
-          "return_pct": -4.92,
-          "zscore": -1.11,
+          "return_pct": -5.91,
+          "zscore": -1.29,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.32,
+          "market_return_pct": -1.81,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon (POL) Drops 4% Amid Broad Altcoin Pullback - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE91R3ZCZkw1UUNual9NV0VHZ3djVG5WYTNZSm5zQlV0Z0p5OGpTWktIQkpXMG95WU9RMTFRUW1yeTh0QkoyT21WZkY5UVRteG5WV1RDWWpTemp6WUY0MW1HbHUxYkJHTUlHMVRrTkJJYzA?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "coindesk",
+              "title": "Threatened with arrest online? Recognizing a law enforcement impersonation scam",
+              "url": "https://www.coindesk.com/opinion/2026/09/10/threatened-with-arrest-online-recognizing-a-law-enforcement-impersonation-scam",
+              "sentiment": -0.844,
+              "relevance": 0.563,
+              "event_type": "other"
+            },
             {
               "source": "coindesk",
               "title": "Hunter Biden’s LAPTOP blames bots after 98% crash as traders rack up six-figure losses",
@@ -987,27 +1003,11 @@
               "sentiment": -0.796,
               "relevance": 0.551,
               "event_type": "other"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "US sanctions Xinbi scam marketplace, restrains $52M in crypto",
-              "url": "https://cointelegraph.com/news/us-sanctions-xinbi-restrains-52m-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.572,
-              "relevance": 0.497,
-              "event_type": "geopolitical"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "Bitcoin sell-side risk returns to rare lows as $80K sellers fade from view",
-              "url": "https://cointelegraph.com/markets/bitcoin-sell-side-risk-returns-rare-lows-fade?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.44,
-              "relevance": 0.466,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -0.76,
             "spike": false
           }
         },
@@ -1418,7 +1418,7 @@
           "events": [
             {
               "source": "googlenews_tech",
-              "title": "Global markets trade negative amid tech stock decline, all eyes turn to US nonfarm payrolls - Anadolu Ajansı",
+              "title": "Global markets trade negative amid tech stock decline, all eyes turn to US nonfarm payrolls - aa.com.tr",
               "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOT2xpMVBYYUREYnZLR0w2UEpNbEt0X1o0ZnlWM0paeC1MbmVfcVJYeE9mQzBId0FOUGZqUEt5VkNwY0VlcHlZZWREcGpEZ01LUmtwQjlab1p6M29lM0dDM3ZWSWxnZUlKdjQtTUFBN0gyaE9uTk5QdkwybUs2WEhSeFdFMEJYc0tVYlRUQnA3cXhNb1ItcVFwU3ljOE9JM1JxZ2lWYnQxVTRVVkk3WW1KRzlVTkptN013emZ1dzVnZ0xOTzBJa0F4S3pfaw?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
@@ -3330,7 +3330,7 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - barrons.com",
+              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - Barron's",
               "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3VhcUd0NDk0VWNEeGg4bzlGNWxralRpZ05aeHhBZjZYY2Z5c05SMGNUWXBKbEhVLXBPVy1OTk1WMjliT1VvUGw4Ri1pNGVEQmZqQm05RFIwWFNwRFVDVW9ucGMxMjhCcjQ0T1VWQ0dnSkpGdHg4dnA3Vm54Y3ExYWxGdElBaDBr?oc=5",
               "sentiment": 0.459,
               "relevance": 0.784,
@@ -3989,6 +3989,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-10",
+          "return_pct": -3.47,
+          "zscore": -1.43,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.59,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "New Fed Chair Kevin Warsh Sparked a \"Credibility Shock\" on Wall Street After His Latest Rate Decision. 3 Reasons Investors Should Care - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcHVFNVpEWG9NU3I0R3NxQ0djeGlYY0ZDMktwWEh1QUROaDNZRmxPMzJISGFLaEtROEFILU1ISU45YTREYll0UlJtUzlqNmM0NTIxbGxYRFByZExfNnBNZHlUTXJiX1k0ZG5iSlZETjNsd3hSZklzV1hRWDhkX0UtTHF2WTEzR3R0M3JwYWljeVV1ODBMWXJTMA?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.436,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "NexGen Energy (TSX:NXE) Examining Its Uranium Market Opportunity - kalkinemedia.com",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZl9XcEpILURMYWU3SDBpYUZXaDdtYWpiV0xwRy02MGIxZHZMVzYwRXdPTmViQkI5dVpVNXFabVZMTGY1Y2ZFRVpVNVRyRVlHLWRsMXl5blJCYm9qeGdUeW5pWkZUdUhyc3FDTWQ1NW9adVBwektwa2xTLTM3aVZuNXVpRElaYWpwc1k4b3dqQU5lM1IzQmZhX1ljZ3pLXzRtOUpZcWJn?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.4,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Euro steadies above 1.1600 ahead of ECB rate decision, US PPI data - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRWRNYVB1eVFrMmtoX3pIbmxTcE1LOW1IZ2pGVEp6aEs5aGVSMmRMVkJOVkplZExOMzRURmdCRHZxdjJFM3R0Nm9WR2ViWXpXeXZHSVZjVGNuT2IxSTdQM1dVeDgtd3lFYTJTQjU5TTRseVl1SmZLLXFrLWFGY3psWnl6aVA5b3ZaZHliTGd3VlEzNTRTc3dWLVA1QXg2UGZ0Q2xCYVcwY2tvN1E?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.36,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-08",
           "return_pct": 3.13,
           "zscore": 0.89,
@@ -4045,11 +4084,11 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - ETF Database",
+              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - etfdb.com",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnB3WHJhajlfN0xZMk9SWU8wV0hYcG5vWkpwWGhjQ3EtSW95dU9sQl9mUll4R0g4d1ZIbnFTVFFMV0FiNlpsM3R4NWViN0RLYmtIanZjRi14QWpVRzduUXBWZl9obkJKRFdqTGlORXo2akFhUEI2UXlrSTdycFZZZWtydDR4TDFOTWhjbVFqaFNIN3ctd3lySWx4bzZRUQ?oc=5",
               "sentiment": 0.226,
               "relevance": 0.691,
-              "event_type": "etf_flow"
+              "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
@@ -4179,46 +4218,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.86,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 5.09,
-          "zscore": 1.75,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.43,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "NexGen Energy Stock Falls 3.16% as Investors Take Profits Despite Rook I Construction Progress and Strong Uranium Outlook - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSHhBbHJ0MEpwYy13VjIxQzZJaEZlNnFQYkFyOGZtVklnQmxKNEpTa2JUUWdwamYtNjM5SzVJMU9PZ212V1RTWG93QmE3ZVRuTmIzZ1BjMWNocHF0TUh4cjJaeWVUa3ZVX29MNjJtMjR3OGgxbXJvNDVkS0c0V3pTanVLcENsa1RJRlJ5ZmZpbWxWc1B2T19WN2gzdnlDRDhpR3ZEUUc1M0NKbFIyeFNmT3Nua3ViVFZDR3FscGpUZ2Y3aHpYMkdmczYzb1Q0U2wtcm1haEQ4NGdTRzliZmFXdkluQ2Y?oc=5",
-              "sentiment": 0.878,
-              "relevance": 0.951,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "enCore Energy Falls as Uranium Stocks Cool — Is the Nuclear Renaissance Trade Taking a Pause? - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQblVlVVZudG0xS3VzR1hhUlhCMHBSVzBCMVlTOWxVUzdidHpVRE40MmhoenhnaTNucWVlUVpPM19yOXhPS21mOFlURVlBOHpoR3NIYU1xbHB1a0dEdzNoOGhmYmJMb1duWmFTU1Q2NVhUOVdrUXRNT0V5RFdkLXp1OHFKMDd1WnlKZEFBM1RZV29OdWRRUkpiODVzLVZjTWNsWXkzc3F3VmpTWDlSalpZUjdCRFJrVHhVdTIwamVn?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Nano Nuclear Energy Stock Climbs Friday: What's Driving the Move? - Nano Nuclear Energy (NASDAQ:NNE) - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU5QZDdBb0trTWdDSzA4SnJUZUJxU1hqRUlVSTRpeEdSOHJTcEZxY1pLMVZpZ0ZqVVIwcXB1VWNaQ2sza3YzeHdiR2xKcjRwWmU4RHRIVU44U0t2S0VObUFlT2pzWkJjQUtNNENlU2ppaDdZbDdDVm9JVktvU3REa3dGU01QSUUwQTk1cWs3Q0V2ME5hNnN4OWYwcGpYWjZCbklUOWJid3pjeF9tRjJvelRRQnlyNHVqc05JYlRNMnc?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 9,
-            "zscore": 0.81,
+            "zscore": 0.83,
             "spike": false
           }
         }
@@ -4264,7 +4264,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.43,
+            "zscore": 0.45,
             "spike": false
           }
         },
@@ -5676,6 +5676,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-10",
+          "return_pct": -2.64,
+          "zscore": -1.11,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.59,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Radisson Mining Stock Under Pressure: Bearish Momentum Raises Correction and Downside Risk - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY05oZmoxSWNONnEtb3F2LXpNNFFZTW1TTE5YQXZtQWZGVjQzcHRtNmRiNGFUT0NCVU4tbTBtNUZBZXI2QWhOQS0zNE5CSlFYeWFlbEoyUlZoYXk1Rnk1bThZQ3prZDB3YUFjSzh6N3JuelNGSnZ4eVpubUZBbFZJNmQ1cFd6VTVmb2l1RUgzM3JSZ01GZVFHTjRoZHN5ekd2cE41clAtQ1RyUXlfdUk4VlhjdC1HRm1uWWtqRw?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Goldgroup Mining Stock Under Pressure: Weak Momentum Raises Correction and Execution Concerns - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQV2RaMDlWaklDcWNCeEx1MHRIdnJpSzgzY3ZvVEFmVVMyT19Lb0hQUi1mZW54OVdiSi1WX3BOQlhXcC1HWVNNY044azA4b1liQ1hER1Z2T09RNDJPYjcwZzVRNVVIaVNaRUhsWGJDQXVnYl9qVFhYTjM4Vzl2QUQ5QmNqZWRZUU1qVng4TVRyejNpZ2dSQTV0aUVMRUVrTGwzR2ZGLXR2RkFJekRjdFFCZzhfeW1VMzBSRUlsc3FQZXk?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Gold X2 Mining Stock Faces Renewed Pressure as Bearish Momentum Raises Correction Risk - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNFA2VWQzQmN3LTBuOTB1UXJyUTlWcU9MeUZncFRTZkNyOGcyTXZrR2kxbGhiRU1XYzl2cWZra3lUMUkwTmxBR3Rxb0xOd2dMMmV2R1RocnFIMnp6bWo1TXRLSm5hWWwya1RmTGhPaEppMktOQXFiQlpSVXFBNldOU1FfVURZTkdqSjZCSEp0MEczeThGeHdYcEQwV3ZjT2ZlLWxBRXp5LVlIR1IzYmh3UmZ5T1dFSXRL?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 31,
+            "zscore": 0.56,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-03",
           "return_pct": 3.95,
           "zscore": 0.94,
@@ -5869,45 +5908,6 @@
             "zscore": 1.12,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 2.98,
-          "zscore": 0.62,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.43,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "GoldMining Stock Climbs 5.41% as Project Economics, Active Drilling and Gold Momentum Strengthen Investor Optimism - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWVVEa2VhdlRyTnNRYTVfLTYzWGxQS241am1DVDZVekNNaktfX1JULVo4S3l5VHNKaU5GZUdxMlRNNEM3SVh1a01NRk5OMUZZN1NVVWs3eUdzMHVod3VrV2NWbDFUemZaNVRSSmhsa3JQclpuRkstdFVrVHg2WERXT0ZkX2g5OU92SkVLLXpHWnVsa2FfM3lQWk4tNC00Y0VDRTJiM2tGN1AwbEZyelF6N2lORldRWmZGcllTSVMwTEt3WFd4WUtGSXotazNKRERadVB4NzFwaXJuQQ?oc=5",
-              "sentiment": 0.818,
-              "relevance": 0.927,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "West Point Gold Stock Climbs 5.56% as Gold Chain Drilling Success and Full Ownership of New Discoveries Strengthen Momentum - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMmRSU1dENjdOb0VURGFYY01KLTc0MzIxOHA2ZmllRGx2YXdsbG84ZUwycmlaaGVKLWtTaEtyd2ZLU3ZJX0VPOUZLcnFjczRCa1R1QUJ1ZVU1REc0cGhobDVaWE1zUlVnTmJmUGlLS3ZIdkRiQm9tSmN3T1RUQ3cwckphbTJ2VUVMNXFZR3l0TUdCbUNQZ1RZQm1tcktMQWpVZWs0QXFQQ1dwT1Jra1F3T0FJLWw1Q3hBeU9ydXZfWjE2V1FralhQNVJRckVhdGhxZy1TZUQ2a3RPTnhLeF9UZ2lhVXFFalE?oc=5",
-              "sentiment": 0.718,
-              "relevance": 0.887,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Arizona Gold & Silver Stock Climbs 7.59% as Evolution Mining Investment and Philadelphia Project Momentum Strengthen Optimism - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPQmdsaDVrOFlHQUpMSVdPQkNJMzQ3Ykc5d3NIM3FNcHFCdzdWLXI4M0t4QVZmT2N0dkY2VDBmMC1Ld2VKT083dDJHY2s4Ty1ENzBxMFVwLTdNcjVaM2VVNlR0OC1qZ0lPVHdWVTQzbE1nYnRGek9NSUF6WkxqUUdLdjBIVXVDOWxUelJLSWQycklXeUZwSWhhWC1adzNBSkc0VmlScEN0VUJXYWtIMVppZGRWSmVIVzVEV2xCOUtsMTdfQnM2T3dEV3VCVU1FMHNrR1BYRjN2Qnk0aXFSWjdGcF91QVpFTVE?oc=5",
-              "sentiment": 0.7,
-              "relevance": 0.88,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 31,
-            "zscore": 1.01,
-            "spike": false
-          }
         }
       ]
     }
@@ -5915,21 +5915,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-10",
-      "return_pct": -0.32,
-      "zscore": -0.42,
+      "return_pct": -1.81,
+      "zscore": -1.02,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-09-09",
-      "return_pct": -0.48,
-      "zscore": -0.81,
+      "date": "2026-09-10",
+      "return_pct": -0.59,
+      "zscore": -0.91,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 0
     }
   }
 }
