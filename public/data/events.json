@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T23:20:00+00:00",
+  "generated_at": "2026-09-11T05:00:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -642,7 +642,7 @@
           ],
           "coverage": {
             "count": 52,
-            "zscore": 1.34,
+            "zscore": 1.33,
             "spike": false
           }
         },
@@ -681,7 +681,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 1.96,
+            "zscore": 1.95,
             "spike": false
           }
         },
@@ -720,7 +720,7 @@
           ],
           "coverage": {
             "count": 44,
-            "zscore": 1.34,
+            "zscore": 1.33,
             "spike": false
           }
         }
@@ -973,27 +973,27 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-10",
-          "return_pct": -6.59,
-          "zscore": -1.42,
+          "date": "2026-09-11",
+          "return_pct": -4.57,
+          "zscore": -1.04,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.02,
+          "market_return_pct": -1.5,
           "events": [
             {
-              "source": "googlenews_pol",
-              "title": "Polygon (POL) Drops 4% Amid Broad Altcoin Pullback - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE91R3ZCZkw1UUNual9NV0VHZ3djVG5WYTNZSm5zQlV0Z0p5OGpTWktIQkpXMG95WU9RMTFRUW1yeTh0QkoyT21WZkY5UVRteG5WV1RDWWpTemp6WUY0MW1HbHUxYkJHTUlHMVRrTkJJYzA?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "coindesk",
+              "title": "Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
+              "url": "https://www.coindesk.com/markets/2026/09/11/bitcoin-below-usd77-000-zcash-leads-losses-as-traders-bet-on-a-fed-rate-hike",
+              "sentiment": -0.402,
+              "relevance": 0.456,
+              "event_type": "fed"
             },
             {
               "source": "coindesk",
               "title": "Threatened with arrest online? Recognizing a law enforcement impersonation scam",
               "url": "https://www.coindesk.com/opinion/2026/09/10/threatened-with-arrest-online-recognizing-a-law-enforcement-impersonation-scam",
               "sentiment": -0.844,
-              "relevance": 0.563,
+              "relevance": 0.443,
               "event_type": "other"
             },
             {
@@ -1001,13 +1001,13 @@
               "title": "Hunter Biden’s LAPTOP blames bots after 98% crash as traders rack up six-figure losses",
               "url": "https://www.coindesk.com/markets/2026/09/10/hunter-biden-s-laptop-blames-bots-after-98-crash-as-traders-rack-up-six-figure-losses",
               "sentiment": -0.796,
-              "relevance": 0.551,
+              "relevance": 0.431,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.76,
+            "count": 0,
+            "zscore": null,
             "spike": false
           }
         },
@@ -1021,7 +1021,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon CEO Triggers Crypto Community With Vacation Take and Schools Critics - finance.yahoo.com",
+              "title": "Polygon CEO Triggers Crypto Community With Vacation Take and Schools Critics - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYnpMa2VNMlBMNFNRRzUyVHJIUEEtUGthbmRNb2pucW5XeWlUQjRwNzRqRDhGeFhQY2R5WVlCaGVxSDBMS2ZmUkhJbTVCZFh5Q1hVWEpfSktKOXE5dWNnaExHUWI2V1hiQUVZMFBGM2VnWkNvdmFsREpwT1loQXBOQVBfMGtQS0ZMMzdnN2ttcy1FSTZWWWY4bWp0NUljQ0VZUWE0TQ?oc=5",
               "sentiment": -0.296,
               "relevance": 0.6,
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.78,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": -0.09,
+            "zscore": -0.08,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 0.71,
+            "zscore": 0.72,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 2.83,
+            "zscore": 2.84,
             "spike": true
           }
         },
@@ -1993,7 +1993,7 @@
             },
             {
               "source": "googlenews_health",
-              "title": "US stocks: US market rises as yields ease, Moderna lifts healthcare stocks - The Economic Times",
+              "title": "US stocks: US market rises as yields ease, Moderna lifts healthcare stocks - economictimes.com",
               "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNemk3aWRmU0ktdmlzb0IxVmdSMVJKOHRLUl9QT0VWX1BqUkdaSUZ5OXFJMHoyOWR5eS1uV3FzdjloM2pPaUctaUVFdUhNaFdrMzJCMWVsdm5DU0VMRm5wWGVqdHNYRGZSYmxwN0xXc00wNlhGRlNUdVlwbmFfWGNpbmNOUjJOSU9jbG4zdjVDNnlHbS16bFF2VTItcnFuWTJHOXhpdkMtdlo0MGFyWk05eDhDeWpEQklEQ0o5eXRicTRMb3lHSlN3X2pIR2pQMHFOcno3RGpSdEdxUWJQOWNZXzJtY9IB6AFBVV95cUxQZU9XbUhmU2hTU2l2aUpUUEN6cHNHLXc0dEJHSlpIR0hwNDdoYkpHX3VGSmN3RnpEM3JzbGkwamEzS0xHQ2dFcFgtZVBwUkJ2REo2ZW9jVFhRa01KNjZBUENhR2U1REdCMF9odVd1NjhwZ0JjMzI2OWJhRndOZHRGZUh6T0tqMUw2Q012QWI5SkkwaGFEZTRxRmEzOEszdTl2WnpuUmxWLUJTc1VKUHROcjdIU0hyYXczVW5ZNjdoYWdkb1RSS2dxZ3gxYm5mMEdidnp3OVEyc1oxT2ttTk1FNzNpTVNHaGZo?oc=5",
               "sentiment": 0.361,
               "relevance": 0.6,
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 45,
-            "zscore": 2.65,
+            "zscore": 2.66,
             "spike": true
           }
         },
@@ -2382,7 +2382,7 @@
           "events": [
             {
               "source": "googlenews_industrial",
-              "title": "Industrial Production Rises Amid Inflation Woes: 4 Stocks to Grab - finance.yahoo.com",
+              "title": "Industrial Production Rises Amid Inflation Woes: 4 Stocks to Grab - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN0dHN3VMRE4ya25ST3FmYU55a0JON1Qyb2NQeW5QWW5wTDRQclZMUWpXMmdoN0RtYkNSMkx2OW82OG5EcXFLVmpYampqMHE0ZC1ZV0dmQTdseTVaeUo4UWxpUldlMW1ncF9hclFKMzNaTGJUazlySGtZZ0p6ZXdHd3VDTUhpSXh1WUFHZ0JDUHZBcWtVelRqWWtyQk5ZTFRtTUNYUTVwLUFHeGc?oc=5",
               "sentiment": -0.44,
               "relevance": 0.776,
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.18,
+            "zscore": 0.17,
             "spike": false
           }
         },
@@ -2522,7 +2522,7 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - finance.yahoo.com",
+              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0FtcHQ0RnZLekdMbkNmdmhGNFdreXJQSGVUX1NBdThUN3haX19EaGg1QUdtb1hCdy1rc0Q5aXUtMXZPQy04ZWNwbDBMUnhja2FWOUhaaWpKWHMyLVBxUkF6ZFNYbWxwclpybHBwMTd1VmF6N2JHa2JKenVEcXRZWHQ5Tm9aT3V6NEhCVFA0WlhDSEw1QThTUFBISXdrYXBmN2c?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2669,7 +2669,7 @@
           "events": [
             {
               "source": "googlenews_staples",
-              "title": "Has Darling Ingredients (DAR) Outpaced Other Consumer Staples Stocks This Year? - finance.yahoo.com",
+              "title": "Has Darling Ingredients (DAR) Outpaced Other Consumer Staples Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT29OX1JQU2IxZUxFNHBHLUVlXzNzaEZab0llRkctMk9LaWxrV0h0M2FmcTdyT2JCZG9pXzNOUEdZVlVjSWRzclRsR0N1TGJZejVTenp6M1loWWN2cTZMWTBQSk1oRU5jWnF0QlhIU3ZDV1VKNC1YZjlYN29GWEdSRjZ6XzVMT3RHSkVlaHRJcDdFekRlWnpzTEpUOFoxdzVkcjNPQlF3?oc=5",
               "sentiment": 0.586,
               "relevance": 0.6,
@@ -3050,16 +3050,16 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "USA Rare Earth Rises 8%, Critical Metals Jumps 10%, MP Materials Climbs 5% as the Resource Sector Catches a Bid - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRDh6VGJJOVlidTU5T2ktYUROakcwMVVJNkxaT2FwNXU4QVMyMm5XbTFGX0lXM1otTnJYejlJZTZBbGM5eHBfNWRBSkRUa1NvMTZaSWFKeE9IYmJfUlk5WUVIajdnTzJLSzMzMzcxSmI0d3hXcDdiaHh1VmJkeE1vcGFXaTRGSEhyV19zTTFRdTBweVVZNW1BdnFVbDhYUy1YRlRqbk9pdjhTWUZmRHRWbFV6NTJVSTU2TEprTDZoa0lQamNERU5WRUVUWlM1UFB3a1B2T1NKN21JSVJsajR1Vk5WWnQ?oc=5",
-              "sentiment": -0.318,
+              "title": "Analysts Offer Insights on Materials Companies: Ternium SA (TX) and USA Rare Earth (USAR) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOZ1dFR3Yyam9TaE13V2tENDZFVWFkay01R1VNN0tURjZ0TzMwUnRPRDFHMWs3U0RZRjFjcTJOeHlJSTBfZ1hRbmh0RFpFYXZ2a2JNNm1KVnhGTVJfNVF6MnJmNWcxaVNtTHptZ2l0SEMtT21xQ0dKVDh4NHVpcm5PMmdhdHcyZzQyYzB6LW1jbF8ycjR2Q3BhUmtOUXYwcnhOMzFVam1ZMEZodXJHeVFQamVlaVprZ2o0N1lYTVJGUXJQUUxHTkVuTjVSOGVwYTg3SmlKWWQzU2lpV3NvZ3JPcHZNTEZEdnptVDZiZ2hnTUZOQlNlWW5LMnE0TQ?oc=5",
+              "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.45,
+            "count": 5,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -3120,7 +3120,7 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "Is Kronos Worldwide (KRO) Outperforming Other Basic Materials Stocks This Year? - finance.yahoo.com",
+              "title": "Is Kronos Worldwide (KRO) Outperforming Other Basic Materials Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa3NMVTdnbHBuQm9peVpLZF9ld3pnM3Y0Z0JiOGZOUnN4d2FGTWtDV1ZDVmVCLXJtdFdLamEtMnlJeGVBbVhwM2YwRmdWTmZUZTVhSndyS3VCVlhHV0EyVG1oXy04YnVlT1RIWWxyOUxtSThXWHFBYnkzRy13bm92aDNhRno4RHZjZENaT2ZoX0FrSUp5Y1JBTUNEX3hBTlNyNW1iNjJ4OFQ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3237,7 +3237,7 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "Are Basic Materials Stocks Lagging CF Industries (CF) This Year? - finance.yahoo.com",
+              "title": "Are Basic Materials Stocks Lagging CF Industries (CF) This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOExYbTYxQ0tnRzY0UmFROFZDRGhxdFRQbGE2NzJnRmlvUFFMSkd2SWhTc0c4bUhucGNmOGRfZEx3c0FZNHpRZ0ZucGtqbnJpM0I1bjh6VlJtNktiT0g4dHA3ZTRQMXQzNWNyRmw0elFLRXNKVEtyXzBfZ2tQaUk0V04zQ0Q1amhXMGgwQjRTRkdwNnYwNWhnTWp0YTJ0QXc?oc=5",
               "sentiment": -0.273,
               "relevance": 0.709,
@@ -3378,7 +3378,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.63,
+            "zscore": -0.62,
             "spike": false
           }
         },
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.74,
+            "zscore": 1.77,
             "spike": false
           }
         },
@@ -4014,10 +4014,10 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "New Fed Chair Kevin Warsh Sparked a \"Credibility Shock\" on Wall Street After His Latest Rate Decision. 3 Reasons Investors Should Care - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcHVFNVpEWG9NU3I0R3NxQ0djeGlYY0ZDMktwWEh1QUROaDNZRmxPMzJISGFLaEtROEFILU1ISU45YTREYll0UlJtUzlqNmM0NTIxbGxYRFByZExfNnBNZHlUTXJiX1k0ZG5iSlZETjNsd3hSZklzV1hRWDhkX0UtTHF2WTEzR3R0M3JwYWljeVV1ODBMWXJTMA?oc=5",
-              "sentiment": -0.318,
-              "relevance": 0.436,
+              "title": "Dow closes 300 pts lower as US crude oil tops $100 and Fed rate-hike bets rise - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSWpmbTRxTjh1dVZxWnVEVmZXZWFSVnNEWVBGTHNwSkJ1OUJLeExuek5VOEF0LUd4TV9xeVFRQ0xFdHR4R0NhNzEwaUNxa2ZZMjFuaE1yUklQd2thNF81dkhIRUZiQWpxWlcteU54QVd4eGgzMHNiREs5OFR3eTRxVlV1UnZRc0RYZjE2V0c3dlJndHItVDRjS0lqOUczZHE1SUFPWTJFc1cybThsRmpFVGlERk1ja3dlMmJxbTV4SVRPc3lIYUVRQ3J6U0VQZzQ?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.452,
               "event_type": "fed"
             }
           ],
@@ -4364,7 +4364,7 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Meta's 'Clean Energy' Exit Signals a Big Surge in AI-Power Stocks - MarketWise",
+              "title": "Meta's 'Clean Energy' Exit Signals a Big Surge in AI-Power Stocks - marketwise.com",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRm82LXJlOEhlSWtrU2lTelJLMW5PVFNMU2JWR1pMUDdvWnN4UnBWbUNYN2pheVpWdUh6RVBNd1UtSVkydkVTSWlNODkwY2V0M216YmhhQVVkOFFrbFR2bFlxLVpvQWxERW1uUE9rbXN1N2VNaExhTFZxSGZKcEthZHdCblVmYmFweExKWno2bXV4LUY4?oc=5",
               "sentiment": 0.586,
               "relevance": 0.834,
@@ -4450,7 +4450,7 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Top Renewable Energy & Battery Stocks to Buy Amid AI Power Boom - finance.yahoo.com",
+              "title": "Top Renewable Energy & Battery Stocks to Buy Amid AI Power Boom - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMkdhRzN1cVVqeWwzSEtTUU9Xc2Z5U1NrMGFjQ3FzMVVzVmRQNnF1aGlLMzA3ak1WQ1Z4OFQ5eU93WjA1dk02WkYxVkpfQXkzREYtbFNaTVdTWV83Vk1IQXBiQjk0OUhZb3B4UnA3MDRDSlNQNkFHZEJuU1A5X1MyOWV3c2ZzdmhlVGpZZk42TEs1d1IzdTNB?oc=5",
               "sentiment": 0.44,
               "relevance": 0.6,
@@ -4544,7 +4544,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": -0.42,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -4622,7 +4622,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 0.63,
+            "zscore": 0.62,
             "spike": false
           }
         },
@@ -4978,7 +4978,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - finance.yahoo.com",
+              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT2VSVmstRTVHUUNoQUo0azJ5bXhrSE4tSUt3amtyTEJFVGk5cndUWmw2cmlkOG10T0NXWVEtM3lTZFRDNWVZZXFjV3ZCMEp4M2hGWVZzZ3Y2cE12a3R3VzFKNUhLMTFnU2ZkODJQT0tyamtsSlY5YlAtYWNWcmZEcFdaZDEtbThMWXJIRlI2MnZCTURLbFpqZTZqNTdIeDNTcnc?oc=5",
               "sentiment": -0.459,
               "relevance": 0.784,
@@ -5079,7 +5079,7 @@
           "events": [
             {
               "source": "googlenews_robotics",
-              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - finance.yahoo.com",
+              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUVHY2pOM1lCTWxmY21jRlp2VC01WjkyOEI1VzlJOTB2YXdnV3J0Q2dPd2twVzRWazBwYy1kN3UydFVBTXk1VEFCRm9IdkEtR3BvWjdmNF9OVktWdlRuYURlcUM1UW9mSlNGamxWQ2NIVHFsY1ZfY0tpOHB1OGlzeURQZm5ObWtfeVhZR1pHZk5kMkhQa1J6QzJSVQ?oc=5",
               "sentiment": -0.128,
               "relevance": 0.651,
@@ -5701,7 +5701,7 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Agnico Eagle Mines (AEM) Suffers a Larger Drop Than the General Market: Key Insights - finance.yahoo.com",
+              "title": "Agnico Eagle Mines (AEM) Suffers a Larger Drop Than the General Market: Key Insights - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa1ZERzFwVTh1U2FIZng0QVE1SFM1eVNtRnJCd1I3U1JqbEg3OFVjeWhRd0dsOXd3cnBWa3ZEaUFCUDhHTk9KQnNjOWlNWVBnX3ZHc2lHRkZXZUdZbDBsRjBlOGtsd1ZmZTJ2cGxkdVYweWdyYnBtVlJSb3ZUV2xoX3lKTWhWdUI0OXE5OWExVkZBdmNudGNlNEgxOA?oc=5",
               "sentiment": -0.637,
               "relevance": 0.855,
@@ -5914,9 +5914,9 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-09-10",
-      "return_pct": -2.02,
-      "zscore": -1.11,
+      "date": "2026-09-11",
+      "return_pct": -1.5,
+      "zscore": -0.9,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5929,7 +5929,7 @@
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
