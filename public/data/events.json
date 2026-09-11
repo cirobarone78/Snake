@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T16:41:00+00:00",
+  "generated_at": "2026-09-11T21:09:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-09-11",
-          "return_pct": 5.41,
-          "zscore": 1.17,
+          "return_pct": 4.05,
+          "zscore": 0.81,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 1.49,
+          "market_return_pct": 1.05,
           "events": [
             {
               "source": "googlenews_eth",
@@ -275,16 +275,16 @@
             },
             {
               "source": "googlenews_eth",
-              "title": "1,000 XRP or 1 Ethereum: Which Is Worth More by 2028? - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE00X2FoSTRERkhUYmx4azhVYlBQWm01QmJmUFlkaWh2OTA2NVljRXZEVjVrTlFDOTA4Mm91X29IOXJFelFDVHB4QU5MOENQeFFEMmdyZ2FIVGZ0WTV4WTJqRG5CbXZpdGg0V2QwSXVUZC1nUQ?oc=5",
-              "sentiment": 0.226,
-              "relevance": 0.691,
+              "title": "Ethereum Faces $2,438 Support Test While EIP-8288 Stays In Draft - Yellow.com",
+              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1pajRoOTg4Q2NpQTBacXJGSU5ETTFQUDVnOVdNZXBPR0oycFRhUTJkYW9oZnRxOEtZb1JnX0pfb2NjekZQY0RzMjNTQm9vUGtZVHhlM2hMRFpRb2xQb0NXLTlB?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 40,
-            "zscore": -1.19,
+            "count": 54,
+            "zscore": -0.61,
             "spike": false
           }
         },
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-11",
+          "return_pct": 4.14,
+          "zscore": 0.95,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 1.05,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Whale 7GP6Bz Buys 11,487 SOL, Sparking Interest in Solana - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaaVZfVEsta0M1MUxsS3NQM0o0ZERzbUFvOFVyUGdXcVBBS21FREgtMFhnaGZpai1vTnpZUUtVTGJ6OWVHZGZaZTZqaWNEcmptNE1XWExiY3Itdw?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Analytics Company Announces Bullish Fortune on Solana (SOL), a Major Altcoin, and Shares Price Prediction! - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBJM3hjM0VHekg1cnFvZ0lNWGI1OS1PRXRQRW5VWUF1Uzc2cE14OTZYWnNwc0JqTjFqZko4MVF6MEMzQzZDNEhOT3NOaFBlVzFSdVFsbllpdjUzUVVJU0NKcWVWaGVZYm5TV0x2dm1kUzRZMXNNdm4zVEhR?oc=5",
+              "sentiment": 0.413,
+              "relevance": 0.765,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "OpenSea relaunches Solana NFT support on OS2, a... - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX3EyY1VtemRjczE3bFdtSnptVUhVVE5ITDFwbFU2OFluajVnU3lBMTZJelVIUHdPOHJEazVYMno1ajNPNHlFSlo1Rm1Mb0xnc2I4ZGlXTXJvQnhqNEtLYW1QQmloWk1EX0tFajR6czQ5YzEydDQyTTNidmc1WFJQa1JIc3NKV2RNVVJzMTU5Y0RsUQ?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 35,
+            "zscore": -0.5,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-30",
           "return_pct": -3.57,
           "zscore": -1.55,
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 54,
             "zscore": 1.95,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-19",
-          "return_pct": 10.83,
-          "zscore": 6.79,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.09,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Officials See Interest Rate Hike as ‘Necessary’ If Inflation Doesn’t Ease Soon - Realtor.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNajJYbXlHUDhCUEJReEN0MWRkMmJLX2VMTEZIWkR4Zmh2X1puZmdDcFRYOXFNUjZEQWt3bzlVc3A4SUtPWVVIOUlQb0FaUXBtWVAzV2lVbG16UGZnVTlScTJYdVBwVWJtWkJSekRmSXo0cGVYSFpGaEdJYXZVMGN1SFNYSTlTWmtsNDhCWlRaU1VlbkJLQW9Yb2tucw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "3 Altcoins Grayscale Says Could Win From New US Token Rules - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmZmFqdXVwQkhXYmU0bVEwVHQwT05wNjJtWFNNc3FDNGM5MFNyYUx6ejkwS2dvcHRGUDlIRThzeno4ckRKQ09aa3hLNFdwRVppS3BOUU9Ed3dtd0YwRnk1NTF6Rk1WaFlCcDhkRHNR?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "3 Altcoins Grayscale Says Could Win From New US Token Rules - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcEFtcWVwaWpHdDhDMlhSTnROMTR6YmY2UGRTM2Nsbk5GeDBsWG1KNEdWQzhuVER2UUVSSGF2WGpOclVHalV5VlZjT2pCOUhsYUhJVC1lelBaTTRsS3lhUl9QVk1YbU5CeU55OG9iZkp4OFItaThaeWlZZ3hpLTRVUg?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 44,
-            "zscore": 1.33,
             "spike": false
           }
         }
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-09-11",
-          "return_pct": 5.56,
-          "zscore": 0.87,
+          "return_pct": 4.83,
+          "zscore": 0.74,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 1.49,
+          "market_return_pct": 1.05,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Transfers $3.5M In POL Tokens As Rally Hits 50% Weekly Gain - Yellow.com",
+              "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPMzh2TUhDQjVJRXdmbVRPNVdTbDRnTFJfYVY1eW5ZTExnLXFrOUFCNy05UUtxVVRNMHB5dWJQaGtpWjNMOTZRLS1qSTBKeHBuYWZSYkNfN1RtQk0xOEpxN3A4ZkNtOGNIaE84dkdacVY5eWFlRWxYQWVhaXZsaFFIbnV5Qk5GR1dubnR3SnppX0MwNnBRNTFMSG9vQlMyblltVmdnQUo0UEVZVnRJak1FX3FxdVkweVBqeGlhUDRYZU5iRjNVN1lNQllTS1d6LWVfc2RGZzR5NHhFTmltV204aGtiSlZFdDlkTkxSMDJmUEFraE5jdVBEZUEycGJ3dkRiT21Sb2lXTU9oUS1IMl90RjZRRzFWajF1RFZqcVRkMDZYOHFVQnA1OTNocmVWRDg?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_pol",
               "title": "Why Polygon Just Buried Stablecoin Details Beneath Zero-Knowledge Proofs - Yellow.com",
@@ -989,25 +997,17 @@
               "event_type": "other"
             },
             {
-              "source": "coindesk",
-              "title": "India's richest state is exploring tokenizing its own assets to fund new infrastructure",
-              "url": "https://www.coindesk.com/markets/2026/09/11/india-s-richest-state-is-exploring-tokenizing-its-own-assets-to-fund-new-infrastructure",
-              "sentiment": 0.625,
-              "relevance": 0.51,
-              "event_type": "other"
-            },
-            {
-              "source": "coindesk",
-              "title": "Metaplanet cuts executive reward pool by 41%, extinguishes $220 million in value",
-              "url": "https://www.coindesk.com/business/2026/09/11/metaplanet-cuts-executive-reward-pool-by-41-extinguishes-usd220-million-in-value",
-              "sentiment": 0.599,
-              "relevance": 0.504,
+              "source": "googlenews_pol",
+              "title": "Polygon Labs Acquires Coinme And Sequence For $250M To Build Regulated Stablecoin Platform - Yellow.com",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUlRjbVNZWFVoc3NlaExzaGJDSjFocV9iTVg1TXYzWXp6Qk9hcnp0Q180SW9rbWVNOG16WU4xUW1aWjAzWXZjTzhNemx6Z0lGNTFLRkNBbjRVeEYtWjVCbjRxbU9QekZrYjZ1ajMyS3Jmb2FHRVVXWWVIT1JfOE85eXZoOHEwekJhX2lNN2J3V29EdGplRnlTQVVMV09sa2xTYjE4N1ZmYU44QU54ZW91aGR2MUZPWXBFS2hPVVVkNlBKZ3h4Z2tLVERPdFNsS1J5a21rMUNxMFM?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.75,
+            "count": 5,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -2024,7 +2024,7 @@
           "events": [
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - moomoo.com",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Moomoo",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDh1ZHBFTGdMSWNFQVNpelBuRlhJc3BIczRmYWhFa3lFOVdvelZDaXlkZUtIMkplMFI5aXVmRmhFMUZQNmVxLUR4UDRzSjNvTjBybjNyQkFzUmNfa3Bxcy1VMmQ5X3RSVWhqYjBnc2sxeXlEN0lubzNsdlg2RnhFcVBMNFNHUlNfems0dU1MQUVmS0t6TjZRRA?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2110,7 +2110,7 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - moomoo.com",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Moomoo",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGJfbXppMEtzcy0wRDhFWGN3c24zTjQxb0loN01wS3RhS0ZtcFhnTTlfbEJUWUdmYng1SGdjeUxuWXBfQnVNS0pUQ1ljQXFTdHh6Q3NYVUgxSXhmZG83TEtWSDM3STkzVFJXcE9wYTZTaGNlUFE2X0dWeGhVWnlmalRsMVhTcU1HSFp4SE5VWW9mZVBnMkMwOA?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.17,
+            "zscore": 0.18,
             "spike": false
           }
         },
@@ -2654,8 +2654,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -0.02,
+            "count": 10,
+            "zscore": 0.16,
             "spike": false
           }
         },
@@ -3059,7 +3059,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.13,
+            "zscore": -0.14,
             "spike": false
           }
         },
@@ -3266,45 +3266,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-09-11",
-          "return_pct": 1.0,
-          "zscore": 1.68,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.97,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "Waypoint REIT (ASX:WPR) Shares Down Nearly 20% in a Year: What's Happening With This Fuel and Convenience Landlord? - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQR2JIbllsYXBsNGpYZTJkanl3LU0yMGVsUUh6TkozZFBzY2JTTnpTYWNVVTlRaEtRdVBZMnRqTHJHd3FJcGFMWk4ySC1WR01ieUtfQ1lBZW80bW5FRkVEUzFhOXN3Q2xMQk1JYTJLX05JN0JoYmZzbWxqMmlySlh0TUwxYmRIbmh4RFJqRkh4V1JxaUtIdktCak90MV9qQ01naThpNnhOOVUyZ0lyaVVRVk5PZWZ2NW5zWU5uaDhyS01sWHdrc3Qyd1JwS2lNSkZYZmdGeDhNeFJNd21zVi1pRlpB?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Granite Real Estate Investment Trust (TSE:GRT.UN) Shares Pass Below Two Hundred Day Moving Average - Should You Sell? - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObURCVnl3emRrS2dfSExzemF6X0kwaF9ybDRVN1RyV1JZdTZmdG94YW15RHlpWU9lYVFGMEtjNGFsbnpjN2dwRmExUWhjVGw0Tzg3dDFNVGdaNnhubUFVQVBlRGF4dWxmQ1V3UDJOQ1YtZkpJUHp4RjhxUHpMYVBLYUpTeHBHRjd6WkxGbHdJM1J3aU42UzN1UVFCZ2lOSTluUTNoeHVfajM2cDJBWEhFQmhhT2RlcFR4VERFeGpIcU8tSlotNE43TnNyNUd4bDl6eGZhRzBodFlWMXYzRDg4U2I3N0QtV2VmaDVNc0NEZVRBLU1xRktLeXNYZWFpYWFu?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.668,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Alexandria Real Estate Chief Accounting Officer Sells 10,000 Shares - fool.com",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGdZWi0wbld0aXpod2FMTkFoa1JaUFZqUURiWmhlS3BWRnpDT0x0R29DS1l5akhOZTdyNVFCeEU3c2l3MzdVLVo3M0F1dDFhX0pTRkJSNUFFQlpMV0ZtbWMxVVdPNHQ0eXIySUZOTlhDbWRPXzBkcE1CdmNkOHgzQlF1LUg5dHBTa2VZZDYwR3Z4bDVITWJ4T2MwNThQS2Qwbkxkc2hHel9PMzNhajdpUlFFbXRweVk?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.518,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -1.43,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-09-03",
           "return_pct": 1.19,
           "zscore": 1.64,
@@ -3496,6 +3457,45 @@
           "coverage": {
             "count": 2,
             "zscore": -1.27,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-06-30",
+          "return_pct": -1.98,
+          "zscore": -1.94,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.79,
+          "events": [
+            {
+              "source": "googlenews_realestate",
+              "title": "6 Highest Yielding Mortgage REITs For Income Investors - Sure Dividend",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9Ka201N2ZuNmZTMlR2dWJ3Yi1xYjFOTUxRaEJWTHVzaGNoOGVxTzBaZ05hQXM4YkQyS0NGUWRqckNRcTI0dGhCVllMVmJGUm1YLUw3azZsQQ?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "Real Estate Stocks Rise As Investors Ditch Tech-Focused Funds - Bisnow",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdzBGaHh0Rmhxc3VfNG91dFhXcG1pbDZZSmpxWFlJLUJkYmNhaGswM0ZjdG9kT2k1Y3plbE1QaDdGY1ktbFB2MnBsa2RqZlBJVUxVU1ZWY3FTLU41eXdXTjFkZVRsOEJIb3FydllNM2EtcGtvT1JFcVVNZGM5RjZmcEFkVHVkS0FqYXhER2huLTJkVHdadUc1S3BOYkoxbXlYcVF4V2pQMTBiUFZNb1Z3R0hqckxKQjBVM3RzUUxBeHlXdHFONS1V?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "Primaris REIT’s Land Monetization Blueprint Might Change The Case For Investing In Primaris Real Estate Investment Trust (TSX:PMZ.UN) - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQOFVEOGdUWHZBc1h4eWpGQ2F0aW83MVZ3cmhUTHFtcmNlOGREOVdFdEFzNlNGZkZRZW53bmVaTnliWHpCMG50SmxTVXM5N2lud2NzeTQ5NjVza0VKeFBRUzlKRXp0czdUc2otMEo5RVZMWVJsamdjbUkxaDhxZDZLWndqV2t5MU5GV09wYzVKZFV1QVdmQkpuNFB5MG1pOWZpdW9VLVdJOTdsZnExbm4xaFZjMDFWc3BpdWI3OTlXMGZHMmdUZmVYWGFZUk9FR2dYRGU5RHliUzViLWpNWG9mc2ZCMWl0NF9rbTg0aEVBc2t6cXM2M3hJ0gH8AUFVX3lxTE04ajhSXzQ4SGJKNGwyWVRIX2RRandxcHFOdkRwWERGME9sUGJ3c2N1MFNiLUZrMl9QQ1RMZ0pUQWhlVlB0Zmo1eXlUTGo2bmFGVGx6b2hfd21faTJPcUdnaWF2dzUyOHhpbFRRZUpDMi1XajIwNkI1dnFqY2VsWVItN2c2NXd5WUl5TkhSVTVOYjk1WUhWTFh2MktVWkswT2pUWnl6R2s3dnBtYV9YSVAwUUM3ZmdSaW15TURyREtQTTRueTUwcTk2OEdCblo3N2xOUUx1QndHUzNQenE3RWRwSVhiYndvdTc4bUJXckRiQ0RnYk04a2NXRzNlVQ?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": 0.16,
             "spike": false
           }
         }
@@ -3989,6 +3989,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-11",
+          "return_pct": -3.27,
+          "zscore": -1.35,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.86,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "3 Stocks Supplying Nuclear Reactors With Their Critical Fuel - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZUZycGNKSWpTT3hTYUlfWDJCQXQ1NDFtZlBvOUIxMGV2RkRrZEU0bFpEaWxGNjNaYXN1VHItM2VwTEstZEI3MlFsX2FtNkNVSzItRVZUM2VrVzRaYXlWay1SbV9QV3dFbDJteGhnNG5La0VXMFRTd2lNbG8ydnRKU1FCT3lEYldEWVc3ek1uZkF3NDRPN2tVWkMwZ1RMcmhFNG44MXBKNA?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Nuclear Stocks Slide as Piper Sandler Splits the Sector: Oklo, NuScale Power and X-Energy All Drop 5% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPalE1SkJrV3dibFVNaVVIS3ZiYlpHTE5DdGRQdmk0QjVsTGo2VXpqOUE4UlJUMkd5Yk91TUFOakJ0bUpQT2diLVJramFLbnRsOGplQUhPOTFYakFuSXBhYzZrSF9tdDZ2WWluWThhYXlubXI0Z245NVA2ZmRBVlNNQnRwU3NLMVVkRjhSYng0TURyZ3dkRFFFN01QLS1VQjhvdWpXQWtIWHN5dGUtSUZLSTNTMjJkVUpPWjhsVllFd09Tdk42RS1ObGRCb0wtcHRFVjBiT0U2N1FkQQ?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.509,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Inflation held steady in August as Iran war surges oil prices - Fox 59",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZjRxRHdXUTFES2Vydm4xLXVXcUUtUDFLTjFjeUM4VnE3aDhlU3pOVGRja0pvVG9oMjdsUmctd1AzUmdrRWxwUDBlNnZHMlFNMWR6UzVvaG9VNFUzS29WbkZWaEg2OW42bmpqeUJYY3A5NTZ3UHdnbWxrWlNZNGo0VTBjTXo1ZDg0Mk5pdHd3MkNUMkQyLXdfMFNB0gGfAUFVX3lxTFBnSm1RYVdnalFCNGQwMUNtMnJSRElqWGRadTRxR25iQzdlNHR4dzM0d2toaFB5eDB6X3FTY3pZcFE5eEJ2MXZESmMtdnFjRUxWSG1waDNXQjNiOUlkb2lFYVQxMzFlOVFzRVllYVZDcm43SENYVktWT2lKNlU3dDRILU9aMGVrbGp3UnRwMERXR2YxN1kzTVEzWEdyNmhJOA?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.504,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.32,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-10",
           "return_pct": -3.97,
           "zscore": -1.6,
@@ -4045,7 +4084,7 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Currently.com",
+              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - currently.att.yahoo.com",
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVQ3NDRReTNjdUh6V3I4MV9MdU13NHFfZ2FOMkY5TFd4RHFySnVRam12ZDBqN3ltRXcwRm14d1VSR1U1SUdkMXpycF9JMFJMc00wVHBncUtwMXFPeEZsQ0o4TzktRW10SDZlMS1CV3FJZ0wzTWJqODlVQm9rTy1WZGtZd0c?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
@@ -4180,45 +4219,6 @@
           "coverage": {
             "count": 4,
             "zscore": -0.84,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-25",
-          "return_pct": 5.36,
-          "zscore": 1.79,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.32,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Cameco vs. Uranium Energy: Which Uranium Stock Wins the Nuclear Restart? - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVBJT092ZXhMT1d5N1pzZ09ENGJRYXZaV2E5TWxqaTFYRnZNUzYxYjlvdm5rWUxMMlZqdjdieUdHYjNST2YzckpjajVQRDE1NW5JM3p4bVpmVHhUeWQyWTNOcW1CRGc5MmJ3VnVybERxZTFLVEZURGtMZHpNR3JGclJRMTZtdkNuTjUtNENneXh1UGZ4bXJma003U0JBNFpOV1E0YkwwdzktZWZOTjhDVm4tSkJlZXRKRHk5cDhpOEpTMUcxQlE?oc=5",
-              "sentiment": 0.7,
-              "relevance": 0.88,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Foremost Clean Energy Stock Rises 6.41% as Athabasca Uranium Discovery Momentum Strengthens Investor Optimism - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaG5nMUI0TmhfUF8wTEIycnBqZWNzOUJ5bURNNUZCUHVxeUR4dXF1NEliTGdWN0w2X3h2bWMyOFJEYkc4aUplUTFkWnp4aDJETlpJakk3bGd0R2VBQ0JtZnpGVl9NeDcxR2I5U0VGTnVsRmVtMlJwVVhjWDI3SkpoSlA0LVlQR0VjdGM2d1JkeEt0b3pGRmp4WU95b0NRSk5BeUJNVlZ6MkVGaXd3WTFtRy1FTkhjeUp5dlJ5R19rcmo4ZVh0T1JURDlHd1Y3enZCQ1dSbQ?oc=5",
-              "sentiment": 0.883,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Nuclear Stocks Rebound on an Oversold Bounce: Uranium Energy Jumps 6%, NuScale Power and Oklo Climb 5% - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMVMyNnRlNWxoZjdLcG1sR2I3U0NjY25qS09IN2d5MVBLWi05Z2tDSW1MbWJDN1FxU0hZWVl1WDJpUE9QeXZrcXNxdXktbXYtbVlXajBqeExmbDA1ZzhFRWF3dXBwOUktQWh4NGdHdW1GQUZFcEptcWhoZ21KUXd3RGVrMjRCYkJpYzhlbG1Rbnd6R0FOdDQxTWs1Zk12bU1RMUVuLUln?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 9,
-            "zscore": 0.85,
             "spike": false
           }
         }
@@ -4544,7 +4544,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": -0.43,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -4622,7 +4622,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 0.62,
+            "zscore": 0.63,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 39,
-            "zscore": 1.85,
+            "zscore": 1.86,
             "spike": false
           }
         }
@@ -5915,8 +5915,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-11",
-      "return_pct": 1.49,
-      "zscore": 0.33,
+      "return_pct": 1.05,
+      "zscore": 0.16,
       "max_abs_z_recent": 1.97,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5924,12 +5924,12 @@
     },
     "equity": {
       "date": "2026-09-11",
-      "return_pct": 0.97,
-      "zscore": 1.2,
+      "return_pct": 0.86,
+      "zscore": 1.05,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
