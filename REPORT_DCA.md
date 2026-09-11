@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.0% | 33.3% | +21.4 pp | 45% | 1.000 |
-| 2 | LINK | 39.3% | 33.3% | -5.9 pp | 76% | 0.500 |
-| 3 | SOL | 48.8% | 33.3% | -15.4 pp | 83% | 0.000 |
+| 1 | POL | 12.4% | 33.3% | +20.9 pp | 46% | 1.000 |
+| 2 | LINK | 38.7% | 33.3% | -5.4 pp | 68% | 0.500 |
+| 3 | SOL | 48.9% | 33.3% | -15.6 pp | 77% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,16 +23,6 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
-
-**BNB — BNB**
-
-Token della piattaforma Binance e gas della BNB Chain.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.2 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **TRX — TRON**
 
@@ -125,7 +115,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -133,9 +123,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 25
-- stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 14
+- capitalizzazione sotto la soglia: 26
+- stablecoin o token ancorato: 19
+- volume troppo basso rispetto alla capitalizzazione: 13
 - già in portafoglio: 6
 
 ## Limiti
