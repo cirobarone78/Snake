@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.4% | 33.3% | +20.9 pp | 46% | 1.000 |
-| 2 | LINK | 38.7% | 33.3% | -5.4 pp | 68% | 0.500 |
-| 3 | SOL | 48.9% | 33.3% | -15.6 pp | 77% | 0.000 |
+| 1 | POL | 12.4% | 33.3% | +20.9 pp | 51% | 1.000 |
+| 2 | LINK | 38.4% | 33.3% | -5.1 pp | 72% | 0.500 |
+| 3 | SOL | 49.2% | 33.3% | -15.8 pp | 85% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,6 +23,16 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
+
+**BNB — BNB**
+
+Token della piattaforma Binance e gas della BNB Chain.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
+- **Offerta**: offerta in calo.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: 9.2 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **TRX — TRON**
 
@@ -124,7 +134,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 26
-- stablecoin o token ancorato: 19
+- stablecoin o token ancorato: 18
 - volume troppo basso rispetto alla capitalizzazione: 13
 - già in portafoglio: 6
 

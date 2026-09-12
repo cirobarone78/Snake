@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T11:21:42.747751+00:00",
+  "generated_at": "2026-09-12T10:47:46.353628+00:00",
   "title": "Piano di accumulo",
   "disclaimer": "Contenuto educativo, non consulenza finanziaria. Nessuna previsione: la scelta proposta serve a rispettare l'allocazione decisa, non a indovinare quale asset salirà.",
   "plan": {
@@ -25,11 +25,11 @@
     {
       "rank": 1,
       "symbol": "POL",
-      "price": 0.09328,
-      "weight_now": 0.1239,
+      "price": 0.09599,
+      "weight_now": 0.124,
       "weight_target": 0.3333,
-      "gap_pp": 20.94,
-      "discount": 0.4621,
+      "gap_pp": 20.93,
+      "discount": 0.5125,
       "score": 1.0,
       "reason": "underweight_vs_target",
       "reason_it": "è il più sotto peso rispetto al target"
@@ -37,11 +37,11 @@
     {
       "rank": 2,
       "symbol": "LINK",
-      "price": 11.311,
-      "weight_now": 0.387,
+      "price": 11.546,
+      "weight_now": 0.3842,
       "weight_target": 0.3333,
-      "gap_pp": -5.37,
-      "discount": 0.683,
+      "gap_pp": -5.09,
+      "discount": 0.722,
       "score": 0.5,
       "reason": "not_selected",
       "reason_it": "non selezionato questo mese"
@@ -49,11 +49,11 @@
     {
       "rank": 3,
       "symbol": "SOL",
-      "price": 98.610001,
-      "weight_now": 0.4891,
+      "price": 101.959999,
+      "weight_now": 0.4918,
       "weight_target": 0.3334,
-      "gap_pp": -15.57,
-      "discount": 0.7746,
+      "gap_pp": -15.84,
+      "discount": 0.8458,
       "score": 0.0,
       "reason": "not_selected",
       "reason_it": "non selezionato questo mese"
@@ -76,6 +76,30 @@
   "candidates": [
     {
       "rank": 1,
+      "symbol": "BNB",
+      "name": "BNB",
+      "what_it_does": "Token della piattaforma Binance e gas della BNB Chain.",
+      "accrual": "buyback",
+      "accrual_it": "i ricavi finanziano riacquisti del token",
+      "accrual_note": "Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.",
+      "emission": "deflationary",
+      "emission_it": "offerta in calo",
+      "fdv_ratio": 1.0,
+      "circulating_pct": 100.0,
+      "dev_status": "no_repo_data",
+      "dev_status_it": "repository non mappato: dato assente",
+      "commits_4w": null,
+      "age_years": 9.18,
+      "age_source": "genesis",
+      "verdict": "capture_present",
+      "verdict_it": "Il token cattura valore dalla rete",
+      "score": 1.0,
+      "confidence": 0.8,
+      "market_cap": 98233620005.0,
+      "categories": "Smart Contract Platform, Exchange-based Tokens, BNB Chain Ecosystem, Centralized Exchange (CEX) Token, Layer 1 (L1), Ethereum Ecosystem, Alleged SEC Securities, FTX Holdings, Proof of Stake (PoS), GMCI Layer 1 Index, GMCI 30 Index, GMCI Index, Made in China"
+    },
+    {
+      "rank": 2,
       "symbol": "TRX",
       "name": "TRON",
       "what_it_does": "Layer 1 usato soprattutto per il transito di stablecoin (USDT).",
@@ -95,11 +119,11 @@
       "verdict_it": "Il token cattura valore dalla rete",
       "score": 1.0,
       "confidence": 0.8,
-      "market_cap": 32042573639.0,
+      "market_cap": 32240249569.0,
       "categories": "Smart Contract Platform, Layer 1 (L1), Alleged SEC Securities, FTX Holdings, DWF Labs Portfolio, Tron Ecosystem, Proof of Stake (PoS), GMCI Layer 1 Index, GMCI 30 Index, GMCI Index, World Liberty Financial Portfolio, Made in China"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "symbol": "AAVE",
       "name": "Aave",
       "what_it_does": "Protocollo di prestito on-chain fra i più grandi per depositi.",
@@ -119,11 +143,11 @@
       "verdict_it": "Il token cattura valore dalla rete",
       "score": 0.9888,
       "confidence": 0.8,
-      "market_cap": 1870782627.0,
+      "market_cap": 1956206562.0,
       "categories": "Decentralized Finance (DeFi), Yield Farming, BNB Chain Ecosystem, Lending/Borrowing Protocols, Solana Ecosystem, Avalanche Ecosystem, Polygon Ecosystem, Near Protocol Ecosystem, Fantom Ecosystem, Harmony Ecosystem, Arbitrum Ecosystem, Ethereum Ecosystem, Optimism Ecosystem, Base Ecosystem, Index Coop Defi Index, Stablecoin Issuer, Energi Ecosystem, Sora Ecosystem, Huobi ECO Chain Ecosystem, GMCI DeFi Index, Blockchain Capital Portfolio, GMCI Index, World Liberty Financial Portfolio, Coinbase 50 Index, Hydration Ecosystem, Governance, Base Native"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "symbol": "ADA",
       "name": "Cardano",
       "what_it_does": "Layer 1 di smart contract; adozione DeFi finora modesta.",
@@ -133,7 +157,7 @@
       "emission": "capped",
       "emission_it": "offerta con tetto massimo",
       "fdv_ratio": 1.2,
-      "circulating_pct": 83.36,
+      "circulating_pct": 83.37,
       "dev_status": "no_repo_data",
       "dev_status_it": "repository non mappato: dato assente",
       "commits_4w": null,
@@ -143,11 +167,11 @@
       "verdict_it": "Il token cattura valore dalla rete",
       "score": 0.948,
       "confidence": 0.8,
-      "market_cap": 7541986289.0,
+      "market_cap": 7825644566.0,
       "categories": "Smart Contract Platform, Layer 1 (L1), Cardano Ecosystem, Proof of Stake (PoS), GMCI Layer 1 Index, GMCI 30 Index, GMCI Index, Made in USA, Coinbase 50 Index"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "symbol": "SUI",
       "name": "Sui",
       "what_it_does": "Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.",
@@ -167,11 +191,11 @@
       "verdict_it": "Il token cattura valore dalla rete",
       "score": 0.7405,
       "confidence": 0.8,
-      "market_cap": 2919664070.0,
+      "market_cap": 2976515767.0,
       "categories": "Smart Contract Platform, Binance Launchpool, Layer 1 (L1), Sui Ecosystem, Coinbase Ventures Portfolio, Proof of Stake (PoS), Andreessen Horowitz (a16z) Portfolio, YZi Labs (Prev. Binance Labs) Portfolio, GMCI Layer 1 Index, Circle Ventures Portfolio, GMCI Index, Made in USA"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "symbol": "XLM",
       "name": "Stellar",
       "what_it_does": "Rete di pagamenti e emissione di asset, focus rimesse e RWA.",
@@ -180,8 +204,8 @@
       "accrual_note": "Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.",
       "emission": "capped",
       "emission_it": "offerta con tetto massimo",
-      "fdv_ratio": 1.436,
-      "circulating_pct": 69.62,
+      "fdv_ratio": 1.435,
+      "circulating_pct": 69.67,
       "dev_status": "no_repo_data",
       "dev_status_it": "repository non mappato: dato assente",
       "commits_4w": null,
@@ -189,13 +213,13 @@
       "age_source": "atl_lower_bound",
       "verdict": "capture_present",
       "verdict_it": "Il token cattura valore dalla rete",
-      "score": 0.6551,
+      "score": 0.6552,
       "confidence": 0.8,
-      "market_cap": 6038264302.0,
+      "market_cap": 6325228071.0,
       "categories": "Smart Contract Platform, Layer 1 (L1), Real World Assets (RWA), Stellar Ecosystem, GMCI 30 Index, GMCI Index, Made in USA, Coinbase 50 Index"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "symbol": "HYPE",
       "name": "Hyperliquid",
       "what_it_does": "Exchange di derivati on-chain con volumi elevati.",
@@ -209,17 +233,17 @@
       "dev_status": "no_repo_data",
       "dev_status_it": "repository non mappato: dato assente",
       "commits_4w": null,
-      "age_years": 1.78,
+      "age_years": 1.79,
       "age_source": "atl_lower_bound",
       "verdict": "capture_present",
       "verdict_it": "Il token cattura valore dalla rete",
       "score": 0.6103,
       "confidence": 0.8,
-      "market_cap": 17485503737.0,
+      "market_cap": 17746587154.0,
       "categories": "Decentralized Exchange (DEX), Smart Contract Platform, Exchange-based Tokens, Decentralized Finance (DeFi), Derivatives, Perpetuals, Layer 1 (L1), Proof of Stake (PoS), Hyperliquid Ecosystem, Governance"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "symbol": "XRP",
       "name": "XRP",
       "what_it_does": "Rete di pagamento e regolamento transfrontaliero.",
@@ -239,11 +263,11 @@
       "verdict_it": "Il token cattura valore dalla rete",
       "score": 0.5937,
       "confidence": 0.8,
-      "market_cap": 83211225718.0,
+      "market_cap": 86213761816.0,
       "categories": "Smart Contract Platform, Layer 1 (L1), FTX Holdings, Pantera Capital Portfolio, Andreessen Horowitz (a16z) Portfolio, XRP Ledger Ecosystem, GMCI 30 Index, Blockchain Capital Portfolio, GMCI Index, Made in USA, Coinbase 50 Index"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "symbol": "UNI",
       "name": "Uniswap",
       "what_it_does": "Il principale exchange decentralizzato per volume.",
@@ -263,11 +287,11 @@
       "verdict_it": "Solo governance: nessun flusso al detentore",
       "score": 0.4187,
       "confidence": 0.8,
-      "market_cap": 3686330661.0,
+      "market_cap": 3961436930.0,
       "categories": "Decentralized Exchange (DEX), Exchange-based Tokens, Decentralized Finance (DeFi), Yield Farming, Automated Market Maker (AMM), BNB Chain Ecosystem, Avalanche Ecosystem, Polygon Ecosystem, Near Protocol Ecosystem, Gnosis Chain Ecosystem, Harmony Ecosystem, Arbitrum Ecosystem, Ethereum Ecosystem, Optimism Ecosystem, Paradigm Portfolio, Coinbase Ventures Portfolio, Index Coop Defi Index, Andreessen Horowitz (a16z) Portfolio, Energi Ecosystem, Sora Ecosystem, Huobi ECO Chain Ecosystem, GMCI DeFi Index, GMCI 30 Index, Blockchain Capital Portfolio, GMCI Index, Polychain Capital Portfolio, Made in USA, Unichain Ecosystem, Coinbase 50 Index, Governance"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "symbol": "DOGE",
       "name": "Dogecoin",
       "what_it_does": "Nessun prodotto oltre i pagamenti base; nato come parodia.",
@@ -287,13 +311,13 @@
       "verdict_it": "Nessun meccanismo di cattura del valore",
       "score": 0.2969,
       "confidence": 0.8,
-      "market_cap": 12936210985.0,
+      "market_cap": 13240160440.0,
       "categories": "Smart Contract Platform, Meme, Dog-Themed, Elon Musk-Inspired, Proof of Work (PoW), GMCI Meme Index, GMCI 30 Index, GMCI Index, Coinbase 50 Index, 4chan-Themed"
     }
   ],
   "rejected_summary": {
     "market_cap_below_floor": 26,
-    "stablecoin_or_pegged": 19,
+    "stablecoin_or_pegged": 18,
     "illiquid": 13,
     "already_held": 6
   },
