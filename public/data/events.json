@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:11:00+00:00",
+  "generated_at": "2026-09-14T19:56:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -564,7 +564,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 1.8,
+            "zscore": 1.81,
             "spike": false
           }
         },
@@ -603,7 +603,7 @@
           ],
           "coverage": {
             "count": 66,
-            "zscore": 2.16,
+            "zscore": 2.17,
             "spike": false
           }
         },
@@ -732,6 +732,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-14",
+          "return_pct": 4.76,
+          "zscore": 0.91,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 2.82,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "+65% on Chainlink (LINK) Volume in 24 Hours: Can It Help the Price Break $12? - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfalNlbVlpOGh1ZjRsQ1ZtaTZJbU13VE5JTC03RGVrbGtRdmFhRTZVRVFBSzBseHl4RmdmaTlaS3lCbHdXOTBvZXIxWHNtNEJEY25zSnJ1WDllZFE?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Price Tests $11.50 as LINK/BTC Nears Breakout Zone - Brave New Coin",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEhldXVNQmVOVGtXdlo5Y1ZrSFB6Mi1RMTlJUEE5Z1hTem1qNnNlM3M1OE4ybHN2NVc0dUhkd09iUjNvOVlsSUpjVjJnVE4xQkwtV0JQRkFnRGN2bXZibDBBUWNVOXR5ejRra2xPRkd2ajc3T0x5RmVGSWVSY1Y2QU5SeTYwUFhWTmhkLTJ3MlNtWWU1aGFmWA?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.611,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink (LINK) jumps 35% in a month, eyeing $15 after strong whale buying and ETF inflows. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQzUzSXE4LXdlc1V3UlFmZmhwNGtqU19fTjFVRXRiT0Q3T1R5NFlSNlpyemo3SThya0tWbF9BOGwwQUMwZnJoSVBzNEFsQzJ2dEVtenJoY2x5M29LZnUtLVZSb2Q1bjY0ZU5aU1luVmQ1dS1GR0RLQ2w5NEZSX2dacFBOWWhnYS1WM2dxeV80RncxN25yUmdZ?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.604,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 11,
+            "zscore": -0.52,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-09",
           "return_pct": -5.69,
           "zscore": -1.75,
@@ -757,7 +796,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink Price LINK TA LINK Technical Analysis - altcoinbuzz.io",
+              "title": "Chainlink Price LINK TA LINK Technical Analysis - Altcoin Buzz",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQXBQTjNWRXNRdi1JVTRDbW9YVDRnemlVdThfcXpGc3VGYTdjNWpzQUx0c3VmZS1oVlcyeEFRQXNIZW9Hc3E5RDVNOUhhd21KNE8yYVpHcUdxeXdnSTJVdXFWalZQLUt1dTdzMUZOcV92X2ItcEIxRWlidXRyMUotNDVaQ1FmRERXSWlwMkhEUkpNMVdkSDU5Q0JTR0p3SUJNVk5TRUhkYndDbVdRUEdkN05yNzBOMXA4eEE?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -923,45 +962,6 @@
           "coverage": {
             "count": 27,
             "zscore": 0.42,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-19",
-          "return_pct": 10.57,
-          "zscore": 4.11,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.09,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Best Crypto To Buy Now For Potential 100x Gains: Moonberg, Shiba Inu, Chainlink, Dogecoin - Ventureburn",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRWNlOU11bW1BenJxU0hXdjNLOFo4UlFPQ1ZyNjR0emt0QmxCV0VmUFI4eVNkV3hSWklVSFI2NE40d0UtMm5qOEo3ZTdzRzhDWWwxUWdxcE5ZMEpaakV5NDZzZU1QeVBZc3NNSjlGbXA0ai0zbk1FMkZpSVlqbjJKU3dubXNURm1PUkd3N2lxOUtfeXFyeHc5cXpiOUM4ODFXWXZvR1pzazA2OE4yekY40gGvAUFVX3lxTFBFY2U5TXVtbUF6cnFTSFd2M0s4WjhSUU9DVnI2NHR6a3RCbEJXRWZQUjh5U2RXeFJaSVVIUjY0TjR3RS0ybmo4SjdlN3NHOENZbDFRZ3FwTlkwSlpqRXk0NnNlTVB5UFlzc01KOUZtcDRqLTNuTUUyRmlJWWpuMkpTd25tc1RGbU9SR3c3aXE5S195cXJ4dzlxemI5Qzg4MVdZdm9HWnNrMDY4TjJ6Rjg?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.906,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Officials See Interest Rate Hike as ‘Necessary’ If Inflation Doesn’t Ease Soon - Realtor.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNajJYbXlHUDhCUEJReEN0MWRkMmJLX2VMTEZIWkR4Zmh2X1puZmdDcFRYOXFNUjZEQWt3bzlVc3A4SUtPWVVIOUlQb0FaUXBtWVAzV2lVbG16UGZnVTlScTJYdVBwVWJtWkJSekRmSXo0cGVYSFpGaEdJYXZVMGN1SFNYSTlTWmtsNDhCWlRaU1VlbkJLQW9Yb2tucw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Wyoming Chainlink CCIP Adoption Boosts FRNT Stablecoin Security - The Cryptonomist",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZM190eFRiMUdTczltYmpvbHR2bVlMazFtTnoyd2JDU2tOVkcyRTlkSC1MVmgwcERBVE56d1NmWE1XR2lsUFEtU09sbTYyak9ya0ZFZ3hrWUExc3dXeHI4R3hqT3QxWDRjSHY0QVBsc3dWeVJEdi00VzhB?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.06,
             "spike": false
           }
         }
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.76,
+            "zscore": 0.75,
             "spike": false
           }
         },
@@ -2621,6 +2621,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-14",
+          "return_pct": 1.34,
+          "zscore": 1.78,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_staples",
+              "title": "How Is Dollar General's Stock Performance Compared to Other Consumer Defensive Stocks - Barchart.com",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbTl6aXBqZDlvSUs4aEJpZkwzZlkwWkxsVF9TSHI0LW5KZTBGUzk1aEVPWWp3alIxRkc2b1ZYaEJkUm55Zlh3OVgzWUZFeTVLUFo1YTJ5bF9iVGJyZVBKdUY3VnlkLUE4bkVyRTZqOEs0N2ZJMFZWRVJnOUlNdGRGcEVFeUdleFkxR0dZbUY5WDZMY1JTcVVzczc3anZmQktxeW5jWmRxOTcxQnJtWnNyU1JhRWJxb0VDUWhZdnl2Z1FrSm03UWJSTQ?oc=5",
+              "sentiment": 0.026,
+              "relevance": 0.61,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
+              "title": "ASX Consumer staples Spotlight: Could Synlait Milk (ASX:SM1) Be a September 2026 Stock to Watch? - Kalkine",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSTZILWZBeFhJNk9EYlRKMzhFbUpmanNwaUE0Y1NVd3Y0eF9IVE5SNHliZGNSTHlBZmtpQTc3OHo2cTNTY0wyaFhyS3lPdUFyczdIdXA3Qkl2TEdfd2l3VkRvM2d6R19yX0VlMDZqNnkxRzRJYkxHSnNCdnhJVWlrVDA5aEJhSXVGWFpYeGRQbnJNamlrbTRZSnR5VTM4RDliUkR0cF9LalNmM1N4RERlU0VqOGdVSDAtcWE1bUM5QzBkSUtCbkRz?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
+              "title": "Is Mission Produce (AVO) Outperforming Other Consumer Staples Stocks This Year? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUHlWeUR3a3VXOHlPV0taQnpaN1htNmhmLV9keUtGdlNnYV9kdi1sbWZTZFB5SXZNeXlMYlE0NUJrVkdJdnBXMEZ1R0Y3ekx1X0RRcE1vMzFaTnViWjFNWGFWV1RJWGdlX1dPOS1YX3ZFR0QyNDd6WUd0Q0Y5Wjc4UFpkVWc3QjJ3YlEzOTJ1M3QxSE9MbmxESWI0RXVJTVVJNXZ1SnNXYw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -1.0,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-17",
           "return_pct": -1.64,
           "zscore": -1.6,
@@ -2812,45 +2851,6 @@
           "coverage": {
             "count": 7,
             "zscore": -0.54,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-06-30",
-          "return_pct": -1.54,
-          "zscore": -1.52,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.79,
-          "events": [
-            {
-              "source": "googlenews_staples",
-              "title": "Consumer staples leaders driving growth in 2026 - MSN",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPam9LSDhwaWZpZ0dOOHBLYlJJY2RJQWhJMTRYM0gybkJaYjBMTi1qWHBpSXlhc2JkSDRJWEkzLXgyRjJqVWVhSkI0MVMzc2dsNXJWeTE4R2F2eVNOMm1KZ3oySDN4a29PRlFPelBlZkFFdFJCR21heFR0cDAzOFZnY0swN2E3eFBEdXJ5S1FvU0pibjhoakxtR3ZYSE1rT2VfOElZ?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "Cobram Estate (ASX:CBO) Climbs as Consumer Staples Growth Comes Back Into Focus - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNVZxME5INk11TXdwTmN2YWFxandqa2tQNHllYmV6YmZqWWRobE5NYTRuTndxbjEtMnM4MEUyb2pOUkZxWTVwZzJPX1VGSTlpSW10NjFXQ3JkR3pqM2FfWW9JemFFTldFUUJlRDluNElyd1lNQkFTNmVWZkdrWEgwaWxSeTdCdDlBNlk1UmhKNHlmM21mRmFlc2hKR1YxdTlnYVJGRkRxSzBDVzBVOGpzcE56dw?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "Consumer Staples Stocks Built To Withstand Slower Growth And Inflation Risks - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQb09IM2QtYmx4WkhnOFZycGFFSHFkNDlEdjVYNFJHVkpucXJUVFBHa1E2YXNobHR3U2xIWHJGYm1yVXVRc2N5Nl9BbzEzN2E5M0JJVElUTnlKYVVNczA2SFU0WkNoWWx2MlRHWnlBZUtUUVVvazdNbTc4MGtBTXlwZjRrTUlsOVlMVHN0emVYb2ZFYmRSR1pNd1piUWl2cGh3VUFBR3RiaHJWVzhnMjdMTHp1am1qbjZMNjI5NWVYdHZkUURvd24zTjAzdmJ2QzBiSnVkaEFJREV3YXZtUmVv0gHkAUFVX3lxTFBRUThGS21Cb3k4V0pPU3V0U1BkSE5IbGNrbGIxSEdUaGtXNG00WHZhZjg1WXZPLVZsV1dFOFZESDJZUF9ubHpDcHBiYlFhVkpOaGZWLVFETy1UOFpKLXhkNGJBR19vLUMwQXRpdmtEdlNveFZ4ay1scXJHaHR1YWlWSmptcjA2UGU3M3pOR1RxVTM1WnVtTWNDMVRjMmtFTjBWUExYYW10MW53VktBTkFDdGNMcnE0YXQwWWdqTlAwNlB0Zmx5T3hGdzR1RlAyM0pFQS1jM2h3cEl4NnhEUVRfbDczQg?oc=5",
-              "sentiment": 0.128,
-              "relevance": 0.6,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": -0.46,
             "spike": false
           }
         }
@@ -3291,7 +3291,7 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - Barron's",
+              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - barrons.com",
               "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3VhcUd0NDk0VWNEeGg4bzlGNWxralRpZ05aeHhBZjZYY2Z5c05SMGNUWXBKbEhVLXBPVy1OTk1WMjliT1VvUGw4Ri1pNGVEQmZqQm05RFIwWFNwRFVDVW9ucGMxMjhCcjQ0T1VWQ0dnSkpGdHg4dnA3Vm54Y3ExYWxGdElBaDBr?oc=5",
               "sentiment": 0.459,
               "relevance": 0.784,
@@ -3467,6 +3467,45 @@
       "name": "Communication Svcs (XLC)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-14",
+          "return_pct": 2.17,
+          "zscore": 1.85,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_commserv",
+              "title": "Jim Cramer Recommends Buying This Communication Services Stock, Calling It ‘Amazing’ - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUlFmZ1pHMGNMVEprbEstSlZVWFhwRDE5eHdWbUp3OVllTVZWaFhuNzM1WVdfYTc1MEdKdnNBVVpaRFJNTUh2SW15a2o5MzBsMHphR1JwdXg3YkEzSXE3WDdsUVFOOEV2bER0M1Yxd0FLWTNTMTlMWDJROGpiSmFaNDRuU19HTUVPX3psRVJmSDVlLWQ2ZzQyczNZTGJUVkNieFJtR19teVZ5bFAwUmVieGN2M1Z6M3E2bkZmX2xnLTNsWlBVRmN4ZFlTUkdCUllOenhkcno2YjZ2THpIZVJv?oc=5",
+              "sentiment": 0.226,
+              "relevance": 0.691,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_commserv",
+              "title": "11 Communication Services Stocks Moving In Monday's Intraday Session - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0VDS1hDZlFqeGdBVlVEdzVUODFfdVgxVnRZY2liTkFYdS00NWhWbXpDamJWS2xTNjRRaElxWTl4dmNmM2EycnpBOTJvR3Nlc2ZicFRqYUlqQ3EteDNES0kzZTZoMnJUeEpWQUhWNU5ZX3JFYWRpNXNockRKbEU2UU5pWXNiNUZsTktSdWc2YWUyVjlLdFdoa3BHQjJYVHVTUUVzYkltMjNNNlB6WUxLUVRIUnpmZFlxMmhTRHRPbkFlbjUt?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_commserv",
+              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3lTVWtZa254TlRSaE1pN3NndG92YzM1ajByaFhTVmxDM2J6czFqeFBrX1pYWUk4YWZYREIxelB4cGNEVWxqWVFQZ3VVUHl5V1llbGl0QWRYNms3NDlBYWtQWnZON0QteFhoUkhMUnVtVHV1VUt2V2Fqd1R2TjNQanp4eXE4c1hvdGxYWlVVLU9RR0hfUHM2cFVTLXVLRU5vTTF1TW1feDFmdlhPTzNOVEVPLUNwV2ZLN01Z?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.15,
+            "spike": false
+          }
+        },
         {
           "date": "2026-08-03",
           "return_pct": 2.86,
@@ -3661,45 +3700,6 @@
             "zscore": 1.38,
             "spike": false
           }
-        },
-        {
-          "date": "2026-07-15",
-          "return_pct": 1.73,
-          "zscore": 1.66,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.38,
-          "events": [
-            {
-              "source": "googlenews_commserv",
-              "title": "Analysts Are Neutral on Top Communication Services Stocks: Cineplex (CPXGF), AMC Entertainment (AMC) - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNWVdTZkFYQ3VQejBMQmRGbHZhZThRMG5jQ0YzYnBfaUNkQnNsa0NOeWlYbVNETEV2Vk01V2QxdGthRDk5bDJPc2NjT3RFSVRfTEVUSGNsLVlvSkpsMTdHRFdjZWFub0VpYzdJLWxtVHZ1RWxUMVR2dTVnXzNjVElZaGJFbi1GaW51cXlNbWMxekNsdzh2MHpmQ2tHLVRnb0E1VVp2a2dCTWpRMWVNV1gxNWtha0tTTDA5MmxfcjRaNmN4ejZ1MkF3dndpRHE3WWxLNW9EeXZWVV9EQTZWVXg5bFBqOVdDYzJFcU0zU0R6SVQ2QzR0bnZPbzFFcXh4S0xQelJFQ3lCTGlIUQ?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_commserv",
-              "title": "Analysts Are Neutral on Top Communication Services Stocks: Cineplex (CPXGF), AMC Entertainment (AMC) - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOcHZWTkxPaHJTd1kzQXpFNWUxTlZDZWJaYlJIZ0w3ckJUd1dEamtVMmdaWVRjN3hqTDhaYVB6TVFtbDNVSF90cmRabEdIRDd4VXNwWFZtR0lhT2Z2VmttM2NCZU11OTI4ejhqUjN5bnRsSXJrUnF6QkhHaHExZmc4WmljZDBGOHBPQXdWdHBaUndQWm41Smo5NUVzbnIwNXF3ckNsVGR3UThqbld6SW1yQUd2aWdVZWdBQW5LQjBxc0ZiSXVTTU9nTXh2QVVUX19JSDQ2dDlUNTVtX3Y4R3Q1M1dUeGU1UVpuamxWQlg1cHJoSzdZZWExdEstcmZuR1JlODJOcjJQcUlfUQ?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_commserv",
-              "title": "Analysts Are Neutral on Top Communication Services Stocks: Fox (FOXA), Paramount Skydance (PSKY) - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOdTBDZGtGWWpGM0U3WFJXZ3lzQkUxYXRuN2N2WkdFcXg2cjBNekZubjRUYWZMOGxMN0hPaEE3clhkY043NUVlMG1jNDNiWERDUUM3c2dueGowRzhPX3c5ZnlsamhUakZpQlFKV1R2X1E1Rzk3WkpMb1QxZ1RseHk2Rlo3NGRoUHYwOGhtRU5Vc0w4V0k2cnFfR3JKbThWWW5TTE9tcUlFTW4xSkpnWlVxMzRoYWtlTXVPczdSTktTYURPN250cEFsaUlCUkVlZWFIdTdyTXp0dEh5LWRwdnNkZ2IxXzZqTDhhRWFhQ2c1UUh2Z1pUQTByZHlfOTdtd2dESWdCYkdR?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.681,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": 1.64,
-            "spike": false
-          }
         }
       ]
     },
@@ -3708,6 +3708,45 @@
       "name": "Semiconductors (SMH)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-14",
+          "return_pct": -4.82,
+          "zscore": -2.52,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Why Are Chip Stocks Falling Today? Nvidia, AMD, Micron and Marvell Slide on AI Slowdown Fears - Stocks Down Under",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPMnlrcF9vNVFQNTJsR2VVRHJrVS1ieU4wVFM0TWJKQnR0aUotRzRhUElVd3Jybm54dkkwUV9Oa01nWk9lZ2xOcGQzN2gzTzdxcUN2Zk91YTJkUk52clYwemROclRIbTZWb0VjaHhHb3hnWHBY?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Why Direxion Daily Semiconductor Bull 3X ETF Dropped Today - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSDgtQVk3ZUxHaFFTVk5NMGJTV0R1aDk3NHZaSExNOTlwZVhQMlZjb2FibWNySzVjbGFQd0xST2E4ekZENmhsWHZjYUZaMjVJM2EtWGVjZVVSb0VEX3Vod0hlV1RDb1A4N2s0Nk5YaXMyV1ZBdXljempJRC0tWDBuOG9NQXdUNVUwbWI0TFBhTnZqUDAzMXc?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "China Stocks Waver Amid AI and Semiconductor Weakness - devdiscourse.com",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQWJQUVNQelZmX1JIdndvTUpsaTNsdDZDeDRnakRwaE9iWTJ1STJYTzBtcnZSMVI0NmNtNnlzWEhRZFdzOFM3ZzhQQmlabGdPREZQNVpRdU9aR2wwV1JVV1JEQnZPSVJUOC1MQzh4Qmktdi02WGcyY0lZT1JRTkhmUGlZQnc0TER4eXc1X1ZXeUdualY2eTR2dHo3QmUxempYNlRaM3h0a1hrV1HSAbABQVVfeXFMTTctRTZnWDJUTnpnNXJuX3ZiT1BNeVhhOG1hWTdLbFRJWU9LS0hLRW4tWFREZ19TWm0yQ2VjT2tmbUNRMVF1bENORmRnVWd2cmx1RkFneEpEWWVMU3JGSDdPV2s1UWJsSzl1SDVGYnIxWUJ5RW91NU5TTGxVb2JDTHV2ejNDVlZrV0NXNEJ5Nkp2bktXNUFBTTdhTVpfekRySHh5YVZOcmNSeVpGVHJSN0g?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 60,
+            "zscore": 0.76,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-04",
           "return_pct": 2.61,
@@ -3743,7 +3782,7 @@
           ],
           "coverage": {
             "count": 63,
-            "zscore": 0.69,
+            "zscore": 0.7,
             "spike": false
           }
         },
@@ -3859,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 102,
-            "zscore": 1.39,
+            "count": 101,
+            "zscore": 1.36,
             "spike": false
           }
         },
@@ -3902,45 +3941,6 @@
             "zscore": -0.3,
             "spike": false
           }
-        },
-        {
-          "date": "2026-07-30",
-          "return_pct": 6.88,
-          "zscore": 2.28,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.66,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "Semiconductor stocks soar as strong Microsoft outlook revives AI trade - foxbusiness.com",
-              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yc3RCWHk1SkRmNlFYZ0pfZkg5TldiM1BVS1FLVWxNb2RHZUxkcTl6cVlXczVWWWlqM0ljMjFISlNWbFBNZHRtdmxvMlNIMFhzU3lFRzN6SXVrU2M?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Chey Tae-won snaps up 4.8 billion won of SK hynix shares in his first direct purchase - Korea JoongAng Daily",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxON0F0YjJKMjNKY01nSi02Y1B2SG5jVnVUbS11dnhDb3oyT2hlZ3I5ZjY0bFJpd0thRkRqaHpVTzNvMVloZURFNjhmSnVJYjE5VzlzRFZLRXBycHBqODU1NDQ1R3E1OGVVSlVrVFdWSDdoYkZRaFlHS214VEdwSEkzRDlXZG8tNWRJcmI4SU5EY0E0WDRxN1FnTHVJYWhkWEV1TVFOLWltLTBrYXo1Q3JmcTFCYVF1dms4enJsaWRxQUwtZVEydHhqeWVQNjNHX0t6elE?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "U.S. semiconductor stocks stage a powerful rebound! AI computing power takes the lead, and opportunities may be emerging from the 'deleveraging rubble.' - 富途牛牛",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMVhTWmUtMFJ6SjJNcnlkSlJrb3Bkczl2clZpc1EwaTZFdENUTkZfbDAwMTdTN1hpMzdCeGF2dEJXRW03UzBnYnZmZWJ6YVhjeVhCNTV2TzBlR25Gd3RqaWpTZ05JOV9BbTdNQnU5NjhuQ00zQUdNNEk5dXNPSmRYM3ZLQUllaFNxckYyRHBYalYwek5uRXNRT1lCY0ZndXA2cXFvRGg0U0IyVVlT?oc=5",
-              "sentiment": 0.69,
-              "relevance": 0.876,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 104,
-            "zscore": 0.76,
-            "spike": false
-          }
         }
       ]
     },
@@ -3949,6 +3949,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-14",
+          "return_pct": -3.17,
+          "zscore": -1.25,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "enCore Energy Stock Slides 7.93% — Uranium Growth Story Faces Renewed Downside Pressure - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeUNqSUw2WmRBYmx0RXpjN2FtUktKeU5QX1Y5WmtUaElkTHBJV2VweGpUcENVaGZIZlR1RG5EbTB4RHJTMi1OM2VkQ2RRcFRPMzRqdkJNZXNzLWdjb3F4aHZON1pUMjdadE04TnBvWThjbWE2MlBGMVBuLTd4SkFQRkczNGF3d0JPSjlwMHdnQWVzd0pONTh1ZWpwOHpzbHZaQTJlV1NUVzVXSTVXV2p3RDlXNXI?oc=5",
+              "sentiment": 0.128,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hike Looms as Inflation Puts Trump and Kevin Warsh on a Collision Course - AgroLatam",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQXBidzJraEpjWFNjb3VCeUVFaFNheU1wSENMMEk2cEtTcHFTVjA1VHUtS1l2X0lFM1lvQXJFSEQxWlNyUlB5T2NhWnVtNVFaZm5QLUdvWUliY1JVN1dncnlxX0hsbzdMS3prbFVOOVQ0Mm4zZFNMSGthUlhtNWxTek4zY0NQcGRveXc?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.474,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed, crude, dollar and Iran war: 4 factors that could move gold next week - The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdV9IV0tKMVVCcENVTWJkaTB4ejFRRTVjRGhvdnlOTU1kdlFDT25rQ1dsX3ZVOUZQMlpkMGp6Zi04a01yb3JrUmViNktZdHJKTXZSbWM5enh5UHhBX0d2S2NyeUJLMnFWWEE0eXJrc3NjMDM2UWpzeFFCUG1uQkVUUXFJRGJsZks0Mi03ZGpSS01pTGhnWDlzXzZSS1hsZUg4VG1vemljU0Fqd1RGWnhndFpYa1JwVGpLLVh3X3o0UWZKdlBrX09wS2VYVWRqQ3NocWU4MlRTejI5TV9EaEJKZktIM0FocXJjTFl1WNIB8gFBVV95cUxPT3R5WS1JNzhHclpnWnJicEthTkNBVzBHb0dLMHVpNXczN0ducWFicGVvSzNITk96SHVQSnhyLU8zR2JFT0VTc2IxQzk1TlNHOE1vSC16TjlYd2NIOE5wSlpzd2ZUaEI0RjgwSTg2Y2lieFdpUmh4UldUTDU3R0k1R2F6dUhXR0ZzR1B1NmZucENSb2ZOb0RFb19hQ3BEc1VXLUpkYWw0VGJwaUgwV3dqY2FjSVhNVHpYMEViWEU0R2xuYmZQVEw0NmhxR0JlZk8yaFlGWVh6TDg1OWdXQXdEaEJLNGFSd0JXSU5jQjd2b2RKdw?oc=5",
+              "sentiment": -0.823,
+              "relevance": 0.437,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.3,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-11",
           "return_pct": -3.27,
@@ -4084,11 +4123,11 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - etfdb.com",
+              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - ETF Database",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnB3WHJhajlfN0xZMk9SWU8wV0hYcG5vWkpwWGhjQ3EtSW95dU9sQl9mUll4R0g4d1ZIbnFTVFFMV0FiNlpsM3R4NWViN0RLYmtIanZjRi14QWpVRzduUXBWZl9obkJKRFdqTGlORXo2akFhUEI2UXlrSTdycFZZZWtydDR4TDFOTWhjbVFqaFNIN3ctd3lySWx4bzZRUQ?oc=5",
               "sentiment": 0.226,
               "relevance": 0.691,
-              "event_type": "other"
+              "event_type": "etf_flow"
             },
             {
               "source": "googlenews_uranium",
@@ -4143,45 +4182,6 @@
             "zscore": 0.42,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-28",
-          "return_pct": -5.79,
-          "zscore": -2.4,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.25,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Nuclear Energy Stocks With Real Exposure To Power Demand Growth - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWU01SWxQQXBGM3VMd2d4eTAyT0dMZEU1NEM5azlON2lJN1R1OXpnN092UGFnMHcwWENCOTl1Y1R4UzRSTXJNQ0V6MjBEUzUtWFhiaHBoWnNqZmtzcWJJY0JkaTI1enhXT1lWT3VVUmZjQ1N0UlZxSVlLUTlSVjdKSFBPN1Z5ZTBqUDFic1hucHc0b2JaRXNiWXlCaTFKRGtfcVNGclU0R3E2Q3NzNmozbWVuUG5rbXREbk5EcGZYbGpRaTZDMkl0am80d3BlZ9IB0wFBVV95cUxPS2czWGg0VnZjQ2J3TUJGejFCMm9PNF9lOXdUdm40MW5HaGFWbXk1VUw4NlJtZTlFN2p3TEVFUk9RVXZyVUhtUWhWX2hzeHMyeU5Ba2hSYjhSQTZ6U1BnLV9LbzBfejRoQVZRNnJDRlVkbkRBMWtzVS1sT0pVUUxXd19GOS1Fa2pGYi1wTlBEbi0wU2dPTV81c3dQTnBBSU53STFxbDVRd2pXVHdmc190SWU5Mlp6UUMzVHNiSWQyYUNPWHN5VTJXTmJDWVd1aVJaUFRV?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Foremost Clean Energy Stock Falls 6.06%: Is CN:FAT Facing Further Downside as Uranium Exploration Risk Weighs on Sentiment? - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOc0ZWQ2FzR21LOVlRUmN5NGxWb0JEYW5tdjUwOEZQQWFvZnVjYVpDdlowVXBMdHhpOW5ubEg4dWRibFQ5alNzVzJDeHNtWXVmcjNnQklGWGNxMk82VnV0dDIwM3JRQWFDY0c2ams1eHZiQkFkQ2JtTExGbnRYZjVlNy1aSUx1UjhDUlU0RUthVkdZZEZhT3RnU2ZrazJjc192U0NRb0pYbnFHTkR0RkZJWXRsR19hekZHeVpQN2JCUjZySG5oZXhVdjFDQlVFaXZsVGhRVzIxWmZSZkZQRXRrQTZOYw?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Uranium Energy (UEC) Stock Trades At A Premium After A Very Large 5 Year Return - Sahm",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMm5EMkNQVlVsQWM1elhlc21jQnV0NEtOZmdvZG9nSTc4eXZLYkUxOVVtQ2NiTTJKQ0ZWU0FVTXlfX016UW5XdDhxWjIzT1BSckdTNmFJUDQ4TmpodUsyWW93eUtlWjRTZTJCcV9Ub2p5Z3kxbXl3TTh3alA3bEk1T2dzbEl1cUFnOWZNMHFWYm9hUzh1bVZBWlZyUEtqQlhucFlueERwM3BSV1ZVRnJGN180RE1JR2dBMzkzcFJyQW1rZmJEcmZsNw?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.86,
-            "spike": false
-          }
         }
       ]
     },
@@ -4190,6 +4190,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-14",
+          "return_pct": -2.04,
+          "zscore": -1.58,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hike Looms as Inflation Puts Trump and Kevin Warsh on a Collision Course - AgroLatam",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQXBidzJraEpjWFNjb3VCeUVFaFNheU1wSENMMEk2cEtTcHFTVjA1VHUtS1l2X0lFM1lvQXJFSEQxWlNyUlB5T2NhWnVtNVFaZm5QLUdvWUliY1JVN1dncnlxX0hsbzdMS3prbFVOOVQ0Mm4zZFNMSGthUlhtNWxTek4zY0NQcGRveXc?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.474,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed, crude, dollar and Iran war: 4 factors that could move gold next week - The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdV9IV0tKMVVCcENVTWJkaTB4ejFRRTVjRGhvdnlOTU1kdlFDT25rQ1dsX3ZVOUZQMlpkMGp6Zi04a01yb3JrUmViNktZdHJKTXZSbWM5enh5UHhBX0d2S2NyeUJLMnFWWEE0eXJrc3NjMDM2UWpzeFFCUG1uQkVUUXFJRGJsZks0Mi03ZGpSS01pTGhnWDlzXzZSS1hsZUg4VG1vemljU0Fqd1RGWnhndFpYa1JwVGpLLVh3X3o0UWZKdlBrX09wS2VYVWRqQ3NocWU4MlRTejI5TV9EaEJKZktIM0FocXJjTFl1WNIB8gFBVV95cUxPT3R5WS1JNzhHclpnWnJicEthTkNBVzBHb0dLMHVpNXczN0ducWFicGVvSzNITk96SHVQSnhyLU8zR2JFT0VTc2IxQzk1TlNHOE1vSC16TjlYd2NIOE5wSlpzd2ZUaEI0RjgwSTg2Y2lieFdpUmh4UldUTDU3R0k1R2F6dUhXR0ZzR1B1NmZucENSb2ZOb0RFb19hQ3BEc1VXLUpkYWw0VGJwaUgwV3dqY2FjSVhNVHpYMEViWEU0R2xuYmZQVEw0NmhxR0JlZk8yaFlGWVh6TDg1OWdXQXdEaEJLNGFSd0JXSU5jQjd2b2RKdw?oc=5",
+              "sentiment": -0.823,
+              "relevance": 0.437,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "US futures lower as investors eye Fed rate call - Breakingthenews.net",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdlBCWDdJU2pjc3VFU1FSUVY0ZmZyS1d0SHE2UFhUcTNwanIxcXc4SC1oZXhSVHlYTml0a3lYMjQ2dGNvSmRub1A3ejNlbFowSXRrcFJGZUZhak5XV2hYNjFPVy0xWXVINkhZTHJubmw4UFB3WFFYQ3VPY0dhcDR6ckZyV3M1UnVZSHpFTFI1NkU3NVFIQVNn?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.431,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-08",
           "return_pct": 3.04,
@@ -4382,45 +4421,6 @@
           "coverage": {
             "count": 3,
             "zscore": 0.14,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-24",
-          "return_pct": -3.21,
-          "zscore": -1.2,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.05,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Indian Green Energy Stocks Trade Mixed Amid Weak Broader Market (24 July 2026) - SolarQuarter",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR3RCdWtnSkIxcGNYUmlBN2RRc2RzS2xJazhiU3Mtcy1CUTRyWFowS0RQd1RLVW5wNG5JendGNXZFckFwbTdfaWtFcW5EVXVVaVowcldaTUlJS09HLWpaVjUwSFQ5amJUa2hsa0RtZXlJTUdyNHZFWFN4azkwTDFfSXhybUNTd1I0U1Njbm5tUlBrTHY1Nm5EV0k0V3VSZTlFX3llTERxTnBXRjB3aGpTcjNNSQ?oc=5",
-              "sentiment": -0.202,
-              "relevance": 0.681,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Why Adani Green stocks are falling despite strong Q1 results? Reasons Explained - India Infoline",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcTlncENwVVVwY3FzOTNBODE3emtQWjdad3E4RGV3dm1sTWVsVmZvaW1PcEdIbUNGRlRtS3JuS3VSd0h6S3hrQmhXTnJuanJQM0tQMFI3cmtmS3dBSkRBeGxaMTZDSG9WMVozTWd3c2Nyc01zb3FtZXhMTGZqSHBYenZpQnZRR3UybHBZaHFxei1EQWpxaVU3eEg5UUI3a2tlTks1bFpGbE1sRG91ZE9xNVJwb2FSMTFzNzU0SFNWcmg?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.604,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Top Renewable Energy & Battery Stocks to Buy Amid AI Power Boom - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMkdhRzN1cVVqeWwzSEtTUU9Xc2Z5U1NrMGFjQ3FzMVVzVmRQNnF1aGlLMzA3ak1WQ1Z4OFQ5eU93WjA1dk02WkYxVkpfQXkzREYtbFNaTVdTWV83Vk1IQXBiQjk0OUhZb3B4UnA3MDRDSlNQNkFHZEJuU1A5X1MyOWV3c2ZzdmhlVGpZZk42TEs1d1IzdTNB?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": 1.21,
             "spike": false
           }
         }
@@ -5095,7 +5095,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "Tesla Stock Is Falling. Can Robots Arrive Soon Enough to Save It? - Barron's",
+              "title": "Tesla Stock Is Falling. Can Robots Arrive Soon Enough to Save It? - barrons.com",
               "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1NREh2Mm41bTlyYWZOUU5fbnVHaUFoVXdYVlFodVVITEVhZ3dyeGdKRFpUc3ZubEVhdG50ZmM4dE12VVg3V05abXdfUmQ4S3loZTlEbmVHVDBKV05Oa0VXMlRFbVEtUXZwRmtXVkNCbkdBMGNa?oc=5",
               "sentiment": 0.382,
               "relevance": 0.6,
@@ -5154,6 +5154,45 @@
       "name": "Cybersecurity (CIBR)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-09-14",
+          "return_pct": 5.96,
+          "zscore": 2.49,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "The three major A-share indices turned positive during trading, cybersecurity stocks surged, AI stocks underwent broad corrections, the Hang Seng Tech Index and Hang Seng Index reversed to gains, while large-model AI stocks declined again. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRElIMUhXTi1xenRUaVcwS09HNkpGUmhoODB0QkEzOW5ESlJ6Yll5a0JGa2dHMjF1eXUxWXUyTUt1cE1JWHNfZER4U3E1U0ZaNGdRVmdVSGxPS3diMnQ3d21WcnBCVFA4RkZuWVVabm1MVXRUci03RWlhRWxVUzMyMElwMWF0VUNKaVV2bGktc2N4aDd1aFZYWDBxV2RrclBxM2tmY29pWQ?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Cybersecurity stocks jump over 11% as AI safety warnings boost security spending outlook - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdUt1aUFfd2pYeXUxR3lBZzhXLWFUN29ZR0hRdU1oN0JhV2cyaVB1Y2s3MDRJUERUbjdDR3M2Z1l1dmxNeDNvWTBRRG43ZV9iWXFWZlFMcUZLUEd1eXpxMkdKdERNOW1IN1R0a1JaY1NlUC1JekNaajZlZVBjRjZuZGJaSE1oVUNpczN2WnRxemJEZEZrdXoxa2lKSl93N2VaQ0wyQ0pfNW4tUQ?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Cybersecurity Stocks Surge as AI Safety Warnings Spark Security Bid: CrowdStrike and Zscaler Jump 12%, Palo Alto Rallies 11% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOT3lLYWhKblU5YTZhX3lueU1DRkp0SEdjMGpBQnkzTGxyQ3NqRl9jZmZsRGdNN3FfT0U3TzlCZmZfQTE0cU9pakFORFlXclRVQUE5N1pCR2JpcUZvMlNyVE5iT3BTaW4zUzRvTkJJTWdKd0FLZlpVTFRES0g3N2l3QnVfZGFRcDZRa05pV0VacGdZdmhZa3BFUXBwQk5kS0NWbElpUzRtdDdqQ3lJRDc2cjE2UGJlTGxhT3BJTldQTnBDdHFkeHhMSmQwU29GbG5rRGZfLVpRc0lLR3lxR0M0OUtEdkY1T0x1TGJPU3NDTk1JS2NfMXJv?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.84,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 43,
+            "zscore": 2.15,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-02",
           "return_pct": -2.77,
@@ -5346,45 +5385,6 @@
           "coverage": {
             "count": 23,
             "zscore": 0.9,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-04",
-          "return_pct": 4.29,
-          "zscore": 2.46,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.79,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "UKGI Data Breach Puts Cellebrite Stock And Cybersecurity Shares In Focus - webull.com",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA3TEhnRm1wbFh1Q0FoVkJCN0JCVjFDTkpaM3prNjY3cEVjV2RkbGpUemZ4c3p1ZGxuN2JWdW9mZ25wUXdoeVB4dkpxNTJySEp4WUFpMHBlSFM?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "hack"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Bandwidth, Rapid7, Atlassian, RingCentral, and CrowdStrike Shares Skyrocket, What You Need To Know - stockstory.org",
-              "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOaEpvVkhaS2dVVXpMeFdzNnVCd2JvdXU4NXlfV2s1XzZCU0c0NDF6UWQtcjd3TlpxdUhHV1RwbkRoWUdvSjg0dmNwWW5RdldnX3BYWFpxSWJvQlpmc19nSGRDQjVrNVQ0ZU55UkNXcUhvakVoVnZDSXhrRThUalFXRnRSUnpiOHNab1p1MXpYRWhtdGNRS2ttTUw5QW5KQXFTY0ZTRVY5NjdjUkpaYlZEaHpPUFNLM0U2Ukp5TjVuTERhQXdQOUFjaF9WMnBpNkUtY054cU5QbkxqMkFBVG9ra3FOWkJUMS1qUVlJ?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Elastic, Snowflake, Akamai, and Varonis Systems Shares Are Soaring, What You Need To Know - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTzVGcGtBSjJMZmt5ZkJieHNRWUJwZk50WnlDTk4zLXZZQlBBX19iT1JBQjRFcUdWRVRCcTZ4VVFQNWZQeHhkbVQ4SzQyUFBDZklaSEtWd0FfZTVZOWczRllPWHlNQVRTaWIwOEVBX3JOcXpfVm55UnBlaFZTODdmMFBuRHo2TXNrTS1MQWFFckJ4b0k2TWVEWE5pMjRzNTZvZEZzSXFDejEwQzNWZ3F4Vl9iaDZFZWxPS0hfTWZEZ0dxN2lGeHMzYTFsZHdNcWJIS0MtTUtMRERFMlFVU3c?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 13,
-            "zscore": -0.12,
             "spike": false
           }
         }
@@ -5637,6 +5637,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-14",
+          "return_pct": -3.16,
+          "zscore": -1.2,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Rio2 Limited joins MVIS Global Junior Gold Mine... - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZDZYdkdoR3ZNOER6el95MVdJQ2FDOC1iNjBRTFppdzFLRVhaVHBHZXhDcVFuTlFILUpZaXpPZmp4LU5YNXotdFFoVi1oR2xZbFRKQkRHcnNLZ3RNazZRaEpWemNOaG80ZXVOS0F5aDVrYmVTYTlQc0hzMHRJc291YWl3UHFLclZNRFlYcUZ4Zw?oc=5",
+              "sentiment": -0.226,
+              "relevance": 0.691,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "West Point Gold Stock Slips as Gold Volatility and Exploration Risk Weigh on Sentiment - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRl9hUGMxRkxBVjlCU1NZOEJ2RzJMUmJfdzYxWjBoY3R6cHFmX2NQaTJPZWw2VEgwYTZVOGpfLTRsOEdTbDMxeFhQVjQ1cEo1VDVCSmFqWWZadkNfQk0tRkFGb1pfeEJwSmdnNnNteV9yVGFYVGVEdV9NN0V2WVhnbHBBUUVRSVBrSW9oWS1COE9mcGpjT2Q0azZQYWNMMzFvSVE2VGRCTEd0cVd5WnJnVDF0Y3I0SGky?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.621,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Omai Gold Mines Stock Gets Fresh High Grade Gold Drill Results - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZmstTEJTRDY1dTdkVnFYbmoxaWcwOW5OM3lpbTBVTVgyM2NLbmRkcDJNOWhsVTU4WldkYWtUNU1kNlRGbXV1MUJZNWJWUFRoWkZSVXlIdHpLU3c4UWJ6U082YkNFM2JUdlVrQTFnSDFCVzR0LVhPQ0tNM2ZqSGUtcnhMSE9MUk9ZZEJnenBrc09qbi1sS1VUU2ZtYlZkei1nZkFpcTJPUmpqaTM0eVZjRXEyblY5SmZ1UWxSWjBLWUdPUkdybThMazBPRTdyWHNIRThOd3p30gHbAUFVX3lxTE82SFZ2N0FvQkVZODRMaDBZaUIyV0FRRjJQeGgxel9meTFxVkljTDNfNURnTk5FdVFNVlNFMjc0RmJ5R1c2THlzT3Y2bWo2Z1RFUGpBQ0VveE9rRXhjS3k3SHZKWmMydW04aFJOSUYxdFRtS2NlZC1SaVhkVm9kczFhR2JSUnVnT2pUSE1Rd2hkaUR2N2VUbnBZUkJSU3V2OXk5aVZGbmFoUzFIZHJIMmtLckZJWXlJMGQtallhZ3dBV0lGRlJKeUNiRDlNekxiZ3Z0VjZzc05rR0NLNA?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 28,
+            "zscore": 0.36,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-10",
           "return_pct": -3.46,
           "zscore": -1.36,
@@ -5830,45 +5869,6 @@
             "zscore": 0.86,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-26",
-          "return_pct": -2.94,
-          "zscore": -1.3,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.02,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Fury Gold Mines Stock Faces Renewed Pressure as Exploration Promise Meets Execution Risk - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQN0xHNkdfT0dhNGNOS3ByRGptdGhNeXd5dzNnX0hHVlUyeVFqdnJWd1hJVk8wQXpDbzdabVVMNnRERzJXc19rbEt3LVBnVnlnSGZwZ0c5d2xscnpBcXU0NzZLNFlwNWJXdXVDbnRNU3VzVG95bzFPWW03MDNyN09ReDFxNDZxMzZhSUlKazhrQ256a2VYczFOeEhuN2w4cUZxSW00cDRIUGNSam05NGhiYWRRbHZHMHcySVBj?oc=5",
-              "sentiment": -0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Agnico Eagle Mines (TSX:AEM) Slides as Gold Sentiment Weakens and Investors Assess Production Risks - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMWY0RmJybFRRT1hROU1lNG5QazhmbmV4c2hVd25wRFp1RkFyY25rUWdYb0tRazJEcDFSY1F4N0UxZVQ3WXJOWWNUZ20xU25Dbm1CR2xmcmowcTVFZEs1ZC1Jb1lUNUxUb3RWaGdUUjdlWFBSQTVCeW1NX3JuSXJhMWp6TWMteTQtMUtnTUVXSUl1MnB3QVVra3J6VS1tTWxRMV9Ha0syZU1XWF8zU1NQU1l6SlY5QnE1bHdLcUNJUW5KVlZva0E?oc=5",
-              "sentiment": -0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Legacy Gold Mines Stock Under Pressure — Can Baner Drilling Overcome Rising Execution Risk? - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYU5fZ3dtOFhQOXphSjRPc2NVRGJoc24tV3dDX192OTNzV1RVMDR1QlZxYmJnZkZtLW1BQmxNMUdycThkV0JMREFMdzY1VFNnemk3OF9ORmpiNkhOWlR6NFY1TkV2bTRlY3ZCTTA5OHZndENuS21pdFNTSnRTOXRQYVZOMk01OHVlUVNDS2V0VkFBQlNsb1c3eExQZHBMT3ZSaW9nS2FvV2pGeEJiVDdfeGhmWWRDSkQxME1B?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 33,
-            "zscore": 1.12,
-            "spike": false
-          }
         }
       ]
     }
@@ -5876,21 +5876,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-14",
-      "return_pct": 1.04,
-      "zscore": 0.14,
+      "return_pct": 2.82,
+      "zscore": 0.85,
       "max_abs_z_recent": 1.17,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-09-11",
-      "return_pct": 0.86,
-      "zscore": 1.05,
+      "date": "2026-09-14",
+      "return_pct": -0.45,
+      "zscore": -0.84,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     }
   }
 }
