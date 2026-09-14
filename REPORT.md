@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-13 12:33 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-14 13:39 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 1.00 | +15.2% | $422M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
-| 2 | Energy | hot | 0.99 | +8.7% | $120M | novachargex-coin, power-ledger, energy-web-token |
-| 3 | Optimism Superchain Ecosystem | hot | 0.98 | +7.0% | $2.0B | worldcoin-wld, lisk, optimism |
-| 4 | SocialFi | hot | 0.95 | +4.0% | $2.4B | pump-fun, reallink, antfun |
-| 5 | Gaming Blockchains | hot | 0.94 | +2.7% | $880M | apecoin, immutable-x, wemix-token |
-| 6 | NFT Marketplace | hot | 0.93 | +3.4% | $163M | blur, magic-eden, tensor |
-| 7 | LSDFi | hot | 0.89 | +3.3% | $480M | pendle, babylon, sanctum-2 |
-| 8 | Gaming Governance Token | hot | 0.89 | +1.2% | $463M | axie-infinity, apecoin, illuvium |
+| 1 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.99 | +36.3% | $608M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.98 | +36.3% | $608M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 3 | BTCfi Protocol | hot | 0.97 | +16.6% | $799M | pendle, bedrock-token, threshold-network-token |
+| 4 | Storage | hot | 0.94 | +8.3% | $1.8B | filecoin, bittorrent, arweave |
+| 5 | Tokenized Stocks | hot | 0.94 | +7.8% | $2.0B | strategy-pp-variable-xstock, circle-internet-group-ondo-tokenized-stock, circle-internet-group-bstock |
+| 6 | Bridged-Tokens | hot | 0.92 | +3.7% | $480M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
+| 7 | Ondo Tokenized Assets | hot | 0.91 | +21.8% | $936M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 8 | Robinhood Chain Stocks Ecosystem | hot | 0.89 | +2.6% | $168M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Tokenized Assets | -49.4% | $23.7B | figure-heloc, blackrock-usd-institutional-digital-liquidity-fund, tether-gold |
-| Real World Assets (RWA) | -33.7% | $46.5B | figure-heloc, chainlink, stellar |
-| Prediction Market Tools | -33.6% | $144M | unifai-network, based-one, heyanon |
-| Tokenized Exchange-Traded Funds (ETFs) | -27.8% | $446M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| Tokenized Exchange-Traded Product (ETPs) | -27.8% | $446M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| Crypto-Backed Tokens | -13.9% | $363M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
+| CeFi | -8.4% | $356M | swissborg, vision-3, peoples-reserve-network |
+| BONK.fun Ecosystem | -7.4% | $209M | useless-3, kori, scamcoin |
+| Base Meme | -6.6% | $362M | hunter-biden-s-laptop-3, based-brett, toshi |
+| Buidlpad Launchpad | -5.0% | $522M | falcon-finance-ff, lombard-protocol, sahara-ai |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
