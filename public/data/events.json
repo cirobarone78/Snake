@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T17:12:00+00:00",
+  "generated_at": "2026-09-15T21:38:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-15",
+          "return_pct": -3.24,
+          "zscore": -1.6,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -3.24,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Crypto Attacker Minted 46 Billion Fake Bitcoin Tokens With a 25-Cent Deposit - Northeast Times",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZl94OXNqNlpDeFJIQnAxQUxvaHpRNmhoOFlvaXZwQWtUclpFN3dfV3lZRmJEcm5XUmEwaEZTcC0yWmpDR1JzVlZDazRET3FrLXJIZm9wTHRnRHlMWE1BVmprclZUbVE4cXA4S0NDcGNDX3d4VDlfNXd1R3RESDBlb3I0WE5rYnJHdDhBYWw5TVpZNEhZOXNNWlg2eFJ2aWtyZDNPTjkwWWNONXFuSERQNmJpQmFtZw?oc=5",
+              "sentiment": -0.778,
+              "relevance": 0.911,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Crypto’s Biggest Regulatory Fight Is No Longer About Bitcoin. It’s About Who Controls DeFi - Bitcoin Foundation",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HYUlmS00wNWNyZUw3SVB1QTA3eW9FajNCYnVoT2UxVVhQQS05T2VoSGdLRnVtRlFLdm5GVGJwWTMySjNTSXk2VVQzYzZSbkJ3UkwzdS1STndPUC02clprV0tsOVA5VXNMOUQxNHRKRWVOMnVBQWsteUtnMUk0Zw?oc=5",
+              "sentiment": -0.586,
+              "relevance": 0.834,
+              "event_type": "regulation"
+            }
+          ],
+          "coverage": {
+            "count": 94,
+            "zscore": -0.58,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-03",
           "return_pct": 5.14,
@@ -202,45 +241,6 @@
             "zscore": 1.29,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-17",
-          "return_pct": 2.69,
-          "zscore": 2.44,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 2.69,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Trump’s Crypto Bank Is Coming: World Liberty Gets Conditional OCC Approval for USD1 - Bitcoin Foundation",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWjhfR3lkSmJERlRvM045MHNYZE1iZzlIVXZ3ckxDMV82enJrbG4ta3ZmWXVlLUROV2pSUk1uUWZEX0pEb05sYTlINFYzaDRadURiSnZ4Z3VydW05VEZIbUlVR2tMNTlvNElqbzBPVmpiVUJpOXpCSl9Kc0xRM3RyakFSSGtIVldjd2xFbVVrV3FzVWN5TDdTUnZtVzF4QzQ0Um1xY0E0WGNhd19MSUFMY2RidHRnNFh1YUZNeDhsZDNwYzlN?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "5 Best Crypto Casinos Ranked – Which Bitcoin Casinos Are Worth Your Attention? - Muddy River Sports",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONE5ZS0JBTVVTSlo0QkhnM1ZKSHJEN0tHLTVqc0xOak5QYzF6WU44Wmxyb2RCNDdJOTJwWjBUSGZVTk53b0pHMTkwdEJIb0U0azFPeE43RHk3b0doZUxoQVc2WlpvelZDTU9QRnBPOXRLTGg2dl9IOE5XVkNmSjNHZmUyb1F2dnU0ams3NGZEVGNQUTJCX19JQ3NiVGFjRWRXMGc4Z19kS2ZwNE5MSjlCMTJVOEpWck5PSXJnYlVBTERydU5OYVBZUEtkaE1YSUpmVHh2dg?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.891,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Canaan mined 46 bitcoins in July, boosting its crypto treasury and authorizing share buybacks using digital assets. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdUdvclk2M0xuUU9HRm84b3g0SXd0SVVMb0JlWlNfb0ZzUEw2dzJ3WXV4dThETGl1ek11ZHVQNklNZVlxeUF4OWo0VFZaU1Z2aWZYZFdWb01JMXpXMkpOUEx4eDhIX3dmdktHTmJMYjNYeDQ0QW96T0dlNV9TcFctcjZB?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.891,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 152,
-            "zscore": 1.13,
-            "spike": false
-          }
         }
       ]
     },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-09-15",
-          "return_pct": -4.06,
-          "zscore": -1.32,
-          "classification": "asset-specific",
+          "return_pct": -4.59,
+          "zscore": -1.45,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.54,
+          "market_return_pct": -3.24,
           "events": [
             {
               "source": "googlenews_eth",
@@ -267,24 +267,24 @@
             },
             {
               "source": "googlenews_eth",
+              "title": "Ethereum Trader Machi Cuts Losses After $5M Drop in Market - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IWmF5ODU2VjdQZDdKNUxIb2RmajhhUDN1VDYtV2wtQWpibGExRy1YdU9qODRwNU9XN1kxYzRXN2RSSHhKN1BCbzNXdTF4UzRPQmp2Ry04N1UxUQ?oc=5",
+              "sentiment": -0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
               "title": "Ethereum, Base developers abandon effort to align account abstraction proposals - The Block",
               "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc29LN2JoWUdKc0Mxb19ibHhFQTF3ajR6WDNPMXYycUxjVnVwaHNnR1NuWDk3OVVFNFU2SllfS2pRTm0tTTE2aGo2bGZ3SGh0U2tlMzRNaTJZYUQwODJhSktwTDV1WTBBdFkybFdjZUZ4UHg3ai13UzVVMTE3WGFsR3FpZXVYblBtRFJ4RmJ1WElpbHBYczBXdGxOWXlYbVpsZ0sw?oc=5",
               "sentiment": -0.7,
               "relevance": 0.88,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum and Base abandon joint account abstraction standard - Crypto News",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLUF0cmxwbXhMUHJHclc0UV9BcUlqajV0LXVBQzNDbS1PQ0xucGFYN0lDUWRVX2Q4dVJDM3ktTURuRnh3RmhMUUl4TmVOV1NwSGNYa25YUUpBM3czS2VETVFhdHNHUTRJQ3JjNF8yc290WlZycnU2dDNXSHdMcnZhVm15eXZnUDR2?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 67,
-            "zscore": -0.09,
+            "count": 85,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-15",
+          "return_pct": -5.52,
+          "zscore": -1.9,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.24,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Did crypto’s $20 Billion DeFi surge just get stolen by price inflation? - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObmlSN25mOGZqVDgxNmVCcWhMYmRFdC1pMnZfT3F0NmZrLV9pM283LVhabjlsVVRwcGhNZ293QmJ3UGxRLWtubnJoVkhmTmtJdkhtWFNEZFRqZFhTa3FmWEZ5SUNhYjF1dU9OTWlvbDR0VHJ4TjdEN1Q2LTQ2TkJlZk1EeTNzakpaeldqRC12dENlYzBzS2pGMg?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold edges down as oil-driven inflation fears lift rate-hike bets - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVUtaVGZLb1VLWXI1QlhvSGNHeThxbkxfa3NIdk1SZFA3LWZta2JmdnBUTEtKV0dUSGg4OGVQSHYyV0w5RGY1QXEwaG02OVVoVlJmRG9xc3VwQ2RZSFh2V25neWVqS01jVm9pTFg0U29TcXdueHBXbnRuTmRuOFA0TzlyNEppVUJldE9KVFE4c3FlS04zRXRsaXNCQWhqQQ?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 44,
+            "zscore": 0.21,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-30",
           "return_pct": -3.57,
           "zscore": -1.55,
@@ -684,45 +723,6 @@
             "zscore": 2.04,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-19",
-          "return_pct": 10.83,
-          "zscore": 6.79,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.09,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Officials See Interest Rate Hike as ‘Necessary’ If Inflation Doesn’t Ease Soon - Realtor.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNajJYbXlHUDhCUEJReEN0MWRkMmJLX2VMTEZIWkR4Zmh2X1puZmdDcFRYOXFNUjZEQWt3bzlVc3A4SUtPWVVIOUlQb0FaUXBtWVAzV2lVbG16UGZnVTlScTJYdVBwVWJtWkJSekRmSXo0cGVYSFpGaEdJYXZVMGN1SFNYSTlTWmtsNDhCWlRaU1VlbkJLQW9Yb2tucw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "3 Altcoins Grayscale Says Could Win From New US Token Rules - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmZmFqdXVwQkhXYmU0bVEwVHQwT05wNjJtWFNNc3FDNGM5MFNyYUx6ejkwS2dvcHRGUDlIRThzeno4ckRKQ09aa3hLNFdwRVppS3BOUU9Ed3dtd0YwRnk1NTF6Rk1WaFlCcDhkRHNR?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "3 Altcoins Grayscale Says Could Win From New US Token Rules - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcEFtcWVwaWpHdDhDMlhSTnROMTR6YmY2UGRTM2Nsbk5GeDBsWG1KNEdWQzhuVER2UUVSSGF2WGpOclVHalV5VlZjT2pCOUhsYUhJVC1lelBaTTRsS3lhUl9QVk1YbU5CeU55OG9iZkp4OFItaThaeWlZZ3hpLTRVUg?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 44,
-            "zscore": 1.35,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-15",
+          "return_pct": -4.97,
+          "zscore": -1.34,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.24,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink price struggles below $11.72, risks f... - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZXljRmFPZ2NuNzgwV3NsaU53c0FjNlNRaHI3R2tGVTMyQW9saEFyczRsX2lOM211bzlCY3l0NkRkYXFZdklnaVA4RDh1ejU2RGs1bnBpemYzM1BBbFN1S3lQVmZiOXk4b0xFT0F4LXBwOWowRTFCSmFiVER5OGp4NXR1dXVXR0lhRkMwRHVDTXBkb00tZm5DdXdQOW1sdw?oc=5",
+              "sentiment": -0.557,
+              "relevance": 0.823,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold edges down as oil-driven inflation fears lift rate-hike bets - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVUtaVGZLb1VLWXI1QlhvSGNHeThxbkxfa3NIdk1SZFA3LWZta2JmdnBUTEtKV0dUSGg4OGVQSHYyV0w5RGY1QXEwaG02OVVoVlJmRG9xc3VwQ2RZSFh2V25neWVqS01jVm9pTFg0U29TcXdueHBXbnRuTmRuOFA0TzlyNEppVUJldE9KVFE4c3FlS04zRXRsaXNCQWhqQQ?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 12,
+            "zscore": -0.36,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-09",
           "return_pct": -5.69,
@@ -757,7 +796,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink Price LINK TA LINK Technical Analysis - Altcoin Buzz",
+              "title": "Chainlink Price LINK TA LINK Technical Analysis - altcoinbuzz.io",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQXBQTjNWRXNRdi1JVTRDbW9YVDRnemlVdThfcXpGc3VGYTdjNWpzQUx0c3VmZS1oVlcyeEFRQXNIZW9Hc3E5RDVNOUhhd21KNE8yYVpHcUdxeXdnSTJVdXFWalZQLUt1dTdzMUZOcV92X2ItcEIxRWlidXRyMUotNDVaQ1FmRERXSWlwMkhEUkpNMVdkSDU5Q0JTR0p3SUJNVk5TRUhkYndDbVdRUEdkN05yNzBOMXA4eEE?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -923,45 +962,6 @@
           "coverage": {
             "count": 27,
             "zscore": 0.42,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-19",
-          "return_pct": 10.57,
-          "zscore": 4.11,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.09,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Best Crypto To Buy Now For Potential 100x Gains: Moonberg, Shiba Inu, Chainlink, Dogecoin - Ventureburn",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRWNlOU11bW1BenJxU0hXdjNLOFo4UlFPQ1ZyNjR0emt0QmxCV0VmUFI4eVNkV3hSWklVSFI2NE40d0UtMm5qOEo3ZTdzRzhDWWwxUWdxcE5ZMEpaakV5NDZzZU1QeVBZc3NNSjlGbXA0ai0zbk1FMkZpSVlqbjJKU3dubXNURm1PUkd3N2lxOUtfeXFyeHc5cXpiOUM4ODFXWXZvR1pzazA2OE4yekY40gGvAUFVX3lxTFBFY2U5TXVtbUF6cnFTSFd2M0s4WjhSUU9DVnI2NHR6a3RCbEJXRWZQUjh5U2RXeFJaSVVIUjY0TjR3RS0ybmo4SjdlN3NHOENZbDFRZ3FwTlkwSlpqRXk0NnNlTVB5UFlzc01KOUZtcDRqLTNuTUUyRmlJWWpuMkpTd25tc1RGbU9SR3c3aXE5S195cXJ4dzlxemI5Qzg4MVdZdm9HWnNrMDY4TjJ6Rjg?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.906,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Officials See Interest Rate Hike as ‘Necessary’ If Inflation Doesn’t Ease Soon - Realtor.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNajJYbXlHUDhCUEJReEN0MWRkMmJLX2VMTEZIWkR4Zmh2X1puZmdDcFRYOXFNUjZEQWt3bzlVc3A4SUtPWVVIOUlQb0FaUXBtWVAzV2lVbG16UGZnVTlScTJYdVBwVWJtWkJSekRmSXo0cGVYSFpGaEdJYXZVMGN1SFNYSTlTWmtsNDhCWlRaU1VlbkJLQW9Yb2tucw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Wyoming Chainlink CCIP Adoption Boosts FRNT Stablecoin Security - The Cryptonomist",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZM190eFRiMUdTczltYmpvbHR2bVlMazFtTnoyd2JDU2tOVkcyRTlkSC1MVmgwcERBVE56d1NmWE1XR2lsUFEtU09sbTYyak9ya0ZFZ3hrWUExc3dXeHI4R3hqT3QxWDRjSHY0QVBsc3dWeVJEdi00VzhB?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.06,
             "spike": false
           }
         }
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.24,
+            "zscore": -0.25,
             "spike": false
           }
         },
@@ -1202,7 +1202,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.32,
+            "zscore": -0.33,
             "spike": false
           }
         }
@@ -2823,6 +2823,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-15",
+          "return_pct": -1.75,
+          "zscore": -1.65,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.45,
+          "events": [
+            {
+              "source": "googlenews_discretionary",
+              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVRjVzBTZk8ydWN0S2cwSHlaZmJKMW4xMVh5OFF1My1ieWNoUXMwWWRfSHBoNUxCV0lnajBJYkZycXFIMG5Ba0xmaDBvczUtRTNDWUkzazhPNTBfV2lyaGMydDJyTEN2V0RwU04tU0hQMWljS1g2d19sQkV5NDdCWmxSclZqdDJwSGdtOHRTeUZNYnpLOGxhT19QdjRqMWJvUEFYSVIxV0lJMHZzbEZBYWh0U090cWwtMjZJ?oc=5",
+              "sentiment": -0.557,
+              "relevance": 0.823,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Burlington's 2026 Outlook: Store Footprint Expansion Targets 2,000 Total Locations - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbE1aa1pQb3NvQjQxWDhwM0d2MGdWeG5RQjhiVEszRWJjNFpIRjk1SnoxcjZfRWtsMDVZWW9ZQ19wRmZvdlBOUG8wT0tiRFE3dm1RRENXMi05TW11OFdvSkxjbC1KMVBIVnF4WEpYOE1PSkhYQUFJX2RfTVJzWnlSLU9TbjJ0WjVFUzlpc25QaHJ6UThZOS1VRzBZeUNZT09CSElqZlg2Tl90Z0x4Z1dGNm1JV3pXQTMxQlozTGRNNnpmcG80d0JLZ3p6Yw?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Six consumer stocks in harm's way if Super El Niño is as bad as feared (PBJ:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYkdOSVV2enp6MjcxM0pYaW5id3RLWFk1ZThzUGQ2LVNrdGpRMHNSOHFGbWdWM3dzcGJhRUUxaG4tVHpTTU1BRnNVcTFNSWdoV2pJWXZyZlhuRUFETmxrQ0d5U2NOWUM5SE80WHZjZ0IyYWdqR3RCMUJHWTBzbjRwVzFXTl9kWWEydDUxUFEtYzhONlUzekY0NHk0MUlHbFhZbWdSNldpc1ZYOUk?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 23,
+            "zscore": 2.02,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-07-31",
           "return_pct": 3.29,
           "zscore": 2.41,
@@ -2981,7 +3020,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.15,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -3463,7 +3502,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.76,
+            "zscore": 0.78,
             "spike": false
           }
         },
@@ -3945,7 +3984,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.27,
+            "zscore": -1.29,
             "spike": false
           }
         },
@@ -4186,7 +4225,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -1.25,
+            "zscore": -1.26,
             "spike": false
           }
         },
@@ -4394,11 +4433,11 @@
       "moves": [
         {
           "date": "2026-09-15",
-          "return_pct": 3.21,
-          "zscore": 1.78,
+          "return_pct": 3.22,
+          "zscore": 1.79,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.47,
+          "market_return_pct": -0.45,
           "events": [
             {
               "source": "googlenews_oilgas",
@@ -4426,8 +4465,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -1.47,
+            "count": 12,
+            "zscore": -1.23,
             "spike": false
           }
         },
@@ -5357,45 +5396,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-09-15",
-          "return_pct": -2.54,
-          "zscore": -1.53,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.47,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "ME Therapeutics Holdings Inc. (CN:METX) Slides 28.89% as Volatility, Funding Risk and Biotech Uncertainty Pressure Sentiment - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYTdWRUhNWnlXWl9Va3dzTmEwbXRHbDVJVUVGbHZRdWhzbUNIQk1PWXluQ2NhbGdjSWpaeV83S0xVZU1BWE1jNzZUempiVkNEVThIVEN6d1BRdV9RdENGWFFPTDR6SFY4N3hCalR1UWU3VmFEN1daOXhhNnBjeFhYbVdyWmlDblR1LXVlYTJNX3VFb01WbTg0TW5TNHpfaHcwU0JzYUFXdzZCU0Z5VkhiZmtVRU9Ta3RZdTFram1wMTg4clExMy0yX1hpOW5TbTUzcENjTmRuWUgyWEhGTmpRYkJhU1VKbTg?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "ME Therapeutics Stock Plunges: Is Biotech Volatility Signaling Deeper Downside Risk? - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUFJUampuSlZ5WS0xVnFRcVA0eXNkTzBKOGd5NTRxNGxrajlULW94dW1Pc1hqS05TUS1HbnpxUWZnVGFtREg3ZjR5SEdwbmVULXdobGI2a2FwMXhXSzMxZm1aUnhFY2p0dHBuaDdxcEhwZkxjNjE2SFRsb1JTX0tENU9pNU1ZdURUdFUzNVBHWmI5bHg1SDVKQlRxcjBtUk1uS2MxZWtNWWFnQWxPclZoclVOSVU4bXRM?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.791,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Joint Task Force on Stock Manipulation Raids KOSDAQ Biotech Firm Over Alleged Insider Trading - news.sbs.co.kr",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfT19JYmJKYmJYczRXVHA3bnNJMnJXOEVwTm9WWmR1eHpnNHUycm11UW1CbFE0TDBHMVRGbHJ1QjJXb0p1T3R6VTdDSW52WjAxRVNBOE9zV3ZqSnkwRGNFUkN1TDl5NndieHdxZkdB?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 13,
-            "zscore": -0.15,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-08-28",
           "return_pct": -3.48,
           "zscore": -2.01,
@@ -5587,6 +5587,45 @@
           "coverage": {
             "count": 8,
             "zscore": -0.77,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "return_pct": -2.94,
+          "zscore": -1.89,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.7,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "This Biotech Stock Soars 107% After Key FDA Panel Vote on Skin Cancer Treatment - Barron's",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS2ZnUkhSRDk0OHRSc0g5WlhaMGFLYTNYWEh3Z0xSTnRrZEFlQjNSTFNxb3FTR0RoYXJFU2dVVG13MFo2c1MzeFhfU01LSnZ0UXgwYXd1YTltMzBuU0xaS2gzU0pPQkhGalBGck16QmlCWjRCVWNNV2twT080TWo5V2o3eU1pdw?oc=5",
+              "sentiment": -0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "This Biotech Stock Is Soaring 132% After Key FDA Vote on Skin Cancer Treatment -- Barrons.com - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNXFJOEFIMkRVS3FFTU93UlhEUU9TNkh3OUxGbDJMeU5UeXZiWnBtOFp2QVF1b0tCNEUwZU1rNEpzdTFyNHI2Q2U4anY4emRIV0dnMTJXeDBUYURQeVBZaGNoSFdfUjZEcThzMTFUcURuS0xyeUhKVGVCVzl0Q0loVWdvWkdPOGlwZWJPLVNTcElHcXNSaUM0eEdB?oc=5",
+              "sentiment": -0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "This Biotech Stock Is Soaring 132% After Key FDA Panel Vote on Skin Cancer Treatment -- Barrons.com - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa0RFLWZ0VTZ0WE1oSERPemNvTU5NUVRDNDRxNDY2d1o2SVZ1bHRDcG9WakFzb1JDQzZBT19SSF9XOEIwRmZfTDFBdGJoSm9JclJ2TkNOZUtjeGlGS3JZRzlJWWRKY3puU19mN3BPRHhiN3VwNmdhNkNPTTJVbkpBa0V2eU4zQ0dCaWx3bzZEb1hBNHFpQW81RTlrMA?oc=5",
+              "sentiment": -0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 24,
+            "zscore": 1.03,
             "spike": false
           }
         }
@@ -5837,17 +5876,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-15",
-      "return_pct": -2.54,
-      "zscore": -1.32,
-      "max_abs_z_recent": 1.32,
+      "return_pct": -3.24,
+      "zscore": -1.6,
+      "max_abs_z_recent": 1.6,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-09-15",
-      "return_pct": -0.47,
-      "zscore": -0.8,
+      "return_pct": -0.45,
+      "zscore": -0.78,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
