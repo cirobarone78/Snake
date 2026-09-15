@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T11:59:00+00:00",
+  "generated_at": "2026-09-15T17:12:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-15",
+          "return_pct": -4.06,
+          "zscore": -1.32,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.54,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum ETFs see $121M inflows but ETH struggles to break $2,600 resistance amid macro pressures. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR29CVkZ3T2xTQkFBV0kwRWRMbmJ3TGR5MDN4OUh1dXlLZjRiLWxmdUJURG56c3RyNTFHNW9DS0FvQTJ4bFowaTMtZWloTjVyNGU0SG10ZFhpemZpWDFEdTFEN2JTLXJ2M0VqcXM4UmVyMHpUaDZIMC1LdnB5QUlXcWhqUmNWYTg?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum, Base developers abandon effort to align account abstraction proposals - The Block",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc29LN2JoWUdKc0Mxb19ibHhFQTF3ajR6WDNPMXYycUxjVnVwaHNnR1NuWDk3OVVFNFU2SllfS2pRTm0tTTE2aGo2bGZ3SGh0U2tlMzRNaTJZYUQwODJhSktwTDV1WTBBdFkybFdjZUZ4UHg3ai13UzVVMTE3WGFsR3FpZXVYblBtRFJ4RmJ1WElpbHBYczBXdGxOWXlYbVpsZ0sw?oc=5",
+              "sentiment": -0.7,
+              "relevance": 0.88,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum and Base abandon joint account abstraction standard - Crypto News",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLUF0cmxwbXhMUHJHclc0UV9BcUlqajV0LXVBQzNDbS1PQ0xucGFYN0lDUWRVX2Q4dVJDM3ktTURuRnh3RmhMUUl4TmVOV1NwSGNYa25YUUpBM3czS2VETVFhdHNHUTRJQ3JjNF8yc290WlZycnU2dDNXSHdMcnZhVm15eXZnUDR2?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 67,
+            "zscore": -0.09,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-03",
           "return_pct": 4.87,
           "zscore": 1.06,
@@ -441,45 +480,6 @@
           "coverage": {
             "count": 101,
             "zscore": 1.68,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-26",
-          "return_pct": 4.28,
-          "zscore": 1.69,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.6,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Top Cryptos Other Than Bitcoin and Ethereum Poised to Benefit From the CLARITY Act - Coinpedia",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdXhmb0ZzMGFPSHZhalFWQWtkM1ZzS0JDWnVrMnpNOHI4RkpRUHF1YmJXeWF0OWhyc0lBQmNLS2hFTkNHTkNTbDVzSWw2bWF4aDAwUG1LMll5cGJ5T2xLMXBGWU1NTkpmdWhHSHBGR3cxS1dhaThRcHg1WUZOdy1DSGcxNk9qN21Ga3laTVJVMGhwMXJtbjRSR1pkekl3SkxHb1hmSENNUFh3LXBialZ4MXVIUGs1OU9GbzRHcNIBwgFBVV95cUxPTFB2MFluU3ZBd0hyd2lDeHg3MHc0aGZ4VHR6RWMyWHNDWHpJX2xycGx5Y3ZIakJuWDk2ODZ0YkJuWXo5WC1yNnFFVHVFbFpDcTdOdUtOeFZqOGJqYVlFNEFSWTJGTm8tbjBtMjZzTGM4N0VuWVBvTmJzRF9lQjhDUEI0aFc3N2hJNWFvMjQ1S1ctQmFmN1ZXMF9iOGlRSXVfS2w4Rl9hd2dVV2twaGtET3NIVl8yWTRrVDVCbGU5bXZLQQ?oc=5",
-              "sentiment": 0.849,
-              "relevance": 0.94,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum gets $2.5M vote of confidence from Arthur Hayes – $2,145 in sight - AMBCrypto",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXBrSm81Mng0aWk2VDB5VFEtMnBwZVhEeDZxSjhEODZRSVhLVmpaUER2VmV6a1Y1cl9Cbld0NkFQTy13QXg4c0w2dmZ0ckhuUDF3TXcyQVQ5NnItZzJCMURUTDR0eW51QTJUSk9ydkV0bUxVTlpwWDNjZFZoZl81WU9lTm41WEdrbHcxd2ttamh6MVRaMmYw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum and Bitcoin ETFs see outflows, ending weeks of gains amid market shifts and Japan's regulatory reforms. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRml1YjZQY3BBdDYtQndyS09TTVlIV3RsUHk4aEF1aFhjS0I3MW9FejVNMUh0WS1LN0UySXNTcWR5Nmxfd2haLV9HMDhzSXJwazJFTk9sUXhiTENkMmM2WkZLdUF2UnBrQWtjeHR0NkhiU0NXdGZPQkhXek9tU2xOTWpzVjNkbENHWTczRk13?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "regulation"
-            }
-          ],
-          "coverage": {
-            "count": 31,
-            "zscore": -1.41,
             "spike": false
           }
         }
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": 1.3,
+            "zscore": 1.29,
             "spike": false
           }
         }
@@ -3438,7 +3438,7 @@
           "events": [
             {
               "source": "googlenews_commserv",
-              "title": "Jim Cramer Recommends Buying This Communication Services Stock, Calling It ‘Amazing’ - benzinga.com",
+              "title": "Jim Cramer Recommends Buying This Communication Services Stock, Calling It ‘Amazing’ - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUlFmZ1pHMGNMVEprbEstSlZVWFhwRDE5eHdWbUp3OVllTVZWaFhuNzM1WVdfYTc1MEdKdnNBVVpaRFJNTUh2SW15a2o5MzBsMHphR1JwdXg3YkEzSXE3WDdsUVFOOEV2bER0M1Yxd0FLWTNTMTlMWDJROGpiSmFaNDRuU19HTUVPX3psRVJmSDVlLWQ2ZzQyczNZTGJUVkNieFJtR19teVZ5bFAwUmVieGN2M1Z6M3E2bkZmX2xnLTNsWlBVRmN4ZFlTUkdCUllOenhkcno2YjZ2THpIZVJv?oc=5",
               "sentiment": 0.226,
               "relevance": 0.691,
@@ -3446,7 +3446,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "11 Communication Services Stocks Moving In Monday's Intraday Session - benzinga.com",
+              "title": "11 Communication Services Stocks Moving In Monday's Intraday Session - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0VDS1hDZlFqeGdBVlVEdzVUODFfdVgxVnRZY2liTkFYdS00NWhWbXpDamJWS2xTNjRRaElxWTl4dmNmM2EycnpBOTJvR3Nlc2ZicFRqYUlqQ3EteDNES0kzZTZoMnJUeEpWQUhWNU5ZX3JFYWRpNXNockRKbEU2UU5pWXNiNUZsTktSdWc2YWUyVjlLdFdoa3BHQjJYVHVTUUVzYkltMjNNNlB6WUxLUVRIUnpmZFlxMmhTRHRPbkFlbjUt?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3454,7 +3454,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - benzinga.com",
+              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3lTVWtZa254TlRSaE1pN3NndG92YzM1ajByaFhTVmxDM2J6czFqeFBrX1pYWUk4YWZYREIxelB4cGNEVWxqWVFQZ3VVUHl5V1llbGl0QWRYNms3NDlBYWtQWnZON0QteFhoUkhMUnVtVHV1VUt2V2Fqd1R2TjNQanp4eXE4c1hvdGxYWlVVLU9RR0hfUHM2cFVTLXVLRU5vTTF1TW1feDFmdlhPTzNOVEVPLUNwV2ZLN01Z?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3703,8 +3703,8 @@
             }
           ],
           "coverage": {
-            "count": 81,
-            "zscore": 1.7,
+            "count": 83,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -3936,10 +3936,10 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Fed, crude, dollar and Iran war: 4 factors that could move gold next week - The Times of India",
-              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdV9IV0tKMVVCcENVTWJkaTB4ejFRRTVjRGhvdnlOTU1kdlFDT25rQ1dsX3ZVOUZQMlpkMGp6Zi04a01yb3JrUmViNktZdHJKTXZSbWM5enh5UHhBX0d2S2NyeUJLMnFWWEE0eXJrc3NjMDM2UWpzeFFCUG1uQkVUUXFJRGJsZks0Mi03ZGpSS01pTGhnWDlzXzZSS1hsZUg4VG1vemljU0Fqd1RGWnhndFpYa1JwVGpLLVh3X3o0UWZKdlBrX09wS2VYVWRqQ3NocWU4MlRTejI5TV9EaEJKZktIM0FocXJjTFl1WNIB8gFBVV95cUxPT3R5WS1JNzhHclpnWnJicEthTkNBVzBHb0dLMHVpNXczN0ducWFicGVvSzNITk96SHVQSnhyLU8zR2JFT0VTc2IxQzk1TlNHOE1vSC16TjlYd2NIOE5wSlpzd2ZUaEI0RjgwSTg2Y2lieFdpUmh4UldUTDU3R0k1R2F6dUhXR0ZzR1B1NmZucENSb2ZOb0RFb19hQ3BEc1VXLUpkYWw0VGJwaUgwV3dqY2FjSVhNVHpYMEViWEU0R2xuYmZQVEw0NmhxR0JlZk8yaFlGWVh6TDg1OWdXQXdEaEJLNGFSd0JXSU5jQjd2b2RKdw?oc=5",
-              "sentiment": -0.823,
-              "relevance": 0.437,
+              "title": "Fed rate decision this week: why a pause could shock markets more than a hike - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObGp5SWprZVNVaHpJSFJKZWt4R19STmNLVm10U2pzWlVBMkVGcTlTWGtja2c2NzVHaDdKcjJsTkZDRnVwSnphTFhWdnc4Q0p5VlNLYVd4aXlZaGs1RVA0bGtoTjlrb0YtZHhWR3J3WG9MUUhQV0pBV3FZLWZ4c1ZqZnlZZ0sxSk5wSENoQ2ppaEN1LTQ3T0lUMk5sNmZmRHp5MWxMTWYzaktmRHJvR2FLdlhHUk5tZU5IcWlFRUdET2xJSzU0bGdYNDFHSVVnQQ?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.452,
               "event_type": "fed"
             }
           ],
@@ -4076,7 +4076,7 @@
           "events": [
             {
               "source": "googlenews_uranium",
-              "title": "Investment Opportunities in Nuclear Energy Stocks - Intellectia AI",
+              "title": "Investment Opportunities in Nuclear Energy Stocks - intellectia.ai",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOblpMNVdHcjZhZENSMkZSazBBU1lQM2tFTjY3U0VUV04yZ2Q5U3VEWlVfV2VkbVd5OUNRSTlYaElpSk1ZcVdQSWZBM3VLMUNZZkNkdEZjYUl0NTRnMFBwM2xzdHd6dURQazAwVU5mVTBVdDNwUEJLVEZXZ0tBMTR2N1VGOGRXeUNYZTZn?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
@@ -4084,11 +4084,11 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - etfdb.com",
+              "title": "SMRF Gains as AI Power Demand Fuels Uranium Rally - ETF Database",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnB3WHJhajlfN0xZMk9SWU8wV0hYcG5vWkpwWGhjQ3EtSW95dU9sQl9mUll4R0g4d1ZIbnFTVFFMV0FiNlpsM3R4NWViN0RLYmtIanZjRi14QWpVRzduUXBWZl9obkJKRFdqTGlORXo2akFhUEI2UXlrSTdycFZZZWtydDR4TDFOTWhjbVFqaFNIN3ctd3lySWx4bzZRUQ?oc=5",
               "sentiment": 0.226,
               "relevance": 0.691,
-              "event_type": "other"
+              "event_type": "etf_flow"
             },
             {
               "source": "googlenews_uranium",
@@ -4169,18 +4169,18 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Fed, crude, dollar and Iran war: 4 factors that could move gold next week - The Times of India",
-              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdV9IV0tKMVVCcENVTWJkaTB4ejFRRTVjRGhvdnlOTU1kdlFDT25rQ1dsX3ZVOUZQMlpkMGp6Zi04a01yb3JrUmViNktZdHJKTXZSbWM5enh5UHhBX0d2S2NyeUJLMnFWWEE0eXJrc3NjMDM2UWpzeFFCUG1uQkVUUXFJRGJsZks0Mi03ZGpSS01pTGhnWDlzXzZSS1hsZUg4VG1vemljU0Fqd1RGWnhndFpYa1JwVGpLLVh3X3o0UWZKdlBrX09wS2VYVWRqQ3NocWU4MlRTejI5TV9EaEJKZktIM0FocXJjTFl1WNIB8gFBVV95cUxPT3R5WS1JNzhHclpnWnJicEthTkNBVzBHb0dLMHVpNXczN0ducWFicGVvSzNITk96SHVQSnhyLU8zR2JFT0VTc2IxQzk1TlNHOE1vSC16TjlYd2NIOE5wSlpzd2ZUaEI0RjgwSTg2Y2lieFdpUmh4UldUTDU3R0k1R2F6dUhXR0ZzR1B1NmZucENSb2ZOb0RFb19hQ3BEc1VXLUpkYWw0VGJwaUgwV3dqY2FjSVhNVHpYMEViWEU0R2xuYmZQVEw0NmhxR0JlZk8yaFlGWVh6TDg1OWdXQXdEaEJLNGFSd0JXSU5jQjd2b2RKdw?oc=5",
-              "sentiment": -0.823,
-              "relevance": 0.437,
+              "title": "Fed rate decision this week: why a pause could shock markets more than a hike - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObGp5SWprZVNVaHpJSFJKZWt4R19STmNLVm10U2pzWlVBMkVGcTlTWGtja2c2NzVHaDdKcjJsTkZDRnVwSnphTFhWdnc4Q0p5VlNLYVd4aXlZaGs1RVA0bGtoTjlrb0YtZHhWR3J3WG9MUUhQV0pBV3FZLWZ4c1ZqZnlZZ0sxSk5wSENoQ2ppaEN1LTQ3T0lUMk5sNmZmRHp5MWxMTWYzaktmRHJvR2FLdlhHUk5tZU5IcWlFRUdET2xJSzU0bGdYNDFHSVVnQQ?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.452,
               "event_type": "fed"
             },
             {
               "source": "googlenews_fed",
-              "title": "US futures lower as investors eye Fed rate call - Breakingthenews.net",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdlBCWDdJU2pjc3VFU1FSUVY0ZmZyS1d0SHE2UFhUcTNwanIxcXc4SC1oZXhSVHlYTml0a3lYMjQ2dGNvSmRub1A3ejNlbFowSXRrcFJGZUZhak5XV2hYNjFPVy0xWXVINkhZTHJubmw4UFB3WFFYQ3VPY0dhcDR6ckZyV3M1UnVZSHpFTFI1NkU3NVFIQVNn?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.431,
+              "title": "Fed, crude, dollar and Iran war: 4 factors that could move gold next week - The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdV9IV0tKMVVCcENVTWJkaTB4ejFRRTVjRGhvdnlOTU1kdlFDT25rQ1dsX3ZVOUZQMlpkMGp6Zi04a01yb3JrUmViNktZdHJKTXZSbWM5enh5UHhBX0d2S2NyeUJLMnFWWEE0eXJrc3NjMDM2UWpzeFFCUG1uQkVUUXFJRGJsZks0Mi03ZGpSS01pTGhnWDlzXzZSS1hsZUg4VG1vemljU0Fqd1RGWnhndFpYa1JwVGpLLVh3X3o0UWZKdlBrX09wS2VYVWRqQ3NocWU4MlRTejI5TV9EaEJKZktIM0FocXJjTFl1WNIB8gFBVV95cUxPT3R5WS1JNzhHclpnWnJicEthTkNBVzBHb0dLMHVpNXczN0ducWFicGVvSzNITk96SHVQSnhyLU8zR2JFT0VTc2IxQzk1TlNHOE1vSC16TjlYd2NIOE5wSlpzd2ZUaEI0RjgwSTg2Y2lieFdpUmh4UldUTDU3R0k1R2F6dUhXR0ZzR1B1NmZucENSb2ZOb0RFb19hQ3BEc1VXLUpkYWw0VGJwaUgwV3dqY2FjSVhNVHpYMEViWEU0R2xuYmZQVEw0NmhxR0JlZk8yaFlGWVh6TDg1OWdXQXdEaEJLNGFSd0JXSU5jQjd2b2RKdw?oc=5",
+              "sentiment": -0.823,
+              "relevance": 0.437,
               "event_type": "fed"
             }
           ],
@@ -4393,6 +4393,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-15",
+          "return_pct": 3.21,
+          "zscore": 1.78,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.47,
+          "events": [
+            {
+              "source": "googlenews_oilgas",
+              "title": "Why True Diversification Goes Beyond the 60/40 Portfolio — and Where Direct Energy Fits In - Kiplinger",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeXdCOFRfalA2Z1RUTG1oNDZNVy1zazB5WTUwU25LcUJhaE00UFNtYUhVLWhfeUdadW1RODBSSGVaV0R4SHl5Y1gwZ0w3S1FhaDZjWTJGRzNFeHk5TjFWU3VIZDdvWTdzLU1JcFhYdkZ0ejNCWGR5d3NaU2lXU19hMGhpbi1haUVOU1JBbGFscE9RZw?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.84,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "Occidental Petroleum stock gains as Wells Fargo lifts price target to USD 82 - ad-hoc-news.de",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaWpJMm9lTjVkQ0cyTHBaWncxUG95RHNoaUFSYWVWaGNFaEp2ZzU4T0JzMjRkOGJmZWtCNmZCTThnZEx0Q3pNWVNLZzQySkpTWW9VTXRwUExiZl9KRmtXZW5PRExkSHpIWFBGTFZDWnZ0VWtoam1waWhlVWJuSmRRd3A1Y0VaQ1lQT3ctUEUteTNQOHlqdHN4MVhNZi1BR1BRdlFvM2FpU2JJOUN4ZXhabHpZbnY1V2RubFhEZzlFZm9uQVRhZ2FGNm5UbXN2RFdrdlE?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "Australis Oil & Gas And 2 More ASX Penny Stocks With Strong Foundations - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSzMzQVVmQkhiVGplODlEcEhVU0pYTElIUFpUOVd6SC1PNmY3aG1VbnFESnJldm42LTkwM2prTkhHRWtvSVZ6UXdUUVdCQWw5aVp3aG42Y25kTFBQbzJiTU0yNkxMUDVjLVFsWjlzWS1qa3dCajZ0WGF0Q2ZxVGlWdy1QeVluQVNqWVNBOEVGcllNTnZVTnVVN1ltd2IyeHdMY1RWYzZITGpnVXZUZkJ6cGhGSjhoSm1wY0ZPTVV4SWVTZ1VSTmVkbTN1UFluSzBrRklr0gHYAUFVX3lxTE8zS3NPaVMzMGxRRldlMVBQMzlWcW95T3dTNHJtc2xFTURXV19BdFNfRUVCVXlEREYzUUtpZkhUcGtHWUFqSVVxd0pVM3Izb2tqdjU2bTNrLWM2MzI3WmF4aVRycUhISEN3SFp3OG9lZzRBdnJvRUJKRTFCc0FlVWd6N3VsMi0yYTNERG5uTFp3V20yOFNTR3JHZ085d19rckx3elhzVDJXc212SE1NLUxGOG9BTmo2ZDQ5RVpCRzFOcjNienZqX0k2OTZMdVU3TzBaUmM5aFBqNw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 9,
+            "zscore": -1.47,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-10",
           "return_pct": 5.73,
           "zscore": 3.04,
@@ -4584,45 +4623,6 @@
           "coverage": {
             "count": 45,
             "zscore": 2.28,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-08",
-          "return_pct": 2.94,
-          "zscore": 1.87,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.28,
-          "events": [
-            {
-              "source": "googlenews_oilgas",
-              "title": "Best UK Market Story Everyone Is Watching After Oil's Sudden Surge - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPLVJub0c0ZGJvd3p5THI4V1NLb0U3dHEycXRzNXhtMEJaUHRFVGl1UThKZDJ5c0VGZGNwVE43U194MkluYlFiMGZVRlYxWnpRVmRRTkJpWlBET1ZqcXhPSk56Q3ZHV3V0QjN0UUJzeVRtVXkzXy1VTk1OcjdfeTFuNkhWSWlWall6YWJoZThqanE2Uzdmb3NsMzBZRkgta3o1TTFHOUo4QUQzU0tt?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Gov't guarantees safe, sufficient petroleum stocks for rest of 2026, says Akmal - The Star",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPR0JwSVBqcGx2ZkFDTUE3U0RYTjN5MUhWNGFmSTVBbWJHV09rb3dLWlF1OVFHRF9kTkZudE9Zb0hEdUZHU3ZjbkJ4TkEyUzRqZENzc3NvdzcyX21zdXhkSGFmNXU0NjdaWmhDWjBIVXpBSWJ5b3F4dmt4WGF2RHE1c0dNX3kydTlVbTFTRzlSV0JkQy0xOHhWbmYwYjZNbFVYUXp5bkFJekxFSG9oWEdxUTJjc1pTTFhzd1dlblNHN0xBdkF0S24yQg?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Vedanta Oil & Gas jumps 6%, Aluminium gains 4%; here's how other Vedanta stocks are trading - Upstox",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNV0hYa1ZBbHByWmVMTWRhbURFdFRab0haTF80NnBONUx2dnB2cEJEd0oxQWRtMHN0enI1Wm9hSTJ0ZXBrMlZSN0ZPcldmRGo2MHdmNnRjMUUwa3BRNVNVaTdMM0VIclV2Zmw2Qmlucm12Z0pmbkoyd1RXZGN2ZXdCMUY2RW83SWF3UTROak5RVGZjVF9Od0N5bThoQURIOHl6d0FzOW5vQWxHUDFqN3hoZlV2VFBlZS1ramNuWVBEbG15NlBJTVZuUkhfZXR5d3Y2ZzkxV2RrNDFyZzV1RUhSLUF3?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 39,
-            "zscore": 1.86,
             "spike": false
           }
         }
@@ -4909,7 +4909,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.54,
+            "zscore": 1.52,
             "spike": false
           }
         },
@@ -4947,8 +4947,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.01,
+            "count": 4,
+            "zscore": 0.32,
             "spike": false
           }
         },
@@ -5357,6 +5357,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-09-15",
+          "return_pct": -2.54,
+          "zscore": -1.53,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.47,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "ME Therapeutics Holdings Inc. (CN:METX) Slides 28.89% as Volatility, Funding Risk and Biotech Uncertainty Pressure Sentiment - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYTdWRUhNWnlXWl9Va3dzTmEwbXRHbDVJVUVGbHZRdWhzbUNIQk1PWXluQ2NhbGdjSWpaeV83S0xVZU1BWE1jNzZUempiVkNEVThIVEN6d1BRdV9RdENGWFFPTDR6SFY4N3hCalR1UWU3VmFEN1daOXhhNnBjeFhYbVdyWmlDblR1LXVlYTJNX3VFb01WbTg0TW5TNHpfaHcwU0JzYUFXdzZCU0Z5VkhiZmtVRU9Ta3RZdTFram1wMTg4clExMy0yX1hpOW5TbTUzcENjTmRuWUgyWEhGTmpRYkJhU1VKbTg?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "ME Therapeutics Stock Plunges: Is Biotech Volatility Signaling Deeper Downside Risk? - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUFJUampuSlZ5WS0xVnFRcVA0eXNkTzBKOGd5NTRxNGxrajlULW94dW1Pc1hqS05TUS1HbnpxUWZnVGFtREg3ZjR5SEdwbmVULXdobGI2a2FwMXhXSzMxZm1aUnhFY2p0dHBuaDdxcEhwZkxjNjE2SFRsb1JTX0tENU9pNU1ZdURUdFUzNVBHWmI5bHg1SDVKQlRxcjBtUk1uS2MxZWtNWWFnQWxPclZoclVOSVU4bXRM?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Joint Task Force on Stock Manipulation Raids KOSDAQ Biotech Firm Over Alleged Insider Trading - news.sbs.co.kr",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfT19JYmJKYmJYczRXVHA3bnNJMnJXOEVwTm9WWmR1eHpnNHUycm11UW1CbFE0TDBHMVRGbHJ1QjJXb0p1T3R6VTdDSW52WjAxRVNBOE9zV3ZqSnkwRGNFUkN1TDl5NndieHdxZkdB?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 13,
+            "zscore": -0.15,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-08-28",
           "return_pct": -3.48,
           "zscore": -2.01,
@@ -5550,45 +5589,6 @@
             "zscore": -0.77,
             "spike": false
           }
-        },
-        {
-          "date": "2026-07-31",
-          "return_pct": -2.94,
-          "zscore": -1.89,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.7,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "This Biotech Stock Soars 107% After Key FDA Panel Vote on Skin Cancer Treatment - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS2ZnUkhSRDk0OHRSc0g5WlhaMGFLYTNYWEh3Z0xSTnRrZEFlQjNSTFNxb3FTR0RoYXJFU2dVVG13MFo2c1MzeFhfU01LSnZ0UXgwYXd1YTltMzBuU0xaS2gzU0pPQkhGalBGck16QmlCWjRCVWNNV2twT080TWo5V2o3eU1pdw?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "This Biotech Stock Is Soaring 132% After Key FDA Vote on Skin Cancer Treatment -- Barrons.com - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNXFJOEFIMkRVS3FFTU93UlhEUU9TNkh3OUxGbDJMeU5UeXZiWnBtOFp2QVF1b0tCNEUwZU1rNEpzdTFyNHI2Q2U4anY4emRIV0dnMTJXeDBUYURQeVBZaGNoSFdfUjZEcThzMTFUcURuS0xyeUhKVGVCVzl0Q0loVWdvWkdPOGlwZWJPLVNTcElHcXNSaUM0eEdB?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "This Biotech Stock Is Soaring 132% After Key FDA Panel Vote on Skin Cancer Treatment -- Barrons.com - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa0RFLWZ0VTZ0WE1oSERPemNvTU5NUVRDNDRxNDY2d1o2SVZ1bHRDcG9WakFzb1JDQzZBT19SSF9XOEIwRmZfTDFBdGJoSm9JclJ2TkNOZUtjeGlGS3JZRzlJWWRKY3puU19mN3BPRHhiN3VwNmdhNkNPTTJVbkpBa0V2eU4zQ0dCaWx3bzZEb1hBNHFpQW81RTlrMA?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 24,
-            "zscore": 1.03,
-            "spike": false
-          }
         }
       ]
     },
@@ -5623,11 +5623,11 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Is This Gold Stock Polishing — Or Losing — Its Luster? Watch These Lines - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRGhSbjlSOXByb3FJM0hvZ0tTblp6cFZSNjFpMWUwME5BYUxaSnFYSkhBRHpVb3pfZGMxanJTNzlqTFVoS0xKVXhjNC1MUnU4UV85a1ZZLW14dFBRZ1lXa2NnMzVuTGt1eDZnRGJwVnhXVXd1N0gyYlExSW9WazdhZGxXTVNSOUktRHdxTjRPM3U2N1ZNZktOSFF0TXNYVjhDMHlkTXRMc1VfTWstZVZFUjYzTGlVUDJEamlVbkdIcjQzSF82Wk50c2NFV0FteDhBeGdFYnhEMWY1dWVo?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "other"
+              "title": "Heliostar Metals Stock Drops 3.48% as Profit-Taking and Execution Concerns Pressure Recent Gold-Mining Momentum - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUUthdFMtU2M0aEVYdHRyWmZzOUROZVhfZExuWnozLVBjbGM4Z1RDSkRUNERSUENkaTZneWF3RFJBWjRsenZYT0VFS1p0S05GRWhrdmJEZFNDSHdQclhDT29Ua2haTkl1WVV0bmlwQWtYTl9LNU9zVlg0WElMeVVwYURfU2E5ZjM4eTItd1FUU3VoYVNKVkszb0hVeHdKZmJ5SlhSdVMyV2JraXBIRmUzZnFXdWZLRWhQYkI2U1prQmZGdmU5VlVETG9WNVJDcFhnRG5zeVVXYw?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "earnings"
             }
           ],
           "coverage": {
@@ -5837,21 +5837,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-15",
-      "return_pct": -1.6,
-      "zscore": -0.94,
-      "max_abs_z_recent": 1.17,
+      "return_pct": -2.54,
+      "zscore": -1.32,
+      "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 4
+      "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-09-14",
-      "return_pct": -0.48,
-      "zscore": -0.89,
+      "date": "2026-09-15",
+      "return_pct": -0.47,
+      "zscore": -0.8,
       "max_abs_z_recent": 1.32,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
