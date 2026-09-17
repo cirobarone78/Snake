@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-16 12:25 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-17 12:25 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Olympus Pro Ecosystem | hot | 0.99 | +39.4% | $102M | synapse-2, spell-token, thorswap |
-| 2 | Crypto-Backed Tokens | hot | 0.99 | +15.9% | $423M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
-| 3 | Intent | hot | 0.97 | +8.6% | $299M | debridge, cow-protocol, synapse-2 |
-| 4 | Rollup | hot | 0.96 | +8.6% | $1.9B | arbitrum, optimism, starknet |
-| 5 | Bridge Governance Tokens | hot | 0.95 | +4.2% | $453M | thorchain, debridge, axelar |
-| 6 | bStocks Ecosystem | hot | 0.94 | +2.4% | $617M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, strategy-tokenized-bstocks |
-| 7 | Bank-Issued Stablecoin | hot | 0.92 | +0.6% | $243M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| 8 | BONK.fun Ecosystem | hot | 0.91 | +12.8% | $248M | useless-3, scamcoin, kori |
+| 1 | Data Availability | hot | 0.92 | +14.2% | $4.6B | near, celestia, unibase |
+| 2 | Pons Launchpad | hot | 0.92 | +9.6% | $495M | pons, zzz-2, thinking-cat |
+| 3 | BONK.fun Ecosystem | hot | 0.91 | +11.3% | $277M | useless-3, scamcoin, kori |
+| 4 | Index Coop Defi Index | hot | 0.89 | +7.3% | $6.9B | weth, uniswap, aave |
+| 5 | bStocks Ecosystem | hot | 0.89 | +5.5% | $651M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, strategy-tokenized-bstocks |
+| 6 | Zoo-Themed | hot | 0.89 | +5.9% | $106M | peanut-the-squirrel, moo-deng, bnbtiger |
+| 7 | Airdropped Tokens by NFT Projects | hot | 0.88 | +5.8% | $698M | pudgy-penguins, apecoin, loaded-lions |
+| 8 | Communication | hot | 0.88 | +6.9% | $168M | helium, xpin-network, spacecoin-2 |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Pons Launchpad | -13.4% | $452M | pons, zzz-2, thinking-cat |
-| Mobile Mining | -12.3% | $991M | pi-network, ore, verus-coin |
-| Prediction Market Tools | -8.5% | $105M | unifai-network, based-one, heyanon |
-| Runes | -7.4% | $115M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
-| Entertainment | -7.4% | $429M | decentraland, enjincoin, ravedao |
+| Base Meme | -7.4% | $321M | based-brett, hunter-biden-s-laptop-3, toshi |
+| Binance Wallet IDO | -4.4% | $1.9B | akedo, midnight-3, bedrock-token |
+| JPY Stablecoin | -4.0% | $155M | jpysc, jpycoin, jpy-coin |
+| TimeFi | -3.7% | $316M | pieverse |
+| Tokenized Exchange-Traded Funds (ETFs) | -3.3% | $607M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
