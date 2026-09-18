@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T11:37:00+00:00",
+  "generated_at": "2026-09-18T16:38:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-18",
+          "return_pct": 6.01,
+          "zscore": 2.11,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 6.01,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000 - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXZzRocWhINm02LS1BbHhjMExBcEhIaTB6Y1lXMTBtUzRfM1lBLVN4aVdGaXlnXzVaWU5lQ0NESUdXZ0RQZ09NLVpaQ3p0eWpVY01WbXU0aUsyZ2hWX0Rud2dqNTJlWVd1?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.897,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "#CryptoCornerSeason2 | Bitcoin, Regulatory Clarity & The Debasement Trade OranjeBTC’s Sam Callahan To @CNBCTV18News - Demand for Bitcoin & Gold will continue due to geopolitical fragmentation, trade blocs, capital controls - Investors are going to l - LinkedIn",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZElmekx5NXJOZ1p0TEVocHllZUdIRnBuTllJQ3A4LUhtLUt3SEdWMklwLXJHa1pTSmdjMDJwV3FQNzVKVVlZQnNPZTlFNk1LSHRMOGY2N20wcE43ZlEweVpjWDZGSHJxUG91NDNvSlZEWkhvZG81QUhYZTNVaVp5QkpHanczUVBWQlh1XzVJU1d0SnlyREJ3R0o4RmJoMW9WWWdFbXVQakJtekxURkVMU2l5T3M3QmtD?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "regulation"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Strategy Climbs 12%, Coinbase Jumps 10% as Bitcoin Tops $80,000 - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTF9hRU4xaHJvcVh4NDA2OThfWm8zY2RRakluMHg3c1lJSElUQ2F3Rmw3WmFJSGp2U1FoMzNVY1pObzhKakdPVm1fYmh4R3Y4ZTlmLVpwZktPaHU2S0kxQU5sV2FFZHcxYy1lTU9HSmIyMGgtZ0tacDR6a0Rrd3hoYnFjVi1JUV94aXBkOThyLTA2SnNPYlY5NWhSVGRXNjZjOW5oNw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 52,
+            "zscore": -1.8,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-15",
           "return_pct": -3.26,
@@ -202,45 +241,6 @@
             "zscore": 1.57,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-19",
-          "return_pct": 7.09,
-          "zscore": 5.9,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.09,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Coinbase, Circle and Bullish jump as Clarity Act proponents express optimism about bill - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUnBiT2x0LTVsQjZ3alM0SzEyVjRZbGNOWldMc2VtQmxBaGx6YjJ5TjVXeF9objFHRHItdmRXb3d2cXpJRFVOQzliUHFFSTZrZGozekpXNjdFX3dTT2pKaDRlY0psNFU5QXlqM3p2TWMzREREMzYyWGRWU281Tk44SHBvekRXR3RYY2xRanMxTHRtYUJTQmZWeGNXMmVuVV9PM29pS3lvaWMycWwyS29TeHlpNUtFZGZrZ3JRSTVjcjJYSC15MWwzalpn?oc=5",
-              "sentiment": 0.735,
-              "relevance": 0.894,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "5 Best Crypto Casinos Ranked – Top Bitcoin Gambling Sites With Fastest Withdrawals - Muddy River Sports",
-              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeER0UVJvME9jQ29sTmRzeVdnZ2lFTTZXT3hUX3BPdnJYX1MwUXk2RDhGSk54ajBWa0hzOTEtNGswMXdpeGVEclMwOVItSFpMZS1xdThYRk1rRmtXVGFxekNkWFJSVDQwT1YtMDdOb0xQMk0tVmx4NXpxZkJCZ0ZoX2xFdmJ2M1FSR25TTFRXRzRDR3MwMWlnaHFUWDM3Q2xEUFRBNjZkVGFqYnl2R2kwU3l0S3Fhc0Y5TXF4MkNHd2VtMl90N1VEOHo0UGpyMmo1SjZZYk9YN3UyVkU?oc=5",
-              "sentiment": 0.718,
-              "relevance": 0.887,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "New cryptocurrency trends for 2026: BTC, XRP, ADA, and DOGE holders gain new opportunities through FT Mining - Crypto News",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT0dyX3lPQWdTTll5ZS1iVkpRbnpqOXpCZkk3Yk5QaVdSYnFGUzZCaEp1SjRCbUlDX2g2eGM3SnZCTnNXYS1qLWZnSXFMVTNPNFl4eWR2M3lyckxuZUJsUjJ6WGNrSXdKZUtRLXZIa3l3bHZoUFdoRE5idVlpSU5aM0ZCVzNwSWFRalBoVGVEYnNiZjhaMFJvbW16S3VIT2NOYW1Wa0JmT2VtNm83OTdwRG03cjVKajRmSkc1X2N4bEFsX28?oc=5",
-              "sentiment": 0.718,
-              "relevance": 0.887,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 163,
-            "zscore": 1.29,
-            "spike": false
-          }
         }
       ]
     },
@@ -249,6 +249,45 @@
       "name": "Ethereum",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-18",
+          "return_pct": 6.23,
+          "zscore": 1.34,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 6.01,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum eyes $3,000 after strong August surge and steady ETF inflows boost confidence. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT1JfcHg4V2VZWUY3YWRRc2RoWlNrTXhGb2pCOE5CMGZvMHpHQUh5eDBwYUN6X0JxeWh6M1JHLW1SY1hsdGFRZ3B5bFBTb1N2X1Z6OUtiN216NGVNZFpGU2tSY3VUMURocFdyQkZDMDJXTk9LbjRjb3hmVENIT2wwZ1RQWnFxSkZ2?oc=5",
+              "sentiment": 0.852,
+              "relevance": 0.941,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum (ETH) Price Prediction: $2,400 Support Holds as Bulls Eye $2,570 and $3,000 - Brave New Coin",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM3g0Y0tFR2NIc0JuYldmVFFvMy1HR2pUeGVBckJDTC1ObnNFN0FoRVZLNzkxbFU1dldqMFNwSzhZYUViV2g2N0sxQXYtMDFRN0FKUUZ5YUVPQnhPaHJGdU9FbGVmNVNRTHBqTGhYbS16RXNPRWktLXdGLWpMbHFteEtsVXFmSXVwWGZxRU8xVFk3d19EYTYwaE9QckVKa2g1QjRKb0drMXY5bXBVanc?oc=5",
+              "sentiment": 0.727,
+              "relevance": 0.891,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Price Prediction Targets $2,920 as BitMine Nears 6M ETH and Pepeto Tops $11M - TechBullion",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUNwdDZhcWVGcGJyMFVfbm44WldQVUpwUEFESTF2NnlYdjFCS19GTTJySnZxMkZqbUFrNmZMZnlheFFVb2duanVpTkNaUXZwbUFaekhtdGtFeXlFNzN6dVV5RGVuSGZBeVRJZEMwOW5keEU0ME9hYS13VmxLbWNnU0pkVmJkaEZhR1ZuY2E0Y1NiYWw0SHlWZDVsOTU3OW9EdkhTd0EzU0xDU3c?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 49,
+            "zscore": -0.98,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-15",
           "return_pct": -4.59,
@@ -443,45 +482,6 @@
             "zscore": -0.26,
             "spike": false
           }
-        },
-        {
-          "date": "2026-07-27",
-          "return_pct": -3.21,
-          "zscore": -1.75,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.47,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "$Ethereum (ETH.CC)$ $Bitcoin (BTC.CC)$ rage quitting soon. - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMEc0SU5pb01ROXk1NS1EekliMlBwTFhCTE96bEt6a3JKVVJ4UjgxTThxLXpkcTluUVFBcFZpeTJ0Ukk3UGVMN2lwWW1Md0VJMVFEVWVZclpkcmNJdDBZVUM5aVhmT0VRc044ajZyWWJjOFdoRnYzcUVwdU9jTGRCRVBjbGMwdXdVcnlZVXRXeVJ4M29yNmhwc3ZtblByUE1Na1lFdjdn?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Lido’s stETH Rebase misses target after a 32 ETH accounting delay – Will it recover? - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Hb0E1d0RtZ19CV3pZT3Q0T3ZYd3d2RjNsYjZnb21IYnVzeHluN2FTY1l3V2VmUURBSnlnU3ZNMWFKRms5WkVmZC0xY0hfV2M5NmI3TnNBS1lOQQ?oc=5",
-              "sentiment": -0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Why Bitmine Stock Popped Today - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMTFXd3AxT3g3TnVwVFJlTVFMMkpSZVZpNWg0dzRibW5KSTFBMmZnem9Ub09wbTNQV0lpaEZDUFA2Z2ZTUFA5Q2IxeWcwVEt0bFhBdWd2ZEtjcUVoQVhHU3N4Y1Q4RVgzaU9oWjgwRUdMQmtDalByT1JvbGZITUNqRWwxZw?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 101,
-            "zscore": 1.68,
-            "spike": false
-          }
         }
       ]
     },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-09-18",
-          "return_pct": 4.15,
-          "zscore": 0.86,
-          "classification": "asset-specific",
+          "return_pct": 10.22,
+          "zscore": 2.51,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.23,
+          "market_return_pct": 6.01,
           "events": [
             {
               "source": "googlenews_sol",
@@ -508,24 +508,24 @@
             },
             {
               "source": "googlenews_sol",
+              "title": "Solana breaks above $100, eyes $120 with strong technical and fundamental support. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBad1J3aHhDYmpESXlVdmllWHBLTExmczJfS18zeG12amkwQ3FiQVRxQ0tGV1NjT19SZ3kxWno1UWtjeWRsZmQ5a0llMnJ3S3NCOUh3bFVpa1Bqb0c2MUlkLUtBQ1lhaC01Skk4cld2LVpPdHdyLUU4NUdhbVNxQQ?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
               "title": "Solana price nears $105 resistance, poised for potential rally to $130 amid strong ETF inflows and bullish signals. - Pluang",
               "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNckNwdV9ZZjIzazZHd0pEcjZVcllJNDJwQ0puWE1kaFJEdnktRlFmVDUyVU11YjFfeUxmNjY2NDAyOHVrZkhONl9WRGpXZWV5b2VYQ0k2OXpYdWx4Qk1yOXI1YVhzRmZ3ZU4tTHM1cDVJcm5JdEJSRktWOVRDZ05DUkNobWJLQmZ0bE5FcE12aEZoNjZ5dVpDS2cydGs?oc=5",
               "sentiment": 0.649,
               "relevance": 0.859,
               "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Upexi Inc (UPXI) (Q4 2026) Earnings Call Highlights: Massive Solana Treasury Fuels $246 Million ... - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVUh4d2U4RGRFYzV3VHYwT3cyZEZBVkFRYVJGOFoyWEloSkMxUHg0ZWlaMlc1TG02aWoyejVLeGtPaEUybHdMR3VhUURTUlNFZ0RsU3M5LVBUeGRtZ2JBRVNTTlpoNldULUlhX2Z3c3R1LUg4ZU5qb1p4Z2NsUG91OGxhcEVIa3dMWWxHdFM1TEk?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.681,
-              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -2.1,
+            "count": 29,
+            "zscore": -0.94,
             "spike": false
           }
         },
@@ -732,6 +732,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-18",
+          "return_pct": 7.08,
+          "zscore": 1.45,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 6.01,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "The labor market is more stable than a year ago, new data shows - The Washington Post",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdE1PVnhvdnZfVDNBaEc3V2JpamZNUkcwU29TMUNCcmNjRm5BNkhBWWRpdDlvSDJTUThaNzBod0VQRFVHRWRIdEZNZ0VqYkJIcUUwSWo1R1lSSFB5Rm5NU0xSOFpqVFJNRllSMll2eWF3RWZKY3dRMHM0MnprbFkweVp4eHNhTUgtc3p0S29wbzdELUJabTRjbW02TnRmM1huZUp4YS1vczJBUl9i?oc=5",
+              "sentiment": 0.36,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Raises Rates to 3.75%-4%: What It Means for Markets - Admirals",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUHlORVA4VEw1clNJQjdTMkhRNENscFVCUUU0eEx6ZEhRZFRIcjNDc2NvMTNNcVlPUy1PNmh5WE13NldXMGJoeVA0REVoTV9KZlJmTnYya2hmbXBaVE9XRlpud243ZzlKOEVyUWRkTThTeFhoZmpJNmNacGJER1MtWQ?oc=5",
+              "sentiment": 0.361,
+              "relevance": 0.744,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Gains 3.7% on Institutional Integrations and Market Rise - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5QZm8xUXgtVEhuVTRqOG01R3ZfYkJzYlpRdXdWanZibEx2R0c1VV9WU213ZjZadXg3U2hzbXY0MHdVelJDSWluWXRQTlVTUHhfY29yVVRYLTBhaW9nSmpoX3E0Vy00dllpOEdFZVlRYlI?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -1.17,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-15",
           "return_pct": -5.38,
           "zscore": -1.44,
@@ -796,7 +835,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink Price LINK TA LINK Technical Analysis - Altcoin Buzz",
+              "title": "Chainlink Price LINK TA LINK Technical Analysis - altcoinbuzz.io",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQXBQTjNWRXNRdi1JVTRDbW9YVDRnemlVdThfcXpGc3VGYTdjNWpzQUx0c3VmZS1oVlcyeEFRQXNIZW9Hc3E5RDVNOUhhd21KNE8yYVpHcUdxeXdnSTJVdXFWalZQLUt1dTdzMUZOcV92X2ItcEIxRWlidXRyMUotNDVaQ1FmRERXSWlwMkhEUkpNMVdkSDU5Q0JTR0p3SUJNVk5TRUhkYndDbVdRUEdkN05yNzBOMXA4eEE?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -925,45 +964,6 @@
             "zscore": -0.23,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 12.26,
-          "zscore": 3.79,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.26,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink's LINK surges 22% on AI expansion and positive U.S. regulatory talks - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZ3BLbnNxWTQxaGc2THVSc1R0Ym9wdUJwZWdyLVRub01LN1Yya3VBMVRTcWYxdlBpdEZkbG5DSElpdlZCRmFsSklsSGRPYml2ZzdVLW9CSWNrOVlrUnVFZGlXbFp2VzhjU3VIQ2ZrUklJTTJtUU5SSXBsYUdLempFNFViSjJNZWY3clpWZDBVVmVCWEtiOWxYTDNSOE95OU0?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) Reaches Seven-Month High on Strong DeFi and Institutional Demand - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOVJYbml6Uy10dkxsQ3gzejNJMkVtSUI4VnZGeVRkQ2VpRXJxM1VRTmtIZlRIZ0RNaW9NUTNkTmxRLS1Ha0xvVU1hbTJCVlF0RC1TVDJjTmlvQzRJc1N5eHFnQlZseU16Snp3SVNPNkdDSGRKRkVOdUJhWUZ2SG1sYUlMZnpZRWRpbGl3TDJfaWp6N3N5UjJMNDhidw?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Forecast: LINK hits seven-month highs amid strong DeFi, institutional demand - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNXd3b19sdW1HdTU3MWFXekZFUFZhczc0RzRHX1RUZG1RU3VOcWtKVkh6RXRyZlc5Rk0zLTl6bFk4ODI1R3VDTmFuTC00X0YtaG1mOEpBMzN3MnRXZlVvMUJ0R0VqejJRandGRTM0QzR5VFh1dXVucVVGS2llNlJQU0JzTmp0b3AxUUh2TVBpdzc4eHd3NWY2Z2JIeElLcVladE14Q1ExSWN2cFp0Q054dmt3TkNVcVJDRGFpS3hDXzEwRzY0S25wRS0wRVVCcWNrSmxJVHU0amxpNk10Y2FrU282R1o?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 27,
-            "zscore": 0.42,
-            "spike": false
-          }
         }
       ]
     },
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.4,
+            "zscore": 0.39,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": 0.58,
+            "count": 23,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -1464,7 +1464,7 @@
           "events": [
             {
               "source": "googlenews_energy",
-              "title": "Houthi Control of Critical Maritime Chokepoint Means More Disruption of Flows; Long-Term View Intact - global.morningstar.com",
+              "title": "Houthi Control of Critical Maritime Chokepoint Means More Disruption of Flows; Long-Term View Intact - Morningstar",
               "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZEhNMC1DTzQzOHllaXh2SVdKV19ZWUtoUXlDemx6Z0NFdWNXa3Zhb3NRZTh3RnFHOFptaHhSeDRydnNpYW0taVZ6UUJqV3pHZFhXSDl4MXlGZ1Zzc05pVnQ5MFNET1ozY3FkNUFHQ3poMDJmSlZaN1ctdGNGeFJ1SHdJX3l4QVg4VWJtdnlUWmV1VEptLTlGcWJfbGpFakd1T0tfVUYxMVZxYmMta2ttZkJKNU04Zld6di10Z29ESzZpQnQ4RDB6ZlJrSzBILWc5OG9F?oc=5",
               "sentiment": -0.509,
               "relevance": 0.604,
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.17,
+            "zscore": -0.18,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": -0.08,
+            "zscore": -0.09,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 0.72,
+            "zscore": 0.71,
             "spike": false
           }
         },
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 2.84,
+            "zscore": 2.82,
             "spike": true
           }
         }
@@ -3020,7 +3020,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.16,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -3742,8 +3742,8 @@
             }
           ],
           "coverage": {
-            "count": 69,
-            "zscore": 0.98,
+            "count": 70,
+            "zscore": 1.01,
             "spike": false
           }
         },
@@ -3781,8 +3781,8 @@
             }
           ],
           "coverage": {
-            "count": 87,
-            "zscore": 1.97,
+            "count": 89,
+            "zscore": 2.06,
             "spike": false
           }
         },
@@ -3984,7 +3984,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": null,
+            "zscore": -1.49,
             "spike": false
           }
         },
@@ -4208,10 +4208,10 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Green Stocks End Mixed; Tata Power, Alpex Solar Lead Gains While Premier Energies, ACME Solar Fall - saurenergy.com",
+              "title": "Green Stocks End Mixed; Tata Power, Alpex Solar Lead Gains While Premier Energies, ACME Solar Fall - Saur Energy",
               "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZlFadHhZaU9wRU1lXzRoa0NrZ0RjLUJ1dkVxeEoxWE56Rk1qcnF4a09MTGRoSUhoTWNiSnJib01sZUNVZ3pLVnFBOVJMWlo4SUhMbTFyc2lJRVNvX2s1YW5jcll6SldqYlUzZWdNQXBFa1JrU2s1MnM0dk5WZVFKb3hkWjhGbzFzMjVUWVY1NlA2ZXFyZENvejZoR1NKSXdXZVdQTm9PQ3Z0SVlZb0NnTUw4NlgtUGJXNi1PSndtY0ZEREFUVjBraDQyUjhONDE4YkNKbjhuRUZfNkh1MlNaeWk2UQ?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
+              "sentiment": 0.66,
+              "relevance": 0.864,
               "event_type": "other"
             },
             {
@@ -5413,7 +5413,7 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "Puma Biotechnology (NASDAQ: PBYI) director exercises 50K options, sells 62K shares - stocktitan.net",
+              "title": "Puma Biotechnology (NASDAQ: PBYI) director exercises 50K options, sells 62K shares - Stock Titan",
               "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZFdnblB5b0xGQTYzTmdjQzBTRFNKQ1Q4cFFyRTdWN040bmFINFA0Q3FvQTdPb2pYdHpiS2RYREZFckNScXhiRFdxZzRlUFZramo0T3NKNlA0MWRGNFhiVTVyUFY0aHNyZWdGQ3lma2o4Z0tZNndQN3o1SFVUaTM0d3ZNUE5jQnF3QzFTZmlGYzA3ckVQSUFpZ2gwb0p0V1ZxeEdKVEgzMkJfSEpiYkRkLVRNMmFjTjA?oc=5",
               "sentiment": 0.296,
               "relevance": 0.718,
@@ -5429,8 +5429,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 0.32,
+            "count": 18,
+            "zscore": 0.45,
             "spike": false
           }
         },
@@ -5876,17 +5876,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-18",
-      "return_pct": 2.23,
-      "zscore": 0.64,
-      "max_abs_z_recent": 1.6,
+      "return_pct": 6.01,
+      "zscore": 2.11,
+      "max_abs_z_recent": 2.11,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-09-17",
-      "return_pct": 1.14,
-      "zscore": 2.39,
+      "date": "2026-09-18",
+      "return_pct": -0.24,
+      "zscore": -0.37,
       "max_abs_z_recent": 2.39,
       "recent_days": 10,
       "benchmark": "SPX",
