@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:37:00+00:00",
+  "generated_at": "2026-09-18T05:01:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 117,
-            "zscore": 0.05,
+            "count": 118,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-18",
+          "return_pct": 7.15,
+          "zscore": 1.7,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 1.79,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "XRP Price Prediction: XRP Target $1.79, SOL Eyes $104 as Apeing Gains Ground in the Best Crypto Presales Market with 1000%+ ROI - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPdERPaW5WaVhyTktZTF9Qam5IcmlBUWlrNXdla180LWxBa0hueElCNUw2eU5oc2pCYmRmVmFpNXFlZF9xMzBycWFtNk5EaUdGOXRyRnNMTnFNd082c2RULWZhOHpwbnI2M3h1OGgxWlNuT25NYWVPNW1ad2hMZGJFdGRZUHRXNHh1SFpTUGxpbzZkUW5lZUNqVjNPa1hrVjBxU294T3pfa29MbEJKSXM2R1FYM21jelBRXzEySHJTLUlVb1hBb1ZkN0U4Z1dpZWxCSlRlZW1ta01VRWx1ZDBsSFBkdEQtQmtEd1piRXpUZVdrbEdid1dTT0tWYVFZMy1nWlBZcnEwZTNCVjVKU2U2WHZWLUtvWV9GeHo1enJfaDJhZjQ0WWc?oc=5",
+              "sentiment": 0.765,
+              "relevance": 0.906,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Gains Ground as PhoenixTrade Accepts SOL for Margin - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfa0FmSWFaaTZLb1A1SVg1OFBtWDNoRXRzT0lUd1RwalJzcUxPb1VaTmluX0tUc0otSGJrU0MyWThVLTUzaXozRWVuOWRHdXhLYXdkNENVWQ?oc=5",
+              "sentiment": 0.572,
+              "relevance": 0.629,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Rebounds 3.3% on Strong ETF Flows, Upgrades - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqUjZUUEZZQlkxc2czTzZUeXpEblkzSmVJZWpoSVdLYkxjYTZFZFFTRy1uLVRSYkRYZV95U3BmRWx1N3ZYM09uMFo4NjdiTnFncmh4cTVWV3kxeFptRi1pZnJWYUJyT05RdDhjc3AxeHg?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.604,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -2.78,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-15",
           "return_pct": -5.47,
           "zscore": -1.89,
@@ -684,45 +723,6 @@
             "zscore": 1.34,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 6.87,
-          "zscore": 2.56,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.26,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Breaks Three-Month Downtrend Amid Strong Price Gains - KuCoin",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYWVGQTI2WUt1OGVuSXNLUk1kV2lPQ0ZNc1hTRlZaOHJ1aGtuOVk5LUctdHUxeFlPYnJfalFvaGVYOFhhRGNDX193Vldsem5ydGFYNzQ5SjVwMUdFYUFSYUszQnNLbWJmS1FCNGtpRFRkdjRLREZFWnNWUWhmZjdBWUJidk9weE9ubkNLRHFyUVVvZ0lhUmJVNg?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Tokenized equity on Solana nears $470M, driven by xStocks growth and rising investor interest. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOG90VGhPTTVCNUtPZ3pkWU9DMjlNUjFRSFJmaWQ2SW1jNWw5YUlpWXByRjVOeUZMek1ZMmluVkh3a0VNX2VwOGRuLU80aUczR0tScDRMZFdpM2VNNjRONzhONUgzbFFlOEFlMTZVT2NaZHoxakdZM1l6cEwzZVdVVVktc1M0SS1FZDZpal9BdVJsQzNzaWRQZ29tSkoxVWNqS1V0dy0tZzZSaTg3b0E?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.872,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Coinbase app now offers instant access to Base and Solana tokens right after launch, boosting early retail engagement. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPejFCZzdYMTY2ZWhOMlc2TjFZdXFDUUh3NXNrYzB2czVSZThPdkEwSjliYVhoeU1FQzJ1b1ZKNVBDT0s0TTY2YW5sZmRFdHp1bHNpQm5raTRUZG90ZnF1LWZ3eFNjSjN4QXo2RmlZLXlqZTJ0OGo4bDR5VGdMSVVIZlMtekllSzQ2ak9ySDNOVEdiMWRjMlByQUtWbDU?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "upgrade"
-            }
-          ],
-          "coverage": {
-            "count": 55,
-            "zscore": 2.03,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-18",
+          "return_pct": 6.58,
+          "zscore": 1.37,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 1.79,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Gains 3.7% on Institutional Integrations and Market Rise - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5QZm8xUXgtVEhuVTRqOG01R3ZfYkJzYlpRdXdWanZibEx2R0c1VV9WU213ZjZadXg3U2hzbXY0MHdVelJDSWluWXRQTlVTUHhfY29yVVRYLTBhaW9nSmpoX3E0Vy00dllpOEdFZVlRYlI?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "5 Cryptocurrencies With Strong Institutional Signals Heading Into the End of 2026 - finchannel",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMDBIU2hBclBDSDdBRU42ZzEyN3o0cWc1Mi1pRVNKY0JOMVNOZk1GcWMtWXdndHNYTGpGek5iVDd5S04xemZjOHp5MVppNXJqWGcwcGxVTUdvYlVNbW93LXR3MFJJVGFtMG9td1BRc1ZrVEdHTlRtLWVIdXJYdFh4NzJFMFltcXUybFpKbnFrV1dHUk1ScG9SZ2diWEw3Znk1UGoxYk5rT0E3TG45ek9JY3NrRWpHLXNMVmg3N0l3V01ramVtMVE?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.604,
+              "event_type": "other"
+            },
+            {
+              "source": "coindesk",
+              "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000",
+              "url": "https://www.coindesk.com/markets/2026/09/17/boj-rate-hike",
+              "sentiment": 0.743,
+              "relevance": 0.538,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.7,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-15",
           "return_pct": -5.38,
@@ -749,7 +788,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink price struggles below $11.72, risks f... - pluang.com",
+              "title": "Chainlink price struggles below $11.72, risks f... - Pluang",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZXljRmFPZ2NuNzgwV3NsaU53c0FjNlNRaHI3R2tGVTMyQW9saEFyczRsX2lOM211bzlCY3l0NkRkYXFZdklnaVA4RDh1ejU2RGs1bnBpemYzM1BBbFN1S3lQVmZiOXk4b0xFT0F4LXBwOWowRTFCSmFiVER5OGp4NXR1dXVXR0lhRkMwRHVDTXBkb00tZm5DdXdQOW1sdw?oc=5",
               "sentiment": -0.557,
               "relevance": 0.823,
@@ -765,8 +804,8 @@
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": -0.23,
+            "count": 14,
+            "zscore": -0.09,
             "spike": false
           }
         },
@@ -925,45 +964,6 @@
             "zscore": -0.23,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 12.26,
-          "zscore": 3.79,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.26,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink's LINK surges 22% on AI expansion and positive U.S. regulatory talks - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZ3BLbnNxWTQxaGc2THVSc1R0Ym9wdUJwZWdyLVRub01LN1Yya3VBMVRTcWYxdlBpdEZkbG5DSElpdlZCRmFsSklsSGRPYml2ZzdVLW9CSWNrOVlrUnVFZGlXbFp2VzhjU3VIQ2ZrUklJTTJtUU5SSXBsYUdLempFNFViSjJNZWY3clpWZDBVVmVCWEtiOWxYTDNSOE95OU0?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) Reaches Seven-Month High on Strong DeFi and Institutional Demand - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOVJYbml6Uy10dkxsQ3gzejNJMkVtSUI4VnZGeVRkQ2VpRXJxM1VRTmtIZlRIZ0RNaW9NUTNkTmxRLS1Ha0xvVU1hbTJCVlF0RC1TVDJjTmlvQzRJc1N5eHFnQlZseU16Snp3SVNPNkdDSGRKRkVOdUJhWUZ2SG1sYUlMZnpZRWRpbGl3TDJfaWp6N3N5UjJMNDhidw?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Forecast: LINK hits seven-month highs amid strong DeFi, institutional demand - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNXd3b19sdW1HdTU3MWFXekZFUFZhczc0RzRHX1RUZG1RU3VOcWtKVkh6RXRyZlc5Rk0zLTl6bFk4ODI1R3VDTmFuTC00X0YtaG1mOEpBMzN3MnRXZlVvMUJ0R0VqejJRandGRTM0QzR5VFh1dXVucVVGS2llNlJQU0JzTmp0b3AxUUh2TVBpdzc4eHd3NWY2Z2JIeElLcVladE14Q1ExSWN2cFp0Q054dmt3TkNVcVJDRGFpS3hDXzEwRzY0S25wRS0wRVVCcWNrSmxJVHU0amxpNk10Y2FrU282R1o?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 27,
-            "zscore": 0.42,
-            "spike": false
-          }
         }
       ]
     },
@@ -972,6 +972,45 @@
       "name": "Polygon",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-18",
+          "return_pct": 4.07,
+          "zscore": 0.6,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 1.79,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon (POL) Rises 3.09% Amid Broad Altcoin Strength - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95Ynl4QkY4cl9fVkFwcVVoS25RQjdxOGxsN094WUEwaklET1hOYUpDQnpxbHp1SzZ6NS1RSDZ0Z2xpR2FJcG43WFV5Y0I3UGhaMXJvamNWeU1sWWIwMlYyTlZJazVOaUhVR1M0amZTY2U?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "coindesk",
+              "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000",
+              "url": "https://www.coindesk.com/markets/2026/09/17/boj-rate-hike",
+              "sentiment": 0.743,
+              "relevance": 0.538,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "The labor market is more stable than a year ago, new data shows - The Washington Post",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdE1PVnhvdnZfVDNBaEc3V2JpamZNUkcwU29TMUNCcmNjRm5BNkhBWWRpdDlvSDJTUThaNzBod0VQRFVHRWRIdEZNZ0VqYkJIcUUwSWo1R1lSSFB5Rm5NU0xSOFpqVFJNRllSMll2eWF3RWZKY3dRMHM0MnprbFkweVp4eHNhTUgtc3p0S29wbzdELUJabTRjbW02TnRmM1huZUp4YS1vczJBUl9i?oc=5",
+              "sentiment": 0.36,
+              "relevance": 0.446,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.15,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-11",
           "return_pct": 5.75,
@@ -1029,7 +1068,7 @@
             },
             {
               "source": "googlenews_pol",
-              "title": "Visa Adds Polygon To Stablecoin Pilot As Settlement Hits $7B Run Rate - Yellow.com",
+              "title": "Visa Adds Polygon To Stablecoin Pilot As Settlement Hits $7B Run Rate - yellow.com",
               "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQUo3eGxsaWRQSjJZSXlaZXFwYUo3NlVab0VndVR0RVR3TEF3TDB4aUduNU1TMnM3dUZBVlFRNGFZYnpnWUM4TGhzQUc4QVVEM1JxVVRrUEY1R2ZFLWMwTHpibmdmOXJUTlZ1ZVh3VXQzNzZHRkRaT01LOUNZUVY3TWpid1JuRkhMZk1pYlRKbjZaN3dJbjJRTldyVlQ1Z29fMzVOc2VnNU9GRHk4TnB3MlNuMW4?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -1166,45 +1205,6 @@
             "zscore": -0.25,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-26",
-          "return_pct": -9.39,
-          "zscore": -2.54,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.59,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - stocktwits.com",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.621,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Why is POL up? Polygon’s 690% exchange outflows, $20M bridged netflows & more… - AMBCrypto",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWlBicUtHajlWallFRkhXNVBjUEVNNE5iVWsxWlJBVzdwejQtckk4SDI1Y0dobllRSUpfTUpLeHhhZmFNanI1UVVzZXBRdDBkeGdaV0FHR21UMVRrSmtqcVJRangwNVFqZjdKMzYzMVpXSThBblJGWHAtUHloZnduVDdSMW5iNDJuVTBUVVR4MGVWWTF0ajZsSQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Why is POL up? Polygon’s 690% exchange outflows, $20M bridged netflows & more… - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1WTk5uZlNXSV9CRkpzYUVtTUNjMDVuQm9QdHN6ZFktRkctYnVTalktTnNnU3hXclZBRTZQZUZGMXdvX1REVWdDczJWT1IxbDEzRk44c1ZuRXljMmc?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.43,
-            "spike": false
-          }
         }
       ]
     },
@@ -1222,14 +1222,6 @@
           "market_return_pct": 1.14,
           "events": [
             {
-              "source": "googlenews_fed",
-              "title": "World stocks gain as Treasury yields retreat after Fed, BoE decisions - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUnBManB6Nl9tbnMzaXhPbHh4RmJVX0xWNmdaeENoNW50NGxxanVfMHFMaWVENklmQ09OSzdDVnFtSFhiXzJ0YTE5RVgzSHYtekRVZHU2QXE0LVNWeS1nalgyNldtV3l1X3FUc3NudktmOWZJVVZORXFNbWloZzlOZkdRWQ?oc=5",
-              "sentiment": 0.718,
-              "relevance": 0.887,
-              "event_type": "fed"
-            },
-            {
               "source": "googlenews_tech",
               "title": "Top 5 Tech Stocks Built to Weather Higher Interest Rates - Zacks Investment Research",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPXy05eWZtVjdZX3VLODFuVEVwU1I0VzVzaUJPb3RQc1VtRm81dUs3UGQ0UVBDQm9aNEZPVldFVEVrOGlQV014UEJ6S0RGTk93dXdVQ0xIcnF1Qk5MSmlQMm9kcG1kNmhObGVWVGxVdFV5VjIyc2tnQUI5ZlRFZURleW5zamhNYXJVc28yNWtjQTgxNzRWWVR4ODZqQmllUQ?oc=5",
@@ -1244,11 +1236,19 @@
               "sentiment": 0.511,
               "relevance": 0.804,
               "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "News | Federal Reserve hikes interest rates for first time since 2023 - CoStar",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQN3JRa1pxSVc5bFZVdUtHTjIxLXg0b0hwMHNnTng5U0NWVFlnNkhkcjNnSVhUakotV1VxYTBTSHZHMnZrRF9FbnV4b0RsMkZ6M0U1UzBCQTYxVWVEQzZfNmY5dzl0OTBHb2FjeTBqbmp6VFJULWZUc0RwMC1MUFQ4Mmxfal8tbTFwY3R1N29rVTZvY3cteHk5OGtMTmh4U2FtZmZWbQ?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.37,
+            "count": 22,
+            "zscore": 0.58,
             "spike": false
           }
         },
@@ -1713,24 +1713,24 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "WesBanco, Pinnacle Financial Partners, Zions Bancorporation, Regions Financial, and M&T Bank Shares Are Falling, What You Need To Know - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ3BDcXd5akVoQ0lzeE8zWUMtTG9CNkJSRDhBVWltUERQNVNjRDBuMlRNVWE3REdKYXA5ZVFKTlRQaXBJZ2xOSFNHMFd6SzF0YjMzSG9keGtuYnZDcGIxblNOSEdGSVJ0VnFITWJGWHhlZS1OMzkxRXVobVJfeGtockFMSW9RUUN6ZWVsVXBvM0djWkJNbFhiTFNKandpNnBjVldTSk5Qd21sd0U?oc=5",
+              "title": "KeyCorp, Fifth Third Bancorp, Citizens Financial Group, Walker & Dunlop, and PNC Financial Services Group Shares Are Falling, What You Need To Know - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ3dfOThmTGlZeU9MSDdfV1E0UkpZSm01Wi1ZcWV0YWNNbGROTG9TS0NLanFVZFF2aWk5UWJtVVFNdjBORjQ4QndtcmJUcGtLbUVXdkRDbjhOWXBmVzJKS2FXMXBCQ0dzbXlaQ0d6RUVMQy1ZZFFvMng4MV9sU3AwNEtXMV9IcHI5MzFIdHE4SXd2M1ZPa2c1RGNycjk0dHkwRXVJ?oc=5",
               "sentiment": 0.153,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Forget the Rate Hike! The Fed’s Dot Plot Could Trigger a Massive Crypto Shock Today - ccn.com",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUnVpVlRJWWFfWTg4bUoyem9MUGZyRm5ZTzJWX2tRcndCcmhPM2hBbjFhS0FpWXEzQ1YyYzNwR0pKNFdGdmZ0U0NNZm5jZnVTclBvV3Ntd0l1Y0hCYi1aaGZEeW16eWxSVjNUNWlhN3NtNVRaVHB6ZXg4REJNNEVUYXhjNVkydjY4?oc=5",
-              "sentiment": -0.585,
-              "relevance": 0.5,
-              "event_type": "fed"
+              "source": "googlenews_finance",
+              "title": "WesBanco, Pinnacle Financial Partners, Zions Bancorporation, Regions Financial, and M&T Bank Shares Are Falling, What You Need To Know - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ3BDcXd5akVoQ0lzeE8zWUMtTG9CNkJSRDhBVWltUERQNVNjRDBuMlRNVWE3REdKYXA5ZVFKTlRQaXBJZ2xOSFNHMFd6SzF0YjMzSG9keGtuYnZDcGIxblNOSEdGSVJ0VnFITWJGWHhlZS1OMzkxRXVobVJfeGtockFMSW9RUUN6ZWVsVXBvM0djWkJNbFhiTFNKandpNnBjVldTSk5Qd21sd0U?oc=5",
+              "sentiment": 0.153,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -1.02,
+            "count": 3,
+            "zscore": -0.69,
             "spike": false
           }
         },
@@ -2832,7 +2832,7 @@
           "events": [
             {
               "source": "googlenews_discretionary",
-              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - Benzinga",
+              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - benzinga.com",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVRjVzBTZk8ydWN0S2cwSHlaZmJKMW4xMVh5OFF1My1ieWNoUXMwWWRfSHBoNUxCV0lnajBJYkZycXFIMG5Ba0xmaDBvczUtRTNDWUkzazhPNTBfV2lyaGMydDJyTEN2V0RwU04tU0hQMWljS1g2d19sQkV5NDdCWmxSclZqdDJwSGdtOHRTeUZNYnpLOGxhT19QdjRqMWJvUEFYSVIxV0lJMHZzbEZBYWh0U090cWwtMjZJ?oc=5",
               "sentiment": -0.557,
               "relevance": 0.823,
@@ -2857,7 +2857,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 3.32,
+            "zscore": 3.33,
             "spike": true
           }
         },
@@ -3011,7 +3011,7 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "Analysts Offer Insights on Materials Companies: Ternium SA (TX) and USA Rare Earth (USAR) - The Globe and Mail",
+              "title": "Analysts Offer Insights on Materials Companies: Ternium SA (TX) and USA Rare Earth (USAR) - theglobeandmail.com",
               "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOZ1dFR3Yyam9TaE13V2tENDZFVWFkay01R1VNN0tURjZ0TzMwUnRPRDFHMWs3U0RZRjFjcTJOeHlJSTBfZ1hRbmh0RFpFYXZ2a2JNNm1KVnhGTVJfNVF6MnJmNWcxaVNtTHptZ2l0SEMtT21xQ0dKVDh4NHVpcm5PMmdhdHcyZzQyYzB6LW1jbF8ycjR2Q3BhUmtOUXYwcnhOMzFVam1ZMEZodXJHeVFQamVlaVprZ2o0N1lYTVJGUXJQUUxHTkVuTjVSOGVwYTg3SmlKWWQzU2lpV3NvZ3JPcHZNTEZEdnptVDZiZ2hnTUZOQlNlWW5LMnE0TQ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3236,10 +3236,10 @@
           "events": [
             {
               "source": "googlenews_realestate",
-              "title": "Do REITs Pay Dividends? Yes, and There’s a Good Reason Why - Cabot Wealth Network",
+              "title": "Do REITs Pay Dividends? Yes, and There’s a Good Reason Why - cabotwealth.com",
               "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03bnduRFR0R0ludmZMeHRWeWV1TXBlS2tXbllzRHAyQkhrdzBudzBCQXBNLXlSZUNJVU9paDBCbVloZ2h2MXJ2QWJ3SUpXT2x4bndwUzNJVUpmYkFkZnFWUlQ4ODZmWTVHNXNGR3FRYkFJclNrcEFmME1wbWdXdw?oc=5",
-              "sentiment": 0.813,
-              "relevance": 0.925,
+              "sentiment": 0.637,
+              "relevance": 0.855,
               "event_type": "other"
             },
             {
@@ -3485,7 +3485,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "11 Communication Services Stocks Moving In Monday's Intraday Session - Benzinga",
+              "title": "11 Communication Services Stocks Moving In Monday's Intraday Session - benzinga.com",
               "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0VDS1hDZlFqeGdBVlVEdzVUODFfdVgxVnRZY2liTkFYdS00NWhWbXpDamJWS2xTNjRRaElxWTl4dmNmM2EycnpBOTJvR3Nlc2ZicFRqYUlqQ3EteDNES0kzZTZoMnJUeEpWQUhWNU5ZX3JFYWRpNXNockRKbEU2UU5pWXNiNUZsTktSdWc2YWUyVjlLdFdoa3BHQjJYVHVTUUVzYkltMjNNNlB6WUxLUVRIUnpmZFlxMmhTRHRPbkFlbjUt?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3493,7 +3493,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - Benzinga",
+              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - benzinga.com",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3lTVWtZa254TlRSaE1pN3NndG92YzM1ajByaFhTVmxDM2J6czFqeFBrX1pYWUk4YWZYREIxelB4cGNEVWxqWVFQZ3VVUHl5V1llbGl0QWRYNms3NDlBYWtQWnZON0QteFhoUkhMUnVtVHV1VUt2V2Fqd1R2TjNQanp4eXE4c1hvdGxYWlVVLU9RR0hfUHM2cFVTLXVLRU5vTTF1TW1feDFmdlhPTzNOVEVPLUNwV2ZLN01Z?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3742,8 +3742,8 @@
             }
           ],
           "coverage": {
-            "count": 57,
-            "zscore": 0.46,
+            "count": 65,
+            "zscore": 0.8,
             "spike": false
           }
         },
@@ -3958,14 +3958,6 @@
           "market_return_pct": 1.14,
           "events": [
             {
-              "source": "googlenews_fed",
-              "title": "World stocks gain as Treasury yields retreat after Fed, BoE decisions - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUnBManB6Nl9tbnMzaXhPbHh4RmJVX0xWNmdaeENoNW50NGxxanVfMHFMaWVENklmQ09OSzdDVnFtSFhiXzJ0YTE5RVgzSHYtekRVZHU2QXE0LVNWeS1nalgyNldtV3l1X3FUc3NudktmOWZJVVZORXFNbWloZzlOZkdRWQ?oc=5",
-              "sentiment": 0.718,
-              "relevance": 0.532,
-              "event_type": "fed"
-            },
-            {
               "source": "googlenews_uranium",
               "title": "Why Are ASX Uranium Stocks NXG, PDN and DYL Taking Different Paths in the Nuclear Energy Cycle? - Kalkine",
               "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZDZTRnJvVEtwVTRIS0FBVVN2aWlFaUxRMjdUU1ZXVDNIZjlvRy1KNnVWTnhRcVRmQXFWdUxPc3hObEpvXzlEaV9WODVMdjdwWXpxX3NSTDQ2RlEzMU5rN1R4ajlTaDN5NVQ0aTlqQVp0UjVMejlqRFRyMjZibnNvQUZ6NlRWOG03OGhSNGdETHU2NzNIU3h6ZHl2ckUwaDI5SW51SGttUnZqbnNTT1phYWNTNktGYTAwYVVHTVVUYkRBcUtOeC1z?oc=5",
@@ -3975,8 +3967,16 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "The Best 3 Nuclear Energy Stocks to Buy and Hold for 2030 and Beyond - The Globe and Mail",
+              "title": "The Best 3 Nuclear Energy Stocks to Buy and Hold for 2030 and Beyond - theglobeandmail.com",
               "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZ2UwSzF1SnBhWGdWM0d6RTQ3emlCM1RGRGpXVXd3SlJKZzAxY2NUei1uNnRpTDFURTlKTUd3VXUtN0t4eEJRMWNwN3habFRyMEFyYmZFMy13bXpZSEotaHFaOEVkYXdYR084aWEzX1Qtc1B4R1FxTTNxRVNYNC1fTkhlR3BZelBWb01yRFY2MmozLWdTakJqdDJZV3NLVGc2UlZ4NG9TVlhWdkdLZU9ELUN4SHFkbk1JYkFFaEJqQ1FkRF9QVjNUVm9ZYS1pVEVCX25nTmtya0oxN0Y4ajh5VTk4YTRUUHc?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.497,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "The Best 3 Nuclear Energy Stocks to Buy and Hold for 2030 and Beyond - Currently.com",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRjg1N21rNkVvb1MtRXJNM21PN1V0bTFiQmZEX1hNNEVsWDFqNUNNTENjMGdvUEp1QmwwR2s5dXctUzlneXRSazUzcW9CM2tkdWtWaHZvc1V5VXFHYVVMRUVmNDJxSDVSMWNBUEZ5Z3p4Q2JDOTZuZ0pZdlAtOWxLUjBKZE01QQ?oc=5",
               "sentiment": 0.743,
               "relevance": 0.497,
               "event_type": "other"
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.68,
+            "zscore": -0.7,
             "spike": false
           }
         },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.36,
+            "zscore": -1.38,
             "spike": false
           }
         },
@@ -4084,24 +4084,24 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Cameco vs. TMC The Metals Co: Is a Uranium Stock or Rare Earth Metals Venture the Better Buy in 2026? - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOQ1p2MDA4NFRPM1JfRVp2bDFjTnZtTjlnY2FNeTBrdmk4dWxjSHRCamxCRlJUdGN5ckpBNGlVbU8yNWcyOVRrdjM1RXRTOTF5Z3lndXhtY0Z4OVBHMlVCNkd2WE9NM3QyZmE1eFhqMkVFQlpRTTdJZWljOXhSTWxhSlpPYndLR25yM0pxeTZ4c2lJVGY1a0duSlV4eUU4QmpWa0ZPQU5KeE9VdGExdkpHLS1RdDV2bnc4ejhQMWNybnFyRDF2OVFBcE9vMEZWN0VHamhzQ3FRVndvVW9nNllQdGQ2WTNnbm5KelkyUzI4aXZORkRGOUpwc1dkbmhlWDg2VXpEaEdMcERsa1hULVVJ?oc=5",
-              "sentiment": 0.44,
+              "title": "Best Nuclear Energy Stocks for 2026 and How to Invest - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOOFlhZVNVQjlVT000Q2UwZktwLVlMbV9xaFFXX3RaeVBrVFQ2clo3OEIzYUZ1aGtFeXByamxDUFhXYmliUUN0R0Q2SkM1cDBST2MxT0hJSWdBTm81ak41STFiYmFpM2xjM1NCZXBnSjNaeGc2TVhiUHBxTVZFY0VDZWJiSXVMNmVDZ2g0Rm5qclptb3Mtd2FDUmtWMHVWVDB4Tm9TLWRrWUdnY3J1d0tDZ09hcF9NRkV5SWtMUnVqUjBHY0cwWDJocm5uNVNaNDVwU2dMY2hZYVNnSHE3UHhySG43ODQ2WllDVXd0ODZVQ3c5TFQ0OERjV0RzUWhBV1M0d1lQR05GLXpPN1EyanJuMVlrRHROQQ?oc=5",
+              "sentiment": 0.527,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "Cameco vs. TMC The Metals Co: Is a Uranium Stock or Rare Earth Metals Venture the Better Buy in 2026? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVDNmZTljRVJDcHl2WlhjV2dscDBPSGRWakhob01LSGNPeUNKRzZOZ3NQMTRUODlvQ1ByeWV4WmFBWjg1elZCa0d1VFVTV2NMWjdfdzBQS3VRVm9SbFVJc0N4RjBNNU9UN00td3R3dy1hcUFRMl93Q3RNRHRVM2tpUDNyMktvajB0UmNkVXAwTWdFTkpzdnFUckl2LU1WYjlWRjV1LU5QYTJpSHQwcllxZXdkTm9wbzZOSzN1ZDRBTzhvS3pzcnhtVE1zZFpVU1FzZl9pcnFwSEVZZFgxTWJpbl9JeldtZw?oc=5",
-              "sentiment": 0.0,
+              "title": "Cameco vs. TMC The Metals Co: Is a Uranium Stock or Rare Earth Metals Venture the Better Buy in 2026? - theglobeandmail.com",
+              "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOQ1p2MDA4NFRPM1JfRVp2bDFjTnZtTjlnY2FNeTBrdmk4dWxjSHRCamxCRlJUdGN5ckpBNGlVbU8yNWcyOVRrdjM1RXRTOTF5Z3lndXhtY0Z4OVBHMlVCNkd2WE9NM3QyZmE1eFhqMkVFQlpRTTdJZWljOXhSTWxhSlpPYndLR25yM0pxeTZ4c2lJVGY1a0duSlV4eUU4QmpWa0ZPQU5KeE9VdGExdkpHLS1RdDV2bnc4ejhQMWNybnFyRDF2OVFBcE9vMEZWN0VHamhzQ3FRVndvVW9nNllQdGQ2WTNnbm5KelkyUzI4aXZORkRGOUpwc1dkbmhlWDg2VXpEaEdMcERsa1hULVVJ?oc=5",
+              "sentiment": 0.44,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.81,
+            "count": 4,
+            "zscore": -0.51,
             "spike": false
           }
         },
@@ -4115,16 +4115,16 @@
           "events": [
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Currently.com",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVQ3NDRReTNjdUh6V3I4MV9MdU13NHFfZ2FOMkY5TFd4RHFySnVRam12ZDBqN3ltRXcwRm14d1VSR1U1SUdkMXpycF9JMFJMc00wVHBncUtwMXFPeEZsQ0o4TzktRW10SDZlMS1CV3FJZ0wzTWJqODlVQm9rTy1WZGtZd0c?oc=5",
+              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeGh1QmxSQlRtT3l6R1pHTUMzN2hzLWdtYkJBaXR3anlTR1lsVnVxUmtKZWRVTlhyVGR2cm9OR2R6QWdaTTUxcThGQ2U0M3dMRTg2d2JwX2NCcDlkbExUb2JZdlNFWkU5N1BTeFd4SHNOOV94ZFpHLVNBelZBOXR6LTdkZTZJRml3a2g5Uw?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeGh1QmxSQlRtT3l6R1pHTUMzN2hzLWdtYkJBaXR3anlTR1lsVnVxUmtKZWRVTlhyVGR2cm9OR2R6QWdaTTUxcThGQ2U0M3dMRTg2d2JwX2NCcDlkbExUb2JZdlNFWkU5N1BTeFd4SHNOOV94ZFpHLVNBelZBOXR6LTdkZTZJRml3a2g5Uw?oc=5",
+              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Currently.com",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVQ3NDRReTNjdUh6V3I4MV9MdU13NHFfZ2FOMkY5TFd4RHFySnVRam12ZDBqN3ltRXcwRm14d1VSR1U1SUdkMXpycF9JMFJMc00wVHBncUtwMXFPeEZsQ0o4TzktRW10SDZlMS1CV3FJZ0wzTWJqODlVQm9rTy1WZGtZd0c?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
@@ -4208,15 +4208,15 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Green Stocks End Mixed; Tata Power, Alpex Solar Lead Gains While Premier Energies, ACME Solar Fall - saurenergy.com",
+              "title": "Green Stocks End Mixed; Tata Power, Alpex Solar Lead Gains While Premier Energies, ACME Solar Fall - Saur Energy",
               "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZlFadHhZaU9wRU1lXzRoa0NrZ0RjLUJ1dkVxeEoxWE56Rk1qcnF4a09MTGRoSUhoTWNiSnJib01sZUNVZ3pLVnFBOVJMWlo4SUhMbTFyc2lJRVNvX2s1YW5jcll6SldqYlUzZWdNQXBFa1JrU2s1MnM0dk5WZVFKb3hkWjhGbzFzMjVUWVY1NlA2ZXFyZENvejZoR1NKSXdXZVdQTm9PQ3Z0SVlZb0NnTUw4NlgtUGJXNi1PSndtY0ZEREFUVjBraDQyUjhONDE4YkNKbjhuRUZfNkh1MlNaeWk2UQ?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
+              "sentiment": 0.66,
+              "relevance": 0.864,
               "event_type": "other"
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Can CEG's Expanding Clean-Energy Portfolio Support Future Growth? - TradingView",
+              "title": "Can CEG's Expanding Clean-Energy Portfolio Support Future Growth? - tradingview.com",
               "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRFJNZkJFYmJ5cjhUcTZITE5VRURTRUJ5bTQ4VU1NMTE2N2h1amw2N3JlbFl3RExUSmlhME5fZHpLckpRR3FzaDdiOFZRN0Zjc0RGOEpnQk5qb25IUmM2cUF0bjVnaDhITVhKOS1NSUNhU0tKT1lFNkZEdHdLUXJZN3FINHJRMTdBcGN3QmVQOUMycWswOWhLcm5yeXM0dERha3BobEZzdEg1V3hZblJWMkFsUDgyek5QR2lDQw?oc=5",
               "sentiment": 0.649,
               "relevance": 0.659,
@@ -4411,7 +4411,7 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Zacks Industry Outlook Highlights Bloom Energy, Talen Energy and Montauk Renewables - TradingView",
+              "title": "Zacks Industry Outlook Highlights Bloom Energy, Talen Energy and Montauk Renewables - tradingview.com",
               "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRGFHUDFOYjhpYTBGQXYzazdKRzlDSktoODY1eGxVNmY4SFBrbV9Vd0pMTkxraEVwZFZGZG4ycFliUGtWTTRITFQwN3N5M0ljcXZNd2xQeTN4WXI1RmNlX0JPV0hSZ0NwNldjWFhhQnJoMkxrVThXTjdfcy1UX2N0YmtyYXlnbG4zRDlZQ25TV3JCRE1hTEJOWWM1Ml92R1B4dHpyaHNsSjVpQ3BXWC0xLXFlc1dwRlNQd3ZlX253ZkZGbGlmSWszd0dCWldReTFlNjdjZA?oc=5",
               "sentiment": 0.494,
               "relevance": 0.798,
@@ -5172,7 +5172,7 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Cybersecurity stocks jump over 11% as AI safety warnings boost security spending outlook - pluang.com",
+              "title": "Cybersecurity stocks jump over 11% as AI safety warnings boost security spending outlook - Pluang",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdUt1aUFfd2pYeXUxR3lBZzhXLWFUN29ZR0hRdU1oN0JhV2cyaVB1Y2s3MDRJUERUbjdDR3M2Z1l1dmxNeDNvWTBRRG43ZV9iWXFWZlFMcUZLUEd1eXpxMkdKdERNOW1IN1R0a1JaY1NlUC1JekNaajZlZVBjRjZuZGJaSE1oVUNpczN2WnRxemJEZEZrdXoxa2lKSl93N2VaQ0wyQ0pfNW4tUQ?oc=5",
               "sentiment": 0.691,
               "relevance": 0.876,
@@ -5421,16 +5421,16 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "Hong Kong biotech stock roundup: These are the top performers in 2026 - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOS010aFRGc3NvRlpvdl9vS0hvVDF5aHlZM28zVU9ycHdhUGxRLVZSVFczdURpYTc5Snp3OExjazk2RGxobk5RUW41LWZwN2xVX1RLcHlEVU1QOVE1clpkeTJXeDhwMTYySW40cVpRMnBLYjVabnZRdmpzZEFmOHVnTE9aUGFRMGROX2JvZjQteFdmUVh4ZWF0Y2VidEFwdXNXcVdMZmhrd190aGgyYm5PVHlHbW1wUWVmU1M0enAxcGFYbXJoM2Vqd3dn?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.681,
+              "title": "8 biotech IPO prospects testing investor appetite - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOW13dkV6cmZpODBqZklNX203Yng0Z3ptRmlhaDFaZGZUb2lJVG9zWHZKbnlSNUJfME9uRWVZYVh6NVp1ckQtbnpxbUFhekFfZWo0NG9UOXNycjVRbUhXejRBcXJNUGRGVXBiZDFDRnowb2lpSDVZVFNNZ05NN1dxRUQ2TU1Ma05TNXRaOHd4ZUw0VWpsUHNz?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.718,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": -0.18,
+            "count": 16,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -5670,8 +5670,8 @@
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.56,
+            "count": 39,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -5875,13 +5875,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-09-17",
-      "return_pct": 0.47,
-      "zscore": -0.05,
+      "date": "2026-09-18",
+      "return_pct": 1.79,
+      "zscore": 0.47,
       "max_abs_z_recent": 1.6,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 2
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-09-17",
@@ -5890,7 +5890,7 @@
       "max_abs_z_recent": 2.39,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
