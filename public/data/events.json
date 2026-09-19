@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T16:01:00+00:00",
+  "generated_at": "2026-09-19T20:55:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -18,6 +18,14 @@
           "events": [
             {
               "source": "googlenews_btc",
+              "title": "Crypto Fundamental Analysis: Better Regulatory Prospects Boost Crypto Sentiment - stonex.com",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRXJ1LTZjQzMwNEV1QU5pNlRXOVQwUDR3c3BGb2ViSmkzTmhsaEs0bXczNVhfUmVtMGdReHl2dU4zRGRBbkFHOEJ2enlDQTY0OFFqRUlOZDhqU1R0SmMzTEtuNU1OQmExS3puU2oxRlZjVkRSN0VteWhadDhVSjhWMWgyZU1HSWtyVHpVTWdLWmVCVldYVk1uVUVCS1dEZExIazZvc29NbjgzZG5KbXp5QTNRUl8yc3ZHYk5yZmpmdExtVWRSa0dWR05CaHRhSkZuM2Zn?oc=5",
+              "sentiment": 0.778,
+              "relevance": 0.911,
+              "event_type": "regulation"
+            },
+            {
+              "source": "googlenews_btc",
               "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000 - CoinDesk",
               "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXZzRocWhINm02LS1BbHhjMExBcEhIaTB6Y1lXMTBtUzRfM1lBLVN4aVdGaXlnXzVaWU5lQ0NESUdXZ0RQZ09NLVpaQ3p0eWpVY01WbXU0aUsyZ2hWX0Rud2dqNTJlWVd1?oc=5",
               "sentiment": 0.743,
@@ -31,19 +39,11 @@
               "sentiment": 0.637,
               "relevance": 0.855,
               "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "I Can Almost Guarantee You Just Missed the Most Important Number in Fed Chair Kevin Warsh's and the FOMC's Interest Rate Decision - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVjh0NnltU3pYUlFQU3hBVDJrc3YwMWxyQTZ3SnotWGRaZW5WcXVVQVVjY00zdDJIVmJweXZJR2xsNEhMQkhIZTF3aDRuS1NGVFlkZEljVGk2eFBTZ3BiWU9BMHBTRW1RbU5UcDhqa3Q5VlJSajRiZ3ZEMGd4aGZ2UHFTemJJQ2NON3VBUmh0N24wQ29aX2F1NEdrRGFXZHM?oc=5",
-              "sentiment": 0.634,
-              "relevance": 0.854,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 95,
-            "zscore": -0.52,
+            "count": 97,
+            "zscore": -0.46,
             "spike": false
           }
         },
@@ -578,6 +578,14 @@
           "events": [
             {
               "source": "googlenews_sol",
+              "title": "Solana Just Set an All-Time Record for Blockchain Network Activity. Does That Make Solana a Buy, Sell, or Hold Right Now? - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVzlBd0hPcDlsckotS1FXeTBPYjVPTjBXTkl6UE9kci1JdFV6ODl6MDVwVVlCTTBpLW4zb3IxN2RLQnFXdVBkVTNiUmRsaUVUUll3blR4VWxfeEpsaEdqV1pfY3UzNHd5ZHhWaTFvUGxjQThVSG4tRWdmc0JDeWlfNHpaWnpqa0Y0TWRweUw3MFhpVk96QUFZ?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
               "title": "Solana breaks 10-month losing streak with 46% A... - Pluang",
               "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRUhwbmRTa3VlR0p4N0RfTk1KeW15V1VNVFRzOW9kWlEwcUJjUW55X2o0UHJaazZoNUdDWUg0QzZfRzdUTndBc0lwcmhHTmM4QTlJZ1B5WmNOMVNQZ3NKeUlxN1JVdldzc25lNTBMRUVDdDJ0VDRUODBVS0liWnZSOXlkYnM3eUFQMmNLR3VzeGtqUFFHczhnb1BLc0hFWmxYQXFJ?oc=5",
               "sentiment": -0.382,
@@ -591,14 +599,6 @@
               "sentiment": -0.318,
               "relevance": 0.727,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana to launch Transaction V1 on Sept 9, cut rent fees, and target faster slots and Alpenglow upgrade by October. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVDdaeHJ1S3c1NkkzZEltUHhYWTBQM01LSi1RNTNFS2VId3E4LURLZ1RQUjl5Q3ctWXFiaU1Bc2pQbEd4em1hQ0hBT2NjR0hFVTRwa0tVYUw5d1cyMkliYUx2WW84MXZfMTNxaTJhbF82SkZHZk1Sa1pQaGZqRnJfQ3A2X1d4cmxRZ3dWZllOVGVUbms3aUJjODhqdV9TYVI4cWdaVg?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "upgrade"
             }
           ],
           "coverage": {
@@ -642,7 +642,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 1.8,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -719,8 +719,8 @@
             }
           ],
           "coverage": {
-            "count": 52,
-            "zscore": 1.33,
+            "count": 51,
+            "zscore": 1.26,
             "spike": false
           }
         }
@@ -1021,7 +1021,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon Transfers $3.5M In POL Tokens As Rally Hits 50% Weekly Gain - yellow.com",
+              "title": "Polygon Transfers $3.5M In POL Tokens As Rally Hits 50% Weekly Gain - Yellow.com",
               "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPMzh2TUhDQjVJRXdmbVRPNVdTbDRnTFJfYVY1eW5ZTExnLXFrOUFCNy05UUtxVVRNMHB5dWJQaGtpWjNMOTZRLS1qSTBKeHBuYWZSYkNfN1RtQk0xOEpxN3A4ZkNtOGNIaE84dkdacVY5eWFlRWxYQWVhaXZsaFFIbnV5Qk5GR1dubnR3SnppX0MwNnBRNTFMSG9vQlMyblltVmdnQUo0UEVZVnRJak1FX3FxdVkweVBqeGlhUDRYZU5iRjNVN1lNQllTS1d6LWVfc2RGZzR5NHhFTmltV204aGtiSlZFdDlkTkxSMDJmUEFraE5jdVBEZUEycGJ3dkRiT21Sb2lXTU9oUS1IMl90RjZRRzFWajF1RFZqcVRkMDZYOHFVQnA1OTNocmVWRDg?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -1231,24 +1231,24 @@
             },
             {
               "source": "googlenews_tech",
+              "title": "Super Micro Computer climbs 9% amid tech-sector rally (SMCI:NASDAQ) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdG5KcDhTYTVFWkRPWVdmRVR2dlZ2UlVhN243cE93cWdoc0VxaGQ0UFRfcWNsNmlXTUdVbmZOMHdUMjdVWU9uZEM1Nk1hMmxFVkZyYTN1RzBkSzJUU0NQQlFua1BjUTJYMHFpODFVMlhPZVhaRXBvOFN3N192b0JsUXU5TFR5bFktWXVMTHlISkZuV2NEaXU2MDVUVWVVcG8?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.84,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
               "title": "Top 5 Tech Stocks Built to Weather Higher Interest Rates - Zacks Investment Research",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPXy05eWZtVjdZX3VLODFuVEVwU1I0VzVzaUJPb3RQc1VtRm81dUs3UGQ0UVBDQm9aNEZPVldFVEVrOGlQV014UEJ6S0RGTk93dXdVQ0xIcnF1Qk5MSmlQMm9kcG1kNmhObGVWVGxVdFV5VjIyc2tnQUI5ZlRFZURleW5zamhNYXJVc28yNWtjQTgxNzRWWVR4ODZqQmllUQ?oc=5",
               "sentiment": 0.586,
               "relevance": 0.834,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Unanimous Fed Rate Hike Sparks Intense Interest Rate Friction Between Trump and Warsh - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTzZDSHdNSDRnUDNDcE13ejI5X2lYLTZzU0NqZGxEX3NpZ0NYdExZVWIzNWVMdjVqdldXRlhYSmpfMTl4MmJRUmtKcWtsTEZRNjNJNlk2SndESnFuU3BkZkRGZVluWG91Y2lXUkpwSGwwdnBOakVVdlIyQzNrS3NsTENIdTNVcGY5RWhKazZBYUljaGpKSFRSSTFxWHlOU1pKT09veldpdFM2Z0hTbENzcHd0bFpzcWFGLTMxeHlXMTJUUQ?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": 0.63,
+            "count": 24,
+            "zscore": 0.69,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 0.72,
+            "zscore": 0.71,
             "spike": false
           }
         },
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 2.84,
+            "zscore": 2.83,
             "spike": true
           }
         }
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.69,
+            "zscore": -0.7,
             "spike": false
           }
         },
@@ -1807,8 +1807,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.53,
+            "count": 5,
+            "zscore": -0.28,
             "spike": false
           }
         },
@@ -1847,7 +1847,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.61,
+            "zscore": 1.59,
             "spike": false
           }
         },
@@ -1877,7 +1877,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - financialpost.com",
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
               "sentiment": 0.285,
               "relevance": 0.6,
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.41,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -1900,17 +1900,17 @@
           "events": [
             {
               "source": "googlenews_finance",
-              "title": "Why Are UK Bank Shares Holding Their Ground As Barclays (LSE:BARC) And NatWest (LSE:NWG) Lift Ambitions? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOYnN0ZGhXOEpsYzJtZHR0TC03UkFQcDhEOVB2Y2pUZzc4cjBGeWtCc0pqSW4tOWhiMnpBTzk3WTZTZllfb1pseFpUZVNwYTg0dGFyc1psaW8xUWZyc3hZSTdZMk1BUVoyZ2tZNlhhdFFYN1R2NEIyR01WLXJ0UHd4RV81cDFQQS1XeTY1S3NBbms4OHlsWU4tRzFnV3cwd2I4SVQ5azdURDZBZTJEOWtJMDJvOXhYSHAxUjFlRFVRQzlqcGZLeHVIaDlnX3VqY2tRUFFhdzdXbF9SZw?oc=5",
-              "sentiment": 0.296,
+              "title": "3 Bank Stocks to Keep on Your Radar as They Hit New 52-Week Highs - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObi1lRS1IWHh5ZV81a0c1eV9Kd3lGZ2ZVV2JTUE43SHJYQ2V3U3VRTjM4YWpScnJCWTdoSEpkWklOaXo5RjJsZE85X1JIV2NPNjlrUVhFTXpROXl5VU1CZjhYVkh2cWh0eFYzQ01CYWtkQzAyamZBZGcwMkJJbTUxaTYwR2paYVRsT3hYdFBJRmNrM1E?oc=5",
+              "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_finance",
-              "title": "3 Bank Stocks to Keep on Your Radar as They Hit New 52-Week Highs - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObi1lRS1IWHh5ZV81a0c1eV9Kd3lGZ2ZVV2JTUE43SHJYQ2V3U3VRTjM4YWpScnJCWTdoSEpkWklOaXo5RjJsZE85X1JIV2NPNjlrUVhFTXpROXl5VU1CZjhYVkh2cWh0eFYzQ01CYWtkQzAyamZBZGcwMkJJbTUxaTYwR2paYVRsT3hYdFBJRmNrM1E?oc=5",
-              "sentiment": 0.0,
+              "title": "Why Are UK Bank Shares Holding Their Ground As Barclays (LSE:BARC) And NatWest (LSE:NWG) Lift Ambitions? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOYnN0ZGhXOEpsYzJtZHR0TC03UkFQcDhEOVB2Y2pUZzc4cjBGeWtCc0pqSW4tOWhiMnpBTzk3WTZTZllfb1pseFpUZVNwYTg0dGFyc1psaW8xUWZyc3hZSTdZMk1BUVoyZ2tZNlhhdFFYN1R2NEIyR01WLXJ0UHd4RV81cDFQQS1XeTY1S3NBbms4OHlsWU4tRzFnV3cwd2I4SVQ5azdURDZBZTJEOWtJMDJvOXhYSHAxUjFlRFVRQzlqcGZLeHVIaDlnX3VqY2tRUFFhdzdXbF9SZw?oc=5",
+              "sentiment": 0.296,
               "relevance": 0.6,
               "event_type": "other"
             },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.12,
+            "zscore": -0.13,
             "spike": false
           }
         }
@@ -2375,7 +2375,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.17,
+            "zscore": 0.16,
             "spike": false
           }
         },
@@ -2818,7 +2818,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 3.33,
+            "zscore": 3.32,
             "spike": true
           }
         },
@@ -2981,7 +2981,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.19,
+            "zscore": -0.2,
             "spike": false
           }
         },
@@ -3020,7 +3020,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.88,
+            "zscore": 0.86,
             "spike": false
           }
         },
@@ -3059,7 +3059,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.08,
+            "zscore": 0.07,
             "spike": false
           }
         },
@@ -3098,7 +3098,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.31,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -3137,7 +3137,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.39,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -3502,7 +3502,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.44,
+            "zscore": 1.46,
             "spike": false
           }
         },
@@ -3580,7 +3580,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.42,
+            "zscore": 1.43,
             "spike": false
           }
         },
@@ -3619,7 +3619,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.44,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -3658,7 +3658,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.38,
+            "zscore": 1.39,
             "spike": false
           }
         }
@@ -3945,7 +3945,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -1.49,
+            "zscore": -1.5,
             "spike": false
           }
         },
@@ -3984,7 +3984,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.7,
+            "zscore": -0.71,
             "spike": false
           }
         },
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.38,
+            "zscore": -1.39,
             "spike": false
           }
         },
@@ -4045,9 +4045,9 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Best Nuclear Energy Stocks for 2026 and How to Invest - fool.com",
+              "title": "Best Nuclear Energy Stocks for 2026 and How to Invest - The Motley Fool",
               "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOOFlhZVNVQjlVT000Q2UwZktwLVlMbV9xaFFXX3RaeVBrVFQ2clo3OEIzYUZ1aGtFeXByamxDUFhXYmliUUN0R0Q2SkM1cDBST2MxT0hJSWdBTm81ak41STFiYmFpM2xjM1NCZXBnSjNaeGc2TVhiUHBxTVZFY0VDZWJiSXVMNmVDZ2g0Rm5qclptb3Mtd2FDUmtWMHVWVDB4Tm9TLWRrWUdnY3J1d0tDZ09hcF9NRkV5SWtMUnVqUjBHY0cwWDJocm5uNVNaNDVwU2dMY2hZYVNnSHE3UHhySG43ODQ2WllDVXd0ODZVQ3c5TFQ0OERjV0RzUWhBV1M0d1lQR05GLXpPN1EyanJuMVlrRHROQQ?oc=5",
-              "sentiment": 0.743,
+              "sentiment": 0.527,
               "relevance": 0.6,
               "event_type": "other"
             },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.51,
+            "zscore": -0.52,
             "spike": false
           }
         },
@@ -4084,24 +4084,24 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - fool.com",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWDFWOEdocktUYVAxMVlXb3ZzTXByTDZVNmFXV1FxQWFvRURoS1NWUGZ6LVhiRHFmNGZpNG01eGVyU1g1RFVTa3hXVU9IM055SDQtS181N0JvOVE1OHFiMWp5Vjh6eEJ4ZXg4OUQ4RXhBRzNPOXJUNnR4eFkyeTkyYUJXYjRwa3pqVEltclgwNUY1ejQ4?oc=5",
+              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Currently.com",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVQ3NDRReTNjdUh6V3I4MV9MdU13NHFfZ2FOMkY5TFd4RHFySnVRam12ZDBqN3ltRXcwRm14d1VSR1U1SUdkMXpycF9JMFJMc00wVHBncUtwMXFPeEZsQ0o4TzktRW10SDZlMS1CV3FJZ0wzTWJqODlVQm9rTy1WZGtZd0c?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - Currently.com",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVQ3NDRReTNjdUh6V3I4MV9MdU13NHFfZ2FOMkY5TFd4RHFySnVRam12ZDBqN3ltRXcwRm14d1VSR1U1SUdkMXpycF9JMFJMc00wVHBncUtwMXFPeEZsQ0o4TzktRW10SDZlMS1CV3FJZ0wzTWJqODlVQm9rTy1WZGtZd0c?oc=5",
+              "title": "2 Nuclear Energy Stocks to Buy Before 2026 Ends - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZ1VfOGhLVzV6VlQxZkIwOVpaeHZjMndONGprNjNRd2xOMUxrRjFRbUhTNDFzYkk4WElIdmFPNEU2eTFDdWhYNTJBaGoxR3VEUFI2ZnIzdjlYNE5ueFUySWU5VWp3OEVqNzBKbEVfazV1OFNCLWx6aGNaaEFBQm94V2o4VFJVZ0tJU0Y1T0h4UDBNcVBmWml1V1ZGbkE1SnJ4RmhJM202bEtUYkRwbTI5YUFCN3MyRmxfNHV0N2FFU1dlNEFlTE1pWVVRWQ?oc=5",
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -0.25,
+            "count": 6,
+            "zscore": 0.04,
             "spike": false
           }
         },
@@ -4364,7 +4364,7 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Meta's 'Clean Energy' Exit Signals a Big Surge in AI-Power Stocks - MarketWise",
+              "title": "Meta's 'Clean Energy' Exit Signals a Big Surge in AI-Power Stocks - marketwise.com",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRm82LXJlOEhlSWtrU2lTelJLMW5PVFNMU2JWR1pMUDdvWnN4UnBWbUNYN2pheVpWdUh6RVBNd1UtSVkydkVTSWlNODkwY2V0M216YmhhQVVkOFFrbFR2bFlxLVpvQWxERW1uUE9rbXN1N2VNaExhTFZxSGZKcEthZHdCblVmYmFweExKWno2bXV4LUY4?oc=5",
               "sentiment": 0.586,
               "relevance": 0.834,
@@ -4427,7 +4427,7 @@
           ],
           "coverage": {
             "count": 37,
-            "zscore": 0.71,
+            "zscore": 0.7,
             "spike": false
           }
         },
@@ -4466,7 +4466,7 @@
           ],
           "coverage": {
             "count": 22,
-            "zscore": -0.44,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -5390,8 +5390,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.69,
+            "count": 19,
+            "zscore": 0.56,
             "spike": false
           }
         },
@@ -5508,7 +5508,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 2.24,
+            "zscore": 2.25,
             "spike": false
           }
         },
@@ -5586,7 +5586,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.76,
+            "zscore": -0.77,
             "spike": false
           }
         }
@@ -5837,8 +5837,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-19",
-      "return_pct": 0.87,
-      "zscore": 0.13,
+      "return_pct": 0.25,
+      "zscore": -0.12,
       "max_abs_z_recent": 2.06,
       "recent_days": 10,
       "benchmark": "BTC",
