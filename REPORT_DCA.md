@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.3% | 33.3% | +21.0 pp | 67% | 1.000 |
-| 2 | LINK | 38.3% | 33.3% | -4.9 pp | 89% | 0.500 |
-| 3 | SOL | 49.4% | 33.3% | -16.1 pp | 98% | 0.000 |
+| 1 | POL | 12.7% | 33.3% | +20.6 pp | 66% | 1.000 |
+| 2 | LINK | 37.9% | 33.3% | -4.5 pp | 80% | 0.500 |
+| 3 | SOL | 49.4% | 33.3% | -16.1 pp | 91% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,16 +23,6 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
-
-**BNB — BNB**
-
-Token della piattaforma Binance e gas della BNB Chain.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.2 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **TRX — TRON**
 
@@ -81,7 +71,7 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.43 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 11.5 anni.
+- **Età**: almeno 11.6 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **HYPE — Hyperliquid**
@@ -134,8 +124,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 24
-- stablecoin o token ancorato: 18
-- volume troppo basso rispetto alla capitalizzazione: 12
+- stablecoin o token ancorato: 19
+- volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
 
 ## Limiti
