@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-20 12:01 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-21 13:38 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | BTCfi Protocol | hot | 0.97 | +4.3% | $1.1B | pendle, bedrock-token, threshold-network-token |
-| 2 | The Boy’s Club | hot | 0.95 | +3.0% | $2.1B | pepe, ape-and-pepe, based-brett |
-| 3 | Modular Blockchain | hot | 0.94 | +0.5% | $610M | celestia, movement, cartesi |
-| 4 | Frog-Themed | hot | 0.93 | +2.3% | $2.2B | pepe, ape-and-pepe, turbo |
-| 5 | Liquid Staking | hot | 0.93 | +0.4% | $1.6B | staked-ether, wrapped-steth, wrapped-beacon-eth |
-| 6 | Terminal of Truths | hot | 0.91 | +0.9% | $181M | fartcoin, goatseus-maximus, aiwithdaddyissues |
-| 7 | Rollup | hot | 0.90 | -0.0% | $2.5B | arbitrum, starknet, optimism |
-| 8 | Bridge Governance Tokens | hot | 0.88 | -0.2% | $492M | thorchain, debridge, axelar |
+| 1 | Binance Launchpool | hot | 0.97 | +18.0% | $8.3B | sui, ethena, ether-fi |
+| 2 | Echo Launchpad | hot | 0.96 | +16.1% | $326M | plasma, lab |
+| 3 | Parallelized EVM | hot | 0.96 | +19.6% | $803M | sei-network, monad, pharos-network |
+| 4 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.95 | +33.6% | $618M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 5 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.95 | +33.6% | $618M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 6 | Bridged-Tokens | hot | 0.92 | +10.5% | $516M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
+| 7 | YZi Labs (Prev. Binance Labs) Portfolio | hot | 0.90 | +11.4% | $14.3B | sui, ethena, pancakeswap-token |
+| 8 | Terminal of Truths | hot | 0.89 | +12.6% | $200M | fartcoin, goatseus-maximus, aiwithdaddyissues |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Tokenized Assets | -50.5% | $23.1B | figure-heloc, tether-gold, hashnote-usyc |
-| Real World Assets (RWA) | -33.7% | $47.6B | figure-heloc, chainlink, stellar |
-| Tokenized Exchange-Traded Funds (ETFs) | -21.6% | $462M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| Tokenized Exchange-Traded Product (ETPs) | -21.6% | $462M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| Long Launchpad | -17.8% | $284M | artificial-inu-3, boner-coin |
+| Crypto-Backed Tokens | -7.9% | $400M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
+| Robinhood Chain Meme | -4.5% | $1.1B | artificial-inu-3, cash-cat, greenhood |
+| Metagovernance | -3.5% | $197M | convex-finance, dinero-2, index-cooperative |
+| Algorithmic Stablecoin | -1.9% | $1.5B | usdd, hive_dollar, hylo-usd |
+| Buidlpad Launchpad | -1.4% | $502M | falcon-finance-ff, lombard-protocol, sahara-ai |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
