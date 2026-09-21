@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T05:17:00+00:00",
+  "generated_at": "2026-09-21T13:10:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-21",
+          "return_pct": 5.16,
+          "zscore": 2.62,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.16,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin ETFs Swing Positive as Token Holds Jump Above $81,000 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLWdZMG9mZHJaTjRDZHZBZjRKc0kyTTh1bFRfYk52eTVScy1wX3JadDNKRHotTmpnOGtabnZ1dU9SUmJPdjJpRkpKc05xNVN3Sjh2WDlNVG1BUGsxRnVjR1R2Q2NxNkJ1dGtFVTdnMDZNOS11c0RqVDhLODRQVkYtSG10aG1JTmlDdkJxaDVkczVpWUNTQnU3SE40a0o5d3M?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.823,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Price Forecast: BTC rally tops $85,000 as ETF inflows fuel bullish momentum - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdFNPcG5YTV9oMHNNbGpELU5TSUJBRnJ1S3lUNVJiLXp4WnMxUGRmbmotLTBOUVdvWEFVWjRUV2p4VENRX1FOazVrVGpTMExBU3dWX2hQOTBQTDU1enlxY3dEZndBekpkSk9sbS1fUXJzazFtTzljZzV0Q3o1Wk9EZmRIaXhhMGtfd041THhfeHN0R25EdENYbDdnTDN3M1pFSE9fQ3hDZXBKeXBRaUVHb2VhR2lSaV9fT0h2SlF1ejg?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Better Buy Right Now: Bitcoin vs. Dogecoin - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZkExcUJ3NFMwZWctLWswNWVsWFhfLWJSSlBnYjRSNnpfaG5IVU9LQUNMd011NS14R1dUS05HQ3pLNWxlVjdOZFA4VGxLa3BUR09oMTR6NUhmWjUxU2ZCUkg3WEhLTndfaVJ3Y2RHWXBoNkdTM1BZd0htaFRERm5pR0hpUnp6SWs3SU9pelFXWFg1dFlB?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 74,
+            "zscore": -0.97,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-18",
           "return_pct": 5.89,
@@ -200,45 +239,6 @@
           "coverage": {
             "count": 165,
             "zscore": 1.28,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-20",
-          "return_pct": 5.44,
-          "zscore": 2.99,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 5.44,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Why Is the Crypto Market Up Today? Bitcoin Tops $71K as Trump, CLARITY Act Optimism and Treasury Buybacks Fuel Rally - CCN.com",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA4clU1M3JLNjRoby1GcjdtQlFtLUtnZkJSbjV1cG1KanNPcl92bmQ4T3RkYXRGTHNEMWtvV1hOYjI5N1Rkc1lVM1hlMmp1b1gwYWQ1ZXFCNHV3RTJ6bzdTdkN6NVBFSnVkb05KUWhYcGUxSWFBd2xB?oc=5",
-              "sentiment": 0.901,
-              "relevance": 0.96,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "100x Leverage, No KYC, $50 Welcome Bonus, and Double Deposit Bonus — Trade Crypto Futures on BexBack - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQUFEwWTdoN3EyenRlanR5TEhvT0FTRWQtX0VMXzZUWnlONFpQNTdLd20zelBuX1oxMEptQWZyc2ZBZGQyQm9TLU5felZQQnVOUWhJMnR5bEZ2YzJvTkFtR25qT2dPYmt1Y3JmcUJ5WDR3azBsU2libjhfQUhGdEhtcFpCZVViSkthdnNvSjVSV1QzTkNSaHhLQ1ZHM1BfcFdTY1RSZU9iUGdYaDNqbndsZHlxblNaSGxId2QwRFlnT2Z3UzJGZk1lcUxSUzBMRE9fTEx3NXFKZlh5bmdhdk1Xb2c3d0pZTGRO?oc=5",
-              "sentiment": 0.832,
-              "relevance": 0.933,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin ETFs Pull in $189M as BTC Tops $68K on Treasury Liquidity Boost - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXV2d0xVdGZqT3FYYWJ5WEdtd2h0NHBNb09hVENVanNFLXRROUxoTllsSXU1dWRFam9qMGVVQkV4SkZMM3NFVUs0dDVkN1ZNMUNoRHBpQmxNREFOdFk1b1lUZzNQZXJlVDZkc1phQmtjQldBNHRLUFhtdXFQZTYtMjh2cVU2ODRGdFFtcUM4aE5mNk5RN1ZhT3lkd3lIRFUzQ2dibTBxbURLREdCc2l3ZFZQanY5SzdVSzNWLWtwZno?oc=5",
-              "sentiment": 0.778,
-              "relevance": 0.911,
-              "event_type": "etf_flow"
-            }
-          ],
-          "coverage": {
-            "count": 173,
-            "zscore": 1.57,
             "spike": false
           }
         }
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-21",
+          "return_pct": 5.63,
+          "zscore": 1.42,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.16,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Best Crypto to Invest in Right Now: Bitcoin, Solana, and Why Pepeto at $0.0000001896 Is Drawing the Smart Money - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbm41dU1VNzYwaWlGMDhkYnlVUWw4Q0hWRDBucjlBQXFwUTB2WUdqVDNFa0dsQ1piVE8yV3YtNVN5M0NjSE03WEtuYXZVWmp2YzVPZGpyR2lMVWUwMGl4OUFQS1Z2eEJnVkJJR2xSeExpWXJheXB0aC04X1l3SG5LbEcyOHBCWlhVNE9Cdy00YzQzYVVua0RWN0FXeV96VkF2TUYwTTJVZ005VmY5aDBMTXduX2ktTDZLUHRVUFRNQzE3bE5tLU5tTWVwSmVYVlAtX1pMMVBsZUVhRl9CNVBwSXUxMnE2N1g1ODdDZFVzS2puZExtczJqSmpnUm85Z0xqRlhkbWdxQlU4NkE?oc=5",
+              "sentiment": 0.784,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Bitcoin Jumps 44% in Third Quarter, Best Quarterly Return Since Q4 2024 - bloomingbit",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ySDFMSHlBX2ZaSVdEa0JXd1hWQTAzVnFQN1IzTHJMaGxlU1AxZGpXbkRMMXNJYkNOTER4SkRuNzdqYVF4UzVEVEUtZFVmUUVkQjRRQQ?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana's SOL token jumps past $116, triggering $18M in short position liquidations amid a strong short squeeze. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRjZwQUp5Vk92YWk3QjBLQVpyYmVYcy1zLS1FZmUyQXJpYmZlak5lUG04V3ZSUDdXT1JGeUVFTTJnaWZwNDNEZVlYcFE1QXhzV1Y5dDVtdFhfN3ZWbWg3VXl3d1JRdlRlV1dYdW85N0I5T3dsOWowZDhReHZ0RWM1b0JhaERGazlMZlQ1LWtYbmF6elNZbTh5RUdTdVBIbUVhNE5BRjhQdFBJdw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 21,
+            "zscore": -1.38,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-18",
           "return_pct": 10.82,
           "zscore": 2.67,
@@ -681,46 +720,7 @@
           ],
           "coverage": {
             "count": 66,
-            "zscore": 2.15,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-26",
-          "return_pct": 5.76,
-          "zscore": 1.83,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.59,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Solana price rises 14% in a week, testing $100 resistance amid strong market and network factors - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZFR2R09iUWNFSHpQR09pVmVDc2VodHJkMmJWM2dsV29scDVnUHBkc3pHRTV5SGZjNkdlakdPbDVsTWJ5eVh2NGZldVNmdFg0V0ZCLUhWemh5dW80TGJxS3Y1QllxdWFrRkVBTnJ1RFJKZ0swZmhtb0N0ZUJnMWx2aEZENmIybWRRUDRzeFdSak15SG9OTU1fMGltSlZSNGljLUE?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Set a Record in Everything Except the Part Holders Care About - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1hbVE5MUJ6R3JHMVp3c25PY1VON25BNGNkU3MwU1BGUERBMlFWNjdrN3k0emg2R2kyV1I2SFZYX24xeVlkVl9rb3Vwb0pmd2VjMnJKczgwYjlYVFZ4ODBlV2wyR0tLcWcyY29oSUdCS0RicVB6?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana price forms bullish setup above $96 support - Crypto News",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1IakJPWW1nYzJ6OHVnR1MwM0Fmdk5WSzh6eHlPVF82dThhT2d1bjYzU0pVRV9RSU1BWmdKYWwzUWxFN0Y1MGdLSWhKTGY3UUUxMjNHMG9NTV9VNmxJY3RjUzlzM2hnY0N1Z3B5YURyamVFSkNkbC14YTN3?oc=5",
-              "sentiment": 0.402,
-              "relevance": 0.761,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 52,
-            "zscore": 1.33,
+            "zscore": 2.16,
             "spike": false
           }
         }
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-21",
+          "return_pct": 5.07,
+          "zscore": 1.35,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.16,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "3 Top Cryptocurrencies Down 67% or More Worth Buying Right Now - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMzBsRmJoZTR2YXVWeU9zbzVDczU0TTBQUVNyVHVMTUJIMlZNZ19IV0ZSenZvM1RfOGxpUkZIVERVZ3BEWE1RSDBLWUh6cU8yQzIzYWxDMGVrMkhtcTJmVkFic1dJUE15NEFEV2JjNHNuTm56ZWV1dnprTGY1am1BMWNkeFdsQnUtbjZOT0ZLTFNfLU9aM2liX0JINA?oc=5",
+              "sentiment": 0.458,
+              "relevance": 0.783,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "3 Top Cryptocurrencies Down 67% or More Worth Buying Right Now - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOREhzc0pVd1V6R21QVm5Hd2pNRWpOVXh1dUowVnNKUERqRWx6Y3BvUWU5enhUenRpY1NIUmstOFhWaFpEYVd1NzBSbElMb3lrcDZFQXRrNWo3UGpReDZwclBCMzVnZk5lTXk1VTM2Ni1mSkpXUzRzX3I5bkt0Y004MFc3VUZNOURRTkxtMnU3em5qeE1ETlE5UQ?oc=5",
+              "sentiment": 0.024,
+              "relevance": 0.61,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink (LINK) Surges 3% on Institutional Adoption, Accumulation - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Z05nVnNGeW94RjhicWZoeTBNck80NHZubFpFNVBZSm91bnZybDVvOUU5N0I5VEk1NVZ0LVFDcWlyTlF0YVUzdFp4ZzVMWjljanpYb0VNcjZwZURhcEdxSVplczhuSWtjUExFT2Vlc3o?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -0.97,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-18",
           "return_pct": 7.36,
@@ -805,7 +844,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 0.03,
+            "zscore": 0.02,
             "spike": false
           }
         },
@@ -835,7 +874,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Chainlink Price LINK TA LINK Technical Analysis - Altcoin Buzz",
+              "title": "Chainlink Price LINK TA LINK Technical Analysis - altcoinbuzz.io",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQXBQTjNWRXNRdi1JVTRDbW9YVDRnemlVdThfcXpGc3VGYTdjNWpzQUx0c3VmZS1oVlcyeEFRQXNIZW9Hc3E5RDVNOUhhd21KNE8yYVpHcUdxeXdnSTJVdXFWalZQLUt1dTdzMUZOcV92X2ItcEIxRWlidXRyMUotNDVaQ1FmRERXSWlwMkhEUkpNMVdkSDU5Q0JTR0p3SUJNVk5TRUhkYndDbVdRUEdkN05yNzBOMXA4eEE?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -844,7 +883,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": -0.34,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -925,45 +964,6 @@
             "zscore": -0.47,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-28",
-          "return_pct": -4.28,
-          "zscore": -1.56,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.02,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Inflation fight takes center stage as Warsh warns the Fed still has ‘work to do’ on rates - Los Angeles Times",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOc2M5LUdkTFFjYjlFbFZORUJ6WXBwaUlydVpfWXVGRDU1ZDJYWWRfZzVrNm5fOE56N3p2OUVzNElJUTZjRGstLWxOTFgzdXpVdmJ4TG41RlNNeVljZjQ1RENTRFRwTU1mV3BmX2Q4UE5sc3FHRllQOHZXQWtSUzBHVXU5aEhmbXpTb25ncnlXSGR4aXppemw3ZDUxZUtETGdYM01MUGxpMk1xdWVvc0hScHZ4Tko0N3o0b21jYmtleVFpb1Et?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed chair Warsh warns inflation fight is not over as markets eye rate hikes - VIDEO - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUFZqY0dTTjNHcjA4OWtUSWxVZ2h2eHN3Q0NhNkh0dGtzX1BuTHlyRW9tMzBXUGNQdzZ4cHVrUVNHZ3Q3LThLY0JOZjYyUmJoSEZwUjNlN0Q1eEVLRENDcm5CbXdHVmQyczl0cnFIUXNmeThSMjlscXpsWEFtY3o2aHhQUTJmdjhMZWRRVnpwcUtPa1pUM0tYd3R0YkJvcDNxdHZabA?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Chair Warsh not ruling out interest rate hike amid inflation concerns - PBS",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRUozWk5NQ1U2TFVwaG1VUWxkeU1BQy1vTm5FUWJORHBZTmhwcnAzZFFUVkNtVUVuYXFweGlxOE1jUndZQWR4U244NXFEcWFILVVuNXdoanZzYlNBb0RpY2FucUZRTGlhQVZUdVhJWFNZODZkQU5BRXd2Rk1SQmJqc0k1R2l3RktXOVFDVVdScnlhdVZ4RTBlOUsyRklLZklhZHd1MzFFMGZFbXc?oc=5",
-              "sentiment": -0.357,
-              "relevance": 0.743,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": -0.24,
-            "spike": false
-          }
         }
       ]
     },
@@ -972,6 +972,45 @@
       "name": "Polygon",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-20",
+          "return_pct": 4.35,
+          "zscore": 0.59,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.11,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Surges 3.46% on Burn, Whale Activity, Stable Market - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tZ2xnQmZuWjBPQS1hM0w3WkQ3eEJFdmx6MTNVOVFVcGEwd1JQcU5KbF9haC0yYlFOdnBDWXZtRThhVk1hMVFXQ3BmSmlhVFM3clBmUk9Wc2dSTXZiT0VYOEh4YUdZZUxwUFAzSVpaMUk?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.718,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - AMBCrypto",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUFowTTZOeUk2c2RpYUNLaGFuRmpmQlZGaE85TGhsdFpkejF2TEVwVXg2OTZxOE5qdllIVkM3YklkYXhTbmNaNjZ1ZGhEN01QeGV1WmNTOGkwRXZCQ24wZ241VkU2YW9Da3lFQlNHMk95dzZhLUNWRWk3X1JDRXVpNTNPdWE0cEh0RUxrTm1xOVZMSmZ5MFNtZS1pY2Y4YTg?oc=5",
+              "sentiment": 0.635,
+              "relevance": 0.654,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Foundation CEO Touts $24.5M Revenue as 100M POL Burn Nears - The Coin Republic",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWHB5aGw1cTFNc0hPWEhWSlhGbzc0bVcxUjNuVEY5ZUlLTzdfRlo5bk9ydTZEN2FkWG1HTWlkSC1rZFRzUFpqMkN3NkN5M1hkS2MyQ3M2aXMtelRIMkFtQzBRZ19jTlVLcmRGaHZoem85Q0I3RDZJM2ZtYzRSNXlzZDFJeTdhZHl2R2hibkl5NmNKYm1HSUg3d0E0S3ZwcXpUNWJmNzVmZTE5YjlvV0HSAbMBQVVfeXFMT2JOUGVoVjNKTUZsT19fSExsV0NBLUpSaHdDWTNWemF5Um1mOE1YMm1jTHRXbEthaFRxUmlpM05fNnJfZmRleWk4TlIySmt4WE0yeXlfcDhtSXlPY1loWHlpSkp2R2lpLUlsV2tSOXU0TUxHb0RiUUtLRlVySTNCUkFoU0s3SWlSd2VabE1icmQ1cjI2M1AzNndxTTV1T2pRUmNnOGZHSVRPZ0oteTE0SDFQWFk?oc=5",
+              "sentiment": -0.026,
+              "relevance": 0.6,
+              "event_type": "earnings"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": 0.37,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-18",
           "return_pct": 9.12,
@@ -1164,45 +1203,6 @@
           "coverage": {
             "count": 12,
             "zscore": 0.36,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-30",
-          "return_pct": -8.99,
-          "zscore": -2.25,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.74,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon discloses security flaws fixed in recent hard forks - Bitget",
-              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQaDJialNwT0hzTVVudUNVUGlCbGl2eG5VRmVnQ0t2b085eC1UUGpfVlFFVEFzNHFzOXo2M3dHT0loQnhFZGdFTm1OX3NJVUJTVkQwZlRZLTM5ZkJwRlJCTjVuONIBY0FVX3lxTFBQaDJialNwT0hzTVVudUNVUGlCbGl2eG5VRmVnQ0t2b085eC1UUGpfVlFFVEFzNHFzOXo2M3dHT0loQnhFZGdFTm1OX3NJVUJTVkQwZlRZLTM5ZkJwRlJCTjVuOA?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Quietly Patched Security Flaws in Two Hard Forks Before Disclosing Them - Decrypt",
-              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE54cGN0UGFSOWpYVzdHQzZ3YzM0dUxjemp0d2ZWdVZOZTBYeTlMT3N2UlFyNklzMU4ybTdMNGphS0R6aTdYWnRPMHhuNXpQUGkwallRb2o3andZWHZCYjlEM3djbDgwaURvX3gza1BKbldGUdIBekFVX3lxTFBYUklaS0FYOF94Z2FDYWx5MTF5amk3ZXFsQmFhNmVvMjVqSTVSVHY5U2dPRm1uUVQwdzZYNGNfeFk1Ymltckx6ZFlJOU5jTFdERUQ0eHdZeURMLUZ4S1l5dUQ4Zy1ucGxJUlUwQ1d1bENLMXNWRGdqbk1n?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon discloses security flaws fixed by hard forks - grafa.com",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN25fcF9aX19iVExvOGFRaV93QWZpQ2FoZUF2U2hGRU9jZ19yankzdlYxSXJDWlJjZktPSnRWYUJfYnR4eFdCLU5qcE81OUVLUkExVTRDRDZ6c2RSZnFCNWpGU2IxTlgzNlpSZnYybGJBWTFjNDV0aU8wTEx4Q2tTVlBjQ0YzbHZtRk9Ncmpn?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.35,
             "spike": false
           }
         }
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -1.0,
+            "zscore": -1.01,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 2.01,
+            "zscore": 1.99,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": -0.09,
+            "zscore": -0.1,
             "spike": false
           }
         },
@@ -2981,7 +2981,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.84,
+            "zscore": 0.86,
             "spike": false
           }
         },
@@ -3020,7 +3020,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.06,
+            "zscore": 0.07,
             "spike": false
           }
         },
@@ -3059,7 +3059,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.29,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -3098,7 +3098,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.37,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -3463,7 +3463,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.46,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -3541,7 +3541,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.43,
+            "zscore": 1.42,
             "spike": false
           }
         },
@@ -3580,7 +3580,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.43,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -3619,7 +3619,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.39,
+            "zscore": 1.38,
             "spike": false
           }
         }
@@ -3664,8 +3664,8 @@
             }
           ],
           "coverage": {
-            "count": 75,
-            "zscore": 1.22,
+            "count": 76,
+            "zscore": 1.27,
             "spike": false
           }
         },
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.52,
+            "zscore": -0.53,
             "spike": false
           }
         },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.04,
+            "zscore": 0.03,
             "spike": false
           }
         },
@@ -4147,7 +4147,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 1.14,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -4923,7 +4923,7 @@
           "events": [
             {
               "source": "googlenews_robotics",
-              "title": "GOOGL Expands Gemini Into Robotics As Big Tech Races To Build Physical AI — New Robot AI Can Tap Google Search For Real-World Tasks - Stocktwits",
+              "title": "GOOGL Expands Gemini Into Robotics As Big Tech Races To Build Physical AI — New Robot AI Can Tap Google Search For Real-World Tasks - stocktwits.com",
               "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMnZGcE1FLVVRWWpxMkkyVE5kcFlPSjhBbVFCaEstbjNwWF9BQXBaRDA3eEF5M29scEhLLVl4amNZRXI4VDQycHVVTVprQ3dPZFI3dEFmTkpVR0l6M0lsTVJhQkhyWDhpdWJWUEtrZ2VKdFM3SGs0VkdHRERkbmYtSWxaTjFYOEZrODZway02dXhKclh4S0Mxc0tEcHJiX1M1UnhtR3l2S09IUkwwN1paMFBNbmU0RlpwQUV0M0NtYXRMUWNqbklF?oc=5",
               "sentiment": 0.103,
               "relevance": 0.641,
@@ -5150,7 +5150,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 0.84,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -5228,7 +5228,7 @@
           ],
           "coverage": {
             "count": 63,
-            "zscore": 7.8,
+            "zscore": 7.72,
             "spike": true
           }
         },
@@ -5305,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": 0.9,
+            "count": 24,
+            "zscore": 0.98,
             "spike": false
           }
         }
@@ -5351,8 +5351,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.67,
+            "count": 19,
+            "zscore": 0.54,
             "spike": false
           }
         },
@@ -5798,12 +5798,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-21",
-      "return_pct": 0.15,
-      "zscore": -0.1,
-      "max_abs_z_recent": 2.06,
+      "return_pct": 5.16,
+      "zscore": 2.62,
+      "max_abs_z_recent": 2.62,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-09-18",
