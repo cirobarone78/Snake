@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T05:15:00+00:00",
+  "generated_at": "2026-09-22T11:59:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -9,27 +9,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-22",
-          "return_pct": 5.18,
-          "zscore": 2.63,
+          "date": "2026-09-21",
+          "return_pct": 6.73,
+          "zscore": 3.44,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.18,
+          "market_return_pct": 6.73,
           "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Overview: Bitcoin tops $85,000 post-CLARITY Act failure – TAO and FET lead gains - Mitrade",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPM2VabEFrSENyX1lkWFNhYW5IQmdmNWE3RFZ5WDlmTXdNVzdpaUJENDdSc0s2bnJGN1gzLTRoYkQxdnROdkFOQzhCMXltQjc3WURVYlhSS2dsR1VLaE9vWUJWLWZtcEVFYlgzNHo2Zkl1aWhhLUtESmRLVkNtV1lPRGNKNA?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            },
             {
               "source": "googlenews_btc",
               "title": "5 Best Bitcoin Casinos | Top Crypto Sites With Provably Fair BTC Games (Sep 2026) - Muddy River Sports",
               "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaDlwOThTdXZ2TGdUYUNXMnVPVjJ3QU56ZEZCbTJBbnJmdl8xUkp2NzNlVlNvQm5KY3ZiWEhUMTRKY1R5bGFiWEY5VHZlZlA2UXpWb1lrOFVjbEtvTGVjYzFId1V6elhMeXRuX2k0UFFLWXB3bjdqdUNoR3hLZTZjYlQyR2FidmJpSXZEZVhPRUVtTFFYMWtvNk9IVmNlQlVhU3BzWG1XRmU0dFRnVV9SZHdzdkZUOE5ydHlGX2tvUmRrbUJETlNzc0ZtNUJmMllCX2xXaEloOA?oc=5",
               "sentiment": 0.807,
-              "relevance": 0.723,
+              "relevance": 0.923,
               "event_type": "other"
             },
             {
@@ -37,13 +29,21 @@
               "title": "Bitcoin (BTC) Price Today: BTC Breaks $85K Resistance as Bulls Defend $80K Support - Brave New Coin",
               "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNc0hvdnpaa2R2WDBicEQ4aUdiWDZmblNTRVNxVXByYjJFZ3BRdzJHeGxKRjRTZVE0dldISGhxaGVJQ2pOWlRlZnpFdVdIX2I0c0ZfODRwRHotSjJuWW40OF9IczdTamphSDdPQmllQlcyMHVXUXlxQ1RfV3EzZzlFeE9kWnlJb1VJWXlGQ21MNDRMcjh3elZsSTEyVHlVZzljeHk2Qy1MXzhJRVpFQUVJcw?oc=5",
               "sentiment": 0.727,
-              "relevance": 0.691,
+              "relevance": 0.891,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -3.08,
+            "count": 150,
+            "zscore": 1.56,
             "spike": false
           }
         },
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-21",
+          "return_pct": 5.05,
+          "zscore": 2.08,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 6.73,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Bitcoin Tops $84,000, Ethereum Crosses $2,700 as Crypto Market Extends Strong Rally - TradingKey",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcTdpdnp0TnhQRUJKMWpId29LVlFxeldFLWw3V0IzUXZPRUVQS1AxS0FtZ1dyZFBSNmVSWnBBZ2VsQ0dDZU5BWG9OM1NkVVV2dzRhN2o0bzFDeExIcUY1aHlMQkNpV0tpZkptQkxzeXdyNTlKVGxSa25rQ0hTTU0xdXRKVW9pbTd0VmNkZ3gzSm5lRnkyNWExM2pObnlmQTVDNW9BX3NSdHpab0dZZXBSYmhadjh0YkpyQlRGMC1rZEJUUUludXRUUTgwZlZwZVA3SEJwekpGY3BXN0c1X3pn?oc=5",
+              "sentiment": 0.796,
+              "relevance": 0.919,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum (ETH) Price Prediction: ETH Breaks Higher as $2,631 Support Puts $3,520 Target in Focus - Brave New Coin",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWHpUVzVVZW1jaVYxUkR2UG55REtYZ3oxVjZnR2ktcy1vb0htQl9LUFV5bVdSNGpVd2Z4YXN5QTRxLTRSSk1SZTN3VktmTnBPRDB5QTFObkwyb3I5cE9xei1oSVJ2WlRxTE5td0ZaQWM5eGRybmFZVDFRZ2lLWG9saFQyV21sOTZFQW5ReVVaaXhrQjA0R2RfWDBXRC1SVEU3bGtDTkJlLWNNRUNiZV9xX2x2VVcxdE1jSlpLel9uYUw?oc=5",
+              "sentiment": 0.727,
+              "relevance": 0.891,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 115,
+            "zscore": 2.12,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-18",
           "return_pct": 6.71,
           "zscore": 1.46,
@@ -443,45 +482,6 @@
             "zscore": 1.63,
             "spike": false
           }
-        },
-        {
-          "date": "2026-07-31",
-          "return_pct": -2.97,
-          "zscore": -1.61,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.95,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum price today at $1,889 as fear index signals Extreme Fear - cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VTHNiQWNaeFFmY3hJZEZ3UTQ3Q2dfMzM0VDUwM21OZWxBSURDWDBJbTRScHBQcm5oQUxSZF9TWGtLZ2lVMXU1cTdKNWNJcHBFcldHb1QwSkl1dw?oc=5",
-              "sentiment": -0.771,
-              "relevance": 0.909,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin Stuck at $63,000, Ethereum, XRP, Dogecoin Down up to 2% on Weak Friday - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWHBrTzI3aENFcGdCOVNRdW5iWkEta2VkazNyNktIOUlsQl81eWFWbk04WUhkc1cta0lCWTc5cmFpbDNFV3AyRnlFTDZNenBCcEhqNndBQm9DXzZibXp5NFZ5TEp2VS1sQ3MtZ1F5VGJ3VGRsV0NqT3E5ZERqOXpGeGE3aXFwMFIzNU16MFFUNjB5V2xqUU9Jc1FyWlh2dnpmOC1ueEVrR1J2TE93bzFPcFUzck5KZWNNLXFkMmNNZzVsRmRoczdzWXhtNzV3Y2s?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.84,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum's 43-day staking queue isn't a clean demand signal, Sygnum says - The Block",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQ3RJREhOMTlGRDdBSHNnbHV1bjBBX0xRam5neVUweTNBb0ROcUpEdTJaSmx1NzAzdWJHenh1RVdma0pudWo4Wm0zSGJmNG8tOUYzQXpiUV9kcGlqY2dVcE0wZ1BVdkQyQ2Roa3N5U1Nub3BQUUhGQ0lmckNwVVJCRU5DTnBTaGlfbGdZZzNoc3BsUWluZG44c0dpai1UQQ?oc=5",
-              "sentiment": -0.584,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 59,
-            "zscore": -0.26,
-            "spike": false
-          }
         }
       ]
     },
@@ -491,19 +491,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-22",
-          "return_pct": 4.62,
-          "zscore": 1.14,
+          "date": "2026-09-21",
+          "return_pct": 6.85,
+          "zscore": 1.77,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.18,
+          "market_return_pct": 6.73,
           "events": [
             {
               "source": "googlenews_sol",
               "title": "Best Crypto to Invest in Right Now: Bitcoin, Solana, and Why Pepeto at $0.0000001896 Is Drawing the Smart Money - StreetInsider",
               "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbm41dU1VNzYwaWlGMDhkYnlVUWw4Q0hWRDBucjlBQXFwUTB2WUdqVDNFa0dsQ1piVE8yV3YtNVN5M0NjSE03WEtuYXZVWmp2YzVPZGpyR2lMVWUwMGl4OUFQS1Z2eEJnVkJJR2xSeExpWXJheXB0aC04X1l3SG5LbEcyOHBCWlhVNE9Cdy00YzQzYVVua0RWN0FXeV96VkF2TUYwTTJVZ005VmY5aDBMTXduX2ktTDZLUHRVUFRNQzE3bE5tLU5tTWVwSmVYVlAtX1pMMVBsZUVhRl9CNVBwSXUxMnE2N1g1ODdDZFVzS2puZExtczJqSmpnUm85Z0xqRlhkbWdxQlU4NkE?oc=5",
               "sentiment": 0.784,
-              "relevance": 0.714,
+              "relevance": 0.914,
               "event_type": "other"
             },
             {
@@ -511,7 +511,7 @@
               "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
               "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
               "sentiment": 0.691,
-              "relevance": 0.676,
+              "relevance": 0.876,
               "event_type": "fed"
             },
             {
@@ -519,13 +519,13 @@
               "title": "Bitcoin Jumps 44% in Third Quarter, Best Quarterly Return Since Q4 2024 - bloomingbit",
               "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ySDFMSHlBX2ZaSVdEa0JXd1hWQTAzVnFQN1IzTHJMaGxlU1AxZGpXbkRMMXNJYkNOTER4SkRuNzdqYVF4UzVEVEUtZFVmUUVkQjRRQQ?oc=5",
               "sentiment": 0.637,
-              "relevance": 0.655,
+              "relevance": 0.855,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -2.4,
+            "count": 68,
+            "zscore": 1.8,
             "spike": false
           }
         },
@@ -732,6 +732,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-21",
+          "return_pct": 4.97,
+          "zscore": 1.33,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 6.73,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "LINK Slides Below Support as Apeing Hits 460M Sold: Best Crypto to Buy in September - TechBullion",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaEhQdG1RbE5mb2Q4R0hrblFfZFZKQUF5YTV1WUoySC1ibWJ2aDFWZUQwQThTSnY2aTJYRENqNFdsRjNZVlNwc3cwaWJRUlFvbFBYdy16ZDRTUlF3eTdMRmVuZFVFMmlqd25CY1BvS21YblgxTVY2RzFHSVpYZ2dETXVBN1p0MVlCeThFaU5HNFI3d3ZTZnQ5bzFJSXNoa05TYW5PYUMzX1VsNzQ?oc=5",
+              "sentiment": 0.784,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Best Crypto to Buy Today: Why Remittix, Chainlink, Stellar and Avalanche Stand Out Right Now - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPM0NBcmlsZmVGbEhwV3Q2elhVbE0xNG1hTll5Ri1UdXc3cGtubWF6S21fVERwX2lpT21RQUdZYW83NC1lRXB0d3liaXBiYjBXeUtMal9lWG5OcDN4M1g5bTZDWER2MEQzVmpmcHc1SndxOE1HdVYxdjJibGpGb1lKS1hKdEpPUDJCMnFlS2YtaTRMWXZPcVQ4cU52a1lGRThUOVc0VmFjUUVsWU5iUlZhYmJ6cmpuZDN5c1JsMVQ5T28yS0JSQjR3QkcxTHNZMEpJZGpKOUZ1R0ptc2hNY2JPdkxQbmd3cFprTkpvbVBSYw?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 11,
+            "zscore": -0.17,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-18",
           "return_pct": 7.36,
           "zscore": 1.52,
@@ -923,45 +962,6 @@
           "coverage": {
             "count": 14,
             "zscore": -0.47,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-28",
-          "return_pct": -4.28,
-          "zscore": -1.56,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.02,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Inflation fight takes center stage as Warsh warns the Fed still has ‘work to do’ on rates - Los Angeles Times",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOc2M5LUdkTFFjYjlFbFZORUJ6WXBwaUlydVpfWXVGRDU1ZDJYWWRfZzVrNm5fOE56N3p2OUVzNElJUTZjRGstLWxOTFgzdXpVdmJ4TG41RlNNeVljZjQ1RENTRFRwTU1mV3BmX2Q4UE5sc3FHRllQOHZXQWtSUzBHVXU5aEhmbXpTb25ncnlXSGR4aXppemw3ZDUxZUtETGdYM01MUGxpMk1xdWVvc0hScHZ4Tko0N3o0b21jYmtleVFpb1Et?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed chair Warsh warns inflation fight is not over as markets eye rate hikes - VIDEO - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUFZqY0dTTjNHcjA4OWtUSWxVZ2h2eHN3Q0NhNkh0dGtzX1BuTHlyRW9tMzBXUGNQdzZ4cHVrUVNHZ3Q3LThLY0JOZjYyUmJoSEZwUjNlN0Q1eEVLRENDcm5CbXdHVmQyczl0cnFIUXNmeThSMjlscXpsWEFtY3o2aHhQUTJmdjhMZWRRVnpwcUtPa1pUM0tYd3R0YkJvcDNxdHZabA?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeTZYd1JtU2tpSmRvbTJqT2J5VHpCQzJMVFR5WWJlZ3ppLTNjU3prR01jeUtWSXVEbWZScmw5S2RfdmVES3dEOThSeGwwMGVvOWs5NWpjNjU3M3JFdmpsVlRyaFJ6cEU4SWptdUM2MWotckR3dDYzSkxzUUJyOEtWbDFkMzJWZG1sSWd3d3Q3d3BndjlIb2ZfaGthSDlWdFZESEpkdERKbEJ4VnVGRmJGZFRR?oc=5",
-              "sentiment": -0.402,
-              "relevance": 0.761,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": -0.24,
             "spike": false
           }
         }
@@ -5798,12 +5798,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-22",
-      "return_pct": 5.18,
-      "zscore": 2.63,
-      "max_abs_z_recent": 2.63,
+      "return_pct": -0.74,
+      "zscore": -0.52,
+      "max_abs_z_recent": 3.44,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-09-21",
