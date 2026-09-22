@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.8% | 33.3% | +20.6 pp | 83% | 1.000 |
-| 2 | LINK | 38.0% | 33.3% | -4.7 pp | 97% | 0.500 |
-| 3 | SOL | 49.2% | 33.3% | -15.9 pp | 100% | 0.000 |
+| 1 | POL | 12.3% | 33.3% | +21.0 pp | 74% | 1.000 |
+| 2 | LINK | 37.9% | 33.3% | -4.6 pp | 95% | 0.500 |
+| 3 | SOL | 49.8% | 33.3% | -16.4 pp | 97% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -52,16 +52,6 @@ Layer 1 di smart contract; adozione DeFi finora modesta.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.20 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 6.5 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**SUI — Sui**
-
-Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
-
-- **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato dalle commissioni, ma meno della metà dell'offerta è circolante: gli sblocchi programmati sono il fattore dominante sul prezzo.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 2.44 volte la capitalizzazione attuale.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 2.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XLM — Stellar**
@@ -115,7 +105,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -123,8 +113,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 22
-- stablecoin o token ancorato: 19
+- stablecoin o token ancorato: 21
+- capitalizzazione sotto la soglia: 20
 - volume troppo basso rispetto alla capitalizzazione: 9
 - già in portafoglio: 6
 
