@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-22 12:21 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-23 12:33 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | The Boy’s Club | hot | 0.98 | +12.9% | $2.5B | pepe, ape-and-pepe, based-brett |
-| 2 | Frog-Themed | hot | 0.98 | +12.2% | $2.6B | pepe, ape-and-pepe, turbo |
-| 3 | Airdropped Tokens by NFT Projects | hot | 0.95 | +5.3% | $834M | pudgy-penguins, apecoin, loaded-lions |
-| 4 | Terminal of Truths | hot | 0.94 | +8.9% | $217M | fartcoin, goatseus-maximus, aiwithdaddyissues |
-| 5 | IP Meme | hot | 0.93 | +4.5% | $931M | pudgy-penguins, apecoin, troll-2 |
-| 6 | Bridged-Tokens | hot | 0.93 | +2.7% | $530M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| 7 | Olympus Pro Ecosystem | hot | 0.91 | +4.5% | $118M | synapse-2, spell-token, thorswap |
-| 8 | BONK.fun Ecosystem | hot | 0.91 | +11.4% | $328M | useless-3, scamcoin, kori |
+| 1 | Gaming Marketplace | hot | 0.98 | +24.5% | $258M | immutable-x, overtake, jackpotter |
+| 2 | Airdropped Tokens by NFT Projects | hot | 0.98 | +9.3% | $926M | pudgy-penguins, apecoin, loaded-lions |
+| 3 | Modular Blockchain | hot | 0.97 | +12.5% | $727M | celestia, movement, cartesi |
+| 4 | IP Meme | hot | 0.97 | +7.9% | $1.0B | pudgy-penguins, apecoin, troll-2 |
+| 5 | Index Coop Defi Index | hot | 0.96 | +8.9% | $9.2B | uniswap, weth, aave |
+| 6 | Bitcoin Fork | hot | 0.92 | +26.0% | $7.5B | bitcoin-cash, bitcoin-cash-sv, ecash |
+| 7 | Gaming Governance Token | hot | 0.92 | +7.1% | $544M | axie-infinity, apecoin, illuvium |
+| 8 | Rollup | hot | 0.92 | +6.8% | $2.7B | arbitrum, optimism, starknet |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Prediction Market Tools | -25.7% | $114M | unifai-network, based-one, heyanon |
-| Long Launchpad | -13.7% | $288M | artificial-inu-3, boner-coin |
-| LRTfi | -11.5% | $421M | pendle, thetanuts-finance, sommelier |
-| Yield Tokenization Protocol | -11.4% | $420M | pendle, spectra-finance, apwine |
-| Fixed Interest | -10.8% | $440M | pendle, saffron-finance, inverse-finance |
+| Olympus Pro Ecosystem | -7.2% | $109M | synapse-2, spell-token, thorswap |
+| SocialFi | -6.4% | $2.6B | pump-fun, project-galaxy, swop-2 |
+| Metagovernance | -6.2% | $196M | convex-finance, dinero-2, index-cooperative |
+| Bridged-Tokens | -6.1% | $505M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
+| MEV Protection | -5.2% | $612M | gnosis, railgun, cow-protocol |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
