@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T21:40:00+00:00",
+  "generated_at": "2026-09-24T05:11:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 158,
-            "zscore": 1.83,
+            "count": 157,
+            "zscore": 1.8,
             "spike": false
           }
         },
@@ -732,41 +732,41 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-23",
-          "return_pct": -5.57,
-          "zscore": -1.66,
+          "date": "2026-09-24",
+          "return_pct": -4.49,
+          "zscore": -1.36,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.94,
+          "market_return_pct": -2.16,
           "events": [
             {
               "source": "googlenews_link",
               "title": "BlockDAG Rolls Out $0.03 USDT Buyback for Legacy & New BDAG, Investors Dump DOGE & Chainlink to Buy - The Portugal News",
               "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPS3g5ZE1KVERYYmZmbTlIRF9LcC13TWttZ2VNLVA0dGJNRGhVdWFISUk0bjZfb1NvZV9BNVZ5WUllVzJHMnBtWlByc0JGT3BmcXBpTlBhNERHTXlBREVyWFNJTFo5Y3hIX1FFQnFVV2FRdXR0bGdoWTBCanJRQURnSng2cFNFX3IwUUliU0FyNXBLZ2tpTGQ5d041YXJQaWRmOVNmNGR3WTJYaHp1enRGcm02NEozdlZoYUtUZVVybDg2Y3A3X29YVXM0ZDdYRUZ3N2lRc3N5YXdDbFRhVlZlWGN3?oc=5",
               "sentiment": -0.382,
-              "relevance": 0.753,
+              "relevance": 0.553,
               "event_type": "other"
             },
             {
-              "source": "googlenews_link",
-              "title": "Charles Schwab To Add SOL, AVAX, and LINK to Crypto Trading Platform - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSVVrRWFmUWJMMXFsQmtsYTNObGhBcXZLTmg5bzFHbEY5R28wQ1pjTDRCaUlGZEc5MS13VVk1T2lZUEdMcnI3NEFVQ3FaWlcwdlJsSUhDLTdwbHYyWVRRMzExemJtYUQ1dVQ2U0thaTBxSnJXVERDa3VsdW9mTFBabkw5UU5jaVVvcTBiR1FGbkRXTHhwU2NGSGUycTdna29Gc2d0VzNMUHBYcUh6?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "coindesk",
+              "title": "Former Hack VC partner Hsin-Ju Chuang found dead following public dispute with the firm",
+              "url": "https://www.coindesk.com/business/2026/09/23/former-hack-vc-partner-hsin-ju-chuang-found-dead-following-public-dispute-with-firm",
+              "sentiment": -0.791,
+              "relevance": 0.43,
+              "event_type": "hack"
             },
             {
-              "source": "googlenews_link",
-              "title": "Is Chainlink (LINK) Infosys Partnership Relevant for the Coin? - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZDl2dmpSMWxGNHRLT0FfakJOVS1zd085bDlUWGh4YTlpQ3ZZUTcwVmtsdmg2TFdqN19iYUNQSzBETDNkQWhZNld0MkJzWXA5bEpZM2R1UkxYWW5EQi1RaFhBeUV1Mi1sdFpXMXdhb3RQVGJ6ckJHS09hOWlmc0V5WUNVVVc1RmtwUTBBbUUxNUctTHNwY1ZpWnBQUUtHejB5akVCZUp5VHpwdy1TaWV2V0dDc29pRlBU?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "partnership"
+              "source": "googlenews_fed",
+              "title": "Trump Once Again Urges the Fed to Cut Rates to 1%, Analysts Say It Is Unrealistic and Could Backfire - NAI500",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbHJvWFh5dFZ5azZUREFGUmJNRkVmeW5Eazhzdk1WVVdPLXY4MG5NS25Pbnpwbko0MzdJMHR3ZTNYc0UwSEhwOXA4SFdQNmJfVl9yVEpwT3dtMHFGNF9tNjcwWjdZZmpWOG1xMzdFelFXOTZ3bEljWkVWWDM2d0wxaTFDckRKYXRCaTBueUt2M0ZSMnRYMmVGNkRvdDZMMU15eU9famloOWVpTTF3eVFzandicXBaUDFYcV8tZkJnQm1FYmpYd3hUM1Nrdw?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.426,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.76,
+            "count": 0,
+            "zscore": null,
             "spike": false
           }
         },
@@ -973,27 +973,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-23",
-          "return_pct": -7.7,
-          "zscore": -1.79,
+          "date": "2026-09-24",
+          "return_pct": -5.86,
+          "zscore": -1.37,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.94,
+          "market_return_pct": -2.16,
           "events": [
             {
               "source": "googlenews_pol",
               "title": "Polygon (POL) Drops 4% Amid Market Pullback and DeFi Stress - CoinMarketCap",
               "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RcXVtRk4xM0pSREdyMUI4TmFaZUM4VFlqaERSUXBFb0ZYQWUtZXdQOWVtSzRHdXJCTWgwSE84UFRlNThIdndFaDVHQ0xSWmVRSnUtSW1DaE5ablBhbTFsYkpKX3A5RFE4VHNhVHJ3dk0?oc=5",
               "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Price Prediction Heats Up as POL Reaches 180 Countries and Pepeto Bridge Races Ahead - TechBullion",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZWFkbGl0ZmNHbHNSQ01KRzg5dDI0QkZZam95U3RlM1VIZ0lHNG44dUVILVdlX251Q2VnSElWQk50TzljNGNzWVk1dkVKR3h1UUcyOHUzdVNOcHRxdmlvdXVWT3NMSXl3bS1DTm1RTmtmM0s1U2dnTHdFa2VCQkd1VDBpT1N6TVhmSzBIS0F1eU5wTkYwRlhNSDB6QlowMGtyM1RXUXBlWWh3R1lRUWYtVFI4SmFiQlNL?oc=5",
-              "sentiment": 0.052,
-              "relevance": 0.6,
+              "relevance": 0.569,
               "event_type": "other"
             },
             {
@@ -1001,13 +993,21 @@
               "title": "Former Hack VC partner Hsin-Ju Chuang found dead following public dispute with the firm",
               "url": "https://www.coindesk.com/business/2026/09/23/former-hack-vc-partner-hsin-ju-chuang-found-dead-following-public-dispute-with-firm",
               "sentiment": -0.791,
-              "relevance": 0.55,
+              "relevance": 0.43,
               "event_type": "hack"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Trump Once Again Urges the Fed to Cut Rates to 1%, Analysts Say It Is Unrealistic and Could Backfire - NAI500",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbHJvWFh5dFZ5azZUREFGUmJNRkVmeW5Eazhzdk1WVVdPLXY4MG5NS25Pbnpwbko0MzdJMHR3ZTNYc0UwSEhwOXA4SFdQNmJfVl9yVEpwT3dtMHFGNF9tNjcwWjdZZmpWOG1xMzdFelFXOTZ3bEljWkVWWDM2d0wxaTFDckRKYXRCaTBueUt2M0ZSMnRYMmVGNkRvdDZMMU15eU9famloOWVpTTF3eVFzandicXBaUDFYcV8tZkJnQm1FYmpYd3hUM1Nrdw?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.426,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.82,
+            "count": 0,
+            "zscore": null,
             "spike": false
           }
         },
@@ -1060,7 +1060,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Best 9 Layer 2 (L2) Cryptos to Buy in 2026 - Changelly",
+              "title": "Best 9 Layer 2 (L2) Cryptos to Buy in 2026 - changelly.com",
               "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pSm1jZWRndUR6LWVtandMTTdwRmZqLXFwTlo1aFpIZi1oU3g2djNfTXhiZWVLZ1VXdmFET2dKY0FaYnZmSEVGOEhiLXZNeWZwN0NLTXVoa3ZJaDBGT3FPcHE5SS1nMzEy?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 43,
-            "zscore": 1.74,
+            "zscore": 1.75,
             "spike": false
           }
         },
@@ -1317,7 +1317,7 @@
             },
             {
               "source": "googlenews_tech",
-              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - Fox Business",
+              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - foxbusiness.com",
               "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Za2c4aWh6NnlubERiS3ZvY0dfckotcWRmTjQtZnEtd2R4T0xMN0hucXNTZEFYS1JSc19rbmRMazJRdVdrM3lxWmlwendlc05Ob2pvaVlVNWV5TXM?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": -0.05,
+            "zscore": -0.06,
             "spike": false
           }
         },
@@ -1705,14 +1705,6 @@
           "events": [
             {
               "source": "googlenews_finance",
-              "title": "Wells Fargo, Other Bank Stocks Fall as Meta’s Muse Adds Fuel to AI Fears - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcmVxMEtXTlBybTZlUlcyUzFqWTBKeGlHVy0xYVhPd2t0anJnNWduYnZmc2xqYjVoYXVIMVY5V29ETDd2ZDJvdGJlcEIyMnNSeVNqamlCNjU1T0g3SV93QXJDenRxdjVlb2V2SExpWGNfQ3BSVnJEZnhPTDVaZXVDSC1QaW4?oc=5",
-              "sentiment": -0.202,
-              "relevance": 0.681,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
               "title": "Financial sector stocks fall as traders rotate into tech - Investing.com India",
               "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ1RrM1dGSnc2UEZRazV0ZDRBSEtsaVRSU2VCVkd4Q1otdXVPUmQzOC1ReDltSklGa1Qxejh4RmQ3S2hISmhRYTZhd01FRzRpaUhIUzZCdDI4b3ZoUW9QY19LNHlBcG1nWi1tR2pONG80ZGx3blZuSGQ2bFJZNlVWZnhXVHQ2UEhYbHU4ZGlHYUxYVnUydmVOcWlwUFdXZUNEZ1BSTVk0YUFhSEhibGFXWHVR?oc=5",
               "sentiment": 0.0,
@@ -1726,11 +1718,19 @@
               "sentiment": 0.318,
               "relevance": 0.6,
               "event_type": "partnership"
+            },
+            {
+              "source": "googlenews_finance",
+              "title": "PayPal surges on Meta AI deal as tech rotation sinks financials - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOM0tOaEIydU41NDFVRlFLTi1Dbm4yT0FKYVJOd1ZuZ1VSMHZURnc2RGFCX2tzVXl6dWVrQ2Z3c05ETzNYeU5yUFduTGV0VElXNDNGYURLbndPVnJIQ1R4X0tzRW11SUtYcjVVUkpKdkhHNE54cnVqYjhkR2FHRUFaX1Q1UDhYWG91c0p4NWpudXVtaVRCajJJR05WRHZWclhfT29OcG1KXzVhRjVPeEtHZ2k1TQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": 1.31,
+            "count": 8,
+            "zscore": 1.0,
             "spike": false
           }
         },
@@ -1808,7 +1808,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.87,
+            "zscore": -0.88,
             "spike": false
           }
         },
@@ -1847,7 +1847,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.31,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.59,
+            "zscore": 1.58,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.42,
+            "zscore": -0.44,
             "spike": false
           }
         }
@@ -3213,7 +3213,7 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Want to invest in real estate without buying a house? India’s REIT market is booming - timesofindia.indiatimes.com",
+              "title": "Want to invest in real estate without buying a house? India’s REIT market is booming - The Times of India",
               "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQV3JmVGV0dTBCUENheFJpT2t6b0Z5b2NTR3NGOTFseXNuMG1NdlZLSGRmVWM2bHJnal9UbWJpdjNUZjgwYjluc1FuOE5jbG5NRHUtWnl6UjVhb3VjSkc3TEtOUzc4cWZpckJFUnpBa25xNEZSTWtOamZRSm0wSU9pUjlZVU1OOTF2UGdLdl9sMmRwSXF3RUxjUjhnNkhiVzNueTRLelJmRlJRNFo1eWctLUkwdFRRaGh5TXVBV1BPM1pfc0o3VjdZbVktMHplcGJ0NE1JdXlvQlZWN083b0Z4RXNtRks4VVdTaEtfU1hxZXE3Y0XSAfgBQVVfeXFMUFZJLUhmV2dSMHkteG1oU19lNWg0b0VFcFYyazBybkpvNFRmQ2FIblVxS0VmNHFxZWs4QkhUOWo5WGVoUEN4UTFsSFo1Mmx2Z2tvRjVGQjFzOW43Y0xCSVB6MldvZEVRVDVFaHdtNlZoUWZZaVphNW81RlkwMkVMT0VZb0hVMEZVMzRacnNxLW9Wa293YTJpby1SMkJmQmhic0x1ekZUdnQ4OWR0Y2dud1ZEckdMZDVPN2N1cExfN3o2alFBSmxBWnFSMDVLUERtN0gta2tsR3JrMTBid3ZTN2JFVVhmRGdTUmk0bHlfT1M4Y3pEYVhEREo?oc=5",
               "sentiment": 0.077,
               "relevance": 0.6,
@@ -3221,8 +3221,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.17,
+            "count": 8,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -3261,7 +3261,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.24,
+            "zscore": 0.23,
             "spike": false
           }
         },
@@ -4186,7 +4186,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.07,
+            "zscore": -0.09,
             "spike": false
           }
         },
@@ -4418,7 +4418,7 @@
             },
             {
               "source": "googlenews_oilgas",
-              "title": "Europe's low gas stocks pile on the economic and political pressure - Japan Today",
+              "title": "Europe's low gas stocks pile on the economic and political pressure - japantoday.com",
               "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTlJYMHRycXFCdjNyNzN0ZHRqVUR1TEw2alBXNi0zcDFnRmhOMEo0Rjc2Yms4d291U3lZOUtwU3V6dWhmeUZGVGd0YXFqV1I1TnByOHJtWlVjc1lqWDJrQkh0SXdhT1F6Qnp2U215ckhwUHVOQXlqSkd1eUNSa3E4VjdnUGZpdC1aZmtTeXItN0hPdWVkSTVQNFpXZ2lqMjhJN01IRXJ3UDdTU29DV0ZZQmpTWm44RVo1anA0VUd5d19LNWFo?oc=5",
               "sentiment": -0.511,
               "relevance": 0.804,
@@ -4707,7 +4707,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.13,
+            "zscore": 0.14,
             "spike": false
           }
         },
@@ -4900,11 +4900,11 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Will the Fed raise interest rates this year? Divided economists weigh in - abcnews.com",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNX3NMLXhhYU1lOVVLWU9sY0k0SDUyQnEwMG9SZ1RzNHZobTIyYk9KWGJlOGhic3FKdlQ2NXlIVDF6SW1oRlNWZlY2NHlNLWlnNGoybzAwLWlkV3V1Q1ZtM21KS2FLTy02NEF6VjY4UmFNc2hYa21mRURlSkJYZWxtc1R3VmRYZFlKNUU3NzZiMkZGNGJZcG1xZUNCN0RQNkRndEVPb9IBqgFBVV95cUxOU1FSZ3pWOURaQUxBS296TzBtRFFGclJXTnpLYWwzZXU1Q01kcVZUczBxUDAwR3FaYmFZdzlXUWM2T0Q3TDVldm9nSVY4OERYRUtkdm5sdndPSU1ETU1yc3BuMEpXLTd2VFFZRTVQcWdMZFdEZ0EzYjhTS200RFBkZy1jbE01WVhVbEgyX1Z2dXc4MWxmbXd6cl9pSlp2TDRldkdkS2hwOVE0Zw?oc=5",
+              "title": "Anatomy of a rise: Monetary policy and the post-Covid surge in long-term interest rates - CEPR",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaGJGV2VxTk9oMnI0UWRCeE85c3QtYzh0NVJ5WGJxMXYyakdEQ1NOQmd0cHZMR292S28zc0x2Yk5zR2o1dzdzWk5PWDZvZFd0RjNXM0pGZmJDVldkdEhDM2lmanl5bUYyWkFCNE9nTFRjbWE4QnRhRWhWSGtaSUswWUtQa3JSN3dZTjBDWTc1N3VYR0VDc0dpR0ZHMk5qMG9RSURyUWNENTQ?oc=5",
               "sentiment": 0.459,
               "relevance": 0.784,
-              "event_type": "fed"
+              "event_type": "other"
             }
           ],
           "coverage": {
@@ -4948,7 +4948,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.47,
+            "zscore": 1.46,
             "spike": false
           }
         },
@@ -4987,7 +4987,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.28,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.21,
+            "zscore": 1.2,
             "spike": false
           }
         },
@@ -5149,8 +5149,8 @@
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": -0.24,
+            "count": 17,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -5390,8 +5390,8 @@
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.54,
+            "count": 20,
+            "zscore": 0.66,
             "spike": false
           }
         },
@@ -5561,7 +5561,7 @@
           "events": [
             {
               "source": "googlenews_biotech",
-              "title": "Josh Brown's \"Best Stocks in the Market\": Biotech - CNBC",
+              "title": "Josh Brown's \"Best Stocks in the Market\": Biotech - cnbc.com",
               "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPamcwY0pndng0T1JQdHJ2MExZZUFJaXFqcUc4MjRGa2t2cC1fT1lnbmdnSkYzS3F3TjRtRTZNUFIwQm4xd1VCTWdJdFdTYVhfdnJHWEJfR01oVnZyZ21wUnJqVHNxNGVBcUhZd1ZwQ1E4ME1iOVA2aS1pUTU1NV93S05VWDROUks5U0lqQndHNDlHZw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -5615,24 +5615,24 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Falling Metals Prices Are Dragging Down Canadian Mining Stocks - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSlFDYTBhS2l5THVaTTh2UG5qRWJTZ2JHUDIxOW9MSzFQZUM3SHFHYlNKcF9zaXNqeml3dnBCWUYyelg3d1A3MDEyRWlTeEllandGYWVZV3B2aWRKbmlYWGM3dE9uMVEtSlpKajltTnE1VV91dXhPcGh5VHBmRDZ3clhHZEg5SGMxMXFPdQ?oc=5",
-              "sentiment": -0.224,
-              "relevance": 0.69,
+              "title": "Falling Metals Prices Are Dragging Down Canadian Mining Stocks - The Motley Fool Canada",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOaEh3dDIyWlR5Y2RDUzNmUHdjdEZOTW5fZmJmNEtJR0xiNGt5R2FyWDRUOHl2ZE01OFpnbWRMQW9zVkpCOTBkZUtMekx0MWl2OXl5Zlg4UG5lYWh4VUJRMTJlY3RjbS1VNTg2Y3hudmVaWkd0YnRLcHo0R2Y0LTBWVjhwdzlfSGduTzJMTHBWRVJmV0xNQmZUVDFB?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
               "event_type": "other"
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Gold X2 Mining Stock Extends Its Pullback as Recent Rally Loses Steam: Can TSXV:AUXX Regain Momentum? - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV1BzQWkzVzJWUTJ6UThHRjNCckQyU1g2MjBrVlFvc01CV0hYdlVwZWFWSlZVbWhTanlpUlpYOFJSbFFMNGdPY0JWOWRlX3REMzhZMkp4S2FBbFlndFdMME9Da2JnSUhxa1BFdnNZYTQtS0VxeHI4cVR1T3pFQjJNbDBFbkNSZ0dKQXpCR3g3UUpUdFdRYjJYbTNGak1IeUdKUjM5emJaZXlWVFZoamppb2g5eF8wMFFqbzNQUndKVnZYUEx0ekdpNA?oc=5",
-              "sentiment": -0.202,
-              "relevance": 0.681,
+              "title": "U.S. Market Movers | Gold Mining Stocks Drop at Open; Sibanye Gold (SBSW.US) Falls Over 6% - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTmx2UUgxNzdidk9lREp0RDRNM2xnMUR2UW45eGVPMk4yR3NvdnBnZV9MbmhTWVRqOTB4Q0RFd083UWJGUDhkXzQ0Qm9sOUVlMnhYNmg0ZHNhT0cyTzU4aXFQMEkyVFpPQXRtd1RRcGUwSHlhZG9wbFRqSkZnR29fLXhxaFZyclBNNnhfUHpxMW54aFM5bVA4UTAxVzZvb2RFcnc?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 24,
-            "zscore": -0.05,
+            "count": 27,
+            "zscore": 0.17,
             "spike": false
           }
         },
@@ -5709,8 +5709,8 @@
             }
           ],
           "coverage": {
-            "count": 51,
-            "zscore": 2.0,
+            "count": 52,
+            "zscore": 2.08,
             "spike": false
           }
         },
@@ -5836,9 +5836,9 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-09-23",
-      "return_pct": -1.94,
-      "zscore": -1.04,
+      "date": "2026-09-24",
+      "return_pct": -2.16,
+      "zscore": -1.14,
       "max_abs_z_recent": 3.44,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5851,7 +5851,7 @@
       "max_abs_z_recent": 2.74,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
