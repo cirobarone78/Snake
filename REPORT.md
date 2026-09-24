@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-09-23 12:33 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-09-24 12:32 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Gaming Marketplace | hot | 0.98 | +24.5% | $258M | immutable-x, overtake, jackpotter |
-| 2 | Airdropped Tokens by NFT Projects | hot | 0.98 | +9.3% | $926M | pudgy-penguins, apecoin, loaded-lions |
-| 3 | Modular Blockchain | hot | 0.97 | +12.5% | $727M | celestia, movement, cartesi |
-| 4 | IP Meme | hot | 0.97 | +7.9% | $1.0B | pudgy-penguins, apecoin, troll-2 |
-| 5 | Index Coop Defi Index | hot | 0.96 | +8.9% | $9.2B | uniswap, weth, aave |
-| 6 | Bitcoin Fork | hot | 0.92 | +26.0% | $7.5B | bitcoin-cash, bitcoin-cash-sv, ecash |
-| 7 | Gaming Governance Token | hot | 0.92 | +7.1% | $544M | axie-infinity, apecoin, illuvium |
-| 8 | Rollup | hot | 0.92 | +6.8% | $2.7B | arbitrum, optimism, starknet |
+| 1 | Crypto-Backed Tokens | hot | 1.00 | +16.7% | $468M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
+| 2 | Robinhood Chain Stocks Ecosystem | hot | 0.99 | +3.8% | $165M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 3 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.95 | +2.5% | $617M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 4 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.95 | +2.5% | $617M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| 5 | LSDFi | hot | 0.94 | +0.2% | $531M | pendle, babylon, sanctum-2 |
+| 6 | BTCfi Protocol | hot | 0.93 | +1.3% | $1.1B | pendle, bedrock-token, threshold-network-token |
+| 7 | USD Stablecoin | hot | 0.92 | +0.1% | $289.6B | tether, usd-coin, usds |
+| 8 | Fiat-backed Stablecoin | hot | 0.92 | +0.1% | $278.1B | tether, usd-coin, usds |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Olympus Pro Ecosystem | -7.2% | $109M | synapse-2, spell-token, thorswap |
-| SocialFi | -6.4% | $2.6B | pump-fun, project-galaxy, swop-2 |
-| Metagovernance | -6.2% | $196M | convex-finance, dinero-2, index-cooperative |
-| Bridged-Tokens | -6.1% | $505M | binance-bridged-usdt-bnb-smart-chain, anubis-bridged-lgns-anubis, usdt0 |
-| MEV Protection | -5.2% | $612M | gnosis, railgun, cow-protocol |
+| Gaming Marketplace | -21.0% | $204M | immutable-x, jackpotter, overtake |
+| BONK.fun Ecosystem | -14.7% | $289M | useless-3, scamcoin, kori |
+| Robinhood Chain Meme | -13.7% | $864M | artificial-inu-3, cash-cat, greenhood |
+| Stock market-themed | -13.3% | $449M | spx6900, a-meme-coin, dowge |
+| Long Launchpad | -12.8% | $274M | artificial-inu-3, boner-coin |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
