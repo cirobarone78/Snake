@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T05:18:00+00:00",
+  "generated_at": "2026-09-26T11:41:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-25",
+          "return_pct": 4.27,
+          "zscore": 0.97,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.41,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Forward Industries raises $25M to boost Solana token holdings and expand its digital asset treasury - pluang.com",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLTVLbmQydHJ5a091Njl2Ui16bVdLelE1Yk1zREc3cWNLWS1WVkpQTVBiazNWQ0VoVXN1TF9kSmxfYWZRMktNNWJhaTZGRlJHRWt4R3AzU3h6OTV6Z04zWHBRNEI2NXdaMG5DRkRvWmxxd0F4YUpDSmg5QVNTRlhjMnBZMU4wNkdPYmFVbkRFNk16U3g2Mkt5Z0c3U3c0bjJMaFE5REpfc0FJTzQ?oc=5",
+              "sentiment": 0.807,
+              "relevance": 0.923,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana (SOL) price jumps above $120 with a 5.8% gain in 24 hours - pluang.com",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaWpEZjVCRlBzMm1EOVVzeEJFbmRJa1RMczQyaWJwMjMzNWRBZTdWc2lyU0hKT3E1d1FlcFhfQmY0elpnWktRUjJUYVBIX0lJTG5YS3ZSYWl3SGY3LVF0QXhyTFY5QjJfcFZMdmpYQ2Q2SHlRWFJkSTFpblRuZXNPTE1wWHp3bEMxdVhnZExoVVJTWEEwYmhDX2hTeVpxcEZycGc?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Staking Deposits Rise by $300 Million in September, Monthly Gain of 18% Outpaces ETH and XRP - finance.biggo.com",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUGREZ3V2bHpIdk1DVHpSV3lnV2Y0am1XQzdId1l4QkFsT1d6VHZsaTRudFRxdlhCOVdtRy1CRE9MTVBEMlhOczZNeTdxTmp0eHRIYU1wbU9xdnhYXzl0RHhkTGFma09mUkpoM2xVWTBCN1pHc2c?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 20,
+            "zscore": -1.14,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-21",
           "return_pct": 6.85,
           "zscore": 1.77,
@@ -564,7 +603,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 0.79,
+            "zscore": 0.78,
             "spike": false
           }
         },
@@ -642,7 +681,7 @@
           ],
           "coverage": {
             "count": 37,
-            "zscore": 0.16,
+            "zscore": 0.15,
             "spike": false
           }
         },
@@ -684,45 +723,6 @@
             "zscore": 1.78,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-27",
-          "return_pct": 6.89,
-          "zscore": 2.12,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.56,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Bitcoin is having a great month—but Solana is doing even better as coin soars above $100 - finance.yahoo.com",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZU5DNkdxSlVZa1VPRUVKeEVRM09qNnhlOU1ybmZFUlA2eXN4WWR2d0ZKSVkzcFVjY2xFTGJTelRfOUJKTkNZSDhXY1pnQTJRMjl1bUFaU0xaWUJvOWQ1MzFndjBHbUU0c2ZZeHF5b1kxQXhQRlNaUjJIRk9GRUN1dmFtOVY2UU5pbk1hVDBVZ0R3WVhtSGdIeXFlcS1IV2M?oc=5",
-              "sentiment": 0.791,
-              "relevance": 0.916,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Bitcoin is having a great month—but Solana is doing even better as coin soars above $100 - Fortune",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16TGJUTC1QbmhNVkxzOFdISEZ3Y0hkTWs2YUJtUjE1VnhxbU5iWDU4Q2M2bFA2T2dXcVNkTE14S2NVTUFBXy1yZFA4eFE1ek8xYVZrNTd0Rm9iUmJWdzV2Zi0tV0JXWHhlT1Z3UHZLWmRBeUFGeDJ4VnY2SjNwTlk?oc=5",
-              "sentiment": 0.791,
-              "relevance": 0.916,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Gains Institutional Rise, Hyperliquid Breaks its ATH! Now Analysts Are Spotlighting Apeing as the Best Upcoming Crypto Presale - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQa3hPT2M1OFlPM1BGaTJNanR0SlFRQnRKVFVKQmJ6VWVlV09PaHBuWFdseTQ0eDZyYy0tVDAwb0FvQWJKWlR5SGI5alBuVU9zVHFJWTM4VkMycGpBc2FCNjROSkQwaHZZdktBekVudWZoSFYzUDV4RG5pMlRFQnF5aGQxVHc4Mlc0NDhMZFB5Wnc4RnVGY1FSTFRTX0RUc0pPcGRfTkpwS3RiYXdSeDlkSUZVNDZYOGZMU3Q0RkQ3Q1M4b0dTZjV5WGYzRFR2M0NWX0Y0SHhJa2huMTJJWVdwTkcwRm4tLXhxQWMtbmIwQjdWSGpvdndUUzU3ZWk3dnJleXNWNEowajRRbUxNa2xYZmotWEZPelMydnpod0pSa1AxRFE?oc=5",
-              "sentiment": 0.784,
-              "relevance": 0.914,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 66,
-            "zscore": 2.14,
-            "spike": false
-          }
         }
       ]
     },
@@ -732,19 +732,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-26",
-          "return_pct": 6.78,
-          "zscore": 1.58,
+          "date": "2026-09-25",
+          "return_pct": 5.39,
+          "zscore": 1.22,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.55,
+          "market_return_pct": -0.41,
           "events": [
             {
               "source": "googlenews_link",
               "title": "Chainlink's open interest jumps 25% in 24 hours signaling a strong breakout near $14. - Pluang",
               "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQclBsQjh5b2FVVktsQ21ZZmFzSHFPaVBXSXFlWkNZcVAxMEJLeGpnNDByVHFVLVNlbVBucXlpZ3RaS1l6LTNYX3NMX0RTTzM2U2pOMjFHZ2FqYUhIRjc2N280YmNpZTV1WHhSLXhaaFpFNng3YU9VQTBpWDFlaDlvM196LWxUM0hPYzRQTDlvNk9NdnpGZ09sZ1FzMmlVZzZma2w0N25yZnQ?oc=5",
               "sentiment": 0.743,
-              "relevance": 0.697,
+              "relevance": 0.897,
               "event_type": "other"
             },
             {
@@ -752,7 +752,7 @@
               "title": "Litecoin, Cardano, Stellar, and Chainlink All Outperformed Bitcoin This Week. Which Rally Has the Strongest Support? - 24/7 Wall St.",
               "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOampGT2pHS01lUzJHdmZhbi1XUjRKaEZWNW1xU0xmS0VkcE94THBjRWNWVENsdF9fR3BCb01hLU8weFMzdVJGaTEybzk0bDZ0Z1ZWbWFNUjIyNkxsb1lPbEVDelgwcmh5SmdROVEzZHo0OXBUVGM5dFBxZ1BYclQyZHdlTVVzV1gzWEI5alp1WG1CNFZJdWVXbVJfRnBvYVppM1B3aWZJMGJJMTg5WFlaMG5mQWNSbzFyRGJfdS1DN3pxTmtpREcwVHBpWENjMC1zbklHX2tCanowTmNtWlNfVmhrMDYyREZkZHE1d3NLcng2LUljXzFjbDV1MUJTQ2s?oc=5",
               "sentiment": 0.681,
-              "relevance": 0.672,
+              "relevance": 0.872,
               "event_type": "other"
             },
             {
@@ -760,13 +760,13 @@
               "title": "Litecoin, Cardano, Stellar, and Chainlink All Outperformed Bitcoin This Week. Which Rally Has the Strongest Support? - AOL.com",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEhVZklNdzBmc1R6Y0xkMkI2Zkp4UzluNmRBTk1UMWxnWWlwZTRLZ1p4aWt3U2ktV1lSTHU2Mk02WnlJcjNEblpDMjVpOWh4RVk5aV9VdGRxUW1Sd0VEZHlmYTRVdXkzOXZ6cEc1Y2NZVFM1MXdUek00d2ZiRk91cVdEQnRraTgxS1FGU2s2bU9XRG0xc2c?oc=5",
               "sentiment": 0.681,
-              "relevance": 0.672,
+              "relevance": 0.872,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 26,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -973,41 +973,41 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-26",
-          "return_pct": 8.63,
-          "zscore": 1.97,
+          "date": "2026-09-25",
+          "return_pct": 7.16,
+          "zscore": 1.64,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.55,
+          "market_return_pct": -0.41,
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon price rises 12% since 100M POL burn—can it hold above $0.11? - AMBCrypto",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVFdRMVpodjVYN0ZIeVJoVDdJekhWUHY0QWN6MUVMVFQ3eHBETVpncDFWODhiSEs5SUtPVXpqTlp0TkVhRlVBbmYtZ19oanNlTlVDMDRxaEJ6TXBONm9hblN1cm9zdTZFMlFLMTA1SmZPTU5IYlVORjhQZjJobFFhcW44OHhJdVV0RVF4eE14N3FxQQ?oc=5",
+              "title": "Polygon Surges 6% on Burn, Payments, and Altcoin Momentum - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFNXVMb3BZWXdNclN0UDZZMVZkWWM1ZXlTbFhQbU9ZMTFxZDlDNzljNWlYamJHWW5zMWk0SU4ybWxKWmRkdVFtQ29JVDRQOEctZFNKbmhnYXpTUFpCS2JlWWRId0FfUU9GaGtaUWdxVDg?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
-              "source": "coindesk",
-              "title": "XRP Ledger’s Batch upgrade slips to Oct. 9 after validator support resets",
-              "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
-              "sentiment": 0.402,
-              "relevance": 0.456,
-              "event_type": "upgrade"
+              "source": "googlenews_pol",
+              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVERlS1VkVERTNnc4bnBFYlFqRWQxQ213YlZfbkJfLW1Wb0RFTHQ0TGhhU0RYdjNGVFpNRWo2UUgyTERLZ0lfQ3FMMXBMMTU0VlF3N1pFSkhSUQ?oc=5",
+              "sentiment": 0.475,
+              "relevance": 0.59,
+              "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Fed Faces Prospect of Another Interest Rate Increase Just Before Midterm Elections - The New York Times",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMGdRWGMwS19RQ1QwQVhydF9udFh2SkVwN2RYaXZMZGd6UzdGdXJOQ1JUMlFuLUw3VExKTm5XbldCLVBWVHpWSmNSWlQyN0tYUzVtRTg5Rlk3SnMxRklVWHVzbWJ4RFgtajBvVGM1cEhJcVZnTkhVNXNmWFVvZXZiRmt3?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.422,
-              "event_type": "fed"
+              "source": "googlenews_pol",
+              "title": "Polygon POL Token Surges 5.14% on Burn and Yield Boost - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uTGdwME9WUE9BeHZxeXNURkRpTHhhb09jUy1DV2NVaV94OVlxM3ZUQ0RzV1lqVlU3NXhnX3FObHliak05c0JXdFNITnJKTHB6YWh6UDl2VkxMWThqODlqNFpLVlNhaGtxWDlDWmZzOTM?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.561,
+              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.15,
+            "zscore": -1.2,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": 1.74,
+            "count": 44,
+            "zscore": 1.81,
             "spike": false
           }
         },
@@ -1287,7 +1287,7 @@
           ],
           "coverage": {
             "count": 25,
-            "zscore": 0.73,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -1511,19 +1511,19 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Mixed or Offshore Upstream E&P Stocks Q2 Results: Benchmarking Peabody Energy (NYSE:BTU) - stockstory.org",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZ09RT3UtYVJmc3BFcUR1WFl0eUtEYldhckFyX25ldFk5ZXd5ZE40TnI0ajkxek5ZNFZoazE5M1g0TkdNUlV6N3U5UUJjVkhXekJCTzd4em1QWGlvV2hJM044Q1lwT1k3bkN0LXNVQ3RHTjFRV1ZrSUhxQnVTN3VvMzMzdGNqaUdxOVFDem50WlhrSENtcFRVQWExZ0M0TUpBeFlfMERoZXNyWTM1R2NLWFpfelNZeGhlSklLQ29VdVV6dy1uX1E5bVZoNWVieDhWVlBQOXdyRE02QQ?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
               "title": "Advanced Energy Industries (AEIS) Stock Looks Reasonable Given Its Earnings Power - simplywall.st",
               "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWWdFdUVoV3dtQzNkTUItNG50Rk5jVmRZdTJuaHh5d0lkRVhRZFNKWm1lWHhJRUFwZHJLMnVNUzdQWFhRRGxBQVhXMzY1Zlg5NGgtTmctaGpoVDdmYlg2clpnVU5ZN3pLVzBxSnc1eXpfSC1rcXpTbDBUNVJhUGVRcjRfTHRGM3lQNm1lNEhxUFhJVmItbGxfY21oaFpFNmJiTUtSNFRRV3RVeWVmeThzZTdyQUM0R01vbHFzZUhrQkQ3LUZLMTdMdlRqajM1Z01XYi0tbXdrTWjSAd4BQVVfeXFMUGlZVjhpeDdHTy00ckRiWm14d0xLZDVYNGVFMjE5bmRrQWtHYkJkX3hGR1VaT2FtMHgwcVJ0UHpLblM3Z2NFQWZneWZaZUJGeFZmMThRa1Y3bVZndWEzYU5Pb1dUYlNyZkZFRXU4ZEpDTVo2eUJsSVNWVXZSSUJqU0Mya0FhYXhjdUI1YjFFaFozdnp3QldHQ1pkZlBMZlRCdkQwTmM2bS1OOWstbmItZzlSTzZBeWZaSkJvYnNvZzhJSGk3c013MDNtaEJvazFCWVNaTFlmUE41TTh6WFZR?oc=5",
               "sentiment": 0.477,
               "relevance": 0.6,
               "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Mixed or Offshore Upstream E&P Stocks Q2 Results: Benchmarking Peabody Energy (NYSE:BTU) - stockstory.org",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZ09RT3UtYVJmc3BFcUR1WFl0eUtEYldhckFyX25ldFk5ZXd5ZE40TnI0ajkxek5ZNFZoazE5M1g0TkdNUlV6N3U5UUJjVkhXekJCTzd4em1QWGlvV2hJM044Q1lwT1k3bkN0LXNVQ3RHTjFRV1ZrSUhxQnVTN3VvMzMzdGNqaUdxOVFDem50WlhrSENtcFRVQWExZ0M0TUpBeFlfMERoZXNyWTM1R2NLWFpfelNZeGhlSklLQ29VdVV6dy1uX1E5bVZoNWVieDhWVlBQOXdyRE02QQ?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
@@ -1705,7 +1705,7 @@
           "events": [
             {
               "source": "googlenews_finance",
-              "title": "Wells Fargo, Other Bank Stocks Fall as Meta’s Muse Adds Fuel to AI Fears - barrons.com",
+              "title": "Wells Fargo, Other Bank Stocks Fall as Meta’s Muse Adds Fuel to AI Fears - Barron's",
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcmVxMEtXTlBybTZlUlcyUzFqWTBKeGlHVy0xYVhPd2t0anJnNWduYnZmc2xqYjVoYXVIMVY5V29ETDd2ZDJvdGJlcEIyMnNSeVNqamlCNjU1T0g3SV93QXJDenRxdjVlb2V2SExpWGNfQ3BSVnJEZnhPTDVaZXVDSC1QaW4?oc=5",
               "sentiment": -0.202,
               "relevance": 0.681,
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": -0.42,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -2397,7 +2397,7 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "NiSource Stock: Is NI Outperforming the Utilities Sector? - Barchart.com",
+              "title": "NiSource Stock: Is NI Outperforming the Utilities Sector? - barchart.com",
               "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjFnV2p4NHB4dUdYMnB0eEowbzFmbHVLeEg2c1dTRm1idkpzZk9vOXRJT2t4Q1ZuTXJndjBsdFJXbmdWVUc3YVVYS2ZyQXRNMEFKVi1sUUNaN1VjMDBLdTAwQTJ2M2FfSXZkenRlV1JMdVFNM3lSLVlXNE15amNJZnN6d1JWdVRUaExkTURfR2FmVzZWaWZPRzZ1dlR1MXVN?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.11,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.84,
+            "zscore": 0.85,
             "spike": false
           }
         },
@@ -2793,16 +2793,16 @@
           "events": [
             {
               "source": "googlenews_discretionary",
-              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdWF3YkRxOGd4RWZESXpRZzMtLUx4NVFUSE42cERKM1UydzlGVjJPV28yOEZTRVJKZHhTdENLbEswcnZ0NFZSR1NfRTJmM0RlVmp3eHVCemhjQzdSM3hsRi1rMHJsOUhnQ1h1bmtFeTZBZXZia2ZnVE9HMkNWd3Y3VVNmYkxTRzBQMEZvaXFjYkJUQnFVR0xRclBHYnhPUjBHSEhfREdsem5VQ3hLM3NmQ3UzbGtUTnp1?oc=5",
+              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVRjVzBTZk8ydWN0S2cwSHlaZmJKMW4xMVh5OFF1My1ieWNoUXMwWWRfSHBoNUxCV0lnajBJYkZycXFIMG5Ba0xmaDBvczUtRTNDWUkzazhPNTBfV2lyaGMydDJyTEN2V0RwU04tU0hQMWljS1g2d19sQkV5NDdCWmxSclZqdDJwSGdtOHRTeUZNYnpLOGxhT19QdjRqMWJvUEFYSVIxV0lJMHZzbEZBYWh0U090cWwtMjZJ?oc=5",
               "sentiment": -0.557,
               "relevance": 0.823,
               "event_type": "other"
             },
             {
               "source": "googlenews_discretionary",
-              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVRjVzBTZk8ydWN0S2cwSHlaZmJKMW4xMVh5OFF1My1ieWNoUXMwWWRfSHBoNUxCV0lnajBJYkZycXFIMG5Ba0xmaDBvczUtRTNDWUkzazhPNTBfV2lyaGMydDJyTEN2V0RwU04tU0hQMWljS1g2d19sQkV5NDdCWmxSclZqdDJwSGdtOHRTeUZNYnpLOGxhT19QdjRqMWJvUEFYSVIxV0lJMHZzbEZBYWh0U090cWwtMjZJ?oc=5",
+              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdWF3YkRxOGd4RWZESXpRZzMtLUx4NVFUSE42cERKM1UydzlGVjJPV28yOEZTRVJKZHhTdENLbEswcnZ0NFZSR1NfRTJmM0RlVmp3eHVCemhjQzdSM3hsRi1rMHJsOUhnQ1h1bmtFeTZBZXZia2ZnVE9HMkNWd3Y3VVNmYkxTRzBQMEZvaXFjYkJUQnFVR0xRclBHYnhPUjBHSEhfREdsem5VQ3hLM3NmQ3UzbGtUTnp1?oc=5",
               "sentiment": -0.557,
               "relevance": 0.823,
               "event_type": "other"
@@ -2981,7 +2981,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.21,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -3059,7 +3059,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.06,
+            "zscore": 0.05,
             "spike": false
           }
         },
@@ -3183,7 +3183,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.85,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -3291,7 +3291,7 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - barrons.com",
+              "title": "Cities Where Office Work Is Making a Comeback, and 2 REIT Stocks That Benefit - Barron's",
               "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3VhcUd0NDk0VWNEeGg4bzlGNWxralRpZ05aeHhBZjZYY2Z5c05SMGNUWXBKbEhVLXBPVy1OTk1WMjliT1VvUGw4Ri1pNGVEQmZqQm05RFIwWFNwRFVDVW9ucGMxMjhCcjQ0T1VWQ0dnSkpGdHg4dnA3Vm54Y3ExYWxGdElBaDBr?oc=5",
               "sentiment": 0.459,
               "relevance": 0.784,
@@ -3300,7 +3300,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.53,
+            "zscore": 0.54,
             "spike": false
           }
         },
@@ -5026,7 +5026,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.21,
+            "zscore": 1.2,
             "spike": false
           }
         },
@@ -5798,12 +5798,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-26",
-      "return_pct": -0.55,
-      "zscore": -0.36,
+      "return_pct": 0.15,
+      "zscore": -0.03,
       "max_abs_z_recent": 3.44,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-09-25",
