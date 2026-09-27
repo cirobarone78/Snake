@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.7% | 33.3% | +20.6 pp | 94% | 1.000 |
-| 2 | LINK | 39.3% | 33.3% | -6.0 pp | 100% | 0.500 |
-| 3 | SOL | 48.0% | 33.3% | -14.7 pp | 98% | 0.000 |
+| 1 | POL | 12.7% | 33.3% | +20.7 pp | 97% | 1.000 |
+| 2 | LINK | 38.7% | 33.3% | -5.3 pp | 100% | 0.500 |
+| 3 | SOL | 48.7% | 33.3% | -15.3 pp | 100% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,6 +23,16 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
+
+**TRX — TRON**
+
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
+
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: 9.1 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **AAVE — Aave**
 
@@ -113,9 +123,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- stablecoin o token ancorato: 19
-- capitalizzazione sotto la soglia: 18
-- volume troppo basso rispetto alla capitalizzazione: 15
+- stablecoin o token ancorato: 18
+- capitalizzazione sotto la soglia: 17
+- volume troppo basso rispetto alla capitalizzazione: 16
 - già in portafoglio: 6
 
 ## Limiti
