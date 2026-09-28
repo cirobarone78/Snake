@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.7% | 33.3% | +20.7 pp | 97% | 1.000 |
-| 2 | LINK | 38.7% | 33.3% | -5.3 pp | 100% | 0.500 |
-| 3 | SOL | 48.7% | 33.3% | -15.3 pp | 100% | 0.000 |
+| 1 | POL | 12.4% | 33.3% | +20.9 pp | 91% | 1.000 |
+| 2 | LINK | 40.3% | 33.3% | -6.9 pp | 100% | 0.500 |
+| 3 | SOL | 47.3% | 33.3% | -14.0 pp | 97% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -32,16 +32,6 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.1 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**AAVE — Aave**
-
-Protocollo di prestito on-chain fra i più grandi per depositi.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 5.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -124,8 +114,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - stablecoin o token ancorato: 18
-- capitalizzazione sotto la soglia: 17
-- volume troppo basso rispetto alla capitalizzazione: 16
+- capitalizzazione sotto la soglia: 18
+- volume troppo basso rispetto alla capitalizzazione: 12
 - già in portafoglio: 6
 
 ## Limiti
