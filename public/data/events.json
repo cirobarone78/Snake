@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T21:31:00+00:00",
+  "generated_at": "2026-09-28T05:43:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -284,7 +284,7 @@
           ],
           "coverage": {
             "count": 122,
-            "zscore": 2.44,
+            "zscore": 2.45,
             "spike": false
           }
         },
@@ -796,7 +796,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Convert 100 LINK (Chainlink) to PEN (Sol) - bybit.com",
+              "title": "Convert 100 LINK (Chainlink) to PEN (Sol) - Bybit",
               "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1c0ZzMGphQ3FibWdfM2lua2VTblZQRUstMG9GdnVjN2lxa3BTS1A3VGRSc0ktd243Qi1GZzVXYUh2QkJkeGNEX2NjdEFEY1NiX0NzZldMd0RqNHZnNUE?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -835,7 +835,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Convert 100 SAR (Saudi Riyal) to LINK (Chainlink) - bybit.com",
+              "title": "Convert 100 SAR (Saudi Riyal) to LINK (Chainlink) - Bybit",
               "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PeTNKc09hT3NvZi04WExSWnpYMzZrRk8xS0tGa2trV3YwSGsxOXVLYmZZbTR1c2tIZDJKc1VYSXk5LTNNYU5XU0R1elp2WklVZFFfQk1nTmZuT3ZYanc?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -973,6 +973,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-09-28",
+          "return_pct": -5.61,
+          "zscore": -1.38,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.66,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Transfers 100 Million POL to Dead Address, Cuts Economic Supply - tokenpost.com",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mS2NBa2hDZEVJT2lZOTUtaVpYV1VpUXh0dmRWZ3JlUWh6bDh4aVN4ZWUzOVRiOGdFZkV3VzRRQkZfOE9CTlpZN29xdEl5Zll6UUFRZ2N3MGdORDQ?oc=5",
+              "sentiment": -0.758,
+              "relevance": 0.503,
+              "event_type": "other"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "Newsom signs California ban on public officials issuing memecoins",
+              "url": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.557,
+              "relevance": 0.494,
+              "event_type": "regulation"
+            },
+            {
+              "source": "coindesk",
+              "title": "Bitcoin, Nasdaq futures decline as Trump won’t rule out more Iran strikes",
+              "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+              "sentiment": -0.417,
+              "relevance": 0.46,
+              "event_type": "geopolitical"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-25",
           "return_pct": 7.16,
           "zscore": 1.64,
@@ -1007,7 +1046,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.24,
+            "zscore": -1.23,
             "spike": false
           }
         },
@@ -1115,7 +1154,7 @@
             },
             {
               "source": "googlenews_pol",
-              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - ambcrypto.com",
+              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - AMBCrypto",
               "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUFowTTZOeUk2c2RpYUNLaGFuRmpmQlZGaE85TGhsdFpkejF2TEVwVXg2OTZxOE5qdllIVkM3YklkYXhTbmNaNjZ1ZGhEN01QeGV1WmNTOGkwRXZCQ24wZ241VkU2YW9Da3lFQlNHMk95dzZhLUNWRWk3X1JDRXVpNTNPdWE0cEh0RUxrTm1xOVZMSmZ5MFNtZS1pY2Y4YTg?oc=5",
               "sentiment": 0.635,
               "relevance": 0.654,
@@ -1124,7 +1163,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.0,
+            "zscore": 0.99,
             "spike": false
           }
         },
@@ -1164,45 +1203,6 @@
           "coverage": {
             "count": 5,
             "zscore": 0.12,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-11",
-          "return_pct": 5.75,
-          "zscore": 0.9,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.79,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Transfers $3.5M In POL Tokens As Rally Hits 50% Weekly Gain - Yellow.com",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeG1mUlQ1S0hSdWpKaVNrT1NQcVNpQS1UU21tUm14Y01wbDcxeDRoSHc1RndsWFZIWmxTQ1FWUW82M1lIb1d6X01aT25wNDZfVTRGbWdxcFpHVWFQODJuNGIwWTdqc2JMdTdSLXFMSXBYSlpfS0xXV1VJRU0zLTNITjYyejRwRnluTVJIeEtENFNRbVVpaFVrdWtzVXBBTUlfc1JJRncyTTJRcnFyd3lmSjJ6a0czclpVbDhiY3NnaWhVbmdudGQw?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Transfers $3.5M In POL Tokens As Rally Hits 50% Weekly Gain - Yellow.com",
-              "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPMzh2TUhDQjVJRXdmbVRPNVdTbDRnTFJfYVY1eW5ZTExnLXFrOUFCNy05UUtxVVRNMHB5dWJQaGtpWjNMOTZRLS1qSTBKeHBuYWZSYkNfN1RtQk0xOEpxN3A4ZkNtOGNIaE84dkdacVY5eWFlRWxYQWVhaXZsaFFIbnV5Qk5GR1dubnR3SnppX0MwNnBRNTFMSG9vQlMyblltVmdnQUo0UEVZVnRJak1FX3FxdVkweVBqeGlhUDRYZU5iRjNVN1lNQllTS1d6LWVfc2RGZzR5NHhFTmltV204aGtiSlZFdDlkTkxSMDJmUEFraE5jdVBEZUEycGJ3dkRiT21Sb2lXTU9oUS1IMl90RjZRRzFWajF1RFZqcVRkMDZYOHFVQnA1OTNocmVWRDg?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Rollblock Early Investors Expect 810% Presale Gains As It Repeatedly Hits ATHs - Yellow.com",
-              "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPdUxfZmhyQThPODhxUTgwa1YycXc3ckNrQ0RXcGFoSDZLMXBhaDZGeV9hUW8wS0xDUHB5RWJwQk5weHBvNFZKdmJWTnFnVThDN3NXUjRwT2NVc3U5SDRUVHNidy1CdjIxQmNNU21WX3FDeVNaNWY2VFhpdmxtVC1JdXJ6dWxfS091bEcwV0xhaXVPNHRDM3gtTS1tZGx0d2dQel9DcmdNcUtsRHEzRXVHanJvZ1hQVk5uZElsdWF6dGJmT0ttX3gwWTJ2LWFTLVVueHRtUDFKUjNQbkdZT1VweEVpY2pvazBHeUZaVkhaYmYtUGFZRkR3WlhhSWh1cDh5TGF6M3p0ajZIUGlSWW1n?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 11,
-            "zscore": 0.52,
             "spike": false
           }
         }
@@ -1916,7 +1916,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - financialpost.com",
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
               "sentiment": 0.285,
               "relevance": 0.6,
@@ -2187,7 +2187,7 @@
           "events": [
             {
               "source": "googlenews_industrial",
-              "title": "6 Best Robotics Stocks to Buy in 2026 | Investing - money.usnews.com",
+              "title": "6 Best Robotics Stocks to Buy in 2026 | Investing - U.S. News Money",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWUlLMmtvOFZqci1PMmVKaUZCWWlYVEt5OHhoN1dWNHh2Tmw4UDRGalhSaVBmQlYybTZTaGFkSjNqS1BsRTVWUEJieWpnR29nVHdhcloyWEdxcTJ6RmphSUt0ZzZnb3JTUFNkUll3X2JPdTBGZWNPTTB5N0RxUlVvTEFSRVFONTN2ZkpZ?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -2330,45 +2330,6 @@
           "coverage": {
             "count": 20,
             "zscore": 0.18,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-07",
-          "return_pct": -1.71,
-          "zscore": -1.58,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.45,
-          "events": [
-            {
-              "source": "googlenews_industrial",
-              "title": "Sector & Industry Performance - Bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5xWEtZUzJ1Y0JsejVfb1o5VkF5Z3BFdWVwYzdCcEJ6dWJ3N19uOFNoY2VaYnMtUVpLeTdSUE83a3pkTWtOQmpTUm01aEJteWVhNU5n?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Specialty Equipment Distributors Stocks Q1 In Review: United Rentals (NYSE:URI) Vs Peers - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUi1pMGN4M3huQXNqNG5NT1lpQ1dmaE95Slo2RDU4ZF8wbGZ3Q3RjN1hzVDlYZ0szU0dxQUdXOXdiT29MRVpibFNBNHFCYTNkMDB1eTlKSlVVYU1ILWJIOHNfU2xhWDVaZXdieDlvS19aYzhLbkM2MXhEby1RaGduUGlIMFZ1dUFvVFVnZkllWVJvZDFHOEs3UFZSN1BxWkloWjhaOVk3XzRYN19uZDZoRERrblVwUXh0RXhkTmRRNDE2RkJJZUREVzlZVndvOGMyOFJXTmUwbnJ3Vkx2TVlB?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Why Is RBC Bearings (NYSE:RBC) Among Russell 1000 Stocks? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOXR0LW91cEVDYXBKampCanUyekZHcDdvUnR1YnpwUlB5NFNnVFBOZzc4azZvYzZmWlUwUGR6UUNJTEsxREtVY3Q2czZQVDhTWWxGVjlGbDM0Q3JIcmRtZlFPSlNuN3daYmxJcWM5VGlISGtnTFJpcmlKRDRKWi1fUFUzRnNodnlDa1dXcmZXTFNhMVlKUEZla21FMEN1ZGJx?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 25,
-            "zscore": 0.91,
             "spike": false
           }
         }
@@ -3183,7 +3144,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.85,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -3222,7 +3183,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.23,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -3399,7 +3360,7 @@
           "events": [
             {
               "source": "googlenews_commserv",
-              "title": "8 Top Telecom Stocks to Buy With Healthy Dividends | Investing - money.usnews.com",
+              "title": "8 Top Telecom Stocks to Buy With Healthy Dividends | Investing - U.S. News Money",
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPX0dzV0JjdlB2dl9rZzlsa0NDa21wSWs5MTducjAycnhacXl2cG5QSDFxT1hISFA3R0dzRzRZWm92RFM2Nmk3VklKaDlQZW1sWG9JMldTRVdScGhERk1ob1lNX1FIbi0xLVU0ZHBYRnhKNU9pdlhRMFZ5eFY3cmRaeVVibTEyV2Y0cU02UA?oc=5",
               "sentiment": 0.542,
               "relevance": 0.817,
@@ -3889,7 +3850,7 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Australian Uranium Stocks Gain Attention as Nuclear Energy Demand Builds - Kalkine Media",
+              "title": "Australian Uranium Stocks Gain Attention as Nuclear Energy Demand Builds - kalkinemedia.com",
               "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMHVaNnVjSXpuVG9uRUxGb0lVSGt1YWFmb0RMVGhUWkViVWowcjVPOS1MZXMzZWRQdXV5XzBkRld0c1UteHZDMUU4YVJFRC1TMERrc0pqRHhnUzJHbDJjLUJveU9Dck5aN2pmV01vLTg2OWE3YTBGc09KYm5wanVxNzM2QzBtc2JZSzNlVzA2dXdNZ1AxZTVNYXJoemZZTDRKdy1rYXkxVFUtSXJXWUJoQmpnR05TLWdGUTNQcC1FaTZtZw?oc=5",
               "sentiment": 0.612,
               "relevance": 0.6,
@@ -3906,7 +3867,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.53,
+            "zscore": -0.54,
             "spike": false
           }
         },
@@ -3945,7 +3906,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 2.48,
+            "zscore": 2.47,
             "spike": false
           }
         },
@@ -3984,7 +3945,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.51,
+            "zscore": -0.52,
             "spike": false
           }
         },
@@ -4023,7 +3984,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -1.56,
+            "zscore": -1.58,
             "spike": false
           }
         },
@@ -4062,7 +4023,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.71,
+            "zscore": -0.72,
             "spike": false
           }
         },
@@ -4101,7 +4062,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.38,
+            "zscore": -1.4,
             "spike": false
           }
         }
@@ -4870,7 +4831,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -1.05,
+            "zscore": -1.06,
             "spike": false
           }
         },
@@ -5797,13 +5758,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-09-27",
-      "return_pct": 0.22,
-      "zscore": 0.01,
+      "date": "2026-09-28",
+      "return_pct": -1.66,
+      "zscore": -0.82,
       "max_abs_z_recent": 3.44,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 2
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-09-25",
@@ -5812,7 +5773,7 @@
       "max_abs_z_recent": 2.74,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 3
+      "days_since_last_major": 4
     }
   }
 }
