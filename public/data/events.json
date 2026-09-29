@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T10:03:00+00:00",
+  "generated_at": "2026-09-29T18:13:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -564,7 +564,7 @@
           ],
           "coverage": {
             "count": 70,
-            "zscore": 1.93,
+            "zscore": 1.92,
             "spike": false
           }
         },
@@ -720,7 +720,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 1.78,
+            "zscore": 1.77,
             "spike": false
           }
         }
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-09-29",
+          "return_pct": -5.37,
+          "zscore": -1.53,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.18,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink CCIP 2.0 exposes bridge risk, and issuer gates trigger stalls - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSXowWG9QbDF3SXhQcWFJQlJqSUFWbF8zU05qX3pYOGloWF9OeklwdUYzcDJYYXhDaWNQT0ljbWVpU1piTGRJTW1zeVlqeDN6RUdRN3RSOFFISk1TaVFHZDVXMVJHWFJENEM4MGJkYldWTm9tMlJzaWlHVTV6eVZmQTJnRlItXzRlbVZjQlRNMVpkMUUwQnpRLVR1UTRqajJBYXlwUmkzYlpCSGM?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "CCIP 2.0: How Required Verifiers Can Delay Transfers - 99Bitcoins",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXWGtpXy1xdUw5aEhTeHJBeTJ0ekV0RUNReGZ0ZGJTNDEzR1pWYTVlLURxQVhmak0xeVV4eHFqenpER21TZ2xDZzNZbXdPTm4tZktUa0R5Q1JtZF96eDF1aTI2VnJqX3F3eFZmZnFWR3lPbHhoYUVOOHU5ODQ?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Launches CCIP 2.0 With Custom Verifiers and Faster Transfers - The Defiant",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWkZpendJUTNCWVh5WjJENkZ6ZWhOd1ZPY1MwYjBkT3lteml2MkRfUWhwMVE0TndvN1RBbnU2MlhlQ3ltbTVLcUxKQlBIM1B5N0VmQlotLVBoaDgtYmczYmVydDc1QTVXTTAwLUZmT182MDFjdHdWdHNPaUZhVkhoYUJ3TDNLVWhDTUpYQVRVOTAxMEdiQ2tZSmNJZkNtT2R3SEZsNmlQenQtMUI2bXFHYVVR?oc=5",
+              "sentiment": -0.226,
+              "relevance": 0.691,
+              "event_type": "upgrade"
+            }
+          ],
+          "coverage": {
+            "count": 32,
+            "zscore": 2.24,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-28",
           "return_pct": 10.01,
@@ -765,8 +804,8 @@
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": 2.17,
+            "count": 31,
+            "zscore": 2.38,
             "spike": false
           }
         },
@@ -804,9 +843,9 @@
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": 2.48,
-            "spike": false
+            "count": 33,
+            "zscore": 2.75,
+            "spike": true
           }
         },
         {
@@ -925,45 +964,6 @@
             "zscore": -0.2,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-18",
-          "return_pct": 7.36,
-          "zscore": 1.52,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 5.89,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "I Can Almost Guarantee You Just Missed the Most Important Number in Fed Chair Kevin Warsh's and the FOMC's Interest Rate Decision - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVjh0NnltU3pYUlFQU3hBVDJrc3YwMWxyQTZ3SnotWGRaZW5WcXVVQVVjY00zdDJIVmJweXZJR2xsNEhMQkhIZTF3aDRuS1NGVFlkZEljVGk2eFBTZ3BiWU9BMHBTRW1RbU5UcDhqa3Q5VlJSajRiZ3ZEMGd4aGZ2UHFTemJJQ2NON3VBUmh0N24wQ29aX2F1NEdrRGFXZHM?oc=5",
-              "sentiment": 0.634,
-              "relevance": 0.854,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Rebounds 6% as LINK Tests the $12 Resistance Zone - Brave New Coin",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVnRVaHQ4TnFMa1VYN1d4ei1oeERMT0VDQkRWbEM1ek44QzFGb2otV1l4WURwemRFZVFSOE9RdEszeU5ZLW8tdlJxY1d5blpET0hvYlBqMVdrRGl1clRROXoxY3FGME5sOEdSNHNJTkFRWEhuWmVaY1hGNGFUNVN4NWYzcU1ObGlrekw1MjJlQndleHh4ZXJZd2VDYnlTQQ?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Interest Rate Predictions for the Rest of 2026 - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUXV0WHRRXzZtNmRVX1V5WEtuTzNuMXRTUWZtSG05dzVBNllpTmJGWTVlVnNFaklqaHVoYzU0THZIYTk5RWJXNERXcnRuaC15TDdTTG9IcVUyZWxLc2dXejhUNFpTZVdOTDhmekthQUkyVklYRU9pazNyN2k0S0RmZmtpV0VScGFJalZkS1pB?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 11,
-            "zscore": -0.38,
-            "spike": false
-          }
         }
       ]
     },
@@ -1045,8 +1045,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.65,
+            "count": 8,
+            "zscore": 0.96,
             "spike": false
           }
         },
@@ -1916,7 +1916,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - financialpost.com",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
               "sentiment": 0.285,
               "relevance": 0.6,
@@ -2754,7 +2754,7 @@
           "events": [
             {
               "source": "googlenews_discretionary",
-              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - benzinga.com",
+              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVRjVzBTZk8ydWN0S2cwSHlaZmJKMW4xMVh5OFF1My1ieWNoUXMwWWRfSHBoNUxCV0lnajBJYkZycXFIMG5Ba0xmaDBvczUtRTNDWUkzazhPNTBfV2lyaGMydDJyTEN2V0RwU04tU0hQMWljS1g2d19sQkV5NDdCWmxSclZqdDJwSGdtOHRTeUZNYnpLOGxhT19QdjRqMWJvUEFYSVIxV0lJMHZzbEZBYWh0U090cWwtMjZJ?oc=5",
               "sentiment": -0.557,
               "relevance": 0.823,
@@ -3407,7 +3407,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - benzinga.com",
+              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3lTVWtZa254TlRSaE1pN3NndG92YzM1ajByaFhTVmxDM2J6czFqeFBrX1pYWUk4YWZYREIxelB4cGNEVWxqWVFQZ3VVUHl5V1llbGl0QWRYNms3NDlBYWtQWnZON0QteFhoUkhMUnVtVHV1VUt2V2Fqd1R2TjNQanp4eXE4c1hvdGxYWlVVLU9RR0hfUHM2cFVTLXVLRU5vTTF1TW1feDFmdlhPTzNOVEVPLUNwV2ZLN01Z?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3415,7 +3415,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "12 Communication Services Stocks Moving In Monday's After-Market Session - benzinga.com",
+              "title": "12 Communication Services Stocks Moving In Monday's After-Market Session - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRUp3Vkxsd0trSG00N21XTnBVYmdYb191aEMwMDduQmVKSk1EbjVLeGotX2lWRVhZcTFubFZ6TGVWWU9Kd3VLaUtQRTFtdXRaaVp2LWFuN0x4MjltWEY5dE4zcmJ6NGF3RUhTNDNQV2x4VjU3YUczTFhNcVR1cGpsNjZUT3hQcXhGMnprNGgzcElOcDhaakhqaHdZOFlCNmZPX3B0eExkYjRzTkZjanNMUGZDZkNkWWcxc1U2OElqdkk4bTIyVWhjQm1R?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3626,7 +3626,7 @@
           ],
           "coverage": {
             "count": 87,
-            "zscore": 2.05,
+            "zscore": 2.04,
             "spike": false
           }
         },
@@ -5055,8 +5055,8 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNeDJWVldVYzNRRTA5c3dHSnFXQlpGVi1ZZkllRzdlNTJ2NHgtR01mU3JHOWhLWk1ZSTlhTGwwM2ZjckpBSUJPZnhhSFdUSFRXQllwRzJzQ2ZJR0I2ajdfMUNZUENscy1iQlJrNTJIaF9ibGt1Qk84ODk4bmFEMzhyRnZsbVZWUDg2RHRlZXU1b2djQ3NkYmpMSWZyUlBoMk5zRURIdDgwbG5WZmlTNFRNTmVBV1R4bEM0OXFVT3VuVVdNVVpZV3hSVzB6OVpsQmh3VmNmZ0hSNXJwbEZYckQw?oc=5",
+              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUWlBU1YxcVZOcm5CdWJTZkRjLW5NeW0tV0hzODloSUhfV1Zsc2NrWlFGYWZTX2dhaHhtdjBLeW5SMEotU2I2QlZTT18zNG9SYl9QblZaWGhSekFLWkt3bnNxcEJKZlZYRzRGSUNGMnU3cmRhc2RaemxscEx4WF9NNnhCeEtYUmdOM3E2a25HNXBseHNqc2p0MDVFRllZU3dTT3FB?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
               "event_type": "other"
@@ -5064,7 +5064,7 @@
             {
               "source": "googlenews_cyber",
               "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNR2x6Ykk3Wk81M1QwQ2tHTnBXVS1jWkJXa1ZZRzA2NDFITFRmSEh3dU1PcnBVOThtZ0QxcjJ3Yi1OdDA4bnRqWnFldjQtZ3RPWm95RldJSE5PMHptSlNZbEpRU1JaSTJmdDRDY3R6VnF2bjV3MEdVYzVmMDJpY3FTZERUQW1IaU5qZEpBN01DOWswUzBxVzNoRFdoSjRkZTlfQ1NpcHlWWmdrQmwtTVlRNDUwY0lMTUFDN1pFVGUweGljSVp6YVRPcFM4VUM1TWJzazFaQVFzX1A3R0hyc3dfY2ZPZlFkWUZUOW4wWWZ5cEpCTGpFX180S0xOWHNVWlpReDBQU193X1NjeXdVVEE?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNeDJWVldVYzNRRTA5c3dHSnFXQlpGVi1ZZkllRzdlNTJ2NHgtR01mU3JHOWhLWk1ZSTlhTGwwM2ZjckpBSUJPZnhhSFdUSFRXQllwRzJzQ2ZJR0I2ajdfMUNZUENscy1iQlJrNTJIaF9ibGt1Qk84ODk4bmFEMzhyRnZsbVZWUDg2RHRlZXU1b2djQ3NkYmpMSWZyUlBoMk5zRURIdDgwbG5WZmlTNFRNTmVBV1R4bEM0OXFVT3VuVVdNVVpZV3hSVzB6OVpsQmh3VmNmZ0hSNXJwbEZYckQw?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
               "event_type": "other"
@@ -5553,8 +5553,8 @@
             }
           ],
           "coverage": {
-            "count": 37,
-            "zscore": 0.98,
+            "count": 38,
+            "zscore": 1.05,
             "spike": false
           }
         },
@@ -5759,17 +5759,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-09-29",
-      "return_pct": 0.77,
-      "zscore": 0.24,
+      "return_pct": -0.18,
+      "zscore": -0.19,
       "max_abs_z_recent": 3.44,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-09-28",
-      "return_pct": -0.77,
-      "zscore": -1.22,
+      "date": "2026-09-29",
+      "return_pct": -0.3,
+      "zscore": -0.41,
       "max_abs_z_recent": 2.74,
       "recent_days": 10,
       "benchmark": "SPX",
