@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T22:31:00+00:00",
+  "generated_at": "2026-09-30T05:49:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 157,
-            "zscore": 1.8,
+            "count": 156,
+            "zscore": 1.76,
             "spike": false
           }
         },
@@ -283,9 +283,9 @@
             }
           ],
           "coverage": {
-            "count": 122,
-            "zscore": 2.45,
-            "spike": false
+            "count": 123,
+            "zscore": 2.51,
+            "spike": true
           }
         },
         {
@@ -401,7 +401,7 @@
           ],
           "coverage": {
             "count": 77,
-            "zscore": 0.48,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -508,7 +508,7 @@
             },
             {
               "source": "googlenews_sol",
-              "title": "Solana (SOL) price jumps above $120 with a 5.8% gain in 24 hours - Pluang",
+              "title": "Solana (SOL) price jumps above $120 with a 5.8% gain in 24 hours - pluang.com",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaWpEZjVCRlBzMm1EOVVzeEJFbmRJa1RMczQyaWJwMjMzNWRBZTdWc2lyU0hKT3E1d1FlcFhfQmY0elpnWktRUjJUYVBIX0lJTG5YS3ZSYWl3SGY3LVF0QXhyTFY5QjJfcFZMdmpYQ2Q2SHlRWFJkSTFpblRuZXNPTE1wWHp3bEMxdVhnZExoVVJTWEEwYmhDX2hTeVpxcEZycGc?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -732,42 +732,42 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-09-29",
-          "return_pct": -5.04,
-          "zscore": -1.46,
+          "date": "2026-09-30",
+          "return_pct": -6.67,
+          "zscore": -1.84,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.01,
+          "market_return_pct": -0.13,
           "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Grayscale’s Chainlink Trust ETF buys $2.36M mor... - pluang.com",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTYjdpVUZZMjZXY0JuNlJwTDQxLVVSTE1ZdVluSHRUOVBmampqRXB1ZFc3SFhoay1TQ00wQlN3NHhPNzlBUGIzUURuSkVZUm9Ra01UX0EyZ25YWm5qU1VrQjl2SzU3Ym5fbDJ2TTR2SFF4VmNic0JLem9tQTNzTUE?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Grayscale's Chainlink ETF buys 159,500 LINK tok... - pluang.com",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSGQ2Y2toVldMdmU4Zjk0LUVWeU8tV2lmdnRiZENOYTVJc3ZsUzNmNXhlcW9xVWZWek5LZVp2OXdyZndxYjNuM0QxeXN1X0FCcDR4ZTdUNnZYODdyVkZBT1lTd0FpVWdScVVTM04ydktVTTFycklKX2g2VmxBUnctZWlzcHhmcTAtOVdaQWl5Ynp5eTFq?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            },
             {
               "source": "googlenews_link",
               "title": "Chainlink CCIP 2.0 exposes bridge risk, and issuer gates trigger stalls - CryptoSlate",
               "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSXowWG9QbDF3SXhQcWFJQlJqSUFWbF8zU05qX3pYOGloWF9OeklwdUYzcDJYYXhDaWNQT0ljbWVpU1piTGRJTW1zeVlqeDN6RUdRN3RSOFFISk1TaVFHZDVXMVJHWFJENEM4MGJkYldWTm9tMlJzaWlHVTV6eVZmQTJnRlItXzRlbVZjQlRNMVpkMUUwQnpRLVR1UTRqajJBYXlwUmkzYlpCSGM?oc=5",
               "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "CCIP 2.0: How Required Verifiers Can Delay Transfers - 99Bitcoins",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXWGtpXy1xdUw5aEhTeHJBeTJ0ekV0RUNReGZ0ZGJTNDEzR1pWYTVlLURxQVhmak0xeVV4eHFqenpER21TZ2xDZzNZbXdPTm4tZktUa0R5Q1JtZF96eDF1aTI2VnJqX3F3eFZmZnFWR3lPbHhoYUVOOHU5ODQ?oc=5",
-              "sentiment": -0.318,
-              "relevance": 0.727,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "LINK Hits 2026 High As Token Doubles From June Low – Outpacing BTC, ETH - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZ2V4UVpUaWw3czdsZV9GV0dMNnVzYU51eldjTS1QWFNFeTRSVDQ2WDF2N2xadWJrQnZMd0l5ZnIwbG5OeGJ2Y2pPTElIVkxGX2VGemVjdjY2N0tkZEd1NC13QVZxZy00SDZjSm5pOXVlSlpwWWFyWGJ5VUtBRUYzMUFVRG1qM3JBajQxQmhQU29NdV9UdkMyZDVjYXFSV25SMl9Mb0dCdW9YMlZRZzlUMjRYVno2UmlnaHVYZlB0Ym9rbnJfZTM4NjRmeHBHV2hzbDFVdGJ1UGk?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
+              "relevance": 0.553,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": 3.61,
-            "spike": true
+            "count": 2,
+            "zscore": -1.32,
+            "spike": false
           }
         },
         {
@@ -804,9 +804,9 @@
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": 2.38,
-            "spike": false
+            "count": 32,
+            "zscore": 2.51,
+            "spike": true
           }
         },
         {
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.97,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -1124,7 +1124,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.01,
+            "zscore": 0.99,
             "spike": false
           }
         },
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.2,
+            "zscore": -0.21,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": 1.86,
+            "count": 46,
+            "zscore": 1.93,
             "spike": false
           }
         },
@@ -1317,7 +1317,7 @@
             },
             {
               "source": "googlenews_tech",
-              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - Fox Business",
+              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - foxbusiness.com",
               "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Za2c4aWh6NnlubERiS3ZvY0dfckotcWRmTjQtZnEtd2R4T0xMN0hucXNTZEFYS1JSc19rbmRMazJRdVdrM3lxWmlwendlc05Ob2pvaVlVNWV5TXM?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -1558,7 +1558,7 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sector Update: Energy Stocks Fall Tuesday Afternoon - finance.yahoo.com",
+              "title": "Sector Update: Energy Stocks Fall Tuesday Afternoon - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUFFSZW9PZnNiT0FlUmRQd3BtS3Nya25yQjNZLXFxdHRMaDNnOWE4MDBZZFZOb1N6YTdWcEdYaE5qc2pCb0ZYa25GQnN5UjFSdUdVV3BtWklZalQwSUhnbGI4MW5lQ1NsZzNlSlh6U0tKTkFhOHlINDZsS3ZBaVdQX0lQNFY4OVI0T2FsNzVMaTNsV296?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
@@ -1916,7 +1916,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - financialpost.com",
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
               "sentiment": 0.285,
               "relevance": 0.6,
@@ -2110,7 +2110,7 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Moomoo",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - moomoo.com",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGJfbXppMEtzcy0wRDhFWGN3c24zTjQxb0loN01wS3RhS0ZtcFhnTTlfbEJUWUdmYng1SGdjeUxuWXBfQnVNS0pUQ1ljQXFTdHh6Q3NYVUgxSXhmZG83TEtWSDM3STkzVFJXcE9wYTZTaGNlUFE2X0dWeGhVWnlmalRsMVhTcU1HSFp4SE5VWW9mZVBnMkMwOA?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2350,7 +2350,15 @@
           "events": [
             {
               "source": "googlenews_utilities",
-              "title": "Top 3 Utilities Stocks That Could Blast Off In Q3 - Benzinga",
+              "title": "Scotiabank launches coverage of 14 U.S. power stocks amid data center demand (XLU:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaWt1WHRWQ3ZyTVVwUktHV05YdjV6LTJybkRpY3Z2eEpTRklQaFVtNEpLeC1wUEVtaHFYZloxbmJ4YW44eWhiMVVabUtGSWlNT2xSNDM2MVRBMU44eWpucjZBRU5NN041VlRudFcyNTFBQVRmSDFkcGxyaDBENE1xSHRlaHJjVHRaRXFkcjNkSmE5aks1d0lZNTFnOExMTkt5YUs5ajdqbnhLanNwTE5oOVFlTQ?oc=5",
+              "sentiment": -0.128,
+              "relevance": 0.6,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "Top 3 Utilities Stocks That Could Blast Off In Q3 - benzinga.com",
               "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdmJ4LWJaYUdTYXE2ZXY4WDJWLUstVXJvTDJWcnNYOGxXQl90cDU0T3Q0VnNlaVFSWXdxZ21rYXJhSlVTZUEzUjRtdTRTRHFQT1B6Q1lhQlJfdFZHaFVlNHFreTZud3B2NWxxZ2ZESmdPaTNWZXRpUGNZVVZXcHBsa0VoeFVvRUNZZE1zSGlZdlpHS0FvMXVrLU8zbDZUZnJET3VpV241dHBfTDlfbXQwc3d2NTU?oc=5",
               "sentiment": 0.202,
               "relevance": 0.481,
@@ -2358,24 +2366,16 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Dollar Rises to 2-Month High on Growing Prospect of October U.S. Rate-Rise - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOVFNMTl0M210ZWZXN2xwNEVaMTJXeGNKUTN2YlRqN3ZFLUtQRVlULV9IZEZ6eFNXRzZCNGlKcEJQN3dNWnVuRnZuNkxHdGdNODdtcVZlMFF4Z0hzbDRPYUJJdFQ0RjhMMlkwX21ZQ3RHY1gydFlCRlFNY25Qalpqc3VIZXdNMEJtbFpadVZpbXltbUVLYlJVYjNsZ0swM3ktaWZIcmc0UkZGMGtlTzRRZVNmSGpZYUktcUNEUkN1emkzanZ5?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.466,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Australian Dollar consolidates above 0.7000 vs USD as bears await RBA rate decision - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb0RETE9hOEFSQlBhMkkxZVJCQ2U2eXRYRzYtWngycnpDdjBsRG9WVVhRVUJJby1IUl9aWW1CS3BPeUxfREdBWDNPS3JNWXpkUm9zdE04N3lVakxUc3B4ZkxQY2hWcUtwOUY1WGlPMk8ySXl5eTZRV1lhTHJMM2pnUjUxVEF5ZUM4MEJJczJsbEJXbGN0Z3ZHU3JnWFBXTjhBb0toQnJnUXh2cmI5QTFWQ0oxR3BjOUFHVXB2OU4xTVVkcGM?oc=5",
-              "sentiment": 0.103,
-              "relevance": 0.385,
+              "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC News - Breaking News, Latest News and Videos",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNX3NMLXhhYU1lOVVLWU9sY0k0SDUyQnEwMG9SZ1RzNHZobTIyYk9KWGJlOGhic3FKdlQ2NXlIVDF6SW1oRlNWZlY2NHlNLWlnNGoybzAwLWlkV3V1Q1ZtM21KS2FLTy02NEF6VjY4UmFNc2hYa21mRURlSkJYZWxtc1R3VmRYZFlKNUU3NzZiMkZGNGJZcG1xZUNCN0RQNkRndEVPb9IBqgFBVV95cUxOU1FSZ3pWOURaQUxBS296TzBtRFFGclJXTnpLYWwzZXU1Q01kcVZUczBxUDAwR3FaYmFZdzlXUWM2T0Q3TDVldm9nSVY4OERYRUtkdm5sdndPSU1ETU1yc3BuMEpXLTd2VFFZRTVQcWdMZFdEZ0EzYjhTS200RFBkZy1jbE01WVhVbEgyX1Z2dXc4MWxmbXd6cl9pSlp2TDRldkdkS2hwOVE0Zw?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.47,
               "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -0.97,
             "spike": false
           }
         },
@@ -2397,7 +2397,7 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Moomoo",
+              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - moomoo.com",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMG5mdHdfWnpoVVVRQ3RaUWo4ZEZoOGY3ZWFtbkRRQW0yZDA3V3ZSY25kSFlsUnNPcm15Zm45aWFzY2VVYW5EbGFvS2lod29LRzVtMFJINHVub2t2aHlWVklSSEpPSUU4aUM4R3RxaWloLVo1R3hqOWpfcjBBQzM3RDJZOXBmNEVYd1ZZOXoyVVpNa0MzTS03S1Y2d3htU3NyNHJma1pxUUpEZw?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2522,7 +2522,7 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - finance.yahoo.com",
+              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0FtcHQ0RnZLekdMbkNmdmhGNFdreXJQSGVUX1NBdThUN3haX19EaGg1QUdtb1hCdy1rc0Q5aXUtMXZPQy04ZWNwbDBMUnhja2FWOUhaaWpKWHMyLVBxUkF6ZFNYbWxwclpybHBwMTd1VmF6N2JHa2JKenVEcXRZWHQ5Tm9aT3V6NEhCVFA0WlhDSEw1QThTUFBISXdrYXBmN2c?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2607,7 +2607,7 @@
             },
             {
               "source": "googlenews_staples",
-              "title": "Is Mission Produce (AVO) Outperforming Other Consumer Staples Stocks This Year? - finance.yahoo.com",
+              "title": "Is Mission Produce (AVO) Outperforming Other Consumer Staples Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUHlWeUR3a3VXOHlPV0taQnpaN1htNmhmLV9keUtGdlNnYV9kdi1sbWZTZFB5SXZNeXlMYlE0NUJrVkdJdnBXMEZ1R0Y3ekx1X0RRcE1vMzFaTnViWjFNWGFWV1RJWGdlX1dPOS1YX3ZFR0QyNDd6WUd0Q0Y5Wjc4UFpkVWc3QjJ3YlEzOTJ1M3QxSE9MbmxESWI0RXVJTVVJNXZ1SnNXYw?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3042,7 +3042,7 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "Is Kronos Worldwide (KRO) Outperforming Other Basic Materials Stocks This Year? - finance.yahoo.com",
+              "title": "Is Kronos Worldwide (KRO) Outperforming Other Basic Materials Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa3NMVTdnbHBuQm9peVpLZF9ld3pnM3Y0Z0JiOGZOUnN4d2FGTWtDV1ZDVmVCLXJtdFdLamEtMnlJeGVBbVhwM2YwRmdWTmZUZTVhSndyS3VCVlhHV0EyVG1oXy04YnVlT1RIWWxyOUxtSThXWHFBYnkzRy13bm92aDNhRno4RHZjZENaT2ZoX0FrSUp5Y1JBTUNEX3hBTlNyNW1iNjJ4OFQ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3454,7 +3454,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "12 Communication Services Stocks Moving In Monday's After-Market Session - Benzinga",
+              "title": "12 Communication Services Stocks Moving In Monday's After-Market Session - benzinga.com",
               "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRUp3Vkxsd0trSG00N21XTnBVYmdYb191aEMwMDduQmVKSk1EbjVLeGotX2lWRVhZcTFubFZ6TGVWWU9Kd3VLaUtQRTFtdXRaaVp2LWFuN0x4MjltWEY5dE4zcmJ6NGF3RUhTNDNQV2x4VjU3YUczTFhNcVR1cGpsNjZUT3hQcXhGMnprNGgzcElOcDhaakhqaHdZOFlCNmZPX3B0eExkYjRzTkZjanNMUGZDZkNkWWcxc1U2OElqdkk4bTIyVWhjQm1R?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -4006,7 +4006,7 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "3 Nuclear Energy Stocks to Buy Before 2026 Ends - aol.ca",
+              "title": "3 Nuclear Energy Stocks to Buy Before 2026 Ends - AOL.ca",
               "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2cHR1QkdxMnlpU21panIyZktqeVJELWVDQ083dHFEOGZULUhsR2JEZlUxdkNPMmF4QnlYS29BTGpEUnRCbzBOM19FU2poaXlSWjdiZzVzWl91Ql9DWENqdG96ME1Ic28xMXhlSWNWenJkMV9EaEZwaF9R?oc=5",
               "sentiment": 0.273,
               "relevance": 0.509,
@@ -4130,7 +4130,7 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Indian Stock Market Faces Sell-Off in Green Energy Sector - SolarQuarter",
+              "title": "Indian Stock Market Faces Sell-Off in Green Energy Sector - solarquarter.com",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT2g4UmF1ZDl5dHFaVVRhalJQTGctNXgwcXU2OGhROGlvb3BUaTU4Z0pPRm9ZSHlSTVVBQlIyaXJtcF9iNkU4d3Y3RllXalBDcTZFeWtlZ3VmbnVrVmN3dFhOS0xCOTgzM2R2dldaS2pGelRmRTJMd2NvRmljNEQ1RmhFWk82MmpzaFRMb28wQmNMSWlGYlVBVV9vMlhaZzNkNG8ycU5ic2Z0VzJzRnQzZmthaEk0SVM1NEE?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
@@ -4388,7 +4388,7 @@
           ],
           "coverage": {
             "count": 32,
-            "zscore": 0.44,
+            "zscore": 0.43,
             "spike": false
           }
         },
@@ -4900,7 +4900,7 @@
             },
             {
               "source": "googlenews_robotics",
-              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - finance.yahoo.com",
+              "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4% - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT2VSVmstRTVHUUNoQUo0azJ5bXhrSE4tSUt3amtyTEJFVGk5cndUWmw2cmlkOG10T0NXWVEtM3lTZFRDNWVZZXFjV3ZCMEp4M2hGWVZzZ3Y2cE12a3R3VzFKNUhLMTFnU2ZkODJQT0tyamtsSlY5YlAtYWNWcmZEcFdaZDEtbThMWXJIRlI2MnZCTURLbFpqZTZqNTdIeDNTcnc?oc=5",
               "sentiment": -0.459,
               "relevance": 0.784,
@@ -5001,7 +5001,7 @@
           "events": [
             {
               "source": "googlenews_robotics",
-              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - finance.yahoo.com",
+              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUVHY2pOM1lCTWxmY21jRlp2VC01WjkyOEI1VzlJOTB2YXdnV3J0Q2dPd2twVzRWazBwYy1kN3UydFVBTXk1VEFCRm9IdkEtR3BvWjdmNF9OVktWdlRuYURlcUM1UW9mSlNGamxWQ2NIVHFsY1ZfY0tpOHB1OGlzeURQZm5ObWtfeVhZR1pHZk5kMkhQa1J6QzJSVQ?oc=5",
               "sentiment": -0.128,
               "relevance": 0.651,
@@ -5094,7 +5094,7 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - finance.yahoo.com",
+              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUWlBU1YxcVZOcm5CdWJTZkRjLW5NeW0tV0hzODloSUhfV1Zsc2NrWlFGYWZTX2dhaHhtdjBLeW5SMEotU2I2QlZTT18zNG9SYl9QblZaWGhSekFLWkt3bnNxcEJKZlZYRzRGSUNGMnU3cmRhc2RaemxscEx4WF9NNnhCeEtYUmdOM3E2a25HNXBseHNqc2p0MDVFRllZU3dTT3FB?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
@@ -5623,7 +5623,7 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "U.S. Market Movers | Gold Mining Stocks Drop at Open; Sibanye Gold (SBSW.US) Falls Over 6% - Moomoo",
+              "title": "U.S. Market Movers | Gold Mining Stocks Drop at Open; Sibanye Gold (SBSW.US) Falls Over 6% - moomoo.com",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTmx2UUgxNzdidk9lREp0RDRNM2xnMUR2UW45eGVPMk4yR3NvdnBnZV9MbmhTWVRqOTB4Q0RFd083UWJGUDhkXzQ0Qm9sOUVlMnhYNmg0ZHNhT0cyTzU4aXFQMEkyVFpPQXRtd1RRcGUwSHlhZG9wbFRqSkZnR29fLXhxaFZyclBNNnhfUHpxMW54aFM5bVA4UTAxVzZvb2RFcnc?oc=5",
               "sentiment": -0.273,
               "relevance": 0.709,
@@ -5797,9 +5797,9 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-09-29",
-      "return_pct": -0.01,
-      "zscore": -0.11,
+      "date": "2026-09-30",
+      "return_pct": -0.13,
+      "zscore": -0.17,
       "max_abs_z_recent": 3.44,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5812,7 +5812,7 @@
       "max_abs_z_recent": 2.74,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     }
   }
 }
