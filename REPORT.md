@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-02 13:34 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-03 12:14 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Simulation Games | hot | 0.99 | +34.3% | $431M | decentraland, the-sandbox, my-neighbor-alice |
-| 2 | Gaming Utility Token | hot | 0.97 | +16.3% | $876M | axie-infinity, the-sandbox, apecoin |
-| 3 | Play To Earn | hot | 0.97 | +19.1% | $2.1B | floki, axie-infinity, decentraland |
-| 4 | Metaverse | hot | 0.95 | +14.6% | $2.6B | render-token, floki, axie-infinity |
-| 5 | Gaming Governance Token | hot | 0.95 | +10.1% | $582M | axie-infinity, apecoin, illuvium |
-| 6 | Entertainment | hot | 0.95 | +10.6% | $556M | decentraland, enjincoin, ravedao |
-| 7 | Axie Infinity Ecosystem | hot | 0.95 | +11.2% | $245M | axie-infinity, smooth-love-potion |
-| 8 | Card Games | hot | 0.93 | +9.6% | $267M | axie-infinity, echelon-prime, alien-worlds |
+| 1 | Crypto-Backed Tokens | hot | 1.00 | +19.4% | $439M | wrapped-steth, wrapped-beacon-eth, wrapped-bitcoin |
+| 2 | Yield Aggregator | hot | 0.98 | +4.8% | $399M | convex-finance, yearn-finance, tori-ecosystem-vault |
+| 3 | Impossible Finance Launchpad | hot | 0.95 | +7.3% | $193M | aethir, carv, brickken |
+| 4 | Simulation Games | hot | 0.95 | +0.6% | $443M | the-sandbox, decentraland, my-neighbor-alice |
+| 5 | Optimism Superchain Ecosystem | hot | 0.94 | +9.0% | $2.8B | worldcoin-wld, optimism, lisk |
+| 6 | bStocks Ecosystem | hot | 0.93 | +0.3% | $742M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, strategy-tokenized-bstocks |
+| 7 | Decentralized Identifier (DID) | hot | 0.92 | +7.4% | $3.1B | worldcoin-wld, ethereum-name-service, project-galaxy |
+| 8 | Gaming Platform | hot | 0.92 | +0.3% | $302M | gala, unipoly, deapcoin |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Four.meme Ecosystem (BNB Memes) | -6.6% | $720M | bianrensheng, lobster-2, hakimi |
-| Runes | -5.4% | $118M | dog-go-to-the-moon-rune, magic-internet-money-runes, rune-pups |
-| Gambling (GambleFi) | -4.4% | $8.9B | rain, shuffle-2, bc-token |
-| Prediction Markets | -3.9% | $8.3B | rain, drift-protocol, overtime |
-| Options | -3.8% | $8.7B | rain, derive, hegic |
+| Pons Launchpad | -17.3% | $330M | pons, thinking-cat, zzz-2 |
+| BackedFi xStocks Ecosystem | -11.7% | $804M | strategy-pp-variable-xstock, microstrategy-xstock, circle-xstock |
+| Prediction Markets | -9.4% | $7.6B | rain, drift-protocol, overtime |
+| Options | -9.3% | $7.9B | rain, derive, hegic |
+| Long Launchpad | -8.9% | $184M | artificial-inu-3, boner-coin |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
