@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T22:27:00+00:00",
+  "generated_at": "2026-10-03T05:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -720,7 +720,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 1.78,
+            "zscore": 1.77,
             "spike": false
           }
         }
@@ -731,45 +731,6 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-02",
-          "return_pct": -4.78,
-          "zscore": -1.32,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.46,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Here's Why I'm Buying Chainlink (LINK) Right Now - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR1pIQlNYVE1HOEc0NDdXLUNyM2QyMDNXT0dESkpvaDF0X3Yyc21CSHlIc2RuV1Fya1hoak5YWkVZekF3MV8zTF8tYjloVzNIbFJydF9VLUROU0swS2hqTFN2MWVOX2VDdDNCbWFhQnpzUlhMVmMwcHFDMF9PY1NMd1VVLTltY29qLVVEdUhWeWR6dV9sVWpQRzJR?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Here's Why I'm Buying Chainlink (LINK) Right Now - fool.com",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaVlSTDNlejEtYnZJV3RwQ25vc2hBYU14RF9XeUhBMlRoUjdLa2ptUmlmRXluWWd3WjE4aFFZWXVKSjBtSllDVXR0RUZaZlExeTBidDFfT3ZjZk5ndW4wX3dmMVg2THcxV2g4QzdaRlA4VlFGRHJ3QVN1RThxc1Y3UHpHMjZBeFpYRmVaQXFDS2w?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - CoinGape",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTXQ4WWx2bHFLdnBBRjJPTllRbzJEa3lXVTVIQTFQVW94dDhWV19jWE9Qb2RpdmYzczN1cUZKb0wxUGIxT2NRQXVyRWJVS3pOVEFpT21EN0FxSjN0QnJlUkpJZVJQRC15R2RDTl9SMlR3SU9tT2RWTG1mV2hEZDhCU2FuU2FYMnlSRHZYVVNYbjI0c3dKM1NrR3ZVb2puVnBacWtXV1ZpNTFNTExoYThv?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            }
-          ],
-          "coverage": {
-            "count": 10,
-            "zscore": -0.56,
-            "spike": false
-          }
-        },
         {
           "date": "2026-09-29",
           "return_pct": -5.47,
@@ -952,8 +913,8 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Ripple vs Chainlink: Which Bet on Swift Pays Off? - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORDF2VWtZeEpnVmhPQzhoNnJmaER2TV9TbnRmbkRQY2tWbmtrbGNrXzlNUXJacHY5ZGFfQnAteE14c1ROTVR1eThJb1RmZzZ1eHJMMmhlYkNnVWI0cWN2SWU0QXZzOVZMd3VadkZwMDUtQW1JcENfRW1maHdBUV8yNXlnd1lVbjR0NDE3b09VOTBxdk5zMzliei1rMmkzUUtqQlRFdWlNRE5Edw?oc=5",
+              "title": "Ripple vs Chainlink: Which Bet on Swift Pays Off? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObXgtbUljQl81bk9TYTlheGxxRlRRdjNWVHg5WkRfMmtVMHVrNFJGaTVXUW56QUJLeXQtRTRtYl9WcmUzMEFOWnprOEdJelhZZnZhZDNqSWdSc1RiTURIUE5SNk9MYVU3dGozZkJ1Tjktc1lTdFM0YXV4a1J5cWdoX0FyczV6X1g3OHZjWEJCU2gyeWdtaVU3Y0JR?oc=5",
               "sentiment": 0.202,
               "relevance": 0.6,
               "event_type": "other"
@@ -962,6 +923,45 @@
           "coverage": {
             "count": 13,
             "zscore": 0.03,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-09-21",
+          "return_pct": 4.97,
+          "zscore": 1.33,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 6.73,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "LINK Slides Below Support as Apeing Hits 460M Sold: Best Crypto to Buy in September - TechBullion",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaEhQdG1RbE5mb2Q4R0hrblFfZFZKQUF5YTV1WUoySC1ibWJ2aDFWZUQwQThTSnY2aTJYRENqNFdsRjNZVlNwc3cwaWJRUlFvbFBYdy16ZDRTUlF3eTdMRmVuZFVFMmlqd25CY1BvS21YblgxTVY2RzFHSVpYZ2dETXVBN1p0MVlCeThFaU5HNFI3d3ZTZnQ5bzFJSXNoa05TYW5PYUMzX1VsNzQ?oc=5",
+              "sentiment": 0.784,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - Boston Herald",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcHBCMDlKUlRZVlluVkFqY19GVXhZVVd3RG00LVphRkY3UnliOXhHc2J2bDBtSUktWldLNjdvblpKV2NXN1NuUEdINXVZeGpXVDZfakFJeEhUc2dKalF0V2FIQlVxNksyWHQtb2NwZTlPTTB1bnVsS2tRUU5VNTg?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": -0.34,
             "spike": false
           }
         }
@@ -1029,7 +1029,7 @@
             },
             {
               "source": "googlenews_pol",
-              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - Cryptonews.net",
+              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - cryptonews.net",
               "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVERlS1VkVERTNnc4bnBFYlFqRWQxQ213YlZfbkJfLW1Wb0RFTHQ0TGhhU0RYdjNGVFpNRWo2UUgyTERLZ0lfQ3FMMXBMMTU0VlF3N1pFSkhSUQ?oc=5",
               "sentiment": 0.475,
               "relevance": 0.59,
@@ -1060,7 +1060,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - Cryptonews.net",
+              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - cryptonews.net",
               "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVERlS1VkVERTNnc4bnBFYlFqRWQxQ213YlZfbkJfLW1Wb0RFTHQ0TGhhU0RYdjNGVFpNRWo2UUgyTERLZ0lfQ3FMMXBMMTU0VlF3N1pFSkhSUQ?oc=5",
               "sentiment": 0.475,
               "relevance": 0.79,
@@ -1154,7 +1154,7 @@
             },
             {
               "source": "googlenews_pol",
-              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - ambcrypto.com",
+              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - AMBCrypto",
               "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUFowTTZOeUk2c2RpYUNLaGFuRmpmQlZGaE85TGhsdFpkejF2TEVwVXg2OTZxOE5qdllIVkM3YklkYXhTbmNaNjZ1ZGhEN01QeGV1WmNTOGkwRXZCQ24wZ241VkU2YW9Da3lFQlNHMk95dzZhLUNWRWk3X1JDRXVpNTNPdWE0cEh0RUxrTm1xOVZMSmZ5MFNtZS1pY2Y4YTg?oc=5",
               "sentiment": 0.635,
               "relevance": 0.654,
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 25,
-            "zscore": 0.73,
+            "count": 26,
+            "zscore": 0.79,
             "spike": false
           }
         },
@@ -1472,10 +1472,10 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Better Energy Sector ETF: Vanguard Energy ETF or First Trust Infrastructure Fund? - fool.com",
+              "title": "Better Energy Sector ETF: Vanguard Energy ETF or First Trust Infrastructure Fund? - The Motley Fool",
               "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTFdDOV91R05KX2VFZ0R2RFliT3BwWGtIRmwtaDFwTzNJRGgzN2JYWVRCdXl4cTZtWWRhS0cwX1VKYVM3cG9xSDJLNnBUWDlFRl83RnFXRVZ4eU1acFlsNWpRTUhFSkJaV21ZbUVVRDVySUpCbjhfWkxSaXZOeU1uNmQ0WllIVjh0SXI0UTJ5Z0FjeVhCU2hSc0poek9YN05ScFRpMUQwbjBSN3FwV3hmcFB4TVg0VGppNUJBRVVpaHpVQnd6?oc=5",
-              "sentiment": 0.856,
-              "relevance": 0.942,
+              "sentiment": 0.758,
+              "relevance": 0.903,
               "event_type": "etf_flow"
             },
             {
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.62,
+            "zscore": 0.61,
             "spike": false
           }
         },
@@ -1916,7 +1916,7 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - Financial Post",
+              "title": "Canada's big banks set to report strong results again, but questions about valuation remain - financialpost.com",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVXFvcGY0alhMaDZVVGZhVERtaExaTkZ6YzVyYmgxRXlKaVhuSzhCM1NzWDNXc21LZ2ZXR01XWkcxeUpIQUVsZXhxZzV4WU9ueEIwa1pRSTBISzBHcHRFaTFhV0ZWdzlmZkFHT0JuaU5Cd1lsX1ZpeTNoMG1VWUl0d2hVWkZnRUpvalNxYXdvVmppSEFaV1E?oc=5",
               "sentiment": 0.285,
               "relevance": 0.6,
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.36,
+            "zscore": 0.35,
             "spike": false
           }
         },
@@ -2048,8 +2048,8 @@
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": 0.05,
+            "count": 14,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 0.31,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.21,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -2428,7 +2428,7 @@
           "events": [
             {
               "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - au.finance.yahoo.com",
+              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Yahoo Finance Australia",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTFFRSl9scG52M0FCSDhzYXBNSk14RGxpc01ZbWgzVk9oSmwwREpYQXJadXFTeHJiNUVtWTlDYTVlYk9GUkNkTDBvNS1wd1EzRkJzaFBqLXpVOUpuY2tUZUpDSXVqeEhiLVQtZnRxX3U3RVItaW5rMk4zanVwLTFyYWNjeTNIUlgzSzBj?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2655,7 +2655,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.1,
+            "zscore": -1.09,
             "spike": false
           }
         },
@@ -2895,8 +2895,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": 0.16,
+            "count": 17,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -3059,7 +3059,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.24,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -3580,7 +3580,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.64,
+            "zscore": 0.61,
             "spike": false
           }
         },
@@ -5914,13 +5914,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-10-02",
-      "return_pct": -0.46,
-      "zscore": -0.37,
+      "date": "2026-10-03",
+      "return_pct": -0.26,
+      "zscore": -0.28,
       "max_abs_z_recent": 1.1,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-10-02",
@@ -5929,7 +5929,7 @@
       "max_abs_z_recent": 2.74,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     }
   }
 }
