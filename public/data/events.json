@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T05:35:00+00:00",
+  "generated_at": "2026-10-03T11:54:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -732,6 +732,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-10-02",
+          "return_pct": -4.07,
+          "zscore": -1.15,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.42,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Here's Why I'm Buying Chainlink (LINK) Right Now - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaVlSTDNlejEtYnZJV3RwQ25vc2hBYU14RF9XeUhBMlRoUjdLa2ptUmlmRXluWWd3WjE4aFFZWXVKSjBtSllDVXR0RUZaZlExeTBidDFfT3ZjZk5ndW4wX3dmMVg2THcxV2g4QzdaRlA4VlFGRHJ3QVN1RThxc1Y3UHpHMjZBeFpYRmVaQXFDS2w?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Here's Why I'm Buying Chainlink (LINK) Right Now - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR1pIQlNYVE1HOEc0NDdXLUNyM2QyMDNXT0dESkpvaDF0X3Yyc21CSHlIc2RuV1Fya1hoak5YWkVZekF3MV8zTF8tYjloVzNIbFJydF9VLUROU0swS2hqTFN2MWVOX2VDdDNCbWFhQnpzUlhMVmMwcHFDMF9PY1NMd1VVLTltY29qLVVEdUhWeWR6dV9sVWpQRzJR?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - CoinGape",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTXQ4WWx2bHFLdnBBRjJPTllRbzJEa3lXVTVIQTFQVW94dDhWV19jWE9Qb2RpdmYzczN1cUZKb0wxUGIxT2NRQXVyRWJVS3pOVEFpT21EN0FxSjN0QnJlUkpJZVJQRC15R2RDTl9SMlR3SU9tT2RWTG1mV2hEZDhCU2FuU2FYMnlSRHZYVVNYbjI0c3dKM1NrR3ZVb2puVnBacWtXV1ZpNTFNTExoYThv?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 9,
+            "zscore": -0.66,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-29",
           "return_pct": -5.47,
           "zscore": -1.56,
@@ -766,7 +805,7 @@
           ],
           "coverage": {
             "count": 50,
-            "zscore": 4.31,
+            "zscore": 4.32,
             "spike": true
           }
         },
@@ -805,7 +844,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 2.92,
+            "zscore": 2.93,
             "spike": true
           }
         },
@@ -844,7 +883,7 @@
           ],
           "coverage": {
             "count": 33,
-            "zscore": 2.77,
+            "zscore": 2.78,
             "spike": true
           }
         },
@@ -925,45 +964,6 @@
             "zscore": 0.03,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-21",
-          "return_pct": 4.97,
-          "zscore": 1.33,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 6.73,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "LINK Slides Below Support as Apeing Hits 460M Sold: Best Crypto to Buy in September - TechBullion",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaEhQdG1RbE5mb2Q4R0hrblFfZFZKQUF5YTV1WUoySC1ibWJ2aDFWZUQwQThTSnY2aTJYRENqNFdsRjNZVlNwc3cwaWJRUlFvbFBYdy16ZDRTUlF3eTdMRmVuZFVFMmlqd25CY1BvS21YblgxTVY2RzFHSVpYZ2dETXVBN1p0MVlCeThFaU5HNFI3d3ZTZnQ5bzFJSXNoa05TYW5PYUMzX1VsNzQ?oc=5",
-              "sentiment": 0.784,
-              "relevance": 0.914,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - Boston Herald",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcHBCMDlKUlRZVlluVkFqY19GVXhZVVd3RG00LVphRkY3UnliOXhHc2J2bDBtSUktWldLNjdvblpKV2NXN1NuUEdINXVZeGpXVDZfakFJeEhUc2dKalF0V2FIQlVxNksyWHQtb2NwZTlPTTB1bnVsS2tRUU5VNTg?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 10,
-            "zscore": -0.34,
-            "spike": false
-          }
         }
       ]
     },
@@ -990,7 +990,7 @@
             },
             {
               "source": "googlenews_pol",
-              "title": "Polygon Launches Crypto Checkout in Open Money Stack - KuCoin",
+              "title": "Polygon Launches Crypto Checkout in Open Money Stack - kucoin.com",
               "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ1dzMUpWTHAtc29DTWVYQmRIcDd2TFR6LUViNGJPSE1yY2duc2NLMXRfRnQzZVJRbVFEc2pzcGVSeVVzNjM5WVhQNzIwMUtDTGFoeFZrSXpMQlpsNEE2M1V4V2xZOFpyRkJlTlZMVy1xU0hFelQ3THBTWUlhODdaNVpLXzU5MjZhYkZrS3FGbw?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -1029,7 +1029,7 @@
             },
             {
               "source": "googlenews_pol",
-              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - cryptonews.net",
+              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - Cryptonews.net",
               "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVERlS1VkVERTNnc4bnBFYlFqRWQxQ213YlZfbkJfLW1Wb0RFTHQ0TGhhU0RYdjNGVFpNRWo2UUgyTERLZ0lfQ3FMMXBMMTU0VlF3N1pFSkhSUQ?oc=5",
               "sentiment": 0.475,
               "relevance": 0.59,
@@ -1060,7 +1060,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - cryptonews.net",
+              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - Cryptonews.net",
               "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVERlS1VkVERTNnc4bnBFYlFqRWQxQ213YlZfbkJfLW1Wb0RFTHQ0TGhhU0RYdjNGVFpNRWo2UUgyTERLZ0lfQ3FMMXBMMTU0VlF3N1pFSkhSUQ?oc=5",
               "sentiment": 0.475,
               "relevance": 0.79,
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 1.91,
+            "zscore": 1.9,
             "spike": false
           }
         },
@@ -1317,7 +1317,7 @@
             },
             {
               "source": "googlenews_tech",
-              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - foxbusiness.com",
+              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - Fox Business",
               "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Za2c4aWh6NnlubERiS3ZvY0dfckotcWRmTjQtZnEtd2R4T0xMN0hucXNTZEFYS1JSc19rbmRMazJRdVdrM3lxWmlwendlc05Ob2pvaVlVNWV5TXM?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.04,
+            "count": 12,
+            "zscore": 0.12,
             "spike": false
           }
         },
@@ -2414,7 +2414,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.99,
+            "zscore": -1.0,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.75,
+            "zscore": 0.73,
             "spike": false
           }
         },
@@ -2895,8 +2895,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 0.38,
+            "count": 18,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -4504,8 +4504,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": -0.24,
+            "count": 21,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -5915,12 +5915,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-03",
-      "return_pct": -0.26,
-      "zscore": -0.28,
-      "max_abs_z_recent": 1.1,
+      "return_pct": 0.21,
+      "zscore": -0.05,
+      "max_abs_z_recent": 0.66,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 2
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-10-02",
