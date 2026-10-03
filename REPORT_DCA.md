@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.9% | 33.3% | +21.5 pp | 79% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 87% | 0.500 |
-| 3 | SOL | 48.6% | 33.3% | -15.3 pp | 100% | 0.000 |
+| 1 | POL | 11.8% | 33.3% | +21.5 pp | 73% | 1.000 |
+| 2 | LINK | 39.3% | 33.3% | -6.0 pp | 82% | 0.500 |
+| 3 | SOL | 48.8% | 33.3% | -15.5 pp | 95% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,16 +23,6 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
-
-**TRX — TRON**
-
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
-
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.1 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **AAVE — Aave**
 
@@ -51,7 +41,7 @@ Layer 1 di smart contract; adozione DeFi finora modesta.
 - **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato da commissioni e riserva monetaria. La cattura esiste, ma è proporzionale all'uso della rete, che è la variabile debole.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.20 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 6.5 anni.
+- **Età**: almeno 6.6 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **SUI — Sui**
@@ -115,7 +105,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -123,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- stablecoin o token ancorato: 19
-- capitalizzazione sotto la soglia: 19
-- volume troppo basso rispetto alla capitalizzazione: 13
+- capitalizzazione sotto la soglia: 20
+- stablecoin o token ancorato: 18
+- volume troppo basso rispetto alla capitalizzazione: 16
 - già in portafoglio: 6
 
 ## Limiti
