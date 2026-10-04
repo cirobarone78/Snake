@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.8% | 33.3% | +21.5 pp | 73% | 1.000 |
-| 2 | LINK | 39.3% | 33.3% | -6.0 pp | 82% | 0.500 |
-| 3 | SOL | 48.8% | 33.3% | -15.5 pp | 95% | 0.000 |
+| 1 | POL | 11.7% | 33.3% | +21.6 pp | 74% | 1.000 |
+| 2 | LINK | 39.2% | 33.3% | -5.8 pp | 83% | 0.500 |
+| 3 | SOL | 49.1% | 33.3% | -15.8 pp | 99% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -71,7 +71,7 @@ Exchange di derivati on-chain con volumi elevati.
 - **Cattura del valore**: i ricavi finanziano riacquisti del token. Una quota delle commissioni finanzia riacquisti del token — cattura diretta e insolita nel settore. Contro: circolante intorno a un quarto del totale, quindi sblocchi molto pesanti davanti, e codice del motore non pubblico.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 4.29 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 1.8 anni.
+- **Età**: almeno 1.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XRP — XRP**
@@ -113,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 20
-- stablecoin o token ancorato: 18
-- volume troppo basso rispetto alla capitalizzazione: 16
+- stablecoin o token ancorato: 20
+- capitalizzazione sotto la soglia: 19
+- volume troppo basso rispetto alla capitalizzazione: 18
 - già in portafoglio: 6
 
 ## Limiti
