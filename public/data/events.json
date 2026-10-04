@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T12:44:00+00:00",
+  "generated_at": "2026-10-04T18:44:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -43,7 +43,7 @@
           ],
           "coverage": {
             "count": 156,
-            "zscore": 1.76,
+            "zscore": 1.75,
             "spike": false
           }
         },
@@ -103,20 +103,20 @@
               "event_type": "other"
             },
             {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_btc",
               "title": "Crypto’s Biggest Regulatory Fight Is No Longer About Bitcoin. It’s About Who Controls DeFi - Bitcoin Foundation",
               "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HYUlmS00wNWNyZUw3SVB1QTA3eW9FajNCYnVoT2UxVVhQQS05T2VoSGdLRnVtRlFLdm5GVGJwWTMySjNTSXk2VVQzYzZSbkJ3UkwzdS1STndPUC02clprV0tsOVA5VXNMOUQxNHRKRWVOMnVBQWsteUtnMUk0Zw?oc=5",
               "sentiment": -0.586,
               "relevance": 0.834,
               "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin on Fire: Frenzy Intensifies as $6.8 Billion Floods Into Crypto ETFs in Just 6 Weeks - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb0d1Nk1VNzVNY1JFN1NjbkhGdUhWWVZhb0lNNGg3Mk5fVHdldGUzLXA5aDF2NlJPSDktc1dYbVhwZjRjRlluenF3akJqblM0NGdQZ3VlMlJ3N0dqazlZekl1SFhkYVVTbjhzRGJZOEhtWl9HdjRrSVdRRVp4eU5vaWN0VHlWcER1b3BjV2t3bWdpZHBkazBsUXdVelAwdVJyTlVuMlA1blFVYlpGMENJRW4tbmI2N0tWNVVrcWxyMXJWbnpBMUl1Ml96TktxUQ?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "etf_flow"
             }
           ],
           "coverage": {
@@ -284,7 +284,7 @@
           ],
           "coverage": {
             "count": 123,
-            "zscore": 2.51,
+            "zscore": 2.52,
             "spike": true
           }
         },
@@ -323,7 +323,7 @@
           ],
           "coverage": {
             "count": 85,
-            "zscore": 0.61,
+            "zscore": 0.62,
             "spike": false
           }
         },
@@ -616,6 +616,14 @@
           "market_return_pct": -3.26,
           "events": [
             {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_sol",
               "title": "Did crypto’s $20 Billion DeFi surge just get stolen by price inflation? - CryptoSlate",
               "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObmlSN25mOGZqVDgxNmVCcWhMYmRFdC1pMnZfT3F0NmZrLV9pM283LVhabjlsVVRwcGhNZ293QmJ3UGxRLWtubnJoVkhmTmtJdkhtWFNEZFRqZFhTa3FmWEZ5SUNhYjF1dU9OTWlvbDR0VHJ4TjdEN1Q2LTQ2TkJlZk1EeTNzakpaeldqRC12dENlYzBzS2pGMg?oc=5",
@@ -630,14 +638,6 @@
               "sentiment": -0.421,
               "relevance": 0.769,
               "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "TSX falls as inflation worries weigh ahead of Fed decision - kitco.com",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ2l0eWNmMGVaMEN1LWhfck5QQlJUS0o3T3R2cEZuLUdyaXM0SGxCR0RILWRvQ2FDY09OMEs4dzdzYzVrWTNlMkgtLVlZcDNhQUc2N3ZDS2l4VFNFRjBWS1h4Tk92ek9YV2dDTTdabzNIRWF0MTBYZlZnamxxaExmLXZMMGhoWm5KQmJGal9LUkJLTHdtbmpoMEVkeDJ6cjN2eFUxWnV3?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "fed"
             }
           ],
           "coverage": {
@@ -952,7 +952,7 @@
             },
             {
               "source": "googlenews_link",
-              "title": "Ripple vs Chainlink: Which Bet on Swift Pays Off? - finance.yahoo.com",
+              "title": "Ripple vs Chainlink: Which Bet on Swift Pays Off? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObXgtbUljQl81bk9TYTlheGxxRlRRdjNWVHg5WkRfMmtVMHVrNFJGaTVXUW56QUJLeXQtRTRtYl9WcmUzMEFOWnprOEdJelhZZnZhZDNqSWdSc1RiTURIUE5SNk9MYVU3dGozZkJ1Tjktc1lTdFM0YXV4a1J5cWdoX0FyczV6X1g3OHZjWEJCU2gyeWdtaVU3Y0JR?oc=5",
               "sentiment": 0.202,
               "relevance": 0.6,
@@ -1597,7 +1597,7 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sector Update: Energy Stocks Fall Tuesday Afternoon - finance.yahoo.com",
+              "title": "Sector Update: Energy Stocks Fall Tuesday Afternoon - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUFFSZW9PZnNiT0FlUmRQd3BtS3Nya25yQjNZLXFxdHRMaDNnOWE4MDBZZFZOb1N6YTdWcEdYaE5qc2pCb0ZYa25GQnN5UjFSdUdVV3BtWklZalQwSUhnbGI4MW5lQ1NsZzNlSlh6U0tKTkFhOHlINDZsS3ZBaVdQX0lQNFY4OVI0T2FsNzVMaTNsV296?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
@@ -1644,8 +1644,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.98,
+            "count": 36,
+            "zscore": 2.09,
             "spike": false
           }
         },
@@ -2032,7 +2032,7 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - finance.yahoo.com",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNW9iZjdfWlVNTFV3bU9wZzNjXy1LUzFfLW43MHV4Zkt0S2ppbEdMRVM5UW9DQ1RRVlY4c1BvMmItUXlXYXd1ZU1KOWd2YmxIMDU1RkZ1am9SS3R6ZkdZck9ESS04LThuWjlveGdIa25jTE9RdXFiQTNEc1RRWWtidlY2WDFxYWktZGxGNFBLM2lVSVNpN2xVaHBiOV9pMzd6MkE?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2040,7 +2040,7 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Wednesday Afternoon - finance.yahoo.com",
+              "title": "Sector Update: Healthcare Stocks Gain Wednesday Afternoon - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVU1iMHdVRE5UY3BzRXhMRVBISGwtMmx5dEprenhKcXBiV3Zid0JfdFB6RVhoWWRzejBtd1RtQ0MxaVVDMk5aYWIxSWNLQ3JpWk1NV0cxNE1WWTNMaWdKeXNhTkE2Skd3bEVUTEwwemlkMGtYLWktU3FVbHdmb1RZZndvdnBJbi1DZXhQNXpFQk52cFExU05VTEVlajdEWTVVTlE?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
@@ -2195,7 +2195,7 @@
             },
             {
               "source": "googlenews_industrial",
-              "title": "3 Air-Freight & Cargo Stocks to Watch as Industry Prospects Improve - finance.yahoo.com",
+              "title": "3 Air-Freight & Cargo Stocks to Watch as Industry Prospects Improve - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd3lkbjR1UzBFb1JlMFhtSHhFaEU1RnRwaGNtV0prejNyUDVRRGhHWTRUTEVJS3Rwa0ZkSGVyYXNlNnpwN25LQnJfbkxER0FVNVBVV25EbVVXTlVHc1FWY0lVOHppcFBNZU01NmQ4ZWloM0NPclQ1S3BfU2p4Qk9TWEg5bE1OcGV3MGdjS1VyNmVKSGlDV0E?oc=5",
               "sentiment": 0.625,
               "relevance": 0.85,
@@ -2203,7 +2203,7 @@
             },
             {
               "source": "googlenews_industrial",
-              "title": "4 Restaurant Stocks Poised to Thrive Amid Industry Headwinds - The Globe and Mail",
+              "title": "4 Restaurant Stocks Poised to Thrive Amid Industry Headwinds - theglobeandmail.com",
               "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONDZBSERvT0gwZTNVeUVJZHRlZ1dqOWtoYTlsX3h3RjVPMnd5aXEzdGpObUxOV2dxeF9YTFdnY3NVdE81T0UtRlZjNl92ZVVhMmpjTTlIbEc0elJ6MjlyZ3Jhb2VfNkRaNVlGUDFYWFVKV1hhcU5iV3ZhdlJ3UzdOMXF5NkxZY2tOT05MSHk4QlJLS2h4blA0ZUVocV9XTUpScEJtRTlEM1cxVENMR2hFcWhlS01tOWJNeFdtNmF1aE9kVHVRZ0kzdmY5UzZNWHBkMTJzcUtBNVl0NnFIa1E?oc=5",
               "sentiment": 0.25,
               "relevance": 0.7,
@@ -2389,14 +2389,6 @@
           "events": [
             {
               "source": "googlenews_utilities",
-              "title": "Best Utility Stocks to Buy for September 2026 - Zacks Investment Research",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nOEZBOWxYeXVmWklUeDhxRHdGcndpN3dlYVR4aWg1ejF4RWpVZ2Q3TnYzMVFwQ3g4dHRRZUhGY1NaenlTMGc1NkN3YXhRelYtY21XaXZmWlh5Zk9EcGR0UWotbGR1VlJPamxpWXgtY1U?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.655,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
               "title": "Scotiabank launches coverage of 14 U.S. power stocks amid data center demand (XLU:NYSEARCA) - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaWt1WHRWQ3ZyTVVwUktHV05YdjV6LTJybkRpY3Z2eEpTRklQaFVtNEpLeC1wUEVtaHFYZloxbmJ4YW44eWhiMVVabUtGSWlNT2xSNDM2MVRBMU44eWpucjZBRU5NN041VlRudFcyNTFBQVRmSDFkcGxyaDBENE1xSHRlaHJjVHRaRXFkcjNkSmE5aks1d0lZNTFnOExMTkt5YUs5ajdqbnhLanNwTE5oOVFlTQ?oc=5",
               "sentiment": -0.128,
@@ -2410,11 +2402,19 @@
               "sentiment": 0.202,
               "relevance": 0.481,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Dollar Rises to 2-Month High on Growing Prospect of October U.S. Rate-Rise - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOVFNMTl0M210ZWZXN2xwNEVaMTJXeGNKUTN2YlRqN3ZFLUtQRVlULV9IZEZ6eFNXRzZCNGlKcEJQN3dNWnVuRnZuNkxHdGdNODdtcVZlMFF4Z0hzbDRPYUJJdFQ0RjhMMlkwX21ZQ3RHY1gydFlCRlFNY25Qalpqc3VIZXdNMEJtbFpadVZpbXltbUVLYlJVYjNsZ0swM3ktaWZIcmc0UkZGMGtlTzRRZVNmSGpZYUktcUNEUkN1emkzanZ5?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.466,
+              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.0,
+            "zscore": -0.98,
             "spike": false
           }
         },
@@ -2428,7 +2428,7 @@
           "events": [
             {
               "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - au.finance.yahoo.com",
+              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Yahoo Finance Australia",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTFFRSl9scG52M0FCSDhzYXBNSk14RGxpc01ZbWgzVk9oSmwwREpYQXJadXFTeHJiNUVtWTlDYTVlYk9GUkNkTDBvNS1wd1EzRkJzaFBqLXpVOUpuY2tUZUpDSXVqeEhiLVQtZnRxX3U3RVItaW5rMk4zanVwLTFyYWNjeTNIUlgzSzBj?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2444,8 +2444,8 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "NiSource Stock: Is NI Outperforming the Utilities Sector? - finance.yahoo.com",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN01fR21jRjhBczVHWVc2aGxnVkRtdlVPckF3TjlRaXI0cVFUYlhUTVk3OGswemU1THNmbW41VC16NTFCQ293R25LQ21CTzk4WkY2aEl0azlDNGhJQjJuWWVaTHN5ZWhuUHhqZXdXMFBySGlwaFR6MzJsajhSX3k0Qk5SYmFLelZFbFFiRlI1TkEyT1l5QWZYclRYbFVQbjJxMksybWh3MmN5Zw?oc=5",
+              "title": "NiSource Stock: Is NI Outperforming the Utilities Sector? - Barchart.com",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjFnV2p4NHB4dUdYMnB0eEowbzFmbHVLeEg2c1dTRm1idkpzZk9vOXRJT2t4Q1ZuTXJndjBsdFJXbmdWVUc3YVVYS2ZyQXRNMEFKVi1sUUNaN1VjMDBLdTAwQTJ2M2FfSXZkenRlV1JMdVFNM3lSLVlXNE15amNJZnN6d1JWdVRUaExkTURfR2FmVzZWaWZPRzZ1dlR1MXVN?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -2561,7 +2561,7 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - finance.yahoo.com",
+              "title": "Has Ballard Power Systems (BLDP) Outpaced Other Utilities Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0FtcHQ0RnZLekdMbkNmdmhGNFdreXJQSGVUX1NBdThUN3haX19EaGg1QUdtb1hCdy1rc0Q5aXUtMXZPQy04ZWNwbDBMUnhja2FWOUhaaWpKWHMyLVBxUkF6ZFNYbWxwclpybHBwMTd1VmF6N2JHa2JKenVEcXRZWHQ5Tm9aT3V6NEhCVFA0WlhDSEw1QThTUFBISXdrYXBmN2c?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2630,7 +2630,7 @@
           "events": [
             {
               "source": "googlenews_staples",
-              "title": "ASX Midday Sector Update: Real Estate Stocks Advance, Consumer Staples Sector Struggles - au.finance.yahoo.com",
+              "title": "ASX Midday Sector Update: Real Estate Stocks Advance, Consumer Staples Sector Struggles - Yahoo Finance Australia",
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUWt2c2FNRGJnVFNrY1hQTFBORW1CRW42cEJScUlSQjFPTHFBNnk0UldsUmEzMUlTeFBIY3RNVFVjZzh4ZEowbi1RU25zaUlyTllBcmZjWHNMTFo2Qy1taDFpVUlXcElXMHIwUTNoWXlHRHBicERhN2FKa21uX293ejZmMUE?oc=5",
               "sentiment": -0.361,
               "relevance": 0.744,
@@ -2685,7 +2685,7 @@
             },
             {
               "source": "googlenews_staples",
-              "title": "Is Mission Produce (AVO) Outperforming Other Consumer Staples Stocks This Year? - finance.yahoo.com",
+              "title": "Is Mission Produce (AVO) Outperforming Other Consumer Staples Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUHlWeUR3a3VXOHlPV0taQnpaN1htNmhmLV9keUtGdlNnYV9kdi1sbWZTZFB5SXZNeXlMYlE0NUJrVkdJdnBXMEZ1R0Y3ekx1X0RRcE1vMzFaTnViWjFNWGFWV1RJWGdlX1dPOS1YX3ZFR0QyNDd6WUd0Q0Y5Wjc4UFpkVWc3QjJ3YlEzOTJ1M3QxSE9MbmxESWI0RXVJTVVJNXZ1SnNXYw?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -2871,14 +2871,6 @@
           "events": [
             {
               "source": "googlenews_discretionary",
-              "title": "Coca-Cola, Keurig Dr Pepper Stocks Look Like Bargains to This Fidelity Fund Manager - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQM1NJeUFjbDlxbzlncTFFcFEwYjRNUVozd2h3cEpINTBfQkR1ODZXMldvdVFqVWI2NnIzUEk4YUZJTk9IeDdhOWdHRWl2MTNGQmJ0NDFFTXVtcDJfblZZMzFZQ0pTeVJ2a3ktY2RTV2VzNkRhM21ySExnak9RZmRnOVBNNTVMRS1TV2duQVlhMTZzV3pNTDJ3?oc=5",
-              "sentiment": 0.361,
-              "relevance": 0.744,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
               "title": "Why Are Cable One (CABO) Shares Soaring Today - StockStory",
               "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWGhUYUNQa3RmYzZoS1pyOWRnT2VkM2JvcER3WHIybERkRk9fc2M0QzZZcngwRGxSeXBUVEFGN21JaGZCQWdrMW9jVU1iNGFUMXV2cm5OTjl2RllqLWZxQkN6OTl1emVrblozNEc3dlJMUU9iTUZxd3lGdGtyTFBEenFZVVY3dTcxb1ZUemdkWHVfazVLSHZFdlJ0UjVWbnlaT3lQOEJB?oc=5",
               "sentiment": 0.296,
@@ -2887,16 +2879,24 @@
             },
             {
               "source": "googlenews_discretionary",
-              "title": "Beyond Meat, Vital Farms lead most shorted consumer staples stocks below $2B (GO:NASDAQ) - seekingalpha.com",
+              "title": "Beyond Meat, Vital Farms lead most shorted consumer staples stocks below $2B (GO:NASDAQ) - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZlBzOFNQYmZCdkktbnNOT1BsZmxMaTZ5LVQtblluR1A2M0draC11NHJ3cEhRTTh1NDJrYzJKLVZxa2ZIQ0JIaExVQkRaMXlBcV90NTRINVQxWk13bGU0d3h2QU5VNVltOGxLWVdpQUozS013SGI0UVExNkdnd1ZRR0JaemI1NVpDNGhCWGk4WkNrMnZvazV3NG5ObWQ5OXc5NlM0M3VRV3B0a2F4cXNkZ2lPSQ?oc=5",
               "sentiment": 0.296,
               "relevance": 0.718,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Consumer Discretionary - Home Furnishings Stocks Q2 Highlights: Somnigroup (NYSE:SGI) - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSk5NNkk3WVhRbUh1SDZES3hvZ3VPU2wwY2ZxX1dBeWtSRjgxTTR4MTdxOWlJbFFycGNlSHR2MDQzLXRSWXZaWks0Q3NjYk5iN1hfNkZtQTVZa0psdnVKSDNEQWdMcjFxOHpzaWRPY01nWFFHRXdKRWFDRW9NbElRblNIdmEtYlVKd2pDam96VEhqaF85eGFUWlQ0akxLVlREQTBCaHoyMHpQNVdENE1QTUVQQ1pabUh1TW45RlFMVnZTNjVoN0UxcXpZRXIyZGliYmZkZndsMjY?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.71,
+            "count": 19,
+            "zscore": 0.6,
             "spike": false
           }
         },
@@ -3034,7 +3034,7 @@
           "events": [
             {
               "source": "googlenews_materials",
-              "title": "Basic Materials Sector Still Shows Promise In 2026, But Proceed With Caution - seekingalpha.com",
+              "title": "Basic Materials Sector Still Shows Promise In 2026, But Proceed With Caution - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbzNsaFJRemVLbi1mM0cxUHFhSVFYdFhzTnFaU19Janp6QmZUNFJHc1h0Rm9xQ2NLNlNqV1VhU3EwR09kem92NHNmMk5MVkl3b3dUcm83NlJ5dWVlM1FDcjNrTV9hNndKQzBlZUFzUjRhZnNaQXRHTFlJUFN3YjhlLW1IMmJNZFZZd091Tkd6ZzdFZGoxa2oyb2laRm1VX0h2VTJBbzFMQy1lLURoSERhSVMwaEtENlU?oc=5",
               "sentiment": 0.166,
               "relevance": 0.666,
@@ -3073,7 +3073,7 @@
           "events": [
             {
               "source": "googlenews_materials",
-              "title": "Materials sector's top 10 stocks: Growth grades signal limited strength (XLB:NYSEARCA) - seekingalpha.com",
+              "title": "Materials sector's top 10 stocks: Growth grades signal limited strength (XLB:NYSEARCA) - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZG43QS0zS1pJX3BVMDVzVW1xOHRWeEhOREdFczZ1OFIxTkx1RkJKeG5iSWsxOTVmbkJ3cERlRkZyTmUtVWFvazZBWVc2WmQ3MU52STB0TW5xc3FkNFlMdDBoeS1XaHlZWEg0NnhGckZqNmQ2b0JTcmV6ME42SWRCNmJiUkZ5S3ZKQ0JlNmtWbElNWHZLTEgwTGw5S3dFdmRZUWhMS1pTVmkxZUk?oc=5",
               "sentiment": 0.691,
               "relevance": 0.676,
@@ -3159,7 +3159,7 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "Is Kronos Worldwide (KRO) Outperforming Other Basic Materials Stocks This Year? - finance.yahoo.com",
+              "title": "Is Kronos Worldwide (KRO) Outperforming Other Basic Materials Stocks This Year? - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa3NMVTdnbHBuQm9peVpLZF9ld3pnM3Y0Z0JiOGZOUnN4d2FGTWtDV1ZDVmVCLXJtdFdLamEtMnlJeGVBbVhwM2YwRmdWTmZUZTVhSndyS3VCVlhHV0EyVG1oXy04YnVlT1RIWWxyOUxtSThXWHFBYnkzRy13bm92aDNhRno4RHZjZENaT2ZoX0FrSUp5Y1JBTUNEX3hBTlNyNW1iNjJ4OFQ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
@@ -3532,7 +3532,7 @@
             },
             {
               "source": "googlenews_commserv",
-              "title": "These five communication services stocks score highest on dividend growth (XLC:NYSEARCA) - seekingalpha.com",
+              "title": "These five communication services stocks score highest on dividend growth (XLC:NYSEARCA) - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcTJ1RFRtNHFja2Ztakp2bWFCeHlsNGRUM1p4SDNTRjVtc1g3STVYNEFsLWhPQ0ZqRmdmUTVnWFdrbTVzWjRGUTZSNjNzYTNLcW5xZWI3SFBaYzFhYUtGSXc3OTd4eFBRaVVubmYxRGVNbVFpMk9xMDRjd3dad1pIOXFUODhwU1BYY3RzRTdxS0V3dlRTeHc5N1JITERja2gzakNIeGN3eWtFZXdDT2ZyeQ?oc=5",
               "sentiment": 0.382,
               "relevance": 0.753,
@@ -4170,10 +4170,10 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.504,
+              "title": "Fed Rate Hike Looms as Inflation Puts Trump and Kevin Warsh on a Collision Course - AgroLatam",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQXBidzJraEpjWFNjb3VCeUVFaFNheU1wSENMMEk2cEtTcHFTVjA1VHUtS1l2X0lFM1lvQXJFSEQxWlNyUlB5T2NhWnVtNVFaZm5QLUdvWUliY1JVN1dncnlxX0hsbzdMS3prbFVOOVQ0Mm4zZFNMSGthUlhtNWxTek4zY0NQcGRveXc?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.474,
               "event_type": "fed"
             }
           ],
@@ -4434,14 +4434,6 @@
           "events": [
             {
               "source": "googlenews_fed",
-              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.504,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
               "title": "Fed Rate Hike Looms as Inflation Puts Trump and Kevin Warsh on a Collision Course - AgroLatam",
               "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQXBidzJraEpjWFNjb3VCeUVFaFNheU1wSENMMEk2cEtTcHFTVjA1VHUtS1l2X0lFM1lvQXJFSEQxWlNyUlB5T2NhWnVtNVFaZm5QLUdvWUliY1JVN1dncnlxX0hsbzdMS3prbFVOOVQ0Mm4zZFNMSGthUlhtNWxTek4zY0NQcGRveXc?oc=5",
               "sentiment": -0.477,
@@ -4454,6 +4446,14 @@
               "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObGp5SWprZVNVaHpJSFJKZWt4R19STmNLVm10U2pzWlVBMkVGcTlTWGtja2c2NzVHaDdKcjJsTkZDRnVwSnphTFhWdnc4Q0p5VlNLYVd4aXlZaGs1RVA0bGtoTjlrb0YtZHhWR3J3WG9MUUhQV0pBV3FZLWZ4c1ZqZnlZZ0sxSk5wSENoQ2ppaEN1LTQ3T0lUMk5sNmZmRHp5MWxMTWYzaktmRHJvR2FLdlhHUk5tZU5IcWlFRUdET2xJSzU0bGdYNDFHSVVnQQ?oc=5",
               "sentiment": -0.382,
               "relevance": 0.452,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed, crude, dollar and Iran war: 4 factors that could move gold next week - The Times of India",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdV9IV0tKMVVCcENVTWJkaTB4ejFRRTVjRGhvdnlOTU1kdlFDT25rQ1dsX3ZVOUZQMlpkMGp6Zi04a01yb3JrUmViNktZdHJKTXZSbWM5enh5UHhBX0d2S2NyeUJLMnFWWEE0eXJrc3NjMDM2UWpzeFFCUG1uQkVUUXFJRGJsZks0Mi03ZGpSS01pTGhnWDlzXzZSS1hsZUg4VG1vemljU0Fqd1RGWnhndFpYa1JwVGpLLVh3X3o0UWZKdlBrX09wS2VYVWRqQ3NocWU4MlRTejI5TV9EaEJKZktIM0FocXJjTFl1WNIB8gFBVV95cUxPT3R5WS1JNzhHclpnWnJicEthTkNBVzBHb0dLMHVpNXczN0ducWFicGVvSzNITk96SHVQSnhyLU8zR2JFT0VTc2IxQzk1TlNHOE1vSC16TjlYd2NIOE5wSlpzd2ZUaEI0RjgwSTg2Y2lieFdpUmh4UldUTDU3R0k1R2F6dUhXR0ZzR1B1NmZucENSb2ZOb0RFb19hQ3BEc1VXLUpkYWw0VGJwaUgwV3dqY2FjSVhNVHpYMEViWEU0R2xuYmZQVEw0NmhxR0JlZk8yaFlGWVh6TDg1OWdXQXdEaEJLNGFSd0JXSU5jQjd2b2RKdw?oc=5",
+              "sentiment": -0.823,
+              "relevance": 0.437,
               "event_type": "fed"
             }
           ],
@@ -4496,7 +4496,7 @@
             },
             {
               "source": "googlenews_oilgas",
-              "title": "Woodside Energy Group And 2 Australian Energy Stocks To Watch - finance.yahoo.com",
+              "title": "Woodside Energy Group And 2 Australian Energy Stocks To Watch - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcFU1QWgzVU9PNkRFM19uemVydkhKTUp2cmtSMXJNTXhGV0diTVFaTmN5a3dDNUFoVldBektVU1BURnZfUE9ISEZaYk95d2N0U0pBeGs1aUFRc0prV21PSHpfUnFGbGZ5dE0wTlExV1hjNXRrTU9MWHlvR00wTEo2TWdOVE41c0NwWktrNGk5OUNlX0ZYQ2c?oc=5",
               "sentiment": 0.494,
               "relevance": 0.798,
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.46,
+            "zscore": 1.43,
             "spike": false
           }
         },
@@ -5157,7 +5157,7 @@
           "events": [
             {
               "source": "googlenews_robotics",
-              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - finance.yahoo.com",
+              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUVHY2pOM1lCTWxmY21jRlp2VC01WjkyOEI1VzlJOTB2YXdnV3J0Q2dPd2twVzRWazBwYy1kN3UydFVBTXk1VEFCRm9IdkEtR3BvWjdmNF9OVktWdlRuYURlcUM1UW9mSlNGamxWQ2NIVHFsY1ZfY0tpOHB1OGlzeURQZm5ObWtfeVhZR1pHZk5kMkhQa1J6QzJSVQ?oc=5",
               "sentiment": -0.128,
               "relevance": 0.651,
@@ -5211,7 +5211,7 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - finance.yahoo.com",
+              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUWlBU1YxcVZOcm5CdWJTZkRjLW5NeW0tV0hzODloSUhfV1Zsc2NrWlFGYWZTX2dhaHhtdjBLeW5SMEotU2I2QlZTT18zNG9SYl9QblZaWGhSekFLWkt3bnNxcEJKZlZYRzRGSUNGMnU3cmRhc2RaemxscEx4WF9NNnhCeEtYUmdOM3E2a25HNXBseHNqc2p0MDVFRllZU3dTT3FB?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
@@ -5915,8 +5915,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-04",
-      "return_pct": 0.51,
-      "zscore": 0.18,
+      "return_pct": 0.67,
+      "zscore": 0.26,
       "max_abs_z_recent": 0.66,
       "recent_days": 10,
       "benchmark": "BTC",
