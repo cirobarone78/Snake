@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T14:56:48.619447+00:00",
+  "generated_at": "2026-10-05T15:33:22.908118+00:00",
   "title": "Modello di ranking ETF — stato della validazione",
   "status": "ok",
   "status_reason": null,
@@ -44,213 +44,220 @@
       "best_brier": 0.25581124588071824,
       "climatology_brier": 0.2500590428922457
     },
-    "age_days": 31.6
+    "age_days": 38.6
   },
   "scenario": {
     "scenario_id": "etf_top5",
     "initial_cash": 10000.0,
-    "cash": 290.9,
-    "equity": 11300.96,
-    "return_pct": 13.01,
-    "realized_pnl": -15.59,
-    "fees_paid": 13.55,
+    "cash": 333.77,
+    "equity": 11072.45,
+    "return_pct": 10.72,
+    "realized_pnl": 260.71,
+    "fees_paid": 17.99,
     "positions": [
       {
         "symbol": "BTC",
-        "qty": 0.03172626,
+        "qty": 0.02597416,
         "avg_cost": 79186.583,
         "price": null,
         "value": null
       },
       {
         "symbol": "ETH",
-        "qty": 0.99617838,
+        "qty": 0.81343738,
         "avg_cost": 2514.1965,
         "price": null,
         "value": null
       },
       {
         "symbol": "LINK",
-        "qty": 202.69813241,
+        "qty": 154.88518846,
         "avg_cost": 11.9514,
         "price": null,
         "value": null
       },
       {
+        "symbol": "POL",
+        "qty": 18181.86181244,
+        "avg_cost": 0.1207,
+        "price": null,
+        "value": null
+      },
+      {
         "symbol": "SOL",
-        "qty": 22.87882981,
+        "qty": 18.05538787,
         "avg_cost": 98.5232,
         "price": null,
         "value": null
       }
     ],
-    "last_processed": "2026-09-26 00:00:00+00:00",
-    "equity_points": 34,
+    "last_processed": "2026-10-03 00:00:00+00:00",
+    "equity_points": 41,
     "started_at": "2026-08-21 04:00:00+00:00"
   },
   "benchmarks": {
     "start": "2026-08-21 04:00:00+00:00",
     "initial_capital": 10000.0,
     "spy_buy_and_hold": {
-      "equity": 10098.54,
-      "return_pct": 0.99,
-      "points": 25
+      "equity": 10076.15,
+      "return_pct": 0.76,
+      "points": 30
     },
     "equal_weight": {
-      "equity": 9674.59,
-      "return_pct": -3.25,
-      "points": 25
+      "equity": 9634.31,
+      "return_pct": -3.66,
+      "points": 30
     }
   },
   "freshness": [
     {
       "name": "SPY",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "TECH",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "ENERGY",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "FINANCE",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "HEALTH",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "INDUSTRIAL",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "UTILITIES",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "STAPLES",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "DISCRETIONARY",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "MATERIALS",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "REALESTATE",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "COMMSERV",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "SEMIS",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "URANIUM",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "CLEANENERGY",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "OILGAS",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "DEFENSE",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "ROBOTICS",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "CYBER",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "BIOTECH",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     },
     {
       "name": "GOLD_MINERS",
-      "last_timestamp": "2026-09-25 04:00:00+00:00",
-      "age_days": 3.46,
+      "last_timestamp": "2026-10-02 04:00:00+00:00",
+      "age_days": 3.48,
       "is_fresh": true
     }
   ],
   "scoreboard": [
     {
       "horizon_days": 20,
-      "n_resolved": 20,
+      "n_resolved": 40,
       "n_pending": 100,
       "selected": {
-        "n": 5,
+        "n": 10,
         "hit_rate": 0.2,
-        "mean_excess": -0.030644
+        "mean_excess": -0.038173
       },
       "universe": {
-        "n": 20,
+        "n": 40,
         "hit_rate": 0.2,
-        "mean_excess": -0.033384
+        "mean_excess": -0.033314
       },
       "caveat": "Conteggi grezzi, non un verdetto: la regola è già stata misurata come indistinguibile dal caso, quindi un hit rate sopra 0,5 su poche settimane è compatibile con la fortuna."
     },
     {
       "horizon_days": 60,
       "n_resolved": 0,
-      "n_pending": 120,
+      "n_pending": 140,
       "selected": {
         "n": 0,
         "hit_rate": null,
@@ -266,7 +273,7 @@
   ],
   "ledger": {
     "path": "data/predictions/etf_ranking.jsonl",
-    "rows": 240
+    "rows": 280
   },
   "disclaimer": "Portafoglio VIRTUALE (paper trading): nessun denaro reale, nessuna raccomandazione di acquisto o vendita. La regola di selezione è stata misurata come NON predittiva (ADR-034): serve a validare l'infrastruttura di misura, non a generare rendimento."
 }
