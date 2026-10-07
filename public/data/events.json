@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:18:00+00:00",
+  "generated_at": "2026-10-07T13:43:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-10-07",
+          "return_pct": -2.9,
+          "zscore": -1.6,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -2.9,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin’s Worst Day Is Returning. The Same October Week Now Has a New Market Threat - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUEVwTEZpSEMteTNKN2U0QlVWYlllcndzRDVQalJma1BLNVROVzBuZzdhM1RzaFh6dmRITkJVMmVicWVUZmQwT3FMdHdzVDFTdDkwb3UxYWVraFYwRWNHZlNpMFl5a3lHR0NqVDVacGIwY1VvNVZYUWx0bm9XajhUbFBWQXlPdTVpWE5nRWdUOE90X0dUNUFUQ3YtSVVhQQ?oc=5",
+              "sentiment": -0.818,
+              "relevance": 0.927,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Why Did Crypto Just Drop? $12.5M Bitcoin Shorts, Iran Tensions and $500M in Liquidations Explain the Crash - Bitcoin Foundation",
+              "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcjIzel9VSWJJYWg5LXhKTnZFTFk2Y2NKQVVlbVlsWjhENTJ0WkJQWlFEOHV5aWxMd0R1WjdUeTNldDNsZmQ3QmJCN0QwU1BWU2xsRnZfb2J5QVhkRXpDUkplQzBnTFdCZ1NHcDRPWVJPNlpXc0lBTFlobUN6NEZuWFRmS0p2Ung1QkpLc3pXQk0wZ01FMUpFajhmeVpjSnpSa2IyYkp6cVdCelZSR3RjTUI1UU1RQU5GSE15c3NGOVlMTGgyODV1dzlhX0VQRVR0NGU1c1A1MVV2akJselRhRQ?oc=5",
+              "sentiment": -0.758,
+              "relevance": 0.903,
+              "event_type": "geopolitical"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin’s $250K ‘Prophecy’ Under Fire as Bulls Suffer $487M Liquidation Wipeout - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdGdmWTFpNnVpSGpmbE8tR210M21xZmJtTkdMTXo5U1hlRGJENGtFVERCM1RLZ2dNdzh3bEZzeTU4OEJSUHpoNExQaFh0VHVLVVBvWW9RYlVDV3NtWjI4N0prLVRlZzJsemx2V25pZl9NSkh0bFN6QVpaSjRCOUQzbXBJT0pfWTZCRndaRkduak9Gcm1NUDRfQlFiQl9kdw?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 63,
+            "zscore": -1.33,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-21",
           "return_pct": 6.73,
@@ -202,45 +241,6 @@
             "zscore": -0.38,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 7.26,
-          "zscore": 3.54,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.26,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin prices saw their best week in years, & Trump's CLARITY Act push is only one catalyst - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYWsxb3FzMFhyeDVMd19tOU01N3prMFdTY3FQMzJ6RUN1QkxPVkNvRF9LTl9pdkp6UEdPWkRZZy1ad1ZZSEc2bzlEc0tkbDFZT0w4N1RNa0NXNnpYMzEyWWduZEF4QzBBWkwySnZGbW9GUFFqXzVjS2xZYV9qZUFSeA?oc=5",
-              "sentiment": 0.824,
-              "relevance": 0.93,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Stocks Gain as Bitcoin Heads for Best Week in Over Two Years -- WSJ - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZW84SDN0eEk3V3RtRGtxdUZoZk1hVUF1VENKY1A0Z2RXTXNMTXlPV2l2NzBZdnk1elJXY0ZITnFnRkFlQS1SQlZaV3BmY2ljUmFkdF9BQlltTFE4RXdKUjhGeWtCeXNtVGs4Tl9Hc3JSYjF6LWxJQ251dWt1LURjZTNHazNHbTI2THlWLWlnUXc1ZTQ0ejAxckdn?oc=5",
-              "sentiment": 0.823,
-              "relevance": 0.929,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin tops $77,000 as best week since 2023 pulls altcoins along for the ride - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONkltVnZDaGc3Y2xSc2l0aW81NG5CWHBoQjl1alhsSWs3UkZZc2N6OThLSmM2QzlXYmlmZy1Yblc3U01UbVRkVThNa21uTHR0clFyMVF4RzlUVTQ3UE9oWmNxdTRvenV2eU80dnkyMXlROUVRU2xEb0ZBejdBT0R4eGRYLXVMTzlDMzJmcnpGczI5MnhyMi12X0VsN2J0MUdHUW9CS19CYjJMTHVZdmlmVEwyblYyT0tULUJMNnBfdDhmQQ?oc=5",
-              "sentiment": 0.818,
-              "relevance": 0.927,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 165,
-            "zscore": 1.28,
-            "spike": false
-          }
         }
       ]
     },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-10-07",
-          "return_pct": -3.5,
-          "zscore": -1.86,
+          "return_pct": -5.25,
+          "zscore": -2.7,
           "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -1.86,
+          "severity": "major",
+          "market_return_pct": -2.9,
           "events": [
             {
               "source": "googlenews_eth",
@@ -267,24 +267,24 @@
             },
             {
               "source": "googlenews_eth",
-              "title": "Ethereum holds steady near $2,700 amid $414M in long liquidations and $640M in shorts at risk - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaDE2SHhxQzhkaUhTaE5CdTJnSVg4M3Qwb29pdlJka3E2MWpuZEEtMlprZWRicmc2dzI4dG9tQ052cEpTelpIQ3U4cEVybldOV0ZfWmw1aXFDN01wTDZITkpXdjhSRFhpWC1XSG9hWU51VkpnVzJTYkpaV0NiT2RlMm5YNzFjWFFIZkZjcmNWcEhBOFlxWl90ZWoxMG9meTUwY1E0eTYydXk2RlotSEE?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
+              "title": "Ethereum Price Prediction: Risk of a Pullback to $2,400 Increases as Volumes Drop - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMVhrb2VESDNfUzdHcWR5UlRVLThCZGdEVkRVeU5LRlloSDFRbE4ybnlRTXVpZGNwWThuX0ljcmdkWWdFaG52QUlOSDduUnF4R2tDTDVPUWE0eVpHZDltRUFSV2RBbmE4WDNrM0tvMHQ5VGdNcF9QSVdyeXBnemROdnRPUTNKdEFGMnBqMnZmMkdRdHhDZGcxaGlXZE5iWURZX3I3X21VR0FmdGQtYlpFUnFjd3o2Zk5UdzhPazFZM2diX081ZmZBZA?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
               "event_type": "other"
             },
             {
               "source": "googlenews_eth",
-              "title": "Flash Loan Attacks Drained $1.2B From DeFi Between 2020 and 2024 - Altcoin Buzz",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTXVrc2tDbW1OcXE3aFZsVXU5TGloalBHcnhKWnJPajNjSGRvdVplYUZjYVN2ZjU3OF81UE5IUTNZc2tHLW93MXpFNlpQS1RjbDdxeG93cm1HdURQNkpDLTRCZWtZaXFLUHBONGRPUkV0dzZiMGIwVTFCa2ZLaG1TYjd5ekU1R0k?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.664,
-              "event_type": "hack"
+              "title": "Ethereum ETFs See Biggest Outflow in 3 Weeks as Demand Stays Under Pressure - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14YkdROFRDcmdHWS01WEJrYTgydkJKN2swTTVOOGJna09mWGR4dDRDU3RqVmJLTm9MbE0tcmJvaVlmR2pnMG1pd2V5eHBKYVFHQmlGbExIbWFKZXBSSTZzRHRFQ3lCc3ZGMjFPSg?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": -2.71,
+            "count": 53,
+            "zscore": -0.91,
             "spike": false
           }
         },
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-10-07",
+          "return_pct": -4.09,
+          "zscore": -1.46,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.9,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Tokenized Silver Project Dominion Announces Closure Following September Attack - KuCoin",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQW9mb2tnOEdwdjlvUjdHLUtFTUQzYllqTWp5bWlBNl9mNlAycVNsRjZGbmdNUTV5eTFfTlVYNkZ6TjhtTU5Ka21uRmhFTXQ0N2FLNWEwdjZDeGpZbmh3WXozRHJHYWxhNS0wU1JwV3hJOW01MDJsNU9fenktbm1vTWxISWZ6emVtdGFCZ3liMmcxZFVNdy1xN2FBT3ZaaVEtdzh6WmJmNzZrY3NkZjRGSFVkdWVxdw?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Pump.fun sells 102,500 Solana tokens, totaling $12.41M, pushing cumulative sales to $861M. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNak9FWUN4dmtXNmloY1IzZmMtcXh1Ui0yaDdLdFhWUENFVUxNQ2g2Z3pMdG1LYWFKemlnaV84M3FCVy1DQk9vYU5uc2VwOVNoa25zWlpfcmdjTk15NkdBMlRVSVU3S0pMNzF3TkUxcHhfRlJuQVc0NlExX0xtblJ5dU9kWWVsN2FjYmNhVVIxWEdURjJvX2RFbWdWaXU1N0pZ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "U.S. spot Solana ETFs see $3.7M outflows on Oct 6, continuing a recent withdrawal trend. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSWQyUmdyWml1U0pOMWJ0eDFua3lPZUZSaUo0VE4zX0s1Tmw0UV9YbWxuLUdLV1dnVVVJaHdhd2xMNzdQdWRjOHg5azl4QzFHN2s4aU8yUmZlSm9Pb1QwOS01NHFNZ0lDTzZMaWNGTFhmdlVxelZZSDI3REVQQV9DbXdVSV9wZw?oc=5",
+              "sentiment": 0.026,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 19,
+            "zscore": -1.07,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-25",
           "return_pct": 4.27,
           "zscore": 0.97,
@@ -684,45 +723,6 @@
             "zscore": 0.15,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-28",
-          "return_pct": -4.65,
-          "zscore": -2.07,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.02,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Ethereum and Solana are hosting trillions in dollar volume, yet their native tokens risk losing direct consumer demand - CryptoSlate",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM1Z4MHhCeFpYT0x3U1dyV3Rjci13MjZpaUJyM21TWDlNOThBeGNwTC1lVTB3VGhjVFF4M2VIbUZYZDhRRkxmMkdJajMzX1ZvQ0NMOFRxbHRNZUhPRTlwTVFRRDdVSHdEcFZEQVlfT19renp2ZldRRVRWSnpsbGpkTkhieWRBT2dHSGd1dWlUQXFJTGdKaXVGUXpkMnBLTjdBd19DMUdOdw?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Avici attack drains over $1M from Solana users - Crypto News",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KS25lR1Z6TGJZWmdqNklMTV9HbjlCVThHMVJmWThHaWc0WWFMbmxQRU1LQVV5NVFPTVgzdjd6RHdzNWJCbEZjdmtSZlhqMERjaXF3OWticEI0ekRQS0pWUUFTSDhYQWVROTgzTnR3cERnY0xXaEZldVpuTjZiS1U?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.791,
-              "event_type": "hack"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Inflation fight takes center stage as Warsh warns the Fed still has ‘work to do’ on rates - Los Angeles Times",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOc2M5LUdkTFFjYjlFbFZORUJ6WXBwaUlydVpfWXVGRDU1ZDJYWWRfZzVrNm5fOE56N3p2OUVzNElJUTZjRGstLWxOTFgzdXpVdmJ4TG41RlNNeVljZjQ1RENTRFRwTU1mV3BmX2Q4UE5sc3FHRllQOHZXQWtSUzBHVXU5aEhmbXpTb25ncnlXSGR4aXppemw3ZDUxZUtETGdYM01MUGxpMk1xdWVvc0hScHZ4Tko0N3o0b21jYmtleVFpb1Et?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 62,
-            "zscore": 1.76,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-10-07",
+          "return_pct": -4.66,
+          "zscore": -1.25,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.9,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Price Forecast: Short-term correction in LINK risks a bearish reversal to $10 - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUDFQbHNEU1dlanFKM1BoMFZ2MDM3MXFKRWtOSVNJWWJPeEVFZ1NGWTZQZ3FZMzJHZ1Bwblg5b3RFczRDeWpLVnRWZFZ1dHRIOVlTbWUyTUI4QjQtSjJfUXNWZUlyX1hjSlRNRUh3czVKXzV5WEJqTHRlSmNBUHQ5MlNuYk40SDEtVXlJMDh5R2pvZnJxQ2xuSkZ0WndDZ292dDNxUTFveE1YemJQT2VHUFYyOGN4UExhSVJaWHdzbVdObXU5NWRSMGNkdDJhUkNJUTVtam93T1hqNnNmdEE?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Cryptocurrencies Price Prediction: Dogecoin, Chainlink & Bitcoin – Asian Wrap 07 October - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbEFvUC0zWUxFMWxoZEtTRGNNbGx5VUFTV1FxaWYzMk1RMUtFYnlUcnpHd0s2Z1lfLTBmU3llWXVRT1dlajZBdWsySTYxOVloRFgtX0VMTHBBMTF3NERFbHBKUk5TRlBGb25fcEw3NDgtTl9lRnJ0OTkwc2lBaE9vcS1Dbk95dy1qaDZKSUVvQTJIdHVPLUFoLWpNR19pS25MaEU1amR5cXVMTGVjWERMdjdKa0piZTFwd2ZOaXFkdzlkbDFIc05SNFVENUd1WkhLWXl4WWh3MTZ2UQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Sees Korean Blockchain Shifting From Tests to Business - Seoul Economic Daily",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWUVOV1oySmV3YjV0LVA4by1Xb1AtbllDLVZEQ0ZRVjV1OFlnU0dmb3V3TUROWkFJbGUtbEJPeFFxQWlrWW5MRzFYNkRtTHpDVFRXWlBYUGMyQ3hiZDhiaHVWMXFTTTJpS1FENjZ6dEtSa3ZDYjJGM2g1N2dwMUI3eHRCelZfUGFnakJrSm54WllPVGJkTGtIREZSbDlPZw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -1.05,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-02",
           "return_pct": -4.07,
@@ -925,45 +964,6 @@
             "zscore": 0.14,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-23",
-          "return_pct": -5.2,
-          "zscore": -1.56,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.08,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "BlockDAG Rolls Out $0.03 USDT Buyback for Legacy & New BDAG, Investors Dump DOGE & Chainlink to Buy - The Portugal News",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPS3g5ZE1KVERYYmZmbTlIRF9LcC13TWttZ2VNLVA0dGJNRGhVdWFISUk0bjZfb1NvZV9BNVZ5WUllVzJHMnBtWlByc0JGT3BmcXBpTlBhNERHTXlBREVyWFNJTFo5Y3hIX1FFQnFVV2FRdXR0bGdoWTBCanJRQURnSng2cFNFX3IwUUliU0FyNXBLZ2tpTGQ5d041YXJQaWRmOVNmNGR3WTJYaHp1enRGcm02NEozdlZoYUtUZVVybDg2Y3A3X29YVXM0ZDdYRUZ3N2lRc3N5YXdDbFRhVlZlWGN3?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Charles Schwab To Add SOL, AVAX, and LINK to Crypto Trading Platform - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSVVrRWFmUWJMMXFsQmtsYTNObGhBcXZLTmg5bzFHbEY5R28wQ1pjTDRCaUlGZEc5MS13VVk1T2lZUEdMcnI3NEFVQ3FaWlcwdlJsSUhDLTdwbHYyWVRRMzExemJtYUQ1dVQ2U0thaTBxSnJXVERDa3VsdW9mTFBabkw5UU5jaVVvcTBiR1FGbkRXTHhwU2NGSGUycTdna29Gc2d0VzNMUHBYcUh6?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Ripple vs Chainlink: Which Bet on Swift Pays Off? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObXgtbUljQl81bk9TYTlheGxxRlRRdjNWVHg5WkRfMmtVMHVrNFJGaTVXUW56QUJLeXQtRTRtYl9WcmUzMEFOWnprOEdJelhZZnZhZDNqSWdSc1RiTURIUE5SNk9MYVU3dGozZkJ1Tjktc1lTdFM0YXV4a1J5cWdoX0FyczV6X1g3OHZjWEJCU2gyeWdtaVU3Y0JR?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 13,
-            "zscore": 0.03,
-            "spike": false
-          }
         }
       ]
     },
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-10-07",
-          "return_pct": -4.98,
-          "zscore": -1.36,
+          "return_pct": -5.99,
+          "zscore": -1.59,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.86,
+          "market_return_pct": -2.9,
           "events": [
+            {
+              "source": "coindesk",
+              "title": "Ether is about to lose a steady buyer as Tom Lee says Bitmine will stop token purchases",
+              "url": "https://www.coindesk.com/markets/2026/10/07/ether-is-about-to-lose-a-steady-buyer-as-tom-lee-says-bitmine-will-stop-token-purchases",
+              "sentiment": -0.599,
+              "relevance": 0.504,
+              "event_type": "other"
+            },
             {
               "source": "cointelegraph",
               "title": "Bitcoin.de trading remains halted as German regulator rejects MiCA application",
@@ -994,14 +1002,6 @@
               "url": "https://www.coindesk.com/markets/2026/10/07/bitcoin-dips-below-usd84-000-as-oil-jumps-on-iranian-tanker-attacks",
               "sentiment": -0.44,
               "relevance": 0.466,
-              "event_type": "other"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "Pudgy Penguins-backed Abstract to shut down after ‘tens of millions’ in losses",
-              "url": "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.402,
-              "relevance": 0.456,
               "event_type": "other"
             }
           ],
@@ -1085,7 +1085,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.23,
+            "zscore": -1.24,
             "spike": false
           }
         },
@@ -1124,7 +1124,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.81,
+            "zscore": 1.83,
             "spike": false
           }
         },
@@ -1177,7 +1177,7 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - cryptonews.net",
+              "title": "Polygon to burn 100M POL as revenue hits $24.5M, but will this help the token? - Cryptonews.net",
               "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yWnp1cFNtTklBUGxLLXFrT0VvcmV4Rm81S20waTVPV2lhVG1SV1pYRk0wMXdrOW4tWGQtYm5fRWs2QUhwem1CcUNaTFE0QWlhbFZOY0EyYmdwdw?oc=5",
               "sentiment": 0.635,
               "relevance": 0.854,
@@ -1202,7 +1202,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.28,
+            "zscore": 1.29,
             "spike": false
           }
         }
@@ -2413,8 +2413,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": 0.13,
+            "count": 3,
+            "zscore": -0.3,
             "spike": false
           }
         },
@@ -2655,7 +2655,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.1,
+            "zscore": -1.09,
             "spike": false
           }
         },
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.71,
+            "zscore": 0.7,
             "spike": false
           }
         },
@@ -3330,16 +3330,16 @@
             },
             {
               "source": "googlenews_realestate",
-              "title": "The REITs Quietly Collecting Rent in One of Real Estate’s Strongest Corners - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV1VPT3hGVXZfTkVXdERqNmE5NXU4aGNmelFPY0pfSjFjbV9XM0xuaDBQM2l3eE9MbjY3eFpFd1dXejZqcTBCaEFoNEd6dnRFbmZtNzJsYlBJbGtyVng3eDVneGpfRlE3TWlHdndjTDhsMzd4WTFKc3hyMlFJQndjRTdyZGpERVhyNzNyRG1GYVV6cWVUbG5ERjNxUmMwT1MxSWlMOWFPSV9xSGhiNU43T3pabkQ0Tko1TlE?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
+              "title": "Allied Properties Real Estate Investment Trust Shares Retreat as Valuation Pressure, Execution Risk and Volatility Weigh on TSX:AP.UN - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNY3Z6TDJaYjVSUVI2dlluamlZeDZNeVAzTUtvWUNMeWZ6TXRHclpGZEpQUVgwRnRXVVVnZ19MTm1zSDF0VndEbV9HV3NPNG4wWDd3bmNHMHFnd1lCYnJuNEpsMnprWDZwbzJKUFR3Y0NEVkQzR05ZQktTTlNEcUpQNTRPY0RMQ2J0cmJBbDBfdEFkMHNvUXhwR3RxR2FTSGQ1YnVvUFQ2elZyRkRMZmhJVkJTT2RWYnY4b0gwYWRmNVV4SFRsRVh2ZTIyd0VZNmI1LXdMZDRQVWRoUXkteEVtRHZmLWIzV0xBZEJ4UDhDVC14RHJ2ZEZLSTBR?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 2.03,
+            "count": 15,
+            "zscore": 2.21,
             "spike": false
           }
         },
@@ -3580,7 +3580,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 3.3,
+            "zscore": 3.28,
             "spike": true
           }
         },
@@ -3619,7 +3619,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.6,
+            "zscore": 0.58,
             "spike": false
           }
         },
@@ -4028,6 +4028,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-07",
+          "return_pct": -4.02,
+          "zscore": -1.43,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.58,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Top Australian Uranium Stocks For October 2026 - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY1o1VnNrWFZiMUpOSFl2R2hxNHhzOEI0c1J4TDZ1SVdxbGhlV0lCM3NNWjRzd091LUNWc3FJWkU4MUNuWGM1NjNQYWhqMGRMQnM2alM1d2V0VGlITy1PYWpGTzh4RVpzQVZYb2EzTG5UTVF5cFBYWG1FdUQ4UXRuMmZQZ0VIV2FlWUdIT3JUUzFwcjlXdWFjUmdic3l6V3ZxME84S2RZVTBCYVZvUHhKUzc3dWpUUmxKcjgw0gHAAUFVX3lxTFBVMFBvLVZmbGxhUTNnRVN6eGd0TWVGUGNlNzFndktwTlZMLWpWU3ZEMDBGN25vWFJqRUZlU3JfZmRDMF8xX0wtZVdtTmFlTlVWVVJScnI5eWwxdHZuTVNhMkxyY1RKSmtSeGNVdDdyMGZBTnZWS3Z4N0RlR1R1bTBRY21rRWFvSk5FeFp5NDJncUUtZkJpb1lMWm5MZ1lSWDNRQ3RNc0R6WDFIeURYSjdycVhyOThJN09vdjB1X0RTTw?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Australian Uranium Stocks in Focus as Nuclear Energy Gains Momentum - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUzA2N1pFVkZyMU5XSlVxeGhHVVQzUEZqbkNhRGcwRm94djFXbm5fLWsxZTRVZ0Q3UW1EVWdKN1BxaEQzeXRDWWdsSnduSTVaZnU0dmV6T0g3RUYxM0pMTGFreHQtVHNjM1lidUdJSm1qOVIxcEJkaXRMT3dxMnFlWlpnT3M3d3pTMmhMVTZTdFdOVnF5ekZMcHFzRVdJWExreVhFVnQ5eG03OHdQY3c?oc=5",
+              "sentiment": 0.542,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "3 Canadian Nuclear Stocks With Earnings Growth Up To 34% - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTkFmR1ZhaENQekFKU004d3F4NTdDb3BOWThKeFBGZm5sX0N2MEJnMVN2SjQ3M3EyV25YR1RCc2ZUVmRQVTltNkVKWTJsb1dVQUpiSE5JQlJsamNxZHpxQWMxaWJ6SnpMbVQtbXdQcDNIbUZQNkFkN2I2cTBhYWVEZ0MtRHUxM0NqX3dsRWdndjZ1RzFxNm1wRlJjZHFfSG5MeF90N0tJblhKRG5sV3E0TnFiZHl4V0ljMTRKbEhOOWZZQWtRdzBsWGZDR0JOdGlGWjZLaFRTbEctdlpGMXfSAd4BQVVfeXFMTU5BZkdWYWhDUHpBSlNNOHdxeDU3Q29wTlk4SnhQRmZubF9DdjBCZzFTdko0NzNxMlduWEdUQnNmVFZkUFU5bTZFSlkybG9XVUFKYkhOSUJSbGpjcWR6cUFjMWliekp6TG1ULW13UHAzSG1GUDZBZDdiNnEwYWFlRGdDLUR1MTNDal93bEVnZ3Y2dUcxcTZtcEZSY2RxX0huTHhfdDdLSW5YSkRubFdxNE5xYmR5eFdJYzE0SmxITjlmWUFrUXcwbFhmQ0dCTnRpRlo2S2hUU2xHLXZaRjF3?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.4,
+              "event_type": "earnings"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.56,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-06",
           "return_pct": 4.01,
           "zscore": 1.77,
@@ -4037,7 +4076,7 @@
           "events": [
             {
               "source": "googlenews_uranium",
-              "title": "Nuclear Stocks Rally as Google’s Reactor Deal Lifts the Sector: NANO Nuclear Energy and Oklo Jump 8%, NuScale Power Gains 7% - Yahoo Finance",
+              "title": "Nuclear Stocks Rally as Google’s Reactor Deal Lifts the Sector: NANO Nuclear Energy Jumps 8%, Oklo Climbs 8%, NuScale Power Gains 7% - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUi1ZRnBsMnRmSUFOaVlNTjBKTzVxckI2YURhZ0ZaUHllRm1sdVFrcUlDNTkwRWFpaTA4NVB6OGlld211UTZuS0VtOEUtN1haRjM5YWVrWkxnTlRERWlRRHQ0NXNOaXhyaXp4X1VMTkdJTFR2V1hSU19XbEJvNVJ6cnAxUVc4NGgwRVhjbXRSS290Q0hTd2xv?oc=5",
               "sentiment": 0.542,
               "relevance": 0.817,
@@ -4219,45 +4258,6 @@
           "coverage": {
             "count": 0,
             "zscore": -1.58,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-14",
-          "return_pct": -3.08,
-          "zscore": -1.21,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.48,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "NexGen Energy Stock Under Pressure as Uranium Volatility Raises Correction Risk - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOanFtZmtaeDZMVGZzM2lKcmFhMVd2X3BzZl82UU1TdE1URmhVQy1sSlc2RXlieVhLSWUzaU1WVW5Nb3A3Sm1WODBoYW9UX1NWenRORmt2MHJMYlJlUXQzY2NJaFMwZWFCZ1hvVGRkTERNaWpEbGJmSHBEQWxhQlExQTlDcDR4Q3VJWEtQRUpLdGxnQl84eEUwbVFqUUVuMXpfMFFaR094OUJWblA5M08zbTNB?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "enCore Energy Stock Slides 7.93% — Uranium Growth Story Faces Renewed Downside Pressure - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeUNqSUw2WmRBYmx0RXpjN2FtUktKeU5QX1Y5WmtUaElkTHBJV2VweGpUcENVaGZIZlR1RG5EbTB4RHJTMi1OM2VkQ2RRcFRPMzRqdkJNZXNzLWdjb3F4aHZON1pUMjdadE04TnBvWThjbWE2MlBGMVBuLTd4SkFQRkczNGF3d0JPSjlwMHdnQWVzd0pONTh1ZWpwOHpzbHZaQTJlV1NUVzVXSTVXV2p3RDlXNXI?oc=5",
-              "sentiment": 0.128,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Rate Hike Looms as Inflation Puts Trump and Kevin Warsh on a Collision Course - AgroLatam",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQXBidzJraEpjWFNjb3VCeUVFaFNheU1wSENMMEk2cEtTcHFTVjA1VHUtS1l2X0lFM1lvQXJFSEQxWlNyUlB5T2NhWnVtNVFaZm5QLUdvWUliY1JVN1dncnlxX0hsbzdMS3prbFVOOVQ0Mm4zZFNMSGthUlhtNWxTek4zY0NQcGRveXc?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.474,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 2,
-            "zscore": -1.05,
             "spike": false
           }
         }
@@ -4992,6 +4992,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-07",
+          "return_pct": -1.63,
+          "zscore": -1.57,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.58,
+          "events": [
+            {
+              "source": "googlenews_robotics",
+              "title": "Meta Acquires Robotics AI Company To Fast-track Humanoid Robot Development: Report - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMElKaEJDandITTJfMDdTa3FVVlVybFItSVAzaHVuaFRpV3lVbE1vNHZYYzNFTVY5eXFacUt1cm14M1YzbGhIYVVBOHh6U3U3RDVsYkRRWUl2cmlXU0Y4blp3RUJJek05Qldrc3BCUWs5ZW93QXI4VUFOWW1pYWVHMm9MWERaZEN0emxpNkY2OHBjRkRDZ092S3owUXVodFFiQjgyYVZTcTlSNm5WbjROMmUwNktXaUV1MUozUm5UMUFSbkVjNDBtNERwT0NXOUR6RU4tRmMzdkFpTlZpcnc?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed minutes could detail rate-hike decision, policy path - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaFdleVVLSGdCQUlSODJ0bVFmdlh3cl9WZFFrUG5oUHhxdGNTMUlKUW1QaDBfVXAwd2FLaE0yYk9nb1lNcGY2Z0twTXNweEtEV203X09TTUR3ai1fellVelpWUHlEWWRUYW9oVTByX0ttLXl5b1I0ZjRyQm9ZVFBldFVLR0Z3UVRScGI2b2NuVC1pblU3dzJtd1JnNHY0M1Y0SlE?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.36,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Jim Cramer Says ‘Interest Rates Can Fall, Too!!’ as October Fed Hike Odds Fall to 21.6% — Here’s What Traders Are Betting On - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOMEJ4YXJTbDBFREdKVTVva05KdlNjZDNuYjNnNFhYSDczN21lSXh4bm5FVWNWX3lJbTlCQzBYU0pKLTFLdkUwRHg0RTcyakdIOHpLcVp5Ni1ES1FFU2JFQ1lpbDVhSm1zdWktQzR4aFl6YlJWY0pENlJqR2Z0a29kZlktdFRUeUZjTElmMUJtckFRaUtCREJ3eUFwc2Fhd1JtTXN2d3JXT0Q4ZGVXS05TTjlqY3B6VXRVNFRwMllYQWlHZDBRYlp4eUt6d0IxaWIzSEoxTGVjU2VPLWZ0TVUtNDNGOUFjaEJVdGp4RWh0QUU0cUxETUlnNGlzOHk4MnBMdHZaZUVn?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.24,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.49,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-02",
           "return_pct": 1.69,
           "zscore": 1.52,
@@ -5143,7 +5182,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.28,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -5183,45 +5222,6 @@
           "coverage": {
             "count": 0,
             "zscore": -1.22,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-17",
-          "return_pct": -3.18,
-          "zscore": -1.26,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.01,
-          "events": [
-            {
-              "source": "googlenews_robotics",
-              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTUVHY2pOM1lCTWxmY21jRlp2VC01WjkyOEI1VzlJOTB2YXdnV3J0Q2dPd2twVzRWazBwYy1kN3UydFVBTXk1VEFCRm9IdkEtR3BvWjdmNF9OVktWdlRuYURlcUM1UW9mSlNGamxWQ2NIVHFsY1ZfY0tpOHB1OGlzeURQZm5ObWtfeVhZR1pHZk5kMkhQa1J6QzJSVQ?oc=5",
-              "sentiment": -0.128,
-              "relevance": 0.651,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "Robotics ETFs Will Dominate the 2030s. This 1 ETF Is Trading at a Discount - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTmx2QUxHNGtxcmtvVHYyeGFRLWVEN3RpaENObVVyeUFIN1dOU0dCdS1fdVJXa0FwOU1VWHE0c3NyOUlCWm93XzVLV2tyQ3A3TW16aERYY0JDWVF2TW5YT0E1NkxXeXZzaW5MSzhHVC0td0dqNHA4S1RzTnU0a3JWOVNKd282WE5aLXI5NlkxNC1tX2dXdjJnM3JPNnNueUxmOHBSVVVLVlQxOHJ2T3p3cXdtU0xjOWFi?oc=5",
-              "sentiment": -0.128,
-              "relevance": 0.651,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "NVIDIA Just Released a Seriously Impressive AI Model for Robots—This Could Be the Big Catalyst - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQjZNUDFLOXBTSTZNZmFmbFU4bktkM2ZPTE53cDdvLVBTX2F0Vmw3ay1FV2dQUHp4STJzUUFZeklqaS1mcHYyWVIwMG9hcUsyWHFhQlpjYUsxUWh2bnh1OGl6aDJSMnhoZXVreE5KS0NQNEFodWVYRzBQM1RqOGJBVjFZekFqZXJycjBEejdsNFRuREViVnZsVGVKcHdvT3NvQTFVSmo1SG8zQUVSVjNSaFhnV3NFV1RyOFJrV1FJT0ZSOTJWOUpfSVV1MHFhOW96S1hYMw?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 9,
-            "zscore": 1.24,
             "spike": false
           }
         }
@@ -5491,24 +5491,24 @@
             },
             {
               "source": "googlenews_biotech",
+              "title": "Why This Biotech Stock Is Having Its Worst Day Ever - Barron's",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUmNZQnF4Y084Rk9TalFvYTZhU3lnaWtsak9aWW9MbXN2VXlQZlZlN29xU2ZCb3ZVQWVtX3NZbk1Zb2hUREFidlVWNGlVdHpjcFNKUTBzSkpLdGRjS18zYlpDTjlISDU4amRVRU1Ga1FMTWlyWTRXZEVVdDN0Z1U4MFpKNlZ1RDBZcWxHMDY5WnlldzBlTWdUcQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
               "title": "Biotechs Sell Off — These Are The Biggest Losers - Investor's Business Daily",
               "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMVdxY1NsZDhBZ0JQR1h5OC1VRjBidHVJVTdVdW5sOFpRQTg5eTJydlNOQVhpODFjT3gxMnVETWRYcHBIRFdPYmUzXzZvaE9aQzJ5SXJ2bWlaYjR0RU04dkNLalFfSklhVjBJdE96SEY2OE5DU3ZFNnBrSjJjWExtdnhMek9yemZwSkFnM0dKUm1PWnNWbU1pNnE4azJkLUFjZmJkaXpR?oc=5",
               "sentiment": -0.527,
               "relevance": 0.811,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Novavax Pulls Back From Plague-Scare Spike as Officials Call Risk Low; Moderna and Pfizer Inch Higher - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRTVUMnc3VkRWMnpoUDNxbktFRUxDUUxOZFl4SmNXUlMzY051WmdXblpQNTNLZTlKTHA2Q245NnBYQTloZm5pbnVTUG8ySUVnQmk1T21LdXYxX3dja1ZxVjhYOWwxbm9CcUNwdWpsZGpLMXJ6dHZZZFZBb1JrM2pWNklzNkp1NzUtbHNmbUxERVZTZzJkWlVMdDVjb3VORUtlTXZSSTd4cUdpVEFndmVkQ3V2NV9LSklpZUUyZWNuR3Faa2hfTEh0TkM1a3V4TjB3VEFnSmVQbXZfNFFLUW1HVXVGUEhaTk9uY0d3dw?oc=5",
-              "sentiment": -0.494,
-              "relevance": 0.798,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.49,
+            "count": 20,
+            "zscore": 0.6,
             "spike": false
           }
         },
@@ -5715,6 +5715,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-07",
+          "return_pct": -3.83,
+          "zscore": -1.37,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.58,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Gold price today, Wednesday, October 7, 2026: Gold prices losing ground ahead of Fed minutes - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdThtZlVjMWdISTBjSGpDWTdPcHl3LW9KclJjSmRiUVNBTXRXMFJ4Tk1RSVpoRjk2enhDdDNlLS1sbVV3bDAxdHI1Y3BqT3BySGI3T2NKVllyY09GREwyMmdGY0thZnJGM1FwbDYwXzB3TWlTLXBXN0hSZTVvMzJkbG9nMTd0UUdmX2xxbE5nZURGS1BJV1dyVFBzVFdhVDhpUlV0OEtjbW5URXd0QlZXdmQySHJtdHdhWE5SOW5TTV8tUl9sbGtPYmEwblY4N3hEZlNXaXhRUEpoYUU2Wk5PUElpaTZkVnBtYUFPWXVQOUJFOTh3YWtN?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Kairos Gold Stock Under Pressure: Weak Sentiment Raises Downside Risk and Correction Concerns - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS3ZWdWhRT3NFckl0UzhyNEVsQ3p3NjBtRGNTbWc1bFJ0NnFpWEtsTzU2aXotUjBNOFBfTkpjUUs0ZWp6azhhZU56bVhJbGlhQ093Q3R0eGZRaFQwMGhES0R3Rjk5WlZ3NmFXc1h0eWtNQzFFOXViTmR0NlJMVHMxQTUxaUZLQ1JEZVZvSmVaZEN5cUVrYzZyNlh5d3FwUjRSbVN0bGcwS3A1cWJzOXZOVnF2U0VzUmJzblBPaGMyeXA?oc=5",
+              "sentiment": -0.802,
+              "relevance": 0.721,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "San Lorenzo Gold Stock Under Pressure: Weak Sentiment Raises Correction Risk - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPb0xPSlBIdFltbjVoRkljOEtFYnhVeEl6UVhFZElSYXctLUxqVE1RRjl3Uk9TV3BpR3BpNUdQc1NDVk83Z3R4YllvVGl6aWpBSjgyV295bC05UEdRZEtwczRSZ1gyTS1mbHl6ZVVJX0hfTDQ1VG8xUFpob3B4bWVLSGNFbEdldXltaC1mZ2RzQ09sX2J4ZjVIdnpMbXQ3Mkp1NDZXdWJ2Z1dIUQ?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.694,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -1.42,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-28",
           "return_pct": -5.36,
           "zscore": -1.86,
@@ -5908,45 +5947,6 @@
             "zscore": 0.88,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-10",
-          "return_pct": -3.46,
-          "zscore": -1.36,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.58,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Radisson Mining Stock Under Pressure: Bearish Momentum Raises Correction and Downside Risk - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY05oZmoxSWNONnEtb3F2LXpNNFFZTW1TTE5YQXZtQWZGVjQzcHRtNmRiNGFUT0NCVU4tbTBtNUZBZXI2QWhOQS0zNE5CSlFYeWFlbEoyUlZoYXk1Rnk1bThZQ3prZDB3YUFjSzh6N3JuelNGSnZ4eVpubUZBbFZJNmQ1cFd6VTVmb2l1RUgzM3JSZ01GZVFHTjRoZHN5ekd2cE41clAtQ1RyUXlfdUk4VlhjdC1HRm1uWWtqRw?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Country Risk Is the Wrong Question. Ask If the Process Is Written Down. - GlobeNewswire",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZWZyY2YyT1pWLXdvaFNIT3VhdGpDR1IwRGJXUDFUbzQ2OFRLLVhueVJaM2FVMTBBMVEzWFRHMlJYX0ZueE02WE5WX0tfNkVRNzIxeDNkd2h1d18xNUhXS3JBdEhjWS0yZS14VTNWSjI3a3dveXJSVWpad1d6S01yenVJMENiNGp3R2g3TmFyV2Z0OFNRLXNTakM1N1ZyVUlkT3RRdlE5VHhVRFptRU9aS2dvczNqMUplZFExUHNOX0hvdjJFSDJJT2ZZVUEyZE13ZUdKZ2Jpa0w?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Agnico Eagle Mines (AEM) Suffers a Larger Drop Than the General Market: Key Insights - finance.yahoo.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa1ZERzFwVTh1U2FIZng0QVE1SFM1eVNtRnJCd1I3U1JqbEg3OFVjeWhRd0dsOXd3cnBWa3ZEaUFCUDhHTk9KQnNjOWlNWVBnX3ZHc2lHRkZXZUdZbDBsRjBlOGtsd1ZmZTJ2cGxkdVYweWdyYnBtVlJSb3ZUV2xoX3lKTWhWdUI0OXE5OWExVkZBdmNudGNlNEgxOA?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 43,
-            "zscore": 1.54,
-            "spike": false
-          }
         }
       ]
     }
@@ -5954,21 +5954,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-07",
-      "return_pct": -1.86,
-      "zscore": -1.08,
-      "max_abs_z_recent": 1.08,
+      "return_pct": -2.9,
+      "zscore": -1.6,
+      "max_abs_z_recent": 1.6,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-10-06",
-      "return_pct": 0.58,
-      "zscore": 0.87,
-      "max_abs_z_recent": 1.25,
+      "date": "2026-10-07",
+      "return_pct": -0.58,
+      "zscore": -1.07,
+      "max_abs_z_recent": 1.23,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
