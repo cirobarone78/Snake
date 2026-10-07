@@ -1,58 +1,58 @@
 {
-  "generated_at": "2026-10-06T06:48:44.123688+00:00",
+  "generated_at": "2026-10-07T06:23:49.925114+00:00",
   "title": "Paper trading",
   "disclaimer": "Portafogli VIRTUALI (paper trading): nessun denaro reale. Ordini simulati col modello di costi del progetto, eseguiti alla barra successiva. Non è consulenza finanziaria.",
   "scenarios": [
     {
       "scenario_id": "etf_top5",
       "initial_cash": 10000.0,
-      "equity": 11204.01,
+      "equity": 11077.77,
       "cash": 333.77,
-      "return_pct": 12.04,
+      "return_pct": 10.78,
       "realized_pnl": 260.71,
       "fees_paid": 17.99,
       "fully_marked": true,
-      "last_processed": "2026-10-04",
+      "last_processed": "2026-10-05",
       "positions": [
         {
           "symbol": "BTC",
           "qty": 0.02597416,
           "avg_cost": 79186.583,
-          "price": 86480.3047,
-          "value": 2246.25,
-          "pnl_pct": 9.21
+          "price": 85786.5938,
+          "value": 2228.24,
+          "pnl_pct": 8.33
         },
         {
           "symbol": "ETH",
           "qty": 0.81343738,
           "avg_cost": 2514.1965,
-          "price": 2726.509,
-          "value": 2217.84,
-          "pnl_pct": 8.44
+          "price": 2711.0315,
+          "value": 2205.25,
+          "pnl_pct": 7.83
         },
         {
           "symbol": "LINK",
           "qty": 154.88518846,
           "avg_cost": 11.9514,
-          "price": 14.275,
-          "value": 2210.98,
-          "pnl_pct": 19.44
+          "price": 13.8612,
+          "value": 2146.89,
+          "pnl_pct": 15.98
         },
         {
           "symbol": "POL",
           "qty": 18181.86181244,
           "avg_cost": 0.1207,
-          "price": 0.1101,
-          "value": 2000.91,
-          "pnl_pct": -8.84
+          "price": 0.1091,
+          "value": 1983.42,
+          "pnl_pct": -9.64
         },
         {
           "symbol": "SOL",
           "qty": 18.05538787,
           "avg_cost": 98.5232,
-          "price": 121.5286,
-          "value": 2194.25,
-          "pnl_pct": 23.35
+          "price": 120.7507,
+          "value": 2180.2,
+          "pnl_pct": 22.56
         }
       ],
       "targets": {
@@ -63,10 +63,10 @@
         "POL": 0.2
       },
       "metrics": {
-        "sharpe": 2.39,
+        "sharpe": 2.14,
         "max_drawdown_pct": -8.58,
-        "time_underwater_pct": 75.6,
-        "n_days": 41
+        "time_underwater_pct": 76.2,
+        "n_days": 42
       },
       "curve": [
         {
@@ -236,6 +236,10 @@
         {
           "t": "2026-10-04",
           "v": 11204.01
+        },
+        {
+          "t": "2026-10-05",
+          "v": 11077.77
         }
       ],
       "recent_orders": [
@@ -324,37 +328,37 @@
     {
       "scenario_id": "large_100k",
       "initial_cash": 100000.0,
-      "equity": 142232.83,
+      "equity": 140733.04,
       "cash": 2443.37,
-      "return_pct": 42.23,
+      "return_pct": 40.73,
       "realized_pnl": 20602.02,
       "fees_paid": 1478.77,
       "fully_marked": true,
-      "last_processed": "2026-10-04",
+      "last_processed": "2026-10-05",
       "positions": [
         {
           "symbol": "BTC",
           "qty": 0.32292544,
           "avg_cost": 80633.9596,
-          "price": 86480.3047,
-          "value": 27926.69,
-          "pnl_pct": 7.25
+          "price": 85786.5938,
+          "value": 27702.67,
+          "pnl_pct": 6.39
         },
         {
           "symbol": "ETH",
           "qty": 30.94602464,
           "avg_cost": 2442.5318,
-          "price": 2726.509,
-          "value": 84374.62,
-          "pnl_pct": 11.63
+          "price": 2711.0315,
+          "value": 83895.65,
+          "pnl_pct": 10.99
         },
         {
           "symbol": "LINK",
           "qty": 1925.61987628,
           "avg_cost": 8.5859,
-          "price": 14.275,
-          "value": 27488.15,
-          "pnl_pct": 66.26
+          "price": 13.8612,
+          "value": 26691.35,
+          "pnl_pct": 61.44
         }
       ],
       "targets": {
@@ -365,10 +369,10 @@
         "POL": 0.2
       },
       "metrics": {
-        "sharpe": 3.18,
+        "sharpe": 3.07,
         "max_drawdown_pct": -11.47,
-        "time_underwater_pct": 85.4,
-        "n_days": 89
+        "time_underwater_pct": 85.6,
+        "n_days": 90
       },
       "curve": [
         {
@@ -730,25 +734,13 @@
         {
           "t": "2026-10-04",
           "v": 142232.83
+        },
+        {
+          "t": "2026-10-05",
+          "v": 140733.04
         }
       ],
       "recent_orders": [
-        {
-          "created_at": "2026-09-30",
-          "symbol": "POL",
-          "side": "buy",
-          "qty": 238871.080845,
-          "status": "pending",
-          "fill_price": null
-        },
-        {
-          "created_at": "2026-09-30",
-          "symbol": "SOL",
-          "side": "buy",
-          "qty": 230.381048,
-          "status": "pending",
-          "fill_price": null
-        },
         {
           "created_at": "2026-10-01",
           "symbol": "SOL",
@@ -812,43 +804,59 @@
           "qty": 250733.019123,
           "status": "pending",
           "fill_price": null
+        },
+        {
+          "created_at": "2026-10-05",
+          "symbol": "SOL",
+          "side": "buy",
+          "qty": 226.103977,
+          "status": "pending",
+          "fill_price": null
+        },
+        {
+          "created_at": "2026-10-05",
+          "symbol": "POL",
+          "side": "buy",
+          "qty": 250276.928623,
+          "status": "pending",
+          "fill_price": null
         }
       ]
     },
     {
       "scenario_id": "mid_10k",
       "initial_cash": 10000.0,
-      "equity": 14223.28,
+      "equity": 14073.3,
       "cash": 244.34,
-      "return_pct": 42.23,
+      "return_pct": 40.73,
       "realized_pnl": 2060.2,
       "fees_paid": 147.88,
       "fully_marked": true,
-      "last_processed": "2026-10-04",
+      "last_processed": "2026-10-05",
       "positions": [
         {
           "symbol": "BTC",
           "qty": 0.03229254,
           "avg_cost": 80633.9596,
-          "price": 86480.3047,
-          "value": 2792.67,
-          "pnl_pct": 7.25
+          "price": 85786.5938,
+          "value": 2770.27,
+          "pnl_pct": 6.39
         },
         {
           "symbol": "ETH",
           "qty": 3.09460246,
           "avg_cost": 2442.5318,
-          "price": 2726.509,
-          "value": 8437.46,
-          "pnl_pct": 11.63
+          "price": 2711.0315,
+          "value": 8389.56,
+          "pnl_pct": 10.99
         },
         {
           "symbol": "LINK",
           "qty": 192.56198763,
           "avg_cost": 8.5859,
-          "price": 14.275,
-          "value": 2748.82,
-          "pnl_pct": 66.26
+          "price": 13.8612,
+          "value": 2669.14,
+          "pnl_pct": 61.44
         }
       ],
       "targets": {
@@ -859,10 +867,10 @@
         "POL": 0.2
       },
       "metrics": {
-        "sharpe": 3.18,
+        "sharpe": 3.07,
         "max_drawdown_pct": -11.47,
-        "time_underwater_pct": 85.4,
-        "n_days": 89
+        "time_underwater_pct": 85.6,
+        "n_days": 90
       },
       "curve": [
         {
@@ -1224,25 +1232,13 @@
         {
           "t": "2026-10-04",
           "v": 14223.28
+        },
+        {
+          "t": "2026-10-05",
+          "v": 14073.3
         }
       ],
       "recent_orders": [
-        {
-          "created_at": "2026-09-30",
-          "symbol": "POL",
-          "side": "buy",
-          "qty": 23887.108085,
-          "status": "pending",
-          "fill_price": null
-        },
-        {
-          "created_at": "2026-09-30",
-          "symbol": "SOL",
-          "side": "buy",
-          "qty": 23.038105,
-          "status": "pending",
-          "fill_price": null
-        },
         {
           "created_at": "2026-10-01",
           "symbol": "SOL",
@@ -1306,43 +1302,59 @@
           "qty": 25073.301912,
           "status": "pending",
           "fill_price": null
+        },
+        {
+          "created_at": "2026-10-05",
+          "symbol": "SOL",
+          "side": "buy",
+          "qty": 22.610398,
+          "status": "pending",
+          "fill_price": null
+        },
+        {
+          "created_at": "2026-10-05",
+          "symbol": "POL",
+          "side": "buy",
+          "qty": 25027.692862,
+          "status": "pending",
+          "fill_price": null
         }
       ]
     },
     {
       "scenario_id": "small_1k",
       "initial_cash": 1000.0,
-      "equity": 1422.33,
+      "equity": 1407.33,
       "cash": 24.43,
-      "return_pct": 42.23,
+      "return_pct": 40.73,
       "realized_pnl": 206.02,
       "fees_paid": 14.79,
       "fully_marked": true,
-      "last_processed": "2026-10-04",
+      "last_processed": "2026-10-05",
       "positions": [
         {
           "symbol": "BTC",
           "qty": 0.00322925,
           "avg_cost": 80633.9596,
-          "price": 86480.3047,
-          "value": 279.27,
-          "pnl_pct": 7.25
+          "price": 85786.5938,
+          "value": 277.03,
+          "pnl_pct": 6.39
         },
         {
           "symbol": "ETH",
           "qty": 0.30946025,
           "avg_cost": 2442.5318,
-          "price": 2726.509,
-          "value": 843.75,
-          "pnl_pct": 11.63
+          "price": 2711.0315,
+          "value": 838.96,
+          "pnl_pct": 10.99
         },
         {
           "symbol": "LINK",
           "qty": 19.25619876,
           "avg_cost": 8.5859,
-          "price": 14.275,
-          "value": 274.88,
-          "pnl_pct": 66.26
+          "price": 13.8612,
+          "value": 266.91,
+          "pnl_pct": 61.44
         }
       ],
       "targets": {
@@ -1353,10 +1365,10 @@
         "POL": 0.2
       },
       "metrics": {
-        "sharpe": 3.18,
+        "sharpe": 3.07,
         "max_drawdown_pct": -11.47,
-        "time_underwater_pct": 85.4,
-        "n_days": 89
+        "time_underwater_pct": 85.6,
+        "n_days": 90
       },
       "curve": [
         {
@@ -1718,25 +1730,13 @@
         {
           "t": "2026-10-04",
           "v": 1422.33
+        },
+        {
+          "t": "2026-10-05",
+          "v": 1407.33
         }
       ],
       "recent_orders": [
-        {
-          "created_at": "2026-09-30",
-          "symbol": "POL",
-          "side": "buy",
-          "qty": 2388.710808,
-          "status": "pending",
-          "fill_price": null
-        },
-        {
-          "created_at": "2026-09-30",
-          "symbol": "SOL",
-          "side": "buy",
-          "qty": 2.30381,
-          "status": "pending",
-          "fill_price": null
-        },
         {
           "created_at": "2026-10-01",
           "symbol": "SOL",
@@ -1798,6 +1798,22 @@
           "symbol": "POL",
           "side": "buy",
           "qty": 2507.330191,
+          "status": "pending",
+          "fill_price": null
+        },
+        {
+          "created_at": "2026-10-05",
+          "symbol": "SOL",
+          "side": "buy",
+          "qty": 2.26104,
+          "status": "pending",
+          "fill_price": null
+        },
+        {
+          "created_at": "2026-10-05",
+          "symbol": "POL",
+          "side": "buy",
+          "qty": 2502.769286,
           "status": "pending",
           "fill_price": null
         }
