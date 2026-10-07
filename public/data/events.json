@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:45:00+00:00",
+  "generated_at": "2026-10-07T06:18:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-10-07",
+          "return_pct": -3.5,
+          "zscore": -1.86,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -1.86,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Top 3 Price Prediction: Bitcoin, Ethereum, Ripple – BTC fails to hold $85,000, ETH downside risks rise, XRP momentum fades - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxONi1LeThmZXZ1THpnTnhQT1dCWGJHMlV4bkVxQ2l4ZVAtUDF3S0FxYU50YUdnSmQwRVg5RkZqZ3dBM1VJRFBwa1czLTY3Vy1jZGJsaUYzanRDUXlRQVo4dFRVM2UyX2tOMTI1a1d2RkVHU0U0bkhjYWZMVmlfcDhWZ2ZvVktwNWtwdkIxYktfMmVYN3ZfYzgyRzlkVHZwemk5TW5GUVExU0ZzUXdKQ1FEU3prcGVQNFZ4ZHRYR0lBVUpmRXgyVEZiSTlFTkpWdHZOTmExdXUyeUN2cGNBUHBJeVlGdkk4ZzdCXzZVRmpCbGRZdU1MV3h0SExoVzR5Tk9yUUkwTw?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum holds steady near $2,700 amid $414M in long liquidations and $640M in shorts at risk - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaDE2SHhxQzhkaUhTaE5CdTJnSVg4M3Qwb29pdlJka3E2MWpuZEEtMlprZWRicmc2dzI4dG9tQ052cEpTelpIQ3U4cEVybldOV0ZfWmw1aXFDN01wTDZITkpXdjhSRFhpWC1XSG9hWU51VkpnVzJTYkpaV0NiT2RlMm5YNzFjWFFIZkZjcmNWcEhBOFlxWl90ZWoxMG9meTUwY1E0eTYydXk2RlotSEE?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Flash Loan Attacks Drained $1.2B From DeFi Between 2020 and 2024 - Altcoin Buzz",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTXVrc2tDbW1OcXE3aFZsVXU5TGloalBHcnhKWnJPajNjSGRvdVplYUZjYVN2ZjU3OF81UE5IUTNZc2tHLW93MXpFNlpQS1RjbDdxeG93cm1HdURQNkpDLTRCZWtZaXFLUHBONGRPUkV0dzZiMGIwVTFCa2ZLaG1TYjd5ekU1R0k?oc=5",
+              "sentiment": -0.66,
+              "relevance": 0.664,
+              "event_type": "hack"
+            }
+          ],
+          "coverage": {
+            "count": 16,
+            "zscore": -2.71,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-21",
           "return_pct": 5.05,
           "zscore": 2.08,
@@ -441,45 +480,6 @@
           "coverage": {
             "count": 93,
             "zscore": 1.48,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-19",
-          "return_pct": 17.48,
-          "zscore": 10.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 7.09,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin and major cryptocurrencies show strong gains, with BTC up 5.8% and ETH up 9%. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMUhIeHRYWmVQcGFISHNmdDZLV3BqT0dzTjFJNXFjcHI2ZzVnNU5oU3JCZ0txTm5UUDg3aWJEUlJvamJYVldBTktmQm5veUpvTmtzTlZrSzBGVGpQQUFCWnBPV0lrbFFyUVdUWk1aQUllX2h6R2o5MEFBUnZ3S3BLTG1vQ2hNTXFwUlNVVXBSSjMta3JHUzY0N0o0cnhBZzZCU0w1Qzh4UVpxZw?oc=5",
-              "sentiment": 0.715,
-              "relevance": 0.886,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "New Crypto: Pepeto Grows Past $10.74M Fast Following Shiba Inu Success And Ethereum Price Prediction Targets $7,500 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPLTc3cl9VMG1hOGhiR0RwTGRXcDRtbzJLblJGbjR4ZWxIVjN6U1ZRUXVxbnZKU2ZXNkh0REdHaV9Wc285ZEdBYkRqdmVfaTBwZXdhRHhybnV2NUZLbDBEU3psdGlrQ051aWJSODJydG1CUzgyMjhoVi1XQlE0YldzNWZXUHhoYzhldXBSZTNNRVlMNl9wbHc4dmpBdXVJM0NOSFc1LV9qNndHa1p6QmxFUlN2Nl84Q21QYXhFRWpDSDdwai1OTUdQcl8tZjZId0VMN0s5Y000T0lqTHFPM1dveHcxMmo3VXZucHZ1bk90OHA2eHotZGZDV0pKX18yNVFT?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Surges 3% on Positive Regulation, ETF Inflows - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nNUFpdlF4SkppVUpBSV8yS2tMc0pVcmsxbU9RdTdPcVBnNHdEWGpGU3Zub3lweGJQaFNLZDNzeS03bEdpWVVLNWQ2b0ltUHNiZzJtdlBRRmVTc2RGYkpYRHNJVllCMUkta3VjUzlXOWw?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "regulation"
-            }
-          ],
-          "coverage": {
-            "count": 95,
-            "zscore": 1.59,
             "spike": false
           }
         }
@@ -804,8 +804,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 4.12,
+            "count": 47,
+            "zscore": 3.96,
             "spike": true
           }
         },
@@ -843,8 +843,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 2.97,
+            "count": 36,
+            "zscore": 3.11,
             "spike": true
           }
         },
@@ -972,6 +972,45 @@
       "name": "Polygon",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-10-07",
+          "return_pct": -4.98,
+          "zscore": -1.36,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.86,
+          "events": [
+            {
+              "source": "cointelegraph",
+              "title": "Bitcoin.de trading remains halted as German regulator rejects MiCA application",
+              "url": "https://cointelegraph.com/news/bitcoinde-trading-remains-halted-as-german-regulator-rejects-mica-application?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.494,
+              "relevance": 0.479,
+              "event_type": "regulation"
+            },
+            {
+              "source": "coindesk",
+              "title": "Bitcoin dips below $84,000 as oil jumps on Iranian tanker attacks",
+              "url": "https://www.coindesk.com/markets/2026/10/07/bitcoin-dips-below-usd84-000-as-oil-jumps-on-iranian-tanker-attacks",
+              "sentiment": -0.44,
+              "relevance": 0.466,
+              "event_type": "other"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "Pudgy Penguins-backed Abstract to shut down after ‘tens of millions’ in losses",
+              "url": "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": -0.402,
+              "relevance": 0.456,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-01",
           "return_pct": -5.3,
@@ -1164,45 +1203,6 @@
           "coverage": {
             "count": 9,
             "zscore": 1.28,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-18",
-          "return_pct": 9.12,
-          "zscore": 1.53,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 5.89,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Best 9 Layer 2 (L2) Cryptos to Buy in 2026 - Changelly",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pSm1jZWRndUR6LWVtandMTTdwRmZqLXFwTlo1aFpIZi1oU3g2djNfTXhiZWVLZ1VXdmFET2dKY0FaYnZmSEVGOEhiLXZNeWZwN0NLTXVoa3ZJaDBGT3FPcHE5SS1nMzEy?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "I Can Almost Guarantee You Just Missed the Most Important Number in Fed Chair Kevin Warsh's and the FOMC's Interest Rate Decision - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVjh0NnltU3pYUlFQU3hBVDJrc3YwMWxyQTZ3SnotWGRaZW5WcXVVQVVjY00zdDJIVmJweXZJR2xsNEhMQkhIZTF3aDRuS1NGVFlkZEljVGk2eFBTZ3BiWU9BMHBTRW1RbU5UcDhqa3Q5VlJSajRiZ3ZEMGd4aGZ2UHFTemJJQ2NON3VBUmh0N24wQ29aX2F1NEdrRGFXZHM?oc=5",
-              "sentiment": 0.634,
-              "relevance": 0.854,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Interest Rate Predictions for the Rest of 2026 - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUXV0WHRRXzZtNmRVX1V5WEtuTzNuMXRTUWZtSG05dzVBNllpTmJGWTVlVnNFaklqaHVoYzU0THZIYTk5RWJXNERXcnRuaC15TDdTTG9IcVUyZWxLc2dXejhUNFpTZVdOTDhmekthQUkyVklYRU9pazNyN2k0S0RmZmtpV0VScGFJalZkS1pB?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.21,
             "spike": false
           }
         }
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.35,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -2397,24 +2397,24 @@
             },
             {
               "source": "googlenews_utilities",
-              "title": "Why Is Canadian Utilities (TSX:CU) Drawing Attention in Industrial Stocks? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYTI5alZuSzdkMC0zdmRQUGJubjFPS1JMOVFWMVFMU2hFbzNkLUo2Q0o4LVJ3MV83b0RqdzlHdVVfNW9vaU9xbUd6MmZmdTdydmdha3RucDZ1OVNuMWUtNFRWS011R1YwX09MVzI0Qi0xOHZHV0FNOC1Md2JtcTRKQUx3VElpLU5mODhjRkVlRnpmMzYtM01zMVBfeW42OG91aTlfSFZPbVVLWXVmb3dVT2lqbUlTU3c?oc=5",
+              "title": "Emera bids for national powerhouse with $35-billion Canadian Utilities, ATCO merger - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWUc1NENXS3BoS05qekUtdFZ5bG1Wc2xvdmNudF9SMXVWUVpjaG9kN1h1Q0VWLVdfNks3d0R1OVdEOUp1a2x6ZkpVOTZEU0c2Qk11TXhCc040ZWpkRVRmQk5DOUgzN2RCZXNSUWVsT2xfdUxiUzZBYk12NzVBVEVUdWJFZWVKRzU4UDU1OFdFd0prNHlvbTVQd3dHZXBObkFXVnh1MlQwOFRuTEFqdktfZlNxTkZfWHB5OFhZ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_utilities",
-              "title": "4 Utility Stocks to Buy as Electric Power Industry Continues to Grow - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcS1sS3RYTWc2c054enYyVEFpUGYtYUw1X2kzbkMtQXNzS0tudEk3cEgwNm1BQkREOVJpUjVhN1JwY1lxVllQeE1sNVA4dUhoSHl0endCTmJUNm5GMDRLSGFqYlVuX2lqVkFNUWQ2empnUWlUQXlaY2dVeWkwbVNjT0RHSnZ4anRObkRiem92MA?oc=5",
+              "title": "Why Is Canadian Utilities (TSX:CU) Drawing Attention in Industrial Stocks? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYTI5alZuSzdkMC0zdmRQUGJubjFPS1JMOVFWMVFMU2hFbzNkLUo2Q0o4LVJ3MV83b0RqdzlHdVVfNW9vaU9xbUd6MmZmdTdydmdha3RucDZ1OVNuMWUtNFRWS011R1YwX09MVzI0Qi0xOHZHV0FNOC1Md2JtcTRKQUx3VElpLU5mODhjRkVlRnpmMzYtM01zMVBfeW42OG91aTlfSFZPbVVLWXVmb3dVT2lqbUlTU3c?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.29,
+            "count": 4,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.69,
+            "zscore": -0.7,
             "spike": false
           }
         },
@@ -3338,8 +3338,8 @@
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": 1.72,
+            "count": 14,
+            "zscore": 2.03,
             "spike": false
           }
         },
@@ -3378,7 +3378,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.87,
+            "zscore": 0.88,
             "spike": false
           }
         },
@@ -3555,7 +3555,7 @@
           "events": [
             {
               "source": "googlenews_commserv",
-              "title": "8 Top Telecom Stocks to Buy With Healthy Dividends | Investing - U.S. News Money",
+              "title": "8 Top Telecom Stocks to Buy With Healthy Dividends | Investing - U.S. News - Money",
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPX0dzV0JjdlB2dl9rZzlsa0NDa21wSWs5MTducjAycnhacXl2cG5QSDFxT1hISFA3R0dzRzRZWm92RFM2Nmk3VklKaDlQZW1sWG9JMldTRVdScGhERk1ob1lNX1FIbi0xLVU0ZHBYRnhKNU9pdlhRMFZ5eFY3cmRaeVVibTEyV2Y0cU02UA?oc=5",
               "sentiment": 0.542,
               "relevance": 0.817,
@@ -3580,7 +3580,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 3.36,
+            "zscore": 3.3,
             "spike": true
           }
         },
@@ -3619,7 +3619,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.62,
+            "zscore": 0.6,
             "spike": false
           }
         },
@@ -4303,7 +4303,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.47,
+            "zscore": -0.46,
             "spike": false
           }
         },
@@ -4342,7 +4342,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.51,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.51,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.66,
+            "zscore": -0.64,
             "spike": false
           }
         },
@@ -4458,9 +4458,9 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 1.93,
-            "spike": false
+            "count": 6,
+            "zscore": 2.58,
+            "spike": true
           }
         },
         {
@@ -5499,16 +5499,16 @@
             },
             {
               "source": "googlenews_biotech",
-              "title": "Significant stock movers of September: Viking soars, Longeveron slides - BioSpace",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQmVVclJsR2stRnBuN3k0WFhUS3ZaaUVYVTZ1a1JOcnltMl9wUFQyc2RuZks4S2p6VTFsZGZuZGFYeldmLUNGX0MzdWRoZVp0X2x6ZHlVcldjaC1Ec2Z1VUhVWHpWRzFTYkZPOFJJUTVpcTdScUdpWHVWWWJ6UzJjS20zYThJcTU0VjdOWERoWW92c2FlTWxPaUc5STF3WFQxUkFSZw?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
+              "title": "Novavax Pulls Back From Plague-Scare Spike as Officials Call Risk Low; Moderna and Pfizer Inch Higher - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRTVUMnc3VkRWMnpoUDNxbktFRUxDUUxOZFl4SmNXUlMzY051WmdXblpQNTNLZTlKTHA2Q245NnBYQTloZm5pbnVTUG8ySUVnQmk1T21LdXYxX3dja1ZxVjhYOWwxbm9CcUNwdWpsZGpLMXJ6dHZZZFZBb1JrM2pWNklzNkp1NzUtbHNmbUxERVZTZzJkWlVMdDVjb3VORUtlTXZSSTd4cUdpVEFndmVkQ3V2NV9LSklpZUUyZWNuR3Faa2hfTEh0TkM1a3V4TjB3VEFnSmVQbXZfNFFLUW1HVXVGUEhaTk9uY0d3dw?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": 0.07,
+            "count": 19,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -5953,13 +5953,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-10-06",
-      "return_pct": -0.27,
-      "zscore": -0.27,
-      "max_abs_z_recent": 0.95,
+      "date": "2026-10-07",
+      "return_pct": -1.86,
+      "zscore": -1.08,
+      "max_abs_z_recent": 1.08,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 4
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-10-06",
@@ -5968,7 +5968,7 @@
       "max_abs_z_recent": 1.25,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
