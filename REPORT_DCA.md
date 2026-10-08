@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.6% | 33.3% | +21.8 pp | 62% | 1.000 |
-| 2 | LINK | 39.1% | 33.3% | -5.8 pp | 75% | 0.500 |
-| 3 | SOL | 49.3% | 33.3% | -16.0 pp | 90% | 0.000 |
+| 1 | POL | 11.8% | 33.3% | +21.6 pp | 60% | 1.000 |
+| 2 | LINK | 39.1% | 33.3% | -5.8 pp | 70% | 0.500 |
+| 3 | SOL | 49.1% | 33.3% | -15.8 pp | 84% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -94,7 +94,7 @@ Il principale exchange decentralizzato per volume.
 - **Cattura del valore**: dà solo diritto di voto, nessun flusso. Il caso di scuola: il protocollo genera commissioni enormi, che vanno ai fornitori di liquidità e non ai detentori di UNI. Il 'fee switch' che girerebbe una quota al token è oggetto di governance da anni.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.42 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 6.0 anni.
+- **Età**: almeno 6.1 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
@@ -115,7 +115,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - stablecoin o token ancorato: 19
 - capitalizzazione sotto la soglia: 19
-- volume troppo basso rispetto alla capitalizzazione: 13
+- volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
 
 ## Limiti
