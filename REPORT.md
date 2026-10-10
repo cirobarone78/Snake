@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-09 14:08 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-10 13:17 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Bitcoin Sidechains | hot | 0.96 | +8.0% | $1.4B | blockstack, starknet, merlin-chain |
-| 2 | Rollup | hot | 0.96 | +4.6% | $2.6B | arbitrum, starknet, optimism |
-| 3 | bStocks Ecosystem | hot | 0.94 | +2.4% | $788M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, strategy-tokenized-bstocks |
-| 4 | SideChain | hot | 0.93 | +5.7% | $1.8B | blockstack, starknet, gnosis |
-| 5 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.87 | +1.3% | $601M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 6 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.87 | +1.3% | $601M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 7 | Crypto-Backed Tokens | hot | 0.87 | +0.1% | $364M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 8 | Tokenized Stocks | hot | 0.86 | +0.9% | $2.5B | strategy-pp-variable-xstock, circle-internet-group-bstock, microstrategy-xstock |
+| 1 | Rollups-as-a-Service (RaaS) | hot | 0.98 | +7.3% | $215M | espresso, altlayer, ankr |
+| 2 | Gaming Governance Token | hot | 0.95 | +5.7% | $551M | axie-infinity, apecoin, illuvium |
+| 3 | Optimism Superchain Ecosystem | hot | 0.95 | +9.7% | $2.5B | worldcoin-wld, optimism, celo |
+| 4 | AI Agent Launchpad | hot | 0.94 | +3.8% | $1.4B | fetch-ai, virtual-protocol, stp-network |
+| 5 | Yield Aggregator | hot | 0.92 | +3.3% | $374M | convex-finance, yearn-finance, doppler-finance |
+| 6 | Gaming Utility Token | hot | 0.92 | +3.6% | $838M | axie-infinity, the-sandbox, apecoin |
+| 7 | Airdropped Tokens by NFT Projects | hot | 0.91 | +3.4% | $780M | pudgy-penguins, apecoin, loaded-lions |
+| 8 | Gaming Platform | hot | 0.90 | +4.4% | $312M | gala, unipoly, deapcoin |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Long Launchpad | -15.7% | $128M | artificial-inu-3, boner-coin |
-| Pons Launchpad | -10.2% | $266M | pons, thinking-cat, zzz-2 |
-| Yield Optimizer | -10.1% | $220M | convex-finance, equilibria-finance, singularry |
-| Metagovernance | -10.0% | $191M | convex-finance, dinero-2, index-cooperative |
-| Curve Ecosystem | -7.4% | $809M | curve-dao-token, convex-finance, origin-protocol |
+| BONK.fun Ecosystem | -8.6% | $191M | useless-3, scamcoin, kori |
+| Arcade Games | -8.1% | $124M | frenpet, audiera, pepecoin-2 |
+| Tokenized Exchange-Traded Product (ETPs) | -7.9% | $554M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| Tokenized Exchange-Traded Funds (ETFs) | -7.9% | $554M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| Trading Card RWA Platform | -7.7% | $265M | collector-crypt, collect-on-fanable, ready |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
