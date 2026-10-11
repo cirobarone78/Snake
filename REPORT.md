@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-10 13:17 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-11 13:46 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Rollups-as-a-Service (RaaS) | hot | 0.98 | +7.3% | $215M | espresso, altlayer, ankr |
-| 2 | Gaming Governance Token | hot | 0.95 | +5.7% | $551M | axie-infinity, apecoin, illuvium |
-| 3 | Optimism Superchain Ecosystem | hot | 0.95 | +9.7% | $2.5B | worldcoin-wld, optimism, celo |
-| 4 | AI Agent Launchpad | hot | 0.94 | +3.8% | $1.4B | fetch-ai, virtual-protocol, stp-network |
-| 5 | Yield Aggregator | hot | 0.92 | +3.3% | $374M | convex-finance, yearn-finance, doppler-finance |
-| 6 | Gaming Utility Token | hot | 0.92 | +3.6% | $838M | axie-infinity, the-sandbox, apecoin |
-| 7 | Airdropped Tokens by NFT Projects | hot | 0.91 | +3.4% | $780M | pudgy-penguins, apecoin, loaded-lions |
-| 8 | Gaming Platform | hot | 0.90 | +4.4% | $312M | gala, unipoly, deapcoin |
+| 1 | Bitcoin Sidechains | hot | 0.99 | +16.5% | $1.7B | starknet, blockstack, merlin-chain |
+| 2 | Rollup | hot | 0.98 | +13.9% | $3.1B | arbitrum, starknet, optimism |
+| 3 | SideChain | hot | 0.98 | +13.2% | $2.1B | starknet, blockstack, gnosis |
+| 4 | Modular Blockchain | hot | 0.98 | +13.2% | $792M | celestia, movement, cartesi |
+| 5 | Layer 2 (L2) | hot | 0.93 | +2.7% | $11.3B | okb, mantle, arbitrum |
+| 6 | Robinhood Chain Meme | hot | 0.93 | +6.5% | $570M | cash-cat, artificial-inu-3, hood-sword-inu |
+| 7 | Privacy Blockchain | hot | 0.93 | +6.0% | $9.2B | canton-network, starknet, midnight-3 |
+| 8 | Optimism Superchain Ecosystem | hot | 0.90 | +2.8% | $2.6B | worldcoin-wld, optimism, celo |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| BONK.fun Ecosystem | -8.6% | $191M | useless-3, scamcoin, kori |
-| Arcade Games | -8.1% | $124M | frenpet, audiera, pepecoin-2 |
-| Tokenized Exchange-Traded Product (ETPs) | -7.9% | $554M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| Tokenized Exchange-Traded Funds (ETFs) | -7.9% | $554M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
-| Trading Card RWA Platform | -7.7% | $265M | collector-crypt, collect-on-fanable, ready |
+| Tokenized Assets | -50.2% | $23.8B | figure-heloc, tether-gold, hashnote-usyc |
+| Real World Assets (RWA) | -31.1% | $53.1B | figure-heloc, chainlink, stellar |
+| Remora Markets Tokenized rStocks | -21.8% | $105M | circle-rstock-2, sandisk-rstock, microstrategy-rstock |
+| Reality Ecosystem | -20.2% | $116M | circle-rstock-2, sandisk-rstock, spacex-reality-protocol |
+| Tokenized Exchange-Traded Product (ETPs) | -15.5% | $471M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
