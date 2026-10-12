@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T11:13:00+00:00",
+  "generated_at": "2026-10-12T21:22:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -284,7 +284,7 @@
           ],
           "coverage": {
             "count": 85,
-            "zscore": 0.66,
+            "zscore": 0.65,
             "spike": false
           }
         },
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 1.03,
+            "zscore": 1.04,
             "spike": false
           }
         },
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.2,
+            "zscore": -0.21,
             "spike": false
           }
         },
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.54,
+            "zscore": 1.51,
             "spike": false
           }
         },
@@ -2660,6 +2660,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-12",
+          "return_pct": 1.17,
+          "zscore": 1.6,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.06,
+          "events": [
+            {
+              "source": "googlenews_staples",
+              "title": "Colgate-Palmolive (CL) Shines in Consumer Staples with Strong Di - GuruFocus",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS1R6MVJtYlNnUTV1TTVicTVEVGgyMEtFQlFnYkhFai1YcDJMS0E0bjA1RzdHLVFPTVhKUS1JVkJjWXZiTW9XVVo4T1JYcUpvRzgzaE94SGFsRzlEX0Q4WVBmbzFlZ1ZYdG4yX3pOblJYQ0lwWWJQMDJ4RnRlM1lraDJfZGtIZDhIV2pLNFRaZUZkd0h1MVlQQlFSeE9MMjZUVkVvdl85SHJzb2lpNlB4ZXB5VzdScFFMdDgzczY5SkY?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
+              "title": "Coca-Cola, PepsiCo and Walmart among 8 stocks with A+ profitability grades - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMkFwSUZTQ1V4bzdOeXRfVFhfaVhGVWEtektGWXo5dG5BMmFfV2xJbEx4ZGZJdmg3d09Na0F6RHZaR2VUMUxXZVp3Yk5ObEFEWGxOMTJNbHdLWEpoN1I5SDVTakdONjNjTlV3b1ZYaTROeHdWbUNoQld2N1lZWmJXaVl0VnhDX0tvM2lmWlNRekJjMmdjSnBvdi1qaDFYck5YQ0gwNEVucHRNUWpnRVVtRkdQV0U4akRhSUtBSWVJMl9ZMFRKSjMwOXZYaV9ZaEtH?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
+              "title": "Coca-Cola, PepsiCo and Walmart among 8 stocks with A+ profitability grades (XLP:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdlNrdUlybHRJdTlPREpLRkcxOHZyT2lDRnp6dHZUM3I3OC15bHVRYUZGLXN4bjlLSHF0TGZ5Yms5SnNWZ3JkUmNmd3VFcmt2VVVUcEVGazVhMHZ5VkREdU5SSzRmUTlZNW9vYllUbExNSFloZUJwMU5LdkFYYnBTWkpabzRkaDRRRjhZOXpwMW4wQjF1WWxNbENETng0T01Qd3ZQc0F4c1RndU9HZDFr?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 7,
+            "zscore": 0.09,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-08",
           "return_pct": 2.11,
           "zscore": 3.32,
@@ -2851,45 +2890,6 @@
           "coverage": {
             "count": 3,
             "zscore": -1.44,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-28",
-          "return_pct": 1.99,
-          "zscore": 1.68,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.21,
-          "events": [
-            {
-              "source": "googlenews_staples",
-              "title": "European shares edge up as strong consumer earnings overshadow bond yield pressure - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNblRFODVSb24ybmlQVnNkYWtZcVE0QmRLczJ4YU1aXzhoVlczUzk5Smx6ZGV6ZXhFWWRQcXc5enJMZ09kb191MzdGNzFlcEN2X25ydmlmODVTM3EwRkhqbW5JVjNsTWNWSVpPQllWNWFiWE1QNFk1MHZOcHNsYWQzaE5wUGdDanpJaHg4OW5mYVJxeER4bjFDemFOXzJpc05lMzI2cTZXSlh3SWJaVnBBZURIS1JCTzJpVGMwOWZPQ1JlQTF3SDVpTUtnbGlHTXpGLU1nVw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "ASX Sector Performance Analysis: Consumer Staples Lead While Materials Extend Their Pullback - Kalkine",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYzdIWGFQODc4WFBVRnAtQ090dTlKMVl3UEpGNm1NR3ZDRFlzVEh3RXhJSkdyN01SaE04WXJ1WTFjbmtVem1mZVRjQUdfQUdZZnJxUXVmX3RJTVY4NEp6Wjd2eTltenZYcjJzNUJKS25oV0VtVXcwTTFFZERzMFlJS0RuS3lKUjRyVE5kZXYzSENGQkd2dmp1S0NmYXQybXQyQk53MmdBLVppU2JySlBUUHZlUFgxT2FyZnMwUGRNSWdOSHZONlE?oc=5",
-              "sentiment": 0.178,
-              "relevance": 0.671,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "This Consumer Stock Is Bucking the Trend. Here’s How to Trade It. - TheStreet Pro",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTmpORmtpTjVyMGpjeUxTMjhuWGRiWXVBN1NlalItZ2ZIM1ZFd0U1N1dyWUVDazVVUHlZZ3NqUFNJMGNoZ2hsWkVCZHhQY2FpWkxUSW85WTBxSjB3LVlvYW42YVR5NEJ4bndRbWpRakk2REt5RUM0amVLT1IxLXFuQ0tLcGNYNnpNV1RWRFAxSklIUzNwT1BaaU1R?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.86,
             "spike": false
           }
         }
@@ -3215,7 +3215,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.19,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -3470,7 +3470,7 @@
           "events": [
             {
               "source": "googlenews_realestate",
-              "title": "10 of the Best REITs to Buy for 2026 | Investing - U.S. News - Money",
+              "title": "10 of the Best REITs to Buy for 2026 | Investing - US News Money",
               "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1NGE3YmZhMm5pbXJJUkFvS3A3YlpKM2lzYTBfckpMRHVjVVBkaElZcWdMamRnNjRIa3Z4QS1LaGdhVUZzeE9HSkY5Mll6Q05nc1hQMDRZWGtHR0tyX21FWktURHJTRDNOWlluQVdn?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -4067,6 +4067,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-12",
+          "return_pct": -3.03,
+          "zscore": -0.91,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.06,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "How Could Cameco (TSX:CCO) Shape Canada’s Nuclear Energy Sector? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWXZjRFFBbC1WYXlCMmQ1QkpsSzNVZW1PZi1jZXdiZlJrSGlwOWhpd2Y0TnQ1Y3FtM19WQllWYnEzbFdWZ0diS2MtLUR6bGxsZnNtSDhGbmZyMmwtcktGWjl4cGpybGhQd25WdkVSdE11LTh2aThMR08zY2J5MmZ3Sm1EcjZOS0xzX0IzREpZYU1lOV9sT21aS29ZR1JmaWpmRjM4?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "3 Stocks To Play The Nuclear Energy Boom - Crude Oil Prices Today | OilPrice.com",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb2ZVcEQ3LTdGSlRQRlI1M1NBb1hLbFNzUVFHeUVnMkpiV09ycHctalVfdkFhbFFmVi1OVGl1eFJaNDBxNUlfeEFqOGs0Z00tZVh5YlhRcjJYdU1DT2loVjhUNUw3aUMtWktiTDc4elVCT1BaRU1xMTdTUHJTcXFHUzZwdGpON3hHRUNkRFNNZ3M2bVZnUVgwVlhRUDVCS0FK0gGmAUFVX3lxTE1YRlZKWjFhUjdsTE5vVXN2VGZhWU9zdnNuZ0o2TW5uU2NPMmYzZWxtVVVJb2ZFODI2OG1IMTZMTElvZzZpdXBSd2ZxVTBnbFZaUHJNbWFjQlVlSzZvenBZMXhvSmMzUlBvLWsxTW9JRFlLNUJNNVl1amE0UHFyaTg4VGY4Sm1DVGRFVGpIa2hwNVBfUEVmX0J6MDFaSXBvOU1Ybzc0M1E?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.421,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Estate Investments",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTnNLbEdDMDl2NDJPZmxGbXR0YmlhUkloX201TUJrQ3JQcXpVWlN3SENVVnJTOEw4dENwc2lzT3hHUjJiT0o3RGtFdEVTelpRUmdpYUxxU2NpdWlqc0xHZ3JKVGRYRXdsZkFiNjVaYi02UExPZXBBaTM1RTJBal8zMjJRcFJCNnVfaUhQREZyUG9zZDNnZ3A0Ymc0b1RpWkFs?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.36,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.9,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-08",
           "return_pct": -3.43,
           "zscore": -1.13,
@@ -4259,45 +4298,6 @@
             "count": 15,
             "zscore": 2.73,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-09-21",
-          "return_pct": 3.19,
-          "zscore": 1.19,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.49,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Oklo Climbs 5% as Nuclear Names Bounce Back From Last Week's Selloff; NuScale Power Gains 4%, Uranium Energy Rises 3% - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQT1Rjck9pOUtwVDRzaWJlclRiZk55MHNDTlN5SWo1TkFjNE8xNng5cEotRkVrSWV5dWZXU0gwaS1DODBoSzl5SmhQejlKOHItN1NWY3pESHBOT3ZkTVdvLUxOMzRhRzN4dTRfNGpGbTVoVm1BUklPbm5rZVNtZTdZb3h5OFdsWG1TSHFZY3A3SDZQcGQ0alVXVFY0S1NNSnIweDFQaER4bjUyV2VPYmhEYno2eXlKb1NxTlQyWjFIV3JBc3M2V0UxMDlqVUNOOFI3TDk1OU5USEhPY1NqNl9oVE4xSXZkYXJoZHlv?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "3 Canadian Uranium Stocks With Up To 64% Earnings Growth - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOX3pSbDM1VnF2RWRnLWhkbEYxTmVMZHNuTjhmRnYxRGdkOHFwNjlldlVhZ2ZTczZXc2Z1YmtpcHJaX0NVY2QzbnlJdHJBYWk1dk1FWXpmVGUxNDNUdnd1LUczRVVFX1RoTUt1RUQzVmlleGNCRUpZTURvUEZyQi1DRV9iVGNzZDliZC1rZ21RV2dHSmhJRlR3Um9MLUJ6bWxTanNXNmtrN0VRQWQzY2h5TVVPRmpDUTZra3JDVEtB0gHDAUFVX3lxTFBxU2F4ekFJMmlmQ2hCXy11endId0ZlWkcwUHZwQWdaZUtXMjlNekNHTk4weDBGYUVWdGUwMkdRTERRNVZxVDZfbHRFUjZvSXdGMjdESGVFOVBkU2VBTzU1aXF4STRqYmJwMXRha09tQmVMc3BtbC12bVdBMGtzb0hZSlR4UTRwOFMtb25HMDJXVW83XzV3Z2R3Y29ueGtjYTBubHpqYmdxX2E3eUV6cDh4ejJoQlM2T2gtU2k4MkJZRnU5RQ?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Uranium Stocks Are Rallying. Why NXE Got Initiated At Overweight. - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPenFPN3RuQ3g5ZHl1V1N3YzVrQ0g0VXZnN1ZTRFBhZUtKSzZjclNCR1lFTjREY3MxVVRyT3d4a1ZVMWhETzRwVDBVUmRVTUJmQkdxUXBYbkZJQU1UNHVGZlNDcmZSdmxocGdUeGpOcHJ0MWRiclBYb05YQkFYeXlxbzJaSG9Qamo1aGtsUGtSYnFTbE42Q3czZWZGNA?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 3,
-            "zscore": -0.55,
-            "spike": false
           }
         }
       ]
@@ -4824,7 +4824,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.86,
+            "zscore": -0.87,
             "spike": false
           }
         },
@@ -5305,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.38,
+            "count": 16,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -5787,8 +5787,8 @@
             }
           ],
           "coverage": {
-            "count": 28,
-            "zscore": 0.36,
+            "count": 27,
+            "zscore": 0.28,
             "spike": false
           }
         },
@@ -5993,21 +5993,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-12",
-      "return_pct": -0.4,
-      "zscore": -0.35,
+      "return_pct": -0.96,
+      "zscore": -0.63,
       "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 4
     },
     "equity": {
-      "date": "2026-10-09",
-      "return_pct": 0.59,
-      "zscore": 0.89,
+      "date": "2026-10-12",
+      "return_pct": -0.06,
+      "zscore": -0.15,
       "max_abs_z_recent": 1.23,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     }
   }
 }
