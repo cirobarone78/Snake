@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.0% | 33.3% | +21.3 pp | 61% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 70% | 0.500 |
-| 3 | SOL | 48.5% | 33.3% | -15.1 pp | 79% | 0.000 |
+| 1 | POL | 12.1% | 33.3% | +21.3 pp | 62% | 1.000 |
+| 2 | LINK | 39.7% | 33.3% | -6.4 pp | 71% | 0.500 |
+| 3 | SOL | 48.2% | 33.3% | -14.9 pp | 78% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -24,14 +24,14 @@ Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene
 
 ### Il token cattura valore dalla rete
 
-**AAVE — Aave**
+**TRX — TRON**
 
-Protocollo di prestito on-chain fra i più grandi per depositi.
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 5.9 anni.
+- **Età**: 9.1 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -74,6 +74,16 @@ Exchange di derivati on-chain con volumi elevati.
 - **Età**: almeno 1.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
+**XRP — XRP**
+
+Rete di pagamento e regolamento transfrontaliero.
+
+- **Cattura del valore**: serve per transare, ma non cattura ricavi. Le commissioni sono bruciate ma sono minuscole. Il punto critico è l'offerta: una quota rilevante è ancora in escrow presso l'emittente e viene rilasciata nel tempo.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.58 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 12.4 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
 
 ### Solo governance: nessun flusso al detentore
 
@@ -95,7 +105,7 @@ Il principale exchange decentralizzato per volume.
 Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
-- **Offerta**: inflazione alta.
+- **Offerta**: inflazione alta — valutazione diluita 1.10 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 12.8 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -103,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- volume troppo basso rispetto alla capitalizzazione: 22
 - stablecoin o token ancorato: 19
-- capitalizzazione sotto la soglia: 19
+- capitalizzazione sotto la soglia: 18
+- volume troppo basso rispetto alla capitalizzazione: 15
 - già in portafoglio: 6
 
 ## Limiti
