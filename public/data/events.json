@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T09:46:00+00:00",
+  "generated_at": "2026-10-13T12:55:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 99,
-            "zscore": 1.4,
+            "count": 100,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 52,
-            "zscore": 1.28,
+            "count": 53,
+            "zscore": 1.35,
             "spike": false
           }
         },
@@ -973,45 +973,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-10-13",
-          "return_pct": 5.9,
-          "zscore": 1.44,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 2.06,
-          "events": [
-            {
-              "source": "cointelegraph",
-              "title": "Blur is shutting down its website, so why are NFT collectors cheering?",
-              "url": "https://cointelegraph.com/news/blur-is-shutting-down-its-website-so-why-are-nft-collectors-cheering?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": 0.511,
-              "relevance": 0.483,
-              "event_type": "other"
-            },
-            {
-              "source": "coindesk",
-              "title": "UK court ruling boosts government’s chances of keeping $5 billion in seized bitcoin",
-              "url": "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin",
-              "sentiment": 0.477,
-              "relevance": 0.474,
-              "event_type": "legal"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTnNLbEdDMDl2NDJPZmxGbXR0YmlhUkloX201TUJrQ3JQcXpVWlN3SENVVnJTOEw4dENwc2lzT3hHUjJiT0o3RGtFdEVTelpRUmdpYUxxU2NpdWlqc0xHZ3JKVGRYRXdsZkFiNjVaYi02UExPZXBBaTM1RTJBal8zMjJRcFJCNnVfaUhQREZyUG9zZDNnZ3A0Ymc0b1RpWkFs?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 0,
-            "zscore": null,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-12",
           "return_pct": -5.16,
           "zscore": -1.41,
@@ -1203,6 +1164,45 @@
           "coverage": {
             "count": 1,
             "zscore": -1.23,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-09-24",
+          "return_pct": 7.53,
+          "zscore": 1.78,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.0,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Token Burns Continue in Popular Altcoin! Here’s the Latest Token Amount Burned - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVERlS1VkVERTNnc4bnBFYlFqRWQxQ213YlZfbkJfLW1Wb0RFTHQ0TGhhU0RYdjNGVFpNRWo2UUgyTERLZ0lfQ3FMMXBMMTU0VlF3N1pFSkhSUQ?oc=5",
+              "sentiment": 0.475,
+              "relevance": 0.79,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon POL Token Surges 5.14% on Burn and Yield Boost - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uTGdwME9WUE9BeHZxeXNURkRpTHhhb09jUy1DV2NVaV94OVlxM3ZUQ0RzV1lqVlU3NXhnX3FObHliak05c0JXdFNITnJKTHB6YWh6UDl2VkxMWThqODlqNFpLVlNhaGtxWDlDWmZzOTM?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "TRUMP, ZEC And POL Leave Bitcoin And Ethereum In The Dust – Is An Altseason On The Way? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSy1id080akh3WkVjZmUwQmFFYk9LbGxDYnNfS1dtNDhQUVRHYjZwVktpTF9pci1CWjU2YjFjal9vVnVBNTZCeW5hbEJpTDNWQlNiek03aTYyQVpHNnpWNURGR2NqWnhIUlpqc2piSktUVW9NdzFSRGRNMURQNHdjY1RESnZKMHd5Y0tkMkdhWXpUeS13MXJkNFhNcjZUSzRhQXZNNy1nQ0lxYkQyMVNvRDJ0Qmh0ZXZFemU5cG91eVprcGx1QUQ0STB3?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 11,
+            "zscore": 1.77,
             "spike": false
           }
         }
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 1.04,
+            "zscore": 1.03,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 0.77,
+            "count": 18,
+            "zscore": 0.92,
             "spike": false
           }
         },
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.51,
+            "zscore": 1.5,
             "spike": false
           }
         },
@@ -2693,8 +2693,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": 0.52,
+            "count": 10,
+            "zscore": 0.73,
             "spike": false
           }
         },
@@ -5993,12 +5993,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-13",
-      "return_pct": 2.06,
-      "zscore": 0.91,
+      "return_pct": 1.77,
+      "zscore": 0.76,
       "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-10-12",
