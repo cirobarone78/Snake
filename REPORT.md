@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-11 13:46 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-13 14:48 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Bitcoin Sidechains | hot | 0.99 | +16.5% | $1.7B | starknet, blockstack, merlin-chain |
-| 2 | Rollup | hot | 0.98 | +13.9% | $3.1B | arbitrum, starknet, optimism |
-| 3 | SideChain | hot | 0.98 | +13.2% | $2.1B | starknet, blockstack, gnosis |
-| 4 | Modular Blockchain | hot | 0.98 | +13.2% | $792M | celestia, movement, cartesi |
-| 5 | Layer 2 (L2) | hot | 0.93 | +2.7% | $11.3B | okb, mantle, arbitrum |
-| 6 | Robinhood Chain Meme | hot | 0.93 | +6.5% | $570M | cash-cat, artificial-inu-3, hood-sword-inu |
-| 7 | Privacy Blockchain | hot | 0.93 | +6.0% | $9.2B | canton-network, starknet, midnight-3 |
-| 8 | Optimism Superchain Ecosystem | hot | 0.90 | +2.8% | $2.6B | worldcoin-wld, optimism, celo |
+| 1 | bStocks Ecosystem | hot | 0.97 | +6.2% | $858M | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, strategy-tokenized-bstocks |
+| 2 | Modular Blockchain | hot | 0.96 | +3.8% | $794M | celestia, movement, skale |
+| 3 | Robinhood Chain Stocks Ecosystem | hot | 0.95 | +1.6% | $146M | nvidia-robinhood-tokenized-stock, spdr-s-p-500-etf-trust-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 4 | Pons Launchpad | hot | 0.94 | +5.2% | $236M | pons, zzz-2, thinking-cat |
+| 5 | Fiat-backed Stablecoin | hot | 0.94 | +2.8% | $285.2B | tether, usd-coin, usds |
+| 6 | Stablecoins | hot | 0.93 | +2.7% | $300.1B | tether, usd-coin, usds |
+| 7 | USD Stablecoin | hot | 0.93 | +2.6% | $296.9B | tether, usd-coin, usds |
+| 8 | GENIUS Act Compliant Stablecoin | hot | 0.92 | +3.7% | $75.7B | usd-coin, paypal-usd, usa |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Tokenized Assets | -50.2% | $23.8B | figure-heloc, tether-gold, hashnote-usyc |
-| Real World Assets (RWA) | -31.1% | $53.1B | figure-heloc, chainlink, stellar |
-| Remora Markets Tokenized rStocks | -21.8% | $105M | circle-rstock-2, sandisk-rstock, microstrategy-rstock |
-| Reality Ecosystem | -20.2% | $116M | circle-rstock-2, sandisk-rstock, spacex-reality-protocol |
-| Tokenized Exchange-Traded Product (ETPs) | -15.5% | $471M | ishares-core-s-p-500-etf-ondo-tokenized-etf, sp500-xstock, spdr-s-p-500-etf-ondo-tokenized-etf |
+| NFTFi | -15.1% | $114M | blur, public-meme-token, synfutures |
+| Long Launchpad | -14.8% | $107M | artificial-inu-3, boner-coin |
+| Cybersecurity | -13.2% | $180M | arcium, goplus-security, qanplatform |
+| NFT Marketplace | -9.2% | $153M | magic-eden, blur, tensor |
+| Robinhood Chain Meme | -9.2% | $499M | cash-cat, artificial-inu-3, hood-sword-inu |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
