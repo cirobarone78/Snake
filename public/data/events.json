@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T03:52:00+00:00",
+  "generated_at": "2026-10-13T07:02:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 1.05,
+            "zscore": 1.04,
             "spike": false
           }
         },
@@ -3137,7 +3137,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.56,
+            "zscore": 0.55,
             "spike": false
           }
         },
@@ -5047,25 +5047,25 @@
               "event_type": "other"
             },
             {
+              "source": "googlenews_robotics",
+              "title": "A single holder reports 35,454,544 shares of Xtend AI Robotics (XTND). - Stock Titan",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb19GNTA0OUZ4TEZYWUc5LTZheDBKWUdnZTFlVEJ5WEVNRHVxV1VLaHB2Qk5ZVUF4Q1F1WlJlUVBFaEZSXy1ia3RjLWlBek9LaUtXNi1NNWdYUmotSGZHdHNXV0dwaEhQZVZtNl84aTc2RDIwZEZJcFFmSHpEeHNtLXo1cGNaVFNqSmhxS2tQdTJkYm1qNU9YX0M2a253QS1LUTV1c1JpZW1IRGVPTFF4dXVudVI0TTMxLW1xc1RKMzYzeW5nVF9z?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.518,
+              "event_type": "other"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Fed Interest Rate Forecast for the Next 5 Years: 2026 to 2031 - Norada Real Estate Investments",
               "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVnFWOWJRSThWYmhuZmU3VWU2UVRiVUF1a3JQNGV2Z3NFXzRNTmoxRHFTVWFjYkJodnh3Z0RYeUFIWF9CeUdUWlNpMXEwZ0Z3S1RNRk1NNjRoWkFMaU9jMEdpdXpnbGFQNkQxUE8tNG9NZnI2dUJCSjNoUHhIZnB1Q0NTWjFudEhhSXViX2ZRU1hpSzhnWnlaZ2V1OGdBbWJh?oc=5",
               "sentiment": 0.459,
               "relevance": 0.47,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Rate Decision October 2026: Hike or Hold on 28 Oct? - Admirals",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdmY3cXBuLWtweVlhWVpTcm9fOXk3SU9hRWkzdFM3Q3lGUzUyZGRlbWlmSWhuNFp3X0R5czZTZFB0TERiM3NjWDctdmRUNGVINkZhTnhuZ095MElMRno5c1lwMkI1ZDlNb2dEUEFzU1JuSWQ4OHBhSGJSWTl3QURsNFNsV0lTNGc?oc=5",
-              "sentiment": 0.361,
-              "relevance": 0.447,
-              "event_type": "fed"
             }
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.47,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -5077,6 +5077,14 @@
           "severity": "notable",
           "market_return_pct": -0.47,
           "events": [
+            {
+              "source": "googlenews_robotics",
+              "title": "A single holder reports 35,454,544 shares of Xtend AI Robotics (XTND). - Stock Titan",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb19GNTA0OUZ4TEZYWUc5LTZheDBKWUdnZTFlVEJ5WEVNRHVxV1VLaHB2Qk5ZVUF4Q1F1WlJlUVBFaEZSXy1ia3RjLWlBek9LaUtXNi1NNWdYUmotSGZHdHNXV0dwaEhQZVZtNl84aTc2RDIwZEZJcFFmSHpEeHNtLXo1cGNaVFNqSmhxS2tQdTJkYm1qNU9YX0M2a253QS1LUTV1c1JpZW1IRGVPTFF4dXVudVI0TTMxLW1xc1RKMzYzeW5nVF9z?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_robotics",
               "title": "Key Robotics Stocks for 2026 and Beyond - Yahoo Finance Singapore",
@@ -5092,19 +5100,11 @@
               "sentiment": -0.421,
               "relevance": 0.461,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Bond Market Wants Lower Fed Target Rates And Inflation To Release Via Non-Core, In My View - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOEwtcmZ6ZXRRbTlvdFhiSWZBSjNreXBZZVF3Nnh2ZGFHbW0zdEI1Q3c2UEJxb012Tl90UHZxNW9wNC1SRG1OdlQyalRSZEVuZGVtNGlvWjRyb0daMC1hMmdsTXFRWlRGRDVnbk9LNFI3TmQzTzdhTXp0cTVfUHBsVm1sYzdTMldDajM0YnVTZVlVTzlob1lvTFBDVzhIMkZQQ1laYXJKRkRTU1pZZzlvVnMtR1NOV2oza1k4SUxteldvOEVQdVZnTUdn?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.431,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.52,
+            "count": 2,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 2.04,
+            "zscore": 2.02,
             "spike": false
           }
         },
@@ -5305,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.39,
+            "count": 14,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -5993,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-13",
-      "return_pct": -0.52,
-      "zscore": -0.4,
+      "return_pct": -0.07,
+      "zscore": -0.18,
       "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
