@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T01:06:00+00:00",
+  "generated_at": "2026-10-14T03:42:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 101,
-            "zscore": 1.49,
+            "count": 99,
+            "zscore": 1.4,
             "spike": false
           }
         },
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": 0.13,
+            "count": 16,
+            "zscore": 0.23,
             "spike": false
           }
         },
@@ -1937,6 +1937,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-13",
+          "return_pct": -1.35,
+          "zscore": -1.62,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.02,
+          "events": [
+            {
+              "source": "googlenews_health",
+              "title": "Seeking Alpha’s Quant Spotlight: Highest and lowest rated healthcare stocks ahead of Q3 - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTkwteEU3Y3AzSXViMjZ3cTQ3ZnN6WGs1SFhYR3Z4ZU9JMGp4dWVLSDloQmhBRVZSMVZSVG5DU0xXYWxLZXplUmpkbFplR1JXc1E0M2FPYkVNTkdmY2tBUXExVG5TbFNuOE15aFlVTnJaWmp5QW5UX05qOXFBclpXZUx3RzMxMkNTYUg5RGV1U2xUbmRISl9NYUpPcVFueDVxWlpjLVlnZlBvbHM5ZVFaMnU0TTJFTnhrLU9ETjJLUnkzQWtNQm9uN3FpOHlMWkp3QmppSG9uOFY5d2RZSzFCMldoRQ?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "AbbVie vs. Eli Lilly: Which Healthcare Stock Is a Better Buy in 2026? - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRGs1Qmh3TnJtclNUTGU4MFZ1dWFjMUhpYTYzODlfM0dadW54bmJpOUxOdHFnaUQ2M09FZy1oSDJHZkZKNUVfN2ZYU1BEc3NsVWRBOFVJcFRrcE44RG1qMG9ZMHduNmUwZ09IQzQxY09YT2loNUx6MVJ6bVd1dkNNN2QxS0Q0QUttRGJaZXQxOFlDRGhPS2VaM18tcTV2cGxRNHM0MFhYcWt1N0pURFRIcDFfM3I3YVM5ZUFj?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "Analysts Are Bullish on These Healthcare Stocks: Merck & Company (MRK), Tarsus Pharmaceuticals (TARS) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNVE1DTjNMSUh5eUZseWFDcEdKOXpsaVg1Z0hvY0NoYVJtOHUtNkJkZE9kYTdNOFFkOGhHbld6MDR3Vkd4dlU5RGdTOWw4OWtvak5iZHdSVnM3cWFTSERNTTBxOXYtZXUzZDVEWTJXYVRhSHFQUXd6RmVTVlFnVmpGUmt4ZUIxNW95U255SE5vM0k2X2plbFdQc3I1NkZYVXNtZjJkUDcxQ1BHanh5YUpVa3h6emx6QjB0OGNGcDVKQVVXck1nM3BicGU4eU05NmFDMXluQUJOQ0hIZWdSNXpfRkJYSjltb1JEY21VbWFFYURzOWhSY19QMU1VXzAtTzBycllmNk93Nlc?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 12,
+            "zscore": 1.42,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-09",
           "return_pct": 1.58,
           "zscore": 2.03,
@@ -2010,7 +2049,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.34,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -2128,45 +2167,6 @@
           "coverage": {
             "count": 14,
             "zscore": 0.08,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-28",
-          "return_pct": 2.36,
-          "zscore": 1.76,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.21,
-          "events": [
-            {
-              "source": "googlenews_health",
-              "title": "Capital Expenditure Surge Reshapes Market Landscape as Funds Flee Tech Stocks for Value Opportunity in Healthcare - NAI500",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUkk5bHVWbGgwVlRmLUt0TXo4eHVoWDdBTUFJUVh5YUpqbzVSbnprMkQ2azNkdzZ6M2REZGJhSWxrYkpiV1J5NmhlN2RHLTNnR3Y1YUdscmtJMWVrUUNhMndnRUJfZmQxVkVZNjdlYmEzX2ItUkl1NWxOOFNUbmNkUUdFZG1TNXlNZkoycjRZUUI3QldxeUI5N0tySkctWC1ZTkRoN1JycHpzZTBKblVGOWMtRGo4dmRjbVV5TFlHWFNDUTJObUpuTTlyZlM4cW1LYlB6cjJKTVpaaUFIanNr?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - moomoo.com",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGJfbXppMEtzcy0wRDhFWGN3c24zTjQxb0loN01wS3RhS0ZtcFhnTTlfbEJUWUdmYng1SGdjeUxuWXBfQnVNS0pUQ1ljQXFTdHh6Q3NYVUgxSXhmZG83TEtWSDM3STkzVFJXcE9wYTZTaGNlUFE2X0dWeGhVWnlmalRsMVhTcU1HSFp4SE5VWW9mZVBnMkMwOA?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOblJzZmxsV0Y1NDZnejRpamFaVWFDMHJLVWduX1N1Uld5TnpUeGVmUjR2SXZhekJuVDI1QnJ4QTV2R2I0NmloYmt6aWtSM01aMlpNbVdWQ2dwZEd4Sk55cmM4QmNjWFBfN1gwcU5Dc3VVQVZLOHE2MmpxdG9COVMxdkxvOHhnNGprbkZRNkpEWHoyT251U28xdU9RVGxBTjdubkE?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 25,
-            "zscore": 1.9,
             "spike": false
           }
         }
@@ -3137,7 +3137,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.54,
+            "zscore": 0.53,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.66,
+            "zscore": 0.65,
             "spike": false
           }
         },
@@ -3188,6 +3188,14 @@
           "severity": "notable",
           "market_return_pct": -0.0,
           "events": [
+            {
+              "source": "googlenews_materials",
+              "title": "Analysts’ Opinions Are Mixed on These Materials Stocks: Resolute Mining (OtherRMGGF) and Sherwin-Williams Company (SHW) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPVEhPeDRLV3psWllCWERaWkhpcEM3aU90M0V3VzlfNlNsaVk2SmlJTm52SnBQZ1l1WXVEWENyNHlIb2lMUlJCZ1dJaXItNW1UaWxFNVRTdkFpcS1FemhOVUtQLUlZM3ZPWFJKWXVyX3ROZWZDSGdFOFhITzlMWjRiWHY5eVRtWXd2Y05HbzI5QzJNWWVHbzZvX1JpYTdZVEFLbVhRZnBiY3hRM19BTy0zcENEU1JMY2k2TEhidWpzNnpmSldGYU1uSlVkUk9GZE9Na2FXUlhuaWVJQVQ5XzlfSkNYdUZnMEFpdEVoOEVXU1hRa210YzlDNElKVm5xWmtyZXduUkdibFZxTHNQXzZwVWt6aGxYVEMxSUVqOXhES210LWNjYVE?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_materials",
               "title": "Basic Materials Sector Still Shows Promise In 2026, But Proceed With Caution - Seeking Alpha",
@@ -3203,19 +3211,11 @@
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_materials",
-              "title": "Analysts’ Opinions Are Mixed on These Materials Stocks: Evolution Mining (OtherCAHPF) and Cf Industries Holdings (CF) - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNVmFWcWVlRERVbmdhSnZZM1ozLTY0dGRnNGFXdnEzODNVX2FLbnNfRXhGYXpoUUY0cHdsLVpFbTZuM2VUZ3RXSVJHX2l5SDZ5U2dyc0ZJZEpRcHB3aVI2S3FqM0hnTG5keGp2ekZoc29Ua1pMVU5uQnBJMDY3RzF6MHVXZTZaSFRGeEM4V0U4MmwtOTdwbUsxLUdHWnNJRXEyZTV5OVlQN0p6SklkQWhyMzVwanpBdDJMY054WGh6WFYwUWVPaklFSld5Z05tZERycXVpM3lXMGUzdW5XM29DRTFDSjRkamtwb3lMU0R1Ni1ZSUZNQzdzWFhZaTlUSmpPeldGOHlCVE1IMzF2Q3ZmNXQ0UDZCWVhOSW9KVEk2aTBUUQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": 0.21,
+            "count": 5,
+            "zscore": 0.55,
             "spike": false
           }
         },
@@ -3378,7 +3378,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.23,
+            "zscore": -1.22,
             "spike": false
           }
         },
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.2,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -3455,8 +3455,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": 0.72,
+            "count": 9,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -4549,6 +4549,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-13",
+          "return_pct": 2.85,
+          "zscore": 1.71,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.02,
+          "events": [
+            {
+              "source": "googlenews_oilgas",
+              "title": "Marathon Petroleum Corporation $MPC Shares Bought by Sax Wealth Advisors LLC - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOVdyNDVKcjFWTzZSSDUyaVdYNHdSeDd6TjB3WUYxX2hMMTctajhjR1dfZjhjbVllVlFfVDg0ZkhSV3Q2VUkzT1M3NHZZWHVEaG9mWFZVY3dWLVZqZlBHZjVMV0VXTkhHbFV5angzXzJLMXJpTmxJNW5wZWhfWE1EYWxjWm16M3RKTUItUjgycWJnZFo3QmthWDgwcmQ4QkhNRWh5WTZQZy1aeFNCY0tRWHZZZjR0bHFqTHdvdnFnWmhvODE2QVp1U1dPRjJDNmluSXc?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "FTSE 100 Energy Major Shell (LSE:SHEL) Refining Strength and ARC Resources Deal Put Quarterly Results in Focus - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWW9RVnBsRWIwV1JURXNFeG5uSnlhYzdjb28wenB0SURjOVZBQ1JVQ2ZrSV9WTE9mSkhPTk1LaXNmZTRDeTlQUjZuZXlKSjNJV0p0VnFHM3lZN3FRVi1EclYwWGZmN2hwZE13REs0amE2aDdtbXEwMVE5aElpdFpGSkVYdmpyQWV2WWJzUk9faVNZMUFzY2Jhd1VfQXc1TFdoS1FleldueWhRY2tFZUlvYWpVN29CUFYtcTNZMmg2QUNaOWJaQmZ0eXdsT0dUVVpBU0cxZXNpZjRUZnNZMnl6ZDZ3UVo?oc=5",
+              "sentiment": 0.649,
+              "relevance": 0.859,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "Rockhopper Exploration (LSE:RKH) Second FPSO Deal Puts Faster Sea Lion Development in Focus as AIM Energy Names Draw Attention Beyond the FTSE 100 - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPdEpaMmg2cExhMGNOeTF5eVF5ODgyQWd2ajc4XzY4S2U0QXFMdlJTMDllTXU2VkRvWG1ha0RBYkRQQ01MeUtOeDhZa25MRlNMRWJrM2xiczJVMlhfWVJZM1lLQzhCU2JOU3d2OWxya1hEZTB0R2JmcEx2WFFRYVM4OU1wZVZBU1dSd3B5cTIwNndxNExWM0ZaLV9xbnQ5b29samVEdk51dmZ0U2s1U1o3QTBqU3BHRHVsa0paRXU2aExPZ2tjb1R1VzJHSzRXY3llek10ekFpNnNPaHF1aGhmcVNEM1ZpbDRlekVvVkJseTY4bGFSM18zM3k5LUVhT1FfUkJfN205Y0RGaW1oVjRiQ21HLTI?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 21,
+            "zscore": 0.01,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-08",
           "return_pct": 2.79,
           "zscore": 1.82,
@@ -4740,45 +4779,6 @@
           "coverage": {
             "count": 24,
             "zscore": -0.3,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-10",
-          "return_pct": 5.73,
-          "zscore": 3.04,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.06,
-          "events": [
-            {
-              "source": "googlenews_oilgas",
-              "title": "Oil Prices Surge Over 3%; U.S. Energy Stocks Rally, Led by Apache's 5%+ Gain - finance.biggo.com",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE45UWFLQWNmZW13c1VacGxDakNBWGVGWEcwUVV5TmtSczNhdzlfQWhhTm9ERy1kQzhfV1JHYnRoZ1lZVzVjRDgwYktmZW9IOG90M3JqOEZYXzJ2b3FjMEgtQ2tuZlVPRTFrUXQ1ZUNRUExvU29SYWc?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Vedanta Oil and Gas shares surge 12% to fresh record high. What should investors do? - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPZFkzS0dXMjJuaUlXZGwwS3ZSa2FOdnAwb0lFNHNOV1JfRmpSOURtWFNMXzNBTnRUc3BKX1REenlwc3FyOHY2ZWhqZGJBLUlDbkNRU29LZnNhZm1zODRjM2JzRWlaOWFuUVBjd0pMTTRTVVBBZzRITDJVVzBtaGhzVlpnMDVaMzAwNEVZVE1QR0RNVy1penhzR2hQQmlPMVREbUVTNmMwTkFZaGtTeW9RT184VjhfZm1ac2Zfbjk4d0tSQ3FwTlJoQ0pDTFVtT3BTcnJYS3ptakRrVHVxb3NhdGdzc09PSWdNRGdzNnZIcGMyYzZVVE9lUUlHU2EyYVlXQTVQREVvU2p0cHVVLUVRSE1Ua1JuakliQmJjV2JJeUZJOVh5aFYwTzN0YXBXQnRQS3ByN1dCY0VTcTlNRXlMS1c3ZHU0Ul96NFQwUVFUZ1FlMl9L0gHwAUFVX3lxTE1IQ1UxNGtmSVFGaHViMXlwLVVpRV9tamF5UU1vdzlFb0JJUlFodlNEbnppV3kxbjlkdVM4OWVjYXlVRHBBcFpVX0JWZHpFbDZ4SGJTdUotT3lGaHVLTjJ3eE8tb2VxeXVTM0kwTzllNFlJRjlHSGJTZ3dqN3hiV0Zud0FGQ3ZJekdHZFBIaTZiMXNhS3dtWUlZU3B2TlRldDNZWEhFVnpsN2E5OEJVMzdjaTlIaGhPXzltczJ0b2FsekJmUnR5YzFyQjBFc1pBTm9YTHduUGgtWXBHWEdfZGZtOFZmWGR2QXcySkdXWGxQVw?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "PSU Banks Slide; Realty, Private Banks Gain on Mixed Cues - HDFC Sky",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdEV1ZEZMeU01Q2xtTzJsSGxRQUJlVnM3SEduaXVrcVJnT2ZfQ3dqU2ctZHhDbUJQc2lqUW1WQk9oeklqZlpyNkpUaEEwODZQWllwWllLZkFJYUkyZjlueV9CdmhsOEI4MUlRekoyWkF3YUE1LXNvdzVlUExVbER5X1NUQUlRV3Y5OFR5WHp6Rm9rUnl4N0NhUVRR?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 36,
-            "zscore": 1.08,
             "spike": false
           }
         }
@@ -5040,6 +5040,14 @@
           "events": [
             {
               "source": "googlenews_robotics",
+              "title": "Key Robotics Stocks for 2026 and Beyond - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVjM2Ykt1WDV1S3c4czEtdjJicmQ0R09XcVdzdHFvOW01NHN0bDhEbXB3TFlLZU9tT0Jic1pFSGczckN0YTdBd3JUYTh4QkxvYkVoQnRqX19CSmZXa0I2TW9QdmtfR2xrZ0pJWDZJNkY3a2R4YlhfSkJXV1luNXJOeXg3eUlFdjNTakJKSDBPYmpGM29i?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_robotics",
               "title": "Xtend AI Robotics (XTND) Stock Price, News & Analysis - Stock Titan",
               "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DOV81TTc0aUlMaEN2X1VmQjlibXdKd1d2MjRTaWZnSVJtWjZGNDFocmk1VmZkOWxNMmlGcWV5RXlWWHlrMlh0M1VadDB4UHVNV2VZ?oc=5",
               "sentiment": 0.0,
@@ -5053,19 +5061,11 @@
               "sentiment": 0.296,
               "relevance": 0.518,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Interest Rate Forecast for the Next 5 Years: 2026 to 2031 - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVnFWOWJRSThWYmhuZmU3VWU2UVRiVUF1a3JQNGV2Z3NFXzRNTmoxRHFTVWFjYkJodnh3Z0RYeUFIWF9CeUdUWlNpMXEwZ0Z3S1RNRk1NNjRoWkFMaU9jMEdpdXpnbGFQNkQxUE8tNG9NZnI2dUJCSjNoUHhIZnB1Q0NTWjFudEhhSXViX2ZRU1hpSzhnWnlaZ2V1OGdBbWJh?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.49,
+            "count": 2,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -5306,7 +5306,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": -0.44,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -5513,6 +5513,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-13",
+          "return_pct": -3.04,
+          "zscore": -1.78,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.02,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "The Argument For Biotech M&A To Reignite... And Soon - Investor's Business Daily",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZlpqbFNCWUd0a09KZkNkeWFKYmIxTFhRb1RQRG1wT1NLMjY1Ul9xSDJtc1hUejdxemhKeHU5Y0dxaDBnRno2Q20zYUQ5VUtiZW9JM0FYdE15Sms3NHVqZWFORkN2R3pSVDBqbkk5U1R1d0pTdmFReWxIOGpKdi0yRDhXQ1pEZFVVSmViSDIzM3l1X1dpbjJOYTc0SzBTQQ?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Biotech Stocks Need A Shot In The Arm After Brutal July: Could AstraZeneca-Bristol Myers Megadeal Be The Cure? - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdml3UF8tYzY1bWJlMmlVYXZGUHR1QVdnWUIzVGJfNkpYMWdyVzhFaUxrdVVoRkdkREFJd1VVNTB5TTRXeFA4dnA5c2hfdnNrTzdEOTd1M29sQUhoNnhkTnd0VE1wZHpjSk1HSTRzTEhhS0hUTWhmREpSRlpKeFltTHg3NG51NWJ5bmtDM1hnbEM0ZXByeWtBSmZIVW8yME45aWFVLVpFa3Y2VEpUZkJKZGVoQkJHcmQtTHpPV3RBdW5UU3BTcFg1ZE9B?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.65,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Cathie Wood-Led Ark Invest Sells AMD, SPCX, GOOG Stocks — But Loads Up On CMPS, NTLA, CRSP And Other Healthcare Firms - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQkVWY2tYVnU4VVdsbUJrbV9EdXpRbFE5dkx3T2MxZ1VneXIwQkxkWkdvcjNZa0h4T1lIUkVhOUNCVVU0RXVMNEx4OVRwZkpYSTdSa3BDdlJVR1RuQ1lsNUoxbWpwbHJsMV85OGlyTnd1NVZTZVJwVG9iNE5fdXFKeTBuQW1manJBNjBOcjYwTnRRZjRTRFFyMW9XNHZfdFBsTGgwLTBIeE82a3d0OEphS1Y4QUxvTTRPMGtNbUJPZnI2eFc1?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 17,
+            "zscore": 0.14,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-09",
           "return_pct": 3.0,
           "zscore": 2.17,
@@ -5704,45 +5743,6 @@
           "coverage": {
             "count": 18,
             "zscore": 0.5,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-25",
-          "return_pct": 3.0,
-          "zscore": 1.46,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.32,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "Monte Rosa Therapeutics (GLUE) Looks Pricey As Phase 2 Progress Keeps The Story Alive - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNc0NYT3EzTmQwRFZ5bUxKZHlJaHhnSGhMc2dfM2NWY19SNUxWaWVYOFlMWkFGbklvTElQSFB1am5feDRqVWtuWDRuLUd1MU5odGI1akNuUHc1a2tjVEtDQUh5dHNjRF96V2JmYXM2T2gyNHdQemhXOVE5SENPRlp1T2hpV1pjSzluM0ZRVUUtX0RCLVdlYlpxTmYyQ2tPSnZwQjlqdFZ6SGVMMmFnbEppREJ3WTNSYnAwVkdvMy1XcHQyeTY2cFd2MHRwR1ZFcWtUYkg0QjU4cGh2Mjd5eUZCR3RQcmpDbkpPTzU1MHJn0gHzAUFVX3lxTFBUaEQ3cF93TjJVQ0tWenR3ZHRWWVpIUmlUOWhjNTdYbmhGb0p3WFpKMmtkaDBhbEMzUUJ3VlNkRV96R1o5N0stcWlaRENIZlV2Z09VYzdkLWZGQjZXcXNWcElwTXJPZUVHeVBHWFJPTkd0STN6OGlOd2JtT3A3cWd2MFkwWWg1VE9lZHN3Y25EaHpWeVhlTFM3WWIzT21XbEVPdDJiT1pvc2gyekNWRXJKVHBvWHZVdV9jLTBmR253QzRXdWI5VTB1a3IxTmRCOFRVR1hFWHdsS1YwbWtHRm5NZVE5Rnh2alBUU3NkZGdWQnNHVQ?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Touyun Biotech To Issue 123 Million New Shares At Hk$0.122 Per Share - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQN1pTbTFwcFVsSTNKaXA1WEU3OWlzMDlkcEVYOFppbFcxcTFEQWl2RXVXd0lJb1ZyMVVyVW9iZ3EzcDdWV2RMQzFSVkdxcG5TaGZNZk9DNWhwSWxlTFVrVlF1X1B4NGlzeTFTcm9wMTA1Z0FUUHNRRENSR216WXV3M0pnai1pOGhwN2VVal9ZdDRzS3lfV1lXVVlxZWwtekZlckd3WE51TDM5cmNydUdnc09QdXF1N2stSDl2azJIYWpyR0lJRGJVSHA4RUs4Y0htX3gzMg?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "QUICK SPARK: Nvidia-Backed Biotech Says AI Could Make Biology Programmable - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOb1RFeDg2OHVMZExaeUpRTU5FdGpjTWRPTV9NamFkWXNHMUV1SGYyMTRrRmhvMFRXQTlDY2ZmQXJ6TVNIUWsyeXRzRE0xMFFWZG1IcnFwRGdodlc3TWhEQTR2QVlzZEdjSmR4UlhXWElVYU53NHpkQ3pZcThJWkZpZnFKc0VIUDBlaDlXZC1TZndhdkJfd0dMcXo2U2xrZlZYNE5FLTlUdmY5cUlHMkdtUk9KQUlEcmNadGRsWGE1dS1CWThob1A2eHNleTc?oc=5",
-              "sentiment": 0.389,
-              "relevance": 0.755,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 17,
-            "zscore": 0.26,
             "spike": false
           }
         }
@@ -5993,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-14",
-      "return_pct": 1.83,
-      "zscore": 0.79,
+      "return_pct": 2.43,
+      "zscore": 1.09,
       "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6007,7 +6007,7 @@
       "max_abs_z_recent": 1.23,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 1
     }
   }
 }
