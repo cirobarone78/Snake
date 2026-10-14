@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.1% | 33.3% | +21.2 pp | 61% | 1.000 |
-| 2 | LINK | 40.0% | 33.3% | -6.7 pp | 70% | 0.500 |
-| 3 | SOL | 47.9% | 33.3% | -14.5 pp | 75% | 0.000 |
+| 1 | POL | 12.0% | 33.3% | +21.3 pp | 59% | 1.000 |
+| 2 | LINK | 39.8% | 33.3% | -6.5 pp | 69% | 0.500 |
+| 3 | SOL | 48.1% | 33.3% | -14.8 pp | 75% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -32,6 +32,16 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.1 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**AAVE — Aave**
+
+Protocollo di prestito on-chain fra i più grandi per depositi.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 5.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -59,7 +69,7 @@ Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
 Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.43 volte la capitalizzazione attuale.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.42 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 11.6 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -115,7 +125,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - stablecoin o token ancorato: 19
 - capitalizzazione sotto la soglia: 19
-- volume troppo basso rispetto alla capitalizzazione: 14
+- volume troppo basso rispetto alla capitalizzazione: 18
 - già in portafoglio: 6
 
 ## Limiti
