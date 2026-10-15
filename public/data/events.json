@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T06:53:00+00:00",
+  "generated_at": "2026-10-15T09:40:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -250,45 +250,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-10-15",
-          "return_pct": -5.67,
-          "zscore": -2.43,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.79,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Cryptocurrencies Collapse, Nearly 180,000 Liquidated as CPI Data Sparks Rate Hike Fears - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORk9XbFhWREQyX3pjdmJlbFJaOUVqWWlJNE0yNWJkTHl4bXh1T2RGeUdiZW1FNE9jUWw0SEc5c1lSbmFGT0swSTJKaXlDVHpEM1U5THI3WlptUXRYMWJBUkNKVlpVcDdwbnRQcjNJNXVfMWtPRmNfZ3FMNHBLTkRoRE9PZWVzajJJbWpKSDcyajJITUkwMUQ3OVg0c1ZZZTVWX1NDcXdHWHVCNUJMeFE?oc=5",
-              "sentiment": -0.718,
-              "relevance": 0.887,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "EIP-7702 Wallet Drainers Steal $1.54M in Ethereum [2026] - shattered.io",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1MM09RVG43aFdMZWRXWVpmT3hHZk9NU1llbVZFa1lJbHQxS1laRWNaSVJjUUl3cU5SZDk2TW1hNjRqVVhSY0xUUWZPV3AtRkYyaUV6Ql93WTFqOTJOTGhOMVVwcm0zZXZ3THRJYmYyMjM?oc=5",
-              "sentiment": -0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Crypto Liquidations Near $1 Billion as Longs Take the Majority of Losses - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORUVwZlFTcjljS2dfbEI2WDNWYjhYMHRVNURNVGJSb2RaT2hUcmVaVXJ6TzNFRzlHNjY5WHE2RDdnUFUxVVBSSFEwZVoxZzJCTWRZRTJYNUNxT1hVS09HeVRybVM4QlB2N1ZkeThvMEppcXdmNzNuNHgzS0pJWDhDQQ?oc=5",
-              "sentiment": -0.402,
-              "relevance": 0.761,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 22,
-            "zscore": -2.53,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-12",
           "return_pct": -3.56,
           "zscore": -1.6,
@@ -482,6 +443,45 @@
             "zscore": 0.62,
             "spike": false
           }
+        },
+        {
+          "date": "2026-09-15",
+          "return_pct": -4.59,
+          "zscore": -1.45,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.26,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum ETFs see $121M inflows but ETH struggles to break $2,600 resistance amid macro pressures. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR29CVkZ3T2xTQkFBV0kwRWRMbmJ3TGR5MDN4OUh1dXlLZjRiLWxmdUJURG56c3RyNTFHNW9DS0FvQTJ4bFowaTMtZWloTjVyNGU0SG10ZFhpemZpWDFEdTFEN2JTLXJ2M0VqcXM4UmVyMHpUaDZIMC1LdnB5QUlXcWhqUmNWYTg?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Trader Machi Cuts Losses After $5M Drop in Market - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IWmF5ODU2VjdQZDdKNUxIb2RmajhhUDN1VDYtV2wtQWpibGExRy1YdU9qODRwNU9XN1kxYzRXN2RSSHhKN1BCbzNXdTF4UzRPQmp2Ry04N1UxUQ?oc=5",
+              "sentiment": -0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum, Base developers abandon effort to align account abstraction proposals - The Block",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc29LN2JoWUdKc0Mxb19ibHhFQTF3ajR6WDNPMXYycUxjVnVwaHNnR1NuWDk3OVVFNFU2SllfS2pRTm0tTTE2aGo2bGZ3SGh0U2tlMzRNaTJZYUQwODJhSktwTDV1WTBBdFkybFdjZUZ4UHg3ai13UzVVMTE3WGFsR3FpZXVYblBtRFJ4RmJ1WElpbHBYczBXdGxOWXlYbVpsZ0sw?oc=5",
+              "sentiment": -0.7,
+              "relevance": 0.88,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 90,
+            "zscore": 0.86,
+            "spike": false
+          }
         }
       ]
     },
@@ -490,45 +490,6 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-15",
-          "return_pct": -4.46,
-          "zscore": -1.42,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.79,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Here's Why I'm Buying Solana Right Now - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWUZBalljTTFqVjNVVXlkbXB4QU9OSjk2S2wtZFE1TTE0RnVSNm9FRmlmTl9lYUNsZDFCem95NnRzemk0dEJyMXlreUxIbURrZW5RSllIQ1RVOU1JQ21VMG9NMW5PYVJ2LVN1ajFveXVNNlpVNkhjZnZna2VMc2d0bDVrd3RjUQ?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Missed Solana at $0.22? AlphaPepe’s $0.03335 Presale Puts Early Entry Back on the Table - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNTVprNzc4ZVc4bXk1NFI2ZGIzc1lPQTdOYzdFYzMzQXFKS09Mc1ZLS3JQTTA2c0dMcWNRY3h5WGlXaWNtSkxWcjY2MVBob2JCbWlFOGdoSVAxVldJYXY4UGJMWHNYQ0d5N2YyanB5emF6T18wTlo4dkNZT3hrMVpoWjRjZDVSMDZRSlFFa3k1clpjX0kzbEpWNzBSZlZPX1UxMFBUbWZaMnoySzhPUWlsMXdYbWVEYXdUUVRrYlZBWWQ1QzF1UVpMcW9IY2g2NENRUnpHMVdqSGk2VW5yWGdkaktLakNzckVzSTVGcE5tWQ?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana's Biggest Upgrade in Years Draws Closer. Ethereum Fell After Two of Its Last Three Upgrades. Could Solana Avoid the Same Trap? - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQQ0VudjY4MHpFa2pXUXluQnN0TkZJaFZMTXlZZFo5dExrd1pFVm1oN2tzRTFSMjIzYXdYNDlYU1RaM2E1THpyUVBTaVpkYzBoN2Y0N0ppYkhOLWpsc09MYm9DVm1pUFc1eS00Umd4YWtKS05YdEF3U3pMaW9FVHlzVTdNZTJWVTlZc01pX0x1NXUwT05BcTJaNmp5RG03LUhfcm00SDAtNHczQ3ZWbEM3YUNDNklQQWhyNUZjODJqcU9NcGdaSWNob1ZWT1pkc3pqTU9LS2ltOUFiVTd1ZFpmQVM2RGNmMzVUcnZRVGtBbzM1dEIyMm5VZjRFYnB3NTAxWGJuOWlXelNxNkxSVEZYc3UzeGVOdmM?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.617,
-              "event_type": "upgrade"
-            }
-          ],
-          "coverage": {
-            "count": 14,
-            "zscore": -1.54,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-12",
           "return_pct": -5.11,
@@ -723,6 +684,45 @@
             "zscore": 0.64,
             "spike": false
           }
+        },
+        {
+          "date": "2026-09-15",
+          "return_pct": -5.47,
+          "zscore": -1.89,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.26,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Did crypto’s $20 Billion DeFi surge just get stolen by price inflation? - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObmlSN25mOGZqVDgxNmVCcWhMYmRFdC1pMnZfT3F0NmZrLV9pM283LVhabjlsVVRwcGhNZ293QmJ3UGxRLWtubnJoVkhmTmtJdkhtWFNEZFRqZFhTa3FmWEZ5SUNhYjF1dU9OTWlvbDR0VHJ4TjdEN1Q2LTQ2TkJlZk1EeTNzakpaeldqRC12dENlYzBzS2pGMg?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold edges down as oil-driven inflation fears lift rate-hike bets - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVUtaVGZLb1VLWXI1QlhvSGNHeThxbkxfa3NIdk1SZFA3LWZta2JmdnBUTEtKV0dUSGg4OGVQSHYyV0w5RGY1QXEwaG02OVVoVlJmRG9xc3VwQ2RZSFh2V25neWVqS01jVm9pTFg0U29TcXdueHBXbnRuTmRuOFA0TzlyNEppVUJldE9KVFE4c3FlS04zRXRsaXNCQWhqQQ?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 53,
+            "zscore": 0.77,
+            "spike": false
+          }
         }
       ]
     },
@@ -731,45 +731,6 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-15",
-          "return_pct": -6.5,
-          "zscore": -1.76,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.79,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink sees $10M ETF inflows – Why LINK’s price still struggles - AMBCrypto",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOV3pTRmNlOGVIMjNqQXhoWXdTcWlsLTVMSDVaOEl6SXMwYU5TZTdmT3BOYjFFTFhOM1NNMENzOGpELWlFU1ZJQm1iZDhKcC1vZ3g0d2tLdXFBVlowZmZHaWZYLVNvS01Zc1YxVXhHWGxWZ3FmVjFNOU13YVVyNWhvdlNmZHI0N0RienBFUDNB?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink gains institutional backing but LINK token price lags despite ETF inflows. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMlJ0dFJ6MmxvTVdhdlZPMVktdV9vTjVES0d3N1lvMGdQYW9DdE1MTzNvVDhub0o3S2szTFpOdVprdmhzdm1hdFY3YUcxUG9wZzZhUUppMElxUVQxWGJZczNuZW1nYi1CbVk5bGc5SGotZmJYbHQ5ZzQ3WUFKZWJxMmpUZUU4VGc4MjZVVktUdEdsQlZ0amRxMWV6NA?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Prediction: Can LINK Reach $52.86? - CryptoRank",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUVUzaTBIU1BQUXFnSjIycDhEbjg2b25TczlSNFZ0czJmdHY2VXZ3Q1JEWG1qUmlSeHVRdnpNeGR0Y20yejNQcUU5X2dtRnpKY1hQN2JLNVE5V0tzQTl5UGJIc0VFUUNacE8tU1dEYTUyX1dNSkRWTzNhRjdtdV91UXE1dnFzVkl2dkhHVzlB?oc=5",
-              "sentiment": 0.026,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -1.0,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-12",
           "return_pct": -5.38,
@@ -964,6 +925,45 @@
             "zscore": 3.99,
             "spike": true
           }
+        },
+        {
+          "date": "2026-09-28",
+          "return_pct": 10.01,
+          "zscore": 2.39,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.13,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink launches CCIP 2.0 with enhanced security as $15B in assets migrate to safer cross-chain transfers - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOFBUZS1aajU2dUpCNm0wNHhpWHdEZFQ5Qms4Q29QV1YtR1J3Z08xOHE0WWlCd2ZxM1htdlRNekUtNTd5VzRtNTgtcjJTZW1SN0trdE5KSFJjQWdTTHJwQUlEVUtReWR3aVZZeUpsVjRpbUF5Umx3N0hwTERRU3UtWjY4ZkxoamZwOElzRWJfYzh1dGhRdHc?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.884,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Launches CCIP 2.0, Adds Support for Custom Security Validators - bloomingbit",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0TUdvNkZQcDlEcFluVDMzUWNaMmhZRVhJci1rckRJYm9kUjhJVTkwWW1wWGczNmtpSENhLVVFRGYwV2s1dURJU29GRmprY2U5dC1Ibw?oc=5",
+              "sentiment": 0.625,
+              "relevance": 0.85,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "CCIP 2.0 Goes Live With $84B in Cross-Chain Value Secured - Coinpedia Fintech News",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcExvdnFMSXMySllfa2tmS29RazJfMGdrSk9KLS1iQTRWOG1odFhQdGM5ZUoteFdVZ20wUWU5dUliV1NCaTNBSmdTenFrSDNaRUU2MWhOX21yN296VEhsVDNxZ3hpZ2piaDNpWTRZdFI2R1BYTkJQR3hNWnZiRXlJOUI2VEN0SFBNR1F2b9IBkgFBVV95cUxPRHlaSGhTWXB3WjliSWJoOWRwUjk1SmliT0liTFZVUnhfb282dEZHWFduRWxaNGE0aDJ4bDRET1ZaRkduckU5LWJuejR3djVNWjR5Z0hKVi1xTk1JYlMtcDNHblNibGV0TUJYZ2M4ekR6b2xtUDFzZnUxeHExTUgzQ3BtMTlJeVdPZi1kdkVJQkJlUQ?oc=5",
+              "sentiment": 0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 36,
+            "zscore": 3.14,
+            "spike": true
+          }
         }
       ]
     },
@@ -973,41 +973,41 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-10-15",
-          "return_pct": -8.68,
-          "zscore": -2.23,
+          "date": "2026-10-14",
+          "return_pct": -6.23,
+          "zscore": -1.62,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.79,
+          "market_return_pct": -1.84,
           "events": [
             {
-              "source": "coindesk",
-              "title": "BlackRock's Fink names a U.S. recession trigger, sounds alarm over $40 trillion national debt",
-              "url": "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai",
-              "sentiment": -0.772,
-              "relevance": 0.545,
-              "event_type": "macro"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "Bitcoin miners plunge up to 13% in Wall Street’s worst selloff since July",
-              "url": "https://cointelegraph.com/markets/bitcoin-miners-plunge-up-to-13-in-wall-streets-worst-selloff-since-july?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.625,
-              "relevance": 0.51,
+              "source": "googlenews_pol",
+              "title": "fullNameDZD(DZD) to POL (ex-MATIC)(POL) - Bybit",
+              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5vMWFaVlpjdlF0TG12WUxhUGEtZlNOY0dKZ0N6U2ZYcnFnLVZmZF9UakRTZVVOdTFsSDk1Wi1KbmpsUXUwVndYckdwRVlhZ1pBUFhtRGhhVF8wQVVJd2c?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Ripple Price Forecast: Drops Below $1.3 Amid Heavy Rate Hike Pressure, Risking Test of $1 Mark? - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSG1YZjJsLXI2NzR0NldVZ1h3Y3dpWnk3Ul9sc0JpVXZqTmM0X0lFMXhlMEtWVEZLVFFBVFVlUkoyNkIwMlJ2dVVsMlY3b2RxZGlCUHVVM2p3ZS1lV1VPN2pkNzNUZER2eHNlQWFEUElEb2xVSmpqVjdSZG4yWFpnUTAyUHZBNlZpVlI4V1lFYnRWMm1BYWIxVE1WMUdkczYwUnd3ZDcyQm5CUkFmbHo0UWFoT0VLNFJLbF9nRGp3ZmRIblE?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.49,
-              "event_type": "fed"
+              "source": "googlenews_pol",
+              "title": "Polygon (prev. MATIC) (POL) Price Today, Live Chart & Crypto Market Update - TechGraph",
+              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5weUxTRDUwZ0VNenlyQk1zVnJsSV9QNTZxbXo2c182ZFA4RkxSVllYaURNMU05eWFwZk0ySlJGUG1uNWszekpDXzF5dl92WXVyYjV0czg2YzR2WDVPampTRzd1V094b3VGYUE?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon Labs secures payments coverage across 48 US states after Coinme deal - Crypto News",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdDNUblBNUVhjQ3VvZ1pFRGlBSl90VzBDY2Y5TFRROEpOaEhDZzlRbDFyUDNmZGRZcU9ZR1c5U0pYTDdXYzlQRHRzQ1E3NUhmMWZzZUpwbmxzMkZ5TFZRRmdIUWJqY2lGelpjOFE4LVpnX05LemthdHpBTU9vU0FHMDB6Zzh1SF82WHc2TVJhMHNEczdpSnJ2ZXV1RVdOQQ?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 7,
+            "zscore": 1.21,
             "spike": false
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.05,
+            "zscore": 0.06,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 0.96,
+            "count": 49,
+            "zscore": 1.02,
             "spike": false
           }
         },
@@ -1791,9 +1791,9 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "1 Bank Stock Worth Your Attention and 2 We Turn Down - StockStory",
+              "title": "Oops! - StockStory - StockStory",
               "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb0dxZmFhV2ZBSER6NlVsQi1YeTBjdjNaSjJRRzFnRUJCQ1JZeFhqSkFGVy1VNVdTMGVwLVFGTDVzZi11dDNpa1FlVGZnMGoxOGxMZy12R21vUEo5RUFRZFBKdzRKRDhBejZ0cU1Hb3VTdjFGdnRVdk1wRWJGQkFROV9fWUpCeUVpc0J2cjdUa2R3MEtzSmRPUlJsWFhJOHlKRG9SeF9PUEt2NTJCRF8zUFhjVmk?oc=5",
-              "sentiment": 0.226,
+              "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
             },
@@ -1970,8 +1970,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": 1.04,
+            "count": 12,
+            "zscore": 1.31,
             "spike": false
           }
         },
@@ -2693,8 +2693,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": 0.42,
+            "count": 10,
+            "zscore": 0.65,
             "spike": false
           }
         },
@@ -2934,8 +2934,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": 0.14,
+            "count": 16,
+            "zscore": 0.25,
             "spike": false
           }
         },
@@ -3859,8 +3859,8 @@
             }
           ],
           "coverage": {
-            "count": 68,
-            "zscore": 0.61,
+            "count": 71,
+            "zscore": 0.72,
             "spike": false
           }
         },
@@ -5305,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.46,
+            "count": 16,
+            "zscore": -0.4,
             "spike": false
           }
         },
@@ -5787,8 +5787,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": 0.0,
+            "count": 23,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -5993,12 +5993,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-15",
-      "return_pct": -2.79,
-      "zscore": -1.49,
-      "max_abs_z_recent": 1.49,
+      "return_pct": -0.42,
+      "zscore": -0.28,
+      "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     },
     "equity": {
       "date": "2026-10-14",
