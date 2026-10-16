@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T21:38:00+00:00",
+  "generated_at": "2026-10-16T01:04:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 53,
-            "zscore": 1.27,
+            "count": 54,
+            "zscore": 1.34,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 34,
-            "zscore": 0.33,
+            "count": 35,
+            "zscore": 0.39,
             "spike": false
           }
         },
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.43,
+            "count": 4,
+            "zscore": -0.09,
             "spike": false
           }
         },
@@ -1970,8 +1970,8 @@
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.33,
+            "count": 8,
+            "zscore": 0.19,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 1.47,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.36,
+            "zscore": 1.34,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.9,
+            "zscore": -0.89,
             "spike": false
           }
         },
@@ -3166,12 +3166,12 @@
               "event_type": "fed"
             },
             {
-              "source": "googlenews_materials",
-              "title": "Q3 earnings: Glencore, Nucor lead top-rated 'strong buy' materials stocks (XLB:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUWRISkF2RlRCdk9DcTR2U2RmaTNNRzRMdEtUOFN5Q2pqTXU3MFRyaERLaGVuel9jTUtxR3FxRXYwQ2RGa0I3S3NIalItWU5JWFlVbi1oR0luU1JIVWFvVVo1cGR1b1VDWTIySE1pd3BTcC14Rms1Y3pKV0xBajZqNlZVMjdyOG11bVFINWJnN2dyWGtYWGN2OXY1TXd6U1NDX2VBczRmeFBRU1U?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.404,
-              "event_type": "earnings"
+              "source": "googlenews_fed",
+              "title": "Bank of America sees another interest-rate surprise - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1VDlrU2E2TURhUDdETkptby1HMWxpTWV0SG9ZREdVMmFnVnBxU1p3ZU1LYXhYaDhIM3FZYnhXQ2FhTjJqc0hid2FUdUdHYjBCUVd0X0d2cW5kYXozZ2NmNG01U0w1LUZKU1IwSFlHN0hRMmd6QVE?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.426,
+              "event_type": "other"
             }
           ],
           "coverage": {
@@ -3383,45 +3383,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-10-15",
-          "return_pct": 1.21,
-          "zscore": 1.7,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "Raymond James sets CAD 19.25 target for CT Real Estate Investment Trust stock - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdXJXSzhBVV95SU12M2Fhd3NZcS10UFFVM3dESFpYMVRRSmJKNVZmZ0NBa3BadG5ZUGdUU3RGZFhDS0pBalhZN2oxTmZ6ejNzZVE2dG95YzhYOVJOVW1sU2tPWG1lTjhpTkdBajVUUTFRNEdiLUdIQXoyWEdiclM1TlhvUmVjUDZqSFJtalgyZkNKMGRrWGVfT21sb1NmR1FoekFSMDlpNVd3SkwzSXRZekgwWS1HSzJHVGJUU2FEaWNGT0NJUTM1dllB?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "RBC cuts target for H&R Real Estate Investment Trust stock to CAD 11.50 - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNlUyQ1J6RGZHZ3Nwd0duLVhieFhPMVotTlROX3lFVjAzdXlfNmJ1X2twUVhBUzljTnU2czQ4VndnTy02bnZJUkpaSnF0TmtBODlqVnhPTzFnZ1hzNFlXeVFUckdQalNYQ3NMWWc0UDZWODctcHVXemFWZUNfZFVSWDdIQl9tSEJUQ09Kc2ZXRURkck1aX1B5VEpoalptRHY4a3pBQnVkQXJmWGFhRGp5R05UXzMyUk9qcTh4MDNPMmpfZ2J5Z1NB?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "CT Real Estate Investment Trust (TSE:CRT.UN) Shares Break Above 50-Day Moving Average - Should You Sell? - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQcV9PSHZ5eTMxSU9pTDV0REVnVjdXREY3MV8xamRnT3JaNnlrQXRTMGd5eGsxdWI4dXAxZVJWWTBsdGFzLVhwZ3JhRGl6a01XSTl4bEdEQ1JfOHpDTDhfWEZreTBKcXEzVVU1bE9nVWRzWk15VGNZX3lDbDVNYkFQU2tPVW4xUzJtOGVoVm9uX2c5N1JBelhWejhmYnJOcXRRWUtsa2dHbHRheGd3Zmkza2M3bU1EQUtCOWY5MzVCUnFZSXpGRmFwb2hoTGs2Vk9TeDlpNnJnZkJRR3NLd3BWMk9qSkF0V1h6WWpCNTJWbw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.668,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.88,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-09",
           "return_pct": 1.86,
           "zscore": 3.06,
@@ -3456,7 +3417,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.24,
+            "zscore": -1.23,
             "spike": false
           }
         },
@@ -3495,7 +3456,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.22,
+            "zscore": 0.23,
             "spike": false
           }
         },
@@ -3534,7 +3495,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.5,
+            "zscore": 0.51,
             "spike": false
           }
         },
@@ -3573,7 +3534,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 2.47,
+            "zscore": 2.49,
             "spike": false
           }
         },
@@ -3613,6 +3574,45 @@
           "coverage": {
             "count": 10,
             "zscore": 0.87,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-09-21",
+          "return_pct": 0.98,
+          "zscore": 1.6,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 1.49,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - Boston Herald",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcHBCMDlKUlRZVlluVkFqY19GVXhZVVd3RG00LVphRkY3UnliOXhHc2J2bDBtSUktWldLNjdvblpKV2NXN1NuUEdINXVZeGpXVDZfakFJeEhUc2dKalF0V2FIQlVxNksyWHQtb2NwZTlPTTB1bnVsS2tRUU5VNTg?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "JLL, DOC among 10 large and mega-cap REITs with strong momentum (XLRE:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbWxtZU9ON3ctc3BBbWxMSkdycDRNckZuRkp2UjlDY2VlMy1kaGdyRGFlTDBwWU12WlVNdlYtN1FJdmNvUjI4dEthYUJlV3FaTEl2STVLQzFaSHR4V1Q3MEdjbUdrWVdMTXpremNpZzlXel9zUkZaMFpkZDlpZ1YyUEZUWnlxVUN5OGpmVHR3TmlRRTR3UjlwOHVlUjNsVkNkM3lN?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 8,
+            "zscore": 0.49,
             "spike": false
           }
         }
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": 0.02,
+            "zscore": 0.0,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.24,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.18,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -5221,7 +5221,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 2.02,
+            "zscore": 1.93,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.36,
+            "count": 20,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -5818,16 +5818,16 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Does Orezone (TSX:ORE) Have More Gold Growth Ahead? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVmQwVTZvTXdZRlhJNGM2SWw1RTJhX1FhQUgxbVdwRzQ3WkQ4RlAyQ3JWM05kbTU2OXc0SVlnb2YyeVF4LTRZbVc4NzZna2Z1U3ZfMnkzdnkwNlJCV2VoWXdqMWtCSmwwY2RjSDJJM0pJT05pTUN0Q3N2WkthSkdMMGZRTXFlRExCUmkxLV9wQm8?oc=5",
-              "sentiment": 0.436,
-              "relevance": 0.775,
+              "title": "Freeport McMoRan (FCX) Is A Major Holding In A Mining Trust - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZVVxbmNkQTNCSkdfYmJ6YjJqeTl6cmJaRmlBRkR0OFpmZUY2eGdXQ3RkMl9sa3RranE1eXhPZ0dYZVJIaEFrRGVKb0RYNHZOejVUamFpMk9MaGR3X3FWanMxZHctRm91SXdHa0dBbnh0c00wdmtOak84TUVaQ1hJTFBTV2g2dzRmazd6WDlzWDExWDJ2WEgyODlSRFlweWZrNHUyMkp6OA?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": -0.37,
+            "count": 19,
+            "zscore": -0.21,
             "spike": false
           }
         },
@@ -5865,8 +5865,8 @@
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": 0.08,
+            "count": 24,
+            "zscore": 0.16,
             "spike": false
           }
         },
@@ -6031,13 +6031,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "return_pct": 0.82,
       "zscore": 0.32,
       "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-10-15",
@@ -6046,7 +6046,7 @@
       "max_abs_z_recent": 1.9,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
