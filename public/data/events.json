@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T15:38:00+00:00",
+  "generated_at": "2026-10-16T18:42:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1215,11 +1215,11 @@
       "moves": [
         {
           "date": "2026-10-16",
-          "return_pct": -1.79,
-          "zscore": -1.59,
+          "return_pct": -2.85,
+          "zscore": -2.48,
           "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.31,
+          "severity": "major",
+          "market_return_pct": -1.24,
           "events": [
             {
               "source": "googlenews_tech",
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": 0.68,
+            "count": 58,
+            "zscore": 1.54,
             "spike": false
           }
         },
@@ -1287,7 +1287,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 1.34,
+            "zscore": 1.35,
             "spike": false
           }
         },
@@ -1326,7 +1326,7 @@
           ],
           "coverage": {
             "count": 34,
-            "zscore": 0.33,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -1365,7 +1365,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 1.89,
+            "zscore": 1.91,
             "spike": false
           }
         },
@@ -1404,7 +1404,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 0.78,
+            "zscore": 0.79,
             "spike": false
           }
         },
@@ -1454,6 +1454,45 @@
       "name": "Energy (XLE)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-16",
+          "return_pct": 2.3,
+          "zscore": 1.71,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -1.24,
+          "events": [
+            {
+              "source": "googlenews_energy",
+              "title": "Can Vermilion Energy Sustain Its Dividend Through Volatile Energy Cycles? - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdHJ0SVVvaHlwZ3FCbVU4MDBERkkzbmZEMk5GeVpvaVFmM0FNMU0wcFV2bGR1bWNhN2twWXZXRXNZMU1fOE1TNHFINkhiMjRDR295a0RfbEI2cnJGUWo3Z2pHRmJMV1hpMGl5VTIwRXE3aFh1cUk3MGhXV05WMEhVQUYwQjBmUmpiTkVvMk51REU4dTZuWFdZZmhPUjNTZFdlR2NXSGloVEgtaWVLZVpNTTJB?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Can Birchcliff Energy’s Gas Assets Strengthen Its Dividend Outlook? - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb0tTNEh3VTJ0Zlp1TXF6U3BFUnA4YlExeXQ1dnhZZmU4eUE2ZFFQRmtnZWV6aUhHYXp5YWZSaHlHUGFYc3ZqbzU0ZHh0V1d1YWxmX2pCamxxRzlFRDhidVNneHIxSXdpQnhINjBpUk80YmVYelZFTi0ydHFPcnoyVUh3MFI4X191TXBmOGs0YUdscEpVR29MVkpjUHZPaUVuVTRwVTNyUFo?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Top Energy Stocks To Keep An Eye On - October 16th - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV2FpRGZXcjJBSUp2dUlNa0ZiZkgwMHUzbXI5TG0zSXp0Yk43TmprVUxGWXk1aTV2Y0hDTENZQUQyU2t4QUZfenVWejlIZGhTemJsbTQ0RXQydlpZOXJTT0JxOEVEa1ZVTHlJa3kwMUJwTjNyNGo0NGZZNGNaX2NKVjJIdVpkbjNmOEVLSkx0SHYyZ2pMUEVYM2dRN0FaT0hGdjBvUkFVUkk4WDA?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": -0.35,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-08",
           "return_pct": 2.97,
@@ -1646,45 +1685,6 @@
           "coverage": {
             "count": 10,
             "zscore": -0.78,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-10",
-          "return_pct": 4.66,
-          "zscore": 3.46,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.06,
-          "events": [
-            {
-              "source": "googlenews_energy",
-              "title": "Best Energy Stocks to Watch: Can Cheniere Energy (NYSE:LNG) Sharpen Its Growth Focus? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSGVWMDNjdU5GQXpyWXVpdUNVX0Y0SXVVdUxqX3ptRnVlc0hSOEZ4allUbnNxMi12RXRBd1liR2Y0ZjBRNHk0NVRWSWVmZjdOU3ZkY1lWMlhPdmV6bV9BTmJmUmF2UWdaWFNqcDNzcGlxN1huSlktS3ZaNGZNcnNXWEpJaDQxM2Q4SjJ5V2VoN0JWTHZocHhlMlFyNU5HQXBFVnpGNXVKVHpCME5GYTR1SFh2MXI5NkJMMG9QWm96VQ?oc=5",
-              "sentiment": 0.875,
-              "relevance": 0.95,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Energy stocks lift TSX into positive territory as oil prices rise - Toronto Star",
-              "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSzJVcHVid1A2UTdiX3NEYk1MQlNPTkFBWGh0ekxxNmhuX2lkdDBrbUZRRlhhTl95am5pNGFhTGZJZlZtNTkxZnBzVTZPcG5ra2tWd0JsbmJIczlJZlVLY0cwNnVqb2VTVzdjdmJRYzEya1lPZW5Xc1FMaXIyRU1LVndKdXJYV1MzMHZKVnlMZ29LQzdNVkxqOEh5ZFQ1TUtuZ0toR2gwZFZHcWZUMjR1SmZ5OHJHWDNyOHdkbWhsb09QU2IwR2d4TkN1RTMzMk5yTURYWkx5SDE4MUF4NnNsQg?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Energy stocks lift TSX into positive territory as oil prices rise - BOE Report",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPanBBdjh3Tk5XLW5zYmlHY2Jacm5tOEdRTkZPSW5mTFlZODJmV3RkQWVJY3ZoeWVGenZsVFU2aDA5ZDVrbktVd09GNFU5MXdDT3Y5Y0V3aHNwMEZmaWR1VWh4dk9EVUg5WVBIdVBTS3EyZ18wbzlTdXhONm1XX2RnLWg3cE1lbXFiXzdic1NUS0JaZXUwT2xzQUtxWFFNLVZf0gGmAUFVX3lxTFBLTlJObHBEUjdibGZxNkZYNkpIa2tZVDAtbmotM1pUYjBhUTJwbEZSRjFWUUFSaU03dzNmOGNKSEFGbVpPNzhJMm95alVUeFo5bkxOQWVnLWN0NFNvNWgxYUo2TV9rMEdNSDZPQkROYlljdGVmN0hBN1J5RFcyQTdKdGxxUmlzRzZQaE5pSjk3TEtQTVlHbEJPWjBaeUs3S0Q0b1dWMUE?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 36,
-            "zscore": 2.09,
             "spike": false
           }
         }
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 0.41,
+            "zscore": 0.4,
             "spike": false
           }
         },
@@ -2934,8 +2934,8 @@
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": -0.26,
+            "count": 14,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -3142,45 +3142,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-10-16",
-          "return_pct": 1.24,
-          "zscore": 1.58,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.31,
-          "events": [
-            {
-              "source": "googlenews_materials",
-              "title": "Are Basic Materials Stocks Lagging Avient (AVNT) This Year? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORGpwTUhHRUtDaXRGZDluMFRsb1htX0stOV9uRmZTSUVYQXZhVDZmRGZETVpnY0ZpSndRQWlLMTZrSjFIT19fV1Y3eVpBZ3NZUmF4ZjFUQ3J4Vy1FZFo4cGtyS0lxeTlzMTNpZkwtcGE5Z0I3Vy0wTjBhbmVXYnZSVW1DZlNUb2VKdVZMbTd4aEJSR3BrbjlLX3BXNm93cHVIVHZvMQ?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "What's next for interest rates? Fed Chair Warsh wants price stability - USA Today",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcFh2RDJiZ3J6czBZYk9ITmFXaDczMjJ6ZVlZaVUyUkV3X3ZDbGxKWDhNUVlROE5mVWFjbjVVbktaN2JnNF95NzBtWUxCMkZrT2ZiREdteDduNEVkQzJnNzFBZmdsb01DNnpKTjJNUl96dnpuakg1TDVJU2ZLM1pDZ09mVE5sMDlDM2JkaXZZakxrVTJMZmZEOVJYOTZramZTNkNnY2pEMWRPdEhwWlFPMUZPcVhrc1o3cmlXRVRKSQ?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed's Warsh surprised by world economy's 'resilience' - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkdXWjZfdVRaaGhvdEFmd0lvQ2ZZQzRlZE4xQmx2aWpmakFwY1Y3NDBRUG1ib2tZZTVRNk1MS3NZdjZsTHl4eDNxbnk0bGhBYTJDMHVScmU3dW9zNmNJajdrUDUzaXFiUVkwMElEM3JnRmhiTnZTbFQxb2p4cEJ6UW13SFhOeV9sRGJrTU92bUhrTy1HWU9mVjBfMkwxV19zMkE?oc=5",
-              "sentiment": 0.226,
-              "relevance": 0.414,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -0.99,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-15",
           "return_pct": 1.79,
           "zscore": 2.24,
@@ -3374,6 +3335,45 @@
             "zscore": -0.23,
             "spike": false
           }
+        },
+        {
+          "date": "2026-08-04",
+          "return_pct": 1.94,
+          "zscore": 1.67,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 1.79,
+          "events": [
+            {
+              "source": "googlenews_materials",
+              "title": "Short interest alert: Most and least shorted sub-$2B materials stocks in July 2026 - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTVlKMjlPWGVVR0duM01pZXMxMlEySC1GLUxrb3FOSHRrc2drNmJYWFVBNnNwZDhKQTVobzJqaGlmQ21hcG1OREZaUnlEMzlJNjJRc2tRNWhYT3lsaTlDWVBuN21wNHM1TC1EU3FPcS1WZ1FWazZCTUlZc0VYcVlMVGhFWDBPUnVpTDlhVkRVSVdtME45SU1FdktSRGJnLU1WRV9VdDlST05zZlZfSHlZV3hYS3BZZnNQTVE?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed’s Paulson Says She Keeps ‘Open Mind’ on Interest Rates - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN3NqMHIzbmloX0gtRi1uNWtqaTlHRkd1NnB6VHI3YTJlNk54aThYU25OYmkwaWZzRjFnSFRnXzBWZ01yVllteVB5MmdLWjdRLVpQaGRHbmxycFVFNFZxLTRWODBzWjJzbTRLUF9wTTd4RXdVNVZiLVVWTVJkYy14OW1Mdy1CWXBsekdKaGo5eFMtcG5QQTYzRF9TMTVTbVZ1VG40a3g1NEtqQk1wR0tB?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_materials",
+              "title": "Trending Industry Today: MP Materials Leads Gains In Rare Earth Stocks - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONk5SWEtDWmRXOURab3doM19lV3AxWnVyakwzTEY2b1F3SVdFbEwyeUtsTDNkTHVZQy1QRmI1OVB2SW9ud1FaRUFTb0VubUdJeGZyWTNWTFBCSkp2cjQyeHROTzRad003YUszNVhneFJTZHJlTC14VElyZXQycVpDS1VJTlROOC1Na29fajd2UWxwN0t0RWZmZFo0VFVZMjBWelVPMVQ0MA?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 11,
+            "zscore": 1.07,
+            "spike": false
+          }
         }
       ]
     },
@@ -3392,6 +3392,14 @@
           "events": [
             {
               "source": "googlenews_realestate",
+              "title": "Vital Infrastructure Property Trust (VITL-UN.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TS1ZEcl9CcXpwOHExcjlhZnNLdnp6X1lKVmRDMDI3RVVhTV9xZXR1d0o5cDBvUm5CLTh3M0VCYU9GWGdEckhmYzNJXzAwVzNBVW5waG9maFFBZw?oc=5",
+              "sentiment": 0.7,
+              "relevance": 0.88,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
               "title": "Raymond James sets CAD 19.25 target for CT Real Estate Investment Trust stock - ad-hoc-news.de",
               "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdXJXSzhBVV95SU12M2Fhd3NZcS10UFFVM3dESFpYMVRRSmJKNVZmZ0NBa3BadG5ZUGdUU3RGZFhDS0pBalhZN2oxTmZ6ejNzZVE2dG95YzhYOVJOVW1sU2tPWG1lTjhpTkdBajVUUTFRNEdiLUdIQXoyWEdiclM1TlhvUmVjUDZqSFJtalgyZkNKMGRrWGVfT21sb1NmR1FoekFSMDlpNVd3SkwzSXRZekgwWS1HSzJHVGJUU2FEaWNGT0NJUTM1dllB?oc=5",
               "sentiment": 0.511,
@@ -3405,19 +3413,11 @@
               "sentiment": 0.273,
               "relevance": 0.709,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "CT Real Estate Investment Trust (TSE:CRT.UN) Shares Break Above 50-Day Moving Average - Should You Sell? - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQcV9PSHZ5eTMxSU9pTDV0REVnVjdXREY3MV8xamRnT3JaNnlrQXRTMGd5eGsxdWI4dXAxZVJWWTBsdGFzLVhwZ3JhRGl6a01XSTl4bEdEQ1JfOHpDTDhfWEZreTBKcXEzVVU1bE9nVWRzWk15VGNZX3lDbDVNYkFQU2tPVW4xUzJtOGVoVm9uX2c5N1JBelhWejhmYnJOcXRRWUtsa2dHbHRheGd3Zmkza2M3bU1EQUtCOWY5MzVCUnFZSXpGRmFwb2hoTGs2Vk9TeDlpNnJnZkJRR3NLd3BWMk9qSkF0V1h6WWpCNTJWbw?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.668,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.88,
+            "count": 5,
+            "zscore": -0.63,
             "spike": false
           }
         },
@@ -3624,6 +3624,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-16",
+          "return_pct": -2.09,
+          "zscore": -1.71,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -1.24,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Fed's Warsh gives no hint on October policy decision - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPemNtU3Jvcm41VWJOb1FWWXh3MzlCeUdDNTlZaklWa0RPeFlJLXhxcXBESUY4OW9naXc2a05KNlF1VUFUNFFkcjZZZ1loQ3NialpnMW5mdTdWRUdLZEN6TVNkN29aVHB3eEhqT3YtQl9ncHpOM25hcUstMU5KX1hKWHhxZ0RXaDRRMzROWTZnbnRBRlk?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed’s Warsh Declines October Rate Signal, Says Fed Will No Longer Preview Decisions - Action Forex",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOXFLdmJoQ1pMVHRBT285cFRFZ3J4LU5WdW1KOGdTb3pxT3lwTzZja21zSGhzaC1vZmpEYmF6aWdlSlNWZC1VOWotYmVlbC11RFkydnpQbkVfQlgyX1p5cGlVeUhtQUkzR21YVFRvdVZWeU0tOG0xajItdmdxWGF2NEJzZnRIVThMU01rckEyWjBaeTB3ZXpicjhBUThpMDZZczRMQnhRSUhUZFdmMndFVF84empJSGVMSlJfSkpKR3ZVUDYtOTVYTG5EZw?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "US Market: Fed Chair Warsh offers no signal on October interest-rate decision - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNN2NNczdiRFBOZnAzRXkyVDlPeGlmd0NmWHI1eXRFbzE5OUZkMzFUZnQ3cDBxVWFvaHcydmx3WWRGaml1VDNoT0UzQ18zVmtrWXVyaTlLakdWd0tEeFNYV0xVbEY5ZHp5NnRWUHpQbXVQRHJ5bDRab2RDNEEyQ2N2REdBUW43RFZTS0NzYXNWME4yQ2R1X1NwbzJNZUNLQ3dRcDAwNm91dlpNU3Vfdkc0NnBUUk1QU2xFazUySjRBc1dEZ2czU1BQYjUyM1oxcURFZWxFczBKSmx4U2J3Mk5BRjBuVHRjZ0ZhUXRiWkFqNUdhaXA1eGZ6WGFB0gH_AUFVX3lxTFBsUE1fREJENFU2VUJ5ZS1xX0E0TXVQNUtiTmozSTVlVEFnRm4wbkZaWTlOTkhJUEZHNmpEWXVKR2YybTdJbnpIUVBQZGJIeERLb0ZEZ0VWVnZPRWk5X2JfVy14RDBGZDA3Z0ZRWjR1T0hfd0Y3WmFrZU9CZ2NZWmVxOVFfeVZNRzVVaV84QkI5dmJUcXJlRXNGVzRyQTBFeUp1Um94UW01S0dqeWk3MTg3WGRiSXJGT0RmZksxYnVHZlhWcVd2WGFnYXFDVTB1MWY2TUhfd25xdEVUN1JlUWpaeFk2cVNzcU9VTkdXMGlubWQ5Z1BDNmlRaHNtRGV6aw?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 8,
+            "zscore": 0.42,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-09-21",
           "return_pct": 3.9,
           "zscore": 3.77,
@@ -3736,7 +3775,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.4,
+            "zscore": 1.39,
             "spike": false
           }
         },
@@ -3814,46 +3853,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.38,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-07-23",
-          "return_pct": -3.5,
-          "zscore": -3.11,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.21,
-          "events": [
-            {
-              "source": "googlenews_commserv",
-              "title": "Analysts Offer Insights on Communication Services Companies: Baidu (BIDU) and Netflix (NFLX) - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQVWhMS0VXTUR4bkdPem5CUFJ3QV8wMU5qeXBYd0dxMWZYOGRHM1NYb2FqTURueFA0VnFXdzBJSkhNek4xSGJnTnJfa3VoQThhQzltWkdWWnRuS25pOGRZNXcwV2psZ1dhb1lOS3RJVVhsd1VVeGtscFhYSGhXY0U2cnFYdGNFZkRyRzVNYmdJU2x6YzB0NG40eWV2VVkzRVA3SldLSk9kUjdackhtZHVxb0d6M0ZuaHdHUDI3Z0UzTmJERnBPc2hOY1IyblFsX3hXZjVKRVJ3S2k0V1FvbEwtN3hTeWJKSWdNVXFkbW5rRVhTaEFEUmpvSDVUTFhYQW13dVE?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_commserv",
-              "title": "12 Communication Services Stocks Moving In Thursday's Pre-Market Session - Sahm",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQY2ozUnVVblVGaDNtMHZWUWJXY2Jfc3FORktUMUNqU1E3M0l4bmtjQ1VIZ2hEWEQzZzVlczNaenJRRWcydnJCVi02OFVsMEllLU02X2JjRnZsN2xHTXVJZFNkbjF4VG40TXpIMFZCbktiU0IxQ3VUamh3Q0p4dDFiczR6a21wdGVhSGFzajFFLVRQdVhjX1EzeGdld3h4ZHFPSUZaWTJpRjN4V2tFZUtld2ZHR1JHTUxteVFGSXdXZlY?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_commserv",
-              "title": "12 Communication Services Stocks Moving In Thursday's Pre-Market Session - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUTlCZkI1LVJGTkVsSENqYTFWZTZYb3VtXzBfLUxxbU1pcUo1RDhDdUdoYTVGMndMZFdZYmdOSHFLT1lGZXplRnFlNndYTWZ3UF9vbFU5YzdvZDRfLWdNQVFab3hXR19GMktuUDRCdmw1dERUM3ExOEFyM1dzSGZmVFlqYnFJMGtLSFVMd000emFsR0NodUp1MHd5R1lmZURWaUFDdEF5ay1XZ1FrYUw0LWJiZnhYdWlTRGVSYnNiUGxaTkhNOURTdFBR?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.45,
+            "zscore": 1.37,
             "spike": false
           }
         }
@@ -3864,6 +3864,45 @@
       "name": "Semiconductors (SMH)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-16",
+          "return_pct": -2.85,
+          "zscore": -1.5,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.24,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Chip Stocks’ On Track For 8-Day Slide Erasing $2 Trillion, Matches Worst Streak Since Financial Crisis - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQejlUX3JObkV4dVhWM1FPbWtaeWVWZnhlb1IxT3VmU201dDlzVmZERmhORW0xX2RVY1gtYXVDOEpRdFdoZ1hmZW1ubEFJQUM2QnBHYzBYR3hlV3ZPaVF1WU0tQ0RCcTYtQVp6TVF4b3R0eHQ3MVlxRjFWV2I3azc2dnRteHM1YjJqbjlERF9NU3dldlZ2MjJnd3lwWklOY1NGcUdRMnFTZUdCMVhGMnNqZnFuT2gzZWxpWldLTHJJZHMxWjdHT2poc2Q1czVHSVU3SjJObV9JZlduU3dLU2JfQ21oSXRTMjN3bUtUSFpKZzN2dw?oc=5",
+              "sentiment": -0.848,
+              "relevance": 0.939,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Taiwan Semiconductor Holds the Cards As NVIDIA, Apple and AMD Battle for Limited AI Chip Capacity - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQkJwR1ozRmlGcXpxTVBrWGlFdzJ2bmlKQ0FnUWRtbTZVaHdLM3JCVVlJem1tRG1zX3hSZ2dHQTV0NGxuRktnRjBFX2pPd1NrMkRPQUU3SEJ0Tk1rcWpkNEtRUmpRc3BkVnRiMmotN09ZNTFmWVU3NWx4ajRDaGJSNDZsODNvQ1p1TTlsX183SDBXdHU0cW5xZWhRTXIwZnZxMDFLQUtnc0tPQnZoV2RrRFExRGNkeDhvNXlIY0dNMHVaSXJzV1V4aXA1bVBkaTIwbmVwZ1EwVXNOZHpIN2V2R2ZjNA?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Opinions de Stink meaner(@StinkMeanerInsights) - Binance",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tempTR1l1UHNZa1N1eTJvdWo5VkhYR1NPWUhKVjZUM2dTbndUbVY4eldrbUp5S184aDh2ZU9MRGlkX1hMSTlvVE1ieG1ZTFd3TUhnT0w3SjV5U096dlo3Y1lmMzJfMGdN?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 40,
+            "zscore": -0.41,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-14",
           "return_pct": -3.98,
@@ -4058,45 +4097,6 @@
             "zscore": 2.06,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-04",
-          "return_pct": 2.61,
-          "zscore": 1.06,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.38,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "Monolithic Power stock gains on strong Q2 revenue and guidance raise - AD HOC NEWS",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN0dLWTlmSGNTd2ZWWGZ3d1ZUOUZVRzQ0TVcwZk9nTzR0elJCNnN6dmdIOTVrSHBXeV94aUVsVnNmbDE0eF9tbEk0LUdfM1poRzVQcDFfSllIRU9YZ1lHRjZIaGdnbnZ4SGZRaklBWkp5N01qeGFZUzBTS29VR2YzTkpGTWlubFRtYmtGWlpBUU02NDJrUE44RXJZUDdqMnFZZlJTT3FKenVSMTlYXzhETUM0RnhxeTF1ckdsTTFucEtnM2lXU28xWmFXOA?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Best Semiconductor Stock to Buy: Marvell Stock or Qualcomm Stock? - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZlI4cGtKb240dXc0dlo5cTU4d0RzQmVtRVBGMDNwcXR0OTZYZDY5d01YNGtKOUtLdUxoQ1B2LWJSYkV5dTlKOVhGdnNMWTRiNGdob3oySjdiY2NDWnhSOEJVMU5CeWhsT3A3UTFsb0xjb2VhbFdvV2tTMG9LMzZPWXN2YWNoX0NaajYwVWM5eU9TLWtXcEZ6c3VmcG45NDdPY2dIOU1mOVJpY2dwcnJqWDI3b3U2Mm5BeUhKRGUyblFaZ0tCaGd2MkpSQnhWNlMtMFd4c1hWMkRMXzRJTFBxVUdn?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Marvell Technology and Taiwan Semiconductor are No-Brainer Picks: They Have What Wins in a Gold Rush - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV1czQ1JHRmhjSTJIRjMtNGM0dEtGUHNSNm5yQllIQ1RhQm9fSHhRYXpHWkxMdXdYWmJWRXNGWFNvVXdXZTAxaDRVZmtnUE9FeXBPNlRSSzJ5Yld3cFd6MzlmSk1SdWh2bTZ1V0YxYkpHemdtRGNTSnRfM1ByZkhzUmRqaDVPWmxINnZHLVBueEVLSHdfTjU0aXZvcVctZmIzTUtfaGF1cFVXSUE?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 63,
-            "zscore": 0.71,
-            "spike": false
-          }
         }
       ]
     },
@@ -4105,6 +4105,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-16",
+          "return_pct": -2.6,
+          "zscore": -0.78,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.24,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Council Hires Put Uranium Energy Stock In Focus For US Nuclear Fuel Ambitions - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObWgzYXhsblJwd0FGeW9Tem5NT203YkVNVWstTmFmUjdtRDNLblVyYWg4Zl9ISGxSbnVHMVFtMkQtMDZua1VTUWpkVGN0SldOb3Q1OXZ0eERneDdmdXJPQWtTYmFkc0JSbzEwV19yYm8xMjJfaE1HVFRFMkRac2ljY0p0cE1SUFVoYjA4VjlKX2dFLUYzQUJHeXNjNUIzWXNXMzNXZWtaRjBWeDRkcU1BeWg5cUhwVW5qMGZvMEE1TlhLaE4xbXhPSEd2WdIB0AFBVV95cUxQQUVZZ3VlZ3VWOEVveVlSLTBtM1h4Ym14VFZGaUpVTjlRTWRNYVFfTVRaZEVleTlBZnIzWTAxM09LeXB5SWE2UXJXZHpvMmVKZVlVTmVOOF83YjdfY0F1RGFMN3gzbVgzYnF3R0VpV3NSc0xBMW9rTkhyUF9OdGJINDFVMW5jbS1tZy1FUlVIVFU0NHVKb2ZjVnBSbE01dWlLTjJ6dEJuOVNGVE11QTBNY3M0OE1xNW90MjNCY0M2S1F0SUlIY0RmNXl0WHp6YXg0?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed's Warsh gives no hint on October policy decision - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPemNtU3Jvcm41VWJOb1FWWXh3MzlCeUdDNTlZaklWa0RPeFlJLXhxcXBESUY4OW9naXc2a05KNlF1VUFUNFFkcjZZZ1loQ3NialpnMW5mdTdWRUdLZEN6TVNkN29aVHB3eEhqT3YtQl9ncHpOM25hcUstMU5KX1hKWHhxZ0RXaDRRMzROWTZnbnRBRlk?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.431,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed’s Warsh Declines October Rate Signal, Says Fed Will No Longer Preview Decisions - Action Forex",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOXFLdmJoQ1pMVHRBT285cFRFZ3J4LU5WdW1KOGdTb3pxT3lwTzZja21zSGhzaC1vZmpEYmF6aWdlSlNWZC1VOWotYmVlbC11RFkydnpQbkVfQlgyX1p5cGlVeUhtQUkzR21YVFRvdVZWeU0tOG0xajItdmdxWGF2NEJzZnRIVThMU01rckEyWjBaeTB3ZXpicjhBUThpMDZZczRMQnhRSUhUZFdmMndFVF84empJSGVMSlJfSkpKR3ZVUDYtOTVYTG5EZw?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.431,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.92,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-14",
           "return_pct": -4.92,
@@ -4297,45 +4336,6 @@
           "coverage": {
             "count": 6,
             "zscore": 0.61,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-24",
-          "return_pct": -2.69,
-          "zscore": -0.89,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.02,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Worley And 2 Other Australian Uranium Stocks To Own - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUHdaRm1UU2dLdnQwaGVhOVZtd29ySUE0UEQycGlMTGxBU2w5SzlaYnAzWlBIUGRLMk5pdmpScWNOUncwMXFKd3p1N2ZYUmw0dnlTQkdhNXdWd2R6MXFxVGVwV0NMTmhRMUU4eHhaM1FULUpDQTRxbDdNcGNQQmhIYl9WOEo2UDgxUkFmQlhheEdqdG1FZUxIR243NUUtYW8wSU0tTnl0RmxlSE1ENW0yY3VoeFR2SFpwV3kweW5VZnhVQdIBxwFBVV95cUxQQ29yaXlQdGJWdHowTUZNRmNWN19xVXgtYzBsVmpuWmZHRjRzY3lveHNuekExVVgxclpubzZ1RWpheVcwdFNEQVFLcl8tNUVoNy1kNmxNUXhBMDF0clJGVEVrMG9iRllIT1RFNDd4cVhKOE1lVnNrMTdqQ09BNXhLeVBhdndlLW13enZweXhYbG1ZdDRBRzdoalBXMXFmbENtTTBxVkV1Ykx6SWxvellXYVg3WnV5Mk9EcmdqbHA1LU9rdUNxS1FJ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Australian Uranium Stocks Gain Attention as Nuclear Energy Demand Builds - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMHVaNnVjSXpuVG9uRUxGb0lVSGt1YWFmb0RMVGhUWkViVWowcjVPOS1MZXMzZWRQdXV5XzBkRld0c1UteHZDMUU4YVJFRC1TMERrc0pqRHhnUzJHbDJjLUJveU9Dck5aN2pmV01vLTg2OWE3YTBGc09KYm5wanVxNzM2QzBtc2JZSzNlVzA2dXdNZ1AxZTVNYXJoemZZTDRKdy1rYXkxVFUtSXJXWUJoQmpnR05TLWdGUTNQcC1FaTZtZw?oc=5",
-              "sentiment": 0.612,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Top 3 Nuclear Energy Stocks To Watch In September 2026 - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPU3NTMWh5TDhOVTdjRE03WU1fV3BMeFVqWXQ4eWtDQzVDeGhXc25rY0t0X2xScUUtbUdmaTV4UHFhLU5DaFVnVnNYZFVzMWU5bzQ4Zzd4MERNU21MbnVGenYzVjBJaFRwanR0N1JlT1Jaa185bjBQVmg0bnI0MXFZcFhyTXlqelZtS3FPQm8wMWhMNWNrNHVmb0pxUmFOaTE0RU9ZUDVDOHBrcFlHQlpiczZFd19CTzJ5VWtTRVc0V3FHeDk4ejd4cXFQVjlUeFhJNHlXWWUxanbSAd4BQVVfeXFMTWNyeXFPSDlmU0VCaE15NjBmLUg4YlJWUFllN0RLMXZIOEdpcUxPWk4tb01xNmg4bHlfUk1jWDdjNWVDaVFYQ3o4ZHpZRFBtV2JNTWVrSTlLcDA4SDVOLVhxRkpLakNkSXFWdGlYZzdVMFIzdGtYTkhiV1dBVHdQY2xOOXNfNnZfTUlXZ1FuaEtRZmtIcUlHb0tLQUE2UnJyU1ltb0F5aUNEUDEydzQ3dGMzVjl4YnV2UVppbnE1ZFk2TWNXaUJ4M2xQbVJJcXFkZ21VZWoyWVBCOGZ6c19R?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 3,
-            "zscore": -0.56,
             "spike": false
           }
         }
@@ -4588,6 +4588,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-16",
+          "return_pct": 2.55,
+          "zscore": 1.53,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.24,
+          "events": [
+            {
+              "source": "googlenews_oilgas",
+              "title": "IEA Board Reaffirms Energy Security, Aims to Finish 400M Barrel Stock Release - News and Statistics - IndexBox",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQnRuMlRQOHhWUGVfLTJKYnRJaW04WlJWQ3ZQQ1djU3FSQmxtMlptX1dYVWpfcGYyZmNzeG5EbXZvSXpPeUFNdU1lNlFlQ1VrVUItS2RPX3B5TjZHbU14cFN2TjlXVDV2cGFITXMwZ19SenFIVDFkSko0YjVMcFo1WENMUWxGemJGa0cyMFlHTmlNdzFqQjd2b21HaFpsdUxqWXlMNzNIeFZJVE5fTXQ2Y2lNQTVQZTVUVGN6NHZOblJKQzQ?oc=5",
+              "sentiment": 0.542,
+              "relevance": 0.817,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "3 Oil & Gas Equipment Stocks to Benefit From Strong Industry Prospects - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTnFPa04zSGdfXzBOVkJLbUZLMExMdXpRNlZYT2IzM1BrYUtlM2E3VW02bVpPR3ZhVHdnN0szdXY1M1lrMDBiTDMzclItNl9nYkNBdFpXVGZUbHhwZi1zUkNXcGhSZWhRQzR0dFI0TDNvWUdWX19vMFctZGFsdm42OXZiOHE1WFY5ZzdN?oc=5",
+              "sentiment": 0.818,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "3 Oil & Gas Equipment Stocks to Benefit From Strong Industry Prospects - Zacks Investment Research",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcjYtS3Bla2FtUGpuckhfdlZCY1RDdkYwamtMcjVIOTcwWUhtMWs4LXlxVVN6QXBSckZoblJlRUNFZTJCS0tMa0NCSWx3bnZKRzZvMVhabmpQRzhVV2tKbUFvek1UWm5UY0o5UVV6dlNqZVRiMUxEZ3lRRXhGNXhPd2JCcHhPSFVnVW1tSi1ZbW4zRExocFJwMDBJbWRPRjdrRFMzUWFfYjVHU05ieUE?oc=5",
+              "sentiment": 0.818,
+              "relevance": 0.727,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 13,
+            "zscore": -0.85,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-13",
           "return_pct": 2.85,
           "zscore": 1.71,
@@ -4781,45 +4820,6 @@
             "zscore": 1.0,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-15",
-          "return_pct": 3.22,
-          "zscore": 1.79,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.45,
-          "events": [
-            {
-              "source": "googlenews_oilgas",
-              "title": "Plush Dated Brent Premium Attests to Oil Market Tightness - Energy Intelligence",
-              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXalY4WWdnWlctMWE1dnJ3STRUWDB5OFpKbm5Oa2dWSmNsXzV4dEhOUHZyUkZMQlJxeXZoRlVXNUZUSlZsb2VTcEU4V3NqRmJlU0Y0R1FMd2FRMjI1WmVxSXF4cVo1YXF3cnpCYTJiTmlnUQ?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Why True Diversification Goes Beyond the 60/40 Portfolio — and Where Direct Energy Fits In - Kiplinger",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeXdCOFRfalA2Z1RUTG1oNDZNVy1zazB5WTUwU25LcUJhaE00UFNtYUhVLWhfeUdadW1RODBSSGVaV0R4SHl5Y1gwZ0w3S1FhaDZjWTJGRzNFeHk5TjFWU3VIZDdvWTdzLU1JcFhYdkZ0ejNCWGR5d3NaU2lXU19hMGhpbi1haUVOU1JBbGFscE9RZw?oc=5",
-              "sentiment": 0.599,
-              "relevance": 0.84,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Occidental Petroleum stock gains as Wells Fargo lifts price target to USD 82 - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaWpJMm9lTjVkQ0cyTHBaWncxUG95RHNoaUFSYWVWaGNFaEp2ZzU4T0JzMjRkOGJmZWtCNmZCTThnZEx0Q3pNWVNLZzQySkpTWW9VTXRwUExiZl9KRmtXZW5PRExkSHpIWFBGTFZDWnZ0VWtoam1waWhlVWJuSmRRd3A1Y0VaQ1lQT3ctUEUteTNQOHlqdHN4MVhNZi1BR1BRdlFvM2FpU2JJOUN4ZXhabHpZbnY1V2RubFhEZzlFZm9uQVRhZ2FGNm5UbXN2RFdrdlE?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 24,
-            "zscore": -0.3,
-            "spike": false
-          }
         }
       ]
     },
@@ -4828,45 +4828,6 @@
       "name": "Aerospace & Defense (ITA)",
       "universe": "equity",
       "moves": [
-        {
-          "date": "2026-10-16",
-          "return_pct": 1.14,
-          "zscore": 1.52,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.31,
-          "events": [
-            {
-              "source": "googlenews_defense",
-              "title": "Applied Aerospace & Defense, Inc. (NYSE:AADX) Stock Short Interest Jumps 64.8% - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWjNrRmM2em15VlRkYTNWZUxablJGdm1WTWkzOWFfZDNER1FoNEEtMVhWYU1MSmRCbzVJMzJFMW5BRmhMcVhMOHNwaVg1b1dmaWtLdkN1emFGaFQ4c1lTclZWNVlNUDVxc2Ytc29fSWRQemNaYmswakVwQks5YmtrRTB5ZGN5NXlXNlN2S3lGV0hMOWlJcTMzckVBMFdvSE1EWVlEbG5xeDduaXMtQUlDWlFFNGxCdE4yT0t5b0dQajBIOVQ0YTBnS25yc2M?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Top Applied Aerospace & Defense (AADX) Competitors 2026 - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1vb3NDaUdGb2I1TXNQRUdiOWRvNDZVNFJvVkNtOGpHRnctZnhSZTY4WWlNNkRHNWxBRVg5Vi1qVFh5WUIybURDSGN0QmRNN1F5WTFWR1pKRDVMLXhOVEVQOXZ4WmRPRk9HMExkWGdKSWItNXJlUHBiN1pxREVnZw?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.727,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Aerospace, Defense Stocks' Demand Intact Despite Softer Sentiment, Morgan Stanley Says - marketscreener.com",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOVFkNHR3LXFKT3MwdHFaalpEd0VIcmdxZlNwanF2ZGUya2plYkpMNnhxWmNzcWZfUGcxSHZMOGRaMktIanI0dEU2MzFQR3pVb0pVR3ZseVpMaG9pQkl1czUwVTJaU2c0bjYwczVfOHk3aVFpc1FjQm0zT2h5TW90eXRLbl84QjBEdUltRTFncW5na1JPYTVvWlk5ckNHdFJjNnJ4NVByWnloQ3JXdG1vZ051dG82MGNKS2FUSDJvdWU1R1g2eHo0Q0wydmNaZDZuekE?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.681,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.43,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-15",
           "return_pct": 1.31,
@@ -4893,16 +4854,16 @@
             },
             {
               "source": "googlenews_defense",
-              "title": "Defense Stocks Drop; Investors See Buying Opportunity - Briefs Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQb3hnY0xVaTV1QnFuZGg4M1RwQXd2M2E4a0Z2eEdDQU4zdmJqUEJzNkk3TUplSDJtblUxTVk4STgxTnVfVkZzbm9HZE1pLVA1ODcwVDAyN252UnhlaFRKSmUxYnJ3c3pudzZSZWJCS0d6bnZMTEZqbUpOck9jWDBmSzdRazFfSFI1Z0RWNHRqalc?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
+              "title": "3 Canadian Defense Stocks With Up To 38% Earnings Growth - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNFY1LW02U0RsWUV1RUpNVmhzLURzUlc5MnAwWDRLVDNxSW9EWEhZZEZJNVRiOEpYUHdZSUI3RDJtSUNoN1NsRXZxVkNfT01QdG1laHRmS3U3UFNLVHNDRjFDMmdtUy1iY3RvU2dBY0JCMFBnX3hlMHJSRTQ5aTB0VmRJYUp3UDZfLW9GNmN3aGtuZFNwbUozdA?oc=5",
+              "sentiment": 0.477,
+              "relevance": 0.791,
+              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.07,
+            "count": 7,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -5059,6 +5020,45 @@
           "coverage": {
             "count": 3,
             "zscore": -1.43,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-07-29",
+          "return_pct": -3.56,
+          "zscore": -2.91,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.52,
+          "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "Boeing Stock Update Puts 3 UK Defense Shares In Focus - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQc0hmOWhEYlpySHJZelhJTGl6QTRVQ3lULU9tX08tYnl0WFNFaFZxdlM4Z1Etb2UyUWlESmZlajhnZ3RiVi1GMnJ6T0c5aFhsRVFqR213NGxPaW5QRjQzV2FieXNISHpnVU9VVWJfaWtSNEdyYVZHMG9HcWQxN1lRejE4SV9WMzZGSzl1QkJlWlRmelhjcHFDQ0RQTmFQZFpyM1ZVSlFJRmNnQ0ZZcnpjS21CSkxwTXlMZzZyZDNZSXVCM1IyNWpnQ3g5Ul84NE9ibGh3ZVBweHRwYmlfZmxsVdIB5gFBVV95cUxPUUUwakQyTEJzM1VYa1diTm9aZFNhdTBkQ1UyUVVEeWxHbE1ob0V0RUEteEk3c0FYMW1OWE45UU81TGl5b1haZWZTdXFONUVLbk1SMGVyN3BJTE1hMHl6SjZLRl9ETVNEeWY0MDlRcUVVb211dFRSLWNySXFZU1B2YU1BOFY2ZFRpUHZITHI3QUx5eFZQTl9lZWlwa3RUb1VWZ0pqdEU5aUNhelB6Uml6UFU2N0xQaExlckQ1MlJ4RjBfUlN4ZDdzS0xOOGl5Mjd4WXUzSVdiTG5xdEdma3U2akxuZnFUQQ?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_defense",
+              "title": "Why GE (NYSE:GE) Is Looking Interesting In The Aerospace And Defense Sector - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTBlajZLZmwybVpUYmd3NENWVWxsLWE5R0Vfa3o4WnVVaUQ5TW9qLWtGNlFBMGZaeTB2cDJXOG9PZzZiU3VDWFN3QzZPSkVDOXNzREVmNGVfYzM4NXFiQUpFOXM3RWN5azJKcjBfdzI1aFp5NmxWa3laX056bDI1aEduM1A3YnR1M3B2WlcyVnA?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_defense",
+              "title": "Promising Defense Stocks To Follow Today - July 29th - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT3c3ZzNDYXpYdUNtcGZ6SDFpaVpwMkl2Y3NXV3h2YkVUTjR3M180MkJsdHFFVlV1dzhaeEx4RThKT25HNTlGNE5MVWNvM3JuQ0kwX2xsZmprWlo0SHA5WUZFT05WSmg2V1ZmbVE0dTNMcnljVkhVSl9VSElGazNadnpOZ2tHbzhFaVFqWjZVaklvMWNYM1ppcm1yLUEtZjNtSnZvTktVbw?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -1.51,
             "spike": false
           }
         }
@@ -5312,12 +5312,20 @@
       "moves": [
         {
           "date": "2026-10-16",
-          "return_pct": -4.47,
-          "zscore": -2.63,
+          "return_pct": -4.7,
+          "zscore": -2.76,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.31,
+          "market_return_pct": -1.24,
           "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "Sell-Off In Cybersecurity Stocks Intensifies Amid Palo Alto Vulnerability - Investor's Business Daily",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0RwdUhaYW1SUUMzcE82Wm1kUTVtcVlpUXdCZjNaTm1kcV9ua0pBUDFoVnJZZUd4ZmxTLUxuMWgtRVZRcnJJS2tPRGUyX3NkTjZLamg4Q3JtWm1IMTFfbUg2OWdFdnFieGZzQVFWNy1yUktQLTNGb0k1dDhaMU5RUWItaERwYXAxTVhkZ2FqMy1fMnFXbjd1THJNQlZCc2hyYU9r?oc=5",
+              "sentiment": -0.226,
+              "relevance": 0.691,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_cyber",
               "title": "Advantech Partners with DEKRA, Signing MOU to Strengthen Global Industrial Cybersecurity Compliance in Response to EU CRA - Yahoo Finance",
@@ -5333,19 +5341,11 @@
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Advantech and DEKRA Sign MOU to Advance Industrial Cybersecurity Compliance - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOVVMLVdzcVVzejRVQ3VubHFpR0lsUDFJbldkMEFJSnpkR05TamtjWElfZmxzOGNycGNJY1RUYjBHOEw3ZFVCQV80d2Y0Vk90RUltVHc2OXlpUE56YUhYU1BLMEk0cU9DRFR0ZV9hMHFkQzVYV3hKNUN3QnNncmEtbnJScWFlTllDN2U5Z285NkloYndYaU1SWHJTN0I?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -1.43,
+            "count": 7,
+            "zscore": -1.15,
             "spike": false
           }
         },
@@ -5383,8 +5383,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": -0.05,
+            "count": 23,
+            "zscore": 0.01,
             "spike": false
           }
         },
@@ -5553,11 +5553,11 @@
       "moves": [
         {
           "date": "2026-10-16",
-          "return_pct": -2.85,
-          "zscore": -1.5,
+          "return_pct": -3.51,
+          "zscore": -1.89,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.31,
+          "market_return_pct": -1.24,
           "events": [
             {
               "source": "googlenews_biotech",
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.17,
+            "count": 21,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-16",
-      "return_pct": -0.67,
-      "zscore": -0.49,
+      "return_pct": -1.03,
+      "zscore": -0.67,
       "max_abs_z_recent": 1.48,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,9 +6041,9 @@
     },
     "equity": {
       "date": "2026-10-16",
-      "return_pct": -0.31,
-      "zscore": -0.54,
-      "max_abs_z_recent": 1.9,
+      "return_pct": -1.24,
+      "zscore": -2.03,
+      "max_abs_z_recent": 2.03,
       "recent_days": 10,
       "benchmark": "SPX",
       "days_since_last_major": 0
