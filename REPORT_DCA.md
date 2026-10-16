@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.9% | 33.3% | +21.4 pp | 46% | 1.000 |
-| 2 | LINK | 39.6% | 33.3% | -6.3 pp | 59% | 0.500 |
-| 3 | SOL | 48.5% | 33.3% | -15.2 pp | 67% | 0.000 |
+| 1 | POL | 11.8% | 33.3% | +21.5 pp | 52% | 1.000 |
+| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 65% | 0.500 |
+| 3 | SOL | 48.6% | 33.3% | -15.3 pp | 73% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -64,16 +64,6 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 - **Età**: almeno 11.6 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
-**HYPE — Hyperliquid**
-
-Exchange di derivati on-chain con volumi elevati.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. Una quota delle commissioni finanzia riacquisti del token — cattura diretta e insolita nel settore. Contro: circolante intorno a un quarto del totale, quindi sblocchi molto pesanti davanti, e codice del motore non pubblico.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 4.29 volte la capitalizzazione attuale.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 1.9 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
 **XRP — XRP**
 
 Rete di pagamento e regolamento transfrontaliero.
@@ -113,9 +103,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 23
 - stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 12
+- capitalizzazione sotto la soglia: 19
+- volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
 
 ## Limiti
