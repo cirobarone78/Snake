@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.8% | 33.3% | +21.5 pp | 52% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 65% | 0.500 |
-| 3 | SOL | 48.6% | 33.3% | -15.3 pp | 73% | 0.000 |
+| 1 | POL | 11.7% | 33.3% | +21.6 pp | 47% | 1.000 |
+| 2 | LINK | 39.4% | 33.3% | -6.1 pp | 61% | 0.500 |
+| 3 | SOL | 48.9% | 33.3% | -15.5 pp | 71% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -24,14 +24,14 @@ Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene
 
 ### Il token cattura valore dalla rete
 
-**TRX — TRON**
+**AAVE — Aave**
 
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
+Protocollo di prestito on-chain fra i più grandi per depositi.
 
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.1 anni.
+- **Età**: almeno 6.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -62,6 +62,16 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.42 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 11.6 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**HYPE — Hyperliquid**
+
+Exchange di derivati on-chain con volumi elevati.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. Una quota delle commissioni finanzia riacquisti del token — cattura diretta e insolita nel settore. Contro: circolante intorno a un quarto del totale, quindi sblocchi molto pesanti davanti, e codice del motore non pubblico.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 4.29 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 1.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XRP — XRP**
@@ -97,15 +107,15 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 - **Cattura del valore**: nessun legame fra prezzo e attività della rete. Nessun meccanismo lega il prezzo a un'attività della rete, e l'emissione è illimitata (10 miliardi di nuove monete l'anno, per sempre). Il prezzo dipende interamente dall'attenzione.
 - **Offerta**: inflazione alta.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 12.8 anni.
+- **Età**: 12.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
 ### Escluse dal filtro
 
+- capitalizzazione sotto la soglia: 21
 - stablecoin o token ancorato: 19
-- capitalizzazione sotto la soglia: 19
-- volume troppo basso rispetto alla capitalizzazione: 14
+- volume troppo basso rispetto alla capitalizzazione: 17
 - già in portafoglio: 6
 
 ## Limiti
