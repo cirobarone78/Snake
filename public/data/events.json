@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T15:39:00+00:00",
+  "generated_at": "2026-10-19T18:45:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.25,
+            "zscore": 1.24,
             "spike": false
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.38,
+            "zscore": 0.36,
             "spike": false
           }
         },
@@ -1058,6 +1058,14 @@
           "severity": "major",
           "market_return_pct": -1.92,
           "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon vs Ethereum: Key Differences and Use Cases - OneBullEx",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUFpXbTJWc3RqbE5ORzM4M3JUc092RkUyamJxeWI5TGotdEllLTRDSGxreDNCd0oxb0VtVkdJN0lRSmJFYVNjRUQwOGk5bzgyeUxOTlNNRU5aWTRMbWpETUFPOHpNZFl4S2d1bEhyM0tMU05OalN3ZDdQdlVxT3Z6NEh4UF90UQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_pol",
               "title": "How to Stake Polygon (POL): A Step-by-Step Guide for Beginners - OneBullEx",
@@ -1073,19 +1081,11 @@
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Evaluating Polygon (POL) as an Investment Opportunity - OneBullEx",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNEc1c0ZGUFZtQWxQajlOUGlMT0RfMGN6QklES2xHeTdKVnc2WldTVlVlWGdwaEYyOHJ1QkxueW1Ob0FieGt1cHFNdDJXZHVUNmNjM0VaVVlkaE9faEkzektoS0VqWjk4SzVoZENRcFZySjJrT0JSOTkwcVVmUUlFTHFSLXRCS19qWWhlSWxGQkpaaVIy?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.09,
+            "count": 5,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -1213,45 +1213,6 @@
       "name": "Technology (XLK)",
       "universe": "equity",
       "moves": [
-        {
-          "date": "2026-10-19",
-          "return_pct": 2.43,
-          "zscore": 1.9,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.9,
-          "events": [
-            {
-              "source": "googlenews_tech",
-              "title": "EY Pulse of the MedTech Industry Report 2026: Blockbuster performers and innovation drive record MedTech industry growth - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOHM3Z2tCYjJmRnk5RlNGMVZpMVNqZmtvU0s4TExNYUZlZjZXaGx2YlZsaU9rSU95b2t3X1F0U25fNlRvM3FkQVRiVjB0NlllLUVRaEJib2Q4OVlfbVNxZVR2TzJUNVYwcHZlZUxRa1JQVlpTYUZCZjNCMWFvbmhNVVlRZWFYQ2JjSlRUQzg4TGVZcW5VSWIwSw?oc=5",
-              "sentiment": 0.844,
-              "relevance": 0.938,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "thank you moomoo, thank you microsoft 🤙🏻🤧🫡❤️ - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRWNnaEExQ2VGc2xaTW5RZlZfN3FGak54ZWF6cWdmd0l3VkJrbHpOY0piRzR5STVIX2wtdFI5SzQ0UnVjdW52aUlpR25LNnE5Z2FCeTZLZUU0cVFUcUdXR1p4dm5pVWdndU53bFZmMm9GdVpnNjNMMl9VRjF6Zzc5WE9BZm9OWWFnT1dJYzdzYUsxcW5s?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Unanet to Connect with AEC Industry Leaders at Fall Events, Highlighting Innovations in Customer-Centric Solutions for Profitable Growth - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeDNGNUdkaGg0RV9BMExKUzRVOW5QSXZaZkZKcHo2SS1KVm1TWFo1M0E5R1NYc0xLNDlLdEpnREt0MHY2MHltSU51anpneHMzR2FrWWIxaHRTZVQwRHhtd3laanVVWlNaSnhmU2lQby0yZ1R0UFZwRGFWdl8zV1pLSTNUdU5QeUtDTlRRSkl3RVgtd2lQSHFZank3MzZVaGJU?oc=5",
-              "sentiment": 0.735,
-              "relevance": 0.894,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 38,
-            "zscore": 0.14,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-16",
           "return_pct": -3.02,
@@ -1446,6 +1407,45 @@
             "zscore": 0.79,
             "spike": false
           }
+        },
+        {
+          "date": "2026-08-27",
+          "return_pct": 3.16,
+          "zscore": 1.67,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.72,
+          "events": [
+            {
+              "source": "googlenews_tech",
+              "title": "Stock indexes gain as Nvidia boost offsets caution on Fed event - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Eb3kxVTFIckZUendTYkNLcXZNLWM4MWVtWjJoTGRYYXBCYmFKTnZ2UU5BM0UzTC12LVNtdkFfU0RIaklTZi0ySjh2MGhWNXBEaXhnUHNwZXg3VlhrSVRoZGM1djdpWFhkaEh5RTFCbmJSOEI5a243MnNHQQ?oc=5",
+              "sentiment": 0.727,
+              "relevance": 0.891,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "3 \"Strong Buy\" Tech Stocks at the Top of Our List - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNR0pLRk9ydHllS25ueHJ4aDd2OXlHb29FbTlJakVYamZVNUhDLUtiV1JlT3pYQXExbWFVQ3h2bXEzaWdiQ3hDa1l0VWoyV3RHN3cxSzRTOG52SWd4c1JHdWs3SDZxTlNsSksxajQxenJMNWpicG9zTlVWMkY5d2Z0LU42TTFNUTBLUjBidXdaRy1hNWljN2lOQ0FXZDh5WFNIb29TbW4tN2RjdHZnMGo5UnRHMVJzX3poUXhjUDJaUWZJbkxQOGlZVGhNZHlmTEU?oc=5",
+              "sentiment": 0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "Nvidia and Salesforce lead tech sector rally as software stocks melt up - Fox Business",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Za2c4aWh6NnlubERiS3ZvY0dfckotcWRmTjQtZnEtd2R4T0xMN0hucXNTZEFYS1JSc19rbmRMazJRdVdrM3lxWmlwendlc05Ob2pvaVlVNWV5TXM?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 13,
+            "zscore": 0.8,
+            "spike": false
+          }
         }
       ]
     },
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.84,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 1.0,
+            "zscore": 0.99,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.89,
+            "zscore": 0.88,
             "spike": false
           }
         },
@@ -2420,11 +2420,11 @@
       "moves": [
         {
           "date": "2026-10-19",
-          "return_pct": -1.57,
-          "zscore": -1.56,
+          "return_pct": -1.82,
+          "zscore": -1.81,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.9,
+          "market_return_pct": 0.56,
           "events": [
             {
               "source": "googlenews_utilities",
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.67,
+            "zscore": 1.66,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.12,
+            "zscore": 1.1,
             "spike": false
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.47,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.1,
+            "zscore": -1.11,
             "spike": false
           }
         },
@@ -2902,11 +2902,11 @@
       "moves": [
         {
           "date": "2026-10-19",
-          "return_pct": 1.7,
-          "zscore": 2.0,
+          "return_pct": 1.69,
+          "zscore": 1.99,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.9,
+          "market_return_pct": 0.56,
           "events": [
             {
               "source": "googlenews_discretionary",
@@ -2918,24 +2918,24 @@
             },
             {
               "source": "googlenews_discretionary",
-              "title": "Advanced AI-Powered Crypto Investment Research Platform - SoSoValue",
-              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5Vc2VycVQ2S3NMWTJDVWh3VE5BU0JpeXdxbmJ3RmdlRTUwUXhfTTMwX2Q3X1hsaW5XYWZBaDdLdkpfYVY0Y0hzWA?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.7,
+              "title": "Update: US Equity Indexes Rise Amid Gains in Technology, Consumer Discretionary - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZDItV1dMYkczUkNLNGZFT0lmSk56NURWSkswWThhd184LW9nMHcydnVzX0xET1IwTC16T3dSVEtFZFczYS1udDNGOXJBYUhqZjZZdmpTWWNRWjFfSGYtb3c2aVhkNFQ4cnR3TU52YWFvZW9pYXZHRUFNT1lRd2ZqaU9iQVdSSWwzUXhxSHZjNXdqcU9MMVhj?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
               "event_type": "other"
             },
             {
               "source": "googlenews_discretionary",
-              "title": "Consumer Discretionary - Wireless, Cable and Satellite Stocks Q2 Results: Benchmarking Verizon (NYSE:VZ) - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPTnlDelFpZTBSNW5MWEpHbFhGSE5sT1NLYVpjc2NCZHl6V3ktdW1COG9PZ3d0LXctN0c0YVoxUVFXS0RfRnJ2bnpFZGdJN09jWml1UlV3b1Y5enRnVlZsNFdhTnFHd3R4Nk5wQ0dOXy1mTnd1RmpNcWRaV2gyMkFteVZFMXVYR1pwcHNBX1YzT3Y3ZDRHcDlaUWlZQUYzTWs2a0JOd0Q5cFdXS2NydlRFU0ZtaG9PbHpDdTJaQUVfdGxVRzNQR2JiZV8xWVRQbWhhQmozRlEzQ1ppV1hNQmtmSU1NZEdZcFFkZHB0bUQyN1c?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
+              "title": "US Equity Indexes Rise Amid Gains in Technology, Consumer Discretionary - marketscreener.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWnV0OXlLeUxvdF9YN2xyMXd4dXpINS1la0dhSXgwMUw5Nk51LUdTVk5PazhxbmJUbXUxVURZcnhCSUY2NmstN05oX0RRS1dpd2VjQlJBWC1MRktVT21Bak9IQXZJZms3eW9PRFhJbmNDUzNFS29CZWtUY1ZudlZUMS1uMkVQMzcwem5TTUNDRlY0SXFDR1RVZlJ2VHlZVG1MT2NUWVg1LWhvQ2F5YmdXUmRSM2IyQjM2VmhMMUhyNE0?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -1.11,
+            "count": 9,
+            "zscore": -0.47,
             "spike": false
           }
         },
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.07,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -3865,45 +3865,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-10-19",
-          "return_pct": 3.4,
-          "zscore": 1.69,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.9,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "\"Tried leveraged semiconductor stocks, watched 3.5 billion won shrink to 200 million won\": Salaried investor in tears - 아시아경제",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41TXFYSmFrTlJkRGVxclByZWdmM2R2OEVabmY1TFpFM1FMQ3NOaFJjVm5xT1ltdFhQNXNXOW5NUVdJRWVTV2xZMWtnSGR2MjZtTDM0RGlTaGtXR0Q0Nnh6VmhwdUhNZF8yOUdadmpwMUIxdEdhSXdLeQ?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Foreign Investors Sell 26 Trillion Won - 조선일보",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUDZvTzlJSHlVUDRFYWJDYlVzTmV5c1NQRV90Qnl5aU1uNFItTEd1SENPWmNJb1RFcUhsVmtoNGlJWVhXOC16Z1dhVWVmNkNzT1BORlJ1NEY1b0Z4ejRUS3E0SXEyVmRWQlUxYUpPTXRiMVlwNHRpT2NHWFhvNjdfTEd2M0w3UFdVcGhsSEh3?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Broadcom Vs. Micron: Which Semiconductor Stock Wins the AI Sell-Off? - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNenRYb0ZkS0VsT0RPOU1XaHpxRE15Mk5kbVIwVXFTN2lQVFY2Z3p4c2pfdnJNd21xZlVTRmV0aFp3dUJhaF83c0tadHI5VVZuSGRrclpNcm44NDFUTms5ZkEwMFZIaGhmZkNxSWZUVk9Vc0xfODFKdGh6MWtSb2RaSm5kNFB0bE1u?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 46,
-            "zscore": -0.14,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-16",
           "return_pct": -3.41,
           "zscore": -1.78,
@@ -4095,6 +4056,45 @@
           "coverage": {
             "count": 77,
             "zscore": 1.31,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "return_pct": -4.75,
+          "zscore": -2.49,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.48,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Why Are Chip Stocks Falling Today? Nvidia, AMD, Micron and Marvell Slide on AI Slowdown Fears - Stocks Down Under",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPMnlrcF9vNVFQNTJsR2VVRHJrVS1ieU4wVFM0TWJKQnR0aUotRzRhUElVd3Jybm54dkkwUV9Oa01nWk9lZ2xOcGQzN2gzTzdxcUN2Zk91YTJkUk52clYwemROclRIbTZWb0VjaHhHb3hnWHBY?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Why Direxion Daily Semiconductor Bull 3X ETF Dropped Today - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSDgtQVk3ZUxHaFFTVk5NMGJTV0R1aDk3NHZaSExNOTlwZVhQMlZjb2FibWNySzVjbGFQd0xST2E4ekZENmhsWHZjYUZaMjVJM2EtWGVjZVVSb0VEX3Vod0hlV1RDb1A4N2s0Nk5YaXMyV1ZBdXljempJRC0tWDBuOG9NQXdUNVUwbWI0TFBhTnZqUDAzMXc?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "China Stocks Waver Amid AI and Semiconductor Weakness - Devdiscourse",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQWJQUVNQelZmX1JIdndvTUpsaTNsdDZDeDRnakRwaE9iWTJ1STJYTzBtcnZSMVI0NmNtNnlzWEhRZFdzOFM3ZzhQQmlabGdPREZQNVpRdU9aR2wwV1JVV1JEQnZPSVJUOC1MQzh4Qmktdi02WGcyY0lZT1JRTkhmUGlZQnc0TER4eXc1X1ZXeUdualY2eTR2dHo3QmUxempYNlRaM3h0a1hrV1HSAbABQVVfeXFMTTctRTZnWDJUTnpnNXJuX3ZiT1BNeVhhOG1hWTdLbFRJWU9LS0hLRW4tWFREZ19TWm0yQ2VjT2tmbUNRMVF1bENORmRnVWd2cmx1RkFneEpEWWVMU3JGSDdPV2s1UWJsSzl1SDVGYnIxWUJ5RW91NU5TTGxVb2JDTHV2ejNDVlZrV0NXNEJ5Nkp2bktXNUFBTTdhTVpfekRySHh5YVZOcmNSeVpGVHJSN0g?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 89,
+            "zscore": 2.06,
             "spike": false
           }
         }
@@ -4863,7 +4863,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.12,
+            "zscore": 0.11,
             "spike": false
           }
         },
@@ -5070,45 +5070,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-10-19",
-          "return_pct": 1.88,
-          "zscore": 1.73,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.9,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Gold edges up as oil retreat lends support, Fed decision in focus - The Edge Malaysia",
-              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1xdHNRT3NSX3N1cDlDSVlJdm94UWRaM0xPS2JOTVlMN2NMNXk2SVdwN09FUThWQWlEYlJ1TGx0blRsYlBsalRaY0NicmZ3ZlBs?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.49,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Gold edges up as oil retreat lends support; Fed decision in focus - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNXUxeVVHc0hZNU4zazIxT2JkM2Vxd3I3N0wyemRBd3M3dkVSY0hmSGhiS3JPTkhseEU5TlRqZWg4aXl5N0ZWRE01SjgwSXpBZXNyUFllbHdHNHd6SkYzNEMxTURyYkE5blNfLXU5V0N2RkRaS1B2cEtqMG03YWlqeDIyWlBhNHJPT2NpdTh0QXhGNl91UjgxZjhB0gGfAUFVX3lxTE1JMkc3czdPbDRmdlB2VENWaGU1SE5hVXY2WmM0QmNmNVlualhDQThsTnMwaEdhYVMtM2taemNfZmdWWEZXUjlTdTV2ZXlOWXQ5dTlyalBtc05SN0tHTlc4akpsY1psaHdvd0owMl81cXBJNUFRN0NheGoyTU54TVFkWDBXUkl0NHpTd3kzdlc3NnR0WlBqYi1LQ2hMVVlZWQ?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.49,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "Best 3 Robotics Stocks To Buy Now | Physical AI Drones Core Players Adou Thiero (pz8cEKkimm) - Unisba Media",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa3psLUNUWTBoWmtGUVktR3Z0YWc2RXk2VG8tWHk5bjlrWGZ5a0c0RWtwLTE5dDlGclJDYUZZUkt5Y3Azc1pUOU9vaFRPLUNVSVhYS05mWksxcW1kVl91VTA3Mk5HTFdYRjFUcF84SGlIb2I3R3pralpGVVVvbVFRVTIyZ2ZnRFk?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.455,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 0,
-            "zscore": null,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-16",
           "return_pct": -2.13,
           "zscore": -1.62,
@@ -5142,8 +5103,8 @@
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.58,
+            "count": 3,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -5204,24 +5165,24 @@
             },
             {
               "source": "googlenews_robotics",
+              "title": "3 Robotics Stocks Investors Are Watching For The Next AI Automation Wave - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUnVHMmhUWUk0bmZndjBqVU42V1JRWEFYNXVRS01CdVdWcXF0ZWUzaGZldkI5R3JNR1d3MGVPa3NPT2NaU19NRng3bV9ZempTemxnbWswU1p5T2RzT1N4eE9yRnAtZkVWZGNVcXEtWVdjWXNFZ2libm0xc1ZDNEYzNDNadTJ1a1RwT0s2WEZrUkU0UkQxbE1ZTmNua3duc3hsUGJv?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_robotics",
               "title": "A single holder reports 35,454,544 shares of Xtend AI Robotics (XTND). - Stock Titan",
               "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb19GNTA0OUZ4TEZYWUc5LTZheDBKWUdnZTFlVEJ5WEVNRHVxV1VLaHB2Qk5ZVUF4Q1F1WlJlUVBFaEZSXy1ia3RjLWlBek9LaUtXNi1NNWdYUmotSGZHdHNXV0dwaEhQZVZtNl84aTc2RDIwZEZJcFFmSHpEeHNtLXo1cGNaVFNqSmhxS2tQdTJkYm1qNU9YX0M2a253QS1LUTV1c1JpZW1IRGVPTFF4dXVudVI0TTMxLW1xc1RKMzYzeW5nVF9z?oc=5",
               "sentiment": 0.296,
               "relevance": 0.518,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Fed Interest Rate Forecast for the Next 5 Years: 2026 to 2031 - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVnFWOWJRSThWYmhuZmU3VWU2UVRiVUF1a3JQNGV2Z3NFXzRNTmoxRHFTVWFjYkJodnh3Z0RYeUFIWF9CeUdUWlNpMXEwZ0Z3S1RNRk1NNjRoWkFMaU9jMEdpdXpnbGFQNkQxUE8tNG9NZnI2dUJCSjNoUHhIZnB1Q0NTWjFudEhhSXViX2ZRU1hpSzhnWnlaZ2V1OGdBbWJh?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.57,
+            "count": 2,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -5260,7 +5221,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.26,
+            "zscore": -0.25,
             "spike": false
           }
         },
@@ -5299,7 +5260,46 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.84,
+            "zscore": 1.87,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-09-21",
+          "return_pct": 2.02,
+          "zscore": 1.75,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 1.49,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - Boston Herald",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcHBCMDlKUlRZVlluVkFqY19GVXhZVVd3RG00LVphRkY3UnliOXhHc2J2bDBtSUktWldLNjdvblpKV2NXN1NuUEdINXVZeGpXVDZfakFJeEhUc2dKalF0V2FIQlVxNksyWHQtb2NwZTlPTTB1bnVsS2tRUU5VNTg?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Anatomy of a rise: Monetary policy and the post-Covid surge in long-term interest rates - CEPR",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaGJGV2VxTk9oMnI0UWRCeE85c3QtYzh0NVJ5WGJxMXYyakdEQ1NOQmd0cHZMR292S28zc0x2Yk5zR2o1dzdzWk5PWDZvZFd0RjNXM0pGZmJDVldkdEhDM2lmanl5bUYyWkFCNE9nTFRjbWE4QnRhRWhWSGtaSUswWUtQa3JSN3dZTjBDWTc1N3VYR0VDc0dpR0ZHMk5qMG9RSURyUWNENTQ?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.21,
             "spike": false
           }
         }
@@ -5552,6 +5552,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-19",
+          "return_pct": 2.48,
+          "zscore": 1.62,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.56,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "The AI Trade Just Moved Into Your Bloodstream, and 4 Healthcare Stocks Are Winning - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeC11Z2p0bXNFRXJTNEc1WXl1ZEFiaFNHbm1Fa1p4Q2t0MGtqYnNDY1B2TlpoRVBRYnJyRExjQXFPNk4yMWY2RjhPck9lRkRmUFM1cVhkVGtOeWNPcnpKcThkT05JWW1SbGFNRXA5UnJabG1VMEl1Ujc2d1VINk9WZmRiVXJMUVpUelB5Z3lVaXA0YmZydXlKVV9kSmNaQm9rZkFOeVd1YndiMjlaQ2lZdFFxalY1dWpadHc?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Forget Eli Lilly and Novo: This Biotech Could Be a Surprising Winner in the Weight Loss Market - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU1VGdzhaS3N1R3V3M1daSG9xcW1oTTlseWVidGZRbWlwNHByMG8tSnp2dHVObzMwazJrYUtJNVVTeDl0b2RiTUprSkhoYmZ6cWRveG1qeGdfQzYyTnFnWHIzejk3LXJNRjh3Ui1yeTdobklDMGhOMlFXTkxTWi1Bb216enVNcTFuLTF2aE12TWhQQnZi?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "South Korea's Samsung Biologics Surges 9.55% as Pharma Sector Leads Kospi Gains - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGVzU5RjFsRlNqRmNJS25TaWJCay10LVNmWXFPTEY5OVJNQVZsTmdOelVtUjdxaWR6RjN4TVEyaTNRX2g0Vml3cllCSWl0NG8yOWVPUHd5WlMwYVg5cTRfUzFTalJWUVEyZUxkeE4waTF3Z1dBRWc?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 13,
+            "zscore": -0.31,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-16",
           "return_pct": -3.65,
           "zscore": -1.97,
@@ -5743,45 +5782,6 @@
           "coverage": {
             "count": 12,
             "zscore": -0.33,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-17",
-          "return_pct": 2.64,
-          "zscore": 1.43,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.14,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "RGMBS 2026 Life Sciences Innovation Forum Draws More Than USD 120 Million in Investor Interest as 23 Global Biotech Innovators Pitch in Riyadh - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQbUc5MVEyWVRDY3FYUEYtUkFJVloxU2hEeTVOOFZPUHV1c0tpTy1hNThESkJETlVwSHNSMFdfVDlvVm9oR2RGN25fbEk1Y3NLV205ZjBuNXhrbjBNd2Z5UFgwMVVrNzl2NzhVQkNKR2NoMGVYWXNrdlQ2dU01UUpLMXJPS2xEY0NuWktOYVFEYjdIS21LRFhkLW50eWs2MHVTczI2LURRN2FuNGdGVGwtcXhIUC1zcDF5eGZMZldCUzRBWnMtMzRuN1U0NVE2bFB5TVdNSmdLQUY2ZjZWTFRDYmdFMW4tdGZvTWtxd0wxYUJhLTBYeGFQOGpFdDRJMENXQW1FQi1KYXJBZ0YtZ21YbmYxQnRESnc5dGFmWmRDb2owbDJhdVhZZw?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.872,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Puma Biotechnology (NASDAQ: PBYI) director exercises 50K options, sells 62K shares - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZFdnblB5b0xGQTYzTmdjQzBTRFNKQ1Q4cFFyRTdWN040bmFINFA0Q3FvQTdPb2pYdHpiS2RYREZFckNScXhiRFdxZzRlUFZramo0T3NKNlA0MWRGNFhiVTVyUFY0aHNyZWdGQ3lma2o4Z0tZNndQN3o1SFVUaTM0d3ZNUE5jQnF3QzFTZmlGYzA3ckVQSUFpZ2gwb0p0V1ZxeEdKVEgzMkJfSEpiYkRkLVRNMmFjTjA?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "8 biotech IPO prospects testing investor appetite - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOW13dkV6cmZpODBqZklNX203Yng0Z3ptRmlhaDFaZGZUb2lJVG9zWHZKbnlSNUJfME9uRWVZYVh6NVp1ckQtbnpxbUFhekFfZWo0NG9UOXNycjVRbUhXejRBcXJNUGRGVXBiZDFDRnowb2lpSDVZVFNNZ05NN1dxRUQ2TU1Ma05TNXRaOHd4ZUw0VWpsUHNz?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.65,
             "spike": false
           }
         }
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-19",
-      "return_pct": -0.01,
-      "zscore": -0.04,
+      "return_pct": -0.21,
+      "zscore": -0.16,
       "max_abs_z_recent": 1.3,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,12 +6041,12 @@
     },
     "equity": {
       "date": "2026-10-19",
-      "return_pct": 0.9,
-      "zscore": 1.49,
+      "return_pct": 0.56,
+      "zscore": 0.94,
       "max_abs_z_recent": 1.9,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 3
     }
   }
 }
