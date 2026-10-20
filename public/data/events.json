@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T15:40:00+00:00",
+  "generated_at": "2026-10-20T18:43:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1697,11 +1697,11 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 1.3,
-          "zscore": 1.88,
+          "return_pct": 1.01,
+          "zscore": 1.51,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.33,
+          "market_return_pct": 0.24,
           "events": [
             {
               "source": "googlenews_finance",
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.65,
+            "count": 10,
+            "zscore": 1.53,
             "spike": false
           }
         },
@@ -1938,12 +1938,20 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 2.35,
-          "zscore": 2.19,
+          "return_pct": 2.12,
+          "zscore": 1.97,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.33,
+          "market_return_pct": 0.24,
           "events": [
+            {
+              "source": "googlenews_health",
+              "title": "Health Care Stocks Hit Record Highs, GM Drops Nearly 8%: Stock Market Today - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLUlQYjhjdlQ1Qy1iYmZ4V0p5WHpoNFBraDJkT25sa1FSOE1xUHBSbDVJU1BPamFOcXBIdWpfU05hcmRlajNSXzdRU1M0VFZEd2wzZWxKVXRqUDBCT2xlVHJTT1VXa3hvUjVFSkxtZ09EOG54NU9KOEFha1UwSEVQdGZ4Q21rYnNlV01jMU0wRmwzMUFPbF82cHN0blJKdGQxM0d6U3ZzcVVQWnFyUmFRdWhEUVpfYmlPQkxQbGhkd3dMbTJIU2JKcw?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_health",
               "title": "Comprehensive Healthcare Systems Inc. (TSXV:CHS) Advances 6.06% as Investors Reassess Healthcare Sector Opportunities - kalkine.ca",
@@ -1954,24 +1962,16 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Stock picks in the health care equipment and services sector by Oppenheimer (IHF:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdTAtMXhLXzdVZnQteE5fSmxJTnZMd082RHFwbF9pWi0ybmZTc2FZZnFTX0RqaTlOcmhnQ1ZCMmFWYXpNdE5XN1Q5YTZxOVVJb0pjZVV5ck9vUHY2eXFuNG5aV3pkQmR6VHphWGExZ0hFd2Y4U3Racy1sQlZqWkZBd04yWDVld2RzempwTk1aamptRmF2dmNpYzNqT3o5cVBaTUNLZ01ialNMZUtDQTV3WG4xbw?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.598,
+              "title": "Wall Street rises as healthcare stocks rally and oil prices decline - Economies.com",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOY2taWkpsWDk5ZHZiZGVuTTBGZXd5d0h6dUcxLUw2VjZQWElJMGk4aUI5dnhfNUYzUnIyc2E4UGJteDBxSDFMUk01VV9jS2swRWhOemtIb3JQOHhfMXdId2FZbTdKaWVvWXp3eENjZ1VzWVRraUY0UlZHc1UyZWdRSG83MHFEZ1gxOWRqQ1hpVnl4eUhWdnlhbGZfR0pHNmNxRTV2ZG4tbGVvOGlXSWlHTTU2cDRxN1p4b25ia193?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Will the Fed Raise Interest Rates Again This Month? - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdG15amh6WjF1REdxeFRvZS0tOGJROFl3MXc0Y2tLZ05FNEM3enJ5UlRMeXd1eW5VaUEwUTBzTkd6dmVNck8zWEtkZExBNW5wN2tjZU92VXpzajdqcmpLb3VCeVp0dWNIY0Q0ZUdjWi1qN2c2WDdhY1Zya3ozWU5MaGdQNU5HcWdCUHlZQ2F0ZmtnMVk?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 2,
+            "zscore": -1.31,
             "spike": false
           }
         },
@@ -3384,40 +3384,40 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 1.92,
-          "zscore": 2.5,
+          "return_pct": 1.63,
+          "zscore": 2.15,
           "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.33,
+          "severity": "notable",
+          "market_return_pct": 0.24,
           "events": [
             {
               "source": "googlenews_realestate",
-              "title": "Best Real Estate Stocks To Buy Now - Forbes",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJekhtLUJtSjdTSE9XcHU3dzBYNzdNWm1mV0ctcHRPM0FmbjBkcHdEMTRfZ29GQWRxNFBjUGZvSEpqS05Bc01vc3ZKaWR3QXVDWExWS3JmOGVDRU9fWUpKQzNMR2kwRE1VY0QtRllSY21NNU0?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.655,
+              "title": "Champion Real Estate Investment Trust (SEHK:2778) Stock Looks Fully Priced As Shares Fell 25% - Yahoo Finance Singapore",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOFA5bGpoSG52MEdBWUlESkxqdkdVcnFLNGlIeURKS1B5QV9EVTEzd3Jvano1MVZPODV3aHc3aEMzMXJvV2E0LTRFeHBrLTEzeEk3RDRYOWN4Q2N3cTFSXzgwQnZyY01OYlROaHdzVFdLNnNXUTh3aDdud0tadkZVU0lZaktCUEpIV0FxU0VXcw?oc=5",
+              "sentiment": 0.865,
+              "relevance": 0.946,
               "event_type": "other"
             },
             {
               "source": "googlenews_realestate",
-              "title": "Is Link Real Estate Investment Trust (SEHK:823) Reasonable Or Stretched On Cash Flow? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVXFHUldFOHdjaElUcDZLaGg3cHVYWmE0ckNZdnUyZFlOYncwZk1ySEhEZUdsTDkxOWdwZ2tJbGpySTR0alRYd1pTV05PeWo2SER3bTBING1DVXdVUi1DRE9EdFVNaURtRW9mTG5GOHF4OGljdS1zTEZBREFXbkRHMWZiVUt1Y2pCbmVqaGV2S2VVckNxNVFEeXE3MA?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.604,
+              "title": "Suntec REIT (SGX:T82U) Stock Looks Fairly Valued Following Its 40% Run - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVlp5SVZ1Zml5X2dRV3hhTUx0WFU0TmwyaFBYd2RWR0wzbVFLZTg0U2pYRTlndjJOWXBzNFJqbmloSmNNcE11d3dCYk01OTZUanFQdjFROVRRcVlwWnFxT3NVb0diV2Q3NDVOdkduenJJOEZOSW12U0JqS3BlVFBGOHB5V0FJd09sMDROa01UUFNHd0l4dVE?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
               "event_type": "other"
             },
             {
               "source": "googlenews_realestate",
-              "title": "Stocks to watch: First Resources, Keppel Reit - The Business Times",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNkUzdWd0aFBjNHlrUHhIYlFrY01oTU1MaG5OemFWenpNS0RGSUxYZlA4ZW9ZeF94eFNSTWZ5dnFSUkFBNTFORWFLWEU0b1hHY3ZiUnd2RTdORWUxTm9uUTVaOXlpaHlsSnNtOXZhMWhuN0dCTGd6OXpMeTdBT3lvNDd5aU5PdFlWVGs2bnlaOFR6SXpNcVE?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
+              "title": "True North Commercial REIT (TSX:TNT.UN): Why This TSX Stock Is in Focus and What Investors Watch Next - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSEU2Q1BScXBPTEs1UFNHcHplQXB4N3djdXRvY0xzNFV4WU52blFXRUVRT0syMm1INlVPaUtaRkFCR2NuUlBJNGpGZERfQmF0N2U3REtKM01fZkdPY1dYbXI5OS1xN25iaGN3a25oWUlwQzJlaGFZZ3FURUV5MjNYX2dTcjJyNGZvd0c5RG05NW0zdDNLamJKZGRoYnFyQzFBTnBOTlBzdi1ZRWxLVktVb3d4V2xWTEVBNVhUMVFMdVdVN2dhenhTazBSYk4?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -1.23,
+            "count": 5,
+            "zscore": -0.52,
             "spike": false
           }
         },
@@ -5514,11 +5514,11 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 3.75,
-          "zscore": 2.19,
+          "return_pct": 3.68,
+          "zscore": 2.15,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.33,
+          "market_return_pct": 0.24,
           "events": [
             {
               "source": "googlenews_biotech",
@@ -5530,24 +5530,24 @@
             },
             {
               "source": "googlenews_biotech",
+              "title": "Roivant Sciences (NDQ:ROIV): The Company Founded By Vivek Ramaswamy Is Trying To Industrialise Biotech Company Creation, But Is This a Better Approach? - Stocks Down Under",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1fT25mV2lEaHZ1TjU1akEtTkhmZjluVUlhOFI3aFBvcDgxQkUtSHVtREdGRWZnbWdBcTRobWpGU2J1Y09nQmF6d3k2S1czUzJvam83TW81SlFkMk9iUXhsNDJWSQ?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
               "title": "What First Trust NYSE Arca Biotech (FBT) Bought: Tarsus Leads on Oct. 16 - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNEZBdlZLX3hZdnQzbUNUejBnOEQ3dGotTjFPSzRZekVRTlRUTXo2MHRZTU9sUjdQT1dvZWQ3NnQ5bFZYVnNUQzRGY0ZXelV0dGpZN2tncUtWNElyRUNvR0ZfLVlUQWt1aWUwd2NTc056TFZqSEhwX0hZcTNZRGFXT1RzS2dUYTkzR1ZUbFJJck5od0RP?oc=5",
               "sentiment": 0.511,
               "relevance": 0.804,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Hospitals and care homes can source Kane Biotech wound gels across Canada. - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWUk5RkxlNVZsbXZGQktyamtaMGFlWTlMZFVYb2h6d3d1cUg1bDZuaUJBb1JRU2pVQ2QzR2xPaXoxbzhaMmtBQXVYM05ZbUt5eWhlQVo2RDIzcVZaTnhnSk92aDF0ZEpMMGlpZHBiNVNHQ0FiNGVBZVM4Vk1vY1dUTmliWmhLZ3ZUdHd2d0pGSGphSE9kWUFMZEtmMHNsaWpjd2pOYXpZTkhnZlNrOWlfaS0zZE4?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": -0.68,
+            "count": 16,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -5993,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-20",
-      "return_pct": 0.65,
-      "zscore": 0.36,
+      "return_pct": 0.67,
+      "zscore": 0.38,
       "max_abs_z_recent": 1.3,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6002,8 +6002,8 @@
     },
     "equity": {
       "date": "2026-10-20",
-      "return_pct": 0.33,
-      "zscore": 0.54,
+      "return_pct": 0.24,
+      "zscore": 0.39,
       "max_abs_z_recent": 1.9,
       "recent_days": 10,
       "benchmark": "SPX",
