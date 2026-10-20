@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T18:43:00+00:00",
+  "generated_at": "2026-10-20T21:38:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -982,14 +982,6 @@
           "events": [
             {
               "source": "googlenews_pol",
-              "title": "Polygon (prev. MATIC) (POL) Price Today, Live Chart & Crypto Market Update - TechGraph",
-              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5weUxTRDUwZ0VNenlyQk1zVnJsSV9QNTZxbXo2c182ZFA4RkxSVllYaURNMU05eWFwZk0ySlJGUG1uNWszekpDXzF5dl92WXVyYjV0czg2YzR2WDVPampTRzd1V094b3VGYUE?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
               "title": "Polygon Labs secures payments coverage across 48 US states after Coinme deal - Crypto News",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdDNUblBNUVhjQ3VvZ1pFRGlBSl90VzBDY2Y5TFRROEpOaEhDZzlRbDFyUDNmZGRZcU9ZR1c5U0pYTDdXYzlQRHRzQ1E3NUhmMWZzZUpwbmxzMkZ5TFZRRmdIUWJqY2lGelpjOFE4LVpnX05LemthdHpBTU9vU0FHMDB6Zzh1SF82WHc2TVJhMHNEczdpSnJ2ZXV1RVdOQQ?oc=5",
               "sentiment": 0.318,
@@ -1003,11 +995,19 @@
               "sentiment": 0.103,
               "relevance": 0.6,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon (POL) Drops 3.3% Amid Market Softness and Tokenomics - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aRlJ1VGdDT1BUQkVkbnpHV090SkhHaloxeDNISXJMc0lIZVFFUlBhNV9nenBnZnN4RU5DSHlOLVNhdm1zazZJR1dDMkl2b2MtYmViUHluWXRlUWFWbVlqM2Uyazg1dU9YR2ZSQmtxZ1E?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 1.22,
+            "count": 6,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 114,
-            "zscore": 4.97,
+            "count": 115,
+            "zscore": 5.03,
             "spike": true
           }
         },
@@ -1697,11 +1697,11 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 1.01,
-          "zscore": 1.51,
+          "return_pct": 1.2,
+          "zscore": 1.75,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.24,
+          "market_return_pct": 0.28,
           "events": [
             {
               "source": "googlenews_finance",
@@ -1938,12 +1938,20 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 2.12,
-          "zscore": 1.97,
+          "return_pct": 2.37,
+          "zscore": 2.22,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.24,
+          "market_return_pct": 0.28,
           "events": [
+            {
+              "source": "googlenews_health",
+              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkxEdEJ1WjF3WWNsb09CUHZzTWttalZZUmxVNXJHOXBIaGhFeE9ob0tCSno1c2NLVmtWVloyc0lqdXBhMGdiWTRjSUlJa0lkbThPaXZ4RkxxZjBaQndrNXVwM1Y2YkdtZVpjS3hrRktudzhseW83X25ySkdsdU5hU0ZpX0d3MWZuRmYtdVUzUVNpRjU5UmZxeFRiVGRNSkZKQ3c?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_health",
               "title": "Health Care Stocks Hit Record Highs, GM Drops Nearly 8%: Stock Market Today - Benzinga",
@@ -1954,24 +1962,16 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Comprehensive Healthcare Systems Inc. (TSXV:CHS) Advances 6.06% as Investors Reassess Healthcare Sector Opportunities - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUzhDRUc4dGJMM0VLRXhZTFFaTWVFb0pGbDRuNHJ2cndzOFJ5aEhTanR3WTVfN19YNl85cmNCQjBvWG4zN3pHa2R5QmoxMFhSOXZneU51VEdGSGdYbUphbi1SOV81OUs1SU1VaG05SHRIUGNlOGRyR0xRQ2c3ZFowemZmb2RuYWVQZXZaaXhVZjNFSk1iT2RjRGxWbzhfVV9aWFM2R3JXSW9tZ2dLOWVpUlRLVHhrdG1xOGhIcTduY21sSTdPNFNJTUdyNnFOdFBHTXNKQTFtb3ZDcVIzaHN3?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.623,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Wall Street rises as healthcare stocks rally and oil prices decline - Economies.com",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOY2taWkpsWDk5ZHZiZGVuTTBGZXd5d0h6dUcxLUw2VjZQWElJMGk4aUI5dnhfNUYzUnIyc2E4UGJteDBxSDFMUk01VV9jS2swRWhOemtIb3JQOHhfMXdId2FZbTdKaWVvWXp3eENjZ1VzWVRraUY0UlZHc1UyZWdRSG83MHFEZ1gxOWRqQ1hpVnl4eUhWdnlhbGZfR0pHNmNxRTV2ZG4tbGVvOGlXSWlHTTU2cDRxN1p4b25ia193?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
+              "title": "US STOCKS-Dow outperforms as Wall Street rises, healthcare stocks lead gains - Devdiscourse",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYVZGVDhoaXJIZU84aEI4THlSZ0tuQVA3YmQ1Zkl0MmZUbFdhdm1LcERKRk5HREN5M3c3YWlkTVo1WERJT3lkUjNNZ2hTVWdQcFJTSVVFMFBzOU50cmJsNVI4eWcybURRY3JNLWlYYWZNRVNjZk5IRzZ2eUxvTHVNc0ZiY2ltSE53MXhONngyd0N4bm9kM1VaWTZvVEVYUUo4VmlEWGJZdlJmd1JIZXBSdURmMTA4bE5zczczcGFySVdab3hzaE1JQUFHdEFQQdIB0wFBVV95cUxQZktnM0wyWVFVU2g3ZVFxN3YxTU5JbU9SZGNQN0dPY0R1UmpPdE1MWm92NFdzYUM4RE5ZZTJ5NkIxUzEtVXNRRVZhLXlRMnlPeWR0RlNsTmtOOTI4N1JGc2RyRG4tVDM0ZEQ0ZkN3eXcxa3R3U0gweDZ4OFFtQXhrZjdOU0liQ3pTcXkxSHdFbXdwdy1hLTRlSmJxN3d3aC1IUnJYcWIwY2U5YWJxUjRmQWZMeDJmUWlvSVdUMEs1Ui1FTGJKSkNMbnU0MDlObkdDT0tz?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -1.31,
+            "count": 9,
+            "zscore": 0.36,
             "spike": false
           }
         },
@@ -2009,8 +2009,8 @@
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 1.74,
+            "count": 15,
+            "zscore": 2.0,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.76,
+            "zscore": 1.8,
             "spike": false
           }
         },
@@ -2973,8 +2973,8 @@
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": 0.08,
+            "count": 15,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -3384,11 +3384,11 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 1.63,
-          "zscore": 2.15,
+          "return_pct": 1.7,
+          "zscore": 2.24,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.24,
+          "market_return_pct": 0.28,
           "events": [
             {
               "source": "googlenews_realestate",
@@ -3416,8 +3416,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -0.52,
+            "count": 11,
+            "zscore": 0.88,
             "spike": false
           }
         },
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.51,
+            "zscore": -0.53,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.54,
+            "zscore": -0.56,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.47,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -4498,7 +4498,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.47,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -4537,7 +4537,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 1.95,
+            "zscore": 1.89,
             "spike": false
           }
         }
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.08,
+            "zscore": 0.07,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.12,
+            "zscore": 1.11,
             "spike": false
           }
         },
@@ -5514,11 +5514,11 @@
       "moves": [
         {
           "date": "2026-10-20",
-          "return_pct": 3.68,
-          "zscore": 2.15,
+          "return_pct": 3.64,
+          "zscore": 2.13,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.24,
+          "market_return_pct": 0.28,
           "events": [
             {
               "source": "googlenews_biotech",
@@ -5546,8 +5546,8 @@
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": -0.03,
+            "count": 20,
+            "zscore": 0.4,
             "spike": false
           }
         },
@@ -5771,24 +5771,24 @@
             },
             {
               "source": "googlenews_gold_miners",
+              "title": "Best Mining Stocks to Buy for October 2026 - Zacks Investment Research",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ESjlXR0JHdU1tcG84c2tldldwZzE3RnJ1S00yQ24xeU5GeGxPZVRiY1gxMW9OOXZ2ZXB1SUQtWUNiSGluUndvbzdkMy1RRVVsNURCNXlhTzVSam5hQVpWQVByaE1KeTQyT1NBTnRPbw?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
               "title": "5 Copper and Precious Metals Stocks Likely to Beat Q3 Estimates - Yahoo Finance Singapore",
               "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeHQ3UXlrT01HaGpMVkkyVFVtM2xXbFROR1ZkSEhiMVZGNGxTZVpQUFRQUlFQNXNPYmI1ZjRuMUlGcjdUSEllSUVSeGt3ZzlIYUk1cXZWUEJWa09RLXhkVE1GVzdKbmhIZHB4QXp1Z3MtTGxUcUs2M0VhLXpNMllCdWRtdV81V2c?oc=5",
               "sentiment": 0.572,
               "relevance": 0.829,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Freeport McMoRan (FCX) Is A Major Holding In A Mining Trust - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZVVxbmNkQTNCSkdfYmJ6YjJqeTl6cmJaRmlBRkR0OFpmZUY2eGdXQ3RkMl9sa3RranE1eXhPZ0dYZVJIaEFrRGVKb0RYNHZOejVUamFpMk9MaGR3X3FWanMxZHctRm91SXdHa0dBbnh0c00wdmtOak84TUVaQ1hJTFBTV2g2dzRmazd6WDlzWDExWDJ2WEgyODlSRFlweWZrNHUyMkp6OA?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 25,
-            "zscore": 0.28,
+            "count": 26,
+            "zscore": 0.36,
             "spike": false
           }
         },
@@ -5866,7 +5866,7 @@
           ],
           "coverage": {
             "count": 27,
-            "zscore": 0.27,
+            "zscore": 0.28,
             "spike": false
           }
         },
@@ -5993,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-20",
-      "return_pct": 0.67,
-      "zscore": 0.38,
+      "return_pct": 1.11,
+      "zscore": 0.63,
       "max_abs_z_recent": 1.3,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6002,8 +6002,8 @@
     },
     "equity": {
       "date": "2026-10-20",
-      "return_pct": 0.24,
-      "zscore": 0.39,
+      "return_pct": 0.28,
+      "zscore": 0.46,
       "max_abs_z_recent": 1.9,
       "recent_days": 10,
       "benchmark": "SPX",
