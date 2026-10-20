@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:07:00+00:00",
+  "generated_at": "2026-10-20T03:43:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -2419,6 +2419,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-19",
+          "return_pct": -2.01,
+          "zscore": -2.0,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.41,
+          "events": [
+            {
+              "source": "googlenews_utilities",
+              "title": "ASX Midday Sector Update: Energy Stocks Advance, Information Technology Sector Struggles - Yahoo Finance Australia",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdjcwdFkwMUE5dDU4ODJEd29KN1ZrVVREUnRaUlJ1dE5vV09vTG1lQ0R4dG9oUHl1OXIyaHdzQU9iYmtkcmpmX3Z2aWM0Nkd2ckdCcXVqT1dTY0ZyeGtaREpwalJXMU0xLTBuc2YzY3lGQTRvc2ZJWGU4TVRDVWd5UnA3UzMtLTQ?oc=5",
+              "sentiment": -0.103,
+              "relevance": 0.641,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "S&P 500 Utilities (Sector) Top (^SPXTU5UN) charts, data and news - Yahoo Finance Australia",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RWUl4Z1hid2dqYzZDanhOd1FTOEhhMHdGTjJnS2x4ZEhDNW1UY24xQW5QUGkyNXZvSGRDMm9xVTg5dzQyWnBMdHd6THRqZ0t0cnVLS0Y3N0VDTTA?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "S&P 500 Utilities (Sector) Top (^SPXTU5UN) interactive stock chart - Yahoo Finance UK",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fUml1VEJ4UVMzQWlpelZwQ0FEbGNPUUE2RmpnMU50akZORWFRZUNYeU5wcXpzeUJ1Y2xSR1R3OHREUEhQbTV6T3hNemJSMW4td21ydWJBajNyMkRTM1F4ZEZCUQ?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 7,
+            "zscore": 1.75,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-06",
           "return_pct": 2.98,
           "zscore": 3.73,
@@ -2733,7 +2772,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.49,
+            "zscore": -0.5,
             "spike": false
           }
         },
@@ -2861,6 +2900,45 @@
       "name": "Consumer Discretionary (XLY)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-19",
+          "return_pct": 1.78,
+          "zscore": 2.09,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.41,
+          "events": [
+            {
+              "source": "googlenews_discretionary",
+              "title": "Consumer Discretionary - Leisure Facilities Stocks Q2 In Review: AMC Entertainment (NYSE:AMC) Vs Peers - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNdy1hRFF2bkZRODkydFRwaWFTMGFNTE91cVNFT0huczJQYU94VTZ6TzBnaDJXOHBFRXBzOHBGdXRfcmxyb0Z1ekc0cHV0Ti1yU3BScnVrUi1WY2p6NS1hVzNlTVhNMTRHQUhIZ2d4YjdpWU9VRU14b2tCTmJMMzUzYzRkUFZ0bFZHX3hxWlM3SEtVeFlGMXdEaDRHMExfTUhvbHMtb3RjazFlTDFIVnZDUllyQWJDQmxydkhyOEdEUkg2RXJHVFJJcF8tdXBPUkVSNGFXM2k3N0RTRTVmWDVPZmd6WVlIbi1aYVViRDA2Zw?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Consumer Discretionary - Leisure Facilities Stocks Q2 In Review: AMC Entertainment (NYSE:AMC) Vs Peers - Barchart.com",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZW56SWdKaFRGWGhWYzF3WEFDNUxyWXAwbjRhdlJad2FpeVVTbHNPSG03ckdGa2Y4TlExQlVmQXdOWFRTd0ZidUVnVHYtX2k0SzNNTDNjZnBIN0ZfTTU3NncxOHVBeURQOFEwbzc4UGowSnhvQW9QN0xwVFd6N1RVNmo0dWEweU9ENW9DQ2hrZWZLNmVOcE5wZVFWY2lSYjUxaXd3MnFMVE0yRnBDcHJxMHdsSjZRWTlGRHNlcmVGa0h4WU5USGRkNW5OVEoxRHB6VVZfMWpPSQ?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Consumer Discretionary - Leisure Facilities Stocks Q2 In Review: AMC Entertainment (NYSE:AMC) Vs Peers - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMUJDOXJYaGxXUG4tMXlvNDNHVnBfLXF2TTEwc2dBZTVPT0pnUk95czUtV29lUmdiWTgxMjNzc0k5T21tdUliLVFTZTdVV2NrRHpoTkdjSVcybXVneUpNazJRNEpGOGtkWkRxM2pOSkc4cExxVjlORHc4U0VRZlk2ZEFKalJJZnpsYnRHVEN2bkh3NkZXcVc5bWwtWnVZMWxQOGlsQzE1bzZyVW9iMmZvV1VNdw?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 17,
+            "zscore": 0.57,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-15",
           "return_pct": 1.71,
@@ -5143,7 +5221,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.87,
+            "zscore": 1.86,
             "spike": false
           }
         },
@@ -5182,7 +5260,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.21,
+            "zscore": -0.23,
             "spike": false
           }
         }
@@ -5435,6 +5513,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-19",
+          "return_pct": 2.45,
+          "zscore": 1.6,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.41,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "The AI Trade Just Moved Into Your Bloodstream, and 4 Healthcare Stocks Are Winning - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeC11Z2p0bXNFRXJTNEc1WXl1ZEFiaFNHbm1Fa1p4Q2t0MGtqYnNDY1B2TlpoRVBRYnJyRExjQXFPNk4yMWY2RjhPck9lRkRmUFM1cVhkVGtOeWNPcnpKcThkT05JWW1SbGFNRXA5UnJabG1VMEl1Ujc2d1VINk9WZmRiVXJMUVpUelB5Z3lVaXA0YmZydXlKVV9kSmNaQm9rZkFOeVd1YndiMjlaQ2lZdFFxalY1dWpadHc?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Forget Eli Lilly and Novo: This Biotech Could Be a Surprising Winner in the Weight Loss Market - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU1VGdzhaS3N1R3V3M1daSG9xcW1oTTlseWVidGZRbWlwNHByMG8tSnp2dHVObzMwazJrYUtJNVVTeDl0b2RiTUprSkhoYmZ6cWRveG1qeGdfQzYyTnFnWHIzejk3LXJNRjh3Ui1yeTdobklDMGhOMlFXTkxTWi1Bb216enVNcTFuLTF2aE12TWhQQnZi?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "South Korea's Samsung Biologics Surges 9.55% as Pharma Sector Leads Kospi Gains - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGVzU5RjFsRlNqRmNJS25TaWJCay10LVNmWXFPTEY5OVJNQVZsTmdOelVtUjdxaWR6RjN4TVEyaTNRX2g0Vml3cllCSWl0NG8yOWVPUHd5WlMwYVg5cTRfUzFTalJWUVEyZUxkeE4waTF3Z1dBRWc?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 16,
+            "zscore": 0.02,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-16",
           "return_pct": -3.65,
           "zscore": -1.97,
@@ -5468,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 37,
-            "zscore": 2.26,
+            "count": 36,
+            "zscore": 2.15,
             "spike": false
           }
         },
@@ -5626,45 +5743,6 @@
           "coverage": {
             "count": 12,
             "zscore": -0.33,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-17",
-          "return_pct": 2.64,
-          "zscore": 1.43,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.14,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "RGMBS 2026 Life Sciences Innovation Forum Draws More Than USD 120 Million in Investor Interest as 23 Global Biotech Innovators Pitch in Riyadh - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQbUc5MVEyWVRDY3FYUEYtUkFJVloxU2hEeTVOOFZPUHV1c0tpTy1hNThESkJETlVwSHNSMFdfVDlvVm9oR2RGN25fbEk1Y3NLV205ZjBuNXhrbjBNd2Z5UFgwMVVrNzl2NzhVQkNKR2NoMGVYWXNrdlQ2dU01UUpLMXJPS2xEY0NuWktOYVFEYjdIS21LRFhkLW50eWs2MHVTczI2LURRN2FuNGdGVGwtcXhIUC1zcDF5eGZMZldCUzRBWnMtMzRuN1U0NVE2bFB5TVdNSmdLQUY2ZjZWTFRDYmdFMW4tdGZvTWtxd0wxYUJhLTBYeGFQOGpFdDRJMENXQW1FQi1KYXJBZ0YtZ21YbmYxQnRESnc5dGFmWmRDb2owbDJhdVhZZw?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.872,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Puma Biotechnology (NASDAQ: PBYI) director exercises 50K options, sells 62K shares - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZFdnblB5b0xGQTYzTmdjQzBTRFNKQ1Q4cFFyRTdWN040bmFINFA0Q3FvQTdPb2pYdHpiS2RYREZFckNScXhiRFdxZzRlUFZramo0T3NKNlA0MWRGNFhiVTVyUFY0aHNyZWdGQ3lma2o4Z0tZNndQN3o1SFVUaTM0d3ZNUE5jQnF3QzFTZmlGYzA3ckVQSUFpZ2gwb0p0V1ZxeEdKVEgzMkJfSEpiYkRkLVRNMmFjTjA?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "8 biotech IPO prospects testing investor appetite - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOW13dkV6cmZpODBqZklNX203Yng0Z3ptRmlhaDFaZGZUb2lJVG9zWHZKbnlSNUJfME9uRWVZYVh6NVp1ckQtbnpxbUFhekFfZWo0NG9UOXNycjVRbUhXejRBcXJNUGRGVXBiZDFDRnowb2lpSDVZVFNNZ05NN1dxRUQ2TU1Ma05TNXRaOHd4ZUw0VWpsUHNz?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.65,
             "spike": false
           }
         }
@@ -5915,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-20",
-      "return_pct": -0.62,
-      "zscore": -0.4,
+      "return_pct": -0.11,
+      "zscore": -0.1,
       "max_abs_z_recent": 1.3,
       "recent_days": 10,
       "benchmark": "BTC",
