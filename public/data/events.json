@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T15:41:00+00:00",
+  "generated_at": "2026-10-21T18:44:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-10-21",
+          "return_pct": 2.72,
+          "zscore": 1.56,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 2.06,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Bitcoin, Ethereum, XRP, Dogecoin Gain as Oil Prices and Treasury Yields Cool: Analyst Says BTC 'Building - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeUU3ejI1eHJEYVRQWGxKYjBzcG15SUNXUjlLT2trMmZvZF9peW9LSW55MG5Ca25GUXJMM2sxTVg1S3RJdTl0MjZMeERtcXE5b3ZfTi1DS1pWcjEtTnhEQWF6UzAwNFloaVFUMGF3MkhfU0J5aEFIY3QzZjZNV3pPbktZTTgtbE9QWHJTTGtfS0diU3lrU0JZb3hnV2h6bVMxcWdjQW5MMEloekV5MGd0d002Uzc1US1pMGc?oc=5",
+              "sentiment": 0.758,
+              "relevance": 0.903,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "️ ETHEREUM IS TESTING A BIGGER GAS LIMIT. The upcoming @GLA - KuCoin",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBGWl92ZWFpWVZCTEZQN01oLTJhbDN4SF9pT00wQS1kZjBhT0hBUE5jZFlzb19lSlFwekgzZWxVZHk1SGtjNHEtR205WTRzNm9Gc2NNZHdaUXlqajRDbWFJMFFQeDZOOUlmUUJNTHB4d3RVZw?oc=5",
+              "sentiment": 0.641,
+              "relevance": 0.856,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "3 Picks for the Best Crypto to Buy in 2026: Remittix, Bitcoin and Ethereum as Schwab Offers Direct Crypto Trading - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPNmltYXF4aHJxT2xYb0ZNSHBtYmdGeDN2bzBpR0ZTcU5oZEtISm53d2lVODZWVkRlb3gzakctd1NfV2FiOTl1bEo3SWhkLWVRQ3RYY3l3d3p3QktlcTFpbU10ZmhoZ09fV21rZl9STFNaSlpvLVFnSTljdHNCNGpUbVFaUS1Xc1JfYXRuWl83MUs4MFRLUHM0dHNSMVhLYTdFQ1FuSDNHT2p1RWFyUE1ZazJ0dnNscGFPQldKSVU3OVFPYmVXcEFrM0lzLWVLOHNNZzNxTkxDX1BoZzN2RmlBbzR4WVRQUnNEc3FfNlE2bkx3Zmo2Y2gyWm1fZ3J5WUZYV2FfTEJuaw?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 55,
+            "zscore": -1.0,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-12",
           "return_pct": -3.56,
           "zscore": -1.6,
@@ -441,45 +480,6 @@
           "coverage": {
             "count": 85,
             "zscore": 0.62,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-15",
-          "return_pct": -4.59,
-          "zscore": -1.45,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.26,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum ETFs see $121M inflows but ETH struggles to break $2,600 resistance amid macro pressures. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR29CVkZ3T2xTQkFBV0kwRWRMbmJ3TGR5MDN4OUh1dXlLZjRiLWxmdUJURG56c3RyNTFHNW9DS0FvQTJ4bFowaTMtZWloTjVyNGU0SG10ZFhpemZpWDFEdTFEN2JTLXJ2M0VqcXM4UmVyMHpUaDZIMC1LdnB5QUlXcWhqUmNWYTg?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Trader Machi Cuts Losses After $5M Drop in Market - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IWmF5ODU2VjdQZDdKNUxIb2RmajhhUDN1VDYtV2wtQWpibGExRy1YdU9qODRwNU9XN1kxYzRXN2RSSHhKN1BCbzNXdTF4UzRPQmp2Ry04N1UxUQ?oc=5",
-              "sentiment": -0.718,
-              "relevance": 0.887,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum, Base developers abandon effort to align account abstraction proposals - The Block",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc29LN2JoWUdKc0Mxb19ibHhFQTF3ajR6WDNPMXYycUxjVnVwaHNnR1NuWDk3OVVFNFU2SllfS2pRTm0tTTE2aGo2bGZ3SGh0U2tlMzRNaTJZYUQwODJhSktwTDV1WTBBdFkybFdjZUZ4UHg3ai13UzVVMTE3WGFsR3FpZXVYblBtRFJ4RmJ1WElpbHBYczBXdGxOWXlYbVpsZ0sw?oc=5",
-              "sentiment": -0.7,
-              "relevance": 0.88,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 90,
-            "zscore": 0.86,
             "spike": false
           }
         }
@@ -883,7 +883,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": -0.18,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -922,7 +922,7 @@
           ],
           "coverage": {
             "count": 47,
-            "zscore": 4.01,
+            "zscore": 3.96,
             "spike": true
           }
         },
@@ -961,7 +961,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 3.16,
+            "zscore": 3.11,
             "spike": true
           }
         }
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.96,
+            "count": 19,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -1705,14 +1705,6 @@
           "events": [
             {
               "source": "googlenews_finance",
-              "title": "Best Bank Stocks to Buy in October 2026 - Zacks Investment Research",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFMm1qcmU4TzU5S19ydGtxaW9pU1g1aEt3Q0VMb1U2OGstUVotVEN4N2s0TU5TNy14Sk9ucXZkblVSWUlGOEdTQ3htQzlpUnRDZVcwYk9YN01RVTJzbUh4TUtZYUU0QnBrMTdLZA?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
               "title": "Bank of America vs. Goldman Sachs: Which Financial Stock Is a Better Buy in 2026? - The Globe and Mail",
               "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOeldZZGk0R2I2emJUNnhJQTR1TXpWcWJJSWp0cXAtc0VKVW1IV19ZOUEtdUpuTGZZY3dhaldZZjVuUmRxekNOaC1ZNkV4Y1EtbFZPSjVsbGE5a1lJc2lfdDhyLWh3YUtMYTU0X0tPaVpETEFDQk16UEdGdW1zcGpVblVRX2F5Z3gwUGk2b0ZlZHVNVmNzRm9CendHUVQtSXA3QjFsTWJ5SFo4YkhIeUVpaHl5YlVWWnRTT004VVFUa1RwVndtWlliY1hjdi1KYmFySno0NGgtNGNuUmVuWkhrbmtKT2E2TE9KbGt4MmlOb2JKZ3dMdEE?oc=5",
               "sentiment": 0.44,
@@ -1726,11 +1718,19 @@
               "sentiment": 0.296,
               "relevance": 0.718,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_finance",
+              "title": "Share Market Today: Nifty 50, Bank Nifty | Oct 19, 2026 - Liquide Blog",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNnhSMkxSNTBDdmVEbTBxNUN4WkJDR3RGcnV2cmUxVzhOMjFqWFlSbXl2OW1meDVSMjJ1cGhoeGc0SmZ6NGF5SVJMODFDdUNBT0JFR3FIbUc1OWdUTmhIV0lzazhIMGxoMUIwVjN2UGdYOHlfRzRiUERXWGpzRUNnTlBWMUxmMmcwZGJNLVMtQkxmSWZvWkJZR3pHUEg4YmQwRTJ1dDQwRWFpaDFhNFA2UTBrSDN0bXZObnpUNXhEZERyM25WTS1QS1V4UVNOS1U?oc=5",
+              "sentiment": 0.765,
+              "relevance": 0.706,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": 1.82,
+            "count": 10,
+            "zscore": 1.48,
             "spike": false
           }
         },
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.4,
+            "zscore": -0.41,
             "spike": false
           }
         },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.9,
+            "zscore": -0.91,
             "spike": false
           }
         },
@@ -4101,7 +4101,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.19,
+            "zscore": 0.17,
             "spike": false
           }
         },
@@ -4113,6 +4113,14 @@
           "severity": "major",
           "market_return_pct": -0.22,
           "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Energy Fuels Falls 9% as Uranium and Reactor Names Sell Off Together; Oklo and Centrus Energy Drop 5% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUk9MM1lGZGh1dGxNTDNycVdJZ1dGdnN3QS14ekZtZGFTd3RaMUpNNThSMnlnMWsxcTNGblhfUnBGUlduOTZWeWRhYXRVdFZYOHlLZGdFcG15VkpOdUl6dXJmTXVmRWVnZGl1SktqQ2lDS2x4RHR6UE9JUXV4N0NaWW5QWkJDX3FwemlNTzFvX3dvQVluRWFHaHlhYWRQN2t5REw4Z1RvTXN4ajZESnJMOENLZzAtelNCa0QzalVack5JeVZLSDlFbzdXMUZndFdkWnV2dHozMEZidw?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_uranium",
               "title": "Australian Uranium Stocks in Focus as Nuclear Energy Gains Momentum - Kalkine Media",
@@ -4128,19 +4136,11 @@
               "sentiment": 0.202,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Australian Uranium Stocks Rally on Google-Constellation Nuclear Power Deal - IndexBox",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM01XU01RLW5aRTctX0M5eHAxQTN4cWFVSU1mTWZIOTgtUTktMTE4Q25aYkFTbXFsRlVESm50eERhWWVuV1R2UmY3VDd3UjZOWGw1S3ZnM203RVVuLVhGanN2VHpvLWNrM3E0OVVuSTdZbnlPQlNUMTV1RGdyYl9xZ3h6M1BIcWg1WGdzcHN0M0pzVEZOeUVSRlhVOTh5ekxxemlKTzE2cw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.79,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.5,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -4356,14 +4356,6 @@
           "events": [
             {
               "source": "googlenews_cleanenergy",
-              "title": "Indian Stock Market Decline: Major Losses in Energy Sector - SolarQuarter",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONmFsdnVzYWs3Mmwxc09wczFEY2t4dFhnb3FwcWI4cnFqaUtjczhaZm9vZl94aEN3R2U0U2VUQ21wcmV4d2JVS3FWcTFfWHVIVm9UUnVkd1Q3bjFHMnJNeU5vaHoxZXpOa0M0U25jNXN6MTRVcUNhNFRCeEotX2dwbFpTNDM4MW5UemQwUjlWcWg1SjJRNTN3SDZLMXlGdjQxLTVkeFhacTBxckI5Nl8xd2ttRmRLUEloQWhnWHhTM2RNNU5udGc?oc=5",
-              "sentiment": -0.16,
-              "relevance": 0.664,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
               "title": "Waaree Energies, NTPC Green, Adani Green: How renewable energy stocks performed on Sept 24 - Upstox",
               "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNb2tXUHN1Z09ZTUtmU3YweWdPOFRuYVlad3JDR2hONzBZeHg3bTNGRGVpdkhHSXZ1R3VoN3A3SjdmenZ5ZnZ3RG1YT3NPZC1kQ2NRUlpGUnJiQkx4OVZYWklIUEtRQ3RWSzhIbkxOQ21wMmR0ekVqblk4ck9EUGFiYXg0eTdNVXRhUHd5aW9vYWJUcVBjSjhnN2dTclJqa0tkNVl3WWlfRDFOVXhvcUZjNXFlXzdkcXpnN1l2V3AzTVdZTDRLOTk4TlF0elN3bndHU0dwTVczZXI4OTNlRkE2UzJnbWNOdmdCV3BSUTI4ZzVtRGM?oc=5",
               "sentiment": 0.459,
@@ -4375,6 +4367,14 @@
               "title": "Solar Stocks Slide as High Borrowing Costs Weigh on Project Financing: First Solar Sinks 8%, SolarEdge Falls 5%, Enphase Energy Drops 4% - 24/7 Wall St.",
               "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNY1V1VzVLdkJVdTJjMkN6ZU5uZTZUNkx0WHhwaGFwXzZnN29UTHZESmlfbTJXTGZfNW95ODFjWTY0alhabXUwSVR1dmhqR3hBS1ZTUzM4ZkUtSTF5OG1CUWl1QVZYWTZ5WTFEZVItMTByTTF2NUVQazhwN0RVbkpaVTFicDd6ejZ5Qzl0b2xwNXZfOWRFMVlRa0t2LTVYbmwxSThQbkJmVDB5ZUt0VU9wQkpiRTFnRWNjWHBYZkQ3ZmxGMlpxNGV3Q3FWcENHMXhSdmQzVksxN3dTTjV4RDVsU3UzNnlXNng4RE5FTXFVV3REemF2UVVoREtXSVVIODlfc3liUg?oc=5",
               "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Green Energy Stocks Slide As Nifty Falls 1.54% Amid Broad Market Sell-Off (24 September 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONmFsdnVzYWs3Mmwxc09wczFEY2t4dFhnb3FwcWI4cnFqaUtjczhaZm9vZl94aEN3R2U0U2VUQ21wcmV4d2JVS3FWcTFfWHVIVm9UUnVkd1Q3bjFHMnJNeU5vaHoxZXpOa0M0U25jNXN6MTRVcUNhNFRCeEotX2dwbFpTNDM4MW5UemQwUjlWcWg1SjJRNTN3SDZLMXlGdjQxLTVkeFhacTBxckI5Nl8xd2ttRmRLUEloQWhnWHhTM2RNNU5udGc?oc=5",
+              "sentiment": 0.586,
               "relevance": 0.6,
               "event_type": "other"
             }
@@ -4504,8 +4504,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": 0.09,
+            "count": 23,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -4583,7 +4583,7 @@
           ],
           "coverage": {
             "count": 32,
-            "zscore": 0.86,
+            "zscore": 0.85,
             "spike": false
           }
         },
@@ -4622,7 +4622,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": -0.18,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -4948,7 +4948,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.01,
+            "zscore": 0.0,
             "spike": false
           }
         },
@@ -4987,7 +4987,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.04,
+            "zscore": 1.02,
             "spike": false
           }
         },
@@ -5026,7 +5026,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.28,
+            "zscore": -0.29,
             "spike": false
           }
         },
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.32,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.77,
+            "zscore": 1.75,
             "spike": false
           }
         },
@@ -5154,6 +5154,45 @@
       "name": "Cybersecurity (CIBR)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-21",
+          "return_pct": 2.92,
+          "zscore": 1.34,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.72,
+          "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "Optiv Launches CyberBOT®, A Free Cybersecurity Awareness Training Program for Classrooms, Nonprofits and Communities - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ3VtaURGTV9FOHFFVHNhcjlxamhLTDgtdGQ4ZzAxTGJ6dXkyemNmYTZBZ1NkN1diWmtSLXNjTmJVMkJSdy1WWlNjcm4wc3F5UUlPam9QRVk1emptOXNWSDF0ajRnYWROMGtfR0RsSHJIRG83R3lQTEg2S1haakhOZWVzSWxXclh2NGI5M2FNNzZQZWJRbmkzM2dFelJ4WG91LXVPQW1PWldMZw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "upgrade"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Sevii Named as Top 25 Most Innovative Cybersecurity Companies in the World, and a 2026 Top InfoSec Innovators Award Winner - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOGlGRG83ODVJZEpkU3pudk1KcDJWdC13OUlVWGI2OUItU0lsTExrSUNrTzF1Yy1JZEF4b0lyRmpoaFNzYmdMM3NEU3VtVWdtZTloS2dvX1VIeWlHUEFzLWRzcm5hTV9ndzlRRHNGTWU1ZmNnRFdyanZzOWJVa3lQQmxuNXF5M0FFNHNJMkZQcV8?oc=5",
+              "sentiment": 0.92,
+              "relevance": 0.768,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "WidePoint Highlights Carrier Deal, DHS Upside and Cybersecurity Growth Catalysts - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaVhBQ2lrdE5DRDVJRTl1OUg2a2RsNHZGWkREZUlBSDZSREhqTFpjQlh1ZDdRbDJ2YTdRMEY5OWREdTFxZjhrTVVDRXlYWEF1aHk2NU9JZTE0TzdsVFVZV2tab2lNdEdnUVgxczB1ZURuV05YSnZkUnlMZ0t2VFVZN0dyMXhDanVFeU9BWkU1R0Z2dWlPRVg5M0V4Z3dSS28?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 21,
+            "zscore": 0.25,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-16",
           "return_pct": -4.55,
@@ -5266,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": -0.46,
+            "count": 15,
+            "zscore": -0.4,
             "spike": false
           }
         },
@@ -5347,45 +5386,6 @@
             "count": 80,
             "zscore": 5.06,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-09-02",
-          "return_pct": -2.77,
-          "zscore": -1.31,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.46,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Wall Street panicked over AI. Then came an 8-figure cybersecurity twist - thestreet.com",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1OVUVVay1iRkRTcVBXSnlCREhiVWxxV2RHbjZuQzF4dFg0U0g2TXdLUkFsNGYtbGtQZG42dkFUU0tRallpWWQxQzBYd0wzV3A1aXR3WHFuSV9BT3RIWlBwX1RMQS1jQ2h2bXNlUDA4d1A1ZHJFa0ZJc2dlbVY?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Palo Alto's $1 Trillion Warning Puts These ETFs in Focus - Palo Alto Networks (NASDAQ:PANW) - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRDNqM0pwMWhGbkhoNU5YeXdnNi1zNUdoRHF4UmdFVmYzb0ZSTGR0TDNQQkJ3VExLWC1KRlFoTUR1cEpGTmhzN2RmLWNrTDBIa0VBdEhDOGU1bGRFN0o0blh3QU5ub0FxeS04NHpYVHVock85NVRyRVE4cnB1dHhJZThwd1gwN25JSFhXekZYVU4tVWF0U0dBcER5WUVaTF9UYUM3WE1UcFVoQmxPcW9JSVg0OXFJYmdUbnJ0NDI4M0k4TWtZMzg1Q2xnVQ?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Zscaler Stock And Two AI Cybersecurity Names Retail Investors May Be Missing - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObFRfRUROcHVqSmhPNklCbFpNeXdXY2pqelp0VXQzbHViUlpQU0VYRVU5OG5uVVYxb2lDMmtSYXRfeVR6Tm9RZnBoQ1IwOXB3eUs0TWZsMFdiOUd1S01yNUw5bzc3NnBoRHpIUldFRkZxS1hlYWVEaEhTU3NUVUtfMEJHQzRpOEtobUtxNVVOMk04VVlHXzJMV2VqT2w1aHJncVN2c1NmUGkxOW9qR2xKV3JsbEpCYVNhdlJYd0dOV2hsaThYUlN5Y2h30gHPAUFVX3lxTE9uNGV6Nkxhamtlb3R0TF9yZG9IMURkOXYxRExkMXF6QXBWcjBqSlRwb1JidXFKZEJFWEFzc081QjZ4VTBqQkJhS21CT1hEREdVYzRkVlFsNnBzTm93Q0ZFa0p4dmNDX2Z2Q25PVmg1ZU1zeXJiaFlSQm1ub0lnMnc1TmlpRlFIVUVpdDlVcUNlTENSQ0ZKdFI1SlhnRnFmZ3JTekc3TFh3ZWRUcjVObGh0eV9rNTQ1X1c4cXQyQU85M1l6a3RudXFrb0YwcVZwZw?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 26,
-            "zscore": 0.83,
-            "spike": false
           }
         }
       ]
@@ -5876,8 +5876,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-21",
-      "return_pct": 1.91,
-      "zscore": 1.07,
+      "return_pct": 2.06,
+      "zscore": 1.16,
       "max_abs_z_recent": 1.3,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5885,12 +5885,12 @@
     },
     "equity": {
       "date": "2026-10-21",
-      "return_pct": 0.51,
-      "zscore": 0.79,
+      "return_pct": 0.72,
+      "zscore": 1.12,
       "max_abs_z_recent": 1.9,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
