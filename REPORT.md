@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-20 07:16 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-21 07:17 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Rollups-as-a-Service (RaaS) | hot | 0.95 | +4.2% | $201M | altlayer, espresso, ankr |
-| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.95 | +5.0% | $672M | sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 3 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.95 | +5.0% | $672M | sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
-| 4 | Optimism Superchain Ecosystem | hot | 0.94 | +7.0% | $2.5B | worldcoin-wld, optimism, celo |
-| 5 | Bridged-Tokens | hot | 0.93 | +2.1% | $411M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
-| 6 | Decentralized Identifier (DID) | hot | 0.93 | +6.2% | $2.7B | worldcoin-wld, ethereum-name-service, project-galaxy |
-| 7 | BTCfi Protocol | hot | 0.93 | +8.3% | $878M | pendle, bedrock-token, babylon |
-| 8 | AI Meme | hot | 0.89 | +3.0% | $448M | fartcoin, turbo, zerebro |
+| 1 | Celebrity-Themed | hot | 0.99 | +29.8% | $163M | yzy, aura-final-boss-2, bulla-3 |
+| 2 | Yield Aggregator | hot | 0.96 | +14.0% | $407M | convex-finance, yearn-finance, doppler-finance |
+| 3 | Airdropped Tokens by NFT Projects | hot | 0.95 | +7.9% | $769M | pudgy-penguins, apecoin, loaded-lions |
+| 4 | Zoo-Themed | hot | 0.93 | +7.5% | $103M | peanut-the-squirrel, moo-deng, bnbtiger |
+| 5 | Optimism Superchain Ecosystem | hot | 0.92 | +7.0% | $2.7B | worldcoin-wld, optimism, celo |
+| 6 | bStocks Ecosystem | hot | 0.92 | +5.6% | $1.1B | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
+| 7 | The Boy’s Club | hot | 0.89 | +6.8% | $2.3B | pepe, ape-and-pepe, based-brett |
+| 8 | Decentralized Identifier (DID) | hot | 0.89 | +6.6% | $2.8B | worldcoin-wld, ethereum-name-service, project-galaxy |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Crypto-Backed Tokens | -16.6% | $357M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| Robinhood Chain Meme | -14.7% | $485M | cash-cat, artificial-inu-3, hood-sword-inu |
-| Payment Solutions | -11.4% | $2.0B | dash, stable-2, zebec-network |
-| Prediction Markets | -11.1% | $6.0B | rain, drift-protocol, dexsport |
-| Options | -10.6% | $6.3B | rain, derive, hegic |
+| RUB Stablecoin | -64.8% | $160M | a7a5, rubx |
+| Morpho Ecosystem | -5.1% | $1.6B | morpho, steakhouse-usdc-base-morpho-vault, steakhouse-usdc |
+| CeFi | -3.1% | $347M | swissborg, vision-3, momentum-3 |
+| BTCfi Protocol | -1.8% | $860M | pendle, bedrock-token, babylon |
+| Crypto-Backed Tokens | -1.6% | $351M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
