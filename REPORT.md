@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-21 07:17 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-22 07:17 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Celebrity-Themed | hot | 0.99 | +29.8% | $163M | yzy, aura-final-boss-2, bulla-3 |
-| 2 | Yield Aggregator | hot | 0.96 | +14.0% | $407M | convex-finance, yearn-finance, doppler-finance |
-| 3 | Airdropped Tokens by NFT Projects | hot | 0.95 | +7.9% | $769M | pudgy-penguins, apecoin, loaded-lions |
-| 4 | Zoo-Themed | hot | 0.93 | +7.5% | $103M | peanut-the-squirrel, moo-deng, bnbtiger |
-| 5 | Optimism Superchain Ecosystem | hot | 0.92 | +7.0% | $2.7B | worldcoin-wld, optimism, celo |
-| 6 | bStocks Ecosystem | hot | 0.92 | +5.6% | $1.1B | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
-| 7 | The Boy’s Club | hot | 0.89 | +6.8% | $2.3B | pepe, ape-and-pepe, based-brett |
-| 8 | Decentralized Identifier (DID) | hot | 0.89 | +6.6% | $2.8B | worldcoin-wld, ethereum-name-service, project-galaxy |
+| 1 | Crypto-Backed Tokens | hot | 0.98 | +2.1% | $358M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| 2 | Robotics | hot | 0.96 | +2.6% | $867M | virtual-protocol, geodnet, peaq-2 |
+| 3 | Bridged-Tokens | hot | 0.91 | +0.0% | $424M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
+| 4 | Fiat-backed Stablecoin | hot | 0.91 | +0.3% | $283.3B | tether, usd-coin, usds |
+| 5 | AI Framework | hot | 0.90 | +1.2% | $1.9B | virtual-protocol, unibase, eigenlayer |
+| 6 | Stablecoins | hot | 0.90 | +0.3% | $298.2B | tether, usd-coin, usds |
+| 7 | Trump-Affiliated | hot | 0.90 | +0.4% | $6.3B | usd1-wlfi, world-liberty-financial, official-trump |
+| 8 | USD Stablecoin | hot | 0.89 | +0.1% | $295.0B | tether, usd-coin, usds |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| RUB Stablecoin | -64.8% | $160M | a7a5, rubx |
-| Morpho Ecosystem | -5.1% | $1.6B | morpho, steakhouse-usdc-base-morpho-vault, steakhouse-usdc |
-| CeFi | -3.1% | $347M | swissborg, vision-3, momentum-3 |
-| BTCfi Protocol | -1.8% | $860M | pendle, bedrock-token, babylon |
-| Crypto-Backed Tokens | -1.6% | $351M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| Robinhood Chain Meme | -16.4% | $415M | cash-cat, artificial-inu-3, degen-base |
+| Metagovernance | -11.5% | $233M | convex-finance, dinero-2, index-cooperative |
+| Binance Wallet IDO | -10.6% | $2.2B | midnight-3, akedo, zama |
+| Celebrity-Themed | -8.6% | $150M | yzy, bulla-3, aura-final-boss-2 |
+| Trading Card RWA Platform | -8.4% | $308M | collector-crypt, collect-on-fanable, ready |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
