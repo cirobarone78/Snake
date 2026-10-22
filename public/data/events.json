@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T06:54:00+00:00",
+  "generated_at": "2026-10-22T09:41:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-10-22",
+          "return_pct": -2.77,
+          "zscore": -2.24,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -2.77,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "China seeks to seize 61,800 BTC tied to $5.7 billion fraud scheme - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcmh3OEsxWTNaVS1ESm1PbmpieXg1cmFBZHJPS2RMSS1xRkpTQ0x1d3F0bXhSUWdlTktqd3paM2FwUWhCcElWbjZpdmRvZXpMVHJrdXFIbDhsajdCTGM5cm5ETFZkV29BMDV5X0l6RS1TRFNiX1laYUh4b1F1UEZrQ09NdllzalNCTE8wQTYzUUJ1N3ljTlFnNUpGSVE2Z2YyeXFuYlgwLVRINFFzdW90NQ?oc=5",
+              "sentiment": -0.586,
+              "relevance": 0.834,
+              "event_type": "legal"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Is This Cryptocurrency a Potential Millionaire-Maker? - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVmtueTJSMVJ0QjlUOElDQ3dVUnhMYWdLQTNVNDdrbG1Zc25YMFNxSWN0enRaaWlRVVp1M0c5bTlWQkVRbm9nRzNuZDJrazRzRU5RZkFFWFdTbjR2TkZGelRKVWc0ZTNLVkdlNVZUYU5OV3A1UlJwZkdSTVN2VGRDSnNlV2kySWtnbm1TdUxWXzhOcTZkYnpMRA?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNklOMzdjQ1FwMUdDV3kxMXBBNTd6Q3dXZHlTRlVLcjVBbFhKOU5Yclh6UHFoRHFueGdrLTc0OFdRMTR3bHFPbGJqYnp3dHA3Rk44ak5Da1o3N0FWeE04OEZrNldGa1ZLdnZPazE2MHJFbFBPWC1UanZDUlFmSGFFcW5IanRPVUtOMHJtV3lLTWJXRTJ2Q1FzakRJc0ZKVjRqNTllNXNmcm5XX2p1ZWlxVmppR0JmWEthVDdWeldMa2xzdw?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 25,
+            "zscore": -3.35,
+            "spike": false
+          }
+        },
         {
           "date": "2026-09-21",
           "return_pct": 6.73,
@@ -202,45 +241,6 @@
             "zscore": -0.41,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": 7.26,
-          "zscore": 3.54,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 7.26,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin prices saw their best week in years, & Trump's CLARITY Act push is only one catalyst - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYWsxb3FzMFhyeDVMd19tOU01N3prMFdTY3FQMzJ6RUN1QkxPVkNvRF9LTl9pdkp6UEdPWkRZZy1ad1ZZSEc2bzlEc0tkbDFZT0w4N1RNa0NXNnpYMzEyWWduZEF4QzBBWkwySnZGbW9GUFFqXzVjS2xZYV9qZUFSeA?oc=5",
-              "sentiment": 0.824,
-              "relevance": 0.93,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Stocks Gain as Bitcoin Heads for Best Week in Over Two Years -- WSJ - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZW84SDN0eEk3V3RtRGtxdUZoZk1hVUF1VENKY1A0Z2RXTXNMTXlPV2l2NzBZdnk1elJXY0ZITnFnRkFlQS1SQlZaV3BmY2ljUmFkdF9BQlltTFE4RXdKUjhGeWtCeXNtVGs4Tl9Hc3JSYjF6LWxJQ251dWt1LURjZTNHazNHbTI2THlWLWlnUXc1ZTQ0ejAxckdn?oc=5",
-              "sentiment": 0.823,
-              "relevance": 0.929,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin tops $77,000 as best week since 2023 pulls altcoins along for the ride - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONkltVnZDaGc3Y2xSc2l0aW81NG5CWHBoQjl1alhsSWs3UkZZc2N6OThLSmM2QzlXYmlmZy1Yblc3U01UbVRkVThNa21uTHR0clFyMVF4RzlUVTQ3UE9oWmNxdTRvenV2eU80dnkyMXlROUVRU2xEb0ZBejdBT0R4eGRYLXVMTzlDMzJmcnpGczI5MnhyMi12X0VsN2J0MUdHUW9CS19CYjJMTHVZdmlmVEwyblYyT0tULUJMNnBfdDhmQQ?oc=5",
-              "sentiment": 0.818,
-              "relevance": 0.927,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 165,
-            "zscore": 1.28,
-            "spike": false
-          }
         }
       ]
     },
@@ -249,6 +249,45 @@
       "name": "Ethereum",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-10-22",
+          "return_pct": -2.99,
+          "zscore": -1.59,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -2.77,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Hits Record High, But Earnings Drop: 43.8 Million ETH Locked! Here Are the Critical Data - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BNExUV1RLNW1ZUzg3dFBua0gxa0tTaEw2NjVWTVJxOGV2bFc3WmNWa0FNd1Z2VTIybTVSUm1mcjNNVHVmVDRqZ1M5dFg1RXMxNTBWUEZ2Z2Y5dw?oc=5",
+              "sentiment": -0.709,
+              "relevance": 0.684,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Price Disappoints: Bitmine Fails to Offset ETF Exodus - Cryptonews",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLWNtZld3dUppOC1pSy15WldHWHJON2VZZ1ZjNU1EWFNzM2YzdzkyMU1PZV9oV1lLWTQ4aDVYQnZaUHlucWJ3bDNwblZveXg3d0NCY1dKWElEdFBiTnJHMUsxYzQ2YWpwdUgxS3ItTUdSb01rNlVuVDBtOXYyTUx6bEZsNXM3SGRfRmxLQ2V2QVVQcHdUMlJrbmM4M3RCUV81VkhaeEZMUnY?oc=5",
+              "sentiment": -0.66,
+              "relevance": 0.664,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Price Prediction: Tom Lee Backs $10,000 ETH as AlphaPepe Puts a $1 Forecast Against Its $0.03402 Entry - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxObXB5d040eUhBZmgtOFJkUTk2eWNCZmZKU09GaXJscm1hQ1laQWxtbU9ScGVMdDRwWWdlT1NSZ1laampYTW1tNDZBZS1XNzRaMEItTmQ5THJtaHdzUEZveVg1cnNLVW94ZWtBc2s1WFpudmFPRHNhSWdzV1laTXUxY1ZkandDMk13RDdtVVY1S1lwS1ZYSWtOTWFtM0xkaUFidjB0bXR6VDNEZi1keHlISktZSVQwMHdERFA2V1Z2RWlWRzRtN0VXMHVRZ1NlY2p6cHBlVVM1RWd4bmlUZ1ZOUklOWTR5RzRtRnhrckxITmhHeXlFY2dmaGl0Vy1mQzRIcFB0TmJhWXIwWng2?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.621,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 16,
+            "zscore": -2.92,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-12",
           "return_pct": -3.56,
@@ -441,45 +480,6 @@
           "coverage": {
             "count": 85,
             "zscore": 0.62,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-15",
-          "return_pct": -4.59,
-          "zscore": -1.45,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.26,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum ETFs see $121M inflows but ETH struggles to break $2,600 resistance amid macro pressures. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR29CVkZ3T2xTQkFBV0kwRWRMbmJ3TGR5MDN4OUh1dXlLZjRiLWxmdUJURG56c3RyNTFHNW9DS0FvQTJ4bFowaTMtZWloTjVyNGU0SG10ZFhpemZpWDFEdTFEN2JTLXJ2M0VqcXM4UmVyMHpUaDZIMC1LdnB5QUlXcWhqUmNWYTg?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Trader Machi Cuts Losses After $5M Drop in Market - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IWmF5ODU2VjdQZDdKNUxIb2RmajhhUDN1VDYtV2wtQWpibGExRy1YdU9qODRwNU9XN1kxYzRXN2RSSHhKN1BCbzNXdTF4UzRPQmp2Ry04N1UxUQ?oc=5",
-              "sentiment": -0.718,
-              "relevance": 0.887,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum, Base developers abandon effort to align account abstraction proposals - The Block",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc29LN2JoWUdKc0Mxb19ibHhFQTF3ajR6WDNPMXYycUxjVnVwaHNnR1NuWDk3OVVFNFU2SllfS2pRTm0tTTE2aGo2bGZ3SGh0U2tlMzRNaTJZYUQwODJhSktwTDV1WTBBdFkybFdjZUZ4UHg3ai13UzVVMTE3WGFsR3FpZXVYblBtRFJ4RmJ1WElpbHBYczBXdGxOWXlYbVpsZ0sw?oc=5",
-              "sentiment": -0.7,
-              "relevance": 0.88,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 90,
-            "zscore": 0.86,
             "spike": false
           }
         }
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.85,
+            "zscore": 1.83,
             "spike": false
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.98,
+            "zscore": 0.97,
             "spike": false
           }
         },
@@ -1085,7 +1085,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.52,
+            "zscore": 0.51,
             "spike": false
           }
         },
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.69,
+            "zscore": -0.68,
             "spike": false
           }
         },
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 118,
-            "zscore": 5.2,
+            "zscore": 5.19,
             "spike": true
           }
         },
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.97,
+            "zscore": 0.96,
             "spike": false
           }
         },
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.44,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.9,
+            "zscore": -0.91,
             "spike": false
           }
         }
@@ -1962,16 +1962,16 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Dow outperforms as Wall Street rises, healthcare stocks lead gains - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdmMybVh5YTdzU09XVXBpYmoxOXlyUHhoMFJ1aDRzTENGRFVHQmc0OXpZZ0k5NjFBNmVxREJ6SWlQQk1tNDR3d0JTUzFObGpjWHBEYl94ZldLdjl2ODdiR1dqRzFTVGlCZFRKVEk2NUt1Vy01UTZZdlNXWjNpWWhoWER2dnBUaVNfb2syMzQtMGI?oc=5",
+              "title": "US STOCKS-Dow outperforms as Wall Street rises, healthcare stocks lead gains - Devdiscourse",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYVZGVDhoaXJIZU84aEI4THlSZ0tuQVA3YmQ1Zkl0MmZUbFdhdm1LcERKRk5HREN5M3c3YWlkTVo1WERJT3lkUjNNZ2hTVWdQcFJTSVVFMFBzOU50cmJsNVI4eWcybURRY3JNLWlYYWZNRVNjZk5IRzZ2eUxvTHVNc0ZiY2ltSE53MXhONngyd0N4bm9kM1VaWTZvVEVYUUo4VmlEWGJZdlJmd1JIZXBSdURmMTA4bE5zczczcGFySVdab3hzaE1JQUFHdEFQQdIB0wFBVV95cUxQZktnM0wyWVFVU2g3ZVFxN3YxTU5JbU9SZGNQN0dPY0R1UmpPdE1MWm92NFdzYUM4RE5ZZTJ5NkIxUzEtVXNRRVZhLXlRMnlPeWR0RlNsTmtOOTI4N1JGc2RyRG4tVDM0ZEQ0ZkN3eXcxa3R3U0gweDZ4OFFtQXhrZjdOU0liQ3pTcXkxSHdFbXdwdy1hLTRlSmJxN3d3aC1IUnJYcWIwY2U5YWJxUjRmQWZMeDJmUWlvSVdUMEs1Ui1FTGJKSkNMbnU0MDlObkdDT0tz?oc=5",
               "sentiment": 0.34,
               "relevance": 0.736,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": 1.08,
+            "count": 11,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -2187,14 +2187,6 @@
           "events": [
             {
               "source": "googlenews_industrial",
-              "title": "6 Defense and Industrial Stocks to Buy and Hold Through 2030 - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeDdWUXdEMUx1d0k2NlNpNVBJZjhDUC1qVzNzaVEwS2dvNi16Zm1oUU9HYmNLcDBoSTJYTks1Yy1RZ2Vib2ItOHFJMDNNNmlMMWhHLW1fZXExWjFnOHFzVzR3YWxodmFIT2wxS2lncVJKZEM4TVRHcDlRazFCOFVyRFVoOTN4N2lUcmtCRFBFQXBLclh6Mm1jTQ?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
               "title": "Caterpillar Drops 6% as Industrials Sell Off With Long Yields at a Two-Decade High; Deere Falls 4%, PACCAR Eases - 24/7 Wall St.",
               "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWW1VdmhSWmgwUmFzc2VsNUVMd0tkeTVzZmF1ckNLQnN1RU93SXkyTE1kMWxzd2EwcjJaeXYyOUt1Mk9jZlBoMkhfcllpRVZta0R5WktwSDNFc29yd09Cdk9sQUlHSTJteUNTTk84bktIQmZuSEhhZ29UdTNla0FmUmdULUkwVmNIQXhfVmczZVJtY05WQXl6WThPVmhVY1lFSzRMQWpIR010YXVjWFhlYnRZQWZJVGsxSTZsMEp4Vi1yM2FhLUVLZWgxeEVFYmtiemtCb2dDT1NQZHJ4WU5mQXF5Q215Z3c?oc=5",
               "sentiment": 0.318,
@@ -2208,11 +2200,19 @@
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_industrial",
+              "title": "Is Albany International (AIN) Stock Outpacing Its Industrial Products Peers This Year? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdDZjOHNER2JQOXhuOTBJLVcxTHZUX1ZkUmJtWGNHcWJzUkZLcXd0Y3hWZDkyeFBfeWhVdVhYOXk1TUNpVkc1THJta0h0NUJuR1dNQ0JWR2xWcWNZNHBoQmQwY2xWUHk2aGx2TkVZUXdqanl3Si0tZ2ZkOUhhNHVKREVGNTVtQ3VEWU1rTkF2bVByeDBRblhTYjgzZTlYeXFnLW43aTZWVDQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": 0.43,
+            "count": 12,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -2414,7 +2414,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.22,
+            "zscore": 1.27,
             "spike": false
           }
         },
@@ -2452,8 +2452,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 1.26,
+            "count": 6,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -2616,7 +2616,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 1.86,
+            "zscore": 1.83,
             "spike": false
           }
         },
@@ -2654,8 +2654,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": 1.09,
+            "count": 13,
+            "zscore": 1.3,
             "spike": false
           }
         },
@@ -3812,16 +3812,16 @@
             },
             {
               "source": "googlenews_semis",
-              "title": "Micron Takes Another Hit as China Chip Fears Flare - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWVVvTWcyTndZSTNGYUNNcmQ2bGxNMlZOMFozS2YtYjR6ejJHc1BjM3NLT0xLNmtiZnV4MUE3SnVGNElPc01QNk5DTHAxVnliR0xJbW1RWUNTVm1kdDVHWlNTR0NHYnNPclZHYVN5Tjk5cW9DTkxCTWkyNWxpWHFjb2thNWNGR2tFSjQ1NGNYWTFNcFRkZzJDaGhnX3V3RmdNZkpidUdob19CbVBDNmhR?oc=5",
+              "title": "Nvidia, AMD, Dell sink in global tech rout on AI funding worries - CNBC",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaGhRTkZ4cjB1WFcxY0ZaekZ0anhJSW1MYlRMVV9pZzFacHJySWt5QkZaSEFoMmVBbVZKRzc0TmloQXkydmRSaGs5RW1vQjIyZ1hhQzFBSXN1ZGlJVmI1b2VKU1FIaXlZVTJBZHZZMUkxemJ1ZWZUY3E5Q205RWp1WFItS2FJMEx2Zjg4ejRHQy11UjRMbkFPSXJnSkluT01nMVNKbHRn0gGrAUFVX3lxTE1fQkI2UFBBMEExelZWTnRzQ1lzaE1Hdms2R3hjLW9tVmdsZ1hWNGdxRVE1VnlZWVBQU1ZZTW56SUJrYVNYX25QTFFOMExfZmpZY1RCRkpwZmFZX3d6T1BCdU5Rd3ZsME5zdHJhUFRkNG5KUHdkNUsyRHBjX3I1VWNpZkhWRVZ4eFZlS3Jhc1ZoS1dBbVpPRlFyTkRUd1pRNDNqMHNDTWgzV1VGaw?oc=5",
               "sentiment": -0.421,
               "relevance": 0.769,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 72,
-            "zscore": 0.74,
+            "count": 73,
+            "zscore": 0.78,
             "spike": false
           }
         },
@@ -4264,7 +4264,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.03,
+            "zscore": -0.05,
             "spike": false
           }
         },
@@ -4746,7 +4746,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.49,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -4758,6 +4758,14 @@
           "severity": "notable",
           "market_return_pct": -0.22,
           "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "6 Defense and Industrial Stocks to Buy and Hold Through 2030 - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeDdWUXdEMUx1d0k2NlNpNVBJZjhDUC1qVzNzaVEwS2dvNi16Zm1oUU9HYmNLcDBoSTJYTks1Yy1RZ2Vib2ItOHFJMDNNNmlMMWhHLW1fZXExWjFnOHFzVzR3YWxodmFIT2wxS2lncVJKZEM4TVRHcDlRazFCOFVyRFVoOTN4N2lUcmtCRFBFQXBLclh6Mm1jTQ?oc=5",
+              "sentiment": -0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_defense",
               "title": "Cathie Wood’s ARK Invest Loads Up On Joby, Archer Aviation As Airtaxi, Defense Prospects Grow - Yahoo Finance",
@@ -4773,19 +4781,11 @@
               "sentiment": 0.128,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "6 Defense and Industrial Stocks to Buy and Hold Through 2030 - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMWxIVkpZckxTV0hGdjFBT1l5WUJqZkliSkZDVUYtTXd5Z0VSTm9aaDJjMktwWXl3aHY1blpHS0prWUpHX0RldGJHVlNucXlsX1htMTl2YWwzTnlXUXYwcFk1X0I2c19jT2tUNC1ibE1pUW0tLUhVeDJpYm5BM1Rycw?oc=5",
-              "sentiment": 0.128,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.67,
+            "count": 4,
+            "zscore": -0.47,
             "spike": false
           }
         },
@@ -5827,7 +5827,7 @@
           ],
           "coverage": {
             "count": 41,
-            "zscore": 1.25,
+            "zscore": 1.24,
             "spike": false
           }
         },
@@ -5876,9 +5876,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-22",
-      "return_pct": -0.58,
-      "zscore": -0.4,
-      "max_abs_z_recent": 1.3,
+      "return_pct": -2.77,
+      "zscore": -2.24,
+      "max_abs_z_recent": 2.24,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 8
