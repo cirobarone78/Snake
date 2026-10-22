@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.8% | 33.3% | +21.5 pp | 51% | 1.000 |
-| 2 | LINK | 39.3% | 33.3% | -5.9 pp | 62% | 0.500 |
-| 3 | SOL | 48.9% | 33.3% | -15.6 pp | 73% | 0.000 |
+| 1 | POL | 11.6% | 33.3% | +21.8 pp | 44% | 1.000 |
+| 2 | LINK | 39.4% | 33.3% | -6.1 pp | 60% | 0.500 |
+| 3 | SOL | 49.0% | 33.3% | -15.7 pp | 71% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -24,14 +24,14 @@ Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene
 
 ### Il token cattura valore dalla rete
 
-**AAVE — Aave**
+**TRX — TRON**
 
-Protocollo di prestito on-chain fra i più grandi per depositi.
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 6.0 anni.
+- **Età**: 9.2 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -115,7 +115,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - stablecoin o token ancorato: 20
 - capitalizzazione sotto la soglia: 20
-- volume troppo basso rispetto alla capitalizzazione: 17
+- volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
 
 ## Limiti
