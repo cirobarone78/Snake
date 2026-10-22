@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:43:00+00:00",
+  "generated_at": "2026-10-22T21:37:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -3.39,
-          "zscore": -2.75,
+          "return_pct": -3.17,
+          "zscore": -2.57,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.39,
+          "market_return_pct": -3.17,
           "events": [
             {
               "source": "googlenews_btc",
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 77,
-            "zscore": -1.04,
+            "count": 89,
+            "zscore": -0.5,
             "spike": false
           }
         },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -3.85,
-          "zscore": -2.11,
+          "return_pct": -3.32,
+          "zscore": -1.79,
           "classification": "market-wide",
           "severity": "notable",
-          "market_return_pct": -3.39,
+          "market_return_pct": -3.17,
           "events": [
             {
               "source": "googlenews_eth",
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 53,
-            "zscore": -1.09,
+            "count": 58,
+            "zscore": -0.84,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -4.54,
-          "zscore": -1.23,
+          "return_pct": -4.4,
+          "zscore": -1.2,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.39,
+          "market_return_pct": -3.17,
           "events": [
             {
               "source": "googlenews_fed",
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.59,
+            "count": 15,
+            "zscore": -0.18,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -4.7,
-          "zscore": -1.17,
+          "return_pct": -4.47,
+          "zscore": -1.1,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.39,
+          "market_return_pct": -3.17,
           "events": [
             {
               "source": "googlenews_fed",
@@ -1215,11 +1215,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -3.37,
-          "zscore": -2.51,
+          "return_pct": -3.29,
+          "zscore": -2.45,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_tech",
@@ -1239,16 +1239,16 @@
             },
             {
               "source": "googlenews_tech",
-              "title": "IBM Is America’s Worst Big Tech Company - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNellwY2V2eUUyaGtWZXRPTmcwWTNRWTY3MkEwMHlIek5OQVdQS2M4YUtJeFZCMEUzQ09leXdIOVZ3NWFuRHFmMHR0UjJzVWJydnNhaGRnRU00cXhJeE9zTFZHc2M4MHIxRVVQT2ptdDJrWEhfQW5pZFN3NjFiblhoMzF5MjRmV0wzTWxheURHdHM?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "other"
+              "title": "Update: US Equity Indexes Retreat as AI Trade Falters, Crude Oil Surges Amid Iran's Invasion Warning to Mid-East Neighbors - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcWp0eGd2eXNNQ2xwb3hyOFY3dkFLQTdaam1jM0VVcHM0WHFVT2tKRF9uaVhBUVZILWtaRllOUUxNUDI4ZkstSjlsaHBULWlmMzJMeG9iZmdGWVVPYmhRRGFGcEtTTnhFRV9haDNCX1NPbjdZcmhZMkI0dWw5Zm1yd0gwd1BWOGowSDhSN0M1bm1fVHB0N2tBTA?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "geopolitical"
             }
           ],
           "coverage": {
-            "count": 50,
-            "zscore": 0.47,
+            "count": 64,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 118,
-            "zscore": 5.18,
+            "count": 119,
+            "zscore": 5.24,
             "spike": true
           }
         },
@@ -2178,45 +2178,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-10-22",
-          "return_pct": -1.52,
-          "zscore": -1.87,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -1.45,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Gold Falls Below $4,100, Risks Dropping to $4,000 as High Oil Prices Reinforce Expectations of High Fed Rates - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNcHlvak5WNTJReTBzVFRYQ3VjTlQ4U2VMYm5nZlVpUHgtR1J1NWI0enhaQnc1UmdpeWNZMFlCWUhnU0Eyd3VZV1U1OTFkMHcxWjJZSVdrbktMS0VFLTlITWFmaHJRY1NfVi12cW5tSFk4cDBxWXltTWk4YWhIc25ibE5TTU5rQ2FDUHYzSHVSV0Rja2FpZGkxaUZGQTRxWjIxSzBudFJjeWRUZWc2R19zakVMVHFZQk1IM3c?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Are Industrial Products Stocks Lagging AZZ (AZZ) This Year? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0ZkNzZBQjRIdWNGdTZ2bC1lUkdhdEJlRk4xZXhJQm0wazNRMG8zamMxYXJYTW9iU212X0xSdGg0WVhlSEs3OHV0ejQ5WnVrUFh4blU3ejdCdUxzTGZfN0dVMDMyOVU5cEVNbW5RTVRnV2R3ZG5CejdDRG56YkJmUkNoX2pZaUpwelktXzJBbUlKdFU3QW9HOVFjZDgtcU1CTzNiWEFn?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Fed’s Dilemma: Can Markets Damp Inflation or Is Another Rate Hike Necessary? - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdWN5TzJiNG5XMFJvcTdNbUxMTHd2MllzY05iR0V4UklVV20wRTYtMlZ1YzVSQkwyZ2p5OFkxNFNTM19DVjhFZTI3UkdESFJkMm5CSFV5cXVqR0VkYk5jZzdiZ2c4VUEtcVJ2eFZHTjdDUVhnSVRzMVBodGQ2YkZmcF9vZXJfQQ?oc=5",
-              "sentiment": -0.178,
-              "relevance": 0.671,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 10,
-            "zscore": 0.66,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-07",
           "return_pct": -2.18,
           "zscore": -2.5,
@@ -2420,11 +2381,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": 1.6,
-          "zscore": 1.57,
+          "return_pct": 2.07,
+          "zscore": 2.02,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_utilities",
@@ -2661,11 +2622,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": 2.74,
-          "zscore": 2.97,
+          "return_pct": 3.31,
+          "zscore": 3.62,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_staples",
@@ -2693,8 +2654,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": 0.36,
+            "count": 11,
+            "zscore": 0.85,
             "spike": false
           }
         },
@@ -3624,45 +3585,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-10-22",
-          "return_pct": -1.95,
-          "zscore": -1.52,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -1.45,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Gold Falls Below $4,100, Risks Dropping to $4,000 as High Oil Prices Reinforce Expectations of High Fed Rates - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNcHlvak5WNTJReTBzVFRYQ3VjTlQ4U2VMYm5nZlVpUHgtR1J1NWI0enhaQnc1UmdpeWNZMFlCWUhnU0Eyd3VZV1U1OTFkMHcxWjJZSVdrbktMS0VFLTlITWFmaHJRY1NfVi12cW5tSFk4cDBxWXltTWk4YWhIc25ibE5TTU5rQ2FDUHYzSHVSV0Rja2FpZGkxaUZGQTRxWjIxSzBudFJjeWRUZWc2R19zakVMVHFZQk1IM3c?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Fed’s Dilemma: Can Markets Damp Inflation or Is Another Rate Hike Necessary? - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdWN5TzJiNG5XMFJvcTdNbUxMTHd2MllzY05iR0V4UklVV20wRTYtMlZ1YzVSQkwyZ2p5OFkxNFNTM19DVjhFZTI3UkdESFJkMm5CSFV5cXVqR0VkYk5jZzdiZ2c4VUEtcVJ2eFZHTjdDUVhnSVRzMVBodGQ2YkZmcF9vZXJfQQ?oc=5",
-              "sentiment": -0.178,
-              "relevance": 0.671,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Gold Falls As Oil Price Rally Revives Inflation Fears Ahead Of Fed Rate Decision By Kedia Advisory - Investing.com India",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUVRzVG9qZC1GUkpZbEVoQmRPMHllY0ducVZoSWdIcEZON20wWVJXUDh3NlFGdXZhV19wbFVkNnZzZjc2MGVKandSbUItZmttYV90b1hrUS1JTWdkV0lXQ2Z2MEdWaU5MSVBEbEx6eldWeXRaR3dyRUZZQVBYVXdkSGM0YkE3c0dRNmFnNG11M0dFQy1fb0xqbGZldEJkS05WeE1oYnhTNVdSTXdXZkFvRlZmbkJpU1JlSTRheWhFeVl3aHdDMURmMWtXbW1JTFdK?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.621,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": 0.02,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-16",
           "return_pct": -1.89,
           "zscore": -1.55,
@@ -3866,11 +3788,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -5.76,
-          "zscore": -2.79,
+          "return_pct": -5.99,
+          "zscore": -2.91,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3890,16 +3812,16 @@
             },
             {
               "source": "googlenews_semis",
-              "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: Crossmark Global Holdings Inc. Cuts Position - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQbEh1elVNSFhGbzBaemM1NnZ1cUpUMW96WHVNR296OWhYcjRZMkxLblhkbXRSTWxoclFiOW1aMEg2dkRwS2hreWVRT2dFTjVTczBqMXY0dUYzM0VPX1NCX1dvbU1iVTdfd1c3OFRTQVQ4Tm5URHA3SXBMN29KU1NIRFJkQWxqOFdLaU9FZWZhd24xWHJJOEtkWEJWVWxJVTdHdXB6WExXVzU0T29sZURtSVR5VkdRYjZqNlRKdEFVTVdIRUhrT0VzcE43Unc1R05QVnNxWXhBSXNQalBybnE4a1pMVXNaZW41WHlBcHdOT2pEa3c?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
+              "title": "Chip Stock Rebound Comes Undone After Lam Research Stokes Spending Fears - Barron's",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVGdUaGljZHVHZjlyWWQ4TmpoeVQ3RWJzUDZ6cmV6bmxpbmc0OTV1OUlsSHBCc0VSdjlEMFNBN29uanF1MjE4Yl83US1YWjc0Vlo0LUlpWHpMRGkxLUZqWWdQQVRvUmxLR05yQzY0MURwMkZSX2RERzJUampLaXBlb0RIUURqYmF4LS1kVXFR?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 38,
-            "zscore": -0.54,
+            "count": 48,
+            "zscore": -0.18,
             "spike": false
           }
         },
@@ -4107,11 +4029,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -4.16,
-          "zscore": -1.41,
+          "return_pct": -4.11,
+          "zscore": -1.38,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_fed",
@@ -4862,8 +4784,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": 0.48,
+            "count": 8,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -5032,11 +4954,11 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -2.92,
-          "zscore": -2.23,
+          "return_pct": -2.71,
+          "zscore": -2.06,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_robotics",
@@ -5755,19 +5677,27 @@
       "moves": [
         {
           "date": "2026-10-22",
-          "return_pct": -5.88,
-          "zscore": -2.31,
+          "return_pct": -5.8,
+          "zscore": -2.28,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.21,
           "events": [
             {
               "source": "googlenews_gold_miners",
-              "title": "BlackRock Warns of \"Unhealthy\" Bond Market Signals, Says Long-Term Case for Gold Intact - BigGo Finance",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RMmlxRVdpbDVMcVhSQUFwV203MlNIV2l6TWVTUGdlR2F4SktRVUQxdFlCQ0pWeDV2bENsdlM4TWxyUzU5VFg4cTNtakx2UG1IclQ2M244M3ZNdTlBZm1mNXJNQm5JMWxPZ2JwaU5rT3lRMmVOdEE?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
+              "title": "Gold miners face margin pressure as lower prices complicate third-quarter results - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeDRreGZwMkpub24zc0hTTWJMZ3hoVktnLXgtZ2tQTVU2c29mLVRzSUxNLXRWa1J1QzQyT2ZwNG1vdXBNY3hsX3N6REp1ZFJLeGdwTVZGdHRqb08zMm4xZ25ORVdRQ2ZNMmhxdEU4TURyS2Q1eG1acTdSdHg0LTdTTXBtRDByUURJLW5aQXJPQVp0Wk9YSUVkajN6RGxzWDNWSHM3bUJTZGdhNGJTVFFuOE05cXVDY0J0cllHa1A0cWIxMlNoNkRmeVg1S09paWNNUWtZ?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.811,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "War in Iran, higher energy prices are only delaying gold's rally to $5,000; mining stocks remain undervalued – Gabelli - Kitco",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNXy1KLUdfVklTU19ybkZVc3VVVy1JakVKZHB1SlNKR2NJNEg0cVpSR3VnTVZhSFZzaWNPbWR1Y0c3MVJZSGRSdTVwMGk2X1FBRTFRZjdReEpWbk1aSTJicnhlaFlQcG1TM3JNcnpQdDZQanRiTGd3cG9kUXVsZ0c3VnZ6Ujd3M1JFbW5nT0VYdktQaWdwNHIzdnZPMEFuUDVhTnRJbGt1WVEyQzk5SWRCM2QxelNYSmk2?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "geopolitical"
             },
             {
               "source": "googlenews_gold_miners",
@@ -5776,19 +5706,11 @@
               "sentiment": -0.296,
               "relevance": 0.718,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Investors Heavily Search Agnico Eagle Mines Limited (AEM): Here is What You Need to Know - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQkM1b1hlaVIzTVQxU1B4TDZhMEhCNnFsU1hBTXhDamlIWWVWYWV2THRyV2duMWpWMEcxR1h0M2NpSGpzS2R5bXhick9pY3lkVHZFSjdyQVVDLVVkay1GcVA1aXJyYU96dGp5S0YtRlRDcnZOdzZaMEFXNG1ab2VZYlJYdTMxbFhDVVVPaUh1Rnd0YnlSUzlCT242MldKMWIwYnRSUA?oc=5",
-              "sentiment": -0.226,
-              "relevance": 0.691,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": -0.52,
+            "count": 22,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -5993,18 +5915,18 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-22",
-      "return_pct": -3.39,
-      "zscore": -2.75,
-      "max_abs_z_recent": 2.75,
+      "return_pct": -3.17,
+      "zscore": -2.57,
+      "max_abs_z_recent": 2.57,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-10-22",
-      "return_pct": -1.45,
-      "zscore": -2.41,
-      "max_abs_z_recent": 2.41,
+      "return_pct": -1.21,
+      "zscore": -2.01,
+      "max_abs_z_recent": 2.01,
       "recent_days": 10,
       "benchmark": "SPX",
       "days_since_last_major": 0
