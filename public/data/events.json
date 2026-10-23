@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:44:00+00:00",
+  "generated_at": "2026-10-23T06:54:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,12 +10,28 @@
       "moves": [
         {
           "date": "2026-10-23",
-          "return_pct": -2.67,
-          "zscore": -2.15,
+          "return_pct": -2.63,
+          "zscore": -2.12,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": -2.67,
+          "market_return_pct": -2.63,
           "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "This Top Investment Strategist Thinks a Bitcoin Supercycle Is Coming Soon. Here's Why He's Wrong. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVXlneDNUQmpaak1iY3BrcS1RLVpuVHpCd1Etd1NlMlRxOWtjWEVwZWdHTjlTRm1KVkJ5T2xySDJ4eWRlTlo3MFdpY05oQXhqZ1FMZ0FFZUg5eGxKUE1JWlEteXNwWmNURGFjdWNFS0c4YWZ3MEhQSGhCeDVBRjFpYS1fMld0S2NDYzdrWWVQRHJTc1VOLUJXSw?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "This Top Investment Strategist Thinks a Bitcoin Supercycle Is Coming Soon. Here's Why He's Wrong. - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdkp5OXNfMHFLUU9oSFlYT3RxZnJHX1VxTjZfOUw1X2pxcERqV2JSVUZMbDR3MzBnd04yVDNQOEtSbGo3RmRpSXFFLXhrR0E1N1ZwNzhwN09BUFFKakw2NG00QjZLN0pJSGtzU0Noc3pzUDBXOWVfLUs3Zi1kalBWNV9BZmZJRlgwTy1PMHVpazVCek9Qb19PRHcyQy1oRVlRZDZLX3lTV1g?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_btc",
               "title": "Bitcoin Slides From $84,900 to $82,200 as Oil Jumps on Iran Strike Plans: Is the US-Iran War About to Restart? - Yahoo Finance",
@@ -23,27 +39,11 @@
               "sentiment": -0.66,
               "relevance": 0.664,
               "event_type": "geopolitical"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin (BTC) Price at a Critical Junction: Analysis Company Warns, Reveals Critical Levels! - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1vTGtCOGhBZmNVT0NaeURGM0xlZllMWUFzOVJJcFZDa1pGcjI3QUFmZE11anFyRGgySDVld0oyQzc5dnN0NzJtd2VCRGpRcnA4dkNJWEJWLUQ?oc=5",
-              "sentiment": -0.648,
-              "relevance": 0.659,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "China seeks to seize 61,800 BTC tied to $5.7 billion fraud scheme - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcmh3OEsxWTNaVS1ESm1PbmpieXg1cmFBZHJPS2RMSS1xRkpTQ0x1d3F0bXhSUWdlTktqd3paM2FwUWhCcElWbjZpdmRvZXpMVHJrdXFIbDhsajdCTGM5cm5ETFZkV29BMDV5X0l6RS1TRFNiX1laYUh4b1F1UEZrQ09NdllzalNCTE8wQTYzUUJ1N3ljTlFnNUpGSVE2Z2YyeXFuYlgwLVRINFFzdW90NQ?oc=5",
-              "sentiment": -0.586,
-              "relevance": 0.634,
-              "event_type": "legal"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -4.22,
+            "count": 17,
+            "zscore": -3.72,
             "spike": false
           }
         },
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.83,
+            "zscore": 1.85,
             "spike": false
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.97,
+            "zscore": 0.98,
             "spike": false
           }
         },
@@ -1085,7 +1085,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.51,
+            "zscore": 0.52,
             "spike": false
           }
         },
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.68,
+            "zscore": -0.69,
             "spike": false
           }
         },
@@ -1202,7 +1202,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.31,
+            "zscore": -0.32,
             "spike": false
           }
         }
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 72,
-            "zscore": 1.43,
+            "zscore": 1.42,
             "spike": false
           }
         },
@@ -1356,7 +1356,7 @@
             },
             {
               "source": "googlenews_tech",
-              "title": "Tech stocks drop after report that OpenAI’s revenue is lower than expected - CNN",
+              "title": "Tech stocks drop after report that OpenAI’s revenue is lower than expected | CNN Business - CNN",
               "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BOTNlajdpNk5VanVGYmx1ZDZBZUpSZGtoWktCQmhzcDVNQ3BtUzBDb3d3MlNndUQyVnFLMThGX3FTZ0RjWDIxM1EyUTJZbU5nM2Z1VFBLRFQxV1o3dFRkdHFzM0tLRHVJT1c1dG9B?oc=5",
               "sentiment": -0.511,
               "relevance": 0.804,
@@ -1404,7 +1404,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 1.91,
+            "zscore": 1.9,
             "spike": false
           }
         },
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.83,
+            "zscore": 0.81,
             "spike": false
           }
         },
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.99,
+            "zscore": 0.97,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.85,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.08,
+            "zscore": 0.07,
             "spike": false
           }
         },
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.14,
+            "zscore": 1.13,
             "spike": false
           }
         },
@@ -1769,7 +1769,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.05,
+            "zscore": 0.04,
             "spike": false
           }
         },
@@ -1830,16 +1830,16 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Meta’s Muse Comes for Financial Stocks - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVnhad1lIRFVNWk04emdJb3Bxa3NZdmJVakFDS3hlTE5nOXE4VURjRnhucmlzUDFLa2d4b2R1YXhzaEdlVFY4WkdpSDR5MVpzUkFkak1UT0pPNlQwSjB2dzVOLXhoQl9YMEx6dFlJSE1JX0FNU1l5SzY3V1B1U0RJZTVUTnVya0RsdjFUaw?oc=5",
-              "sentiment": 0.0,
+              "title": "JPMorgan Chase Falls 3% Despite New $20B QIA Partnership; Goldman Sachs Eases, Bank of America Slips - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYjFOT21pUEI1Q0FSU0NvS2UxOFJrbzBXd29HM2pZaDhhN0RyOWxCUm4yU3M4cF8zb0x3SW11c0RiQkhQTXlyYzkxTzhUbS16YWJINzhBRS05Z0k5eDRfa2pTT0JvVkxtTHRhUkQzRm03NG9kRk1Rbk9scEpLYXhJRFcyMXVpMzRTRC1JeGt2TFVFSmlUVl9pRUwwcjVWWmJkMWVMS1hsYzJNSFd2b0hoZG0zZTRTVE5sMWdFQm1Dc2dBczVNaVVOYVBWTktIOTZvdzZ5S3ppdw?oc=5",
+              "sentiment": 0.318,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "partnership"
             },
             {
               "source": "googlenews_finance",
-              "title": "Financial sector stocks fall as traders rotate into tech - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQTRXRUtKX2xiWWg5a0ZBekVuTHVfaXZsaEhvcHFvSjRLMmJCR2xUQVZPUTFEdGo3QkM1ZzJidEtzS1lJSXo4NGhTQUwxY2JveWlvNWxGYURiSUs0QnYtOG1nNUhNTElaa3NobERVdEZPX1B2WndVR1ZrZ3EzVDBOUFptbWtEeUFMNjc1bk9B?oc=5",
+              "title": "Meta’s Muse Comes for Financial Stocks - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVnhad1lIRFVNWk04emdJb3Bxa3NZdmJVakFDS3hlTE5nOXE4VURjRnhucmlzUDFLa2d4b2R1YXhzaEdlVFY4WkdpSDR5MVpzUkFkak1UT0pPNlQwSjB2dzVOLXhoQl9YMEx6dFlJSE1JX0FNU1l5SzY3V1B1U0RJZTVUTnVya0RsdjFUaw?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -1962,16 +1962,16 @@
             },
             {
               "source": "googlenews_health",
-              "title": "Dow outperforms as Wall Street rises, healthcare stocks lead gains - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdmMybVh5YTdzU09XVXBpYmoxOXlyUHhoMFJ1aDRzTENGRFVHQmc0OXpZZ0k5NjFBNmVxREJ6SWlQQk1tNDR3d0JTUzFObGpjWHBEYl94ZldLdjl2ODdiR1dqRzFTVGlCZFRKVEk2NUt1Vy01UTZZdlNXWjNpWWhoWER2dnBUaVNfb2syMzQtMGI?oc=5",
+              "title": "US STOCKS-Dow outperforms as Wall Street rises, healthcare stocks lead gains - Devdiscourse",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYVZGVDhoaXJIZU84aEI4THlSZ0tuQVA3YmQ1Zkl0MmZUbFdhdm1LcERKRk5HREN5M3c3YWlkTVo1WERJT3lkUjNNZ2hTVWdQcFJTSVVFMFBzOU50cmJsNVI4eWcybURRY3JNLWlYYWZNRVNjZk5IRzZ2eUxvTHVNc0ZiY2ltSE53MXhONngyd0N4bm9kM1VaWTZvVEVYUUo4VmlEWGJZdlJmd1JIZXBSdURmMTA4bE5zczczcGFySVdab3hzaE1JQUFHdEFQQdIB0wFBVV95cUxQZktnM0wyWVFVU2g3ZVFxN3YxTU5JbU9SZGNQN0dPY0R1UmpPdE1MWm92NFdzYUM4RE5ZZTJ5NkIxUzEtVXNRRVZhLXlRMnlPeWR0RlNsTmtOOTI4N1JGc2RyRG4tVDM0ZEQ0ZkN3eXcxa3R3U0gweDZ4OFFtQXhrZjdOU0liQ3pTcXkxSHdFbXdwdy1hLTRlSmJxN3d3aC1IUnJYcWIwY2U5YWJxUjRmQWZMeDJmUWlvSVdUMEs1Ui1FTGJKSkNMbnU0MDlObkdDT0tz?oc=5",
               "sentiment": 0.34,
               "relevance": 0.736,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": 1.08,
+            "count": 11,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.3,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -2290,7 +2290,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": -0.49,
+            "zscore": -0.5,
             "spike": false
           }
         },
@@ -2390,6 +2390,14 @@
             {
               "source": "googlenews_utilities",
               "title": "Analysts Offer Insights on Utilities Companies: Clearway Energy (CWEN) and NextEra Energy (NEE) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNOS1xeG5hSUVTaVN4Q3BOV08wNjk1OFVwYzBFYjBuQXFBenlNSjZ1ZFR0Nm0yWm1VX3dpTjJFLUN6alZiWkZLa0VsaHVnMXdVaHRSQnV1N2JCYWNVWWZDQ3k2X0FVZUlZcFc5UGo1NjU2ZUtob0JTdnBCWVNwSzdMRV9JUWhWLTFTc25SWnNuVzJtaGlYRXRSejJiamVZbFFNZ3V5b3RneFM2NnJndks0V0t5Q3hwd3NJS2llZWRwdU9TYmlpal8zbmxXbzFobDhSWk9VT3piOWE3eW13UE1MOGotRDlET3hsMFl2SnJNcGxfZVE5enk1bnIyTGlmb3hESDlEZg?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.598,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "Analysts Offer Insights on Utilities Companies: Clearway Energy (CWEN) and NextEra Energy (NEE) - The Globe and Mail",
               "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPY3J6RTN0UDVuS3VvT2VDeHVrQ2VSZkxKY2drdHpqaXpyMUs3S2V4UlpYbkpybzlhYVl0SmUtbWlfc3RwQ1pKaUdkNEhqV1dTaE5oNGUwQzJ5X2k1MllVVGdJVEx0bjZLQU5tc3JrVXFyR0VJWF9LZmg4N0UwR21BTjBia2xCNkprUGxwRTktclNxMTN3dW1UUkJEaFZud0FkUGZSSmp4WUw3aDZ0MmNyVU1wXzlKYjVPVFF2anlUY3g5emN6LUdkQXNUaXRCWFFpQ1VNbDI1RWpnZTVuSndGb0ZZSHp4Tml4X3BmTW45WlFmb2xQVmdqaV9uQWZRam1iWlQyU0tCNA?oc=5",
               "sentiment": 0.494,
               "relevance": 0.598,
@@ -2401,14 +2409,6 @@
               "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdFRWZHRDNnktemY2YnhVc0ZLS1FncVpjc28wQ2hVMnZmeExSbzJ1VVhkMWdQdkJoYXlrR29lN3NCMkgxT1JpcU03cVZYemM2bmhvQlB5ZzA3MXVub293NXg1ZE1ZUHlHX1BEWEJlWldaVEVMV0czZ3JPaGZPTktjQWNoM0poSTNEQzU3dWdrck1ZN0xQUXNvRFM3c2IzRGc3S0JJYmNVdFVobzRCLTNwY2FrNlczcmdwYmtJQjB4ZDhQaFNacEhZajBCSWphQllvQlJ1QWEzMkRpZHN1VmxRTWwzNU10NkI0MUF2cFJIUnc2dw?oc=5",
               "sentiment": 0.202,
               "relevance": 0.481,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Will Federal Reserve Raise Interest Rates in October 2026: Expert Forecast - Norada Real Estate Investments",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeTlZWXZmX2RGVDRfdGdsNFkyYmtVZ1E4dU9uZHh3WlFLUThfSm4zY3RBdDlFTVJ1NkRBbDd2bWNWV203WUtUaTRWR1ZDNE1iVXpDallOVTBEbWJ2YzRKUjdsdk51Uk1rc1VJQktELXU2OTZOMy01TXU5NlFhR1Y5cGJYLVRpUzdGVGFlYmhfX0I4b052QXQxczZGM3EtQmlLcERPeEEtaWNGMlJVNXdrM0FB?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
               "event_type": "other"
             }
           ],
@@ -2655,7 +2655,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 2.59,
+            "zscore": 2.56,
             "spike": true
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.09,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.51,
+            "zscore": -0.52,
             "spike": false
           }
         },
@@ -3137,7 +3137,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.08,
+            "zscore": -1.09,
             "spike": false
           }
         },
@@ -3736,7 +3736,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.41,
+            "zscore": 1.39,
             "spike": false
           }
         },
@@ -3820,8 +3820,8 @@
             }
           ],
           "coverage": {
-            "count": 55,
-            "zscore": 0.07,
+            "count": 56,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": null,
+            "zscore": -1.13,
             "spike": false
           }
         },
@@ -4140,7 +4140,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.64,
+            "zscore": -0.63,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.16,
+            "zscore": 0.15,
             "spike": false
           }
         },
@@ -4218,7 +4218,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.77,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -4257,7 +4257,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.47,
+            "zscore": 0.45,
             "spike": false
           }
         }
@@ -4294,8 +4294,8 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Steve Moore warns stubborn inflation could complicate Fed rate decision - NBC 15 WPMI",
-              "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNR1NYN0hFaG90N1hfQXp2Y3M0eEE5dlJaanNvSFJ4TmRTcXAxTE9ObXhvVnFzd0VWSzdZT1lBYTM5eWRfaWJGS1pLVm96bDVDT3VkZlRkb09CSzhmNEIwQnBuU3F0Z2pxQU0wa01kNUozdmxTb1VfUmtRdHhTUm9YN1JneGowWUppb20xczZCNnVLUmh5bDRPY1o1X096TEdLbktjYVJ4eUxEelkyY0lQX0RKVnV6NWZKVmI2TjA1dHJ2OFoyOGhteW9seHpYVnFfR1NvYVhDdnNTYzQ1cUQyVHQyamhyZUxGOEhsUy12RTk0bXNZbFFsaFgzT3JNUzFBY29zS0hHbFNxbElTaFItc25BRFhsVTRrUFRlV2pxWTJRUndydEZudnRzejEtSGQ2RWRyUHpfM2FiN0NWZjg0OWxwMzNzZ0ZMRjhXTi1pbw?oc=5",
+              "title": "Steve Moore warns stubborn inflation could complicate Fed rate decision - KRCR",
+              "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQMGtvQ0VqeGk1SmIyYXNvSzBrelVlQ3otcDdldGF1cjg5OF9WWkZlbXNnaVpZYnlycV83aUdCTkFMaXF6TTF1S1RNSy0walRCN3dVc2JELTMzN1FJRFFReGpkSGdqU3UzX1NSeV9YaU9Ca3JWQWtjOXVoMkZ5cHg4UTFDV09CZkFGRTlnQ04zVXlERUE0VkVqcWVfNXptVURMMjlzc1R2YkE4eHVKTmlnXy16bEZBVjU1aXEwaWFST0R4YUoya2tQcDFHXzg5U0JpUmlKMnlPMnpoaWxJcnFMNEs0UTB3VkF5ZldCOGpBYkgyVlFmMHUyd0NSTm5yY2RoYVhCaDNPTUMzbGlQWEJ3NlVUNmF3Y1dnNWdXeERVa01xV2ZoMFFRd1M0LUFha2ZGOE9icjB3b0REWHVrRWNkTUNfUExTSTZFdmxyc2Rn?oc=5",
               "sentiment": -0.477,
               "relevance": 0.474,
               "event_type": "fed"
@@ -4303,7 +4303,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.07,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -4342,7 +4342,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.58,
+            "zscore": -0.57,
             "spike": false
           }
         },
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.61,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.86,
+            "zscore": 0.92,
             "spike": false
           }
         },
@@ -4458,8 +4458,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 1.46,
+            "count": 4,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -4987,7 +4987,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.28,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -5709,8 +5709,8 @@
             }
           ],
           "coverage": {
-            "count": 25,
-            "zscore": 0.47,
+            "count": 35,
+            "zscore": 1.38,
             "spike": false
           }
         },
@@ -5915,9 +5915,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-23",
-      "return_pct": -2.67,
-      "zscore": -2.15,
-      "max_abs_z_recent": 2.15,
+      "return_pct": -2.63,
+      "zscore": -2.12,
+      "max_abs_z_recent": 2.12,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 9
