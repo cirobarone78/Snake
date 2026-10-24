@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:36:00+00:00",
+  "generated_at": "2026-10-24T18:41:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,45 +8,6 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-24",
-          "return_pct": -2.06,
-          "zscore": -1.52,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.06,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin Faces Make-or-Break Weekend as Market Crash Fears Grow - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTkUwU1JWR212NHV1M0loaUpEcnloQmJnVGlvWTV6MUxwR3VFdEFlcGVvOVFIelR4cXlBLUt5c2xlaFp6N1Z3WDVILWdzYVhteXpxN3lydUJvV0pXZjJpZklIaU1ZZGlUM2Iwd2FyMUExQzVzWEV3SFZ2ODFydHBpWXFfY2xUQ1BvbktlTkFya19jZ2lqNkhIaW9obW80R0ND?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "What Happened to Uptober? Bitcoin May Be Down in October, But Here Are 3 Reasons to Remain Bullish on BTC. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZGdCdkViczFwTGVNd0R4NEdnUzZ1TG9CSEJjZ1FGRFBlNmVEdFBuMm90eFg1YjZBcU5Gcmw4UkczSHFEaDJZVno3eHhId2FFSjhqYTN1WGpVREwtT2Q4ZUFGNEFwRVFEVUp0NURzS3BxdmFwWGFpTXFFTzFIX3FsU014c0xFdnMycDlWSmw0bHdmdWdqOWlIdw?oc=5",
-              "sentiment": -0.593,
-              "relevance": 0.837,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Is Bitcoin a Buy Right Now? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9WVmRPa19oRTRyaUdEa3lSb2xvcnhIMHRtdWl2a2hvMkdTaEpNVlZfUGh3N05wM2Y0Ml9HZHZVRmlYdjJ3dTNUWXlMcE5MYjYzTGRkdDQ3Z2xuRXdZcmhpcy1aOUdkSE56NmlrT1p0dUxfQUZMWDVEWA?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 36,
-            "zscore": -2.83,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-22",
           "return_pct": -3.21,
@@ -81,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 99,
-            "zscore": -0.06,
+            "count": 100,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -241,6 +202,45 @@
             "zscore": -0.29,
             "spike": false
           }
+        },
+        {
+          "date": "2026-08-28",
+          "return_pct": -3.02,
+          "zscore": -1.72,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -3.02,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Arthur Hayes Predicted $250,000 Bitcoin. But Another Investor Says the Plan Behind It Is Already Failing - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQNG1jRk05N2lfRVZPdnBkSzdUTURCSUtwQjFuRVRxQ05vVENqb1lqbzB6RGdKMlVZTXNrSnJ0dm1DVkJMaXNvaTVjZlJNalpURW1YNTByRTdnb1VfOVNZaGY1cnRtRk02UmZEdlk2dVFRZzh0NTRQVGtZTlg0WGdwVFlybnZPNXFVX3ZxckZ0LTI2cW1GbDhDLXN4RzNhMk5USkViZE9WSXc0c3NpektGdDBSM1NMTjIxVng2dS1TOVBTTjFPM0pGNXJDalVoVHhaRkZtLVJDOXhpT2pOOFlKSU4zZDVlek1RQThsTk5lWHdCQQ?oc=5",
+              "sentiment": -0.665,
+              "relevance": 0.866,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Arthur Hayes Predicted $250,000 Bitcoin. But Another Investor Says the Plan Behind It Is Already Failing - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZkdTV1NuRlVQSWpUNGhKWVR2Vkc5RGFjeS1WS2xKMEszWFpZbDBLa1RJMHNfT1huLTZjeVFTU29qTHZIclo2RDQ1SUZCTzFhamtwWDljWnRJUWNiMUFMM2tuOVJhTldFU1UtQmRFbXV5cElxcXZYamhvX0lrdEtEZmtaMTNTa1QtNUZmakIzNU1IdWRMZGV5ekdiZw?oc=5",
+              "sentiment": -0.665,
+              "relevance": 0.866,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin (BTC) Rejected at $80K, Ripple’s XRP Plunges Hard as Rally Cools: Market Watch - CryptoPotato",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM3lVSWhRakt4c3g3ektJNHJ1elFabEFyaUNoMlVjTGM5ZU1UVGgtUURXNVVGZWNSUFlSc0FwYU5vdmNNLXZkd3ZNdVpKNXlUeEhiLWE5cG1TZV9Fb2owYURMY0c1UkVRYUtQS1hhS19HRHl4VnhBQU56MFN4dkpsOGZtOUFTaXRTQVp6dWtqeXM5ZEFsTnVsLVdsYTAwd2JLQTFfS2hXNWo4Zw?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 109,
+            "zscore": -0.41,
+            "spike": false
+          }
         }
       ]
     },
@@ -249,45 +249,6 @@
       "name": "Ethereum",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-24",
-          "return_pct": -3.77,
-          "zscore": -2.0,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.06,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "What Is IRYS Crypto? 188% Rally, Data Storage, and Scam Risks - Bitcoin Foundation",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQzJwVmhxRHpudUo1d0pQVjF2b3ZNRnV2Ul9OXzZ4SWhVd0duaGtwcFRFMEJLOVM4WWJWc1pEdXV4b1loYkJDWVEtclBrRThkYVR1d0FLOUlZWjA4cG9PTzdNRnNZS2tVTGcxbFRNa3JNeTZaMjF5TEktekpZVThkUE9EMFdGa3o4Mmh4emN6VXdPTEJoNTc4ckV1ZUk?oc=5",
-              "sentiment": -0.7,
-              "relevance": 0.88,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Co-Founder Joseph Lubin Predicts the Merger of AI and Crypto. Here's the Most Likely Scenario for Ethereum. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSDZIWXVaazR3UTBIYjlCNHF6MmYtYm4zZE9vMW9JakxUeHkxTzZYVU5YdkVCTURjenVPZTNaSEZoVXVsaW5zZHBMUzFtQlFVVFYzVlhjZHhvRFlaZ0tzZW51WDBhTlVGMHpxYTIycGFMTXZrMllVYlRMcDkxUkNPMWY1bUFGcDR3ekFNcF9VNGpfWnpTNW1DdA?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin price news: BTC falls below $80,000 on renewed Middle East worries - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOY2t0UU51ZnVfTTRnQm16dnpFQjY5SVl5MEg4eW5iU1YwYXF2NFRTUlUyMWxNWHlxc2xQdm1rS3k3YkFpVEhoSXhFRFJwQlRRVFBsTl9jNmY4SnZsR0tTUk9fZDI1ZXZ1dE5sdGdxbE8zajZOXzI5ZW1qbjZqYlpOR2hfUFNYYkUxTHZxUG1mcGhtMURUM294ZDhUdGk4R01FY2xRemxMWnVmS0ttOHFkWGdrYVBxSkE4b1VqS1hDRmVOdV8xM1FBTHpWS2hsVUo2?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 37,
-            "zscore": -1.84,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-22",
           "return_pct": -3.42,
@@ -482,6 +443,45 @@
             "zscore": 2.53,
             "spike": true
           }
+        },
+        {
+          "date": "2026-09-18",
+          "return_pct": 6.71,
+          "zscore": 1.46,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.89,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum eyes $3,000 after strong August surge and steady ETF inflows boost confidence. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT1JfcHg4V2VZWUY3YWRRc2RoWlNrTXhGb2pCOE5CMGZvMHpHQUh5eDBwYUN6X0JxeWh6M1JHLW1SY1hsdGFRZ3B5bFBTb1N2X1Z6OUtiN216NGVNZFpGU2tSY3VUMURocFdyQkZDMDJXTk9LbjRjb3hmVENIT2wwZ1RQWnFxSkZ2?oc=5",
+              "sentiment": 0.852,
+              "relevance": 0.941,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum (ETH) Price Prediction: $2,400 Support Holds as Bulls Eye $2,570 and $3,000 - Brave New Coin",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM3g0Y0tFR2NIc0JuYldmVFFvMy1HR2pUeGVBckJDTC1ObnNFN0FoRVZLNzkxbFU1dldqMFNwSzhZYUViV2g2N0sxQXYtMDFRN0FKUUZ5YUVPQnhPaHJGdU9FbGVmNVNRTHBqTGhYbS16RXNPRWktLXdGLWpMbHFteEtsVXFmSXVwWGZxRU8xVFk3d19EYTYwaE9QckVKa2g1QjRKb0drMXY5bXBVanc?oc=5",
+              "sentiment": 0.727,
+              "relevance": 0.891,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Best Crypto to Buy Now as Ethereum and Solana Rebound While Remittix Moves Beyond 82% Sold - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQeW5ZRklrUEU1X1pPdElyRmJLSG40QUo2REpGMm8xTjBpaGpEZmt1b1VraHBVYmJuV2JFVUxqcVZGYnpGMWpHZlE3THhaOWpjaHJTai1fM1N2YkJIVXRWV2FQX0J5a2VrWlFfaUoxcGFOUjQ1ZjJzRWpsRGRTa3ZfV1V3ZlQ0aVNWWnppMmZzOWQyS0pwNTU1UF8wWEdQTE9kU2VDVlBaREItYkVSejYya0stYzJ1U0R1eTdYTjcwX1Y4OTlXZEgxejAyS1NDTmdRaEJCTVZiX1E3ekVhUTcwSTg4TVE5emM?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 85,
+            "zscore": 0.62,
+            "spike": false
+          }
         }
       ]
     },
@@ -490,45 +490,6 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-24",
-          "return_pct": -3.63,
-          "zscore": -1.57,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.06,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Prediction: SOL Could Drop 30% Despite Alpenglow as Iran War Fears Grow, AlphaPepe Eyes a $1 Breakout - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQRl9mck16a09qUjhhQmI2d3lPbWlHcTVRbGliOGpCUFBvYlUzM3NXRFhRUHlwdXRXOE5XSWhxU2hfSF8yMEFiUUdYb0JfdUplRnY3STRlMTkxWmktQnZINENTUjN6cFBUN1FPMW9vRDZzMnROMDE0MVNLNlNZQWtOTkN4ZENzQXNlaU80VExXXzl0STFkMk51QlpFNXk4al9Za2MwSFNqaFJRSFpHTEVNQTc3NW9mN2VPc0lBV19qbGpaRTZrUU1pN2VoODhwOG1udW5YMUotWlNwTmtHZlJHNk9lSG5tYXA4UFJITkIxX2ZUY3lKUWFvdzNmLUlNRFVXSGZiNDlzQmwzYUpmVmpF?oc=5",
-              "sentiment": -0.832,
-              "relevance": 0.733,
-              "event_type": "geopolitical"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Crypto Solana SOL/USD Chart 15 minute - Finviz",
-              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FMGpTZnNlNTlBOXJBOEw4Q0hxZDB3NW1DU1RoZW02eFQ2TC1Ydk44NHowQ2RuNG5EOTdfNXp2UjByMU5xWTFmZUsyV0Q3dldWQUE?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Prediction: J.P. Morgan Launches 2 Solana Funds as Pepeto Presale Hits $11.2M - TechBullion",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOS0YwcFZsVzBlcWlFMDdTUmNfSXJDWTlZaU1wSFFsZzMwd3gzR0VNZmNrSHFDaUJ6cXRVLVNndkkzTDlkZUQ4a05BMXgydFZaaGlSOEJrVTJJTllibjJ5SkFTUHQzWEpHWHoxMjY2RnpOQmVxVmtIQ0JoS0d5QXB1eEdrV0lOeXhrLXhHc1M2WGd1R1JZdjUwNVRiR3pKWlBzQVJfaEd6NG0zcDUtNUtLRHFn?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "upgrade"
-            }
-          ],
-          "coverage": {
-            "count": 13,
-            "zscore": -1.99,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-12",
           "return_pct": -5.11,
@@ -723,6 +684,45 @@
             "zscore": 0.71,
             "spike": false
           }
+        },
+        {
+          "date": "2026-09-15",
+          "return_pct": -5.47,
+          "zscore": -1.89,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.26,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
+              "sentiment": -0.599,
+              "relevance": 0.84,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Did crypto’s $20 Billion DeFi surge just get stolen by price inflation? - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObmlSN25mOGZqVDgxNmVCcWhMYmRFdC1pMnZfT3F0NmZrLV9pM283LVhabjlsVVRwcGhNZ293QmJ3UGxRLWtubnJoVkhmTmtJdkhtWFNEZFRqZFhTa3FmWEZ5SUNhYjF1dU9OTWlvbDR0VHJ4TjdEN1Q2LTQ2TkJlZk1EeTNzakpaeldqRC12dENlYzBzS2pGMg?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold edges down as oil-driven inflation fears lift rate-hike bets - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVUtaVGZLb1VLWXI1QlhvSGNHeThxbkxfa3NIdk1SZFA3LWZta2JmdnBUTEtKV0dUSGg4OGVQSHYyV0w5RGY1QXEwaG02OVVoVlJmRG9xc3VwQ2RZSFh2V25neWVqS01jVm9pTFg0U29TcXdueHBXbnRuTmRuOFA0TzlyNEppVUJldE9KVFE4c3FlS04zRXRsaXNCQWhqQQ?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 53,
+            "zscore": 0.77,
+            "spike": false
+          }
         }
       ]
     },
@@ -731,45 +731,6 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-10-24",
-          "return_pct": -4.2,
-          "zscore": -1.16,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.06,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink: Korea Contract, LINK Under Pressure - CryptoTicker",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GYmNPRjlzSHlnZjUxMWZVVXV2VVBZZ1BoazIyTUZyalFQbHNQT2JFbUVKSmZtWi1YcHhKVk1vN0IzRVZWQXllRVZabGY0WnViNWw0MFhwNHdOWTByVzl6YWpBWHZuRkYyaGE5WTJB?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Best Crypto to Buy Now: Blockchain.com Adds Options as Pepeto, ETH and LINK Draw Attention - TechBullion",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR0pUakF6SGpWR3c2WmpMYTMzR0JBZXFUMU9WOE1faWpYUHhIYUN1WG93aWVUbkoxeFlCSlI2MVZ6WGxnRkU5MU5oMW45ZEdSSXBaY09lWXJLNzViVU1UNjU4MENlUGNILXgwd0ZDNXdPY3k4ZjI1RTEzMGFFbUYtb28zOUkwZzl2VVl3XzQ3NEo2WVpwNHk1ZDY5QXlCOFM5R1ZQSDFITVBpc1hOSTdGQkd4dw?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) drops 4.07% to $11.68 amid mar... - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQXUzaUZrSEhwN0R0QVM1dXhORUd1cEZQT25BU0lWMmdUdktGVFgyTnBlMlpCWTFaaTh6SlNyUi1iN2ROZlZYRzM1NU9uaDV5c3FPem9KVHBqeVc4WU1CbnVJNHU5V1pCUUl5ZVJyMHU1ZXNJWlNZamlVNkQxUE1GU0VoaXlXR1dQTjBr?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -1.38,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-22",
           "return_pct": -4.34,
@@ -963,6 +924,45 @@
             "count": 14,
             "zscore": -0.19,
             "spike": false
+          }
+        },
+        {
+          "date": "2026-09-29",
+          "return_pct": -5.47,
+          "zscore": -1.56,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.14,
+          "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink CCIP 2.0 exposes bridge risk, and issuer gates trigger stalls - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSXowWG9QbDF3SXhQcWFJQlJqSUFWbF8zU05qX3pYOGloWF9OeklwdUYzcDJYYXhDaWNQT0ljbWVpU1piTGRJTW1zeVlqeDN6RUdRN3RSOFFISk1TaVFHZDVXMVJHWFJENEM4MGJkYldWTm9tMlJzaWlHVTV6eVZmQTJnRlItXzRlbVZjQlRNMVpkMUUwQnpRLVR1UTRqajJBYXlwUmkzYlpCSGM?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "CCIP 2.0: How Required Verifiers Can Delay Transfers - 99Bitcoins",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXWGtpXy1xdUw5aEhTeHJBeTJ0ekV0RUNReGZ0ZGJTNDEzR1pWYTVlLURxQVhmak0xeVV4eHFqenpER21TZ2xDZzNZbXdPTm4tZktUa0R5Q1JtZF96eDF1aTI2VnJqX3F3eFZmZnFWR3lPbHhoYUVOOHU5ODQ?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_link",
+              "title": "LINK Hits 2026 High As Token Doubles From June Low – Outpacing BTC, ETH - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZ2V4UVpUaWw3czdsZV9GV0dMNnVzYU51eldjTS1QWFNFeTRSVDQ2WDF2N2xadWJrQnZMd0l5ZnIwbG5OeGJ2Y2pPTElIVkxGX2VGemVjdjY2N0tkZEd1NC13QVZxZy00SDZjSm5pOXVlSlpwWWFyWGJ5VUtBRUYzMUFVRG1qM3JBajQxQmhQU29NdV9UdkMyZDVjYXFSV25SMl9Mb0dCdW9YMlZRZzlUMjRYVno2UmlnaHVYZlB0Ym9rbnJfZTM4NjRmeHBHV2hzbDFVdGJ1UGk?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 47,
+            "zscore": 3.94,
+            "spike": true
           }
         }
       ]
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.82,
+            "zscore": 0.81,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.97,
+            "zscore": 0.96,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.21,
+            "zscore": -1.22,
             "spike": false
           }
         },
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.23,
+            "zscore": 1.28,
             "spike": false
           }
         },
@@ -2530,8 +2530,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 1.28,
+            "count": 6,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -2570,7 +2570,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.14,
+            "zscore": -1.16,
             "spike": false
           }
         },
@@ -2609,7 +2609,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.69,
+            "zscore": 0.68,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.16,
+            "zscore": 0.15,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 22,
-            "zscore": 3.37,
+            "zscore": 3.38,
             "spike": true
           }
         },
@@ -2910,32 +2910,32 @@
           "events": [
             {
               "source": "googlenews_discretionary",
+              "title": "ASX Midday Sector Update: Consumer Discretionary Stocks Advance, Materials Sector Struggles - Yahoo Finance Australia",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRlo0Y01PQ29uZmJHeTBCS2M5S3N4XzQ0S0VJYmQ0RURHR1B6T3J5R2xrbkhWRTVvSjBDZ2RmRFFwcy1QdnJKNHhTR2JWU29kVFpJdEQ2bXc5c0ljVlVDQU5qZVF1UnUtMHdUQlREcVdkNzJhM0VwUGZydmlXVzNuN3MzcUdqb2k4TWljUTF2eUdLVlk?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "ASX Midday Sector Update: Consumer Discretionary Stocks Advance, Materials Sector Struggles - marketscreener.com",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaFU2YXlMQnl6VEZGd09MMDZDWVFMdEt0amRjRHk5dUdHeHNFNmxIV2NHdnk5d1VXSkJobi1NVUxZenR6MXd2RGppQl9PNlZLX005QkxzUWdPVlpqTWM1NGdSZ2p1SEVObTNESjk0NmVFV2dOT2x3ckVfY3gzcHp6R19XSTRpZHVNU2hWZ09iX0xjZzZOZnpMUmJ6SGllZVZIZHFlUjdJcVVBNW5rSmF3YzB3NmIzTWlHRUV1QzgxMlNqakYtYmpZWkdYaC04dzdJN3JZbXJGY0p1dw?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
               "title": "Scotiabank warns Canadian consumer staples stocks risk earnings disappointment By Investing.com - Investing.com Canada",
               "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNWVRSi1EMnEzT190ZXJIWm5DN01jaXVOQTB5NjcxRE56amVqazU0UUZYNE94N19kYm5XVW9BNkEzWUJlTk93RUNvRGgyeHNJZ3dzTms4UXU4aURPd1VCSkRYMDNUN0YtSWZSdWVobWx3b3BTRV94bG9iS1hJa3VwLXg4NUlxZVgwaHVmNWdYSHlvUXIyWEd4R25IbFhjVkFCRTdSVHF4WFJ6d0dGYjFBYmE2b1F6a2E5dmZSV2pWTXhQY3pLYXRRUWRMOUVzV3c?oc=5",
               "sentiment": -0.7,
               "relevance": 0.68,
               "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Consumer discretionary stocks struggle, but one ASX gaming name is up 20.6% - Investing.com Australia",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX3hKcE53bk9rVEk2b0xrNVJnNkVLLXRPLVNqNEc1bG1WUGxseUhoNXM3bE1FSFREaFJCUUNqSE5Ga3hrWXBNV1BoYUVleWtwOGIzNERMWm9qVDI4enVRa2JqN29jVkVQUWtaWnNSaHpUT0Q5WU1yaXptNkZHYkhXTDBlMko4SHV6QVpyRmZ2bmFGS0I1TlM1UHl4eG9IUmZPWHBySGhqV1JEZWlWV0lGdlVNNFRKRkVDMzlVYWFaTEFEeFBFTjk4?oc=5",
-              "sentiment": -0.166,
-              "relevance": 0.666,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Airbnb vs. DoorDash: Which Consumer Stock Is a Better Buy in 2026? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdWk5UjgzQVU2NjZ0RExQZ09rdFoxY24zazJvc1BXWGI3VF9TcXhCZnVhMk1VSHdIR0FqaU82QVg4ZVUyTVI4Q3g5TlUzQXJvaVlRWEs1X2tzQzd3RUhITUlseGN1XzUzZDIyNlJpWDFyUmlXdGtReFBOXzByQmMxTjFaVk1QWFo4a2RCdEVMeGtnYW0zeXhOaWRCaHhMbU5OSENodjdkUW42VHUzdkZGaGd2cUxNVlk?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.93,
+            "count": 9,
+            "zscore": -0.65,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.09,
+            "zscore": -1.06,
             "spike": false
           }
         },
@@ -3293,7 +3293,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.55,
+            "zscore": 0.57,
             "spike": false
           }
         },
@@ -3371,7 +3371,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.07,
+            "zscore": 1.09,
             "spike": false
           }
         }
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.28,
+            "zscore": 1.27,
             "spike": false
           }
         },
@@ -3533,8 +3533,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.1,
+            "count": 9,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -1.18,
+            "zscore": -1.19,
             "spike": false
           }
         },
@@ -4101,7 +4101,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.13,
+            "zscore": -0.14,
             "spike": false
           }
         },
@@ -4113,6 +4113,14 @@
           "severity": "major",
           "market_return_pct": -0.06,
           "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "NuScale Power Sinks 7% as Nuclear Names Give Back a Month of Ground; Oklo Falls 6%, Centrus Energy Drops 4% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaWlZaU1IQm55dWRyWEJpWWdIa21JWFJDaERXN1dHSF9NM3lwaHc5eEt5YU9oLTNJYUVlZjNEWDh2dUo3ZEtrX2hRVTJTQVpCdGhCNjZYeUlQSXcyaHozdnI1Wlc1NUszekkxSlFYYkVLWDRxcHlqMjlCSHJyaHI4V2VpdVBBd1pfcnhwVHVkT2ZwYTFnbWp6Tk9QbXpXOU1YeklGaVJaa1EwbXk3anh2UDNTLVVBU1ZGRU1pa1lYRTBEUFVUeXhpbEVSeWJidTZ2RjBJMzBzTWNIYk1waEFV?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_uranium",
               "title": "3 Australian Uranium Stocks With At Least 16% Revenue Growth - Yahoo Finance",
@@ -4128,19 +4136,11 @@
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Fed officials are warning of more pain. Many Americans are already feeling it - CNN",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KOEVDdVNYS0FUZGlpbEJTYVRMT1U0MzE1ZVUzM1pfcjdIeUhJN1ExRm1oYWZzR0lLcU8zYVJRZkI5dm9wckNpWkplUnRVQmhqUkFwb1hSN3dEbTl5ZFJOTkthcWYwYWh0ZjNBbEtkV1NDTUNnOURuVw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.521,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.63,
+            "count": 3,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -4162,17 +4162,17 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "8 Nuclear Energy Stocks to Watch as AI Power Demand Soars - MarketWise",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTlp6TjdQY1dQN0tlWHN6QWtwbFJJWm82SG94V3F1LXdWemdLUHk1MmV1X3g3bEVfSVpDYVlYc1FNU25EdUdjSzFQR1lDbk9HNEpWQ3VwRmNpcnRiMnIzNlR1ZXdPTkoxVjZucTlqSjZYTzBZSDJfMmlaZ0VNeTJJUFpKdnZYUFk5QXF5UEUxOTB4Zk90WUVVVWM5dEVsbWM4?oc=5",
-              "sentiment": 0.153,
+              "title": "3 Nuclear Energy Stocks Down 40% or More From Their Highs -- Only 1 Is a Real Opportunity Right Now. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMHRsMEVwdzdrSWVWc1BtbGJKQUNCMTVqZjJ3RjJISDhpbU9hb3RNNzNydGRiLVNtWm9vN2tDQWI3UmNPU19ZNWlPcmlwVHF4dDlXbF8tR1RhUXNqSkFaVU5KeVkyZ2VzVWtwNXhpbi1fRHgwV0p0SjM4QlVyS2JGdE9EVnFZZ2pNbm5yNFY2a2hlb05abFR4Rw?oc=5",
+              "sentiment": 0.25,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "Why Is (TSX:CCO) Cameco Back in TSX Energy Stocks? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOd0V0OS1hTG5jNlNRQ0tkTWRQRHFBU0J5aG50azNIUjJncDRHckZMUXZ0RUN0OTdWdWQwWkZISERIVmo5T3JFZW9HYnB5MW12YkoxTHZ2YmM4TEp6SElGS2t6Q0dDeDZFcW5XXzcwajFuTmpoMUxHd0pWVVZUajBWNjZTdFZ0VzVFOEdSNHc2NW9wZw?oc=5",
-              "sentiment": 0.273,
+              "title": "8 Nuclear Energy Stocks to Watch as AI Power Demand Soars - MarketWise",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTlp6TjdQY1dQN0tlWHN6QWtwbFJJWm82SG94V3F1LXdWemdLUHk1MmV1X3g3bEVfSVpDYVlYc1FNU25EdUdjSzFQR1lDbk9HNEpWQ3VwRmNpcnRiMnIzNlR1ZXdPTkoxVjZucTlqSjZYTzBZSDJfMmlaZ0VNeTJJUFpKdnZYUFk5QXF5UEUxOTB4Zk90WUVVVWM5dEVsbWM4?oc=5",
+              "sentiment": 0.153,
               "relevance": 0.6,
               "event_type": "other"
             }
@@ -5219,16 +5219,16 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Stock Market Midday, Oct. 23: Energy Surges on Oil Price Spike, Cybersecurity Stocks Gain - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNXFIZWpVeTNCbzBDcklkajJPV2ZTMzRIV0FiVV84SW5IQkdQXzNtNG96QW9Ua2Z5cEE4eTRWeE0zV3g1MG82OVU1XzVFMGlmbE9nREt4UV9YaE1YZ2dsUlZXdzUtNC1BczYtNnFPbVMtQWNvcjlOSlZLbGh2WDItdmg5RFVETXFVMEpFdXVEOEZZc052MUE?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
+              "title": "CrowdStrike Soars 20%, Secures A Spot Among 11 Newcomers To Best Stock Lists - Investor's Business Daily",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWndLOU5WZGxWSmVjQnlnZi1MVTczOXVOcm55alBwclVybWoyTUpNdVZiUmRpY0ZTb0RJdEdMcEN3T1hLZElZbmhZQ00xWlpMRVJJUUUwOTdGRmVldTBkMktOSnZRbS1ya1pnWVdGcUMzUmtFTU1FYWVna05mcGxJcENyY3VmM0liWWlPWWI3WFFraXloTDFiaQ?oc=5",
+              "sentiment": 0.758,
+              "relevance": 0.903,
+              "event_type": "listing"
             }
           ],
           "coverage": {
-            "count": 41,
-            "zscore": 2.06,
+            "count": 42,
+            "zscore": 2.15,
             "spike": false
           }
         },
@@ -5508,7 +5508,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.23,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -5547,7 +5547,7 @@
           ],
           "coverage": {
             "count": 38,
-            "zscore": 2.39,
+            "zscore": 2.4,
             "spike": false
           }
         },
@@ -5915,12 +5915,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-24",
-      "return_pct": -2.06,
-      "zscore": -1.52,
+      "return_pct": -1.02,
+      "zscore": -0.7,
       "max_abs_z_recent": 2.61,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-10-23",
