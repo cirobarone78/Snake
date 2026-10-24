@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.5% | 33.3% | +21.8 pp | 44% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 61% | 0.500 |
-| 3 | SOL | 48.9% | 33.3% | -15.6 pp | 70% | 0.000 |
+| 1 | POL | 11.7% | 33.3% | +21.7 pp | 41% | 1.000 |
+| 2 | LINK | 39.2% | 33.3% | -5.8 pp | 56% | 0.500 |
+| 3 | SOL | 49.2% | 33.3% | -15.8 pp | 67% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,16 +23,6 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
-
-**TRX — TRON**
-
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
-
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.2 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **AAVE — Aave**
 
@@ -52,6 +42,16 @@ Layer 1 di smart contract; adozione DeFi finora modesta.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.20 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 6.6 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**SUI — Sui**
+
+Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
+
+- **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato dalle commissioni, ma meno della metà dell'offerta è circolante: gli sblocchi programmati sono il fattore dominante sul prezzo.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 2.43 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 3.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XLM — Stellar**
@@ -113,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- stablecoin o token ancorato: 22
-- capitalizzazione sotto la soglia: 20
-- volume troppo basso rispetto alla capitalizzazione: 14
+- capitalizzazione sotto la soglia: 22
+- stablecoin o token ancorato: 20
+- volume troppo basso rispetto alla capitalizzazione: 18
 - già in portafoglio: 6
 
 ## Limiti
