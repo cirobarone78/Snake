@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-24 07:10 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-25 07:11 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Binance Wallet IDO | hot | 0.99 | +3.7% | $2.6B | akedo, midnight-3, zama |
-| 2 | InfoFi | hot | 0.99 | +9.2% | $287M | origintrail, kaito, bubblemaps |
-| 3 | bStocks Ecosystem | hot | 0.97 | +2.0% | $1.1B | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
-| 4 | Cybersecurity | hot | 0.96 | +2.2% | $183M | goplus-security, arcium, polyswarm |
-| 5 | Airdropped Tokens by NFT Projects | hot | 0.96 | +0.7% | $746M | pudgy-penguins, apecoin, moonbirds |
-| 6 | Robinhood Chain Stocks Ecosystem | hot | 0.94 | +0.3% | $154M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
-| 7 | Fan Token | hot | 0.94 | +1.6% | $138M | croatian-ff-fan-token, og-fan-token, atletico-madrid |
-| 8 | Tokenized Stocks | hot | 0.88 | -0.3% | $2.7B | circle-internet-group-bstock, strategy-pp-variable-xstock, spacex-bstocks-tokenized-stock |
+| 1 | Bridged-Tokens | hot | 0.96 | +0.3% | $404M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
+| 2 | BTCfi Protocol | hot | 0.96 | +0.5% | $804M | pendle, bedrock-token, threshold-network-token |
+| 3 | Yield Aggregator | hot | 0.88 | +1.2% | $387M | convex-finance, yearn-finance, doppler-finance |
+| 4 | bStocks Ecosystem | hot | 0.86 | -0.2% | $1.1B | circle-internet-group-bstock, spacex-bstocks-tokenized-stock, sandisk-bstocks-tokenized-stock |
+| 5 | Robinhood Chain Stocks Ecosystem | hot | 0.86 | -0.3% | $154M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 6 | BONK.fun Ecosystem | warm | 0.83 | +10.8% | $193M | useless-3, scamcoin, kori |
+| 7 | Fiat-backed Stablecoin | warm | 0.82 | -0.1% | $282.2B | tether, usd-coin, usds |
+| 8 | USD Stablecoin | warm | 0.81 | -0.1% | $294.0B | tether, usd-coin, usds |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Decentralized Identifier (DID) | -13.1% | $2.4B | worldcoin-wld, ethereum-name-service, project-galaxy |
-| Optimism Superchain Ecosystem | -12.5% | $2.2B | worldcoin-wld, optimism, celo |
-| Pons Launchpad | -9.2% | $189M | pons, zzz-2, priors-agent |
-| SocialFi | -8.0% | $2.5B | pump-fun, project-galaxy, swop-2 |
-| Base Meme | -7.7% | $240M | based-brett, toshi, degen-base |
+| Tokenized Assets | -53.9% | $22.4B | figure-heloc, tether-gold, hashnote-usyc |
+| Real World Assets (RWA) | -35.9% | $47.9B | figure-heloc, chainlink, stellar |
+| Remora Markets Tokenized rStocks | -21.9% | $107M | circle-rstock-2, sandisk-rstock, microstrategy-rstock |
+| Tokenized Exchange-Traded Funds (ETFs) | -21.4% | $534M | sp500-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf |
+| Tokenized Exchange-Traded Product (ETPs) | -21.4% | $534M | sp500-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
