@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T01:07:15.859099+00:00",
+  "generated_at": "2026-10-25T01:12:54.139107+00:00",
   "title": "Replay storico",
   "disclaimer": "Esecuzione STORICA (replay) della stessa strategia difensiva di momentum attraverso lo stesso broker del paper trading (stessi costi, fill a t+1). È backward-looking e IN-SAMPLE: illustra il comportamento passato e verifica la coerenza del motore, NON è il track record forward (quello è il live-shadow). Non è consulenza finanziaria.",
   "lookback": 30,
@@ -13,43 +13,47 @@
   "scenario": {
     "scenario_id": "replay",
     "initial_cash": 10000.0,
-    "equity": 6778.36,
-    "cash": 202.5,
-    "return_pct": -32.22,
-    "realized_pnl": -3089.45,
-    "fees_paid": 360.13,
+    "equity": 6739.36,
+    "cash": 24.07,
+    "return_pct": -32.61,
+    "realized_pnl": -3038.12,
+    "fees_paid": 366.03,
     "fully_marked": true,
-    "last_processed": "2026-10-22",
+    "last_processed": "2026-10-23",
     "positions": [
       {
-        "symbol": "BTC",
-        "qty": 0.03523731,
-        "avg_cost": 79757.6391,
-        "price": 81311.8906,
-        "value": 2865.21,
-        "pnl_pct": 1.95
+        "symbol": "ETH",
+        "qty": 1.04551073,
+        "avg_cost": 2389.0531,
+        "price": 2384.0774,
+        "value": 2492.58,
+        "pnl_pct": -0.21
       },
       {
         "symbol": "POL",
         "qty": 41090.66262942,
         "avg_cost": 0.0949,
-        "price": 0.0903,
-        "value": 3710.65,
-        "pnl_pct": -4.8
+        "price": 0.0897,
+        "value": 3684.93,
+        "pnl_pct": -5.46
+      },
+      {
+        "symbol": "SOL",
+        "qty": 5.23236438,
+        "avg_cost": 103.6666,
+        "price": 102.7799,
+        "value": 537.78,
+        "pnl_pct": -0.86
       }
     ],
     "targets": {},
     "metrics": {
-      "sharpe": -0.54,
+      "sharpe": -0.55,
       "max_drawdown_pct": -53.19,
-      "time_underwater_pct": 97.5,
+      "time_underwater_pct": 97.8,
       "n_days": 367
     },
     "curve": [
-      {
-        "t": "2025-10-20",
-        "v": 10000.0
-      },
       {
         "t": "2025-10-21",
         "v": 10000.0
@@ -1517,22 +1521,34 @@
       {
         "t": "2026-10-22",
         "v": 6778.36
+      },
+      {
+        "t": "2026-10-23",
+        "v": 6739.36
       }
     ],
     "recent_orders": [
       {
         "created_at": "2026-10-18",
-        "symbol": "SOL",
-        "side": "buy",
-        "qty": 5.232364,
-        "status": "pending",
-        "fill_price": null
+        "symbol": "ETH",
+        "side": "sell",
+        "qty": 0.423534,
+        "status": "filled",
+        "fill_price": 2408.2597
       },
       {
         "created_at": "2026-10-18",
+        "symbol": "SOL",
+        "side": "buy",
+        "qty": 5.232364,
+        "status": "filled",
+        "fill_price": 103.563
+      },
+      {
+        "created_at": "2026-10-19",
         "symbol": "BTC",
         "side": "buy",
-        "qty": 0.010578,
+        "qty": 0.024342,
         "status": "pending",
         "fill_price": null
       },
@@ -1553,14 +1569,6 @@
         "fill_price": 104.9052
       },
       {
-        "created_at": "2026-10-19",
-        "symbol": "BTC",
-        "side": "buy",
-        "qty": 0.024342,
-        "status": "pending",
-        "fill_price": null
-      },
-      {
         "created_at": "2026-10-20",
         "symbol": "BTC",
         "side": "buy",
@@ -1578,17 +1586,17 @@
       },
       {
         "created_at": "2026-10-21",
-        "symbol": "LINK",
+        "symbol": "BTC",
         "side": "buy",
-        "qty": 273.788242,
+        "qty": 0.005449,
         "status": "pending",
         "fill_price": null
       },
       {
         "created_at": "2026-10-21",
-        "symbol": "BTC",
+        "symbol": "LINK",
         "side": "buy",
-        "qty": 0.005449,
+        "qty": 273.788242,
         "status": "pending",
         "fill_price": null
       },
@@ -1597,8 +1605,8 @@
         "symbol": "BTC",
         "side": "sell",
         "qty": 0.035237,
-        "status": "pending",
-        "fill_price": null
+        "status": "filled",
+        "fill_price": 81295.6282
       }
     ]
   }
