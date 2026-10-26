@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T01:12:54.139107+00:00",
+  "generated_at": "2026-10-26T01:13:15.372150+00:00",
   "title": "Replay storico",
   "disclaimer": "Esecuzione STORICA (replay) della stessa strategia difensiva di momentum attraverso lo stesso broker del paper trading (stessi costi, fill a t+1). È backward-looking e IN-SAMPLE: illustra il comportamento passato e verifica la coerenza del motore, NON è il track record forward (quello è il live-shadow). Non è consulenza finanziaria.",
   "lookback": 30,
@@ -13,51 +13,47 @@
   "scenario": {
     "scenario_id": "replay",
     "initial_cash": 10000.0,
-    "equity": 6739.36,
+    "equity": 6711.0,
     "cash": 24.07,
-    "return_pct": -32.61,
+    "return_pct": -32.89,
     "realized_pnl": -3038.12,
     "fees_paid": 366.03,
     "fully_marked": true,
-    "last_processed": "2026-10-23",
+    "last_processed": "2026-10-24",
     "positions": [
       {
         "symbol": "ETH",
         "qty": 1.04551073,
         "avg_cost": 2389.0531,
-        "price": 2384.0774,
-        "value": 2492.58,
-        "pnl_pct": -0.21
+        "price": 2355.9536,
+        "value": 2463.17,
+        "pnl_pct": -1.39
       },
       {
         "symbol": "POL",
         "qty": 41090.66262942,
         "avg_cost": 0.0949,
-        "price": 0.0897,
-        "value": 3684.93,
-        "pnl_pct": -5.46
+        "price": 0.0898,
+        "value": 3688.63,
+        "pnl_pct": -5.36
       },
       {
         "symbol": "SOL",
         "qty": 5.23236438,
         "avg_cost": 103.6666,
-        "price": 102.7799,
-        "value": 537.78,
-        "pnl_pct": -0.86
+        "price": 102.2717,
+        "value": 535.12,
+        "pnl_pct": -1.35
       }
     ],
     "targets": {},
     "metrics": {
-      "sharpe": -0.55,
+      "sharpe": -0.56,
       "max_drawdown_pct": -53.19,
-      "time_underwater_pct": 97.8,
+      "time_underwater_pct": 98.1,
       "n_days": 367
     },
     "curve": [
-      {
-        "t": "2025-10-21",
-        "v": 10000.0
-      },
       {
         "t": "2025-10-22",
         "v": 10000.0
@@ -1525,6 +1521,10 @@
       {
         "t": "2026-10-23",
         "v": 6739.36
+      },
+      {
+        "t": "2026-10-24",
+        "v": 6711.0
       }
     ],
     "recent_orders": [
