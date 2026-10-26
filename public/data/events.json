@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T21:36:00+00:00",
+  "generated_at": "2026-10-26T01:11:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 102,
-            "zscore": 0.07,
+            "count": 101,
+            "zscore": 0.03,
             "spike": false
           }
         },
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 67,
-            "zscore": -0.41,
+            "count": 69,
+            "zscore": -0.31,
             "spike": false
           }
         },
@@ -1404,7 +1404,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 1.9,
+            "zscore": 1.89,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 0.2,
+            "count": 15,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.96,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -1946,6 +1946,14 @@
           "events": [
             {
               "source": "googlenews_health",
+              "title": "The healthcare sector is getting a safe haven boost. This one stock is headed for a long-term breakout - CNBC",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNODdfWm1wUTFBUU1uVE5GV1hHOFhfZDFFN0xjcFFwbTJGel9RY2xMZmp6NXROd0N4dldFLVlrcUF0ZG1tbHJaT3RNMmVXZm8yQndfblR3V0ZVN2YwTkoyVkVHR2gtc2ZGVmVHNWpZQ3l3bEFWQWdab243Z2p0Qm1zSjRpTmViTlo3OWdoV2JySXdOMnF3Q2ljWWQ1N3Y0cTAzanB0ZXRFaGZrT2pydjRpQXduSmw2bmMtaDZUeHZia3VFTFVHMVhRUmVEeV9MZWg2SFpBbQ?oc=5",
+              "sentiment": 0.681,
+              "relevance": 0.872,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
               "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkxEdEJ1WjF3WWNsb09CUHZzTWttalZZUmxVNXJHOXBIaGhFeE9ob0tCSno1c2NLVmtWVloyc0lqdXBhMGdiWTRjSUlJa0lkbThPaXZ4RkxxZjBaQndrNXVwM1Y2YkdtZVpjS3hrRktudzhseW83X25ySkdsdU5hU0ZpX0d3MWZuRmYtdVUzUVNpRjU5UmZxeFRiVGRNSkZKQ3c?oc=5",
               "sentiment": 0.527,
@@ -1959,19 +1967,11 @@
               "sentiment": 0.494,
               "relevance": 0.798,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Dow outperforms as Wall Street rises, healthcare stocks lead gains - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBBZ1JVcXlqUW1oTWdoWERVZUJ5RjhEV0s2QTlKM25CRzYyRWFyVzQ0eFZ6Z1Y5RllUWlV0SktDNEgzMG11dHlSUXFGeFZlTkVfMFdJV3QydmFKemI3eW03bUtSd3hSMWt5WHRMa1pPNHRGTjZjQ3Zsa1UyUVk2QQ?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 1.47,
+            "count": 15,
+            "zscore": 1.71,
             "spike": false
           }
         },
@@ -2371,45 +2371,6 @@
             "zscore": 2.67,
             "spike": true
           }
-        },
-        {
-          "date": "2026-08-03",
-          "return_pct": 1.85,
-          "zscore": 1.6,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": 1.48,
-          "events": [
-            {
-              "source": "googlenews_industrial",
-              "title": "AstraZeneca tops pharma growth rankings while Bristol Myers trails amid merger talks (XLV:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV1pyTXY5YzNYWl9USW5PNFpzYTdjQTlLM0YxV3Z4S1VOWFluU2xWT1VtNURYUHVscG5uU19Icmk3VmE4dzFuM2szX1VtUEdVRmpUcEs2MHFMM1JMMENmTnVXV0ZfbWUtOG13VjMwSjVMbFNiME1HZW5GUDRzRFlGYURtdVJrREpLNjBHbzl5VS0xUm80TERKQmZvMkNVbW5KaTBienEtV3F3S1Vob01kOGtjZFp6dGlpc0xWeVV1MA?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "The Best UK Companies to Own - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5xaEE0WUVyTUVUbW1QcHdVcmxxbVduTDZjMHFaVEliY050RlZLeDZaUjA5alNFckFLRzZnMGN3SllVNVZ0OFZzaU9lNE9ZTjNZRkVYdU4xVlVnYmhKYlBSbHdidUt6SVFUTHlrc21WVFVYbUE?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "The Fed Held Interest Rates Steady for a 2nd Straight Meeting Under Kevin Warsh, With 3 Officials Dissenting. Here's What Investors Should Expect Next. - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaS2RvOXRqYnhLTm5reDJqX0ItSHB0WGpQRnN4RWVTUUY1SDlsWTlEUzFlYlV5RUJNLWx0S09YMHJETXdYZ0hXVVYwcEM5MVRtVUIxdVpNNllhalRqbWlTd2pJU1ZTMVFTSVJIVXJYOTJVaHpyRVpleFBGY2F1WWc?oc=5",
-              "sentiment": 0.599,
-              "relevance": 0.84,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 22,
-            "zscore": 0.24,
-            "spike": false
-          }
         }
       ]
     },
@@ -2453,7 +2414,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.22,
+            "zscore": -1.24,
             "spike": false
           }
         },
@@ -2492,7 +2453,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.19,
+            "zscore": 1.23,
             "spike": false
           }
         },
@@ -2530,8 +2491,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 1.28,
+            "count": 6,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -2694,7 +2655,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.11,
+            "zscore": 0.14,
             "spike": false
           }
         },
@@ -2716,24 +2677,24 @@
             },
             {
               "source": "googlenews_staples",
+              "title": "Barlow’s Research Roundup: Time to take profits on consumer staples stocks says Scotiabank strategist - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxON3F5WEJYMzZSM0Q1OUdpRVMyVkp4cXR3MHVFRXJOM0pVcDBNLV9XQTVfdHIyaFZ2djl1MWxlSE9falV5YnkxaUx0UHprX3Z5dHA1d0wza2NMZnpLNjlGRExJeDRBTkdDMzAzSERDdEp4STFCaUhLenFrdldUNWtuRXRTa1JLb28zUF9RV0w5dkZwRk9Ma2VfRDdzRXJVVmRVUThPZ0ZWWjY4bEJ6QlktYl9VcHBTZXc5WGxxSERkdnl4SXpfRlRBRjNMdTI1T0syYTBKOE1sNlNiUQ?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
               "title": "Cover Story: A spending boost in store for consumer stocks - The Edge Malaysia",
               "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NeWZmTjVnNVlDVkRYTHRUX0xZOEFVc2JDOXJ2UUtpNndURzZrLVNkWkFhc0VySTNwcVhORHdrRUNlc0x1Z0VDRGFwcWNKWDRf?oc=5",
               "sentiment": 0.402,
               "relevance": 0.761,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "Kraft Heinz (KHC) vs. GIS and CAG: Can Strong Cash Generation and Debt Paydown Revive a Forgotten Consumer Staples Stock? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTWhTeDhjeTB4Q2hmRzdtNEtSM0xUYW9adUtndVZrMW56SmpwUzgzb016YXdnV2NMOVo5R29BTWdKMDlhMC15aWx1WUFUQ2hiejdJLWI1N3VQUFpyNUY4RVR1V0dLWHcxZ3pEeFcxVkhjM2U5cHVoTFdiZzFpanNHakd6dDlYdnZUUGVkamM5QW8?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.727,
-              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 24,
-            "zscore": 3.85,
+            "zscore": 3.83,
             "spike": true
           }
         },
@@ -2772,7 +2733,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 2.08,
+            "zscore": 2.07,
             "spike": false
           }
         },
@@ -2935,7 +2896,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.9,
+            "zscore": -0.92,
             "spike": false
           }
         },
@@ -2974,7 +2935,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.96,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -3012,8 +2973,8 @@
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": -0.15,
+            "count": 15,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -3658,7 +3619,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.1,
+            "zscore": 1.09,
             "spike": false
           }
         },
@@ -3737,45 +3698,6 @@
           "coverage": {
             "count": 5,
             "zscore": 0.55,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-08-03",
-          "return_pct": 2.86,
-          "zscore": 2.12,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 1.48,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "The Fed Held Interest Rates Steady for a 2nd Straight Meeting Under Kevin Warsh, With 3 Officials Dissenting. Here's What Investors Should Expect Next. - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaS2RvOXRqYnhLTm5reDJqX0ItSHB0WGpQRnN4RWVTUUY1SDlsWTlEUzFlYlV5RUJNLWx0S09YMHJETXdYZ0hXVVYwcEM5MVRtVUIxdVpNNllhalRqbWlTd2pJU1ZTMVFTSVJIVXJYOTJVaHpyRVpleFBGY2F1WWc?oc=5",
-              "sentiment": 0.599,
-              "relevance": 0.84,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Mexican Peso outpaces broad US Dollar strength ahead of Banxico’s rate decision - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd0tLV2NnNDJkQlhYQzRYLS1mdkNNYnF2clhWUzM5aWh5U1drMFU2RnRVTjhIdXUxTDNiWTFvUElXT3pTRTk4LW81REtUMUNaRzR6YktjMkZMbWhsaVh3LTQ0WjlpWUcxYWdNLXh4Q21UZklGMF9iMDRYX3lMMVVkV3JMMXVCcVpGZ21tTVJOMjU0Y2pBVzViM2lKUnpGOERva1pmam5qLVExbDE0ZHNB?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "What’s next for US interest rates? - The Week",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeERyOTVZaE44NGpiNHlZcUFIeUo2SFgzZE9MTmdiVHYxOGxKLWFNa0stYVVhS2RpWlhrajExaldjdFgtQXhSU2ozaGJGQjNRbXg1ZVJ4YktLWkludm5WUi1fMzc4dWpyVWxfTTFZbmc0UG5lM0l4bkRnZnh4SGE0RkVxYjhtTDFY?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 13,
-            "zscore": 1.39,
             "spike": false
           }
         }
@@ -4905,45 +4827,6 @@
             "zscore": 0.16,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-03",
-          "return_pct": 2.68,
-          "zscore": 1.94,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 1.48,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "The Fed Held Interest Rates Steady for a 2nd Straight Meeting Under Kevin Warsh, With 3 Officials Dissenting. Here's What Investors Should Expect Next. - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaS2RvOXRqYnhLTm5reDJqX0ItSHB0WGpQRnN4RWVTUUY1SDlsWTlEUzFlYlV5RUJNLWx0S09YMHJETXdYZ0hXVVYwcEM5MVRtVUIxdVpNNllhalRqbWlTd2pJU1ZTMVFTSVJIVXJYOTJVaHpyRVpleFBGY2F1WWc?oc=5",
-              "sentiment": 0.599,
-              "relevance": 0.84,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Is State Street SPDR S&P Aerospace & Defense ETF (XAR) a Strong ETF Right Now? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdVBMU2VSVkRaUGJyOVhCTUgtaldGYjVJaDdhZlA5M1pzd3A1UnF5OGlWemdWeTlYYnhiYUwxaDQ0MGc1TUZGRzZ2eFoxOVlnZGRJRW9YRGxZWnUtQlhfeGdZSzZ3cjVfV2JYOWg2M2lRdkNwekhELUVHaWg1RjhfQzlTeF93VElVbnZiV1JYQWtmM3dVSkx0czN3?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Mexican Peso outpaces broad US Dollar strength ahead of Banxico’s rate decision - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd0tLV2NnNDJkQlhYQzRYLS1mdkNNYnF2clhWUzM5aWh5U1drMFU2RnRVTjhIdXUxTDNiWTFvUElXT3pTRTk4LW81REtUMUNaRzR6YktjMkZMbWhsaVh3LTQ0WjlpWUcxYWdNLXh4Q21UZklGMF9iMDRYX3lMMVVkV3JMMXVCcVpGZ21tTVJOMjU0Y2pBVzViM2lKUnpGOERva1pmam5qLVExbDE0ZHNB?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 3,
-            "zscore": -1.43,
-            "spike": false
-          }
         }
       ]
     },
@@ -5914,13 +5797,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-10-25",
-      "return_pct": -0.55,
-      "zscore": -0.32,
+      "date": "2026-10-26",
+      "return_pct": -1.06,
+      "zscore": -0.72,
       "max_abs_z_recent": 2.61,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 4
     },
     "equity": {
       "date": "2026-10-23",
@@ -5929,7 +5812,7 @@
       "max_abs_z_recent": 2.01,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 3
     }
   }
 }
