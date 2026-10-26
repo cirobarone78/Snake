@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T09:51:00+00:00",
+  "generated_at": "2026-10-26T14:17:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 102,
-            "zscore": 0.07,
+            "count": 101,
+            "zscore": 0.03,
             "spike": false
           }
         },
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.08,
+            "zscore": -0.09,
             "spike": false
           }
         },
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 75,
-            "zscore": 1.56,
+            "zscore": 1.55,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 118,
-            "zscore": 5.16,
+            "count": 119,
+            "zscore": 5.23,
             "spike": true
           }
         },
@@ -2178,6 +2178,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-26",
+          "return_pct": 1.1,
+          "zscore": 1.57,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.67,
+          "events": [
+            {
+              "source": "googlenews_industrial",
+              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.6,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_industrial",
+              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1Sw?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.6,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_industrial",
+              "title": "Should You Invest in the State Street Industrial Select Sector SPDR ETF (XLI)? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcEY5dXRLZmdaaVRwN2NlWVBlS05vcERNMGdXN1FlYjNwcFBZbjROU1I0cXc4YXNfT2dCVzE5S0VFcTNQUU9ZSGhpOHBiWm1GeW5HMkFUanA4bVRIRUo0aXF6REJOMVEwU0dNUEhLeFh1YXZqRVh3WUV2cEVFbkVPeFV3UEFGOTF1UnpOUzFncVFBZGIza2RJWjdxbEloRlFOanF3ag?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.67,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-23",
           "return_pct": -1.27,
           "zscore": -1.52,
@@ -2211,8 +2250,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.65,
+            "count": 5,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -2414,7 +2453,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.2,
+            "zscore": -1.21,
             "spike": false
           }
         },
@@ -2862,6 +2901,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-26",
+          "return_pct": 1.89,
+          "zscore": 2.0,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.67,
+          "events": [
+            {
+              "source": "googlenews_discretionary",
+              "title": "Stocktwits Retail Therapy: Defensive Bets Hold Firm As Hasbro, Kohl’s, Boston Beer Lead Weekly Consumer Gains - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSlUtSTFlR2twZzhERXl1b19BX2Z5bVl5RnlQV0JhY1ZTRFVIZFlTbFlxZkM2bWtXdVpxUV9ySkl5TDdqbm8wYUozNW9LWXdENHhnaHY2a0lfaDRNTlAtTFIzbVZFMFIyOXdvX0Frb1VJakhWdVZXVXE0RVA2SlBheEV2bVRqWl9oNG1iYWxBSHkzcjhoN0dYSUlRNmlGTGNZd3ROMl85NTREQWpwQUJQRXdSUnp0VDRCcW5kNUNta1FXeDhrY1VibDZ6dFdsWkFkQ0lNX1BlRllGQ2h2dVBBa2lRZFlRZkFRQUMxLXZZU2U3REZoWUhQdFVUbw?oc=5",
+              "sentiment": 0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Stocktwits Retail Therapy: Defensive Bets Hold Firm As Hasbro, Kohl’s, Boston Beer Lead Weekly Consumer Gains - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNelpvLUJGaFEwQ0NFdWdGdWd6LWY1SjNZZ0VTVXp3X1JkZ2MxM2JPSVRUS1NoQmI2NGdvaVBSWmdNYUtKZ3ZyWEVxcnh3LU1pa3p0b09yeUxBUHR6UWh5Vlp2NmtsRjhmZWwwdVJ2R0NUSlFMdXlYVnlTakN1b3ZOeUJ3X3c2TV9FQVdUbjlLek1DU0FSeHRFTC1sdHdhZFF1cVM3dlRvX3hTODhJQWtidTBfbnV5d29Xaml3UlRlNnU4UkxfSzhOY0gtaUVXaGJlbTVQNjNXXzVLMVlBN2xzc1FJenp0MGdOdkhFblBWMklWd0xyODBwTHRwWW5Oenc?oc=5",
+              "sentiment": 0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Consumer discretionary stocks Q3 recap: benchmarking Levi's (NYSE:LEVI) - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTnY4djJKbGQ2MjI3V3NjS3RyS2N2WEtMZlM0dGhGWmI5YTR1SXdOS19fWnpNcy1yUzZJa1FmSUp1emR0Zkd1eXlleFhwczlvdlFLZnphdy1vcUFlZzdDWXJ6WXlyMDhaS2pOWnQwUHNFWVlXaTN1WFhiWkZsbm9TTzV5Vk5WaG5GeDktUUx1ZXlLU0dnNHJiWnVYMWd1X191a093aVcyR1pPaEQ3NUxTeEFmOUt6enMwTWJPOEdJaU53YndZWkEwcw?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -1.11,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-23",
           "return_pct": -1.66,
           "zscore": -1.96,
@@ -3054,45 +3132,6 @@
             "count": 19,
             "zscore": 0.6,
             "spike": false
-          }
-        },
-        {
-          "date": "2026-09-15",
-          "return_pct": -1.75,
-          "zscore": -1.65,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.45,
-          "events": [
-            {
-              "source": "googlenews_discretionary",
-              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - benzinga.com",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVRjVzBTZk8ydWN0S2cwSHlaZmJKMW4xMVh5OFF1My1ieWNoUXMwWWRfSHBoNUxCV0lnajBJYkZycXFIMG5Ba0xmaDBvczUtRTNDWUkzazhPNTBfV2lyaGMydDJyTEN2V0RwU04tU0hQMWljS1g2d19sQkV5NDdCWmxSclZqdDJwSGdtOHRTeUZNYnpLOGxhT19QdjRqMWJvUEFYSVIxV0lJMHZzbEZBYWh0U090cWwtMjZJ?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Nike Stock Hits 52-Week Low as Consumer Discretionary Lags - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdWF3YkRxOGd4RWZESXpRZzMtLUx4NVFUSE42cERKM1UydzlGVjJPV28yOEZTRVJKZHhTdENLbEswcnZ0NFZSR1NfRTJmM0RlVmp3eHVCemhjQzdSM3hsRi1rMHJsOUhnQ1h1bmtFeTZBZXZia2ZnVE9HMkNWd3Y3VVNmYkxTRzBQMEZvaXFjYkJUQnFVR0xRclBHYnhPUjBHSEhfREdsem5VQ3hLM3NmQ3UzbGtUTnp1?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Burlington's 2026 Outlook: Store Footprint Expansion Targets 2,000 Total Locations - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbE1aa1pQb3NvQjQxWDhwM0d2MGdWeG5RQjhiVEszRWJjNFpIRjk1SnoxcjZfRWtsMDVZWW9ZQ19wRmZvdlBOUG8wT0tiRFE3dm1RRENXMi05TW11OFdvSkxjbC1KMVBIVnF4WEpYOE1PSkhYQUFJX2RfTVJzWnlSLU9TbjJ0WjVFUzlpc25QaHJ6UThZOS1VRzBZeUNZT09CSElqZlg2Tl90Z0x4Z1dGNm1JV3pXQTMxQlozTGRNNnpmcG80d0JLZ3p6Yw?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 33,
-            "zscore": 3.67,
-            "spike": true
           }
         }
       ]
@@ -4191,6 +4230,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-26",
+          "return_pct": -3.43,
+          "zscore": -2.14,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.67,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Indian Stock Market Gains 0.66% As Renewable Energy Stocks Show Mixed Performance (26 October 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcDhEN2l3UTEtR1hpWlJKUHVzdTl5TEVBTXVyVWExYW1RNTBrblNIWUp6SnRaaW1sTEpHelJiMUVRYm9PWkVkekJja2tzMVF1eGpOVkEtd1pUWUZxNURWLUYxNE9va2FUaFo4a3RwbkMxZnM2dDVTZXhMdE1rLWRCTEFJRjlBQVhlTEZELWFKcmx6T3diTkJNelktcG1XT0VCRFMwcTRBaUpPaTctSU1DcHdBaFRWWnJDWWs2ckZUbWJEZzMyUW9nQS1JdHh2UQ?oc=5",
+              "sentiment": 0.542,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Rate Decision Looms as Inflation Fears Rise: What’s Next for Markets? - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMFduSnhLMzhjUTI4MkI4bXlIcWU0MEEwSmJzWDNTZGpzT1BQU2wzd3BRY2VKR1BYb2RzbklSX3JsNlRPMExEYXJzN1FCUmo2bXVpYjFFeXdBQzloVEtBb3RkVTZnY2lNLWxtVHNQeThJVVJnc1hxUFplUC03MnJHMkdEZ1Y5WkFLbWpjUkY4cEF5RXZDdWZ5TUQ3ZkdSVUc1dGlyd0EzQzNoZlZvMnJYNVlDajVhdw?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.486,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Silver Price Forecast: $50 in View as Oil Fuels Fed Rate Hike Fears - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQY3BtX2lDMENRLVpOOF9JUFQtVDFKRG1QaW9GVUtQU3NXdDVUSG05cWNKdTE4bDQ5cGdWejEzQXRQY0Y3VTNHeUVfOVRVSExWZERpc2QtNlN5QkNJZTBWTElrRFRwT0o5VHgwUlpuZTB4T25CN3ZBSi1vUFg5YmJPUUFCeVh6UFhaVkV1bU9mRmZSQTVWRWFJZUxVcEhaLTBIbnphZVZyUnFJbW8tVng5UVV2U3BveWc?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.461,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.44,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-14",
           "return_pct": -3.14,
           "zscore": -2.14,
@@ -4382,45 +4460,6 @@
           "coverage": {
             "count": 5,
             "zscore": 1.54,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-17",
-          "return_pct": 2.37,
-          "zscore": 2.14,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 1.14,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Tidewater Renewables Ltd. (TSX:LCFS) Moves Higher as Renewable Fuel Strategy and Clean Energy Growth Drive Investor Interest - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOcWRaX1owbk9zZnFtWEY0RElDckxpalZSTzE0RElUZks4d0duMGhUWW1PQkFKQTJyM0Q1VUFHMnpOUGhuLUJQWHN4cjNUR3plbGZtdFNmenVRaHduRnd4N1cxZUpGd3pfYXkyVWw3YVRLeUZSYlpJTzBZNnBFRi11T1JYMXlzNVRDTTdjUGlUOVlhZDdVcFFxZmtTZDYxWXdLZmJiQnVzTWVXR05saGYwbWJ3WDIzZGJoUE5mRTJtT3pvZjFZNk9adWRyT2U3TlBKMktYcWljWmV6UWNvR1ZzQ0RFVElZUQ?oc=5",
-              "sentiment": 0.856,
-              "relevance": 0.942,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Green Stocks End Mixed; Tata Power, Alpex Solar Lead Gains While Premier Energies, ACME Solar Fall - Saur Energy",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZlFadHhZaU9wRU1lXzRoa0NrZ0RjLUJ1dkVxeEoxWE56Rk1qcnF4a09MTGRoSUhoTWNiSnJib01sZUNVZ3pLVnFBOVJMWlo4SUhMbTFyc2lJRVNvX2s1YW5jcll6SldqYlUzZWdNQXBFa1JrU2s1MnM0dk5WZVFKb3hkWjhGbzFzMjVUWVY1NlA2ZXFyZENvejZoR1NKSXdXZVdQTm9PQ3Z0SVlZb0NnTUw4NlgtUGJXNi1PSndtY0ZEREFUVjBraDQyUjhONDE4YkNKbjhuRUZfNkh1MlNaeWk2UQ?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Green Energy Stocks Show Mixed Trends As Indian Markets Remain Range-Bound On September 17 - SolarQuarter",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVGhvaFhEYzV4a2FUS24zS1A4ZjFRR0dzSFgtdURmbzVOZ3QyMU9tOTVUYXNBUjkwOXBweTRlTm5aT19CQkxvanB2aWJ0LUpDa294NFZCV0hJU2dDVnc3MnZvU3dDc0xrU1pUVWpxTkszaE1mUTNFUTA4SVRfTXg4dHhpUDNDTU4xa0c4Unp4TGtHMjIxMVU0WmZPdjBpWkQ4UkN6MFlQb2Z4bVYwcVhRaHNiVk5IM2tLNFhxTEIxekJSMlJqNXc?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": 1.83,
             "spike": false
           }
         }
@@ -4673,6 +4712,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-26",
+          "return_pct": 1.46,
+          "zscore": 1.97,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.67,
+          "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "Defense stocks retreat across the board; LIG D&A down in the 9% range, Hanwha Aerospace in the 5% range [Stocks NOW] - 파이낸셜뉴스",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JWUdlRmtDQzF2amQyUDlUNEhkbDFxRFpONGlYcmd0WHloV2pSemJOYmg0WFgxQi1KR3NCVjdrbG1qLTA3MC1HUG1idlN6YnlSWVVoWmZTYWo?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_defense",
+              "title": "Top Applied Aerospace & Defense (AADX) Competitors 2026 - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1vb3NDaUdGb2I1TXNQRUdiOWRvNDZVNFJvVkNtOGpHRnctZnhSZTY4WWlNNkRHNWxBRVg5Vi1qVFh5WUIybURDSGN0QmRNN1F5WTFWR1pKRDVMLXhOVEVQOXZ4WmRPRk9HMExkWGdKSWItNXJlUHBiN1pxREVnZw?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.527,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "'Super Central Bank Week' Kicks Off: Federal Reserve Expected to Hold Steady, December Rate-Hike Clues in Focus - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1LUGNqTFhlR210VW1XaG1oamRIdEdObVJPZVE5elM5N1VhOUZGaHdZSTQ5MTdpREx6Rk16aS1wRzV0ZkdrMDFNUkloUV9kT1JJMnN6SVNsOHI5MU8yNV84UkpiTzl2SkxTWEM0WDB2WU1sbEE0ZFE?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.504,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.3,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-15",
           "return_pct": 1.31,
           "zscore": 1.86,
@@ -4870,7 +4948,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.58,
+            "zscore": 1.59,
             "spike": false
           }
         },
@@ -4909,7 +4987,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.38,
+            "zscore": -0.39,
             "spike": false
           }
         },
@@ -4948,7 +5026,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.3,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -4987,7 +5065,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.38,
+            "zscore": -0.4,
             "spike": false
           }
         },
@@ -5026,7 +5104,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.42,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -5110,8 +5188,8 @@
             }
           ],
           "coverage": {
-            "count": 50,
-            "zscore": 2.84,
+            "count": 51,
+            "zscore": 2.93,
             "spike": true
           }
         },
@@ -5798,21 +5876,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-26",
-      "return_pct": 0.54,
-      "zscore": 0.54,
+      "return_pct": -0.16,
+      "zscore": -0.01,
       "max_abs_z_recent": 2.61,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 4
     },
     "equity": {
-      "date": "2026-10-23",
-      "return_pct": -0.52,
-      "zscore": -0.84,
+      "date": "2026-10-26",
+      "return_pct": 0.67,
+      "zscore": 1.06,
       "max_abs_z_recent": 2.01,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     }
   }
 }
