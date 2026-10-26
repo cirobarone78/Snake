@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T15:51:00+00:00",
+  "generated_at": "2026-10-26T18:52:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 67,
-            "zscore": -0.41,
+            "count": 68,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -1326,7 +1326,7 @@
           ],
           "coverage": {
             "count": 54,
-            "zscore": 1.32,
+            "zscore": 1.33,
             "spike": false
           }
         },
@@ -1404,7 +1404,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 1.87,
+            "zscore": 1.89,
             "spike": false
           }
         },
@@ -1443,7 +1443,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 0.76,
+            "zscore": 0.77,
             "spike": false
           }
         }
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.71,
+            "zscore": 1.68,
             "spike": false
           }
         },
@@ -2010,7 +2010,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.9,
+            "zscore": 1.86,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.18,
+            "zscore": 1.15,
             "spike": false
           }
         },
@@ -2087,8 +2087,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": 2.14,
+            "count": 16,
+            "zscore": 2.41,
             "spike": false
           }
         },
@@ -2179,12 +2179,28 @@
       "moves": [
         {
           "date": "2026-10-26",
-          "return_pct": 1.28,
-          "zscore": 1.8,
+          "return_pct": 1.48,
+          "zscore": 2.05,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 0.79,
+          "market_return_pct": 0.7,
           "events": [
+            {
+              "source": "googlenews_industrial",
+              "title": "Undervalued industrial stocks with strong year-over-year revenue growth (XLI:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTWZwWDZTRXBUYVpkbGVJTVF4bXNYQ2t1WTFjQ0dqRUdlSzBfY1pJVFkwRkpYRkUwVGxxNkxmZzlrY0RZNWJpWHZnVk9zZmVvNFc3ak1zWGMteF8yQkZoQVpLOVY4OEtnM1BrMzhoc3Ffb1V1ZGZQTE03dzZDSE5fMEhXTzJ5U2hDSkFTdWhMeDZWRHBDZFAxamtjdXp0QWd5VEZNRXlKTWdwR055S1E?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.884,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_industrial",
+              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.6,
+              "event_type": "earnings"
+            },
             {
               "source": "googlenews_industrial",
               "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
@@ -2192,27 +2208,11 @@
               "sentiment": -0.637,
               "relevance": 0.6,
               "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Should You Invest in the State Street Industrial Select Sector SPDR ETF (XLI)? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcEY5dXRLZmdaaVRwN2NlWVBlS05vcERNMGdXN1FlYjNwcFBZbjROU1I0cXc4YXNfT2dCVzE5S0VFcTNQUU9ZSGhpOHBiWm1GeW5HMkFUanA4bVRIRUo0aXF6REJOMVEwU0dNUEhLeFh1YXZqRVh3WUV2cEVFbkVPeFV3UEFGOTF1UnpOUzFncVFBZGIza2RJWjdxbEloRlFOanF3ag?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Are Industrial Products Stocks Lagging Albany International (AIN) This Year? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQ0hUWmJOWXJkLVlJXzlfYlVybWx6RUhTVEthUVg4TnhZNEpwNTNLVk13VXRINnRub1E0Y2NZTUdMTHZsWHczcXZFRmU3VjhPcnRRVjZPZkVtRC1JXzkzSXNlOWx0M3paanJVdDdTSXdTUHhQQnRMd0czajdCX3RqVnlINW12YmFLcXlaOUM4LXV0UGIzc1N2c0VjYnNIVWt5d0ZJeEpFNk9TQQ?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.67,
+            "count": 5,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -2329,7 +2329,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 0.38,
+            "zscore": 0.37,
             "spike": false
           }
         },
@@ -3749,11 +3749,11 @@
       "moves": [
         {
           "date": "2026-10-26",
-          "return_pct": 2.85,
-          "zscore": 1.37,
+          "return_pct": 3.29,
+          "zscore": 1.57,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.79,
+          "market_return_pct": 0.7,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3765,24 +3765,24 @@
             },
             {
               "source": "googlenews_semis",
+              "title": "Advanced Energy vs. KLA: Which Semiconductor Stock Is a Better Buy? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQzBpa1o0aTVSMzZ5aDdUXzlLcHRCdjZ1OHBBd2tYay15LUFtQkp2WG1TZk1SXzZzdUtXemxKSXdYS0g2SU9mRWVnblRpWWFnV29CVkVWSHJvRWFVMjFWdEhiQzloZGN1NkJ6WHBfWnkwc3BDeDYzLW1feVpoR2FNSGhBVGFKZnphbkE5TEtmNG15UHhZNk04TTg0RHZIcW02bWxR?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
               "title": "[New York Stock Market] Rises on Anthropic IPO Filing... Semiconductor Stocks Gain - 아시아경제",
               "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LZGJHclBQQVdxOHpJRUk4RWtZQkNQV3NkQ1ZMUFhFejF4d25pOXllUnl2ZkM1aFhVVncyb0tKb08tSERnWlhrQWNmT0ZNLTlLME4wZTZDN1czcmFvdC1wSnF0eW0?oc=5",
               "sentiment": 0.527,
               "relevance": 0.811,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Is Invesco Semiconductors ETF (PSI) a Strong ETF Right Now? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdi0zRlJBM1p6VS1kNTUxVnhQbDljMjFTVzNTWkRBNzg2SkI3NUZLcjBxeW91d29zN0JZcGtBbDhpVU1GXzVCS2lPMEg0eVF6SllNaUJCcUY4TkdPUUhKTTlPMEl2VmlQWktWY3E1dThDZzZ5ZEk5b3JFNUtoVWJGTFhCMkV1S2tqQ2JuWmNIVmEyWVczTm52S3FQd0c5RkZ0SHo0TA?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "etf_flow"
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": -0.59,
+            "count": 37,
+            "zscore": -0.46,
             "spike": false
           }
         },
@@ -4231,11 +4231,11 @@
       "moves": [
         {
           "date": "2026-10-26",
-          "return_pct": -2.68,
-          "zscore": -1.62,
+          "return_pct": -3.06,
+          "zscore": -1.88,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.79,
+          "market_return_pct": 0.7,
           "events": [
             {
               "source": "googlenews_cleanenergy",
@@ -4713,12 +4713,20 @@
       "moves": [
         {
           "date": "2026-10-26",
-          "return_pct": 1.76,
-          "zscore": 2.32,
+          "return_pct": 2.22,
+          "zscore": 2.84,
           "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.79,
+          "severity": "major",
+          "market_return_pct": 0.7,
           "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "RTX vs. GD: Which Defense Stock Has Greater Upside Potential? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNYVBreFdkOGpRVUJGSVhXZU5iVjdESWs4VmZwZFhDa0FOTmY0VlNWb1ctSmZtdXBvdGlsWVlYc2FvWjBYbmRvU3RSN2dzeWxvQWRfUnZ4NWVucmpVeWE3S0RYMm9yNnI4UEpTbFRQVEMwMXlMeTZkTk92WGNDWWpfOUV1a0k5REJtcTN3WHhKTS16dw?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_defense",
               "title": "Defense stocks retreat across the board; LIG D&A down in the 9% range, Hanwha Aerospace in the 5% range [Stocks NOW] - 파이낸셜뉴스",
@@ -4734,19 +4742,11 @@
               "sentiment": 0.318,
               "relevance": 0.527,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "'Super Central Bank Week' Kicks Off: Federal Reserve Expected to Hold Steady, December Rate-Hike Clues in Focus - BigGo Finance",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1LUGNqTFhlR210VW1XaG1oamRIdEdObVJPZVE5elM5N1VhOUZGaHdZSTQ5MTdpREx6Rk16aS1wRzV0ZkdrMDFNUkloUV9kT1JJMnN6SVNsOHI5MU8yNV84UkpiTzl2SkxTWEM0WDB2WU1sbEE0ZFE?oc=5",
-              "sentiment": 0.599,
-              "relevance": 0.504,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -1.31,
+            "count": 2,
+            "zscore": -1.06,
             "spike": false
           }
         },
@@ -5876,8 +5876,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-26",
-      "return_pct": 0.62,
-      "zscore": 0.6,
+      "return_pct": -0.17,
+      "zscore": -0.01,
       "max_abs_z_recent": 2.61,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5885,8 +5885,8 @@
     },
     "equity": {
       "date": "2026-10-26",
-      "return_pct": 0.79,
-      "zscore": 1.24,
+      "return_pct": 0.7,
+      "zscore": 1.11,
       "max_abs_z_recent": 2.01,
       "recent_days": 10,
       "benchmark": "SPX",
