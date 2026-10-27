@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.7% | 33.3% | +21.7 pp | 37% | 1.000 |
-| 2 | LINK | 38.6% | 33.3% | -5.3 pp | 51% | 0.500 |
-| 3 | SOL | 49.7% | 33.3% | -16.3 pp | 64% | 0.000 |
+| 1 | POL | 11.9% | 33.3% | +21.4 pp | 40% | 1.000 |
+| 2 | LINK | 38.7% | 33.3% | -5.4 pp | 50% | 0.500 |
+| 3 | SOL | 49.4% | 33.3% | -16.0 pp | 63% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -61,7 +61,7 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.
 - **Offerta**: offerta con tetto massimo — valutazione diluita 1.42 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 11.6 anni.
+- **Età**: almeno 11.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **HYPE — Hyperliquid**
@@ -114,8 +114,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 23
-- stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 19
+- stablecoin o token ancorato: 21
+- volume troppo basso rispetto alla capitalizzazione: 16
 - già in portafoglio: 6
 
 ## Limiti
