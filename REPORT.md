@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-10-27 07:19 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-10-28 07:09 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 0.99 | +15.0% | $405M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 2 | Olympus Pro Ecosystem | hot | 0.96 | +10.2% | $102M | synapse-2, spell-token, thorswap |
-| 3 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.95 | +8.2% | $713M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf |
-| 4 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.95 | +8.2% | $713M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf |
-| 5 | Bridged-Tokens | hot | 0.95 | +3.1% | $418M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
-| 6 | Remora Markets Tokenized rStocks | hot | 0.95 | +5.0% | $138M | circle-rstock-2, sandisk-rstock, microstrategy-rstock |
-| 7 | bStocks Ecosystem | hot | 0.94 | +3.4% | $1.2B | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, sandisk-bstocks-tokenized-stock |
-| 8 | Reality Ecosystem | hot | 0.94 | +4.3% | $154M | spacex-reality-protocol, circle-rstock-2, sandisk-rstock |
+| 1 | Pons Launchpad | hot | 0.98 | +19.8% | $244M | pons, priors-agent, zzz-2 |
+| 2 | The Boy’s Club | hot | 0.96 | +9.1% | $2.4B | pepe, ape-and-pepe, based-brett |
+| 3 | Frog-Themed | hot | 0.95 | +8.8% | $2.5B | pepe, ape-and-pepe, turbo |
+| 4 | Robinhood Chain Meme | hot | 0.94 | +16.0% | $427M | cash-cat, artificial-inu-3, degen-base |
+| 5 | Arcade Games | hot | 0.94 | +8.7% | $103M | audiera, frenpet, pepecoin-2 |
+| 6 | bStocks Ecosystem | hot | 0.93 | +4.8% | $1.2B | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, sandisk-bstocks-tokenized-stock |
+| 7 | Crypto-Backed Tokens | hot | 0.91 | +4.1% | $421M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| 8 | Tokenized Stocks | hot | 0.89 | +4.1% | $2.9B | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, strategy-pp-variable-xstock |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Prediction Markets | -13.0% | $5.2B | rain, true, dexsport |
-| Options | -12.3% | $5.5B | rain, derive, hegic |
-| Gambling (GambleFi) | -11.9% | $5.7B | rain, shuffle-2, bc-token |
-| Metagovernance | -6.9% | $216M | convex-finance, dinero-2, index-cooperative |
-| Yield Optimizer | -6.4% | $243M | convex-finance, equilibria-finance, singularry |
+| AI Applications | -14.9% | $2.9B | venice-token, akedo, pieverse |
+| Celebrity-Themed | -13.2% | $132M | yzy, bulla-3, aura-final-boss-2 |
+| Algorithmic Stablecoin | -12.2% | $1.6B | usdd, hylo-usd, celo-dollar |
+| Binance Wallet IDO | -5.9% | $2.3B | midnight-3, akedo, zama |
+| Crypto-backed Stablecoin | -4.7% | $4.9B | dai, falcon-finance, usdd |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
