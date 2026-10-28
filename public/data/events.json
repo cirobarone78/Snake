@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T00:54:00+00:00",
+  "generated_at": "2026-10-28T03:36:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1287,7 +1287,7 @@
           ],
           "coverage": {
             "count": 120,
-            "zscore": 5.26,
+            "zscore": 5.25,
             "spike": true
           }
         },
@@ -1454,6 +1454,45 @@
       "name": "Energy (XLE)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-27",
+          "return_pct": -2.05,
+          "zscore": -1.69,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.6,
+          "events": [
+            {
+              "source": "googlenews_energy",
+              "title": "Stock market on October 27th: Energy stocks and other stocks under pressure, VN-Index loses nearly 2 points. - Vietnam.vn",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaUxPaXd0aUowOXZ5bXNSbHpMdEdXS21fMG1kSkcxTTV3THlqbUFiVThRRVN2Smg4ampTcGZlSEZuTWM4UThDdjVlSDNGLXRUZHpGVXVuaTBaUmxUR1puZGlmMUE0V3J4dmVoUzZjcDROTDZFQUowSkVKQW50ZkpjYWNBcDVPbnBXRFFKaHJKZlZ0d0dhN2l4QkR4b1RMY0FFbU12NEpkZl9zdDR6bHQwbGQyTFJ5MmM?oc=5",
+              "sentiment": -0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Can Exxon’s $4.5 Billion Refining Windfall Defy Dropping Crude Prices on Oct. 30? - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQS0UyUUhoRW9PcnNmbVJRT0JRb0sxWUdYRXAtaFR3VFBVVnBsbjJSNXNuZ1pFaC1SRWZuVjQ1RHEwbi1wUWk0ZWZsWVVmWEc0ZmJ5WG1nMl9nRm9NTWRIRWRqZmw4NjluS1ZJUnFPUVN3Z1FyenFoMVJnUEtCQzNrV2pYRDFBNU05elJhQXQ0TTVXaTF2azl6OF9jTXgwcVFuWHZVOF9IWUk4dEs4QnJUcFhfYTNYMF9TYjhmd3NR?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.629,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Over 3 in 4 energy leaders expect at least a quarter of major projects at risk of delays or overruns over the next 3 years - Stock Titan",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOb2FPQm84c0tscFQ0SDY2b1QzclFYVEpEcWZSVjhLNVMzc3FOWWpLQzYwVk9BcGV3SVdORmhPRlFKT2x0ZUpsMDZKMThvY25paHJvYXBEaTJJQnF2amFpN0Nmb2RwQXI0cS1wOHdOVEdrbHlEUVBYdkJ0VlZXQ3BOUEpuN3NqOVJtRmV6UFhmWU1IS2dQeUNDdXhsTjJuS3BjaVVaZ2RfRzFfbGVsaTIwRnNSYUZaWkhUb3JN?oc=5",
+              "sentiment": -0.068,
+              "relevance": 0.627,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 13,
+            "zscore": 0.04,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-23",
           "return_pct": 2.6,
@@ -1646,45 +1685,6 @@
           "coverage": {
             "count": 12,
             "zscore": 0.05,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-16",
-          "return_pct": -2.88,
-          "zscore": -2.47,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.45,
-          "events": [
-            {
-              "source": "googlenews_energy",
-              "title": "Houthi Control of Critical Maritime Chokepoint Means More Disruption of Flows; Long-Term View Intact - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZEhNMC1DTzQzOHllaXh2SVdKV19ZWUtoUXlDemx6Z0NFdWNXa3Zhb3NRZTh3RnFHOFptaHhSeDRydnNpYW0taVZ6UUJqV3pHZFhXSDl4MXlGZ1Zzc05pVnQ5MFNET1ozY3FkNUFHQ3poMDJmSlZaN1ctdGNGeFJ1SHdJX3l4QVg4VWJtdnlUWmV1VEptLTlGcWJfbGpFakd1T0tfVUYxMVZxYmMta2ttZkJKNU04Zld6di10Z29ESzZpQnQ4RDB6ZlJrSzBILWc5OG9F?oc=5",
-              "sentiment": -0.509,
-              "relevance": 0.604,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Advanced Energy Industries (AEIS) Stock Looks Reasonable Given Its Earnings Power - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWWdFdUVoV3dtQzNkTUItNG50Rk5jVmRZdTJuaHh5d0lkRVhRZFNKWm1lWHhJRUFwZHJLMnVNUzdQWFhRRGxBQVhXMzY1Zlg5NGgtTmctaGpoVDdmYlg2clpnVU5ZN3pLVzBxSnc1eXpfSC1rcXpTbDBUNVJhUGVRcjRfTHRGM3lQNm1lNEhxUFhJVmItbGxfY21oaFpFNmJiTUtSNFRRV3RVeWVmeThzZTdyQUM0R01vbHFzZUhrQkQ3LUZLMTdMdlRqajM1Z01XYi0tbXdrTWjSAd4BQVVfeXFMUGlZVjhpeDdHTy00ckRiWm14d0xLZDVYNGVFMjE5bmRrQWtHYkJkX3hGR1VaT2FtMHgwcVJ0UHpLblM3Z2NFQWZneWZaZUJGeFZmMThRa1Y3bVZndWEzYU5Pb1dUYlNyZkZFRXU4ZEpDTVo2eUJsSVNWVXZSSUJqU0Mya0FhYXhjdUI1YjFFaFozdnp3QldHQ1pkZlBMZlRCdkQwTmM2bS1OOWstbmItZzlSTzZBeWZaSkJvYnNvZzhJSGk3c013MDNtaEJvazFCWVNaTFlmUE41TTh6WFZR?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.6,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Mixed or Offshore Upstream E&P Stocks Q2 Results: Benchmarking Peabody Energy (NYSE:BTU) - stockstory.org",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZ09RT3UtYVJmc3BFcUR1WFl0eUtEYldhckFyX25ldFk5ZXd5ZE40TnI0ajkxek5ZNFZoazE5M1g0TkdNUlV6N3U5UUJjVkhXekJCTzd4em1QWGlvV2hJM044Q1lwT1k3bkN0LXNVQ3RHTjFRV1ZrSUhxQnVTN3VvMzMzdGNqaUdxOVFDem50WlhrSENtcFRVQWExZ0M0TUpBeFlfMERoZXNyWTM1R2NLWFpfelNZeGhlSklLQ29VdVV6dy1uX1E5bVZoNWVieDhWVlBQOXdyRE02QQ?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 12,
-            "zscore": -0.16,
             "spike": false
           }
         }
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.34,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -2732,8 +2732,8 @@
             }
           ],
           "coverage": {
-            "count": 24,
-            "zscore": 3.85,
+            "count": 25,
+            "zscore": 3.99,
             "spike": true
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 2.08,
+            "zscore": 2.07,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.09,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.93,
+            "zscore": -0.91,
             "spike": false
           }
         },
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.95,
+            "zscore": 0.96,
             "spike": false
           }
         },
@@ -3012,8 +3012,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.04,
+            "count": 14,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.08,
+            "zscore": -1.1,
             "spike": false
           }
         },
@@ -3709,6 +3709,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-27",
+          "return_pct": 3.02,
+          "zscore": 1.4,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.6,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "\"Thank You, Anthropic\" KOSPI Surges 3%…Samsung Electronics Recovers to 220,000 Won, SK Hynix to 1.38 Million Won - 머니투데이",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJMXpiYXpzOHB4U2VuWnRTU1VUVlRVMDhGTlE3U2I5alkwLUdCbDJ2aFhGMUFYVktoUU0tR1lFTFNZT2M1MlBSeXR1a29jd1RvUk11OG5FcWF3N0lWY3V2Mmlhc2RwNUVHWWFkcw?oc=5",
+              "sentiment": 0.872,
+              "relevance": 0.949,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "BE Semiconductor Industries NV (OTCMKTS:BESIY) Sees Significant Growth in Short Interest - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV2FPRE9Ua3hEUHk1dTBITVUxbG5mMWNjR3Z5UnJLY0FCVk5xbDVTaTlMTHNzbFdDVWVIcVcxZ2xfb0JsZmtnM09EdjBDVlJUQVhsMjFuTVVQTllONUFuRmczeHRuY195NEIydDNlSHBVN1hOdlFCNnRqXzNaZlNBVk5SbURoaTRHOG9MSGhSR0p4cHhSTE95Y1lTcFJlN0xaams2eUFRRXlyQUxSRDQyMjh6SDZxU083MVBQWHlONmlyT0xZWDZGMUxnYjJUNkw5aE5DQUxBSFJhZUV6Ri1uM3BR?oc=5",
+              "sentiment": 0.751,
+              "relevance": 0.9,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "UCTT: Record Q3 results and rising capacity position growth amid strong semiconductor demand - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPNHpNNkhiZXctTk5sRHV6bWczcTREalpVSW1kbUR0RlJFZWlCNDJIX1RBbWNHZXhIeXZUWmtlSFJjOXVycVhXdm14cE9fQnVoNVc5S2lEa3pmU2lUR2thMElac3VwMm9jLW1BOFpUTTlsTnlxVXNuY2FYWEtaenBrT012VmhCdktZUmFfTkx3MDhkTnNzY29aLU85TzVad01udHJtZGFYUG9KejVDYnE5d1JYNk81aWVNb1NDdzU2WnE3T0xaRXhzd1dVSmZjTGQ0VXJySVByWml1LU1GN0g2TnBNZHNxS3o5bEZhcVRmenUtWGpRYVZoMG9TMWhiY0g0RUU3dWNIeVNLQQ?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 95,
+            "zscore": 1.48,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-26",
           "return_pct": 2.74,
           "zscore": 1.32,
@@ -3902,45 +3941,6 @@
             "zscore": 0.93,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-21",
-          "return_pct": 4.02,
-          "zscore": 1.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.49,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "[Closing Market] KOSPI Retakes 7,000 Level Amid Won Settling in 1,380 Range - Businesskorea",
-              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0wb2Nub2RkWmZtd29sZ1pZT3lycDE5M0FxWEdiaWhPOGZ6QlZEM0lndFZYT3J6ckFyMUNhdi1GeXpFdzNycnZyNmgwV3BuYWc4OGJDWHYwMUg2c1RwMnhDOXItZXdFTmpteGVwX2tzSEF2WDBW?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Seoul stocks rise 1.65 pct on chip gains despite Middle East tensions - Yonhap News Agency",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01QnZwN0sybWFyRVNrNDZ3ekxndWdiWFdqZzdWazRZTkhtOXMyZHA4T0NHcE1lTlpnTW5yb0thNlVvSkktUUxKdFpvU1FYdjdaTFVRQWlOeEYtUQ?oc=5",
-              "sentiment": 0.566,
-              "relevance": 0.826,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Seoul stocks rise 1.65% on chip gains despite Middle East tensions - The Korea Herald",
-              "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBIQmhqTllWTjl6VFl0X3NsWk9scl9SWTBMY2ZSNGtxeFJaZk9zbUZvTkI5NW5FYmx5M3k3cnZTTGlRN0ZVeDRNQlJUV05hLWJKMGFjd1RyRQ?oc=5",
-              "sentiment": 0.566,
-              "relevance": 0.826,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 87,
-            "zscore": 2.04,
-            "spike": false
-          }
         }
       ]
     },
@@ -3949,6 +3949,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-27",
+          "return_pct": 4.37,
+          "zscore": 2.21,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.6,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Our Pick Of The Best Canadian Nuclear Stocks In October 2026 - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZzFfd1FtM2ZhTi1Od2E3QlM2cHpmby0xZ2NLNWcyS0FGUjh5bUNDQjF3VDJqRDBkaEh6MWlFU3ctTzlBSU9vQ0lCWWY1MU4xTmNOQ3FUTGlVSUI2eWc2T212OEowWGNDb3R1RFlyMzdiZ05mcGZVbnlNdWdRVXhCWWUybldQZE5Sb1psSUpTOEdSdWx2b3haZUVnNzFIeW1BZFVGUlRaV0Q3OHdqQXRlRmhHS0NPMVpSTFQ0WXFJYXRGYU1qS3NxUUFGOFBtVnZBVnZDd1NZYlFSYnZva0FZ0gHkAUFVX3lxTE1BRVdzdFhwamh3S3I1eVc3ZzVONGozdGdDWmZid1B5bFkycjNYSWdCMTFXZS1rMVVGX3VoaTVybDNDNEJ3VUJqLTZEUkZZdlR5RWZwNnFqRmpWcXRsZjFyVVE2SkstSTdvbG9IV1labG5YeTRiYnM0OE5nMzRmcFQ4U3dxT3BqS2ViVktnRUlKNmk1MEpzNWZReUpsbjd5a2JHUTBNNVN4VWp4aTJCUHptOVJtbTQ4aHNyMVV5UW9pMmdiVXdYZk1wWjlLUnF0dllFcnIzSDRneWtlbGJBTHJpTllfTw?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.655,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Uranium Stocks in Focus October 27th - Investorideas.com",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHdCek9yVDNubFNGOGV6cHptRnptWWRESFUwd0xKVHFUMkVEQ3NKaGp5X2tERUgwdDRlWXRhT0dXQVhoRTJkUVFUNDJ6NmFWemlTeHdWV3hJdTlkTWVZaEJzUkU2aHVGSHgyMTZJSHZoVnA1Z05sY2wxWGtVbmRwS0dJa3VyZDJZWW9jajRTaS1oOW04RXRGWQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed expected to hold interest rates steady as inflation tops midterm voters’ concerns - NBC News",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUYxNmVHWVV4bW1XQVlFRkxtQkk3NlJWNUgzRzZYWVJ2TGE1b3BwQ2Rad3RwY3VhalJVQlk4QUs1MGN0bFFQV0FJNjh1RHJNUTFQMm1HVWMyZDhFUl9pTndNZGloa0Q1b3dYbkk4TkhDZlYwYmlrUFpYOHYtZDdIUmwzbmlXQi1VbHM4YlRuLVJjMDVBWjZvVVRURQ?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.538,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.91,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-22",
           "return_pct": -4.11,
@@ -3984,7 +4023,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.91,
+            "zscore": -0.87,
             "spike": false
           }
         },
@@ -4006,16 +4045,16 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "5 Best-performing Canadian Uranium Stocks in 2026 - Nasdaq",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSXhjVFYxMXh4RG8yQ0FvV2h4czdXcGtnSmJUWnM1WGJURHRkbEs3dnhhR041bFVNWUc2ejNoUzl3VTVSOGdhNWU0ckF2MkEwaF9qcHN5RTI2YVo3UGtyN3RxOHdhc2dBNEtGckh2NExKQzlrVGJ6V2J2R1RCZlpaY1NhZ0Y?oc=5",
-              "sentiment": 0.0,
+              "title": "NuScale Power Falls 7% as 10-Year Treasury Yield Climbs to 5.26%; Energy Fuels Drops 9%, Oklo Slides 5% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMm1SUWZFYzdaUmZRR21mTHkzemNBS3lpa0ZIbWJQNWdOTXl6QnF0NzJRTWtWNDZZZFVYZENjQ0ZDeTFVR0RJVTVNZ1k0M1E0R0VNSEJyU1dneFdBNHZiNjQwMmx3emVwb1NqUlU5YUQ2X3FYLWtwc0E4SXJwczBCbTUteTRSSUJ4dENfTHVjek5JanFyU0VFVWtZNVdNb1JWbWYzLURJdDhtNDNWQjZseEdkbnJlbDIzQVh5MjRCNWdoNWJfRUM2NmFSYmJfV3ZZYTAzRUFzTVA?oc=5",
+              "sentiment": 0.44,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "5 Best-performing Canadian Uranium Stocks in 2026 - Investing News Network",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb1VfOTVfUnBDaW1saGJucVAzQVFWaUxzNEZXUTNiVkRPWWc0dnA3OEExaVpiV05pZXhJR0RKRG9aSEFVc0N4SVNZNFBvUFVQY3VhWkk3a3pZVXdaYjhvSHJ0VGFabjlrSnZ6Ri1FWm1uNHlYcjZDYUVDcW9teEEzdHNCcHNDTjEzRE9oeUJFTHM3OWVHdHRsVDhMRFVQNGppd3NWbDBla2Q?oc=5",
+              "title": "5 Best-performing Canadian Uranium Stocks in 2026 - Nasdaq",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSXhjVFYxMXh4RG8yQ0FvV2h4czdXcGtnSmJUWnM1WGJURHRkbEs3dnhhR041bFVNWUc2ejNoUzl3VTVSOGdhNWU0ckF2MkEwaF9qcHN5RTI2YVo3UGtyN3RxOHdhc2dBNEtGckh2NExKQzlrVGJ6V2J2R1RCZlpaY1NhZ0Y?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -4023,7 +4062,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.15,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -4062,7 +4101,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.36,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -4101,7 +4140,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.12,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -4140,46 +4179,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.76,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-06",
-          "return_pct": 4.01,
-          "zscore": 1.77,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.58,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Nuclear Stocks Rally as Google's Reactor Deal Lifts the Sector: NANO Nuclear Energy and Oklo Jump 8%, NuScale Power Gains 7% - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOS21QbFFiNjNyNUpzS1ZyWUZUalg3SXUxNl9JMU5fYUlPVVJxNmprZUtlb3VoN3ZuVjV6Q3VaQXlQN1dMZWp1T2NYckV2ZzlraGd6Tm13RzJnV2VSRnNEQXJtLVNvNjhnVkwzOEszZHc4VUdXWDRmWlU4ZTJNcVMycVlSNHgyR0J4OFJNeFJFZkZfcDRNVEg1ZzBCN25aZ29URllBYVo3Q0Rpbi1pcnpReWNKUW5CNGtJQXFuOGRyTWd0R2xEMXZGY3pTNmtkVkE5REwyZVBYRjEyMzhWNDBiMmhzVlJKZzl4Y2xiTzg3Zml4clc5cm9pWVQtSFlMZw?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Nuclear Stocks Rally as Google’s Reactor Deal Lifts the Sector: NANO Nuclear Energy and Oklo Jump 8%, NuScale Power Gains 7% - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUi1ZRnBsMnRmSUFOaVlNTjBKTzVxckI2YURhZ0ZaUHllRm1sdVFrcUlDNTkwRWFpaTA4NVB6OGlld211UTZuS0VtOEUtN1haRjM5YWVrWkxnTlRERWlRRHQ0NXNOaXhyaXp4X1VMTkdJTFR2V1hSU19XbEJvNVJ6cnAxUVc4NGgwRVhjbXRSS290Q0hTd2xv?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Constellation Energy Soars 12% on Google Nuclear Deal for 890 MW; Vistra Jumps 8%, Talen Energy Climbs 7% - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTXZmZExIc0d1bDBuRG1DTzk3RXFfLTJ3c3ZfOWFsQ3lNVklKelB5cHJGYjhBYVh2TGdhLTZQekgyeldoeXBhTmY5eUNsZS1VTFBpMFJBLXhzcTFuWnhwR2VoTGtvT1dQRWxmQ3BpWjJHaXpncTNzb3Mxak9PWUoyOE5ZWmNib093Q2xNenZKWEVUelBwcC0wb3dPY20wTnJ5TmdjTzJhMmpBVHZEM21aZm9KNlVvendERkpoMXIyT0lZd19UVzNmYUxTV045RFI0TWwxM1NJX0FLRks2?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": 0.76,
+            "zscore": 0.7,
             "spike": false
           }
         }
@@ -4190,6 +4190,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-27",
+          "return_pct": 1.99,
+          "zscore": 1.61,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.6,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "3 Clean Energy Stocks to Watch as Power to Gas Costs Fall - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkxYdERFMk5RSlpzdnI1WmJERlp6UjNRNDc0ZTB6TTJhYjQ5cklWck13WTlHSzdoWjB2Z01hbWdwTnlHQnAwYkljM1ROMmJZNFBYaUM4SXhIeW4yLWVDTjRmXy1yMWJVeE5Gd3FfVExZMWJzN0JTb3BvUlowclZPUFVPYU1TaDEwb1loZA?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Texas Clean Energy Stocks Facing A Policy Test Investors Should Watch - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ0JNNHcyeEF6QlIzdTRNaDRiV2pDZGFWWFVXUmZrLW0ybGVBVmoyR3pmckRvLV9mVkpTc3RTV0M3UmJ0eWdMdGZNV3VzN253MjYtUzdkTzI3RTRublRQdjZBRzA1QWFyT1BNMFpza3V2cmJuUWVTX1hiLXFrbk1oQmJwdHhSX29fNWlQUWRhdGFoZjBSVUIyaUY1eXVMNkRoRE44c2NYcEpucWhIUTFvV0U3aGN6SjJ6dS1YeEZQeWNqRmdkUm53cUQzbUzSAdIBQVVfeXFMUFlONEtCZWtWQlBTNVgxZjhHUUhhZFBSZktTZ1NyWlJna2dEVF9aaGpHNkxOMjE5U1hxSmlSUHB4S1BWc0hSdERxRlgwTzlZMFJ2cVlrNGNlLUZISzRIMTRXSE9QWkUzenZmaV94NmMwcjRlN0FWSExzMUZfbnNtOEFXMEVRTVZNbERiTGhnTnBIRklULVRPb2pRYUtvUVVBcVRQcllJaVA5ZHBlV1I4dHdSNEc1WUpHR1N3em0wd2xrMEhJdDVOSmJCZFNTdFBZdzBn?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Renewable Energy Stocks Surge Up to 10% as Indian Benchmark Indices Remain Flat (27 October 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNeExFVkd3ZGtGcEtQTE80SktjMjN2akkyck1rVDliNjVmNlI2UTNrSEMtLXppc1lFX091X2JSOVRpcDJwbEVZLTlZcVZkZjVibFRPQW9lMW43UDZGSW00ai1RQ0xicFlwQ0I3OXY0NE9jR3hQQVh0ZXN3WHJYZDV3dGlIbGlvODhPWXg1X0I4OFdhLWhIbk95VGoyRmNOanFCd2xxcmFqTk1ranozRm1POEZMWUJSbC1qZng1ZnFNR2xaNDhrQWJwMFJOYw?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": 0.48,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-26",
           "return_pct": -2.93,
@@ -4208,19 +4247,19 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "Trump failed to stop inflation. Now Republicans may pay the price in the midterm elections - ABC News - Breaking News, Latest News and Videos",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUVlmeFQtV2VPYXRyYUhfd24xQkxhTFRqYXpsVVhLbjR4NXI0a0VVNGhsLTM4cjNLb05ibnZvVG9yd2g4a2NNbG9HTXhHay1iTmpEM2NtV21DRk5BZ0xhR3ZhX3VsV2FNWjg0bUk3M3lnRHZXZENOcnhaSE5FUDdhR2J3VEJhRU9JM0RoVjJJYjNKVUhJN0ZqMmo5WTJyRjUwQXFuT9IBqgFBVV95cUxPYXlJMVRFWWdjQl9MOFJhYWdTbjZZNm95Q2NSWjJRczlyR3JrSG1rNjZsZXYxTFBMdnRXRzZ4Y2w2aTM2dWR6UGtuRGtEWlJlQ2RfZFBQX1R1YjJDZ2RrVVAyd29zXzdhMVhhV2FZMUZ6cUNMZTJDSW5DRGRpeU9lY1IzdzhHMnpPTjVhazNwcDc4Y19tSG82SjhlSWFCUE9WbkdXWEZ0cnkwdw?oc=5",
+              "title": "Trump failed to stop inflation. Now Republicans may pay the price in the midterm elections - AP News",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbDB0Q3N4MWxNWWdRNUtaNHBIaVhzeldEWEt1eDM0dDJKT3FvMGh4RG82RlgyUW5CdmxvZkJFUThJQkxvWU16NXE0bUE1RkQ0UUhNMXQ3ZWQ3Y0I2bGNzVzB5WlRvMWpFUGdBWGhTWTl2enl4V3UzM0lHa21RbWI5NWR3dlFhWElfaTlJX2ZETExYN1ZfMDgxZWJyeGdQTnRZ?oc=5",
               "sentiment": -0.71,
               "relevance": 0.53,
               "event_type": "inflation"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Gold holds above $4,000 as Hormuz diplomacy cools crude ahead of Fed decision - Kitco PM Report - Kitco",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTlBDaXlGdEVjYXlSSS1ZRTNJTngxWFlJNklqMGJ3RlgxeEtkMGJKajlHaHZxa3hJX1BaZnIyU0FnVGJMV1dVOXV4bVlUaGJ6WWRCazZvQW95US1rOGQzMndUT1NtUjdIMjgxSGkzQXIwaTZ2MFVVZUd1WVVXUzZzd2hjSmU2TU9UWUZYSmlnNHRHS3RERXB4MjRFbUhLSTZPQUFzQ1hjR01UMjNZTGd1S3EyRFlqdndjMmRGWHFB?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.497,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "Trump failed to stop inflation. Now Republicans may pay the price in the midterm elections - ABC News - Breaking News, Latest News and Videos",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUVlmeFQtV2VPYXRyYUhfd24xQkxhTFRqYXpsVVhLbjR4NXI0a0VVNGhsLTM4cjNLb05ibnZvVG9yd2g4a2NNbG9HTXhHay1iTmpEM2NtV21DRk5BZ0xhR3ZhX3VsV2FNWjg0bUk3M3lnRHZXZENOcnhaSE5FUDdhR2J3VEJhRU9JM0RoVjJJYjNKVUhJN0ZqMmo5WTJyRjUwQXFuT9IBqgFBVV95cUxPYXlJMVRFWWdjQl9MOFJhYWdTbjZZNm95Q2NSWjJRczlyR3JrSG1rNjZsZXYxTFBMdnRXRzZ4Y2w2aTM2dWR6UGtuRGtEWlJlQ2RfZFBQX1R1YjJDZ2RrVVAyd29zXzdhMVhhV2FZMUZ6cUNMZTJDSW5DRGRpeU9lY1IzdzhHMnpPTjVhazNwcDc4Y19tSG82SjhlSWFCUE9WbkdXWEZ0cnkwdw?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.53,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
@@ -4264,7 +4303,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.11,
+            "zscore": -0.1,
             "spike": false
           }
         },
@@ -4342,7 +4381,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.6,
+            "zscore": -0.59,
             "spike": false
           }
         },
@@ -4381,46 +4420,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.98,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-23",
-          "return_pct": -2.3,
-          "zscore": -1.81,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.75,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "3 Reasons to Buy Brookfield Renewable Before September Ends - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMXZUR1N1U1dUYWJVWjdOcUUzZTB6N3BFT3J3VV9xSWctSjFwcVIwUXpxRTVwUXhuWmNPbEtWekx0ellxNGR0X1ZTNXExa0w3YjUxUlQtSE1GSzVhRk5PMC1fRTFjWU1pbUFsVVJUWTYtS2pPazlqdVN6bDByYVhkamZPLWtxam1HQzQ2NFVaVXN1QW1mX3ViUQ?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Better Energy Sector ETF: Vanguard's VDE Focused on Oil and Gas vs. the iShares ICLN Targeting Clean Energy - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdjJMZGVKYXFhY3J2S19oLVc1elplLVdNbThWUzMxZlBkek9ieGxUR1BLaTAtYjhMeGNnYldxMmh0dXhwaDh5Ql90Q0ZOd1NISllCZncyendlM3BOT0FrWDk5Ukg0bFNrcnQ0c09FWHhnUGkySzdVSFpxTVNkX2lDdnZvenlGV21VRHZnQVhrRmZub3pzMTY5M3ZNMWtLRGthOGxUNWd0em9wMEhFYnBwZjh0Y05VQ3hRR0RYenZfLXBKclZDRmRuV3dKUEE3OGFPNFRfbjV1ZXJkZF9WbGRra1dPSTdOajA?oc=5",
-              "sentiment": 0.818,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Plug Power vs. Bloom Energy: Which Clean Energy Stock Has More Upside? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUmdQV1l6REhVeG9Dc3lVLUxXNnlzY3Z0emhvMFk5TVlQU1lyWEczZ09TTHBWVUdiaXlLVE4wYURuVXd1c3BCMFdZdWhLclNZM1JzT2ZETld3OHNNQ1g5V0FIMzJiRlE4dFRiVVNuVWkyVDlZN2s2dVdaVDhPM1dNMWpyNFU5a05Uc0Nn?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": 1.54,
+            "zscore": 2.05,
             "spike": false
           }
         }
@@ -4698,16 +4698,16 @@
             },
             {
               "source": "googlenews_defense",
-              "title": "Top Applied Aerospace & Defense (AADX) Competitors 2026 - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1vb3NDaUdGb2I1TXNQRUdiOWRvNDZVNFJvVkNtOGpHRnctZnhSZTY4WWlNNkRHNWxBRVg5Vi1qVFh5WUIybURDSGN0QmRNN1F5WTFWR1pKRDVMLXhOVEVQOXZ4WmRPRk9HMExkWGdKSWItNXJlUHBiN1pxREVnZw?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.727,
+              "title": "RTX Corporation stock pre-market at EUR 171.03: aerospace and defense group - ad-hoc-news.de",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaTRSZE8yU3FYc29mNEdSVmZjaTRubVpuODNzOE0zcjFpaUotQ0J2TnNEM3BDaXpMWXF3SVNTVkw1cGhGYmxZMXdHNWI3VFgzQTd5RFB1a3JkMzlKNDJITGlSdy1LaGhObkFzZkJmcnhjcm5kZzNpQ0cxVWl3cEpIcnhSeWlrd2VqTXowXzBsUF9rbFpSMHRoajI4VHZSWWNjMFRCZkRCZkFTOGRsZzJLOFQ1QWZIY1BtVVQtYjhyVlcyRW94Tk03SzZnaUI?oc=5",
+              "sentiment": 0.128,
+              "relevance": 0.651,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -0.32,
+            "count": 4,
+            "zscore": -0.58,
             "spike": false
           }
         },
@@ -4909,7 +4909,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.52,
+            "zscore": 1.51,
             "spike": false
           }
         },
@@ -4948,7 +4948,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.4,
+            "zscore": -0.39,
             "spike": false
           }
         },
@@ -4987,7 +4987,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.26,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -5026,7 +5026,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.41,
+            "zscore": -0.39,
             "spike": false
           }
         },
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.44,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -5357,6 +5357,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-27",
+          "return_pct": 2.9,
+          "zscore": 1.55,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.6,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "Pharming Group (PHAR): Joenja Gains Momentum And Ruconest Returns To Growth - RTTNews",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONmtnREhIVkhxSHlLVW5HQllBZ1BHVTUtZHFYZWx5S0ZEOExOX3NVU3I0clo3ZEVlclFIbGxLV2tnVDhtdnVLYmt4UDdxc3lyV0FBTDhHXzhhQzdYS3ZvSFpzZUl0N2syWnF6LTNjUTlUdkdyVHhXS0lWVHowSHdwc1U5WVdrQmM1dDhucXZMUFY1ZUhpOThJS0xvWHp2YVpnMmtvQU5fMlNkOVpuRUE?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.845,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Medicus Pharma CEO to present precision oncology progress at global biotech conferences - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUFV5VGZRdHBPd2Zwd3UtMlhuM0VGNHBMSGVkSENzdlhENldCemlscElRc25vM3VicGozbjkxRkZOX01WMmRwSE9RVDhOLTlRVlk5X25GWUhmLWZQWXhYYjBPQ0JFdDFHV1ljaUFMa2VtUjlETTdLV2JldVRzQ19lTTB2aWdPQmo1Q0lJQTBUbHJrRVdwTFNRMXJxRTlodw?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "IBRX Stock Rises Overnight: Jim Cramer Backs ImmunityBio As A ‘Very Good Spec’ Amid Biotech Takeover Wave - Stocktwits",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRTZ6dmZaWndCd2pNRFNZYUJGbElDU19SMVltOVVlbmU1ZWM1UDg3WTBjNV9VbVdnUXkzUjZtbnphTm9maWVVU2V6WHFfMmtfempkM3BMWkNNNkl2NV9vZUNrNjhLZHhVS3lxNFBleklTT2JNak10bjN6dnJqTF9kVnlqZ2lsMVpyUzVnOEFZZ3pEMWZyQlllemRwRFZ2bU1wZ2NrUnBoZElvdEI2NkpPbzRxOGtIQVE1ekotZWl2a2pVbUhUX29OanNTbHFGQ0U?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 19,
+            "zscore": 0.35,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-20",
           "return_pct": 3.64,
           "zscore": 2.13,
@@ -5550,45 +5589,6 @@
             "zscore": -0.01,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-06",
-          "return_pct": -3.39,
-          "zscore": -2.03,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.58,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "Two cancer cell therapy programs are set to stop development as Caribou plans job cuts - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYmdjb05BaDZabTU1ejROZ2RqeWY1dTBhUzhjNjBQbERyVF9kQWlSWnVWVnpaZ1hGMzlra3hhem9hSUZDVVU5amR3T2xIc1lsZG5sZGk0ZTZ2ZnRIX3Fid3JYYzRZdDRjc29jUWgwQXBPYlgybWNLYnRJYVJ2M1hsUHAyUF9QREZPMXJuSmwyREdkNzFWeF90Sk5Pb1Q?oc=5",
-              "sentiment": -0.832,
-              "relevance": 0.933,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Cardiol Therapeutics Stock Faces Downside Pressure as Biotech Sentiment Weakens - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbEJrUFJsdFpIN19PVVFPTXA2UHE0YVVRdmRlZG4yYlUwYW1mTi02RmctRF9TWjBPTUp0UzFzaVloR3NqQ2hKYVpaQXA3T0JGTFY4TmJaaVlmd0h4MDRaVVFEejdiWU53NVd6eUhfMXNRU0k5U1B2RWUyMkg2SXlfN0lZNTFoWHZlbzY5Q2Z0cThMXzBUYm5GVkI1Nk5TcGVBT2VvQzJZa1RobjRDY2JIOHd2a1k?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Why This Biotech Stock Is Having Its Worst Day Ever - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUmNZQnF4Y084Rk9TalFvYTZhU3lnaWtsak9aWW9MbXN2VXlQZlZlN29xU2ZCb3ZVQWVtX3NZbk1Zb2hUREFidlVWNGlVdHpjcFNKUTBzSkpLdGRjS18zYlpDTjlISDU4amRVRU1Ga1FMTWlyWTRXZEVVdDN0Z1U4MFpKNlZ1RDBZcWxHMDY5WnlldzBlTWdUcQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 22,
-            "zscore": 0.8,
-            "spike": false
-          }
         }
       ]
     },
@@ -5597,6 +5597,45 @@
       "name": "Gold Miners (GDX)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-27",
+          "return_pct": 2.68,
+          "zscore": 1.28,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.6,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Visionary Copper and Gold Mines Inc. Closes Acquisition of Mineral Licenses - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVXRHYm5lYXJvaUMyTE13Slo5cnZCRHBvRGxRaFgyTlFWZ3l2andGdHRyTjJMRDhlb3l3SVQzZGlYTzlJeWpiN1ZKZ3g2MXNIRmk3THJGWmFnLWtLMG5PYkpaTmMtZjZraEczeDJabW1PYUFkYVFWWERxQnBwc1VKZ3VVOGZzOFpYeGk2Z1ZuRzd0eFRJLTR6OUZXUGZtczBweTFn?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Goliath Resources Limited Stock Slides as Gold Exploration Risks and Market Volatility Weigh on Investor Confidence - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN2FpZXM1QUxvajdkV2Q3Zms3MGQ4NXJSYUlTZEkxbUZJWkdsNmVoUThnaDZoUEVHaFJfeVJ3MFRYbVJvQ3hobVlpNHJEdGRReXg5S0dRVzJVOFh0b2tMNWdrY2x6SFI4ZkN5MmQyaEVwM2lzQ3lkSXB5NFRkNnhQV0VGbHdUQ0JER0FvRFgxNFF2X3FTRUNoWXl3YU1ITXNwZ24tbWFzZUd1OElQZ0dGSzhkRVFPbTFfTEZtRVBscElUaEJYSDhoaFA4NGJ2ckhJOFdVMkFaZkNaMjYwLUVr?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.718,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Centerra Gold Inc. (TSX:CG): High Net Income, Gold Mining Efficiency and Expanding Cash Generation Strengthen Long-Term Profitability Outlook - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPMXFTaTFnSk9lWDBrc1BtanExV2pGZEw3VF9xT0VZOTFtSm8wS1duclFuMWo2eDZDa050Z3ZqTU4zbU5qMm9hdi1aVXV3aVZZRzMtbVNiSmMtbGlydWR6QWtVckItZnJYTlpucDVONkdyUTRFd2lsXzNlWl9INFdxREEtUk8xeFlaRjJwUzF1T3VmYUFia3RLbS1tSEhaNEZlS0gtZGgxWnBGTXFwZE9yTTRzb1Fwb1JxMnl1eWZQaU0zYlV1eF9FU09heFBsMHJScEllN1NXVVJxMXFCS3JXU0ZaUjBPYU5nRXJScUdTWXQ5SFVya2laa1Rn?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.684,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 11,
+            "zscore": -0.81,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-22",
           "return_pct": -5.8,
@@ -5791,45 +5830,6 @@
             "zscore": -0.0,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-28",
-          "return_pct": -5.36,
-          "zscore": -1.86,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.77,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Tudor Gold Stock Under Pressure as Weak Sentiment Raises Correction and Downside Risk - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTkhvSjZoQ2RkM1ZubTI5cjJoMUc1QmQ4UWdnb0JGeTYwbDlKckZtMDBmVFRjNFBkTGVaNWw0ZG1ReW5SU04xeFZJSzFIOE9VTGE3Wk5RVHpKa2NhbkxZQjRLQ0drOTQtdm53bEZYZDF0cHhqaTdBOFptSWdkcmdzY0Z5dHlJblRqMFFiMmc0NlpoaEJKenE4bV9VbmlFSGFMV0NQM1E1cDNaZzJwQlo4dWpubERzZ2c?oc=5",
-              "sentiment": -0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Cambria Gold Mines Stock Under Pressure: Downside Risks Rise as Execution and Development Uncertainty Persist - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUDZ5RHBlejZwa3A2a3pkaDlHY2dUa0FwRVRzbjhaek93akllY0w5ZXowWnpnUXhtU2plUjdlOEpmMW5Kb1diMjNOWlRtc2xab0c3M3p5SDlLdV9qb040YkdwbWpsdVFKaU9jcnVJajRUU0xyY3dnckVyUDB4cmxkZmhoT1hweVJaeHRjckNlem5ESEwzdjUyMENYOGhZTWViZHE1RjVtbGFtUTNCNmJYQ1ZMRXNXQVo1WFhoWW44M05BUWhoNlhHS2dNTkZrT2dsV1c3WDhn?oc=5",
-              "sentiment": -0.772,
-              "relevance": 0.909,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Bravo Mining Stock Faces Renewed Downside Pressure as Post-PFS Momentum Weakens - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNlR6UC1sYjJ5ZEs3MkdEdFhsdG1fdmtuTlhacktzMUVpM1RBdC1mWlpackJQSUpGTXBONzJDd1BaTDlIcDdERUxUeGl3SFVTdHprWjdXaE4tbWcwVWxhNTJKbXRWYzRxZjBzQVpqVDNVa25rWmlZNHI5aXoxb0pDVTZPSlB0aTlpbzM2OUNvaEZ1ME1YLXJvc3JLT1RaRm9UQ1ZHRWRCaWtubjA4WkFR?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 41,
-            "zscore": 1.24,
-            "spike": false
-          }
         }
       ]
     }
@@ -5837,8 +5837,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-28",
-      "return_pct": 0.81,
-      "zscore": 0.77,
+      "return_pct": 1.27,
+      "zscore": 1.13,
       "max_abs_z_recent": 2.61,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5851,7 +5851,7 @@
       "max_abs_z_recent": 2.01,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 1
     }
   }
 }
