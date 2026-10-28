@@ -1,19 +1,19 @@
 # 🌡️ Clima macro (USA)
 
-_Foto del momento (snapshot: **2026-10-27 08:15 UTC**) — contesto, **non una previsione.**_
+_Foto del momento (snapshot: **2026-10-28 08:11 UTC**) — contesto, **non una previsione.**_
 
 **Lettura di fondo: 🟡 misto**
 
 | Indicatore | Valore | Δ ~30g |
 |---|--:|--:|
 | Fed funds rate | 3.88 | +0.00 |
-| 2Y Treasury | 4.69 | -0.16 |
-| 10Y Treasury | 5.00 | -0.11 |
+| 2Y Treasury | 4.68 | -0.13 |
+| 10Y Treasury | 5.00 | -0.17 |
 | Broad dollar index | 121.32 | +1.20 |
 | CPI (inflation level) | 336.30 | +2.17 |
-| M2 money supply | 23342.80 | +124.90 |
+| M2 money supply | 23413.90 | +113.00 |
 | Unemployment rate | 4.20 | +0.10 |
-| **Curva 10Y-2Y** | **+0.31** | normale |
+| **Curva 10Y-2Y** | **+0.32** | normale |
 
 ---
 > Lettura euristica e trasparente: tassi in salita + dollaro forte + curva invertita = contesto cauto. È un **riassunto del clima**, non un segnale operativo. La macro conta a orizzonti lunghi (settimane/mesi).
