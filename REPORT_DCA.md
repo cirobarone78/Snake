@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 11.9% | 33.3% | +21.4 pp | 40% | 1.000 |
-| 2 | LINK | 38.7% | 33.3% | -5.4 pp | 50% | 0.500 |
-| 3 | SOL | 49.4% | 33.3% | -16.0 pp | 63% | 0.000 |
+| 1 | POL | 11.9% | 33.3% | +21.5 pp | 44% | 1.000 |
+| 2 | LINK | 39.0% | 33.3% | -5.7 pp | 55% | 0.500 |
+| 3 | SOL | 49.1% | 33.3% | -15.8 pp | 66% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,6 +23,16 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
+
+**TRX — TRON**
+
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
+
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: 9.2 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **AAVE — Aave**
 
@@ -69,7 +79,7 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 Exchange di derivati on-chain con volumi elevati.
 
 - **Cattura del valore**: i ricavi finanziano riacquisti del token. Una quota delle commissioni finanzia riacquisti del token — cattura diretta e insolita nel settore. Contro: circolante intorno a un quarto del totale, quindi sblocchi molto pesanti davanti, e codice del motore non pubblico.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 4.29 volte la capitalizzazione attuale.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 3.97 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 1.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -114,8 +124,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 23
-- stablecoin o token ancorato: 21
-- volume troppo basso rispetto alla capitalizzazione: 16
+- stablecoin o token ancorato: 20
+- volume troppo basso rispetto alla capitalizzazione: 18
 - già in portafoglio: 6
 
 ## Limiti
