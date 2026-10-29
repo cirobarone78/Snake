@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T12:41:00+00:00",
+  "generated_at": "2026-10-29T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.62,
+            "zscore": 0.63,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.96,
+            "zscore": 0.97,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.81,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 0.04,
+            "zscore": 0.05,
             "spike": false
           }
         }
@@ -1695,6 +1695,45 @@
       "name": "Financials (XLF)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-29",
+          "return_pct": 1.69,
+          "zscore": 2.12,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.19,
+          "events": [
+            {
+              "source": "googlenews_finance",
+              "title": "Banking sector stocks today, October 29: City Union Bank gains 4.45%,Bandhan Bank up 1.76%; Karnataka Bank down 3.81% - Business Upturn",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOcHdyckdHbmFkNjZtQ3BXa0tuY1dmUC1pXzhHZS1xd1pIckl2ZGdEaXdGMlZmRHhOWHcyZ0ROVWVnUUQ2Uk1LUmxmcVlfTTdGaXNSMWMxYlY0UjFQZkRLcVVkLU5vUlJvQXR3XzZkM0VObXFTcjF3ZC1WbmdsT0htV21JcnVXcHBUOWVmQ0JUYUdnRGdOZWROdFBydndOSVo4OGpmSktkbHhRR0RZUGdnclBZUkFKUVVHMm0xUklpdmY0R29FUy1NeVVERG9IX2hHUGVHci1EZEtnaE8zX0lVa2d6YXNOT0RRWEpXemZSWDV2dw?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed keeps interest rates unchanged, but two officials dissented in favor of a rate hike - WXOW",
+              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObGlVaFBTWWFNTlZ5SmxQRVlsNmVLZENqcXZlOHI1UkhNcndjYU5GV2lLLWVXMm5sRDRjcHJXUDNuREpXSDFRNmRYQkZ5bTVfSXNwV2tCLUZrSkZRX0ZQT0ZfRmlYa2JqdzhsR1NMaEpJQzZKMlFkSWdvc3RoOEk0WXdIVzFQX0J5SG9DbHJ4NzJhS2IwTUZFbnFYV3VidEViQmxvVHlFQ0l5VGVFR1pFMkQ5OC1oVFNfbEJQSnNsVHdYYlRDNlk0a2JmOGEzMktrMUVCYTVKbDF6UlU2SUtwNXJjdmVlMnlnN3A0U1lOa0NFaUFKd0VMaC15QUV2VnhP?oc=5",
+              "sentiment": 0.676,
+              "relevance": 0.522,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed keeps interest rates unchanged, but two officials dissented in favor of a rate hike - WQOW",
+              "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNekZIRXBJa1AtejRCUTRhdlB6ckZSRnNYb0pldmF6NXFVRF9xWmZGNDg5NXhsMk5WQlQtRzZhUnVRdU9wS284eG1tY2pSZ2xmQ2JnTjUwN3pPal9nNV8tdGZ6ZmFQMVhEVGxiLVJWeHdodjJ4VlB5UlVfRlJMTjFnVmxLSDZjcnNzQUNPOWo4cVJCQUhHMTVTd1VzSDFuZ3FsVEkxNDF0QW9ySHFRbk11c3lVMEw1RWdZRUluam5QTVdJTm9IMnAzV1N6bVlUTGhUUmFBdUJqcUp2aHZwWDg0ekpxUElmMjFGLURuSmJQTTV4b0VSMC1BOU4yNlBzUEVSSXV5Tm55WTRfa21oaHUzLVg0RS04cVU?oc=5",
+              "sentiment": 0.676,
+              "relevance": 0.522,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.1,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-23",
           "return_pct": -1.32,
@@ -1889,45 +1928,6 @@
             "zscore": 1.5,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-16",
-          "return_pct": -1.62,
-          "zscore": -2.25,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.45,
-          "events": [
-            {
-              "source": "googlenews_finance",
-              "title": "WesBanco, Pinnacle Financial Partners, Zions Bancorporation, Regions Financial, and M&T Bank Shares Are Falling, What You Need To Know - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ3BDcXd5akVoQ0lzeE8zWUMtTG9CNkJSRDhBVWltUERQNVNjRDBuMlRNVWE3REdKYXA5ZVFKTlRQaXBJZ2xOSFNHMFd6SzF0YjMzSG9keGtuYnZDcGIxblNOSEdGSVJ0VnFITWJGWHhlZS1OMzkxRXVobVJfeGtockFMSW9RUUN6ZWVsVXBvM0djWkJNbFhiTFNKandpNnBjVldTSk5Qd21sd0U?oc=5",
-              "sentiment": 0.153,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Oops! - StockStory - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb0dxZmFhV2ZBSER6NlVsQi1YeTBjdjNaSjJRRzFnRUJCQ1JZeFhqSkFGVy1VNVdTMGVwLVFGTDVzZi11dDNpa1FlVGZnMGoxOGxMZy12R21vUEo5RUFRZFBKdzRKRDhBejZ0cU1Hb3VTdjFGdnRVdk1wRWJGQkFROV9fWUpCeUVpc0J2cjdUa2R3MEtzSmRPUlJsWFhJOHlKRG9SeF9PUEt2NTJCRF8zUFhjVmk?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "UBS names Barclays a top banking-sector pick, calling the shares too cheap to ignore - Proactive Investors",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaExZaHctT0pyT3Zsa0Y4TGt0S3BQSktNZUNoSmJySlNyTU9lamlVOFhneFpOUjBvZmw1b2t6RzVOeWhoWHc2a2gxT3lsMGE2c0w5cUpUeEFHUG54c01hNjVQSVBseGdsZWs1OXp6eW1URnp2N1NIMFFRZDBMaHZoY2NSWnItN1VuWmZ2Sk85TlFKWWJjRERZSGRXNGdSZGYxNDZySXUxcmc5ZlJobFptWWxoODBEN1BCN1d5OA?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.46,
-            "spike": false
-          }
         }
       ]
     },
@@ -1936,6 +1936,45 @@
       "name": "Health Care (XLV)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-29",
+          "return_pct": 2.1,
+          "zscore": 1.85,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.19,
+          "events": [
+            {
+              "source": "googlenews_health",
+              "title": "ASX healthcare stocks show progress in latest quarterlies - Herald Sun",
+              "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPZThYYXJIU3BSemppTzM4ZWFQWHc5N1BmNTFlRE1DcGJES09jMnBmSkxVY3RSV1FLU0RDRTlheXBYazRjVkFPdHlwc3pLbWJUdTR1LXlzdV9kNFA1SFpPVHczM1c4Z3B6ZTRBOGlrRC1wUXpwOE10R3JELUtnSk9kdy1IcmVNQnA5emNQcHo3U0RiVHJlTzgxUG83Qjl3czB4TzN1dnBCcEM1b2FCLUlQZ0UtMEo3dUgzWTlxT3RNZUg0R2pKai1xQ0lDQkROODUwdEFpY2pDb2w4UDlQTXRLYW9LZ1hpaVk0aUluQ1Z0RE9CQzJxMUhSUQ?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "Analysts Are Bullish on These Healthcare Stocks: Bioventus (BVS), Regeneron (REGN) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQTW1vQ2FXczBVMzBHSi11VjZMeHFEcm1ycUNMU3hhV1NGMnVPS045bjRpU2FCRVg4cHB2XzFrN2daSUJYTnhKbXE1UFBNdldUSzhhRDhiTXNBU2ZmamR1dW5uZXJZRUNOaW5rTnF4WHVZTEpjTUJlUXlMcExqWXlYS1RaWUVVOHNYUjBzd0dGS0RqM0RuRzI1NnIteFRVb25BdXFTc3AzUU5FXzRuY3BLb2ktZjZxWDFYOFprLUwzYTRzWDB6S0NFQXFiSklXQU1nWDdnNHA0ZjdWRGFJX243WFgzMU0wUGtGR1JBVUNTRHJwWkE?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "Analysts Offer Insights on Healthcare Companies: IQVIA Holdings (IQV), Repligen (RGEN) and Cooper Co (COO) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNS0N0bDZnR1lrVWh1bTlNU1N5UlMxYTRsX2ZsWUJZTHJBNWNfbWEtdUh0Qms0aXVmcVpSU0tfVGNTemZxaVJNYzlzakw0bVFpN3dCdTFDZWcxekxWNjdKNUp3eE84RTVLYUg3WUJBbnpNeXVPb2xiRERleTBFa2FVckNQcVM0a1diRS1LTHVUa2NLYnBYR2NfMWNIb1g2eTd1V1VqZ0VwZkFEdXdyYWh3dDFvSkt6QVFRRzcwUTdvNDFhVlozSnp6RFlXTnhvVVBUOVBzLWdzbXBQR0lKTmZwai1oWFZMOFl0dXI2VkQzbTlsajR1VjlHSzhuSWhDdnc5Tk5vR2ZUaDJ6QzQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.87,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-20",
           "return_pct": 2.37,
@@ -2130,45 +2169,6 @@
             "zscore": 1.12,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-08",
-          "return_pct": -2.52,
-          "zscore": -2.39,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.58,
-          "events": [
-            {
-              "source": "googlenews_health",
-              "title": "Healthcare stocks surge as Krakatau eruption drives emergency demand - Indonesia Business Post",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNamlELWV3Nk4zRFc4WEtEU3ZjeWw4TXNuSUd0V1JHMHljQUgwRlBaV3BSUkt3RVNra2RyMnZRTHVDMlYwUHBidUQxV0l2STUyRUVERHJJbXBKYmxSTUlQc0VpbWpJa1hpMlJkX0RKQ2tPLXlaOVpWNm9zN2duOGlRWDlBSjhkY3BtRXNiSmxpaF9VRWp3NXdYVnRSQXhVLXlXZ1YyODVndW1nTmk4ZTVaOUtJMXVNa016QkhfYmYtNnNzOGx3eVE?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.791,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "3 ASX healthcare shares to buy with 25% to 100% upside as sector rebound races higher - The Motley Fool Australia",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTmRNOGpsUVltSWxXWDR0UXZJSi16VUJvT21NN2dsY0ZOS2I4Mkk1ZFlaTzZ3MGpFMVFNZldiNTg4UWpiUmxhd0w4cE1vbkUyNzZRWDI1YjBnQjhkT2JqWGh0WnFHRTZVWEJQMnNDOGNEMl9XWl92ckNxR1hIbEFWMGlKblZncTlMT201Uk5qZVFQbjNHcDRyekRnd1o5RmR4MGNHOE8xeGpmQ3hBbG0xZWQ5dFYwblNQeVhJ?oc=5",
-              "sentiment": -0.178,
-              "relevance": 0.671,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "ASX Midday Sector Update: Energy Stocks Advance, Healthcare Sector Struggles - Yahoo Finance Australia",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWHpRdlNYSEZiOGVxQTA5NUFWS0JvaUFXVjZuUFdTWlc4MWxHVWpxMDRXeTYwOU9Va0RtRGlPVFhFY01kMnl3Nk1YS25nbGJWT2lKNkd4RmRjUGJuTERjTy04V0EwaU1RMEcyb04zRmo0Z2JnTkl1cjFfS1YtUFpGbUZPQS1DOW8?oc=5",
-              "sentiment": -0.103,
-              "relevance": 0.641,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 12,
-            "zscore": 0.3,
-            "spike": false
-          }
         }
       ]
     },
@@ -2195,24 +2195,24 @@
             },
             {
               "source": "googlenews_industrial",
-              "title": "The Best Basic Materials Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBqQWhGbVQ3T2l2bi10V3FDMnVxVk81V09rMG1JODFETlJrSm1oWkdqbjh4b3RjOVhYcVdMbEtyOUxuMXgzOVEyeWhEeElaYUhjZUV2V2NqTzdac01obF9tcWthaVpwVnVpdzBVSDNJVF9LbFhw?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
+              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
+              "sentiment": -0.637,
+              "relevance": 0.6,
+              "event_type": "earnings"
             },
             {
               "source": "googlenews_industrial",
               "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1Sw?oc=5",
               "sentiment": -0.637,
               "relevance": 0.6,
               "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.01,
+            "count": 5,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.31,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 25,
-            "zscore": 3.95,
+            "zscore": 3.9,
             "spike": true
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 2.3,
+            "zscore": 2.29,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.09,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.94,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -3012,8 +3012,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.05,
+            "count": 14,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.1,
+            "zscore": -1.12,
             "spike": false
           }
         },
@@ -3343,6 +3343,45 @@
       "name": "Real Estate (XLRE)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-29",
+          "return_pct": 1.91,
+          "zscore": 2.17,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.19,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Fed keeps interest rates unchanged, but two officials dissented in favor of a rate hike - WXOW",
+              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObGlVaFBTWWFNTlZ5SmxQRVlsNmVLZENqcXZlOHI1UkhNcndjYU5GV2lLLWVXMm5sRDRjcHJXUDNuREpXSDFRNmRYQkZ5bTVfSXNwV2tCLUZrSkZRX0ZQT0ZfRmlYa2JqdzhsR1NMaEpJQzZKMlFkSWdvc3RoOEk0WXdIVzFQX0J5SG9DbHJ4NzJhS2IwTUZFbnFYV3VidEViQmxvVHlFQ0l5VGVFR1pFMkQ5OC1oVFNfbEJQSnNsVHdYYlRDNlk0a2JmOGEzMktrMUVCYTVKbDF6UlU2SUtwNXJjdmVlMnlnN3A0U1lOa0NFaUFKd0VMaC15QUV2VnhP?oc=5",
+              "sentiment": 0.676,
+              "relevance": 0.522,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed keeps interest rates unchanged, but two officials dissented in favor of a rate hike - WQOW",
+              "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNekZIRXBJa1AtejRCUTRhdlB6ckZSRnNYb0pldmF6NXFVRF9xWmZGNDg5NXhsMk5WQlQtRzZhUnVRdU9wS284eG1tY2pSZ2xmQ2JnTjUwN3pPal9nNV8tdGZ6ZmFQMVhEVGxiLVJWeHdodjJ4VlB5UlVfRlJMTjFnVmxLSDZjcnNzQUNPOWo4cVJCQUhHMTVTd1VzSDFuZ3FsVEkxNDF0QW9ySHFRbk11c3lVMEw1RWdZRUluam5QTVdJTm9IMnAzV1N6bVlUTGhUUmFBdUJqcUp2aHZwWDg0ekpxUElmMjFGLURuSmJQTTV4b0VSMC1BOU4yNlBzUEVSSXV5Tm55WTRfa21oaHUzLVg0RS04cVU?oc=5",
+              "sentiment": 0.676,
+              "relevance": 0.522,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "CSUF economists forecast ‘growthflation,’ generational wealth divide and stalled job growth - CSUF News",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYUTByejh2VkZlakxMdFVwdDRYNHFMY1l2clJLMklLRFp2TExQTWktdU11cXRFT3Z6U2tMaVVxbEMyQnVqdXFBMHF3NC1RV2oxcnhXRl9UYk1DbE1vV2lTd0VYNm84RzNsTVJ6cTRLRnM?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.507,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-20",
           "return_pct": 1.7,
@@ -3537,45 +3576,6 @@
             "zscore": 0.11,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-06",
-          "return_pct": 1.06,
-          "zscore": 2.16,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.58,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "10 of the Best REITs to Buy for 2026 | Investing - U.S. News - Money",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1NGE3YmZhMm5pbXJJUkFvS3A3YlpKM2lzYTBfckpMRHVjVVBkaElZcWdMamRnNjRIa3Z4QS1LaGdhVUZzeE9HSkY5Mll6Q05nc1hQMDRZWGtHR0tyX21FWktURHJTRDNOWlluQVdn?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Crombie Real Estate Investment Trust stock heads toward November results - AD HOC NEWS",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWFE5OUduTk1QMUxTQUZ6UTJUenRCTTVNcldmMTNqck11ZkI0Z1lDZjZ5RlRNckMzcjJ3eHJkRGpvazhpMktxMzl5VFBuNF9XSlFIYkZVUWJyUmhIWlFBOXRFNlhVUEVnRVVuNDRkaFdMR19DLXpIQ2N3X0luVWxCMmx1NVU5T1c1c2plblVJY0g4R1k5OTd1RmlxTkJnaGphVkpJN1FzOUd6ZjhqMTdmTlRxXzRXYkltTTduTVdoNnh5WWl5YkRjb2xUTE5iYmFZ?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Allied Properties Real Estate Investment Trust Shares Retreat as Valuation Pressure, Execution Risk and Volatility Weigh on TSX:AP.UN - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNTTFEQWRTdGhTbTBQV0pMR3B0emZaR292SUJkbG1rQUtKMmd2a3R3c3hQRF83R3h0NndHd3RpUHNEMVMwRGw3UmR2Q1ZpY0l5M0kwSkQ1ekNpSENrSEdKelVqSkxqZG9IcF9Cd2xCMndhTHFGak41Wk9qU2ctRlVNWkxTUzk2S2dXS0plaVRoQXBaVi1VZndudGNhdHVGTHJUNTdZeGtUSF9GbkhKYUtIOGZKRVZlRFFkeVNRSHRLc0poZVZvajlWaGM2emZMRzRkLW5oNTdPLUZzUk1qNnhLMlhsU3FtelZKbWN3TnF2WDAtU3JmMUhnMkp3?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 15,
-            "zscore": 2.0,
-            "spike": false
-          }
         }
       ]
     },
@@ -3619,7 +3619,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.09,
+            "zscore": 1.1,
             "spike": false
           }
         },
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.88,
+            "zscore": -0.86,
             "spike": false
           }
         },
@@ -4062,7 +4062,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.17,
+            "zscore": -0.18,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.72,
+            "zscore": 0.69,
             "spike": false
           }
         }
@@ -4225,7 +4225,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.47,
+            "zscore": 0.44,
             "spike": false
           }
         },
@@ -4303,7 +4303,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.32,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -4672,6 +4672,45 @@
       "name": "Aerospace & Defense (ITA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-10-29",
+          "return_pct": 3.56,
+          "zscore": 3.78,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.19,
+          "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "SIFCO vs. Park Aerospace: Which Aerospace Stock Is a Better Buy? - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdU1xSWtRcUg4OWRQQ3Y0TmptaHA5U3VEYVdlQzdVTWQwMTNtdUxzV2JieHFGOFR6YTJQYnY5TzFZZkdmWEQxZGU3bFJwN0N2c3RSUFptaXY3aDE2RW5OUnN4d214d21ac2huYy00OGt3ZXBfMlo4dmZhZk10WUd3VnFJUlNLZEoydjdWQTV0QTlOSUtHYjBIOTVMbG9zV1FxUERKTGZWTUhqcWtIbnZkTXpZeTVLV0Jp?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.576,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_defense",
+              "title": "Top Applied Aerospace & Defense (AADX) Competitors 2026 - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1vb3NDaUdGb2I1TXNQRUdiOWRvNDZVNFJvVkNtOGpHRnctZnhSZTY4WWlNNkRHNWxBRVg5Vi1qVFh5WUIybURDSGN0QmRNN1F5WTFWR1pKRDVMLXhOVEVQOXZ4WmRPRk9HMExkWGdKSWItNXJlUHBiN1pxREVnZw?oc=5",
+              "sentiment": 0.318,
+              "relevance": 0.527,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed keeps interest rates unchanged, but two officials dissented in favor of a rate hike - WXOW",
+              "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObGlVaFBTWWFNTlZ5SmxQRVlsNmVLZENqcXZlOHI1UkhNcndjYU5GV2lLLWVXMm5sRDRjcHJXUDNuREpXSDFRNmRYQkZ5bTVfSXNwV2tCLUZrSkZRX0ZQT0ZfRmlYa2JqdzhsR1NMaEpJQzZKMlFkSWdvc3RoOEk0WXdIVzFQX0J5SG9DbHJ4NzJhS2IwTUZFbnFYV3VidEViQmxvVHlFQ0l5VGVFR1pFMkQ5OC1oVFNfbEJQSnNsVHdYYlRDNlk0a2JmOGEzMktrMUVCYTVKbDF6UlU2SUtwNXJjdmVlMnlnN3A0U1lOa0NFaUFKd0VMaC15QUV2VnhP?oc=5",
+              "sentiment": 0.676,
+              "relevance": 0.522,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-26",
           "return_pct": 2.44,
@@ -5116,6 +5155,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-10-29",
+          "return_pct": -3.66,
+          "zscore": -2.06,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.19,
+          "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "Software stocks tumble as Fortinet, ServiceNow plunge more than 20% on disappointing outlooks - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQUpuMFR1MVJuYWRfQnZKNDlVRThQT1VyZl95Y2lIWWxoOWV5R2ladVplWk03blZrRWttbTJ3bFdmYXVZMEowQ1pVS0diYUFDaWsxWHNhd2VIWVVjcVdOZXRjVHFrQzdWaENucXc3R1NDVnpnR0YzVEVBZFA5Mk0yVmdvUmpjNmlKSWVJa3pxTmFaX0w0OS00MWZsbzhsQl9oelpYVmZhdEFJZXVHVTY0STdBLVliRW0wTkpheVZZZ0g0TTFBUkdHa3NpR1hyZGtpQXV5ejhJZGRwMHYyQW85QmtXVkNxWEtjSHY2QnJpYkZWOS03?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Is GMO Internet Group (TSE:9449) Cheap As Cyber Attack Costs Come Into Focus? - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWWNOckZENFp0TEhoZzU4YmJaUHMyYXhsUUpjang4TlNVaGVpRlBuMW93eTV2TkxoQmd4b2V6MWxrd0FLS2VhaEIyR2YwTTU5bFhZSHBzSzI1UFJVbUlSWkJtd21FdW1LRlFmMWpjWnFMYURzTnFQUUl6ZEo0ZzNHcU5KTFdibmw4ZkNiLU9QS2JTV3RuZGVOUWY1ZVhnOWV4TGVFQmRRTnhTRzBjcWlsSWVNN1k4M1hhZEdiY2JmYTVxbFZLbnhxSzNNcHFteldEQzJaeHhqM3PSAd4BQVVfeXFMTmI3cjJMdWs3ejAzdDJzSmJJTmlqd3Q0dk1RSWhWLWJuMFl6d1A5WUFtQm1NWG9KOXNzSVJVRkx0SjRJSjdtYk9vMWpDWlBSNFg4Y1F0US1JUTFVT0hMblVBUkhMWEpCbm5rZE5NRnM5VE5xX01PcXA2ZllScHRJTlFlQlAyN3BLWkNMTFFxZGFhU2RkbFlPRG53MnFDRlp3Sl9Hd3ZCcUFXQnRRVmx0N2pxT05lLVBBZzZEX1ZYUkhGS3dxMldUQnQycDFPVXZDaXZla1lMS1pJaXFIaFlR?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Software Stocks Are Getting Crushed Again After Hours - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbE1BOVpNMENUZXQ4dFc1Rkc1T0ZRN1hZVnZpRFVyV0tnR3N6dXVrVGxXaUc5LUp6ZFBGb1pZR2lxQlBHVktMTTVtbVlkVnlJNDdBcTZNNzc0d2UtSXV2bWZSMmVoNnN4Y0hiVzIwbUlVY1JrUEQzdmllNUtwUEllbVBZbXhTbHFPY3lpSVdReEJsYVFqQ0cxVnJONG5WZw?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 11,
+            "zscore": -0.68,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-23",
           "return_pct": 3.22,
           "zscore": 1.41,
@@ -5307,45 +5385,6 @@
           "coverage": {
             "count": 15,
             "zscore": -0.41,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-21",
-          "return_pct": 3.22,
-          "zscore": 1.27,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.49,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity stocks rise on AI safety concerns, with CrowdStrike and Okta leading gains. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVmtnWnY5MjBRdHY1OFVPa3M2R2dyaHpZT0tFT3FqNGhKZU0yeGQ0elhaVzZKZTgzZ3JOeXR1Y3ZsY3VBc0poYjBSMGx4eFpPRDg1cmxnT0VQWG14cG9IZDNTeGk2VkFLZFBlem9ZOFNma2xLcVdXUU1CRS1PdDVBa1NOSEdSYTNmSEplOVJkZGNpSUE?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNeDJWVldVYzNRRTA5c3dHSnFXQlpGVi1ZZkllRzdlNTJ2NHgtR01mU3JHOWhLWk1ZSTlhTGwwM2ZjckpBSUJPZnhhSFdUSFRXQllwRzJzQ2ZJR0I2ajdfMUNZUENscy1iQlJrNTJIaF9ibGt1Qk84ODk4bmFEMzhyRnZsbVZWUDg2RHRlZXU1b2djQ3NkYmpMSWZyUlBoMk5zRURIdDgwbG5WZmlTNFRNTmVBV1R4bEM0OXFVT3VuVVdNVVpZV3hSVzB6OVpsQmh3VmNmZ0hSNXJwbEZYckQw?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Extend Gains on AI Safety Warnings: CrowdStrike and Okta Rise 4%, Palo Alto Ticks Up - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUWlBU1YxcVZOcm5CdWJTZkRjLW5NeW0tV0hzODloSUhfV1Zsc2NrWlFGYWZTX2dhaHhtdjBLeW5SMEotU2I2QlZTT18zNG9SYl9QblZaWGhSekFLWkt3bnNxcEJKZlZYRzRGSUNGMnU3cmRhc2RaemxscEx4WF9NNnhCeEtYUmdOM3E2a25HNXBseHNqc2p0MDVFRllZU3dTT3FB?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 21,
-            "zscore": 0.01,
             "spike": false
           }
         }
@@ -5837,21 +5876,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-29",
-      "return_pct": -1.61,
-      "zscore": -1.18,
+      "return_pct": 0.4,
+      "zscore": 0.37,
       "max_abs_z_recent": 2.61,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 7
     },
     "equity": {
-      "date": "2026-10-28",
-      "return_pct": 0.28,
-      "zscore": 0.33,
+      "date": "2026-10-29",
+      "return_pct": -0.19,
+      "zscore": -0.42,
       "max_abs_z_recent": 2.01,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 0
     }
   }
 }
