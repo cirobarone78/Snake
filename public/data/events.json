@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T09:35:00+00:00",
+  "generated_at": "2026-10-30T12:40:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 98,
-            "zscore": -0.07,
+            "count": 97,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 62,
-            "zscore": -0.63,
+            "count": 61,
+            "zscore": -0.69,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 67,
-            "zscore": -0.4,
+            "count": 68,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": 3.49,
-          "zscore": 1.55,
+          "return_pct": 4.44,
+          "zscore": 1.87,
           "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.37,
+          "severity": "major",
+          "market_return_pct": -0.67,
           "events": [
             {
               "source": "googlenews_link",
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.62,
+            "zscore": -0.61,
             "spike": false
           }
         },
@@ -804,8 +804,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": 3.21,
+            "count": 46,
+            "zscore": 3.46,
             "spike": true
           }
         },
@@ -922,7 +922,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": -0.04,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -961,7 +961,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.09,
+            "zscore": 0.1,
             "spike": false
           }
         }
@@ -972,6 +972,45 @@
       "name": "Polygon",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-10-30",
+          "return_pct": 5.43,
+          "zscore": 2.38,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.67,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Solana Outpaces Polygon on Throughput, Staked Value and Developers, Chainspect Data Shows - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE42YkQ0akZxbzhCNXRUQWk4YVVXUTN5c3VSYmF0R2FuOVpMbGozckpJTG5DZU5OMDVLTjktQTNDWUIzSS1XZnl1RXNNQmFtUjZIQ2p5dS1ZeEYzZDlU?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon expands payment stack to Solana - grafa.com",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAtYnJuMjVnZXpOd0h1TWFhZU85QmxzMEpxWlJBWldQOVJ5QS02Q2FzTUM3Y0dlRUY2LTRDdl9Bd2x3anJKRGRBM1lXQkdiTVY4ZHYyakJCbFFEWm9DSzVmNS0tb0lXUmxmQWpHNXA1b0lYek9tRlpMNnBORmQ?oc=5",
+              "sentiment": 0.103,
+              "relevance": 0.641,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Solana stablecoins can now pay out to US banks via Polygon - Cryptopolitan",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8xU1Z5NmZCVC1zTi1aN1cwd295bUNPTGdjX0lGR3Rva3ZTUXJPVnROeTRnRVhSR0tBaDdrMWJZUkdzMzA1QVhPSk1obWhXVjFUT3lPeU0ybzZCQ1hHNl8yVjdSNjBfNWM0TkdsLU5hNWhmczkzN1RpVFZWa2FSZw?oc=5",
+              "sentiment": -0.103,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": 0.57,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-29",
           "return_pct": -4.85,
@@ -1166,45 +1205,6 @@
             "zscore": 0.8,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-07",
-          "return_pct": -4.62,
-          "zscore": -1.25,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.67,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Top 3 Altcoins to Accumulate Right Now — LTC, AVAX, POL - Bitget",
-              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4zU3pyVWtGZHNXLXF0QkpaN1NCdmMtbFVocU16NlRCQ1EyeGtnRWh1UTF4bDRDRzFqMExma0pSN0ZtOTIxZTJoZV9OY1lZSU5PVmdabjNYMG52anB2QlHSAWNBVV95cUxOLWlaS1pfZ29OVjFqZ1UxRThwNWo0LXQ1cFF2SzgtZXA2Q3RTeEZPdVd6aW0wVlYwUE5XRzJzN25iUjhpM0VwNURXN0ZodF96UlBnMFdVRXR3V3ByYWFIMXF6Sms?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "How to Stake Polygon (POL): A Step-by-Step Guide for Beginners - OneBullEx",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxON29xVVljak96Ym4xM0Q5TFVHNlhXN3BHRDFrNDFiSWEzUDZjQm5HdkpycExxS3BmSkpIWTZmQ1QxbTBWbWtiNXd6dkFaMEtuSzBPSGVkRmpGc3Y5Q2h2X01DUTl5MmVaajNvZzVQOWkyWG5XcVFDRG1rN2paVGFjWU1xN2VxZ1NGQ053SVQtVGd1ZDdYRGxzbg?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Top 3 Altcoins to Accumulate Right Now — LTC, AVAX, POL - Bitget",
-              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4taVpLWl9nb05WMWpnVTFFOHA1ajQtdDVwUXZLOC1lcDZDdFN4Rk91V3ppbTBWVjBQTldHMnM3bmJSOGkzRXA1RFc3Rmh0X3pSUGcwV1VFdHdXcHJhYUgxcXpKa9IBY0FVX3lxTE4taVpLWl9nb05WMWpnVTFFOHA1ajQtdDVwUXZLOC1lcDZDdFN4Rk91V3ppbTBWVjBQTldHMnM3bmJSOGkzRXA1RFc3Rmh0X3pSUGcwV1VFdHdXcHJhYUgxcXpKaw?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.18,
-            "spike": false
-          }
         }
       ]
     },
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 74,
-            "zscore": 1.48,
+            "zscore": 1.49,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 121,
-            "zscore": 5.27,
+            "count": 120,
+            "zscore": 5.22,
             "spike": true
           }
         },
@@ -1489,7 +1489,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 0.3,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.63,
+            "zscore": 0.62,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.69,
+            "zscore": 0.68,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.98,
+            "zscore": 0.97,
             "spike": false
           }
         },
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.82,
+            "zscore": -0.83,
             "spike": false
           }
         },
@@ -1769,7 +1769,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.24,
+            "zscore": -1.25,
             "spike": false
           }
         },
@@ -1847,7 +1847,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.06,
+            "zscore": -0.07,
             "spike": false
           }
         },
@@ -1859,6 +1859,14 @@
           "severity": "notable",
           "market_return_pct": -0.47,
           "events": [
+            {
+              "source": "googlenews_finance",
+              "title": "Morgan Stanley: Raises target prices for eight Chinese bank stocks and lowers two; expects deleveraging to support a modest recovery in bank profits and valuation repair. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWTFmVFZrX3Ruc2FZMTdfa3dTeUxJakNMeUZXeE5mN0tyNFN2SnJLeFRyNm9pakN4VXA0bHlHd0MyN0RrSHYxMFZ3VGoyaUxoUlNKQ0Fwa2I1VWw3S3ZuODVzZ0s2eDctOGVsd2dJQXVOa1hJcFd1N3BOYTZoZ2FyWTZValZXT1F6cTRDN2RtbFBsclNua3ctZzEta25KOFA5VVFhRkFUS3RUTGxKcWc?oc=5",
+              "sentiment": 0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_finance",
               "title": "3 Bank Stocks We Steer Clear Of - StockStory",
@@ -1874,19 +1882,11 @@
               "sentiment": 0.382,
               "relevance": 0.753,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Beyond Bank Earnings: 4 Best Financial Stocks For Rising Rates - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR0RVZHU2VkY3aHRNSFRZdTZ6akNaRnFVVkM3WkhWeFRLd2dmV1c0SHhTSTUxZG9Zb3RScHI5OF9zS0RKRFpOMkgxamJDSERfR3YydTVQUkM4NTRhckV2Ni10UGxpN0dmWlBfSzV0cTNtamt1V3lyUUhyNG05RlRTUE5nTGJNQzRCZG5scExCc0prd3pMYTBKV1QxN1kwOUt3akdFeA?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.655,
-              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.1,
+            "count": 5,
+            "zscore": 0.23,
             "spike": false
           }
         },
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.64,
+            "zscore": -0.65,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.85,
+            "zscore": 1.84,
             "spike": false
           }
         },
@@ -2088,7 +2088,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.42,
+            "zscore": 1.41,
             "spike": false
           }
         },
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 2.11,
+            "zscore": 2.09,
             "spike": false
           }
         },
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.13,
+            "zscore": 1.12,
             "spike": false
           }
         }
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.22,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -2250,8 +2250,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -0.41,
+            "count": 6,
+            "zscore": -0.2,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.31,
+            "zscore": -0.3,
             "spike": false
           }
         },
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.14,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -2530,8 +2530,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 1.25,
+            "count": 6,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -3378,7 +3378,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.18,
+            "zscore": -1.2,
             "spike": false
           }
         },
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.26,
+            "zscore": 1.25,
             "spike": false
           }
         },
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.76,
+            "zscore": -0.77,
             "spike": false
           }
         },
@@ -3495,7 +3495,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -1.15,
+            "zscore": -1.16,
             "spike": false
           }
         },
@@ -3534,7 +3534,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 0.81,
+            "zscore": 0.8,
             "spike": false
           }
         },
@@ -3572,8 +3572,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.11,
+            "count": 9,
+            "zscore": 0.35,
             "spike": false
           }
         }
@@ -3781,8 +3781,8 @@
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": -0.26,
+            "count": 44,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -3984,7 +3984,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": -1.35,
+            "zscore": -1.31,
             "spike": false
           }
         },
@@ -4023,7 +4023,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.89,
+            "zscore": -0.86,
             "spike": false
           }
         },
@@ -4084,24 +4084,24 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "3 Australian Uranium Stocks With At Least 16% Revenue Growth - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQmdtS1hFY0VaQzhLTDBYTzhxVk1GWlBPMHExN3dpQXBkWGllZ0FjTmRrWmoyODcyOTgwN0Z3RzNRMDgtN1ZwQkdjQlk3a1BiR2Zkd05HQzc4Z1FLTHFhWG81cjRuZ2FVbHRBbmJxWTVRaGU4c2gySGdZOF96UzM4QXJfZ2dGazYyUS0yMFdod0tRRy1h?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.6,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_uranium",
               "title": "How Could Cameco (TSX:CCO) Shape Canada’s Nuclear Energy Sector? - Kalkine Media",
               "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWXZjRFFBbC1WYXlCMmQ1QkpsSzNVZW1PZi1jZXdiZlJrSGlwOWhpd2Y0TnQ1Y3FtM19WQllWYnEzbFdWZ0diS2MtLUR6bGxsZnNtSDhGbmZyMmwtcktGWjl4cGpybGhQd25WdkVSdE11LTh2aThMR08zY2J5MmZ3Sm1EcjZOS0xzX0IzREpZYU1lOV9sT21aS29ZR1JmaWpmRjM4?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed officials are warning of more pain. Many Americans are already feeling it - CNN",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KOEVDdVNYS0FUZGlpbEJTYVRMT1U0MzE1ZVUzM1pfcjdIeUhJN1ExRm1oYWZzR0lLcU8zYVJRZkI5dm9wckNpWkplUnRVQmhqUkFwb1hSN3dEbTl5ZFJOTkthcWYwYWh0ZjNBbEtkV1NDTUNnOURuVw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.521,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.37,
+            "count": 2,
+            "zscore": -0.62,
             "spike": false
           }
         },
@@ -4140,7 +4140,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.14,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.7,
+            "zscore": 0.67,
             "spike": false
           }
         }
@@ -4303,7 +4303,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.28,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -4342,7 +4342,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.59,
+            "zscore": -0.58,
             "spike": false
           }
         },
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.62,
+            "zscore": -0.61,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.98,
+            "zscore": 2.04,
             "spike": false
           }
         }
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 25,
-            "zscore": 0.23,
+            "count": 26,
+            "zscore": 0.31,
             "spike": false
           }
         },
@@ -5876,12 +5876,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-30",
-      "return_pct": -0.37,
-      "zscore": -0.09,
+      "return_pct": -0.67,
+      "zscore": -0.29,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-10-29",
