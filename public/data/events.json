@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T18:34:00+00:00",
+  "generated_at": "2026-10-30T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 63,
-            "zscore": -0.59,
+            "count": 64,
+            "zscore": -0.53,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": 4.74,
-          "zscore": 1.98,
+          "return_pct": 6.01,
+          "zscore": 2.42,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.38,
           "events": [
             {
               "source": "googlenews_link",
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.5,
+            "count": 16,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": 4.65,
-          "zscore": 2.09,
+          "return_pct": 7.28,
+          "zscore": 3.07,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.45,
+          "market_return_pct": -1.38,
           "events": [
             {
               "source": "googlenews_pol",
@@ -1006,8 +1006,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.88,
+            "count": 9,
+            "zscore": 1.45,
             "spike": false
           }
         },
@@ -1045,8 +1045,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 1.26,
+            "count": 9,
+            "zscore": 1.55,
             "spike": false
           }
         },
@@ -1085,7 +1085,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.19,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -1124,7 +1124,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 2.11,
+            "zscore": 2.15,
             "spike": false
           }
         },
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.61,
+            "zscore": 0.62,
             "spike": false
           }
         },
@@ -1202,7 +1202,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.8,
+            "zscore": 0.81,
             "spike": false
           }
         }
@@ -1215,12 +1215,20 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -6.2,
-          "zscore": -4.35,
+          "return_pct": -4.89,
+          "zscore": -3.44,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
+            {
+              "source": "googlenews_tech",
+              "title": "Tech stocks plunge as Nasdaq hits worst day sin... - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX2Q5aVhyOE1vbnFmWE9CWl8xUzQyVGxaeDBHcGx0TjV5cDRIRDhrOVU3YjlTVkNPaG9qMjlfYTZ4UFB1ekxIODh0akJMOUZ0NTAzdHhYVGNJc2xwN09EUmtvQnlEYkNLVTFoWWlRR0dCaWQtR3RRTzU0MVJabDZZb1kxZ1RGcENSbHZMV3FtN1duNEdXWGl4MTBn?oc=5",
+              "sentiment": -0.827,
+              "relevance": 0.931,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_tech",
               "title": "Alphabet Suffers Record Drop, Pulls Other Tech Stocks Lower - Seeking Alpha",
@@ -1236,19 +1244,11 @@
               "sentiment": -0.743,
               "relevance": 0.897,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "The sell-off for tech stocks deepens and drags Wall Street toward its worst day since June - Barchart.com",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNFlod1RZbVBaem9vaVdYdHBRM1UyU011MmFlVGo2YW1CbnphQXRQNUhCNlRFekFSaFRVNUFsQWZKRGV3N2dlTUc3VUhSSlpuYTYteDZFbHJkMUZnQzI0TlNqU081Ni15VFhLZmNOdHBBYjNFbklfRFQ4S01wdlZPNnBFU3JtMkxpSzNVUmNiUE5zY283ZDZ6WjUtWE50VkwzOUtWc2tPN3JSRnNQczlCMWtSNnpTSTZMNmUzbW1wRDRrQ0F1STQxMThXUjgzQkU?oc=5",
-              "sentiment": -0.7,
-              "relevance": 0.88,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 55,
-            "zscore": 0.51,
+            "count": 69,
+            "zscore": 1.09,
             "spike": false
           }
         },
@@ -1326,7 +1326,7 @@
           ],
           "coverage": {
             "count": 120,
-            "zscore": 5.21,
+            "zscore": 5.18,
             "spike": true
           }
         },
@@ -1365,7 +1365,7 @@
           ],
           "coverage": {
             "count": 55,
-            "zscore": 1.38,
+            "zscore": 1.37,
             "spike": false
           }
         },
@@ -1443,7 +1443,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 1.89,
+            "zscore": 1.87,
             "spike": false
           }
         }
@@ -1528,7 +1528,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.62,
+            "zscore": 0.61,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.68,
+            "zscore": 0.67,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 1.85,
+            "zscore": 1.84,
             "spike": false
           }
         },
@@ -2088,7 +2088,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.42,
+            "zscore": 1.41,
             "spike": false
           }
         },
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": 2.11,
+            "zscore": 2.09,
             "spike": false
           }
         },
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.13,
+            "zscore": 1.12,
             "spike": false
           }
         }
@@ -2179,11 +2179,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -1.99,
-          "zscore": -2.46,
+          "return_pct": -1.6,
+          "zscore": -1.99,
           "classification": "market-wide",
           "severity": "notable",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
             {
               "source": "googlenews_fed",
@@ -2195,11 +2195,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "Australian recession now a coin toss, says major bank - ABC News & Headlines – Australian Broadcasting Corporation",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGttcGVNWVFvZW1fUExudHV3ZTZiMXlncWRUWXlXdGhmdnF2VDlBbnhCTDVkcjZUd1lFZ1FJV1RMMWhBNjZ2dW53S19BUXZZamQwOXlJZlpxZVZ2bjBKc2trLTVpQlhBY2ExcC1uRnluMVNxX1U1RWpWRnF2NWVrYmp1dXJPVV9na0hTZjRncmlBNVZ0MG0w?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "macro"
+              "title": "US public debt is a bigger concern than you think - Nordea Corporate",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQTNNVE9nNS1YM0ljV05jOTV6MWo4TXBBNjNtY0pQXzkyYTd0NVdPSnNfaGNXRllCVWtZSE14NlNQQ2VQZG5ybzhlOFBwWEt6TnkzNkxOazdjcG5vWXVGczhJa3Z3VzBRR0Y4d1ppUllZT2Zub0FTVmxiaWc2ZGplSjAzMWJIM3VpZUhZTEFjT0k0eUFhZ1cyWA?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -2211,8 +2211,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.14,
+            "count": 10,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -2693,8 +2693,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": 0.29,
+            "count": 9,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -2732,8 +2732,8 @@
             }
           ],
           "coverage": {
-            "count": 25,
-            "zscore": 3.92,
+            "count": 26,
+            "zscore": 4.17,
             "spike": true
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 2.29,
+            "zscore": 2.3,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.08,
+            "zscore": 1.09,
             "spike": false
           }
         },
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.91,
+            "zscore": -0.93,
             "spike": false
           }
         },
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.95,
+            "zscore": 0.94,
             "spike": false
           }
         },
@@ -3012,8 +3012,8 @@
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": -0.16,
+            "count": 15,
+            "zscore": -0.05,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.1,
+            "zscore": -1.05,
             "spike": false
           }
         },
@@ -3619,7 +3619,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.1,
+            "zscore": 1.07,
             "spike": false
           }
         },
@@ -3710,11 +3710,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -8.32,
-          "zscore": -3.83,
+          "return_pct": -6.98,
+          "zscore": -3.22,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3742,8 +3742,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": -0.23,
+            "count": 57,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -3951,11 +3951,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -7.36,
-          "zscore": -2.82,
+          "return_pct": -5.57,
+          "zscore": -2.08,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
             {
               "source": "googlenews_uranium",
@@ -3984,7 +3984,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.48,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -4013,17 +4013,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_macro",
-              "title": "Fed expected to hold interest rates steady as inflation tops midterm voters’ concerns - NBC News",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUYxNmVHWVV4bW1XQVlFRkxtQkk3NlJWNUgzRzZYWVJ2TGE1b3BwQ2Rad3RwY3VhalJVQlk4QUs1MGN0bFFQV0FJNjh1RHJNUTFQMm1HVWMyZDhFUl9pTndNZGloa0Q1b3dYbkk4TkhDZlYwYmlrUFpYOHYtZDdIUmwzbmlXQi1VbHM4YlRuLVJjMDVBWjZvVVRURQ?oc=5",
-              "sentiment": 0.743,
-              "relevance": 0.538,
-              "event_type": "fed"
+              "source": "googlenews_uranium",
+              "title": "Uranium Stocks in Focus October 27th - Investorideas.com",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHdCek9yVDNubFNGOGV6cHptRnptWWRESFUwd0xKVHFUMkVEQ3NKaGp5X2tERUgwdDRlWXRhT0dXQVhoRTJkUVFUNDJ6NmFWemlTeHdWV3hJdTlkTWVZaEJzUkU2aHVGSHgyMTZJSHZoVnA1Z05sY2wxWGtVbmRwS0dJa3VyZDJZWW9jajRTaS1oOW04RXRGWQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": -1.31,
+            "count": 1,
+            "zscore": -0.93,
             "spike": false
           }
         },
@@ -4190,45 +4190,6 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
-        {
-          "date": "2026-10-30",
-          "return_pct": -3.15,
-          "zscore": -1.89,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -2.37,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Gold price crash accelerates as crude oil rises and odds of Fed rate hike jumps - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS1B3azI3dnVrUFY3RFlnQmRnSHpBVWUzc2RnaWZobzJoazBPb2JIcTlaclNrTEVmUkRiNHBZVV9ELWt1NnplQnNYbVZJVlpHVjhzXzZ3aXM1YmhaTUN6VFNIWTVHdWdLRXlmVUkyYmZDb2VIQ3lEYUVRbUJ6TnJ5TzV4aGloSzU2NEZIS0RNMzRsdVBIamlEV1ZjVkl3VWt0TjRJdnVjdHZJYlkwa21Bc0MyZU5TSDhkTktyR1Q4SDlRQ1VBS1loUDdhY1k1ZVZ1VVE?oc=5",
-              "sentiment": -0.751,
-              "relevance": 0.9,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Australian recession now a coin toss, says major bank - ABC News & Headlines – Australian Broadcasting Corporation",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGttcGVNWVFvZW1fUExudHV3ZTZiMXlncWRUWXlXdGhmdnF2VDlBbnhCTDVkcjZUd1lFZ1FJV1RMMWhBNjZ2dW53S19BUXZZamQwOXlJZlpxZVZ2bjBKc2trLTVpQlhBY2ExcC1uRnluMVNxX1U1RWpWRnF2NWVrYmp1dXJPVV9na0hTZjRncmlBNVZ0MG0w?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Business News | Resilient US Economy, Inflation Pressures Point to 25 Bps Fed Hike in December: Report - LatestLY",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOb0dVNVhfQmx3OThLYmVhYXA1U0RGaUU3VXZFSlRSZFEwUERCcWZnMzE2VTE0QVN2UjlZLVF5dVhlNURqNnJDUW1YclA1Q3lIcDJncHdQQ29rVjhtYmE4RUJVb2xGZmtMQWIxTlJHRUo5NGprS0d6bGg5VlE3NmFDMGJnZXhVMGlab2VZYnBtekV1V0NqOUk4MFlPLS1YVjBDYlRDZG9XY3hiUDdxSEpCS0ZOSTcwY1NaWmo4QjJUd1RVSmNRQ3d6bzY4aEdPMjE0dlFUWHlXU0N6R3VneEJIYXRn0gHnAUFVX3lxTE1sX1gxdUlOanNZSzFZbDBQRUs2TVU4aU5WYlQxaWhIMUIwSm5pOUdxZUlvQ3YwZlY1UXVrMVRZb3lnd3BPUmVqOUZFM2ZLeDFySG5STE9tVi1CcGRNdm44TThvQkgwcS0tNnJBWmJKUGVCOUtVd3RwZXhfWDdJRk5vMnl4cHM0R1Q4cEQwVi1NeDdiNFZMcERPVzRlQk1SR0dYcmhmSnlPckRBZ2FiakRkaVB1ODdoejNZZndBalRVbElLRGp2TlJVX0FZdmd4Uy0zZlhaZkh2N3M1eDlwcXAyYTlWNTd2Yw?oc=5",
-              "sentiment": -0.318,
-              "relevance": 0.727,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 2,
-            "zscore": -0.15,
-            "spike": false
-          }
-        },
         {
           "date": "2026-10-27",
           "return_pct": 1.99,
@@ -4421,6 +4382,45 @@
           "coverage": {
             "count": 1,
             "zscore": -0.61,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-09-24",
+          "return_pct": -2.58,
+          "zscore": -1.87,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.02,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Waaree Energies, NTPC Green, Adani Green: How renewable energy stocks performed on Sept 24 - Upstox",
+              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNb2tXUHN1Z09ZTUtmU3YweWdPOFRuYVlad3JDR2hONzBZeHg3bTNGRGVpdkhHSXZ1R3VoN3A3SjdmenZ5ZnZ3RG1YT3NPZC1kQ2NRUlpGUnJiQkx4OVZYWklIUEtRQ3RWSzhIbkxOQ21wMmR0ekVqblk4ck9EUGFiYXg0eTdNVXRhUHd5aW9vYWJUcVBjSjhnN2dTclJqa0tkNVl3WWlfRDFOVXhvcUZjNXFlXzdkcXpnN1l2V3AzTVdZTDRLOTk4TlF0elN3bndHU0dwTVczZXI4OTNlRkE2UzJnbWNOdmdCV3BSUTI4ZzVtRGM?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Solar Stocks Slide as High Borrowing Costs Weigh on Project Financing: First Solar Sinks 8%, SolarEdge Falls 5%, Enphase Energy Drops 4% - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNY1V1VzVLdkJVdTJjMkN6ZU5uZTZUNkx0WHhwaGFwXzZnN29UTHZESmlfbTJXTGZfNW95ODFjWTY0alhabXUwSVR1dmhqR3hBS1ZTUzM4ZkUtSTF5OG1CUWl1QVZYWTZ5WTFEZVItMTByTTF2NUVQazhwN0RVbkpaVTFicDd6ejZ5Qzl0b2xwNXZfOWRFMVlRa0t2LTVYbmwxSThQbkJmVDB5ZUt0VU9wQkpiRTFnRWNjWHBYZkQ3ZmxGMlpxNGV3Q3FWcENHMXhSdmQzVksxN3dTTjV4RDVsU3UzNnlXNng4RE5FTXFVV3REemF2UVVoREtXSVVIODlfc3liUg?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "NextEra Energy vs. Duke Energy: Which Utility Stock Looks Stronger? - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZmFrenpCUDZZamZDVlphVDlPdnRkdnNxYktlQlhuRTdUc25vR3YweWFQYkNjMVlEYkEzMVpwRXpPOWNwRjFmQ2NFN2k3YmtlNjFpY0dERlNzY0xHT3k2VlVjOTF0TXBkWHRxZjJMZFJWdzU3T0Q1ZlhyNmdJVy0xN0tBbGtWWURibXk4b0RzZGFJOFNyR2J4WmJSY1M5UVJsOWR6dHhxb3J5S1liXzBFZXpGdmpNeENENVVn?oc=5",
+              "sentiment": 0.7,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": 2.04,
             "spike": false
           }
         }
@@ -4674,11 +4674,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -2.52,
-          "zscore": -2.24,
+          "return_pct": -2.13,
+          "zscore": -1.9,
           "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -2.37,
+          "severity": "notable",
+          "market_return_pct": -1.82,
           "events": [
             {
               "source": "googlenews_fed",
@@ -4690,11 +4690,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "Australian recession now a coin toss, says major bank - ABC News & Headlines – Australian Broadcasting Corporation",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGttcGVNWVFvZW1fUExudHV3ZTZiMXlncWRUWXlXdGhmdnF2VDlBbnhCTDVkcjZUd1lFZ1FJV1RMMWhBNjZ2dW53S19BUXZZamQwOXlJZlpxZVZ2bjBKc2trLTVpQlhBY2ExcC1uRnluMVNxX1U1RWpWRnF2NWVrYmp1dXJPVV9na0hTZjRncmlBNVZ0MG0w?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "macro"
+              "title": "US public debt is a bigger concern than you think - Nordea Corporate",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQTNNVE9nNS1YM0ljV05jOTV6MWo4TXBBNjNtY0pQXzkyYTd0NVdPSnNfaGNXRllCVWtZSE14NlNQQ2VQZG5ybzhlOFBwWEt6TnkzNkxOazdjcG5vWXVGczhJa3Z3VzBRR0Y4d1ppUllZT2Zub0FTVmxiaWc2ZGplSjAzMWJIM3VpZUhZTEFjT0k0eUFhZ1cyWA?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -4706,8 +4706,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.7,
+            "count": 4,
+            "zscore": -0.41,
             "spike": false
           }
         },
@@ -4915,11 +4915,11 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -4.46,
-          "zscore": -3.2,
+          "return_pct": -3.59,
+          "zscore": -2.55,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
             {
               "source": "googlenews_fed",
@@ -4931,11 +4931,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "Australian recession now a coin toss, says major bank - ABC News & Headlines – Australian Broadcasting Corporation",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGttcGVNWVFvZW1fUExudHV3ZTZiMXlncWRUWXlXdGhmdnF2VDlBbnhCTDVkcjZUd1lFZ1FJV1RMMWhBNjZ2dW53S19BUXZZamQwOXlJZlpxZVZ2bjBKc2trLTVpQlhBY2ExcC1uRnluMVNxX1U1RWpWRnF2NWVrYmp1dXJPVV9na0hTZjRncmlBNVZ0MG0w?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "macro"
+              "title": "US public debt is a bigger concern than you think - Nordea Corporate",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQTNNVE9nNS1YM0ljV05jOTV6MWo4TXBBNjNtY0pQXzkyYTd0NVdPSnNfaGNXRllCVWtZSE14NlNQQ2VQZG5ybzhlOFBwWEt6TnkzNkxOazdjcG5vWXVGczhJa3Z3VzBRR0Y4d1ppUllZT2Zub0FTVmxiaWc2ZGplSjAzMWJIM3VpZUhZTEFjT0k0eUFhZ1cyWA?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -5156,12 +5156,20 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -4.75,
-          "zscore": -2.48,
+          "return_pct": -3.78,
+          "zscore": -1.99,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "OKTA vs. S: Which Enterprise Cybersecurity Stock Has an Edge Now? - Yahoo Finance Singapore",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdlYzbXVZTHV1ZUlkN1BLWUp1c2FRLVFBSGU3eUZKMFVaOTVXSnFQZTJXZXhwbUxBU2dMa20tNTVndzd1dHF4UERQY0poVUUtRnFQX1ozS1pTeXc3ZDE5b1FEdWxvY2FhZnJjcnU3UjN4T0NxWE8tVlNyYkV6dVI2TnZ0MlJ2QkxLWE9abG1sd2Y?oc=5",
+              "sentiment": -0.428,
+              "relevance": 0.771,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_cyber",
               "title": "Cybersecurity Stocks To Watch After The Binance Theft Shock - Yahoo Finance",
@@ -5177,19 +5185,11 @@
               "sentiment": -0.296,
               "relevance": 0.718,
               "event_type": "hack"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Jim Cramer says Wall Street is punishing the wrong tech stocks - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRmVnSjQ2MFV3UDBoRTVsTUIwWHJMa1pLX1FfTXR2Q184WVRoVW1MWFlWa05tT0hHYnJBLXJwTHVKb2oxZ2hRc1dBSE9UTTFJZDlObTh0SVpYT090d0syTW00RUNIdzU2djBFNXlLS0lkSzJURVJoVFdIME1HVmJVdDRqUdIBiAFBVV95cUxNNTgwQkZMTE5peTB2aGljMXFyWGVScDBLTmtMMGdEZkd3T2ZONnluejFlcHctRmNFcFJQOG1NcnNnYlNEVkZydHRYUmUwRGhOdWRpQ0t0Wi1BX2lPYVR0TDlFRHRlaHJsN0M0cnplQjhmZ2lSZFVrNHRPbUg4NjdWTUF0YnhzQW02?oc=5",
-              "sentiment": -0.772,
-              "relevance": 0.709,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.37,
+            "count": 18,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -5219,11 +5219,11 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "This Cybersecurity Stock Just Had Its Worst Day in Years. Is It a Buying Opportunity? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRU5RX2NJVG1Fc0x3eUZhYXBkSWtCTXVWQ2ZXa1ZOSDRSaDYydzBhV2FJOEtHMUN2ci15VEVHUlJOZmZYd1VOWWpTY0RqV0lkOWZpX0pEMXBVTGQwMzdVTnQ4ZE9xenREQmJSWlJKRzhBSW1mOUJaVDBMaXdrejhCakNDVXFTWVNMdmNrTnBHYVQzSGFsUV8tRW1wbjJCS3h5V1dhLXV0a2V5N0VzRmlKamZWd2VHbzc2Vkg1TTN0ZWdFZWow?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.855,
-              "event_type": "other"
+              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQUpuMFR1MVJuYWRfQnZKNDlVRThQT1VyZl95Y2lIWWxoOWV5R2ladVplWk03blZrRWttbTJ3bFdmYXVZMEowQ1pVS0diYUFDaWsxWHNhd2VIWVVjcVdOZXRjVHFrQzdWaENucXc3R1NDVnpnR0YzVEVBZFA5Mk0yVmdvUmpjNmlKSWVJa3pxTmFaX0w0OS00MWZsbzhsQl9oelpYVmZhdEFJZXVHVTY0STdBLVliRW0wTkpheVZZZ0g0TTFBUkdHa3NpR1hyZGtpQXV5ejhJZGRwMHYyQW85QmtXVkNxWEtjSHY2QnJpYkZWOS03?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "earnings"
             }
           ],
           "coverage": {
@@ -5638,12 +5638,20 @@
       "moves": [
         {
           "date": "2026-10-30",
-          "return_pct": -6.59,
-          "zscore": -2.45,
+          "return_pct": -5.21,
+          "zscore": -1.89,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.37,
+          "market_return_pct": -1.82,
           "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Gold vs. Silver Miners: Silver Miners ETF Outperforms Gold Peers - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV3MxSFNYU205UXEwUGhwQ1NSSFdMVXY0N05aVjYtODJLaU1KVEM2ZGZCTzZWMURsTkxPUDR4YnZnYXQwLV9WVlRkRnMtRWtXdUJuWWFVSHRBU0JQMFRiOFlzZXlKNmdiVnBhY2xXUW9XMFN2RkkxaXY5YmN2b2Z1VzRwUFF4LWp6RXkzNk9TcU42bHNNeXF3UV9CaGZXY1NGc3pPSTZDZmRDbEs4VWc?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "etf_flow"
+            },
             {
               "source": "googlenews_gold_miners",
               "title": "Gold price slumps to one-year low, silver price breaks $50 as mining stocks tank - Mining.com",
@@ -5659,19 +5667,11 @@
               "sentiment": -0.178,
               "relevance": 0.671,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Theta Gold Mines Secures Funding as TGME Plant Nears Completion - TipRanks",
-              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObC1kOTVibnJERzVTNmRKc29wSGdpV2lmUHJjVmVTMXhGVFo1UG5zSU5fbVNHVF9NUXdqZjJUSFloQkR3elczTjhsdGY0aU95bTZJbThGWnVQM2Z5ZUFSNnZkUjVyRmllOFkwREZzU3pCbVlGSkhUaTB1MTMyRmhYaDh5TWdTOTZXa2cyZ2dnWjQtTTA3NWN0d3hZVDQ0MkJzMlJjZ0NSTzRNa2J3N25OaVBWQUxUdw?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -1.36,
+            "count": 10,
+            "zscore": -0.98,
             "spike": false
           }
         },
@@ -5748,8 +5748,8 @@
             }
           ],
           "coverage": {
-            "count": 21,
-            "zscore": 0.05,
+            "count": 20,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -5876,8 +5876,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-10-30",
-      "return_pct": -1.45,
-      "zscore": -0.82,
+      "return_pct": -1.38,
+      "zscore": -0.77,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -5885,9 +5885,9 @@
     },
     "equity": {
       "date": "2026-10-30",
-      "return_pct": -2.37,
-      "zscore": -3.88,
-      "max_abs_z_recent": 3.88,
+      "return_pct": -1.82,
+      "zscore": -2.99,
+      "max_abs_z_recent": 2.99,
       "recent_days": 10,
       "benchmark": "SPX",
       "days_since_last_major": 0
