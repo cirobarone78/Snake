@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.0% | 33.3% | +21.3 pp | 38% | 1.000 |
-| 2 | LINK | 38.6% | 33.3% | -5.2 pp | 47% | 0.500 |
-| 3 | SOL | 49.4% | 33.3% | -16.1 pp | 60% | 0.000 |
+| 1 | POL | 12.4% | 33.3% | +21.0 pp | 44% | 1.000 |
+| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 51% | 0.500 |
+| 3 | SOL | 48.1% | 33.3% | -14.8 pp | 56% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -124,8 +124,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 24
-- stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 8
+- stablecoin o token ancorato: 21
+- volume troppo basso rispetto alla capitalizzazione: 9
 - già in portafoglio: 6
 
 ## Limiti
