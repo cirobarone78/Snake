@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.4% | 33.3% | +21.0 pp | 44% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 51% | 0.500 |
-| 3 | SOL | 48.1% | 33.3% | -14.8 pp | 56% | 0.000 |
+| 1 | POL | 12.3% | 33.3% | +21.0 pp | 45% | 1.000 |
+| 2 | LINK | 40.1% | 33.3% | -6.7 pp | 54% | 0.500 |
+| 3 | SOL | 47.6% | 33.3% | -14.3 pp | 56% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -24,16 +24,6 @@ Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene
 
 ### Il token cattura valore dalla rete
 
-**BNB — BNB**
-
-Token della piattaforma Binance e gas della BNB Chain.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.3 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
 **TRX — TRON**
 
 Layer 1 usato soprattutto per il transito di stablecoin (USDT).
@@ -42,6 +32,16 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.2 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**AAVE — Aave**
+
+Protocollo di prestito on-chain fra i più grandi per depositi.
+
+- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 6.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -84,16 +84,6 @@ Exchange di derivati on-chain con volumi elevati.
 - **Età**: almeno 1.9 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
-**XRP — XRP**
-
-Rete di pagamento e regolamento transfrontaliero.
-
-- **Cattura del valore**: serve per transare, ma non cattura ricavi. Le commissioni sono bruciate ma sono minuscole. Il punto critico è l'offerta: una quota rilevante è ancora in escrow presso l'emittente e viene rilasciata nel tempo.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.58 volte la capitalizzazione attuale.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 12.4 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
 
 ### Solo governance: nessun flusso al detentore
 
@@ -123,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 24
-- stablecoin o token ancorato: 21
-- volume troppo basso rispetto alla capitalizzazione: 9
+- capitalizzazione sotto la soglia: 25
+- stablecoin o token ancorato: 19
+- volume troppo basso rispetto alla capitalizzazione: 19
 - già in portafoglio: 6
 
 ## Limiti
