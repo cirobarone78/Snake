@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T00:48:00+00:00",
+  "generated_at": "2026-11-02T03:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 98,
-            "zscore": -0.07,
+            "count": 97,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-02",
+          "return_pct": 2.37,
+          "zscore": 1.58,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 1.42,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "XRP or Ethereum: Which Is the Smarter Buy for the Next 5 Years? - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMXBybDBtY2tCbnJtQ1piV1Z1TXNESkR1bjBNTUhkeENHZ3k2SjE1bzFraGp3bEtLZURQdnNjTzZrRGVxN1Nzdm9tQWxzVUJNNVdmRGNoN2VGNXlBRUJoR1RjRkdWQVdlNFg5TXUwaHdWYWZLVVYxSFdUZWRCVGQwQzQxdnBFWm1HOXhqUEVMalhHVEhBRG1EVW9adjZNY2l4ZnBId1pBa1RuWC12YW1CWGJoV0FnVkh4c3RSUg?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "XRP or Ethereum: Which Is the Smarter Buy for the Next 5 Years? - شبكة تواصل الإخبارية",
+              "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtUFlnS0VxVTFYMFFBSlNSRTF5czlFaktIeVRYMC1HU0F5ejRGTHd3Zm9NQlRrN3MzamFVNXE4V1FJc01Xd0tPWmVmUHpiN3NJSXpN?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "$ETH Pretty interesting to see how this has moved so far rel - KuCoin",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9senpWVUp4YTlIZW5rb2ZkQjdrdkxhLTVGNVV6UzNET3J1R3Jxd3kyV0VCSWhvQjhXRzdpNGpvRzFoWWZFNDVGRHh1Q01CUm00MjZtYU95X0pFQ2E4WE1BVko3bTlQTWpaN3hka0liVTZUUQ?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.684,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": -3.18,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-29",
           "return_pct": -4.59,
           "zscore": -2.41,
@@ -283,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 71,
-            "zscore": -0.17,
+            "count": 70,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -442,45 +481,6 @@
             "count": 90,
             "zscore": 0.88,
             "spike": false
-          }
-        },
-        {
-          "date": "2026-09-21",
-          "return_pct": 5.05,
-          "zscore": 2.08,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 6.73,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin Tops $84,000, Ethereum Crosses $2,700 as Crypto Market Extends Strong Rally - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcTdpdnp0TnhQRUJKMWpId29LVlFxeldFLWw3V0IzUXZPRUVQS1AxS0FtZ1dyZFBSNmVSWnBBZ2VsQ0dDZU5BWG9OM1NkVVV2dzRhN2o0bzFDeExIcUY1aHlMQkNpV0tpZkptQkxzeXdyNTlKVGxSa25rQ0hTTU0xdXRKVW9pbTd0VmNkZ3gzSm5lRnkyNWExM2pObnlmQTVDNW9BX3NSdHpab0dZZXBSYmhadjh0YkpyQlRGMC1rZEJUUUludXRUUTgwZlZwZVA3SEJwekpGY3BXN0c1X3pn?oc=5",
-              "sentiment": 0.796,
-              "relevance": 0.919,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum (ETH) Price Prediction: ETH Breaks Higher as $2,631 Support Puts $3,520 Target in Focus - Brave New Coin",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWHpUVzVVZW1jaVYxUkR2UG55REtYZ3oxVjZnR2ktcy1vb0htQl9LUFV5bVdSNGpVd2Z4YXN5QTRxLTRSSk1SZTN3VktmTnBPRDB5QTFObkwyb3I5cE9xei1oSVJ2WlRxTE5td0ZaQWM5eGRybmFZVDFRZ2lLWG9saFQyV21sOTZFQW5ReVVaaXhrQjA0R2RfWDBXRC1SVEU3bGtDTkJlLWNNRUNiZV9xX2x2VVcxdE1jSlpLel9uYUw?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.891,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - Boston Herald",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcHBCMDlKUlRZVlluVkFqY19GVXhZVVd3RG00LVphRkY3UnliOXhHc2J2bDBtSUktWldLNjdvblpKV2NXN1NuUEdINXVZeGpXVDZfakFJeEhUc2dKalF0V2FIQlVxNksyWHQtb2NwZTlPTTB1bnVsS2tRUU5VNTg?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 123,
-            "zscore": 2.52,
-            "spike": true
           }
         }
       ]
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 31,
-            "zscore": 1.7,
+            "zscore": 1.71,
             "spike": false
           }
         },
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 3.08,
+            "zscore": 2.99,
             "spike": true
           }
         },
@@ -1046,7 +1046,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 1.62,
+            "zscore": 1.56,
             "spike": false
           }
         },
@@ -1124,7 +1124,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 2.15,
+            "zscore": 2.11,
             "spike": false
           }
         },
@@ -1163,7 +1163,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.62,
+            "zscore": 0.61,
             "spike": false
           }
         },
@@ -1201,8 +1201,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.81,
+            "count": 8,
+            "zscore": 1.13,
             "spike": false
           }
         }
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 93,
-            "zscore": 2.06,
+            "zscore": 2.05,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.97,
+            "zscore": 0.96,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.8,
+            "zscore": 0.79,
             "spike": false
           }
         },
@@ -1683,8 +1683,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": 0.04,
+            "count": 13,
+            "zscore": 0.18,
             "spike": false
           }
         }
@@ -1808,7 +1808,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 1.17,
+            "zscore": 1.16,
             "spike": false
           }
         },
@@ -1847,7 +1847,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.09,
+            "zscore": -0.1,
             "spike": false
           }
         },
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.22,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -1916,8 +1916,8 @@
             },
             {
               "source": "googlenews_finance",
-              "title": "Meta’s Muse Comes for Financial Stocks - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVnhad1lIRFVNWk04emdJb3Bxa3NZdmJVakFDS3hlTE5nOXE4VURjRnhucmlzUDFLa2d4b2R1YXhzaEdlVFY4WkdpSDR5MVpzUkFkak1UT0pPNlQwSjB2dzVOLXhoQl9YMEx6dFlJSE1JX0FNU1l5SzY3V1B1U0RJZTVUTnVya0RsdjFUaw?oc=5",
+              "title": "Here’s how bank stocks might perform if the Bank of Canada starts hiking rates - Financial Post",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZ1BBU3pJWGE0WVhDWXFQMENPOVNfbXQxWFMyQWprZHpQd3ZhVkNiMEY0UXhKZzE3aXpIN3JoQTZOLWJMTmNmWW5sVTZrU3NHV3VKSnYxNmk0SzZSYmhXWFo4QXJtNTdONDZEMVF2YkdWSDJzWGRELVlmRDctRktvd2JTM01CQQ?oc=5",
               "sentiment": 0.0,
               "relevance": 0.6,
               "event_type": "other"
@@ -2195,24 +2195,24 @@
             },
             {
               "source": "googlenews_macro",
+              "title": "Half of Canadians expect a recession within 12 months, Bank of Canada survey finds — but businesses disagree - Money.ca",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN3pVWW5WV0l4ZHdXM28yZlFoMW1QLUhJNmNmWHFEZ2hvSWlKTmhpVGdvWEIyUHM1a3g2Vnl4OXRwTnBFWW1GWUdOM25JOEc4NDNpTWQ2SDctbmJncXhtUDFKUEtRTGluQ01GZjZFeldVYnBhdDVYMzAxNC1MUFlJUHJQbG1iWGNUXy1QdWNmWDdQQQ?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
               "title": "The Labor Market Is Weaker Than It Looks - Barron's",
               "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpLTVkS0dlSWRHV2JaMDU4ZVZpRVFOMzQtUF9zeFE0dnByTjdjSU1hT0w2UVlKbUdMUHJDSWlLLWtfbUMwQlBaQ21lOFdzRWNnU3JCelkwd3JpbGNlWnJDd01zLUNxaEJDWUVNcHN2aFJXRzlTT0JR?oc=5",
               "sentiment": -0.44,
               "relevance": 0.776,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US public debt is a bigger concern than you think - Nordea Corporate",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQTNNVE9nNS1YM0ljV05jOTV6MWo4TXBBNjNtY0pQXzkyYTd0NVdPSnNfaGNXRllCVWtZSE14NlNQQ2VQZG5ybzhlOFBwWEt6TnkzNkxOazdjcG5vWXVGczhJa3Z3VzBRR0Y4d1ppUllZT2Zub0FTVmxiaWc2ZGplSjAzMWJIM3VpZUhZTEFjT0k0eUFhZ1cyWA?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
-              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 13,
-            "zscore": 1.54,
+            "zscore": 1.55,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.11,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 4.18,
+            "zscore": 4.17,
             "spike": true
           }
         },
@@ -2772,7 +2772,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 2.3,
+            "zscore": 2.29,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.09,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": -0.05,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -3742,8 +3742,8 @@
             }
           ],
           "coverage": {
-            "count": 77,
-            "zscore": 0.75,
+            "count": 79,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -3820,8 +3820,8 @@
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": -0.2,
+            "count": 44,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -4466,7 +4466,7 @@
           ],
           "coverage": {
             "count": 23,
-            "zscore": 0.15,
+            "zscore": 0.16,
             "spike": false
           }
         },
@@ -4505,7 +4505,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 0.24,
+            "zscore": 0.25,
             "spike": false
           }
         },
@@ -4544,7 +4544,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 1.17,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -4583,7 +4583,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": -0.2,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": 0.34,
+            "count": 30,
+            "zscore": 0.26,
             "spike": false
           }
         },
@@ -4690,18 +4690,18 @@
             },
             {
               "source": "googlenews_macro",
+              "title": "Half of Canadians expect a recession within 12 months, Bank of Canada survey finds — but businesses disagree - Money.ca",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN3pVWW5WV0l4ZHdXM28yZlFoMW1QLUhJNmNmWHFEZ2hvSWlKTmhpVGdvWEIyUHM1a3g2Vnl4OXRwTnBFWW1GWUdOM25JOEc4NDNpTWQ2SDctbmJncXhtUDFKUEtRTGluQ01GZjZFeldVYnBhdDVYMzAxNC1MUFlJUHJQbG1iWGNUXy1QdWNmWDdQQQ?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
               "title": "The Labor Market Is Weaker Than It Looks - Barron's",
               "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpLTVkS0dlSWRHV2JaMDU4ZVZpRVFOMzQtUF9zeFE0dnByTjdjSU1hT0w2UVlKbUdMUHJDSWlLLWtfbUMwQlBaQ21lOFdzRWNnU3JCelkwd3JpbGNlWnJDd01zLUNxaEJDWUVNcHN2aFJXRzlTT0JR?oc=5",
               "sentiment": -0.44,
               "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US public debt is a bigger concern than you think - Nordea Corporate",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQTNNVE9nNS1YM0ljV05jOTV6MWo4TXBBNjNtY0pQXzkyYTd0NVdPSnNfaGNXRllCVWtZSE14NlNQQ2VQZG5ybzhlOFBwWEt6TnkzNkxOazdjcG5vWXVGczhJa3Z3VzBRR0Y4d1ppUllZT2Zub0FTVmxiaWc2ZGplSjAzMWJIM3VpZUhZTEFjT0k0eUFhZ1cyWA?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
               "event_type": "other"
             }
           ],
@@ -4931,24 +4931,24 @@
             },
             {
               "source": "googlenews_macro",
+              "title": "Half of Canadians expect a recession within 12 months, Bank of Canada survey finds — but businesses disagree - Money.ca",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN3pVWW5WV0l4ZHdXM28yZlFoMW1QLUhJNmNmWHFEZ2hvSWlKTmhpVGdvWEIyUHM1a3g2Vnl4OXRwTnBFWW1GWUdOM25JOEc4NDNpTWQ2SDctbmJncXhtUDFKUEtRTGluQ01GZjZFeldVYnBhdDVYMzAxNC1MUFlJUHJQbG1iWGNUXy1QdWNmWDdQQQ?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
               "title": "The Labor Market Is Weaker Than It Looks - Barron's",
               "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpLTVkS0dlSWRHV2JaMDU4ZVZpRVFOMzQtUF9zeFE0dnByTjdjSU1hT0w2UVlKbUdMUHJDSWlLLWtfbUMwQlBaQ21lOFdzRWNnU3JCelkwd3JpbGNlWnJDd01zLUNxaEJDWUVNcHN2aFJXRzlTT0JR?oc=5",
               "sentiment": -0.44,
               "relevance": 0.776,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US public debt is a bigger concern than you think - Nordea Corporate",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQTNNVE9nNS1YM0ljV05jOTV6MWo4TXBBNjNtY0pQXzkyYTd0NVdPSnNfaGNXRllCVWtZSE14NlNQQ2VQZG5ybzhlOFBwWEt6TnkzNkxOazdjcG5vWXVGczhJa3Z3VzBRR0Y4d1ppUllZT2Zub0FTVmxiaWc2ZGplSjAzMWJIM3VpZUhZTEFjT0k0eUFhZ1cyWA?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
-              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.52,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -4987,7 +4987,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.07,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -5026,7 +5026,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.43,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.21,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.42,
+            "zscore": -0.41,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.46,
+            "zscore": -0.44,
             "spike": false
           }
         }
@@ -5670,8 +5670,8 @@
             }
           ],
           "coverage": {
-            "count": 24,
-            "zscore": 0.35,
+            "count": 27,
+            "zscore": 0.63,
             "spike": false
           }
         },
@@ -5876,8 +5876,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-02",
-      "return_pct": 0.79,
-      "zscore": 0.75,
+      "return_pct": 1.42,
+      "zscore": 1.17,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
