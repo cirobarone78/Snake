@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.3% | 33.3% | +21.0 pp | 45% | 1.000 |
-| 2 | LINK | 40.1% | 33.3% | -6.7 pp | 54% | 0.500 |
-| 3 | SOL | 47.6% | 33.3% | -14.3 pp | 56% | 0.000 |
+| 1 | POL | 12.3% | 33.3% | +21.1 pp | 40% | 1.000 |
+| 2 | LINK | 39.7% | 33.3% | -6.3 pp | 49% | 0.500 |
+| 3 | SOL | 48.1% | 33.3% | -14.8 pp | 54% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -59,7 +59,7 @@ Layer 1 di smart contract; adozione DeFi finora modesta.
 Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
 
 - **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato dalle commissioni, ma meno della metà dell'offerta è circolante: gli sblocchi programmati sono il fattore dominante sul prezzo.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 2.43 volte la capitalizzazione attuale.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 2.42 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 3.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -82,6 +82,16 @@ Exchange di derivati on-chain con volumi elevati.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 3.97 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 1.9 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**XRP — XRP**
+
+Rete di pagamento e regolamento transfrontaliero.
+
+- **Cattura del valore**: serve per transare, ma non cattura ricavi. Le commissioni sono bruciate ma sono minuscole. Il punto critico è l'offerta: una quota rilevante è ancora in escrow presso l'emittente e viene rilasciata nel tempo.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.58 volte la capitalizzazione attuale.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: almeno 12.4 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
@@ -113,9 +123,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 25
-- stablecoin o token ancorato: 19
-- volume troppo basso rispetto alla capitalizzazione: 19
+- capitalizzazione sotto la soglia: 23
+- stablecoin o token ancorato: 20
+- volume troppo basso rispetto alla capitalizzazione: 18
 - già in portafoglio: 6
 
 ## Limiti
