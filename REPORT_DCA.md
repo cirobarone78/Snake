@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.3% | 33.3% | +21.1 pp | 40% | 1.000 |
-| 2 | LINK | 39.7% | 33.3% | -6.3 pp | 49% | 0.500 |
-| 3 | SOL | 48.1% | 33.3% | -14.8 pp | 54% | 0.000 |
+| 1 | POL | 12.3% | 33.3% | +21.1 pp | 35% | 1.000 |
+| 2 | LINK | 39.8% | 33.3% | -6.5 pp | 46% | 0.500 |
+| 3 | SOL | 47.9% | 33.3% | -14.5 pp | 49% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -32,16 +32,6 @@ Layer 1 usato soprattutto per il transito di stablecoin (USDT).
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.2 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**AAVE — Aave**
-
-Protocollo di prestito on-chain fra i più grandi per depositi.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. I ricavi finanziano acquisti di AAVE e chi mette il token nel Safety Module è pagato — ma quello stesso stake è la garanzia che copre eventuali insolvenze del protocollo.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.04 volte la capitalizzazione attuale.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 6.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -102,7 +92,7 @@ Rete di pagamento e regolamento transfrontaliero.
 Il principale exchange decentralizzato per volume.
 
 - **Cattura del valore**: dà solo diritto di voto, nessun flusso. Il caso di scuola: il protocollo genera commissioni enormi, che vanno ai fornitori di liquidità e non ai detentori di UNI. Il 'fee switch' che girerebbe una quota al token è oggetto di governance da anni.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.42 volte la capitalizzazione attuale.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.43 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 6.1 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -123,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 23
+- capitalizzazione sotto la soglia: 24
 - stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 18
+- volume troppo basso rispetto alla capitalizzazione: 15
 - già in portafoglio: 6
 
 ## Limiti
