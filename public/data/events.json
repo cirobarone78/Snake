@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T00:45:00+00:00",
+  "generated_at": "2026-11-03T03:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -973,6 +973,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-03",
+          "return_pct": -4.33,
+          "zscore": -1.24,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.08,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "COMMENTARY: Brutal AI selloff stirs recession fears - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWE8zaUFuYVVHZHM4aDVEdEN1TzVfbjVQa0xXWG1UNXpHcTlja19HTUtZbDUyTno2bXVwWDBvUm43eUVNbmZVblhrX1dTS2FGSTNLaU1zcDhSWWczS2dGUks5NFFYYTljcW43REtWYWZSRnBzV2ZFeTFNdmlzMno2WXFiTWY0RDBwTmtBdFRZWWMta1NUSktYdnVfTUF1c2NqTkhfaUJfNTVwaXI1QUhPV01SZnZxbzZW?oc=5",
+              "sentiment": -0.866,
+              "relevance": 0.448,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The rate rise that stops the economy? Fears of an RBA-induced recession - SMH.com.au",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQX0xlVTItakV2a1hDU3dZM2NXQ3VkanMzRkFYT2JPeFVxa0Qwa2tiOGtvUkFIUG9rdWpxd0tSRWNZUm9SRTNFMml0bHliVEZONkFHOEs5QTJZTDZSRGVvTnVqS0k1ekxWWmZUM2dRaTItbERXWXY5Q0U3aWNJWVdydXZWR3FWWC1mZGFIbFFfWENVYUM5T0gyVkhrcjZ0VnhnWEhPUlNRdy1aWjRiM2hEV0k0RzZJODJ5TE5HUFBSSWFYckdUSWxlV3dBUQ?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.416,
+              "event_type": "macro"
+            },
+            {
+              "source": "coindesk",
+              "title": "Why stealing billions from a crypto exchange can be harder to stop than a bank theft",
+              "url": "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
+              "sentiment": -0.71,
+              "relevance": 0.41,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-10-30",
           "return_pct": 8.99,
           "zscore": 3.71,
@@ -1166,45 +1205,6 @@
             "zscore": 0.6,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": -4.3,
-          "zscore": -1.15,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.92,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Top Use Cases for Polygon (POL): Real-World Applications of Layer 2 Scaling - OneBullEx",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWE12Y3dCZmRiOFJ1ek1LVEdzeF85Qk5UNXdNemowcWZNMmJLTnpiSnNlTm90QS00YkxwOXJWU0IxQXkyeE81TVlheF9BdUI0Mlp6MjU4d3lDTEdBbDNHSFJzWFlCWm8yaWlOd1RFTEJIc3c1RUhFX045SlNRYUJaMld4akZDNG1BZzlUSEVyM01MTWJzWWVUN09ScHhWdzRWRDF4azZvZVVPdw?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon vs Ethereum: Key Differences and Use Cases - OneBullEx",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUFpXbTJWc3RqbE5ORzM4M3JUc092RkUyamJxeWI5TGotdEllLTRDSGxreDNCd0oxb0VtVkdJN0lRSmJFYVNjRUQwOGk5bzgyeUxOTlNNRU5aWTRMbWpETUFPOHpNZFl4S2d1bEhyM0tMU05OalN3ZDdQdlVxT3Z6NEh4UF90UQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Trump Rules Out Diesel Export Ban—Crypto Punters Weigh Odds of One Before 2026 Ends - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTDFneGhkclh0TUpjV2NKU2NpRlpjamlBV05tTndIaTNWdWxjZjFWd01YRVYxNGt3WXpBYVFsVjRZRDRid2JsLTFxdl9SSnEtbnh1MzJ5TlpMeVJvYmI2QXIwWHVYMWFMc1VaWHlVY2dHTVBfWHc4eVNNMUpjUHMwX1Vfa0thMXVpbVZ6Sm5RRVd4VnBBYkFTbXVwdS1GM1dUZkRQQTJfX3YtNDhWZUQyTzRKQVVQQW1NTERLQmFlcWxiOEQ4bTBvd3Y0TW1SRHBfQm5UMlVCZkxKZw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "regulation"
-            }
-          ],
-          "coverage": {
-            "count": 8,
-            "zscore": 1.13,
-            "spike": false
-          }
         }
       ]
     },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 68,
-            "zscore": 0.89,
+            "count": 70,
+            "zscore": 0.97,
             "spike": false
           }
         },
@@ -1364,8 +1364,8 @@
             }
           ],
           "coverage": {
-            "count": 122,
-            "zscore": 5.34,
+            "count": 121,
+            "zscore": 5.25,
             "spike": true
           }
         },
@@ -1404,7 +1404,7 @@
           ],
           "coverage": {
             "count": 55,
-            "zscore": 1.38,
+            "zscore": 1.39,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.06,
+            "count": 14,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -1550,7 +1550,7 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "7 Best Energy Stocks to Buy in 2026 | Investing - US News Money",
+              "title": "7 Best Energy Stocks to Buy in 2026 | Investing - U.S. News Money",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdmRrck9SdGc5NE15MU1sRHJIU2MxenBYd0N4M2QzMHIzSm56MUc1S1duYzhYZWlaY2YyUk03MVpkU2pDZDJVTkQ2dGVLRHhuNDZsV2hQNHlEVlc1eGJmM2ZPMWZrMlRGbDAwZ1JNLVN2azBMZFBrTjd3a0trS21tS2VvcC1scXZfSlp3?oc=5",
               "sentiment": 0.743,
               "relevance": 0.897,
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.62,
+            "zscore": 0.61,
             "spike": false
           }
         },
@@ -1606,7 +1606,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.68,
+            "zscore": 0.67,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.97,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 0.8,
+            "zscore": 0.78,
             "spike": false
           }
         }
@@ -2195,24 +2195,24 @@
             },
             {
               "source": "googlenews_industrial",
-              "title": "The Best Industrial Stock to Buy With $1,000 Right Now - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSldGd3R1b2oySzNUb2pvaEFWNmU0V3dMdVhuYzQ4aU5xb3ZITTR1MjRPQU5fRUpjN3laSmNqQnF6Zmd4bHdCWTZ3WVc5c0p0R3FoZjRweG1PZFVxWjRIWnZTd0J5dFVnZG9tdjZsQzR5NU4zdHN2UDk3Q3RWVEYxSXEwVmhhQjNoWFREczBjekc5dDdrNWlWY2FiX2toMmoxd09ZTjFHRTUzRHNhUXNBdmo1SVZJV01MUzJ6ZHo0bjYxdzJISVRaTjRHanZKWF9KV0Zr?oc=5",
+              "title": "The Best Industrial Stock to Buy With $1,000 Right Now - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOVNYRXVWVmFSalVoNGVsSXFBRkw5TGNjazFjazFleXNybE9fNnU0S3JoRFpyc2JIYzdUM3Z1ZkRodWdxNXhEdk1HbmlJSFozS3diMmxPdFcyWEtCR193U05hdUdYQWFXR2dQd1ktLUJfTUpsdVl1S3ppZlZ1MjJINVR3OGVMVXkta2lzakNYZnBvLXlTZXYw?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
               "event_type": "other"
             },
             {
               "source": "googlenews_industrial",
-              "title": "3 Security Stocks to Buy Now Amid the Flourishing Industry Trend - Yahoo Finance UK",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAyeFR3VzBxYVZWeFQ5SE9NSFpjN2s3NW1WUERqZDJZa3E5ejNJaVhRd2YxOWpiQUEyUlZlNFY3bWlaZ1RJdjZVWGNCWFVWMmdaWGcxRVBfQVZkRzhLcG1LOXlYTk9UMnBxTG1Hc2pQbmYxQl9UNmE5UnB0VFZHM1k?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
+              "title": "The Best Industrial Stock to Buy With $1,000 Right Now - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSldGd3R1b2oySzNUb2pvaEFWNmU0V3dMdVhuYzQ4aU5xb3ZITTR1MjRPQU5fRUpjN3laSmNqQnF6Zmd4bHdCWTZ3WVc5c0p0R3FoZjRweG1PZFVxWjRIWnZTd0J5dFVnZG9tdjZsQzR5NU4zdHN2UDk3Q3RWVEYxSXEwVmhhQjNoWFREczBjekc5dDdrNWlWY2FiX2toMmoxd09ZTjFHRTUzRHNhUXNBdmo1SVZJV01MUzJ6ZHo0bjYxdzJISVRaTjRHanZKWF9KV0Zr?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 1.79,
+            "count": 16,
+            "zscore": 2.25,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.11,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 4.14,
+            "zscore": 4.13,
             "spike": true
           }
         },
@@ -2747,7 +2747,7 @@
           "events": [
             {
               "source": "googlenews_staples",
-              "title": "7 Best Consumer Staples ETFs | Investing - US News Money",
+              "title": "7 Best Consumer Staples ETFs | Investing - U.S. News Money",
               "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA4YU5OWUs0YTRLTzV5LUNMZWpHdm45TGMxNjR4WXlFVWxDZjliSlVRRzg2M1RnOWFVSlNGTmFrVFVRMGlOdll6MFFiTG5HWmNDNm1jYnF5a0ZpVXhlTEFibE9tUVl1V2NlNm1rUVlFbkZtRDFKMnpLMDFR?oc=5",
               "sentiment": 0.637,
               "relevance": 0.855,
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.27,
+            "zscore": 0.28,
             "spike": false
           }
         },
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.92,
+            "zscore": -0.91,
             "spike": false
           }
         },
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 20,
-            "zscore": 0.94,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -3051,8 +3051,8 @@
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.04,
+            "count": 14,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -3130,7 +3130,7 @@
           ],
           "coverage": {
             "count": 19,
-            "zscore": 0.6,
+            "zscore": 0.61,
             "spike": false
           }
         }
@@ -3215,7 +3215,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.12,
+            "zscore": -1.09,
             "spike": false
           }
         },
@@ -3293,7 +3293,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.97,
+            "zscore": 0.98,
             "spike": false
           }
         },
@@ -3315,24 +3315,24 @@
             },
             {
               "source": "googlenews_materials",
-              "title": "The Best Energy Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0NklIU05iX3FhRW5rX0NWZy1YV0RXcDVJZ1daTGNvRmJxcDN2M3NLY051dldmQjR0YU1zeGhQbGt1VC1RMmZodlMteHQ2YkkzUzBiMWszQ0JvUFBGREo3SnNLeF9INUxLYVpfX2ZR?oc=5",
-              "sentiment": 0.743,
-              "relevance": 0.697,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_materials",
               "title": "Basic Materials Sector Still Shows Promise In 2026, But Proceed With Caution - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbzNsaFJRemVLbi1mM0cxUHFhSVFYdFhzTnFaU19Janp6QmZUNFJHc1h0Rm9xQ2NLNlNqV1VhU3EwR09kem92NHNmMk5MVkl3b3dUcm83NlJ5dWVlM1FDcjNrTV9hNndKQzBlZUFzUjRhZnNaQXRHTFlJUFN3YjhlLW1IMmJNZFZZd091Tkd6ZzdFZGoxa2oyb2laRm1VX0h2VTJBbzFMQy1lLURoSERhSVMwaEtENlU?oc=5",
               "sentiment": 0.166,
               "relevance": 0.666,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_materials",
+              "title": "Analysts Offer Insights on Materials Companies: New Found Gold (NFGC) and Vale SA (VALE) - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQUDh6TTdBdFF2MEUwNURwaVJONHJCdXJjQzlBcE5HZUp1cmZrRURTc3hXY181X1FKSU9ZNnE2MHpKRTNSVEJKOWpmVnpRZTR5MUkzYUdZWjE1cnlHTDlUYk5INnlCNjNJRmZrcWxZdHo2TkRSWGhNTFZuVEhlVF9tVlZKaGEtLVd1RFRFdDVxQ2xTbnF2bHdQcmQxMU1fWmd1YkYwMVdKVndJZkdhTnFLa1pmQUNLOFB5R3FUTTI0NGZkcVFVdXVwcWVoRXdNQXlMNzNYN2x5VHFfRF9sUVA5elJLWUo0UU1MNm5uMjRteGpQQ1VDM20w?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.57,
+            "zscore": 0.58,
             "spike": false
           }
         },
@@ -3658,7 +3658,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.05,
+            "zscore": 1.06,
             "spike": false
           }
         },
@@ -3781,8 +3781,8 @@
             }
           ],
           "coverage": {
-            "count": 75,
-            "zscore": 0.7,
+            "count": 79,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -3860,7 +3860,7 @@
           ],
           "coverage": {
             "count": 101,
-            "zscore": 1.69,
+            "zscore": 1.68,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.23,
+            "count": 45,
+            "zscore": -0.2,
             "spike": false
           }
         },
@@ -3938,7 +3938,7 @@
           ],
           "coverage": {
             "count": 63,
-            "zscore": 0.35,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -4239,6 +4239,14 @@
           "events": [
             {
               "source": "googlenews_cleanenergy",
+              "title": "3 Clean Energy Stocks Retail Investors Are Watching After The 2026 Blue Wave Shift - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeWNxOFR6VnVlU2VIbE1tb1VVV1hCNDV1bDVtZkh2bzdsLWZCTlBBZm55Zm1EdmFkYUtxWC1mX2ItY0lIdzg3dW9VXzYxUHhVTlVYc3ZTUnZqcFQxNGpiTXJEQUR1dEg3LTBZemFqWnhweHZ4UFZCRmtrS3NoMG5zTUZhSlJ3dDFaX0JkbDRR?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
               "title": "Indian Green Energy Stocks Rally As Sensex Surges 1.7% On November 2 - SolarQuarter",
               "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLTF3TnFGN2ZqS1FHOTFud1lyRURxeW9VSmd2NDlnMS1yVDhIeDFVRVJ4bnhQdjdFVlNUMEFHNDFzSGdXc2VTcVRuQlZTaEtRSUdTM1lYSDFPREZmcnVpWlRmRF81UFFWbkhYaXJ4NXRqTjRCc21rQ3dudkxTT1BIV1hRZ0RGaHByQ1dZRW84SXNNTndWNUloVXVSWWVPeFB1c2tMalBwOA?oc=5",
               "sentiment": 0.273,
@@ -4252,19 +4260,11 @@
               "sentiment": 0.727,
               "relevance": 0.691,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "America is doing better than you think — just ask those in the bottom half of household wealth - MarketWatch",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONU1LSlBkbDJIRU9aN1hMOWpwdzNTenJFWEJNWFhTaVFjNjY3Y3YtQklRSjB5WXE2MldUcVhRWUlFWERNTFRlYW9odHREcWZ5VldXb091NjhRUTRKcERfWjJQcm0xVnRWclN2SGE2S0JPdlJyRXpxck55MXZfMGZpSVBWQ3Zsanc0Ql9XUlZ3QUdUX05fMjRORXhxRmNQZmptTmlWbG1PZTNLMFBEOXVMZjdHbGQ?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.534,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.68,
+            "count": 2,
+            "zscore": -0.1,
             "spike": false
           }
         },
@@ -4303,7 +4303,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.88,
+            "zscore": 0.92,
             "spike": false
           }
         },
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.7,
+            "zscore": 0.76,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.64,
+            "zscore": -0.63,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.68,
+            "zscore": -0.67,
             "spike": false
           }
         }
@@ -4504,8 +4504,8 @@
             }
           ],
           "coverage": {
-            "count": 39,
-            "zscore": 1.87,
+            "count": 41,
+            "zscore": 2.08,
             "spike": false
           }
         },
@@ -4583,7 +4583,7 @@
           ],
           "coverage": {
             "count": 24,
-            "zscore": 0.24,
+            "zscore": 0.25,
             "spike": false
           }
         },
@@ -4622,7 +4622,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 1.17,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -4661,7 +4661,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": -0.2,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 30,
-            "zscore": 0.26,
+            "zscore": 0.27,
             "spike": false
           }
         }
@@ -4987,7 +4987,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.16,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -5065,7 +5065,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.42,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.22,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.73,
+            "zscore": -0.75,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.44,
+            "zscore": -0.46,
             "spike": false
           }
         }
@@ -5709,8 +5709,8 @@
             }
           ],
           "coverage": {
-            "count": 25,
-            "zscore": 0.54,
+            "count": 27,
+            "zscore": 0.73,
             "spike": false
           }
         },
@@ -5915,12 +5915,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-03",
-      "return_pct": -1.62,
-      "zscore": -0.93,
+      "return_pct": -2.08,
+      "zscore": -1.24,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 4
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-02",
