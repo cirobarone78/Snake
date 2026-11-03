@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-01 07:07 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-03 07:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Avalanche L1 | hot | 0.99 | +16.3% | $393M | beam-2, nexpace, apertum |
-| 2 | Gaming Blockchains | hot | 0.96 | +5.7% | $1.1B | beam-2, apecoin, superfarm |
-| 3 | Index Coop Defi Index | hot | 0.92 | +4.0% | $7.4B | weth, uniswap, aave |
-| 4 | LSDFi | hot | 0.91 | +5.9% | $442M | pendle, babylon, sanctum-2 |
-| 5 | Bitcoin Sidechains | hot | 0.88 | +5.4% | $1.1B | blockstack, starknet, merlin-chain |
-| 6 | Energy | hot | 0.87 | +2.8% | $113M | novachargex-coin, power-ledger, energy-web-token |
-| 7 | Tokenized Assets | hot | 0.87 | +1.6% | $49.6B | figure-heloc, tether-gold, ondo-us-dollar-yield |
-| 8 | Pons Launchpad | hot | 0.86 | +5.8% | $198M | pons, priors-agent, zzz-2 |
+| 1 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.97 | +12.4% | $680M | sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf, nasdaq-xstock |
+| 2 | bStocks Ecosystem | hot | 0.96 | +8.1% | $1.3B | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, alphabet-bstocks-tokenized-stock |
+| 3 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.96 | +12.4% | $680M | sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf, nasdaq-xstock |
+| 4 | Tokenized Stocks | hot | 0.95 | +2.2% | $2.9B | spacex-bstocks-tokenized-stock, strategy-pp-variable-xstock, circle-internet-group-bstock |
+| 5 | Crypto-Backed Tokens | hot | 0.95 | +0.6% | $337M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| 6 | Remora Markets Tokenized rStocks | hot | 0.95 | +2.3% | $149M | circle-rstock-2, alphabet-rstock, sandisk-rstock |
+| 7 | Reality Ecosystem | hot | 0.94 | +2.2% | $166M | spacex-reality-protocol, circle-rstock-2, alphabet-rstock |
+| 8 | Bank-Issued Stablecoin | hot | 0.89 | +0.0% | $253M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Tokenized Exchange-Traded Product (ETPs) | -22.4% | $506M | sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf, nasdaq-xstock |
-| Tokenized Exchange-Traded Funds (ETFs) | -22.4% | $506M | sp500-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf, nasdaq-xstock |
-| Remora Markets Tokenized rStocks | -19.3% | $119M | circle-rstock-2, sandisk-rstock, alphabet-rstock |
-| Reality Ecosystem | -17.3% | $136M | spacex-reality-protocol, circle-rstock-2, sandisk-rstock |
-| Crypto-Backed Tokens | -16.8% | $348M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| RUB Stablecoin | -65.9% | $161M | a7a5, rubx |
+| JPY Stablecoin | -16.4% | $271M | jpysc, jpycoin, jpy-coin |
+| Pons Launchpad | -15.2% | $165M | pons, priors-agent, zzz-2 |
+| Avalanche L1 | -13.1% | $297M | beam-2, nexpace, apertum |
+| Metagovernance | -11.6% | $182M | convex-finance, dinero-2, index-cooperative |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
