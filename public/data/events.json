@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T15:35:00+00:00",
+  "generated_at": "2026-11-05T18:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -4.94,
-          "zscore": -2.87,
+          "return_pct": -5.67,
+          "zscore": -3.31,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.94,
+          "market_return_pct": -5.67,
           "events": [
             {
               "source": "googlenews_macro",
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 76,
-            "zscore": -1.32,
+            "count": 95,
+            "zscore": -0.4,
             "spike": false
           }
         },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -6.06,
-          "zscore": -2.52,
+          "return_pct": -7.35,
+          "zscore": -3.1,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.94,
+          "market_return_pct": -5.67,
           "events": [
             {
               "source": "googlenews_macro",
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 37,
-            "zscore": -2.29,
+            "count": 54,
+            "zscore": -1.31,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -4.7,
-          "zscore": -1.77,
+          "return_pct": -6.66,
+          "zscore": -2.65,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.94,
+          "market_return_pct": -5.67,
           "events": [
             {
               "source": "googlenews_macro",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": -1.26,
+            "count": 41,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -5.12,
-          "zscore": -1.36,
+          "return_pct": -6.7,
+          "zscore": -1.84,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.94,
+          "market_return_pct": -5.67,
           "events": [
             {
               "source": "googlenews_macro",
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": -0.17,
+            "count": 26,
+            "zscore": 0.91,
             "spike": false
           }
         },
@@ -1215,12 +1215,28 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -5.57,
-          "zscore": -3.16,
-          "classification": "asset-specific",
+          "return_pct": -7.37,
+          "zscore": -4.24,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_tech",
               "title": "US Tech Stocks Collapse at the Open: −$1.3 Trillion Erased in 30 Minutes - Moomoo",
@@ -1228,27 +1244,11 @@
               "sentiment": -0.494,
               "relevance": 0.798,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Asian tech stocks slide on post-midterm AI fears - Financial Times",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVTJOMUFjWUhxMTc0Rjc2aGJBQ3pXLUEzTUJDakhtbDR2QmFjYVdsNmo1LXBWS3ZvcDk5SlpZUFNfNm1lS0VReVJVM2tZcDFlQl9SdGh6bXl4VXU5eGlaamZYX3BnS0Nuc0xFeVVtMWZHSTBMTC0wZVpaU3dTenFUT2hMNHg?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "The rotation out of tech is becoming a risk for the broader market - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNnZ2dXhvOEVHaDRsTU1xZVVRcE5BZ0ZtNmpjVWM1R191SmlFTjVwVVdSWXA4RFRVVV9weDZzLVAzRk5jWEVtMVFLcTYtdUtwLU1Tdmg3U2JpdmFrQjZuUkNiOHM1UzF6VE1FM3dZOTVyVGU3T2xMaUFOelVPQ0JzbGxUdkNacEp5Z1lhZl9KSU82VDlkZWZ3R0hyWVppeEd1Ym15dFln?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": -0.5,
+            "count": 50,
+            "zscore": 0.09,
             "spike": false
           }
         },
@@ -1696,6 +1696,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -2.53,
+          "zscore": -2.77,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.03,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": 1.41,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 3.51,
           "zscore": 4.09,
@@ -1889,45 +1928,6 @@
             "zscore": 1.15,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-15",
-          "return_pct": 1.38,
-          "zscore": 1.9,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_finance",
-              "title": "Share Market Today: Nifty 50, Bank Nifty | Oct 15, 2026 - Liquide Blog",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMjVFMGk3RjFrUDBTa2xmazlBbFpJOXNhRGUwa3dHV21DTE5rVWFlb3BaWEZ4YjcxT25vUlY0Rm90TTVuU1FWdG9EeU42aTI0MjQ5M2FzbnVjRFBtTWZxM3QzaDBTMUdqdkR2eHAyZWoza2Z5Y1FYX3ZUdUJfcnJ5b2xjZ3dBc1hWZWN0Y3lfNFh1MEVVLUVkT2ZRdW8yeTd0bUs1OGdoeHZlYzNkcEhxLWVrTXh5RnJCU3c?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.906,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "7 Best Financial ETFs to Buy in 2026 | Investing - U.S. News - Money",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BRnNDNllmelM3WGhJZGRRbnhmSEUyVUZRMFQ0XzE3bjhwWTFQMWQyRGxOenFKRjlwSzNudnRacUtLa0dvWnM5LWxleVd6dnFjaWgxNTRmU2FQYlB5eHZ4bThWNl9pOHY5SERDcTlJSENqTEd5Zm05WVkwcXkxd3c?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Share Market Today: Nifty 50, Bank Nifty | Oct 14, 2026 - Liquide Blog",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNendWMVhpMFh1dGRvdWpNLUtlN0Z0a1JIZlFqaXJnR2tQTlFvUURuVHFzRWNWMGpvWkZTMEJYc2pDdncyX1pHSU5UZ01EU2R5SEtBSDBfN1liVFQ4TldZQlNYandkTktJX0x1UERUNHVWTjFsOGxZd2U3Q3NTaWxWTHpfZVhBbTNxQ1IwaGtWT3J5enNpSHF5ckJmT0hCNi1HNU41ZkZzZWhEQVdNLTkzbDdIM0c?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.706,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.11,
-            "spike": false
-          }
         }
       ]
     },
@@ -1936,6 +1936,45 @@
       "name": "Health Care (XLV)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -1.95,
+          "zscore": -2.0,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -4.03,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.78,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 3.06,
@@ -2130,45 +2169,6 @@
             "zscore": 1.39,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-13",
-          "return_pct": -1.35,
-          "zscore": -1.62,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.02,
-          "events": [
-            {
-              "source": "googlenews_health",
-              "title": "Seeking Alpha’s Quant Spotlight: Highest and lowest rated healthcare stocks ahead of Q3 - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTkwteEU3Y3AzSXViMjZ3cTQ3ZnN6WGs1SFhYR3Z4ZU9JMGp4dWVLSDloQmhBRVZSMVZSVG5DU0xXYWxLZXplUmpkbFplR1JXc1E0M2FPYkVNTkdmY2tBUXExVG5TbFNuOE15aFlVTnJaWmp5QW5UX05qOXFBclpXZUx3RzMxMkNTYUg5RGV1U2xUbmRISl9NYUpPcVFueDVxWlpjLVlnZlBvbHM5ZVFaMnU0TTJFTnhrLU9ETjJLUnkzQWtNQm9uN3FpOHlMWkp3QmppSG9uOFY5d2RZSzFCMldoRQ?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Seeking Alpha’s Quant Spotlight: Highest and lowest rated healthcare stocks ahead of Q3 - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQ1VjTWNKWlJSMG43SmRjUC12SHZ1ZDNhS001N2FDamJUNXBDbkxLZ2N4TVhlUVdFSGRFbWdObGk4TVdCYU9mdmpqNlBnd01wV05Ib1Q2ZzZBWFdUb3lHd1g5MGwySm9EdzZsRHczUlY3bnNWLW9aLUVrQ1JoSG1ESkVGaW1HeDEyVXR5X05lSzAyZVcyMjBPaHFVQWljOXRCZDhMSDVTS0NELUR1ZEZMWTB3T1I5Skdteld1SEp1OHBCcVk2VmtjWm4xUFNBVXRILTJ0T08yU3I2SG82YmpkcC13?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "AbbVie, Eli Lilly among mega-cap healthcare stocks with A+ profitability grades - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWkR4S3lKeFVTR1EwY3ZBeXhjMVRVSWVPQVE1bkZEYUp4TkNPZGxoeFkzYXo2TFhVNGd5cWhSOGNtS056WmhZR2JBM01SYkUxU3BEZXd3R1pXcXZUakprNHB6UFVzVERVdHE3UVMwbHBIVjlCRm4zbXFRNlJzZlN2MXFfQWVXVEwzd1VBeUQ5N2Z5ZjJKSjA2N3EwOXR0TUpMWXM2MmFwQkc5SnZWbF9hdS1fLVJJME51SG91Snl0MHZjQzJWZXFRVmpmZjVBWXVDZlM3Y0Vn?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 15,
-            "zscore": 2.06,
-            "spike": false
-          }
         }
       ]
     },
@@ -2179,11 +2179,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -2.11,
-          "zscore": -2.23,
+          "return_pct": -3.98,
+          "zscore": -4.22,
           "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -2.5,
+          "severity": "major",
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -2902,11 +2902,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -3.43,
-          "zscore": -3.19,
+          "return_pct": -4.36,
+          "zscore": -3.98,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -2934,8 +2934,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -1.38,
+            "count": 7,
+            "zscore": -0.74,
             "spike": false
           }
         },
@@ -3143,11 +3143,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -1.27,
-          "zscore": -1.56,
+          "return_pct": -3.05,
+          "zscore": -3.41,
           "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -2.5,
+          "severity": "major",
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -3383,6 +3383,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -1.83,
+          "zscore": -1.95,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -4.03,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.7,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 3.32,
           "zscore": 3.37,
@@ -3574,45 +3613,6 @@
           "coverage": {
             "count": 4,
             "zscore": -0.92,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": 0.69,
-          "zscore": 1.51,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.47,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "Why REITs aren't getting killed by rising interest rates this time around - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOGRwWUlJX29ua25MX3o4TW1iVW5DeFVOcGpXaHR2cmxmdXRkOHAxem96OEpzR2V1M3BoRFJ4SDNKVWJIbzFJblVwOF9fdE0tUFU3bjRoR1l0N3VCVkRNUGhNOW9ueU1sWXdsNmtQUUFnSnp3ang0cDZRMDkxeDdGMHRIZjd0T0dxUFlrTkFGTnRJV3hmbkdpb3dDU0ozTmdSZFNBb9IBqgFBVV95cUxQM3N3bU1mZlA1UjZSeVEwVnNLUEFZZ0VCa0dFRktLS1ZPYTBKYlNQNEdiOFJpdDNKV3dzMFJPWDBIVmxfYmJ6NnppbVVQd2MyN194X2U0VG83V1ctOFNCblRaTnNhb0h6MlNXUG4zUGhGREM5Z05nUDZKeVNLWEVFMk1BMzg4c0JZMkNON1BrMERMNlctWUJjOWZ6SjM0OGNQUXZNX3JzZ2NxQQ?oc=5",
-              "sentiment": 0.764,
-              "relevance": 0.906,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Sabra Health Care REIT stock gets a fresh valuation review - AD HOC NEWS",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPelNfQ0VIclUyUkdPOXJOblIyWjhiVEVSNnVfb3ZyMThqY2pWbldGYlFfUi1aWFlEbmZZUFdyZ1hGNkliT051RnBuOEtRQl9qRC16U1gzRFFyZDF5SVZZd1cxWHpUS1pPZF9ZWmJydDNSNklDcElSd0R5cVExY3pzLUJOY0dzZXBYd0JSM0hjYVoyc25BYngzWGVYNmRVYlB0V2ZneFpuVm5zLUNTWnhVVHQxY2lZLXhl?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "BSR Real Estate Investment Trust to Commence Trading on the New York Stock Exchange on October 14, 2026 - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdTlTNm1WbnozOGgxb2xzMUtfdVh2UmZobklPTTFfVWpzZE04Z3VOb1RDTjYyODRqU21SajVEWTZEMTl5UENlUzBqZjAyOUpuN1lkNHpjTnc4eUhNNG9EYVc0SzU2VWVmNzEyUzhzSVpGVWdZNHJpRzZUbmZKSnpXSGdDM3RpS09l?oc=5",
-              "sentiment": 0.556,
-              "relevance": 0.822,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 12,
-            "zscore": 1.06,
             "spike": false
           }
         }
@@ -3827,12 +3827,20 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -8.04,
-          "zscore": -3.1,
+          "return_pct": -9.83,
+          "zscore": -3.84,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Chips Selloff Worsens as Fears About AI Trade Grip Stock Market - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXhpS3pHOUtRckZzVEhDZ1ZZZ29uMHE0N3RSWHZsZ2IzZTJ5ZjBaYURBRWxiNjRsVkFXbExXT2c0a1d4VUx6T2otWDJZanpJVlMtc0g2QjZhaW5uYVRZdGNVT2NOd2RjTERhbE9KbU9lblpDR0FUOEZDbXFWRlNEd0JYWWtORGE3cEt1REdkZ0R5N2dfYW1fSFphX2Z0RkxhWThRRzZsMy1wMS1EZ2x2LW52Yzk?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_semis",
               "title": "Philadelphia Semiconductor Index Plunge Drags Taiwan Stocks Down Over 900 Points in Early Trading; TSMC Turns Negative, Falls NT$15 - BigGo Finance",
@@ -3848,19 +3856,11 @@
               "sentiment": -0.494,
               "relevance": 0.798,
               "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Blue Wave 'AI Regulation' Fears Jolt Korean Stock Market... \"Samsung Electronics and SK hynix Plunge\" Triggers Sell Sidecar (Futures Market Circuit Breaker) - 머니투데이",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jcUVpNjN2M0U0eFJrQ3VPbm5Bb2dWczhlWHBlSnVVclhmRmpFTkQ0Y1dYck1oRFMyR0NKejJtam9xX2xiYkczOWNNeF9hV0dhQ0RKQlFRbHlsSGplMTA2cHg0eVJUZGFLSmNYaA?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "regulation"
             }
           ],
           "coverage": {
-            "count": 46,
-            "zscore": -0.42,
+            "count": 71,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 61,
-            "zscore": 0.07,
+            "count": 63,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -4068,11 +4068,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -4.65,
-          "zscore": -1.63,
+          "return_pct": -5.7,
+          "zscore": -2.08,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -4309,11 +4309,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -2.77,
-          "zscore": -1.53,
+          "return_pct": -2.89,
+          "zscore": -1.6,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -4341,8 +4341,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.69,
+            "count": 6,
+            "zscore": 1.0,
             "spike": false
           }
         },
@@ -4622,7 +4622,7 @@
           ],
           "coverage": {
             "count": 46,
-            "zscore": 2.6,
+            "zscore": 2.62,
             "spike": true
           }
         },
@@ -4791,12 +4791,20 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -67.28,
-          "zscore": -52.6,
+          "return_pct": -68.12,
+          "zscore": -53.26,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "Howmet Aerospace (HWM) Shares Fell On Defense Spending Uncertainty - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcXF1WUl2VGNqa3NVWjVaX01mR2hTZWh3ZTFCbXlVTmtqeUhYWldaU3ZqdDBXdE9NUkVaeGpjUGpvdHduck9SX3FTbDRSbDlWNHdTQXRlWEw0ZzREbUhzNFhHR2Z1eG8zaWZXd1Btb0tCMFE4WEZUNEdNaDJ0SUdoVktveTVwU3hjUkRWTDFhNXB6aVVFdE10WkR4OGVjakd0dWtna0JrV2dsZU9HLWk5bFo3Q29XSm4zTHVjTklmSjFfY29oUkhQZHBIR1ZaMkFENW5z0gHYAUFVX3lxTE9qSXNLRHhXMWxlTU9fc0RuN1hGdzhzRFhTanNpakU3MnJkTzFISHV1N2JSTktSTkZRNEN6a2dkLVlTcUQ1ZG5XeVd6QVlaeXBtRHBoTGhwai1MTEp0aTNpajAyQnZZVmhncWRvRklTQXh6cFlLQnBjZzZXX25iYUVaS2d0emxtTmFHeE1Nc3Q5Zk52YzI0YXRXY3FXTERXbGthc2JscHNzalNxcEdZb3docjFBc1VkalhYQ0tuZ3FJSzY3LUJ6ZWtMSWFFdmRqeU9jWjhUSF9xMQ?oc=5",
+              "sentiment": 0.077,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_macro",
               "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
@@ -4812,19 +4820,11 @@
               "sentiment": -0.318,
               "relevance": 0.527,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.483,
-              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -1.32,
             "spike": false
           }
         },
@@ -5032,11 +5032,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -4.75,
-          "zscore": -3.19,
+          "return_pct": -6.31,
+          "zscore": -4.28,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -5273,11 +5273,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -4.72,
-          "zscore": -2.16,
+          "return_pct": -6.66,
+          "zscore": -3.08,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -5305,8 +5305,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -1.36,
+            "count": 8,
+            "zscore": -1.1,
             "spike": false
           }
         },
@@ -5514,11 +5514,11 @@
       "moves": [
         {
           "date": "2026-11-05",
-          "return_pct": -3.8,
-          "zscore": -2.04,
+          "return_pct": -6.02,
+          "zscore": -3.2,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.5,
+          "market_return_pct": -4.03,
           "events": [
             {
               "source": "googlenews_macro",
@@ -5546,8 +5546,8 @@
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": -0.42,
+            "count": 16,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -5993,18 +5993,18 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-05",
-      "return_pct": -4.94,
-      "zscore": -2.87,
-      "max_abs_z_recent": 3.28,
+      "return_pct": -5.67,
+      "zscore": -3.31,
+      "max_abs_z_recent": 3.31,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-05",
-      "return_pct": -2.5,
-      "zscore": -3.53,
-      "max_abs_z_recent": 3.53,
+      "return_pct": -4.03,
+      "zscore": -5.7,
+      "max_abs_z_recent": 5.7,
       "recent_days": 10,
       "benchmark": "SPX",
       "days_since_last_major": 0
