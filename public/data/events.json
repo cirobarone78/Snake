@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T12:37:00+00:00",
+  "generated_at": "2026-11-05T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -4.94,
+          "zscore": -2.87,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.94,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Price Forecast: BTC Reclaims $80K in Post-Election Rally but Arthur Hayes Flags Major Downside Risk - CoinGape",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZWZKWjBsbUNYT3YtRWNVd1A2OENtNkM3ejBxa3VKVTctdGdxaC12aFFVcXZaN0JTMkFuTG9nd25fcEdhOS1BT2ZzeDhzZDBFaU1adDgwM3JRbXh6M0lZa0hqRTd0b3JIdGs2aHY4UnF5dDRiUDdvbGpPOVdFRjZraTJvemY4T1RiNGVvOTkybE1ubzNfUHVpazk4MnpxcEViTVpsWnFtQnNsdVRuTi1HM1N3?oc=5",
+              "sentiment": -0.719,
+              "relevance": 0.888,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Price Forecast: BTC Reclaims $80K in Post-Election Rally but Arthur Hayes Flags Major Downside Risk - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Rek0talQ5NnlWUVQzUGFSeUNZWE9nbmtMd1BMYXZiaVZwWGFRbllaX1NEdkt3SGhYd0hsZnFkZDlSTVpOQ1BIZm0tRlA3ZUVRSldIQ0dHMXQ?oc=5",
+              "sentiment": -0.719,
+              "relevance": 0.888,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 76,
+            "zscore": -1.32,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 3.96,
@@ -202,45 +241,6 @@
             "zscore": -0.37,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-15",
-          "return_pct": -3.26,
-          "zscore": -1.6,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -3.26,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Attacker Minted 46 Billion Fake Bitcoin Tokens With a 25-Cent Deposit - Northeast Times",
-              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZl94OXNqNlpDeFJIQnAxQUxvaHpRNmhoOFlvaXZwQWtUclpFN3dfV3lZRmJEcm5XUmEwaEZTcC0yWmpDR1JzVlZDazRET3FrLXJIZm9wTHRnRHlMWE1BVmprclZUbVE4cXA4S0NDcGNDX3d4VDlfNXd1R3RESDBlb3I0WE5rYnJHdDhBYWw5TVpZNEhZOXNNWlg2eFJ2aWtyZDNPTjkwWWNONXFuSERQNmJpQmFtZw?oc=5",
-              "sentiment": -0.778,
-              "relevance": 0.911,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Warsh’s Arrival Ended Trump’s War With the Fed. A Rate Hike Would Test the Truce. - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlA3RjFJVWdqbXRZSGp1S3dCTkcwbC1ybGRNLU9weFZkbXljejVwWEpaNzgyN25xVVFVWmxhUHlGMEdXNlAwWFBhOWhKNTZ1U3dTUWNRbDcyQ3ZjbnlQaEFTY0c4RGpiWUhnMDBQNHdWSDRSdy1XLV80ZU5JTXBEUTFJLWxPZVRRb1lWOFlMM0t3MENVN0xLU2ZJVUJmMF9UbkdIUmU1ZjM1cFEwSkFLYXBXdkVGZVM1VWI1emhZR2FQc09LNU8zdHZ3?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.84,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto’s Biggest Regulatory Fight Is No Longer About Bitcoin. It’s About Who Controls DeFi - Bitcoin Foundation",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HYUlmS00wNWNyZUw3SVB1QTA3eW9FajNCYnVoT2UxVVhQQS05T2VoSGdLRnVtRlFLdm5GVGJwWTMySjNTSXk2VVQzYzZSbkJ3UkwzdS1STndPUC02clprV0tsOVA5VXNMOUQxNHRKRWVOMnVBQWsteUtnMUk0Zw?oc=5",
-              "sentiment": -0.586,
-              "relevance": 0.834,
-              "event_type": "regulation"
-            }
-          ],
-          "coverage": {
-            "count": 121,
-            "zscore": 0.17,
-            "spike": false
-          }
         }
       ]
     },
@@ -249,6 +249,45 @@
       "name": "Ethereum",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -6.06,
+          "zscore": -2.52,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.94,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Not Hyperliquid. Not Zcash. This Will Be the Top-Performing Cryptocurrency of 2027. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdGs1VUVmTGVkbm1nam9SY3VFSU9NWlBYY3VfUlcySlJKZi1kYnRrRzZjSHExWmZTYlZ5Smo3ZlZFOUhwaV9GNW1KeFlUalZZeTY5UjFac0xrLUZvUXlmU0M0ZjBCU1FjU1hQcmI2bENWS2ZlS2w2aWRvREFFQUpKY3VzZ1ZsUWJSZEtYZnRSOUJMYUZwZUsxcw?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 37,
+            "zscore": -2.29,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 6.58,
@@ -283,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 66,
-            "zscore": -0.65,
+            "count": 65,
+            "zscore": -0.71,
             "spike": false
           }
         },
@@ -443,45 +482,6 @@
             "zscore": 0.51,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-07",
-          "return_pct": -4.6,
-          "zscore": -2.38,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.67,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Top 3 Price Prediction: Bitcoin, Ethereum, Ripple – BTC fails to hold $85,000, ETH downside risks rise, XRP momentum fades - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxONi1LeThmZXZ1THpnTnhQT1dCWGJHMlV4bkVxQ2l4ZVAtUDF3S0FxYU50YUdnSmQwRVg5RkZqZ3dBM1VJRFBwa1czLTY3Vy1jZGJsaUYzanRDUXlRQVo4dFRVM2UyX2tOMTI1a1d2RkVHU0U0bkhjYWZMVmlfcDhWZ2ZvVktwNWtwdkIxYktfMmVYN3ZfYzgyRzlkVHZwemk5TW5GUVExU0ZzUXdKQ1FEU3prcGVQNFZ4ZHRYR0lBVUpmRXgyVEZiSTlFTkpWdHZOTmExdXUyeUN2cGNBUHBJeVlGdkk4ZzdCXzZVRmpCbGRZdU1MV3h0SExoVzR5Tk9yUUkwTw?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Live updates: Bitcoin edges up from worst levels as yields pull back - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYlp6RTllZHZvMS0zamlaTHpnQ2lFV25sTzR0emQySEE5dXotVFB1MU5HaVVLclI4WDl5RHdEY0J3ZWE2Snl5bklVUEo5YmdFX3ZWTHVTOFpQMlRxNmhPeHJ6OHlsSnhyOVpIQ0RiTHFESnJ6c1FvN0labmRleGNyU1RtNzlzY2ZBb3lfYm1vTGY5RlBmazJ3VjN6dFJ1YjF3dXpZT1F6dTMzNUlYNVYtQkREZEpVTVFjQXdvTmxJdVVZTlVvTDY5NQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Price Prediction: Risk of a Pullback to $2,400 Increases as Volumes Drop - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMVhrb2VESDNfUzdHcWR5UlRVLThCZGdEVkRVeU5LRlloSDFRbE4ybnlRTXVpZGNwWThuX0ljcmdkWWdFaG52QUlOSDduUnF4R2tDTDVPUWE0eVpHZDltRUFSV2RBbmE4WDNrM0tvMHQ5VGdNcF9QSVdyeXBnemROdnRPUTNKdEFGMnBqMnZmMkdRdHhDZGcxaGlXZE5iWURZX3I3X21VR0FmdGQtYlpFUnFjd3o2Zk5UdzhPazFZM2diX081ZmZBZA?oc=5",
-              "sentiment": -0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 90,
-            "zscore": 0.88,
-            "spike": false
-          }
         }
       ]
     },
@@ -490,6 +490,45 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -4.7,
+          "zscore": -1.77,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.94,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Loopscale Pauses Solana Lending After Week of Attacks on Its Vaults - Startup Fortune",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaGxNZGg2NFpNVERxaU1qdVMwVFBEb3NKN21IOEwwSzNhSzZtejlOT2M5QllLTVFvbGlvSnYyYkJRSGtYRThGSEZwQW00VjVBckVUY3VHaGxRQkdfZVNiSzlBV01FSVlmam4xbzhIal9VTjkzdWNlNDRmaW5OT01icWNnWmZ1ZTRUX3dqZERqT3RZbXFKanByM252aw?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 29,
+            "zscore": -1.26,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 2.77,
@@ -524,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.1,
+            "count": 46,
+            "zscore": 0.05,
             "spike": false
           }
         },
@@ -684,45 +723,6 @@
             "zscore": -1.14,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-21",
-          "return_pct": 6.85,
-          "zscore": 1.77,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 6.73,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Best Crypto to Invest in Right Now: Bitcoin, Solana, and Why Pepeto at $0.0000001896 Is Drawing the Smart Money - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbm41dU1VNzYwaWlGMDhkYnlVUWw4Q0hWRDBucjlBQXFwUTB2WUdqVDNFa0dsQ1piVE8yV3YtNVN5M0NjSE03WEtuYXZVWmp2YzVPZGpyR2lMVWUwMGl4OUFQS1Z2eEJnVkJJR2xSeExpWXJheXB0aC04X1l3SG5LbEcyOHBCWlhVNE9Cdy00YzQzYVVua0RWN0FXeV96VkF2TUYwTTJVZ005VmY5aDBMTXduX2ktTDZLUHRVUFRNQzE3bE5tLU5tTWVwSmVYVlAtX1pMMVBsZUVhRl9CNVBwSXUxMnE2N1g1ODdDZFVzS2puZExtczJqSmpnUm85Z0xqRlhkbWdxQlU4NkE?oc=5",
-              "sentiment": 0.784,
-              "relevance": 0.914,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - Boston Herald",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcHBCMDlKUlRZVlluVkFqY19GVXhZVVd3RG00LVphRkY3UnliOXhHc2J2bDBtSUktWldLNjdvblpKV2NXN1NuUEdINXVZeGpXVDZfakFJeEhUc2dKalF0V2FIQlVxNksyWHQtb2NwZTlPTTB1bnVsS2tRUU5VNTg?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Federal Reserve official says inflation persistence led her to support interest rate hike - WHEC.com",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeTFISHhaSWNoSnVGQnNoMW1XR1dRck9uX2hVcEpCcDQxcnA5ZVhDZk1Rd29RQTZWazJvbUxxN0hNVWNmT1M5ZVdoSlVmb3JlQUl6TS1pY3AwWml1REtNOHNJaGVXemtmdWZacUZiUmRwWjE3cjRpSnB0aXBkbFNmNjhIUmx6SmEwVHBCc0RXc1ZzUk0xQ0NrVUpXNUlKX3pPSlFBMlYyUHFUSHEtX1FBckQ5SlE5RDlHMmZOTGoyVDE?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 70,
-            "zscore": 1.92,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -5.12,
+          "zscore": -1.36,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.94,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 17,
+            "zscore": -0.17,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-30",
           "return_pct": 7.96,
@@ -925,45 +964,6 @@
             "zscore": -0.02,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-07",
-          "return_pct": -4.51,
-          "zscore": -1.21,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.67,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Forecast: Short-term correction in LINK risks a bearish reversal to $10 - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUDFQbHNEU1dlanFKM1BoMFZ2MDM3MXFKRWtOSVNJWWJPeEVFZ1NGWTZQZ3FZMzJHZ1Bwblg5b3RFczRDeWpLVnRWZFZ1dHRIOVlTbWUyTUI4QjQtSjJfUXNWZUlyX1hjSlRNRUh3czVKXzV5WEJqTHRlSmNBUHQ5MlNuYk40SDEtVXlJMDh5R2pvZnJxQ2xuSkZ0WndDZ292dDNxUTFveE1YemJQT2VHUFYyOGN4UExhSVJaWHdzbVdObXU5NWRSMGNkdDJhUkNJUTVtam93T1hqNnNmdEE?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) Pullback: 3.5% Drop Explained - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xQ1NUUHVhb3M3bGZxaUhNa0hSZVJtaC1ITUNVQmdHTDdybTkyQzBPM3BMVVV1LVBNckVGUGlFcUpkXy1WZ1dIRVFDVWFqUEtNQjJPV21fWUNpUng5aEZuTzdMQnA2QmhDeXY4VVAtLXA?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Forecast: Will growing CCIP adoption push Chainlink higher? - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdmdKWVFqNVRZTnVpTHdGTFMwQjlZZVlPczhkOWpNWWF3V2VrWWNYclVEeXczYTRGdzRSUE4zcmZ0Skx1ZzVHdlRYR1VVcVpuYWRPY3l3c0VsWm1QZEtsVDBYU2xoaDlDYWZDQUczSDRVTjdTT2FUZ0FYWmxPeWVoSHdoMnctazB2MHRzVU9JTmx4Vks2c1dqaEF0bEU3dVlHUFdYUGtDYkdGd00tbzRWZWE3aUU2WmUtQmduQjdXOHlUZEVBU3lHQXFWYzI1MUtGVkE?oc=5",
-              "sentiment": 0.178,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": 0.11,
-            "spike": false
-          }
         }
       ]
     },
@@ -1006,8 +1006,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.04,
+            "count": 6,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -1214,6 +1214,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -5.57,
+          "zscore": -3.16,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_tech",
+              "title": "US Tech Stocks Collapse at the Open: −$1.3 Trillion Erased in 30 Minutes - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeE5EMm1aeGZzUmdOV0d4Z0ttaDVGbDl5ZEM0bDI3SFlTZWFCQ3JyZ2JjLVhoXzBFbXhxYTY2a09YZFhLdDd4MVR4b1BoTEdjVzA1NWRpcW9nMjVhV0NSZVYwMWNGb3pGbWdyQ3BEUlZQaEJwaWcwZkF4WTREN1RDQUgxSkNNcDUzR1FPTGQzRGxrY0JCaUJpTTZadjc1OVJFQUZEeg?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "Asian tech stocks slide on post-midterm AI fears - Financial Times",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVTJOMUFjWUhxMTc0Rjc2aGJBQ3pXLUEzTUJDakhtbDR2QmFjYVdsNmo1LXBWS3ZvcDk5SlpZUFNfNm1lS0VReVJVM2tZcDFlQl9SdGh6bXl4VXU5eGlaamZYX3BnS0Nuc0xFeVVtMWZHSTBMTC0wZVpaU3dTenFUT2hMNHg?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "The rotation out of tech is becoming a risk for the broader market - CNBC",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNnZ2dXhvOEVHaDRsTU1xZVVRcE5BZ0ZtNmpjVWM1R191SmlFTjVwVVdSWXA4RFRVVV9weDZzLVAzRk5jWEVtMVFLcTYtdUtwLU1Tdmg3U2JpdmFrQjZuUkNiOHM1UzF6VE1FM3dZOTVyVGU3T2xMaUFOelVPQ0JzbGxUdkNacEp5Z1lhZl9KSU82VDlkZWZ3R0hyWVppeEd1Ym15dFln?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 35,
+            "zscore": -0.5,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-02",
           "return_pct": -2.95,
           "zscore": -1.66,
@@ -1405,45 +1444,6 @@
           "coverage": {
             "count": 54,
             "zscore": 1.32,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": -1.79,
-          "zscore": -1.85,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.47,
-          "events": [
-            {
-              "source": "googlenews_tech",
-              "title": "Update: US Equity Indexes Drop as Semiconductor Sell-Off Sinks Technology Sector, Crude Oil Soars - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQS3NrelpNekxaT0xMa0RCSW1aUVh5UmZZVFhnME1GcVkweXdkd2hxRGFVN01fS0pzZkdYbmVOeWlycHlHNkxxZFBEQmltb1lnbjRTallfRGNhVFE4dXFzVWt1dzkxMDZycElubC1OTnhuX1lFMncxaWU2dU1jaDlmbzZvMlRHYjZqZVl1NDlnbE9XVTBWRmJoZ1VVOFJGWHNSRVYw?oc=5",
-              "sentiment": -0.7,
-              "relevance": 0.88,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "U.S. stock markets traded mixed, weighed down by rising crude oil prices and tech stocks (8th). - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd3RXWWRyblctdlZDUWRJeUxfdFBWWHRBVkVzR3BONlFpbWN4S2xoTjFJRlNQamRMZXI3VjVhTGllMnNjdmdLXzl2QThTLWg5dHozV0w3NjRhaWR6LXVKSUprYmlzRGpDV3dGT09MN3ZZMHlNNWVNd0xLTWk0QU8tbG92RmE0Zld4UTdaZWR0cTJIZ29id2w4cElOOEZzR0thZnpJVw?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Tech stocks drop after report that OpenAI’s revenue is lower than expected | CNN Business - CNN",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BOTNlajdpNk5VanVGYmx1ZDZBZUpSZGtoWktCQmhzcDVNQ3BtUzBDb3d3MlNndUQyVnFLMThGX3FTZ0RjWDIxM1EyUTJZbU5nM2Z1VFBLRFQxV1o3dFRkdHFzM0tLRHVJT1c1dG9B?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "earnings"
-            }
-          ],
-          "coverage": {
-            "count": 36,
-            "zscore": 0.45,
             "spike": false
           }
         }
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.05,
+            "count": 6,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -1970,8 +1970,8 @@
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.37,
+            "count": 7,
+            "zscore": -0.15,
             "spike": false
           }
         },
@@ -2178,6 +2178,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -2.11,
+          "zscore": -2.23,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_industrial",
+              "title": "Toromont Industries Ltd. Faces Downside Pressure and Correction Risk Amid Industrial Sector Headwinds - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPODVBM05Lbnd0ZXBhZkYwM3JUR1JXYUkwTjFNekxlMlhOaG53dXRBRVJtUFFHNTRFdEo1T0Z5RHRzTWg1MzFZSHI4SW4tZDRhRHZkbW5aM2RrVXRaaEQwWGpSYjZ5VTVQVmx3WVpkTW15Mll0UW1uYzhWTDF3TkVYWmpiM2FGelFLNFpaOWlTQVk0ME56T2ZBVEdRSndpSFRwTVJvX2tPaDdaajVaeUgzUmNDRlRMelNBRXZDeFBUbWliREtvZ1pRb29sblJVRW5YYnc?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.82,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-02",
           "return_pct": 1.38,
           "zscore": 1.63,
@@ -2369,45 +2408,6 @@
           "coverage": {
             "count": 11,
             "zscore": 0.17,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-01",
-          "return_pct": 0.99,
-          "zscore": 1.66,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.19,
-          "events": [
-            {
-              "source": "googlenews_industrial",
-              "title": "3 Air-Freight & Cargo Stocks to Watch as Industry Prospects Improve - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd3lkbjR1UzBFb1JlMFhtSHhFaEU1RnRwaGNtV0prejNyUDVRRGhHWTRUTEVJS3Rwa0ZkSGVyYXNlNnpwN25LQnJfbkxER0FVNVBVV25EbVVXTlVHc1FWY0lVOHppcFBNZU01NmQ4ZWloM0NPclQ1S3BfU2p4Qk9TWEg5bE1OcGV3MGdjS1VyNmVKSGlDV0E?oc=5",
-              "sentiment": 0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "3 Air-Freight & Cargo Stocks to Watch as Industry Prospects Improve - Yahoo Finance UK",
-              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSFBQTlYyREFHZ0M4Y0lQZURNWTZhSGRHcmN4cGZwbUdZMEk1d0Zna3hjejZwbk1LVU9zeFlWVy04V0dyOXpCN3VDQ2VLeTlZQWhwN1o5aU5HS0lPdHRydkJEQXR6WlFWSW5DejVyWV9zTGxkc0hXWkhmLWlpYzk2RA?oc=5",
-              "sentiment": 0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "4 Restaurant Stocks Poised to Thrive Amid Industry Headwinds - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONDZBSERvT0gwZTNVeUVJZHRlZ1dqOWtoYTlsX3h3RjVPMnd5aXEzdGpObUxOV2dxeF9YTFdnY3NVdE81T0UtRlZjNl92ZVVhMmpjTTlIbEc0elJ6MjlyZ3Jhb2VfNkRaNVlGUDFYWFVKV1hhcU5iV3ZhdlJ3UzdOMXF5NkxZY2tOT05MSHk4QlJLS2h4blA0ZUVocV9XTUpScEJtRTlEM1cxVENMR2hFcWhlS01tOWJNeFdtNmF1aE9kVHVRZ0kzdmY5UzZNWHBkMTJzcUtBNVl0NnFIa1E?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.7,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 14,
-            "zscore": 0.26,
             "spike": false
           }
         }
@@ -2685,16 +2685,16 @@
             },
             {
               "source": "googlenews_staples",
-              "title": "Sector Update: Consumer Stocks Gain Late Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEYwamRIa0xpRHFNSTNmNTh0cmRDbVJqYVMtNERZWk9BSU5sZWdkREpnZERjaTBZNVg5OXYzY21ERkw2NjF2VmJ1SmJueVd6WmJkQlhqNFNSbUJFT181ZE5BT1Q5cEZHR1Myb2t1RTQ0LTNNVjQ0NFRsaXJHcG02cFZaeEd0UEs5TDRteWhpYUl5TzhJNWk0d0JZT0NjdEFrZHhYdQ?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
+              "title": "Why Brown Forman Stock Is Drawing Defensive Buyers As Consumer Staples Regain Favor - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMjR6VVBzUnNWbWw2ZHI3VDIwMW8teDNvb0lOSHFJQ0M1aXRFQ0pRblNONWlReGZXR2E1Z3FiOFQ0cmJaZTl0MGxSQUZLeUlZY0hISUdOSG1OSEFnTlBGMVpxVnFfdE1pRl9HbUJPYmY2bUdjLXlBZmJmbjkxYTlma204V2FaZGw3T1c3MGZOVjdnX1d3TUV1RUMxc1Zkcmo0dW9aRmd2VGVHWVF0aXJXQ19tZkQ1MFo4bWpmYTNwYVZzcmEwYlZ2WDFjb2Z5R1NULUhHZGdQYjAtd9IB3wFBVV95cUxPenIwR0hFNEQxVUVfLVRhcktUU051WUh0MUF6NkpCSE9VUk1makdRdXJGbXpIc3ZQYVBDWHF4clVWd3dNQk43ZGcwUXdoTFVOenAwNm9ZajI1TW4wVEtKVG1HQnpkc0Jhc2kybGpfZ2dPUE1mZERLcXI0anVySHluX0FMdUhPOXFzNlg1LUI1YUtodThZTkwwWkpNN1JFNDhwXzJyUjhlVWZzNjZZTFlqaE5meGpzcFhZVFk3aFZSNTdnS20xek8yUU9EQl8wR1VuNUxvT3J0SGxPOWwtMURJ?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.26,
+            "count": 5,
+            "zscore": -0.62,
             "spike": false
           }
         },
@@ -2901,6 +2901,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -3.43,
+          "zscore": -3.19,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -1.38,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 4.26,
           "zscore": 4.2,
@@ -2926,16 +2965,16 @@
             },
             {
               "source": "googlenews_discretionary",
-              "title": "S&P 500 Top Stock Gainers Today, 11/4/26 - TipRanks",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51bldSZHdUX2Fxa2RKVGlCRXl3ZUdZT0lrUmVBOU01b01fNWRxN1p4dUd2VGJ4cWdJWlNXQkxTd0duYndrOWUxaDEzQkp5bUJ5SmhVMFc3QXltRlBZMm9DSF9kdkJRTk5LV1V6dlU3OHVScjl1XzBF?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.681,
+              "title": "Sector Update: Consumer Stocks Gain Late Afternoon - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEYwamRIa0xpRHFNSTNmNTh0cmRDbVJqYVMtNERZWk9BSU5sZWdkREpnZERjaTBZNVg5OXYzY21ERkw2NjF2VmJ1SmJueVd6WmJkQlhqNFNSbUJFT181ZE5BT1Q5cEZHR1Myb2t1RTQ0LTNNVjQ0NFRsaXJHcG02cFZaeEd0UEs5TDRteWhpYUl5TzhJNWk0d0JZT0NjdEFrZHhYdQ?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": 0.17,
+            "count": 15,
+            "zscore": 0.47,
             "spike": false
           }
         },
@@ -3094,45 +3133,6 @@
             "zscore": -0.15,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-06",
-          "return_pct": 1.18,
-          "zscore": 1.53,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.58,
-          "events": [
-            {
-              "source": "googlenews_discretionary",
-              "title": "PENN Entertainment (PENN) Stock Trades Up, Here Is Why - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNXzFJNktXYVBBX2FvWTk4ZU5zOUI5SkY4Y3Jwb3ZoVENUQlhtRzNJcDVTQXlJcWJtM3IzRl9CMU91U21TQWliMDluQ0JWT190RjEtY0NEQU9SRTc0V2VLZm1Udl8tYi1GV25od1d0dEFTUkl3bUk0ZXVCa0xyb3BuaExtZFJUOEVUUzN1REVTVDlvRVhKRmdSU21EaS1lSzNISkxNcXc5a1d6MFg2RVNydE1n?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Amazon Kicked Off Prime Big Deal Days as Consumer Stocks Slump. Here’s Where the Stock Could Go by 2030 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRGQ5SU9jNFhEVjdjRmt0bHV5WENfVXpGZXRBNi1NcTJTdXBRUk0wOHRRUFE5dzBoLWZXYWxhYUcwZTV1VjFteDk3NzNCQmx5bkNTN3lLX0FoM3lXV0RUYXU0TUxzaGNHREx2aXRHbUlsWlJzRnJuY3FvQTA1eERnVURDUkVObmQxY1g3TlZScUl5SlVlQnVJ?oc=5",
-              "sentiment": 0.178,
-              "relevance": 0.671,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "BofA Sees the End of ‘Easy Money’ Made From the AI-Spending Trade - AdvisorHub",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQTBxamFaRkhvMGg1N040TFFJQ3JIR1pOMkNGUEtLU2NKejhBUFdIOXppU0VfWlZPTU4tZlk5RFFidEd1a3BLUHppUS1RdW1hV2JCNXhGdjhnUHNfUXZJTHI0dXB2QWNkaExUYnRfVmkzN3czcGpMdkxabkpjcUQ5ZmhCMjZSR0I0MFpLdDFDWkRybHJXM2c?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": 0.25,
-            "spike": false
-          }
         }
       ]
     },
@@ -3141,6 +3141,45 @@
       "name": "Materials (XLB)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -1.27,
+          "zscore": -1.56,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.31,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 2.49,
@@ -3333,45 +3372,6 @@
           "coverage": {
             "count": 7,
             "zscore": 0.9,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-05",
-          "return_pct": 1.31,
-          "zscore": 1.71,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.66,
-          "events": [
-            {
-              "source": "googlenews_materials",
-              "title": "Is Pokarna the Best Stock in Its Sector? A Look at the Numbers - Univest",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3ZEQyZXFyczZkRTA1TFZBaEpleWNNNWlaaHBURFlQOVNqYXlxT1VORE43UGR3VHg4c3pjNmp0WmdsYWpGbUZmbUJ4eXowWHdHdV9PWk1LcnZrWmhmTVNBa2NvTjI1YmxH?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_materials",
-              "title": "Nine materials stocks earn A+ to A- growth grades heading into Q4 (XLB:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT1NhT0NMbjRwUlk0eGQ0bEtPZGFqcDdKS0FQWWVVODJSajMxT2RhbDhIdGVWemZyOG1vOC1fQWE5SjhfSl9aejNIX2N0cHBBNy1idmRURE1ROWh3c0NpMDFYYWJsSkozaFMzbE1iQ0RCQU5GZ0NGZE54eWI3OGg4YnlFb3ZBellfSGZkQS1uSEt3RDE3czU4aFJaN2hYMmZlWDM5MQ?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_materials",
-              "title": "Nine materials stocks earn A+ to A- growth grades heading into Q4 - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWjM5SWQ0Yk1sU0h5cWIxWGs4OHBpUlJISU10aFNFUEstMmlGeXFFdGF5SU9QZnQyS2pEWWJLc3pLRldUUkRleFFaSFpIUnNHQkxaVERUTjE2dWg1MTUzc1NkWnFha1AwZDZqQ2J1NVUyRWhabTlfTGw5WmxPY21JWG9fd1R6aWtaZGF0dktoazROQWlxbUNnOUhVeXRPM3NabXk3ZEEtRzl3TXBWeV9XLW5sVnU1VXhmLVlRWWZ0aEJGRnhl?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 6,
-            "zscore": 0.98,
             "spike": false
           }
         }
@@ -3826,6 +3826,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -8.04,
+          "zscore": -3.1,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Philadelphia Semiconductor Index Plunge Drags Taiwan Stocks Down Over 900 Points in Early Trading; TSMC Turns Negative, Falls NT$15 - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1laEdIVEpUd2JNNFV3YjhGcnBfbUE5dklEcW9lVzYyNVdiUmY2Z3otbXVqMjR0cURRSVlLUzVmcUFLelZ1SU5uOXdNbE1rT1JyTkxkU0ozTVU4R1dsdm9raUpqMWI1OVVxZko1SGliU2hCa3kwVVE?oc=5",
+              "sentiment": -0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Asian chip stocks slide as disappointing Qualcomm, Arm earnings weigh - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZmNLV2plUmpvX1JEb2VFcFRGd1hzRjJQdG44ZGNrX2g2Y2h2Q2dfRmRIT1QzS2UxcXRHUEttdVE0S01hR0Z4SUxpUHJoQTFTcXA5T0k4anpzTWFwTUhhV3psZDNrNzE3azdwTzA2Y0xrNEZBWVpEMHRkMHV0YTZfV0tzLThSaEYtVjhTRDJNT1JERHNFSVBKSmxzTUdKTlE?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Blue Wave 'AI Regulation' Fears Jolt Korean Stock Market... \"Samsung Electronics and SK hynix Plunge\" Triggers Sell Sidecar (Futures Market Circuit Breaker) - 머니투데이",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jcUVpNjN2M0U0eFJrQ3VPbm5Bb2dWczhlWHBlSnVVclhmRmpFTkQ0Y1dYck1oRFMyR0NKejJtam9xX2xiYkczOWNNeF9hV0dhQ0RKQlFRbHlsSGplMTA2cHg0eVJUZGFLSmNYaA?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "regulation"
+            }
+          ],
+          "coverage": {
+            "count": 46,
+            "zscore": -0.42,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": -2.75,
           "zscore": -0.94,
@@ -4019,45 +4058,6 @@
             "zscore": -0.16,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -5.99,
-          "zscore": -2.91,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.21,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "Nvidia's AI Warning, $111 Oil: Why SOXL Just Suffered a Brutal 20% Wipeout - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSGdvYi13UFJka3V2UG51ZFlFTGlOVzZzV3J5bkxyVjhyMjhZazQxZHB1bUFQTFhYNWxFX1pBV1o2TGpIRHFmY3RUTThlcmJzZzE1SFJvUHJ1REx1MFlGNjB4ZGNOeWctbll2RXpWNC1zbXRta2paOE1obnN5LUstTDVLQTg3eWxMUzFMY1VEVWE5MlM2MkthWm1qMS1oLVlseG1kbUZaZFZDTWtxV0xJcnlwa1p3cUNjLWhZRS1PN2xXYmFaUW5PYw?oc=5",
-              "sentiment": -0.866,
-              "relevance": 0.946,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "The Semiconductor Selloff Could Be About To Get Much Worse - Mott Capital Management",
-              "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPdnpoSk10Q3JpNUYtaHIwcW9fUkRfaDJkTU5pdkM3Z09uMG9TaXVKNlluVGE5TzJtWnZYMVo5LWZvRVVJN2FqOWw2Ymh0R3FhYzlOOVhQbE1iUGV4bXpFd1FkeVEtWjNJUTVlTFZqMUJILVRzMU5lOWNlZFZjeHVDYlJPbVRROXpiMHA5bDk2UXZrZ0xBelhXVEJFS05CTFJvQjBpMzIteWlGLVN4Z3RKaEU4S3M3N3NidFpTWHdnUl90T19QMnJ6LVRSSlNtTlpuMXhQT3BGV29GM256amJER2pJZ09MRmh0NHRDazNWRHBPTF9YbFlzUEw5V3NQUk9vODY0Nm9tb2FicGVEUGhmZFV6R2UybEtraUpRS0Z0UzF6eTJPNkczV3lGdkpseEs5bWxHM0hPSENPMWNlakprUWV0WXduOXhwcjdFeEhMZw?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.791,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "South Korea's $2.6 Billion Semiconductor ELS Wave Fails First Evaluations as 40% Coupons Backfire - BigGo Finance",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xZTZoUmpaLXVoSFJCU3RyMnRBTi1KbVhJVmlQaURLMnhHS0hmVWo5M1FVU3h1WlBoYnhRQ3lBb3dEa29yeW1teFp5QkFBUUxHMlAwUG01X3o5cldZV0U2dnFFZXlfN2xMdlJVX01lSFJPLVdqTGc?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 63,
-            "zscore": 0.34,
-            "spike": false
-          }
         }
       ]
     },
@@ -4066,6 +4066,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -4.65,
+          "zscore": -1.63,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-30",
           "return_pct": -5.57,
@@ -4260,45 +4299,6 @@
             "zscore": -0.37,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": -3.43,
-          "zscore": -1.13,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.47,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Uranium Energy Stock After Annual Loss Widened And Sales Fell - Simply Wall Street",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcFpNSlFFVW0zZ203eTNOTnVha0RYMXpYeXpmclB4S0pHLThRTURuV0RWdTN0SWRJeE5XclVsWDdnYlA3bHdoemM4a1lfUmhjQVZlVjVGQUdLSTk0T0dsODREbUY4UjRxaVZVR3pudllFVXhGd1k2X01lcHlFR3JGcDM1R1FfOUtHeVRRS1VXZVNRYXdlT0E2dVNaanFoTk5FZFFMTHpTV0ptVG44c3M1MDBLMnVrRlBrQ1NySm1JQWRPWUhxNjlGTThvQdIB0AFBVV95cUxNV3R2OGtTZmZRbHc5WTdSWVZBeUp5cGUtaG9xckZ3QURtaTU1NGt3UUhIQy1rODBWTDduQlRGT2ZCZ1huV0h4Y3FGR21JNDI1U09oV05jWUhYSWpocWV0eXlFWFFjUEtUTWk5R0xDQ0gxY0JMNVBOM3VRZm1JcmhmLTdfaWpPN1Z6MktPVTJaR2VCZEJpTWktYlhKTElrRW82d1owUDVhaTByT3Njd01mcldLSER4akJSSGo5STd5eHVzd1FBdFdQSnVUNU5sODZz?oc=5",
-              "sentiment": -0.052,
-              "relevance": 0.621,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "3 Nuclear Energy Stocks Down 40% or More From Their Highs -- Only 1 Is a Real Opportunity Right Now. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMHRsMEVwdzdrSWVWc1BtbGJKQUNCMTVqZjJ3RjJISDhpbU9hb3RNNzNydGRiLVNtWm9vN2tDQWI3UmNPU19ZNWlPcmlwVHF4dDlXbF8tR1RhUXNqSkFaVU5KeVkyZ2VzVWtwNXhpbi1fRHgwV0p0SjM4QlVyS2JGdE9EVnFZZ2pNbm5yNFY2a2hlb05abFR4Rw?oc=5",
-              "sentiment": 0.25,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "8 Nuclear Energy Stocks to Watch as AI Power Demand Soars - MarketWise",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTlp6TjdQY1dQN0tlWHN6QWtwbFJJWm82SG94V3F1LXdWemdLUHk1MmV1X3g3bEVfSVpDYVlYc1FNU25EdUdjSzFQR1lDbk9HNEpWQ3VwRmNpcnRiMnIzNlR1ZXdPTkoxVjZucTlqSjZYTzBZSDJfMmlaZ0VNeTJJUFpKdnZYUFk5QXF5UEUxOTB4Zk90WUVVVWM5dEVsbWM4?oc=5",
-              "sentiment": 0.153,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.15,
-            "spike": false
-          }
         }
       ]
     },
@@ -4307,6 +4307,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -2.77,
+          "zscore": -1.53,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": 0.69,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 3.04,
@@ -4325,24 +4364,24 @@
             },
             {
               "source": "googlenews_cleanenergy",
+              "title": "Top clean energy stocks to watch as Democratic sweep improves outlook - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQX0xtcllXb3hfMkRRQnN2aUZLOGR6bnhNQWpINlhqQ1NNWE11dFVzdXM3N3FYTXdpRXdibHRvT2pGMjJMRjNjUDdZLXhYdXk0amVab05ZcXg4aTR0TFZfaGFjSFMzWlhDMGtHOFZzSXNTMjVTcllsU3FBZllyYXV0Zkt0Q3AybE83M0NRN1JRLWk5Mm9hVzBxdDJHZEl0dmtYSmhzdmlFVWxBeEMtVXpfTWl0bVdiOXYxTEpTeXM0c2JQNmZ0M2ZOdFZBdw?oc=5",
+              "sentiment": 0.813,
+              "relevance": 0.925,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
               "title": "European shares rise as banks, clean energy stocks rally; Novo Nordisk jumps - inkl",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRG5aV3J6NExaXzJKZmpJUElCRFpFRlFfY2dHdHhOUlI3TXhoV2VPUU1zZGYzcjUyNzY3Y3hqZzFQQVZqWDNmLTJhREdYdlVIdnhKLXNKdk9oTHljRk5pYTdfSU5Kb1JHcVJEa1V5UGNCb3pBZmtqc0xKS3R5N2tOX0FiVkYzYXoyRlQ3WWNwZzZQODN6cG8xRTJlcFpnbVNzM2c?oc=5",
               "sentiment": 0.718,
               "relevance": 0.887,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Global Renewable Stocks Jump as Democrats Win Congress Control - Energy Connects",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQWxLOTBZWDY5eXo5QzZSY2MzOERtZzB0aFh1Q1NWMkFwdnVaSUZqSlphdFVaSm1SX2dkdjA4X0pISDNsUDl4eUZDMTVOb0d5WHktck0tOE5WaWRseVNsSEpERGhyZFJvcG5BTjFteG5OYk9oS2NyMEttT2xWVGJNN291SExHcTBPZVNvaUI4TkRJQ2N0Zk1oUllmanBZaGcxRE9OcHlzNlhGNnNmN1VfLVZfcGFhamh1QWZKUjBvN3d0dw?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": 7.45,
+            "count": 17,
+            "zscore": 8.0,
             "spike": true
           }
         },
@@ -4499,45 +4538,6 @@
           "coverage": {
             "count": 1,
             "zscore": -0.55,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": -3.14,
-          "zscore": -2.14,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.11,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Better Clean Energy ETF: VanEck's Nuclear-Focused NLR vs. the iShares ICLN Targeting Renewables - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPR2JSUlJjTnpUbU1ZV0RpWWQybVJWOWM4cndOVzJZc2UtWlhQbkpOT0gxWi13UmJBWEhUS0NKcGZnNmZRNWhvc2ozNjFSeXdoYkp3Sk5TQmNsN01sZ0hWN3ZET2x2cF81UC15WU1UOWcteXQzQ09BbnBhaWZlZGlDSHdVTFl0OVdVNkRwR28tUFlCMkJjRVVZQTBjbmphTkMzS19FYUUyOEFPZDJSS200SmJYSFphbnRpM2NhVzA4YVhkc2xIY2hyYnZRdGZLckVaUHNRVXVhZw?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "COP31 and Renewable Energy Stocks: What Traders Watch - ThinkMarkets",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOUpQeVZ2bWJNQzh1YWp4RWxPNi1WZzZxYV80dHJldDc2TElqY3c0YWZxeTVhR3VCTHFQenIzSHhMZXF3NTVJUGdHcHZHYW4tTTZ0UDM4RVZVNWw2a0h2V2ZNcktCa0dEYTI3c0xTeEVWZHZpUEdheG9MbXc0cHl1WmZ0Z0NNUnV3NVBzRUl4U0RZRk5rd19z?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Indian Stock Market Update: Energy Stocks Gain Amid Declines - SolarQuarter",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWVJLSnM3LV81SkNHNWM3OWdRZXdvQmVONEo2UWpfRS01VTZCN295Si1XNC1DMGo1aGg5VVlPVFliT19Gb3NjRjhYLXA1a2NqdDIxWDR2MW9KODZVNnhoNGpXSTIwRi1md1h6REs2dGltZ1VxR2tZclVMZHg4YWFQZlU3bTdIb1hyM0h0NjRRMHc1NDdkSkwwaFZLU3BUSk9RckVJQktFSFVKcUNxbjYtZWNZX2M0Q1NOR1V3Y2x5WURTUU1LOEVXRVhESkdBd28?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 0.63,
             "spike": false
           }
         }
@@ -4790,6 +4790,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-05",
+          "return_pct": -67.28,
+          "zscore": -52.6,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.536,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_defense",
+              "title": "Defense firms fall as Democratic victory stokes fears of tighter Pentagon budget - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPOFpLTThYU19RaWRwSFg1R0JZZE1lRmFFT0Z5RUxibWtVamtGNlpURUZaMHhYVUdoeWx1cUw2QzdIYWRrQlhTQTQzdFg0bWdqRTRmOHRNNnhBQmZYMk1nbmRRS2VrY0RvSVpaRm9FQ21qSElZb1lRQ2pEZDR5Vm5zZ3FFNjhkYjA1cHg1a2VpOFZGX0dXOXVhNXhHUFlGam5kNjRmd292XzlsX1Q0aldqcmZiWGFxbHRvYjJGUUJfMkU2UHE5Y2NFNVI0SjVDeWVTT3Nj?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.527,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.483,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-02",
           "return_pct": 2.36,
           "zscore": 2.02,
@@ -4983,45 +5022,6 @@
             "zscore": 0.42,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-07",
-          "return_pct": -2.24,
-          "zscore": -2.17,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.22,
-          "events": [
-            {
-              "source": "googlenews_defense",
-              "title": "6 Defense and Industrial Stocks to Buy and Hold Through 2030 - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeDdWUXdEMUx1d0k2NlNpNVBJZjhDUC1qVzNzaVEwS2dvNi16Zm1oUU9HYmNLcDBoSTJYTks1Yy1RZ2Vib2ItOHFJMDNNNmlMMWhHLW1fZXExWjFnOHFzVzR3YWxodmFIT2wxS2lncVJKZEM4TVRHcDlRazFCOFVyRFVoOTN4N2lUcmtCRFBFQXBLclh6Mm1jTQ?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Cathie Wood’s ARK Invest Loads Up On Joby, Archer Aviation As Airtaxi, Defense Prospects Grow - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc3hxM25zSEZlY296d1F2MjR6MkkzU3lFODFUQnVnR3N5Y3Zndl91T1A5QTJuTU1LZkttRDU0QmNlVUZFcHJGMEpCN0labko4ZGdBaEd6RVhEZWFrTkRGdThoY21HLUh2Sk02eHpzb1ltanc4dmNaVXBzbnBHcGd1ZjBObWFZdkppVGJFQ1FLUG4zNWZhZ0Rfdw?oc=5",
-              "sentiment": 0.402,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Applied Aerospace & Defense, Inc. (NYSE:AADX) Stock Has Average Price Target of $24.67 - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOENSUEJSYmpVenJ0cWtXMDJwRVN3bnpEcTd2OGxvNHVOQi0xT0o1WWVuV1llSE8xRlFqNWFQSE5uV0hiaC04RzBPTS0teS05c2JmMzdKYXNZdXBSMTFKMlg3WjBuLUswcjh6T2I2N2pBRWhWOEt3czk3MkNLb1pfaFN2N1g3bjhWZnE4aVJUUU0zTGtfbmVwck93N2lvbWpfTUk5amdDMmRqMEdkcDBxN3hGOXpkT01XUUFCUS1mRWVYcHlLbVRVbVRuYnIxS05Zdi11NU5Kckk2QQ?oc=5",
-              "sentiment": 0.128,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.5,
-            "spike": false
-          }
         }
       ]
     },
@@ -5030,6 +5030,45 @@
       "name": "Robotics & AI (BOTZ)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -4.75,
+          "zscore": -3.19,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": 0.03,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-30",
           "return_pct": -3.59,
@@ -5224,45 +5263,6 @@
             "zscore": -0.42,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": -2.35,
-          "zscore": -2.15,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.47,
-          "events": [
-            {
-              "source": "googlenews_robotics",
-              "title": "A single holder reports 35,454,544 shares of Xtend AI Robotics (XTND). - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb19GNTA0OUZ4TEZYWUc5LTZheDBKWUdnZTFlVEJ5WEVNRHVxV1VLaHB2Qk5ZVUF4Q1F1WlJlUVBFaEZSXy1ia3RjLWlBek9LaUtXNi1NNWdYUmotSGZHdHNXV0dwaEhQZVZtNl84aTc2RDIwZEZJcFFmSHpEeHNtLXo1cGNaVFNqSmhxS2tQdTJkYm1qNU9YX0M2a253QS1LUTV1c1JpZW1IRGVPTFF4dXVudVI0TTMxLW1xc1RKMzYzeW5nVF9z?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "Key Robotics Stocks for 2026 and Beyond - Yahoo Finance Singapore",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbXJrdnhTaUVxVGlldnQ5X1VaTHg5emNDQmtKT1d3dzk5cWtYS0hYZ29ZTnlMTTdhbmQ4dDhlVXBBcktYMHJiZTJQUmxpN01fUmNLektxQ1J0Yzh3NnpjSEgzd0R5akZwMjlEWTlZYlE1SGtYV0hyeWE1RTc0aXZET0lQWUNjUXM?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "1 Robotics Stock With the Kind of Setup That Built Amazon Millionaires - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLXVOUUNfUDhJZFZNamIzbXp4R3JnVVdTejlXUG5PU0Itb2JYRUhFSGRZQ0JqczlKb05JRjNJbVd6S3RyZ3FsR2g3NXJnWWoweUFLUzF2TXBIYmZDWlE5X01faTlqVUgwZVo0RlpXSlA2bXJhLVZ3WlBtZHFDb05QMVZZckE0YkpmSGd6SHNaam11TWkwRmhUQg?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.518,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 2,
-            "zscore": -0.46,
-            "spike": false
-          }
         }
       ]
     },
@@ -5271,6 +5271,45 @@
       "name": "Cybersecurity (CIBR)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -4.72,
+          "zscore": -2.16,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -1.36,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-02",
           "return_pct": -4.24,
@@ -5465,45 +5504,6 @@
             "zscore": 0.72,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-16",
-          "return_pct": -4.55,
-          "zscore": -2.67,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.09,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Nvidia CEO Jensen Huang Rejects Sam Altman's Advice to 'Accept' AI Cybersecurity Risks: ‘We Should Do Everything...to Avoid Them’ - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQd1VYaXU0U2tmTi1ScUlGdTE1OUVMZ3JBSlVwX2RWM19QMzh3ODRra2RYNC1sNHJSMEp5b1FVdE9Ha3MzNmdDNHU3UWlETWp1VVZ1WUdIakFpNTNtNThIY25aeFhTSEFFVnJ4bE5kS25USTdKeWxOUmZQdHFTRWJvQ0VBV1JlQ1d0d0trNjllYXNTYkU3VUg0TmJIcw?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.84,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Trending Industry Today: Okta Leads Losses In Cybersecurity Stocks - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUGdwOFNMV0tqQmxDRGIxME1teUVnOHo2b0V3S09oeENkQkhDbHFyTkxzbUllOXQwZW5xY3lScWdoWXdDcVNCckg2R0lwcDRRcDhXc1ZRVXFLYjhoMGxZZnpEQ0ZRYXpscGZvLWJaMk5UTE02UzZSSzFzSzJ4LUFMOGx1Z1dhNDJ2SXI4NFlEQ3Z1em4xVzc2SXV4YWVsZGNVaGRzZl8tbWJfc2Vkd1E?oc=5",
-              "sentiment": -0.402,
-              "relevance": 0.761,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Sell-Off In Cybersecurity Stocks Intensifies Amid Palo Alto Vulnerability - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0RwdUhaYW1SUUMzcE82Wm1kUTVtcVlpUXdCZjNaTm1kcV9ua0pBUDFoVnJZZUd4ZmxTLUxuMWgtRVZRcnJJS2tPRGUyX3NkTjZLamg4Q3JtWm1IMTFfbUg2OWdFdnFieGZzQVFWNy1yUktQLTNGb0k1dDhaMU5RUWItaERwYXAxTVhkZ2FqMy1fMnFXbjd1THJNQlZCc2hyYU9r?oc=5",
-              "sentiment": -0.226,
-              "relevance": 0.691,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 15,
-            "zscore": -0.44,
-            "spike": false
-          }
         }
       ]
     },
@@ -5512,6 +5512,45 @@
       "name": "Biotech (XBI)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-05",
+          "return_pct": -3.8,
+          "zscore": -2.04,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.5,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Midterms Aftermath: The Dem Sweep Means Recession - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNenFCMUlTYVNaODgtWXNtclc3WXRMbDRKUldPeGpwaXVRS3ZUazBJZDVnMjllNm4wREdJT291ZzdNNXVXU05QOXNOQ0tBczcxUTFzUUxGdWUyT0JoVjZGalVUbTZCWmZSTlFscU1oREtya2ZKR0cwYWFZTWl0MzQzWDkzelJJWElqczdjbjQzNWZjaW8?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 13,
+            "zscore": -0.42,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 2.67,
@@ -5704,45 +5743,6 @@
           "coverage": {
             "count": 17,
             "zscore": 0.11,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-16",
-          "return_pct": -3.65,
-          "zscore": -1.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.09,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "Meet the New Nasdaq-100 Stock That’s Crushing Nvidia, Micron, and Sandisk. Is It Too Late to Buy? - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNlhjVDk2V2FoTzZQNFJXZC1ERHNSaDJIRGV3RW9ocXp6TmxxeWVBQmR5OXBzclpIdEJ0eWZKUDlRNnRKT05jRUtfTDRuWnc0R1JHS3V4SjRubklTVmpEdVdwOTVkcnM3TjhEZmd3R2MxYXhYNWNOQk9VRUlhQ3hpTHRabTU1cDFhc2xUeVRfQzBtc1A5NXhTcHpwTlVVREQ1eEQ0N0pkejdSZUhDSExkY0RZOHRsYl9kWGZTTXFfbXczNjVLMXpqcWtHUU9CQ3ZKLWc?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "2 Under-the-Radar Stocks to Buy and Hold - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS01VNHRZUnNYcTZzZ0g2U1RqajE4TDFNQXFEeV9GVTEwNFpoM1NzekxuSVNmTVYySFVsZjRKbkNELUVoeWZXTVZfcjZ3a2dabndPNG1hVFpsdFlXZEItVW94UG9NdTRJNDlueWpwWUdKRTJxVTFVNFJacUJ2OGlvQWNHSmZ0RXRjakt3?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "A board chair lent Kane Biotech $250,000 without charging interest - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWjBpcUZzaTlBNmlqclNnOUxMdm9xVktCRWE4WTV1dUFiaHFiNTRlYWV0bUlZM1BtMjNJSXMwZ1dibFVGQVlpR20tdUNkYXdRakVBTzhVaFVGTXNXVlk2cDdJWmkydmtIeWJLMG9wQTZ1RWtENHJfTGxxeGJ2VVZKQk85eHJSb3pBM20wbXVVWjZXdHdVZXF0bnRR?oc=5",
-              "sentiment": -0.357,
-              "relevance": 0.743,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 39,
-            "zscore": 2.49,
             "spike": false
           }
         }
@@ -5993,21 +5993,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-05",
-      "return_pct": -0.75,
-      "zscore": -0.33,
+      "return_pct": -4.94,
+      "zscore": -2.87,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-11-04",
-      "return_pct": 1.58,
-      "zscore": 2.54,
-      "max_abs_z_recent": 2.99,
+      "date": "2026-11-05",
+      "return_pct": -2.5,
+      "zscore": -3.53,
+      "max_abs_z_recent": 3.53,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
