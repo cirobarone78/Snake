@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 12.9% | 33.3% | +20.4 pp | 53% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 53% | 0.500 |
-| 3 | SOL | 47.6% | 33.3% | -14.3 pp | 56% | 0.000 |
+| 1 | POL | 13.2% | 33.3% | +20.1 pp | 46% | 1.000 |
+| 2 | LINK | 39.3% | 33.3% | -6.0 pp | 43% | 0.500 |
+| 3 | SOL | 47.5% | 33.3% | -14.2 pp | 46% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -69,7 +69,7 @@ Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
 Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Commissioni bassissime e nessuna redistribuzione ai detentori. Una quota rilevante dell'offerta è controllata dalla fondazione.
-- **Offerta**: offerta con tetto massimo — valutazione diluita 1.42 volte la capitalizzazione attuale.
+- **Offerta**: offerta con tetto massimo — valutazione diluita 1.41 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 11.7 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -89,7 +89,7 @@ Exchange di derivati on-chain con volumi elevati.
 Rete di pagamento e regolamento transfrontaliero.
 
 - **Cattura del valore**: serve per transare, ma non cattura ricavi. Le commissioni sono bruciate ma sono minuscole. Il punto critico è l'offerta: una quota rilevante è ancora in escrow presso l'emittente e viene rilasciata nel tempo.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.58 volte la capitalizzazione attuale.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.57 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: almeno 12.5 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
@@ -125,7 +125,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 - capitalizzazione sotto la soglia: 22
 - stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 15
+- volume troppo basso rispetto alla capitalizzazione: 11
 - già in portafoglio: 6
 
 ## Limiti
