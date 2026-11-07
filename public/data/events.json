@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T21:34:00+00:00",
+  "generated_at": "2026-11-07T00:44:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 132,
-            "zscore": 1.4,
+            "count": 131,
+            "zscore": 1.35,
             "spike": false
           }
         },
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 73,
-            "zscore": -0.22,
+            "count": 74,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -361,8 +361,8 @@
             }
           ],
           "coverage": {
-            "count": 70,
-            "zscore": -0.22,
+            "count": 69,
+            "zscore": -0.27,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 76,
-            "zscore": 1.1,
+            "count": 75,
+            "zscore": 1.06,
             "spike": false
           }
         },
@@ -1730,7 +1730,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 2.24,
+            "zscore": 2.23,
             "spike": false
           }
         },
@@ -1768,8 +1768,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.03,
+            "count": 6,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -2009,8 +2009,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.15,
+            "count": 8,
+            "zscore": 0.06,
             "spike": false
           }
         },
@@ -3332,7 +3332,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.05,
+            "zscore": -1.03,
             "spike": false
           }
         },
@@ -3371,7 +3371,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.89,
+            "zscore": 0.9,
             "spike": false
           }
         }
@@ -3835,6 +3835,14 @@
           "events": [
             {
               "source": "googlenews_semis",
+              "title": "Chip stocks win back part of Thursday's 12% plunge as Taiwan clamps down on short sellers - MLQ.ai",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaDB3VGlfSjE0V1ZtVzRCdlhfazhSejdvZW5HM3VhU21SRFg0RS1rOFJleVJWYklWZWxvdDM0bXZWSVVDUTJfTmxPQmRXeVVqLWpMWl92UWN3ZTZUTUZ5cl95ZE5rVk1NcHNHT0s3TVZMQTFhTWZ3cXl6VlN4T0FhVTlDT2VZa2hCZHNUSnh1ZEx3QUNzOXZXTElVdzdLUTdORFJpcVBCcDJSbmZi?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
               "title": "Lattice Semiconductor (LSCC) Stock Looks Below Fair Value On Cash Flow - Simply Wall St",
               "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcXBRdE9NOHFla25UaUNHSEJkcHBuWDhvWlZzSXNSNUVMTDZ6RnRpYnRJZUh1bmU3RkpPRi1pYVdWQmE1VnNIWTNWLW16Qmg1c3BOSWZOQmxpUDkycUM5d2JpNVV6S1NpaGFFUUZXdXozcTl0VndIcHpJYUtLcGdTX05Xei15U2d2cnRhaDFTWTduRzJkMGRRNmphcjAzVjF1Q19QNGF1b3hWMDNXSTZhU2cwQWdVN2FKWHV3QXFHcWMtdjBsZUNQbEJ3VUxMRXlNX3ZHUmw2X3Bodzd0V2lJ0gHkAUFVX3lxTE8xYVFJUzQ5cEhlU21qZ0twS2xtcXpianQzQWhfWnBNbkxjLUJRcDVFQlM2UkV1VXdJNjYzMjRYdVNNQmcwbndQWlZILXJ6WlZ2Ul9vMHBGOUpuUVhRM1cwbmxNcjg0bUZsX2xEandhSTQ5ZXA3Slk3d0ZLdUN3cFBRNzZwUi15OTFGZExJb1BvTDdsbVJ5S2FwZXh3dWFJYTRrZ3pPNE1WTXhJSFphZTB6WWJtT0FIMS1qOS1hOGNYWExaQ2NqSk8yNzZJaFN4Umt0RmxuaUxUcXJDUXRxZ1VZRTRQdg?oc=5",
               "sentiment": 0.572,
@@ -3848,19 +3856,11 @@
               "sentiment": 0.572,
               "relevance": 0.829,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Taiwan Semiconductor Just Won Big in The Midterms - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQzRTeS16R1BwODhRcV9KLXN2a1FRUkVzb1E1dTJJREhIanlMb2M3ME5qUU4wdUt1RkJONnprajdaeWZ0WjJUS0xmRkZwcHYxMjdBenZMUDdnWXY4QUFDRzhobXVaSHRiOHhkLU9kWWNacHgxYjBvQ0Z0OW5IQ2ltZ0l6RQ?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 69,
-            "zscore": 0.26,
+            "count": 76,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 99,
-            "zscore": 1.29,
+            "count": 100,
+            "zscore": 1.32,
             "spike": false
           }
         },
@@ -4092,10 +4092,10 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "US Treasuries Stumble as Strong Labor Market Lifts Fed-Hike Bets - Bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM3NNcGNRYkZlWG9POWd3eC1hYThVTjhmVEVfb1NEZy1qZlJhc3dBMGQyLTlmR0ZwN0hEUmdyclN0c0RiVjZwaGlPdGxuWDlHbW56WVhwcER1V2pxLWJ5YjZWSXE3bDZkc0pUWWlyZnEweER3TWJob2Rjb0pRSWd1c3lUZHBoeTFoZmNnc25feUszUWVMYy1uR014ekZkNGZLX1IxWnh2dkdSRTRDTFRsTUNVM204QQ?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.513,
+              "title": "Robust US jobs market boosts December rate hike chances - ing think",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMnEzSUd2ak0wTmsxb3lueDFDVG94RHZOLVNTZ3ZMeVB5QVY3NGNHUHdaVzJwMkEwT3BXWlhCSlV3MkFEdWc4a2szSUE3bExWTmdXV3c2UTJFSjBXTGYxV1FxYmF4YjhVUTE1bmp1QzlCdmJwNHN5Y001ZWU0SHNobldsVk90T0hUT2xWM2VFenM?oc=5",
+              "sentiment": 0.67,
+              "relevance": 0.521,
               "event_type": "fed"
             }
           ],
@@ -5406,16 +5406,16 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSmo2OTM1NjhCMHR0VUJDZk9XUVpmaVJET0ZkOGlUak9CMkVEems1eThwZnQ2N2N6OTVyaUtSS1J2Vzd2ZEN5T1ZKN19VOXpieFpYQ0Vqenlld3VCaVpmdVZHSXBiVzlpMFdFTkhudFRMN0RWZlpKODRibFFsdUFudjFoa3k2Nk5GMWZucw?oc=5",
+              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQUpuMFR1MVJuYWRfQnZKNDlVRThQT1VyZl95Y2lIWWxoOWV5R2ladVplWk03blZrRWttbTJ3bFdmYXVZMEowQ1pVS0diYUFDaWsxWHNhd2VIWVVjcVdOZXRjVHFrQzdWaENucXc3R1NDVnpnR0YzVEVBZFA5Mk0yVmdvUmpjNmlKSWVJa3pxTmFaX0w0OS00MWZsbzhsQl9oelpYVmZhdEFJZXVHVTY0STdBLVliRW0wTkpheVZZZ0g0TTFBUkdHa3NpR1hyZGtpQXV5ejhJZGRwMHYyQW85QmtXVkNxWEtjSHY2QnJpYkZWOS03?oc=5",
               "sentiment": -0.735,
               "relevance": 0.894,
               "event_type": "earnings"
             },
             {
               "source": "googlenews_cyber",
-              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQUpuMFR1MVJuYWRfQnZKNDlVRThQT1VyZl95Y2lIWWxoOWV5R2ladVplWk03blZrRWttbTJ3bFdmYXVZMEowQ1pVS0diYUFDaWsxWHNhd2VIWVVjcVdOZXRjVHFrQzdWaENucXc3R1NDVnpnR0YzVEVBZFA5Mk0yVmdvUmpjNmlKSWVJa3pxTmFaX0w0OS00MWZsbzhsQl9oelpYVmZhdEFJZXVHVTY0STdBLVliRW0wTkpheVZZZ0g0TTFBUkdHa3NpR1hyZGtpQXV5ejhJZGRwMHYyQW85QmtXVkNxWEtjSHY2QnJpYkZWOS03?oc=5",
+              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - AOL.com",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSmo2OTM1NjhCMHR0VUJDZk9XUVpmaVJET0ZkOGlUak9CMkVEems1eThwZnQ2N2N6OTVyaUtSS1J2Vzd2ZEN5T1ZKN19VOXpieFpYQ0Vqenlld3VCaVpmdVZHSXBiVzlpMFdFTkhudFRMN0RWZlpKODRibFFsdUFudjFoa3k2Nk5GMWZucw?oc=5",
               "sentiment": -0.735,
               "relevance": 0.894,
               "event_type": "earnings"
@@ -5530,24 +5530,24 @@
             },
             {
               "source": "googlenews_biotech",
+              "title": "Four shares withheld for taxes as Moleculin Biotech (MBRX) science chief acquires 17 shares. - Stock Titan",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTXR5bUxwTGo0cWhXRy1mOTFZUjNtTlY1NFVMNW9GRlB4RkRWWkNDSlJJZXJJRTY2V2VlRlNQalBTcUh6elRaWlZzSEt1dV9RUWpSX18zTlk4U3FCNXFTWE9UaFNicWZXQjh1Q2dvZzZ3ZXFpUzhqcGNId3V2REcxbFFnZl85NVpmUXVLeVp5OHUwQzliZWVVSlpuU19aOExiYmN2R2JmVDl0Q1ZFSDJqaGNjdFlSZw?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
               "title": "How ASH Abstract Acceptances Will Impact Legend Biotech Stock (LEGN) - Simply Wall St",
               "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPc29uQmxyNXp1Ty1vRzQxNndadlVaeWt2bER3b3JGdm5LR1FSUkpNVHRpTUN0LTBkdTBmalJ3ckROSnRYTm9ITGpmRlVLQ1dpbGJwMGZxbGx1ZFRoYmZLSEh4WGxlUlhocmdKR3RUWEQxVlR0NGs2dWktVms5M0t4anJkS1NQNVRkVm40c3dzc2tKMzc1RmV3SHZROWpNTjB0bk1HYzNIR2oxelg5WFREeUtrMW1wYzdqMEswY3NPeWhlVHBZdHUzbDY5Mmd0LUViZUZqT2taWGtHdlRVUHhjNkl30gHnAUFVX3lxTE9OY0wxakMyYVpaOFRQR203Z013ejkyX3BWSl9Mb2ZxY3VfZEdQRFBubmpYSHNxRWRUOFV5SlEybkhHR0ozaVRKNHRCakluT3NUUjlJbFBSVzZGWlBrMFVETGJ4ZGVQREl2ajJsSkpDN3dfVV9qdjJhUm0wSWwzdl9nYUpyajhDNTU1REdmZ3JVOVAwYXlxQ2h6Qmp2dTNVeXp1cTNLeGZaUXF2UWhiT1c1dGlqUkh0R0pQem9oQVg2Z29NNjlCdFh2djE1b3ZsbkJoejB0dGEwQkRaUWFmc3gtdVlKOEdoUQ?oc=5",
               "sentiment": 0.402,
               "relevance": 0.761,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "While biotech bets swing on trial data, this dividend payer gained 72% since 2024 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZllWckhaWEpEZVBYd1MxWVF1VFJULTR6SnZXOXh0bENTdEhGZHBWVk1nY25yX2NlcHF6MXlyOWRaUmNBX2NEUzhpMEsyeklMZlcycm9YUjdTcGQ0U05fcTN5U2hIU2hzeG1KZHR4RnV0eUhDNU1LeHMxNU95NVpOeWZ0ZUNXblMwOV9OZVVDN1FsekRqSEE?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -0.95,
+            "count": 10,
+            "zscore": -0.82,
             "spike": false
           }
         },
@@ -5992,13 +5992,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-11-06",
-      "return_pct": -0.37,
-      "zscore": 0.0,
+      "date": "2026-11-07",
+      "return_pct": -0.16,
+      "zscore": 0.11,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-11-06",
@@ -6007,7 +6007,7 @@
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
