@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-06 07:08 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-07 07:07 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Remora Markets Tokenized rStocks | hot | 0.97 | +2.9% | $161M | circle-rstock-2, alphabet-rstock, t-rex-2x-long-mstr-daily-target-etf-rstock |
-| 2 | Reality Ecosystem | hot | 0.97 | +3.0% | $179M | spacex-reality-protocol, circle-rstock-2, alphabet-rstock |
-| 3 | Fiat-backed Stablecoin | hot | 0.92 | -0.4% | $275.1B | tether, usd-coin, usds |
-| 4 | USD Stablecoin | hot | 0.92 | -0.5% | $285.8B | tether, usd-coin, usds |
-| 5 | Bank-Issued Stablecoin | hot | 0.91 | -0.7% | $252M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| 6 | Stablecoins | hot | 0.91 | -0.5% | $289.1B | tether, usd-coin, usds |
-| 7 | MiCA-Compliant Stablecoin | hot | 0.90 | -0.5% | $71.2B | usd-coin, euro-coin, societe-generale-forge-eurcv |
-| 8 | GENIUS Act Compliant Stablecoin | hot | 0.89 | -0.5% | $73.3B | usd-coin, paypal-usd, usa |
+| 1 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.98 | +7.6% | $723M | sp500-xstock, nasdaq-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
+| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.98 | +7.6% | $723M | sp500-xstock, nasdaq-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
+| 3 | Bridged-Tokens | hot | 0.97 | +3.9% | $407M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
+| 4 | Impossible Finance Launchpad | hot | 0.95 | +4.2% | $148M | aethir, carv, brickken |
+| 5 | AI Applications | hot | 0.91 | +3.4% | $2.4B | venice-token, pieverse, quack-ai |
+| 6 | Robinhood Chain Stocks Ecosystem | hot | 0.91 | +2.2% | $157M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 7 | Pons Launchpad | hot | 0.91 | +5.4% | $170M | pons, priors-agent, thinking-cat |
+| 8 | Ondo Tokenized Assets | hot | 0.91 | +6.1% | $965M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, strategy-stretch-preferred-ondo-tokenized |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Trading Card RWA Platform | -23.2% | $222M | collector-crypt, collect-on-fanable, charred-treasures |
-| Robinhood Chain Meme | -15.8% | $281M | cash-cat, artificial-inu-3, degen-base |
-| Wojak-Themed | -14.3% | $144M | non-playable-coin, wojak-5, wojak-7 |
-| Pons Launchpad | -14.0% | $160M | pons, priors-agent, zzz-2 |
-| Hybrid Token Standards | -13.9% | $124M | non-playable-coin, pandora, defrogs |
+| Bank-Issued Stablecoin | -4.3% | $242M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
+| Prediction Markets | -4.2% | $4.2B | rain, true, cloudbank |
+| Tokenized Money Market Fund (MMFs) | -4.1% | $2.6B | blackrock-usd-institutional-digital-liquidity-fund, eutbl, spiko-us-t-bills-money-market-fund |
+| CeFi | -3.9% | $314M | swissborg, vision-3, momentum-3 |
+| Options | -3.6% | $4.5B | rain, derive, hegic |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
