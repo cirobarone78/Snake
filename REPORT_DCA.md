@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.0% | 33.3% | +20.3 pp | 44% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.1 pp | 44% | 0.500 |
-| 3 | SOL | 47.5% | 33.3% | -14.2 pp | 47% | 0.000 |
+| 1 | POL | 12.9% | 33.3% | +20.4 pp | 41% | 1.000 |
+| 2 | LINK | 39.5% | 33.3% | -6.2 pp | 43% | 0.500 |
+| 3 | SOL | 47.5% | 33.3% | -14.2 pp | 45% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -61,7 +61,7 @@ Layer 1 recente, orientato a gaming e applicazioni ad alta frequenza.
 - **Cattura del valore**: chi mette in staking incassa le commissioni. Staking pagato dalle commissioni, ma meno della metà dell'offerta è circolante: gli sblocchi programmati sono il fattore dominante sul prezzo.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 2.42 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 3.0 anni.
+- **Età**: almeno 3.1 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XLM — Stellar**
@@ -123,9 +123,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 23
-- stablecoin o token ancorato: 21
-- volume troppo basso rispetto alla capitalizzazione: 16
+- capitalizzazione sotto la soglia: 24
+- stablecoin o token ancorato: 20
+- volume troppo basso rispetto alla capitalizzazione: 20
 - già in portafoglio: 6
 
 ## Limiti
