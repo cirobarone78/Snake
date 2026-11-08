@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T03:35:00+00:00",
+  "generated_at": "2026-11-08T06:37:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 131,
-            "zscore": 1.34,
+            "count": 133,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 75,
-            "zscore": -0.1,
+            "count": 74,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 68,
-            "zscore": -0.53,
+            "count": 69,
+            "zscore": -0.47,
             "spike": false
           }
         },
@@ -525,7 +525,7 @@
           ],
           "coverage": {
             "count": 69,
-            "zscore": 1.78,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.1,
+            "count": 43,
+            "zscore": -0.18,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 78,
-            "zscore": 1.18,
+            "count": 79,
+            "zscore": 1.22,
             "spike": false
           }
         },
@@ -1970,8 +1970,8 @@
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.34,
+            "count": 7,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.3,
+            "zscore": -0.32,
             "spike": false
           }
         },
@@ -2531,7 +2531,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.27,
+            "zscore": 1.28,
             "spike": false
           }
         },
@@ -2543,6 +2543,14 @@
           "severity": "notable",
           "market_return_pct": -0.17,
           "events": [
+            {
+              "source": "googlenews_utilities",
+              "title": "Utilities Sector: Definition, Stocks, & Investing - Britannica",
+              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MSVQwcmtJbmlxdVZWVkZzZnYxeHhfRmw4aHhWOGdfZ29DX3hXbHBLZTZvSURpV3dsdHFWaHhlcFNoSVdXSGd5OC1naUV4NHlqWnJIN1ZiczYwVU1QTFE?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_utilities",
               "title": "Scotiabank launches coverage of 14 U.S. power stocks amid data center demand (XLU:NYSEARCA) - Seeking Alpha",
@@ -2558,19 +2566,11 @@
               "sentiment": 0.202,
               "relevance": 0.481,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Dollar Rises to 2-Month High on Growing Prospect of October U.S. Rate-Rise - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOVFNMTl0M210ZWZXN2xwNEVaMTJXeGNKUTN2YlRqN3ZFLUtQRVlULV9IZEZ6eFNXRzZCNGlKcEJQN3dNWnVuRnZuNkxHdGdNODdtcVZlMFF4Z0hzbDRPYUJJdFQ0RjhMMlkwX21ZQ3RHY1gydFlCRlFNY25Qalpqc3VIZXdNMEJtbFpadVZpbXltbUVLYlJVYjNsZ0swM3ktaWZIcmc0UkZGMGtlTzRRZVNmSGpZYUktcUNEUkN1emkzanZ5?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.466,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -1.18,
+            "count": 2,
+            "zscore": -0.82,
             "spike": false
           }
         },
@@ -4092,7 +4092,7 @@
             },
             {
               "source": "googlenews_fed",
-              "title": "Robust US jobs market boosts December rate hike chances - ING Think",
+              "title": "Robust US jobs market boosts December rate hike chances - ing think",
               "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMnEzSUd2ak0wTmsxb3lueDFDVG94RHZOLVNTZ3ZMeVB5QVY3NGNHUHdaVzJwMkEwT3BXWlhCSlV3MkFEdWc4a2szSUE3bExWTmdXV3c2UTJFSjBXTGYxV1FxYmF4YjhVUTE1bmp1QzlCdmJwNHN5Y001ZWU0SHNobldsVk90T0hUT2xWM2VFenM?oc=5",
               "sentiment": 0.67,
               "relevance": 0.521,
@@ -5993,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-08",
-      "return_pct": 0.01,
-      "zscore": 0.17,
+      "return_pct": -0.03,
+      "zscore": 0.14,
       "max_abs_z_recent": 3.28,
       "recent_days": 10,
       "benchmark": "BTC",
