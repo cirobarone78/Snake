@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-07 07:07 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-08 07:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.98 | +7.6% | $723M | sp500-xstock, nasdaq-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
-| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.98 | +7.6% | $723M | sp500-xstock, nasdaq-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
-| 3 | Bridged-Tokens | hot | 0.97 | +3.9% | $407M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
-| 4 | Impossible Finance Launchpad | hot | 0.95 | +4.2% | $148M | aethir, carv, brickken |
-| 5 | AI Applications | hot | 0.91 | +3.4% | $2.4B | venice-token, pieverse, quack-ai |
-| 6 | Robinhood Chain Stocks Ecosystem | hot | 0.91 | +2.2% | $157M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
-| 7 | Pons Launchpad | hot | 0.91 | +5.4% | $170M | pons, priors-agent, thinking-cat |
-| 8 | Ondo Tokenized Assets | hot | 0.91 | +6.1% | $965M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, strategy-stretch-preferred-ondo-tokenized |
+| 1 | Entertainment | hot | 0.99 | +4.1% | $474M | decentraland, meet48, enjincoin |
+| 2 | InfoFi | hot | 0.95 | +0.3% | $230M | origintrail, kaito, bubblemaps |
+| 3 | Bridge Governance Tokens | hot | 0.90 | -0.2% | $454M | thorchain, debridge, axelar |
+| 4 | Robinhood Chain Stocks Ecosystem | hot | 0.90 | -0.1% | $156M | spdr-s-p-500-etf-trust-robinhood-tokenized-stock, nvidia-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 5 | bStocks Ecosystem | hot | 0.88 | -0.0% | $1.2B | spacex-bstocks-tokenized-stock, circle-internet-group-bstock, alphabet-bstocks-tokenized-stock |
+| 6 | PolitiFi | hot | 0.87 | -0.4% | $443M | official-trump, melania-meme, constitutiondao |
+| 7 | Binance Wallet IDO | hot | 0.86 | -0.2% | $1.9B | midnight-3, zama, bedrock-token |
+| 8 | Crypto-Backed Tokens | hot | 0.85 | -0.6% | $317M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Bank-Issued Stablecoin | -4.3% | $242M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| Prediction Markets | -4.2% | $4.2B | rain, true, cloudbank |
-| Tokenized Money Market Fund (MMFs) | -4.1% | $2.6B | blackrock-usd-institutional-digital-liquidity-fund, eutbl, spiko-us-t-bills-money-market-fund |
-| CeFi | -3.9% | $314M | swissborg, vision-3, momentum-3 |
-| Options | -3.6% | $4.5B | rain, derive, hegic |
+| Tokenized Exchange-Traded Funds (ETFs) | -16.7% | $584M | sp500-xstock, nasdaq-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
+| Tokenized Exchange-Traded Product (ETPs) | -16.7% | $584M | sp500-xstock, nasdaq-xstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
+| Pons Launchpad | -15.2% | $144M | pons, priors-agent, thinking-cat |
+| Ondo Tokenized Assets | -14.2% | $809M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, strategy-stretch-preferred-ondo-tokenized |
+| Base Meme | -7.6% | $208M | toshi, based-brett, degen-base |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
