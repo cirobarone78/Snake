@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T21:34:00+00:00",
+  "generated_at": "2026-11-09T00:49:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": -4.3,
+          "zscore": -1.65,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.93,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "ETH price range on Nov 8, 2026 at 8pm EST Crypto Prediction Market - Robinhood",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUnlGS3loR1dmTUFUNzZQM0JkNDRPTGFkU2thTjZTMkU2MDIyM0Z5WnFxeGZVVFFramRCaHJrTzdHQXJZT1pydXN0Q2FIVWtZUzVHRTR2Q0p2QzU5VTVzV1lvRFNsa3BKRXZvMmZoVEdmU3c2YW5yYjdUVTNyekxZcGhHVXh4Zi1DUk9BcXpqaDJMWHM1Z01nTExGN1k0TlY2YnM1Z0JLbWVBRUg0ZG1nNEdES2k?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Bitcoin ETFs Lose $412M as Ethereum ETFs See $93M in Outflows - KuCoin",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWkhCRUdfZTc2V0JDbE9SaHNMeUNhNEpDVGRpMTJxeXZwTllVOVB5ckRmbmpTalBGLUVEV21TRHNUTHJQNXNfX1dBR2x2QUxrMWI5TUUyS0s1bkhXQk1iM252REZnQzJFVDhkMnlEeWpjQ3p3NV9MajlIcmdjZGNOajdNUVZBZzN4dEU5V3RtaVBHdVNTVmtpUQ?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.561,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "XRP drops 7% in a week while Ethereum holds, with no ETF buyers to step in - Startup Fortune",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUEJzZkpZaXZpcHpOcUdXdDktNXd5QnMxUk5hQkdZcnVRT2lvQnV4emxBMUEzZzZYdk03d1ZncE1ya0Q0LTVvOVRUd1NMbFV0YlpGVThDTk5BR1JVMDhzTjRCMmQwOGo3c0ZnUy1VSlJTUTRZcmlVY2JyZGZtTWIwWHRUYnB5am5rY2w4T0dDWGI4VmxhTklRWWZxa1B2RTNXM2c?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.518,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -3.72,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -7.75,
           "zscore": -3.28,
@@ -441,45 +480,6 @@
           "coverage": {
             "count": 103,
             "zscore": 1.59,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": -3.95,
-          "zscore": -1.85,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -1.92,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Vitalik Buterin Sees AI Threat To Cryptography, Rejects Rushed Wallet Moves - Yellow.com",
-              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1bEJuMDJwcjZXekRDRkZqUHUxYzlKRzBERGI2dktNVWhlRUppWXZseGwtbHZlZzVJQWxEOEsydGxxYTlERDNWeGtLcm5YYU9fYU1SUG5aWHVlRUVBanhmZVhReFJiMGd6WW5qZm1yQldYUQ?oc=5",
-              "sentiment": -0.765,
-              "relevance": 0.906,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Altcoins lose $50B as Ethereum and XRP drop; po... - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ObFVRREMzSEpjajYzNGZfR0JKUm1UUjUxWU5LR3JnVDA4ejZkekZMODFoWjgweEVkTVZDSThrOGliajlWNGRna0pXQ2l6UlRvZ2E2elNSalhiSTc0M2NzMEVsTUpFeFFUTlRtUF92My1OcEhfU29raHhLeWY?oc=5",
-              "sentiment": -0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "AI Could Damage Crypto in 2 Years, Warns Ethereum's Vitalik Buterin - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96SFlVWHpyUEFCblBmWlhBd0dzNkFLWlVWT2VVVERTT0sxWjZWTEVQUFBOU19mSWVCZVRaLURPb3lyV0JkVEtSTGRTMElZcWVoMjN6R1RkLWNSZ21kU3ZiM1hiNGRtZlVtSkR2Q1RKemo?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 82,
-            "zscore": 0.51,
             "spike": false
           }
         }
@@ -5992,13 +5992,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-11-08",
-      "return_pct": -0.16,
-      "zscore": 0.04,
+      "date": "2026-11-09",
+      "return_pct": -0.93,
+      "zscore": -0.38,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-06",
@@ -6007,7 +6007,7 @@
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 3
     }
   }
 }
