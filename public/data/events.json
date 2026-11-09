@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T12:36:00+00:00",
+  "generated_at": "2026-11-09T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -400,8 +400,8 @@
             }
           ],
           "coverage": {
-            "count": 68,
-            "zscore": -0.32,
+            "count": 67,
+            "zscore": -0.37,
             "spike": false
           }
         },
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 70,
-            "zscore": 1.86,
+            "count": 69,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -973,6 +973,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 4.3,
+          "zscore": 1.43,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.8,
+          "events": [
+            {
+              "source": "googlenews_pol",
+              "title": "Polygon wants to move 70 million POL without the wallet holders’ signatures - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLUgzU21fOVBPTnNPa3BhY2l1NTJ3T2lHeG1BSGRGMFFQcHBWOVY4Q3BTWlFpajJpTVRDV19ZZk90cHNRbDVCOUd0akp3cnRob1FhVkRnb2lvUFFZdmZYMV8yd1F6eEMxcFRFaEtabFRhT0hLVW14YVVXWmYwWi1JRmhRTkMtdEhFVjUyUTdsMWFJTW5kQ3J6LWU5TlFwTWdp?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "coindesk",
+              "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
+              "url": "https://www.coindesk.com/policy/2026/11/09/coinbase-gets-full-u-s-trust-charter-from-federal-banking-regulator",
+              "sentiment": 0.511,
+              "relevance": 0.483,
+              "event_type": "regulation"
+            },
+            {
+              "source": "cointelegraph",
+              "title": "Coinbase’s US national trust bank charter takes effect",
+              "url": "https://cointelegraph.com/news/coinbase-occ-approval-national-trust-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+              "sentiment": 0.511,
+              "relevance": 0.483,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.82,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 4.25,
           "zscore": 1.46,
@@ -1166,45 +1205,6 @@
             "zscore": -0.1,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": -6.23,
-          "zscore": -1.62,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.84,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Price Prediction: POL Burns 100M Tokens, but Pepeto Buyers Chase Bigger Gains Before Listing - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaGprSlNzUFRzYzRFc3d0SlpLeDNiXy02MVF2dF9CcVVGZ2JSR1ZEZWNybk1tZVVubjZRSThHRjB0SEVCWHdnN0ptNzF4aTVoS19IbUloZkdyWXVzdm00eFZBcTZoU1RwQld3djZRYi0wdVB5S2lFamtJYW95a29OMHJ5UFgyQ3I5Mm1jNmQxR0RDZUR2bXJITw?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.6,
-              "event_type": "listing"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Price Prediction: POL Lines Up 22 Million More Tokens to Burn, but Pepeto Holds a Bigger Card - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYS1FZHR3eVA5QThGQ3I0cXd4RHIyX3o4REJJankzdnUwYkgwT1J3cjNpYlJ2WHR4U0l6N2lFUVl3T3FhRUdlMmNaRVRQekhkbFMyeHhQbVQ0WDZfUjBINWtabFIyUW5wX3VIZDRYOUltM1BJZEVvcWRWOW4wY2FDdzJQS3lnaUZrQXVKX1lRRFVZWUFzY0x6ck1pRkU?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon (POL) Drops 3.3% Amid Market Softness and Tokenomics - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aRlJ1VGdDT1BUQkVkbnpHV090SkhHaloxeDNISXJMc0lIZVFFUlBhNV9nenBnZnN4RU5DSHlOLVNhdm1zazZJR1dDMkl2b2MtYmViUHluWXRlUWFWbVlqM2Uyazg1dU9YR2ZSQmtxZ1E?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 10,
-            "zscore": 2.1,
-            "spike": false
-          }
         }
       ]
     },
@@ -1213,6 +1213,45 @@
       "name": "Technology (XLK)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-09",
+          "return_pct": 2.88,
+          "zscore": 1.58,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "Is Wall Street Underpricing AI Now? Tech Stocks Look Cheap For First Time In 9 Years - NDTV Profit",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdkZKQkotV3ZIVk1qS2haTUF5bWFaLXJnQ2pzZHA1UWo1NGZoVlA5SFc0R0VDZzNxQW5nYTBpbl9SYlBVX2IzN19jc2liTzZKR21yWDhYelNtTFEzSWJyTVhYT1F3S2oyVktSa3IyZmpTLVBFMGFYU3Nvd1FlMTEyN1NCUFFaV0NBdW1yUEZEVWxydzM0V1hxLWxHblVUNHZPckpBc1ZlcVRKcGdGMFJNLXZXRldnbXRZMTVVam1jTnJqNXdmblHSAc4BQVVfeXFMTmxza2YzTjNvT0RuM0pGWGMyeWtMdk9pSjhBRTVPUk93cmRPNGs1QUhUd1ZjSlktekVNZ21BYnNnTFppUlRRaTRqbVVob2R1WUl0UXRmdGZJQVNrZVRZSjk2VzEyTGt2c2p0S2pwUmJGUGtjdDAxczhnYlBhZmRKYmtta2dDQm1YRG45eUtDTWo1RF9ZVzVHU3BrT3BIbTZ6dlZhYm05ZjBMOVp1SEs2MVR6RHFFemx1QXZQa2cteEF2X0pBbUx6LUltQ25yTUE?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
+              "sentiment": 0.431,
+              "relevance": 0.772,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 26,
+            "zscore": -0.81,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -8.0,
@@ -1406,45 +1445,6 @@
             "count": 121,
             "zscore": 5.27,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": -2.98,
-          "zscore": -2.92,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.11,
-          "events": [
-            {
-              "source": "googlenews_tech",
-              "title": "Tech stocks take a back seat as healthcare names steal the show - MarketWatch",
-              "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOVGUxOElfTExGLWdtalBNWG5Ed2xlWExEeDFzNy10dE56MllDcDdzb3FDSmRyQzd3SkRoaTFCcHM4RGFHZWxIZGdzNS1jRDlsNkp4WklmcHJEMXdfXzVCU1M4a2dkdmZEX1JFdWJKT2RSNmRlREtyYWNPSzhzQmd2U051MUNZRVViZHAzeHdqSHNnQW1YcGJUaW8wbFhlQ1A1MlJTMGdwVEJCaEtMQ3BPaWRxRW1EU01HT20tRE1oZ2hlRXFkTWY5b29KZVBfbDB2OG5za2Y1X0cwcVpaS2Z6MXZzTDJEa3pWS2o3WDZvdzE4QWJhTm02VnVzVGpzbnZWZ0NXVUwyVHgxeWxPd3VJbndMN3ZMbVVGTFVNbGU5YkwwUjgxXzBnMXFXdlAxWjgyQ0w4R2tBMGdNdw?oc=5",
-              "sentiment": -0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Tech Stocks Are Crushing the Market, but There's a Sneaky (and Dangerous) Risk for S&P 500 Investors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2IzeHFNY05faTVFTzlRU1FETzY2VGJqQ2RwczV6cHNiSWtJMmxsNUswZGhCOGM5Yk9YdnRpekktQlctenpZTkVCS3RoTE9YTVMyanJkaTJWcmtWOUpvSnAyQm00dmF2V1RvOXRxMFVoNnQ2Q2lwVmREZ2RiMWY3SHNweTU1TE5zQmt6QWNjSXFadkky?oc=5",
-              "sentiment": -0.929,
-              "relevance": 0.772,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Higher-than-expected CPI fuels rate hike bets; Nasdaq drops 0.6% as most high-profile tech stocks weaken - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMDRqcjh6WWNpN2VLS20zdXYxYmc3bXI5dUVEZW01ZFJQU0NJbngyaUFGV0tIVzBfR3U3SHZPTzY3R1U1bVVpN0xJTlFCMjR5cVFubDdILTcyUnNZRGZJQVkzbm9jaGdKc0h5Y3lDSXBxaGVQMXBGV1czWVowcVY3Z1Z2RzdHbFRtQmhUTlRIdmVoSDN2ajE5a05LaUFINlFyeU5BQ29iYUw?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 54,
-            "zscore": 1.32,
-            "spike": false
           }
         }
       ]
@@ -2178,6 +2178,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 3.01,
+          "zscore": 2.69,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
+              "sentiment": 0.431,
+              "relevance": 0.772,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "US October CPI Preview: Inflation Growth May Slow, How Will US Stocks, Dollar and Gold React? - TradingKey",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTnBnTU9ZdVZuNFpZLXZONDUxNFpVZFVKU2Z4OEU2d2lYaXlBcTdCTFpjTWo5UUhRSmdRU0dpekdLd3c4NzE3QkRCWnBGaXFpUnNpWnAyQXJjbE56THJFN3piX0dOc1dMNTE0UFlvUTYxdXE3YnAzYjJVYmxNYUw4OGZmSDh3Y3RwZXBpTTFYaU40VTg0TENxRTY0a1VFeFR1Tk1zcHNocVJENkdneDMtVVp6aEVhOXc5Q29uV2RlZmZJMjUzckhYTTVld2JoMEpEWWZPRVhvR0d0bWJWV1ZnMnVibw?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -0.25,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -4.12,
           "zscore": -4.38,
@@ -2369,45 +2408,6 @@
           "coverage": {
             "count": 7,
             "zscore": 0.04,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-07",
-          "return_pct": -2.18,
-          "zscore": -2.5,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.22,
-          "events": [
-            {
-              "source": "googlenews_industrial",
-              "title": "Caterpillar Drops 6% as Industrials Sell Off With Long Yields at a Two-Decade High; Deere Falls 4%, PACCAR Eases - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWW1VdmhSWmgwUmFzc2VsNUVMd0tkeTVzZmF1ckNLQnN1RU93SXkyTE1kMWxzd2EwcjJaeXYyOUt1Mk9jZlBoMkhfcllpRVZta0R5WktwSDNFc29yd09Cdk9sQUlHSTJteUNTTk84bktIQmZuSEhhZ29UdTNla0FmUmdULUkwVmNIQXhfVmczZVJtY05WQXl6WThPVmhVY1lFSzRMQWpIR010YXVjWFhlYnRZQWZJVGsxSTZsMEp4Vi1yM2FhLUVLZWgxeEVFYmtiemtCb2dDT1NQZHJ4WU5mQXF5Q215Z3c?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "CNH Stock Is Outperforming the Market but Still Looks 39% Undervalued - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdFh2am05aVAtZ1pfaU1mQUlDbnFPMWM3N3cxQWNGUl83c0h4WVh6THZDZ3IzRUs0SlQyc1ZlYXh4Z2FFM1VwbWRCNHZTcDRqR0RINHdsbHk5Q0czTkNVUUFLYno1Q2owaks4bUVLT2VrYk03TjVfQ2MyNFhYNVFBT1lRd3pESXRsbUZWS21fZk9NMHpzZ2N2OHRRQ09NNkxMY0dUeVVoMA?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Is Albany International (AIN) Stock Outpacing Its Industrial Products Peers This Year? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdDZjOHNER2JQOXhuOTBJLVcxTHZUX1ZkUmJtWGNHcWJzUkZLcXd0Y3hWZDkyeFBfeWhVdVhYOXk1TUNpVkc1THJta0h0NUJuR1dNQ0JWR2xWcWNZNHBoQmQwY2xWUHk2aGx2TkVZUXdqanl3Si0tZ2ZkOUhhNHVKREVGNTVtQ3VEWU1rTkF2bVByeDBRblhTYjgzZTlYeXFnLW43aTZWVDQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 11,
-            "zscore": 0.17,
             "spike": false
           }
         }
@@ -2901,6 +2901,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 2.68,
+          "zscore": 1.76,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Retail Therapy: Defensive Bets Extend Streak, Trounce SPY, QQQ As EVgo, Helen Of Troy, Magnite Lead Weekly Consumer Gains - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOa0hqRGxBdDlMdnRMS0UzQU9ZcmhaRnVaZ0hSLVlwZDkzMEhucWJuOE1wTmR3QmtubnZ6QkpRZ0tZcDA1TVppTFZycjF1b0gzNlZNNDFPaGxwN29qWXkxVHNNSThuZHlpcE5VbjRpeUx0dHhPREJyMzNobzlhNllmTzJUcHhFcnhqMU1mYmVSY0FiNGk2dFNmV0IxWURIN3o4T2NJZGlnRTR1VlBxckZrV0E0T05mT1QxeTR6Zndyd3kwVWhpc2RxRWdtQVhQSXJXd29iSGVuU2tJdVR1ODlfanV3Y1Vrd2xIZndsUXhxUzBvMUwxRE9zSW1ycXhIZHZtaFlRa2RuV1c?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Lululemon Athletica vs. On: Which Consumer Stock Is a Better Buy for 2027? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTXdIQ0VUeXVldTRZTENBUW5EcE1sRXNfSE84Q1psTTJqQUF5eGhqY29jdHNjY243eWYwdTNQcWQwVFFEelRYVjRkclJYRi1KSC1udW9Sc2pDdWV3bUNoZm9XZTlxVEZGaFVMdUxVMDlBSUE4RDVHQ0pmNTFYa3hSWkJBSHQ0d1V5SFB2N2dVbU14LUptWG56NEtadk5SSVVZV0dmUA?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -1.09,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -3.83,
           "zscore": -3.54,
@@ -3092,45 +3131,6 @@
           "coverage": {
             "count": 20,
             "zscore": 0.95,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-15",
-          "return_pct": 1.71,
-          "zscore": 2.06,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_discretionary",
-              "title": "Consumer Discretionary - Real Estate Services Q2 Earnings: Howard Hughes Holdings (NYSE:HHH) Simply the Best - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbThlbGZSbFZzdmpSS0JSVEdleWV3OG9ZejNScE9fcWd4UkhSZEhzTWMzaVJyWlJDeUd0aldOR2sxdXZXeHpzY0ZPUF9vd0tUOVIwUUhteEpMVkFrbFlPblllOGVjTnNtV0VteFdTOVpob1ZSdkd4VHVuRnRNOUprRjZlam5pSGlWcTcyaHVPT2ZreURnQXhjMnYzaWRwOXlza2VmUkowZjYxdjVXUjVLNGs2ZGJteVNfMjN1VThNN0hJSTBLNHR5ODNvN0swaUxXal9td1NGdmE5el9BUVVSODlaSjJzUFBEVzZISmp3MTMtQS0yUktj?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Top 3 Consumer Stocks That Could Lead To Your Biggest Gains This Month - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORm5sN0c4N0lZWmJqdTEtcWllN0t2eTcwbWhiUENSOTJSR1RkVmFJb2JrbGtmYkVYMC1ULVpKRzJ6dVp2N1lod2M4NldxMy1pdHhCTUtkY0ZkZFFkX3VJbFgxM3pQVnZTaHVadmlTVUlsM0hRaFRqTWRpR3E0eWVIRVF3YmthLUlndWZiam1lbjFiV2Z6VTY1cTNMbVlfXzV1a1ppUUplT1hkRUUxTjdBcWl5TnRXVm5wbmU2Z0FrbHgtUWxPdUxyRkxlRFRMN3N1?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Spotting Winners: Bally's (NYSE:BALY) And Consumer Discretionary - Casino Operator Stocks In Q1 - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVnRkQjlVNERMSnFRRDhuSTN5Y2NOeHhCU0RBeml3d1o4dVV2VkJTZmFYV1Bpd3RBbXVlbVlQRjFidTc1RE1ZbFRDR1gxNDhMbnVZaU5jX2VSdDdYdW9ieHp1TXo5WTdqZnFlMVlNa3FRRTZfeF9SY0FSTktfaTBJanJXRDljR1ZnWnd3VF9ONmRDdXBvLUJUckNpUGFJbm56WVVQbVdaTU1RczF5bWxJS3BsUVNSelhxNi1ISHdCc0dfTGpPakg4S3J3ZE5COXNRUVBqOEJXZTh4M3V5ZHc?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.791,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 14,
-            "zscore": -0.15,
             "spike": false
           }
         }
@@ -3624,6 +3624,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 2.12,
+          "zscore": 1.96,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_commserv",
+              "title": "Zacks Industry Outlook Highlights Chunghwa Telecom, Liberty Global and Vivendi - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdnBNaEZyR0RsUWQxamdSYkVCa3Uybm9EZlN3U3hTUjZmNG0wNU5OQmdtUXN1cmZ3WDV4d05lUkY5eGdxYmlrTFBhYThCVnlib1dtUDJyaW96LUtTOGc5ZkJFZHN6QTA3dGJyM3lMVno3empsSGlRVFFiZmxlaWZqdDVZZ25GT1paN0JRc2VKMm9RWGhEMzZBSDY2dmhQX0RrTFpVR0tWbzFkQVk?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
+              "sentiment": 0.431,
+              "relevance": 0.772,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -0.59,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 3.47,
           "zscore": 3.73,
@@ -3658,7 +3697,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.5,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -3826,6 +3865,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 3.79,
+          "zscore": 1.46,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "'Blue tsunami' wipes out 400 trillion won in ETF assets as semiconductor and tech ETFs lose 22 trillion won in a month - 머니투데이",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwTUJXSzVFRHV6ZmlPZlp5cDJFakh0RlNJNFEwZVJHV3RBdjU5VHhHVFNUdXhvWlU1SjV5YUFWTVlrNW5CRUg4bFgtNExmRFpNeklQT1ZscHd5eG9oM0xNRnNZaTctZktyenQ2NA?oc=5",
+              "sentiment": 0.751,
+              "relevance": 0.9,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "2,136 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Acquired by Beverly Hills Private Wealth LLC - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNQ09WclZKUzBDZlM3d3EtTjc3UlJFSDI4amNlRFI4V0V2MUhCcW9jY3cwSUlMZVV0M1JrT0VoWk1rZEVFSExxaWhJN09Ia0tWQWRqNFhHT25kbld6NlZQekdiU0NuWmhhM2U1ZjFaVWtlak1BcXRCZ1BfeHhlUGlHa3VmMGgyX1Q1VWlGWFNjMS0yX21hX05pVVRQUklVUnJLUm1oMFZ2ajZFaVQySUxvTlNwUnU0aEZ3d2JRbEdpSktTYmlqQW5aUVc1bGV5bVZZc0lZX0hxYXlRZWh5UmJLeV95RjVjX2Z3ZkY2OUtkS1VSMzZJRjd0V200T1E?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "MICHAEL SPLINTER Of Taiwan Semiconductor Shows Optimism, Buys $299K In Stock - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONmQzLVQ2WmwzQXd1Y0ZPQXEyMHFSVmZpbmp4aFlzWkhuckhBUkJoM0JRbjBma0FOakJiemtBNVFFZVllWmZvQ3VSemtoUU9YQ0h0bmVlbkNnZXJ4S2tIdDBWOTlvMjFRTWI1RlFZbjhLUnhIaEUycjdPVno5ZEpjVlNvZU80QUM5NzN1bGhUa3Z3Tmk4dndjeHMtUVItTU04RG5FQmw1R1dFUmIzU1RLSlhDWQ?oc=5",
+              "sentiment": 0.542,
+              "relevance": 0.817,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 43,
+            "zscore": -0.48,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-06",
           "return_pct": 3.62,
           "zscore": 1.48,
@@ -3859,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 88,
-            "zscore": 0.85,
+            "count": 89,
+            "zscore": 0.89,
             "spike": false
           }
         },
@@ -4019,45 +4097,6 @@
             "zscore": 0.82,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-27",
-          "return_pct": 3.02,
-          "zscore": 1.4,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.6,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "\"Thank You, Anthropic\" KOSPI Surges 3%…Samsung Electronics Recovers to 220,000 Won, SK Hynix to 1.38 Million Won - 머니투데이",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJMXpiYXpzOHB4U2VuWnRTU1VUVlRVMDhGTlE3U2I5alkwLUdCbDJ2aFhGMUFYVktoUU0tR1lFTFNZT2M1MlBSeXR1a29jd1RvUk11OG5FcWF3N0lWY3V2Mmlhc2RwNUVHWWFkcw?oc=5",
-              "sentiment": 0.872,
-              "relevance": 0.949,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "BE Semiconductor Industries NV (OTCMKTS:BESIY) Sees Significant Growth in Short Interest - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV2FPRE9Ua3hEUHk1dTBITVUxbG5mMWNjR3Z5UnJLY0FCVk5xbDVTaTlMTHNzbFdDVWVIcVcxZ2xfb0JsZmtnM09EdjBDVlJUQVhsMjFuTVVQTllONUFuRmczeHRuY195NEIydDNlSHBVN1hOdlFCNnRqXzNaZlNBVk5SbURoaTRHOG9MSGhSR0p4cHhSTE95Y1lTcFJlN0xaams2eUFRRXlyQUxSRDQyMjh6SDZxU083MVBQWHlONmlyT0xZWDZGMUxnYjJUNkw5aE5DQUxBSFJhZUV6Ri1uM3BR?oc=5",
-              "sentiment": 0.751,
-              "relevance": 0.9,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "UCTT: Record Q3 results and rising capacity position growth amid strong semiconductor demand - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPNHpNNkhiZXctTk5sRHV6bWczcTREalpVSW1kbUR0RlJFZWlCNDJIX1RBbWNHZXhIeXZUWmtlSFJjOXVycVhXdm14cE9fQnVoNVc5S2lEa3pmU2lUR2thMElac3VwMm9jLW1BOFpUTTlsTnlxVXNuY2FYWEtaenBrT012VmhCdktZUmFfTkx3MDhkTnNzY29aLU85TzVad01udHJtZGFYUG9KejVDYnE5d1JYNk81aWVNb1NDdzU2WnE3T0xaRXhzd1dVSmZjTGQ0VXJySVByWml1LU1GN0g2TnBNZHNxS3o5bEZhcVRmenUtWGpRYVZoMG9TMWhiY0g0RUU3dWNIeVNLQQ?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 100,
-            "zscore": 1.65,
-            "spike": false
-          }
         }
       ]
     },
@@ -4066,6 +4105,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-09",
+          "return_pct": 4.64,
+          "zscore": 2.04,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "3 Canadian Nuclear Stocks To Own In November 2026 - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT3J2LW1veFZMckZ3MTdhbnIyLTJrclJwNHJibFNCeVo1aHNLSy1RdklKOGFlZk9neThFMDBsOF9wMHBlZXBRU1JMcUFkTEVNU2hJS3FrU19hYmxTc2IxQlA4RTNaMDNVaTVwMEpaQ09LQTU2bDFEVUZVX2h1b2syRDVyN21nYWMzYXBKbktwZXpqTlUxSlUtYmRIN0E1Z2JYcWYtblUtY0NIbnh0MkVWemdmR1dvMjRFbVZ2UFlSTHJsUjVKOGFsVG54REZVNFhnZkhJ0gHYAUFVX3lxTE13clgwcDVLcERWRXByemhTc0NaTHFfNkVldjlKSWIwMHRpX1A4RmtvdmlyU0I0TGExMmxRWmhOVGdiV1FjWi1iY3MtdEgtallCRURPN1JURUcwSVR1SDJFY19rX0NSTFk4RklTQkFEeExWckZtQnBueXBXbDhOMUFja3d4Ulczdl9HVWNMX2x0aVN1bndOZERhZk9ocWYxcFZ6ODJWR0thN0hhWjNTUE4xOVJmVklhSVZVQ18xMG45Qnd5anFGU0N0elhTUDduQVVaTE90SXh0Rg?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Nuclear stocks surge as Oklo results spark rally for reactors, uranium suppliers (OKLO:NYSE) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMW5tUE91cENKZnpEaS03QVNBZVluM3hnVXlhb3NIWEZpeWgyWExkMWljWlhpMVJfd0Rpcms4N0JPMXFnS1BqenFUeFd6ZG1abkV0N1IxVFcyYXRuMmxSS19iNmh0QTh0Z0tlYTh1amhxUllkT3NsQ2s1TERpZUZ0Mlk3R3ZJemZZMG9nbEtKdk5jS1ZCQ29lTzJmRVcyaWszZHo5V3pvMEszMmZhNXYxaTZnaGVjeXhD?oc=5",
+              "sentiment": 0.226,
+              "relevance": 0.491,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.479,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.63,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-06",
           "return_pct": 4.39,
@@ -4258,45 +4336,6 @@
           "coverage": {
             "count": 2,
             "zscore": -0.64,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": -4.92,
-          "zscore": -1.77,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.11,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "3 Stocks to Buy If You Think the Nuclear Fuel Shortage Is the Real Story, Not the Reactors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUEhDTGtiWkNwNlNtR2V2c2dtdlpNOWFBUVZHY0drY2RGcGRmQTRqMUZNXzJ0aXhEZG5OLUIzYldqZGMzVjh1cGhlVGlnZHF2ZmhqQTNnaXcxZndVMUptU0E4bzllT0NqOHBxM0g3ZUJYUGhsRjVHZk9pSlNybkR0TlZ0TERvQ0dyWktpUWMwR0pDVWNOZDMxcw?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.64,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "NuScale Power Falls 7% as 10-Year Treasury Yield Climbs to 5.26%; Energy Fuels Drops 9%, Oklo Slides 5% - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMm1SUWZFYzdaUmZRR21mTHkzemNBS3lpa0ZIbWJQNWdOTXl6QnF0NzJRTWtWNDZZZFVYZENjQ0ZDeTFVR0RJVTVNZ1k0M1E0R0VNSEJyU1dneFdBNHZiNjQwMmx3emVwb1NqUlU5YUQ2X3FYLWtwc0E4SXJwczBCbTUteTRSSUJ4dENfTHVjek5JanFyU0VFVWtZNVdNb1JWbWYzLURJdDhtNDNWQjZseEdkbnJlbDIzQVh5MjRCNWdoNWJfRUM2NmFSYmJfV3ZZYTAzRUFzTVA?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "5 Best-performing Canadian Uranium Stocks in 2026 - Nasdaq",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSXhjVFYxMXh4RG8yQ0FvV2h4czdXcGtnSmJUWnM1WGJURHRkbEs3dnhhR041bFVNWUc2ejNoUzl3VTVSOGdhNWU0ckF2MkEwaF9qcHN5RTI2YVo3UGtyN3RxOHdhc2dBNEtGckh2NExKQzlrVGJ6V2J2R1RCZlpaY1NhZ0Y?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.19,
             "spike": false
           }
         }
@@ -4790,6 +4829,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 2.88,
+          "zscore": 2.01,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_defense",
+              "title": "iShares U.S. Aerospace & Defense ETF vs. State Street SPDR S&P Aerospace & Defense ETF: These Defense ETFs Have a Surprising Difference Investors Should Know for 2027 - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOUGstUzNFNEo1UzhxcENabGctbHA0OXc5M2ZlUUVsZzlJdVRiQ1hxOVIzWVZMbUc2eWdtUkxQU3JDWElXRzlxbDZGd29ENU9sVERZSVJqMHJ3T1I2aGhHSlhCZUsyaDQtOThOckF5Q2JITExsbG5DaFFsaWlaakRRbFpqT2pXcmJJeC1OZmp0NHRNekNWUGViNUtBd3h0STZlT0xDUTZta3RKVWgxRmdud25WQndzaVZkdnhENHpacmkzUlByUzZKckxaNDB3Umc0aXZ3NHlmZWRKM1RVUmVYUk5hZVNncnVUbU51VFJSQW9XNlU5VlNJaENjejk1YnVmLThId2o3a3ctVmZOWWtJUGxjb1l4bDY1Q0FGRFNuM21FWjVub1BiRWFmZ1lNZnlkQjdkNmFTUER0dGowM1dtTXNJLWpCc3RNYVdqaFZMN05wUDUxaEo5ZFJWc1I?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.823,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
+              "sentiment": 0.431,
+              "relevance": 0.772,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.8,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -4.0,
           "zscore": -3.12,
@@ -4983,45 +5061,6 @@
             "zscore": -0.57,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-15",
-          "return_pct": 1.31,
-          "zscore": 1.86,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_defense",
-              "title": "Aerospace/defense stocks near fair value; machi... - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1kM3FfUkFsdFFxMk1tY1R0em9jR05pNUtRZEhYNEhpUUhYeGdwa1puQXFzUTdRcU5IM2RjVWhtUkNMSUN5Q0pKWmI2Tk8xdFJxSEpEbXpRaTRLbS00eWt2SzJyQm9ENC15eEdYTmlkQzg?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "3 Aerospace Stocks In Focus As Norway Wealth Fund Ethics Review Nears - Simply Wall Street",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYzJQQkJLdUR0WkFBVEs2QUNwaWlpMm94MEM0NF9lSzhnZWU2UEZLUVoxS1dDLWVoZ0VLdW1OYXRrUTA3c09DNnJBRGx1T1pUdWxhMmpoWmo5V2t5S1ZtVHhDWnVodnBseGQ1Y3dkdXd6UWJpVnNTd1NkdHBMdHZZUG5tNjM2eVFvVHZRenhPc1ZiaFN5UTMtZ2M0VmhRcTh4QWpTY3hlQ0FJeG90cUQwczB6RWJTX3N1U3VCcHdPRGRUQdIBxwFBVV95cUxPVnMteHFUM1ZoYVZHeG81S1NxR095c2JfYk1EQTluRWU0SUM0cGVndHoyTDA4d1RNTnRlYkY4NDZMeDlIQTFVMUEtazNrYWNRdDAzWDdWa1RIMWp4emZBSUlkanJjMEVjSkc2SzA5Y0s1SGJHcWJZa1h6NWxsdVVldW12MVZ6UHRxT0F4em1Md2F6a0JKTEVWQjVPNnlaMW4wQUc2TzFkdkFQRFNzM3ZiWm1jbXpFWnpkYUR5YnprM21kQ09Ydng0?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Promising Defense Stocks To Watch Now - October 15th - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOFJ3TGh4cDFfV2ZRNjBWaXJoVE9DQVprV0VVM2UydHFBbUdZUGxCZ3BPbWR5S3Atc2NHemtiWm8xcXNnRHhOWjJWbmlEYWFBYm5jREFld2NFcldpNTBfRUZ1TnFnVUZWWDlqdUNLaWlfbmo5aXhnYXVmMUhHMk90b0dQOUwtbG5oS3IxYVZKT3pmbXdoUmcya0JyQVBVdUxnNGRUb00tTXZETGNmN0E?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 8,
-            "zscore": 0.23,
-            "spike": false
-          }
         }
       ]
     },
@@ -5030,6 +5069,45 @@
       "name": "Robotics & AI (BOTZ)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-09",
+          "return_pct": 2.45,
+          "zscore": 1.56,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
+              "sentiment": 0.431,
+              "relevance": 0.772,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "US October CPI Preview: Inflation Growth May Slow, How Will US Stocks, Dollar and Gold React? - TradingKey",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTnBnTU9ZdVZuNFpZLXZONDUxNFpVZFVKU2Z4OEU2d2lYaXlBcTdCTFpjTWo5UUhRSmdRU0dpekdLd3c4NzE3QkRCWnBGaXFpUnNpWnAyQXJjbE56THJFN3piX0dOc1dMNTE0UFlvUTYxdXE3YnAzYjJVYmxNYUw4OGZmSDh3Y3RwZXBpTTFYaU40VTg0TENxRTY0a1VFeFR1Tk1zcHNocVJENkdneDMtVVp6aEVhOXc5Q29uV2RlZmZJMjUzckhYTTVld2JoMEpEWWZPRVhvR0d0bWJWV1ZnMnVibw?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -6.61,
@@ -5224,45 +5302,6 @@
             "zscore": 0.21,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-09",
-          "return_pct": 1.87,
-          "zscore": 1.66,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.59,
-          "events": [
-            {
-              "source": "googlenews_robotics",
-              "title": "Key Robotics Stocks for 2026 and Beyond - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVjM2Ykt1WDV1S3c4czEtdjJicmQ0R09XcVdzdHFvOW01NHN0bDhEbXB3TFlLZU9tT0Jic1pFSGczckN0YTdBd3JUYTh4QkxvYkVoQnRqX19CSmZXa0I2TW9QdmtfR2xrZ0pJWDZJNkY3a2R4YlhfSkJXV1luNXJOeXg3eUlFdjNTakJKSDBPYmpGM29i?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "A single holder reports 35,454,544 shares of Xtend AI Robotics (XTND). - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb19GNTA0OUZ4TEZYWUc5LTZheDBKWUdnZTFlVEJ5WEVNRHVxV1VLaHB2Qk5ZVUF4Q1F1WlJlUVBFaEZSXy1ia3RjLWlBek9LaUtXNi1NNWdYUmotSGZHdHNXV0dwaEhQZVZtNl84aTc2RDIwZEZJcFFmSHpEeHNtLXo1cGNaVFNqSmhxS2tQdTJkYm1qNU9YX0M2a253QS1LUTV1c1JpZW1IRGVPTFF4dXVudVI0TTMxLW1xc1RKMzYzeW5nVF9z?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.518,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "With midterms approaching, Americans’ confidence in the economy is in a tailspin - CNN",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9hYjZvS1ZGaDV4aVVDZjlEZ3pyLW01TVI4bnc3WENfWW9scUhWMndJQVFiaWJETTE0eDM5elRHTWVqOV95SkdyUW0zRTRFa1ZteUs3ZFhhVEFpekN2SnpLT1d6aWQ4dFo4YTItRDVBWjFBanljZnJj?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.483,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -0.75,
-            "spike": false
-          }
         }
       ]
     },
@@ -5271,6 +5310,45 @@
       "name": "Cybersecurity (CIBR)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-09",
+          "return_pct": 3.4,
+          "zscore": 1.57,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_world",
+              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
+              "sentiment": 0.431,
+              "relevance": 0.772,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "US October CPI Preview: Inflation Growth May Slow, How Will US Stocks, Dollar and Gold React? - TradingKey",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTnBnTU9ZdVZuNFpZLXZONDUxNFpVZFVKU2Z4OEU2d2lYaXlBcTdCTFpjTWo5UUhRSmdRU0dpekdLd3c4NzE3QkRCWnBGaXFpUnNpWnAyQXJjbE56THJFN3piX0dOc1dMNTE0UFlvUTYxdXE3YnAzYjJVYmxNYUw4OGZmSDh3Y3RwZXBpTTFYaU40VTg0TENxRTY0a1VFeFR1Tk1zcHNocVJENkdneDMtVVp6aEVhOXc5Q29uV2RlZmZJMjUzckhYTTVld2JoMEpEWWZPRVhvR0d0bWJWV1ZnMnVibw?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.49,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -6.52,
@@ -5305,8 +5383,8 @@
             }
           ],
           "coverage": {
-            "count": 16,
-            "zscore": -0.41,
+            "count": 17,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -5464,45 +5542,6 @@
             "count": 51,
             "zscore": 2.94,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-10-21",
-          "return_pct": 2.72,
-          "zscore": 1.24,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.58,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Optiv Launches CyberBOT®, A Free Cybersecurity Awareness Training Program for Classrooms, Nonprofits and Communities - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ3VtaURGTV9FOHFFVHNhcjlxamhLTDgtdGQ4ZzAxTGJ6dXkyemNmYTZBZ1NkN1diWmtSLXNjTmJVMkJSdy1WWlNjcm4wc3F5UUlPam9QRVk1emptOXNWSDF0ajRnYWROMGtfR0RsSHJIRG83R3lQTEg2S1haakhOZWVzSWxXclh2NGI5M2FNNzZQZWJRbmkzM2dFelJ4WG91LXVPQW1PWldMZw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Sevii Named as Top 25 Most Innovative Cybersecurity Companies in the World, and a 2026 Top InfoSec Innovators Award Winner - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOGlGRG83ODVJZEpkU3pudk1KcDJWdC13OUlVWGI2OUItU0lsTExrSUNrTzF1Yy1JZEF4b0lyRmpoaFNzYmdMM3NEU3VtVWdtZTloS2dvX1VIeWlHUEFzLWRzcm5hTV9ndzlRRHNGTWU1ZmNnRFdyanZzOWJVa3lQQmxuNXF5M0FFNHNJMkZQcV8?oc=5",
-              "sentiment": 0.92,
-              "relevance": 0.768,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "WidePoint Highlights Carrier Deal, DHS Upside and Cybersecurity Growth Catalysts - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaVhBQ2lrdE5DRDVJRTl1OUg2a2RsNHZGWkREZUlBSDZSREhqTFpjQlh1ZDdRbDJ2YTdRMEY5OWREdTFxZjhrTVVDRXlYWEF1aHk2NU9JZTE0TzdsVFVZV2tab2lNdEdnUVgxczB1ZURuV05YSnZkUnlMZ0t2VFVZN0dyMXhDanVFeU9BWkU1R0Z2dWlPRVg5M0V4Z3dSS28?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 26,
-            "zscore": 0.72,
-            "spike": false
           }
         }
       ]
@@ -5754,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-09",
+          "return_pct": 3.16,
+          "zscore": 1.08,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.9,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "New 401k Gold IRA Investment Guide Explains the Best Way to Invest in Gold for Retirement (2026 Update) - Carroll County Mirror-Democrat",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRl9CRU4tWmRhVnFUbWk2T25FVkpySjNqUHQ0OE95NF9xanJJMzdIaWNPcFQ1b1BNNmdlREJhVlB4aTZMSW15ejRVS2NGUUtYb2Y2MWFlSlhLbVFHUlgwZVQ2R0pGOU5KangzLU85VEV6Nmh5ZWZVeVpSbDIzbFRKVUZ5Sm9kanZabW9zT0VWZDduOUh1bDM0TU41VG5YQzd6MURXZFg4VDdyeTVONjJ0YV9uclVQZWM?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "New 401k Gold IRA Investment Guide Explains the Best Way to Invest in Gold for Retirement (2026 Update) - Newswire",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdFE0YmZJVVBITHBxTzQ5eFd2ZG5oSGJOVzE2SnBTX25TNUtuQWZrX2xJc29Nak4wV3J6TXNzcnJzY0FRNDR5aU93TUllUGVSTWt1OWJpUWhCMVJVa1NZcEQ2NUdSZXpOMzNHZXh4WHQwWGlUTXlDSHBMb1RuRVZaLXMtcDJjbkd0SURLYmhoUERzdHZJUmgwbHVwSzZMMTh1c2VBOU8zZVB3U2hz?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "SSR Mining: A Very Well Positioned Company For Long Term Growth (NASDAQ:SSRM) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVkJIV25fODlxTWprMkROM1J5QTBhWnpZMVUzbjVUVFlJRllZTGFYMzlaVlI4R1hMTVAxaGtOYlk4YmljdnFTcXJmMFk2NnhRNDlCNXhucHkyUVgweVBRQmd6bG9tcEo3NDh5N1pmZzFieXFHdXR2NHVvYTlac0dTaHkzcENmS0pQcUQ5Qll3bHAwT2p3Zl9fTmJpMTdMUXlNMDYzUHNR?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.845,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 19,
+            "zscore": -0.2,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 9.01,
           "zscore": 3.77,
@@ -5947,45 +6025,6 @@
             "zscore": -0.02,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -5.8,
-          "zscore": -2.28,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.21,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold miners face margin pressure as lower prices complicate third-quarter results - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeDRreGZwMkpub24zc0hTTWJMZ3hoVktnLXgtZ2tQTVU2c29mLVRzSUxNLXRWa1J1QzQyT2ZwNG1vdXBNY3hsX3N6REp1ZFJLeGdwTVZGdHRqb08zMm4xZ25ORVdRQ2ZNMmhxdEU4TURyS2Q1eG1acTdSdHg0LTdTTXBtRDByUURJLW5aQXJPQVp0Wk9YSUVkajN6RGxzWDNWSHM3bUJTZGdhNGJTVFFuOE05cXVDY0J0cllHa1A0cWIxMlNoNkRmeVg1S09paWNNUWtZ?oc=5",
-              "sentiment": -0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold miners face margin pressure as lower prices complicate third-quarter results - Investing.com Australia",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcHlIc3JnaGtXSFAxclpiOVJuQlRERmJKYUF1MzY0TGRvSzJFSHJWdTFvQjY4YnlUSHlIV0FEQ0luQl9ZYzgwYkZGQk9uTUJ3dDR1UVpIUGhZajNuZFdGNERBUUJYb0x1emdDT2ZZS0JoUHl6bGFhdVpqQko2ZzB6NjR0elpRaTBGVkg3aTdlekZrRV9DUG9wd1l6eU40UGlHZDZYbUlJTlRIMlVXSjhRdGtNelotQXNwVkZZNEtmaHhlSWVpd2VmNGp2MS1DN0JuaWc?oc=5",
-              "sentiment": -0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "War in Iran, higher energy prices are only delaying gold's rally to $5,000; mining stocks remain undervalued – Gabelli - Kitco",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNXy1KLUdfVklTU19ybkZVc3VVVy1JakVKZHB1SlNKR2NJNEg0cVpSR3VnTVZhSFZzaWNPbWR1Y0c3MVJZSGRSdTVwMGk2X1FBRTFRZjdReEpWbk1aSTJicnhlaFlQcG1TM3JNcnpQdDZQanRiTGd3cG9kUXVsZ0c3VnZ6Ujd3M1JFbW5nT0VYdktQaWdwNHIzdnZPMEFuUDVhTnRJbGt1WVEyQzk5SWRCM2QxelNYSmk2?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "geopolitical"
-            }
-          ],
-          "coverage": {
-            "count": 42,
-            "zscore": 2.0,
-            "spike": false
-          }
         }
       ]
     }
@@ -5993,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-09",
-      "return_pct": 0.26,
-      "zscore": 0.32,
+      "return_pct": 0.8,
+      "zscore": 0.61,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-11-06",
-      "return_pct": 0.31,
-      "zscore": 0.44,
+      "date": "2026-11-09",
+      "return_pct": 1.9,
+      "zscore": 1.96,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     }
   }
 }
