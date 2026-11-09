@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T07:09:19.397383+00:00",
+  "generated_at": "2026-11-09T07:08:45.874339+00:00",
   "title": "Rotazione ETF settoriali — regola dichiaratamente non predittiva",
   "status": "ok",
   "status_reason": null,
@@ -13,9 +13,9 @@
   "confidence_threshold": null,
   "confidence_threshold_note": "Soglia D7 disattivata: richiedeva una probabilità calibrata, che non esiste sotto questa regola (ADR-036).",
   "disclaimer": "Portafoglio VIRTUALE (paper trading): nessun denaro reale, nessuna raccomandazione di acquisto o vendita. La regola di selezione è stata misurata come NON predittiva (ADR-034): serve a validare l'infrastruttura di misura, non a generare rendimento.",
-  "as_of": "2026-10-30 04:00:00+00:00",
+  "as_of": "2026-11-06 05:00:00+00:00",
   "benchmark": "SPY",
-  "regime": "bull_low_vol",
+  "regime": "bull_high_vol",
   "horizons": [
     20,
     60
@@ -26,64 +26,16 @@
   "items": [
     {
       "rank": 1,
-      "asset": "OILGAS",
-      "ticker": "XOP",
-      "name": "Oil & Gas E&P (XOP)",
-      "selected": true,
-      "target_weight": 0.2,
-      "selection_score": 0.238883,
-      "selection_rank_pct": 1.0,
-      "realized_vol_60": 0.2559,
-      "close": 203.76,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "positive"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 2,
-      "asset": "ENERGY",
-      "ticker": "XLE",
-      "name": "Energy (XLE)",
-      "selected": true,
-      "target_weight": 0.2,
-      "selection_score": 0.225341,
-      "selection_rank_pct": 0.95,
-      "realized_vol_60": 0.2123,
-      "close": 70.02,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "positive"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 3,
       "asset": "HEALTH",
       "ticker": "XLV",
       "name": "Health Care (XLV)",
       "selected": true,
       "target_weight": 0.2,
-      "selection_score": 0.142739,
-      "selection_rank_pct": 0.9,
-      "realized_vol_60": 0.1749,
-      "close": 184.87,
-      "regime": "bull_low_vol",
+      "selection_score": 0.154122,
+      "selection_rank_pct": 1.0,
+      "realized_vol_60": 0.1901,
+      "close": 184.8,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -94,20 +46,20 @@
           "direction": "positive"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
-      "rank": 4,
+      "rank": 2,
       "asset": "STAPLES",
       "ticker": "XLP",
       "name": "Consumer Staples (XLP)",
       "selected": true,
       "target_weight": 0.2,
-      "selection_score": 0.071815,
-      "selection_rank_pct": 0.85,
-      "realized_vol_60": 0.1604,
-      "close": 89.42,
-      "regime": "bull_low_vol",
+      "selection_score": 0.106735,
+      "selection_rank_pct": 0.95,
+      "realized_vol_60": 0.1834,
+      "close": 90.08,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -118,20 +70,20 @@
           "direction": "positive"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
-      "rank": 5,
-      "asset": "CYBER",
-      "ticker": "CIBR",
-      "name": "Cybersecurity (CIBR)",
+      "rank": 3,
+      "asset": "ENERGY",
+      "ticker": "XLE",
+      "name": "Energy (XLE)",
       "selected": true,
       "target_weight": 0.2,
-      "selection_score": 0.062433,
-      "selection_rank_pct": 0.8,
-      "realized_vol_60": 0.3568,
-      "close": 101.03,
-      "regime": "bull_low_vol",
+      "selection_score": 0.067574,
+      "selection_rank_pct": 0.9,
+      "realized_vol_60": 0.2397,
+      "close": 61.62,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -142,20 +94,20 @@
           "direction": "positive"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
-      "rank": 6,
+      "rank": 4,
       "asset": "MATERIALS",
       "ticker": "XLB",
       "name": "Materials (XLB)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": 0.029843,
-      "selection_rank_pct": 0.75,
-      "realized_vol_60": 0.1377,
-      "close": 52.74,
-      "regime": "bull_low_vol",
+      "selected": true,
+      "target_weight": 0.2,
+      "selection_score": 0.050092,
+      "selection_rank_pct": 0.85,
+      "realized_vol_60": 0.1635,
+      "close": 51.95,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -166,92 +118,20 @@
           "direction": "positive"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
-      "rank": 7,
-      "asset": "BIOTECH",
-      "ticker": "XBI",
-      "name": "Biotech (XBI)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": 0.023844,
-      "selection_rank_pct": 0.7,
-      "realized_vol_60": 0.3036,
-      "close": 155.98,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "positive"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 8,
-      "asset": "UTILITIES",
-      "ticker": "XLU",
-      "name": "Utilities (XLU)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": 0.022779,
-      "selection_rank_pct": 0.65,
-      "realized_vol_60": 0.1575,
-      "close": 43.43,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "positive"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 9,
-      "asset": "FINANCE",
-      "ticker": "XLF",
-      "name": "Financials (XLF)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": -0.004763,
-      "selection_rank_pct": 0.6,
-      "realized_vol_60": 0.126,
-      "close": 56.51,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "negative"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 10,
+      "rank": 5,
       "asset": "DISCRETIONARY",
       "ticker": "XLY",
       "name": "Consumer Discretionary (XLY)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": -0.006615,
-      "selection_rank_pct": 0.55,
-      "realized_vol_60": 0.1537,
-      "close": 115.38,
-      "regime": "bull_low_vol",
+      "selected": true,
+      "target_weight": 0.2,
+      "selection_score": 0.047246,
+      "selection_rank_pct": 0.8,
+      "realized_vol_60": 0.1961,
+      "close": 117.58,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -259,71 +139,167 @@
       "top_factors": [
         {
           "name": "rel_ret_60",
-          "direction": "negative"
+          "direction": "positive"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
-      "rank": 11,
-      "asset": "REALESTATE",
-      "ticker": "XLRE",
-      "name": "Real Estate (XLRE)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": -0.014225,
-      "selection_rank_pct": 0.5,
-      "realized_vol_60": 0.1361,
-      "close": 43.17,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "negative"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 12,
-      "asset": "TECH",
-      "ticker": "XLK",
-      "name": "Technology (XLK)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": -0.016008,
-      "selection_rank_pct": 0.45,
-      "realized_vol_60": 0.236,
-      "close": 179.51,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "negative"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 13,
+      "rank": 6,
       "asset": "GOLD_MINERS",
       "ticker": "GDX",
       "name": "Gold Miners (GDX)",
       "selected": false,
       "target_weight": 0.0,
-      "selection_score": -0.067122,
-      "selection_rank_pct": 0.4,
-      "realized_vol_60": 0.466,
-      "close": 77.09,
-      "regime": "bull_low_vol",
+      "selection_score": 0.044814,
+      "selection_rank_pct": 0.75,
+      "realized_vol_60": 0.4829,
+      "close": 87.6,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "positive"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 7,
+      "asset": "UTILITIES",
+      "ticker": "XLU",
+      "name": "Utilities (XLU)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": 0.038942,
+      "selection_rank_pct": 0.7,
+      "realized_vol_60": 0.155,
+      "close": 43.13,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "positive"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 8,
+      "asset": "FINANCE",
+      "ticker": "XLF",
+      "name": "Financials (XLF)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": 0.036996,
+      "selection_rank_pct": 0.65,
+      "realized_vol_60": 0.1613,
+      "close": 57.16,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "positive"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 9,
+      "asset": "REALESTATE",
+      "ticker": "XLRE",
+      "name": "Real Estate (XLRE)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": 0.03579,
+      "selection_rank_pct": 0.6,
+      "realized_vol_60": 0.1519,
+      "close": 44.0,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "positive"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 10,
+      "asset": "OILGAS",
+      "ticker": "XOP",
+      "name": "Oil & Gas E&P (XOP)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": 0.026132,
+      "selection_rank_pct": 0.55,
+      "realized_vol_60": 0.2924,
+      "close": 173.77,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "positive"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 11,
+      "asset": "BIOTECH",
+      "ticker": "XBI",
+      "name": "Biotech (XBI)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": 0.02276,
+      "selection_rank_pct": 0.5,
+      "realized_vol_60": 0.3439,
+      "close": 152.21,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "positive"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 12,
+      "asset": "COMMSERV",
+      "ticker": "XLC",
+      "name": "Communication Svcs (XLC)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": -0.013474,
+      "selection_rank_pct": 0.45,
+      "realized_vol_60": 0.1952,
+      "close": 104.79,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -334,20 +310,44 @@
           "direction": "negative"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 13,
+      "asset": "CLEANENERGY",
+      "ticker": "ICLN",
+      "name": "Clean Energy (ICLN)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": -0.051626,
+      "selection_rank_pct": 0.4,
+      "realized_vol_60": 0.2499,
+      "close": 16.45,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "negative"
+        }
+      ],
+      "freshness_days": 3.09
     },
     {
       "rank": 14,
-      "asset": "SEMIS",
-      "ticker": "SMH",
-      "name": "Semiconductors (SMH)",
+      "asset": "CYBER",
+      "ticker": "CIBR",
+      "name": "Cybersecurity (CIBR)",
       "selected": false,
       "target_weight": 0.0,
-      "selection_score": -0.07146,
+      "selection_score": -0.056768,
       "selection_rank_pct": 0.35,
-      "realized_vol_60": 0.3596,
-      "close": 522.49,
-      "regime": "bull_low_vol",
+      "realized_vol_60": 0.3828,
+      "close": 91.04,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -358,7 +358,7 @@
           "direction": "negative"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
       "rank": 15,
@@ -367,11 +367,11 @@
       "name": "Industrials (XLI)",
       "selected": false,
       "target_weight": 0.0,
-      "selection_score": -0.07726,
+      "selection_score": -0.069684,
       "selection_rank_pct": 0.3,
-      "realized_vol_60": 0.1312,
-      "close": 167.4,
-      "regime": "bull_low_vol",
+      "realized_vol_60": 0.1591,
+      "close": 162.67,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -382,20 +382,20 @@
           "direction": "negative"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
       "rank": 16,
-      "asset": "COMMSERV",
-      "ticker": "XLC",
-      "name": "Communication Svcs (XLC)",
+      "asset": "TECH",
+      "ticker": "XLK",
+      "name": "Technology (XLK)",
       "selected": false,
       "target_weight": 0.0,
-      "selection_score": -0.084231,
+      "selection_score": -0.083035,
       "selection_rank_pct": 0.25,
-      "realized_vol_60": 0.1847,
-      "close": 99.9,
-      "regime": "bull_low_vol",
+      "realized_vol_60": 0.2899,
+      "close": 164.74,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -406,68 +406,20 @@
           "direction": "negative"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     },
     {
       "rank": 17,
-      "asset": "ROBOTICS",
-      "ticker": "BOTZ",
-      "name": "Robotics & AI (BOTZ)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": -0.11351,
-      "selection_rank_pct": 0.2,
-      "realized_vol_60": 0.2174,
-      "close": 32.22,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "negative"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 18,
-      "asset": "CLEANENERGY",
-      "ticker": "ICLN",
-      "name": "Clean Energy (ICLN)",
-      "selected": false,
-      "target_weight": 0.0,
-      "selection_score": -0.140812,
-      "selection_rank_pct": 0.15,
-      "realized_vol_60": 0.2211,
-      "close": 15.31,
-      "regime": "bull_low_vol",
-      "probability_outperform": null,
-      "expected_excess_return": null,
-      "expected_volatility": null,
-      "confidence": "not_applicable",
-      "top_factors": [
-        {
-          "name": "rel_ret_60",
-          "direction": "negative"
-        }
-      ],
-      "freshness_days": 3.13
-    },
-    {
-      "rank": 19,
       "asset": "DEFENSE",
       "ticker": "ITA",
       "name": "Aerospace & Defense (ITA)",
       "selected": false,
       "target_weight": 0.0,
-      "selection_score": -0.145769,
-      "selection_rank_pct": 0.1,
-      "realized_vol_60": 0.1828,
-      "close": 209.74,
-      "regime": "bull_low_vol",
+      "selection_score": -0.117847,
+      "selection_rank_pct": 0.2,
+      "realized_vol_60": 0.2091,
+      "close": 68.98,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -478,7 +430,55 @@
           "direction": "negative"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 18,
+      "asset": "ROBOTICS",
+      "ticker": "BOTZ",
+      "name": "Robotics & AI (BOTZ)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": -0.126602,
+      "selection_rank_pct": 0.15,
+      "realized_vol_60": 0.2535,
+      "close": 31.05,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "negative"
+        }
+      ],
+      "freshness_days": 3.09
+    },
+    {
+      "rank": 19,
+      "asset": "SEMIS",
+      "ticker": "SMH",
+      "name": "Semiconductors (SMH)",
+      "selected": false,
+      "target_weight": 0.0,
+      "selection_score": -0.160048,
+      "selection_rank_pct": 0.1,
+      "realized_vol_60": 0.4321,
+      "close": 463.96,
+      "regime": "bull_high_vol",
+      "probability_outperform": null,
+      "expected_excess_return": null,
+      "expected_volatility": null,
+      "confidence": "not_applicable",
+      "top_factors": [
+        {
+          "name": "rel_ret_60",
+          "direction": "negative"
+        }
+      ],
+      "freshness_days": 3.09
     },
     {
       "rank": 20,
@@ -487,11 +487,11 @@
       "name": "Uranium/Nuclear (URA)",
       "selected": false,
       "target_weight": 0.0,
-      "selection_score": -0.204948,
+      "selection_score": -0.2329,
       "selection_rank_pct": 0.05,
-      "realized_vol_60": 0.4246,
-      "close": 33.73,
-      "regime": "bull_low_vol",
+      "realized_vol_60": 0.4372,
+      "close": 32.34,
+      "regime": "bull_high_vol",
       "probability_outperform": null,
       "expected_excess_return": null,
       "expected_volatility": null,
@@ -502,10 +502,210 @@
           "direction": "negative"
         }
       ],
-      "freshness_days": 3.13
+      "freshness_days": 3.09
     }
   ],
   "past_predictions": [
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "GOLD_MINERS",
+      "horizon_days": 20,
+      "selected": true,
+      "selection_rank": 1,
+      "excess_return": 0.036772,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "CYBER",
+      "horizon_days": 20,
+      "selected": true,
+      "selection_rank": 2,
+      "excess_return": -0.116774,
+      "outperformed": false,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "OILGAS",
+      "horizon_days": 20,
+      "selected": true,
+      "selection_rank": 3,
+      "excess_return": -0.03709,
+      "outperformed": false,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "ENERGY",
+      "horizon_days": 20,
+      "selected": true,
+      "selection_rank": 4,
+      "excess_return": 0.002424,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "TECH",
+      "horizon_days": 20,
+      "selected": true,
+      "selection_rank": 5,
+      "excess_return": -0.115655,
+      "outperformed": false,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "SEMIS",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 6,
+      "excess_return": -0.175412,
+      "outperformed": false,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "HEALTH",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 7,
+      "excess_return": 0.137493,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "BIOTECH",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 8,
+      "excess_return": 0.045444,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "ROBOTICS",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 9,
+      "excess_return": -0.06927,
+      "outperformed": false,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "URANIUM",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 10,
+      "excess_return": -0.113048,
+      "outperformed": false,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "COMMSERV",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 11,
+      "excess_return": 0.004946,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "STAPLES",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 12,
+      "excess_return": 0.135297,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "MATERIALS",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 13,
+      "excess_return": 0.10657,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "FINANCE",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 14,
+      "excess_return": 0.099989,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "DISCRETIONARY",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 15,
+      "excess_return": 0.097503,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "INDUSTRIAL",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 16,
+      "excess_return": 0.016712,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "CLEANENERGY",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 17,
+      "excess_return": 0.007557,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "REALESTATE",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 18,
+      "excess_return": 0.113027,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "UTILITIES",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 19,
+      "excess_return": 0.097125,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
+    {
+      "emitted_at": "2026-10-12T16:29:30.845071+00:00",
+      "asset": "DEFENSE",
+      "horizon_days": 20,
+      "selected": false,
+      "selection_rank": 20,
+      "excess_return": 0.056993,
+      "outperformed": true,
+      "resolved_price_date": "2026-11-06T05:00:00+00:00"
+    },
     {
       "emitted_at": "2026-10-05T15:33:22.908118+00:00",
       "asset": "OILGAS",
@@ -905,206 +1105,6 @@
       "excess_return": -0.055473,
       "outperformed": false,
       "resolved_price_date": "2026-10-23T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "GOLD_MINERS",
-      "horizon_days": 20,
-      "selected": true,
-      "selection_rank": 1,
-      "excess_return": -0.083426,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "OILGAS",
-      "horizon_days": 20,
-      "selected": true,
-      "selection_rank": 2,
-      "excess_return": 0.0534,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "ENERGY",
-      "horizon_days": 20,
-      "selected": true,
-      "selection_rank": 3,
-      "excess_return": 0.065369,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "CYBER",
-      "horizon_days": 20,
-      "selected": true,
-      "selection_rank": 4,
-      "excess_return": -0.012533,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "HEALTH",
-      "horizon_days": 20,
-      "selected": true,
-      "selection_rank": 5,
-      "excess_return": 0.051377,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "BIOTECH",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 6,
-      "excess_return": -0.08117,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "COMMSERV",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 7,
-      "excess_return": -0.003189,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "FINANCE",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 8,
-      "excess_return": -0.004617,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "TECH",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 9,
-      "excess_return": -0.03325,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "STAPLES",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 10,
-      "excess_return": 0.063124,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "MATERIALS",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 11,
-      "excess_return": 0.021243,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "DISCRETIONARY",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 12,
-      "excess_return": 0.013062,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "ROBOTICS",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 13,
-      "excess_return": -0.061575,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "REALESTATE",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 14,
-      "excess_return": -0.002404,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "INDUSTRIAL",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 15,
-      "excess_return": -0.011115,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "URANIUM",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 16,
-      "excess_return": -0.151388,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "SEMIS",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 17,
-      "excess_return": -0.060006,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "DEFENSE",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 18,
-      "excess_return": -0.024354,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "UTILITIES",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 19,
-      "excess_return": 0.032511,
-      "outperformed": true,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
-    },
-    {
-      "emitted_at": "2026-09-21T13:37:02.377910+00:00",
-      "asset": "CLEANENERGY",
-      "horizon_days": 20,
-      "selected": false,
-      "selection_rank": 20,
-      "excess_return": -0.072094,
-      "outperformed": false,
-      "resolved_price_date": "2026-10-16T04:00:00+00:00"
     }
   ]
 }
