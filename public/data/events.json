@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T18:34:00+00:00",
+  "generated_at": "2026-11-09T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 134,
-            "zscore": 1.49,
+            "count": 133,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -1215,12 +1215,28 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 3.25,
-          "zscore": 1.75,
+          "return_pct": 3.73,
+          "zscore": 1.97,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "European Stocks Recover As Banking And Technology Shares Lead Market Gains - DirectorsTalk Interviews",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSVFEX1o4ZW1ydkdXanlQcHZVMnBFWkRwWC1KajNyVThvMGZjYVRtdDVsTEoycGg5T3hKZHcxMVhodDA1Um5MMlkySUhCTWg1Z2xXbWwweXYzc09jWks3UlhzUHV0S1ZremY0cjdBSGxyakI5Ml85UGFvQmRnS2k1blJfR29xZ1lvLTJyZldSVS1wWERZeVNzY2tFMFZCeE5DNTZxd3duSUlDUE9YamtpVzlpUm5DSGNKWTZCcGdmVUZEYnc?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.823,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_world",
               "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
@@ -1228,27 +1244,11 @@
               "sentiment": 0.494,
               "relevance": 0.798,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Is Wall Street Underpricing AI Now? Tech Stocks Look Cheap For First Time In 9 Years - NDTV Profit",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdkZKQkotV3ZIVk1qS2haTUF5bWFaLXJnQ2pzZHA1UWo1NGZoVlA5SFc0R0VDZzNxQW5nYTBpbl9SYlBVX2IzN19jc2liTzZKR21yWDhYelNtTFEzSWJyTVhYT1F3S2oyVktSa3IyZmpTLVBFMGFYU3Nvd1FlMTEyN1NCUFFaV0NBdW1yUEZEVWxydzM0V1hxLWxHblVUNHZPckpBc1ZlcVRKcGdGMFJNLXZXRldnbXRZMTVVam1jTnJqNXdmblHSAc4BQVVfeXFMTmxza2YzTjNvT0RuM0pGWGMyeWtMdk9pSjhBRTVPUk93cmRPNGs1QUhUd1ZjSlktekVNZ21BYnNnTFppUlRRaTRqbVVob2R1WUl0UXRmdGZJQVNrZVRZSjk2VzEyTGt2c2p0S2pwUmJGUGtjdDAxczhnYlBhZmRKYmtta2dDQm1YRG45eUtDTWo1RF9ZVzVHU3BrT3BIbTZ6dlZhYm05ZjBMOVp1SEs2MVR6RHFFemx1QXZQa2cteEF2X0pBbUx6LUltQ25yTUE?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": -0.63,
+            "count": 38,
+            "zscore": -0.38,
             "spike": false
           }
         },
@@ -1365,7 +1365,7 @@
           ],
           "coverage": {
             "count": 96,
-            "zscore": 2.16,
+            "zscore": 2.17,
             "spike": false
           }
         },
@@ -2179,12 +2179,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 3.97,
-          "zscore": 3.5,
+          "return_pct": 3.82,
+          "zscore": 3.38,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_world",
               "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
@@ -2194,25 +2202,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
-            },
-            {
               "source": "googlenews_fed",
-              "title": "US October CPI Preview: Inflation Growth May Slow, How Will US Stocks, Dollar and Gold React? - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTnBnTU9ZdVZuNFpZLXZONDUxNFpVZFVKU2Z4OEU2d2lYaXlBcTdCTFpjTWo5UUhRSmdRU0dpekdLd3c4NzE3QkRCWnBGaXFpUnNpWnAyQXJjbE56THJFN3piX0dOc1dMNTE0UFlvUTYxdXE3YnAzYjJVYmxNYUw4OGZmSDh3Y3RwZXBpTTFYaU40VTg0TENxRTY0a1VFeFR1Tk1zcHNocVJENkdneDMtVVp6aEVhOXc5Q29uV2RlZmZJMjUzckhYTTVld2JoMEpEWWZPRVhvR0d0bWJWV1ZnMnVibw?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "inflation"
+              "title": "Fed should move policy 'with care' as it responds to inflation, Barkin says - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZV9Iak5hNG0wVGFsSlNEOWNkNEp6R3BNMXloRXpuSWx3T3E0WDgwbXhuNmxlaGxsa2xyd2FxZ1pxcjRxMzdiTWN2ZUNPYk5KTTNxRlFUczgtRi1tN3cwbjNldlk5UnpPZmFTMWpTNzA3Qm1CSjBVVWJpZ2ZVeUV0TlhqWm14OVBNTHdKbkR1M2NYZVBXWVpWMF9R?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.02,
+            "count": 7,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -2419,45 +2419,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-11-09",
-          "return_pct": 1.87,
-          "zscore": 1.61,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": 2.3,
-          "events": [
-            {
-              "source": "googlenews_world",
-              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "US October CPI Preview: Inflation Growth May Slow, How Will US Stocks, Dollar and Gold React? - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTnBnTU9ZdVZuNFpZLXZONDUxNFpVZFVKU2Z4OEU2d2lYaXlBcTdCTFpjTWo5UUhRSmdRU0dpekdLd3c4NzE3QkRCWnBGaXFpUnNpWnAyQXJjbE56THJFN3piX0dOc1dMNTE0UFlvUTYxdXE3YnAzYjJVYmxNYUw4OGZmSDh3Y3RwZXBpTTFYaU40VTg0TENxRTY0a1VFeFR1Tk1zcHNocVJENkdneDMtVVp6aEVhOXc5Q29uV2RlZmZJMjUzckhYTTVld2JoMEpEWWZPRVhvR0d0bWJWV1ZnMnVibw?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -0.76,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-10-22",
           "return_pct": 2.07,
           "zscore": 2.02,
@@ -2649,6 +2610,45 @@
           "coverage": {
             "count": 6,
             "zscore": 0.66,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-08-21",
+          "return_pct": -2.28,
+          "zscore": -2.79,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.43,
+          "events": [
+            {
+              "source": "googlenews_utilities",
+              "title": "ASX Midday Sector Update: Utilities Stocks Advance, Real Estate Sector Struggles - Yahoo Finance Australia",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMXhWNVozQlRCZlY0XzUtR0RGY0FQZUJleUxUUUZ3cDVkaURTVHE2bmFRMGlvVFNZbDlBNnV2MXhvZE53dEEyeFRfRkh5cjN5RXNaWksyS1NzSnVadnltOElWM1FxaHo4YmFWUGdSVWgwaVRacFV3WXUwcW1qZDlmVG02SkJfQTVvSkgw?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "ASX Midday Sector Update: Utilities Stocks Advance, Real Estate Sector Struggles - marketscreener.com",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbVZSUTc5RUdYZ3ZZN2M0T1N6Z05MUG80RXdNNS1GcmR1V0tkdlpJV3l1aTZLYm5YVldONGlpMWhzRWhZV2lQZEZkdnZOMHIyN3hSeUhqbUlIeFdMNmk5NEhwYmtCcVZjUlhPUFpZaEpmc0huVFFoOUhwenI2LXMyaHdHeGdYWkNoenpROUFmR0hJc2xkTG52RGJSR1EwYTNEY3RLUFNwTkdaQktrWnJQbzJYb1l5Mm5fcEh3WXFqNjM1WUV5bjIzN09qMA?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_utilities",
+              "title": "Market Wrap: Stocks Fall as Industrials and Utilities Decline - Morningstar",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVUtGdkFuRHZqR0E5WmRudF9LWGlBQUFDcHd5enl5dmQ2QXZpY1QwSEFrTTFKRHJLR2NsQVk4cHVtamltN0pEdVdMVTA2Z0oxUUQyMUJjSk5yOXFpRlJzOVY4RE1ZeERHQzlqdTNNTkVoX1piRjE5akNaWElOUnFxZC1kdEkxWnJOZjR1aWg3SXBfUDQ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": 0.09,
             "spike": false
           }
         }
@@ -2902,12 +2902,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 3.15,
-          "zscore": 2.1,
+          "return_pct": 2.92,
+          "zscore": 1.93,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_world",
               "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
@@ -2923,19 +2931,11 @@
               "sentiment": 0.494,
               "relevance": 0.798,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Lululemon Athletica vs. On: Which Consumer Stock Is a Better Buy for 2027? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTXdIQ0VUeXVldTRZTENBUW5EcE1sRXNfSE84Q1psTTJqQUF5eGhqY29jdHNjY243eWYwdTNQcWQwVFFEelRYVjRkclJYRi1KSC1udW9Sc2pDdWV3bUNoZm9XZTlxVEZGaFVMdUxVMDlBSUE4RDVHQ0pmNTFYa3hSWkJBSHQ0d1V5SFB2N2dVbU14LUptWG56NEtadk5SSVVZV0dmUA?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.58,
+            "count": 9,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -3143,12 +3143,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 2.58,
-          "zscore": 2.2,
+          "return_pct": 1.91,
+          "zscore": 1.59,
           "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 2.3,
+          "severity": "notable",
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_world",
               "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
@@ -3158,20 +3166,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
-            },
-            {
               "source": "googlenews_fed",
-              "title": "US October CPI Preview: Inflation Growth May Slow, How Will US Stocks, Dollar and Gold React? - TradingKey",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTnBnTU9ZdVZuNFpZLXZONDUxNFpVZFVKU2Z4OEU2d2lYaXlBcTdCTFpjTWo5UUhRSmdRU0dpekdLd3c4NzE3QkRCWnBGaXFpUnNpWnAyQXJjbE56THJFN3piX0dOc1dMNTE0UFlvUTYxdXE3YnAzYjJVYmxNYUw4OGZmSDh3Y3RwZXBpTTFYaU40VTg0TENxRTY0a1VFeFR1Tk1zcHNocVJENkdneDMtVVp6aEVhOXc5Q29uV2RlZmZJMjUzckhYTTVld2JoMEpEWWZPRVhvR0d0bWJWV1ZnMnVibw?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "inflation"
+              "title": "Fed should move policy 'with care' as it responds to inflation, Barkin says - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZV9Iak5hNG0wVGFsSlNEOWNkNEp6R3BNMXloRXpuSWx3T3E0WDgwbXhuNmxlaGxsa2xyd2FxZ1pxcjRxMzdiTWN2ZUNPYk5KTTNxRlFUczgtRi1tN3cwbjNldlk5UnpPZmFTMWpTNzA3Qm1CSjBVVWJpZ2ZVeUV0TlhqWm14OVBNTHdKbkR1M2NYZVBXWVpWMF9R?oc=5",
+              "sentiment": 0.494,
+              "relevance": 0.798,
+              "event_type": "fed"
             }
           ],
           "coverage": {
@@ -3383,45 +3383,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-11-09",
-          "return_pct": 2.06,
-          "zscore": 1.64,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": 2.3,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "NNN REIT (NNN) Stock Still Looks Like A Bargain Following Q3 Results - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRnh4cFBNWDNEcERfOUZXbVZoaXNLUDRQOEY3TGQtbTBvYTVpSXdWUXZtVEUwYXlyS0EzM2pQS0w4aHlLUlk3emR6UXJJUzNxMnJCZkJfUDJsR1dqVzBKUEZESXdSUXZGRktGcUR4MzdaOThiU2stb1NQN1hONVF3N1c1V3RZMGtMOGVfTTdrTQ?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_world",
-              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 8,
-            "zscore": 0.89,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-05",
           "return_pct": -1.82,
           "zscore": -1.94,
@@ -3615,6 +3576,45 @@
             "zscore": -0.79,
             "spike": false
           }
+        },
+        {
+          "date": "2026-10-09",
+          "return_pct": 1.86,
+          "zscore": 3.06,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.59,
+          "events": [
+            {
+              "source": "googlenews_realestate",
+              "title": "3 Data Center REIT Stocks for AI Infrastructure Growth - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVTRwYjIyODJ0N3BEdUl1NkloN2dVVV9zZnpoS3UyaWxZRTRYSmIyYnpBemxWdzViMkM0UnQ2QURqenFvTURhM3BVMkcyQi1CY011QTZabWJJdVdLSjlfdk13MkwxS213Si1qSXdBcFRMRTNaNFEyNzJzQzF1a082TThSZ0lod2VPRjZfSkp2RExfUU5BQ0lMcjZyWnFpUXhZOVpnQ1RvRnZhNWVzNzdEall0ZDk0OGVhY1c0T2VxNUExVXfSAcgBQVVfeXFMT3J6UjU2SzVHQndYeWVNVUhua2s3ekJWQjV3U3doWXdHVndFcXhHZEZxOXVuQWJIREh0X195VUdzalhGWVgxVXYtOW51RTFMZzZmamI0RmdIc1BnT3ZFcXJXQTB1ckZmMlZIWHRVRzEzLVlER09GOGxJVHBGV1NuX09nUFdFYVNxd0hwS3A4dHhiV2R5VUdaWElZUnA4UUNNX291aHo0T1E2bktqS0xPLS1SejdYRzJfY1Uyc0dpcHVNNGJlOXdUbG4?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "Why REITs aren't getting killed by rising interest rates this time around - CNBC",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOGRwWUlJX29ua25MX3o4TW1iVW5DeFVOcGpXaHR2cmxmdXRkOHAxem96OEpzR2V1M3BoRFJ4SDNKVWJIbzFJblVwOF9fdE0tUFU3bjRoR1l0N3VCVkRNUGhNOW9ueU1sWXdsNmtQUUFnSnp3ang0cDZRMDkxeDdGMHRIZjd0T0dxUFlrTkFGTnRJV3hmbkdpb3dDU0ozTmdSZFNBb9IBqgFBVV95cUxQM3N3bU1mZlA1UjZSeVEwVnNLUEFZZ0VCa0dFRktLS1ZPYTBKYlNQNEdiOFJpdDNKV3dzMFJPWDBIVmxfYmJ6NnppbVVQd2MyN194X2U0VG83V1ctOFNCblRaTnNhb0h6MlNXUG4zUGhGREM5Z05nUDZKeVNLWEVFMk1BMzg4c0JZMkNON1BrMERMNlctWUJjOWZ6SjM0OGNQUXZNX3JzZ2NxQQ?oc=5",
+              "sentiment": 0.764,
+              "relevance": 0.706,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "REITs Are Cheap: High Yield REIT Funds For Passive Retirement Income (NYSEARCA:SPY) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWml5a3ZIaFNzdVNwV3I5bk80M0ZWU0REX19aMk9kOTRSZm9FdS1feE9jQ2VlTVJZMU1qTXJPbndRVnVMRDZfeUhVMS1sa1JnYVhHMXI2dm1UTF8xSG8xM1U3V1FmOEkwcHdsM2NOSjdlQmJidEM5ZExSNkF5MUFCd2dQS3FhQ2tQYVhYdDFyRFQxYjZMdDN5UnR3T0NmRG9yVVhZS2FKd1J0TWpi?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.681,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.92,
+            "spike": false
+          }
         }
       ]
     },
@@ -3625,12 +3625,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 2.24,
-          "zscore": 2.06,
+          "return_pct": 2.45,
+          "zscore": 2.24,
           "classification": "market-wide",
           "severity": "notable",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_commserv",
               "title": "Zacks Industry Outlook Highlights Chunghwa Telecom, Liberty Global and Vivendi - Yahoo Finance",
@@ -3646,19 +3654,11 @@
               "sentiment": 0.527,
               "relevance": 0.811,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_world",
-              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.44,
+            "count": 8,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -3866,11 +3866,11 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 4.46,
-          "zscore": 1.67,
-          "classification": "market-wide",
+          "return_pct": 5.05,
+          "zscore": 1.86,
+          "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 51,
-            "zscore": -0.25,
+            "count": 62,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -4107,11 +4107,11 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 5.63,
-          "zscore": 2.41,
+          "return_pct": 6.18,
+          "zscore": 2.62,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
             {
               "source": "googlenews_uranium",
@@ -4122,19 +4122,19 @@
               "event_type": "other"
             },
             {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.501,
+              "event_type": "inflation"
+            },
+            {
               "source": "googlenews_uranium",
               "title": "Nuclear stocks surge as Oklo results spark rally for reactors, uranium suppliers (OKLO:NYSE) - Seeking Alpha",
               "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMW5tUE91cENKZnpEaS03QVNBZVluM3hnVXlhb3NIWEZpeWgyWExkMWljWlhpMVJfd0Rpcms4N0JPMXFnS1BqenFUeFd6ZG1abkV0N1IxVFcyYXRuMmxSS19iNmh0QTh0Z0tlYTh1amhxUllkT3NsQ2s1TERpZUZ0Mlk3R3ZJemZZMG9nbEtKdk5jS1ZCQ29lTzJmRVcyaWszZHo5V3pvMEszMmZhNXYxaTZnaGVjeXhD?oc=5",
               "sentiment": 0.226,
               "relevance": 0.491,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_world",
-              "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.479,
               "event_type": "other"
             }
           ],
@@ -4830,12 +4830,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 4.0,
-          "zscore": 2.77,
+          "return_pct": 3.9,
+          "zscore": 2.7,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_defense",
               "title": "iShares U.S. Aerospace & Defense ETF vs. State Street SPDR S&P Aerospace & Defense ETF: These Defense ETFs Have a Surprising Difference Investors Should Know for 2027 - The Globe and Mail",
@@ -4851,19 +4859,11 @@
               "sentiment": 0.494,
               "relevance": 0.798,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.44,
+            "count": 5,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -5071,12 +5071,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 2.4,
-          "zscore": 1.53,
+          "return_pct": 2.67,
+          "zscore": 1.68,
           "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": 2.3,
+          "severity": "major",
+          "market_return_pct": 2.35,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
             {
               "source": "googlenews_robotics",
               "title": "Nvidia Reveals New Robot AI with 95% Success Rate in Tests - TipRanks",
@@ -5091,14 +5099,6 @@
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
               "sentiment": 0.494,
               "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
               "event_type": "other"
             }
           ],
@@ -5312,11 +5312,11 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 3.7,
-          "zscore": 1.7,
+          "return_pct": 4.0,
+          "zscore": 1.82,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
             {
               "source": "googlenews_cyber",
@@ -5327,25 +5327,25 @@
               "event_type": "other"
             },
             {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
+            },
+            {
               "source": "googlenews_world",
               "title": "UBS chief on the markets’ AI error, M&A and that Credit Suisse rescue - AFR",
               "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVdqZDhGcE42c3NLUW9kZERuemlOM3p2SXpqbGp2TWJIbnNybDlVUmFzQmZhd0xIX0p2REl2bDkyUmkxaWFrd3ZOSFdwdzJhNHRiZ2xUOWF1eHhERWJoSnN2cUpVYUJySVJJb0tRU25VeEw2c0pjdW9FWjdXV3luX2toamZmREhlYWlBWmhCMXNoZXViYmJ4TlVPTFpvRk9MVFdnSUR3OHp5WmREd1JNenlYaUNfM3Vzc1dJ?oc=5",
               "sentiment": 0.494,
               "relevance": 0.798,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Mid and smallcap stocks could see strong gains in 2027, but expect volatility, says Deepak Shenoy, Capital - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMC1TY2RlZDY2WmdJekVZMl9KWDRvSDZncklTbTVNekNwdnlrQW5sRnBpa254ZkZCVWdDaHEtRl9hdFFDaDlQV3hDX1oyMnpwU2NUdmNCS0tudmNJei1oWVVqLXAwanAxc1czVEs5UW8wZlUycmpYMlI0REgxWHFwdy1iY09PNmxoYWlMQ005cVFVQmpOSzdwNFFEZXl5N05nWDZZd2lPd1paOENRX25xaDFjXy11TEVYSFAyRE5mSXhOaV8wVDdCMmd5WEgxQWhzYktjRnRHQkJidlViMXBoX1B0Y2VGNWJYTFJVM191SjVJRzFLcC1GdHFTY21CaUp6OW51aXdZT1NHX2t4R0VoaTdB0gGXAkFVX3lxTE1lNFZTdXpLaDlLWWNaS3JGNTYxY0tyejdmS3Y5aE43aFQzNWUxRkRTazJOYXZXSk5sSF81QmxjdHJBT1Q5QjUtdmtvcl94SGZTTTJfVkRwMV9qR0V0cmVudGQtaXpVaExXcF9Gd2dwTUk2WFZaR2lud19kaVZtenZCd3hYSFFjWlphS0Z6RHFsRWg0Y20xMEtmb19acU1BUlA3UWhXZXo2cDBnNG5DdEYxcEVHY0s5OXVHVkh3LVcxV3cyS0VObEpXY3NIZU9IcUloblotTDYyQTBqT08ycURQb3UwNFRMWktibS1yRkxWVWtESFdMZnItM19XRjAxa0FYaF8yeFZkdDRtLXhXRUhwbnI0MEpWWQ?oc=5",
-              "sentiment": 0.431,
-              "relevance": 0.772,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -1.4,
+            "count": 4,
+            "zscore": -1.22,
             "spike": false
           }
         },
@@ -5553,11 +5553,11 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 2.89,
-          "zscore": 1.26,
+          "return_pct": 3.08,
+          "zscore": 1.35,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
             {
               "source": "googlenews_biotech",
@@ -5576,18 +5576,18 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_biotech",
-              "title": "Vir Biotechnology stock jumps 22% after hepatitis delta Phase 3 trial success - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdkk2V1VFbzR5V3RCTV8tbjVjdTZSZm9menlQMlZySHItNFlVRGJacW04VjdZYjhRalh2My1ONmNJXzE3ZW50R2YxdGU2OGRwODREVzVBZ2UwVDI2Y1liNndCZ3JSbVdoQ1NjNmlZdlpmcC1qNmR1cEw5VDIyYkJZNEZRUFBDaGgzdExyWXI2QmtzNFBaVjJKSk1ha091NVl2d0RrVU9iMEpnSzNyWl84dEliR1FoU1FTbHROMGp6OTZwejV0SFA2b3FadVJOdw?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": 1.77,
-            "spike": false
+            "count": 37,
+            "zscore": 2.8,
+            "spike": true
           }
         },
         {
@@ -5794,11 +5794,11 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": 4.02,
-          "zscore": 1.36,
+          "return_pct": 4.41,
+          "zscore": 1.48,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 2.3,
+          "market_return_pct": 2.35,
           "events": [
             {
               "source": "googlenews_gold_miners",
@@ -5818,16 +5818,16 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "SSR Mining: A Very Well Positioned Company For Long Term Growth (NASDAQ:SSRM) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVkJIV25fODlxTWprMkROM1J5QTBhWnpZMVUzbjVUVFlJRllZTGFYMzlaVlI4R1hMTVAxaGtOYlk4YmljdnFTcXJmMFk2NnhRNDlCNXhucHkyUVgweVBRQmd6bG9tcEo3NDh5N1pmZzFieXFHdXR2NHVvYTlac0dTaHkzcENmS0pQcUQ5Qll3bHAwT2p3Zl9fTmJpMTdMUXlNMDYzUHNR?oc=5",
-              "sentiment": 0.612,
-              "relevance": 0.845,
+              "title": "Best Mining Stocks To Research - November 9th - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeXppdno4czlWblgtWU8ybkxRMk56cW8tYzJJWWthcWlrdS1oSWVxWTFiNktpbjZhY2t0dE1VVGd2N2RGNjBEOEMwT3JrR25QQ1F4VU5QVmNnaEU2clJVUnF1eHpXRUVLcmI2VlphZklRRUVIaWNZb3NJLTFXd21nMVNLOHZUUEU1MnZIX2liWTM4RVB0YUtXZF8tVFNhWU4zNHo1Mg?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": 0.11,
+            "count": 27,
+            "zscore": 0.42,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-09",
-      "return_pct": -0.15,
-      "zscore": 0.09,
+      "return_pct": 0.41,
+      "zscore": 0.4,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-11-09",
-      "return_pct": 2.3,
-      "zscore": 2.34,
+      "return_pct": 2.35,
+      "zscore": 2.38,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
