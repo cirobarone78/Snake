@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T00:49:00+00:00",
+  "generated_at": "2026-11-09T03:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 134,
-            "zscore": 1.49,
+            "count": 133,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -251,12 +251,20 @@
       "moves": [
         {
           "date": "2026-11-09",
-          "return_pct": -4.3,
-          "zscore": -1.65,
+          "return_pct": -4.27,
+          "zscore": -1.63,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.93,
+          "market_return_pct": -1.08,
           "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Bitcoin, Ethereum, XRP, Dogecoin Slide as 'Fear' Sentiment Persists: Analyst Says BTC Needs to Hold This - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU01UUThHRVV4TWVtR2pOOUt1RGMyeEhRMkdfM1QxaVBWMzVKS3p1SzlIREpsdUN5dG1XWG40REhaZjRoNTZhZGE1SERRRzRLeG5wWDFmeVRhQXRnUzRQYWF2LXZhSmEwOXBYRzBBaWxRd3NiMXRRZWVGVDIzVFJrZ2V4Y04wNHRvWHUzbE5aSXNtQ3o5MVZVWmplcElyZEJzeWc?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_eth",
               "title": "ETH price range on Nov 8, 2026 at 8pm EST Crypto Prediction Market - Robinhood",
@@ -267,24 +275,16 @@
             },
             {
               "source": "googlenews_eth",
-              "title": "Bitcoin ETFs Lose $412M as Ethereum ETFs See $93M in Outflows - KuCoin",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWkhCRUdfZTc2V0JDbE9SaHNMeUNhNEpDVGRpMTJxeXZwTllVOVB5ckRmbmpTalBGLUVEV21TRHNUTHJQNXNfX1dBR2x2QUxrMWI5TUUyS0s1bkhXQk1iM252REZnQzJFVDhkMnlEeWpjQ3p3NV9MajlIcmdjZGNOajdNUVZBZzN4dEU5V3RtaVBHdVNTVmtpUQ?oc=5",
-              "sentiment": -0.402,
-              "relevance": 0.561,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "XRP drops 7% in a week while Ethereum holds, with no ETF buyers to step in - Startup Fortune",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUEJzZkpZaXZpcHpOcUdXdDktNXd5QnMxUk5hQkdZcnVRT2lvQnV4emxBMUEzZzZYdk03d1ZncE1ya0Q0LTVvOVRUd1NMbFV0YlpGVThDTk5BR1JVMDhzTjRCMmQwOGo3c0ZnUy1VSlJTUTRZcmlVY2JyZGZtTWIwWHRUYnB5am5rY2w4T0dDWGI4VmxhTklRWWZxa1B2RTNXM2c?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.518,
-              "event_type": "etf_flow"
+              "title": "ETH price range on Nov 8, 2026 at 9pm EST Crypto Prediction Market - Robinhood",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNV0pXSkVoQ245b0lXNnJySExwRE9Mb2dETnNSLUduYllocWlIcmVqc19VXzJGczJmam01LUV1dklIdFduSjFic2x1UGFDdDBhZFVZQ0JKM0JkVTVCNEVNQlNsRjkzZzBheVJXRDdaTGxmUDctTUZtb1A2U2Qzb1FCQ1VhMzFuODFySzhaX09leHNEN29QXzlPVFNGajhKTHRTV0dDVmkwaGo2aWJUR1pLZEp4UVk?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -3.72,
+            "count": 6,
+            "zscore": -3.47,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 76,
-            "zscore": -0.04,
+            "count": 77,
+            "zscore": 0.02,
             "spike": false
           }
         },
@@ -1970,8 +1970,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.09,
+            "count": 7,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 20,
-            "zscore": 0.52,
+            "count": 22,
+            "zscore": 0.79,
             "spike": false
           }
         },
@@ -5993,8 +5993,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-09",
-      "return_pct": -0.93,
-      "zscore": -0.38,
+      "return_pct": -1.08,
+      "zscore": -0.46,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
