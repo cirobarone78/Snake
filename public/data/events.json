@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T12:35:00+00:00",
+  "generated_at": "2026-11-10T15:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": -0.13,
+            "count": 46,
+            "zscore": -0.1,
             "spike": false
           }
         },
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.32,
+            "zscore": -0.31,
             "spike": false
           }
         },
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.18,
+            "zscore": 1.22,
             "spike": false
           }
         },
@@ -2531,7 +2531,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.28,
+            "zscore": 1.31,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 80,
-            "zscore": 0.61,
+            "count": 81,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -1.14,
+            "count": 6,
+            "zscore": -1.05,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 42,
-            "zscore": 3.45,
+            "count": 41,
+            "zscore": 3.32,
             "spike": true
           }
         },
@@ -5793,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-10",
+          "return_pct": -4.21,
+          "zscore": -1.46,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.38,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Why Did Eldorado Gold Cut Output Guidance as the Skouries Ramp Slowed? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPam54aWZLTjB1bkhpX3RSUjJZeWRYMlJxa2V4X2UxM1Nnc1RJZkZlZDF3U0Y0VWd0eGg0ODU2QnBFaHgxTUxLeWtZc2FFQmQzd1ZLTUo1Y01DN05PQmdDMHpPdmo3cTZ6TWRieUVQRDdYc1ZYNkY3STlRV0JTdXJaazVETnk3SFBmT01xZHBsOTFpSkVpS0ctUTY2Z3FBbUx6R3lQLWxISG9veWVVdXc?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Forget the ETF Outflows: Gold Miners Offer 3X Leverage As Cash Flow Surges - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRXUzMksyaC10TnM5cEo2SlQ2Wm9veldrQW53QXFqZFBlbFVCYW5hTHhCVmMwRF94TUpyNk43OGhPUnFJUGhtT0NaNS0wWDJFbTBZQXlLM1lHVzF6cG8wRnFvS3FPNS1hbnNOZUdHZlhJcldPTGZOWW9manIxYmVPTlhtelRJX0ZWWEhLR1NEenBYVUFiRG9HMFlwVzlxVUlXbVFB?oc=5",
+              "sentiment": -0.226,
+              "relevance": 0.691,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "4 ASX mining shares with 90% to 155% upside ahead: experts - The Motley Fool Australia",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObXJGTUJSN01oaWtQc0ZxWHRlczZaWGpjUWdCWENqX1AwdWZLZUl6cXIxZ0J0QmN3M0hQdG5UbTk4aDlIVUUzVjlfYWFFcmczTzlCQXBVUm1NcWY2cVYyTWVBd1ZDNTZCTmdKTF9yWU1JNk9xd3VLcTBTOENPWGFyWWdrcDVoYjB0ZW5QQ09jTVQ2U0lrZGc?oc=5",
+              "sentiment": -0.178,
+              "relevance": 0.671,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 18,
+            "zscore": -0.35,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 4.41,
           "zscore": 1.48,
@@ -5986,45 +6025,6 @@
             "zscore": 1.0,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-27",
-          "return_pct": 2.68,
-          "zscore": 1.28,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.6,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Visionary Copper and Gold Mines Inc. Closes Acquisition of Mineral Licenses - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVXRHYm5lYXJvaUMyTE13Slo5cnZCRHBvRGxRaFgyTlFWZ3l2andGdHRyTjJMRDhlb3l3SVQzZGlYTzlJeWpiN1ZKZ3g2MXNIRmk3THJGWmFnLWtLMG5PYkpaTmMtZjZraEczeDJabW1PYUFkYVFWWERxQnBwc1VKZ3VVOGZzOFpYeGk2Z1ZuRzd0eFRJLTR6OUZXUGZtczBweTFn?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Why gold miners fall even after record profits - Kitco",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMUNkV1NqMFlxcU90bi12T1JsTHB5Mm1sUUtsbW9XNEppb092eTZiUHNwYVI0V1hXdUY3bzRPc2NfU2ZuQ0hNY2ZfeHROdEx1dG9BQUk3SHJOUDJxMlV5RjVnYjJmMlkwc25HVjhKbTVkSnBKZjI1VUN0dGxobnNsYWFDdGJpSlV3WEZ1LUZIeWI?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Goliath Resources Limited Stock Slides as Gold Exploration Risks and Market Volatility Weigh on Investor Confidence - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN2FpZXM1QUxvajdkV2Q3Zms3MGQ4NXJSYUlTZEkxbUZJWkdsNmVoUThnaDZoUEVHaFJfeVJ3MFRYbVJvQ3hobVlpNHJEdGRReXg5S0dRVzJVOFh0b2tMNWdrY2x6SFI4ZkN5MmQyaEVwM2lzQ3lkSXB5NFRkNnhQV0VGbHdUQ0JER0FvRFgxNFF2X3FTRUNoWXl3YU1ITXNwZ24tbWFzZUd1OElQZ0dGSzhkRVFPbTFfTEZtRVBscElUaEJYSDhoaFA4NGJ2ckhJOFdVMkFaZkNaMjYwLUVr?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": -0.02,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-10",
-      "return_pct": -1.44,
-      "zscore": -0.62,
+      "return_pct": -2.04,
+      "zscore": -0.94,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 2
     },
     "equity": {
-      "date": "2026-11-09",
-      "return_pct": 2.35,
-      "zscore": 2.38,
+      "date": "2026-11-10",
+      "return_pct": -0.38,
+      "zscore": -0.29,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
