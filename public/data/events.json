@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T15:34:00+00:00",
+  "generated_at": "2026-11-10T18:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-10",
+          "return_pct": -4.34,
+          "zscore": -1.49,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.44,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPT1BOdWUzakFuRTA1SkFOeW9Ja2s0ZHF6clRXWGp5WFU1a1hzTzJFbDNySlZRdXFMVjJieW9kVXJCLTlmcHZTamdQV3Z6T053eEQydlI1cTZJTXA5WU40Y3hsdHdERXpUX3plUFNYb293bERIR3diUUhXSU5HLW44OGlGNElMY2NCRlNFYWx0UUZpNlF2SjI5OGtOS3doQVE2Nld6UHI1WFRiTWx5WEdUOTcybW02cmRLdjVBd1lJbTkyM1pjOUpF?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Spot Ethereum ETFs Daily Volume Marketshare - The Block",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5xT2lrdVFmTnJudTI3NEJ6Wm9MNEZJUnJ4UnY3VnJpUTFSU1VfY2pyZ2dxS3hyYkVFQjRIWXM5OFZyTGtjOEY1Vm5sSHJxM0dWUlJjNDdFbUU1bU9FQ2lvaE1EcUU3Tk1UTEN6RVRqbWVHRU9TbnlvSUVCNA?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Spot Ethereum ETF AUM (Daily) - The Block",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Qb2FvMGpXR01nSFA0SzNiWGhUVE9MT281WnEzX2JteHdfVmJjczB5a0VJN0R5ZjNCWmpRSXhPWl9jamlsX1FleVRIaWdrcTBibWh5QkYzbHlpMDZHcmhMYllNN1RPTFZfYzBkb193?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 39,
+            "zscore": -1.77,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-08",
           "return_pct": -5.16,
           "zscore": -2.0,
@@ -443,45 +482,6 @@
             "zscore": -0.35,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-12",
-          "return_pct": -3.56,
-          "zscore": -1.6,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.29,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Liquidity Shock Z-Score Hits 7-Month Low on Binance - CryptoQuant",
-              "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOTXFqN1RkNFlNNkwzaG50U0piOW1ZMHBlSTg3bFZ3YWZDQXlFNHdyb1Y1WG90X3htcEFxeG5reHZiM1hPY3E5TTN3T1pfeTQ4X3dQWkRKWGdmaDcxZkxLeUp4MHFaUWtsMEdFM09ReG5BX2JERG9oRnIwampkbXE3djJRWlNVZEpjeXQ3dGtwTWRESmMxTGp2NVlxYmNhMmNNcm1sWTZ1SFU4WUZfR1dYaUNpejNCXzlEMkdMenItcFh5YkREV05UckN3OEwyc1ZpM29rT3VDeFpOSVk1OXJFRWZUcWVMTjY1c1AtckpxdUoxSEhFam00TEpOTHVUMUppaE1aZWhWWXVjdUdlbEFKUWszNVRNcmpXamVVaW02aklQdUE4NTF6d3RnUDI1X3pZbkE?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin And Crypto Just Quietly Hit A Massive Price ‘Inflection Point’—But There’s A Nasty Catch - Forbes",
-              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPYzF6dlNhMDhuMzhaZ2FlZUxIY2FSNUNBTmtkRVVRTjZfX3VnMkQwWHVUZkpnSFNxbHRYVnl6MVhMUVpUNW9mNzkwazRRNE5vTHVQQ3V3ZUNQVGVqdnJJS2RKZlA2RHhTLXhpUXJUODZtRFBHNWljTXdwWU9QVWhmVU5LQUJNZ2dvTEgxX1kyU1VjZG5YUXVBUzZkWUcta19NWHZpTWxORWFza3ZOWjk1Zllzb0dLRUZYbUtnSGtiTTd6MFFqRnNwcVdDN3BtNzc3Z09uWmxINDAxTzRGYnI5MmlHeUptTGdpclY2R1BQZGlCSWVDdTFkRnZKSXVGQQ?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitmine adds 12,532 ETH as Tom Lee flags potential 'largest-ever' crypto bull market - The Block",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRExXM1l5dm5OYWpLSWhVVHA2WFlhRVdISXlZVDNGWmtUak5paTVCdnI4bE9ILVpvclJKZ3ZzMVlMOWdFNFNYTnYtQ3ZURFpYZjBzOEpfaHQ2MHREOFNzX3Y2TzFXUEYwLXA2NHAwY1pYd1VWMXhCVEE2OS1ZdVhGUG9ORXVmcktVbzFwYS1aUmhBNmp4WG4yTkVGY1hubFlnSmow?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 103,
-            "zscore": 1.59,
-            "spike": false
-          }
         }
       ]
     },
@@ -490,6 +490,45 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-10",
+          "return_pct": -4.22,
+          "zscore": -1.49,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.44,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Hits Four-Week Low as Losses Outpace Bitcoin - The Defiant",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOXZ1bmE2OFNiUlVjZkhnQkhXeG1UNi05Z0lDNmVqa2pWTjJ4NEhGRnI3TV9jdWxRWDdCLUpDaVlwZmJBZFc5Ti1kVjZtNUJ3ZHZUVVRSVncwMEphSnhQVHN2N3gtbE1Kc3Rpc3lCelBNUWwyUG13U3JjVGJRMzQ5dlZHS05iZnFvemxQb3JKYw?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "XRP Fell 17% in a Week, More Than Any Other Major Coin. Is XRP Dead? - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeFRxOGluekhKU1dvTFpZd2xUdFY3XzFSUEZzaWJobUs4TnJfdmFxNHhtX1pVRk1ZUzlsUzRUb0JKUVFfOHpFRDU4OVdLbkFrM0pQM3Q3ek1pa08tN0lsUU9jLTliRTh1bmNyS3BqcEUxc19IakRXNmoxcVlvRVh1M0ZKNkV1M0NpbVBVMDR6R29iMXo5OGY1eExUM3ctbWhZT2gzY2w1RnZINkdPVUpTRVlEWGFmZFlvX0JSdkRxMVc?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "North Korea-linked hackers used meme coins to move stolen crypto - grafa.com",
+              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOVc2T2tZcUxHYi1OQmQ0bzNZTGxsX2FReWgzLUlieV9fcko5S01aQzNQd2owR200RzUzX2c3MnREdFM3bkhZLThtUlFvQlktVmdIODhjdzhmSElObmsxbFpwUzhUS1ZMNWEwMEhDclNienlkVVhzamJRR2VacVVsZWFBUVlTVWpUdHdIVGI1NU5Ldm43cU5yWUJsZmcxM3JhdTQ5LUtuM283TVpzbTcycElzWnBBNWhtQ2MyOUxuTGpuamZjY1liUU5VY0YyWmZtSUY3WWxVSTNQWGlwTDNYcUxn?oc=5",
+              "sentiment": -0.494,
+              "relevance": 0.798,
+              "event_type": "hack"
+            }
+          ],
+          "coverage": {
+            "count": 39,
+            "zscore": -0.61,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -6.64,
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 51,
             "zscore": 1.11,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-25",
-          "return_pct": 4.27,
-          "zscore": 0.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.41,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Forward Industries raises $25M to boost Solana token holdings and expand its digital asset treasury - pluang.com",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLTVLbmQydHJ5a091Njl2Ui16bVdLelE1Yk1zREc3cWNLWS1WVkpQTVBiazNWQ0VoVXN1TF9kSmxfYWZRMktNNWJhaTZGRlJHRWt4R3AzU3h6OTV6Z04zWHBRNEI2NXdaMG5DRkRvWmxxd0F4YUpDSmg5QVNTRlhjMnBZMU4wNkdPYmFVbkRFNk16U3g2Mkt5Z0c3U3c0bjJMaFE5REpfc0FJTzQ?oc=5",
-              "sentiment": 0.807,
-              "relevance": 0.923,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana (SOL) price jumps above $120 with a 5.8% gain in 24 hours - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaWpEZjVCRlBzMm1EOVVzeEJFbmRJa1RMczQyaWJwMjMzNWRBZTdWc2lyU0hKT3E1d1FlcFhfQmY0elpnWktRUjJUYVBIX0lJTG5YS3ZSYWl3SGY3LVF0QXhyTFY5QjJfcFZMdmpYQ2Q2SHlRWFJkSTFpblRuZXNPTE1wWHp3bEMxdVhnZExoVVJTWEEwYmhDX2hTeVpxcEZycGc?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Staking Deposits Rise by $300 Million in September, Monthly Gain of 18% Outpaces ETH and XRP - finance.biggo.com",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUGREZ3V2bHpIdk1DVHpSV3lnV2Y0am1XQzdId1l4QkFsT1d6VHZsaTRudFRxdlhCOVdtRy1CRE9MTVBEMlhOczZNeTdxTmp0eHRIYU1wbU9xdnhYXzl0RHhkTGFma09mUkpoM2xVWTBCN1pHc2c?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": -1.14,
             "spike": false
           }
         }
@@ -2453,7 +2453,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.31,
+            "zscore": -0.32,
             "spike": false
           }
         },
@@ -2492,7 +2492,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.22,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -2531,7 +2531,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.31,
+            "zscore": 1.28,
             "spike": false
           }
         },
@@ -2934,8 +2934,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": -0.05,
+            "count": 11,
+            "zscore": 0.12,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 81,
-            "zscore": 0.64,
+            "count": 80,
+            "zscore": 0.61,
             "spike": false
           }
         },
@@ -4106,6 +4106,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-10",
+          "return_pct": -4.14,
+          "zscore": -1.26,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.77,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "2 Nuclear Energy Stocks I'd Buy in November - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUjZTU2ZKZlRKRXUxRHBwbTYwekFtTC1HTVFwMFlpVjBiOHFWX3VUUEtFTjhZM0xrOUZOcW03UktpR2pLYVJORFVoeWhDSzJYX3pTcjhwaGFLSzNoZElfcDV3eVZ0WE9NV0dFU3JJa0pFZ3gxa21SXzJySWtVaVZPMWpuMWNjS0ExS2JISVp3?oc=5",
+              "sentiment": -0.202,
+              "relevance": 0.681,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Can Cameco (TSX:CCO) Expand Its Role In Nuclear Energy? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXhocG02WXpHQVRSYko4Z2pCSDAxdWtkSHFwOUZ5NmxqX3BuUk5YWFhoRk00OUJhZjVOdkEtMmVGQkQwclU1Z21pN2d5eng3bm5iLThWdDFuWlRIOHB4cjdsS0E5Z0Q3RF9wc0thZ2UyNGdiU3RSc3g0TFl2QkVqRDhZbDVtYy1nV1NIQUVicks1dF8xT09fRA?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "American paychecks are losing to inflation again — here are the most painful categories - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNclgyOUJ3NHhTN3VWTTVyNnQxRlFzTThteFRLZFB2ekdlRFl5aUdxUEF5WVpWdHFBR1g1WVZWTFRwYng4bFZWcDhiR2RlMy16eXBnT0drcFFhYzMyTEItSlhSYUlVY1JTVVBNNE9WeUhsZXF4akJBMmZITHNzLW9pSUdjbGpxeE92TlViNWcyeGpYd0tiVFo5SThweldvQUg5XzhYT2QtSXhsNmsyY1prMndNNW13M1RrNWhjY3VkdnF2MkhjbHp0eFBpblIxVDZHNkF3cnVZVVcxQnM?oc=5",
+              "sentiment": -0.7,
+              "relevance": 0.528,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.06,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 6.18,
           "zscore": 2.62,
@@ -4299,45 +4338,6 @@
             "zscore": -0.58,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -4.11,
-          "zscore": -1.38,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.21,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Uranium Is Near $90 a Pound. Here's My Prediction for What's Ahead for the Fuel. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSHN4Q0JkNFV3cVRjRE9KamFLU01kaXZUMlhiakJPT3hxNjkwdkpoc3VUSXBlNlFtc2hUX1NJVlM4clZPeXhXVEtzNGF1S3RwN3RfYm00UmRwcDZfWnFqM1RDVG9JelFLWHBtdHB2cUthT1VoNkk3UGJnVEQxTmVNZzVaeF9Jb1ZraG03Zm54VzI4c2FiU3Vz?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Nuclear Energy Stocks to Watch: FNUC, DNN, NNE as U.S. Expansion Advances – Full List Inside - FinancialContent",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUU5VWENsS0JqcGhwVnBuZDJ3R3ViRzF3ZDFyTmo2MnF6VVZvNkRRbVg5TDk5X2ZfNkVMWF9UbEZOeTEzY0xHNGdjTVBmSm1SS19NdGdDM2R1NE1OZUkzZG9RRTh5SG9iaS1tRFFlelBvVkxPaHJGcnZEYVZoS0sta2E0SjMtV0d0cExNSnYxcWFWZjVkdHUtRGpCSFFQbDZ5cWh5QlR6d2NVNFpOLVhBOXdQTlJQSEhSVnZVSGU1dXdpMV9BbjdJT2dvWUQyME10emZWb2lUR1UyOUwtTWQ2QXhB?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "A Recession Is Coming Eventually, and History Says There's a Major Silver Lining for Investors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN0tQVWVhWjJaWmJnUldNbkRmS1NxOXNrekw2VGdFYldid19jdlphSWdxSVYzTGxpY3hDYnoyZk5XMnZQTnRTdjgwdDZyTDd4Q0ptNzlNMHd4bTljbjNYR0JvU2Exb2FLUUZkdklFYTY2MWJHMzVlTldvc0JzYnZPcUxTbzNHVHhva2tOT1FsYTItejVGMFlB?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.526,
-              "event_type": "macro"
-            }
-          ],
-          "coverage": {
-            "count": 2,
-            "zscore": -0.64,
-            "spike": false
-          }
         }
       ]
     },
@@ -4346,6 +4346,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-10",
+          "return_pct": -3.07,
+          "zscore": -1.8,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.77,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Battery And Renewable Energy Stocks Rally As Sensex Ends Higher Amid Mixed Sectoral Performance (10 November 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVjdrNnhaZG40aVNQY1BXT0FvV0hxYmRhU3pPbmpLNjVLZ1NwWDBOVE5YYnJZaUoyUlFXOGdvZEhTOG9jYXlXendwNTJlcWY3YlVtWkJ5Si1LUVRpUnc5bF9TajhvQURlaDZyVlRtYS1aWjJRSHpwTlIxRGFsdUxJWDdOYUNZbUpkM0hpODhsRXFHQkpsYWhvOTNzSWl6dlRtWWpVMDd4dWo3YVZYT283eUZ4Ym9Lb0wtSTRNZHoya2kyc2NtNG1jdUhxUVB2VFVwVE1fZGgwTWE4aDMzcTlfUE1uRQ?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "American paychecks are losing to inflation again — here are the most painful categories - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNclgyOUJ3NHhTN3VWTTVyNnQxRlFzTThteFRLZFB2ekdlRFl5aUdxUEF5WVpWdHFBR1g1WVZWTFRwYng4bFZWcDhiR2RlMy16eXBnT0drcFFhYzMyTEItSlhSYUlVY1JTVVBNNE9WeUhsZXF4akJBMmZITHNzLW9pSUdjbGpxeE92TlViNWcyeGpYd0tiVFo5SThweldvQUg5XzhYT2QtSXhsNmsyY1prMndNNW13M1RrNWhjY3VkdnF2MkhjbHp0eFBpblIxVDZHNkF3cnVZVVcxQnM?oc=5",
+              "sentiment": -0.7,
+              "relevance": 0.528,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Inflation’s biggest threat may be the hardest to fix - Plastics News",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQUwyVEQwQkxjREQxNDFUQ2JCMk5MYklpS3RkWWVGOUNaS2pMTHlLV3FrVEJpRXlLaDVaNkJ0RGlqMlQ3VVdfUjZKcVYxRm5PdkNoekh5QmZteEo0NFU0VnRFZjFXckx4MWtYLXNsWFdwTVVDaVJGeHJ1anZCOGZPVHprSHJPTjZkWkE5SUJ2aTVSa0ZGRVB2TjBmMUloQmRsWDlrNlJIaHZvNlRuaFJJLVEydmtqYXdDZzhRVm9OSXk?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.486,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.57,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -2.77,
@@ -4538,45 +4577,6 @@
           "coverage": {
             "count": 4,
             "zscore": 0.94,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-26",
-          "return_pct": -2.93,
-          "zscore": -1.79,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.7,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Indian Stock Market Gains 0.66% As Renewable Energy Stocks Show Mixed Performance (26 October 2026) - SolarQuarter",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcDhEN2l3UTEtR1hpWlJKUHVzdTl5TEVBTXVyVWExYW1RNTBrblNIWUp6SnRaaW1sTEpHelJiMUVRYm9PWkVkekJja2tzMVF1eGpOVkEtd1pUWUZxNURWLUYxNE9va2FUaFo4a3RwbkMxZnM2dDVTZXhMdE1rLWRCTEFJRjlBQVhlTEZELWFKcmx6T3diTkJNelktcG1XT0VCRFMwcTRBaUpPaTctSU1DcHdBaFRWWnJDWWs2ckZUbWJEZzMyUW9nQS1JdHh2UQ?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Trump failed to stop inflation. Now Republicans may pay the price in the midterm elections - AP News",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbDB0Q3N4MWxNWWdRNUtaNHBIaVhzeldEWEt1eDM0dDJKT3FvMGh4RG82RlgyUW5CdmxvZkJFUThJQkxvWU16NXE0bUE1RkQ0UUhNMXQ3ZWQ3Y0I2bGNzVzB5WlRvMWpFUGdBWGhTWTl2enl4V3UzM0lHa21RbWI5NWR3dlFhWElfaTlJX2ZETExYN1ZfMDgxZWJyeGdQTnRZ?oc=5",
-              "sentiment": -0.71,
-              "relevance": 0.53,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Trump failed to stop inflation. Now Republicans may pay the price in the midterm elections - ABC News - Breaking News, Latest News and Videos",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUVlmeFQtV2VPYXRyYUhfd24xQkxhTFRqYXpsVVhLbjR4NXI0a0VVNGhsLTM4cjNLb05ibnZvVG9yd2g4a2NNbG9HTXhHay1iTmpEM2NtV21DRk5BZ0xhR3ZhX3VsV2FNWjg0bUk3M3lnRHZXZENOcnhaSE5FUDdhR2J3VEJhRU9JM0RoVjJJYjNKVUhJN0ZqMmo5WTJyRjUwQXFuT9IBqgFBVV95cUxPYXlJMVRFWWdjQl9MOFJhYWdTbjZZNm95Q2NSWjJRczlyR3JrSG1rNjZsZXYxTFBMdnRXRzZ4Y2w2aTM2dWR6UGtuRGtEWlJlQ2RfZFBQX1R1YjJDZ2RrVVAyd29zXzdhMVhhV2FZMUZ6cUNMZTJDSW5DRGRpeU9lY1IzdzhHMnpPTjVhazNwcDc4Y19tSG82SjhlSWFCUE9WbkdXWEZ0cnkwdw?oc=5",
-              "sentiment": -0.71,
-              "relevance": 0.53,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -0.55,
             "spike": false
           }
         }
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.72,
+            "zscore": -0.74,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.42,
+            "zscore": 0.43,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.14,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -5221,7 +5221,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.08,
+            "zscore": 1.09,
             "spike": false
           }
         },
@@ -5260,7 +5260,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.42,
+            "zscore": -0.41,
             "spike": false
           }
         },
@@ -5299,7 +5299,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.22,
+            "zscore": 0.23,
             "spike": false
           }
         }
@@ -5794,12 +5794,28 @@
       "moves": [
         {
           "date": "2026-11-10",
-          "return_pct": -4.21,
-          "zscore": -1.46,
+          "return_pct": -5.28,
+          "zscore": -1.81,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.38,
+          "market_return_pct": -0.77,
           "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Stocks Rebound Sharply, but Is the Worst Over? - Investorideas.com",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdmgzai1jNXBfY3NyVzktSVNqLVpya05mUlE5aFZ1Q0JGbWtrM1RIdlk5YWZZYUprcHc1Z29mT3QwR1JKc0d0OTNYNlVzczVwNTRIX25KV1ppd1FmM2ZKb3dBRWxfMzFCaXY1NkRPUjVFLW1aanRQeDQ2S2RzWlh2YS1EM3RBQVBINlljZ090a0xiZFpnMWtxSDFyazZONjJNNFpR?oc=5",
+              "sentiment": -0.768,
+              "relevance": 0.907,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Why the Lower Outlook as Eldorado Gold (TSX:ELD) Brings Skouries Online? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2tlZXRPWkROOVpTbTMwd2lwTE9ZaWxMeDdKUFEzMUpZc2s5OU5xSW9RbkVMcnNqOEFoWTRlYXFlX2REaHZiYXFWU3pxOVpLNy1WakhSWVdIVFpVRUhHUXBuajRZOUxUMWFKQ3EwaGZVR1Fha0h3M29WWGtwWHpoZEtucXNkeGdDMlBTR0xQeTFka0hzNVVmYTZhZTA2NVJBUG9OY3FUZDV5UDN2MldfLXlCVnhpQUxmRWtIYg?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_gold_miners",
               "title": "Why Did Eldorado Gold Cut Output Guidance as the Skouries Ramp Slowed? - Kalkine Media",
@@ -5807,27 +5823,11 @@
               "sentiment": -0.273,
               "relevance": 0.709,
               "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Forget the ETF Outflows: Gold Miners Offer 3X Leverage As Cash Flow Surges - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRXUzMksyaC10TnM5cEo2SlQ2Wm9veldrQW53QXFqZFBlbFVCYW5hTHhCVmMwRF94TUpyNk43OGhPUnFJUGhtT0NaNS0wWDJFbTBZQXlLM1lHVzF6cG8wRnFvS3FPNS1hbnNOZUdHZlhJcldPTGZOWW9manIxYmVPTlhtelRJX0ZWWEhLR1NEenBYVUFiRG9HMFlwVzlxVUlXbVFB?oc=5",
-              "sentiment": -0.226,
-              "relevance": 0.691,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "4 ASX mining shares with 90% to 155% upside ahead: experts - The Motley Fool Australia",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObXJGTUJSN01oaWtQc0ZxWHRlczZaWGpjUWdCWENqX1AwdWZLZUl6cXIxZ0J0QmN3M0hQdG5UbTk4aDlIVUUzVjlfYWFFcmczTzlCQXBVUm1NcWY2cVYyTWVBd1ZDNTZCTmdKTF9yWU1JNk9xd3VLcTBTOENPWGFyWWdrcDVoYjB0ZW5QQ09jTVQ2U0lrZGc?oc=5",
-              "sentiment": -0.178,
-              "relevance": 0.671,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 18,
-            "zscore": -0.35,
+            "count": 27,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -5865,8 +5865,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.03,
+            "count": 37,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -6032,17 +6032,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-10",
-      "return_pct": -2.04,
-      "zscore": -0.94,
+      "return_pct": -2.44,
+      "zscore": -1.16,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 2
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-10",
-      "return_pct": -0.38,
-      "zscore": -0.29,
+      "return_pct": -0.77,
+      "zscore": -0.64,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
