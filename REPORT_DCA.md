@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.0% | 33.3% | +20.4 pp | 36% | 1.000 |
-| 2 | LINK | 39.5% | 33.3% | -6.1 pp | 38% | 0.500 |
-| 3 | SOL | 47.6% | 33.3% | -14.2 pp | 40% | 0.000 |
+| 1 | POL | 12.9% | 33.3% | +20.4 pp | 37% | 1.000 |
+| 2 | LINK | 40.0% | 33.3% | -6.7 pp | 41% | 0.500 |
+| 3 | SOL | 47.1% | 33.3% | -13.7 pp | 40% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,16 +23,6 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
-
-**TRX — TRON**
-
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
-
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.2 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
 
@@ -94,7 +84,7 @@ Il principale exchange decentralizzato per volume.
 - **Cattura del valore**: dà solo diritto di voto, nessun flusso. Il caso di scuola: il protocollo genera commissioni enormi, che vanno ai fornitori di liquidità e non ai detentori di UNI. Il 'fee switch' che girerebbe una quota al token è oggetto di governance da anni.
 - **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 1.46 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 6.1 anni.
+- **Età**: almeno 6.2 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 
@@ -113,7 +103,7 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 24
+- capitalizzazione sotto la soglia: 23
 - stablecoin o token ancorato: 20
 - volume troppo basso rispetto alla capitalizzazione: 14
 - già in portafoglio: 6
