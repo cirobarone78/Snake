@@ -1,30 +1,29 @@
 # 🏛️ Screener settori / temi equity
 
-_Foto del momento (snapshot: **2026-11-10 07:34 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-11 07:34 UTC**) — **non è una previsione.**_
 
 ## 🔥 Settori in forza ora
 
 | # | Settore / tema | Segnale | Forza | 5g | ~1 mese |
 |--:|---|:-:|--:|--:|--:|
-| 1 | Health Care (XLV) | warm | 0.82 | +2.0% | +10.3% |
-| 2 | Gold Miners (GDX) | warm | 0.79 | +15.6% | +2.4% |
-| 3 | Real Estate (XLRE) | warm | 0.79 | +2.3% | +7.3% |
-| 4 | Consumer Discretionary (XLY) | warm | 0.79 | +2.4% | +7.2% |
-| 5 | Consumer Staples (XLP) | warm | 0.68 | +0.1% | +8.9% |
-| 6 | Communication Svcs (XLC) | warm | 0.68 | +7.1% | -2.7% |
-| 7 | Financials (XLF) | warm | 0.66 | +0.7% | +6.0% |
-| 8 | Biotech (XBI) | warm | 0.66 | +3.2% | +2.0% |
-| 9 | Clean Energy (ICLN) | neutral | 0.63 | +5.6% | -3.9% |
-| 10 | Utilities (XLU) | neutral | 0.61 | +0.3% | +5.7% |
+| 1 | Health Care (XLV) | hot | 0.92 | +2.6% | +9.8% |
+| 2 | Consumer Discretionary (XLY) | hot | 0.89 | +3.2% | +7.8% |
+| 3 | Consumer Staples (XLP) | hot | 0.87 | +2.3% | +7.8% |
+| 4 | Real Estate (XLRE) | warm | 0.76 | +2.1% | +6.3% |
+| 5 | Gold Miners (GDX) | warm | 0.74 | +11.5% | -2.3% |
+| 6 | Materials (XLB) | warm | 0.71 | +0.5% | +6.9% |
+| 7 | Financials (XLF) | warm | 0.71 | +1.9% | +5.9% |
+| 8 | Communication Svcs (XLC) | warm | 0.68 | +6.2% | -3.3% |
+| 9 | Utilities (XLU) | neutral | 0.63 | +0.7% | +5.0% |
+| 10 | Aerospace & Defense (ITA) | neutral | 0.61 | +0.4% | +5.3% |
 
 ## 📉 In calo / rischio ora
 
 | Settore / tema | 5g | ~1 mese |
 |---|--:|--:|
-| Technology (XLK) | -1.9% | -14.0% |
-| Oil & Gas E&P (XOP) | -10.0% | -9.1% |
-| Cybersecurity (CIBR) | -2.1% | -13.9% |
-| Semiconductors (SMH) | -4.1% | -19.2% |
+| Technology (XLK) | -4.3% | -14.0% |
+| Oil & Gas E&P (XOP) | -8.4% | -9.7% |
+| Semiconductors (SMH) | -6.7% | -18.2% |
 
 ---
 > **Forza** = momentum 5g + ~1 mese (rank-based, robusto agli outlier). Settori via ETF liquidi (no selezione di singoli titoli). Rotazione **attuale**, non una previsione.
