@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T03:35:00+00:00",
+  "generated_at": "2026-11-11T06:39:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 47,
-            "zscore": -1.44,
+            "count": 46,
+            "zscore": -1.5,
             "spike": false
           }
         },
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-11",
+          "return_pct": -4.09,
+          "zscore": -1.44,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.95,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Price Today: SOL Slides to a 30 Day Low at $84 While Big Buyers Back Pepeto’s Zero Fee Exchange - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQbkszTUI4ZnRpeFZLODUwQkxmSUlJTGcyaEVLVmpaczVFYkQ2bmc3ZXh5RGFtMHVVeG9tbmczV05tdEc5UFVBMWgwcFVRVE1OTGhyclAtUFpKTmF4T3dlWUp1RlR4RkV2OUZGSFFOWFlFMWdMRlFmZlBTbm9RaU82NHFIMkNpd1FmWTBralNwQ0JxVEFBVEpXLV9IVHE1VnpPTkFTcmRkOXVCekJxalhmR3ZyaDN2bm9NY2FUVUtXNWdRdVozR0JCRzFPLVNCd1R4UDdQOUNVbXlFV3dQeUMyMTZCYmMyQ3lQamoxVGJxckpZejNqWXp5LUl5T2d6SDZzZWZSVg?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Hits Four-Week Low as Losses Outpace Bitcoin - The Defiant",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOXZ1bmE2OFNiUlVjZkhnQkhXeG1UNi05Z0lDNmVqa2pWTjJ4NEhGRnI3TV9jdWxRWDdCLUpDaVlwZmJBZFc5Ti1kVjZtNUJ3ZHZUVVRSVncwMEphSnhQVHN2N3gtbE1Kc3Rpc3lCelBNUWwyUG13U3JjVGJRMzQ5dlZHS05iZnFvemxQb3JKYw?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.676,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Crypto Crash Live: Solana, Aave Slide on Fed Hike Fears - CryptoTicker.io",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOa1BkaXRfYmxlTWFrRDY0MlV1ZG9XY19tVjlWc2h3VGR6T3RXRS1FWDFYQWFHZ1JIWG5nNnFxWjJKWEE0S3MxbUJIQ3B6OEhhYjd2d00zSUttZkptLUtVMmtEaFk4UXFnVWtMVGVreS1HelAzV3ZrSlpBaXFCNVdMcHFLcWwxZExGMGsw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.668,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 9,
+            "zscore": -2.86,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -6.64,
           "zscore": -2.64,
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 51,
             "zscore": 1.11,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-25",
-          "return_pct": 4.27,
-          "zscore": 0.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.41,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Forward Industries raises $25M to boost Solana token holdings and expand its digital asset treasury - pluang.com",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLTVLbmQydHJ5a091Njl2Ui16bVdLelE1Yk1zREc3cWNLWS1WVkpQTVBiazNWQ0VoVXN1TF9kSmxfYWZRMktNNWJhaTZGRlJHRWt4R3AzU3h6OTV6Z04zWHBRNEI2NXdaMG5DRkRvWmxxd0F4YUpDSmg5QVNTRlhjMnBZMU4wNkdPYmFVbkRFNk16U3g2Mkt5Z0c3U3c0bjJMaFE5REpfc0FJTzQ?oc=5",
-              "sentiment": 0.807,
-              "relevance": 0.923,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana (SOL) price jumps above $120 with a 5.8% gain in 24 hours - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaWpEZjVCRlBzMm1EOVVzeEJFbmRJa1RMczQyaWJwMjMzNWRBZTdWc2lyU0hKT3E1d1FlcFhfQmY0elpnWktRUjJUYVBIX0lJTG5YS3ZSYWl3SGY3LVF0QXhyTFY5QjJfcFZMdmpYQ2Q2SHlRWFJkSTFpblRuZXNPTE1wWHp3bEMxdVhnZExoVVJTWEEwYmhDX2hTeVpxcEZycGc?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Staking Deposits Rise by $300 Million in September, Monthly Gain of 18% Outpaces ETH and XRP - finance.biggo.com",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUGREZ3V2bHpIdk1DVHpSV3lnV2Y0am1XQzdId1l4QkFsT1d6VHZsaTRudFRxdlhCOVdtRy1CRE9MTVBEMlhOczZNeTdxTmp0eHRIYU1wbU9xdnhYXzl0RHhkTGFma09mUkpoM2xVWTBCN1pHc2c?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": -1.14,
             "spike": false
           }
         }
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 80,
-            "zscore": 0.61,
+            "count": 81,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 40,
-            "zscore": 1.33,
+            "count": 42,
+            "zscore": 1.49,
             "spike": false
           }
         },
@@ -6032,12 +6032,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-11",
-      "return_pct": -2.13,
-      "zscore": -0.99,
+      "return_pct": -1.95,
+      "zscore": -0.89,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-10",
