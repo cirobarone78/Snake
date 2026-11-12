@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T18:34:00+00:00",
+  "generated_at": "2026-11-12T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-12",
+          "return_pct": -3.37,
+          "zscore": -1.68,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -3.37,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Price Analysis: Can BTC Hold $70K After a Brutal $10K Weekly Drop? - CryptoPotato",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd1ctLW5FSmM1ZlZRYk5qdFN4WkhMcTJ3Q20talBlb0tlVm5ZS1RpeXpkWEczcVlUZElQUWFVa0lKTlFkMXRhdW5OM2ZQWVhudFFsc3ZjcnY5bTlQZFBKRTgzZXdvMFJwMVNOM2RzNGhJMVd2a3VnQmF6SzdLcWo4MnVSNzI2WDJfVnp2V1BMcVMxSnRaSGZCZ0lyemo?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Gained 7% in September, but NEAR and Arbitrum Reportedly Surged 187% and 137% - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR044NkY4NHp5Mi00OEZKMGduX3BMcmxaQjVIZHROWkVCNTRTc0w1SjBsMHhDV09HVDAxRTVJVzl4b09hSXJDZVE2ZHFFVTdpdEFqZi1kT2xrNGM2YnhNVjVvR2ZOUzFac2VEeHE4SE8xTXRaaGk2QnpJVUNmaHhxd21SNDZKaDRzN2NLb1M1WWY1Sjd5Z2lWR1FPYk4?oc=5",
+              "sentiment": -0.705,
+              "relevance": 0.882,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 95,
+            "zscore": -0.53,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -5.55,
@@ -200,45 +239,6 @@
           "coverage": {
             "count": 155,
             "zscore": 1.73,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-18",
-          "return_pct": 5.89,
-          "zscore": 2.06,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 5.89,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Fundamental Analysis: Better Regulatory Prospects Boost Crypto Sentiment - stonex.com",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRXJ1LTZjQzMwNEV1QU5pNlRXOVQwUDR3c3BGb2ViSmkzTmhsaEs0bXczNVhfUmVtMGdReHl2dU4zRGRBbkFHOEJ2enlDQTY0OFFqRUlOZDhqU1R0SmMzTEtuNU1OQmExS3puU2oxRlZjVkRSN0VteWhadDhVSjhWMWgyZU1HSWtyVHpVTWdLWmVCVldYVk1uVUVCS1dEZExIazZvc29NbjgzZG5KbXp5QTNRUl8yc3ZHYk5yZmpmdExtVWRSa0dWR05CaHRhSkZuM2Zn?oc=5",
-              "sentiment": 0.778,
-              "relevance": 0.911,
-              "event_type": "regulation"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bank of Japan raises interest rates by 25 basis points. Bitcoin tops $77,000 - CoinDesk",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXZzRocWhINm02LS1BbHhjMExBcEhIaTB6Y1lXMTBtUzRfM1lBLVN4aVdGaXlnXzVaWU5lQ0NESUdXZ0RQZ09NLVpaQ3p0eWpVY01WbXU0aUsyZ2hWX0Rud2dqNTJlWVd1?oc=5",
-              "sentiment": 0.743,
-              "relevance": 0.897,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "#CryptoCornerSeason2 | Bitcoin, Regulatory Clarity & The Debasement Trade OranjeBTC’s Sam Callahan To @CNBCTV18News - Demand for Bitcoin & Gold will continue due to geopolitical fragmentation, trade blocs, capital controls - Investors are going to l - LinkedIn",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZElmekx5NXJOZ1p0TEVocHllZUdIRnBuTllJQ3A4LUhtLUt3SEdWMklwLXJHa1pTSmdjMDJwV3FQNzVKVVlZQnNPZTlFNk1LSHRMOGY2N20wcE43ZlEweVpjWDZGSHJxUG91NDNvSlZEWkhvZG81QUhYZTNVaVp5QkpHanczUVBWQlh1XzVJU1d0SnlyREJ3R0o4RmJoMW9WWWdFbXVQakJtekxURkVMU2l5T3M3QmtD?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "regulation"
-            }
-          ],
-          "coverage": {
-            "count": 100,
-            "zscore": -0.37,
             "spike": false
           }
         }
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 73,
-            "zscore": 0.3,
+            "count": 74,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -4106,6 +4106,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-12",
+          "return_pct": -3.8,
+          "zscore": -1.1,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.35,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV09jYVdXdlZodC1JWllsaHhWOHktTDBBUVlXQmNQX3BncUs2X0NVMnV3dlpIOENfSlZMcUVSM3B0d2x1M3pkbHp6dVdjMFEzR3dpdXBQYU14ZEI5bUUwOGRwVTh3OVFSVlhKYkhvSmJEbXV5eXhlSThrcl9YWFFLNHFPR05PQzh4cVZpemkteVA?oc=5",
+              "sentiment": 0.402,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - AOL.com",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1GYmtQVktkQjdpdDhVcFFpRDVnTU03X2lTWEpTOUkyUjF1RkVONExkZXN5Yk1yUFhmVjRlOGRQWnRnY093bjI2NmNpd21GQW1PaHdhWDlLY2JJUWlvNVcyV3Rmd0R2cjVKQmNjZVVLVjBqM3ZCWGtTcjFTRWY?oc=5",
+              "sentiment": 0.681,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVldPMUtNTTR5U18yN1dQUVZ5TjlOZWNLMGtXaG96ZWFLQmhIZ2RiUjAwaGhxZUdZcmk4RlIxMHdtdDJLcFZlNmRuWEV0MG1ZbExoaTFJTXdMcjBqZDY5T0ZEMzBYY2tTUFdBeU1pTU1hd0tqb3FIWTEtTlJmVk5OZ0xBS2dQdTNXMmI1NUdB?oc=5",
+              "sentiment": 0.681,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": 1.1,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-10",
           "return_pct": -3.47,
           "zscore": -1.03,
@@ -4297,45 +4336,6 @@
           "coverage": {
             "count": 2,
             "zscore": -0.53,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-27",
-          "return_pct": 4.37,
-          "zscore": 2.21,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.6,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "Our Pick Of The Best Canadian Nuclear Stocks In October 2026 - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZzFfd1FtM2ZhTi1Od2E3QlM2cHpmby0xZ2NLNWcyS0FGUjh5bUNDQjF3VDJqRDBkaEh6MWlFU3ctTzlBSU9vQ0lCWWY1MU4xTmNOQ3FUTGlVSUI2eWc2T212OEowWGNDb3R1RFlyMzdiZ05mcGZVbnlNdWdRVXhCWWUybldQZE5Sb1psSUpTOEdSdWx2b3haZUVnNzFIeW1BZFVGUlRaV0Q3OHdqQXRlRmhHS0NPMVpSTFQ0WXFJYXRGYU1qS3NxUUFGOFBtVnZBVnZDd1NZYlFSYnZva0FZ0gHkAUFVX3lxTE1BRVdzdFhwamh3S3I1eVc3ZzVONGozdGdDWmZid1B5bFkycjNYSWdCMTFXZS1rMVVGX3VoaTVybDNDNEJ3VUJqLTZEUkZZdlR5RWZwNnFqRmpWcXRsZjFyVVE2SkstSTdvbG9IV1labG5YeTRiYnM0OE5nMzRmcFQ4U3dxT3BqS2ViVktnRUlKNmk1MEpzNWZReUpsbjd5a2JHUTBNNVN4VWp4aTJCUHptOVJtbTQ4aHNyMVV5UW9pMmdiVXdYZk1wWjlLUnF0dllFcnIzSDRneWtlbGJBTHJpTllfTw?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "Uranium Stocks in Focus October 27th - Investorideas.com",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHdCek9yVDNubFNGOGV6cHptRnptWWRESFUwd0xKVHFUMkVEQ3NKaGp5X2tERUgwdDRlWXRhT0dXQVhoRTJkUVFUNDJ6NmFWemlTeHdWV3hJdTlkTWVZaEJzUkU2aHVGSHgyMTZJSHZoVnA1Z05sY2wxWGtVbmRwS0dJa3VyZDJZWW9jajRTaS1oOW04RXRGWQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Fed expected to hold interest rates steady as inflation tops midterm voters’ concerns - NBC News",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUYxNmVHWVV4bW1XQVlFRkxtQkk3NlJWNUgzRzZYWVJ2TGE1b3BwQ2Rad3RwY3VhalJVQlk4QUs1MGN0bFFQV0FJNjh1RHJNUTFQMm1HVWMyZDhFUl9pTndNZGloa0Q1b3dYbkk4TkhDZlYwYmlrUFpYOHYtZDdIUmwzbmlXQi1VbHM4YlRuLVJjMDVBWjZvVVRURQ?oc=5",
-              "sentiment": 0.743,
-              "relevance": 0.538,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 2,
-            "zscore": -0.57,
             "spike": false
           }
         }
@@ -4588,45 +4588,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-11-12",
-          "return_pct": 2.7,
-          "zscore": 1.22,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.14,
-          "events": [
-            {
-              "source": "googlenews_oilgas",
-              "title": "Karoon Energy (ASX:KAR): Is Operational Consistency Supporting Growth? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMjFacFF4Y1BwZXBfWm5rb09jWE5mZmRDbEFhQkdFX0I2Z3MzVUJzdXZJeWpGc1ZNUGtoT1Y4eE9oZExqUHYwam0yWXhDekNGZGx5OWV6RW5ENFNENzYtajZMZlJBYi12R2ZyUHNRN1A5el9zVmxxOC1qYmVsU1pMWnQ0MlNldXZPY3dTODh5dDNrbVEwcDdtaWFpSXZWYkJXSWdUTkM1VGhVSkk1?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.906,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "ASX 200 Beach Energy (ASX:BPT): Will Field Reliability Boost Supply? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPa29HUXROOHB4OEhaZ2UyQTF4RUJUbm9qeUpkTUFpR3ZId19PR19sSFl1d0ZHbm9VTzFSVlV2ODRsNXBFak5rU1h1bGhHQm5EaHlpTnhpR0V2S1k1T3RQdzBSUFp5TWs4OXVqcnNZOE5lajM1NzVwWFk4ZjRRUWl1dTJjNU5vNU8xU05QYUtGeE9aTG02LWIza1ZQaFJUbnRMbU4ydU11N2c5dw?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Can Harbour Energy (LSE:HBR) Strengthen Its Market Case? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZU5kNmo0S09tUEdUVC1Pdl9XaE1hTUdwZFpjVF9TSnlFZ3lzMm5FQkpLTmk2QU1DOHBqaENRRXRkQ1oyR1RJaTNHVTY5Ym5FeHh1ZGU2QWNPS2lZdjRaVEZjRGJHel9FcTROeGtOWkVRWGJpRFdRZThSWW1xek1vMjllMTFOTmRhaHZRblNYdHltbmF0eTg3bWZlbw?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 28,
-            "zscore": 0.35,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-11",
           "return_pct": 2.63,
           "zscore": 1.25,
@@ -4660,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 57,
-            "zscore": 3.47,
+            "count": 58,
+            "zscore": 3.57,
             "spike": true
           }
         },
@@ -4818,6 +4779,45 @@
           "coverage": {
             "count": 21,
             "zscore": -0.05,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-10-13",
+          "return_pct": 2.85,
+          "zscore": 1.71,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.02,
+          "events": [
+            {
+              "source": "googlenews_oilgas",
+              "title": "Marathon Petroleum Corporation $MPC Shares Bought by Sax Wealth Advisors LLC - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOVdyNDVKcjFWTzZSSDUyaVdYNHdSeDd6TjB3WUYxX2hMMTctajhjR1dfZjhjbVllVlFfVDg0ZkhSV3Q2VUkzT1M3NHZZWHVEaG9mWFZVY3dWLVZqZlBHZjVMV0VXTkhHbFV5angzXzJLMXJpTmxJNW5wZWhfWE1EYWxjWm16M3RKTUItUjgycWJnZFo3QmthWDgwcmQ4QkhNRWh5WTZQZy1aeFNCY0tRWHZZZjR0bHFqTHdvdnFnWmhvODE2QVp1U1dPRjJDNmluSXc?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "Is Occidental Petroleum Stock A Good Fit For Your Portfolio? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMGN4VjV5bWkzMjVKekFFNXVOX2JmNThwQ1BkYXBoQkVsbDBjSW5nNGJaYVNtdGdKZnRSRVg3Wkg0eUEzaUhwR2pUcWN3QU8tcmJOelBfcHRXRC1sMkI2ckxmZkROWTZNd3liNkJHcTVEYnZoc0pLVjA1Nk8xRTdDajJNVFYwWElqbDRuTWFxSXhCaFIxRUJHX0Z3ZlFhSFhEZ3c?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "FTSE 100 Energy Major Shell (LSE:SHEL) Refining Strength and ARC Resources Deal Put Quarterly Results in Focus - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWW9RVnBsRWIwV1JURXNFeG5uSnlhYzdjb28wenB0SURjOVZBQ1JVQ2ZrSV9WTE9mSkhPTk1LaXNmZTRDeTlQUjZuZXlKSjNJV0p0VnFHM3lZN3FRVi1EclYwWGZmN2hwZE13REs0amE2aDdtbXEwMVE5aElpdFpGSkVYdmpyQWV2WWJzUk9faVNZMUFzY2Jhd1VfQXc1TFdoS1FleldueWhRY2tFZUlvYWpVN29CUFYtcTNZMmg2QUNaOWJaQmZ0eXdsT0dUVVpBU0cxZXNpZjRUZnNZMnl6ZDZ3UVo?oc=5",
+              "sentiment": 0.649,
+              "relevance": 0.859,
+              "event_type": "earnings"
+            }
+          ],
+          "coverage": {
+            "count": 24,
+            "zscore": 0.25,
             "spike": false
           }
         }
@@ -5070,6 +5070,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-12",
+          "return_pct": -2.51,
+          "zscore": -1.13,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.35,
+          "events": [
+            {
+              "source": "googlenews_robotics",
+              "title": "2 AI Robotics Stocks That Could Help Set You Up for Life - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcE4xSVpReDNHbWNmSUZjVXNSWjZjekpsdnd6WVBQWW1mc19majZvWHBFVXFYaC1pQWY4bVVoVzZlZXNyN1JfQ3pXcnhqUGkwQzFNc3RVbkVDZ2lmSjd5YVNxVnhhMFZlUEp1eEJIb19wb3hsc3FLSVFjNGJsSlAteGY3NXFGNmJkUHNfU3F6LUhMNFlSc1hQTQ?oc=5",
+              "sentiment": -0.052,
+              "relevance": 0.621,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_robotics",
+              "title": "NXP Semiconductors (NXPI) Stock Could Be 18% Overvalued As Robotics AI News Lands - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQW15dzFYOUJiaVJjbFNYVHREbWMycmJmQzRJRDVxVFFIT0RieGt2MEx1aVRUY3MtcVpBVF9Ud1lsejdWbFg4UDlRUl9oOHpseV8yQ05iQzdERWhROUYxVDM3MUVtUmxjaWs5Y0ZHYmRNLXlkcFhpRWxILVhmdDloS211VzNNMFE0N19Bd0c2dENkSG1zVGtHZndpTnZoQXhaNVFMT2xWMUdETkR3UjAyVGg4OXdkdTV6MU1nQnJ5b2NCbkRBb3BMeWNWbmQ4M0ZDUnpuYmdwd19lT00?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_robotics",
+              "title": "Shenzhen Edge Medical And 2 More AI Robot Stocks To Watch - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVU1PT0Q1b0xIRUtxZjdxR19pZzZSWXNoOXM0aTBKV2pYR0ExU25QdUEzZTFzdWtCNlhCZDFqSm8zbjhncFN3bTZPT2U4eXNVNzJ4NzIzQWdZLU5YZFQwTHl0MldSeXhBNVRHZ3pzSktoYWVBb2ZpZkJzSUJiN1VQVUNRWGp5UVVMMnhzWEtZNms5SThRV3RhRTVvekVhcUl2LWg2N05hdDRHRGl5Zy14X2tLNUdrVjhlXzZNOU1hQmQ1TXRWc1pfRzJ2cldna3F1bzhxYnl2djdQd1XSAeABQVVfeXFMTWluOTByVlVjYWhPa1NFYklIdlMxSUxpRUs0SVQ1QlRzTVNVeWpYTGxIWVVUQk5lUTBzUjBYWUtqTW1Pcms2Y3V4MGoxU3Btc0RBTEhKbkgtQ3pCbHBKTUdUY3VRX1Bkb1VQQ05mV2hkckUwcHVBSlJrYWE2SEotb1VQR1piYmVIaE5Kek5NdnZrNU9iTExKcFNWdkJ1WVJOVnE2aXdyd3pidC13Mng0RjhsNzhwbFVYVHhhZXdYZjB0Y0hMYlMyRHpSMThNdXhCY3ZaRktLbm55c0RxSTZTZVo?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 7,
+            "zscore": 1.55,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 2.67,
           "zscore": 1.68,
@@ -5261,45 +5300,6 @@
           "coverage": {
             "count": 2,
             "zscore": -0.39,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": -2.43,
-          "zscore": -1.95,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -1.11,
-          "events": [
-            {
-              "source": "googlenews_robotics",
-              "title": "Best 3 Robotics Stocks To Buy Now | Physical AI Drones Core Players Alloa Athletic Vs Stenhousemuir (OrhXJne70k) - Unisba Media",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdTVSa3RGb19faVFMY0xEWUQxR29za0loWThxQ1YtTkJ2OUY3bXZqWk4xZ29kb1dZUXByQ3QwOUVUM0I4SVo0Q3FpNjlZVkxRblZhTFZmNXZ5MVgwWndha1BvdTM5b1lRWHRXR0IzZmVtS2NtWHFMR2E2aUtlUjZabXRn?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "Xtend AI Robotics(XTND) Stock Price Today | Quotes & News - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBSWE9VVmstUkVNUzE2QWFNRHhlWU5VYXdfZTQ2TFh4MzZRdWhSNWs2N3JsX3dtNncxUmJZSEJOYzg0SU1pblVVUkUxb28?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "5 Robotics Stocks That Could Explode With AI 🤖 Télécommunications (lbrDdoL3jA) - Unisba Media",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaTJYZFhHRk5OTW9aUkxYR0xJcUFqOWNDOXpsZVRDTnVHSmVhME1qTHhCTThLQVFNRC1wN1Byc1IzMU9wNmlKamFkSzhRRkREbjIzMWMyemNpT2VibnNIQ2RuaWpPYV9tU1RLT1VJeko4NFlNMmVWb1BWSjlPUWlyWG1SU3U2RlBx?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 0.24,
             "spike": false
           }
         }
@@ -5552,6 +5552,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-12",
+          "return_pct": -3.27,
+          "zscore": -1.37,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.35,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "An Australian patent covers how Moleculin's experimental cancer drug is prepared. - Stock Titan",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0l5Q1hvd1Vyb3NlblYzYVhjOFpoa2w4amxWMTlMNThTeXMyWFRrY1VuUmNrRXF1cWM2N2tHY3lmdUgyWV9FLWdFT1VjMFYxbmUyWkJ2VW1tNHUyNVhHYzFpVFB1Y3lNckpmbndIeFZMLVNTcmJvTnJhX3BkUmY3WjY0M0ZZa3Vsak9jQXhwT0hsbGlkVElTY2MzYUN5VVdKSmFSZ05ESjNwRXBXbWVWbURtX3JRUTA?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Is Legend Biotech (LEGN) Reasonable After CARVYKTI Sales Growth? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN0swNEI4Z2taa3NFT2JwTHF1RWM5OHh2TFF2VjR0WkU0dXpTN0N4Sk0tSjlEZ1o1eUw0V1ZtT1FZbEJRazgxUjNDdWJCNGNIb0FfX0pTeXZScWItWkdQbWlQd3hScjFKTkV2ZzFpakQ2Z0FzQ1RzYkVsS3RtRnNSRTlwUEpwdzRST0lUOFBiSDZjcW5PeEZvZG9yZEZRam9DZFE?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Does Phase 3 Trial Success Change The Bull Case For Vir Biotechnology (VIR)? - Simply Wall St",
+              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWUhhWU80M3pkRFBWLS05S1dneGNFWnBGYnBUOVZwbTZ5cHNqbk41STFQVlJsUFZJLXd2aThLREJrOFVoZXk5d2RIdWhqV1pxb2VLcWYxZUs0cW9TLUMwaUotU0lGcWNDU3EwczFUdEQ4ZXI3RmJramQ4RVp6VWhkWmlWUzFqc0VDRXE1U3dFNTlaTEhiMkpjbGt5TEUxLVBnTzMybU9qZFllYzFOZzZzYWJPUTk3X3NNa0s0bmd6cENjbmJNY3FuQWFhcFczdF91UmRkckVKajNOcnhuMkpLSUc3eVTSAeoBQVVfeXFMTlZOWGRPV0IyODR5Q3ZvbkNEZjZIMGRBUjdOOE5vQTZueHhzZmNqMXQ3dzJlNzFXQkFrblhjS2N5aUx0WHJ1Z2dvSlU4TE1qS0wzcFlsYTB6VFpSNDVfZXFJOXg3VFNyQjdHczhjQjBMc0FjMUd0M0Q4OVFrUlRYbjFJR1NmbG4wV2tQWFFiY0JuTkdGOEd4UzJxVmJyTDh3cnJNMkMtbnY1QnhaUk0teWc0TmNjUnpoQWNDM1dHSkJyMXgyMkFKSWFjYW5KNWhVZDllQVJsYWRHR2JmVXRJZ1pJdWFQcHQwNW5R?oc=5",
+              "sentiment": 0.572,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 26,
+            "zscore": 0.95,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 3.08,
           "zscore": 1.35,
@@ -5745,45 +5784,6 @@
             "zscore": 1.1,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-27",
-          "return_pct": 2.9,
-          "zscore": 1.55,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.6,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "Pharming Group (PHAR): Joenja Gains Momentum And Ruconest Returns To Growth - RTTNews",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONmtnREhIVkhxSHlLVW5HQllBZ1BHVTUtZHFYZWx5S0ZEOExOX3NVU3I0clo3ZEVlclFIbGxLV2tnVDhtdnVLYmt4UDdxc3lyV0FBTDhHXzhhQzdYS3ZvSFpzZUl0N2syWnF6LTNjUTlUdkdyVHhXS0lWVHowSHdwc1U5WVdrQmM1dDhucXZMUFY1ZUhpOThJS0xvWHp2YVpnMmtvQU5fMlNkOVpuRUE?oc=5",
-              "sentiment": 0.612,
-              "relevance": 0.845,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Medicus Pharma CEO to present precision oncology progress at global biotech conferences - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUFV5VGZRdHBPd2Zwd3UtMlhuM0VGNHBMSGVkSENzdlhENldCemlscElRc25vM3VicGozbjkxRkZOX01WMmRwSE9RVDhOLTlRVlk5X25GWUhmLWZQWXhYYjBPQ0JFdDFHV1ljaUFMa2VtUjlETTdLV2JldVRzQ19lTTB2aWdPQmo1Q0lJQTBUbHJrRVdwTFNRMXJxRTlodw?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "IBRX Stock Rises Overnight: Jim Cramer Backs ImmunityBio As A ‘Very Good Spec’ Amid Biotech Takeover Wave - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRTZ6dmZaWndCd2pNRFNZYUJGbElDU19SMVltOVVlbmU1ZWM1UDg3WTBjNV9VbVdnUXkzUjZtbnphTm9maWVVU2V6WHFfMmtfempkM3BMWkNNNkl2NV9vZUNrNjhLZHhVS3lxNFBleklTT2JNak10bjN6dnJqTF9kVnlqZ2lsMVpyUzVnOEFZZ3pEMWZyQlllemRwRFZ2bU1wZ2NrUnBoZElvdEI2NkpPbzRxOGtIQVE1ekotZWl2a2pVbUhUX29OanNTbHFGQ0U?oc=5",
-              "sentiment": 0.402,
-              "relevance": 0.761,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.46,
-            "spike": false
-          }
         }
       ]
     },
@@ -5794,11 +5794,11 @@
       "moves": [
         {
           "date": "2026-11-12",
-          "return_pct": -2.62,
-          "zscore": -0.81,
+          "return_pct": -3.95,
+          "zscore": -1.23,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.14,
+          "market_return_pct": -0.35,
           "events": [
             {
               "source": "googlenews_gold_miners",
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": -0.21,
+            "count": 24,
+            "zscore": -0.05,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-12",
-      "return_pct": -2.73,
-      "zscore": -1.32,
+      "return_pct": -3.37,
+      "zscore": -1.68,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-11-12",
-      "return_pct": 0.14,
-      "zscore": 0.13,
+      "return_pct": -0.35,
+      "zscore": -0.3,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
