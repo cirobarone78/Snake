@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T00:47:00+00:00",
+  "generated_at": "2026-11-13T03:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,12 +10,20 @@
       "moves": [
         {
           "date": "2026-11-13",
-          "return_pct": -4.03,
-          "zscore": -2.04,
+          "return_pct": -6.45,
+          "zscore": -3.36,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.03,
+          "market_return_pct": -6.45,
           "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "U.S. Fed to Cut Rate Decisions to Seven in 2027 as Warsh Enters His Second Year as Chair - 아시아경제",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41Sms3cDItYUwyVURrXzloM3dfSUJEa0Jwem1iSDMwQWtuTXFWdVNoTlpoQm4tYUp5M2s5Q1h6ZzhsV2FYMzJEMDgwS2xPNTFOWVl5LV84T240VGc3bDgzLWd5dUxabENyX181bUdRaFpVOUtXRzA0?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "fed"
+            },
             {
               "source": "googlenews_btc",
               "title": "Bitcoin Price Analysis: Can BTC Hold $70K After a Brutal $10K Weekly Drop? - CryptoPotato",
@@ -31,19 +39,11 @@
               "sentiment": -0.705,
               "relevance": 0.682,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.668,
-              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -5.07,
+            "count": 3,
+            "zscore": -4.97,
             "spike": false
           }
         },
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-13",
+          "return_pct": -4.86,
+          "zscore": -1.68,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -6.45,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "U.S. Fed to Cut Rate Decisions to Seven in 2027 as Warsh Enters His Second Year as Chair - 아시아경제",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41Sms3cDItYUwyVURrXzloM3dfSUJEa0Jwem1iSDMwQWtuTXFWdVNoTlpoQm4tYUp5M2s5Q1h6ZzhsV2FYMzJEMDgwS2xPNTFOWVl5LV84T240VGc3bDgzLWd5dUxabENyX181bUdRaFpVOUtXRzA0?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Nearly $600 Million in Crypto Longs Liquidated as Bitcoin and Ethereum Fall to August Lows - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jSkxvVlFEZXVFVnk0cUhsN2JXNnFQaUplOFFGOWNhbHZESGVZZllWc1VfS0VKc1JvUlpwQW9kYmtjcmIyUVFienRkWk81V2lYaXlDV25qN0JzRnkwRVlXWDR5YWtCeXR1RGlTYnFqUlhqNzFDVUNndEhkb0g?oc=5",
+              "sentiment": -0.202,
+              "relevance": 0.681,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.668,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 7,
+            "zscore": -3.47,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-08",
           "return_pct": -5.16,
           "zscore": -2.0,
@@ -443,45 +482,6 @@
             "zscore": -0.35,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-12",
-          "return_pct": -3.56,
-          "zscore": -1.6,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.29,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Liquidity Shock Z-Score Hits 7-Month Low on Binance - CryptoQuant",
-              "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOTXFqN1RkNFlNNkwzaG50U0piOW1ZMHBlSTg3bFZ3YWZDQXlFNHdyb1Y1WG90X3htcEFxeG5reHZiM1hPY3E5TTN3T1pfeTQ4X3dQWkRKWGdmaDcxZkxLeUp4MHFaUWtsMEdFM09ReG5BX2JERG9oRnIwampkbXE3djJRWlNVZEpjeXQ3dGtwTWRESmMxTGp2NVlxYmNhMmNNcm1sWTZ1SFU4WUZfR1dYaUNpejNCXzlEMkdMenItcFh5YkREV05UckN3OEwyc1ZpM29rT3VDeFpOSVk1OXJFRWZUcWVMTjY1c1AtckpxdUoxSEhFam00TEpOTHVUMUppaE1aZWhWWXVjdUdlbEFKUWszNVRNcmpXamVVaW02aklQdUE4NTF6d3RnUDI1X3pZbkE?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin And Crypto Just Quietly Hit A Massive Price ‘Inflection Point’—But There’s A Nasty Catch - Forbes",
-              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPYzF6dlNhMDhuMzhaZ2FlZUxIY2FSNUNBTmtkRVVRTjZfX3VnMkQwWHVUZkpnSFNxbHRYVnl6MVhMUVpUNW9mNzkwazRRNE5vTHVQQ3V3ZUNQVGVqdnJJS2RKZlA2RHhTLXhpUXJUODZtRFBHNWljTXdwWU9QVWhmVU5LQUJNZ2dvTEgxX1kyU1VjZG5YUXVBUzZkWUcta19NWHZpTWxORWFza3ZOWjk1Zllzb0dLRUZYbUtnSGtiTTd6MFFqRnNwcVdDN3BtNzc3Z09uWmxINDAxTzRGYnI5MmlHeUptTGdpclY2R1BQZGlCSWVDdTFkRnZKSXVGQQ?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitmine adds 12,532 ETH as Tom Lee flags potential 'largest-ever' crypto bull market - The Block",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRExXM1l5dm5OYWpLSWhVVHA2WFlhRVdISXlZVDNGWmtUak5paTVCdnI4bE9ILVpvclJKZ3ZzMVlMOWdFNFNYTnYtQ3ZURFpYZjBzOEpfaHQ2MHREOFNzX3Y2TzFXUEYwLXA2NHAwY1pYd1VWMXhCVEE2OS1ZdVhGUG9ORXVmcktVbzFwYS1aUmhBNmp4WG4yTkVGY1hubFlnSmow?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 103,
-            "zscore": 1.59,
-            "spike": false
-          }
         }
       ]
     },
@@ -490,6 +490,45 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-13",
+          "return_pct": -5.13,
+          "zscore": -1.97,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -6.45,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana (SOL) dips 1.11% to $85.48 after failing to break $87 resistance level. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQd1FKS0JLVWJDVFZCZ1BjRG1LVl8tQ1dLWk1pTDJyQS1tQU9nVFNldHNSeWtvMGJBSkViT1pEX3piRlZ3NHBYNXRlVWlDUFoxalJOcnFXQ0FENWhxYWJkaHBqVVhiNlRnbEpVaHRuVHRVOHdVUEgyejVGZVpOWERCVnFCS0Nta1VVME4yN05EYUg0eVk0?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "U.S. Fed to Cut Rate Decisions to Seven in 2027 as Warsh Enters His Second Year as Chair - 아시아경제",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41Sms3cDItYUwyVURrXzloM3dfSUJEa0Jwem1iSDMwQWtuTXFWdVNoTlpoQm4tYUp5M2s5Q1h6ZzhsV2FYMzJEMDgwS2xPNTFOWVl5LV84T240VGc3bDgzLWd5dUxabENyX181bUdRaFpVOUtXRzA0?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.668,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -3.18,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -6.64,
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 51,
             "zscore": 1.11,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-25",
-          "return_pct": 4.27,
-          "zscore": 0.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.41,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Forward Industries raises $25M to boost Solana token holdings and expand its digital asset treasury - pluang.com",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLTVLbmQydHJ5a091Njl2Ui16bVdLelE1Yk1zREc3cWNLWS1WVkpQTVBiazNWQ0VoVXN1TF9kSmxfYWZRMktNNWJhaTZGRlJHRWt4R3AzU3h6OTV6Z04zWHBRNEI2NXdaMG5DRkRvWmxxd0F4YUpDSmg5QVNTRlhjMnBZMU4wNkdPYmFVbkRFNk16U3g2Mkt5Z0c3U3c0bjJMaFE5REpfc0FJTzQ?oc=5",
-              "sentiment": 0.807,
-              "relevance": 0.923,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana (SOL) price jumps above $120 with a 5.8% gain in 24 hours - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaWpEZjVCRlBzMm1EOVVzeEJFbmRJa1RMczQyaWJwMjMzNWRBZTdWc2lyU0hKT3E1d1FlcFhfQmY0elpnWktRUjJUYVBIX0lJTG5YS3ZSYWl3SGY3LVF0QXhyTFY5QjJfcFZMdmpYQ2Q2SHlRWFJkSTFpblRuZXNPTE1wWHp3bEMxdVhnZExoVVJTWEEwYmhDX2hTeVpxcEZycGc?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Staking Deposits Rise by $300 Million in September, Monthly Gain of 18% Outpaces ETH and XRP - finance.biggo.com",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IUGREZ3V2bHpIdk1DVHpSV3lnV2Y0am1XQzdId1l4QkFsT1d6VHZsaTRudFRxdlhCOVdtRy1CRE9MTVBEMlhOczZNeTdxTmp0eHRIYU1wbU9xdnhYXzl0RHhkTGFma09mUkpoM2xVWTBCN1pHc2c?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": -1.14,
             "spike": false
           }
         }
@@ -5103,8 +5103,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 1.55,
+            "count": 8,
+            "zscore": 1.94,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": 1.28,
+            "count": 30,
+            "zscore": 1.37,
             "spike": false
           }
         },
@@ -5624,8 +5624,8 @@
             }
           ],
           "coverage": {
-            "count": 42,
-            "zscore": 3.44,
+            "count": 43,
+            "zscore": 3.57,
             "spike": true
           }
         },
@@ -6032,9 +6032,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-13",
-      "return_pct": -4.03,
-      "zscore": -2.04,
-      "max_abs_z_recent": 3.24,
+      "return_pct": -6.45,
+      "zscore": -3.36,
+      "max_abs_z_recent": 3.36,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
