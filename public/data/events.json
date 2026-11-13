@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T18:35:00+00:00",
+  "generated_at": "2026-11-13T21:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-11-13",
-          "return_pct": -3.55,
-          "zscore": -1.63,
+          "return_pct": -4.33,
+          "zscore": -2.05,
           "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -3.55,
+          "severity": "major",
+          "market_return_pct": -4.33,
           "events": [
             {
               "source": "googlenews_macro",
@@ -34,16 +34,16 @@
             },
             {
               "source": "googlenews_btc",
-              "title": "Bitcoin Demand Dries Up as Miners Prepare to Dump 2,077 BTC: Is More Selling Pressure Coming for BTC? - Coinspeaker",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZEJ6WTBQOHVKTXQ4NG9UVmhvZFV5WDNqbHRobDk5MUdJU2ZoRk0ybzY4NjVuMnRsZEVBWFkwd3ppR0pkNzRvbEg2YnNtTlBfRzJaUUM5WHdwMExoTUdCdDFoQWllbmF5UnJYeUVMX2ozZ253c0x3NkNqOVNQakFmem1ndVR1N2NnYTFjRzEzV2fSAZYBQVVfeXFMUGQ3a2VCZDZYVjRIek96RmQyc1RHcWlwakJ3NTFGY3J4Z1NncWlCU1hHWHM3cmFKdmNPbWlLcXZiNXFNbWQxdnZtTXNJWXlCU1dkd0NTZ0ozdVVoaElBRnlJT2puS0JYaVNCU05xMWt4WDlaTmpkY2RhTHBqa2Z5UElRNFFyZjBoVXFqaUxLazFlS3ZhQXR3?oc=5",
-              "sentiment": -0.679,
-              "relevance": 0.871,
+              "title": "Bitcoin Fear and Greed Drops to a 4-Month Low: A Blessing in Disguise? - CryptoPotato",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS2N0M3gwOVVSdjg4aW1MUkZvWjVmVlVrV1AtbHMzMmpDYlBxVVN2dGpfZDM0dFZYWFFxcllWN1ItQjJRa1pIbmVkYnZENjR3X1VkUVk5OFZ1cjBhV2FKQ1V4S2RNa054WUFlNWpHM1czc3pNVHhqRWNESC12MEVBOXNiU1ZaX18yOHh6YXRjZ2REY296UnpZT3JR?oc=5",
+              "sentiment": -0.7,
+              "relevance": 0.88,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 85,
-            "zscore": -1.0,
+            "count": 105,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-13",
+          "return_pct": -4.36,
+          "zscore": -1.46,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.33,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
+              "sentiment": -0.751,
+              "relevance": 0.9,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed’s Collins Says Inflation Fight Outweighs Housing Woes - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWNWM3ptZWVMSTZ2Nm1jY2JQU1pXZ3l1Q01qdzAwV1YwbGxPN2JIY19pTmNiTmV5eFA3c1lkQklsX2JKV1BuM2haS09HU21XSk5DT3FvRG5vSkEyNGlLalJMNTZfQ3hCTlM5SVBGY3NBb2xDTloyYmtidHdKNE5YZnNUREI3dk5ZQ01UdVpKaC1MQkJJbkF0V2o5QS1RQQ?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "‘Everybody needs to prepare’: Market expert warns of December shock that puts Americans at high risk. Act by Dec. 8 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMHNuQmQ5eXJHTHlsSnJEUkFGaDFZT2tUNDRjTzI2Z3ZjdFJwUUo3eXktSEFvRWFER2hsUTZvWHc3M0RPRzdsbGJTelRYczU4RzVLNFJzTDFaenFmQ3piRDRsQnQwOG1EM21mVDBYYXZjN3d5aTFGdndUckVJUWNOclFwdExnb2JQSmpjdmUyaFY4M3JYQkFqSXZSNnp0TGFkN2Z1Yg?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 70,
+            "zscore": -0.21,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-08",
           "return_pct": -5.16,
           "zscore": -2.0,
@@ -441,45 +480,6 @@
           "coverage": {
             "count": 68,
             "zscore": -0.35,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-12",
-          "return_pct": -3.56,
-          "zscore": -1.6,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -2.29,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Liquidity Shock Z-Score Hits 7-Month Low on Binance - CryptoQuant",
-              "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOTXFqN1RkNFlNNkwzaG50U0piOW1ZMHBlSTg3bFZ3YWZDQXlFNHdyb1Y1WG90X3htcEFxeG5reHZiM1hPY3E5TTN3T1pfeTQ4X3dQWkRKWGdmaDcxZkxLeUp4MHFaUWtsMEdFM09ReG5BX2JERG9oRnIwampkbXE3djJRWlNVZEpjeXQ3dGtwTWRESmMxTGp2NVlxYmNhMmNNcm1sWTZ1SFU4WUZfR1dYaUNpejNCXzlEMkdMenItcFh5YkREV05UckN3OEwyc1ZpM29rT3VDeFpOSVk1OXJFRWZUcWVMTjY1c1AtckpxdUoxSEhFam00TEpOTHVUMUppaE1aZWhWWXVjdUdlbEFKUWszNVRNcmpXamVVaW02aklQdUE4NTF6d3RnUDI1X3pZbkE?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitcoin And Crypto Just Quietly Hit A Massive Price ‘Inflection Point’—But There’s A Nasty Catch - Forbes",
-              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPYzF6dlNhMDhuMzhaZ2FlZUxIY2FSNUNBTmtkRVVRTjZfX3VnMkQwWHVUZkpnSFNxbHRYVnl6MVhMUVpUNW9mNzkwazRRNE5vTHVQQ3V3ZUNQVGVqdnJJS2RKZlA2RHhTLXhpUXJUODZtRFBHNWljTXdwWU9QVWhmVU5LQUJNZ2dvTEgxX1kyU1VjZG5YUXVBUzZkWUcta19NWHZpTWxORWFza3ZOWjk1Zllzb0dLRUZYbUtnSGtiTTd6MFFqRnNwcVdDN3BtNzc3Z09uWmxINDAxTzRGYnI5MmlHeUptTGdpclY2R1BQZGlCSWVDdTFkRnZKSXVGQQ?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Bitmine adds 12,532 ETH as Tom Lee flags potential 'largest-ever' crypto bull market - The Block",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRExXM1l5dm5OYWpLSWhVVHA2WFlhRVdISXlZVDNGWmtUak5paTVCdnI4bE9ILVpvclJKZ3ZzMVlMOWdFNFNYTnYtQ3ZURFpYZjBzOEpfaHQ2MHREOFNzX3Y2TzFXUEYwLXA2NHAwY1pYd1VWMXhCVEE2OS1ZdVhGUG9ORXVmcktVbzFwYS1aUmhBNmp4WG4yTkVGY1hubFlnSmow?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 103,
-            "zscore": 1.59,
             "spike": false
           }
         }
@@ -973,6 +973,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-13",
+          "return_pct": -4.11,
+          "zscore": -1.18,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.33,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
+              "sentiment": -0.751,
+              "relevance": 0.9,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed’s Collins Says Inflation Fight Outweighs Housing Woes - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWNWM3ptZWVMSTZ2Nm1jY2JQU1pXZ3l1Q01qdzAwV1YwbGxPN2JIY19pTmNiTmV5eFA3c1lkQklsX2JKV1BuM2haS09HU21XSk5DT3FvRG5vSkEyNGlLalJMNTZfQ3hCTlM5SVBGY3NBb2xDTloyYmtidHdKNE5YZnNUREI3dk5ZQ01UdVpKaC1MQkJJbkF0V2o5QS1RQQ?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "‘Everybody needs to prepare’: Market expert warns of December shock that puts Americans at high risk. Act by Dec. 8 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMHNuQmQ5eXJHTHlsSnJEUkFGaDFZT2tUNDRjTzI2Z3ZjdFJwUUo3eXktSEFvRWFER2hsUTZvWHc3M0RPRzdsbGJTelRYczU4RzVLNFJzTDFaenFmQ3piRDRsQnQwOG1EM21mVDBYYXZjN3d5aTFGdndUckVJUWNOclFwdExnb2JQSmpjdmUyaFY4M3JYQkFqSXZSNnp0TGFkN2Z1Yg?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.84,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-04",
           "return_pct": 4.25,
           "zscore": 1.46,
@@ -1164,45 +1203,6 @@
           "coverage": {
             "count": 4,
             "zscore": -0.1,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": -6.23,
-          "zscore": -1.62,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.84,
-          "events": [
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Price Prediction: POL Burns 100M Tokens, but Pepeto Buyers Chase Bigger Gains Before Listing - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaGprSlNzUFRzYzRFc3d0SlpLeDNiXy02MVF2dF9CcVVGZ2JSR1ZEZWNybk1tZVVubjZRSThHRjB0SEVCWHdnN0ptNzF4aTVoS19IbUloZkdyWXVzdm00eFZBcTZoU1RwQld3djZRYi0wdVB5S2lFamtJYW95a29OMHJ5UFgyQ3I5Mm1jNmQxR0RDZUR2bXJITw?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.6,
-              "event_type": "listing"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon Price Prediction: POL Lines Up 22 Million More Tokens to Burn, but Pepeto Holds a Bigger Card - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYS1FZHR3eVA5QThGQ3I0cXd4RHIyX3o4REJJankzdnUwYkgwT1J3cjNpYlJ2WHR4U0l6N2lFUVl3T3FhRUdlMmNaRVRQekhkbFMyeHhQbVQ0WDZfUjBINWtabFIyUW5wX3VIZDRYOUltM1BJZEVvcWRWOW4wY2FDdzJQS3lnaUZrQXVKX1lRRFVZWUFzY0x6ck1pRkU?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Polygon (POL) Drops 3.3% Amid Market Softness and Tokenomics - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aRlJ1VGdDT1BUQkVkbnpHV090SkhHaloxeDNISXJMc0lIZVFFUlBhNV9nenBnZnN4RU5DSHlOLVNhdm1zazZJR1dDMkl2b2MtYmViUHluWXRlUWFWbVlqM2Uyazg1dU9YR2ZSQmtxZ1E?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 10,
-            "zscore": 2.1,
             "spike": false
           }
         }
@@ -1550,7 +1550,7 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "7 Best Energy ETFs to Buy Now | Investing - U.S. News - Money",
+              "title": "7 Best Energy ETFs to Buy Now | Investing - US News Money",
               "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1YaUE2X1loYXhnN2p3Mmh3c0hOaHpuOF9SZ1RaMGEwbkRSc0xZWUU1bU5XYjBra1poVjJsakZUZnA1YktJMEJGRHJxcnUzTFZkQWVXTVlvYnV0R291V1FwaVc5VFpteXc5X0JCNEJuMTRqUWR3aDRlNnhuQlZ5Zw?oc=5",
               "sentiment": 0.743,
               "relevance": 0.6,
@@ -1628,7 +1628,7 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "7 Best Energy Stocks to Buy in 2026 | Investing - U.S. News - Money",
+              "title": "7 Best Energy Stocks to Buy in 2026 | Investing - US News Money",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdmRrck9SdGc5NE15MU1sRHJIU2MxenBYd0N4M2QzMHIzSm56MUc1S1duYzhYZWlaY2YyUk03MVpkU2pDZDJVTkQ2dGVLRHhuNDZsV2hQNHlEVlc1eGJmM2ZPMWZrMlRGbDAwZ1JNLVN2azBMZFBrTjd3a0trS21tS2VvcC1scXZfSlp3?oc=5",
               "sentiment": 0.743,
               "relevance": 0.897,
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.99,
+            "zscore": -1.0,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 1.16,
+            "zscore": 1.17,
             "spike": false
           }
         }
@@ -3866,11 +3866,11 @@
       "moves": [
         {
           "date": "2026-11-13",
-          "return_pct": -3.72,
-          "zscore": -0.9,
+          "return_pct": -2.99,
+          "zscore": -0.68,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.64,
+          "market_return_pct": -0.4,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 38,
-            "zscore": -0.79,
+            "count": 41,
+            "zscore": -0.69,
             "spike": false
           }
         },
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 58,
-            "zscore": 3.57,
+            "count": 57,
+            "zscore": 3.47,
             "spike": true
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.76,
+            "zscore": -0.74,
             "spike": false
           }
         },
@@ -6032,17 +6032,17 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-13",
-      "return_pct": -3.55,
-      "zscore": -1.63,
+      "return_pct": -4.33,
+      "zscore": -2.05,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 5
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-13",
-      "return_pct": -0.64,
-      "zscore": -0.53,
+      "return_pct": -0.4,
+      "zscore": -0.33,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
