@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:34:00+00:00",
+  "generated_at": "2026-11-14T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-14",
+          "return_pct": -5.51,
+          "zscore": -2.49,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -5.51,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Crypto Fear and Greed Index Drops to a 5-Month Low as Weekend Slump Heightens - CoinGape",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQi1GbUFDZk5iV2RYM01EQzhfSll1TE51WlV5dkhvMUJES2tULWFoNlNmMVp3clpzV0ZYUW1XRENHcVppWFo5bHBIUEZUcG9fV2JZcExTbFI0SFhZSTQtQmJqanQyRzZOeXdyVGdOZVJJSkhGai1WZUJ0RHplSkIxYWJQa0llN25iVlYwNW4tVEliTUNoRkV2U04xWWVBWGQ4?oc=5",
+              "sentiment": -0.791,
+              "relevance": 0.916,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Most Investors Are Wrong About Who Owns the Most Bitcoin. That Misunderstanding Is a Buying Opportunity. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTTRuTEl5Ylg1WFUwb29lQTdhSmpJNzJ0WEh4aWtZMjk2bml2WHlQSkQ3ZjA0UFVBSTlNUXhtMEZDY1pVVlpOSXM1QUlUeXdTQTlDcDNWOTVaWmszeXpqU0ZWTGxobHg1cG9IMlBCOGExLWJYdjNMQjNKdjV2ek8wZUJtR05TY0xhbHl5YWg1c3NXR0FHR0F4YQ?oc=5",
+              "sentiment": -0.76,
+              "relevance": 0.904,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaTI3LUt2NGFnSVBuTkx4aFNIcHRiN09hczRaQlR0SEU0TnVKbXQyUThZRHowQzBQSy1kYURNc2IzSk5DbEdZdnRFUFlNUHk1cjB6NDYwQkw1b3FEa054dmN2U1JITHVkUC1VWWlQOWc3di0zNnRtRUVKOTVyR21fMkd0Wm9OVjRLZFJadlN4SUNpYkIxV2tMTEw2bklHQi1EZU8xME93R0xoZ2N3S01hOFBFajhYVzZDWk1nVFlZTWtlTXhaRHp4SQ?oc=5",
+              "sentiment": -0.718,
+              "relevance": 0.887,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 66,
+            "zscore": -1.92,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-13",
           "return_pct": -4.34,
@@ -42,8 +81,8 @@
             }
           ],
           "coverage": {
-            "count": 121,
-            "zscore": 0.74,
+            "count": 122,
+            "zscore": 0.79,
             "spike": false
           }
         },
@@ -202,45 +241,6 @@
             "zscore": -0.16,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -3.21,
-          "zscore": -2.61,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.21,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "A Recession Is Coming Eventually, and History Says There's a Major Silver Lining for Investors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN0tQVWVhWjJaWmJnUldNbkRmS1NxOXNrekw2VGdFYldid19jdlphSWdxSVYzTGxpY3hDYnoyZk5XMnZQTnRTdjgwdDZyTDd4Q0ptNzlNMHd4bTljbjNYR0JvU2Exb2FLUUZkdklFYTY2MWJHMzVlTldvc0JzYnZPcUxTbzNHVHhva2tOT1FsYTItejVGMFlB?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin Slides From $84,900 to $82,200 as Oil Jumps on Iran Strike Plans: Is the US-Iran War About to Restart? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNXN5clZLbVNzT0ZuNGVac1RXY0U3YTFoRVN4VlhvR1REZ1BKZ3k4NXBzT0ZlVHV1bE9jaFROd05xYW95RWxZU3U0Vi1WZEVBTXloWHU1ZFJaTnFvVk91NGtDSnRoWEE3Y0pDblRhdWRVNVRjZjdfS3JxZDBPQ2ItNGVpN3VrcU8tRG9aNzVnck5ROGM?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "geopolitical"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin (BTC) Price at a Critical Junction: Analysis Company Warns, Reveals Critical Levels! - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1vTGtCOGhBZmNVT0NaeURGM0xlZllMWUFzOVJJcFZDa1pGcjI3QUFmZE11anFyRGgySDVld0oyQzc5dnN0NzJtd2VCRGpRcnA4dkNJWEJWLUQ?oc=5",
-              "sentiment": -0.648,
-              "relevance": 0.859,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 100,
-            "zscore": -0.01,
-            "spike": false
-          }
         }
       ]
     },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -4.64,
-          "zscore": -1.52,
+          "return_pct": -7.65,
+          "zscore": -2.69,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.54,
+          "market_return_pct": -5.51,
           "events": [
             {
               "source": "googlenews_macro",
@@ -266,25 +266,25 @@
               "event_type": "inflation"
             },
             {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "inflation"
-            },
-            {
               "source": "googlenews_eth",
               "title": "Crypto News: Bitcoin, Ethereum And XRP Hit Make-Or-Break Levels After Brutal Sell-Off - Coinpedia",
               "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPY1JxUURPWFdCbTM3NTlrc3lwdk9zRXdZSGdsOEVjbTYtTThPWE9LVW9meFpHWVVqSTV5a0I0UEFrcXRDdnBRaW85ZjBNREpIYmFoMDY3WDlDQnZ0U0RrRWdGQkswdC1JajdRdTdLRzhndy1JaTN4MzlyX3RlZU9lNVE5VGZ2anRUeUdNdzc4MlVzc2E5V1dFNlJGWWVNU0VqWXp5UXRiSDFtR3VHMHp3UNIBtgFBVV95cUxNYlZJc1ZwSlFJdVZXVWdzTmVlLTlSSXRJTEgycEQ5RWVtRnc0M3hfU0EzNnBjZGpqRGpaeWpJdHI4dDVlYTVkR0lNOGN5NU1nTjlyS2h1Nk15dlMzVVRDRURWQV9EbEdXXzBvYzF6aDVYblRMVEVaOUF0Q21JVDdlY1FwRDljODVKT1dLd2t5X3luaFdjSFdfMG4xU3h1RlVQanBPVmEyQ2k3RGRnd0N4R2FvRE1PQQ?oc=5",
               "sentiment": -0.625,
               "relevance": 0.85,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Crypto News: Bitcoin, Ethereum And XRP Hit Make-Or-Break Levels After Brutal Sell-Off - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE56S01pazd6TDZiZUpIQUhnRUJMWXJIVTEwdjdNRFRGSkVFV1FPVUEtbU9VQTBzNVk1T1NxVFF0WEJ3NW1nZThoTk5iZVJsTmlxTm5uMlQ0N3ZkVkE?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 37,
-            "zscore": -1.92,
+            "count": 51,
+            "zscore": -1.18,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 82,
-            "zscore": 0.41,
+            "count": 83,
+            "zscore": 0.46,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -7.04,
-          "zscore": -2.69,
+          "return_pct": -10.44,
+          "zscore": -4.19,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.54,
+          "market_return_pct": -5.51,
           "events": [
             {
               "source": "googlenews_macro",
@@ -515,17 +515,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "inflation"
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hikes Threaten U.S. Farm Margins as Debt Hits $605 Billion - AgroLatam",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeVIwRHdsY045UWNkZThtVkhWb2QwWVhVSlVFaUM1TTRCV1dNRVh5ZDJEV1JqZnNGYlBlam5sS2RhVkJ1dWUwTVhLRmNfdEpUeDVpVldtcDZibUJ5eHdOUTVOa0U3eTBpSFlQaGpVSVZoXzZMUGtjelBHQQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 28,
-            "zscore": -1.44,
+            "count": 31,
+            "zscore": -1.22,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -7.0,
-          "zscore": -1.91,
+          "return_pct": -10.88,
+          "zscore": -3.09,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.54,
+          "market_return_pct": -5.51,
           "events": [
             {
               "source": "googlenews_macro",
@@ -748,12 +748,12 @@
               "event_type": "inflation"
             },
             {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "inflation"
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hikes Threaten U.S. Farm Margins as Debt Hits $605 Billion - AgroLatam",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeVIwRHdsY045UWNkZThtVkhWb2QwWVhVSlVFaUM1TTRCV1dNRVh5ZDJEV1JqZnNGYlBlam5sS2RhVkJ1dWUwTVhLRmNfdEpUeDVpVldtcDZibUJ5eHdOUTVOa0U3eTBpSFlQaGpVSVZoXzZMUGtjelBHQQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
             },
             {
               "source": "googlenews_macro",
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -1.29,
+            "count": 10,
+            "zscore": -1.18,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -5.12,
-          "zscore": -1.56,
+          "return_pct": -8.31,
+          "zscore": -2.61,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -3.54,
+          "market_return_pct": -5.51,
           "events": [
             {
               "source": "googlenews_macro",
@@ -989,12 +989,12 @@
               "event_type": "inflation"
             },
             {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "inflation"
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hikes Threaten U.S. Farm Margins as Debt Hits $605 Billion - AgroLatam",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeVIwRHdsY045UWNkZThtVkhWb2QwWVhVSlVFaUM1TTRCV1dNRVh5ZDJEV1JqZnNGYlBlam5sS2RhVkJ1dWUwTVhLRmNfdEpUeDVpVldtcDZibUJ5eHdOUTVOa0U3eTBpSFlQaGpVSVZoXzZMUGtjelBHQQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
             },
             {
               "source": "googlenews_macro",
@@ -1006,8 +1006,8 @@
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.64,
+            "count": 3,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -2290,7 +2290,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 2.52,
+            "zscore": 2.53,
             "spike": true
           }
         },
@@ -2329,7 +2329,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 1.79,
+            "zscore": 1.77,
             "spike": false
           }
         },
@@ -2407,7 +2407,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.04,
+            "zscore": 0.03,
             "spike": false
           }
         }
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-14",
-      "return_pct": -3.54,
-      "zscore": -1.5,
+      "return_pct": -5.51,
+      "zscore": -2.49,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
