@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.7% | 33.3% | +19.7 pp | 34% | 1.000 |
-| 2 | LINK | 39.8% | 33.3% | -6.4 pp | 32% | 0.500 |
-| 3 | SOL | 46.6% | 33.3% | -13.2 pp | 29% | 0.000 |
+| 1 | POL | 13.5% | 33.3% | +19.8 pp | 28% | 1.000 |
+| 2 | LINK | 40.6% | 33.3% | -7.2 pp | 31% | 0.500 |
+| 3 | SOL | 45.9% | 33.3% | -12.6 pp | 23% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -32,16 +32,6 @@ Token della piattaforma Binance e gas della BNB Chain.
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
 - **Età**: 9.3 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**TRX — TRON**
-
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
-
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.2 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -79,9 +69,9 @@ Rete di pagamenti e emissione di asset, focus rimesse e RWA.
 Exchange di derivati on-chain con volumi elevati.
 
 - **Cattura del valore**: i ricavi finanziano riacquisti del token. Una quota delle commissioni finanzia riacquisti del token — cattura diretta e insolita nel settore. Contro: circolante intorno a un quarto del totale, quindi sblocchi molto pesanti davanti, e codice del motore non pubblico.
-- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 3.97 volte la capitalizzazione attuale.
+- **Offerta**: sblocchi importanti ancora davanti — valutazione diluita 4.00 volte la capitalizzazione attuale.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: almeno 1.9 anni.
+- **Età**: almeno 2.0 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **XRP — XRP**
@@ -123,9 +113,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 25
+- capitalizzazione sotto la soglia: 26
 - stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 10
+- volume troppo basso rispetto alla capitalizzazione: 13
 - già in portafoglio: 6
 
 ## Limiti
