@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T03:34:00+00:00",
+  "generated_at": "2026-11-14T06:37:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -6.61,
-          "zscore": -3.26,
+          "return_pct": -5.7,
+          "zscore": -2.78,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.61,
+          "market_return_pct": -5.7,
           "events": [
             {
               "source": "googlenews_btc",
@@ -25,25 +25,25 @@
               "event_type": "other"
             },
             {
+              "source": "googlenews_btc",
+              "title": "Why Is Bitcoin Crashing? 5 Pressures That Pushed BTC Below $69,000 - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE52STRzWHVIZG1sTzVVeUlrZkRqaHZwb2p4eTl0bG9SZzkzLUhueGRsQ2xEaDFIVEJmdk1CcDlHTWhEcGctMFk3bE5KOTlZWGEzWkI1WkdfRXQ2MzNJSTQzcjR2c2hUTjA5alg5SGtDaw?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
+            {
               "source": "googlenews_macro",
               "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
               "sentiment": -0.751,
               "relevance": 0.7,
               "event_type": "macro"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Nakamoto Reports Negative Q3 Revenue as Bitcoin Options Losses Rise - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQm1SMFhmTmpkNXMzeWVNaUJRSS1lV2RpVDdzRXZEM2QyS3BIaVNhNy1nSDFyM1luUXpVRU1sMWJlVjlVcy1BOTNpZm5hRkdUM0x0Vml5b0J0dXBrM29fQ0JnZHlfVVRUS1pUTzFIZEx2WUVJdTF3RnQyNk53WTRRb2t1NWxHOXQ4ZjNSR3ZfYnVHN2NHZGxLOGZQX0lyeGhMNlVZ?oc=5",
-              "sentiment": -0.751,
-              "relevance": 0.7,
-              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -4.76,
+            "count": 14,
+            "zscore": -4.41,
             "spike": false
           }
         },
@@ -251,12 +251,28 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -6.6,
-          "zscore": -2.34,
+          "return_pct": -5.62,
+          "zscore": -1.96,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.61,
+          "market_return_pct": -5.7,
           "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ether Falls Below $1,900 as Losses Outpace Bitcoin - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZdE1pU0hGY0JCbXI2a3E2VlFBRTFQVGVTdjgyN2ZxZkJ3bEg5MWR4cWhqU0pyZzZITlBqU1FVNUh6S0ZGdnhTYkFCeEdkREpvR3prbzV6ZnR2QQ?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum sees ETF outflows and Foundation sales: ETH remains under pressure - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOXZNSE9KVWVJMnAzRUtPd3NXU2VtbjF4dXo2TnEyS1B2endnMVl2TlpLTUdsSDd2NjNnM05ocmRXRS1IeXpPSzJGSUZ3SGdiZUZBM0FJcXFiVUVwT3lhZWYydnJobURyZW96SnVic2hsY3dOQk1MNEpQV1RPV21QdmhMUk1VYUxBRi1MUjlKbWxaTlVzT2cyaGp4bw?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "etf_flow"
+            },
             {
               "source": "googlenews_eth",
               "title": "Ethereum Price Prediction: ETH Risks $1,500 After Nearly $250M in Liquidations While AlphaPepe Passes $3.39M Raised - StreetInsider",
@@ -264,27 +280,11 @@
               "sentiment": -0.273,
               "relevance": 0.709,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
-              "sentiment": -0.751,
-              "relevance": 0.7,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Fed’s Collins Says Inflation Fight Outweighs Housing Woes - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWNWM3ptZWVMSTZ2Nm1jY2JQU1pXZ3l1Q01qdzAwV1YwbGxPN2JIY19pTmNiTmV5eFA3c1lkQklsX2JKV1BuM2haS09HU21XSk5DT3FvRG5vSkEyNGlLalJMNTZfQ3hCTlM5SVBGY3NBb2xDTloyYmtidHdKNE5YZnNUREI3dk5ZQ01UdVpKaC1MQkJJbkF0V2o5QS1RQQ?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.668,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -3.67,
+            "count": 11,
+            "zscore": -3.3,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -8.05,
-          "zscore": -3.27,
+          "return_pct": -7.46,
+          "zscore": -3.0,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.61,
+          "market_return_pct": -5.7,
           "events": [
             {
               "source": "googlenews_sol",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -3.18,
+            "count": 7,
+            "zscore": -2.97,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -5.56,
-          "zscore": -1.46,
+          "return_pct": -4.76,
+          "zscore": -1.22,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.61,
+          "market_return_pct": -5.7,
           "events": [
             {
               "source": "googlenews_macro",
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 3,
+            "zscore": -1.93,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -6.36,
-          "zscore": -1.89,
+          "return_pct": -6.02,
+          "zscore": -1.79,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.61,
+          "market_return_pct": -5.7,
           "events": [
             {
               "source": "googlenews_macro",
@@ -6032,9 +6032,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-14",
-      "return_pct": -6.61,
-      "zscore": -3.26,
-      "max_abs_z_recent": 3.26,
+      "return_pct": -5.7,
+      "zscore": -2.78,
+      "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
