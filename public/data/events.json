@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T12:34:00+00:00",
+  "generated_at": "2026-11-14T15:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-14",
+          "return_pct": -4.44,
+          "zscore": -1.95,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.44,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Most Investors Are Wrong About Who Owns the Most Bitcoin. That Misunderstanding Is a Buying Opportunity. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTTRuTEl5Ylg1WFUwb29lQTdhSmpJNzJ0WEh4aWtZMjk2bml2WHlQSkQ3ZjA0UFVBSTlNUXhtMEZDY1pVVlpOSXM1QUlUeXdTQTlDcDNWOTVaWmszeXpqU0ZWTGxobHg1cG9IMlBCOGExLWJYdjNMQjNKdjV2ek8wZUJtR05TY0xhbHl5YWg1c3NXR0FHR0F4YQ?oc=5",
+              "sentiment": -0.76,
+              "relevance": 0.904,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Crypto Market Crashes as Bitcoin and Altcoins Slide, Fear and Greed Index Sinks to 17 and Liquidations Surge - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOTG56RENCMERuRWRkLVR3a2RwdV9ubTV5X3N4RThjWTQtX3hNZ0stQ2k1WGRaMmF6TU9WTk1qQWpzdlFCTEFWUzZyU3VzOV9leHlNWklFRVNvNDFSSVdYWUFQMTlKRkxubFpvVWpBcHAxNHludnRSRlhIVHk0M2xHSnBsWU5vcTF1ZzRPQXdONnBOTnhiZmc1ajdZbUxUZUp1cFc1ZWVySWhQZlRuU0RmNE5ZUUZyNWd1WlA3bUhTX2pHSWxDd256XzlzbEJOaGhMRXMyUnpSc2JDLWdHWkxlUkxZT1BxQU5ualE?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Price Prediction: BTC Falls to $67K as 6.5% US Inflation Raises $65K Crash Fears - Coinpaper",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeWRDWElvb0RSS2ItcGRaNG9rdGkwRjR4WkFmQ3NZZko4VktyUDJXUTN3M1JBN2dCdGUxcnhFdy1LeDNza2JEbW1GcmFfT2tNeXdMd1NYSTdSb3hERzdRRkNoNTgwY1FZTmp5eGZSYWpjdGlrYnpwSEQ2T1ZmV2VhLWZpU1ZsNzJuWnhHODVMOXpXdy1tNkF4Y2tSZEdKYWl1OU92elBfR1dMTjJLaFJ2b3JGdWo?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 43,
+            "zscore": -3.02,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-13",
           "return_pct": -4.34,
@@ -43,7 +82,7 @@
           ],
           "coverage": {
             "count": 121,
-            "zscore": 0.75,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -81,8 +120,8 @@
             }
           ],
           "coverage": {
-            "count": 118,
-            "zscore": 0.55,
+            "count": 119,
+            "zscore": 0.6,
             "spike": false
           }
         },
@@ -202,45 +241,6 @@
             "zscore": -0.16,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -3.21,
-          "zscore": -2.61,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.21,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "A Recession Is Coming Eventually, and History Says There's a Major Silver Lining for Investors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN0tQVWVhWjJaWmJnUldNbkRmS1NxOXNrekw2VGdFYldid19jdlphSWdxSVYzTGxpY3hDYnoyZk5XMnZQTnRTdjgwdDZyTDd4Q0ptNzlNMHd4bTljbjNYR0JvU2Exb2FLUUZkdklFYTY2MWJHMzVlTldvc0JzYnZPcUxTbzNHVHhva2tOT1FsYTItejVGMFlB?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin Slides From $84,900 to $82,200 as Oil Jumps on Iran Strike Plans: Is the US-Iran War About to Restart? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNXN5clZLbVNzT0ZuNGVac1RXY0U3YTFoRVN4VlhvR1REZ1BKZ3k4NXBzT0ZlVHV1bE9jaFROd05xYW95RWxZU3U0Vi1WZEVBTXloWHU1ZFJaTnFvVk91NGtDSnRoWEE3Y0pDblRhdWRVNVRjZjdfS3JxZDBPQ2ItNGVpN3VrcU8tRG9aNzVnck5ROGM?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "geopolitical"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin (BTC) Price at a Critical Junction: Analysis Company Warns, Reveals Critical Levels! - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1vTGtCOGhBZmNVT0NaeURGM0xlZllMWUFzOVJJcFZDa1pGcjI3QUFmZE11anFyRGgySDVld0oyQzc5dnN0NzJtd2VCRGpRcnA4dkNJWEJWLUQ?oc=5",
-              "sentiment": -0.648,
-              "relevance": 0.859,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 100,
-            "zscore": -0.01,
-            "spike": false
-          }
         }
       ]
     },
@@ -249,6 +249,45 @@
       "name": "Ethereum",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-14",
+          "return_pct": -4.9,
+          "zscore": -1.62,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.44,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Price Remains Under Pressure: Are ETF Outflows Pushing ETH Lower? - Coinpedia",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQUdVX2xqX3dJTWRMQ29jUjNCV2pScHBGVU5yNnpRU0pRR0JXLTlsZXU1NHdiSDFaOHppdnExeFdjNlN1ck5nZEFhTlp5N2l5SGZFYXlUVnVmSTFRQmF2ZkNDVGFaOGZ5RmdQbUc2OEd3c28wSnNWS3lpZlRDR2hRRHNUcUpqanpYSkd6VnZxckNDMlQ2MDhZYnZMLU82TWpFSVNwSWFzTDJPaURySU5j0gG0AUFVX3lxTE9JejJrRWl1Z3VnR19fTHFpcktITC1wdUdQNE5Yal9rX2Q4Ym1UUUIyRHo0RTk5Snd5VFFyRFRWVWJfQk5yUmM5RldnalktRk1Ya3RyQ3p0empkMGk2X0g3VDF3SllqMXJUSUxWaHVKRUFERjgxaURyRks5blVZdy1vUExYUmw2aDk2b2hJNGlneTJjbXM2WWtfY1ZKRFhyTGV6SzYyTnJhb2NYeFBkTDI5ZTBESg?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.811,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZm1nQnRBRXZ6cXF3aGNvT2Q2dk1IM0lFUGRQZmpFSEJxd2E3VTR1WGU3WTBRdF9hVFd3T1RvZzMxbVhfcWNUMGhIdTZTdWRuUmppNE5mTGFlV3hWajVtX1BVUmQ0UEIzbFZ1LTFBX2lfM0tCbGNOTVZBUi16aHJvel94dk5YZGhYUDExcF9tY3lCc0dPcVd4ckNlMTRoUGQzTVE?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ether Falls Below $1,900 as Losses Outpace Bitcoin - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZdE1pU0hGY0JCbXI2a3E2VlFBRTFQVGVTdjgyN2ZxZkJ3bEg5MWR4cWhqU0pyZzZITlBqU1FVNUh6S0ZGdnhTYkFCeEdkREpvR3prbzV6ZnR2QQ?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 28,
+            "zscore": -2.4,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-13",
           "return_pct": -4.42,
@@ -283,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 79,
-            "zscore": 0.26,
+            "count": 80,
+            "zscore": 0.31,
             "spike": false
           }
         },
@@ -443,45 +482,6 @@
             "zscore": -0.42,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -3.42,
-          "zscore": -1.85,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -3.21,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "A Recession Is Coming Eventually, and History Says There's a Major Silver Lining for Investors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN0tQVWVhWjJaWmJnUldNbkRmS1NxOXNrekw2VGdFYldid19jdlphSWdxSVYzTGxpY3hDYnoyZk5XMnZQTnRTdjgwdDZyTDd4Q0ptNzlNMHd4bTljbjNYR0JvU2Exb2FLUUZkdklFYTY2MWJHMzVlTldvc0JzYnZPcUxTbzNHVHhva2tOT1FsYTItejVGMFlB?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Crypto Market Today, Oct. 22: Bitcoin and Altcoins Slide as Wall Street Fears Spill Into Crypto Markets - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQV3UySXB0QmIySWk2aG04TUZRUUZpeElEb3FnRkhUajIzdFJXTHdDVGVnaFNDbHlBNGFZd0xKN29adW1jb1kzUS1aVGkwWWpRWVRXZEtjUHRhYU92VXVEek9LYVZPN0lDOGNtLU9OdnZkVjIyc0R4alZKTlFEblNheFZlQm84dUpUVVFYcGJ0MXM2N0EyQTF2S2h5bnpNY2gyOXlpTWlOcGNQTjZ2N1FmRFliUFk2ZWVXRWg0TllXcXE4STQ0QmR0cEpKcG1BMndaamRBbEM3eVNSb1NvRk45aDVkSzhncXN2ZE9rQ2k0NFY4WFk?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Ethereum Price Prediction: Is $2K Next After ETH’s Latest $2.5K Rejection? - CryptoPotato",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdmF0VzllaS1jM0JnSVEwSlZWUXdRTGxqb3NiRkxDSVg4UDdzTTdoNjNoSEE2NEZIS2xpNEl6QkVBVlVIZjlqNmVJY0dxQXZKYmpZRDM1SlRIRTRNQk15a29mT3h3MEw0Z0NHQzRsclRnLU1kbjNjbFE1M3l4N19JTG9kWXM0bTlINmlIdjk1a01hdjV2MmpqR0lUQQ?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 68,
-            "zscore": -0.35,
-            "spike": false
-          }
         }
       ]
     },
@@ -490,6 +490,45 @@
       "name": "Solana",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-14",
+          "return_pct": -5.68,
+          "zscore": -2.09,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.44,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "SOL slips as seller pressure and negative momentum weigh on price - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSHFWd2ZDX3laelF1LWtvaTAxX2c4V1pJckFCMGhFSzB4LWhvT2djTnNpanlZSjZNcmVyb0EwOWtmaE5oT2pDd3dYWFpGUWg5YmlWYWIwNkczTXlkNTNLRTR5aW1nUEo3YkllbE9nc0taZWdtZXU4RWk0Z0xFdmZrb2NJMUc4NUZaQnpnWG90Y3VnaDdNTjFma18tbWtSVGc?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZm1nQnRBRXZ6cXF3aGNvT2Q2dk1IM0lFUGRQZmpFSEJxd2E3VTR1WGU3WTBRdF9hVFd3T1RvZzMxbVhfcWNUMGhIdTZTdWRuUmppNE5mTGFlV3hWajVtX1BVUmQ0UEIzbFZ1LTFBX2lfM0tCbGNOTVZBUi16aHJvel94dk5YZGhYUDExcF9tY3lCc0dPcVd4ckNlMTRoUGQzTVE?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Validator Count - The Block",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnamNpSnBvRFVHX3dBWTlKdmV1ZEY5VnBITF8ycmtVSmtuSFZwQnpWcTZvTW1xM3laLXJkRDIyemhpSUhrS0hwWTVKeXlpMUdWeDR2djg1SmF6ZGZtODNDd3VKUQ?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 23,
+            "zscore": -1.8,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-13",
           "return_pct": -4.37,
@@ -524,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 57,
-            "zscore": 0.66,
+            "count": 56,
+            "zscore": 0.59,
             "spike": false
           }
         },
@@ -684,45 +723,6 @@
             "zscore": 1.49,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-08",
-          "return_pct": -5.83,
-          "zscore": -1.97,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.92,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Solana liquidity on major exchanges drops 28.5%, raising risks for large trades despite strong tokenized asset activity. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPV1hBbnNnNEVfcVdCVUhiVk9fb0UzSnM1T0FrTXQyeUVJUGZIZUVvcFF0TEpJbEg2MjhqOTJZZ3Z0VzFFRkQ2a09OajE4b1BPYzJOTG9lblktd2o5cnhhaXlPNFFUazIwMm5YRnJPVk5pVXpTc2dvdUxhUTIzQ2daVHJsZlQ0bFhVNzBWcW9n?oc=5",
-              "sentiment": -0.711,
-              "relevance": 0.884,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Prediction: SOL May Drop 15% After Key Breakout Failure - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM2NrZ2xvZEpjdklKZWx3WkJ0YmtPM1U5WHVfajFILU9idGtSX0ZmWEI4cDl5djFrSUdEMm5rREVaMDJqYmliYmZxUm1kVFJ5YjYyOE1nNnhZU01kdk4yQm5PaXY4VzJ4M1RkNWE0dWlzd2Y5c0FmS0dqVXNBa2hSc2tkVWpMd29KWF80Wk4wZFBaeG5XbEllMjl4ZlY?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Price Prediction: SOL May Drop 15% After Key Breakout Failure - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbUo1RDhBeEE1bGNNWS1QVUJfOXJmcTNsOTRsR0U4U1FiQnpCN3hVX2htTmR0UEt5R2dsa21ZXzB1T1RZc0FxTjRQSllZbW1kc05rcDJ6bkF2YndlRjdPZFlTZE43bVV4V2hNSHF4Qk1FOERDdWtjODdna21XUXIwWFg5MjI0aWtPamRDelMyT1NIZzduUDlLMldkcWJWQ0VnNjVHX1VfRDVPZUNMdlBZLWd6cEJhbFRq?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 51,
-            "zscore": 1.11,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-14",
+          "return_pct": -6.06,
+          "zscore": -1.63,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.44,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZm1nQnRBRXZ6cXF3aGNvT2Q2dk1IM0lFUGRQZmpFSEJxd2E3VTR1WGU3WTBRdF9hVFd3T1RvZzMxbVhfcWNUMGhIdTZTdWRuUmppNE5mTGFlV3hWajVtX1BVUmQ0UEIzbFZ1LTFBX2lfM0tCbGNOTVZBUi16aHJvel94dk5YZGhYUDExcF9tY3lCc0dPcVd4ckNlMTRoUGQzTVE?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hike: Daly Signals a December Move as Bitcoin Faces Pressure - Coin Gabbar",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX0EzRUJxdjVvYVRzLXlrOWxxZDRLU2JwVTVtNG85TjVCRmx0bG5KaEprUVBEUUJ6UGduWmpOQUthTTYyT0ZReEJ6a0ROamZiVXBOb2NRMnBXb2Z6MFR3TDJtWkhteUNQN0lnaGFGUEp3T1pDazhDWU50Qk1WU1BaRTFZMTFxd0lGaW1wdg?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
+              "sentiment": -0.751,
+              "relevance": 0.7,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 8,
+            "zscore": -1.4,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-08",
           "return_pct": -4.01,
@@ -925,45 +964,6 @@
             "zscore": -0.07,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-12",
-          "return_pct": -5.38,
-          "zscore": -1.53,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.29,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink and Cosmos Price Prediction: ATOM Rebounds as Remittix Challenges Two Infrastructure Giants - TechBullion",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUGJweGIzc08tVmFHS1pfenpyZy13Q1FwSUpPWk8xcFpNYnoySkFSb1BBUUJxa1EyTmlxWVdQZF9KRWpiamk5X2w4Rm1qOU5vdUpWWUFEcHhjaEpOaXJNWnVxQjdyeFI5N2cxSUgyd2l6WEY4VWphNzVRWDRiaVZFWHowX1J0T1AtTjJjR1ZOcklGVkU5Vm82cFVfbGtMbjlXZVY4ZVppYjVfTVAzbnRKRlp2aTRtS2ZqcTQzQ1hmVko3MXc?oc=5",
-              "sentiment": 0.077,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Prediction: LINK Whales Make 681 Big Moves in a Day, but Smart Money Eyes Pepeto - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOX0ZDSFJtTHhwWGpOa0I4Z0ZBVDJXbGZtQVVzR2YzOWpJUWhtQ3M5WnMtTUEtNkxDRzRVNlBueVVaMV9nbW1iNmtUQ3ZHR3N5RVRkdmIwVkxwMVlSaGlfaENYRkl2dDFZUzJqbmdrcEZRQ0tHZmdWUnZZVXZ5SEViWGJUZFdWZnhyV3N4elVhbXYzdkRfMGc1dnU0S04xUHlIS1FKWXdvMTVIVjFZT25xaFVRaEYzTFRXTGF4bHFWa3g0c3pPbmpCa0hqdHFMbUNIeDJuSHpUcDVGNUo1T1I4dkFPV3lmbDBEQ3VLaHJvWWcyZw?oc=5",
-              "sentiment": 0.55,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) Recovers Above $13 as Large-Wallet Share Rises - TOKENPOST",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxdk5JTHpqcnNBX1VFd1hYMDgwNDlnWlNTVTBLNXVDNngyZVVvNFpDLUdOUmN1Uk9MNEpNOFEyYUl3YXktRURBcDNleDFSX0VWZjZVLVZiOWU1QQ?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 19,
-            "zscore": 0.54,
-            "spike": false
-          }
         }
       ]
     },
@@ -972,6 +972,45 @@
       "name": "Polygon",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-14",
+          "return_pct": -4.07,
+          "zscore": -1.22,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.44,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZm1nQnRBRXZ6cXF3aGNvT2Q2dk1IM0lFUGRQZmpFSEJxd2E3VTR1WGU3WTBRdF9hVFd3T1RvZzMxbVhfcWNUMGhIdTZTdWRuUmppNE5mTGFlV3hWajVtX1BVUmQ0UEIzbFZ1LTFBX2lfM0tCbGNOTVZBUi16aHJvel94dk5YZGhYUDExcF9tY3lCc0dPcVd4ckNlMTRoUGQzTVE?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Fed Rate Hike: Daly Signals a December Move as Bitcoin Faces Pressure - Coin Gabbar",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX0EzRUJxdjVvYVRzLXlrOWxxZDRLU2JwVTVtNG85TjVCRmx0bG5KaEprUVBEUUJ6UGduWmpOQUthTTYyT0ZReEJ6a0ROamZiVXBOb2NRMnBXb2Z6MFR3TDJtWkhteUNQN0lnaGFGUEp3T1pDazhDWU50Qk1WU1BaRTFZMTFxd0lGaW1wdg?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
+              "sentiment": -0.751,
+              "relevance": 0.7,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.79,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-13",
           "return_pct": -4.55,
@@ -1164,45 +1203,6 @@
           "coverage": {
             "count": 10,
             "zscore": 1.85,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-22",
-          "return_pct": -4.49,
-          "zscore": -1.11,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -3.21,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "A Recession Is Coming Eventually, and History Says There's a Major Silver Lining for Investors - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN0tQVWVhWjJaWmJnUldNbkRmS1NxOXNrekw2VGdFYldid19jdlphSWdxSVYzTGxpY3hDYnoyZk5XMnZQTnRTdjgwdDZyTDd4Q0ptNzlNMHd4bTljbjNYR0JvU2Exb2FLUUZkdklFYTY2MWJHMzVlTldvc0JzYnZPcUxTbzNHVHhva2tOT1FsYTItejVGMFlB?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_pol",
-              "title": "Will Polygon avoid deeper losses as sellers maintain control of the trend? - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMmw4aERaLXJwd2xTVi1PNTgxNGQ0bTN2YzBibUFpXzJqV21Ndlh6cnh0Mzc5N1ltNVBKV3ZjaTVSUC15VE5xV3gwOFk0S1BxeDAtZ0EyVHJhMVdvOUgwMmN5TnF6alh4aFhZYnpNVG5weE5wTG1LWG5Rc3ZBdzJSTFFROUoyMmVCSEljUUhvOWRzUFFNOXJiZm1IUjV0dGM?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.84,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US Leading Economic Index Holds Steady At 0% In September, Beating Expectations - Forex Factory",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQS1MxcWg3VHVHN1d4OXNqcVlNdUNNODVKSlZ6VkFhYU1rb0hENGFmSTZaZGVRd0JGZER5emVJLUdiYnpRNkVmZXhzZVdPN2xlc1U2cEVfNkFzM2g5M3RQZzdCWmxUM0J5LVA2QjdVVWFtdnRvQkNmM3R6aEZSNG8xUDVCV3F2OEV6d0M5eU9R0gGTAUFVX3lxTFBUNUtXT05MN3R4RmVaeUJySGQ2QkVuaWl5cWRDRVpzRDluVzczV3JvUzNSV0VDalZxQnFJT0pZakNORW83bW05YzJKSkFPdVZCQVJRd3RuNTJ0OWNTczRQY29aY0Y4QVBDbF9oakd4M3NPYkJSdUN5NjVaZU5SSHNCTXNEZHFzd2FIcC1MRnRlOEctZw?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.1,
             "spike": false
           }
         }
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.14,
+            "zscore": -0.13,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.45,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 47,
-            "zscore": -0.48,
+            "count": 48,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.55,
+            "count": 33,
+            "zscore": 0.62,
             "spike": false
           }
         },
@@ -6032,12 +6032,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-14",
-      "return_pct": -1.62,
-      "zscore": -0.53,
+      "return_pct": -4.44,
+      "zscore": -1.95,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-13",
