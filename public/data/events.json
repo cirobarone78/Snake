@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T00:44:00+00:00",
+  "generated_at": "2026-11-14T03:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,12 +10,20 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -4.32,
-          "zscore": -2.04,
+          "return_pct": -6.61,
+          "zscore": -3.26,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.32,
+          "market_return_pct": -6.61,
           "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "BREAKING: $Bitcoin (BTC.CC)$ just hit a new 3-month low, falling below $67,000. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU3VncDFpR2RTUVJyWWV5OWFwWVZmTXN6a041aDRGRjZmc3VzWEhhMkZhQ2lhNTlDSy1Cdi1FWFctdFBQc0N6QXJIZHN2ZnF5bXlrOVg1NWJXMk4tMlJSQ2ZJb19zZEVuYXdCbzhLZmFzMmI4WVgxaEtNc2NwcFh6MnJkdFNKZWRTZjRjZFNGRUlSaFJvSVhpZm53U2NhXzM0Tmc?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_macro",
               "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
@@ -31,19 +39,11 @@
               "sentiment": -0.751,
               "relevance": 0.7,
               "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin Fear and Greed Drops to a 4-Month Low: A Blessing in Disguise? - CryptoPotato",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS2N0M3gwOVVSdjg4aW1MUkZvWjVmVlVrV1AtbHMzMmpDYlBxVVN2dGpfZDM0dFZYWFFxcllWN1ItQjJRa1pIbmVkYnZENjR3X1VkUVk5OFZ1cjBhV2FKQ1V4S2RNa054WUFlNWpHM1czc3pNVHhqRWNESC12MEVBOXNiU1ZaX18yOHh6YXRjZ2REY296UnpZT3JR?oc=5",
-              "sentiment": -0.7,
-              "relevance": 0.68,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -5.06,
+            "count": 7,
+            "zscore": -4.76,
             "spike": false
           }
         },
@@ -251,12 +251,20 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -4.35,
-          "zscore": -1.45,
+          "return_pct": -6.6,
+          "zscore": -2.34,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.32,
+          "market_return_pct": -6.61,
           "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Price Prediction: ETH Risks $1,500 After Nearly $250M in Liquidations While AlphaPepe Passes $3.39M Raised - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNZUxhNkpSVDZwN3V0blhiNWpVV0F5NzJLdEhKZGJrMEtKWFlQLW9FSV80Qld4UmZkMFFGYklfSG9jS1RFNlc2Um9kZ0NpSkVWaXNEeDhZRmlfbWFrT2NveFN1ZjNfTkI3VWd2dWVIQkI1cVhNbGVqWGVnQnhMSFlHSlR6ektGVm1TalZhSWJuWjZhSHRQU1dlYUlfZ3RZVUpJMmJpeDUxaWpwcTJidnYyMW5CSENtcVI4a0RjY3FKc3FfaDUwMHo3VHhjY2p1WjR0TllZLWtzYTEzaU55UXl2U2FUcEQwR1RzazlwRFpqS1JQbTVuWlJnRDdrUVVzeHotQklGUG1aeF90dmJhbzU4b2JGTQ?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_macro",
               "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
@@ -272,19 +280,11 @@
               "sentiment": -0.67,
               "relevance": 0.668,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "‘Everybody needs to prepare’: Market expert warns of December shock that puts Americans at high risk. Act by Dec. 8 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMHNuQmQ5eXJHTHlsSnJEUkFGaDFZT2tUNDRjTzI2Z3ZjdFJwUUo3eXktSEFvRWFER2hsUTZvWHc3M0RPRzdsbGJTelRYczU4RzVLNFJzTDFaenFmQ3piRDRsQnQwOG1EM21mVDBYYXZjN3d5aTFGdndUckVJUWNOclFwdExnb2JQSmpjdmUyaFY4M3JYQkFqSXZSNnp0TGFkN2Z1Yg?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.65,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -3.83,
+            "count": 4,
+            "zscore": -3.67,
             "spike": false
           }
         },
@@ -492,12 +492,28 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -4.5,
-          "zscore": -1.65,
+          "return_pct": -8.05,
+          "zscore": -3.27,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.32,
+          "market_return_pct": -6.61,
           "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Validator Count - The Block",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnamNpSnBvRFVHX3dBWTlKdmV1ZEY5VnBITF8ycmtVSmtuSFZwQnpWcTZvTW1xM3laLXJkRDIyemhpSUhrS0hwWTVKeXlpMUdWeDR2djg1SmF6ZGZtODNDd3VKUQ?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Vote and Non-Vote Transactions - The Block",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE13ZmFkSjdMTWU5RkNLUTV3ZHpPXzlfNHdlV2Z6aF85OE1JTmd4cTlNNlZGS0hTRXRqNVpYQjdUc0tSVWE3VG56eXp3VmljamRBVTJwb0VqZlFra1Ztc0dsRnBuRGxXcWlhNkQwOXdKNW1icF9ISEZuQ0dn?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.776,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_sol",
               "title": "Solana price faces a brutal death cross: could SOL crash below $70? - Invezz",
@@ -505,27 +521,11 @@
               "sentiment": -0.893,
               "relevance": 0.757,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana price faces a brutal death cross: could SOL crash below $70? - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5rQ1NGelhVWThvSVJUXzl3S09rek8zc3k1cl9sS1VnZ1hSelhULVdEMU1lXzNRRHNtX0lHMVNUbE1oTGtIcmFUSUtxU0NYZ1RWOGpxMGhiRVdtRUE?oc=5",
-              "sentiment": -0.893,
-              "relevance": 0.757,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
-              "sentiment": -0.751,
-              "relevance": 0.7,
-              "event_type": "macro"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 4,
+            "zscore": -3.18,
             "spike": false
           }
         },
@@ -732,6 +732,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-14",
+          "return_pct": -5.56,
+          "zscore": -1.46,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -6.61,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns US Economy is in ‘Final Stages’ of Collapse, Says AI Boom is Masking Broader Recession - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOFBobFdwYVN1eHNoS01yTkE4SWcwaVBlbUNGU2dlWW5FZHJpX25ZM1EtLUw4TWJXc3VHcy0ybW9id2NIblI5RFRMVEZWQXlZUkVBOUt1X3c0bHlzZmM2WkxZaHB4TENkNkRLNHpZZ0RMMVJUN1oza3diWlF1U1I3QlB3bUZpbEo0VkY2M3U3RlNFZ0cta01fdTdmVm5kS0tmLTFwMV9TU1FVMnZyRmc0UVVTM1AzT2piY0w0YV9KdVB2Y3hTR2ZnUExzVjFBS1FjSThyWlljYm4yMVlRWERBMDBsQTVHazAwQUdiNE1zTmZJOXJvTk1iZXBxM0VlaEVJWjNPLW9BbmpjRHlMZ2dlXzhRai1ha0VOdHZjUlNZeTdCTlpiWl91XzhtX3dXQQ?oc=5",
+              "sentiment": -0.751,
+              "relevance": 0.7,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed’s Collins Says Inflation Fight Outweighs Housing Woes - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWNWM3ptZWVMSTZ2Nm1jY2JQU1pXZ3l1Q01qdzAwV1YwbGxPN2JIY19pTmNiTmV5eFA3c1lkQklsX2JKV1BuM2haS09HU21XSk5DT3FvRG5vSkEyNGlLalJMNTZfQ3hCTlM5SVBGY3NBb2xDTloyYmtidHdKNE5YZnNUREI3dk5ZQ01UdVpKaC1MQkJJbkF0V2o5QS1RQQ?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.668,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "‘Everybody needs to prepare’: Market expert warns of December shock that puts Americans at high risk. Act by Dec. 8 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMHNuQmQ5eXJHTHlsSnJEUkFGaDFZT2tUNDRjTzI2Z3ZjdFJwUUo3eXktSEFvRWFER2hsUTZvWHc3M0RPRzdsbGJTelRYczU4RzVLNFJzTDFaenFmQ3piRDRsQnQwOG1EM21mVDBYYXZjN3d5aTFGdndUckVJUWNOclFwdExnb2JQSmpjdmUyaFY4M3JYQkFqSXZSNnp0TGFkN2Z1Yg?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.65,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-08",
           "return_pct": -4.01,
           "zscore": -1.04,
@@ -925,45 +964,6 @@
             "zscore": -0.07,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-12",
-          "return_pct": -5.38,
-          "zscore": -1.53,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -2.29,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink and Cosmos Price Prediction: ATOM Rebounds as Remittix Challenges Two Infrastructure Giants - TechBullion",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUGJweGIzc08tVmFHS1pfenpyZy13Q1FwSUpPWk8xcFpNYnoySkFSb1BBUUJxa1EyTmlxWVdQZF9KRWpiamk5X2w4Rm1qOU5vdUpWWUFEcHhjaEpOaXJNWnVxQjdyeFI5N2cxSUgyd2l6WEY4VWphNzVRWDRiaVZFWHowX1J0T1AtTjJjR1ZOcklGVkU5Vm82cFVfbGtMbjlXZVY4ZVppYjVfTVAzbnRKRlp2aTRtS2ZqcTQzQ1hmVko3MXc?oc=5",
-              "sentiment": 0.077,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink Price Prediction: LINK Whales Make 681 Big Moves in a Day, but Smart Money Eyes Pepeto - StreetInsider",
-              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOX0ZDSFJtTHhwWGpOa0I4Z0ZBVDJXbGZtQVVzR2YzOWpJUWhtQ3M5WnMtTUEtNkxDRzRVNlBueVVaMV9nbW1iNmtUQ3ZHR3N5RVRkdmIwVkxwMVlSaGlfaENYRkl2dDFZUzJqbmdrcEZRQ0tHZmdWUnZZVXZ5SEViWGJUZFdWZnhyV3N4elVhbXYzdkRfMGc1dnU0S04xUHlIS1FKWXdvMTVIVjFZT25xaFVRaEYzTFRXTGF4bHFWa3g0c3pPbmpCa0hqdHFMbUNIeDJuSHpUcDVGNUo1T1I4dkFPV3lmbDBEQ3VLaHJvWWcyZw?oc=5",
-              "sentiment": 0.55,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) Recovers Above $13 as Large-Wallet Share Rises - TOKENPOST",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxdk5JTHpqcnNBX1VFd1hYMDgwNDlnWlNTVTBLNXVDNngyZVVvNFpDLUdOUmN1Uk9MNEpNOFEyYUl3YXktRURBcDNleDFSX0VWZjZVLVZiOWU1QQ?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 19,
-            "zscore": 0.54,
-            "spike": false
-          }
         }
       ]
     },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-11-14",
-          "return_pct": -4.48,
-          "zscore": -1.3,
+          "return_pct": -6.36,
+          "zscore": -1.89,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -4.32,
+          "market_return_pct": -6.61,
           "events": [
             {
               "source": "googlenews_macro",
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 42,
-            "zscore": -0.29,
+            "count": 43,
+            "zscore": -0.25,
             "spike": false
           }
         },
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.0,
+            "zscore": -0.99,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 1.17,
+            "zscore": 1.16,
             "spike": false
           }
         }
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 46,
-            "zscore": -0.51,
+            "count": 47,
+            "zscore": -0.48,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.94,
+            "zscore": 1.96,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.74,
+            "zscore": -0.75,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.42,
+            "zscore": 0.43,
             "spike": false
           }
         },
@@ -6032,9 +6032,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-14",
-      "return_pct": -4.32,
-      "zscore": -2.04,
-      "max_abs_z_recent": 3.24,
+      "return_pct": -6.61,
+      "zscore": -3.26,
+      "max_abs_z_recent": 3.26,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
