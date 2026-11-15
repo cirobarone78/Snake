@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.5% | 33.3% | +19.8 pp | 28% | 1.000 |
-| 2 | LINK | 40.6% | 33.3% | -7.2 pp | 31% | 0.500 |
-| 3 | SOL | 45.9% | 33.3% | -12.6 pp | 23% | 0.000 |
+| 1 | POL | 13.9% | 33.3% | +19.5 pp | 22% | 1.000 |
+| 2 | LINK | 40.5% | 33.3% | -7.2 pp | 23% | 0.500 |
+| 3 | SOL | 45.6% | 33.3% | -12.3 pp | 14% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -31,7 +31,17 @@ Token della piattaforma Binance e gas della BNB Chain.
 - **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
 - **Offerta**: offerta in calo.
 - **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.3 anni.
+- **Età**: 9.4 anni.
+- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
+
+**TRX — TRON**
+
+Layer 1 usato soprattutto per il transito di stablecoin (USDT).
+
+- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
+- **Offerta**: offerta in calo.
+- **Sviluppo**: repository non mappato: dato assente.
+- **Età**: 9.2 anni.
 - ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
@@ -113,9 +123,9 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 
 ### Escluse dal filtro
 
-- capitalizzazione sotto la soglia: 26
+- capitalizzazione sotto la soglia: 28
 - stablecoin o token ancorato: 20
-- volume troppo basso rispetto alla capitalizzazione: 13
+- volume troppo basso rispetto alla capitalizzazione: 8
 - già in portafoglio: 6
 
 ## Limiti
