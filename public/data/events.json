@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T03:34:00+00:00",
+  "generated_at": "2026-11-15T06:38:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -5.04,
-          "zscore": -2.25,
+          "return_pct": -5.73,
+          "zscore": -2.6,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -5.04,
+          "market_return_pct": -5.73,
           "events": [
             {
               "source": "googlenews_btc",
@@ -34,16 +34,16 @@
             },
             {
               "source": "googlenews_btc",
-              "title": "Most Investors Are Wrong About Who Owns the Most Bitcoin. That Misunderstanding Is a Buying Opportunity. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTTRuTEl5Ylg1WFUwb29lQTdhSmpJNzJ0WEh4aWtZMjk2bml2WHlQSkQ3ZjA0UFVBSTlNUXhtMEZDY1pVVlpOSXM1QUlUeXdTQTlDcDNWOTVaWmszeXpqU0ZWTGxobHg1cG9IMlBCOGExLWJYdjNMQjNKdjV2ek8wZUJtR05TY0xhbHl5YWg1c3NXR0FHR0F4YQ?oc=5",
-              "sentiment": -0.76,
-              "relevance": 0.704,
+              "title": "Bitcoin Faces Final Capitulation Risk: Could $40,000 Be Next? - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWldYVUVlb0hwUVRSUzk5SHZjc1R4V05sdk16Rjk4Z0JINnJUdlhOSmNleGpUU1BKWlc3VlZyUDdrek1BY3MxUGV1SDc4SW5oZnpBcW5lZWhWXzNqYS1LWWdIaE9Ray1NMVhiVDFjd1F5N3RPaHFheDFyTF9JWVJPR2JEa1NtaXFlREJNS1lqajRXOGc2QURMM0gzcjJsZW1PWTBHWHVneUF0OWpzWWpzNHdiSWNHLWh1ZEE?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -4.3,
+            "count": 15,
+            "zscore": -4.13,
             "spike": false
           }
         },
@@ -251,12 +251,20 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -5.84,
-          "zscore": -1.98,
+          "return_pct": -7.1,
+          "zscore": -2.47,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -5.04,
+          "market_return_pct": -5.73,
           "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "BitMine’s Unrealized Loss on Ethereum Nears $9.6 Billion - bloomingbit",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9IMGYtZXJYNHFjVWNROEQ4NlNlZjVDbG56UElpaVU5LWE1c1NWSk9yX2gzcFk2OEJSRy1XR1dhSGwyeU9RSV9iQTVsSXJEdlIyc2lkQg?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_macro",
               "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - The Motley Fool",
@@ -272,19 +280,11 @@
               "sentiment": -0.637,
               "relevance": 0.655,
               "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_eth",
-              "title": "Crypto News: Bitcoin, Ethereum And XRP Hit Make-Or-Break Levels After Brutal Sell-Off - Coinpedia",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPY1JxUURPWFdCbTM3NTlrc3lwdk9zRXdZSGdsOEVjbTYtTThPWE9LVW9meFpHWVVqSTV5a0I0UEFrcXRDdnBRaW85ZjBNREpIYmFoMDY3WDlDQnZ0U0RrRWdGQkswdC1JajdRdTdLRzhndy1JaTN4MzlyX3RlZU9lNVE5VGZ2anRUeUdNdzc4MlVzc2E5V1dFNlJGWWVNU0VqWXp5UXRiSDFtR3VHMHp3UNIBtgFBVV95cUxNYlZJc1ZwSlFJdVZXVWdzTmVlLTlSSXRJTEgycEQ5RWVtRnc0M3hfU0EzNnBjZGpqRGpaeWpJdHI4dDVlYTVkR0lNOGN5NU1nTjlyS2h1Nk15dlMzVVRDRURWQV9EbEdXXzBvYzF6aDVYblRMVEVaOUF0Q21JVDdlY1FwRDljODVKT1dLd2t5X3luaFdjSFdfMG4xU3h1RlVQanBPVmEyQ2k3RGRnd0N4R2FvRE1PQQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.65,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -3.25,
+            "count": 15,
+            "zscore": -3.04,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 88,
-            "zscore": 0.71,
+            "count": 89,
+            "zscore": 0.76,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -8.55,
-          "zscore": -3.36,
+          "return_pct": -9.92,
+          "zscore": -3.96,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -5.04,
+          "market_return_pct": -5.73,
           "events": [
             {
               "source": "googlenews_sol",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -2.95,
+            "count": 12,
+            "zscore": -2.58,
             "spike": false
           }
         },
@@ -733,11 +733,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -7.73,
-          "zscore": -2.14,
+          "return_pct": -7.58,
+          "zscore": -2.09,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -5.04,
+          "market_return_pct": -5.73,
           "events": [
             {
               "source": "googlenews_link",
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -1.89,
+            "count": 6,
+            "zscore": -1.57,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -5.3,
+          "return_pct": -5.29,
           "zscore": -1.62,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -5.04,
+          "market_return_pct": -5.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -1006,8 +1006,8 @@
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.75,
+            "count": 2,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -2010,7 +2010,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.28,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.44,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-15",
-      "return_pct": -5.04,
-      "zscore": -2.25,
+      "return_pct": -5.73,
+      "zscore": -2.6,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
