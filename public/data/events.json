@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T00:50:00+00:00",
+  "generated_at": "2026-11-15T03:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,11 +10,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -6.82,
-          "zscore": -3.15,
+          "return_pct": -5.04,
+          "zscore": -2.25,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.82,
+          "market_return_pct": -5.04,
           "events": [
             {
               "source": "googlenews_btc",
@@ -42,8 +42,8 @@
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -4.72,
+            "count": 11,
+            "zscore": -4.3,
             "spike": false
           }
         },
@@ -81,8 +81,8 @@
             }
           ],
           "coverage": {
-            "count": 124,
-            "zscore": 0.89,
+            "count": 127,
+            "zscore": 1.04,
             "spike": false
           }
         },
@@ -120,8 +120,8 @@
             }
           ],
           "coverage": {
-            "count": 119,
-            "zscore": 0.6,
+            "count": 118,
+            "zscore": 0.55,
             "spike": false
           }
         },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -9.3,
-          "zscore": -3.33,
+          "return_pct": -5.84,
+          "zscore": -1.98,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.82,
+          "market_return_pct": -5.04,
           "events": [
             {
               "source": "googlenews_macro",
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -3.67,
+            "count": 11,
+            "zscore": -3.25,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 83,
-            "zscore": 0.46,
+            "count": 88,
+            "zscore": 0.71,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -10.74,
-          "zscore": -4.32,
+          "return_pct": -8.55,
+          "zscore": -3.36,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.82,
+          "market_return_pct": -5.04,
           "events": [
             {
               "source": "googlenews_sol",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 7,
+            "zscore": -2.95,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 56,
-            "zscore": 0.59,
+            "count": 57,
+            "zscore": 0.67,
             "spike": false
           }
         },
@@ -733,12 +733,20 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -10.14,
-          "zscore": -2.87,
+          "return_pct": -7.73,
+          "zscore": -2.14,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.82,
+          "market_return_pct": -5.04,
           "events": [
+            {
+              "source": "googlenews_link",
+              "title": "Chainlink Price Crash: LINK Falls Below the $9 Mark - CryptoTicker.io",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcWl0cHNtRHEwdmpmYWp6Zk5ySHozNUFIZDhXYXdnaEdjdDRzdnZCdjhuQXluN2pfT19BdE8zNDdHSXJIdWJYcmZEQ3RmSUZ3Qm5GOHNPWEhtbGl4cTg2MTVydFNwNWtKM3k0STJNc3pTQ09GeWJBbjV0R2RxMkpWTWdXdmNTSlhudkx1cTdB?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_macro",
               "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - The Motley Fool",
@@ -754,19 +762,11 @@
               "sentiment": -0.625,
               "relevance": 0.65,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZm1nQnRBRXZ6cXF3aGNvT2Q2dk1IM0lFUGRQZmpFSEJxd2E3VTR1WGU3WTBRdF9hVFd3T1RvZzMxbVhfcWNUMGhIdTZTdWRuUmppNE5mTGFlV3hWajVtX1BVUmQ0UEIzbFZ1LTFBX2lfM0tCbGNOTVZBUi16aHJvel94dk5YZGhYUDExcF9tY3lCc0dPcVd4ckNlMTRoUGQzTVE?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.591,
-              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 3,
+            "zscore": -1.89,
             "spike": false
           }
         },
@@ -974,11 +974,11 @@
       "moves": [
         {
           "date": "2026-11-15",
-          "return_pct": -7.59,
-          "zscore": -2.37,
+          "return_pct": -5.3,
+          "zscore": -1.62,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -6.82,
+          "market_return_pct": -5.04,
           "events": [
             {
               "source": "googlenews_macro",
@@ -997,17 +997,17 @@
               "event_type": "fed"
             },
             {
-              "source": "googlenews_macro",
-              "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZm1nQnRBRXZ6cXF3aGNvT2Q2dk1IM0lFUGRQZmpFSEJxd2E3VTR1WGU3WTBRdF9hVFd3T1RvZzMxbVhfcWNUMGhIdTZTdWRuUmppNE5mTGFlV3hWajVtX1BVUmQ0UEIzbFZ1LTFBX2lfM0tCbGNOTVZBUi16aHJvel94dk5YZGhYUDExcF9tY3lCc0dPcVd4ckNlMTRoUGQzTVE?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.591,
-              "event_type": "inflation"
+              "source": "googlenews_pol",
+              "title": "Polygon Price Prediction: SoFiUSD Goes Live on Polygon as Remittix Earn Crosses $2M in Total Value Locked - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMThydzVVdW9nbXJsUFBvdTRwQUl4ejgyM1FBN09ld2h6OFAtQXEyUmd3bWtZR2ZvS2ZrNnNxRHItaDlCa09tRC1lT2ZxLXFYT3RTQVFMYUlFWnZGMHh0c2xYdDJjeWpyM2w3MWJKbk1JVlJpMFZMNG5YTDBkYmhualVUalY4bXNvUXdSUHk4UW1HRUVjTENyVjdDMDA0aEVyS0hoNF81U0NCZjB1UTZGLVI5azdiUE9kZzlma0xwMmt5WFZlbUtuMkdNQ2FFeHZDa1FQN3JDUVcxaXFKaGNnMDRFbjZFYm10M2xaNHBOekhGMFdsTkw3dTVtSTZidw?oc=5",
+              "sentiment": 0.401,
+              "relevance": 0.6,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -0.75,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-15",
-      "return_pct": -6.82,
-      "zscore": -3.15,
+      "return_pct": -5.04,
+      "zscore": -2.25,
       "max_abs_z_recent": 3.24,
       "recent_days": 10,
       "benchmark": "BTC",
