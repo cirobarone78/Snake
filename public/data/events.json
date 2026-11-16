@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:41:00+00:00",
+  "generated_at": "2026-11-16T18:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": -0.9,
+            "count": 36,
+            "zscore": -0.83,
             "spike": false
           }
         },
@@ -1215,12 +1215,28 @@
       "moves": [
         {
           "date": "2026-11-16",
-          "return_pct": -3.03,
-          "zscore": -1.06,
-          "classification": "asset-specific",
+          "return_pct": -3.31,
+          "zscore": -1.18,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -1.35,
+          "market_return_pct": -1.92,
           "events": [
+            {
+              "source": "googlenews_tech",
+              "title": "Roze AI’s Wireless IoT Fire Alarm and AI Fire Forecasting Technology Certified by Korea Airports Corporation - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTVMtSTQ0VGhZbHEwS09kYVdCUmFFVUQ3c2l5eXFWRFhwLW9UWkxFVHQtbjBVZmZ0c3JnNzl3NlZxX3NuZkF3MnlnU2M1SWNmV1l4UG1wdmI3bGFJc19OM0twa2JPdkJteTFfUGlpUFVYSV94WjRpY0VPb2xfZkVTNnB5N1U2Z0FrQ2xYOGhPM3B1LUk?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "U.S. Stocks Sharply Lower Amid Continued Tech Sector Weakness - RTTNews",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPV3FaZ1N6d3Z3R01hSUFFNFZHcEpaOGM0R29xdEFQeVdTbS1CSnNTcU1NNGRPZzk5dlJXU3IwUDNDTUNjMEM5Y0RTMm9BNFdrZE1qNjBCN2FyUUZ5cWFvSmN6TFhSZTI1MGRJbU1fa2xzNzNQdTNjX0c2dVJkWjhVTmZrLUUwaklJQ1oxTVB0ZEZQbFBEc3hycUNWYUNzQQ?oc=5",
+              "sentiment": -0.612,
+              "relevance": 0.845,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_tech",
               "title": "Asian Stocks Brace for AI Pressure, Data Dump: Markets Wrap - Bloomberg.com",
@@ -1228,27 +1244,11 @@
               "sentiment": -0.586,
               "relevance": 0.834,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "As AI technology stocks suffer a sharp decline, Warsh joins Silicon Valley leaders tonight to discuss the economic impact of AI: Can trillion-dollar investments deliver productivity dividends? - 富途牛牛",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSnZkTzV1cGtCVkN6YXpNdDhBRmdDeUJwVjdidnZ4aEVPQ0xPNXdjYVhSSXp1NEJJUWM0ckM1OTZFNzlRQ0ZlZXE2MHpFS09PeVN6c3Z3RVdXb0JRemEwMnhhOUYwLVprbjdiRU9xakxDV0FraHRWbC03R0IwSVgzUGNobkMydkpEUS1JcXZBMlJrQlRvLThRbHFIMnZ6SVlVWHJZ?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "IBM Leads 3 Buy-Rated Tech Dividend Stocks as AI Valuations Come Under Pressure - Barchart.com",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOb0RUMy03TFlCZU9sdHZEVHZZT21NQXhYNGl0ejFleG5ZZ0d0RDlEd0ItTjVLZTU4WjJnX2JyUUp2T3NTOXpXYlczRGxwTXdCcUo0SWRVZVBXUnBUMWRUUXlnMUxsS3dya3Rnck0xaUR1TFNPMjU3MXFtejdVMUlySzVQVk9FVW4tQWZHZFBzdnFOWDBoTlNyaktsU0FuYTNwOWtLYVdtZnpzS2gyWGJVaUlhbk5oYnFkdm9qb29tNkM?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": -0.79,
+            "count": 34,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.0,
+            "zscore": -0.01,
             "spike": false
           }
         },
@@ -3254,7 +3254,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.95,
+            "zscore": -0.98,
             "spike": false
           }
         },
@@ -3293,7 +3293,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.91,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -3332,7 +3332,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.91,
+            "zscore": -0.93,
             "spike": false
           }
         },
@@ -3371,7 +3371,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.05,
+            "zscore": -1.07,
             "spike": false
           }
         }
@@ -3866,11 +3866,11 @@
       "moves": [
         {
           "date": "2026-11-16",
-          "return_pct": -4.87,
-          "zscore": -1.19,
+          "return_pct": -4.99,
+          "zscore": -1.22,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.35,
+          "market_return_pct": -1.92,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3882,24 +3882,24 @@
             },
             {
               "source": "googlenews_semis",
+              "title": "Live Take | Semiconductor Index Plunges 5% as AI Capex Forecasts Slashed. More Pain Ahead? - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVGY4VlVtUUZ2Z0dSdGtva0dIWlFBYUVHT1lNQ1hGLVVyc3VUc00zRWZTUnBRakJ6Tk9nQThtUTUxWk1va0M0YkVuTGJnUnVOX0FTRFY0S24zbEE5Z2s4SFpCdUJSY1ZubzI3Z2tYdVEzRmRncDRua3dJN0V2R3ktQXowVFY4Y3NYR3ZMQzVhMHRERnktWGc4S1Fpb1NZazdac1IybnRtZ1pRQmppZFFYWHRxdzNhQQ?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
               "title": "SOX ends 5 weeks of decline: Is the worst over for semiconductors? - Investing.com",
               "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYTVBcEdBNVg3VnBuTGRqMGUzNUFGY0lLY1Z5N3RZU1otT3A0SkpNbmJZS1czbUdReW1vTHR3ajRUOVJONGR4QzFqUEZuYnAtb2N1bFVPUzY5bGQ4QVJmeS1IX0RPTjhmR0xOam5UVmVJYnJDc2xWQTZxc3pSSnJEOGRCMEVoWHJ1Q1pmMDlkR00tVFktQndnRklrNjF4NjYtQ1V0MXY1VmVQTnhnbFJoNnZDMjNRRk9iYkRkelJ3?oc=5",
               "sentiment": -0.625,
               "relevance": 0.85,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "PHLX Semiconductor Index faces renewed downside risk as recovery attempt fades - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaEt6SGNIUC1QZXltMHhXQkRRZ2hmY0NocDZUbjZ0Y2ZzWE52WDRJNnRpZExpNEpYNUR5QkhMMlJ6dkFiQ1E3VG9EaFlfVjJzRVoyZjJiYmxxQUFaOWpuNDJpQWR2Tm0ydnlkblZfdTdCUllLemtEc1NvWVRJZWdHVHd4VUpPbWFhdkh3UXA4QVdRX0E?oc=5",
-              "sentiment": -0.477,
-              "relevance": 0.791,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 51,
-            "zscore": -0.17,
+            "count": 59,
+            "zscore": 0.1,
             "spike": false
           }
         },
@@ -4107,12 +4107,20 @@
       "moves": [
         {
           "date": "2026-11-16",
-          "return_pct": -2.92,
-          "zscore": -0.73,
+          "return_pct": -4.59,
+          "zscore": -1.28,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -1.35,
+          "market_return_pct": -1.92,
           "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Nuclear Energy Stocks Gain as Reliable Power Demand Grows in US - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVTVGWHh6YnB5NkNveG9WbWVHYWlnbldQaXpGY2p2TTcwb1hCQjRSeWJlRGVjRVlHdW1NTHYyRDByQUtHc0IycHZTSjlFeUtqOXYxT1Eyb05ldGdCZWZBMXhXRkY0UWdqZXR6cmJrS1pfM0dHN2twUVQwOVlTak9HeFpvUTVfcjBDS1FNT1dmVjktaXAtNnNUS3pfSFd3UlhjM1M4WHJzWmtoSVZZRGV2c1VraVdubWVVTkcw?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_uranium",
               "title": "If I Could Only Buy 1 Nuclear Stock for the Next Decade, It Would Be This One - The Motley Fool",
@@ -4128,19 +4136,11 @@
               "sentiment": -0.572,
               "relevance": 0.497,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "America's AI Boom Has a Hidden Cost — Top Economist Warns Inflation Is Rising, Capital Is Being Sucked Aw - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSy1xeXVxWURaQmliSHlpOUhzanQ4NTNsVW8xRi1DZDlPU1ExdFZ4Q2gySWd2bGhxQ2Z1eENocmcwdkRJd3pvVFhhYWFmS3QweUJTSHZjTEVPbW1WX2hZakQxMVZJckpGSWc1SEJuVmZRR1hzMkNDSlB3cGpPN3VMR0FQamxjelpnWjVtVDg0NUxkNGE3RlVsWnFCZ0ZZdmh0cXVKaTNoU0ZfRm5tRjZfS3pQalZUUHJoeXdjVXRTc0F4d1BrNUE?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.452,
-              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 1,
+            "zscore": -0.56,
             "spike": false
           }
         },
@@ -4347,6 +4347,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-16",
+          "return_pct": -3.07,
+          "zscore": -1.6,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -1.92,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "America's AI Boom Has a Hidden Cost — Top Economist Warns Inflation Is Rising, Capital Is Being Sucked Aw - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSy1xeXVxWURaQmliSHlpOUhzanQ4NTNsVW8xRi1DZDlPU1ExdFZ4Q2gySWd2bGhxQ2Z1eENocmcwdkRJd3pvVFhhYWFmS3QweUJTSHZjTEVPbW1WX2hZakQxMVZJckpGSWc1SEJuVmZRR1hzMkNDSlB3cGpPN3VMR0FQamxjelpnWjVtVDg0NUxkNGE3RlVsWnFCZ0ZZdmh0cXVKaTNoU0ZfRm5tRjZfS3pQalZUUHJoeXdjVXRTc0F4d1BrNUE?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Taiwan Central Bank Governor to Weigh Inflation and US Policy in December Rate Decision; Calls Nvidia CEO Departure \"Short-Term Disruption\" - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE96alNQbEJMYnVoYzFDNjZnUVJPbUZJam5jeHRaZlhNTmtLbkRNMDRaRUhTbUFYNlp5SVBzcGNIb0g3eXpybzJXRjN2X05tbU9NeUFmTVE5bVJ6clV4Z3EyX01LdHpwcXJyWUt0LWR6NE8waU1zeVE?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.51,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-10",
           "return_pct": -2.83,
           "zscore": -1.66,
@@ -4538,45 +4577,6 @@
           "coverage": {
             "count": 4,
             "zscore": 1.09,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-27",
-          "return_pct": 1.99,
-          "zscore": 1.61,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.6,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "3 Clean Energy Stocks to Watch as Power to Gas Costs Fall - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkxYdERFMk5RSlpzdnI1WmJERlp6UjNRNDc0ZTB6TTJhYjQ5cklWck13WTlHSzdoWjB2Z01hbWdwTnlHQnAwYkljM1ROMmJZNFBYaUM4SXhIeW4yLWVDTjRmXy1yMWJVeE5Gd3FfVExZMWJzN0JTb3BvUlowclZPUFVPYU1TaDEwb1loZA?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Texas Clean Energy Stocks Facing A Policy Test Investors Should Watch - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ0JNNHcyeEF6QlIzdTRNaDRiV2pDZGFWWFVXUmZrLW0ybGVBVmoyR3pmckRvLV9mVkpTc3RTV0M3UmJ0eWdMdGZNV3VzN253MjYtUzdkTzI3RTRublRQdjZBRzA1QWFyT1BNMFpza3V2cmJuUWVTX1hiLXFrbk1oQmJwdHhSX29fNWlQUWRhdGFoZjBSVUIyaUY1eXVMNkRoRE44c2NYcEpucWhIUTFvV0U3aGN6SjJ6dS1YeEZQeWNqRmdkUm53cUQzbUzSAdIBQVVfeXFMUFlONEtCZWtWQlBTNVgxZjhHUUhhZFBSZktTZ1NyWlJna2dEVF9aaGpHNkxOMjE5U1hxSmlSUHB4S1BWc0hSdERxRlgwTzlZMFJ2cVlrNGNlLUZISzRIMTRXSE9QWkUzenZmaV94NmMwcjRlN0FWSExzMUZfbnNtOEFXMEVRTVZNbERiTGhnTnBIRklULVRPb2pRYUtvUVVBcVRQcllJaVA5ZHBlV1I4dHdSNEc1WUpHR1N3em0wd2xrMEhJdDVOSmJCZFNTdFBZdzBn?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Texas Clean Energy Stocks Facing A Policy Test Investors Should Watch - Simply Wall Street",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWU40S0Jla1ZCUFM1WDFmOEdRSGFkUFJmS1NnU3JaUmdrZ0RUX1poakc2TE4yMTlTWHFKaVJQcHhLUFZzSFJ0RHFGWDBPOVkwUnZxWWs0Y2UtRkhLNEgxNFdIT1BaRTN6dmZpX3g2YzByNGU3QVZITHMxRl9uc204QVcwRVFNVk1sRGJMaGdOcEhGSVQtVE9valFhS29RVUFxVFByWUlpUDlkcGVXUjh0d1I0RzVZSkdHU3d6bTB3bGswSEl0NU5KYkJkU1N0UFl3MGfSAdIBQVVfeXFMUFlONEtCZWtWQlBTNVgxZjhHUUhhZFBSZktTZ1NyWlJna2dEVF9aaGpHNkxOMjE5U1hxSmlSUHB4S1BWc0hSdERxRlgwTzlZMFJ2cVlrNGNlLUZISzRIMTRXSE9QWkUzenZmaV94NmMwcjRlN0FWSExzMUZfbnNtOEFXMEVRTVZNbERiTGhnTnBIRklULVRPb2pRYUtvUVVBcVRQcllJaVA5ZHBlV1I4dHdSNEc1WUpHR1N3em0wd2xrMEhJdDVOSmJCZFNTdFBZdzBn?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 0.97,
             "spike": false
           }
         }
@@ -4829,6 +4829,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-16",
+          "return_pct": -2.45,
+          "zscore": -1.55,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -1.92,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "America's AI Boom Has a Hidden Cost — Top Economist Warns Inflation Is Rising, Capital Is Being Sucked Aw - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSy1xeXVxWURaQmliSHlpOUhzanQ4NTNsVW8xRi1DZDlPU1ExdFZ4Q2gySWd2bGhxQ2Z1eENocmcwdkRJd3pvVFhhYWFmS3QweUJTSHZjTEVPbW1WX2hZakQxMVZJckpGSWc1SEJuVmZRR1hzMkNDSlB3cGpPN3VMR0FQamxjelpnWjVtVDg0NUxkNGE3RlVsWnFCZ0ZZdmh0cXVKaTNoU0ZfRm5tRjZfS3pQalZUUHJoeXdjVXRTc0F4d1BrNUE?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Taiwan Central Bank Governor to Weigh Inflation and US Policy in December Rate Decision; Calls Nvidia CEO Departure \"Short-Term Disruption\" - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE96alNQbEJMYnVoYzFDNjZnUVJPbUZJam5jeHRaZlhNTmtLbkRNMDRaRUhTbUFYNlp5SVBzcGNIb0g3eXpybzJXRjN2X05tbU9NeUFmTVE5bVJ6clV4Z3EyX01LdHpwcXJyWUt0LWR6NE8waU1zeVE?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.07,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 3.9,
           "zscore": 2.7,
@@ -5022,45 +5061,6 @@
             "zscore": -0.23,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-26",
-          "return_pct": 2.44,
-          "zscore": 3.09,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.7,
-          "events": [
-            {
-              "source": "googlenews_defense",
-              "title": "RTX vs. GD: Which Defense Stock Has Greater Upside Potential? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNYVBreFdkOGpRVUJGSVhXZU5iVjdESWs4VmZwZFhDa0FOTmY0VlNWb1ctSmZtdXBvdGlsWVlYc2FvWjBYbmRvU3RSN2dzeWxvQWRfUnZ4NWVucmpVeWE3S0RYMm9yNnI4UEpTbFRQVEMwMXlMeTZkTk92WGNDWWpfOUV1a0k5REJtcTN3WHhKTS16dw?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "Defense stocks retreat across the board; LIG D&A down in the 9% range, Hanwha Aerospace in the 5% range [Stocks NOW] - 파이낸셜뉴스",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JWUdlRmtDQzF2amQyUDlUNEhkbDFxRFpONGlYcmd0WHloV2pSemJOYmg0WFgxQi1KR3NCVjdrbG1qLTA3MC1HUG1idlN6YnlSWVVoWmZTYWo?oc=5",
-              "sentiment": 0.318,
-              "relevance": 0.727,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_defense",
-              "title": "RTX Corporation stock pre-market at EUR 171.03: aerospace and defense group - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaTRSZE8yU3FYc29mNEdSVmZjaTRubVpuODNzOE0zcjFpaUotQ0J2TnNEM3BDaXpMWXF3SVNTVkw1cGhGYmxZMXdHNWI3VFgzQTd5RFB1a3JkMzlKNDJITGlSdy1LaGhObkFzZkJmcnhjcm5kZzNpQ0cxVWl3cEpIcnhSeWlrd2VqTXowXzBsUF9rbFpSMHRoajI4VHZSWWNjMFRCZkRCZkFTOGRsZzJLOFQ1QWZIY1BtVVQtYjhyVlcyRW94Tk03SzZnaUI?oc=5",
-              "sentiment": 0.128,
-              "relevance": 0.651,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.57,
-            "spike": false
-          }
         }
       ]
     },
@@ -5071,26 +5071,18 @@
       "moves": [
         {
           "date": "2026-11-16",
-          "return_pct": -2.91,
-          "zscore": -1.25,
-          "classification": "asset-specific",
+          "return_pct": -3.39,
+          "zscore": -1.49,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -1.35,
+          "market_return_pct": -1.92,
           "events": [
-            {
-              "source": "googlenews_robotics",
-              "title": "A new AI tool lets people program robots to recognize gestures and sounds without coding - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemF4MWRJclRET1pDUXFja0QxemtUYzNLUjB0cFhyM0VMVW5VaWEwS3g2alVVdmptMXA3a0ZUN3JsRnhYaF9sTEVCVXhzTHQyd2JmVGs0b25HNE5SV3hyd3ZONnkyVHc1ZmlEcWVvYkZObUtuR1dSTWsxdDNjWnNPaTB4YXR2OHlOZW1FcEZOQlFibDhVNGp6X053dDBZaU9PMktPT2txZEdGbGVaNmRVS3Z2Y0ZSN3RsUmVoNA?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
             {
               "source": "googlenews_macro",
               "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
               "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
               "sentiment": -0.572,
-              "relevance": 0.497,
+              "relevance": 0.829,
               "event_type": "fed"
             },
             {
@@ -5098,8 +5090,16 @@
               "title": "America's AI Boom Has a Hidden Cost — Top Economist Warns Inflation Is Rising, Capital Is Being Sucked Aw - Benzinga",
               "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSy1xeXVxWURaQmliSHlpOUhzanQ4NTNsVW8xRi1DZDlPU1ExdFZ4Q2gySWd2bGhxQ2Z1eENocmcwdkRJd3pvVFhhYWFmS3QweUJTSHZjTEVPbW1WX2hZakQxMVZJckpGSWc1SEJuVmZRR1hzMkNDSlB3cGpPN3VMR0FQamxjelpnWjVtVDg0NUxkNGE3RlVsWnFCZ0ZZdmh0cXVKaTNoU0ZfRm5tRjZfS3pQalZUUHJoeXdjVXRTc0F4d1BrNUE?oc=5",
               "sentiment": -0.382,
-              "relevance": 0.452,
+              "relevance": 0.753,
               "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Taiwan Central Bank Governor to Weigh Inflation and US Policy in December Rate Decision; Calls Nvidia CEO Departure \"Short-Term Disruption\" - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE96alNQbEJMYnVoYzFDNjZnUVJPbUZJam5jeHRaZlhNTmtLbkRNMDRaRUhTbUFYNlp5SVBzcGNIb0g3eXpybzJXRjN2X05tbU9NeUFmTVE5bVJ6clV4Z3EyX01LdHpwcXJyWUt0LWR6NE8waU1zeVE?oc=5",
+              "sentiment": -0.361,
+              "relevance": 0.744,
+              "event_type": "fed"
             }
           ],
           "coverage": {
@@ -5552,6 +5552,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-16",
+          "return_pct": -2.64,
+          "zscore": -1.06,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -1.92,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_biotech",
+              "title": "Dow Jones Biotech Giant Amgen In Buy Zone Amid Ongoing Stock Market Weakness - Investor's Business Daily",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSEFTSG9hOWVCR0h5bXc4Rmp5c2dodXhhVVpEV1NmVXRhcnFiTU1RMmdidS1Cc1dxTkt3VDBGbHBtNlFlXzlPLXpKYXVHNzNkMVFpODRNbUQxbjVOcmJyX2JXaE5CeGRMOE5wLWlmMVVGMlpzd1hyUUluY0wwZElnN1lqSjVjcGxIcHRTSEY3RDZBUHhpSnpEWWItTjJoSDRWQUNiVm9kVzcwc2JVbERJVlZIQ1pKdUxqR1E?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "America's AI Boom Has a Hidden Cost — Top Economist Warns Inflation Is Rising, Capital Is Being Sucked Aw - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSy1xeXVxWURaQmliSHlpOUhzanQ4NTNsVW8xRi1DZDlPU1ExdFZ4Q2gySWd2bGhxQ2Z1eENocmcwdkRJd3pvVFhhYWFmS3QweUJTSHZjTEVPbW1WX2hZakQxMVZJckpGSWc1SEJuVmZRR1hzMkNDSlB3cGpPN3VMR0FQamxjelpnWjVtVDg0NUxkNGE3RlVsWnFCZ0ZZdmh0cXVKaTNoU0ZfRm5tRjZfS3pQalZUUHJoeXdjVXRTc0F4d1BrNUE?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": -0.76,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-12",
           "return_pct": -3.27,
           "zscore": -1.37,
@@ -5745,45 +5784,6 @@
             "zscore": 0.1,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-02",
-          "return_pct": -2.52,
-          "zscore": -1.28,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_biotech",
-              "title": "Viking Therapeutics (VKTX) After Wider Losses Is The Valuation Risk Already Priced In - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPUkZ5TXFyWHFQMkxweHpuSk10ZHdkR2djV0Z3X0QwcTQ3OFFPbkp0N1VoSkxaaXV4dnlKOENERXBhcVZtUTRHQWR5V0hNblZGdU03V0JtT0xYeGVoNU55MXFWeW9vVlhuN25iRVFueVltRWVVREdhcm5QUHM5aW9Zc0pMaUhaSU5YaU04QkxjMUZLVFl0MVFCaXEzNXlLc3U5OEUzcjJvdFhfaS1XYWVSLWdkU3BsMzd4WUdkcTJyVnRzN2lZak95NnAtZXFzVEdWNC16bXBaaGg1UU9yT0FXNDJianVScnhu0gHuAUFVX3lxTFBsR1p6N21XdGc3QzFyekVwaDRRcVRGTFhFazdiWEVDVG5oRmFSYU9tOGdfQnd2OGpFYVJLN2s4VjhGYzFoMUxxSjF5QVphUmhqamJ5ZnBqOElmZzR0T0Y1Q0EyZ0hJRzh3b1JKWnpxclJfMDB6amRlSVdLV3lxcExPNWF5a2tfNVg1cFc3X0Z3MUxqeW1pVi1ud1RVSG8yTUlBd0V2UXRuNHQ2ZVBZSFZEZmlZRXY1XzBQQ0YxekpPdms0S0Jwa1diWlY4VEpPQkh4VGJSanlNUFgtbkg0N0VIQXpuYndpMDF6Uk1KTHc?oc=5",
-              "sentiment": -0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Krystal Biotech Analyst Says Stock Weakness 'Overblown' - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMjgtRVVQMU5zUXl0Q2xSdlN6cFRkdWJzcWZJbmRMdFJ4cnlZV2J0R0RBZVR3RkJhVmxBRFF5MEZCdVpBSmJCUDRmZTZTbGc0dWxGSkY1LU5oLVFQYldqNlpiMFZ3SVVSNk45N3ZaSVBZNkhPNUNzR2MzSlJYLXpCX2E0Q21BRTAxakNHRXZCVktHTmdLOEplTEE1SXRnOTFUWTJFUWF4dEM2dHh3QWU4?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Krystal Biotech Analyst Says Stock Weakness 'Overblown' - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORTBzYUN5TmZHYXNKX05ub1p3ZjR2V21qbHlnbmpLUEZXMElndEtmWUo5X2stVDFjT0h6M0tYWmtHU1BQMFdGaG5ER0RlVlB1TEw0eUk1djRsWENwUkx2TExFdFc0YVV0U3c4dmtreEU0T3c4ODhWdG1lb3pDbnlSNWFYQjY5VDVDdDBmdWZkbUYwQ3VqS2NrajFGSzktZ2dvbzdFNElrajI2MnpuaWhkMkxR?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 24,
-            "zscore": 1.09,
-            "spike": false
-          }
         }
       ]
     },
@@ -5792,6 +5792,45 @@
       "name": "Gold Miners (GDX)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-16",
+          "return_pct": -2.85,
+          "zscore": -0.82,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -1.92,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "London Mining Stocks Face Pressure as China Demand Weakens - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQWxuZTRJZGJfLXdtUVZ1b2Vxa2dKMzNMX0RyZ3BkeFpJRWZ5UnNIOC1pb3dzWGNXeGNLOFBqeGV0c3JRUWZnU1JVSk5jWW9PRHkyOEtUVlZCbGpCdjItQlJnejU4aFRqa0tfMDNEYWlSa2Q1ZDl1b1pfQjEyenVBQVBoR0hYb1pjRF9YbjdlMnpkMzJTanJFYnY2UU9LTnd6RTlUeHRHQU5GZXZpWXY0Yw?oc=5",
+              "sentiment": -0.612,
+              "relevance": 0.845,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "America's AI Boom Has a Hidden Cost — Top Economist Warns Inflation Is Rising, Capital Is Being Sucked Aw - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSy1xeXVxWURaQmliSHlpOUhzanQ4NTNsVW8xRi1DZDlPU1ExdFZ4Q2gySWd2bGhxQ2Z1eENocmcwdkRJd3pvVFhhYWFmS3QweUJTSHZjTEVPbW1WX2hZakQxMVZJckpGSWc1SEJuVmZRR1hzMkNDSlB3cGpPN3VMR0FQamxjelpnWjVtVDg0NUxkNGE3RlVsWnFCZ0ZZdmh0cXVKaTNoU0ZfRm5tRjZfS3pQalZUUHJoeXdjVXRTc0F4d1BrNUE?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 21,
+            "zscore": -0.25,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-12",
           "return_pct": -3.95,
@@ -5986,45 +6025,6 @@
             "zscore": 1.22,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-30",
-          "return_pct": -5.21,
-          "zscore": -1.89,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.82,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold vs. Silver Miners: Silver Miners ETF Outperforms Gold Peers - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV3MxSFNYU205UXEwUGhwQ1NSSFdMVXY0N05aVjYtODJLaU1KVEM2ZGZCTzZWMURsTkxPUDR4YnZnYXQwLV9WVlRkRnMtRWtXdUJuWWFVSHRBU0JQMFRiOFlzZXlKNmdiVnBhY2xXUW9XMFN2RkkxaXY5YmN2b2Z1VzRwUFF4LWp6RXkzNk9TcU42bHNNeXF3UV9CaGZXY1NGc3pPSTZDZmRDbEs4VWc?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold price slumps to one-year low, silver price breaks $50 as mining stocks tank - Mining.com",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSWJnbS1JeHBpOHJBSFRHSk5wZ2stdmFPblE5YTdvUmVsbUpna0JQdm5NNTdDVEVVLWp3ZUJVb0RxUGhKc2V1MU1xOG5vRnZMMHktZElrSGJwbnJ5U2tBZTlmenlkMGp6OTdaRTBsZkZCX0hmWHdLSGZ3TUZnOVNWdkFZU2pDSzdUMDVxODJ1Mkd1UEx5S1czS2xMWnRTUzRnM1RKaQ?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Are ASX 200 Gold Miner Resolute's Mali Troubles Finally Easing (ASX:RSG)? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWVhHUzNXbVNEdXFjeFNMTUxlc0dlUzRSTjI0SHh2RS1oZzFhZERFblRZQUFTV01mREE1Vk5Ga0tPT0l2bjEyV1BxM05xS3NjdWNJZDh6UWQtN1dnZFlYWkV5UU00SDl6RWkzTFkxT1BNR3daaUZtYkFza2s5YW9IdDUwZ0lIVWJXLURyZVRUdGdVNDhyVk5CRXdhTkNyaWdGVHFwNU9VaW1PUkdH?oc=5",
-              "sentiment": -0.25,
-              "relevance": 0.7,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 26,
-            "zscore": 0.54,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-16",
-      "return_pct": -1.74,
-      "zscore": -0.46,
+      "return_pct": -0.84,
+      "zscore": -0.06,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-11-16",
-      "return_pct": -1.35,
-      "zscore": -1.11,
+      "return_pct": -1.92,
+      "zscore": -1.61,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
