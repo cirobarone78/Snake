@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:36:00+00:00",
+  "generated_at": "2026-11-17T00:49:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 40,
-            "zscore": -0.08,
+            "count": 43,
+            "zscore": 0.04,
             "spike": false
           }
         },
@@ -2612,45 +2612,6 @@
             "zscore": 0.66,
             "spike": false
           }
-        },
-        {
-          "date": "2026-08-21",
-          "return_pct": -2.28,
-          "zscore": -2.79,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.43,
-          "events": [
-            {
-              "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Utilities Stocks Advance, Real Estate Sector Struggles - Yahoo Finance Australia",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMXhWNVozQlRCZlY0XzUtR0RGY0FQZUJleUxUUUZ3cDVkaURTVHE2bmFRMGlvVFNZbDlBNnV2MXhvZE53dEEyeFRfRkh5cjN5RXNaWksyS1NzSnVadnltOElWM1FxaHo4YmFWUGdSVWgwaVRacFV3WXUwcW1qZDlmVG02SkJfQTVvSkgw?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Utilities Stocks Advance, Real Estate Sector Struggles - marketscreener.com",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbVZSUTc5RUdYZ3ZZN2M0T1N6Z05MUG80RXdNNS1GcmR1V0tkdlpJV3l1aTZLYm5YVldONGlpMWhzRWhZV2lQZEZkdnZOMHIyN3hSeUhqbUlIeFdMNmk5NEhwYmtCcVZjUlhPUFpZaEpmc0huVFFoOUhwenI2LXMyaHdHeGdYWkNoenpROUFmR0hJc2xkTG52RGJSR1EwYTNEY3RLUFNwTkdaQktrWnJQbzJYb1l5Mm5fcEh3WXFqNjM1WUV5bjIzN09qMA?oc=5",
-              "sentiment": -0.361,
-              "relevance": 0.744,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "Market Wrap: Stocks Fall as Industrials and Utilities Decline - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVUtGdkFuRHZqR0E5WmRudF9LWGlBQUFDcHd5enl5dmQ2QXZpY1QwSEFrTTFKRHJLR2NsQVk4cHVtamltN0pEdVdMVTA2Z0oxUUQyMUJjSk5yOXFpRlJzOVY4RE1ZeERHQzlqdTNNTkVoX1piRjE5akNaWElOUnFxZC1kdEkxWnJOZjR1aWg3SXBfUDQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 6,
-            "zscore": 0.09,
-            "spike": false
-          }
         }
       ]
     },
@@ -3874,6 +3835,14 @@
           "events": [
             {
               "source": "googlenews_semis",
+              "title": "[New York Stocks] Plunge Amid Nvidia Weakness; Wall Street's 'Fear Gauge' Soars 19% - 파이낸셜뉴스",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTR3B2YXJMdVdkNnl3dzY3Zm5hT0xOZkhQQUpybk0yaEFISmhHQUtfQ2hhQzlyLV9XckFYck0tV0Nyc3NCQXJZQTAxMjhVTERseVo4RG9PbEM?oc=5",
+              "sentiment": -0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
               "title": "KOSPI Fails to Reclaim 5,300 Level as AI Funding Worries Weigh on Chip Stocks - BigGo Finance",
               "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4MS1mMzB2MnROZjUwcEo0eW9tbzhIVzJnOTNySHNHNUo4VU5IUFRJbDRib0xGNk9fb0w1c1FFYnBMLXlfTmNLRHZPbktfU3RCWDZ1UWRsTGtReDAxWTVIQjd4UFc2RnNDTnVMZWNFQ0FQcU9wanc?oc=5",
               "sentiment": -0.681,
@@ -3887,19 +3856,11 @@
               "sentiment": -0.67,
               "relevance": 0.868,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "SOX ends 5 weeks of decline: Is the worst over for semiconductors? - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYTVBcEdBNVg3VnBuTGRqMGUzNUFGY0lLY1Z5N3RZU1otT3A0SkpNbmJZS1czbUdReW1vTHR3ajRUOVJONGR4QzFqUEZuYnAtb2N1bFVPUzY5bGQ4QVJmeS1IX0RPTjhmR0xOam5UVmVJYnJDc2xWQTZxc3pSSnJEOGRCMEVoWHJ1Q1pmMDlkR00tVFktQndnRklrNjF4NjYtQ1V0MXY1VmVQTnhnbFJoNnZDMjNRRk9iYkRkelJ3?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 71,
-            "zscore": 0.51,
+            "count": 92,
+            "zscore": 1.22,
             "spike": false
           }
         },
@@ -4364,11 +4325,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
+              "title": "Wall Street Has Bad News for Your Wallet - U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3AyenpEMTYxZ1V2UDhSdW9QTDdNQktMQk1OeWRsYWRoLW1nTjRPd194cDdZYVYwdlhtaElweUpwb3pUbk04YkdTcTJ1WHRtVWM0U3ZRVFoyc1ZjMG5qMWk1eldmSjRDb3ZoZTZwRXN4c0pKRTFOSF9sZVBzWnpnSl9KZFEyd1lEZGJvZ2hnTVZJRHIyaUx2RGJWWDhubUh0VVFaT2pmaEE4OWI5dGJhMzFldkdyWkg3QTlfZGRVVQ?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -4605,11 +4566,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
+              "title": "Wall Street Has Bad News for Your Wallet - U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3AyenpEMTYxZ1V2UDhSdW9QTDdNQktMQk1OeWRsYWRoLW1nTjRPd194cDdZYVYwdlhtaElweUpwb3pUbk04YkdTcTJ1WHRtVWM0U3ZRVFoyc1ZjMG5qMWk1eldmSjRDb3ZoZTZwRXN4c0pKRTFOSF9sZVBzWnpnSl9KZFEyd1lEZGJvZ2hnTVZJRHIyaUx2RGJWWDhubUh0VVFaT2pmaEE4OWI5dGJhMzFldkdyWkg3QTlfZGRVVQ?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -4621,8 +4582,8 @@
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": -0.07,
+            "count": 30,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -4846,11 +4807,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
+              "title": "Wall Street Has Bad News for Your Wallet - U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3AyenpEMTYxZ1V2UDhSdW9QTDdNQktMQk1OeWRsYWRoLW1nTjRPd194cDdZYVYwdlhtaElweUpwb3pUbk04YkdTcTJ1WHRtVWM0U3ZRVFoyc1ZjMG5qMWk1eldmSjRDb3ZoZTZwRXN4c0pKRTFOSF9sZVBzWnpnSl9KZFEyd1lEZGJvZ2hnTVZJRHIyaUx2RGJWWDhubUh0VVFaT2pmaEE4OWI5dGJhMzFldkdyWkg3QTlfZGRVVQ?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -5087,11 +5048,11 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
+              "title": "Wall Street Has Bad News for Your Wallet - U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3AyenpEMTYxZ1V2UDhSdW9QTDdNQktMQk1OeWRsYWRoLW1nTjRPd194cDdZYVYwdlhtaElweUpwb3pUbk04YkdTcTJ1WHRtVWM0U3ZRVFoyc1ZjMG5qMWk1eldmSjRDb3ZoZTZwRXN4c0pKRTFOSF9sZVBzWnpnSl9KZFEyd1lEZGJvZ2hnTVZJRHIyaUx2RGJWWDhubUh0VVFaT2pmaEE4OWI5dGJhMzFldkdyWkg3QTlfZGRVVQ?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
             },
             {
               "source": "googlenews_macro",
@@ -5560,6 +5521,14 @@
           "market_return_pct": -1.92,
           "events": [
             {
+              "source": "googlenews_biotech",
+              "title": "The FDA declined to approve one of biotech’s most closely watched cancer drugs. The company’s stock tumbled. - MarketWatch",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTDlKc0FSTGxiWFEzalUtT1RmdndBOHR6OGNvTTZvYWt6VkRVanRlbWVYUXZhckhnZi1BNFpxZm9adVJ0NTN5dDZ6c1JRekxpRzBMd2lVYjNkVGdqWTZnbXdtWEMyNFh2elRHTWFBX1laLW0wRjJSTzZjTnBfbWd2eGdiOUhuN0JDMEtWRnQ5SUxMNVdyRTU1RnlhRTVKSkJFdVQtQUNxTTZSUENsbDBueXBhUUluRkZZN1Q5dw?oc=5",
+              "sentiment": -0.687,
+              "relevance": 0.875,
+              "event_type": "other"
+            },
+            {
               "source": "googlenews_macro",
               "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
               "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
@@ -5569,24 +5538,16 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Dow Jones Biotech Giant Amgen In Buy Zone Amid Ongoing Stock Market Weakness - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMGJCRDJlQ0RjaXh4RGNDclc3OTF5SmhLVU9CUE1DMmFxY3Zsb1h1T0hMbEJNb0JUSGVrNGVPeVdxOVg1T29zMnRyTUNpUGM2QVZ5WURfdmtva0FoYlo5N2NDWXYwR0g2T1I3VjZtWjAxdFp6UFExa1hqTFpOX1JiZmV6eE01OVQtVXJrcA?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
+              "title": "Wall Street Has Bad News for Your Wallet - U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3AyenpEMTYxZ1V2UDhSdW9QTDdNQktMQk1OeWRsYWRoLW1nTjRPd194cDdZYVYwdlhtaElweUpwb3pUbk04YkdTcTJ1WHRtVWM0U3ZRVFoyc1ZjMG5qMWk1eldmSjRDb3ZoZTZwRXN4c0pKRTFOSF9sZVBzWnpnSl9KZFEyd1lEZGJvZ2hnTVZJRHIyaUx2RGJWWDhubUh0VVFaT2pmaEE4OWI5dGJhMzFldkdyWkg3QTlfZGRVVQ?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.52,
+            "count": 16,
+            "zscore": -0.05,
             "spike": false
           }
         },
@@ -5818,16 +5779,16 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
+              "title": "Wall Street Has Bad News for Your Wallet - U.S. News & World Report",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3AyenpEMTYxZ1V2UDhSdW9QTDdNQktMQk1OeWRsYWRoLW1nTjRPd194cDdZYVYwdlhtaElweUpwb3pUbk04YkdTcTJ1WHRtVWM0U3ZRVFoyc1ZjMG5qMWk1eldmSjRDb3ZoZTZwRXN4c0pKRTFOSF9sZVBzWnpnSl9KZFEyd1lEZGJvZ2hnTVZJRHIyaUx2RGJWWDhubUh0VVFaT2pmaEE4OWI5dGJhMzFldkdyWkg3QTlfZGRVVQ?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 26,
-            "zscore": 0.1,
+            "count": 30,
+            "zscore": 0.37,
             "spike": false
           }
         },
@@ -6031,13 +5992,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-11-16",
-      "return_pct": -0.23,
-      "zscore": 0.21,
+      "date": "2026-11-17",
+      "return_pct": -1.09,
+      "zscore": -0.17,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-11-16",
@@ -6046,7 +6007,7 @@
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 0
+      "days_since_last_major": 1
     }
   }
 }
