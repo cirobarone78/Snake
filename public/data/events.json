@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T18:34:00+00:00",
+  "generated_at": "2026-11-17T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-17",
+          "return_pct": 3.24,
+          "zscore": 1.52,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.56,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "SOL holds gains as technical progress and buyer control support the latest rally - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMHZ4ZWVaY3ROWnpRYU5UQTZqYVdfRmZvX2Mya3RUbHpNajdQS2xEZWEyZ2RqWThlR3V1bURNcnZsS3pwYmRfOUg3d2lsUzFtMi0yN1BqR0hLcThxV1o4c3Y2V0FTY0t6ZU85WlhUVENFa1ZEcmhWeGNqck16WHluTk1QUmF4UTU4VVdxTVFVcXl4NmdmN09PYWhQc1A?oc=5",
+              "sentiment": 0.784,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Bitwise Shares Ultra-Bullish SOL Price Prediction: $1,100 by 2031 in Best Case - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc1NXODJLTE9uOE5xck9nUmVnd0E0VjZ4TE9FeENBeUVTeDlqcm9TOFFoYmp4ZExIamRsUV8tWFJMNTYxcGlQY29jZkNib01vcHJSVU9Gd2tKdEY3MTBZYjR3Z016cnRzamNFZUM1cUxDeUl0X3RoV0JpTzZGZzhWRmEyWXdFaUxVbTZtZVpXS18xc2JpNmVxc2tKc2lBRktsUFJMRkFCeERsMnd4M1l4NVp3T05oeXExa0RDRVJvdm40aXE0RXdjWWlPOUVTRlhlWEY4?oc=5",
+              "sentiment": 0.751,
+              "relevance": 0.9,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Crypto Winter Hits South Korea's Upbit and Bithumb as Coin Holdings Plunge, Deposits Evaporate by 2.5 Trillion Won - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NYVluSERDVktCcS12cFZ2b2pILWI2TjhZLTRIOTZOcTRTYWY3WEc2Mmd4cHlFMmg3aWhtc05oYWloZkN6UWxzRnJvdGdPNGVSMEFwVWt0U3hxcVZCV2JOWm84bjg5WE4yWW0yamNSSFdURGNqaHc?oc=5",
+              "sentiment": 0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 54,
+            "zscore": 0.42,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-15",
           "return_pct": 3.57,
           "zscore": 1.76,
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 43,
             "zscore": -0.17,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-29",
-          "return_pct": -6.66,
-          "zscore": -3.37,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -4.3,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "Uh-Oh! A New Inflation Forecast Suggests Trumpflation Is Evolving and Worsening. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWm42QmwzM1RqQmthT0xTZW1DTjBjZWNhZDk2WEhaSng4SmsyQWxQV0FTR3U0UnR0bThQMDBxOWNyWEprUHU5ZUJZWExhcFlFNVprN2dBbG8wZWpMaHN6YjVlN3VXSE5OTWM0Mkl6UmJCaG9nOVA4ZmxwWkJGTUswMlhsV2VtYVl4NzhNSjlzLW1RMTl3NlJTcDVDaUltN0xRTTRsOVZncHpPQ2Y5UjRTNFUyenp5eDdSbUJn?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "History Says This Recession Indicator Is Almost Never Wrong. Here's What It's Saying Right Now. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYzFVSF91elFvdFoxQzVSdXhfLW43alFnYjdodzFYOUNvQ2lpd0dJeXNEckR4dm1JN3lCVkhzVFAzY3FoQ0RwOC1fUmlWTURRYTd3Zmd1MmxGbHNsTU1YV2s0ejl3VktuX2duRmx2ZVdTbW1nX0ZYd1Y4Zy0yaTJzcHlQX2k1U3RmSjQ1M3U2UUVBOUxyd3hPdg?oc=5",
-              "sentiment": -0.596,
-              "relevance": 0.838,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Why the US Economy Looks Strong But Feels Bad to Many - Bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWFRwdkJuR0ZnbGs1c1dpb3FBY3N0WXhvZlZ0LUpmU1o0MTVKS3pjVzVRTzhWQ3pzeWFkUmdqajYzbjI2ZDFBTndVNEZSLUNkcDFYUk9UdXRyOXZBR1RFRVM1enNtUlhMOUNQQUEyTUNRSUpVM0NDclFtWG1CRTltOU15Ty1uNml0WlAyN0xUdWtzVWlBclp4VzBnREJQS2ZHRXl0akJfWEU4X1FLNUE?oc=5",
-              "sentiment": -0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 51,
-            "zscore": 0.55,
             "spike": false
           }
         }
@@ -973,45 +973,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-11-17",
-          "return_pct": 4.65,
-          "zscore": 1.52,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.6,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQjRKTGF0Um80RU1uYV9UaHFqYTdWblVLU0NTeUkwSFZyR0tQcjBtX3lzQkFmT1JXWkJLbVk5WWg5UFRueGpRSU1xYndQci15bHhuVXhvb29DRUN0cGVCX2k2T3YwZ081cjlzaVlFX1pmYm9POEdaa0c2S3FNSl9GUGo1Y3RoSnNtN0g0RF85NG1wbmZBOHBzRlhWYUNyODVyRW5UUUhqUzl1dzlaVW5sNHpiT0ZKd2NjZGI1VHAta08tdlZ0RmpRVXVtUnZXTnBncG1hU0drYTE0azVMRk95UDlvYmpoX1XSAe4BQVVfeXFMTTFnSWs3Q2pWNkVWdkpIMnVFanE1Z2FjV3FIQVE0cEgwc3VyVFZORU1mVFJOd19XWDNhR3FhVzJhQmxfSUctR0ZrUGxXN2t6X0lBTmxyTGU1bFBYaGV1dGE1dmxjbWpubHAwaFllOXJ6Rks4RWM4NG1XX29PMmNaNzdTeGJjWWdidmZCV0ExcFdKM21PcUdHVWZBZDFhSUh6eDdnRXM4Ym94Qi1RQzZycmxjbk83SzVXOVduX3c0aXhteUdySFFwRjBScGlxcGN0Ujd4X0JUYktYck42M2RZejNCc1o3eW5pcXo5bFhEdw?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
-            },
-            {
-              "source": "coindesk",
-              "title": "Live updates: Bitcoin and stocks continue slump as Huang signals interest in returning to Nvidia",
-              "url": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "other"
-            },
-            {
-              "source": "coindesk",
-              "title": "New DeFi-yield generation targets ‘scam-like’ bank accounts that keep all the interest",
-              "url": "https://www.coindesk.com/business/2026/11/16/new-defi-yield-generation-targets-scam-like-bank-accounts-that-keep-all-the-interest",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 0,
-            "zscore": null,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-14",
           "return_pct": -7.22,
           "zscore": -2.25,
@@ -1204,6 +1165,45 @@
             "count": 14,
             "zscore": 2.89,
             "spike": true
+          }
+        },
+        {
+          "date": "2026-10-29",
+          "return_pct": -4.85,
+          "zscore": -1.58,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.3,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Uh-Oh! A New Inflation Forecast Suggests Trumpflation Is Evolving and Worsening. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWm42QmwzM1RqQmthT0xTZW1DTjBjZWNhZDk2WEhaSng4SmsyQWxQV0FTR3U0UnR0bThQMDBxOWNyWEprUHU5ZUJZWExhcFlFNVprN2dBbG8wZWpMaHN6YjVlN3VXSE5OTWM0Mkl6UmJCaG9nOVA4ZmxwWkJGTUswMlhsV2VtYVl4NzhNSjlzLW1RMTl3NlJTcDVDaUltN0xRTTRsOVZncHpPQ2Y5UjRTNFUyenp5eDdSbUJn?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "History Says This Recession Indicator Is Almost Never Wrong. Here's What It's Saying Right Now. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYzFVSF91elFvdFoxQzVSdXhfLW43alFnYjdodzFYOUNvQ2lpd0dJeXNEckR4dm1JN3lCVkhzVFAzY3FoQ0RwOC1fUmlWTURRYTd3Zmd1MmxGbHNsTU1YV2s0ejl3VktuX2duRmx2ZVdTbW1nX0ZYd1Y4Zy0yaTJzcHlQX2k1U3RmSjQ1M3U2UUVBOUxyd3hPdg?oc=5",
+              "sentiment": -0.596,
+              "relevance": 0.838,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Why the US Economy Looks Strong But Feels Bad to Many - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWFRwdkJuR0ZnbGs1c1dpb3FBY3N0WXhvZlZ0LUpmU1o0MTVKS3pjVzVRTzhWQ3pzeWFkUmdqajYzbjI2ZDFBTndVNEZSLUNkcDFYUk9UdXRyOXZBR1RFRVM1enNtUlhMOUNQQUEyTUNRSUpVM0NDclFtWG1CRTltOU15Ty1uNml0WlAyN0xUdWtzVWlBclp4VzBnREJQS2ZHRXl0akJfWEU4X1FLNUE?oc=5",
+              "sentiment": -0.557,
+              "relevance": 0.823,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": 1.85,
+            "spike": false
           }
         }
       ]
@@ -1696,6 +1696,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-17",
+          "return_pct": -1.91,
+          "zscore": -1.87,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -1.03,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The 10-Year/2-Year Yield Curve Is Flattening. Will It Invert? If So, Will It Signal A Recession? - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS2lyaVZkdkYzYjZMZ2JpdlJLVjEzWm4zYjVqUkY3N0UzUEJ0Mk83d0VhQnkzZ0owWFVEWWNnZXVyYVBVVHBiUnk3ckU3VTBsUldVaXhiMjNVZ3VfM3g3MF9NQ3VlQjE4eklPTXg0Mk4yTkRFTnA0cFI2c0E2NHE3NFFHTW5PMFYwSFpOQ2cySDRfQWZBckoyX21yeXdqaW1zVm15U191aDI4Mnk4Vk4yWWZzMUFaaGJFd2Y2X2hfNGFod2pI?oc=5",
+              "sentiment": -0.487,
+              "relevance": 0.795,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": 0.7,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -2.87,
           "zscore": -3.11,
@@ -1887,45 +1926,6 @@
           "coverage": {
             "count": 2,
             "zscore": -0.99,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-20",
-          "return_pct": 1.2,
-          "zscore": 1.75,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.28,
-          "events": [
-            {
-              "source": "googlenews_finance",
-              "title": "Bank of America vs. Goldman Sachs: Which Financial Stock Is a Better Buy in 2026? - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOeldZZGk0R2I2emJUNnhJQTR1TXpWcWJJSWp0cXAtc0VKVW1IV19ZOUEtdUpuTGZZY3dhaldZZjVuUmRxekNOaC1ZNkV4Y1EtbFZPSjVsbGE5a1lJc2lfdDhyLWh3YUtMYTU0X0tPaVpETEFDQk16UEdGdW1zcGpVblVRX2F5Z3gwUGk2b0ZlZHVNVmNzRm9CendHUVQtSXA3QjFsTWJ5SFo4YkhIeUVpaHl5YlVWWnRTT004VVFUa1RwVndtWlliY1hjdi1KYmFySno0NGgtNGNuUmVuWkhrbmtKT2E2TE9KbGt4MmlOb2JKZ3dMdEE?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Scotiabank Shares Decline Amid Banking-Sector Caution - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdmRyWXRZY0Q3VnQzWklpcGRoOTZ0RkVVeGp0aDZFRThHclF6Mm5kazRzdmF2WDBHYm51ZGh6eW9EV0F4ZHllT0tLRHo5VGwwSWdvdEpROFpiaWxfSTJqMmY5WmNBS3J3VWtXUEJBeF9lZ0JzcWlmUDgwVnhiRXZNd1VzbkZZZjI1THRrdVJzTC0?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Share Market Today: Nifty 50, Bank Nifty | Oct 19, 2026 - Liquide Blog",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNnhSMkxSNTBDdmVEbTBxNUN4WkJDR3RGcnV2cmUxVzhOMjFqWFlSbXl2OW1meDVSMjJ1cGhoeGc0SmZ6NGF5SVJMODFDdUNBT0JFR3FIbUc1OWdUTmhIV0lzazhIMGxoMUIwVjN2UGdYOHlfRzRiUERXWGpzRUNnTlBWMUxmMmcwZGJNLVMtQkxmSWZvWkJZR3pHUEg4YmQwRTJ1dDQwRWFpaDFhNFA2UTBrSDN0bXZObnpUNXhEZERyM25WTS1QS1V4UVNOS1U?oc=5",
-              "sentiment": 0.765,
-              "relevance": 0.706,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 10,
-            "zscore": 1.16,
             "spike": false
           }
         }
@@ -2418,6 +2418,45 @@
       "name": "Utilities (XLU)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-17",
+          "return_pct": -1.59,
+          "zscore": -2.01,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -1.03,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The 10-Year/2-Year Yield Curve Is Flattening. Will It Invert? If So, Will It Signal A Recession? - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS2lyaVZkdkYzYjZMZ2JpdlJLVjEzWm4zYjVqUkY3N0UzUEJ0Mk83d0VhQnkzZ0owWFVEWWNnZXVyYVBVVHBiUnk3ckU3VTBsUldVaXhiMjNVZ3VfM3g3MF9NQ3VlQjE4eklPTXg0Mk4yTkRFTnA0cFI2c0E2NHE3NFFHTW5PMFYwSFpOQ2cySDRfQWZBckoyX21yeXdqaW1zVm15U191aDI4Mnk4Vk4yWWZzMUFaaGJFd2Y2X2hfNGFod2pI?oc=5",
+              "sentiment": -0.487,
+              "relevance": 0.795,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": 0.25,
+            "spike": false
+          }
+        },
         {
           "date": "2026-10-22",
           "return_pct": 2.07,
@@ -2935,7 +2974,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.08,
+            "zscore": -0.09,
             "spike": false
           }
         },
@@ -2965,16 +3004,16 @@
             },
             {
               "source": "googlenews_discretionary",
-              "title": "S&P 500 Top Stock Gainers Today, 11/4/26 - TipRanks",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51bldSZHdUX2Fxa2RKVGlCRXl3ZUdZT0lrUmVBOU01b01fNWRxN1p4dUd2VGJ4cWdJWlNXQkxTd0duYndrOWUxaDEzQkp5bUJ5SmhVMFc3QXltRlBZMm9DSF9kdkJRTk5LV1V6dlU3OHVScjl1XzBF?oc=5",
-              "sentiment": 0.202,
-              "relevance": 0.681,
+              "title": "The Best Consumer Cyclical Stocks to Buy - Morningstar",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1xY1AzeTdhc0J1eHlqLV9aN2N3eUVOYW5Tb2lVUjVqcXVjTW9tSENkSzVMUzNsYzhPalZ1bVlwVnhaWkZiT3I4X1dqdjNvODFsYjBZcFRxTElJRzBtWU8xX1lTTldvZDM1MGN2Y1owX2lXVjgzRW53?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": 0.17,
+            "count": 14,
+            "zscore": 0.32,
             "spike": false
           }
         },
@@ -3344,6 +3383,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-17",
+          "return_pct": -1.49,
+          "zscore": -1.58,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -1.03,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The 10-Year/2-Year Yield Curve Is Flattening. Will It Invert? If So, Will It Signal A Recession? - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS2lyaVZkdkYzYjZMZ2JpdlJLVjEzWm4zYjVqUkY3N0UzUEJ0Mk83d0VhQnkzZ0owWFVEWWNnZXVyYVBVVHBiUnk3ckU3VTBsUldVaXhiMjNVZ3VfM3g3MF9NQ3VlQjE4eklPTXg0Mk4yTkRFTnA0cFI2c0E2NHE3NFFHTW5PMFYwSFpOQ2cySDRfQWZBckoyX21yeXdqaW1zVm15U191aDI4Mnk4Vk4yWWZzMUFaaGJFd2Y2X2hfNGFod2pI?oc=5",
+              "sentiment": -0.487,
+              "relevance": 0.795,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.38,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -1.82,
           "zscore": -1.94,
@@ -3535,45 +3613,6 @@
           "coverage": {
             "count": 5,
             "zscore": -0.79,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-09",
-          "return_pct": 1.86,
-          "zscore": 3.06,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.59,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "3 Data Center REIT Stocks for AI Infrastructure Growth - Simply Wall Street",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVTRwYjIyODJ0N3BEdUl1NkloN2dVVV9zZnpoS3UyaWxZRTRYSmIyYnpBemxWdzViMkM0UnQ2QURqenFvTURhM3BVMkcyQi1CY011QTZabWJJdVdLSjlfdk13MkwxS213Si1qSXdBcFRMRTNaNFEyNzJzQzF1a082TThSZ0lod2VPRjZfSkp2RExfUU5BQ0lMcjZyWnFpUXhZOVpnQ1RvRnZhNWVzNzdEall0ZDk0OGVhY1c0T2VxNUExVXfSAcgBQVVfeXFMT3J6UjU2SzVHQndYeWVNVUhua2s3ekJWQjV3U3doWXdHVndFcXhHZEZxOXVuQWJIREh0X195VUdzalhGWVgxVXYtOW51RTFMZzZmamI0RmdIc1BnT3ZFcXJXQTB1ckZmMlZIWHRVRzEzLVlER09GOGxJVHBGV1NuX09nUFdFYVNxd0hwS3A4dHhiV2R5VUdaWElZUnA4UUNNX291aHo0T1E2bktqS0xPLS1SejdYRzJfY1Uyc0dpcHVNNGJlOXdUbG4?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Why REITs aren't getting killed by rising interest rates this time around - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOGRwWUlJX29ua25MX3o4TW1iVW5DeFVOcGpXaHR2cmxmdXRkOHAxem96OEpzR2V1M3BoRFJ4SDNKVWJIbzFJblVwOF9fdE0tUFU3bjRoR1l0N3VCVkRNUGhNOW9ueU1sWXdsNmtQUUFnSnp3ang0cDZRMDkxeDdGMHRIZjd0T0dxUFlrTkFGTnRJV3hmbkdpb3dDU0ozTmdSZFNBb9IBqgFBVV95cUxQM3N3bU1mZlA1UjZSeVEwVnNLUEFZZ0VCa0dFRktLS1ZPYTBKYlNQNEdiOFJpdDNKV3dzMFJPWDBIVmxfYmJ6NnppbVVQd2MyN194X2U0VG83V1ctOFNCblRaTnNhb0h6MlNXUG4zUGhGREM5Z05nUDZKeVNLWEVFMk1BMzg4c0JZMkNON1BrMERMNlctWUJjOWZ6SjM0OGNQUXZNX3JzZ2NxQQ?oc=5",
-              "sentiment": 0.764,
-              "relevance": 0.706,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Why REITs aren't getting killed by rising interest rates this time around - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOGRwWUlJX29ua25MX3o4TW1iVW5DeFVOcGpXaHR2cmxmdXRkOHAxem96OEpzR2V1M3BoRFJ4SDNKVWJIbzFJblVwOF9fdE0tUFU3bjRoR1l0N3VCVkRNUGhNOW9ueU1sWXdsNmtQUUFnSnp3ang0cDZRMDkxeDdGMHRIZjd0T0dxUFlrTkFGTnRJV3hmbkdpb3dDU0ozTmdSZFNBbw?oc=5",
-              "sentiment": 0.764,
-              "relevance": 0.706,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": -0.92,
             "spike": false
           }
         }
@@ -4308,6 +4347,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-17",
+          "return_pct": -2.88,
+          "zscore": -1.36,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -1.03,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Green Energy Stocks Gain as Renewable and Battery Shares Drive Market Momentum (17 November 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMEdzZlQtN3BsLWJ3X1dIQUdXNFA0R1haYUIzT1VPdDhRYU9EWTBuMzNjVHZtZDQyWVdlT0sxMUkyUG1yRzctQVUxcG95bl9iTDN0c1JHQVQ2Qi1TOFc2UHVQNDJrSHlZeUh2THdOV0ZKVWlmd2FJV0loSGVOWHI0WkhiSkZ6UHE5d29DQVlnUmtPQVJNRFFLczZpQ3B1c0pvMGw1d2F5eG5BckF2U2daOFVReTFhWUQ3ejRZeWc1X0k4S1pEQjlVOTZJNnk?oc=5",
+              "sentiment": 0.772,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Amazon (AMZN) Stock: Expands India Clean Energy Push With $7 Billion Plan - Blockonomi",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFlKaUVPdkJyZldlZGM3V2YyT01RSWcwLXB1SWY4YlNoaWFvTGFPNm9kS2JzSGNMMEdVUTY5UUpZbGpxSTQ0MG1GbXhWbi10SDVCV0xpaUppSGpIMWd2V1NRM253TXQ2Q3hMWFYweDg4THh4ZWJWa2VadnFyUVp1Y0tqWVhvakNoNThsZzVrMWhsS1o0a3VSWQ?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.497,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.22,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-16",
           "return_pct": -3.29,
           "zscore": -1.73,
@@ -4499,45 +4577,6 @@
           "coverage": {
             "count": 3,
             "zscore": 0.47,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-02",
-          "return_pct": 2.74,
-          "zscore": 2.13,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "6 Best-Performing Clean Energy ETFs for November 2026 - NerdWallet",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rS21PYW5XTC1PZWZpMHVvaFhUYW5XRVNBX3Vjc0VFWHRtekxmSHViNnRMaFpEZ2xKYVJVN2FHNFMweUVaNUlXUFVfOVFtVk9RckVuUUtCbVFibXJZRGFNbmZkMWpsdkxUUC02bQ?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "3 Clean Energy Stocks Retail Investors Are Watching After The 2026 Blue Wave Shift - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeWNxOFR6VnVlU2VIbE1tb1VVV1hCNDV1bDVtZkh2bzdsLWZCTlBBZm55Zm1EdmFkYUtxWC1mX2ItY0lIdzg3dW9VXzYxUHhVTlVYc3ZTUnZqcFQxNGpiTXJEQUR1dEg3LTBZemFqWnhweHZ4UFZCRmtrS3NoMG5zTUZhSlJ3dDFaX0JkbDRR?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Top 3 Renewable Energy Stocks (November 2026) - NerdWallet",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbG45b1ptTmZ5ZFBqQUJYTjc3TFlpSlRaRTZoVndvVDBrQ1EzYzNmS1lMaDFrdUJWY0JHVDlSeElHSnJIOFhnN1l1Q1BDaFh0ay10aUR1ZXF1dm9kN2NFWjMtSVQtZXZxNnVIcm8tYUpNNFd1X1hRanlSMFdYUE4xeVQyZw?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 1.09,
             "spike": false
           }
         }
@@ -5993,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-17",
-      "return_pct": -1.6,
-      "zscore": -0.39,
+      "return_pct": -0.56,
+      "zscore": 0.08,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-11-17",
-      "return_pct": -0.9,
-      "zscore": -0.63,
+      "return_pct": -1.03,
+      "zscore": -0.73,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
