@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T12:37:00+00:00",
+  "generated_at": "2026-11-17T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.0,
+            "zscore": -0.99,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 1.17,
+            "zscore": 1.16,
             "spike": false
           }
         }
@@ -2896,7 +2896,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.05,
+            "zscore": -0.06,
             "spike": false
           }
         },
@@ -5272,6 +5272,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-17",
+          "return_pct": -2.79,
+          "zscore": -0.96,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.72,
+          "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "Palo Alto Networks reports Q3: Everything you need to know ahead of earnings - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUlVRa0ttUnJ4QzBxdFkyMjh2M2VzSkoxSTN0TmlYWUlKU1JhOW1oS216VEh1LU1mT2t3M0V0ZHVZdWExeG1XeHhCOGlJcU9FYVZOMnl5T2FGdGdmOG5CU0x0Nm1xUENBMDNtQjV4NmFmdnlBUWZUUDhXMnpFOEpGZFFvUjh0NXNla1JoNjJnOGczQmczVXVTcndHTGxHekVMMHpVcDI3Ym42dTNlWjB3UFFpQ1ZPZmN2ZUV3VXJFZkdiT3FBTjdRSGhYTjZ6eGhTdWc?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Top cybersecurity software stocks ahead of Q3 earnings: Truist - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZEdtYXZrWkRSZ28zbGF3bHlsbUV5UHJDVHdoMDc2MVJkWW0zSXVJbnJwX0c1TjI0QVpNMmRLQV9aY1FUNDZ3cktGenZodUF2bWJSTmdtUHFIRGdoLVFkc2otOEJCUTluS0tJazhuOHQzcHFncE1pcHFheVh5VUhRMlBUMDVDb1ZiX1hKWFRDU3dPbFh6S0hzbmpJZHBwUDhNRjF5c2xiOHVJMzhVTWsxM2F0a0M5dHdfVnc?oc=5",
+              "sentiment": 0.202,
+              "relevance": 0.6,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "129,505 Shares of Qualys, Inc. $QLYS Bought by Aberdeen Group plc - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOE5obWhTNndsWXM4UThyYVFZWUhhai1ELWszN1F1RmxIMUJPVW8wVDNHdVFJa1JuVWRvaG9fbEdGb3AzTGNXOTNmdWt2dDZ6b3l3bF9pR2RmTEVOVzNuYkl3UEtBQ3E5OWZWNFA5dUV5T1ptQnRIcEFhWVlTOTh6b3pnVTJuS21RQ1FFQU5hdHpkWkRWYktrbTNHODI5XzhhQ0lJWE9mMmVKdk5xOERLV252Z2hNZFJBdDRmcU1mdw?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 8,
+            "zscore": -0.73,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 4.0,
           "zscore": 1.82,
@@ -5465,45 +5504,6 @@
             "zscore": 1.18,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-23",
-          "return_pct": 3.22,
-          "zscore": 1.41,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.52,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Check Point Software rises as cybersecurity shares gain on stronger spending outlook - Quiver Quantitative",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUWVCODMtOFZVRHBlTzMzZGVWM3BMWklkbHdKWWZWUmNEMG5pLXlDTGhQbm1TeGpHQWUxZThaMmowUFFfMnJDczdhNmpxUHJiODVTZ0FXdFlNbm5WdDhIS1hUVE0zXzRlSzRiWjRIU0hmLVp1eG9QY3ZRZzI4bGYzY2x0dm5jVkY5T0dWY0lhZXFOckg0STVBbHlvVWdEa2NYamJ6ODRlMHMwRENXUl83emVXY0hibUZz?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Rubrik climbs as cybersecurity momentum and growth signals support shares - Quiver Quantitative",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWW9FdUNETXZVbjdRNHVhOE1HUXNYT1lFS0FjbEt1MEptbUFyQ0szSlFSVTNlbHdLVVoySThLVlhFVkdUVGs4ckJLZFhVZVRJcHFtSUdvcHRRdWVFT0dKbjQ3UkNWWWpIX0gtcm9BSkZHeVNZMTkxOXN3a0ZxdWh5c0E2TVJheVNVNjFUTFZ0WGIyNjNWTm1PYTdXNDd6cXhxb2xCdTczU3FDQQ?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "CrowdStrike Soars 20%, Secures A Spot Among 11 Newcomers To Best Stock Lists - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWndLOU5WZGxWSmVjQnlnZi1MVTczOXVOcm55alBwclVybWoyTUpNdVZiUmRpY0ZTb0RJdEdMcEN3T1hLZElZbmhZQ00xWlpMRVJJUUUwOTdGRmVldTBkMktOSnZRbS1ya1pnWVdGcUMzUmtFTU1FYWVna05mcGxJcENyY3VmM0liWWlPWWI3WFFraXloTDFiaQ?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "listing"
-            }
-          ],
-          "coverage": {
-            "count": 51,
-            "zscore": 2.94,
-            "spike": true
-          }
         }
       ]
     },
@@ -5546,8 +5546,8 @@
             }
           ],
           "coverage": {
-            "count": 18,
-            "zscore": 0.19,
+            "count": 19,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -5993,21 +5993,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-17",
-      "return_pct": -0.07,
-      "zscore": 0.29,
+      "return_pct": -0.21,
+      "zscore": 0.23,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 2
     },
     "equity": {
-      "date": "2026-11-16",
-      "return_pct": -1.92,
-      "zscore": -1.61,
+      "date": "2026-11-17",
+      "return_pct": -0.72,
+      "zscore": -0.48,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
