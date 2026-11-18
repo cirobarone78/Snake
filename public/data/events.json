@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:35:00+00:00",
+  "generated_at": "2026-11-18T21:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 62,
-            "zscore": 0.94,
+            "count": 63,
+            "zscore": 1.0,
             "spike": false
           }
         },
@@ -1456,11 +1456,11 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": -2.89,
-          "zscore": -1.59,
+          "return_pct": -3.27,
+          "zscore": -1.79,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.04,
+          "market_return_pct": -0.23,
           "events": [
             {
               "source": "googlenews_energy",
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -1.0,
+            "zscore": -0.99,
             "spike": false
           }
         }
@@ -1936,6 +1936,45 @@
       "name": "Health Care (XLV)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-18",
+          "return_pct": -2.2,
+          "zscore": -1.98,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.23,
+          "events": [
+            {
+              "source": "googlenews_health",
+              "title": "Mizuho names top healthcare REIT stocks for above average growth - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTHhMRm1XMl94T3JuTFlWM0p3UHA3bmJhbldmbWtfNnV4c3BxTm9tLXdYS2ZmTUZMSzVLeDVZN3hqeDAwaGJhSjlwZ0hOeTVVQ2plai1pUVI2Z2ZvR0RidDJ2R0J6cndpc0dyTGNOVXRYdnk0T1BONEhCY3ZQYnJXSWF3bVl5eTNiZGtJaVhuTGJCd0hpWTVIY001dXA3dElEQWdiZmhFQnM2Q3ZsSnFGbVN5bzZvcGVkNjA3Rg?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_health",
+              "title": "Mizuho names top healthcare REIT stocks for above average growth - StreetInsider",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbWNCenJrblpBOWw4dW5tUGJBQ3BEaUZFRWoydmV2SkhUX0I5eGlBV2pyVm1IWDd6bkdyTWNMekdBRzR1NDBoZ3N6ZXJGQXpHYmlsM3NneDkxYV9nZ0lHaGt6XzlxX0pnbk9sR0ZsaElicUp5cTc3SnA2YzhPeW9jcXduaTU0TXZCX1Bhb1VCNk5YYVJPZGF3Q29YUFhCV05jeng0clJVcnAyVHVDUTM2dGR0SE9MUjdtUVlscFZB?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.521,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.93,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-05",
           "return_pct": -2.5,
@@ -2128,45 +2167,6 @@
           "coverage": {
             "count": 16,
             "zscore": 2.04,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-14",
-          "return_pct": 2.53,
-          "zscore": 2.85,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.11,
-          "events": [
-            {
-              "source": "googlenews_health",
-              "title": "This U.S. healthcare stock is Mizuho’s top pick after strong Q3 results - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNXprRk9QTm9OblJTczlpeGgtWk96Rlc0OGZzVXE0eUxZWERnTkhkZGdSVWZZUDlUaFZ6SFRjSUF3R0d1Skg0NjdMaUJHSlNVR21hc3pfZG1EWjdwRVdSYUIxb2ZPQW9FV0cyTTdHeVc1NlNxejVyQ1h1bjIwMThsRjdtODljOTZkVWNXZHlBQ3VIQTVi?oc=5",
-              "sentiment": 0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaGhIX2lYbVhKSVdYejhsWGFZNHNBX1k0Q1NTUTRrNFItOWo3dEJiQllVaWpIWU1fZEZfbnVXaWpJOE9JbXpTSVFGNFF0VWhnbjFnbDFSdVZ6OTRBN2NwYUtZRE1VS1Z3VXE3MkdwREVLQXJKdGZ6dExOc2k2WDFvTGVLc0YwTDdFcU55UHhFay1rZmh5cnhRUTlpUWlUM0dmYUE?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Wednesday Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdmRYVnNZWjlQRktJZWI2WVc3aE9PY0J0Y2NkN0RkN0NHSjVSVzB1UmtwNUVrSzZtUldiTTQ5ZHBNZlZGZXNUdzBpRWtWNXZoTzJMdzR1Y1pXMTdzZW9TcmNINDQycWY1Zy1sQmNvc2Q1eUpxV0dLanU5d1Vyazc5elVwRmo2ams5RHd5a2N4VkdUdjBqWV9qY2EtMk03YmhRUXc?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 13,
-            "zscore": 1.38,
             "spike": false
           }
         }
@@ -4589,11 +4589,11 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": -2.84,
-          "zscore": -1.21,
+          "return_pct": -3.4,
+          "zscore": -1.47,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.04,
+          "market_return_pct": -0.23,
           "events": [
             {
               "source": "googlenews_oilgas",
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 18,
-            "zscore": -0.57,
+            "count": 21,
+            "zscore": -0.34,
             "spike": false
           }
         },
@@ -5312,40 +5312,40 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": 4.51,
-          "zscore": 2.04,
+          "return_pct": 4.72,
+          "zscore": 2.13,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.04,
+          "market_return_pct": -0.23,
           "events": [
             {
               "source": "googlenews_cyber",
-              "title": "Factbox-Multiple tech systems have been crashing. Here is how to protect yourself By Reuters - Investing.com Australia",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb0VpRWp1MW9QbVhIRUE1OWI1cnk1dzAyMkVPMzJqd0xabXhJaDdkbVQxTjJBVVF4cEVoenctVm9ES3ZEY0NCREJRWlRycktySnRKY3VqZHp5MjRwVklmTC1iOTV2cnFpbzBFdm5QVENXYXo1U0MxdmtmUzAwcXZGbjBaVDZrX0tnU1dvYjd6c0s4R2d3UHdvX2ZaTjVJRTUwZ0FZRW9XdTFJN1RXemdmeDY1Y1V2OGRsQUJXc1l0RGlLWkRSdWVEQ2dQUDU0VE9S?oc=5",
-              "sentiment": 0.382,
-              "relevance": 0.753,
+              "title": "Top Movers: Cyber Security Stocks Surge While Miners Retreat – Wednesday 18 November 2026 - Business Upturn",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeWVyWEFNaTlyQngzTi1BdWsza2N0Y09GcHpGaU1zdjZweHQzbmgzVGdEQmZTM01GdzZYNG9rRmNqOWcxaGlscmFwV29QUUZEalY1eTNRTFpINUlPSzY0OUdxVy1sZjNuMWt5ak9QTFMxUDV4eF8xMkJBYl9ldjFubmYxbEc5ekpnTmE2ZEhVTjJ3WEV5YjgyN21oYkgtMUFXNHBVa3A5VWZvWENsTThlX1pUYXBvZ2t6RnM2VlRvYTN5MWpfX1lCeDZtZW9oRDJU?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.845,
               "event_type": "other"
             },
             {
               "source": "googlenews_cyber",
-              "title": "Why are Qualys shares soaring today - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMFZtNS1oaTBoT21xNGI1djlZUFpGTGJJak5FdFFNeUlvSDE5SlBNemxObVNQZnBSTW04ckZLOWd6UDRWZ1dQRVc0ZGZlb3ktSS1DcVZ1MnF1ZTJQYlgxRmd2YnpzN2RTZXl4YXBiZ3VRNXMwQ1NVSEk5UkNjZmNWVnNmOXhXMUlJcl9HMkVxM1Ywd1JNaURXSDlzY2pVZw?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
-              "event_type": "other"
+              "title": "Palo Alto Earnings Preview: Palo Alto Networks Shares Rise ahead of Earnings Report as Support Holds - FXLeaders",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVUgyMDlEejdfVENqZG1WMGg0elA3TzFZSUZhUnNsNHpaWWZFVlFVZzF5blVxR1VRRUVsUXIwNUhqcFpvUGJBZnFuSDUzRnM4Z0lmS1RURGF4b2VGMmJpb1ZLQ2htSkxtSTI0Wlo4ZzJzazczQnhUaUhFSVJmWU83Nksta2hvTXZLZUtaVWNKR0ktekhWU3pMaF80dXpaTUd6dG1mWHd3QVFpcGdGYURONjgzc0JvRnZMQTgyd05sZmJ3THFDMDNFcEVEdnZuT1lfZm9jaVVYaG9nZw?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.84,
+              "event_type": "earnings"
             },
             {
               "source": "googlenews_cyber",
-              "title": "Palo Alto Networks and Fortinet shares skyrocket, what you need to know - StockStory",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeUhwdmxLNFYwMlFpOEszZUJ0MWJOVkFWZjUwVk0zaHZldGtoYWtWdU12N2VsWnkxRklycG5IcThuREdqamJfcEM0WEE5VFluVTF4cThSNFc0aHNJQ3AtX19BWGE1blhNMW9PVUcwS1lfS25nVUJCeXRQZTJUcnpuSjFVbkxxN1NMXzNManlrTVg3MWF4d0pnSFJVeFRGV2tRLXV5ZkxLLVdlWC1kSWpXOWZtSjBndy0yZXRUdkEycXBpblZGS2VtTGZlcGc?oc=5",
-              "sentiment": 0.296,
-              "relevance": 0.718,
+              "title": "Okta vs. SentinelOne: Which Technology Stock Is a Better Buy for 2027? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPN1UyZTFrTzVTbjJSbHE2TGt1c2hibkZiX2I4UVF2ZjhJMHhnekctZDV2SUEyOUJNZWVBTU0yR2VNT2I3WUJXVUNTa3FCOUhsY3pXZ2VoX0VwVmFoRTRxMkFzOTNpYlNETnNSSVpvNnJpaXNEbVpzUnUyOThHS0F1WWJEQnBLdHN6dkZyZC1pa3ZRdWcwY1hRMVJETm1PcW03dGRN?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 13,
-            "zscore": -0.33,
+            "count": 21,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -5794,12 +5794,20 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": -6.08,
-          "zscore": -1.77,
+          "return_pct": -5.97,
+          "zscore": -1.73,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 0.04,
+          "market_return_pct": -0.23,
           "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Gold, Silver, Platinum Pounded To One-Year-Plus Lows After This Shock - Investor's Business Daily",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd2N0dWd3c0ktTW1VazVfNElNSU5OY1dMd2RSa0tXbDBodGlWeWdRUFRia0NtOVRzbXBFWXZUSzFodFVqWWd4N2tPbGRBVHlXOHRQbnZkQ3pkUjhKMGM3TDFvaGpFaXNsNC1rYldHTDRIb3o4OTdzMV9kUU9ZTEpObWpfTERHWF91WmRYU0QxbV8tdkNMTDZxdE5n?oc=5",
+              "sentiment": -0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_gold_miners",
               "title": "Top Gold Stocks in Focus as Bullion Slides to a One-Year Low on Rate Hike Worries - Kalkine Media",
@@ -5811,23 +5819,15 @@
             {
               "source": "googlenews_gold_miners",
               "title": "Gold's losing streak puts these 10 mining stocks on the oversold watchlist (GLD:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUG1uTVZYRXBSeUkwVEFFMVM0azJxXzMzWTdHY2FZemJwVmszYUpDVUFmMEowVFhqMVZPdnlXcnI1cHNZbTBhSmpqRXBsMUxjVU1oOERjLVhTMk1TaC1FU0JqcHFfams4ZEpNNGxUTkV4QVM5NVdSNGFydzlWcnFobUZEZ0U1VnFWaU1qNWl3eWszYklmNzg1djFabEprYjh2c244dGdBQi1QRlk3ZEpGWQ?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPYWlSblFPbDVqdkp0Z3k1ZFdMdGdPWkxkN1lGQk5wc0FwelpPbkF3ZmNSX1hHSUdFbjMyVXlHQXVzV1J4ajF4VHNtdmdyZzJOM1ZlRVRGekdXcS0xQ3hDOXlJbldramFhcjZaVjZCQno3LW9jYkk4UUVkdmszUEVHc0p6YUpzbmxYLVBWNmMtSHhRdExZYWNoOWtqYmlKTEZGTm90QkRFTDYtNjBsaWdBZmZ0UFBkNEwxWldwc2JneTRyTW9oNnJZSE03WWFKQmUwSXJrRGFkMDZwNG1ZWFdleFVHRkpxNktNeG0wb1NhaHl4T2ZrdUFUQ2VMeExLTUNNMy1LMDdfQQ?oc=5",
               "sentiment": -0.382,
               "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold price today, Wednesday, November 18, 2026: Gold prices open again at year-plus lows, falling further - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOWXlIT0Z6Y0U2RW5CRUx1d0lnZlMtMkwyQms4VlFSZ1k3OTVRdlQwRzIxaUw1YTM0bm94YlZYV3FIV1lsTng3eEhJSzJzSEpvQlRHSUdGNnZDQ2IteTRUSG9vc3NkbWh6WUdCa2UwNGMtMXJVRmZZWUdJbURaQUZ5WlZodHU5V0lsR2JKSjBrQkRURkExanFHSXprLUc1RmluLWMzX09ZYWU5WWRsZWhpZ25aLWJBX3dDa1gzMjIyQlJVM0xhX1IwREpqbkFUbTE1UnI3LTZZcGdKUE1ZYlEwTG51aU84d1Jyd24zckVKQXh6NjBrLWJoN2owdUN6cTNHd2JQZnFmaw?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.39,
+            "count": 38,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -5866,7 +5866,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 0.72,
+            "zscore": 0.71,
             "spike": false
           }
         },
@@ -5904,8 +5904,8 @@
             }
           ],
           "coverage": {
-            "count": 36,
-            "zscore": 0.86,
+            "count": 37,
+            "zscore": 0.94,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-18",
-      "return_pct": -2.8,
-      "zscore": -0.92,
+      "return_pct": -3.88,
+      "zscore": -1.4,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-11-18",
-      "return_pct": 0.04,
-      "zscore": 0.21,
+      "return_pct": -0.23,
+      "zscore": -0.02,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
