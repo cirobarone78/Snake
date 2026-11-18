@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T00:48:00+00:00",
+  "generated_at": "2026-11-18T03:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 69,
-            "zscore": -0.24,
+            "count": 68,
+            "zscore": -0.29,
             "spike": false
           }
         },
@@ -492,11 +492,11 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": 4.94,
-          "zscore": 2.1,
+          "return_pct": 4.85,
+          "zscore": 2.07,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.27,
+          "market_return_pct": -0.62,
           "events": [
             {
               "source": "googlenews_sol",
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": null,
+            "count": 5,
+            "zscore": -2.91,
             "spike": false
           }
         },
@@ -973,45 +973,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-11-18",
-          "return_pct": 4.07,
-          "zscore": 1.35,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.27,
-          "events": [
-            {
-              "source": "coindesk",
-              "title": "Nvidia tops estimates, issues strong guidance; shares rise",
-              "url": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
-              "sentiment": 0.832,
-              "relevance": 0.44,
-              "event_type": "earnings"
-            },
-            {
-              "source": "coindesk",
-              "title": "CFTC nominee questions public benefit of prediction markets as legal fight grows",
-              "url": "https://www.coindesk.com/policy/2026/11/17/nominee-says-u-s-cftc-must-think-hard-about-public-benefit-of-prediction-markets",
-              "sentiment": 0.226,
-              "relevance": 0.414,
-              "event_type": "other"
-            },
-            {
-              "source": "cointelegraph",
-              "title": "Nvidia board rejects Huang comeback despite record $116B quarter",
-              "url": "https://cointelegraph.com/markets/nvidia-board-rejects-huang-comeback-amid-record-116b-quarter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.494,
-              "relevance": 0.36,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 0,
-            "zscore": null,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-14",
           "return_pct": -7.22,
           "zscore": -2.25,
@@ -1204,6 +1165,45 @@
             "count": 14,
             "zscore": 2.89,
             "spike": true
+          }
+        },
+        {
+          "date": "2026-10-29",
+          "return_pct": -4.85,
+          "zscore": -1.58,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.3,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Uh-Oh! A New Inflation Forecast Suggests Trumpflation Is Evolving and Worsening. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWm42QmwzM1RqQmthT0xTZW1DTjBjZWNhZDk2WEhaSng4SmsyQWxQV0FTR3U0UnR0bThQMDBxOWNyWEprUHU5ZUJZWExhcFlFNVprN2dBbG8wZWpMaHN6YjVlN3VXSE5OTWM0Mkl6UmJCaG9nOVA4ZmxwWkJGTUswMlhsV2VtYVl4NzhNSjlzLW1RMTl3NlJTcDVDaUltN0xRTTRsOVZncHpPQ2Y5UjRTNFUyenp5eDdSbUJn?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "History Says This Recession Indicator Is Almost Never Wrong. Here's What It's Saying Right Now. - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYzFVSF91elFvdFoxQzVSdXhfLW43alFnYjdodzFYOUNvQ2lpd0dJeXNEckR4dm1JN3lCVkhzVFAzY3FoQ0RwOC1fUmlWTURRYTd3Zmd1MmxGbHNsTU1YV2s0ejl3VktuX2duRmx2ZVdTbW1nX0ZYd1Y4Zy0yaTJzcHlQX2k1U3RmSjQ1M3U2UUVBOUxyd3hPdg?oc=5",
+              "sentiment": -0.596,
+              "relevance": 0.838,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Why the US Economy Looks Strong But Feels Bad to Many - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWFRwdkJuR0ZnbGs1c1dpb3FBY3N0WXhvZlZ0LUpmU1o0MTVKS3pjVzVRTzhWQ3pzeWFkUmdqajYzbjI2ZDFBTndVNEZSLUNkcDFYUk9UdXRyOXZBR1RFRVM1enNtUlhMOUNQQUEyTUNRSUpVM0NDclFtWG1CRTltOU15Ty1uNml0WlAyN0xUdWtzVWlBclp4VzBnREJQS2ZHRXl0akJfWEU4X1FLNUE?oc=5",
+              "sentiment": -0.557,
+              "relevance": 0.823,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": 1.85,
+            "spike": false
           }
         }
       ]
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": 0.7,
+            "count": 8,
+            "zscore": 1.35,
             "spike": false
           }
         },
@@ -3416,8 +3416,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.38,
+            "count": 5,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 0.73,
+            "count": 32,
+            "zscore": 0.65,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-18",
-      "return_pct": -0.27,
-      "zscore": 0.21,
+      "return_pct": -0.62,
+      "zscore": 0.05,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
