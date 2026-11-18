@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T09:34:00+00:00",
+  "generated_at": "2026-11-18T12:37:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -361,8 +361,8 @@
             }
           ],
           "coverage": {
-            "count": 91,
-            "zscore": 0.87,
+            "count": 90,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -525,7 +525,7 @@
           ],
           "coverage": {
             "count": 61,
-            "zscore": 0.9,
+            "zscore": 0.89,
             "spike": false
           }
         },
@@ -1007,7 +1007,7 @@
           ],
           "coverage": {
             "count": 0,
-            "zscore": null,
+            "zscore": -0.83,
             "spike": false
           }
         },
@@ -1704,6 +1704,14 @@
           "market_return_pct": -1.03,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Is The Inflation Shock Starting To Lose Momentum? - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOXdrcTdHczRkUnZIZjMwN25YYVhJTi1sYldPN1FXUXFVd3FkNlg4UTdmWUxqUE8xRDhySTdkZFBSVTZRVlRHdXJfTW9TRlJpdVF2Vk5wWWx2dVFMLW5IYl9jVUpFQkRDbUVwS3poYXZ5dWFubXpZUlV6QnhVNVA5bndtQXJsSS1jV2c?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "inflation"
+            },
+            {
               "source": "googlenews_finance",
               "title": "Dead Cross Nears for Major US Bank Stocks as Fed Rate Hikes, AI Concerns Weigh - BigGo Finance",
               "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NOWtQQV8wNHVZYnZQQmpUSXZZSUw3NkpYNHhuZ3ZGcGM5VHppUUlkRDlCWnVDbndTekpqcnNBNWEwTGNEYTVrV0xYbUtVMnY5eEFMakxEN1BzcUZtYWhINlNVVjM0eFlMaXZ2NHlUOTdpaURTcWc?oc=5",
@@ -1715,14 +1723,6 @@
               "source": "googlenews_macro",
               "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
               "event_type": "fed"
@@ -2428,6 +2428,14 @@
           "events": [
             {
               "source": "googlenews_macro",
+              "title": "Is The Inflation Shock Starting To Lose Momentum? - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOXdrcTdHczRkUnZIZjMwN25YYVhJTi1sYldPN1FXUXFVd3FkNlg4UTdmWUxqUE8xRDhySTdkZFBSVTZRVlRHdXJfTW9TRlJpdVF2Vk5wWWx2dVFMLW5IYl9jVUpFQkRDbUVwS3poYXZ5dWFubXpZUlV6QnhVNVA5bndtQXJsSS1jV2c?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
               "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
               "sentiment": -0.572,
@@ -2440,14 +2448,6 @@
               "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
               "event_type": "fed"
             }
           ],
@@ -3392,6 +3392,14 @@
           "events": [
             {
               "source": "googlenews_macro",
+              "title": "Is The Inflation Shock Starting To Lose Momentum? - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOXdrcTdHczRkUnZIZjMwN25YYVhJTi1sYldPN1FXUXFVd3FkNlg4UTdmWUxqUE8xRDhySTdkZFBSVTZRVlRHdXJfTW9TRlJpdVF2Vk5wWWx2dVFMLW5IYl9jVUpFQkRDbUVwS3poYXZ5dWFubXpZUlV6QnhVNVA5bndtQXJsSS1jV2c?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
               "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
               "sentiment": -0.572,
@@ -3404,14 +3412,6 @@
               "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
               "event_type": "fed"
             }
           ],
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-18",
-      "return_pct": -0.41,
-      "zscore": 0.16,
+      "return_pct": -1.31,
+      "zscore": -0.25,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
