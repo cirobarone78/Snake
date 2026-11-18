@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T03:35:00+00:00",
+  "generated_at": "2026-11-18T06:40:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -492,12 +492,28 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": 4.85,
-          "zscore": 2.07,
+          "return_pct": 4.61,
+          "zscore": 1.99,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.62,
+          "market_return_pct": -0.4,
           "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Foundation Discloses Majority Interest in CoinGecko - Securities.io",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNS2hQdGNubUJBMGRmNzFQMm45dHA2ZWpDMUJfejF6QV9hMTluTUFFeENrWkt2NWlPMEdEc2RJZXYyb2ZubUhMOWQzV0dxU1F2YzFURUlNdkZPMFpsazUxRHBFdktfVXhlQXVlcFMtSFdSSzJLQTVpZWYzZ0pIMDZydzVYVUlKcmdVWHFiVkR3?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.784,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "CoinGecko secures Solana Foundation backing and eyes crypto trading - CryptoSlate",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWVVUVk9ta1VYSlZLeUF0UXRyTFVkY2xkRGZ1XzU3UTJSNjEwY2pfNGwybW4yX3FQTmN5ckM3bHBwN2h4dHU3V0N5dHVqR05McnVKRUdzeFZGNU85N2FNTEhaU2UtR2ItNXhPODVWdEY0YndZWDBlbmM4UHZ0MGJvV21YVkZfam50eEZsM190azN3WjNRZF9B?oc=5",
+              "sentiment": 0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_sol",
               "title": "SOL holds gains as technical progress and buyer control support the latest rally - Traders Union",
@@ -505,27 +521,11 @@
               "sentiment": 0.784,
               "relevance": 0.714,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Bitwise Shares Ultra-Bullish SOL Price Prediction: $1,100 by 2031 in Best Case - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc1NXODJLTE9uOE5xck9nUmVnd0E0VjZ4TE9FeENBeUVTeDlqcm9TOFFoYmp4ZExIamRsUV8tWFJMNTYxcGlQY29jZkNib01vcHJSVU9Gd2tKdEY3MTBZYjR3Z016cnRzamNFZUM1cUxDeUl0X3RoV0JpTzZGZzhWRmEyWXdFaUxVbTZtZVpXS18xc2JpNmVxc2tKc2lBRktsUFJMRkFCeERsMnd4M1l4NVp3T05oeXExa0RDRVJvdm40aXE0RXdjWWlPOUVTRlhlWEY4?oc=5",
-              "sentiment": 0.751,
-              "relevance": 0.7,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Crypto Winter Hits South Korea's Upbit and Bithumb as Coin Holdings Plunge, Deposits Evaporate by 2.5 Trillion Won - BigGo Finance",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NYVluSERDVktCcS12cFZ2b2pILWI2TjhZLTRIOTZOcTRTYWY3WEc2Mmd4cHlFMmg3aWhtc05oYWloZkN6UWxzRnJvdGdPNGVSMEFwVWt0U3hxcVZCV2JOWm84bjg5WE4yWW0yamNSSFdURGNqaHc?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.629,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -2.91,
+            "count": 8,
+            "zscore": -2.71,
             "spike": false
           }
         },
@@ -564,7 +564,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": -0.83,
+            "zscore": -0.82,
             "spike": false
           }
         },
@@ -642,7 +642,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 1.02,
+            "zscore": 1.03,
             "spike": false
           }
         },
@@ -1704,6 +1704,14 @@
           "market_return_pct": -1.03,
           "events": [
             {
+              "source": "googlenews_finance",
+              "title": "Dead Cross Nears for Major US Bank Stocks as Fed Rate Hikes, AI Concerns Weigh - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NOWtQQV8wNHVZYnZQQmpUSXZZSUw3NkpYNHhuZ3ZGcGM5VHppUUlkRDlCWnVDbndTekpqcnNBNWEwTGNEYTVrV0xYbUtVMnY5eEFMakxEN1BzcUZtYWhINlNVVjM0eFlMaXZ2NHlUOTdpaURTcWc?oc=5",
+              "sentiment": -0.649,
+              "relevance": 0.859,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_macro",
               "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
@@ -1718,19 +1726,11 @@
               "sentiment": -0.572,
               "relevance": 0.829,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "US Dollar Rallies as Fed Rate Risks Pressure Global Markets - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRW5sYi1KT0JlMy05aEdRd1pKRWlRcFBKQnZ0OEJNOVZLaHAtbDNxWV9FbTdqZU9SVGtxeXRGRFNVVWJaNUdNSThzX1FPaGdjZzU4YzY1SHdhN0p6NUxZSlB5SFIwZlNlM19CMnREbkpra0NEeUVjLXM5MGlyZ1RmNFJYdjVqQjk4RFJnVFdlVTZLY3gzbV93SEV1WHhjeXJfZXF1OExCQXR6bHo2emNB?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 1.35,
+            "count": 10,
+            "zscore": 2.0,
             "spike": false
           }
         },
@@ -3736,7 +3736,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.66,
+            "zscore": 0.67,
             "spike": false
           }
         },
@@ -3775,7 +3775,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.04,
+            "zscore": 1.05,
             "spike": false
           }
         },
@@ -4364,24 +4364,24 @@
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Amazon (AMZN) Stock: Expands India Clean Energy Push With $7 Billion Plan - Blockonomi",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFlKaUVPdkJyZldlZGM3V2YyT01RSWcwLXB1SWY4YlNoaWFvTGFPNm9kS2JzSGNMMEdVUTY5UUpZbGpxSTQ0MG1GbXhWbi10SDVCV0xpaUppSGpIMWd2V1NRM253TXQ2Q3hMWFYweDg4THh4ZWJWa2VadnFyUVp1Y0tqWVhvakNoNThsZzVrMWhsS1o0a3VSWQ?oc=5",
-              "sentiment": 0.71,
+              "title": "Amazon’s India Clean Energy Projects Could Power 3.5 Million Homes a Year: Where Are They? - NiftyTrader",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Tc0ZHTkIxTDZDNnZIUlVYOTNuSHUtU25YSEZzXzFHWkpIOTlUNWg4V1g3elpRTzlIcVpFS19DUVJFRHpUZ3QzaFdHUDUwRE9XdG9QMkVyT2hCVUVJQzNRNjBtcDZKWS12VGZWWk5UT3ZLdHhjQjFRbFRGZw?oc=5",
+              "sentiment": 0.586,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_cleanenergy",
-              "title": "Can Clean Energy Fuels (NASDAQ:CLNE) Ride Gas Demand To Fresh Records? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcV83Xy0xcndLa2F6bXVZd3pJaVB0YU1EYU04NEptaENCZTJVYU9yLUdua1JKRThaLUFQWXNXV192bEpDNnpqSzd3UWJJaWlnT0xxN3otSVByOEd3WnhTeVc4U1dsZ1hmRTQ2ZWszdENaMkpvYXlUUzZyWmtxV1oxLUxJN1ZlSHVJNmhrWTZOT1F3UzB2S2s4RUNXU1VpUW5oUnNxYW1IVUtZQ3c?oc=5",
-              "sentiment": 0.681,
+              "title": "Amazon (AMZN) Stock: Expands India Clean Energy Push With $7 Billion Plan - Blockonomi",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFlKaUVPdkJyZldlZGM3V2YyT01RSWcwLXB1SWY4YlNoaWFvTGFPNm9kS2JzSGNMMEdVUTY5UUpZbGpxSTQ0MG1GbXhWbi10SDVCV0xpaUppSGpIMWd2V1NRM253TXQ2Q3hMWFYweDg4THh4ZWJWa2VadnFyUVp1Y0tqWVhvakNoNThsZzVrMWhsS1o0a3VSWQ?oc=5",
+              "sentiment": 0.71,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": 0.08,
+            "count": 4,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-18",
-      "return_pct": -0.62,
-      "zscore": 0.05,
+      "return_pct": -0.4,
+      "zscore": 0.15,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
