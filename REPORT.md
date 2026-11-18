@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-17 07:08 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-18 07:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.96 | +8.7% | $700M | sp500-xstock, nasdaq-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf |
-| 2 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.96 | +8.7% | $700M | sp500-xstock, nasdaq-xstock, ishares-core-s-p-500-etf-ondo-tokenized-etf |
-| 3 | Robinhood Chain Meme | hot | 0.95 | +5.6% | $190M | cash-cat, artificial-inu-3, degen-base |
-| 4 | Bridged-Tokens | hot | 0.92 | +2.7% | $357M | binance-bridged-usdt-bnb-smart-chain, usdt0, hybridge-bridged-aave |
-| 5 | Communication | hot | 0.91 | +4.7% | $122M | helium, xpin-network, spacecoin-2 |
-| 6 | Echo Launchpad | hot | 0.91 | +5.3% | $241M | plasma, lab |
-| 7 | Cat-Themed | hot | 0.87 | +3.4% | $457M | purr-2, cash-cat, toshi |
-| 8 | AI Agents | warm | 0.85 | +2.2% | $2.8B | venice-token, kite-2, fetch-ai |
+| 1 | Crypto-Backed Tokens | hot | 1.00 | +39.1% | $357M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| 2 | CeFi | hot | 0.99 | +12.7% | $323M | swissborg, vision-3, momentum-3 |
+| 3 | bStocks Ecosystem | hot | 0.97 | +4.5% | $1.2B | nvidia-bstocks, circle-internet-group-bstock, spacex-bstocks-tokenized-stock |
+| 4 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.97 | +4.7% | $708M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
+| 5 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.97 | +4.7% | $708M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
+| 6 | Binance HODLer Airdrops | hot | 0.94 | +2.9% | $2.0B | falcon-finance-ff, pudgy-penguins, plasma |
+| 7 | Remora Markets Tokenized rStocks | hot | 0.93 | +2.6% | $139M | alphabet-rstock, nvidia-rstock-2, sandisk-rstock |
+| 8 | Reality Ecosystem | hot | 0.93 | +2.6% | $156M | spacex-reality-protocol, alphabet-rstock, nvidia-rstock-2 |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Crypto-Backed Tokens | -12.0% | $257M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| Mobile Mining | -4.5% | $742M | pi-network, ore, verus-coin |
-| Reality Ecosystem | -3.2% | $153M | spacex-reality-protocol, alphabet-rstock, nvidia-rstock-2 |
-| Remora Markets Tokenized rStocks | -2.8% | $135M | alphabet-rstock, nvidia-rstock-2, sandisk-rstock |
-| Avalanche L1 | -2.5% | $273M | beam-2, nexpace, apertum |
+| Prediction Markets | -22.8% | $3.2B | rain, true, overtime |
+| Options | -21.5% | $3.5B | rain, derive, hegic |
+| Gambling (GambleFi) | -20.4% | $3.7B | rain, shuffle-2, bc-token |
+| Cat-Themed | -6.2% | $425M | purr-2, cash-cat, toshi |
+| Communication | -5.6% | $116M | helium, xpin-network, spacecoin-2 |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
