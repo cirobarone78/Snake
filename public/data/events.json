@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:35:00+00:00",
+  "generated_at": "2026-11-18T18:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -361,8 +361,8 @@
             }
           ],
           "coverage": {
-            "count": 91,
-            "zscore": 0.87,
+            "count": 90,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 61,
-            "zscore": 0.88,
+            "count": 62,
+            "zscore": 0.94,
             "spike": false
           }
         },
@@ -844,7 +844,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -1.73,
+            "zscore": -1.72,
             "spike": false
           }
         },
@@ -1455,6 +1455,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-18",
+          "return_pct": -2.89,
+          "zscore": -1.59,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.04,
+          "events": [
+            {
+              "source": "googlenews_energy",
+              "title": "Are Oils-Energy Stocks Lagging BP (BP) This Year? - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeVB1X3VoSktQbHpxbURtbzdZdUZOd3NzVWVrUEt5UGlrTnhuU0NCRkN4LTI4eXp0c3lXUldzUVhfa0RGZEsta2FBS3g5dXNpRXJpTWxKWERNY2Zia3VqOEJiNWFRN0c4Y1dSUHdsRkNueHBwcXdFaUVjaVNJYW0zcUZ1R0RJN0hIUVdycG5Gck1xNVdWZDdZcGFB?oc=5",
+              "sentiment": -0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Energy Stocks Slipped As Oil Prices Edged Lower - Finimize",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSVoxVkZDQml1UVFzYjk3T1J3eXRxTEFqVVMwYWFLWW5DdGpIcGJzNW01elNIM0p3WUJGMVNiMXprTC1uWG1pbDdlNk56TDl1b1g1dXppdzlXNlFXM1g4a2ZUQUVoZkFtZHc5UktROXpNRzdBV2ZCbkR2b3ZIekR3R19Hd1k?oc=5",
+              "sentiment": -0.026,
+              "relevance": 0.61,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_energy",
+              "title": "Top 3 Energy Stocks Which Could Blast Off In Q4 - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYXZSaEw4UklTSTI2UzFuQzUzSGM5ZVFuUnRYYWdTUVhFSmNmOTkzNnQ0Q1JaQWp1a1Uyek4taXBpd01hWWVRQ1RieUVnb1NSY1JDazE2Wm5ab3l1b2t6cDZSUnFmZk93X0hGMHU4UEhzMUFSa2J6V3FtMjh3MkFoRnl4X2NnY2Z1VHlvY2lnRDlrVlBOLXAzcV9mYTQ2ZzZ4NXJKMWhWelc1S2UtRUktajBB?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -0.88,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-05",
           "return_pct": -2.98,
           "zscore": -1.8,
@@ -1648,45 +1687,6 @@
             "zscore": 0.61,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-16",
-          "return_pct": 2.52,
-          "zscore": 1.89,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.09,
-          "events": [
-            {
-              "source": "googlenews_energy",
-              "title": "Sector Update: Energy Stocks Gain Late Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNk5UcXByel9RN1B2aDlsRGozUWlSRmUxc3JNVGlpTm5zcUZUTVg5OGY2bkhpYUxSYlUtakVGczhwdl8wNDNOZ243eDFsSVJvb09xdFRDYnI3TU14ZWNZaFIxemdiamZaTTI3c3ZUUVhSV2lNdXVqUFRacDBFVWlJQ1BWSzNvNVNlOVR5NTE0TnN6TVRSSVFB?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Sector Update: Energy Stocks Gain Late Afternoon - marketscreener.com",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcVF0a3VUOHU1c25aYzRjakY1NHNaTkRya0J5ejZnUW54cm01TVFLY2pIU1VSVHhzajltV0k1X3E1cWttSFRjbFpYRnAzWktBOGI1VUR5XzZsX19xSEZ1RW8tXzBrV2lxdzZ3T1dTeGpBX25jNWpLRFhzeGF5MXF4YTJkX2NLT1ViVEtURVRLb2FkR1ozMHVjS3Rhdkd4dXZGMEE?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Can Liberty Energy (NYSE:LBRT) Power the AI Boom? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOajBSUjYzWDJYYVg3Tlg0NkUwS1NqZnRqY0NQdWYyTFdSU1d1XzhPM1JQLWd4TW1RZXBRbFMyc0t4WWg0QlJxMksyUURfX2FsNGlYRFBHdnQ0Tm1SaUpxbW1Wa2ZqMGNTVHJ4R3ZDNk51bndaX3RnUWluejZUOHV0QS1FVjAwM0NyVWtDejlZTl8?oc=5",
-              "sentiment": 0.67,
-              "relevance": 0.868,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 19,
-            "zscore": 0.81,
-            "spike": false
-          }
         }
       ]
     },
@@ -1712,19 +1712,19 @@
               "event_type": "inflation"
             },
             {
+              "source": "googlenews_macro",
+              "title": "BofA warns new Fed rate-hike cycle packs a very nasty twist - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNm1jbkpKSlBVRGRSWUF2anBEQU03NkY5a1RZNGx3Tk45ZTV6M0c4WlRUYTdRdzNvaDdRal9hSWp1VzJnTk5YTlI5T09WVGtuQV9tdjNhSXVJcDlPX3p4V2E5WlRfM0JTd0kwbllhOUI3YVpLaXB1T2JMT1Q2UDZRTA?oc=5",
+              "sentiment": -0.648,
+              "relevance": 0.859,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_finance",
               "title": "Dead Cross Nears for Major US Bank Stocks as Fed Rate Hikes, AI Concerns Weigh - BigGo Finance",
               "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NOWtQQV8wNHVZYnZQQmpUSXZZSUw3NkpYNHhuZ3ZGcGM5VHppUUlkRDlCWnVDbndTekpqcnNBNWEwTGNEYTVrV0xYbUtVMnY5eEFMakxEN1BzcUZtYWhINlNVVjM0eFlMaXZ2NHlUOTdpaURTcWc?oc=5",
               "sentiment": -0.649,
               "relevance": 0.859,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
               "event_type": "fed"
             }
           ],
@@ -2436,16 +2436,16 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
+              "title": "BofA warns new Fed rate-hike cycle packs a very nasty twist - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNm1jbkpKSlBVRGRSWUF2anBEQU03NkY5a1RZNGx3Tk45ZTV6M0c4WlRUYTdRdzNvaDdRal9hSWp1VzJnTk5YTlI5T09WVGtuQV9tdjNhSXVJcDlPX3p4V2E5WlRfM0JTd0kwbllhOUI3YVpLaXB1T2JMT1Q2UDZRTA?oc=5",
+              "sentiment": -0.648,
+              "relevance": 0.859,
               "event_type": "fed"
             },
             {
               "source": "googlenews_macro",
-              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
+              "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
               "event_type": "fed"
@@ -3400,16 +3400,16 @@
             },
             {
               "source": "googlenews_macro",
-              "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
+              "title": "BofA warns new Fed rate-hike cycle packs a very nasty twist - TheStreet",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNm1jbkpKSlBVRGRSWUF2anBEQU03NkY5a1RZNGx3Tk45ZTV6M0c4WlRUYTdRdzNvaDdRal9hSWp1VzJnTk5YTlI5T09WVGtuQV9tdjNhSXVJcDlPX3p4V2E5WlRfM0JTd0kwbllhOUI3YVpLaXB1T2JMT1Q2UDZRTA?oc=5",
+              "sentiment": -0.648,
+              "relevance": 0.859,
               "event_type": "fed"
             },
             {
               "source": "googlenews_macro",
-              "title": "AI could transform the economy, but the Fed is struggling to predict how - KSNV",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX1NVVDl0TUhsMm5xLXdhUU8tdmhKenQzSjNHNVRDV1Y2VGYxUzhBRFpVNHlqc0xWYnk1Z2VXc2ZTTUxrd3F5bDdmRGV2eU1zbVFnYjhQNm5wYVJub3c2TzRRci1sRWJsbE5nN0psRS01dTROcktkdkxsVFMtVkx1QXhMRzd2bjVFSk84bUNwRTdWT09DOF9KMFNxa1IwX3BYTWhFU0g1ZG5PRDZwOUE?oc=5",
+              "title": "AI could transform the economy, but the Fed is struggling to predict how - WLOS",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmtMelZCTmxYNUNoUkw5SENJZmZrVGVSUlhqNDZPSG9XU011cFJ0aXBMazFmVXQxazZVVGF6NFQwYjQ1Y1RUOEc5cEV1UkIwTHZ4eGpONnZuRkhVNnBDS01kal9tWGVfWWZWVnNiN1NGbVljakJXMkw4aDg2Vmx0MFVUQ0g0Q2VYMmZtQ3BjS1ZBYjlkbGpiUjFnb2gyRURNUWEwRTJPcTZyZw?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
               "event_type": "fed"
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.29,
+            "zscore": 0.28,
             "spike": false
           }
         },
@@ -4115,6 +4115,14 @@
           "events": [
             {
               "source": "googlenews_uranium",
+              "title": "Best Nuclear Energy Stocks to Buy for November 2026 - Zacks Investment Research",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1nZmN2NGstZnJNbDd3Mll5NDVlTnZXelJJOXh6WEh6TTJ2UHE4NElWYklmMXp5WDZIRUI4cXdoOWtzTVFfa0Jsb0pGQjF6REZ2ZDJIMTVMUVZiQ0owSmRCWjZTNGsxUWNyM2F2Y1lzSWV4Q09zaURHUjBB?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_uranium",
               "title": "Nuclear Energy Stocks Gain as Reliable Power Demand Grows in US - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNHVFYjYwVTMxeGZWNl81R0J1WEttV21GRDZkRXdkaXBEa1c5UGpCaEVVWk9pU3dETW11RXZsTmxFZENVZHR1Ul83RHhYWlhmdGpWMEpOLVd2RE9OUjIzTTRPVmlnaVlHWXROSjNCMVpMc0d1eTVYd000Y1VUWnBpazZpRW1XRGQ0Y0Z5c2RLeFQ2ZTR6Y1Fr?oc=5",
               "sentiment": 0.612,
@@ -4128,19 +4136,11 @@
               "sentiment": 0.612,
               "relevance": 0.6,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "If I Could Only Buy 1 Nuclear Stock for the Next Decade, It Would Be This One - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaG9nbTlTcHFKY0I4VjNvT08xVlBZUFgyTTFNM0ZweGg0dE5LRU1NR0JrSFQwWnc4MjdKSHFWdmw5cU9rWUxpcXVyX09tZDczR1ZsOXZKVV9Bb3pYdUdDRmtVVUptaXFZZHh0ZXQ2NXdTUVdSOXhfUlhrZDByVGlhWVNMYWF1SUFSamlFUnVLTG9IMEhVYlVvWVVWYnE4U1luVGJnYldxZ0pUVldGOTdidU1QLS1BSTdLSkN3?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.576,
-              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": 0.15,
+            "count": 3,
+            "zscore": 0.91,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 1.03,
+            "zscore": 1.04,
             "spike": false
           }
         },
@@ -4232,14 +4232,6 @@
           "events": [
             {
               "source": "googlenews_uranium",
-              "title": "Best Nuclear Energy Stocks to Buy for November 2026 - Zacks Investment Research",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1nZmN2NGstZnJNbDd3Mll5NDVlTnZXelJJOXh6WEh6TTJ2UHE4NElWYklmMXp5WDZIRUI4cXdoOWtzTVFfa0Jsb0pGQjF6REZ2ZDJIMTVMUVZiQ0owSmRCWjZTNGsxUWNyM2F2Y1lzSWV4Q09zaURHUjBB?oc=5",
-              "sentiment": 0.743,
-              "relevance": 0.897,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
               "title": "3 Canadian Nuclear Stocks To Own In November 2026 - Simply Wall St",
               "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT3J2LW1veFZMckZ3MTdhbnIyLTJrclJwNHJibFNCeVo1aHNLSy1RdklKOGFlZk9neThFMDBsOF9wMHBlZXBRU1JMcUFkTEVNU2hJS3FrU19hYmxTc2IxQlA4RTNaMDNVaTVwMEpaQ09LQTU2bDFEVUZVX2h1b2syRDVyN21nYWMzYXBKbktwZXpqTlUxSlUtYmRIN0E1Z2JYcWYtblUtY0NIbnh0MkVWemdmR1dvMjRFbVZ2UFlSTHJsUjVKOGFsVG54REZVNFhnZkhJ0gHYAUFVX3lxTE13clgwcDVLcERWRXByemhTc0NaTHFfNkVldjlKSWIwMHRpX1A4RmtvdmlyU0I0TGExMmxRWmhOVGdiV1FjWi1iY3MtdEgtallCRURPN1JURUcwSVR1SDJFY19rX0NSTFk4RklTQkFEeExWckZtQnBueXBXbDhOMUFja3d4Ulczdl9HVWNMX2x0aVN1bndOZERhZk9ocWYxcFZ6ODJWR0thN0hhWjNTUE4xOVJmVklhSVZVQ18xMG45Qnd5anFGU0N0elhTUDduQVVaTE90SXh0Rg?oc=5",
               "sentiment": 0.0,
@@ -4253,11 +4245,19 @@
               "sentiment": 0.802,
               "relevance": 0.552,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.501,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.04,
+            "count": 1,
+            "zscore": -0.62,
             "spike": false
           }
         },
@@ -4588,6 +4588,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-18",
+          "return_pct": -2.84,
+          "zscore": -1.21,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.04,
+          "events": [
+            {
+              "source": "googlenews_oilgas",
+              "title": "Oil prices fall as higher U.S. crude stocks temper supply risks - CNBC",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbWhQY3FnMVNZQTc4WG5fSHVJamFScURWM3NQLUtoOVlRQkJUSE9pNm16djg1aEpiYnB0bWRSX044U1hPbkYwXzk3Z2tzTlpiM056Mjd1c3R6Rm1PaDJhdlFoY1FEbU5yckIwMTRLdDhyd09kdG0wWGE1anFJN1ZkT2IxeGdwYV9mZFRlLXBBOUtvMGVhRXFkMS1TaTZPdXfSAaQBQVVfeXFMTlc1Q3FjM2Vqc2lLRjZnTHR4b2ctZkpwVzM2VFVMZXpFcjVEcC1hNGI5aXlxUVJwRkxEbmJkaWw0OUg3YTRyRDhWc3FzdTdwdFVTd1RJMVlPMXdLQzF2N0lEWHJqZ2hrX25CVXZmUFE0U3RPa0tiSmVja0ZyaEZnZ0xCRnpTWUVhZUJYaGk0ZHVlUjBGXzN5QVNad25PbFc5QTNJMnI?oc=5",
+              "sentiment": -0.823,
+              "relevance": 0.929,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "Oil prices fall as higher US crude stocks temper supply risks - The Edge Malaysia",
+              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5CNmIybjZJZ25CSC1xZnNMdUNwSW9UMjRGUldEMlNsLWlJR1JSU0tLZjZZZWJTVncxYVRiMno5cE9aMXd0WndvazZ3TThDM2pR?oc=5",
+              "sentiment": -0.823,
+              "relevance": 0.929,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_oilgas",
+              "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcjMzZWw5NFBtVFVKYUF1a1JhbG9Gc0N6V21INDd1cmVHeGNtcXNPZE5vTGxBZ1ZyR2F1M3VpM09RQXRCdkFnVDRTMnhQN05ZX2x6UDRqS0dENm9zMm52T2U1N2xjeXVkS0lGRWZYWFMzX2p4ZWdkV29NZEpwLTEtampiX1BjLVlL?oc=5",
+              "sentiment": -0.421,
+              "relevance": 0.769,
+              "event_type": "earnings"
+            }
+          ],
+          "coverage": {
+            "count": 18,
+            "zscore": -0.57,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-16",
           "return_pct": -2.61,
           "zscore": -1.22,
@@ -4780,45 +4819,6 @@
             "count": 45,
             "zscore": 2.52,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-10-16",
-          "return_pct": 2.82,
-          "zscore": 1.7,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.09,
-          "events": [
-            {
-              "source": "googlenews_oilgas",
-              "title": "IEA Board Reaffirms Energy Security, Aims to Finish 400M Barrel Stock Release - News and Statistics - IndexBox",
-              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQnRuMlRQOHhWUGVfLTJKYnRJaW04WlJWQ3ZQQ1djU3FSQmxtMlptX1dYVWpfcGYyZmNzeG5EbXZvSXpPeUFNdU1lNlFlQ1VrVUItS2RPX3B5TjZHbU14cFN2TjlXVDV2cGFITXMwZ19SenFIVDFkSko0YjVMcFo1WENMUWxGemJGa0cyMFlHTmlNdzFqQjd2b21HaFpsdUxqWXlMNzNIeFZJVE5fTXQ2Y2lNQTVQZTVUVGN6NHZOblJKQzQ?oc=5",
-              "sentiment": 0.542,
-              "relevance": 0.817,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Tech stocks erase $1 trillion of wealth as oil surges to $110 for the first time since May - NBC News",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcWwtaE0zalpGS3dlQkJuT2lJSHdXdEVjbkItLUVDMlYzWHNjYnpQWGF3TlpnNDV5ME9DWG5YU0ZtbVVGdnZNRndsSkdOZHRzUU5iQjVhd20yY1h6WF9VUjMwVXdLQktSX0o3amgyZVpmeXJiY1gtRHVCbTNfV3VsQ2ZLcHU2ek9a?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "Norway's Untapped Oil and Gas Frontier Is Drawing Renewed Interest - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdWNMZU04N2V6dUhqU1VZVlpHSWViTks0NGk0bFB6ZGRQenJ3M0xucVJzOXdxVDNNZjFGaGpfM2QtQjdaUUpwWXJiMzVOSl8tSnhWTVVBR2NvVWFia1FGMlV3LXFpYUJfcmpYMkp5cjN3bHpKNTBYSmR6bHJxNnU4QUYzdXhGb2dxWHRyZHdmUHdmbC1M?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.784,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 21,
-            "zscore": -0.05,
-            "spike": false
           }
         }
       ]
@@ -5312,11 +5312,11 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": 2.98,
-          "zscore": 1.42,
+          "return_pct": 4.51,
+          "zscore": 2.04,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.15,
+          "market_return_pct": 0.04,
           "events": [
             {
               "source": "googlenews_cyber",
@@ -5328,24 +5328,24 @@
             },
             {
               "source": "googlenews_cyber",
-              "title": "Breach Secure Now partners with Climb to expand cybersecurity and AI training for MSPs, boosting recurring revenue. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd08tcFc1N1lzNUtVbXVpZ3dycy1FNjJMVzBaWDJfSmJPdVl2WGZpbU5SdXdxa3hyVDBRMUx3VXdVZDdyVTNuUmZxUkZoV3dic3pVV2M5Yzg1QTdyeU5qMEFEdFdZMzA1Nkd1Wm9OSTF5dnctdHhwemNxX3hQdk96NVNSOXdlUF95SHpHcmNPU3VBM042dVJhRWtoVmN3cld4YWlnRVpoYm81eW9n?oc=5",
-              "sentiment": 0.727,
-              "relevance": 0.691,
-              "event_type": "hack"
+              "title": "Why are Qualys shares soaring today - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMFZtNS1oaTBoT21xNGI1djlZUFpGTGJJak5FdFFNeUlvSDE5SlBNemxObVNQZnBSTW04ckZLOWd6UDRWZ1dQRVc0ZGZlb3ktSS1DcVZ1MnF1ZTJQYlgxRmd2YnpzN2RTZXl4YXBiZ3VRNXMwQ1NVSEk5UkNjZmNWVnNmOXhXMUlJcl9HMkVxM1Ywd1JNaURXSDlzY2pVZw?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.718,
+              "event_type": "other"
             },
             {
               "source": "googlenews_cyber",
-              "title": "3 Cybersecurity Stocks Worth Watching After The Java4Shell Flaw - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUEY0TUdNcTVLWjNzTVBza1JHX3FWejdncFZFVUZGcUlIN0pXRG9TY0NXMGtGbEQ2c1pJREZqRTZxZm9nNFNuOG8zQVNBOXJ3LXhWYVJJejZVQWEyY0t4b3ZNUnlUZEljQXktSnhuY3NSN2JEd3lzVVJmZEJGckdNeGRacVZsX1BzbVJoSldua2JoMUdIbEVFNjNKR2o0Qy15aWpZ?oc=5",
-              "sentiment": 0.226,
-              "relevance": 0.691,
+              "title": "Palo Alto Networks and Fortinet shares skyrocket, what you need to know - StockStory",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeUhwdmxLNFYwMlFpOEszZUJ0MWJOVkFWZjUwVk0zaHZldGtoYWtWdU12N2VsWnkxRklycG5IcThuREdqamJfcEM0WEE5VFluVTF4cThSNFc0aHNJQ3AtX19BWGE1blhNMW9PVUcwS1lfS25nVUJCeXRQZTJUcnpuSjFVbkxxN1NMXzNManlrTVg3MWF4d0pnSFJVeFRGV2tRLXV5ZkxLLVdlWC1kSWpXOWZtSjBndy0yZXRUdkEycXBpblZGS2VtTGZlcGc?oc=5",
+              "sentiment": 0.296,
+              "relevance": 0.718,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.95,
+            "count": 13,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -5794,11 +5794,11 @@
       "moves": [
         {
           "date": "2026-11-18",
-          "return_pct": -6.52,
-          "zscore": -1.9,
+          "return_pct": -6.08,
+          "zscore": -1.77,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.15,
+          "market_return_pct": 0.04,
           "events": [
             {
               "source": "googlenews_gold_miners",
@@ -5810,24 +5810,24 @@
             },
             {
               "source": "googlenews_gold_miners",
+              "title": "Gold's losing streak puts these 10 mining stocks on the oversold watchlist (GLD:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUG1uTVZYRXBSeUkwVEFFMVM0azJxXzMzWTdHY2FZemJwVmszYUpDVUFmMEowVFhqMVZPdnlXcnI1cHNZbTBhSmpqRXBsMUxjVU1oOERjLVhTMk1TaC1FU0JqcHFfams4ZEpNNGxUTkV4QVM5NVdSNGFydzlWcnFobUZEZ0U1VnFWaU1qNWl3eWszYklmNzg1djFabEprYjh2c244dGdBQi1QRlk3ZEpGWQ?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
               "title": "Gold price today, Wednesday, November 18, 2026: Gold prices open again at year-plus lows, falling further - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOWXlIT0Z6Y0U2RW5CRUx1d0lnZlMtMkwyQms4VlFSZ1k3OTVRdlQwRzIxaUw1YTM0bm94YlZYV3FIV1lsTng3eEhJSzJzSEpvQlRHSUdGNnZDQ2IteTRUSG9vc3NkbWh6WUdCa2UwNGMtMXJVRmZZWUdJbURaQUZ5WlZodHU5V0lsR2JKSjBrQkRURkExanFHSXprLUc1RmluLWMzX09ZYWU5WWRsZWhpZ25aLWJBX3dDa1gzMjIyQlJVM0xhX1IwREpqbkFUbTE1UnI3LTZZcGdKUE1ZYlEwTG51aU84d1Jyd24zckVKQXh6NjBrLWJoN2owdUN6cTNHd2JQZnFmaw?oc=5",
               "sentiment": -0.34,
               "relevance": 0.736,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Can Record Earnings and Lower Costs Keep NEM (NYSE:NEM) Ahead in the Gold Rally? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcEFUNElDcGl5ajdpakxFZUJvM0laeElVTldsNXI2Yklqb2RoSVdYV0tYb3Rqa1MwMHhsY0ZmMXdBdWJhSUVGSnQwdzRYUVR6Vm5HQ2x3OWpTcWxkZFBFNk5SLWNyRXg4UG5taTZCcVU5LTIyUThpWVNjNmdkendYYV9jWlR2NG1XRGZaS3BsX2xoc05zYW5sV3BLZ18yUGwtT3V1SlZzcVY1cm0yQVI3RTd1bUk5aEk?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 27,
-            "zscore": 0.03,
+            "count": 32,
+            "zscore": 0.39,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-18",
-      "return_pct": -2.12,
-      "zscore": -0.61,
+      "return_pct": -2.8,
+      "zscore": -0.92,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-11-18",
-      "return_pct": -0.15,
-      "zscore": 0.04,
+      "return_pct": 0.04,
+      "zscore": 0.21,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
