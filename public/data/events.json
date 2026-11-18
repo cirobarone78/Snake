@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:37:00+00:00",
+  "generated_at": "2026-11-18T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -361,8 +361,8 @@
             }
           ],
           "coverage": {
-            "count": 90,
-            "zscore": 0.82,
+            "count": 91,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -525,7 +525,7 @@
           ],
           "coverage": {
             "count": 61,
-            "zscore": 0.89,
+            "zscore": 0.88,
             "spike": false
           }
         },
@@ -2452,8 +2452,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": 0.25,
+            "count": 3,
+            "zscore": -0.05,
             "spike": false
           }
         },
@@ -3416,8 +3416,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -0.04,
+            "count": 6,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.38,
+            "zscore": 0.37,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.51,
+            "zscore": -0.52,
             "spike": false
           }
         },
@@ -5311,6 +5311,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-18",
+          "return_pct": 2.98,
+          "zscore": 1.42,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.15,
+          "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "Factbox-Multiple tech systems have been crashing. Here is how to protect yourself By Reuters - Investing.com Australia",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb0VpRWp1MW9QbVhIRUE1OWI1cnk1dzAyMkVPMzJqd0xabXhJaDdkbVQxTjJBVVF4cEVoenctVm9ES3ZEY0NCREJRWlRycktySnRKY3VqZHp5MjRwVklmTC1iOTV2cnFpbzBFdm5QVENXYXo1U0MxdmtmUzAwcXZGbjBaVDZrX0tnU1dvYjd6c0s4R2d3UHdvX2ZaTjVJRTUwZ0FZRW9XdTFJN1RXemdmeDY1Y1V2OGRsQUJXc1l0RGlLWkRSdWVEQ2dQUDU0VE9S?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.753,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Breach Secure Now partners with Climb to expand cybersecurity and AI training for MSPs, boosting recurring revenue. - Pluang",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd08tcFc1N1lzNUtVbXVpZ3dycy1FNjJMVzBaWDJfSmJPdVl2WGZpbU5SdXdxa3hyVDBRMUx3VXdVZDdyVTNuUmZxUkZoV3dic3pVV2M5Yzg1QTdyeU5qMEFEdFdZMzA1Nkd1Wm9OSTF5dnctdHhwemNxX3hQdk96NVNSOXdlUF95SHpHcmNPU3VBM042dVJhRWtoVmN3cld4YWlnRVpoYm81eW9n?oc=5",
+              "sentiment": 0.727,
+              "relevance": 0.691,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "3 Cybersecurity Stocks Worth Watching After The Java4Shell Flaw - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUEY0TUdNcTVLWjNzTVBza1JHX3FWejdncFZFVUZGcUlIN0pXRG9TY0NXMGtGbEQ2c1pJREZqRTZxZm9nNFNuOG8zQVNBOXJ3LXhWYVJJejZVQWEyY0t4b3ZNUnlUZEljQXktSnhuY3NSN2JEd3lzVVJmZEJGckdNeGRacVZsX1BzbVJoSldua2JoMUdIbEVFNjNKR2o0Qy15aWpZ?oc=5",
+              "sentiment": 0.226,
+              "relevance": 0.691,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": -0.95,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 4.0,
           "zscore": 1.82,
@@ -5503,45 +5542,6 @@
             "count": 33,
             "zscore": 1.18,
             "spike": false
-          }
-        },
-        {
-          "date": "2026-10-23",
-          "return_pct": 3.22,
-          "zscore": 1.41,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.52,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Check Point Software rises as cybersecurity shares gain on stronger spending outlook - Quiver Quantitative",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUWVCODMtOFZVRHBlTzMzZGVWM3BMWklkbHdKWWZWUmNEMG5pLXlDTGhQbm1TeGpHQWUxZThaMmowUFFfMnJDczdhNmpxUHJiODVTZ0FXdFlNbm5WdDhIS1hUVE0zXzRlSzRiWjRIU0hmLVp1eG9QY3ZRZzI4bGYzY2x0dm5jVkY5T0dWY0lhZXFOckg0STVBbHlvVWdEa2NYamJ6ODRlMHMwRENXUl83emVXY0hibUZz?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Rubrik climbs as cybersecurity momentum and growth signals support shares - Quiver Quantitative",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWW9FdUNETXZVbjdRNHVhOE1HUXNYT1lFS0FjbEt1MEptbUFyQ0szSlFSVTNlbHdLVVoySThLVlhFVkdUVGs4ckJLZFhVZVRJcHFtSUdvcHRRdWVFT0dKbjQ3UkNWWWpIX0gtcm9BSkZHeVNZMTkxOXN3a0ZxdWh5c0E2TVJheVNVNjFUTFZ0WGIyNjNWTm1PYTdXNDd6cXhxb2xCdTczU3FDQQ?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "CrowdStrike Soars 20%, Secures A Spot Among 11 Newcomers To Best Stock Lists - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWndLOU5WZGxWSmVjQnlnZi1MVTczOXVOcm55alBwclVybWoyTUpNdVZiUmRpY0ZTb0RJdEdMcEN3T1hLZElZbmhZQ00xWlpMRVJJUUUwOTdGRmVldTBkMktOSnZRbS1ya1pnWVdGcUMzUmtFTU1FYWVna05mcGxJcENyY3VmM0liWWlPWWI3WFFraXloTDFiaQ?oc=5",
-              "sentiment": 0.758,
-              "relevance": 0.903,
-              "event_type": "listing"
-            }
-          ],
-          "coverage": {
-            "count": 51,
-            "zscore": 2.94,
-            "spike": true
           }
         }
       ]
@@ -5793,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-18",
+          "return_pct": -6.52,
+          "zscore": -1.9,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.15,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Top Gold Stocks in Focus as Bullion Slides to a One-Year Low on Rate Hike Worries - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOX1otREtJVjA2QkUtVzNaMW5RQTd3MEh4RVJvNEtuVjdjMmp0TVFkR3B2OUNPS1N0MjJGeGNuZl9ydGNsMUJ6TkFjZzVUUThoSFlhQ2IwT1Z3WUJiTDJNSmFzMDBCWlVTdnBQTlB5clBXQ2dLM0VURU80N1VmdmhCRlU0cGhXdlBMU1AtMHFGbW5sWXc0NkN5d0lVY0dYNjlDY0lFYk5IVWo2OU4yMDk1RVNrYmlOejFETllacExB?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Gold price today, Wednesday, November 18, 2026: Gold prices open again at year-plus lows, falling further - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOWXlIT0Z6Y0U2RW5CRUx1d0lnZlMtMkwyQms4VlFSZ1k3OTVRdlQwRzIxaUw1YTM0bm94YlZYV3FIV1lsTng3eEhJSzJzSEpvQlRHSUdGNnZDQ2IteTRUSG9vc3NkbWh6WUdCa2UwNGMtMXJVRmZZWUdJbURaQUZ5WlZodHU5V0lsR2JKSjBrQkRURkExanFHSXprLUc1RmluLWMzX09ZYWU5WWRsZWhpZ25aLWJBX3dDa1gzMjIyQlJVM0xhX1IwREpqbkFUbTE1UnI3LTZZcGdKUE1ZYlEwTG51aU84d1Jyd24zckVKQXh6NjBrLWJoN2owdUN6cTNHd2JQZnFmaw?oc=5",
+              "sentiment": -0.34,
+              "relevance": 0.736,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Can Record Earnings and Lower Costs Keep NEM (NYSE:NEM) Ahead in the Gold Rally? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcEFUNElDcGl5ajdpakxFZUJvM0laeElVTldsNXI2Yklqb2RoSVdYV0tYb3Rqa1MwMHhsY0ZmMXdBdWJhSUVGSnQwdzRYUVR6Vm5HQ2x3OWpTcWxkZFBFNk5SLWNyRXg4UG5taTZCcVU5LTIyUThpWVNjNmdkendYYV9jWlR2NG1XRGZaS3BsX2xoc05zYW5sV3BLZ18yUGwtT3V1SlZzcVY1cm0yQVI3RTd1bUk5aEk?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "earnings"
+            }
+          ],
+          "coverage": {
+            "count": 27,
+            "zscore": 0.03,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-16",
           "return_pct": -3.29,
           "zscore": -0.96,
@@ -5986,45 +6025,6 @@
             "zscore": 1.92,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-02",
-          "return_pct": 2.67,
-          "zscore": 1.28,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Newmont (NYSE:NEM) Dips After Strong Results. A Golden Chance? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdnE3Yzl0cFUyUk5lLVkxMWlLNFI3c0tncEJjdmlSR1c0M0V4NFhRcXM1MXhCeENPZ25qWU1CUFgxM3hhaVhzTXliSmRwS0Q1X0Z3aGNnazV0eEtoTS1qdXc4WXdkNktjS1lOdVk4elptQXRGTnMwc1AzTTItT3FZWU5WbDFoYXdjb1RoSEgyb0ZxVXRSUkRIX3NESnljZw?oc=5",
-              "sentiment": 0.649,
-              "relevance": 0.859,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "What Is Driving Agnico Eagle Mines (NYSE:AEM) Gold Mining Success? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeUdQcktOcGc4U01kZDBHdUJFVy1rbGc4ODBPQnAzZG9meC1DZXBBTmc4M0l5Y3B5QmlJWWVuME9nUkxUWHNMXzJONUhxZDJsS2k2dnY2Zkt0c1A4WV9zaWxRWjVBaVdSSUFtNnI2c3RkQzNxeE8xM3JFYmtZbmFnSlpqb0hvYWllSmg5STVOWHZWbXBuOWExNUxpaU8wYkItaUJSRg?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Garrett Goggin Great Rotation Review 2026: Is $189 Worth It? - The Stock Dork",
-              "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE52LThHblg5YzZwck9mdUdPb0liUllwazI3a19EY3puaC02WGtjdW5QZmZWVzlJYlZ1cjBBczAxRXNWcngxZkExbTJnbWpZT0VTbFhyTnA5V2huQkY0cnFOVDZuVzBwWS1zRWtZ?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 32,
-            "zscore": 1.22,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-18",
-      "return_pct": -1.31,
-      "zscore": -0.25,
+      "return_pct": -2.12,
+      "zscore": -0.61,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 1
     },
     "equity": {
-      "date": "2026-11-17",
-      "return_pct": -1.03,
-      "zscore": -0.73,
+      "date": "2026-11-18",
+      "return_pct": -0.15,
+      "zscore": 0.04,
       "max_abs_z_recent": 6.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
