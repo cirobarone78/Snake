@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T12:37:00+00:00",
+  "generated_at": "2026-11-19T15:37:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -2419,6 +2419,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-19",
+          "return_pct": -1.37,
+          "zscore": -1.76,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.43,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.536,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.536,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.521,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-17",
           "return_pct": -1.59,
           "zscore": -2.01,
@@ -2612,45 +2651,6 @@
             "zscore": -0.46,
             "spike": false
           }
-        },
-        {
-          "date": "2026-09-23",
-          "return_pct": -1.92,
-          "zscore": -2.03,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.75,
-          "events": [
-            {
-              "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Yahoo Finance Australia",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTFFRSl9scG52M0FCSDhzYXBNSk14RGxpc01ZbWgzVk9oSmwwREpYQXJadXFTeHJiNUVtWTlDYTVlYk9GUkNkTDBvNS1wd1EzRkJzaFBqLXpVOUpuY2tUZUpDSXVqeEhiLVQtZnRxX3U3RVItaW5rMk4zanVwLTFyYWNjeTNIUlgzSzBj?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMG5mdHdfWnpoVVVRQ3RaUWo4ZEZoOGY3ZWFtbkRRQW0yZDA3V3ZSY25kSFlsUnNPcm15Zm45aWFzY2VVYW5EbGFvS2lod29LRzVtMFJINHVub2t2aHlWVklSSEpPSUU4aUM4R3RxaWloLVo1R3hqOWpfcjBBQzM3RDJZOXBmNEVYd1ZZOXoyVVpNa0MzTS03S1Y2d3htU3NyNHJma1pxUUpEZw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "NiSource Stock: Is NI Outperforming the Utilities Sector? - Barchart.com",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjFnV2p4NHB4dUdYMnB0eEowbzFmbHVLeEg2c1dTRm1idkpzZk9vOXRJT2t4Q1ZuTXJndjBsdFJXbmdWVUc3YVVYS2ZyQXRNMEFKVi1sUUNaN1VjMDBLdTAwQTJ2M2FfSXZkenRlV1JMdVFNM3lSLVlXNE15amNJZnN6d1JWdVRUaExkTURfR2FmVzZWaWZPRzZ1dlR1MXVN?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 6,
-            "zscore": 0.66,
-            "spike": false
-          }
         }
       ]
     },
@@ -2659,6 +2659,45 @@
       "name": "Consumer Staples (XLP)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -1.73,
+          "zscore": -1.56,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.43,
+          "events": [
+            {
+              "source": "googlenews_staples",
+              "title": "European Stocks Rebound as Anthropic IPO Revives the AI Trade - Bloomberg",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNR01OS1NPVDhfbnRKNDNEa0lmcjd2YXRmZlY5b2lfek5za2RlYUtoSmh6SUtMN2FuNEhPOE8zQUhtQklfNzBNZDktQi03a2o3SXRtMEpCc3Z1bzdRaW9BTGtyUHVVTzZTbTBCUF8wYXVRbjRsNVhIVThJY1NxZU9tRG04UV9sdU5MVVZDUTkwZEs1RFNoblZVbTI3d0g0eDlNcEtMWTdveVlIRzh5Sm9hQm1R?oc=5",
+              "sentiment": 0.382,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
+              "title": "Consumers are staying strong as AI stumbles — giving retail stocks fresh appeal - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdGV1aE41WFhiMjdVZS02c1pHOUp4ODBzdS1sUHJjbXI0VjFEdWNMT09TYjN6ODZtdFp2UFd0NjZSb2xlQzJsX002YURRM2ExTlhHVHZJbFAwbldxUTJVTHQ2VlF5ZmttdU1sWmlHSWRWWnRPSml1S2FFOEdlVlFHZThBT2FiZF9XTXZBanBPZ1FnNHJRMWlGdVk1NEFiTFpjWUFnbVZ0Tlk2WFFWTDEyNXVZdnJ2S0t3ek0tdktqSGYzSVRiNC00aENWN1RvTmot?oc=5",
+              "sentiment": 0.791,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_staples",
+              "title": "Time to buy the stocks nobody wants? BTIG makes bullish case for consumer staples - Investing.com",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNVhJQkVCNGMxZERBT19uU2EteUYtSUo4NnN1eDJqbC1JSW5wanZnenlQVXZjZnROeGdQVjFtUDVXenlRdmZEbUJ3Uy1fWGo1TDg3cF9ZdnZTajNDOWV3ckl0RkJzbGV6dnRmcXJNQVVaQ0dUMnFSUW9hd3lFQjBzMEZwX29YT0E5blBfVjJwYktpOVhzX3ppR1BWRXJoYTZaR0Jac1owY0xVSmV6aERrTW9aZ3dfMUFaZThNQV9qeXhxbVVsMlFaeVdvNGhISmRzSHBZ?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.97,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-04",
           "return_pct": 3.36,
@@ -2851,45 +2890,6 @@
           "coverage": {
             "count": 18,
             "zscore": 2.29,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-12",
-          "return_pct": 1.17,
-          "zscore": 1.6,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.06,
-          "events": [
-            {
-              "source": "googlenews_staples",
-              "title": "Colgate-Palmolive (CL) Shines in Consumer Staples with Strong Di - GuruFocus",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS1R6MVJtYlNnUTV1TTVicTVEVGgyMEtFQlFnYkhFai1YcDJMS0E0bjA1RzdHLVFPTVhKUS1JVkJjWXZiTW9XVVo4T1JYcUpvRzgzaE94SGFsRzlEX0Q4WVBmbzFlZ1ZYdG4yX3pOblJYQ0lwWWJQMDJ4RnRlM1lraDJfZGtIZDhIV2pLNFRaZUZkd0h1MVlQQlFSeE9MMjZUVkVvdl85SHJzb2lpNlB4ZXB5VzdScFFMdDgzczY5SkY?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "Coca-Cola, PepsiCo and Walmart among 8 stocks with A+ profitability grades - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMkFwSUZTQ1V4bzdOeXRfVFhfaVhGVWEtektGWXo5dG5BMmFfV2xJbEx4ZGZJdmg3d09Na0F6RHZaR2VUMUxXZVp3Yk5ObEFEWGxOMTJNbHdLWEpoN1I5SDVTakdONjNjTlV3b1ZYaTROeHdWbUNoQld2N1lZWmJXaVl0VnhDX0tvM2lmWlNRekJjMmdjSnBvdi1qaDFYck5YQ0gwNEVucHRNUWpnRVVtRkdQV0U4akRhSUtBSWVJMl9ZMFRKSjMwOXZYaV9ZaEtH?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_staples",
-              "title": "Coca-Cola, PepsiCo and Walmart among 8 stocks with A+ profitability grades (XLP:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdlNrdUlybHRJdTlPREpLRkcxOHZyT2lDRnp6dHZUM3I3OC15bHVRYUZGLXN4bjlLSHF0TGZ5Yms5SnNWZ3JkUmNmd3VFcmt2VVVUcEVGazVhMHZ5VkREdU5SSzRmUTlZNW9vYllUbExNSFloZUJwMU5LdkFYYnBTWkpabzRkaDRRRjhZOXpwMW4wQjF1WWxNbENETng0T01Qd3ZQc0F4c1RndU9HZDFr?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 12,
-            "zscore": 1.08,
             "spike": false
           }
         }
@@ -5311,6 +5311,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-19",
+          "return_pct": 2.73,
+          "zscore": 1.16,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -0.43,
+          "events": [
+            {
+              "source": "googlenews_cyber",
+              "title": "Palo Alto Networks’ stock gets a fresh AI-fueled boost from earnings - MarketWatch",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYW5IUVc1TWdqSHJEZUoyRTdCdVZtUDZnUWhDXzh3ZWl4bk1tLTdsU3h5N3pQZG9CNnN4UzVhb2htdjZaaXBxeXRmVUVmQld6Um9zTGlsaFZnZ2R3dTIxOVJpRlVhTWx6WENXeDdyOVBmdkVOWHJRTnpfQXg2RU1YZ19wZUIxLVZDNkp0YXlDeFp2d3lqZFhGdnZmSTVZYVoxOVZhRUM5NDJsMnA5bFBBQUp2TmVxZUt2dE1iLVphTVI1b083aWlSa0tBSGI?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.845,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Palo Alto Networks Shed 10% of Its Value Over 3 Months: This Big Bank Predicts 55% Gains From Here With Others Not Far Behind - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNc0RKcWFkd3FTNVRLU05sU0EtTmFUM2ZzTFkySlJDVGJRRU1EM1pwd2tJeUY4T3RzNmVuYW1xdTVxenlOYTdsV012R1dqQ0ltMDZ5cGhJSUE0Q3pXOHc0akNrLWEwZ0pfVXEzMzVpMFY5LW5tWGhQYzNwOVIzbGdrU2NJUHFzaHlvb3ZvTVdWdXNxWDRRMVZNWXkyZ3pGbW5CZmwyb0lYUE1iU1NUV1lVSkVFRDRGRHNEX0FXbkRsbmN5dk9ONlkzQUJBcjRrWUNVZGdkWmxwTVI1dVBMT3VMTTBGVU54b0JmdnIzVERXcmx1YWxyanNpY3B3?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Is Okta (OKTA) Fully Valued Following Its Cybersecurity Fueled Rally? - Yahoo! Finance Canada",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbmh1UkdBelJhbTlKaE9zV0hSNW8ydWlPQ0l5TUp0ajI0dzVkVnBSZmVFSmxoenlaODJXVExXT2tGNzZQaTBYSjc4NVFwOWZwT0dWV1FhNVc0SzVFVUlVQnNNLXQ1UW9WbTZxU083OVBmSjBuVEhISHRTNlkwV0hBRE9neWJYOFRZ?oc=5",
+              "sentiment": 0.54,
+              "relevance": 0.816,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 28,
+            "zscore": 0.85,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-18",
           "return_pct": 4.72,
           "zscore": 2.13,
@@ -5502,45 +5541,6 @@
           "coverage": {
             "count": 27,
             "zscore": 0.62,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-29",
-          "return_pct": -2.71,
-          "zscore": -1.56,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.3,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Jim Cramer says Wall Street is punishing the wrong tech stocks - CNBC",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRmVnSjQ2MFV3UDBoRTVsTUIwWHJMa1pLX1FfTXR2Q184WVRoVW1MWFlWa05tT0hHYnJBLXJwTHVKb2oxZ2hRc1dBSE9UTTFJZDlObTh0SVpYT090d0syTW00RUNIdzU2djBFNXlLS0lkSzJURVJoVFdIME1HVmJVdDRqUdIBiAFBVV95cUxNNTgwQkZMTE5peTB2aGljMXFyWGVScDBLTmtMMGdEZkd3T2ZONnluejFlcHctRmNFcFJQOG1NcnNnYlNEVkZydHRYUmUwRGhOdWRpQ0t0Wi1BX2lPYVR0TDlFRHRlaHJsN0M0cnplQjhmZ2lSZFVrNHRPbUg4NjdWTUF0YnhzQW02?oc=5",
-              "sentiment": -0.772,
-              "relevance": 0.909,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQUpuMFR1MVJuYWRfQnZKNDlVRThQT1VyZl95Y2lIWWxoOWV5R2ladVplWk03blZrRWttbTJ3bFdmYXVZMEowQ1pVS0diYUFDaWsxWHNhd2VIWVVjcVdOZXRjVHFrQzdWaENucXc3R1NDVnpnR0YzVEVBZFA5Mk0yVmdvUmpjNmlKSWVJa3pxTmFaX0w0OS00MWZsbzhsQl9oelpYVmZhdEFJZXVHVTY0STdBLVliRW0wTkpheVZZZ0g0TTFBUkdHa3NpR1hyZGtpQXV5ejhJZGRwMHYyQW85QmtXVkNxWEtjSHY2QnJpYkZWOS03?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "ServiceNow stock sinks in worst day ever, Fortinet shares drop as Q3 earnings reports send software sector lower - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSmo2OTM1NjhCMHR0VUJDZk9XUVpmaVJET0ZkOGlUak9CMkVEems1eThwZnQ2N2N6OTVyaUtSS1J2Vzd2ZEN5T1ZKN19VOXpieFpYQ0Vqenlld3VCaVpmdVZHSXBiVzlpMFdFTkhudFRMN0RWZlpKODRibFFsdUFudjFoa3k2Nk5GMWZucw?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "earnings"
-            }
-          ],
-          "coverage": {
-            "count": 33,
-            "zscore": 1.18,
             "spike": false
           }
         }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-19",
-      "return_pct": 1.17,
-      "zscore": 0.89,
+      "return_pct": 0.1,
+      "zscore": 0.42,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 2
     },
     "equity": {
-      "date": "2026-11-18",
-      "return_pct": -0.23,
-      "zscore": -0.02,
-      "max_abs_z_recent": 6.16,
+      "date": "2026-11-19",
+      "return_pct": -0.43,
+      "zscore": -0.19,
+      "max_abs_z_recent": 2.38,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
