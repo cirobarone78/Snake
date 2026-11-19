@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T18:35:00+00:00",
+  "generated_at": "2026-11-19T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 61,
-            "zscore": 0.87,
+            "count": 62,
+            "zscore": 0.94,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.22,
+            "count": 43,
+            "zscore": -0.26,
             "spike": false
           }
         },
@@ -1937,6 +1937,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-19",
+          "return_pct": -2.05,
+          "zscore": -1.68,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.38,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-18",
           "return_pct": -2.2,
           "zscore": -1.98,
@@ -1971,7 +2010,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.17,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -2010,7 +2049,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.13,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -2049,7 +2088,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.28,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -2130,45 +2169,6 @@
             "zscore": 1.57,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-15",
-          "return_pct": 1.86,
-          "zscore": 1.81,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Thursday Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONXdQNjV0NnFNZnJ1YlMyVklmNlg0Y0ZQVF9Vdm1iWUluREVwYUIxNWlSaXdseGRNTlZhZGlNdl9POWpSN1hMR1F4R1hWbFhfVlExendIZWZpelhjWTE3YjBtdEwxR1MwTktqWl9XNFFkcVdqM09KRU4wakk2WnV0dTFjUlBiRGdmYVo1RUJfWFFMd2g5TG1iLVpXNDdOZEJE?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Why Could Vector Science (TSXV:PAIN) Gain Healthcare Sector Visibility? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPXzUydXNXckdwQW1PUDlNRE5mNERfRzdYRUpXWk9TM3gxWEs0VHNQclhudnlGX0xnbkozOWdkWVhsemJVdGJmMlFHOXZyNjVKWVVCbEJqaGJON0dfLVV0dno3dWwzZGg5WE5CeTloUmRzbGItbVEtakZKWjdLUzd0YW5nT1UzXzBPTEprbXRxR2E4Wmo2YlVUQXhQYUpEUnR1ZDVSc0J1UjBTaHBsY3dEcmZTVQ?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_health",
-              "title": "Sector Update: Healthcare Stocks Gain Late Afternoon - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMGlZLU91b0R1UUNvWWFjckVpUTRkNDV3SzBTb2cxMzNNZ1RBbTgxUzR5SlI1dVMxVmZlOE44S1UzUUNMMm51ZElPeS1Cbm5YOHRlOWVhWU5hQk14cGtFSGdIbFoxTFBtd2ZnS3dGeG9VSFdzWjRyYi1mOUJjRmZRMVVGQzQ4YlJ2d2FIckFpSjBmN2lfc2FkLTRFYw?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 16,
-            "zscore": 2.05,
-            "spike": false
-          }
         }
       ]
     },
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.41,
+            "zscore": 0.4,
             "spike": false
           }
         },
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.39,
+            "zscore": -0.38,
             "spike": false
           }
         },
@@ -2289,8 +2289,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 2.53,
+            "count": 18,
+            "zscore": 2.76,
             "spike": true
           }
         },
@@ -2418,6 +2418,45 @@
       "name": "Utilities (XLU)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -1.24,
+          "zscore": -1.62,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.45,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-17",
           "return_pct": -1.59,
@@ -2609,46 +2648,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.46,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-09-23",
-          "return_pct": -1.92,
-          "zscore": -2.03,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.75,
-          "events": [
-            {
-              "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Yahoo Finance Australia",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTFFRSl9scG52M0FCSDhzYXBNSk14RGxpc01ZbWgzVk9oSmwwREpYQXJadXFTeHJiNUVtWTlDYTVlYk9GUkNkTDBvNS1wd1EzRkJzaFBqLXpVOUpuY2tUZUpDSXVqeEhiLVQtZnRxX3U3RVItaW5rMk4zanVwLTFyYWNjeTNIUlgzSzBj?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "ASX Midday Sector Update: Materials Stocks Rise, Utilities Slide - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMG5mdHdfWnpoVVVRQ3RaUWo4ZEZoOGY3ZWFtbkRRQW0yZDA3V3ZSY25kSFlsUnNPcm15Zm45aWFzY2VVYW5EbGFvS2lod29LRzVtMFJINHVub2t2aHlWVklSSEpPSUU4aUM4R3RxaWloLVo1R3hqOWpfcjBBQzM3RDJZOXBmNEVYd1ZZOXoyVVpNa0MzTS03S1Y2d3htU3NyNHJma1pxUUpEZw?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_utilities",
-              "title": "NiSource Stock: Is NI Outperforming the Utilities Sector? - Barchart.com",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjFnV2p4NHB4dUdYMnB0eEowbzFmbHVLeEg2c1dTRm1idkpzZk9vOXRJT2t4Q1ZuTXJndjBsdFJXbmdWVUc3YVVYS2ZyQXRNMEFKVi1sUUNaN1VjMDBLdTAwQTJ2M2FfSXZkenRlV1JMdVFNM3lSLVlXNE15amNJZnN6d1JWdVRUaExkTURfR2FmVzZWaWZPRzZ1dlR1MXVN?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 6,
-            "zscore": 0.66,
+            "zscore": -0.44,
             "spike": false
           }
         }
@@ -2693,8 +2693,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.27,
+            "count": 8,
+            "zscore": -0.11,
             "spike": false
           }
         },
@@ -2733,7 +2733,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 1.89,
+            "zscore": 1.84,
             "spike": false
           }
         },
@@ -2901,6 +2901,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-19",
+          "return_pct": -2.79,
+          "zscore": -2.0,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 7,
+            "zscore": -0.56,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-09",
           "return_pct": 2.92,
           "zscore": 1.93,
@@ -2935,7 +2974,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.06,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -2973,8 +3012,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.09,
+            "count": 10,
+            "zscore": -0.23,
             "spike": false
           }
         },
@@ -3013,7 +3052,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 0.32,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -3052,7 +3091,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 0.43,
+            "zscore": 0.45,
             "spike": false
           }
         },
@@ -3094,45 +3133,6 @@
             "zscore": -0.91,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-19",
-          "return_pct": 1.78,
-          "zscore": 2.09,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.41,
-          "events": [
-            {
-              "source": "googlenews_discretionary",
-              "title": "Consumer Discretionary - Leisure Facilities Stocks Q2 In Review: AMC Entertainment (NYSE:AMC) Vs Peers - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNdy1hRFF2bkZRODkydFRwaWFTMGFNTE91cVNFT0huczJQYU94VTZ6TzBnaDJXOHBFRXBzOHBGdXRfcmxyb0Z1ekc0cHV0Ti1yU3BScnVrUi1WY2p6NS1hVzNlTVhNMTRHQUhIZ2d4YjdpWU9VRU14b2tCTmJMMzUzYzRkUFZ0bFZHX3hxWlM3SEtVeFlGMXdEaDRHMExfTUhvbHMtb3RjazFlTDFIVnZDUllyQWJDQmxydkhyOEdEUkg2RXJHVFJJcF8tdXBPUkVSNGFXM2k3N0RTRTVmWDVPZmd6WVlIbi1aYVViRDA2Zw?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Consumer Discretionary - Leisure Facilities Stocks Q2 In Review: AMC Entertainment (NYSE:AMC) Vs Peers - Barchart.com",
-              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZW56SWdKaFRGWGhWYzF3WEFDNUxyWXAwbjRhdlJad2FpeVVTbHNPSG03ckdGa2Y4TlExQlVmQXdOWFRTd0ZidUVnVHYtX2k0SzNNTDNjZnBIN0ZfTTU3NncxOHVBeURQOFEwbzc4UGowSnhvQW9QN0xwVFd6N1RVNmo0dWEweU9ENW9DQ2hrZWZLNmVOcE5wZVFWY2lSYjUxaXd3MnFMVE0yRnBDcHJxMHdsSjZRWTlGRHNlcmVGa0h4WU5USGRkNW5OVEoxRHB6VVZfMWpPSQ?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Consumer Discretionary - Leisure Facilities Stocks Q2 In Review: AMC Entertainment (NYSE:AMC) Vs Peers - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMUJDOXJYaGxXUG4tMXlvNDNHVnBfLXF2TTEwc2dBZTVPT0pnUk95czUtV29lUmdiWTgxMjNzc0k5T21tdUliLVFTZTdVV2NrRHpoTkdjSVcybXVneUpNazJRNEpGOGtkWkRxM2pOSkc4cExxVjlORHc4U0VRZlk2ZEFKalJJZnpsYnRHVEN2bkh3NkZXcVc5bWwtWnVZMWxQOGlsQzE1bzZyVW9iMmZvV1VNdw?oc=5",
-              "sentiment": 0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.96,
-            "spike": false
-          }
         }
       ]
     },
@@ -3141,6 +3141,45 @@
       "name": "Materials (XLB)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -2.06,
+          "zscore": -1.88,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": 0.54,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-09",
           "return_pct": 1.91,
@@ -3335,45 +3374,6 @@
             "zscore": -0.93,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-15",
-          "return_pct": 1.79,
-          "zscore": 2.24,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_materials",
-              "title": "Analysts Offer Insights on Materials Companies: Linde (LIN) and Vulcan Materials (VMC) - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxObzk2UXJJVzEtVlgyZFBTTjVyWlFNamFKWjdRMDFnVV9WSDF4cWJyNzVRa1BsLTRyYm5xXzhlYjVENFh5OGJyd0xUejNrZkhhZHhBdi1YVTY1WEw1bnpFZGJ0dDVMVGtZd0NzZEpxNTlHM00tblExTEV6ZTRNXy1FdjZuR2RjTEZUV2JIT1Jpa3hJZUVqNldxRXhtbWJFbTFKUWdJRk9mMzAyckVkWWdaazVta1ZCSENBNnB6MThaQ1VJUWl4a2pObXRFUjBTcm45VVp3a3hYSnZhSTNkd3oxaVo0dWpDbnM0aTFkZEJ3VG5XTG1UU1B5MQ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Gold prices ahead of the Fed's interest rate decision: Will they reach a peak or fall further? - Vietnam.vn",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdGdSUmJ5OGdTWV8xOTFhMS1jWDZNaGNrV1N6aUN0VGE3ZWVEdlVfMnNVSU9Nbmd0NVRlejdHUjRha3B0QVZWNTZMdFoyX0FpVWk4dXYzWHBvR0xYNWZzc3BHVTUzUTBOR2lCbjJ6Zk1tU1NhLWZDVXNqTF8wNlRTdmh0Y1RYano5T0xQdG5xWHZXOVYtRU56a0R4YVQ0OTkwNXRv?oc=5",
-              "sentiment": 0.477,
-              "relevance": 0.474,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "UBS Predicts Further US Interest Rate Hikes As Inflation Remains Persistent - Arise News",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdzJCSUhwNDVHM29jZms2SVpjUmpIYVZwVDRtOHl3TzlDbE43ekEtb3poRy03UndjeG5ZbTZrQWFzUGJJRWdsaU40NmN3LTMtLVBqZDFpUnIteHNPcVNNQ2l2MEY0M2lZZHdhZzRKa2pEbkRDZk95ZmltV2VJMEtjQTU2TmVSTUtWdGR6a3ptUWJXY3dqMjVNTXhuS2dWdw?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -1.07,
-            "spike": false
-          }
         }
       ]
     },
@@ -3382,6 +3382,45 @@
       "name": "Real Estate (XLRE)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -1.7,
+          "zscore": -1.72,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 7,
+            "zscore": 0.42,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-17",
           "return_pct": -1.49,
@@ -3576,45 +3615,6 @@
             "zscore": 1.23,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-15",
-          "return_pct": 1.21,
-          "zscore": 1.7,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.33,
-          "events": [
-            {
-              "source": "googlenews_realestate",
-              "title": "BSR Real Estate Investment Trust (NYSE:BSRT) - Stock Analysis - Simply Wall Street",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU2ZLREw2dTRYY3BtbHhqelpQOGEwSDFMdnh1TDRfZ3l4SVgtdXdWbE5HRWUtMVZpR21KQUlVVG1tRjhPdnJncVNLeHhfWC1tUjhkY2JrRFVJeTJnQUY1VC1UVk5oZEtyVDdNZFhpWTBWdWVsMzZ2SVpzbUFPZ1VVQndZUlY4akZ2Z0tidWRBcw?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "Raymond James sets CAD 19.25 target for CT Real Estate Investment Trust stock - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdXJXSzhBVV95SU12M2Fhd3NZcS10UFFVM3dESFpYMVRRSmJKNVZmZ0NBa3BadG5ZUGdUU3RGZFhDS0pBalhZN2oxTmZ6ejNzZVE2dG95YzhYOVJOVW1sU2tPWG1lTjhpTkdBajVUUTFRNEdiLUdIQXoyWEdiclM1TlhvUmVjUDZqSFJtalgyZkNKMGRrWGVfT21sb1NmR1FoekFSMDlpNVd3SkwzSXRZekgwWS1HSzJHVGJUU2FEaWNGT0NJUTM1dllB?oc=5",
-              "sentiment": 0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_realestate",
-              "title": "RBC cuts target for H&R Real Estate Investment Trust stock to CAD 11.50 - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNlUyQ1J6RGZHZ3Nwd0duLVhieFhPMVotTlROX3lFVjAzdXlfNmJ1X2twUVhBUzljTnU2czQ4VndnTy02bnZJUkpaSnF0TmtBODlqVnhPTzFnZ1hzNFlXeVFUckdQalNYQ3NMWWc0UDZWODctcHVXemFWZUNfZFVSWDdIQl9tSEJUQ09Kc2ZXRURkck1aX1B5VEpoalptRHY4a3pBQnVkQXJmWGFhRGp5R05UXzMyUk9qcTh4MDNPMmpfZ2J5Z1NB?oc=5",
-              "sentiment": 0.273,
-              "relevance": 0.709,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.79,
-            "spike": false
-          }
         }
       ]
     },
@@ -3623,6 +3623,45 @@
       "name": "Communication Svcs (XLC)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -2.67,
+          "zscore": -1.88,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 17,
+            "zscore": 1.1,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-09",
           "return_pct": 2.45,
@@ -3658,7 +3697,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.12,
+            "zscore": -0.14,
             "spike": false
           }
         },
@@ -3736,7 +3775,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.67,
+            "zscore": 0.65,
             "spike": false
           }
         },
@@ -3775,7 +3814,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": 1.05,
+            "zscore": 1.04,
             "spike": false
           }
         },
@@ -3814,47 +3853,8 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 2.81,
+            "zscore": 2.76,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-09-14",
-          "return_pct": 2.19,
-          "zscore": 1.87,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.48,
-          "events": [
-            {
-              "source": "googlenews_commserv",
-              "title": "Jim Cramer Recommends Buying This Communication Services Stock, Calling It ‘Amazing’ - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUlFmZ1pHMGNMVEprbEstSlZVWFhwRDE5eHdWbUp3OVllTVZWaFhuNzM1WVdfYTc1MEdKdnNBVVpaRFJNTUh2SW15a2o5MzBsMHphR1JwdXg3YkEzSXE3WDdsUVFOOEV2bER0M1Yxd0FLWTNTMTlMWDJROGpiSmFaNDRuU19HTUVPX3psRVJmSDVlLWQ2ZzQyczNZTGJUVkNieFJtR19teVZ5bFAwUmVieGN2M1Z6M3E2bkZmX2xnLTNsWlBVRmN4ZFlTUkdCUllOenhkcno2YjZ2THpIZVJv?oc=5",
-              "sentiment": 0.226,
-              "relevance": 0.691,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_commserv",
-              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3lTVWtZa254TlRSaE1pN3NndG92YzM1ajByaFhTVmxDM2J6czFqeFBrX1pYWUk4YWZYREIxelB4cGNEVWxqWVFQZ3VVUHl5V1llbGl0QWRYNms3NDlBYWtQWnZON0QteFhoUkhMUnVtVHV1VUt2V2Fqd1R2TjNQanp4eXE4c1hvdGxYWlVVLU9RR0hfUHM2cFVTLXVLRU5vTTF1TW1feDFmdlhPTzNOVEVPLUNwV2ZLN01Z?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_commserv",
-              "title": "12 Communication Services Stocks Moving In Monday's After-Market Session - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRUp3Vkxsd0trSG00N21XTnBVYmdYb191aEMwMDduQmVKSk1EbjVLeGotX2lWRVhZcTFubFZ6TGVWWU9Kd3VLaUtQRTFtdXRaaVp2LWFuN0x4MjltWEY5dE4zcmJ6NGF3RUhTNDNQV2x4VjU3YUczTFhNcVR1cGpsNjZUT3hQcXhGMnprNGgzcElOcDhaakhqaHdZOFlCNmZPX3B0eExkYjRzTkZjanNMUGZDZkNkWWcxc1U2OElqdkk4bTIyVWhjQm1R?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": 0.56,
-            "spike": false
           }
         }
       ]
@@ -3864,6 +3864,45 @@
       "name": "Semiconductors (SMH)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -2.62,
+          "zscore": -0.48,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 32,
+            "zscore": -0.92,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-16",
           "return_pct": -5.11,
@@ -4058,45 +4097,6 @@
             "zscore": 0.91,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -11.21,
-          "zscore": -4.41,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -4.36,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "This Semiconductor ETF Is Set For Its Worst Week In Over 18 Months As Democratic Sweep Raises Data Center Skepticism - Stocktwits",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNX1h6emVrdlVQSDBFZzdXaDBPY0FNM0FXRHJHZ1ZyMFNWRE5ZTEYwMHBJZ0ZMaG1USVA1WHJISkVpSFA1VWNGOEtKYnBIb0VIa1l1WnBoOGpxSWF5TjBPWk5icTh0eXlYOG1XZ2JoMk5WUmtpaDZVOFc1ekw4eWUyRll0NVZHYXRiajE0cmVtcWI0anlhV2FQa1M4ZkxTVk5vYVRoNDhLd0ZyVm8tcGJvZGVOVGxrcExrUTI0Q2d3bkk5alh1QzVfd3Jn?oc=5",
-              "sentiment": -0.727,
-              "relevance": 0.891,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "This Semiconductor ETF Is Set For Its Worst Week In Over 18 Months As Democratic Sweep Raises Data Center Skepticism - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVmhzei0wa01sNGMxUFgxN2RlMDVCUnlDV1JzbUszeHREQ2xFczdDdlM0SGNOUzhxOEgyTk1QWENWYTVoMXVQSWtvV1ZKZFI1c0JQcm5NbXd0Q3FuZGhhVF9JTkFHU1ptaGIxd1J6YUtvZ2dsdk1NaXk3LUpseG11dElVRU9pQmV4NlJnZlFqWllLUnU1MHJsX25mM3Y0QQ?oc=5",
-              "sentiment": -0.727,
-              "relevance": 0.891,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "Chips Selloff Worsens as Fears About AI Trade Grip Stock Market - Bloomberg.com",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXhpS3pHOUtRckZzVEhDZ1ZZZ29uMHE0N3RSWHZsZ2IzZTJ5ZjBaYURBRWxiNjRsVkFXbExXT2c0a1d4VUx6T2otWDJZanpJVlMtc0g2QjZhaW5uYVRZdGNVT2NOd2RjTERhbE9KbU9lblpDR0FUOEZDbXFWRlNEd0JYWWtORGE3cEt1REdkZ0R5N2dfYW1fSFphX2Z0RkxhWThRRzZsMy1wMS1EZ2x2LW52Yzk?oc=5",
-              "sentiment": -0.71,
-              "relevance": 0.884,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 103,
-            "zscore": 1.42,
-            "spike": false
-          }
         }
       ]
     },
@@ -4105,6 +4105,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-19",
+          "return_pct": -2.55,
+          "zscore": -0.55,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.49,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-16",
           "return_pct": -4.4,
@@ -4297,45 +4336,6 @@
           "coverage": {
             "count": 2,
             "zscore": -0.25,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -5.26,
-          "zscore": -1.89,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -4.36,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 0,
-            "zscore": -1.15,
             "spike": false
           }
         }
@@ -4605,24 +4605,24 @@
             },
             {
               "source": "googlenews_oilgas",
+              "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates - Crude Oil Prices Today | OilPrice.com",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSS12RDZhOWx3clExalhEQVFOZ2hvTW1WdHhObGV2WW8wTU9YWlVXZDUtVEVnVkVTeUFVb0dCOGdKMFNvOUw3SHcyNzBZQ2U3MzIydERIcTFLaDVqejR6OV80dlJvRHRwZmxuRzZLTjRxc0RiTGZpTkc0SS1IaVkzT1dzbmNROWotbmk2UVlySVM4WWdkT05pS2tGUDZ3eDNSUG93RnUtdERVSnk2TnfSAbMBQVVfeXFMTjNlQi02Q3c1dWlVLUFFcU1qRXoza1JDRDBPZ09hZjZlTUx2cU5nX3R6RWNmTTdYYkhaNHZoXzExS1RVT2hJLVhyNjNBZ1FkWWVjTFdlMjF3eGs4UXpPUXRtUHA4M2V2N0RfVGNxRTNOWEtXekxnNzV6dE90eVdXa3kzYlZBTDlBSlJMSnpzQXZzQkEzOXJyNDZrd0RpeGUzVEtjbUpaT24wMmVWT0hWMFQwMkE?oc=5",
+              "sentiment": -0.758,
+              "relevance": 0.903,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_oilgas",
               "title": "US gasoline stockpiles jump by 5 million barrels and crude stocks rise for a second week, EIA says - MLQ.ai",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ2EzSzlvQjFTZFNkUGJ6akxzSmVkSmxWczdaNE8zNlhPZzRmcVF4Nk9xbnRBUmp6VGJabGNTOFlpUjFETjRxMnRyWW5POEladzJhZE5TUHBrZm83b1I5dTd5bXNaU0dzSUhmejdQdzJQT1pmSWd3WVFXSDU0bFpLZF83MTJQUklBMVBlWHZUM1g3MzF0TEFVY1NZbkkwTm1mU3pDWGJSRUp6QjNLOVJmS0YtSUh0bUVUTHc?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_oilgas",
-              "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcjMzZWw5NFBtVFVKYUF1a1JhbG9Gc0N6V21INDd1cmVHeGNtcXNPZE5vTGxBZ1ZyR2F1M3VpM09RQXRCdkFnVDRTMnhQN05ZX2x6UDRqS0dENm9zMm52T2U1N2xjeXVkS0lGRWZYWFMzX2p4ZWdkV29NZEpwLTEtampiX1BjLVlL?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.51,
+            "count": 33,
+            "zscore": 0.58,
             "spike": false
           }
         },
@@ -4661,7 +4661,7 @@
           ],
           "coverage": {
             "count": 33,
-            "zscore": 0.73,
+            "zscore": 0.72,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 57,
-            "zscore": 3.52,
+            "zscore": 3.48,
             "spike": true
           }
         },
@@ -4739,7 +4739,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 1.22,
+            "zscore": 1.2,
             "spike": false
           }
         },
@@ -4778,7 +4778,7 @@
           ],
           "coverage": {
             "count": 32,
-            "zscore": 0.86,
+            "zscore": 0.85,
             "spike": false
           }
         },
@@ -4800,24 +4800,24 @@
             },
             {
               "source": "googlenews_oilgas",
-              "title": "3 Oil And Gas Stocks Retail Investors Are Watching As Crude Stays Above $126 - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYVlOYmhWbldyMnQ4dFNaNEhuc1liRmoxaHJBU2JNWXo1dXQyOW5JZ3lYVHFRZ3Q2QXQzTGhMdER6b0JiamRTQnBYbDBULVFIWDNCdllHejRlQVhnam9HNWpIeTQ2dko4QVlEWFM1NWlLclhieVZBRDJJcHJVSWtFaVQ1eWdmQ2hvdEFOMi1CTjlZNTRwLTJ2Qy04NERZSktwaUItcmZ2b2d0R3EyRlFKem43b1dmVjlBUjltUERDU0VNYVVX0gHKAUFVX3lxTE1mTVZpNkNjem1Vb09kUGI3Z2h6RGNfMjc2dDJ1eEVBXzlLWWdVNmxLLTdaZFFwcjJ5V1RIRXBmUUl0NzBTd3pQRzNnMXg5dW5qZGRlWWVfRkFNZ1FVeEo4RDJuRURUTHVqdkhkTHV2ZXFfSTNhSUM4aHRjZHNJcWZHLURFc1QzRUNuQldBV0Y2Yzg2NEFQbnBoTUl6RVMyQWVMUlpuYWlvZG9sSnJyV0gtaklIaVQ0MWxSNE1pd2ttSlpvYnlsbGluZUE?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
+              "title": "3 Oil And Gas Stocks For Investors Watching Lower Crude Prices - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdlJSSUV4N1VZTGpQSWhpYmEwenFYZlVsWW5BNklpWTBfT3hhU0pSN2RZajRQWDN5SERoU3pnWmJWTVhwejBRakRmZDN4WFVwenZfamJVdlNFcE9jZ0Nxbmh1Wm9DWmgtQlp6YkpkeVZqU09ZR1pGNWRJRlBoZUQ0TGhiaWkwa0tFM1k0?oc=5",
+              "sentiment": -0.71,
+              "relevance": 0.884,
               "event_type": "other"
             },
             {
               "source": "googlenews_oilgas",
               "title": "3 Oil And Gas Stocks Retail Investors Are Watching As Crude Stays Above $126 - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZk1WaTZDY3ptVW9PZFBiN2doekRjXzI3NnQydXhFQV85S1lnVTZsSy03WmRRcHIyeVdUSEVwZlFJdDcwU3d6UEczZzF4OXVuamRkZVllX0ZBTWdRVXhKOEQybkVEVEx1anZIZEx1dmVxX0kzYUlDOGh0Y2RzSXFmRy1ERXNUM0VDbkJXQVdGNmM4NjRBUG5waE1JekVTMkFlTFJabmFpb2RvbEpycldILWpJSGlUNDFsUjRNaXdrbUpab2J5bGxpbmVB0gHKAUFVX3lxTE1mTVZpNkNjem1Vb09kUGI3Z2h6RGNfMjc2dDJ1eEVBXzlLWWdVNmxLLTdaZFFwcjJ5V1RIRXBmUUl0NzBTd3pQRzNnMXg5dW5qZGRlWWVfRkFNZ1FVeEo4RDJuRURUTHVqdkhkTHV2ZXFfSTNhSUM4aHRjZHNJcWZHLURFc1QzRUNuQldBV0Y2Yzg2NEFQbnBoTUl6RVMyQWVMUlpuYWlvZG9sSnJyV0gtaklIaVQ0MWxSNE1pd2ttSlpvYnlsbGluZUE?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYVlOYmhWbldyMnQ4dFNaNEhuc1liRmoxaHJBU2JNWXo1dXQyOW5JZ3lYVHFRZ3Q2QXQzTGhMdER6b0JiamRTQnBYbDBULVFIWDNCdllHejRlQVhnam9HNWpIeTQ2dko4QVlEWFM1NWlLclhieVZBRDJJcHJVSWtFaVQ1eWdmQ2hvdEFOMi1CTjlZNTRwLTJ2Qy04NERZSktwaUItcmZ2b2d0R3EyRlFKem43b1dmVjlBUjltUERDU0VNYVVX0gHKAUFVX3lxTE1mTVZpNkNjem1Vb09kUGI3Z2h6RGNfMjc2dDJ1eEVBXzlLWWdVNmxLLTdaZFFwcjJ5V1RIRXBmUUl0NzBTd3pQRzNnMXg5dW5qZGRlWWVfRkFNZ1FVeEo4RDJuRURUTHVqdkhkTHV2ZXFfSTNhSUM4aHRjZHNJcWZHLURFc1QzRUNuQldBV0Y2Yzg2NEFQbnBoTUl6RVMyQWVMUlpuYWlvZG9sSnJyV0gtaklIaVQ0MWxSNE1pd2ttSlpvYnlsbGluZUE?oc=5",
               "sentiment": -0.572,
               "relevance": 0.829,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": 2.52,
+            "count": 46,
+            "zscore": 2.62,
             "spike": true
           }
         }
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": 2.33,
+            "count": 42,
+            "zscore": 2.24,
             "spike": false
           }
         },
@@ -5793,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-19",
+          "return_pct": -3.77,
+          "zscore": -1.0,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.02,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
+              "sentiment": -0.67,
+              "relevance": 0.868,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 33,
+            "zscore": 0.36,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-18",
           "return_pct": -5.97,
           "zscore": -1.73,
@@ -5986,45 +6025,6 @@
             "zscore": 1.51,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-04",
-          "return_pct": 9.01,
-          "zscore": 3.77,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 1.58,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Quiet Trade, Solid Gain: What's Lifting PC Gold (ASX:PC2)? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSDlZYjJnQ1d2LVpYY0dRTkVhUktkaXU3NHF0SWtXR1RFRDBUNFNXSng2N2dHd1g2NjYzeXVUNk9PczJnNWNNVjhlZ1l0Q2F4NUs1YktQdDBIOEhUaXFkWTlvUkVPbTFZdHg4a2JNTlpEM04tUnFCRVNadEwxam8yZUJ5Zk8zQUtxQVpTRmlPeVBrMm9ieGc?oc=5",
-              "sentiment": 0.612,
-              "relevance": 0.845,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold production fell 24%, but B2Gold (BTG) posted higher Q3 profit. - Stock Titan",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTWcwZFdBZVJLN2t5U0RyQWliemdZaXZUZzYwY1pPV1VGV0hadUpLN2wwRi1kM1g5TEpnMHlhZmhOR0Zod2JlTHlsUWsxdGlSRVVRZmFFVUtBeFNZV3JSQUlMYWpjckJPc3lxVGxYNnRQc2UzbTJ4TUxLbU1ucGdLTFVQcEd1ZWwyRTA1Z3JtTGlZbG5KRG15RHc5VEhLanFuYzJGclVnV1Rrdw?oc=5",
-              "sentiment": 0.593,
-              "relevance": 0.837,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Gold mining stocks climb as Democrats win midterm elections By Investing.com - Investing.com UK",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVTFMaFNpaWpHcFhPdExyLUxxcUpZMk8tTjVJT04wZWdFNk1EdjVQRjBEcDBDN3VMTml5VzVYSU5pTEwyMEwtMFVuUFlrVHkwZDBrMkNNSGFpT1A0UUY5UnZaa0lNcF8zUHFPdUZ4R1drSzMzNHcxR3JpcnZTNldKM2gxa2dZb29jNHVrc2hqeUVCZm1JVU5NYkg2ZXptbjBzLVdMNlkteFcxNU12TXRZVXEwRGs4a0lIdVN4cg?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 44,
-            "zscore": 1.92,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-19",
-      "return_pct": 0.21,
-      "zscore": 0.46,
+      "return_pct": -2.46,
+      "zscore": -0.71,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,12 +6041,12 @@
     },
     "equity": {
       "date": "2026-11-19",
-      "return_pct": -1.19,
-      "zscore": -0.83,
+      "return_pct": -2.02,
+      "zscore": -1.52,
       "max_abs_z_recent": 2.38,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
