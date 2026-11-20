@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:34:00+00:00",
+  "generated_at": "2026-11-20T18:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-20",
+          "return_pct": -4.6,
+          "zscore": -1.64,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -4.6,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Breaks Below $60K as Crypto Fear Index Hits Worst Level Since February - Decrypt",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbmFiekVkaDRiM0lHVW1tTFhWdTVPM3R2S1VJZmhUNDlHM3pNYkRZZHNzTnh3ZFRBQnlZSXFVblJ6SkYtNUQ4YW1WZ2RoWUxwUTh1bUhQd3hzTWJvYTBSY05fQ1pkeGVQVExwUTFmV1RfTmxfRVhVWGEydnJ3S0lrQXdwTnhGS182?oc=5",
+              "sentiment": -0.807,
+              "relevance": 0.923,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Peter Brandt’s Frightening Warning for Bitcoin (BTC): Price Could Drop to $31,550! - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9DdWN0TFNxdG5aaVJXcHpxQjFLeG10Rmp4SVAwY24wZ0UwTXc4dmtCcWI3M3VtYWk4YVFwLTcwX1ZaX1NxT3pZTnAxd3dCRGRnVlU4YUpTMGY?oc=5",
+              "sentiment": -0.79,
+              "relevance": 0.916,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 106,
+            "zscore": -0.06,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-14",
           "return_pct": -6.04,
@@ -202,45 +241,6 @@
             "zscore": 0.67,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-29",
-          "return_pct": -4.3,
-          "zscore": -3.28,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -4.3,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "Uh-Oh! A New Inflation Forecast Suggests Trumpflation Is Evolving and Worsening. - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWm42QmwzM1RqQmthT0xTZW1DTjBjZWNhZDk2WEhaSng4SmsyQWxQV0FTR3U0UnR0bThQMDBxOWNyWEprUHU5ZUJZWExhcFlFNVprN2dBbG8wZWpMaHN6YjVlN3VXSE5OTWM0Mkl6UmJCaG9nOVA4ZmxwWkJGTUswMlhsV2VtYVl4NzhNSjlzLW1RMTl3NlJTcDVDaUltN0xRTTRsOVZncHpPQ2Y5UjRTNFUyenp5eDdSbUJn?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Market Today, Oct. 29: Bitcoin Slides Below $80K as Big Tech Earnings Uncertainty and Market Volatility Intensify - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQQkt4SUtSRm93QTNlOEdvNWFVNU9sZG9hYngxeFBKSTVodmxGaUYxTVdQdWYwSjJsVWl1eGdoelM2ZU14ZU1XNU5yUWtvSE40WlhGQm82LTZWN2xScVRpdFdsaW5EWWpmOGJBdVFEUU5fd1h4eDVKaFVhUDJLcVkzWV9wMFNNLW1wNXN3Z2YtRXZBNE9FT3ZwS012T2c3QmcyU2FtbnZWQXlXVi1WRE03cHI2WS1VaG5KU1kwdTlFX2k0RlZUbUhmTUtGMVVUSW5GSnRHelBJOGpQUnR5cEVuUEJNNGt6dUplSUtoNmtETnB0b2k1dW1uUUlrT3lDMzI3dnpDX3g1T3lZUFNC?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto Market News: AlphaPepe Eyes Tier 1 CEX Listing as Bitcoin Price Prediction Reacts to Iran War Headlines - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNRmpISU5yTmcxMjZxbktjWUI0SjJpZmNiYXZQQUVUM19kSVFaeXdoQkxkVXNvVU90Nng1d1RaY3plLWs5MVNaRGR5aUxQTU1faDB0Z1V0M05DVk1sdzZTdXZRRE9hQW9YcnNwOHZZQndSdjVWVVl4cnp2REJRR0F1SWlKUnFuYnprM2VVV25ISzVkWVM0cWhZYXU1NmQwTy1HdWJrcXlJZUJyOVhVOE1fSlI1cktjSXVtTW1CVGxxaWFHanJMR2NVcjZfNWdDTFFrSmNscVVnZlBpQTFaYVFNcnZydGJuSjl4SF9KUnhsRE9TdzBCZWppZ2F2NG4?oc=5",
-              "sentiment": -0.599,
-              "relevance": 0.84,
-              "event_type": "geopolitical"
-            }
-          ],
-          "coverage": {
-            "count": 96,
-            "zscore": -0.16,
-            "spike": false
-          }
         }
       ]
     },
@@ -251,40 +251,40 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -4.48,
-          "zscore": -1.15,
-          "classification": "asset-specific",
+          "return_pct": -6.77,
+          "zscore": -1.91,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.85,
+          "market_return_pct": -4.6,
           "events": [
             {
-              "source": "googlenews_eth",
-              "title": "Ethereum holds 1,700 as Glamsterdam delay and risk-off pressure weigh - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObEFYNVk3YlNsS1JteUc5UmNZZW9CWFNtQ2Y2UEhJTWp5cFgxTFd3X05jRVFOc1BNbWRMV0hIUWpvNmNnTF96di1lc3cyUmVXSUY2bTQyU1h2QWFabl9JTzVjNEN5akt2Mk44NkdJZHFJMm9sRWVJZHJMdktwU1Y1czlmTm94Yy02dTQw?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
               "event_type": "other"
             },
             {
               "source": "googlenews_eth",
-              "title": "Crypto market crash today: Why are Ethereum, ZEC and altcoins down? - Crypto News",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcXlzVk40X1p3RTNEenFfcHJfbW9IbHJ3aFQzclpYenUweDF0clh1TmM0ZVFBZU5tY1ExSHk1WmFvVjlJaGloS3d1LXBaNHFZR3FRbWl4SU0zNEs0T0lCalVhb05neWFoMklwVk1lZjlpVVcxT3ZtczVKaUxSSmxYRC16eVktRDgwcTJEV0x3?oc=5",
-              "sentiment": -0.402,
-              "relevance": 0.761,
+              "title": "BTC news: Bitcoin wallet mistakes exposed $106 million to thieves, researchers find - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcWRRTmM0X1NZU0NGZGVpTEUyMTRBZ0pOOENpblhLcHI2UG9VT01PRkNIVTY2SVptTXQtemtxOTcxQTRna1F2ZV9UVlZrTUJwTElZdW9iakVKUjlqZjI1YklxaE0tZVNpN3N0aTdhbHVmQk9ZMjUwMWlWck15QVNTd2VYQ1dqZ2YzTkpuV3ZrVmNzM3d1ZXFCa3N5WHdmQUN2Yy1aOUFIZmhPT1RmWGd6bHl3?oc=5",
+              "sentiment": -0.727,
+              "relevance": 0.891,
               "event_type": "other"
             },
             {
-              "source": "googlenews_eth",
-              "title": "A Major stETH Outflow Just Hit Exchanges: Could Ethereum Sellers Be Losing Steam? - CryptoPotato",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWGc5YTFOeGFmLW9LWnA0OEE5T01UakkwZGVLN3piQTBmR3EwdS0tdWJUQjMzWDV6NEVzVVVKVVlyZFQ4djB2V3c5amE3TmlaRmdubHlQdVlnNUZILTl6bU5sNlNUcERzUld4YV8xVnZRVVJkN2VwcHZaVF9NWEExa24yTWVBeFdnYXdZVFowekxxTHJmbU1oOGlGWGJ5N1dYODNyX1ljOEY?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "etf_flow"
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 38,
-            "zscore": -1.94,
+            "count": 53,
+            "zscore": -1.11,
             "spike": false
           }
         },
@@ -492,40 +492,40 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -5.89,
-          "zscore": -1.54,
-          "classification": "asset-specific",
+          "return_pct": -5.14,
+          "zscore": -1.29,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.85,
+          "market_return_pct": -4.6,
           "events": [
             {
-              "source": "googlenews_sol",
-              "title": "Solana price stays weak below key averages desp... - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSXNNNm9kaHNUb2JoLVFVYlVSS3IxRWc5RTBqNFNFMkdrYVpQUVloVzJDdE1iaW5hVlJPYl9IU01PR2dib3c3NGRGOGk1Qk5RTjhTelRfRDg0aXg1bXdyRklpYXVXbG5EQ0N0YXB0eWN6SEtoQmlCZjFvVktFcmowLVY4M2sxZGJhdm1F?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
               "event_type": "other"
             },
             {
-              "source": "googlenews_sol",
-              "title": "Two Planned ETFs for Solana and XRP Canceled: Limited Demand for Competing Funds - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtQ092THNLZ2F4RUFQcTFuNFYzNm9PUUs0MGkxbXJTc0RRY3NfTlMzYjE2MUliZ0MxNWY4Y2lqZnFTd0dJc1RIalFnYlVtMEljdlc0elJYYVE?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
-              "event_type": "etf_flow"
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
             },
             {
-              "source": "googlenews_sol",
-              "title": "Two Planned ETFs for Solana and XRP Canceled: Limited Demand for Competing Funds - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05dEF4dlMxUmZzcjVtZ0V4QXhQRl9BMmR6dDgzYm5PNE9USkVvQy1mcF9RWF9wbW9fWHNyRUppdmF0VkNOdmtzaF9LSjM1ZnpFVFItMzdreVdqUQ?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
-              "event_type": "etf_flow"
+              "source": "googlenews_fed",
+              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 22,
-            "zscore": -1.71,
+            "count": 30,
+            "zscore": -1.19,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 62,
-            "zscore": 0.93,
+            "count": 63,
+            "zscore": 1.01,
             "spike": false
           }
         },
@@ -733,40 +733,40 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -6.14,
-          "zscore": -1.37,
-          "classification": "asset-specific",
+          "return_pct": -5.88,
+          "zscore": -1.3,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.85,
+          "market_return_pct": -4.6,
           "events": [
             {
-              "source": "googlenews_link",
-              "title": "BlockDAG Rolls Out $0.03 USDT Buyback for Legacy & New BDAG, Investors Dump DOGE & Chainlink to Buy - The Portugal News",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVnlPNldpZ3Z6WUZ3ZW51RnYzbHdRSFpyU3J1RVlVd05mMllNMjlzU245WjZXcWc5Vi1HQU9zZ3BFOHNqbUppMkx6bEpXTmt3UkVvaUd3eFI4Vmw4ZGdaNFdLX1VVbUlJdk1DckgzLVR5enNCVUZHb2tQTXpTTldoQUZ2RlJ6R2tFb2xELWcxWGdaSzMxM29iSjRWRG1qTzZrakg4R0xRSjhKajV3bktIeHM0bUR0cUk4UXg3cG5Ec3hNSWhsQ2tZMjI0ZDFucWxQcG9yWkFVM0Y0Um8yMHhMSE9B?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
               "event_type": "other"
             },
             {
-              "source": "googlenews_link",
-              "title": "Chainlink (LINK) Price Prediction: Bulls defend $9, but trend damage is still real - blockchain.news",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORTNsb3lyVGZ4S1dYd2M4ZVBIdldGQ0tsVUJ0Sms1UmZPMGZWdl83aUxWZzkxa0xDZkpEajdrMzJIR3Z0RVNma0FzUWpmSVJCMkYzZEJaeTdSUTRFRkxaUnhNakwtdDQ4cjVKUWM5OFFxeGJEeWNXVlJmSDdKcThVODBjQko3bk1JcmxRdnp3dE5HcWx0TFE?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.659,
-              "event_type": "other"
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
             },
             {
-              "source": "googlenews_link",
-              "title": "Chainlink: Whale Shifts 195.4K LINK to Safe Wallet - Blockchain News",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ1ZYaXNTNVdtaDBOekt3Yk9PSVUyN1RjOC1fTllFSmlPNW1fLXp6YVhPODlKNjRVNGJETUQ2b1FFejhhOGdvRTZ1akx4aUx4dzNCQlFQNUVkdzVjb19rZ1hrMHVEY0RRTEM3STZMOWE1c0pGTHNEb2FIbWk2eWNXdllacGhkVkE?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.6,
-              "event_type": "other"
+              "source": "googlenews_fed",
+              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": -0.58,
+            "count": 19,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -974,40 +974,40 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -5.7,
-          "zscore": -1.5,
-          "classification": "asset-specific",
+          "return_pct": -5.69,
+          "zscore": -1.49,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -2.85,
+          "market_return_pct": -4.6,
           "events": [
             {
-              "source": "googlenews_pol",
-              "title": "Polygon (POL) Price Forecast & Predictions for 2026, 2027, 2028–2030 and Beyond - LiteFinance",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWGZKVnVDclpYSndabTQzOG4xMkluMm1mYXRXU1BoWUo3TzlwbS1GMXUwZXp5d0s3YnlESlZQYzc4M0N4NVdpWi0zcC1tQ1ZEOEhOZmsxbmNNRVJidzZMVl9YNDl0R0lWSHJvaVJ1WDAtNGZMMWxyaWkxanlmX3gtbWVB?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
               "event_type": "other"
             },
             {
-              "source": "coindesk",
-              "title": "U.S. Senate passes bill to ban prediction market bets on war and death",
-              "url": "https://www.coindesk.com/policy/2026/11/20/u-s-senated-passes-bill-to-ban-prediction-market-best-on-war-and-death",
-              "sentiment": -0.908,
-              "relevance": 0.578,
-              "event_type": "regulation"
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
             },
             {
-              "source": "cointelegraph",
-              "title": "SEC charges 8 firms over fake crypto platforms tied to $37M fraud",
-              "url": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-              "sentiment": -0.84,
-              "relevance": 0.562,
-              "event_type": "regulation"
+              "source": "googlenews_fed",
+              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.7,
+            "count": 2,
+            "zscore": -0.56,
             "spike": false
           }
         },
@@ -1215,11 +1215,11 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -3.57,
-          "zscore": -1.2,
+          "return_pct": -4.95,
+          "zscore": -1.77,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.91,
+          "market_return_pct": -1.91,
           "events": [
             {
               "source": "googlenews_tech",
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 28,
-            "zscore": -0.67,
+            "count": 37,
+            "zscore": -0.27,
             "spike": false
           }
         },
@@ -1326,7 +1326,7 @@
           ],
           "coverage": {
             "count": 43,
-            "zscore": -0.26,
+            "zscore": -0.25,
             "spike": false
           }
         },
@@ -1364,8 +1364,8 @@
             }
           ],
           "coverage": {
-            "count": 50,
-            "zscore": 0.05,
+            "count": 49,
+            "zscore": 0.01,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.99,
+            "zscore": -1.0,
             "spike": false
           }
         }
@@ -2934,8 +2934,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.56,
+            "count": 8,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -3866,11 +3866,11 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -5.86,
-          "zscore": -1.4,
+          "return_pct": -7.6,
+          "zscore": -1.9,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.91,
+          "market_return_pct": -1.91,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3882,24 +3882,24 @@
             },
             {
               "source": "googlenews_semis",
-              "title": "Why I Doubled Down on This Ridiculously Cheap Semiconductor Stock - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObk9BcGx4clhYWmd5dUNCNEp6NEg1bldSdWpMa1E0SUxCbGEyYVdSOThoUjFYcm1sUnF6QzdKN3FCSnV0N1JackpEemZOUENXNXRWZzBOQnB6TzNCMEExOTlYSDg4LWtGV0hfQmZudEJPQk5GSC13eTJYV0ZBMkpKRzNMckRZX0s5UlRkVFZVRkFwcTRVUTRsblByNzBaZHJiVUYwVTdhalZVbkVX?oc=5",
-              "sentiment": -0.686,
-              "relevance": 0.874,
+              "title": "TSMC Stock Slides As Taiwan Market Suffers Worst Week Since 1990: What's Going On? - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQVhxWWp0SU9TOVVGLWQ1azhrbXlnVng0QjBUNzhXS3J1Q1FSU3F4dG1ZYzlzaW0xa3I4M3FoNzVsazV4TTNCRHNOb3BNUHQxVjRRZ011a3licEdIZmdsLUdVVGVJdjZWdlp5X251Q1VhdnZETmFYa3BURGtjenZiX0dqZVZFUkREd29XNkNiM1RuR3l2Y1Q5VE9JRzZ3NEdDY1cxLWRQQlJtTFlzdjk2NzZicThkeFIydzduVjlWUXhKdXNRZkFXbHdUc2pyVnpaaTVMOWR1SQ?oc=5",
+              "sentiment": -0.802,
+              "relevance": 0.921,
               "event_type": "other"
             },
             {
               "source": "googlenews_semis",
-              "title": "Advantest: Sharp continued decline; weakness in AMD shares viewed as a negative factor for semiconductor-related stocks. - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdk1nMlhyajVYME5kcXRKWDdneFpvTnFULWRFUXREc0VxUXhFS2tPVFloV3ZzNEdrNS1Id3NzTXlqOFJ5aENJQktBMEtPbldLLXQ0ZFBSMGtERE80V2g2Z292YTRsalNRaUNlTlhtOHpCMFV6czVQTERpdFhWSFVva2RiU25ST0dDWElRc2lvTWhPUG5YU2JCckNCbFF0Z3QtWWtkaXIwdTRaZE5vcGxz?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
+              "title": "Stock Market Midday, Nov. 20: Nasdaq Plunges Nearly 3% as AMD and Micron Lead a Brutal Semiconductor Sell-Off - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPQTI2OU91ajVQOVJDTGFqbVdseVZrcmIySkoxU0tqTm9BbjFqQmVMWXBNT0VScjFpUmJiTFJtSDl4SmhXQi1VTThGa2hsWi1VTHlGWk1kVXVEMWlrTFBTMlQ3Vk5VTWtLa18yME93NFFhcC1mZFNzZl9mXzVIOUpkcTVjcDlMWkdwSXhETzVVVUpxMk1MYm1wT01mcmpsQXJ0aGRYRTFwVnRzTk02dkx2amFFWjNteG45NTFMeXFJZjU3MjMyLXU5ZUQtOWMtS0VkbENnMkJFME9NS1JlRG1yczN4Q1Y4REM1MzZFYUtZcExOcTVqQk1Ga3BR?oc=5",
+              "sentiment": -0.791,
+              "relevance": 0.916,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": -0.44,
+            "count": 67,
+            "zscore": 0.3,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 41,
-            "zscore": -0.61,
+            "count": 42,
+            "zscore": -0.57,
             "spike": false
           }
         },
@@ -4107,11 +4107,11 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -2.74,
-          "zscore": -0.63,
+          "return_pct": -4.45,
+          "zscore": -1.22,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.91,
+          "market_return_pct": -1.91,
           "events": [
             {
               "source": "googlenews_fed",
@@ -4347,6 +4347,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-20",
+          "return_pct": -3.07,
+          "zscore": -1.37,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -1.91,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-17",
           "return_pct": -2.88,
           "zscore": -1.36,
@@ -4539,45 +4578,6 @@
             "count": 18,
             "zscore": 8.94,
             "spike": true
-          }
-        },
-        {
-          "date": "2026-11-03",
-          "return_pct": 2.42,
-          "zscore": 1.79,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.36,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Nov 3: Green Energy Stocks See Mixed Trading Ahead of Key Q2 Results - Saur Energy",
-              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUW16bUdDbFZmQlphb0xGVWZlWXpsenlLWXhUbE5JWmxlMmlESzZzS3BnamYyZHJKY0piUTRFSVVVWkRtXzdfRElycG9yUnpvRlFaVENxSGszWjg3cFBPV1J5YmNnOFBVVHRHX19pTG1NcDVfTHZEdE1mZWdwWmliRTlNOFhPMjZrYnZpcEx2U2xBMWQ5VHdCQ2hEeDAweXNTSjVOY1E2VnpHVGR5NEpmNDZieWJNdzJBZURURF9JZjNHeUJKMlAtRnlwUjY?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "6 Best-Performing Clean Energy ETFs for November 2026 - NerdWallet",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rS21PYW5XTC1PZWZpMHVvaFhUYW5XRVNBX3Vjc0VFWHRtekxmSHViNnRMaFpEZ2xKYVJVN2FHNFMweUVaNUlXUFVfOVFtVk9RckVuUUtCbVFibXJZRGFNbmZkMWpsdkxUUC02bQ?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.634,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "3 Clean Energy Stocks Retail Investors Are Watching After The 2026 Blue Wave Shift - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeWNxOFR6VnVlU2VIbE1tb1VVV1hCNDV1bDVtZkh2bzdsLWZCTlBBZm55Zm1EdmFkYUtxWC1mX2ItY0lIdzg3dW9VXzYxUHhVTlVYc3ZTUnZqcFQxNGpiTXJEQUR1dEg3LTBZemFqWnhweHZ4UFZCRmtrS3NoMG5zTUZhSlJ3dDFaX0JkbDRR?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.634,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 3,
-            "zscore": 0.47,
-            "spike": false
           }
         }
       ]
@@ -5071,11 +5071,11 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -3.09,
-          "zscore": -1.23,
+          "return_pct": -4.1,
+          "zscore": -1.73,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": -0.91,
+          "market_return_pct": -1.91,
           "events": [
             {
               "source": "googlenews_robotics",
@@ -5103,8 +5103,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": 0.02,
+            "count": 4,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.01,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 2.25,
+            "zscore": 2.24,
             "spike": false
           }
         },
@@ -5220,8 +5220,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.03,
+            "count": 4,
+            "zscore": 0.35,
             "spike": false
           }
         },
@@ -5312,40 +5312,40 @@
       "moves": [
         {
           "date": "2026-11-20",
-          "return_pct": -2.79,
-          "zscore": -0.95,
-          "classification": "asset-specific",
+          "return_pct": -3.75,
+          "zscore": -1.32,
+          "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -0.91,
+          "market_return_pct": -1.91,
           "events": [
             {
-              "source": "googlenews_cyber",
-              "title": "Why CrowdStrike Holdings Stock Flew While the Market Flopped Today - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNallqMTZpUEY2eGpxZmNIbXY5ckl6NTBzQTlERGgwMjNrNFhHcV9kOU9fQjFfQ3BlSjVCVTh3dmR1bDQxNXBMdE5DR0xnZjhicldoRDJUcW5ta0NYZWg5RVZYQ3FZQkJ6azlwLUh3a09FRWFxVFRmSXk3SmgxSExPalplYThHV0dEZmN5TUJ3U2s2MkZuQ3BES3o2S1ozNE1lNVdMNGdhY2RXRzRTQ3c?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
               "event_type": "other"
             },
             {
               "source": "googlenews_cyber",
-              "title": "Palo Alto Earnings: Another Record Riding the Cybersecurity Crisis Wave - XTB.com",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNVRXenVKX0stZWtydE5xejlHTDhkQXlGdGpsOUFRLURmN1NKN29wbVBzTHQzb21VRkFPSGwyN1ZzTTAxbFdTS1Z1X0s1Mmlqc24zSGxnMDJDUDFfY19HMm8xZE9BV2ZLT29MY3FaaE1SRHVENldOeVBkVVdHMmhQQlNYVTRVVEljUjZvQW9TOTdRZmI1enJDZUI3eTZRa1dTZXBab3RaZDgwNUwtckRaalBuMU5QNFkwYUs3WTFQTmhqSkwwNXdr?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.65,
-              "event_type": "earnings"
+              "title": "U.S. bank stocks head for worst week since April 2025 as AI, cybersecurity fears hit markets - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQkFzY29RUzJWR1VlNV9vVDFqVlZZa0F2R0syOVgzMklOS3g3SndQMUw1SlVaSURCMDFicWt3RlU5WG52amxVdFJGTWhjLUg0TFdyRHozSWN6bENFeUxkWFZpalNqbkhzTVMxR0pUR2FfVGw3QmVZcjV3d3NmalB0UTV5MmR0TEtZUTJrU1c0aVU?oc=5",
+              "sentiment": -0.784,
+              "relevance": 0.914,
+              "event_type": "other"
             },
             {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity Firm Pops 6%, Leads 12 Onto Best Stock Lists - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORFV0RGJTSnFfODJZSkIwQXVPcWNMVzNWTXVnLUwzLUZpUVJoUFoyRDcxQlZVWTlkNGtDZHFxWFFXTkxBWGx3amZ6Q0NlNVRCcWsySnJyTXNLVmNhU2VkOTNSMks4ZldmOUdtMFE3V0FHdTBMUl9Nc3FpaG9NanlwQkIzVlozcklxa3FR?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.6,
-              "event_type": "listing"
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -0.64,
+            "count": 14,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 19,
-            "zscore": 0.3,
+            "count": 20,
+            "zscore": 0.41,
             "spike": false
           }
         },
@@ -5664,7 +5664,7 @@
           ],
           "coverage": {
             "count": 43,
-            "zscore": 3.58,
+            "zscore": 3.6,
             "spike": true
           }
         },
@@ -5702,8 +5702,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.69,
+            "count": 12,
+            "zscore": -0.55,
             "spike": false
           }
         },
@@ -5792,6 +5792,45 @@
       "name": "Gold Miners (GDX)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-20",
+          "return_pct": -3.5,
+          "zscore": -0.86,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -1.91,
+          "events": [
+            {
+              "source": "googlenews_fed",
+              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
+              "sentiment": -0.786,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
+              "sentiment": -0.691,
+              "relevance": 0.876,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
+              "sentiment": -0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 21,
+            "zscore": -0.53,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-19",
           "return_pct": -3.77,
@@ -5986,45 +6025,6 @@
             "zscore": 1.85,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-09",
-          "return_pct": 4.41,
-          "zscore": 1.48,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 2.35,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Best high-yield savings interest rates today, Monday, November 9, 2026: Earn up to 4.4% APY - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPeTZtaGNmd0lpZFFrVWY1dEM0aEdDNDJ1bEREOWRfdHZIOEM3dkpVaHU4T2dpdHpGRG8wejNnbGdadDVQbGVHRmNLVC1Vb3FfVU5jVzFscG56Q1VxcERNcWJvdWNNQlVtY0R2U2hfSkM2RTF6M080TVZhM2hpUzZ2a0JqZ2taVTR3OHlhQ19QYTRLcVNkalN3cEhtbHNjakpOZFlGb2RXTTBvUnlTcllwU1lMcHd1cUZiNzRxX0xPWkdMZTJfMk15M1RsSEZJUFpzM240SmtlYmdlUUNxbm11U1ZCZHBBdEpRMVRCN1hvcW8?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Barrick Mining Corp (B) (Q3 2026) Earnings Call Highlights: Strong Earnings Growth, $3. ... - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWHc0d294d21PamZtdnR1enVaZV90UVlic3lJOEhiamxWaVQwNHU1SHR3TGo5bFRKbGFaMXdfQmV3enctU0pGUUQ1eGx3eXJOUEZTZ3NpMkMtMTZTcDZURlpodC1fczYyOFRNaW9BZFMwUGpMdk1NOV90Qm5ScXhQUlpORVMxNnlMc25leVBLazA1WGs?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "New 401k Gold IRA Investment Guide Explains the Best Way to Invest in Gold for Retirement (2026 Update) - Carroll County Mirror-Democrat",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRl9CRU4tWmRhVnFUbWk2T25FVkpySjNqUHQ0OE95NF9xanJJMzdIaWNPcFQ1b1BNNmdlREJhVlB4aTZMSW15ejRVS2NGUUtYb2Y2MWFlSlhLbVFHUlgwZVQ2R0pGOU5KangzLU85VEV6Nmh5ZWZVeVpSbDIzbFRKVUZ5Sm9kanZabW9zT0VWZDduOUh1bDM0TU41VG5YQzd6MURXZFg4VDdyeTVONjJ0YV9uclVQZWM?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 41,
-            "zscore": 1.5,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-20",
-      "return_pct": -2.85,
-      "zscore": -0.85,
+      "return_pct": -4.6,
+      "zscore": -1.64,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
@@ -6041,8 +6041,8 @@
     },
     "equity": {
       "date": "2026-11-20",
-      "return_pct": -0.91,
-      "zscore": -0.53,
+      "return_pct": -1.91,
+      "zscore": -1.33,
       "max_abs_z_recent": 2.38,
       "recent_days": 10,
       "benchmark": "SPX",
