@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:46:00+00:00",
+  "generated_at": "2026-11-20T03:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -43,7 +43,7 @@
           ],
           "coverage": {
             "count": 77,
-            "zscore": -1.39,
+            "zscore": -1.38,
             "spike": false
           }
         },
@@ -160,7 +160,7 @@
           ],
           "coverage": {
             "count": 133,
-            "zscore": 1.44,
+            "zscore": 1.45,
             "spike": false
           }
         },
@@ -199,7 +199,7 @@
           ],
           "coverage": {
             "count": 117,
-            "zscore": 0.66,
+            "zscore": 0.67,
             "spike": false
           }
         },
@@ -525,7 +525,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 0.94,
+            "zscore": 0.93,
             "spike": false
           }
         },
@@ -603,7 +603,7 @@
           ],
           "coverage": {
             "count": 42,
-            "zscore": -0.43,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -2452,8 +2452,8 @@
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.45,
+            "count": 3,
+            "zscore": -0.16,
             "spike": false
           }
         },
@@ -2694,7 +2694,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.11,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -2732,8 +2732,8 @@
             }
           ],
           "coverage": {
-            "count": 18,
-            "zscore": 1.84,
+            "count": 20,
+            "zscore": 2.19,
             "spike": false
           }
         },
@@ -2811,7 +2811,7 @@
           ],
           "coverage": {
             "count": 26,
-            "zscore": 4.15,
+            "zscore": 4.08,
             "spike": true
           }
         },
@@ -2850,7 +2850,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 2.29,
+            "zscore": 2.25,
             "spike": false
           }
         },
@@ -2889,7 +2889,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.08,
+            "zscore": 1.06,
             "spike": false
           }
         }
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.04,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.23,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -3052,7 +3052,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 0.34,
+            "zscore": 0.35,
             "spike": false
           }
         },
@@ -3176,7 +3176,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.54,
+            "zscore": 0.55,
             "spike": false
           }
         },
@@ -3215,7 +3215,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.43,
+            "zscore": -0.41,
             "spike": false
           }
         },
@@ -3383,45 +3383,6 @@
       "universe": "equity",
       "moves": [
         {
-          "date": "2026-11-19",
-          "return_pct": -1.7,
-          "zscore": -1.72,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -2.02,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": 0.35,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-17",
           "return_pct": -1.49,
           "zscore": -1.58,
@@ -3455,8 +3416,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.88,
+            "count": 7,
+            "zscore": 0.56,
             "spike": false
           }
         },
@@ -3615,6 +3576,45 @@
             "zscore": 1.45,
             "spike": false
           }
+        },
+        {
+          "date": "2026-10-15",
+          "return_pct": 1.21,
+          "zscore": 1.7,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 0.33,
+          "events": [
+            {
+              "source": "googlenews_realestate",
+              "title": "BSR Real Estate Investment Trust (NYSE:BSRT) - Stock Analysis - Simply Wall Street",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU2ZLREw2dTRYY3BtbHhqelpQOGEwSDFMdnh1TDRfZ3l4SVgtdXdWbE5HRWUtMVZpR21KQUlVVG1tRjhPdnJncVNLeHhfWC1tUjhkY2JrRFVJeTJnQUY1VC1UVk5oZEtyVDdNZFhpWTBWdWVsMzZ2SVpzbUFPZ1VVQndZUlY4akZ2Z0tidWRBcw?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "Raymond James sets CAD 19.25 target for CT Real Estate Investment Trust stock - ad-hoc-news.de",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdXJXSzhBVV95SU12M2Fhd3NZcS10UFFVM3dESFpYMVRRSmJKNVZmZ0NBa3BadG5ZUGdUU3RGZFhDS0pBalhZN2oxTmZ6ejNzZVE2dG95YzhYOVJOVW1sU2tPWG1lTjhpTkdBajVUUTFRNEdiLUdIQXoyWEdiclM1TlhvUmVjUDZqSFJtalgyZkNKMGRrWGVfT21sb1NmR1FoekFSMDlpNVd3SkwzSXRZekgwWS1HSzJHVGJUU2FEaWNGT0NJUTM1dllB?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_realestate",
+              "title": "RBC cuts target for H&R Real Estate Investment Trust stock to CAD 11.50 - ad-hoc-news.de",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNlUyQ1J6RGZHZ3Nwd0duLVhieFhPMVotTlROX3lFVjAzdXlfNmJ1X2twUVhBUzljTnU2czQ4VndnTy02bnZJUkpaSnF0TmtBODlqVnhPTzFnZ1hzNFlXeVFUckdQalNYQ3NMWWc0UDZWODctcHVXemFWZUNfZFVSWDdIQl9tSEJUQ09Kc2ZXRURkck1aX1B5VEpoalptRHY4a3pBQnVkQXJmWGFhRGp5R05UXzMyUk9qcTh4MDNPMmpfZ2J5Z1NB?oc=5",
+              "sentiment": 0.273,
+              "relevance": 0.709,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": -0.79,
+            "spike": false
+          }
         }
       ]
     },
@@ -3623,45 +3623,6 @@
       "name": "Communication Svcs (XLC)",
       "universe": "equity",
       "moves": [
-        {
-          "date": "2026-11-19",
-          "return_pct": -2.67,
-          "zscore": -1.88,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -2.02,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "Australia loses 44,000 jobs as recession risk increases - Ticker News",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlVvNzJzZnlkb29TQV9wWkdTLVV5eGo5a29YRFhYY2FlT3JFNkdQbU15Q0lYc2d2U194OVdyS0VCN3otWXMwQUlmdjkxY3lKaE1ocDN3VVVTWXpRNFBVZzdyWVZQQmlPTHhlUDFIWGp3LXdGZGxFOFdJd2tGdDRCTzNB?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Australia jobs slowdown raises recession risk and tempers rate hike outlook - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTk4cmp1MW5RWTl6ZjBsT1lMQ3NnVGRuQ19uMG8zeUVnaE5BMWV1Q0JMd0Q1M3JEOVl6Wlk2bTBXR25lZDVPYnM4NVcwaGFtR2RHUnpwUkQ3MGZSZHdYSXRKcUxSLXJUcWhKWE93V1BtN01PZjFtZzViRlZNLUgzRG9YRzFIbTRmUzcyUVhXelczLUJDdFhyNkVLQ3g?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Inflation Fight May Be About to Turn Painful - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0taZlpLMjZNSHV5LVZIWktScXlHVHB3Ri1SMElOR3UycjRibjRfTUM1Y05nQW1SYkljelpjVkdkaGFXRVQyeHVpZTB1T1h1SWQwNHRPTUlTTUJFS0tFVHR1R0c5M1ZLWWlxYmN0aEVqSzZRYkROWlhqTEo2Q2daZEZ2S1lwaDAwRV9lU1lGcEgyM00yOTZBVW9MYw?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 17,
-            "zscore": 1.1,
-            "spike": false
-          }
-        },
         {
           "date": "2026-11-09",
           "return_pct": 2.45,
@@ -3856,6 +3817,45 @@
             "zscore": 2.76,
             "spike": true
           }
+        },
+        {
+          "date": "2026-09-14",
+          "return_pct": 2.19,
+          "zscore": 1.87,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": -0.48,
+          "events": [
+            {
+              "source": "googlenews_commserv",
+              "title": "Jim Cramer Recommends Buying This Communication Services Stock, Calling It ‘Amazing’ - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUlFmZ1pHMGNMVEprbEstSlZVWFhwRDE5eHdWbUp3OVllTVZWaFhuNzM1WVdfYTc1MEdKdnNBVVpaRFJNTUh2SW15a2o5MzBsMHphR1JwdXg3YkEzSXE3WDdsUVFOOEV2bER0M1Yxd0FLWTNTMTlMWDJROGpiSmFaNDRuU19HTUVPX3psRVJmSDVlLWQ2ZzQyczNZTGJUVkNieFJtR19teVZ5bFAwUmVieGN2M1Z6M3E2bkZmX2xnLTNsWlBVRmN4ZFlTUkdCUllOenhkcno2YjZ2THpIZVJv?oc=5",
+              "sentiment": 0.226,
+              "relevance": 0.691,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_commserv",
+              "title": "10 Communication Services Stocks Whale Activity In Today’s Session - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3lTVWtZa254TlRSaE1pN3NndG92YzM1ajByaFhTVmxDM2J6czFqeFBrX1pYWUk4YWZYREIxelB4cGNEVWxqWVFQZ3VVUHl5V1llbGl0QWRYNms3NDlBYWtQWnZON0QteFhoUkhMUnVtVHV1VUt2V2Fqd1R2TjNQanp4eXE4c1hvdGxYWlVVLU9RR0hfUHM2cFVTLXVLRU5vTTF1TW1feDFmdlhPTzNOVEVPLUNwV2ZLN01Z?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_commserv",
+              "title": "12 Communication Services Stocks Moving In Monday's After-Market Session - Benzinga",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRUp3Vkxsd0trSG00N21XTnBVYmdYb191aEMwMDduQmVKSk1EbjVLeGotX2lWRVhZcTFubFZ6TGVWWU9Kd3VLaUtQRTFtdXRaaVp2LWFuN0x4MjltWEY5dE4zcmJ6NGF3RUhTNDNQV2x4VjU3YUczTFhNcVR1cGpsNjZUT3hQcXhGMnprNGgzcElOcDhaakhqaHdZOFlCNmZPX3B0eExkYjRzTkZjanNMUGZDZkNkWWcxc1U2OElqdkk4bTIyVWhjQm1R?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 5,
+            "zscore": 0.53,
+            "spike": false
+          }
         }
       ]
     },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 37,
-            "zscore": -0.75,
+            "count": 39,
+            "zscore": -0.68,
             "spike": false
           }
         },
@@ -5320,6 +5320,14 @@
           "events": [
             {
               "source": "googlenews_cyber",
+              "title": "The Best Cybersecurity Stocks to Buy for Sustainable Growth - Kiplinger",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRExGMXZlRTI4TmEtbkR5N0c5WG53SDN2WkF5YjkyZ0tyeEVqbUJkUHFJQWxmTE5fa25wbzVnMmlRTTBqb0xqZ0FwYmRRWEV3Q1VmZjMxc3RoUXdtY2FKQ1dvQkktaEIxZmMwV1hDZVJDZDNkdFRnWEZ4N0ltQV90OHpTdlJuWkRtdGdKODhVMHB5SEF0WlpxX3FxSlhrbmFTS2c?oc=5",
+              "sentiment": 0.778,
+              "relevance": 0.911,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
               "title": "Top Movers: Cyber Security Stocks Surge While Miners Retreat – Wednesday 18 November 2026 - Business Upturn",
               "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeWVyWEFNaTlyQngzTi1BdWsza2N0Y09GcHpGaU1zdjZweHQzbmgzVGdEQmZTM01GdzZYNG9rRmNqOWcxaGlscmFwV29QUUZEalY1eTNRTFpINUlPSzY0OUdxVy1sZjNuMWt5ak9QTFMxUDV4eF8xMkJBYl9ldjFubmYxbEc5ekpnTmE2ZEhVTjJ3WEV5YjgyN21oYkgtMUFXNHBVa3A5VWZvWENsTThlX1pUYXBvZ2t6RnM2VlRvYTN5MWpfX1lCeDZtZW9oRDJU?oc=5",
               "sentiment": 0.612,
@@ -5333,19 +5341,11 @@
               "sentiment": 0.612,
               "relevance": 0.845,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Palo Alto Earnings Preview: Palo Alto Networks Shares Rise ahead of Earnings Report as Support Holds - FXLeaders",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVUgyMDlEejdfVENqZG1WMGg0elA3TzFZSUZhUnNsNHpaWWZFVlFVZzF5blVxR1VRRUVsUXIwNUhqcFpvUGJBZnFuSDUzRnM4Z0lmS1RURGF4b2VGMmJpb1ZLQ2htSkxtSTI0Wlo4ZzJzazczQnhUaUhFSVJmWU83Nksta2hvTXZLZUtaVWNKR0ktekhWU3pMaF80dXpaTUd6dG1mWHd3QVFpcGdGYURONjgzc0JvRnZMQTgyd05sZmJ3THFDMDNFcEVEdnZuT1lfZm9jaVVYaG9nZw?oc=5",
-              "sentiment": 0.599,
-              "relevance": 0.84,
-              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 42,
-            "zscore": 2.24,
+            "count": 43,
+            "zscore": 2.32,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 0.48,
+            "count": 41,
+            "zscore": 0.9,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-20",
-      "return_pct": -1.51,
-      "zscore": -0.29,
+      "return_pct": -1.72,
+      "zscore": -0.39,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
