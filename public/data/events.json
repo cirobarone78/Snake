@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T12:34:00+00:00",
+  "generated_at": "2026-11-21T15:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -25,20 +25,20 @@
               "event_type": "other"
             },
             {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Breaks Below $60K as Crypto Fear Index Hits Worst Level Since February - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPU0NwWlpFcF9rdzkwWWRVd0xhbk00Tm5Kck1KbHllT1NZXzk4VDNTTFNFU2EwUnNMQkg3S1FGM3lGeWxaVG5vMFBWYXNiWm0tM2owRVViMzNUY2RXc1U5QkhnS0E4X19VTVlOMGdoZXN4MEZOdzVRa0ZaaHF5ckVtSUlCWUlvbHp1TDBCWlZYVlVSel9oVGpIb3BSUzY?oc=5",
+              "sentiment": -0.807,
+              "relevance": 0.923,
+              "event_type": "other"
+            },
+            {
               "source": "googlenews_macro",
               "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
               "sentiment": -0.796,
               "relevance": 0.919,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Peter Brandt’s Frightening Warning for Bitcoin (BTC): Price Could Drop to $31,550! - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9DdWN0TFNxdG5aaVJXcHpxQjFLeG10Rmp4SVAwY24wZ0UwTXc4dmtCcWI3M3VtYWk4YVFwLTcwX1ZaX1NxT3pZTnAxd3dCRGRnVlU4YUpTMGY?oc=5",
-              "sentiment": -0.79,
-              "relevance": 0.916,
-              "event_type": "other"
             }
           ],
           "coverage": {
@@ -250,6 +250,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-21",
+          "return_pct": 3.59,
+          "zscore": 1.55,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 1.61,
+          "events": [
+            {
+              "source": "googlenews_eth",
+              "title": "Crypto News Today: Bitcoin Price Nears $55K as Ethereum Plunges 10% and XRP Tests $0.87 Support - Brave New Coin",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU0h3ZWxxOVhqUkhmb250bmItdklPNzJVR09id05ORWROUnN5N1FpS3E0b0RUNEk2dUE0aXE2YllBbjlOTmdKUXdMWmpfaHNOanlEMHdCN21tOXNaRGxkWHNudUtvYk9vVGxRZWFYalpFWVpzTGZoNkFkb3QzdDhZN2haRFVydmduZHNHWkJEOUZheGxFaGpGR3VhV1AzVEs2VWRsWmpieDZPSmQ0blA0djV4bDFSQ0JqV1VBelRiVkdzN3M?oc=5",
+              "sentiment": 0.727,
+              "relevance": 0.891,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "What Is the Best Crypto to Buy With $500 During This Crash? - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdUJ4cG5zSGR2MlZvM1U0d2hacExORGdwMnBGdkozbTRoemxhdl9ac1dZckM2ejYyeHdYTWhrUkNrSXRIWVdka0xaUDNhWF9SbXhBS3VmTXpRb3oxM2ZMWDZVRE1iZnpRZXlRa1Byb2tDTlJSSnY5b1pfc3FUa2VRNllHdThQVDJBYlRXTFNMcVJwcDBjdDV3M2o3eVJoempBUEQwVXFHUW15ZjhSamprR0N1Y1pFRzg?oc=5",
+              "sentiment": 0.268,
+              "relevance": 0.707,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_eth",
+              "title": "Ethereum Staking Activity Rises Despite ETH Price Drop - KuCoin",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUWpDQUJLd29OYWw2TllMbk9ycTNhNEwtSGhJcGlPWjBYaFJFbDk2cG9TMVByS0VBd2R2SlprV2NYLThzVTV0YWZJZTl5amdFM3drbTJZY2JNWDJfX2h6X0xON2tEbFFhSXJsb25LWnZHeEY2c1pQd2h1WG5mQlRGNU9iRTVNdzNnYktBQXU2RWh0dw?oc=5",
+              "sentiment": 0.206,
+              "relevance": 0.682,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 32,
+            "zscore": -2.28,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -7.73,
           "zscore": -2.24,
@@ -283,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 69,
-            "zscore": -0.22,
+            "count": 68,
+            "zscore": -0.28,
             "spike": false
           }
         },
@@ -443,45 +482,6 @@
             "zscore": -1.48,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -7.75,
-          "zscore": -3.28,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -5.55,
-          "events": [
-            {
-              "source": "googlenews_eth",
-              "title": "Crypto Market Today, Nov. 5: Bitcoin Erases Post-Election Rally as Wall Street Suffers Worst Day in 18 Months - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNV1hJOUVZVkZQUkRWNDJWQ0Nqei1GcFVzaHZqRlZfRVdUTzZwVXphNVFpTWtiallfRmlJS0c3QVY5bDg1RWtwelp6a2ZZaHVZVjdjRDZRdjIzNXRPSzluUjdjRl9weTVjb3VIU29qRVdOMzVxVUNTYTN3RmN2RzI2REd2UTF6b0hUUkpWOGVXcHZMejB4QWlIUXFsb1k2LXl3NWU5RGJSZEhSN0ozaEpEODFjTi1UYzJPSHdLZGxqNUp2VVNlYnlZaTg1Ny1vQ3ZtZjQyczdyNFlCbVNnNzAxX2xfR0ZUazZ3SG9pX2tpTV8tUExoUlFJTVJ5aFFkcXJhUVdQTzJDTU5iYk9SSUdIOEhEQmNpN1Fuanc?oc=5",
-              "sentiment": -0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 75,
-            "zscore": -0.09,
-            "spike": false
-          }
         }
       ]
     },
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 46,
-            "zscore": -0.16,
+            "count": 45,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": 0.89,
+            "count": 30,
+            "zscore": 0.99,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 77,
-            "zscore": 1.47,
+            "count": 79,
+            "zscore": 1.56,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 96,
-            "zscore": 1.26,
+            "count": 97,
+            "zscore": 1.29,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 46,
-            "zscore": -0.44,
+            "count": 45,
+            "zscore": -0.48,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.56,
+            "zscore": -0.58,
             "spike": false
           }
         },
@@ -4218,7 +4218,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.68,
+            "zscore": 0.65,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": -0.0,
+            "count": 30,
+            "zscore": 0.06,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-21",
-      "return_pct": -0.61,
-      "zscore": 0.24,
+      "return_pct": 1.61,
+      "zscore": 1.2,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
