@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T03:34:00+00:00",
+  "generated_at": "2026-11-21T06:39:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -10,12 +10,20 @@
       "moves": [
         {
           "date": "2026-11-21",
-          "return_pct": -7.9,
-          "zscore": -3.12,
+          "return_pct": -8.56,
+          "zscore": -3.41,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -7.9,
+          "market_return_pct": -8.56,
           "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Strategy Breaks Silence After BTC Crash as Bitcoin Position Dumps to $17B in Paper Losses - CryptoPotato",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOU1vSVMwT1JDeGtmWVczcFNqSGs4NjM1MTBIRzNoVlc2V3RtakFha3YwMFE0LUljb0VyVHhPNnR4cV9GOTd5Vy02NEdGa1U0X0V6OEhqUFV2QWpSUzNiVDRCN0JQbU5xbHR2NzVWc21nci1VRXV3WGU4MGgtX1RLeXVpdUVnYTg2NGFqT3c0QWhMMHBGa2lDcW5yVG1Db2NSMTRFS3Z1dm16MmNFdkl4eUpBazQ?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_btc",
               "title": "Bitcoin Falls Below $60K For First Time Since July, Saylor's MSTR Hits 52-Week Low Amid $14B Paper Loss - Yahoo Finance",
@@ -26,24 +34,16 @@
             },
             {
               "source": "googlenews_btc",
-              "title": "Bitcoin Breaks Below $60K as Crypto Fear Index Hits Worst Level Since February - Decrypt",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbmFiekVkaDRiM0lHVW1tTFhWdTVPM3R2S1VJZmhUNDlHM3pNYkRZZHNzTnh3ZFRBQnlZSXFVblJ6SkYtNUQ4YW1WZ2RoWUxwUTh1bUhQd3hzTWJvYTBSY05fQ1pkeGVQVExwUTFmV1RfTmxfRVhVWGEydnJ3S0lrQXdwTnhGS182?oc=5",
-              "sentiment": -0.807,
-              "relevance": 0.723,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "Peter Brandt’s Frightening Warning for Bitcoin (BTC): Price Could Drop to $31,550! - Cryptonews.net",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9DdWN0TFNxdG5aaVJXcHpxQjFLeG10Rmp4SVAwY24wZ0UwTXc4dmtCcWI3M3VtYWk4YVFwLTcwX1ZaX1NxT3pZTnAxd3dCRGRnVlU4YUpTMGY?oc=5",
-              "sentiment": -0.79,
-              "relevance": 0.716,
+              "title": "Bitcoin falls to its lowest in two years - www.marketscreener.com",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPS200S051Y3VzZnZMcVF3eGhFUE02cXJ6RFktZXRJa0l3WEVselNIdGFEUUpaZDVOYTlqQXlZdXp0R01hbnVSYWdwd0ttT0s5LXBoMmRxdHA2Mld4eGJuc2VZUWhBSlJTWVRmUGdpNDBGR1Zobk1mU0VnNmpGcWJTMWFoWmVtbC1uN1ptdmdFQ0kxV3dlVlBJUXNKX0lrNjE2c0hmVnpvSW92VEdsamVzQzVSVHFYb0Z2V3dMa3JGV0hzbWZHdk9IYkdiWTk?oc=5",
+              "sentiment": -0.382,
+              "relevance": 0.753,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -4.05,
+            "count": 20,
+            "zscore": -3.53,
             "spike": false
           }
         },
@@ -251,40 +251,40 @@
       "moves": [
         {
           "date": "2026-11-21",
-          "return_pct": -11.09,
-          "zscore": -3.36,
+          "return_pct": -9.88,
+          "zscore": -2.96,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -7.9,
+          "market_return_pct": -8.56,
           "events": [
             {
-              "source": "googlenews_fed",
-              "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
-              "sentiment": -0.786,
-              "relevance": 0.714,
+              "source": "googlenews_eth",
+              "title": "Peter Schiff Warns of Weekend Crypto Crash Sending ETH to $1K - Cryptonews.net",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJYTYxR0F0bnVzZWFBN3FYNVlRWlphYnN1WV85UXJ2aGRhTVZRc1hnaWE0V1FJMVJqR0NLZTRlazZQM3Z3TmdGczJybXpyOTNEZHdpeGNwbzljdw?oc=5",
+              "sentiment": -0.477,
+              "relevance": 0.791,
               "event_type": "other"
             },
             {
               "source": "googlenews_eth",
-              "title": "Bitcoin Tumbles to Two-Year Low Under $58,000 as $2 Billion in Bullish Bets Get Wiped Out - finance.biggo.com",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5nUEY5OXFCZ2pyT3ZsZzJXdm1ONEZfeW55MVp5dlNKVEpyN2NjMVFSV2ZkdXE3SVVEaXFMLTRnT01JeUs3Zjg1bGw1QnZUQnM1N2FLN3JnVzIzYWtyUGhrV09QOGZqS0JBM3Q4RzFabHlleXU1UkE?oc=5",
-              "sentiment": -0.273,
-              "relevance": 0.709,
-              "event_type": "other"
+              "title": "ETH slides as downward price move persists after Glamsterdam upgrade delay and ETF outflows - Traders Union",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUjhiOUpzQnZWTzJja09SN1R1aG91alF1Z01qSEx4V1N0QS0tNXpwM0lzVThOd3V0MWw2emJoQkZlYjdXQzBMYzJvLTdPWFdNYU9JNGx1cnowYXVBMkFlR3FUbkxCYnhWdG9mQjJqZkRLa1oxMkh5U3ZfRVU3NlBOM3E1VWFRcldtM2Q0cml0RWZvaExtRnJqampadUQxbW1pcUtFdTln?oc=5",
+              "sentiment": -0.318,
+              "relevance": 0.727,
+              "event_type": "etf_flow"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.676,
-              "event_type": "inflation"
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.719,
+              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -3.99,
+            "count": 6,
+            "zscore": -3.72,
             "spike": false
           }
         },
@@ -492,12 +492,20 @@
       "moves": [
         {
           "date": "2026-11-21",
-          "return_pct": -9.53,
-          "zscore": -2.74,
+          "return_pct": -8.95,
+          "zscore": -2.54,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -7.9,
+          "market_return_pct": -8.56,
           "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.719,
+              "event_type": "fed"
+            },
             {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
@@ -507,25 +515,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.676,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.65,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.697,
+              "event_type": "macro"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -2.88,
+            "count": 6,
+            "zscore": -2.75,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 63,
-            "zscore": 1.01,
+            "count": 62,
+            "zscore": 0.94,
             "spike": false
           }
         },
@@ -733,12 +733,20 @@
       "moves": [
         {
           "date": "2026-11-21",
-          "return_pct": -9.45,
-          "zscore": -2.25,
+          "return_pct": -9.24,
+          "zscore": -2.2,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -7.9,
+          "market_return_pct": -8.56,
           "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.719,
+              "event_type": "fed"
+            },
             {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
@@ -748,25 +756,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.676,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.65,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.697,
+              "event_type": "macro"
             }
           ],
           "coverage": {
             "count": 1,
-            "zscore": -2.05,
+            "zscore": -2.06,
             "spike": false
           }
         },
@@ -974,12 +974,20 @@
       "moves": [
         {
           "date": "2026-11-21",
-          "return_pct": -8.96,
-          "zscore": -2.44,
+          "return_pct": -8.62,
+          "zscore": -2.34,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": -7.9,
+          "market_return_pct": -8.56,
           "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.719,
+              "event_type": "fed"
+            },
             {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
@@ -989,20 +997,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.676,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.65,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.697,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -1222,6 +1222,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -1235,14 +1243,6 @@
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ZZnRya3JpSnpFY3JleHd0aUo1S181S3lraE1RbDcxcHYyR215eHBqb2JBR2hJcXRsb0h4YzFJUmZCWnllcjlMLTJRQ1FIWVBERG1NcEVUWVNIbmJiNVdlMkNSSnpjdEFLRGgzZDVJN292ZlhKWUxTTg?oc=5",
               "sentiment": -0.784,
               "relevance": 0.914,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "S&P 500 sinks 3.7% and Nasdaq composite goes negative for the year as tech sell-off worsens - WSVN",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GbDlndW1GeE1yRTRvR1ZYV3UzZjNwcDlRX3RiMW55UUFtSUNpYzhnMmNIaUZQbWQ1ZnVua05kQ01VX0Z3aVNtSFBONU1GRkEwM19nVG54QVBpclVxd09UbHdRTkNZblZTQk5NNw?oc=5",
-              "sentiment": -0.778,
-              "relevance": 0.911,
               "event_type": "other"
             }
           ],
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.43,
+            "count": 7,
+            "zscore": -0.59,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.18,
+            "count": 11,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -1558,16 +1558,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "The Best Energy Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJSURsczAwWlF1bW8yeUx4dDFRYTZhQlItUGRDLVBPWDRpNG1ObGhrVkpoLU41Qk9sMmtwWW95a0o3NGg4enlUTG1KYTlYSmt2eUJBaEdqMmdGbnpwUlZDQ3Zfb2ZqaHhw?oc=5",
-              "sentiment": 0.743,
+              "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings? - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObnY4cHl3MlBtdWNQZ21Nelh1TlpTWDd5b3A0Q1VSazhuQlFNemdOUTdLRHVkYWtWd05HZ3VtQnkxTE1wcnBWbGV4VGt2MV9vdnZydUhMWEgwV3Jha1I4Zlk0M1lQWW1kTHNVTlE5RWdoaUhRdkJBMExRb01rS09Rc29PYzMwNHY2WmRiTlVGb0dmM0pwMVVoaVZlSm9nMC1RMEViNnJiYTVzZ3NJamtfbmZR?oc=5",
+              "sentiment": 0.273,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.22,
+            "count": 11,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
-              "sentiment": 0.273,
+              "title": "7 Best Energy ETFs to Buy Now | Investing - US News Money",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1YaUE2X1loYXhnN2p3Mmh3c0hOaHpuOF9SZ1RaMGEwbkRSc0xZWUU1bU5XYjBra1poVjJsakZUZnA1YktJMEJGRHJxcnUzTFZkQWVXTVlvYnV0R291V1FwaVc5VFpteXc5X0JCNEJuMTRqUWR3aDRlNnhuQlZ5Zw?oc=5",
+              "sentiment": 0.743,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "etf_flow"
             },
             {
               "source": "googlenews_energy",
-              "title": "State Street Energy Select Sector SPDR (XLE) Adds Exxon and Chevron on Oct. 29 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXRPRVVHa1J6Nm50cWVuQ3BYQl80QVJtcEFTN3dFYlo1bTJoblZBLXFaOW5NaUhaaXBtVnZhUUVpTDI0THQwaG9rZ1REdXUtbktIaElYZ3dHVHJFWVc0elNReXVqTDN5cmpTTDlqSVZWOGlLRy1EZzdJQ3kxLXJDbFh1WWxGdHRiZzZYVE1tcWVYR0gw?oc=5",
+              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 0.2,
+            "count": 15,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -1704,6 +1704,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -1712,20 +1720,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_finance",
-              "title": "AI Risks Compound Policy Pressure, U.S. Banking Sector Continues to Weaken - NAI500",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOX0NJbTZTLWJ0UzQzakhGa29yN3BkVm55UC1nV1A0aFdjN0tsTTQ3WjU0NTg1OXFIZGFjRTV6UVJXRE9lTHlFTFBRRDJIMk5qZ1p5VHpIUHZoNlNKdHJwYzVJV1VNYmxYRlctOF9VVDFMZi1zQmxHdFdkOHNuOXZWUHphR09xd0tjTzlQUVlXbDZ5bDhOenloVXU2QlhkSlJYcE5BaUpKMFM?oc=5",
-              "sentiment": -0.727,
-              "relevance": 0.891,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.49,
+            "zscore": -0.48,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.43,
+            "zscore": 0.44,
             "spike": false
           }
         },
@@ -2088,7 +2088,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.42,
+            "zscore": 0.43,
             "spike": false
           }
         },
@@ -2186,6 +2186,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -2194,25 +2202,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.7,
+            "zscore": 0.68,
             "spike": false
           }
         },
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 0.39,
+            "zscore": 0.38,
             "spike": false
           }
         },
@@ -2328,8 +2328,8 @@
             }
           ],
           "coverage": {
-            "count": 17,
-            "zscore": 2.5,
+            "count": 18,
+            "zscore": 2.73,
             "spike": true
           }
         },
@@ -2368,7 +2368,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 1.75,
+            "zscore": 1.74,
             "spike": false
           }
         },
@@ -2390,24 +2390,24 @@
             },
             {
               "source": "googlenews_industrial",
-              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.6,
-              "event_type": "earnings"
+              "title": "The Best Tech Stocks to Buy - Morningstar",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nQUxXVkFYWmFxZUROVjhycGl3ZlVHb0tJZHoyODBWU09YanR3SEpUdzQ0Yk01SEpTNzZnY1FvcGxVN0E5WlJBMW1Qckc2N09lTDNFM0RNd3J5TlVyYlRPUnJzWU5DUQ?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
             },
             {
               "source": "googlenews_industrial",
               "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1Sw?oc=5",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
               "sentiment": -0.637,
               "relevance": 0.6,
               "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": -0.24,
+            "count": 6,
+            "zscore": -0.02,
             "spike": false
           }
         }
@@ -2909,6 +2909,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -2917,25 +2925,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.3,
+            "count": 6,
+            "zscore": -0.79,
             "spike": false
           }
         },
@@ -2973,8 +2973,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -0.1,
+            "count": 12,
+            "zscore": 0.59,
             "spike": false
           }
         },
@@ -3150,6 +3150,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -3158,25 +3166,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.87,
+            "zscore": -0.86,
             "spike": false
           }
         },
@@ -3215,7 +3215,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 1.4,
+            "zscore": 1.34,
             "spike": false
           }
         },
@@ -3254,7 +3254,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.87,
+            "zscore": -0.85,
             "spike": false
           }
         },
@@ -3293,7 +3293,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.01,
+            "zscore": 0.0,
             "spike": false
           }
         },
@@ -3332,7 +3332,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.98,
+            "zscore": -0.97,
             "spike": false
           }
         },
@@ -3371,7 +3371,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.95,
+            "zscore": 0.93,
             "spike": false
           }
         }
@@ -3632,6 +3632,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -3640,20 +3648,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 92,
-            "zscore": 1.13,
+            "count": 95,
+            "zscore": 1.23,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.51,
+            "count": 46,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -4114,6 +4114,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -4122,20 +4130,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -4355,6 +4355,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -4363,20 +4371,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 0.57,
+            "count": 34,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 58,
-            "zscore": 3.56,
+            "zscore": 3.54,
             "spike": true
           }
         },
@@ -4738,8 +4738,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.09,
+            "count": 36,
+            "zscore": 1.19,
             "spike": false
           }
         },
@@ -4777,8 +4777,8 @@
             }
           ],
           "coverage": {
-            "count": 30,
-            "zscore": 0.63,
+            "count": 31,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -4816,8 +4816,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 2.81,
+            "count": 47,
+            "zscore": 2.69,
             "spike": true
           }
         }
@@ -4837,6 +4837,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -4845,20 +4853,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -5078,6 +5078,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -5086,20 +5094,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -5319,6 +5319,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -5333,14 +5341,6 @@
               "sentiment": -0.784,
               "relevance": 0.914,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
             }
           ],
           "coverage": {
@@ -5560,6 +5560,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -5568,20 +5576,12 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_biotech",
-              "title": "Biotech Stocks Trade Blows In Pancreatic Cancer Treatment - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaHlOT19qeFNXNEZVcE56TWhZeU9pbGRyMmFmR3VXbGx0T0dycVZ3bklycWFNaHVLbkl1ZVFFRkxyV0x4OU5wdExEZGlpc2dSRTBuS1FOLWVVT2hZY2xXR18yOE44YjBMUkpnOU54Qk1tMWpUYmJjc2w5NTd6WUNXbld6bFZiaWlNWGstbE9rVzVwbWpJQ0c1ankzUk1abjJOTGxzZFVB?oc=5",
-              "sentiment": -0.66,
-              "relevance": 0.864,
-              "event_type": "other"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
@@ -5801,6 +5801,14 @@
           "market_return_pct": -3.7,
           "events": [
             {
+              "source": "googlenews_macro",
+              "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+              "sentiment": -0.796,
+              "relevance": 0.919,
+              "event_type": "fed"
+            },
+            {
               "source": "googlenews_fed",
               "title": "Nasdaq Composite lost 0.6% as AI-sector unease persisted despite Anthr… - Rich Picks Daily",
               "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2J1QWN1aUMzTHBjRjVmb3dObEhQUXZiRnZiWFNRTjhKekhJcG1UTEhpQ1V3VExwa1dTaGJDbkE5TldkckEwejFkUDNSTnhpaFRKbDNZNTVJQThsOVlnY3YyNFJOZzFRNFl5SlBrSUFraHBvQW1EcFRCZk9fTG1UUHNaZ1VhUFNsMUt3Q1RQYzdiejJ0VmRYcGdZSl9jWTR2Q0E?oc=5",
@@ -5809,25 +5817,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Rate hikes ahead? Weaker rand raises inflation fears as Reserve Bank keeps door open - IOL",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVGUzblJ1OFg5LWxCbzZfR2s2ZFdyVzBOSTkzQzhFM0R4S09IVjVkME5YY1U4eTJ2YnlNZ2VxUEp5d2xNX1hWSVYtMjNLeHJrYVBnMUNvclp2N2taZEZvNTg5ZmtRODh5aGt6MmRQa1g2clotRUZOT2J2SXJXTS00b0I2MC1TMXVQN3VmUjhqb2xGV3RTRGdyX1lpQWpNRFU3by1nRmU2UGpzUQ?oc=5",
-              "sentiment": -0.691,
-              "relevance": 0.876,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Why is gold facing its worst week in eight months as Fed rate hike bets intensify? - Latest news from Azerbaijan",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTDRjTUVwSWowbmt3ZUdsbWJsdnZjcUVfMEV1ZnV0QzFJQzk0MFJwbEoxb2NBYUp3Sk1nQjBJc2UwM1VIbTlVaE5BZVpuazk0MzE3MGJnLUsxMGZzTGxUaVRRM3Q1eFQ3WGxnSE1JUDA4NHdEOTZQc05aWnVJT29BUDBScUVrX3lvVjM3TzJBeHA2U3lsSlpacE0xWTZtWERWRTRZUQ?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "fed"
+              "source": "googlenews_macro",
+              "title": "While the United States disregards recession risks, a global recession is quietly unfolding. - Moomoo",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGNGbnI1Q2E1aE82RU1mQm5tbTlXV2JWcGxUamF4MTV3SDd6WmNDcURSdzFoVkZWbWhWd0V0c05mT0RsUTRtNHVLNWs2VF9IdGk0ZDJUbmx1ZDZwUWdlcnd4d21tVlVuN2FIa0trVHd4dEFPa3hiRDAwYV9wbzVNbUI3cE1fOEVZVnA3YXVLV0N3VnB6RXZ3b1dlVVJlZ09GZ2pHU1lEeFZmamR5eVN0V0gxMA?oc=5",
+              "sentiment": -0.743,
+              "relevance": 0.897,
+              "event_type": "macro"
             }
           ],
           "coverage": {
             "count": 29,
-            "zscore": 0.0,
+            "zscore": -0.0,
             "spike": false
           }
         },
@@ -5865,8 +5865,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": 1.07,
+            "count": 45,
+            "zscore": 1.14,
             "spike": false
           }
         },
@@ -6032,9 +6032,9 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-21",
-      "return_pct": -7.9,
-      "zscore": -3.12,
-      "max_abs_z_recent": 3.12,
+      "return_pct": -8.56,
+      "zscore": -3.41,
+      "max_abs_z_recent": 3.41,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 0
