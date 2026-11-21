@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-11-20T00:50:09.928717+00:00",
+  "generated_at": "2026-11-21T00:49:52.666840+00:00",
   "title": "Paper trading",
   "disclaimer": "Portafogli VIRTUALI (paper trading): nessun denaro reale. Ordini simulati col modello di costi del progetto, eseguiti alla barra successiva. Non è consulenza finanziaria.",
   "scenarios": [
     {
       "scenario_id": "etf_top5",
       "initial_cash": 10000.0,
-      "equity": 7598.05,
+      "equity": 7527.81,
       "cash": 1250.38,
-      "return_pct": -24.02,
+      "return_pct": -24.72,
       "realized_pnl": -246.61,
       "fees_paid": 69.45,
       "fully_marked": true,
-      "last_processed": "2026-11-18",
+      "last_processed": "2026-11-19",
       "positions": [
         {
           "symbol": "ETH",
           "qty": 1.58330159,
           "avg_cost": 2431.4604,
-          "price": 1774.7491,
-          "value": 2809.96,
-          "pnl_pct": -27.01
+          "price": 1755.1898,
+          "value": 2778.99,
+          "pnl_pct": -27.81
         },
         {
           "symbol": "LINK",
           "qty": 389.15095281,
           "avg_cost": 11.9575,
-          "price": 9.0908,
-          "value": 3537.7,
-          "pnl_pct": -23.97
+          "price": 8.9899,
+          "value": 3498.43,
+          "pnl_pct": -24.82
         }
       ],
       "targets": {},
       "metrics": {
-        "sharpe": -2.16,
+        "sharpe": -2.23,
         "max_drawdown_pct": -33.92,
-        "time_underwater_pct": 88.2,
-        "n_days": 85
+        "time_underwater_pct": 88.4,
+        "n_days": 86
       },
       "curve": [
         {
@@ -382,6 +382,10 @@
         {
           "t": "2026-11-18",
           "v": 7598.05
+        },
+        {
+          "t": "2026-11-19",
+          "v": 7527.81
         }
       ],
       "recent_orders": [
@@ -470,37 +474,37 @@
     {
       "scenario_id": "large_100k",
       "initial_cash": 100000.0,
-      "equity": 102488.75,
+      "equity": 100765.84,
       "cash": 3985.8,
-      "return_pct": 2.49,
+      "return_pct": 0.77,
       "realized_pnl": 26254.04,
       "fees_paid": 2156.83,
       "fully_marked": true,
-      "last_processed": "2026-11-18",
+      "last_processed": "2026-11-19",
       "positions": [
         {
           "symbol": "ETH",
           "qty": 25.50772006,
           "avg_cost": 2389.0531,
-          "price": 1774.7491,
-          "value": 45269.8,
-          "pnl_pct": -25.71
+          "price": 1755.1898,
+          "value": 44770.89,
+          "pnl_pct": -26.53
         },
         {
           "symbol": "POL",
           "qty": 651751.88226161,
           "avg_cost": 0.0941,
-          "price": 0.0817,
-          "value": 53233.14,
-          "pnl_pct": -13.2
+          "price": 0.0798,
+          "value": 52009.15,
+          "pnl_pct": -15.2
         }
       ],
       "targets": {},
       "metrics": {
-        "sharpe": 0.38,
+        "sharpe": 0.29,
         "max_drawdown_pct": -29.55,
-        "time_underwater_pct": 90.2,
-        "n_days": 133
+        "time_underwater_pct": 90.3,
+        "n_days": 134
       },
       "curve": [
         {
@@ -1038,6 +1042,10 @@
         {
           "t": "2026-11-18",
           "v": 102488.75
+        },
+        {
+          "t": "2026-11-19",
+          "v": 100765.84
         }
       ],
       "recent_orders": [
@@ -1126,37 +1134,37 @@
     {
       "scenario_id": "mid_10k",
       "initial_cash": 10000.0,
-      "equity": 10248.87,
+      "equity": 10076.58,
       "cash": 398.58,
-      "return_pct": 2.49,
+      "return_pct": 0.77,
       "realized_pnl": 2625.4,
       "fees_paid": 215.68,
       "fully_marked": true,
-      "last_processed": "2026-11-18",
+      "last_processed": "2026-11-19",
       "positions": [
         {
           "symbol": "ETH",
           "qty": 2.55077201,
           "avg_cost": 2389.0531,
-          "price": 1774.7491,
-          "value": 4526.98,
-          "pnl_pct": -25.71
+          "price": 1755.1898,
+          "value": 4477.09,
+          "pnl_pct": -26.53
         },
         {
           "symbol": "POL",
           "qty": 65175.18822616,
           "avg_cost": 0.0941,
-          "price": 0.0817,
-          "value": 5323.31,
-          "pnl_pct": -13.2
+          "price": 0.0798,
+          "value": 5200.91,
+          "pnl_pct": -15.2
         }
       ],
       "targets": {},
       "metrics": {
-        "sharpe": 0.38,
+        "sharpe": 0.29,
         "max_drawdown_pct": -29.55,
-        "time_underwater_pct": 90.2,
-        "n_days": 133
+        "time_underwater_pct": 90.3,
+        "n_days": 134
       },
       "curve": [
         {
@@ -1694,6 +1702,10 @@
         {
           "t": "2026-11-18",
           "v": 10248.87
+        },
+        {
+          "t": "2026-11-19",
+          "v": 10076.58
         }
       ],
       "recent_orders": [
@@ -1782,37 +1794,37 @@
     {
       "scenario_id": "small_1k",
       "initial_cash": 1000.0,
-      "equity": 1024.89,
+      "equity": 1007.66,
       "cash": 39.86,
-      "return_pct": 2.49,
+      "return_pct": 0.77,
       "realized_pnl": 262.54,
       "fees_paid": 21.57,
       "fully_marked": true,
-      "last_processed": "2026-11-18",
+      "last_processed": "2026-11-19",
       "positions": [
         {
           "symbol": "ETH",
           "qty": 0.2550772,
           "avg_cost": 2389.0531,
-          "price": 1774.7491,
-          "value": 452.7,
-          "pnl_pct": -25.71
+          "price": 1755.1898,
+          "value": 447.71,
+          "pnl_pct": -26.53
         },
         {
           "symbol": "POL",
           "qty": 6517.51882262,
           "avg_cost": 0.0941,
-          "price": 0.0817,
-          "value": 532.33,
-          "pnl_pct": -13.2
+          "price": 0.0798,
+          "value": 520.09,
+          "pnl_pct": -15.2
         }
       ],
       "targets": {},
       "metrics": {
-        "sharpe": 0.38,
+        "sharpe": 0.29,
         "max_drawdown_pct": -29.55,
-        "time_underwater_pct": 90.2,
-        "n_days": 133
+        "time_underwater_pct": 90.3,
+        "n_days": 134
       },
       "curve": [
         {
@@ -2350,6 +2362,10 @@
         {
           "t": "2026-11-18",
           "v": 1024.89
+        },
+        {
+          "t": "2026-11-19",
+          "v": 1007.66
         }
       ],
       "recent_orders": [
