@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:35:00+00:00",
+  "generated_at": "2026-11-21T21:34:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-21",
+          "return_pct": 2.44,
+          "zscore": 1.56,
+          "classification": "asset-specific",
+          "severity": "notable",
+          "market_return_pct": 2.44,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin Bounces Off Two-Year Lows. Could Crypto Rescue Stocks on Monday? - Barron's",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1CdEVWQ1doTGNKcmpDTV83S2lzNi00SUxwcC1VNVVMM091dkJSY2RyZzQxUHB2RmV6US1jSGdUR2JWR1lrb3NsQjc5UEE2V2FtRVVzZHprVm8wNkdsTUQxOTVZRVoxcndRQ2Q5cXlxS3ctQ05R?oc=5",
+              "sentiment": 0.361,
+              "relevance": 0.744,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "'Never a Dull Moment': Fidelity's Timmer Raises Stakes Around BTC's $62,000 Price Level - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYm92aGkweFdMMTIzSEMyY1Qyd1pEM0g2alFRekxLT1UtNUplMkswQ3R4RS1peE5HVDd3ZEZUdkc4b3IxUXktM3dwczhvSC1zX0cwazlYdXJ0WVg1YW1kb1BySlhRQU16d1JNc2FnYVhSTHlWZnhMUzFYcGlxWkNRcVd5bmNBaG9hb1gyYjZOYTFFSmhuODFMbnRZVVpUTlhtT2FicmVWT0JyTTdna29fOXpzcFJGRUtjWl9rNE9hQzZUWTZQNmJVazU4ZGNVWE1aMXJJNUlwYmg?oc=5",
+              "sentiment": 0.309,
+              "relevance": 0.724,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "His Bitcoin Is Down 51% From Its Record, and at 70 He Has Booked a $100,000 Stock Gain This Year. Selling the Bitcoin by Dec. 31 Can Erase Most of the Gain Medicare Will Count - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcWNFbFNKOGNoQmtXaHBuWmpHSWxLdndtU1dLREI2eEFhZExjS19pOUQ1RE1LMXZDNWhxcWRiNFRKME1YLVNxTVZvaTF0eHkzUHJjMUdhb1BJRWZRZ1VHeWlXZzgwcXRmZFdHcnJ4LTlSRTl4NU9MdFc1M0V5NUVUbHBhc0hveldFWHBxOXRKdzVHb3pw?oc=5",
+              "sentiment": 0.794,
+              "relevance": 0.718,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 77,
+            "zscore": -1.26,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -5.01,
@@ -202,45 +241,6 @@
             "zscore": 1.45,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-04",
-          "return_pct": 3.96,
-          "zscore": 2.95,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 3.96,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto dips on Democrat midterm wins, Binance hack dent optimism - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS3JsNVJtbHo2MlJrX1owdjEzaFFEVmhLa2xSYWh4UUU1bTVmenM1VXhvOE1pbm1GdmtZVzR2Tl9hbXZYLVdLUnVHX3Z0bEU3UnBCenBjdVpXaTlyRWsyM3o2OGZhVmZVVzFQZWhwcjQxTVo2Q2xfRURYWkw0TzliekhUaTdVSGcwdFE?oc=5",
-              "sentiment": 0.817,
-              "relevance": 0.927,
-              "event_type": "hack"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Airlangga cites manufacturing growth and trade surplus as economic outlook improves - Indonesia Business Post",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ3B3d0RHeU80aTBIa0JKNmpXcFdTVEYyLXh2aFdNZ3NRalV4eUNaSXlFM2dBVXV6LUdCbGtReFR5TFRmMzB0QmdTMnFoZVZQZ2xRangxSjVpSkJaT21JcTdxUG52WHhNRjNUTjl2dkRCckhEWWdPLTljWnRZT0NyTm1TSUpLNnFFMVVBdVpDdnBybXJnNVkwZnhZTUxLRHl2WWIzR1pQNC1lSEp0c0s5WGRwX0haMWZ2R1dWUmcxeFVESE02ZWlvZ1dwbmN6Z0lCeWU3NGxueHQ1dw?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "US Midterm 2026 Results: Democrats Win Congress as US Futures and BTC Whipsaw - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxSElmSjNxdHZIMm0xRVhLU1g2TEluWnBGMHhLMGlLMExJbmw1R2VKcnlzWjdkbldGcXM0WHp5LTkzSTJMXzJmMW5YdXJTdnFCZ2M5WEZ5a1JLOG5ZSWE4amc0VkhNSF82?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 117,
-            "zscore": 0.67,
-            "spike": false
-          }
         }
       ]
     },
@@ -251,11 +251,11 @@
       "moves": [
         {
           "date": "2026-11-21",
-          "return_pct": 3.81,
-          "zscore": 1.62,
+          "return_pct": 3.85,
+          "zscore": 1.63,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 2.14,
+          "market_return_pct": 2.44,
           "events": [
             {
               "source": "googlenews_eth",
@@ -275,16 +275,16 @@
             },
             {
               "source": "googlenews_eth",
-              "title": "What Is the Best Crypto to Buy With $500 During This Crash? - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdUJ4cG5zSGR2MlZvM1U0d2hacExORGdwMnBGdkozbTRoemxhdl9ac1dZckM2ejYyeHdYTWhrUkNrSXRIWVdka0xaUDNhWF9SbXhBS3VmTXpRb3oxM2ZMWDZVRE1iZnpRZXlRa1Byb2tDTlJSSnY5b1pfc3FUa2VRNllHdThQVDJBYlRXTFNMcVJwcDBjdDV3M2o3eVJoempBUEQwVXFHUW15ZjhSamprR0N1Y1pFRzg?oc=5",
-              "sentiment": 0.268,
-              "relevance": 0.707,
+              "title": "Better Buy: Bitcoin vs. Ethereum - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYk5yN0VuemZGQ1hJSUVEZGZMU2c0TmRvN0lhSVNPS1BUaV9uemZOSEVEdGJtOG8tWkVEU3VVVE5UTk5hbW0yS1RnUGpXOW1wZzl5c3RBczlva1RIb1RoRTBCQmIteXlneUF3UTV3VGY5dWFnUG05M3M5ZDhabDhmYk9yeGJjUlJVa0tyZW9KcVAtSG9OQmNJcm5uS3ZfSkhaVVg3Z1p1QW9FNWFFMXc?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": -2.12,
+            "count": 43,
+            "zscore": -1.68,
             "spike": false
           }
         },
@@ -323,7 +323,7 @@
           ],
           "coverage": {
             "count": 70,
-            "zscore": -0.16,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 61,
-            "zscore": 0.87,
+            "count": 60,
+            "zscore": 0.81,
             "spike": false
           }
         },
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 29,
-            "zscore": 0.88,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 79,
-            "zscore": 1.56,
+            "count": 80,
+            "zscore": 1.6,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.43,
+            "count": 7,
+            "zscore": -0.59,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.18,
+            "count": 11,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -1558,16 +1558,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "The Best Energy Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJSURsczAwWlF1bW8yeUx4dDFRYTZhQlItUGRDLVBPWDRpNG1ObGhrVkpoLU41Qk9sMmtwWW95a0o3NGg4enlUTG1KYTlYSmt2eUJBaEdqMmdGbnpwUlZDQ3Zfb2ZqaHhw?oc=5",
-              "sentiment": 0.743,
+              "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings? - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObnY4cHl3MlBtdWNQZ21Nelh1TlpTWDd5b3A0Q1VSazhuQlFNemdOUTdLRHVkYWtWd05HZ3VtQnkxTE1wcnBWbGV4VGt2MV9vdnZydUhMWEgwV3Jha1I4Zlk0M1lQWW1kTHNVTlE5RWdoaUhRdkJBMExRb01rS09Rc29PYzMwNHY2WmRiTlVGb0dmM0pwMVVoaVZlSm9nMC1RMEViNnJiYTVzZ3NJamtfbmZR?oc=5",
+              "sentiment": 0.273,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "earnings"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.22,
+            "count": 11,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
-              "sentiment": 0.273,
+              "title": "7 Best Energy ETFs to Buy Now | Investing - US News Money",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1YaUE2X1loYXhnN2p3Mmh3c0hOaHpuOF9SZ1RaMGEwbkRSc0xZWUU1bU5XYjBra1poVjJsakZUZnA1YktJMEJGRHJxcnUzTFZkQWVXTVlvYnV0R291V1FwaVc5VFpteXc5X0JCNEJuMTRqUWR3aDRlNnhuQlZ5Zw?oc=5",
+              "sentiment": 0.743,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "etf_flow"
             },
             {
               "source": "googlenews_energy",
-              "title": "State Street Energy Select Sector SPDR (XLE) Adds Exxon and Chevron on Oct. 29 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXRPRVVHa1J6Nm50cWVuQ3BYQl80QVJtcEFTN3dFYlo1bTJoblZBLXFaOW5NaUhaaXBtVnZhUUVpTDI0THQwaG9rZ1REdXUtbktIaElYZ3dHVHJFWVc0elNReXVqTDN5cmpTTDlqSVZWOGlLRy1EZzdJQ3kxLXJDbFh1WWxGdHRiZzZYVE1tcWVYR0gw?oc=5",
+              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 0.2,
+            "count": 15,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -3697,7 +3697,7 @@
           ],
           "coverage": {
             "count": 18,
-            "zscore": 1.26,
+            "zscore": 1.25,
             "spike": false
           }
         },
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 0.57,
+            "count": 34,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -4738,8 +4738,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.09,
+            "count": 36,
+            "zscore": 1.19,
             "spike": false
           }
         },
@@ -4777,8 +4777,8 @@
             }
           ],
           "coverage": {
-            "count": 30,
-            "zscore": 0.63,
+            "count": 31,
+            "zscore": 0.74,
             "spike": false
           }
         },
@@ -4816,8 +4816,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 2.8,
+            "count": 47,
+            "zscore": 2.69,
             "spike": true
           }
         }
@@ -4863,7 +4863,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.24,
+            "zscore": -0.26,
             "spike": false
           }
         },
@@ -5826,8 +5826,8 @@
             }
           ],
           "coverage": {
-            "count": 30,
-            "zscore": 0.06,
+            "count": 31,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -5904,8 +5904,8 @@
             }
           ],
           "coverage": {
-            "count": 59,
-            "zscore": 2.33,
+            "count": 60,
+            "zscore": 2.4,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-21",
-      "return_pct": 2.14,
-      "zscore": 1.43,
+      "return_pct": 2.44,
+      "zscore": 1.56,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
