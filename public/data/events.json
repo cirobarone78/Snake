@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T03:34:00+00:00",
+  "generated_at": "2026-11-22T06:39:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 71,
-            "zscore": -0.11,
+            "count": 72,
+            "zscore": -0.05,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 83,
-            "zscore": 1.73,
+            "count": 84,
+            "zscore": 1.78,
             "spike": false
           }
         },
@@ -1729,8 +1729,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": 2.05,
+            "count": 9,
+            "zscore": 1.66,
             "spike": false
           }
         },
@@ -1769,7 +1769,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 2.65,
+            "zscore": 2.62,
             "spike": true
           }
         },
@@ -1808,7 +1808,7 @@
           ],
           "coverage": {
             "count": 12,
-            "zscore": 1.92,
+            "zscore": 1.88,
             "spike": false
           }
         },
@@ -1847,7 +1847,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 0.57,
+            "zscore": 0.56,
             "spike": false
           }
         },
@@ -1886,7 +1886,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": -0.2,
+            "zscore": -0.18,
             "spike": false
           }
         },
@@ -1925,7 +1925,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.6,
+            "zscore": -0.58,
             "spike": false
           }
         }
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 96,
-            "zscore": 1.26,
+            "count": 97,
+            "zscore": 1.29,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 58,
-            "zscore": 3.54,
+            "zscore": 3.55,
             "spike": true
           }
         },
@@ -4739,7 +4739,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 1.07,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -4817,7 +4817,7 @@
           ],
           "coverage": {
             "count": 48,
-            "zscore": 2.77,
+            "zscore": 2.78,
             "spike": true
           }
         }
@@ -4862,8 +4862,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.26,
+            "count": 4,
+            "zscore": 0.08,
             "spike": false
           }
         },
@@ -4902,7 +4902,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.07,
+            "zscore": -1.1,
             "spike": false
           }
         },
@@ -4941,7 +4941,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.29,
+            "zscore": 0.27,
             "spike": false
           }
         },
@@ -4962,25 +4962,25 @@
               "event_type": "inflation"
             },
             {
+              "source": "googlenews_defense",
+              "title": "Defense Stocks Sank as Democrats Took Congress and the $1.5 Trillion Budget Looks Doomed - 24/7 Wall St.",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVEpOaGNUSHVoU3lpSGtSc0xjTHU4Z01LeE1oZ3NuNFo1U3lleUFxZ29xVVYzVW1JYWtTODg4QzJCVjlCeU9Xc2J4Zy1NUldrc2tXUTl0QlJKWEoxLUFESTV5SXkxREt6bXIwV1VmQzM1cTkwRVpNUVMtRmtEVldTclJBVEJINkpsTUVsenNNaWxyMUNsbzg2WEw3a3ZiWUdVd25WQ2dPMXZzVGluSmVSRjNUSzZhSjlTdDVRcDFacC1hQ0tvTmk3UkdQWQ?oc=5",
+              "sentiment": -0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            },
+            {
               "source": "googlenews_fed",
               "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
               "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
               "sentiment": -0.542,
               "relevance": 0.817,
               "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "inflation"
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -0.35,
+            "count": 5,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -5019,7 +5019,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.67,
+            "zscore": -0.69,
             "spike": false
           }
         },
@@ -5058,7 +5058,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.16,
+            "zscore": -0.17,
             "spike": false
           }
         }
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 21,
-            "zscore": 0.09,
+            "count": 22,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -5383,8 +5383,8 @@
             }
           ],
           "coverage": {
-            "count": 45,
-            "zscore": 2.5,
+            "count": 49,
+            "zscore": 2.84,
             "spike": true
           }
         },
@@ -5625,7 +5625,7 @@
           ],
           "coverage": {
             "count": 21,
-            "zscore": 0.53,
+            "zscore": 0.54,
             "spike": false
           }
         },
@@ -5663,8 +5663,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 1.69,
+            "count": 32,
+            "zscore": 1.58,
             "spike": false
           }
         },
