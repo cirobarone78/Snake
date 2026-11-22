@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T21:34:00+00:00",
+  "generated_at": "2026-11-22T00:49:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,45 +8,6 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
-        {
-          "date": "2026-11-21",
-          "return_pct": 2.44,
-          "zscore": 1.56,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 2.44,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Bitcoin Bounces Off Two-Year Lows. Could Crypto Rescue Stocks on Monday? - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1CdEVWQ1doTGNKcmpDTV83S2lzNi00SUxwcC1VNVVMM091dkJSY2RyZzQxUHB2RmV6US1jSGdUR2JWR1lrb3NsQjc5UEE2V2FtRVVzZHprVm8wNkdsTUQxOTVZRVoxcndRQ2Q5cXlxS3ctQ05R?oc=5",
-              "sentiment": 0.361,
-              "relevance": 0.744,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "'Never a Dull Moment': Fidelity's Timmer Raises Stakes Around BTC's $62,000 Price Level - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYm92aGkweFdMMTIzSEMyY1Qyd1pEM0g2alFRekxLT1UtNUplMkswQ3R4RS1peE5HVDd3ZEZUdkc4b3IxUXktM3dwczhvSC1zX0cwazlYdXJ0WVg1YW1kb1BySlhRQU16d1JNc2FnYVhSTHlWZnhMUzFYcGlxWkNRcVd5bmNBaG9hb1gyYjZOYTFFSmhuODFMbnRZVVpUTlhtT2FicmVWT0JyTTdna29fOXpzcFJGRUtjWl9rNE9hQzZUWTZQNmJVazU4ZGNVWE1aMXJJNUlwYmg?oc=5",
-              "sentiment": 0.309,
-              "relevance": 0.724,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "His Bitcoin Is Down 51% From Its Record, and at 70 He Has Booked a $100,000 Stock Gain This Year. Selling the Bitcoin by Dec. 31 Can Erase Most of the Gain Medicare Will Count - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcWNFbFNKOGNoQmtXaHBuWmpHSWxLdndtU1dLREI2eEFhZExjS19pOUQ1RE1LMXZDNWhxcWRiNFRKME1YLVNxTVZvaTF0eHkzUHJjMUdhb1BJRWZRZ1VHeWlXZzgwcXRmZFdHcnJ4LTlSRTl4NU9MdFc1M0V5NUVUbHBhc0hveldFWHBxOXRKdzVHb3pw?oc=5",
-              "sentiment": 0.794,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 77,
-            "zscore": -1.26,
-            "spike": false
-          }
-        },
         {
           "date": "2026-11-20",
           "return_pct": -5.01,
@@ -159,8 +120,8 @@
             }
           ],
           "coverage": {
-            "count": 129,
-            "zscore": 1.14,
+            "count": 128,
+            "zscore": 1.09,
             "spike": false
           }
         },
@@ -241,6 +202,45 @@
             "zscore": 1.45,
             "spike": false
           }
+        },
+        {
+          "date": "2026-11-04",
+          "return_pct": 3.96,
+          "zscore": 2.95,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 3.96,
+          "events": [
+            {
+              "source": "googlenews_btc",
+              "title": "Crypto dips on Democrat midterm wins, Binance hack dent optimism - Yahoo! Finance Canada",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS3JsNVJtbHo2MlJrX1owdjEzaFFEVmhLa2xSYWh4UUU1bTVmenM1VXhvOE1pbm1GdmtZVzR2Tl9hbXZYLVdLUnVHX3Z0bEU3UnBCenBjdVpXaTlyRWsyM3o2OGZhVmZVVzFQZWhwcjQxTVo2Q2xfRURYWkw0TzliekhUaTdVSGcwdFE?oc=5",
+              "sentiment": 0.817,
+              "relevance": 0.927,
+              "event_type": "hack"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Airlangga cites manufacturing growth and trade surplus as economic outlook improves - Indonesia Business Post",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ3B3d0RHeU80aTBIa0JKNmpXcFdTVEYyLXh2aFdNZ3NRalV4eUNaSXlFM2dBVXV6LUdCbGtReFR5TFRmMzB0QmdTMnFoZVZQZ2xRangxSjVpSkJaT21JcTdxUG52WHhNRjNUTjl2dkRCckhEWWdPLTljWnRZT0NyTm1TSUpLNnFFMVVBdVpDdnBybXJnNVkwZnhZTUxLRHl2WWIzR1pQNC1lSEp0c0s5WGRwX0haMWZ2R1dWUmcxeFVESE02ZWlvZ1dwbmN6Z0lCeWU3NGxueHQ1dw?oc=5",
+              "sentiment": 0.66,
+              "relevance": 0.864,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "US Midterm 2026 Results: Democrats Win Congress as US Futures and BTC Whipsaw - BeInCrypto",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxSElmSjNxdHZIMm0xRVhLU1g2TEluWnBGMHhLMGlLMExJbmw1R2VKcnlzWjdkbldGcXM0WHp5LTkzSTJMXzJmMW5YdXJTdnFCZ2M5WEZ5a1JLOG5ZSWE4amc0VkhNSF82?oc=5",
+              "sentiment": 0.586,
+              "relevance": 0.834,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 117,
+            "zscore": 0.67,
+            "spike": false
+          }
         }
       ]
     },
@@ -250,19 +250,19 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-11-21",
-          "return_pct": 3.85,
-          "zscore": 1.63,
+          "date": "2026-11-22",
+          "return_pct": 3.76,
+          "zscore": 1.6,
           "classification": "asset-specific",
           "severity": "notable",
-          "market_return_pct": 2.44,
+          "market_return_pct": 2.26,
           "events": [
             {
               "source": "googlenews_eth",
               "title": "Crypto News Today: Bitcoin Price Nears $55K as Ethereum Plunges 10% and XRP Tests $0.87 Support - Brave New Coin",
               "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU0h3ZWxxOVhqUkhmb250bmItdklPNzJVR09id05ORWROUnN5N1FpS3E0b0RUNEk2dUE0aXE2YllBbjlOTmdKUXdMWmpfaHNOanlEMHdCN21tOXNaRGxkWHNudUtvYk9vVGxRZWFYalpFWVpzTGZoNkFkb3QzdDhZN2haRFVydmduZHNHWkJEOUZheGxFaGpGR3VhV1AzVEs2VWRsWmpieDZPSmQ0blA0djV4bDFSQ0JqV1VBelRiVkdzN3M?oc=5",
               "sentiment": 0.727,
-              "relevance": 0.891,
+              "relevance": 0.691,
               "event_type": "other"
             },
             {
@@ -270,7 +270,7 @@
               "title": "Ethereum Price Prediction: ETH Could Experience a Relief Rally to $1.9K as Daily RSI Flashes Oversold - FXEmpire",
               "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOcEl2N0xPQW5Hd1Bfa25yYWdTb0plYmY5X3ViaHU5SkY3dDg0Rzlpck9RNVFnRF8yOXZKNHpmNlZKU05QU1pnSFFtTVdmSFhOUmtwODhvLUlvUUF0TlNRRHhmVWFMbGhQUEszRW54ZEpFZ1I5ZF9ZSktrVW9DdERFcW11MG0ya1VkOWlSM0N5MXdVWVlJY2U0cGwtU1AtcGxrNHlvSS1MTTVzWXdsNWhkd3pKcUdsU21iTW9ubjV3dFhRYnlNWEJzT3pKWDJ4RktKdzlRd1MzOUdqSmF2YWZLZy1YTVA?oc=5",
               "sentiment": 0.477,
-              "relevance": 0.791,
+              "relevance": 0.591,
               "event_type": "other"
             },
             {
@@ -278,13 +278,13 @@
               "title": "Better Buy: Bitcoin vs. Ethereum - The Globe and Mail",
               "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYk5yN0VuemZGQ1hJSUVEZGZMU2c0TmRvN0lhSVNPS1BUaV9uemZOSEVEdGJtOG8tWkVEU3VVVE5UTk5hbW0yS1RnUGpXOW1wZzl5c3RBczlva1RIb1RoRTBCQmIteXlneUF3UTV3VGY5dWFnUG05M3M5ZDhabDhmYk9yeGJjUlJVa0tyZW9KcVAtSG9OQmNJcm5uS3ZfSkhaVVg3Z1p1QW9FNWFFMXc?oc=5",
               "sentiment": 0.44,
-              "relevance": 0.776,
+              "relevance": 0.576,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": -1.68,
+            "count": 0,
+            "zscore": null,
             "spike": false
           }
         },
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 70,
-            "zscore": -0.17,
+            "count": 71,
+            "zscore": -0.11,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 60,
-            "zscore": 0.81,
+            "count": 61,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 80,
-            "zscore": 1.6,
+            "count": 82,
+            "zscore": 1.69,
             "spike": false
           }
         },
@@ -1558,11 +1558,11 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings? - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObnY4cHl3MlBtdWNQZ21Nelh1TlpTWDd5b3A0Q1VSazhuQlFNemdOUTdLRHVkYWtWd05HZ3VtQnkxTE1wcnBWbGV4VGt2MV9vdnZydUhMWEgwV3Jha1I4Zlk0M1lQWW1kTHNVTlE5RWdoaUhRdkJBMExRb01rS09Rc29PYzMwNHY2WmRiTlVGb0dmM0pwMVVoaVZlSm9nMC1RMEViNnJiYTVzZ3NJamtfbmZR?oc=5",
+              "title": "Ten oversold energy stocks as oil prices slide after U.S. midterm elections (USO:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTHFpWGtsOE81ckJ5amZYbE5oem41VVhyNnJuaTFXMzhmYU1FSGJTeFBzM2QyNzluMXo0cHd3ZkFxNVZrZk1iWFdPaE9aTWRfa25MeTBIbnlmemhRUENYUGpGel9rdldZUy1sTG5pWnNNOVFTZ3R4OTdXM0tXN1EtcnhjcVBOQ09BamF2WThLMjd2VFhhVTVMbGpPd2x5LTBabnFOSXVITnpBcGJOaFpFcQ?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
-              "event_type": "earnings"
+              "event_type": "other"
             }
           ],
           "coverage": {
@@ -6031,13 +6031,13 @@
   ],
   "market_pulse": {
     "crypto": {
-      "date": "2026-11-21",
-      "return_pct": 2.44,
-      "zscore": 1.56,
+      "date": "2026-11-22",
+      "return_pct": 2.26,
+      "zscore": 1.48,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     },
     "equity": {
       "date": "2026-11-20",
@@ -6046,7 +6046,7 @@
       "max_abs_z_recent": 2.78,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 2
     }
   }
 }
