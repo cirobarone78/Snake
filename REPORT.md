@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-21 07:07 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-22 07:07 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 1.00 | +21.0% | $348M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 2 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.97 | +0.5% | $753M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
-| 3 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.96 | +0.5% | $753M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
-| 4 | Bank-Issued Stablecoin | hot | 0.92 | -0.4% | $229M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| 5 | Fiat-backed Stablecoin | hot | 0.92 | -0.3% | $266.6B | tether, usd-coin, usds |
-| 6 | Stablecoins | hot | 0.91 | -0.3% | $279.4B | tether, usd-coin, usds |
-| 7 | MiCA-Compliant Stablecoin | hot | 0.91 | -0.2% | $69.1B | usd-coin, euro-coin, societe-generale-forge-eurcv |
-| 8 | USD Stablecoin | hot | 0.91 | -0.3% | $276.6B | tether, usd-coin, usds |
+| 1 | Bridged-Tokens | hot | 0.98 | +6.3% | $327M | binance-bridged-usdt-bnb-smart-chain, usdt0, binance-bridged-usdc-bnb-smart-chain |
+| 2 | PolitiFi | hot | 0.93 | +4.7% | $330M | official-trump, melania-meme, constitutiondao |
+| 3 | DeFAI | hot | 0.89 | +13.1% | $569M | derive, cortex-2, velvet |
+| 4 | Fan Token | hot | 0.87 | +2.6% | $104M | croatian-ff-fan-token, og-fan-token, galatasaray-fan-token |
+| 5 | Restaking | warm | 0.83 | +4.8% | $941M | wrapped-eeth, kelp-dao-restaked-eth, ether-fi |
+| 6 | Data Availability | warm | 0.83 | +4.9% | $4.5B | near, celestia, unibase |
+| 7 | Breeding | warm | 0.82 | +2.9% | $123M | axie-infinity, frenpet, cryptozoon |
+| 8 | AI Applications | warm | 0.81 | +10.1% | $3.0B | venice-token, pieverse, quack-ai |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| SocialFi | -23.2% | $1.2B | pump-fun, swop-2, project-galaxy |
-| Metagovernance | -18.5% | $110M | convex-finance, dinero-2, aura-finance |
-| Launchpad | -15.4% | $3.3B | pump-fun, jupiter-exchange-solana, pancakeswap-token |
-| Quantum-Resistant | -13.8% | $14.4B | zcash, algorand, injective-protocol |
-| Zero Knowledge (ZK) | -13.3% | $15.5B | zcash, polygon-ecosystem-token, midnight-3 |
+| Tokenized Exchange-Traded Product (ETPs) | -11.5% | $624M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
+| Tokenized Exchange-Traded Funds (ETFs) | -11.5% | $624M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
+| Gaming Marketplace | -11.3% | $107M | immutable-x, overtake, jackpotter |
+| Ondo Tokenized Assets | -9.9% | $778M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
+| Prediction Markets | -7.9% | $2.4B | rain, overtime, cloudbank |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
