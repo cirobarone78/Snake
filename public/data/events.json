@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T18:34:00+00:00",
+  "generated_at": "2026-11-23T21:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -491,45 +491,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-11-23",
-          "return_pct": 4.27,
-          "zscore": 1.7,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.48,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Claude Predicts Ethereum at $2,000 and Solana at $100: Could Apeing Be the Best Crypto Presale of 2026? - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNmprNnRQd1pheTgtVjQ2R0NjOXdwY29uMTV6TC1GZDJLSTZjSXRBTEFHNmp4R3ltVl84cjVCUy1sSlZnUFc5QzQxcnlXLUNuanViQzRkaFl2dWtpWmYwTkNwSzh6MWtENktiNVRqMXhKWlNiSU5KQ3NNN3FOWm40d2hLQzB5b2FONExIMWljSzFCaTYtRlJjag?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Bitcoin, Solana and the Best Crypto Portfolio: A $134.7M Whale Deposit Versus an $11.3M Presale Raise - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaGdkam5XT0JKeW02VDVDNTJGRW1NY2JRd09CLXpvY0pKbHFrbndEUHhTWm5aeGl2ZFhSQkgwb2ZrbTRCb3BKLXhISzBXV1RmNHR0S0Uza05ZMVI3UjR0UVE5YVRvWUdPekNVUVlZdXVSWDZ6T1pxVzU3UUNVTnI4dnlweVM4UjhWVTNuY2l2cVg2eVotOFJrelhLbw?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana Surges 3.8% on Oversold Bounce, ETF Inflows, Positive News - CoinMarketCap",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBMT2hfd19DaXdBb2FBTGIzSzY0ZzRDQVFCQ0tzR3R3UFZtdjBjZWpsR292WW1aeWFLQmQzV3YtVW15a0gzSkpIXzR1amtNY0ZKVzN6X3BTNzFwcFA4b3pKTjZXZ0g5ODVlcFp6S1dXbWE?oc=5",
-              "sentiment": 0.557,
-              "relevance": 0.823,
-              "event_type": "etf_flow"
-            }
-          ],
-          "coverage": {
-            "count": 57,
-            "zscore": 0.62,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-20",
           "return_pct": -5.91,
           "zscore": -1.55,
@@ -563,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 49,
-            "zscore": 0.04,
+            "count": 48,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -721,6 +682,45 @@
           "coverage": {
             "count": 62,
             "zscore": 1.03,
+            "spike": false
+          }
+        },
+        {
+          "date": "2026-11-05",
+          "return_pct": -6.64,
+          "zscore": -2.64,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -5.55,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 69,
+            "zscore": 1.79,
             "spike": false
           }
         }
@@ -1215,11 +1215,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 9.07,
-          "zscore": 3.72,
+          "return_pct": 8.97,
+          "zscore": 3.68,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -1247,8 +1247,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": 0.09,
+            "count": 53,
+            "zscore": 0.46,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.43,
+            "count": 7,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.18,
+            "count": 11,
+            "zscore": -0.33,
             "spike": false
           }
         },
@@ -1558,16 +1558,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "The Best Energy Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJSURsczAwWlF1bW8yeUx4dDFRYTZhQlItUGRDLVBPWDRpNG1ObGhrVkpoLU41Qk9sMmtwWW95a0o3NGg4enlUTG1KYTlYSmt2eUJBaEdqMmdGbnpwUlZDQ3Zfb2ZqaHhw?oc=5",
-              "sentiment": 0.743,
+              "title": "Ten oversold energy stocks as oil prices slide after U.S. midterm elections (USO:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTHFpWGtsOE81ckJ5amZYbE5oem41VVhyNnJuaTFXMzhmYU1FSGJTeFBzM2QyNzluMXo0cHd3ZkFxNVZrZk1iWFdPaE9aTWRfa25MeTBIbnlmemhRUENYUGpGel9rdldZUy1sTG5pWnNNOVFTZ3R4OTdXM0tXN1EtcnhjcVBOQ09BamF2WThLMjd2VFhhVTVMbGpPd2x5LTBabnFOSXVITnpBcGJOaFpFcQ?oc=5",
+              "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.22,
+            "count": 11,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
-              "sentiment": 0.273,
+              "title": "7 Best Energy ETFs to Buy Now | Investing - US News Money",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1YaUE2X1loYXhnN2p3Mmh3c0hOaHpuOF9SZ1RaMGEwbkRSc0xZWUU1bU5XYjBra1poVjJsakZUZnA1YktJMEJGRHJxcnUzTFZkQWVXTVlvYnV0R291V1FwaVc5VFpteXc5X0JCNEJuMTRqUWR3aDRlNnhuQlZ5Zw?oc=5",
+              "sentiment": 0.743,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "etf_flow"
             },
             {
               "source": "googlenews_energy",
-              "title": "State Street Energy Select Sector SPDR (XLE) Adds Exxon and Chevron on Oct. 29 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXRPRVVHa1J6Nm50cWVuQ3BYQl80QVJtcEFTN3dFYlo1bTJoblZBLXFaOW5NaUhaaXBtVnZhUUVpTDI0THQwaG9rZ1REdXUtbktIaElYZ3dHVHJFWVc0elNReXVqTDN5cmpTTDlqSVZWOGlLRy1EZzdJQ3kxLXJDbFh1WWxGdHRiZzZYVE1tcWVYR0gw?oc=5",
+              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 0.2,
+            "count": 15,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -1697,11 +1697,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 2.27,
-          "zscore": 1.74,
+          "return_pct": 1.98,
+          "zscore": 1.52,
           "classification": "market-wide",
           "severity": "notable",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_finance",
@@ -2179,11 +2179,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 4.05,
-          "zscore": 2.93,
+          "return_pct": 3.9,
+          "zscore": 2.83,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_industrial",
@@ -2902,11 +2902,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 4.5,
-          "zscore": 2.66,
+          "return_pct": 3.97,
+          "zscore": 2.35,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -2934,8 +2934,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": -1.18,
+            "count": 8,
+            "zscore": -0.24,
             "spike": false
           }
         },
@@ -3143,11 +3143,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 3.05,
-          "zscore": 2.44,
+          "return_pct": 3.23,
+          "zscore": 2.58,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -3625,11 +3625,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 3.6,
-          "zscore": 2.71,
+          "return_pct": 3.57,
+          "zscore": 2.69,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -3866,11 +3866,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 14.91,
-          "zscore": 4.14,
+          "return_pct": 15.03,
+          "zscore": 4.17,
           "classification": "asset-specific",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_semis",
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 59,
-            "zscore": 0.04,
+            "count": 72,
+            "zscore": 0.44,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 99,
-            "zscore": 1.36,
+            "count": 102,
+            "zscore": 1.46,
             "spike": false
           }
         },
@@ -3976,8 +3976,8 @@
             }
           ],
           "coverage": {
-            "count": 47,
-            "zscore": -0.41,
+            "count": 49,
+            "zscore": -0.34,
             "spike": false
           }
         },
@@ -4107,11 +4107,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 6.33,
-          "zscore": 2.49,
+          "return_pct": 5.9,
+          "zscore": 2.35,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -4139,8 +4139,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": 0.67,
+            "count": 4,
+            "zscore": 1.28,
             "spike": false
           }
         },
@@ -4348,11 +4348,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 3.11,
-          "zscore": 1.96,
+          "return_pct": 2.82,
+          "zscore": 1.81,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_cleanenergy",
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.25,
+            "zscore": 0.24,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.53,
+            "zscore": -0.54,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.47,
+            "zscore": 0.46,
             "spike": false
           }
         },
@@ -4575,8 +4575,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.96,
+            "count": 8,
+            "zscore": 1.17,
             "spike": false
           }
         }
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 0.56,
+            "count": 34,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -4738,8 +4738,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.08,
+            "count": 36,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -4777,8 +4777,8 @@
             }
           ],
           "coverage": {
-            "count": 30,
-            "zscore": 0.62,
+            "count": 31,
+            "zscore": 0.73,
             "spike": false
           }
         },
@@ -4816,8 +4816,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 2.78,
+            "count": 47,
+            "zscore": 2.67,
             "spike": true
           }
         }
@@ -4830,11 +4830,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 3.6,
-          "zscore": 2.11,
+          "return_pct": 3.49,
+          "zscore": 2.05,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -4862,8 +4862,8 @@
             }
           ],
           "coverage": {
-            "count": 1,
-            "zscore": -0.92,
+            "count": 2,
+            "zscore": -0.55,
             "spike": false
           }
         },
@@ -5071,11 +5071,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 7.92,
-          "zscore": 4.01,
+          "return_pct": 7.57,
+          "zscore": 3.85,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -5103,8 +5103,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": 0.1,
+            "count": 5,
+            "zscore": 0.81,
             "spike": false
           }
         },
@@ -5312,11 +5312,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 3.74,
-          "zscore": 1.62,
+          "return_pct": 3.77,
+          "zscore": 1.63,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 40,
-            "zscore": 1.33,
+            "count": 46,
+            "zscore": 1.69,
             "spike": false
           }
         },
@@ -5553,11 +5553,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 4.84,
-          "zscore": 2.14,
+          "return_pct": 4.98,
+          "zscore": 2.2,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_biotech",
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 18,
-            "zscore": 0.16,
+            "count": 21,
+            "zscore": 0.51,
             "spike": false
           }
         },
@@ -5794,11 +5794,11 @@
       "moves": [
         {
           "date": "2026-11-23",
-          "return_pct": 6.79,
-          "zscore": 2.2,
+          "return_pct": 6.43,
+          "zscore": 2.1,
           "classification": "market-wide",
           "severity": "major",
-          "market_return_pct": 5.0,
+          "market_return_pct": 4.73,
           "events": [
             {
               "source": "googlenews_macro",
@@ -5817,17 +5817,17 @@
               "event_type": "other"
             },
             {
-              "source": "googlenews_fed",
-              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
-              "sentiment": 0.691,
-              "relevance": 0.876,
-              "event_type": "fed"
+              "source": "googlenews_gold_miners",
+              "title": "Can Harmony Gold (NYSE:HMY) Sustain Progress Through Production Challenges? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2JBdXB6MTkwM095ckRLNUprUjNnS09OTEtwMnFLU0RnaGczcTkzallNZnUxdkdKdlpxYzJ0cjBoYWJLTlVQZmp1ekdHOUVZRndXZDRlb21mTHFfQmhiSVFMeG01LTFDMXpxR0FZWGRrdmRZWlRGLXN0a3VPODVPUTc2RTFxNlMydHBPZkhDNlhXT3BvYlFpeXJpM3JaTjhoRVV2aDdDVHlHcDlWc2N4MQ?oc=5",
+              "sentiment": 0.7,
+              "relevance": 0.88,
+              "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.25,
+            "count": 37,
+            "zscore": 0.57,
             "spike": false
           }
         },
@@ -6032,18 +6032,18 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-23",
-      "return_pct": 0.48,
-      "zscore": 0.58,
+      "return_pct": 0.3,
+      "zscore": 0.5,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 0
+      "days_since_last_major": 3
     },
     "equity": {
       "date": "2026-11-23",
-      "return_pct": 5.0,
-      "zscore": 3.93,
-      "max_abs_z_recent": 3.93,
+      "return_pct": 4.73,
+      "zscore": 3.73,
+      "max_abs_z_recent": 3.73,
       "recent_days": 10,
       "benchmark": "SPX",
       "days_since_last_major": 0
