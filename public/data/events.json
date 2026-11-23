@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T12:39:00+00:00",
+  "generated_at": "2026-11-23T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -8,6 +8,45 @@
       "name": "Bitcoin",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 3.19,
+          "zscore": 1.71,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 3.19,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_btc",
+              "title": "Bitcoin's 5-year return is nearly zero, great narratives are fading and what's left is the Fed - CoinDesk",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbWtzS2ZObDlUeS1BQUtWQlllSml5X3JHeGFMUHFXMmRUTUVtalZtQnJvVlBaamFDd05KTktGdFFwWDVobzI1S2pMOENQQVVLNThTM0FXVGY0YkJFeXZNTmRTeFZ0ZW14ZUprbmw2ZXFaNXpzQndPMjBocXJGVzIzajlzTG5NV2ZfVXQ5X0ttWmtJMC1jLTRYY0JBaGVkNWdjejVwZlNhS1gwb2lDYXR0RS1jeXN6Y3FLdFNKdzM3cEF1WEVOR1ZXM0N4WDZFNmZHX2Nr?oc=5",
+              "sentiment": 0.625,
+              "relevance": 0.85,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 109,
+            "zscore": 0.03,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -5.01,
@@ -200,45 +239,6 @@
           "coverage": {
             "count": 133,
             "zscore": 1.45,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-04",
-          "return_pct": 3.96,
-          "zscore": 2.95,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 3.96,
-          "events": [
-            {
-              "source": "googlenews_btc",
-              "title": "Crypto dips on Democrat midterm wins, Binance hack dent optimism - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS3JsNVJtbHo2MlJrX1owdjEzaFFEVmhLa2xSYWh4UUU1bTVmenM1VXhvOE1pbm1GdmtZVzR2Tl9hbXZYLVdLUnVHX3Z0bEU3UnBCenBjdVpXaTlyRWsyM3o2OGZhVmZVVzFQZWhwcjQxTVo2Q2xfRURYWkw0TzliekhUaTdVSGcwdFE?oc=5",
-              "sentiment": 0.817,
-              "relevance": 0.927,
-              "event_type": "hack"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Airlangga cites manufacturing growth and trade surplus as economic outlook improves - Indonesia Business Post",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ3B3d0RHeU80aTBIa0JKNmpXcFdTVEYyLXh2aFdNZ3NRalV4eUNaSXlFM2dBVXV6LUdCbGtReFR5TFRmMzB0QmdTMnFoZVZQZ2xRangxSjVpSkJaT21JcTdxUG52WHhNRjNUTjl2dkRCckhEWWdPLTljWnRZT0NyTm1TSUpLNnFFMVVBdVpDdnBybXJnNVkwZnhZTUxLRHl2WWIzR1pQNC1lSEp0c0s5WGRwX0haMWZ2R1dWUmcxeFVESE02ZWlvZ1dwbmN6Z0lCeWU3NGxueHQ1dw?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_btc",
-              "title": "US Midterm 2026 Results: Democrats Win Congress as US Futures and BTC Whipsaw - BeInCrypto",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxSElmSjNxdHZIMm0xRVhLU1g2TEluWnBGMHhLMGlLMExJbmw1R2VKcnlzWjdkbldGcXM0WHp5LTkzSTJMXzJmMW5YdXJTdnFCZ2M5WEZ5a1JLOG5ZSWE4amc0VkhNSF82?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 116,
-            "zscore": 0.62,
             "spike": false
           }
         }
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 7.43,
+          "zscore": 2.69,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 3.19,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Claude Predicts Ethereum at $2,000 and Solana at $100: Could Apeing Be the Best Crypto Presale of 2026? - openPR.com",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNmprNnRQd1pheTgtVjQ2R0NjOXdwY29uMTV6TC1GZDJLSTZjSXRBTEFHNmp4R3ltVl84cjVCUy1sSlZnUFc5QzQxcnlXLUNuanViQzRkaFl2dWtpWmYwTkNwSzh6MWtENktiNVRqMXhKWlNiSU5KQ3NNN3FOWm40d2hLQzB5b2FONExIMWljSzFCaTYtRlJjag?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Surges 3.8% on Oversold Bounce, ETF Inflows, Positive News - CoinMarketCap",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBMT2hfd19DaXdBb2FBTGIzSzY0ZzRDQVFCQ0tzR3R3UFZtdjBjZWpsR292WW1aeWFLQmQzV3YtVW15a0gzSkpIXzR1amtNY0ZKVzN6X3BTNzFwcFA4b3pKTjZXZ0g5ODVlcFp6S1dXbWE?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.823,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_sol",
+              "title": "Ethereum, Solana and the Next Crypto to Make You Rich: Which One Still Has 257x Left? - openPR.com",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU1hSa2U5SXdaMXA2RDBnVjc4aVZlVlNJTmgxZ3VqZDNQaUZYRW8tMElNTFRrNUQwR0pOMkxZdS1DV0hMZnEzaFJ3LVgtbzdWdjl6Z2U3UjNTYjRCdHcteEFoSXlrSmFSS2xraTJhQnRKcmMtd296Rm9aRDI5N05sNlpWczVEVDZ1QTdFeHZKTUtsZWRuclZwR1Y3WXRCZGs?oc=5",
+              "sentiment": 0.557,
+              "relevance": 0.823,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 41,
+            "zscore": -0.39,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -5.91,
           "zscore": -1.55,
@@ -684,45 +723,6 @@
             "zscore": 1.03,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -6.64,
-          "zscore": -2.64,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -5.55,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 69,
-            "zscore": 1.79,
-            "spike": false
-          }
         }
       ]
     },
@@ -731,6 +731,45 @@
       "name": "Chainlink",
       "universe": "crypto",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 5.34,
+          "zscore": 1.63,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 3.19,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold Prices Rebound After 30% Fall From Peak; Check 22K, 24K Rates Across Cities - Free Press Journal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1hTdjY5VzN2UC13RVZoYU1GSU5ZdC1EZGlQY1FUSXFFM3EyRV9ZdzdLNmZ0UHRjZHhxcm90clpyTThId2ljekVVTzREajNyUDRMZDBGR0E0dWtBSlVvbzd6SVU4MU9aMDZKTjEyNmxVVGhfNklkYnJKVEloOThSd0RiRVBhZnIxNGpHa0puREV5TVcyWlF3ZnZ3RWdObHVJYWNPZUwxUU10eXFlX1JZV056V3QtalRGYlHSAb8BQVVfeXFMUF8xbmlzN05QakhNUUo5RU1kNzlBZ0paWC10cWdqSkdweVFsMUJQcFlYZFh0d2ViQlJrMjZEZ21ZSUFjSUgxNk03c1RULXdzRENEWEVQNXF1dUt3ZURFU1BQQm5qZl9kRzAwLVl2Uk1pSmMyR1RVMmFOaFBIM1lFWEp5ZDBQQlBlMG00c3A3SGc0ZE5XcHdKVnluX1Q5Q3BtNDJROEZuUU51NTZBVVBsRnpsVHVEVjNFMi0zQ2ZNWnM?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 6,
+            "zscore": -1.36,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -5.11,
@@ -923,45 +962,6 @@
           "coverage": {
             "count": 33,
             "zscore": 1.71,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-30",
-          "return_pct": 7.96,
-          "zscore": 3.08,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.74,
-          "events": [
-            {
-              "source": "googlenews_link",
-              "title": "Best Crypto To Buy: Chainlink Powers Five Minute Crypto Bets While AlphaPepe Offers Early Entry for 100x Hunters - openPR.com",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVVdmRldQd3lRV0Q2MnpXVWZKbWpJTHdCenJCT2c1Zll5NG5vTFlPUU1XWlZYSE9PQjNRQk4xeHN0c0NwVmIwbElQUU84YUpZQjhicjlhV3duWWE4aktuaVY2ZGtfVndQUjQyMllicFFydlpJZWZLUXhHakVUV3hIV0RNVDhzam5WODhBSEdiQld5Nm1aYjM5NmxBVQ?oc=5",
-              "sentiment": 0.637,
-              "relevance": 0.855,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Hanwha Investment & Securities Signs MOU With Chainlink on Real-World Asset Tokenization - bloomingbit",
-              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE54bmdMNl9RcXp1Um1sdU9TdFFzYjYyVzJkOGJfU01TbUsySi01TTN6TWRRVkFDdk9WRC10eE9NcnZDT3ZnbjR1anRYUWxKTVdWUXZfaA?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_link",
-              "title": "Chainlink rallies as enterprises integrate network for tokenized asset solutions - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMW1jUGxSUloxY1c4cEpDMFpPWTQ4dTNNZ2pFMkJzdTB1MUxEOTl1b3pNUktfTVQtZzBSTzNOcTh0YVFQS2ZuX1NVZTczd2x5b3UwZFNhamxUMHdrdHM1MFl2R25ndm0zeUl1dHpKS2lzQV9ydUZQd3NmRGhGZFpudTJCSm1vd0FJNmJBZjNsS20td1hNaFRMOWdvNTZ3elpnS2hjbFZB?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.798,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 29,
-            "zscore": 1.5,
             "spike": false
           }
         }
@@ -1214,6 +1214,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 10.03,
+          "zscore": 4.08,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "3 Best Tech Stocks To Buy Now For 2027 - Forbes",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAwMEtwekVqWVVfOHA5UHl6bU9Vb2k0eEIxTGdyNmJ5d1FrM3lubzRpS1drX3pZV1pSU2JrNU8zVDhQdXRwWklIWHpoMlFiQUxxa21sVEQyM2hudFN3OXA5dEdsRmt4ZTE1VDUzSVN1dzd2SXFLLTJIb3ktNGs?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 34,
+            "zscore": -0.32,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -7.27,
           "zscore": -2.73,
@@ -1405,45 +1444,6 @@
           "coverage": {
             "count": 79,
             "zscore": 1.22,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-02",
-          "return_pct": -2.95,
-          "zscore": -1.66,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_tech",
-              "title": "Update: US Equity Indexes Mixed Amid Sliding Crude Oil, Technology - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQVVjUEhqb3dUNkR4eXBLakF2QUREUk5lS0RXcWhiMk0taFpjNjczUWdGbmZWeGZuQ1BLOWlqMDlRdy1TZzI2d3N2NWZIR01Vb1RrMlgwZy1HSngwaGx4MXNqMTlqRGstUk5NcGc3Q09sVTV5R3lwc29HVEVoX2dKakE0TUQyaGRTWjdsUFg5M3EyaXFicVg4bg?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Tech stocks were the biggest losers in October (XLK:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU2JaelhMeWpyRzBNWWk4SVZCT0hTdHhaWGFzVW9ueXRJYVREaHZQSjMzcFRqaUJENFNCenJVZXdYTGF0VjVRaUlkeV9ESWhXQnJnMjV6bUp5eWhQN3FkU09RRWNQbmVXSEZLZEVwencxTnZMSkNaQjIzRUdHVWtLWHY2S1ZQMFgwR0xLbg?oc=5",
-              "sentiment": -0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "Tech Stocks Rebound in Overnight Trading After AI Spending Fears Wipe $2 Trillion Off Nasdaq - BigGo Finance",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xRDlkSnBYTDJNaG44NV83N3hoNmhyUGRlRzdWV1pYVjBlczlKQkNPUWhyVjl5Q3BBbWtza1p4TFJpcS1jNGFnR3pBOGVXWFBrMlRJRlNpZmZhTElMUmkwQy1mbmlLU0J1U0p5RnNlNFZDT1V0M1E?oc=5",
-              "sentiment": -0.421,
-              "relevance": 0.769,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 74,
-            "zscore": 1.11,
             "spike": false
           }
         }
@@ -1696,6 +1696,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 2.26,
+          "zscore": 1.73,
+          "classification": "market-wide",
+          "severity": "notable",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_finance",
+              "title": "Share Market Today: Nifty 50, Bank Nifty | Nov 23, 2026 - Liquide Blog",
+              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQTjd2SXc0RHZnM3NDRUxqMmpNS09xTGQxLUxYb2IydG1oMEo1UFdEV0dKY040ZWFQbXktdExqWk5aeVFkT2V4MWJNaVgxZnNVeWd2ZHEybnc0c3o2YUZuQXpDWTl2MEt6RWJoM2J6X0ZJLUhqbzJYQW9VN0pFbFFUTjRkVHRPWGpYQVhvZUNvcHNlT1pFRFpjY2VoZ1BUUHlxSWJBWENDOTBTOXRZQ1BCSEd0OXVlZ1dveVFTcWtYTEpwVEJBTk5FeU1SaVRxaEh0dmlEajdTaUpqVVVlNF84LUkySVRFb0ZwZ2xQeXl6SkpVNGZmajlTM0thVThfQQ?oc=5",
+              "sentiment": 0.765,
+              "relevance": 0.906,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.28,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -1.82,
           "zscore": -1.5,
@@ -1887,45 +1926,6 @@
           "coverage": {
             "count": 4,
             "zscore": -0.18,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-29",
-          "return_pct": 1.44,
-          "zscore": 1.8,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": -0.3,
-          "events": [
-            {
-              "source": "googlenews_finance",
-              "title": "Banking sector stocks today, October 29: City Union Bank gains 4.45%,Bandhan Bank up 1.76%; Karnataka Bank down 3.81% - Business Upturn",
-              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOcHdyckdHbmFkNjZtQ3BXa0tuY1dmUC1pXzhHZS1xd1pIckl2ZGdEaXdGMlZmRHhOWHcyZ0ROVWVnUUQ2Uk1LUmxmcVlfTTdGaXNSMWMxYlY0UjFQZkRLcVVkLU5vUlJvQXR3XzZkM0VObXFTcjF3ZC1WbmdsT0htV21JcnVXcHBUOWVmQ0JUYUdnRGdOZWROdFBydndOSVo4OGpmSktkbHhRR0RZUGdnclBZUkFKUVVHMm0xUklpdmY0R29FUy1NeVVERG9IX2hHUGVHci1EZEtnaE8zX0lVa2d6YXNOT0RRWEpXemZSWDV2dw?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Bank Stocks Are Having a Tough Time. Why Morgan Stanley and JPMorgan Chase Can Beat the Odds. - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBmdjNIWTdnSmgzSUZjenBGeE1VTW5zYm03OWxwOGVnQlZBYWRKd01UNTl4dXlUTjNhSUl4NTVQYTV4UmEwN0RDWlU2SE0xVTFHT2dxSy1Eb3dWaUp4aS1LTWxEdVlqUkJlTUJLOXBnd190YTJEUm5qV0hBNHg?oc=5",
-              "sentiment": -0.128,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_finance",
-              "title": "Bank Stocks Are Having a Tough Time. This Analyst Is Betting on 2 Names - Moomoo",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcXdSRjdwQXl2bzVNbFYtOXIycGlmbnJNRExpb1NOb3RWQktnZEZZSXhrdGNKUDJPRnJNWnpjU25IdG1wSlNrdkJNcHVFT0hmSUNMYllZandGMGd6V1hDLXNSb3NUQ3RYOVVhQTU3ZmlIZ0llNnZVc0dERnIzbURULXBXa2w4a1BRYnc1cm9aMGgyd3ZFYVo4NjhEUQ?oc=5",
-              "sentiment": -0.128,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 3,
-            "zscore": -0.58,
             "spike": false
           }
         }
@@ -2178,6 +2178,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 4.0,
+          "zscore": 2.89,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold Prices Rebound After 30% Fall From Peak; Check 22K, 24K Rates Across Cities - Free Press Journal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1hTdjY5VzN2UC13RVZoYU1GSU5ZdC1EZGlQY1FUSXFFM3EyRV9ZdzdLNmZ0UHRjZHhxcm90clpyTThId2ljekVVTzREajNyUDRMZDBGR0E0dWtBSlVvbzd6SVU4MU9aMDZKTjEyNmxVVGhfNklkYnJKVEloOThSd0RiRVBhZnIxNGpHa0puREV5TVcyWlF3ZnZ3RWdObHVJYWNPZUwxUU10eXFlX1JZV056V3QtalRGYlHSAb8BQVVfeXFMUF8xbmlzN05QakhNUUo5RU1kNzlBZ0paWC10cWdqSkdweVFsMUJQcFlYZFh0d2ViQlJrMjZEZ21ZSUFjSUgxNk03c1RULXdzRENEWEVQNXF1dUt3ZURFU1BQQm5qZl9kRzAwLVl2Uk1pSmMyR1RVMmFOaFBIM1lFWEp5ZDBQQlBlMG00c3A3SGc0ZE5XcHdKVnluX1Q5Q3BtNDJROEZuUU51NTZBVVBsRnpsVHVEVjNFMi0zQ2ZNWnM?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 4,
+            "zscore": -0.64,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -3.09,
           "zscore": -2.15,
@@ -2369,45 +2408,6 @@
           "coverage": {
             "count": 14,
             "zscore": 1.75,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-10-26",
-          "return_pct": 1.42,
-          "zscore": 1.98,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 0.7,
-          "events": [
-            {
-              "source": "googlenews_industrial",
-              "title": "Undervalued industrial stocks with strong year-over-year revenue growth (XLI:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTWZwWDZTRXBUYVpkbGVJTVF4bXNYQ2t1WTFjQ0dqRUdlSzBfY1pJVFkwRkpYRkUwVGxxNkxmZzlrY0RZNWJpWHZnVk9zZmVvNFc3ak1zWGMteF8yQkZoQVpLOVY4OEtnM1BrMzhoc3Ffb1V1ZGZQTE03dzZDSE5fMEhXTzJ5U2hDSkFTdWhMeDZWRHBDZFAxamtjdXp0QWd5VEZNRXlKTWdwR055S1E?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.6,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_industrial",
-              "title": "Weak earnings outlook further pressures China’s bearish stock market - South China Morning Post",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1Sw?oc=5",
-              "sentiment": -0.637,
-              "relevance": 0.6,
-              "event_type": "earnings"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.24,
             "spike": false
           }
         }
@@ -2901,6 +2901,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 4.43,
+          "zscore": 2.62,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_discretionary",
+              "title": "Consumer Stocks Snap Winning Streaks As AI Selloff Rocks Markets — TSN, PDD, TJX Buck Trend - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVG10ZXNnYkxXUkpZUWlKeVltdzYtWF9yRnBHcTR1Q3FpU1dLc1BsYkJkZmJRV21VY1J3MmE5NjZFOWREeVZDWUgtRm05Vl83TDU5enJLZE8yUTlseGR0S1JoNFhJNHdfQVVPdVRrZXlVZ0d4cmV3R09GMXhPanlCX0R3T0U2U2huell5RlNFSy1FT19COGZfWUY3UFRSekxUTGpZeXRZLXhGdFo1bkM1al9zaTZKRkNwUXBRWHlHQXFad01YVXBqVGVKa2pUTVZra0xaLW5iV1NTa2VSOUdDV3Z3?oc=5",
+              "sentiment": 0.527,
+              "relevance": 0.811,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -1.42,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -2.95,
           "zscore": -1.92,
@@ -3094,45 +3133,6 @@
             "zscore": 0.35,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-02",
-          "return_pct": 2.41,
-          "zscore": 2.52,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_discretionary",
-              "title": "ASX Midday Sector Update: Consumer Discretionary Stocks Gain, Information Technology Slides - Yahoo Finance Australia",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZXd2dW5tWUZQeUhleS02TUpzc3hfd3BtNE5qUlpVQzQzUEJpaDhuRVBIcERRQWc3b3NXcTZvYW5TRTIyTElLSnZjajJENlliNkdGc04xMm9rSFNzVnVzLXlSV2RtR2pHejlSZllzMkxFSENHa2VVX0w1LWxHb3JYZERtNUE5VHNCU21RRGszWWxCbDQ?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "ASX Midday Sector Update: Consumer Discretionary Stocks Gain, Information Technology Slides - marketscreener.com",
-              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdVlSQVhibUtUOGxKRVdxakg2TURvZGFsVGxrUmhJYzRpV0E2S2hMZW1UZ0hiOHhaZlpBVnBjWktjcEdiRjBTWVp0M1B4QTRjUFdFLWRDVi1HcUdnQ3JqSEFmcHlBTDBnMVhkbFNvYjlMM19yVFRqLUFnYjJwLWMxeUJlWkdjNnc4WHoxZk40azkwX0tiaW9hejBLLXBtOWxKVS1lTVlhR0lOMk1yTzhrR05lNjRYMEp3aWJRS1k4SjM4Y3NOX3pfaDlCb0gzRXFMOGotRTNmN19xQQ?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_discretionary",
-              "title": "Sector Update: Consumer Stocks Gain Late Afternoon - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVkN2cEpWOUtXZ1VEQ3VJa0h4YWZRQ1Z0dE1faDR6dy15QzhRR2tSc3B2VnVuSmVLeUFFR3RQOWY0WGgtZU5kTTFITDNza09nb2RyaktHMGhQdTNpUTQ0RnBXaVVWTlBOc1lxVGU2UU5oTUU5UlhwcWRCMDRFdGV5dkUyTGU5dFFiQ25hZWFXRThidFVyNEhsOW9uWnRQYXRQMGVYUQ?oc=5",
-              "sentiment": 0.527,
-              "relevance": 0.811,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 14,
-            "zscore": 0.45,
-            "spike": false
-          }
         }
       ]
     },
@@ -3141,6 +3141,45 @@
       "name": "Materials (XLB)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 2.5,
+          "zscore": 2.01,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold Prices Rebound After 30% Fall From Peak; Check 22K, 24K Rates Across Cities - Free Press Journal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1hTdjY5VzN2UC13RVZoYU1GSU5ZdC1EZGlQY1FUSXFFM3EyRV9ZdzdLNmZ0UHRjZHhxcm90clpyTThId2ljekVVTzREajNyUDRMZDBGR0E0dWtBSlVvbzd6SVU4MU9aMDZKTjEyNmxVVGhfNklkYnJKVEloOThSd0RiRVBhZnIxNGpHa0puREV5TVcyWlF3ZnZ3RWdObHVJYWNPZUwxUU10eXFlX1JZV056V3QtalRGYlHSAb8BQVVfeXFMUF8xbmlzN05QakhNUUo5RU1kNzlBZ0paWC10cWdqSkdweVFsMUJQcFlYZFh0d2ViQlJrMjZEZ21ZSUFjSUgxNk03c1RULXdzRENEWEVQNXF1dUt3ZURFU1BQQm5qZl9kRzAwLVl2Uk1pSmMyR1RVMmFOaFBIM1lFWEp5ZDBQQlBlMG00c3A3SGc0ZE5XcHdKVnluX1Q5Q3BtNDJROEZuUU51NTZBVVBsRnpsVHVEVjNFMi0zQ2ZNWnM?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.27,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -2.19,
@@ -3333,45 +3372,6 @@
           "coverage": {
             "count": 1,
             "zscore": -0.97,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-03",
-          "return_pct": -2.01,
-          "zscore": -2.76,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 0.36,
-          "events": [
-            {
-              "source": "googlenews_materials",
-              "title": "Argo Graphene Solutions Corp. Faces Selling Pressure Amid Junior Materials Sector Weakness - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTS1BazliZDluRFExa2g2dV9manBWSVh1SDljQlBLVG1Gb21jYzktRlFlbjdyUC1WbHlNRG1KS0tKMDh0cFR2STAyZDc0b2FBUHh1NUNqbDBOQUNNVWpNejVYdm95NlVRUDdYN0pqYjE2WXNwczFVTHRRSURMX1Y5OUV0LWZKZkswc0ZsSUdVUkJCTnZiZmIySmotRFFnV1JLWWdST2lCRTllMnZULXNiZ05HNGRsMG4wRDZBTw?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_materials",
-              "title": "MP Materials leads materials stocks above $2B market cap with 20% short interest - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdG84aUxuam9pdkFnMGx4UERySlZGS2hqQWl6NFpyR1UzYUxhUS00MUl4STdCcnNOdE8xLWowZzczM2VmbWh2bmV3V2dIUW5BSlZVM1RzeWNyR2dqbThPR291akk5RklfbmRpcmNMVVVkSU9xbW40VFhtREVRTzVvNXFMbkF4YlJoUER0YXVpZk9BWkJGMWtZTXp4RGVITlZIdERMOGlxZngySUxVZmdZVk1MbXhQUWVqUVMxMVdTY2pSUUNaMXZHYmI2UEU1R2pqQ1NLVFVyQWE?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_materials",
-              "title": "Is ClevelandCliffs (CLF) Outperforming Other Basic Materials Stocks This Year? - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTmtaMHdyS3dKU3ZFOHRFNko0Q19yVWRxQmtQNHNiSTFNVkQ5bDNtYl90VXVkTlNOMHNiWlZRSVc2ZjVGeXltSWZfa3ctRkJlWEpjX1hzcHI5NzRSdnFhSXluSU1pcGFhWW40MERhc3JkTF9mNFNzcGMySzhSMjBqcmk0c0RMN2hmY2J2RER5Q3RXbUhDVWRZT01ocUlUVWtLaE5oY2MyUU1VY21VTVZB?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": 0.93,
             "spike": false
           }
         }
@@ -3624,6 +3624,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 3.28,
+          "zscore": 2.5,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold Prices Rebound After 30% Fall From Peak; Check 22K, 24K Rates Across Cities - Free Press Journal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1hTdjY5VzN2UC13RVZoYU1GSU5ZdC1EZGlQY1FUSXFFM3EyRV9ZdzdLNmZ0UHRjZHhxcm90clpyTThId2ljekVVTzREajNyUDRMZDBGR0E0dWtBSlVvbzd6SVU4MU9aMDZKTjEyNmxVVGhfNklkYnJKVEloOThSd0RiRVBhZnIxNGpHa0puREV5TVcyWlF3ZnZ3RWdObHVJYWNPZUwxUU10eXFlX1JZV056V3QtalRGYlHSAb8BQVVfeXFMUF8xbmlzN05QakhNUUo5RU1kNzlBZ0paWC10cWdqSkdweVFsMUJQcFlYZFh0d2ViQlJrMjZEZ21ZSUFjSUgxNk03c1RULXdzRENEWEVQNXF1dUt3ZURFU1BQQm5qZl9kRzAwLVl2Uk1pSmMyR1RVMmFOaFBIM1lFWEp5ZDBQQlBlMG00c3A3SGc0ZE5XcHdKVnluX1Q5Q3BtNDJROEZuUU51NTZBVVBsRnpsVHVEVjNFMi0zQ2ZNWnM?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -1.24,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -2.66,
           "zscore": -1.7,
@@ -3817,45 +3856,6 @@
             "zscore": 0.81,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-16",
-          "return_pct": -1.89,
-          "zscore": -1.55,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -1.09,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "Why are consumers so negative on a good economy? It’s the inflation, stupid. - The Hill",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbzlQLWg1WHpXZFQ3R193Y1RyZVBob2ptY2M0bE9TbTNOcnItUXhsNm9uUzJHdVN2dV9SVFNKVHBpLWd2UWxfUUtqU1VZTTdkSngyQll1TDRsTEdqemYtRFpPbnpEZ3lxZnR6bnFiZm9jWWRJTGFWUXRYMWJ2RFV0WjdlONIBiAFBVV95cUxQeGpMcEdBYzFHbHhWaUxHRVBFbV8wYTA1Z3VodEw3eXpKUGFMenZqUkxnRlBDVjV4SjQxa0ZJVzRQbVEySnloSU9uMWFXeGlHa2xHbkQ0eHloQVcxTUFmSmhILWdON3RJOFpVcDc3eHZ1UWZBc285VU9kQlJNLXJXZ05OTDE2NlA1?oc=5",
-              "sentiment": -0.738,
-              "relevance": 0.895,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Trump Shrugs Off Affordability—Republicans Say It’s a Crisis - Newsweek",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTmZidUs5LXoxM2FrcEJSLVBZOWdlODdiLU9kODFCRWpmTjV5M3g4M1BGaV9BdDhkckJILWN2c0o4Wkc2ckVDZDFiYlJqVHpmUTFHVkZSNW5NcWNINGV6TnlDY0l6QmhGNlFDZG9IWWhfMktoSG45RnZ2and1UlVFQUkxcTRCX0tWeXNhVTJtZVM?oc=5",
-              "sentiment": -0.625,
-              "relevance": 0.85,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Fed Chair Kevin Warsh warns of AI 'shock' for economy, pledges to contain inflation - ABC News - Breaking News, Latest News and Videos",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSHRMYTRHanJFWjJnNGNLRExKaGZOdEtWWlNKdHFhdmRHc3dJcnZNV2NfZmxkTFJQdmRKYkllRFVsN1lIbGVsWFdxN3NJRVZCLWNVNzhPaU5aUGlSMDE3bTN4RFpCT01KVlZ1R0dieUhhQ1pmNlh5RjhXLWpCWFE2VEhYQy10OHRFU2dLX0owMlMtbnVTR0NN0gGcAUFVX3lxTE9NczBRSGxTSUhocXdVbmRiQVdhRUg2d0FaTk9nZkpQRDdnNUlMS1BJeFZrOVhiU0RYZEt6VUVjRm52SDdJaHFWeHFSQVI3Q09hZVB1dFQtZDRGb3pfVndMY1lJVklyRUVwM2p5R2c0cmJIc3VLbXJsczR1SHlCNGZfUVB2R1dnTlBIamphWUtQQzNQdnRzY2xsSTNEVw?oc=5",
-              "sentiment": -0.459,
-              "relevance": 0.784,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 11,
-            "zscore": 1.05,
-            "spike": false
-          }
         }
       ]
     },
@@ -3864,6 +3864,45 @@
       "name": "Semiconductors (SMH)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 16.08,
+          "zscore": 4.44,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Arm vs. Marvell Technology: Which Artificial Intelligence Stock Is a Better Buy for 2027? - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOYU8ySWRfbG9SZFl1QThsZU9wTEJyWnJGcVYxM1VFbE1QTTlydGJhWGZ5a1c4N3N5Q0U5TGloVmIwS1JSUllQb011TjVTWm1mb2oxR2Z1aUJ1S29uZmJJZmc4UTVjbVRReDg1dEl6ai0xOGx3UHlESXhBNnBuemhZTnJ0ZVVGYWtNeWpIX2NmLUdfdWVncHFyV2FXSllza2t2VkQ3ZTZocFFPQzRrMVJuUnZKaENpVTJLUnZfNzBQa2RCY3k1eWZQellXQnZSZHVzREQzQ2M4U3A1REc4a1JQSWVaMHhGVlpBNDc3X0c2Z0FhQUkxN2ZoWA?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "The Best Semiconductor ETFs After The November 2026 Chip Selloff - Stocks Down Under",
+              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9DWUpYdmxPdzlYdWFVR1lwbnotSnZvQnZlR2RucUItTUNFTE9GZHZ5MTNoUnF0VlJRU1VLUTMwZ0VFV242NF81Z0FMMlV6ZjFrdjY5eDV5YndjY2hIVjZGMmRR?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "etf_flow"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "3 Semiconductor Stocks with Robust Revenue Growth - Equitymaster",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1pT3NmU1N3SXFqMUVSdF9Qek5haEhObWpfOEdjR0ppTEdLM0p3VTB0ZjdXQk5UMHFwY2FWWHZNc09MVG8tRHdRV2pYU29jZExWRkdGR01SZWJZVVkySkkycXlWS3Vucnc3QkJzVGMwQQ?oc=5",
+              "sentiment": 0.612,
+              "relevance": 0.845,
+              "event_type": "earnings"
+            }
+          ],
+          "coverage": {
+            "count": 42,
+            "zscore": -0.49,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -10.6,
@@ -4058,45 +4097,6 @@
             "zscore": 0.32,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-09",
-          "return_pct": 5.05,
-          "zscore": 1.86,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 2.35,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "BofA’s Simon Woo Says Semiconductor Cycle Is Intact, Selloff Creates Buy-the-Dip Chance - bloomingbit",
-              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBvY0hwVHZBMDFFOUpVcU9UdGNNSXVHcVFuLW9VemJzcWJ5ZVNpLWxKLW41ODNxRnNmN3MxQk5aTi03WlBIOTBjems5T3B6ZmEwQ09JNQ?oc=5",
-              "sentiment": 0.791,
-              "relevance": 0.916,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "'Blue tsunami' wipes out 400 trillion won in ETF assets as semiconductor and tech ETFs lose 22 trillion won in a month - 머니투데이",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwTUJXSzVFRHV6ZmlPZlp5cDJFakh0RlNJNFEwZVJHV3RBdjU5VHhHVFNUdXhvWlU1SjV5YUFWTVlrNW5CRUg4bFgtNExmRFpNeklQT1ZscHd5eG9oM0xNRnNZaTctZktyenQ2NA?oc=5",
-              "sentiment": 0.751,
-              "relevance": 0.9,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "2,136 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Acquired by Beverly Hills Private Wealth LLC - MarketBeat",
-              "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNQ09WclZKUzBDZlM3d3EtTjc3UlJFSDI4amNlRFI4V0V2MUhCcW9jY3cwSUlMZVV0M1JrT0VoWk1rZEVFSExxaWhJN09Ia0tWQWRqNFhHT25kbld6NlZQekdiU0NuWmhhM2U1ZjFaVWtlak1BcXRCZ1BfeHhlUGlHa3VmMGgyX1Q1VWlGWFNjMS0yX21hX05pVVRQUklVUnJLUm1oMFZ2ajZFaVQySUxvTlNwUnU0aEZ3d2JRbEdpSktTYmlqQW5aUVc1bGV5bVZZc0lZX0hxYXlRZWh5UmJLeV95RjVjX2Z3ZkY2OUtkS1VSMzZJRjd0V200T1E?oc=5",
-              "sentiment": 0.66,
-              "relevance": 0.864,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 82,
-            "zscore": 0.67,
-            "spike": false
-          }
         }
       ]
     },
@@ -4105,6 +4105,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 7.47,
+          "zscore": 2.86,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold Prices Rebound After 30% Fall From Peak; Check 22K, 24K Rates Across Cities - Free Press Journal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1hTdjY5VzN2UC13RVZoYU1GSU5ZdC1EZGlQY1FUSXFFM3EyRV9ZdzdLNmZ0UHRjZHhxcm90clpyTThId2ljekVVTzREajNyUDRMZDBGR0E0dWtBSlVvbzd6SVU4MU9aMDZKTjEyNmxVVGhfNklkYnJKVEloOThSd0RiRVBhZnIxNGpHa0puREV5TVcyWlF3ZnZ3RWdObHVJYWNPZUwxUU10eXFlX1JZV056V3QtalRGYlHSAb8BQVVfeXFMUF8xbmlzN05QakhNUUo5RU1kNzlBZ0paWC10cWdqSkdweVFsMUJQcFlYZFh0d2ViQlJrMjZEZ21ZSUFjSUgxNk03c1RULXdzRENEWEVQNXF1dUt3ZURFU1BQQm5qZl9kRzAwLVl2Uk1pSmMyR1RVMmFOaFBIM1lFWEp5ZDBQQlBlMG00c3A3SGc0ZE5XcHdKVnluX1Q5Q3BtNDJROEZuUU51NTZBVVBsRnpsVHVEVjNFMi0zQ2ZNWnM?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 1,
+            "zscore": -0.55,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -6.56,
@@ -4299,45 +4338,6 @@
             "zscore": 1.62,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-09",
-          "return_pct": 6.18,
-          "zscore": 2.62,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": 2.35,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "3 Canadian Nuclear Stocks To Own In November 2026 - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT3J2LW1veFZMckZ3MTdhbnIyLTJrclJwNHJibFNCeVo1aHNLSy1RdklKOGFlZk9neThFMDBsOF9wMHBlZXBRU1JMcUFkTEVNU2hJS3FrU19hYmxTc2IxQlA4RTNaMDNVaTVwMEpaQ09LQTU2bDFEVUZVX2h1b2syRDVyN21nYWMzYXBKbktwZXpqTlUxSlUtYmRIN0E1Z2JYcWYtblUtY0NIbnh0MkVWemdmR1dvMjRFbVZ2UFlSTHJsUjVKOGFsVG54REZVNFhnZkhJ0gHYAUFVX3lxTE13clgwcDVLcERWRXByemhTc0NaTHFfNkVldjlKSWIwMHRpX1A4RmtvdmlyU0I0TGExMmxRWmhOVGdiV1FjWi1iY3MtdEgtallCRURPN1JURUcwSVR1SDJFY19rX0NSTFk4RklTQkFEeExWckZtQnBueXBXbDhOMUFja3d4Ulczdl9HVWNMX2x0aVN1bndOZERhZk9ocWYxcFZ6ODJWR0thN0hhWjNTUE4xOVJmVklhSVZVQ18xMG45Qnd5anFGU0N0elhTUDduQVVaTE90SXh0Rg?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Best high-yield savings interest rates today, Monday, November 9, 2026: Earn up to 4.4% APY - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPeTZtaGNmd0lpZFFrVWY1dEM0aEdDNDJ1bEREOWRfdHZIOEM3dkpVaHU4T2dpdHpGRG8wejNnbGdadDVQbGVHRmNLVC1Vb3FfVU5jVzFscG56Q1VxcERNcWJvdWNNQlVtY0R2U2hfSkM2RTF6M080TVZhM2hpUzZ2a0JqZ2taVTR3OHlhQ19QYTRLcVNkalN3cEhtbHNjakpOZFlGb2RXTTBvUnlTcllwU1lMcHd1cUZiNzRxX0xPWkdMZTJfMk15M1RsSEZJUFpzM240SmtlYmdlUUNxbm11U1ZCZHBBdEpRMVRCN1hvcW8?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.552,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.501,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 1,
-            "zscore": -0.67,
-            "spike": false
-          }
         }
       ]
     },
@@ -4346,6 +4346,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 3.54,
+          "zscore": 2.18,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "STOCK OF THE DAY Buy Adani Energy Solutions: SL 1455 Tgt 1495, 1510, 1525 Co. entered into an agreement with West Bengal for 1750 MW renewable energy for 25 years #StockOfTheDay #AdaniGroup #AdaniStocks #RenewableEnergy #StockMarket - Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQR19kN1ZrRW02NVhteUVqOUhQOFFVeEFiRlNCN01EaXR4WmhwNG5ob25IZFplOXlBSUhwdm9sTWNINWhYaFJ4a3pjNWdUVEpoUDJhT2czeF9RSVBsVFhGN2xmcW85bW5hSTVfQlAzSGUwQXhBXzlmbjRSWWNoTVVENXgxS1FUMnk5WGI2UGFzT181bWFvUmtlMEZYek53Uk9OM0VnQTRpWDhvaXlUbW80MHczdkdqQ1ZPdjZnQlc1ZlB3aWtxVmpzNFZwVmZRTFpmR1ZUYWkzYmNSeGVPSnpKanh3?oc=5",
+              "sentiment": 0.796,
+              "relevance": 0.919,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": 0.02,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -4.49,
@@ -4539,45 +4578,6 @@
             "count": 7,
             "zscore": 0.96,
             "spike": false
-          }
-        },
-        {
-          "date": "2026-11-04",
-          "return_pct": 3.04,
-          "zscore": 2.04,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 1.58,
-          "events": [
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Top clean energy stocks to watch as Democratic sweep improves outlook - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQX0xtcllXb3hfMkRRQnN2aUZLOGR6bnhNQWpINlhqQ1NNWE11dFVzdXM3N3FYTXdpRXdibHRvT2pGMjJMRjNjUDdZLXhYdXk0amVab05ZcXg4aTR0TFZfaGFjSFMzWlhDMGtHOFZzSXNTMjVTcllsU3FBZllyYXV0Zkt0Q3AybE83M0NRN1JRLWk5Mm9hVzBxdDJHZEl0dmtYSmhzdmlFVWxBeEMtVXpfTWl0bVdiOXYxTEpTeXM0c2JQNmZ0M2ZOdFZBdw?oc=5",
-              "sentiment": 0.813,
-              "relevance": 0.925,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Top clean energy stocks to watch as Democratic sweep improves outlook - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWGJWaTU1V3gxVmMza2V3UTFPcHF0SkhEZUhFLXgyY21tZm5IblZmaDkzMmtFNnU3dmllcE81VVdxMWJ1OG50MGFzdDl5VWluMFdkb3VwUGFFb255anhFVVUyQi1LdFVnQkdwakxlRGpRajNjR044M1AxdzJpU1NsazRqQ0pTLUtVemM0bUNDNA?oc=5",
-              "sentiment": 0.813,
-              "relevance": 0.925,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cleanenergy",
-              "title": "Solar and Wind Stocks Jump. Clean Energy Bulls See Hope. - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaVpyalY0RDhHNG5nSi1ya2p2ekFFcGZJVko5RDJVY0FrLTV2T28xQm5wcjQtWjl5Tk5hTllkcmNybzRNWEh3ejhkODlqVzdzLS1Pc0Q2ODFIYW9MWVZfZnFfWDNDZjRiODF2OFBJejZqSnEtd2RiZmNyYnE0S2M5akY2VnJWUXhVaGhLN193QWlUV1c0RFp1Y3AxS20?oc=5",
-              "sentiment": 0.772,
-              "relevance": 0.909,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 23,
-            "zscore": 10.8,
-            "spike": true
           }
         }
       ]
@@ -4829,6 +4829,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-23",
+          "return_pct": 3.55,
+          "zscore": 2.08,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Gold Prices Rebound After 30% Fall From Peak; Check 22K, 24K Rates Across Cities - Free Press Journal",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1hTdjY5VzN2UC13RVZoYU1GSU5ZdC1EZGlQY1FUSXFFM3EyRV9ZdzdLNmZ0UHRjZHhxcm90clpyTThId2ljekVVTzREajNyUDRMZDBGR0E0dWtBSlVvbzd6SVU4MU9aMDZKTjEyNmxVVGhfNklkYnJKVEloOThSd0RiRVBhZnIxNGpHa0puREV5TVcyWlF3ZnZ3RWdObHVJYWNPZUwxUU10eXFlX1JZV056V3QtalRGYlHSAb8BQVVfeXFMUF8xbmlzN05QakhNUUo5RU1kNzlBZ0paWC10cWdqSkdweVFsMUJQcFlYZFh0d2ViQlJrMjZEZ21ZSUFjSUgxNk03c1RULXdzRENEWEVQNXF1dUt3ZURFU1BQQm5qZl9kRzAwLVl2Uk1pSmMyR1RVMmFOaFBIM1lFWEp5ZDBQQlBlMG00c3A3SGc0ZE5XcHdKVnluX1Q5Q3BtNDJROEZuUU51NTZBVVBsRnpsVHVEVjNFMi0zQ2ZNWnM?oc=5",
+              "sentiment": 0.511,
+              "relevance": 0.804,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -2.98,
           "zscore": -1.77,
@@ -5022,45 +5061,6 @@
             "zscore": -0.69,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-30",
-          "return_pct": -2.13,
-          "zscore": -1.9,
-          "classification": "market-wide",
-          "severity": "notable",
-          "market_return_pct": -1.82,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Gold price crash accelerates as crude oil rises and odds of Fed rate hike jumps - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS1B3azI3dnVrUFY3RFlnQmRnSHpBVWUzc2RnaWZobzJoazBPb2JIcTlaclNrTEVmUkRiNHBZVV9ELWt1NnplQnNYbVZJVlpHVjhzXzZ3aXM1YmhaTUN6VFNIWTVHdWdLRXlmVUkyYmZDb2VIQ3lEYUVRbUJ6TnJ5TzV4aGloSzU2NEZIS0RNMzRsdVBIamlEV1ZjVkl3VWt0TjRJdnVjdHZJYlkwa21Bc0MyZU5TSDhkTktyR1Q4SDlRQ1VBS1loUDdhY1k1ZVZ1VVE?oc=5",
-              "sentiment": -0.751,
-              "relevance": 0.9,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Half of Canadians expect a recession within 12 months, Bank of Canada survey finds — but businesses disagree - Money.ca",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN3pVWW5WV0l4ZHdXM28yZlFoMW1QLUhJNmNmWHFEZ2hvSWlKTmhpVGdvWEIyUHM1a3g2Vnl4OXRwTnBFWW1GWUdOM25JOEc4NDNpTWQ2SDctbmJncXhtUDFKUEtRTGluQ01GZjZFeldVYnBhdDVYMzAxNC1MUFlJUHJQbG1iWGNUXy1QdWNmWDdQQQ?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Labor Market Is Weaker Than It Looks - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpLTVkS0dlSWRHV2JaMDU4ZVZpRVFOMzQtUF9zeFE0dnByTjdjSU1hT0w2UVlKbUdMUHJDSWlLLWtfbUMwQlBaQ21lOFdzRWNnU3JCelkwd3JpbGNlWnJDd01zLUNxaEJDWUVNcHN2aFJXRzlTT0JR?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": -0.17,
-            "spike": false
-          }
         }
       ]
     },
@@ -5069,6 +5069,45 @@
       "name": "Robotics & AI (BOTZ)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 8.6,
+          "zscore": 4.32,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_robotics",
+              "title": "GPT-6.2 Astra Doubles Robot Task Success Rate; Physical AI Stocks in China Surge to Limit-Up - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IZEZlYTVVWU11encxZEI3czRsbG5KTDVrZDI5Tm5zVGQyUHhvQUpSalpseTlUaHhndlNodlRMbGZ5U2h0cWk2cENFSldZNGtzU3hEam1fTU4xMTQ3TDJudXhBRTVHcDhkVFBjczZydmxYWmZzWGc?oc=5",
+              "sentiment": 0.572,
+              "relevance": 0.829,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -0.26,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -5.72,
@@ -5104,7 +5143,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.4,
+            "zscore": 1.41,
             "spike": false
           }
         },
@@ -5142,8 +5181,8 @@
             }
           ],
           "coverage": {
-            "count": 3,
-            "zscore": -0.01,
+            "count": 2,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -5263,45 +5302,6 @@
             "zscore": 0.75,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-30",
-          "return_pct": -3.59,
-          "zscore": -2.55,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -1.82,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Gold price crash accelerates as crude oil rises and odds of Fed rate hike jumps - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS1B3azI3dnVrUFY3RFlnQmRnSHpBVWUzc2RnaWZobzJoazBPb2JIcTlaclNrTEVmUkRiNHBZVV9ELWt1NnplQnNYbVZJVlpHVjhzXzZ3aXM1YmhaTUN6VFNIWTVHdWdLRXlmVUkyYmZDb2VIQ3lEYUVRbUJ6TnJ5TzV4aGloSzU2NEZIS0RNMzRsdVBIamlEV1ZjVkl3VWt0TjRJdnVjdHZJYlkwa21Bc0MyZU5TSDhkTktyR1Q4SDlRQ1VBS1loUDdhY1k1ZVZ1VVE?oc=5",
-              "sentiment": -0.751,
-              "relevance": 0.9,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Half of Canadians expect a recession within 12 months, Bank of Canada survey finds — but businesses disagree - Money.ca",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN3pVWW5WV0l4ZHdXM28yZlFoMW1QLUhJNmNmWHFEZ2hvSWlKTmhpVGdvWEIyUHM1a3g2Vnl4OXRwTnBFWW1GWUdOM25JOEc4NDNpTWQ2SDctbmJncXhtUDFKUEtRTGluQ01GZjZFeldVYnBhdDVYMzAxNC1MUFlJUHJQbG1iWGNUXy1QdWNmWDdQQQ?oc=5",
-              "sentiment": -0.649,
-              "relevance": 0.859,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Labor Market Is Weaker Than It Looks - Barron's",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpLTVkS0dlSWRHV2JaMDU4ZVZpRVFOMzQtUF9zeFE0dnByTjdjSU1hT0w2UVlKbUdMUHJDSWlLLWtfbUMwQlBaQ21lOFdzRWNnU3JCelkwd3JpbGNlWnJDd01zLUNxaEJDWUVNcHN2aFJXRzlTT0JR?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 4,
-            "zscore": 0.17,
-            "spike": false
-          }
         }
       ]
     },
@@ -5310,6 +5310,45 @@
       "name": "Cybersecurity (CIBR)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 4.18,
+          "zscore": 1.79,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Check Point Software Technologies Ltd. $CHKP Stock Holdings Boosted by First Trust Advisors LP - MarketBeat",
+              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMWU5MDE2dkpFZExCd2hCaF8wT090SGxfYmVLS00wWGJsS1Z6NUpTTGFrN0NBNGRhTkxSRHAtRmhQYW5FWVhrN0xyMWIwRUV0eDJ4bnBxNFZMWG93R0IzNGFHXzUwb1o2dERyYnQzMk12MVp3MFVRTVFJSW5EOHBkdkM2dDc0SzFJTlJwaF9zcENvN0hJQzRKQlJVeWxKNkV1a1FHM0hlX0FXVFZQYy03bnRGQy1KbXBEc2x2c21fSDRwVENCOU4tbm4yZ0Y2MDVIMXlfSEEtU2RtTWZpS0pONlZBZ1VfVFpX?oc=5",
+              "sentiment": 0.7,
+              "relevance": 0.88,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 25,
+            "zscore": 0.44,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -5.12,
@@ -5344,8 +5383,8 @@
             }
           ],
           "coverage": {
-            "count": 29,
-            "zscore": 0.51,
+            "count": 28,
+            "zscore": 0.46,
             "spike": false
           }
         },
@@ -5504,45 +5543,6 @@
             "zscore": 0.89,
             "spike": false
           }
-        },
-        {
-          "date": "2026-10-30",
-          "return_pct": -3.78,
-          "zscore": -1.99,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -1.82,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "OKTA vs. S: Which Enterprise Cybersecurity Stock Has an Edge Now? - Yahoo Finance Singapore",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdlYzbXVZTHV1ZUlkN1BLWUp1c2FRLVFBSGU3eUZKMFVaOTVXSnFQZTJXZXhwbUxBU2dMa20tNTVndzd1dHF4UERQY0poVUUtRnFQX1ozS1pTeXc3ZDE5b1FEdWxvY2FhZnJjcnU3UjN4T0NxWE8tVlNyYkV6dVI2TnZ0MlJ2QkxLWE9abG1sd2Y?oc=5",
-              "sentiment": -0.428,
-              "relevance": 0.771,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks To Watch After The Binance Theft Shock - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOc3BsZGRHNXVBUW5wVnpkSHQ3Z1NjN253bnVHTjV2RjZZN25ZbGtSa1dhemRfclc4bkplOVBfc2Z3SjVNVUxtSUxscVZodW5tMmhWMEFDQ014TnVaWVlxeElZVDE5S2VoSzM3eFdKa2pWaXpJZFI5aEFPZDM3R0pYdmNDbWM1RWhIbnlZZTVfV2QtX0RWZEhBam9hS2FsZFlyRkk4alEtVi0?oc=5",
-              "sentiment": -0.382,
-              "relevance": 0.753,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Retail Investors May Be Missing After The Binance Hack - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQVhNM01jWEh6RjB4a2Rfa051Y0pVOVl6RmZHd1RURXN5R0hiMkt4emJWQjBnV3kwX0RpWExwRXUxUDZuRGJLSERyckRCWFVpQUQ4TjVXRVdfMXJMOGNTc3VvZWFfR2JiY3YydEZTUXRxMUZzYW5mQVlhUkQtTVVhU01xN1BtQm5oaThWS2g4b3RvbHBCWTRMOWpsWWgyZUFSaW5NclVSRHUzZlRtdmZmMVJMdWhhUFRQNVHSAb8BQVVfeXFMUEZfdkFXT0JHWnZQV0NfcE1vY2RBblRXRW5HRlQ0bkN2Y2dNUmtiWGNCSEYwTUlwaXZqTkRma3pxOUhTZGl0aGRwbVltczY1R1VYVk83UnNxZmgzN2NGXy1JUlo4dU1RYVgtZjJWZlZJd2Jqek1VUDRCSUU3RjhjZUh5bnIwQTFPYUN2TDdTSm83XzBiNDRoRFNOSDF5Zk9EVmUyeklDeU1MdzhzRktuSXhNLUdLSU1yVWhKVEsyZ00?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "hack"
-            }
-          ],
-          "coverage": {
-            "count": 26,
-            "zscore": 0.53,
-            "spike": false
-          }
         }
       ]
     },
@@ -5551,6 +5551,45 @@
       "name": "Biotech (XBI)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 4.87,
+          "zscore": 2.16,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_biotech",
+              "title": "Moleculin Biotech Reports 32% Blinded Remission Rate in Previously Treated AML Patients in Phase 2/3 Trial - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdXhmb3JHMWhBSjNGc0RNQnB4ZVp1WFVLLXhLRTY4MnlPZW1wN1BVdFJGQ19DZUU4V1M1dGRNdE1SZ0NDS3pIbTczOTFKLXI3aV9xZnBFTXE4eXN4WVU2XzVOeUJvNVd0TzdxZHdUdE1WbWVHUm1MakV2ZW5MZWQ4RlZ0d0FNUmgwTkFBbHlxN29HdkswV1lXUGEyeWZCUQ?oc=5",
+              "sentiment": 0.73,
+              "relevance": 0.892,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 10,
+            "zscore": -0.78,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -2.73,
@@ -5745,45 +5784,6 @@
             "zscore": -0.55,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -6.73,
-          "zscore": -3.57,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -4.36,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 20,
-            "zscore": 0.52,
-            "spike": false
-          }
         }
       ]
     },
@@ -5792,6 +5792,45 @@
       "name": "Gold Miners (GDX)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-23",
+          "return_pct": 7.11,
+          "zscore": 2.29,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 5.31,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "Wall Street Sees Buying Opportunities for the Brave - Bloomberg.com",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZVJKb0h1T1dUTkF6LW52dzhZY045S1pZXzh0OTZzT3JvNnRqdDdOcDBoRWpzalVEQkdUdmpSWXZSZGNBQzE0V0dVeE9Fb3JKeWt0NDBsSmNTcG1GTGdCSDFZS1dWUDNSQ0ZvQi1ZblRlOHItR1o5NWFiSWZjWVptbDRRYzZ2QTZEZ1ZyVDg0VDB2U3doUkExMl93dC1aVm9pODZqb0ZiSXo?oc=5",
+              "sentiment": 0.718,
+              "relevance": 0.887,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "FCX (NYSE:FCX) Grasberg Recovery and Strong Copper Prices Shape Next Output Growth Phase - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOSVFiM3lwV1ZGZnRkb28yWWhpSy1fZjRuNGRiRG5tX2lRSGc2QkJnY3dCaHY0bVdVNDN6endoQWJ5NW5jX2FyV2k3anEyc0hBdXlvQnQ3RVVzT1BBU01YbU5RNnpZT1RmUWYwVmRtTnFCR3ppdU1pSEVYc3NmcTFhNFBRVW5ub0NXbjMweVplTHhxcVZsdXFqX3FTTVFMcFZlUnM5R18zbTNfTzJzNHM3M3hiNTZ2TmpRd01PRnNEV2o5QUF1WnBRN2RmTlpXQU1KMmkw?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Interest Rate Forecast: December Fed Hike Bets Support US Dollar - FXEmpire",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMXQ0allURzByRktqOG9jVVR3Mlc4elhCeVMyWTQ3eHQ1YUdlOXhIa29ZWU5kY2JmRTlyVW5QeEpSN1lROWxMdWM0bDdjbGtpZUJwc0F1RTRJbm1CVjhxdndULVJiZzF1X0h0aUh0eDMwM0ZyZy1XY0xscFQ0SUVHNEhDSWxvZ1BoRkZnUUprcVEtWm5DVG9mUHFnSHBvY1Rza3RqdUdlM3RMYVJJazU3eWlpQjA?oc=5",
+              "sentiment": 0.691,
+              "relevance": 0.876,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 21,
+            "zscore": -0.46,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-20",
           "return_pct": -5.0,
@@ -5986,45 +6025,6 @@
             "zscore": 0.93,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-10",
-          "return_pct": -5.43,
-          "zscore": -1.86,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.38,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Stocks Rebound Sharply, but Is the Worst Over? - Investorideas.com",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdmgzai1jNXBfY3NyVzktSVNqLVpya05mUlE5aFZ1Q0JGbWtrM1RIdlk5YWZZYUprcHc1Z29mT3QwR1JKc0d0OTNYNlVzczVwNTRIX25KV1ppd1FmM2ZKb3dBRWxfMzFCaXY1NkRPUjVFLW1aanRQeDQ2S2RzWlh2YS1EM3RBQVBINlljZ090a0xiZFpnMWtxSDFyazZONjJNNFpR?oc=5",
-              "sentiment": -0.768,
-              "relevance": 0.907,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Is Gold Cartel Suitable for Conservative Investors? - The Stock Dork",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qNzVtdTVTTml3MUZIczBfdUxackNlbUxPNkR3cGMtaTdhX256RmtYZ1FxQVJBQ0taWDZuQ2RRZlJENm1uQm1XYTNVYzBLTDg4MEhMbmFBZ3I2dHZ4NjhTYkgwUlg5QTN6T1lCMWtITThnWWtqdjJV?oc=5",
-              "sentiment": -0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Why the Lower Outlook as Eldorado Gold (TSX:ELD) Brings Skouries Online? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2tlZXRPWkROOVpTbTMwd2lwTE9ZaWxMeDdKUFEzMUpZc2s5OU5xSW9RbkVMcnNqOEFoWTRlYXFlX2REaHZiYXFWU3pxOVpLNy1WakhSWVdIVFpVRUhHUXBuajRZOUxUMWFKQ3EwaGZVR1Fha0h3M29WWGtwWHpoZEtucXNkeGdDMlBTR0xQeTFka0hzNVVmYTZhZTA2NVJBUG9OY3FUZDV5UDN2MldfLXlCVnhpQUxmRWtIYg?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 47,
-            "zscore": 1.85,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-23",
-      "return_pct": 0.09,
-      "zscore": 0.41,
+      "return_pct": 3.19,
+      "zscore": 1.71,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     },
     "equity": {
-      "date": "2026-11-20",
-      "return_pct": -3.7,
-      "zscore": -2.78,
-      "max_abs_z_recent": 2.78,
+      "date": "2026-11-23",
+      "return_pct": 5.31,
+      "zscore": 4.16,
+      "max_abs_z_recent": 4.16,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 3
+      "days_since_last_major": 0
     }
   }
 }
