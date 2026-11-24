@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-22 07:07 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-24 07:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Bridged-Tokens | hot | 0.98 | +6.3% | $327M | binance-bridged-usdt-bnb-smart-chain, usdt0, binance-bridged-usdc-bnb-smart-chain |
-| 2 | PolitiFi | hot | 0.93 | +4.7% | $330M | official-trump, melania-meme, constitutiondao |
-| 3 | DeFAI | hot | 0.89 | +13.1% | $569M | derive, cortex-2, velvet |
-| 4 | Fan Token | hot | 0.87 | +2.6% | $104M | croatian-ff-fan-token, og-fan-token, galatasaray-fan-token |
-| 5 | Restaking | warm | 0.83 | +4.8% | $941M | wrapped-eeth, kelp-dao-restaked-eth, ether-fi |
-| 6 | Data Availability | warm | 0.83 | +4.9% | $4.5B | near, celestia, unibase |
-| 7 | Breeding | warm | 0.82 | +2.9% | $123M | axie-infinity, frenpet, cryptozoon |
-| 8 | AI Applications | warm | 0.81 | +10.1% | $3.0B | venice-token, pieverse, quack-ai |
+| 1 | Crypto-Backed Tokens | hot | 0.98 | +10.0% | $309M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| 2 | Remora Markets Tokenized rStocks | hot | 0.98 | +10.8% | $147M | alphabet-rstock, invesco-qqq-rstock, nvidia-rstock-2 |
+| 3 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.97 | +17.2% | $843M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
+| 4 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.97 | +17.2% | $843M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
+| 5 | Reality Ecosystem | hot | 0.97 | +9.7% | $164M | spacex-reality-protocol, alphabet-rstock, invesco-qqq-rstock |
+| 6 | bStocks Ecosystem | hot | 0.96 | +6.2% | $1.2B | nvidia-bstocks, circle-internet-group-bstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
+| 7 | Tokenized Stocks | hot | 0.95 | +6.0% | $2.7B | nvidia-bstocks, nvidia-xstock, circle-internet-group-bstock |
+| 8 | Robinhood Chain Stocks Ecosystem | hot | 0.94 | +3.7% | $153M | nvidia-robinhood-tokenized-stock, spdr-s-p-500-etf-trust-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Tokenized Exchange-Traded Product (ETPs) | -11.5% | $624M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
-| Tokenized Exchange-Traded Funds (ETFs) | -11.5% | $624M | semicon-bull-3x-etf-bstocks-tokenized-stock, sp500-xstock, nasdaq-xstock |
-| Gaming Marketplace | -11.3% | $107M | immutable-x, overtake, jackpotter |
-| Ondo Tokenized Assets | -9.9% | $778M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
-| Prediction Markets | -7.9% | $2.4B | rain, overtime, cloudbank |
+| TimeFi | -16.1% | $893M | pieverse |
+| Options | -7.7% | $2.5B | rain, derive, hegic |
+| Prediction Markets | -7.4% | $2.2B | rain, overtime, true |
+| Gambling (GambleFi) | -6.2% | $2.7B | rain, shuffle-2, bc-token |
+| AI Applications | -6.0% | $2.9B | venice-token, pieverse, quack-ai |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
