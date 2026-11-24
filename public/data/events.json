@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T00:44:00+00:00",
+  "generated_at": "2026-11-24T03:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -43,7 +43,7 @@
           ],
           "coverage": {
             "count": 153,
-            "zscore": 1.91,
+            "zscore": 1.9,
             "spike": false
           }
         },
@@ -283,8 +283,8 @@
             }
           ],
           "coverage": {
-            "count": 65,
-            "zscore": -0.48,
+            "count": 66,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -524,8 +524,8 @@
             }
           ],
           "coverage": {
-            "count": 50,
-            "zscore": 0.1,
+            "count": 51,
+            "zscore": 0.17,
             "spike": false
           }
         },
@@ -563,8 +563,8 @@
             }
           ],
           "coverage": {
-            "count": 62,
-            "zscore": 0.94,
+            "count": 61,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -1006,8 +1006,8 @@
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.55,
+            "count": 3,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -1020,33 +1020,33 @@
           "market_return_pct": 0.06,
           "events": [
             {
+              "source": "googlenews_pol",
+              "title": "Convert 10 USD (United States Dollar) to POL (Polygon Ecosystem Token) - Bybit",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QWkNSWktsQmlqektIZEJGMHEzVGVEeTZlVDVHeXBSSVdRZVIxa25jRE85cDhjVk9XWW1ZQTRrdEVsTllPYjQ0X1FEeXBxSUdRTEwxUlNDd3RaNEU?oc=5",
+              "sentiment": 0.421,
+              "relevance": 0.769,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_pol",
+              "title": "Convert 100 POL (Polygon Ecosystem Token) to ZAR (South African Rand) - Bybit",
+              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVX2NpbnM5ak1Mai1rWE94NUhMQ2ZCeFZZR3RnbENoVUVPOEptLTZ4OTZ1ZXd4LVh5eUdzVGNnTzRQejRSMFA0QzFhQkU1NlhZQk1JcGlvZVBFWFZr?oc=5",
+              "sentiment": 0.0,
+              "relevance": 0.6,
+              "event_type": "other"
+            },
+            {
               "source": "coindesk",
               "title": "Nvidia shares rise on earnings beat, raised outlook despite leadership uncertainty",
               "url": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
               "sentiment": 0.5,
               "relevance": 0.48,
               "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Economic optimism plunges to lowest level since Great Recession: Gallup - CFO Dive",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdkNUUkpqRlFGQ25ndnE5anBSdGxhSXlRT1I2RzVSSzZlUDFEbEVQYkd1NnhDSjBlb0RnQUIwbWRIdnVKLXpwM3dHXzVwOG91bVJ0eFJ6NXZ6YXdKNXNFSTdSY0ZKcGxXeXE3Y011MVZhLWRNZlJKQTJaRkJ0dFdSWjVRSVRjVzhCaUROSC1Nd3RwQWYyQ1JmQ2VJQXBXUm5KcWpvRGhtX1VmVE1N?oc=5",
-              "sentiment": 0.494,
-              "relevance": 0.479,
-              "event_type": "macro"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQjRKTGF0Um80RU1uYV9UaHFqYTdWblVLU0NTeUkwSFZyR0tQcjBtX3lzQkFmT1JXWkJLbVk5WWg5UFRueGpRSU1xYndQci15bHhuVXhvb29DRUN0cGVCX2k2T3YwZ081cjlzaVlFX1pmYm9POEdaa0c2S3FNSl9GUGo1Y3RoSnNtN0g0RF85NG1wbmZBOHBzRlhWYUNyODVyRW5UUUhqUzl1dzlaVW5sNHpiT0ZKd2NjZGI1VHAta08tdlZ0RmpRVXVtUnZXTnBncG1hU0drYTE0azVMRk95UDlvYmpoX1XSAe4BQVVfeXFMTTFnSWs3Q2pWNkVWdkpIMnVFanE1Z2FjV3FIQVE0cEgwc3VyVFZORU1mVFJOd19XWDNhR3FhVzJhQmxfSUctR0ZrUGxXN2t6X0lBTmxyTGU1bFBYaGV1dGE1dmxjbWpubHAwaFllOXJ6Rks4RWM4NG1XX29PMmNaNzdTeGJjWWdidmZCV0ExcFdKM21PcUdHVWZBZDFhSUh6eDdnRXM4Ym94Qi1RQzZycmxjbk83SzVXOVduX3c0aXhteUdySFFwRjBScGlxcGN0Ujd4X0JUYktYck42M2RZejNCc1o3eW5pcXo5bFhEdw?oc=5",
-              "sentiment": 0.459,
-              "relevance": 0.47,
-              "event_type": "fed"
             }
           ],
           "coverage": {
-            "count": 0,
-            "zscore": -0.86,
+            "count": 2,
+            "zscore": -0.59,
             "spike": false
           }
         },
@@ -1085,7 +1085,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.65,
+            "zscore": -0.66,
             "spike": false
           }
         },
@@ -1124,7 +1124,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.69,
+            "zscore": -0.7,
             "spike": false
           }
         },
@@ -1162,8 +1162,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": 0.66,
+            "count": 8,
+            "zscore": 0.95,
             "spike": false
           }
         },
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 59,
-            "zscore": 0.7,
+            "zscore": 0.69,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 90,
-            "zscore": 2.03,
+            "count": 91,
+            "zscore": 2.07,
             "spike": false
           }
         },
@@ -1365,7 +1365,7 @@
           ],
           "coverage": {
             "count": 43,
-            "zscore": -0.25,
+            "zscore": -0.26,
             "spike": false
           }
         },
@@ -1403,8 +1403,8 @@
             }
           ],
           "coverage": {
-            "count": 49,
-            "zscore": 0.01,
+            "count": 50,
+            "zscore": 0.05,
             "spike": false
           }
         },
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.43,
+            "count": 7,
+            "zscore": -0.6,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.18,
+            "count": 11,
+            "zscore": -0.32,
             "spike": false
           }
         },
@@ -1558,16 +1558,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "The Best Energy Stocks to Buy - Morningstar",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJSURsczAwWlF1bW8yeUx4dDFRYTZhQlItUGRDLVBPWDRpNG1ObGhrVkpoLU41Qk9sMmtwWW95a0o3NGg4enlUTG1KYTlYSmt2eUJBaEdqMmdGbnpwUlZDQ3Zfb2ZqaHhw?oc=5",
-              "sentiment": 0.743,
+              "title": "Ten oversold energy stocks as oil prices slide after U.S. midterm elections (USO:NYSEARCA) - Seeking Alpha",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTHFpWGtsOE81ckJ5amZYbE5oem41VVhyNnJuaTFXMzhmYU1FSGJTeFBzM2QyNzluMXo0cHd3ZkFxNVZrZk1iWFdPaE9aTWRfa25MeTBIbnlmemhRUENYUGpGel9rdldZUy1sTG5pWnNNOVFTZ3R4OTdXM0tXN1EtcnhjcVBOQ09BamF2WThLMjd2VFhhVTVMbGpPd2x5LTBabnFOSXVITnpBcGJOaFpFcQ?oc=5",
+              "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 12,
-            "zscore": -0.21,
+            "count": 11,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
-              "sentiment": 0.273,
+              "title": "7 Best Energy ETFs to Buy Now | Investing - US News Money",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1YaUE2X1loYXhnN2p3Mmh3c0hOaHpuOF9SZ1RaMGEwbkRSc0xZWUU1bU5XYjBra1poVjJsakZUZnA1YktJMEJGRHJxcnUzTFZkQWVXTVlvYnV0R291V1FwaVc5VFpteXc5X0JCNEJuMTRqUWR3aDRlNnhuQlZ5Zw?oc=5",
+              "sentiment": 0.743,
               "relevance": 0.6,
-              "event_type": "other"
+              "event_type": "etf_flow"
             },
             {
               "source": "googlenews_energy",
-              "title": "State Street Energy Select Sector SPDR (XLE) Adds Exxon and Chevron on Oct. 29 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXRPRVVHa1J6Nm50cWVuQ3BYQl80QVJtcEFTN3dFYlo1bTJoblZBLXFaOW5NaUhaaXBtVnZhUUVpTDI0THQwaG9rZ1REdXUtbktIaElYZ3dHVHJFWVc0elNReXVqTDN5cmpTTDlqSVZWOGlLRy1EZzdJQ3kxLXJDbFh1WWxGdHRiZzZYVE1tcWVYR0gw?oc=5",
+              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 0.21,
+            "count": 15,
+            "zscore": 0.34,
             "spike": false
           }
         },
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.43,
+            "zscore": 0.42,
             "spike": false
           }
         },
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.62,
+            "zscore": 0.61,
             "spike": false
           }
         }
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.25,
+            "zscore": -0.24,
             "spike": false
           }
         },
@@ -2010,7 +2010,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.04,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -2088,7 +2088,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.41,
+            "zscore": 0.42,
             "spike": false
           }
         },
@@ -2609,7 +2609,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.86,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.0,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -2973,8 +2973,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.34,
+            "count": 9,
+            "zscore": -0.11,
             "spike": false
           }
         },
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.81,
+            "zscore": 0.82,
             "spike": false
           }
         },
@@ -3658,7 +3658,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.24,
+            "zscore": -1.27,
             "spike": false
           }
         },
@@ -3735,8 +3735,8 @@
             }
           ],
           "coverage": {
-            "count": 18,
-            "zscore": 1.25,
+            "count": 17,
+            "zscore": 1.07,
             "spike": false
           }
         },
@@ -3814,7 +3814,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.63,
+            "zscore": -0.64,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 82,
-            "zscore": 0.76,
+            "count": 86,
+            "zscore": 0.88,
             "spike": false
           }
         },
@@ -4179,7 +4179,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.63,
+            "zscore": -0.66,
             "spike": false
           }
         },
@@ -4218,7 +4218,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.02,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -4279,24 +4279,24 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV09jYVdXdlZodC1JWllsaHhWOHktTDBBUVlXQmNQX3BncUs2X0NVMnV3dlpIOENfSlZMcUVSM3B0d2x1M3pkbHp6dVdjMFEzR3dpdXBQYU14ZEI5bUUwOGRwVTh3OVFSVlhKYkhvSmJEbXV5eXhlSThrcl9YWFFLNHFPR05PQzh4cVZpemkteVA?oc=5",
-              "sentiment": 0.402,
+              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYjlPRXpqcFAxSjdPdDZhUEc4MGZISzB1Q1JsaE50QUNPLTNMNHV6YlRvNkpuXzVzTkZtN3YwSVVqTHVfdWdFdTRjX2Y0Z2xEQXdEcmtXRHVoR2NrekFnNVJNUllmWkFROHBJR19rNVpWcU1RMTR1ZGhVc01CSUNyR2dUS0dkTVBzNkpvcXhNY0hXMW1yaXM1UWpJWnRHSjR6anBHRVhVbGMyZ0JRWkVEUUNEb19paU41aDFWOGN5LXgxUjYyQ2ZMS0IteEMyNmRvcjhRQmM1QXhocU9xMDUxald1bw?oc=5",
+              "sentiment": 0.681,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "3 Canadian Nuclear Stocks With Up To 59% Earnings Growth - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQnM5blRKRXZpbG1uNlM2OHRyQzFjdzhJb1FsdXBTQmdPX2VibG1VQmp6dWJ6WEY3R2NsamdPLVpHekxVMUR3SkViU2tRSFZ0TEZPZ0RHZDFON0FYS25XOF9xbXl3Qmg4N1lieDJCV1ZGQ3ZHUlczZTRma2RDWi03QWpsblRUZmpGNW9VUzJWNjl1X3plY0I1eVQtWmZ2VEk2NktzMGo5cWhIcGZZQUVGT29ZQXVkQmdlWUNUYUpR0gHDAUFVX3lxTFBpa1hCb1FXRS1fdXNiVnp5MUlqV3JDUG5SdXlnekFxRHR0TUxnODZYRFVVVThKV1lKWE5EOEJIYWpSZUNxTllBeU9aOVp3Uk1GeGtwNU9rQ1RxWmQwX1Etd1ZJM3VxSU9FM3BGMlBMeUtsaHFwdXcwSE1MM04ta3RsN1dpT2YxRnVUNnh5dkxxSFpDaFp0ZE9PTkhybHdQckpnRVozdU82RmdOUUJ3UGNJSHI2cmxHcjRaQlgzd2pEa0luMA?oc=5",
-              "sentiment": 0.382,
+              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - AOL.com",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1GYmtQVktkQjdpdDhVcFFpRDVnTU03X2lTWEpTOUkyUjF1RkVONExkZXN5Yk1yUFhmVjRlOGRQWnRnY093bjI2NmNpd21GQW1PaHdhWDlLY2JJUWlvNVcyV3Rmd0R2cjVKQmNjZVVLVjBqM3ZCWGtTcjFTRWY?oc=5",
+              "sentiment": 0.681,
               "relevance": 0.6,
-              "event_type": "earnings"
+              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 6,
-            "zscore": 2.05,
+            "zscore": 2.07,
             "spike": false
           }
         },
@@ -4318,24 +4318,24 @@
             },
             {
               "source": "googlenews_uranium",
-              "title": "Can Cameco (TSX:CCO) Expand Its Role In Nuclear Energy? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXhocG02WXpHQVRSYko4Z2pCSDAxdWtkSHFwOUZ5NmxqX3BuUk5YWFhoRk00OUJhZjVOdkEtMmVGQkQwclU1Z21pN2d5eng3bm5iLThWdDFuWlRIOHB4cjdsS0E5Z0Q3RF9wc0thZ2UyNGdiU3RSc3g0TFl2QkVqRDhZbDVtYy1nV1NIQUVicks1dF8xT09fRA?oc=5",
-              "sentiment": 0.527,
+              "title": "2 Nuclear Energy Stocks I'd Buy in November - AOL.com",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8zSzYwUFNYN1pfc0VLdFJ2OXZuTGhXTFBLYlc0clgxVFF2bUJqdDI2TTRqRHdsWTRxZHMtczgwOVVpakJOaHdKd3lRWVg1ZXJ5NXVxdVNpcXJtNXVPT2pwc1NNVXN6M3BWTnpPcGVTYUVveFRhUS1obUhB?oc=5",
+              "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_uranium",
-              "title": "2 Nuclear Energy Stocks I'd Buy in November - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8zSzYwUFNYN1pfc0VLdFJ2OXZuTGhXTFBLYlc0clgxVFF2bUJqdDI2TTRqRHdsWTRxZHMtczgwOVVpakJOaHdKd3lRWVg1ZXJ5NXVxdVNpcXJtNXVPT2pwc1NNVXN6M3BWTnpPcGVTYUVveFRhUS1obUhB?oc=5",
-              "sentiment": 0.273,
+              "title": "Can Cameco (TSX:CCO) Expand Its Role In Nuclear Energy? - Kalkine Media",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXhocG02WXpHQVRSYko4Z2pCSDAxdWtkSHFwOUZ5NmxqX3BuUk5YWFhoRk00OUJhZjVOdkEtMmVGQkQwclU1Z21pN2d5eng3bm5iLThWdDFuWlRIOHB4cjdsS0E5Z0Q3RF9wc0thZ2UyNGdiU3RSc3g0TFl2QkVqRDhZbDVtYy1nV1NIQUVicks1dF8xT09fRA?oc=5",
+              "sentiment": 0.527,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
             "count": 5,
-            "zscore": 1.62,
+            "zscore": 1.63,
             "spike": false
           }
         }
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.23,
+            "zscore": 0.24,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.55,
+            "zscore": -0.54,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.45,
+            "zscore": 0.46,
             "spike": false
           }
         },
@@ -4498,7 +4498,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.49,
+            "zscore": -0.48,
             "spike": false
           }
         },
@@ -4537,7 +4537,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.53,
+            "zscore": -0.52,
             "spike": false
           }
         },
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 0.56,
+            "count": 34,
+            "zscore": 0.64,
             "spike": false
           }
         },
@@ -4738,8 +4738,8 @@
             }
           ],
           "coverage": {
-            "count": 35,
-            "zscore": 1.08,
+            "count": 36,
+            "zscore": 1.18,
             "spike": false
           }
         },
@@ -4777,8 +4777,8 @@
             }
           ],
           "coverage": {
-            "count": 30,
-            "zscore": 0.62,
+            "count": 31,
+            "zscore": 0.73,
             "spike": false
           }
         },
@@ -4816,8 +4816,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 2.78,
+            "count": 47,
+            "zscore": 2.67,
             "spike": true
           }
         }
@@ -5103,8 +5103,8 @@
             }
           ],
           "coverage": {
-            "count": 5,
-            "zscore": 0.8,
+            "count": 6,
+            "zscore": 1.17,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.78,
+            "zscore": 1.79,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 2,
-            "zscore": -0.36,
+            "zscore": -0.35,
             "spike": false
           }
         },
@@ -5221,7 +5221,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 2.67,
+            "zscore": 2.69,
             "spike": true
           }
         },
@@ -5259,8 +5259,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": 0.37,
+            "count": 3,
+            "zscore": -0.01,
             "spike": false
           }
         },
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 51,
-            "zscore": 1.99,
+            "count": 54,
+            "zscore": 2.12,
             "spike": false
           }
         },
@@ -5384,7 +5384,7 @@
           ],
           "coverage": {
             "count": 29,
-            "zscore": 0.51,
+            "zscore": 0.5,
             "spike": false
           }
         },
@@ -5422,8 +5422,8 @@
             }
           ],
           "coverage": {
-            "count": 48,
-            "zscore": 2.77,
+            "count": 47,
+            "zscore": 2.68,
             "spike": true
           }
         },
@@ -5585,8 +5585,8 @@
             }
           ],
           "coverage": {
-            "count": 23,
-            "zscore": 0.74,
+            "count": 25,
+            "zscore": 0.97,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-24",
-      "return_pct": 0.15,
-      "zscore": 0.44,
+      "return_pct": -1.52,
+      "zscore": -0.25,
       "max_abs_z_recent": 2.75,
       "recent_days": 10,
       "benchmark": "BTC",
