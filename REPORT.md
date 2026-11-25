@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-24 07:08 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-25 07:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | Crypto-Backed Tokens | hot | 0.98 | +10.0% | $309M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| 2 | Remora Markets Tokenized rStocks | hot | 0.98 | +10.8% | $147M | alphabet-rstock, invesco-qqq-rstock, nvidia-rstock-2 |
-| 3 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.97 | +17.2% | $843M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
-| 4 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.97 | +17.2% | $843M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
-| 5 | Reality Ecosystem | hot | 0.97 | +9.7% | $164M | spacex-reality-protocol, alphabet-rstock, invesco-qqq-rstock |
-| 6 | bStocks Ecosystem | hot | 0.96 | +6.2% | $1.2B | nvidia-bstocks, circle-internet-group-bstock, semicon-bull-3x-etf-bstocks-tokenized-stock |
-| 7 | Tokenized Stocks | hot | 0.95 | +6.0% | $2.7B | nvidia-bstocks, nvidia-xstock, circle-internet-group-bstock |
-| 8 | Robinhood Chain Stocks Ecosystem | hot | 0.94 | +3.7% | $153M | nvidia-robinhood-tokenized-stock, spdr-s-p-500-etf-trust-robinhood-tokenized-stock, spacex-robinhood-tokenized-stock |
+| 1 | RPG | hot | 0.96 | +1.6% | $230M | floki, big-time, illuvium |
+| 2 | Bank-Issued Stablecoin | hot | 0.96 | +0.2% | $225M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
+| 3 | Fan Token | hot | 0.91 | -0.1% | $107M | croatian-ff-fan-token, atletico-madrid, og-fan-token |
+| 4 | USD Stablecoin | hot | 0.90 | -0.0% | $277.3B | tether, usd-coin, usds |
+| 5 | Fiat-backed Stablecoin | hot | 0.90 | -0.0% | $267.2B | tether, usd-coin, usds |
+| 6 | Stablecoins | hot | 0.89 | -0.0% | $280.0B | tether, usd-coin, usds |
+| 7 | Trump-Affiliated | hot | 0.88 | -0.2% | $4.4B | usd1-wlfi, world-liberty-financial, official-trump |
+| 8 | MiCA-Compliant Stablecoin | hot | 0.88 | -0.1% | $69.9B | usd-coin, euro-coin, societe-generale-forge-eurcv |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| TimeFi | -16.1% | $893M | pieverse |
-| Options | -7.7% | $2.5B | rain, derive, hegic |
-| Prediction Markets | -7.4% | $2.2B | rain, overtime, true |
-| Gambling (GambleFi) | -6.2% | $2.7B | rain, shuffle-2, bc-token |
-| AI Applications | -6.0% | $2.9B | venice-token, pieverse, quack-ai |
+| Crypto-Backed Tokens | -19.1% | $280M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| Tokenized Exchange-Traded Funds (ETFs) | -12.6% | $714M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
+| Tokenized Exchange-Traded Product (ETPs) | -12.6% | $714M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
+| bStocks Ecosystem | -9.9% | $1.1B | nvidia-bstocks, circle-internet-group-bstock, spacex-bstocks-tokenized-stock |
+| Ondo Tokenized Assets | -8.6% | $858M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
