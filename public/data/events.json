@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T03:36:00+00:00",
+  "generated_at": "2026-11-25T06:45:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -491,6 +491,45 @@
       "universe": "crypto",
       "moves": [
         {
+          "date": "2026-11-25",
+          "return_pct": -4.5,
+          "zscore": -1.04,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -3.47,
+          "events": [
+            {
+              "source": "googlenews_sol",
+              "title": "Solana Price Prediction for December 31, 2026 – Will SOL Crash Below $60? - Coinpedia",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN3VTcm40Y1BzSC1sanBYQjBnTldxVU15YkVETjEyLTVtdVhlUWVsODlQQnJlZ3JrZE1EbzVKMFNTREJJUjlRWmE4VnlmdHVyWWkwNkI2QU5BZzJkRWhSMHBKZUxzTEFYRkwwZFFrU29NSUdyT20wNmd0XzFIVFYwTDc0M3lFMFlqWkVlTWxTM3FzTUZ0SW1JRU9PM0NoeGNzQlNEQVRwRTlyUdIBrwFBVV95cUxPY3lxaUp4cHFLR2lBX3JkX1hycmNTRWJJVE9kX0haSDVMdnM5YTM4RWVUUEVScE93QXl2V0padGlYM0ZSUUNmUzd1S050M1c1UGFJazlGZXpKQ0ZxQnZJSVlOT1NjWF9lanVEOTFLV1Bwci1ySmZXRkFadG5XbmdORUlveUJaM2xQNUVUSWVEdGhrVFgxbzJ0b2ZyLUVkejVCQl82WU1qVlVQdWdia1lN?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Shadow Treasurer Tim Wilson warns Australia faces ‘live possibility’ of recession as inflation hits 4.9 per cent - The Australia Today",
+              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWUVTR2ozQ1F1b1ZKeFhKS2RQOVhuaGxtdTJ1XzNqOElaMTJQb0p6NEZQbWVCZDlwa1c3ZU1MOFZDWEhsUWdfSnFlVmRTb0l6TUJfLTBYV2VNXzV4bTRQWE1nSzRYRVVLVmdoMVpfaGJlaGhuSGVwODJIM0QyTWJ3TFBUMHdoWkRNMVh3RmRBckd2WW1CbTZEYmFFTzk0X2pDaGVvVE51SzVNY0VMSVh2aWt4dVRpZUF1eTdTQzl1Z212cVRqTjZoUlB0OEJJTFFuV1JBR1lCeDFzNzRreXZRR3d3?oc=5",
+              "sentiment": -0.402,
+              "relevance": 0.761,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Stubborn Inflation Could Pose a Bigger Threat to Markets Than AI Worries - Barron's",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa3FoY0YzbWhuWFh0ZTgyaC1MTTMxaEtUNUZ4T0lxanE2bWItUzhnSk1vUkxLWHZTX3BYRUJLTVg0cFRMc0ZzeUt2UGZQQ09qV2E3Vi02dG5qX0JxclFSOUtaaGgyY1F3TVBneHlZT1ZvSjJhZHh0Sm1JTF9DLUlHUEM4cE9kc3VoUjVsS25sU1UtR1oyVlVjd0Y3aEMteE5PQWwtOWQ2bS1WazZMc1dUVWhkTU4?oc=5",
+              "sentiment": -0.836,
+              "relevance": 0.734,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 2,
+            "zscore": -3.1,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-20",
           "return_pct": -5.91,
           "zscore": -1.55,
@@ -682,45 +721,6 @@
           "coverage": {
             "count": 62,
             "zscore": 1.04,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -6.64,
-          "zscore": -2.64,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -5.55,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 69,
-            "zscore": 1.79,
             "spike": false
           }
         }
@@ -6032,12 +6032,12 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-25",
-      "return_pct": -2.91,
-      "zscore": -0.84,
+      "return_pct": -3.47,
+      "zscore": -1.07,
       "max_abs_z_recent": 1.82,
       "recent_days": 10,
       "benchmark": "BTC",
-      "days_since_last_major": 5
+      "days_since_last_major": 0
     },
     "equity": {
       "date": "2026-11-24",
