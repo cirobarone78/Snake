@@ -6,9 +6,9 @@ Motivo: è il più sotto peso rispetto al target.
 
 | # | Asset | Peso ora | Target | Scarto | Posizione nel range | Punteggio |
 |---|-------|----------|--------|--------|---------------------|-----------|
-| 1 | POL | 13.4% | 33.3% | +19.9 pp | 17% | 1.000 |
-| 2 | LINK | 40.5% | 33.3% | -7.1 pp | 23% | 0.500 |
-| 3 | SOL | 46.1% | 33.3% | -12.8 pp | 15% | 0.000 |
+| 1 | POL | 13.5% | 33.3% | +19.8 pp | 13% | 1.000 |
+| 2 | LINK | 40.4% | 33.3% | -7.1 pp | 19% | 0.500 |
+| 3 | SOL | 46.0% | 33.3% | -12.7 pp | 10% | 0.000 |
 
 ### Cosa dice la verifica storica
 
@@ -23,26 +23,6 @@ Backtest sui flussi reali (2020-04-10 → 2026-08-24, 77 acquisti, commissioni 0
 Per ogni progetto: cosa fa, **se e come il valore che produce arriva a chi tiene il token**, quanta offerta deve ancora arrivare, e se qualcuno lo sta ancora sviluppando. Descrizione, non previsione.
 
 ### Il token cattura valore dalla rete
-
-**BNB — BNB**
-
-Token della piattaforma Binance e gas della BNB Chain.
-
-- **Cattura del valore**: i ricavi finanziano riacquisti del token. Burn trimestrale finanziato dall'emittente più burn automatico delle fee. La cattura è reale ma dipende da un'entità centralizzata e dal suo profilo regolamentare.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.4 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
-
-**TRX — TRON**
-
-Layer 1 usato soprattutto per il transito di stablecoin (USDT).
-
-- **Cattura del valore**: le commissioni bruciano offerta. Le commissioni bruciano TRX e il volume di stablecoin è reale. Il rischio è di governance e concentrazione, non di assenza d'uso.
-- **Offerta**: offerta in calo.
-- **Sviluppo**: repository non mappato: dato assente.
-- **Età**: 9.2 anni.
-- ⚠️ Scheda incompleta: nota solo per l'80% dei criteri.
 
 **ADA — Cardano**
 
@@ -124,8 +104,8 @@ Nessun prodotto oltre i pagamenti base; nato come parodia.
 ### Escluse dal filtro
 
 - capitalizzazione sotto la soglia: 28
-- stablecoin o token ancorato: 22
-- volume troppo basso rispetto alla capitalizzazione: 10
+- stablecoin o token ancorato: 21
+- volume troppo basso rispetto alla capitalizzazione: 12
 - già in portafoglio: 6
 
 ## Limiti
