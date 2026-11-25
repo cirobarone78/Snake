@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T12:39:00+00:00",
+  "generated_at": "2026-11-25T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -681,7 +681,7 @@
           ],
           "coverage": {
             "count": 62,
-            "zscore": 1.04,
+            "zscore": 1.03,
             "spike": false
           }
         },
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 1.43,
+            "zscore": 1.44,
             "spike": false
           }
         },
@@ -1214,6 +1214,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-25",
+          "return_pct": -4.58,
+          "zscore": -1.2,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.39,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "KOSPI Falling Faster Than During Financial Crisis — iM Securities Says Recession, Crisis Unlikely - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZWUgxU29GRkZXS3FpMHZHSXVaZVpFRmJWSDczWm14MDZWTFRiaTcwVkNTTU9PY2Q0MFNFWXBhTWtoc1lpX0VmSnd2MHNEaHRWNFNtYW9NS3V1ZzlIV3dZQUhrbU9MYi16R2oxbWRzemtjdGZNNGc?oc=5",
+              "sentiment": -0.886,
+              "relevance": 0.954,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed faces a dangerous inflation dilemma as recession fears grow - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN1p4N3Rsb2J4aUdUbXRGQ19IcHdQRGZnS01LUnBHQWZVMlg0MElFNllGOUFHdHF3bnktSjZXU0s4ZGRST3FWTllySHFtVi1jMGxKUEJ4LXcwYVFWUndDS252cURhcm9VOHRKaHJLWXoxSktoS2h3VFZWaGI5dGhPUGNKVUxGUnowM2tDaERFNWJSTHI2NWZabFJhSzZsanY1b3NVaw?oc=5",
+              "sentiment": -0.856,
+              "relevance": 0.942,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Bill Ackman warns the Fed’s obsession with 2% inflation will plunge the world into recession: ‘Tell me why I am wrong’ - MoneyWise.com",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMmpveXJaYTZXZ3FBbmdFQmd6Smp4WENDWlZxb0RqOVFUNkdzTHUzbW1XQm5FM1lIQ1k1WDYwVEFLOG02YjF0bEl5QUdBRDF6ZGprTEpJV216Zkg4RDVJZF9oS2pqekZ2ZWZqRC1vV3kta20xYWJNeDZKVVNYZ0VBNF9WeGU0d1REcVZzUjRVdkhKVzJXREZfNjctNA?oc=5",
+              "sentiment": -0.681,
+              "relevance": 0.872,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 20,
+            "zscore": -1.07,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-24",
           "return_pct": -3.26,
           "zscore": -0.83,
@@ -1221,6 +1260,14 @@
           "severity": "major",
           "market_return_pct": -0.5,
           "events": [
+            {
+              "source": "googlenews_tech",
+              "title": "Nvidia, Anthropic end sharply lower as AI selloff resumes - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbVNhR0cwYzMzdGVzdnpqZklCZlNjNlNhU1BuRnIxb1lLZTVvMUJfd1RsdE51RHhoM2ktNWJNNlpFakNZODdma2lMaHpTb09PVEswcE1xUm1nbWU0MVZXd1FCS0hoX0wwdHdkbU5oSnRWdG5oQjdGYXU2U3AtQmNTdjVpZjRoNTB3c0JWSlRpVHRQd002WkJyVg?oc=5",
+              "sentiment": -0.296,
+              "relevance": 0.718,
+              "event_type": "other"
+            },
             {
               "source": "googlenews_tech",
               "title": "Are Computer and Technology Stocks Lagging Allegro MicroSystems (ALGM) This Year? - Yahoo Finance",
@@ -1235,14 +1282,6 @@
               "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQlNSZlViSFJXRUtkYTlYalVXWVZSb1hSekY2c0N1ZXRsaUhRT1dxM2RCMW5sQ2R1M091RWZhVUJXZlZHal8tR0dwYWV6TnlwdkQybHBjeXRiSngzaE92SllhUDRZSUlfNTQ2NG1uTnozVjFvQUNZQXREX3Z5OXZqVFdIdDNSVmhlTDFENVN3?oc=5",
               "sentiment": -0.765,
               "relevance": 0.706,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "The AI trade is hard to escape — even for investors who are deliberately trying to avoid it - DW.com",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc0xEN2pLLXhjcG5aeERtSUE2TlhSVVFkMFVyOGE2ODJENGd0cXZTX0hTQUczTTQ2MEZ1SlBNc1pEaUMzTWQzTGw0OVpoR0NvQmh4ZkhNQ2FIV2ZqNEZHaEhrbm5ZYkw2ZDNENEFWY3NfMURyRnM2eHZ2ekpxb1JUbEJUTXpxdjlrOXNrT9IBjAFBVV95cUxPZlVSajdGeFlPOVhGUFJTNDZWOWlpMnhqWFY3SU9nZ1ZfbnJQeTlvd0UyRFFVQmNWc2psR19lblRnYXpRQXdIVmZCRjN3NmdVQVZHc1V5Qk1rQ3Z1dzZxRWFZWWFfWUZGMWdCdWJSRmpTYzVMeUtPb3hqRXlFa1ZSWktiekw3OUVSTkFIVA?oc=5",
-              "sentiment": -0.226,
-              "relevance": 0.691,
               "event_type": "other"
             }
           ],
@@ -1405,45 +1444,6 @@
           "coverage": {
             "count": 43,
             "zscore": -0.25,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-09",
-          "return_pct": 3.73,
-          "zscore": 1.97,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 2.35,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Best high-yield savings interest rates today, Monday, November 9, 2026: Earn up to 4.4% APY - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPeTZtaGNmd0lpZFFrVWY1dEM0aEdDNDJ1bEREOWRfdHZIOEM3dkpVaHU4T2dpdHpGRG8wejNnbGdadDVQbGVHRmNLVC1Vb3FfVU5jVzFscG56Q1VxcERNcWJvdWNNQlVtY0R2U2hfSkM2RTF6M080TVZhM2hpUzZ2a0JqZ2taVTR3OHlhQ19QYTRLcVNkalN3cEhtbHNjakpOZFlGb2RXTTBvUnlTcllwU1lMcHd1cUZiNzRxX0xPWkdMZTJfMk15M1RsSEZJUFpzM240SmtlYmdlUUNxbm11U1ZCZHBBdEpRMVRCN1hvcW8?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "10 Best Tech Stocks That Pay Dividends - Insider Monkey",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOXy1nUVBnZTZqVTd1bVlUWDlmelNqODVjUkRiMTQ5TmttalVaNi1qRTZidkY3dXRFajkxRzVJS2ZjYVFoMi1YdU5rS2M0T0RsVlRwSy04bFZkTTFHZktfT3dIc1JfNlktVHFVMTVYc2Q0azRDQVdFdXhiUkh0cDlTVGZmd3owMU5WcVHSAZIBQVVfeXFMTVpoSjI3YTdNTWVudkxlaDkwMXAyTmlZWVBTY2VKSF94dkpYUzg3MHZUdk9LU2ZKQ3ZRUUo3OEtWeEZzXzl6XzlOMUJrb1p5ZE5QUG1hcVc5Z0g3ZTBqZFdxYnI3OFZoZnNYQ190blNmd0lfc2kxbE56bkhrOG1PXzVYaEVEb1NtX2MyWVh3UDBFN1E?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 49,
-            "zscore": 0.01,
             "spike": false
           }
         }
@@ -1847,7 +1847,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 2.15,
+            "zscore": 2.16,
             "spike": false
           }
         },
@@ -1971,7 +1971,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.3,
+            "zscore": 0.29,
             "spike": false
           }
         },
@@ -2010,7 +2010,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": -0.24,
+            "zscore": -0.25,
             "spike": false
           }
         },
@@ -2049,7 +2049,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": -0.03,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -2127,7 +2127,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.42,
+            "zscore": 0.41,
             "spike": false
           }
         },
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.25,
+            "zscore": -0.26,
             "spike": false
           }
         }
@@ -2648,7 +2648,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.43,
+            "zscore": -0.45,
             "spike": false
           }
         }
@@ -3697,7 +3697,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.46,
+            "zscore": -0.45,
             "spike": false
           }
         },
@@ -3775,7 +3775,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": -0.13,
+            "zscore": -0.12,
             "spike": false
           }
         },
@@ -3853,7 +3853,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 0.81,
+            "zscore": 0.82,
             "spike": false
           }
         }
@@ -3864,6 +3864,45 @@
       "name": "Semiconductors (SMH)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-25",
+          "return_pct": -6.36,
+          "zscore": -1.08,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.39,
+          "events": [
+            {
+              "source": "googlenews_semis",
+              "title": "Retail investors chase chip stocks at the peak, suffer crushing losses - 머니투데이",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TcUMyakNxNlA3WE5ZSThZbFAyQVo1dzVVaGc2ZHNSc3R2d1FrdE05UGhHQmNLeXZ6dUltSGR1VWZCdHQyNmstaHBaTkNJdE5VdVU0MGE3X3lQZWlNV0dIQlBYcTJfY1N5U3A4ag?oc=5",
+              "sentiment": -0.827,
+              "relevance": 0.931,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "Yen Holds Firm in Lower 159 Range as Stock-Driven Risk Aversion, Real-Demand Buying Collide - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ESTAzTDB2bnN3MDB3N2ZWVEhiMm9SS3U5RWhULV83eTlUYlpYTEU5UURvb09UcjRNaDF3TTB5cVlFc1BPOG1rdmdzS29IRzJpajVSREg4d2dYbWhOSENBcXJhZ0NiSzZUalA4bEZ6d2QySFoxS3c?oc=5",
+              "sentiment": -0.758,
+              "relevance": 0.903,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_semis",
+              "title": "The Semiconductor ETF Kept Falling After Nvidia Raised Its Forecast. Time to Buy? - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVFlOd1ctMEZYUUkwRzA2blpyVlJwbHV5NTd3RmthakRlOUR2RXNsM0dac3VfX3pvd1F1S1NvS3Q4RU1TWG43S0ZTa0c4bEFMdWw3el9JRmNIYzFCN05GTEo3eDYtZDYyV0pocHhTdHpIOFoyaGU2Ny1nNDU2cGh0c0NZS2cxZ2szaUhWVXRZbm1OV2E0QXhhUDNYWktZMFRpaHBZbl9HdFU1VXpRbERTV2gzVVlhWm5ielE0UlRWaw?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 45,
+            "zscore": -0.61,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-24",
           "return_pct": -7.26,
@@ -3898,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 80,
-            "zscore": 0.62,
+            "count": 82,
+            "zscore": 0.68,
             "spike": false
           }
         },
@@ -3937,8 +3976,8 @@
             }
           ],
           "coverage": {
-            "count": 93,
-            "zscore": 1.1,
+            "count": 94,
+            "zscore": 1.14,
             "spike": false
           }
         },
@@ -4058,45 +4097,6 @@
             "zscore": 1.79,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-13",
-          "return_pct": -2.99,
-          "zscore": -0.68,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.4,
-          "events": [
-            {
-              "source": "googlenews_semis",
-              "title": "KLA falls as chip-equipment stocks weaken on sector pressure and China risk concerns - Quiver Quantitative",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTVdwUWxGSlc4YjNfQ1p6WjRoV1lGMVI5eUExOE1ZbnpCZGtGTk1YcHV1RkF0a2UwQUdmQUV3UUp2X09qcnFjLWg0U05vdGJKckNMRnZndWxVRm8zUzg3OXFud2kwZENUX3RKdDk1ejc3VU1EUDFBbnY2QlZjSlhTenVwalhhdHo1QS1xN2gxamt1Z1YtVjhfMHZ3RnJjWHJGQmQ0WENxSFU5SldKdnlsSGEyejhKOG8x?oc=5",
-              "sentiment": -0.727,
-              "relevance": 0.891,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "AI semiconductor bull warns Nvidia crisis could trigger broader earnings reset - Investing.com",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOU1sWDhzQ09EOXpmNzVDVklXOWFnb0ptY1J1RHluVnExQTZWVGhWb0c0NkgtQzBiMWVDRHBweGw3cUxVU05EbWNhYWpSU2RMQ0lzV1ZNRFM0MnQ5bEhYX3VXbmRSWkJzUXhsZU1rZXZHQXRVcnpvMlcyLXJjY3doNDNOZl9KdDVnRDVJOTQxR0YzZ2xENUdzYzFpZkxfVDdxM2dQTGt4U1B1SHdzbUM1ZHdEZWZVbEkwOF9jaVJHQkJtVGJhcVFONlJPT2k2bUdP?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_semis",
-              "title": "AI semiconductor bull warns Nvidia crisis could trigger broader earnings reset By Investing.com - Investing.com India",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeVBnU3AxcnhHaVIyMnpWUXZUSkd0alFPVVotRUViVEkzc25GRGt3R1h2R1RfNEhoOWhWTHVtbDFZU1g5cDJWak9kTVl4N245amtod0xsdG9wRTZieDVheEdaRU1jdGVqMkRpWGpQdXUzcEgxa3JZTFZoVzhRNG5wN0lweXMzS0lnaTRUTFFQMnV2Ny0wR1RaSklieWd6bXZpYXVQWjZaWXl6Z1NpZ1JCaElMN2RGNnZxVmxXWFMzdk45S0VWMmR6S0VCZnd2OWc?oc=5",
-              "sentiment": -0.67,
-              "relevance": 0.868,
-              "event_type": "earnings"
-            }
-          ],
-          "coverage": {
-            "count": 49,
-            "zscore": -0.41,
-            "spike": false
-          }
         }
       ]
     },
@@ -4105,6 +4105,45 @@
       "name": "Uranium/Nuclear (URA)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-25",
+          "return_pct": -4.89,
+          "zscore": -1.2,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": -2.39,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "Could Russia's Nuclear Threat Trigger a Rally in Uranium and Defense Stocks? - Coinpaper",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa01zdmZJeWlwTmFpVVhQbTN1ZFZGdEdMaE1NaGY2ZzV5QjRoNUlRTXRLazNPQmM2MXQyQjdjSnQ4QmJPcVRkWmJ5WGdNbjJkUE5Kc0R4WW1jMGZpa1U3Mk1ISDBjVE9GNTRRanlrNGd1NWFYUklXOGdPZVpEbkhqTHh6OHJRRzdPcHJVV2x2WHBDV29iOFFUeGJNaG1lMmNTaXZIUVBR?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.576,
+              "event_type": "geopolitical"
+            },
+            {
+              "source": "googlenews_uranium",
+              "title": "Could Russia's Nuclear Threat Trigger a Rally in Uranium and Defense Stocks? - CryptoRank",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPamZ2QnpqbWlfZjc5WnNWd2QxbEhnellNVWE0WG95ZFo1Tk14M3lsRmZ1V3BXT1BXcEFlQjlqOUsxSGV4LUZSaFhDM3JBZWp3MkVxRlAtelh1eWZYWTBKWG5ibUZ1VXhEVjNEekFtQ3NXQzAyWV9rVjhITE1KRUhtX0JUVV9CT0o2QTdxVDlEdGpVemtKc1padTA1Q0RZWUVqTy1ualFabjdiQ25ld25Zb09KTQ?oc=5",
+              "sentiment": -0.44,
+              "relevance": 0.576,
+              "event_type": "geopolitical"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "KOSPI Falling Faster Than During Financial Crisis — iM Securities Says Recession, Crisis Unlikely - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZWUgxU29GRkZXS3FpMHZHSXVaZVpFRmJWSDczWm14MDZWTFRiaTcwVkNTTU9PY2Q0MFNFWXBhTWtoc1lpX0VmSnd2MHNEaHRWNFNtYW9NS3V1ZzlIV3dZQUhrbU9MYi16R2oxbWRzemtjdGZNNGc?oc=5",
+              "sentiment": -0.886,
+              "relevance": 0.573,
+              "event_type": "macro"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-24",
           "return_pct": -2.71,
@@ -4297,45 +4336,6 @@
           "coverage": {
             "count": 5,
             "zscore": 1.78,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-12",
-          "return_pct": -3.8,
-          "zscore": -1.1,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.35,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "WisdomTree Uranium and Nuclear Energy UCITS ETF - USD Acc (NCLR.SW) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhekI5QXNqZE0taTk5WHkwVHVMTUZvNk1FeXhHUkJGTUxlbzFWQV9PaWZrblY5ckNKZDk4cEdfeXZfZE5KV1RQRkNWUFlDLXI0Mnp0SmdR?oc=5",
-              "sentiment": 0.338,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYjlPRXpqcFAxSjdPdDZhUEc4MGZISzB1Q1JsaE50QUNPLTNMNHV6YlRvNkpuXzVzTkZtN3YwSVVqTHVfdWdFdTRjX2Y0Z2xEQXdEcmtXRHVoR2NrekFnNVJNUllmWkFROHBJR19rNVpWcU1RMTR1ZGhVc01CSUNyR2dUS0dkTVBzNkpvcXhNY0hXMW1yaXM1UWpJWnRHSjR6anBHRVhVbGMyZ0JRWkVEUUNEb19paU41aDFWOGN5LXgxUjYyQ2ZMS0IteEMyNmRvcjhRQmM1QXhocU9xMDUxald1bw?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - AOL.com",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1GYmtQVktkQjdpdDhVcFFpRDVnTU03X2lTWEpTOUkyUjF1RkVONExkZXN5Yk1yUFhmVjRlOGRQWnRnY093bjI2NmNpd21GQW1PaHdhWDlLY2JJUWlvNVcyV3Rmd0R2cjVKQmNjZVVLVjBqM3ZCWGtTcjFTRWY?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 6,
-            "zscore": 2.07,
             "spike": false
           }
         }
@@ -4902,7 +4902,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.83,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -5069,6 +5069,45 @@
       "name": "Robotics & AI (BOTZ)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-25",
+          "return_pct": -3.53,
+          "zscore": -1.13,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.39,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "KOSPI Falling Faster Than During Financial Crisis — iM Securities Says Recession, Crisis Unlikely - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZWUgxU29GRkZXS3FpMHZHSXVaZVpFRmJWSDczWm14MDZWTFRiaTcwVkNTTU9PY2Q0MFNFWXBhTWtoc1lpX0VmSnd2MHNEaHRWNFNtYW9NS3V1ZzlIV3dZQUhrbU9MYi16R2oxbWRzemtjdGZNNGc?oc=5",
+              "sentiment": -0.886,
+              "relevance": 0.954,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed faces a dangerous inflation dilemma as recession fears grow - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN1p4N3Rsb2J4aUdUbXRGQ19IcHdQRGZnS01LUnBHQWZVMlg0MElFNllGOUFHdHF3bnktSjZXU0s4ZGRST3FWTllySHFtVi1jMGxKUEJ4LXcwYVFWUndDS252cURhcm9VOHRKaHJLWXoxSktoS2h3VFZWaGI5dGhPUGNKVUxGUnowM2tDaERFNWJSTHI2NWZabFJhSzZsanY1b3NVaw?oc=5",
+              "sentiment": -0.856,
+              "relevance": 0.942,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Bill Ackman warns the Fed’s obsession with 2% inflation will plunge the world into recession: ‘Tell me why I am wrong’ - MoneyWise.com",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMmpveXJaYTZXZ3FBbmdFQmd6Smp4WENDWlZxb0RqOVFUNkdzTHUzbW1XQm5FM1lIQ1k1WDYwVEFLOG02YjF0bEl5QUdBRDF6ZGprTEpJV216Zkg4RDVJZF9oS2pqekZ2ZWZqRC1vV3kta20xYWJNeDZKVVNYZ0VBNF9WeGU0d1REcVZzUjRVdkhKVzJXREZfNjctNA?oc=5",
+              "sentiment": -0.681,
+              "relevance": 0.872,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-23",
           "return_pct": 7.57,
@@ -5263,45 +5302,6 @@
             "zscore": 0.37,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -6.61,
-          "zscore": -4.5,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -4.36,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_robotics",
-              "title": "Beijing Reportedly Feared Chinese Robot Data Could End Up Training OpenAI's Models. So It Blocked SoftBank's $5.4 Billion Purchase Of ABB's Robotics Unit - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQUDhQNXprS1FERnBBV18teHduWHhwSEhpZzFVT0RGdjVLLVBKano0SFJGcHVrWFFzTjVsQWk3anNEdlRXeVYzb2lNanJpV0w3UFY3ZjF2c2xGeU1jekRsbF9nZlhRWURPYll2TXZhREJoR1hzWXVwWmNNc2lXUDRZQ1EzNGFMdnFuZzRwUU5Qa2pMWUt2RjZEb3NTcENfUUVaTWoydVR1TGtJV2NadWZVN0FjMW5fenRIVnB1Yi03YWJoaW12TGlCNWtjRzRyN3h1UVd5X3RaZDRMZHBKY0FDVkxSZWNaaktRVEVaTF9GcnhVdFRpd1dFSzI2VUF6bEc3QXE5MW51VDJSWWJDdWplMUczdVhZb0Vod0ZWOA?oc=5",
-              "sentiment": -0.679,
-              "relevance": 0.871,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 5,
-            "zscore": 0.78,
-            "spike": false
-          }
         }
       ]
     },
@@ -5310,6 +5310,45 @@
       "name": "Cybersecurity (CIBR)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-25",
+          "return_pct": -3.0,
+          "zscore": -0.95,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.39,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "KOSPI Falling Faster Than During Financial Crisis — iM Securities Says Recession, Crisis Unlikely - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZWUgxU29GRkZXS3FpMHZHSXVaZVpFRmJWSDczWm14MDZWTFRiaTcwVkNTTU9PY2Q0MFNFWXBhTWtoc1lpX0VmSnd2MHNEaHRWNFNtYW9NS3V1ZzlIV3dZQUhrbU9MYi16R2oxbWRzemtjdGZNNGc?oc=5",
+              "sentiment": -0.886,
+              "relevance": 0.954,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed faces a dangerous inflation dilemma as recession fears grow - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN1p4N3Rsb2J4aUdUbXRGQ19IcHdQRGZnS01LUnBHQWZVMlg0MElFNllGOUFHdHF3bnktSjZXU0s4ZGRST3FWTllySHFtVi1jMGxKUEJ4LXcwYVFWUndDS252cURhcm9VOHRKaHJLWXoxSktoS2h3VFZWaGI5dGhPUGNKVUxGUnowM2tDaERFNWJSTHI2NWZabFJhSzZsanY1b3NVaw?oc=5",
+              "sentiment": -0.856,
+              "relevance": 0.942,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Bill Ackman warns the Fed’s obsession with 2% inflation will plunge the world into recession: ‘Tell me why I am wrong’ - MoneyWise.com",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMmpveXJaYTZXZ3FBbmdFQmd6Smp4WENDWlZxb0RqOVFUNkdzTHUzbW1XQm5FM1lIQ1k1WDYwVEFLOG02YjF0bEl5QUdBRDF6ZGprTEpJV216Zkg4RDVJZF9oS2pqekZ2ZWZqRC1vV3kta20xYWJNeDZKVVNYZ0VBNF9WeGU0d1REcVZzUjRVdkhKVzJXREZfNjctNA?oc=5",
+              "sentiment": -0.681,
+              "relevance": 0.872,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 9,
+            "zscore": -0.58,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-23",
           "return_pct": 3.77,
@@ -5345,7 +5384,7 @@
           ],
           "coverage": {
             "count": 58,
-            "zscore": 2.31,
+            "zscore": 2.29,
             "spike": false
           }
         },
@@ -5384,7 +5423,7 @@
           ],
           "coverage": {
             "count": 29,
-            "zscore": 0.49,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -5396,14 +5435,6 @@
           "severity": "major",
           "market_return_pct": -0.23,
           "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "The Best Cybersecurity Stocks to Buy for Sustainable Growth - Kiplinger",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRExGMXZlRTI4TmEtbkR5N0c5WG53SDN2WkF5YjkyZ0tyeEVqbUJkUHFJQWxmTE5fa25wbzVnMmlRTTBqb0xqZ0FwYmRRWEV3Q1VmZjMxc3RoUXdtY2FKQ1dvQkktaEIxZmMwV1hDZVJDZDNkdFRnWEZ4N0ltQV90OHpTdlJuWkRtdGdKODhVMHB5SEF0WlpxX3FxSlhrbmFTS2c?oc=5",
-              "sentiment": 0.778,
-              "relevance": 0.911,
-              "event_type": "other"
-            },
             {
               "source": "googlenews_cyber",
               "title": "Top Movers: Cyber Security Stocks Surge While Miners Retreat – Wednesday 18 November 2026 - Business Upturn",
@@ -5419,6 +5450,14 @@
               "sentiment": 0.612,
               "relevance": 0.845,
               "event_type": "other"
+            },
+            {
+              "source": "googlenews_cyber",
+              "title": "Palo Alto Earnings Preview: Palo Alto Networks Shares Rise ahead of Earnings Report as Support Holds - FXLeaders",
+              "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVUgyMDlEejdfVENqZG1WMGg0elA3TzFZSUZhUnNsNHpaWWZFVlFVZzF5blVxR1VRRUVsUXIwNUhqcFpvUGJBZnFuSDUzRnM4Z0lmS1RURGF4b2VGMmJpb1ZLQ2htSkxtSTI0Wlo4ZzJzazczQnhUaUhFSVJmWU83Nksta2hvTXZLZUtaVWNKR0ktekhWU3pMaF80dXpaTUd6dG1mWHd3QVFpcGdGYURONjgzc0JvRnZMQTgyd05sZmJ3THFDMDNFcEVEdnZuT1lfZm9jaVVYaG9nZw?oc=5",
+              "sentiment": 0.599,
+              "relevance": 0.84,
+              "event_type": "earnings"
             }
           ],
           "coverage": {
@@ -5502,45 +5541,6 @@
           "coverage": {
             "count": 17,
             "zscore": -0.33,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-02",
-          "return_pct": -4.24,
-          "zscore": -2.08,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.51,
-          "events": [
-            {
-              "source": "googlenews_cyber",
-              "title": "Qualys (QLYS) Surges Following Launch of AI-Driven Vulnerability Platform - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOalJZaGhCbGYtSVNRd01HeVM5ZjJvM2hQbGNxdkJVdFFfaTRTbFFXQ0ZYdk9GR3FETm8yLTJ0TjlUYTlTZ1RRS0UzTXplWXV5a0gzNV9MVXp3WkttSW82bXVrekNLM3NTT05iMXJQaVJTOFN0ZkZ5RGZFRlJQd29yaWJsaHNLVG4zbmJhcHFDeG9SNjJPTFZzWk5rYUxzaEN2?oc=5",
-              "sentiment": -0.226,
-              "relevance": 0.691,
-              "event_type": "upgrade"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Cybersecurity Stocks Whipsaw Over AI Anxiety - WSJ",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTk5yb3NNM3JZVnB1dDBLSkRSU0UzdFR4X04xeDBWdHVwR2ZUNW9lbENNMEV4ZHIyc1kwVHRrQTRpTFFqNy13NWRjeGdTclM3bWloYkx4c3hIUmpqenB4a3E5UEt1WmRNdVRQcUJieURaQlpNelRqRjNGZTZiQm1TdzZVeE9hblVpYTZIc0ZFWVBGWGRtWkE?oc=5",
-              "sentiment": -0.178,
-              "relevance": 0.671,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_cyber",
-              "title": "Check Point Software Falls On Q3 Revenue, Billings Miss - Investor's Business Daily",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOUxMMnJqWVRBYmpNN2hXM2lDNkNsYXZtM0xMVTFTSlhGMUhlMkJIVHZ4ZlpBVmxlcl93RHVsSGVMVWZJS0RUbjFFSFBFMkpQZVdDdU1VUkxpQTRNV3ExaU1QT2hYUF9QTzBHOXdnWmMyUV9tb0tsXzl6Q2U0MjdjZmhlTmNhNHZianRtbzJKMA?oc=5",
-              "sentiment": -0.153,
-              "relevance": 0.661,
-              "event_type": "earnings"
-            }
-          ],
-          "coverage": {
-            "count": 30,
-            "zscore": 0.89,
             "spike": false
           }
         }
@@ -5793,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-25",
+          "return_pct": -3.47,
+          "zscore": -0.78,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -2.39,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "KOSPI Falling Faster Than During Financial Crisis — iM Securities Says Recession, Crisis Unlikely - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZWUgxU29GRkZXS3FpMHZHSXVaZVpFRmJWSDczWm14MDZWTFRiaTcwVkNTTU9PY2Q0MFNFWXBhTWtoc1lpX0VmSnd2MHNEaHRWNFNtYW9NS3V1ZzlIV3dZQUhrbU9MYi16R2oxbWRzemtjdGZNNGc?oc=5",
+              "sentiment": -0.886,
+              "relevance": 0.954,
+              "event_type": "macro"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed faces a dangerous inflation dilemma as recession fears grow - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN1p4N3Rsb2J4aUdUbXRGQ19IcHdQRGZnS01LUnBHQWZVMlg0MElFNllGOUFHdHF3bnktSjZXU0s4ZGRST3FWTllySHFtVi1jMGxKUEJ4LXcwYVFWUndDS252cURhcm9VOHRKaHJLWXoxSktoS2h3VFZWaGI5dGhPUGNKVUxGUnowM2tDaERFNWJSTHI2NWZabFJhSzZsanY1b3NVaw?oc=5",
+              "sentiment": -0.856,
+              "relevance": 0.942,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Bill Ackman warns the Fed’s obsession with 2% inflation will plunge the world into recession: ‘Tell me why I am wrong’ - MoneyWise.com",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMmpveXJaYTZXZ3FBbmdFQmd6Smp4WENDWlZxb0RqOVFUNkdzTHUzbW1XQm5FM1lIQ1k1WDYwVEFLOG02YjF0bEl5QUdBRDF6ZGprTEpJV216Zkg4RDVJZF9oS2pqekZ2ZWZqRC1vV3kta20xYWJNeDZKVVNYZ0VBNF9WeGU0d1REcVZzUjRVdkhKVzJXREZfNjctNA?oc=5",
+              "sentiment": -0.681,
+              "relevance": 0.872,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 23,
+            "zscore": -0.47,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-23",
           "return_pct": 6.43,
           "zscore": 2.1,
@@ -5986,45 +6025,6 @@
             "zscore": 0.78,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-12",
-          "return_pct": -3.95,
-          "zscore": -1.23,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.35,
-          "events": [
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Why Did Imperial Metals (TSX:III) See Weaker Returns Despite High Metal Prices? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQnN5S2pETnloYkxfZmNWU2hkTGJNMjlVVnNiQ2tNZUlpSk1QNHFRVHZIbWtTYVJRckI2bm5leDRrYVVCRFlIa2Y2YXpQOUxMdVo4WjloY19rNE5nQ3dpWmwtVzNqVVRodDA0QjZzdGRvU3FyVksydFcxTVRmcTdNczFFbDNPd3Qxbkw5VFBia2xzZDJjQXMzOUp6WkMyb1JRckVwTVRub3B4dDBBUEY3YVQ2TWwzbVJueGFFOGxmYW5yQ1hpSnc?oc=5",
-              "sentiment": -0.44,
-              "relevance": 0.776,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "Learn Why The Bull Case For Coeur Mining Stock Could Change Following Earnings Estimate Cuts - Simply Wall St",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOODY5RFVYMk5qeGFWcW11Z1hSQWNXbEtEX2JCa0lSd3J6NDhkWGstOXNndmdzdkdFSXpPVTFxd3NYc2hfazVaR1ZuUDhFQXdlLV85VmhQOUV5UVRUNlItY0xGRmdTQWliMFZIbkVGa0lXRDgzQ1poenR6N21XWXNWdGF0S0FYakhYM0ZSeDBFbVUtT2QtRjVYZENFd0hhWDczNkxSWVZXS2p4VXpVMjlDM1QtRTRHdlJSZ0I3RlVWX3Ewa2ZPWkVZ0gHMAUFVX3lxTE8tU2xCRzFiNlM2cFRfNEt5UThjNlg4TldOLXZFb3ItaEc4MzlNejlzNERENUNJTDc3OVI4N0luSUJneUtUWXoyTnJfTnMzbXRicUJyY2NzS1JpSVB5U0NROWl1anJ3WmFlRVBoMWZubkd2Y2xpNjhFdFR0TFp2VWc0TURyX2R1Zzc3RndVMVoxcUluSkoxNmEzNXJ0NF9FWFQyZFRRQlVSZlZJZVdCbWJOVjlueHY0ZEhmdkNmSncwWEJ3aS16QTU5R1VCcA?oc=5",
-              "sentiment": -0.296,
-              "relevance": 0.718,
-              "event_type": "earnings"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "How Does the New Snow Lake Report Lift Gold Output at Hudbay Minerals (TSX:HBM)? - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeEIwT2tnbmNJbHJQN3BEN25rRzhFRF9UR2k2QlBJOG1sbldBNGkxY1hCR2FBTi1jclFEZ0drWGVVZm15LWUtMDc4YTViNmNXeGhnQ2JaODZqU0FnaHZvTzdjVkxqWmhSaTUxQk1CUTg2YWVpQl96dzNTOXNHQVB1ZEtFZUJLbVBNSlc2MGxVVnBaTFZEOTNaZzMzUDljVzhuQ2tWdzQ1MDJGN1NWMEgtSzQyeFBPNm9WdDZTSXJyYUpISjhWMGJJ?oc=5",
-              "sentiment": 0.0,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 37,
-            "zscore": 0.93,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-25",
-      "return_pct": -1.88,
-      "zscore": -0.39,
+      "return_pct": -2.47,
+      "zscore": -0.63,
       "max_abs_z_recent": 1.82,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 5
     },
     "equity": {
-      "date": "2026-11-24",
-      "return_pct": -0.5,
-      "zscore": -0.16,
+      "date": "2026-11-25",
+      "return_pct": -2.39,
+      "zscore": -1.29,
       "max_abs_z_recent": 3.73,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 1
+      "days_since_last_major": 0
     }
   }
 }
