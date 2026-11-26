@@ -1,29 +1,29 @@
 # 🧭 Screener narrative crypto
 
-_Foto del momento (snapshot: **2026-11-25 07:08 UTC**) — **non è una previsione.**_
+_Foto del momento (snapshot: **2026-11-26 07:08 UTC**) — **non è una previsione.**_
 
 ## 🔥 Narrative in forza ora
 
 | # | Narrativa | Segnale | Forza | 24h | Mcap | Coin guida |
 |--:|---|:-:|--:|--:|--:|---|
-| 1 | RPG | hot | 0.96 | +1.6% | $230M | floki, big-time, illuvium |
-| 2 | Bank-Issued Stablecoin | hot | 0.96 | +0.2% | $225M | societe-generale-forge-eurcv, eurite, usd-coinvertible |
-| 3 | Fan Token | hot | 0.91 | -0.1% | $107M | croatian-ff-fan-token, atletico-madrid, og-fan-token |
-| 4 | USD Stablecoin | hot | 0.90 | -0.0% | $277.3B | tether, usd-coin, usds |
-| 5 | Fiat-backed Stablecoin | hot | 0.90 | -0.0% | $267.2B | tether, usd-coin, usds |
-| 6 | Stablecoins | hot | 0.89 | -0.0% | $280.0B | tether, usd-coin, usds |
-| 7 | Trump-Affiliated | hot | 0.88 | -0.2% | $4.4B | usd1-wlfi, world-liberty-financial, official-trump |
-| 8 | MiCA-Compliant Stablecoin | hot | 0.88 | -0.1% | $69.9B | usd-coin, euro-coin, societe-generale-forge-eurcv |
+| 1 | Crypto-Backed Tokens | hot | 1.00 | +39.2% | $340M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
+| 2 | Remora Markets Tokenized rStocks | hot | 0.97 | +8.4% | $147M | invesco-qqq-rstock, nvidia-rstock-2, alphabet-rstock |
+| 3 | Reality Ecosystem | hot | 0.96 | +7.7% | $164M | spacex-reality-protocol, invesco-qqq-rstock, nvidia-rstock-2 |
+| 4 | Tokenized Exchange-Traded Funds (ETFs) | hot | 0.96 | +9.4% | $786M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
+| 5 | NFT Marketplace | hot | 0.96 | +8.7% | $106M | blur, magic-eden, collect-on-fanable |
+| 6 | Tokenized Exchange-Traded Product (ETPs) | hot | 0.96 | +9.4% | $786M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
+| 7 | bStocks Ecosystem | hot | 0.93 | +5.7% | $1.1B | nvidia-bstocks, circle-internet-group-bstock, spacex-bstocks-tokenized-stock |
+| 8 | Robinhood Chain Meme | hot | 0.92 | +6.5% | $147M | cash-cat, degen-base, little-john |
 
 ## 📉 In calo / rischio ora
 
 | Narrativa | 24h | Mcap | Coin guida |
 |---|--:|--:|---|
-| Crypto-Backed Tokens | -19.1% | $280M | wrapped-steth, wrapped-bitcoin, wrapped-beacon-eth |
-| Tokenized Exchange-Traded Funds (ETFs) | -12.6% | $714M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
-| Tokenized Exchange-Traded Product (ETPs) | -12.6% | $714M | semicon-bull-3x-etf-bstocks-tokenized-stock, nasdaq-xstock, sp500-xstock |
-| bStocks Ecosystem | -9.9% | $1.1B | nvidia-bstocks, circle-internet-group-bstock, spacex-bstocks-tokenized-stock |
-| Ondo Tokenized Assets | -8.6% | $858M | circle-internet-group-ondo-tokenized-stock, ishares-core-s-p-500-etf-ondo-tokenized-etf, spdr-s-p-500-etf-ondo-tokenized-etf |
+| Midas Liquid Yield Tokens | -9.3% | $215M | midas-fasanara-global-open, midas-mf-one, midas-mtbill |
+| Ether.fi Ecosystem | -6.1% | $434M | wrapped-eeth, ether-fi, ether-fi-staked-eth |
+| Prediction Markets | -5.8% | $2.0B | rain, overtime, cloudbank |
+| Gambling (GambleFi) | -4.8% | $2.4B | rain, shuffle-2, bc-token |
+| Options | -4.1% | $2.3B | rain, derive, hegic |
 
 ---
 > **Forza** = mossa 24h + turnover (volume/market-cap), robusta agli outlier; micro-cap filtrate come rumore. Questa è la **rotazione attuale**, non una previsione: il potere predittivo storico richiede l'accumulo della history (in corso).
