@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T09:35:00+00:00",
+  "generated_at": "2026-11-27T12:39:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -491,45 +491,6 @@
       "universe": "crypto",
       "moves": [
         {
-          "date": "2026-11-27",
-          "return_pct": 3.86,
-          "zscore": 1.51,
-          "classification": "asset-specific",
-          "severity": "notable",
-          "market_return_pct": 2.09,
-          "events": [
-            {
-              "source": "googlenews_sol",
-              "title": "Will Solana sustain gains amid mixed technical readings and resistance at $76.26? - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZlU3WUxNSGJfd1dKRjB4WkpzaEd3SnlaTnZ2QnBDcWhILUdiSmZlbWtFLWwwVWluUmxVNGxRRWZJTGhzZTdkQmU3YXZJWU5VaFdYby05X2JEUDZJQTVZekdKM1d0UGRnWHJVQjE4UVBZQnNZZjg4eU92czhJVEs1QTBmSFJmczhvVFlPVGc3TE14YUI3ay1ERUI0SFZ3UktpVkE?oc=5",
-              "sentiment": 0.34,
-              "relevance": 0.736,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Solana (SOL) rebounds to $72.66 amid improving derivatives but faces resistance above $78. - Pluang",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT2JZVFQ4NXZISkg0YU1rUXRRLVRyZUFTTzUzR1hodkN5dDlIbDhhT0ZnX0Zhc3FXVEtmQl9tX0o1WkdMcGdCQm5rWHNReFlDRlgzVFRfcWpucUdKek0wTFJ3WWpJSV9Kak5tTmVTQmpLU21aZW5QTFQxcHZnb3B0dno2dEo1N2F6MTRGMTAxV2ZOd1hZeUFLdnhGQXg?oc=5",
-              "sentiment": 0.226,
-              "relevance": 0.691,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_sol",
-              "title": "Japan’s Biggest Banks Chose Solana: Is It a Bigger Deal Than Ripple’s Bank Wins? - 24/7 Wall St.",
-              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYmVuWHBuemtWajVFaWVWX2p6cS14R0RZWXNkOGs0Z0d3bHBFMmpUYWxiUzJ4TmJJWl9XT3dScWpoSFM1TjVyUEtPUXFrRTJRRDVReV9ZTVJIMTEyQVU1OXZsbWZNY2JObVl0TXFmRXlJVEpDS0dYa1lYSW9BczB0NmlsazhMYWVCbThOMFNNb2dGZmpscWN1cXhObkJRVlluRmtfR3I3eTM3bU1ackl2TUZFTFpVcVliRGtQcm52QThPUXVzNVVDeE51bnhHS2Vs?oc=5",
-              "sentiment": 0.572,
-              "relevance": 0.629,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": -2.79,
-            "spike": false
-          }
-        },
-        {
           "date": "2026-11-20",
           "return_pct": -5.91,
           "zscore": -1.55,
@@ -564,7 +525,7 @@
           ],
           "coverage": {
             "count": 52,
-            "zscore": 0.23,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -603,7 +564,7 @@
           ],
           "coverage": {
             "count": 63,
-            "zscore": 1.01,
+            "zscore": 1.0,
             "spike": false
           }
         },
@@ -723,6 +684,45 @@
             "zscore": 1.03,
             "spike": false
           }
+        },
+        {
+          "date": "2026-11-05",
+          "return_pct": -6.64,
+          "zscore": -2.64,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": -5.55,
+          "events": [
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
+              "sentiment": -0.735,
+              "relevance": 0.894,
+              "event_type": "inflation"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
+              "sentiment": -0.542,
+              "relevance": 0.817,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
+              "sentiment": -0.511,
+              "relevance": 0.804,
+              "event_type": "inflation"
+            }
+          ],
+          "coverage": {
+            "count": 69,
+            "zscore": 1.81,
+            "spike": false
+          }
         }
       ]
     },
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 33,
-            "zscore": 1.23,
+            "zscore": 1.24,
             "spike": false
           }
         },
@@ -844,7 +844,7 @@
           ],
           "coverage": {
             "count": 15,
-            "zscore": -0.62,
+            "zscore": -0.63,
             "spike": false
           }
         },
@@ -1286,8 +1286,8 @@
             }
           ],
           "coverage": {
-            "count": 61,
-            "zscore": 0.77,
+            "count": 62,
+            "zscore": 0.8,
             "spike": false
           }
         },
@@ -1403,8 +1403,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.22,
+            "count": 43,
+            "zscore": -0.26,
             "spike": false
           }
         },
@@ -1442,8 +1442,8 @@
             }
           ],
           "coverage": {
-            "count": 49,
-            "zscore": 0.01,
+            "count": 50,
+            "zscore": 0.04,
             "spike": false
           }
         }
@@ -1472,24 +1472,24 @@
             },
             {
               "source": "googlenews_energy",
+              "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates - Crude Oil Prices Today | OilPrice.com",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSS12RDZhOWx3clExalhEQVFOZ2hvTW1WdHhObGV2WW8wTU9YWlVXZDUtVEVnVkVTeUFVb0dCOGdKMFNvOUw3SHcyNzBZQ2U3MzIydERIcTFLaDVqejR6OV80dlJvRHRwZmxuRzZLTjRxc0RiTGZpTkc0SS1IaVkzT1dzbmNROWotbmk2UVlySVM4WWdkT05pS2tGUDZ3eDNSUG93RnUtdERVSnk2TnfSAbMBQVVfeXFMTjNlQi02Q3c1dWlVLUFFcU1qRXoza1JDRDBPZ09hZjZlTUx2cU5nX3R6RWNmTTdYYkhaNHZoXzExS1RVT2hJLVhyNjNBZ1FkWWVjTFdlMjF3eGs4UXpPUXRtUHA4M2V2N0RfVGNxRTNOWEtXekxnNzV6dE90eVdXa3kzYlZBTDlBSlJMSnpzQXZzQkEzOXJyNDZrd0RpeGUzVEtjbUpaT24wMmVWT0hWMFQwMkE?oc=5",
+              "sentiment": -0.758,
+              "relevance": 0.703,
+              "event_type": "earnings"
+            },
+            {
+              "source": "googlenews_energy",
               "title": "Energy Stocks Slipped As Oil Prices Edged Lower - Finimize",
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSVoxVkZDQml1UVFzYjk3T1J3eXRxTEFqVVMwYWFLWW5DdGpIcGJzNW01elNIM0p3WUJGMVNiMXprTC1uWG1pbDdlNk56TDl1b1g1dXppdzlXNlFXM1g4a2ZUQUVoZkFtZHc5UktROXpNRzdBV2ZCbkR2b3ZIekR3R19Hd1k?oc=5",
               "sentiment": -0.026,
               "relevance": 0.61,
               "event_type": "other"
-            },
-            {
-              "source": "googlenews_energy",
-              "title": "Top 3 Energy Stocks Which Could Blast Off In Q4 - Benzinga",
-              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYXZSaEw4UklTSTI2UzFuQzUzSGM5ZVFuUnRYYWdTUVhFSmNmOTkzNnQ0Q1JaQWp1a1Uyek4taXBpd01hWWVRQ1RieUVnb1NSY1JDazE2Wm5ab3l1b2t6cDZSUnFmZk93X0hGMHU4UEhzMUFSa2J6V3FtMjh3MkFoRnl4X2NnY2Z1VHlvY2lnRDlrVlBOLXAzcV9mYTQ2ZzZ4NXJKMWhWelc1S2UtRUktajBB?oc=5",
-              "sentiment": 0.44,
-              "relevance": 0.6,
-              "event_type": "other"
             }
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.59,
+            "zscore": -0.58,
             "spike": false
           }
         },
@@ -1567,7 +1567,7 @@
           ],
           "coverage": {
             "count": 11,
-            "zscore": -0.37,
+            "zscore": -0.36,
             "spike": false
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Top 3 Renewable Energy Stocks (November 2026) - NerdWallet",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbG45b1ptTmZ5ZFBqQUJYTjc3TFlpSlRaRTZoVndvVDBrQ1EzYzNmS1lMaDFrdUJWY0JHVDlSeElHSnJIOFhnN1l1Q1BDaFh0ay10aUR1ZXF1dm9kN2NFWjMtSVQtZXZxNnVIcm8tYUpNNFd1X1hRanlSMFdYUE4xeVQyZw?oc=5",
-              "sentiment": 0.44,
+              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
+              "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_energy",
-              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
+              "title": "State Street Energy Select Sector SPDR (XLE) Adds Exxon and Chevron on Oct. 29 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXRPRVVHa1J6Nm50cWVuQ3BYQl80QVJtcEFTN3dFYlo1bTJoblZBLXFaOW5NaUhaaXBtVnZhUUVpTDI0THQwaG9rZ1REdXUtbktIaElYZ3dHVHJFWVc0elNReXVqTDN5cmpTTDlqSVZWOGlLRy1EZzdJQ3kxLXJDbFh1WWxGdHRiZzZYVE1tcWVYR0gw?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 15,
-            "zscore": 0.33,
+            "count": 14,
+            "zscore": 0.2,
             "spike": false
           }
         },
@@ -2211,8 +2211,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.05,
+            "count": 7,
+            "zscore": -0.2,
             "spike": false
           }
         },
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.02,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -2973,8 +2973,8 @@
             }
           ],
           "coverage": {
-            "count": 9,
-            "zscore": -0.08,
+            "count": 10,
+            "zscore": 0.13,
             "spike": false
           }
         },
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.84,
+            "zscore": 0.83,
             "spike": false
           }
         },
@@ -3052,7 +3052,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.02,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -3090,8 +3090,8 @@
             }
           ],
           "coverage": {
-            "count": 10,
-            "zscore": -0.22,
+            "count": 11,
+            "zscore": -0.06,
             "spike": false
           }
         },
@@ -3417,7 +3417,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.95,
+            "zscore": 0.93,
             "spike": false
           }
         },
@@ -3456,7 +3456,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 0.25,
+            "zscore": 0.24,
             "spike": false
           }
         },
@@ -3494,8 +3494,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 0.55,
+            "count": 9,
+            "zscore": 0.76,
             "spike": false
           }
         },
@@ -3573,7 +3573,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -1.37,
+            "zscore": -1.35,
             "spike": false
           }
         },
@@ -3612,7 +3612,7 @@
           ],
           "coverage": {
             "count": 14,
-            "zscore": 1.45,
+            "zscore": 1.41,
             "spike": false
           }
         }
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.22,
+            "zscore": 0.21,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.56,
+            "zscore": -0.58,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.45,
+            "zscore": 0.43,
             "spike": false
           }
         },
@@ -4498,7 +4498,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.49,
+            "zscore": -0.5,
             "spike": false
           }
         },
@@ -4537,7 +4537,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.52,
+            "zscore": -0.54,
             "spike": false
           }
         },
@@ -4576,7 +4576,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.16,
+            "zscore": 1.15,
             "spike": false
           }
         }
@@ -4661,7 +4661,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 0.85,
+            "zscore": 0.86,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 58,
-            "zscore": 3.51,
+            "zscore": 3.53,
             "spike": true
           }
         },
@@ -4739,7 +4739,7 @@
           ],
           "coverage": {
             "count": 36,
-            "zscore": 1.16,
+            "zscore": 1.17,
             "spike": false
           }
         },
@@ -4863,7 +4863,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.18,
+            "zscore": -0.17,
             "spike": false
           }
         },
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.45,
+            "zscore": 1.42,
             "spike": false
           }
         },
@@ -5143,7 +5143,7 @@
           ],
           "coverage": {
             "count": 8,
-            "zscore": 1.72,
+            "zscore": 1.68,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.02,
+            "zscore": -0.03,
             "spike": false
           }
         },
@@ -5221,7 +5221,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 2.62,
+            "zscore": 2.57,
             "spike": true
           }
         },
@@ -5260,7 +5260,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.35,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -5298,8 +5298,8 @@
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": 1.16,
+            "count": 7,
+            "zscore": 1.54,
             "spike": false
           }
         }
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 58,
-            "zscore": 2.31,
+            "count": 59,
+            "zscore": 2.37,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-27",
-      "return_pct": 2.09,
-      "zscore": 1.25,
+      "return_pct": 1.58,
+      "zscore": 1.04,
       "max_abs_z_recent": 1.82,
       "recent_days": 10,
       "benchmark": "BTC",
