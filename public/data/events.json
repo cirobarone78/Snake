@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:34:00+00:00",
+  "generated_at": "2026-11-27T21:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -322,8 +322,8 @@
             }
           ],
           "coverage": {
-            "count": 92,
-            "zscore": 1.07,
+            "count": 91,
+            "zscore": 1.02,
             "spike": false
           }
         },
@@ -525,7 +525,7 @@
           ],
           "coverage": {
             "count": 52,
-            "zscore": 0.23,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -564,7 +564,7 @@
           ],
           "coverage": {
             "count": 63,
-            "zscore": 1.01,
+            "zscore": 1.0,
             "spike": false
           }
         },
@@ -766,7 +766,7 @@
           ],
           "coverage": {
             "count": 32,
-            "zscore": 1.12,
+            "zscore": 1.14,
             "spike": false
           }
         },
@@ -1214,6 +1214,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-27",
+          "return_pct": 2.8,
+          "zscore": 1.06,
+          "classification": "market-wide",
+          "severity": "major",
+          "market_return_pct": 1.6,
+          "events": [
+            {
+              "source": "googlenews_tech",
+              "title": "Top Big Data Stocks to Tap the Growing AI-Driven Opportunity - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNkxmY21aZ1U4NTNzdUlQMFpFUVRkdGtWWnVSdWNWSXJwY3FGd1JQekxfSzJtanZNalgwSVJFX19kNng5YlRZajdXN3NPaS1TLTBfbzI4MWJDZDFGODZtc2xyWlFvWU5Xd3k3bkNBRWpXa1NTZm53bF9IYjVTSE95ZW5uT0xzNUFySzBWN293cjE?oc=5",
+              "sentiment": 0.649,
+              "relevance": 0.859,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOEhnNDJqN3dwM0ttLVowWWg1eUdRY2ZxMHhLTVd1VjBJSnhhc3UzeHpaaWNGMnNNeGJzVzhqbWpnbnJ4VzF2UmRVVElWaTEyYkQwbHBqYVR5bmRYTmIxU29nX2QyZG9LLU41X2xhWE5ncDhuXzRJRU5PazdMaWhmYm5XM2FUcEFFUFR1bW5taEg?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_tech",
+              "title": "5 Best Quantum Computing Stocks To Buy for 2027 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPU0NMemY1aXV2MFh2cml5aXZwT2FmbzVDeTBkN2htUGdwRkx2b1NSZEZ1QlQ0bGJqbmcteDIzTjVPdlAyM1Z2bUVNbUxUamFLWm9LM0oyM0xOemw4SUVwazFaQ1phTDlQOGJ2M3Z1dU5nNjU4RGg3MlpvREQySHVyaHRoUl9aYmJIVU5vMzF4Y0N6bDNnQXI0?oc=5",
+              "sentiment": 0.637,
+              "relevance": 0.855,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 40,
+            "zscore": -0.16,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-24",
           "return_pct": -3.26,
           "zscore": -0.83,
@@ -1248,7 +1287,7 @@
           ],
           "coverage": {
             "count": 34,
-            "zscore": -0.43,
+            "zscore": -0.42,
             "spike": false
           }
         },
@@ -1286,8 +1325,8 @@
             }
           ],
           "coverage": {
-            "count": 62,
-            "zscore": 0.81,
+            "count": 61,
+            "zscore": 0.77,
             "spike": false
           }
         },
@@ -1403,47 +1442,8 @@
             }
           ],
           "coverage": {
-            "count": 44,
-            "zscore": -0.22,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-09",
-          "return_pct": 3.73,
-          "zscore": 1.97,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": 2.35,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Best high-yield savings interest rates today, Monday, November 9, 2026: Earn up to 4.4% APY - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPeTZtaGNmd0lpZFFrVWY1dEM0aEdDNDJ1bEREOWRfdHZIOEM3dkpVaHU4T2dpdHpGRG8wejNnbGdadDVQbGVHRmNLVC1Vb3FfVU5jVzFscG56Q1VxcERNcWJvdWNNQlVtY0R2U2hfSkM2RTF6M080TVZhM2hpUzZ2a0JqZ2taVTR3OHlhQ19QYTRLcVNkalN3cEhtbHNjakpOZFlGb2RXTTBvUnlTcllwU1lMcHd1cUZiNzRxX0xPWkdMZTJfMk15M1RsSEZJUFpzM240SmtlYmdlUUNxbm11U1ZCZHBBdEpRMVRCN1hvcW8?oc=5",
-              "sentiment": 0.802,
-              "relevance": 0.921,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "Gold gains over 1% as as US Dollar pares post-NFP gains, US CPI in focus - FXStreet",
-              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtxdFc5Z2EzT2ZqUlhJQXM2alBIaFVxS0lZbVMwQ2l0aVE5eFdlVmVEal8xTVRGR2R0RkI3dUNFN1htekptY0NCM1FvYUxiWUd6U3lYQ25pbG9nWnA2YmZ2eXY2eVdIVnl5QlBPS1AzaXJXWXdLeE5IekFmNjVpUUFjWUdpa1FYTU5sd3ZuMmRZUXdnaTRKb3VvdFZFdkVhN19VbXhKOFBXckwteFY3b1p6Yw?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_tech",
-              "title": "10 Best Tech Stocks That Pay Dividends - Insider Monkey",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOXy1nUVBnZTZqVTd1bVlUWDlmelNqODVjUkRiMTQ5TmttalVaNi1qRTZidkY3dXRFajkxRzVJS2ZjYVFoMi1YdU5rS2M0T0RsVlRwSy04bFZkTTFHZktfT3dIc1JfNlktVHFVMTVYc2Q0azRDQVdFdXhiUkh0cDlTVGZmd3owMU5WcVHSAZIBQVVfeXFMTVpoSjI3YTdNTWVudkxlaDkwMXAyTmlZWVBTY2VKSF94dkpYUzg3MHZUdk9LU2ZKQ3ZRUUo3OEtWeEZzXzl6XzlOMUJrb1p5ZE5QUG1hcVc5Z0g3ZTBqZFdxYnI3OFZoZnNYQ190blNmd0lfc2kxbE56bkhrOG1PXzVYaEVEb1NtX2MyWVh3UDBFN1E?oc=5",
-              "sentiment": 0.586,
-              "relevance": 0.834,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 50,
-            "zscore": 0.04,
+            "count": 42,
+            "zscore": -0.29,
             "spike": false
           }
         }
@@ -1488,8 +1488,8 @@
             }
           ],
           "coverage": {
-            "count": 7,
-            "zscore": -0.58,
+            "count": 8,
+            "zscore": -0.44,
             "spike": false
           }
         },
@@ -1527,8 +1527,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.33,
+            "count": 12,
+            "zscore": -0.19,
             "spike": false
           }
         },
@@ -1558,16 +1558,16 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Ten oversold energy stocks as oil prices slide after U.S. midterm elections (USO:NYSEARCA) - Seeking Alpha",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTHFpWGtsOE81ckJ5amZYbE5oem41VVhyNnJuaTFXMzhmYU1FSGJTeFBzM2QyNzluMXo0cHd3ZkFxNVZrZk1iWFdPaE9aTWRfa25MeTBIbnlmemhRUENYUGpGel9rdldZUy1sTG5pWnNNOVFTZ3R4OTdXM0tXN1EtcnhjcVBOQ09BamF2WThLMjd2VFhhVTVMbGpPd2x5LTBabnFOSXVITnpBcGJOaFpFcQ?oc=5",
-              "sentiment": 0.273,
+              "title": "The Best Energy Stocks to Buy - Morningstar",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJSURsczAwWlF1bW8yeUx4dDFRYTZhQlItUGRDLVBPWDRpNG1ObGhrVkpoLU41Qk9sMmtwWW95a0o3NGg4enlUTG1KYTlYSmt2eUJBaEdqMmdGbnpwUlZDQ3Zfb2ZqaHhw?oc=5",
+              "sentiment": 0.743,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.36,
+            "count": 12,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -1589,24 +1589,24 @@
             },
             {
               "source": "googlenews_energy",
-              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
-              "sentiment": 0.273,
+              "title": "Top 3 Renewable Energy Stocks (November 2026) - NerdWallet",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbG45b1ptTmZ5ZFBqQUJYTjc3TFlpSlRaRTZoVndvVDBrQ1EzYzNmS1lMaDFrdUJWY0JHVDlSeElHSnJIOFhnN1l1Q1BDaFh0ay10aUR1ZXF1dm9kN2NFWjMtSVQtZXZxNnVIcm8tYUpNNFd1X1hRanlSMFdYUE4xeVQyZw?oc=5",
+              "sentiment": 0.44,
               "relevance": 0.6,
               "event_type": "other"
             },
             {
               "source": "googlenews_energy",
-              "title": "State Street Energy Select Sector SPDR (XLE) Adds Exxon and Chevron on Oct. 29 - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXRPRVVHa1J6Nm50cWVuQ3BYQl80QVJtcEFTN3dFYlo1bTJoblZBLXFaOW5NaUhaaXBtVnZhUUVpTDI0THQwaG9rZ1REdXUtbktIaElYZ3dHVHJFWVc0elNReXVqTDN5cmpTTDlqSVZWOGlLRy1EZzdJQ3kxLXJDbFh1WWxGdHRiZzZYVE1tcWVYR0gw?oc=5",
+              "title": "Sigenergy Ranks as a BloombergNEF Tier 1 Energy Storage Manufacturer in Q4 2026 - markets.businessinsider.com",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZE43LWU4NVpRTzFEN180aG1NOFNZSlY4V0JFQkFFd3ZJVVFGWXdiYXotZDdGVW8tX0V3M1dXQmhMTnE1anZHcmJ2cGFTekptWkxLVUQ2QTEwenlLaVNvUGp1Uk9aYUZWWmNWVlk4VWYzU1ctS0tlcXFrREx4SXRzUEJqWHdGdGJxSkJIbVI1QmU5SzBsNGNSNVhBbWRCX3VkLTRZcFBlQWdWU294bURHckpEdmlNTzZQb0ZzSkFmS2dfLWJ2cFJaejZxdzV5b20wZkFYSA?oc=5",
               "sentiment": 0.273,
               "relevance": 0.6,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 14,
-            "zscore": 0.2,
+            "count": 15,
+            "zscore": 0.33,
             "spike": false
           }
         },
@@ -2935,7 +2935,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": -0.02,
+            "zscore": 0.01,
             "spike": false
           }
         },
@@ -2974,7 +2974,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 0.13,
+            "zscore": 0.15,
             "spike": false
           }
         },
@@ -3013,7 +3013,7 @@
           ],
           "coverage": {
             "count": 13,
-            "zscore": 0.83,
+            "zscore": 0.84,
             "spike": false
           }
         },
@@ -3052,7 +3052,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": -0.03,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -3090,8 +3090,8 @@
             }
           ],
           "coverage": {
-            "count": 11,
-            "zscore": -0.06,
+            "count": 10,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -3898,8 +3898,8 @@
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": -0.64,
+            "count": 51,
+            "zscore": -0.37,
             "spike": false
           }
         },
@@ -3937,8 +3937,8 @@
             }
           ],
           "coverage": {
-            "count": 87,
-            "zscore": 0.85,
+            "count": 88,
+            "zscore": 0.88,
             "spike": false
           }
         },
@@ -3976,8 +3976,8 @@
             }
           ],
           "coverage": {
-            "count": 95,
-            "zscore": 1.17,
+            "count": 94,
+            "zscore": 1.14,
             "spike": false
           }
         },
@@ -4016,7 +4016,7 @@
           ],
           "coverage": {
             "count": 101,
-            "zscore": 1.43,
+            "zscore": 1.42,
             "spike": false
           }
         },
@@ -4093,8 +4093,8 @@
             }
           ],
           "coverage": {
-            "count": 110,
-            "zscore": 1.83,
+            "count": 111,
+            "zscore": 1.86,
             "spike": false
           }
         }
@@ -4107,8 +4107,8 @@
       "moves": [
         {
           "date": "2026-11-27",
-          "return_pct": 4.57,
-          "zscore": 1.67,
+          "return_pct": 5.27,
+          "zscore": 1.89,
           "classification": "asset-specific",
           "severity": "major",
           "market_return_pct": 1.6,
@@ -4381,7 +4381,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.1,
+            "zscore": -0.08,
             "spike": false
           }
         },
@@ -4420,7 +4420,7 @@
           ],
           "coverage": {
             "count": 4,
-            "zscore": 0.21,
+            "zscore": 0.22,
             "spike": false
           }
         },
@@ -4459,7 +4459,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.58,
+            "zscore": -0.56,
             "spike": false
           }
         },
@@ -4498,7 +4498,7 @@
           ],
           "coverage": {
             "count": 5,
-            "zscore": 0.43,
+            "zscore": 0.45,
             "spike": false
           }
         },
@@ -4537,7 +4537,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.5,
+            "zscore": -0.49,
             "spike": false
           }
         },
@@ -4576,7 +4576,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.54,
+            "zscore": -0.52,
             "spike": false
           }
         }
@@ -4621,8 +4621,8 @@
             }
           ],
           "coverage": {
-            "count": 32,
-            "zscore": 0.48,
+            "count": 31,
+            "zscore": 0.41,
             "spike": false
           }
         },
@@ -4661,7 +4661,7 @@
           ],
           "coverage": {
             "count": 35,
-            "zscore": 0.86,
+            "zscore": 0.87,
             "spike": false
           }
         },
@@ -4700,7 +4700,7 @@
           ],
           "coverage": {
             "count": 58,
-            "zscore": 3.53,
+            "zscore": 3.56,
             "spike": true
           }
         },
@@ -4738,8 +4738,8 @@
             }
           ],
           "coverage": {
-            "count": 36,
-            "zscore": 1.17,
+            "count": 35,
+            "zscore": 1.08,
             "spike": false
           }
         },
@@ -4777,8 +4777,8 @@
             }
           ],
           "coverage": {
-            "count": 31,
-            "zscore": 0.72,
+            "count": 30,
+            "zscore": 0.63,
             "spike": false
           }
         },
@@ -5344,8 +5344,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": -0.63,
+            "count": 13,
+            "zscore": -0.37,
             "spike": false
           }
         },
@@ -5794,8 +5794,8 @@
       "moves": [
         {
           "date": "2026-11-27",
-          "return_pct": 5.71,
-          "zscore": 1.63,
+          "return_pct": 7.16,
+          "zscore": 2.02,
           "classification": "asset-specific",
           "severity": "major",
           "market_return_pct": 1.6,
@@ -5818,16 +5818,16 @@
             },
             {
               "source": "googlenews_gold_miners",
-              "title": "Canada Aggressively Attracts Global Investment, Two Mining Stocks Present Attractive Entry Opportunities - NAI500",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPeHRnYTJTQnhGUFBvS1lyMzZIN2o5OVktZWhoV2p2MHJpZnA4MWJpSGdrY2xZSk9ISU1xdFlSc1NrLS1yVERQZnBGM3pXYVJ5eDRwcmhkeUc0MDQyNzhrYU1Nbi1Pb0VoRnU2MHNMZ19wVkp0S2pQWlhib2d3WDZ1WUUwXzgwTWt2UTlqOTdiNXV3YjEyWktQYjJxdmJHTXNhMngwYS1VeTZvQUxfMzB6QnVCbzJfWTl1TWx3TUFuTVM5ZUw1bk5jQkNKM2pPUVg0bGc?oc=5",
-              "sentiment": 0.71,
-              "relevance": 0.884,
+              "title": "SA Asks: What's the best gold play right now for investors? - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSHlIa1lOS3FKcDdHUjJQQ3ppeTdHaWxuRGtnSkxuVmcwbXhqbk1NLVNwZmE2TDhCSE96bG5nYUpHaG9MN1lXcmhmU0JqSWQ3aTU5djFhdjh0MVY4RzJuOUV6ZU42VmwyQUFMR3FyaUFHcTBhdEV4N2VzYVdJaTVzYWxuVm9TQ3ROMW1MSWJHeU9OVUlVMDFJVTQ5ckQwUXViRzJyUERuQnh0MDZqVF84cERnZUxscUd1MmJMcA?oc=5",
+              "sentiment": 0.765,
+              "relevance": 0.906,
               "event_type": "other"
             }
           ],
           "coverage": {
-            "count": 28,
-            "zscore": -0.21,
+            "count": 39,
+            "zscore": 0.49,
             "spike": false
           }
         },
@@ -6032,8 +6032,8 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-27",
-      "return_pct": -1.15,
-      "zscore": -0.09,
+      "return_pct": -1.27,
+      "zscore": -0.14,
       "max_abs_z_recent": 1.82,
       "recent_days": 10,
       "benchmark": "BTC",
