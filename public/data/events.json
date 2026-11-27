@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:39:00+00:00",
+  "generated_at": "2026-11-27T15:35:00+00:00",
   "title": "Eventi e movimenti",
   "disclaimer": "Eventi candidati ordinati per plausibilità (vicinanza temporale + sentiment coerente). Associazione, non causa. Non è consulenza finanziaria.",
   "assets": [
@@ -765,8 +765,8 @@
             }
           ],
           "coverage": {
-            "count": 33,
-            "zscore": 1.24,
+            "count": 32,
+            "zscore": 1.14,
             "spike": false
           }
         },
@@ -1248,7 +1248,7 @@
           ],
           "coverage": {
             "count": 34,
-            "zscore": -0.42,
+            "zscore": -0.43,
             "spike": false
           }
         },
@@ -1403,8 +1403,8 @@
             }
           ],
           "coverage": {
-            "count": 43,
-            "zscore": -0.26,
+            "count": 44,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -1442,8 +1442,8 @@
             }
           ],
           "coverage": {
-            "count": 50,
-            "zscore": 0.04,
+            "count": 51,
+            "zscore": 0.08,
             "spike": false
           }
         }
@@ -1645,7 +1645,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 0.42,
+            "zscore": 0.41,
             "spike": false
           }
         },
@@ -1684,7 +1684,7 @@
           ],
           "coverage": {
             "count": 17,
-            "zscore": 0.62,
+            "zscore": 0.61,
             "spike": false
           }
         }
@@ -2166,7 +2166,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.26,
+            "zscore": -0.25,
             "spike": false
           }
         }
@@ -2212,7 +2212,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": -0.2,
+            "zscore": -0.22,
             "spike": false
           }
         },
@@ -2251,7 +2251,7 @@
           ],
           "coverage": {
             "count": 16,
-            "zscore": 1.17,
+            "zscore": 1.16,
             "spike": false
           }
         },
@@ -2290,7 +2290,7 @@
           ],
           "coverage": {
             "count": 9,
-            "zscore": 0.63,
+            "zscore": 0.6,
             "spike": false
           }
         },
@@ -2328,8 +2328,8 @@
             }
           ],
           "coverage": {
-            "count": 6,
-            "zscore": -0.17,
+            "count": 7,
+            "zscore": 0.04,
             "spike": false
           }
         },
@@ -4106,6 +4106,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-27",
+          "return_pct": 4.18,
+          "zscore": 1.55,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.89,
+          "events": [
+            {
+              "source": "googlenews_uranium",
+              "title": "enCore Energy Shares Rally as Uranium Market Optimism and Nuclear Energy Demand Strengthen Growth Prospects - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUVFQTF83UHZNSWpFUDVQdDluWXlsNXI1Q0Vhd3BJTjZXYUIxNDdLVVdDaF96cXBiYW1BRkhoUEl0bzBlV2ZvMDJid1AzN2F0SndTaGZuVU1lSVRiOE9mZ0oxQWVmQlBqRXJIQTRPbGlDQzU5cU5ubTlQTDVadzBWN1Vpby1XMXJzNFY2bGZsSHZuaUV2RUplNkdjRjVBOHFRZjNsZDZxSjI5VHU5ZUxTT2d6Zjg0a2ZSRnozeUdyMzVSYkt6RVFFVFVla1g5am5hclFPQQ?oc=5",
+              "sentiment": 0.926,
+              "relevance": 0.77,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_fed",
+              "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC News - Breaking News, Latest News and Videos",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNX3NMLXhhYU1lOVVLWU9sY0k0SDUyQnEwMG9SZ1RzNHZobTIyYk9KWGJlOGhic3FKdlQ2NXlIVDF6SW1oRlNWZlY2NHlNLWlnNGoybzAwLWlkV3V1Q1ZtM21KS2FLTy02NEF6VjY4UmFNc2hYa21mRURlSkJYZWxtc1R3VmRYZFlKNUU3NzZiMkZGNGJZcG1xZUNCN0RQNkRndEVPb9IBqgFBVV95cUxOU1FSZ3pWOURaQUxBS296TzBtRFFGclJXTnpLYWwzZXU1Q01kcVZUczBxUDAwR3FaYmFZdzlXUWM2T0Q3TDVldm9nSVY4OERYRUtkdm5sdndPSU1ETU1yc3BuMEpXLTd2VFFZRTVQcWdMZFdEZ0EzYjhTS200RFBkZy1jbE01WVhVbEgyX1Z2dXc4MWxmbXd6cl9pSlp2TDRldkdkS2hwOVE0Zw?oc=5",
+              "sentiment": 0.459,
+              "relevance": 0.47,
+              "event_type": "fed"
+            },
+            {
+              "source": "googlenews_macro",
+              "title": "Fed December Rate Outlook Turns More Hawkish as Strong Growth Meets Persistent Inflation - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS2FVbXdEUnVDSXNTaWRDWk9oNHM2STFja2kwM3M3ektCZTh6a3BERGpDYjhMM1YzOHhvUDhZWHNxWDU2QXNWN3FCenllSlhDcmlkWDlfN0FpREJkTXlNaHpJSWhQa1ctR0ZUd29RVXNzSXE4VFF2dFZrOGxrRnRTdFB2WWVUeG1MclRoM2h3d2lxcHg5VHI2SG1iR0x2T2JIXzRhV0hNYlJWSzhmNnFidXRhSWdzd2FKdnNDZHNVYXJtMVZF?oc=5",
+              "sentiment": 0.732,
+              "relevance": 0.416,
+              "event_type": "fed"
+            }
+          ],
+          "coverage": {
+            "count": 0,
+            "zscore": null,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-24",
           "return_pct": -2.71,
           "zscore": -0.56,
@@ -4140,7 +4179,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": 0.48,
+            "zscore": 0.46,
             "spike": false
           }
         },
@@ -4179,7 +4218,7 @@
           ],
           "coverage": {
             "count": 6,
-            "zscore": 2.28,
+            "zscore": 2.25,
             "spike": false
           }
         },
@@ -4218,7 +4257,7 @@
           ],
           "coverage": {
             "count": 1,
-            "zscore": -0.65,
+            "zscore": -0.66,
             "spike": false
           }
         },
@@ -4256,8 +4295,8 @@
             }
           ],
           "coverage": {
-            "count": 2,
-            "zscore": -0.08,
+            "count": 3,
+            "zscore": 0.51,
             "spike": false
           }
         },
@@ -4299,45 +4338,6 @@
             "zscore": 1.08,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-12",
-          "return_pct": -3.8,
-          "zscore": -1.1,
-          "classification": "asset-specific",
-          "severity": "major",
-          "market_return_pct": -0.35,
-          "events": [
-            {
-              "source": "googlenews_uranium",
-              "title": "WisdomTree Uranium and Nuclear Energy UCITS ETF - USD Acc (NCLR.SW) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhekI5QXNqZE0taTk5WHkwVHVMTUZvNk1FeXhHUkJGTUxlbzFWQV9PaWZrblY5ckNKZDk4cEdfeXZfZE5KV1RQRkNWUFlDLXI0Mnp0SmdR?oc=5",
-              "sentiment": 0.338,
-              "relevance": 0.6,
-              "event_type": "etf_flow"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - The Globe and Mail",
-              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYjlPRXpqcFAxSjdPdDZhUEc4MGZISzB1Q1JsaE50QUNPLTNMNHV6YlRvNkpuXzVzTkZtN3YwSVVqTHVfdWdFdTRjX2Y0Z2xEQXdEcmtXRHVoR2NrekFnNVJNUllmWkFROHBJR19rNVpWcU1RMTR1ZGhVc01CSUNyR2dUS0dkTVBzNkpvcXhNY0hXMW1yaXM1UWpJWnRHSjR6anBHRVhVbGMyZ0JRWkVEUUNEb19paU41aDFWOGN5LXgxUjYyQ2ZMS0IteEMyNmRvcjhRQmM1QXhocU9xMDUxald1bw?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.6,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_uranium",
-              "title": "The Best Uranium Stocks to Buy and Hold as Nuclear Power Expands - AOL.co.uk",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1UeWRqSGpTR2wyUW14cjZFTVMzRHZTTmFrcGRxRXhXM1o4ZERhTjE0Z05NSUgwOHExYjFMRFZxT05xNkxhODhLUmM2b3JqQ0pGWC16Sjk2d3MyQ1Jqb3hGYVF6MloxZjV4RjV6Mk5CTExPc3VxaG9QblFaamdIV1U?oc=5",
-              "sentiment": 0.681,
-              "relevance": 0.6,
-              "event_type": "other"
-            }
-          ],
-          "coverage": {
-            "count": 7,
-            "zscore": 2.62,
-            "spike": true
-          }
         }
       ]
     },
@@ -4346,6 +4346,45 @@
       "name": "Clean Energy (ICLN)",
       "universe": "equity",
       "moves": [
+        {
+          "date": "2026-11-27",
+          "return_pct": 3.24,
+          "zscore": 1.86,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.89,
+          "events": [
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Our Pick Of The Best Renewable Energy Stocks In November 2026 - Yahoo Finance",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaEpZUXA3LXBTTW9CbTVjTXAta1JVc292eFhDMGt2T1dKSXRwSWZFNzJSYXFJaVpjTkhYWkFQWk9XWjRWMW9qQk1Wb1pyakh1blM1bUhjMElhVmdwUnR3UEo1VXJzenM3LTlCOUk1S0lLeVJCZ2lycndZNFBNQ1JTbXh2TVBfZzV0bmExS08xeUlmYjlF?oc=5",
+              "sentiment": 0.743,
+              "relevance": 0.897,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "Green Energy Stocks Witness Mixed Trading as Battery Segment Gains Amid Broader Market Sell-Off (27 November 2026) - SolarQuarter",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZXN1Ql9CLVpEN1dIVzJUOFN0WThPR2ZCa29hR21CZjdSYnlNa0ZmbW9BZUpVSHBLOW5fcW51VEVYaUdyRWxfUEItVlBHMEIzXzhOOUhtY2M3QWh0VHp4QmJoYWctUkFzQjlSRXc3bjZ0M2EwcGVTNy10VkY4REEyUU9KOFNtRUpSQ3hRWngzaklvQUV0R2lIV3Q3Y05ielU0ckl4RzVZcVc5dGlKZUhiSmIyVGxVd3ctQmJKakxhR0JHNW5TeXR6RVJYNGJQR2hWTU9YN3dndTVCRTQ2ekNmbUtPUQ?oc=5",
+              "sentiment": 0.542,
+              "relevance": 0.817,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_cleanenergy",
+              "title": "2027 Tests Loom for Clean Energy Stocks - ETF Database",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTlczclVjTWFsWlpqNEZtb3JwYXRBdG56MjlvUUt3cjM0cWNOeXVTelFRZGlzNGZ1VV9tYUpDeWVIVWZVcDZDaXNQVVRianNQV0kyc0pfRVhtUENXSGFucDQxMnhkY0xYWEppSl9qb0lUWDVHS0pzVUt1a2R4ZHludDROV3JzOFNGMUl1WEFncw?oc=5",
+              "sentiment": 0.44,
+              "relevance": 0.776,
+              "event_type": "etf_flow"
+            }
+          ],
+          "coverage": {
+            "count": 3,
+            "zscore": -0.1,
+            "spike": false
+          }
+        },
         {
           "date": "2026-11-23",
           "return_pct": 2.82,
@@ -4538,45 +4577,6 @@
           "coverage": {
             "count": 1,
             "zscore": -0.54,
-            "spike": false
-          }
-        },
-        {
-          "date": "2026-11-05",
-          "return_pct": -2.77,
-          "zscore": -1.53,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -4.36,
-          "events": [
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - The Motley Fool",
-              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNERhRGl3WEg0VVdfNTJiRG5fS0RJRmVWOS1zVm4yYWJFb3RlaFlqSW5LN2xfV0cwdVZkbGI2d2gxcWJGV1JKdTZkY2hxTTJDOFhpZVZvRGM2Q3hFSEpCR2hvRFZudG1vMlNrMDVpUDF0Y0FqMms0R0hCeFFpNjltQ1ctRXBDTnJ6NFVjXzU0dEhyZ203bjA4ZUlvWDNTODRRVWRFT0NWdzhwRGR1NlljNnhRQUkwNDVsQXMtcUM5dHgwMFVMLXlLNlZ2b2dmVm05elJIeA?oc=5",
-              "sentiment": -0.735,
-              "relevance": 0.894,
-              "event_type": "inflation"
-            },
-            {
-              "source": "googlenews_fed",
-              "title": "JPMorgan warns Fed Chair Kevin Warsh his job could be in jeopardy - Rolling Out",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA2V2o0NUxFaGZjYjNIUG5WVlB2R1d5TEVtNXAwdjVUZG1PYWU2V0ZodFJrZjFudjV0MEhKMjBaZ0NvelAyNmFidDRDUzNzUnJKbjJ3YWNrZ2psMFIzaWJ2N1hMNmhGNEl0X2t3eHViTU9jeFk?oc=5",
-              "sentiment": -0.542,
-              "relevance": 0.817,
-              "event_type": "fed"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Things Are Getting Downright Ugly for Wall Street - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFVfQVktUmNubUdnTm5YYWNwa2s4ZzRLSWxpYnZDRDJIaklIQmdFUnNnX2tOQ2plOXlXeG9BcTVpQkw5dXJrdEQ5VEJWMy0wT0h1dF9HTkdmcUdOY1RsbEd5b19waDdacG13RnRWTmtNYk9pdWFOOGZTWGhmUzJ0Y1RVWUlucE5od2xRcDB0dWFBeVN0dV9ucHlrMmh4Y1ZwV3RwUy04RHBpdmda?oc=5",
-              "sentiment": -0.511,
-              "relevance": 0.804,
-              "event_type": "inflation"
-            }
-          ],
-          "coverage": {
-            "count": 8,
-            "zscore": 1.15,
             "spike": false
           }
         }
@@ -5104,7 +5104,7 @@
           ],
           "coverage": {
             "count": 7,
-            "zscore": 1.42,
+            "zscore": 1.48,
             "spike": false
           }
         },
@@ -5142,8 +5142,8 @@
             }
           ],
           "coverage": {
-            "count": 8,
-            "zscore": 1.68,
+            "count": 7,
+            "zscore": 1.35,
             "spike": false
           }
         },
@@ -5182,7 +5182,7 @@
           ],
           "coverage": {
             "count": 3,
-            "zscore": -0.03,
+            "zscore": -0.02,
             "spike": false
           }
         },
@@ -5221,7 +5221,7 @@
           ],
           "coverage": {
             "count": 10,
-            "zscore": 2.57,
+            "zscore": 2.59,
             "spike": true
           }
         },
@@ -5259,8 +5259,8 @@
             }
           ],
           "coverage": {
-            "count": 4,
-            "zscore": 0.33,
+            "count": 3,
+            "zscore": -0.04,
             "spike": false
           }
         },
@@ -5345,7 +5345,7 @@
           ],
           "coverage": {
             "count": 59,
-            "zscore": 2.37,
+            "zscore": 2.36,
             "spike": false
           }
         },
@@ -5384,7 +5384,7 @@
           ],
           "coverage": {
             "count": 29,
-            "zscore": 0.49,
+            "zscore": 0.48,
             "spike": false
           }
         },
@@ -5423,7 +5423,7 @@
           ],
           "coverage": {
             "count": 47,
-            "zscore": 2.68,
+            "zscore": 2.67,
             "spike": true
           }
         },
@@ -5793,6 +5793,45 @@
       "universe": "equity",
       "moves": [
         {
+          "date": "2026-11-27",
+          "return_pct": 4.59,
+          "zscore": 1.33,
+          "classification": "asset-specific",
+          "severity": "major",
+          "market_return_pct": 0.89,
+          "events": [
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Founders Metals Inc. (TSXV:FDR) Stock Advances 2.92%: High-Grade Gold Exploration and Resource Expansion Opportunities Support Investor Confidence - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPUl96OEEtRE9nZFE1MXFabFVVanRwcXR2R2VzWFVrc1A5dU9GbThrZmo0SEpJYzU4M0lUV0twU18xNmdXVmpJTTJJN0luWGo3aG4zdTE5ZjduMVd3Ni04SnFtWjFjQ3QyT1BqeDNtcVdFQ25INnZpQWZMY3dFTVRXYmVXVlRWQVp3bDg0MmJGU3BoUXVvRUU0R0JDQTJ5cW9HOXRKb2QydmpENG1fb1BnT1Y4ZlBNTkZWNUVfQzFZS2E3R1FaNUk4MVBRdTZRakxOd1VKVGlPbTY2clFfSDRJamZ6U0ZidDU1NUV6NGdBV1YxckhJTkNPbk85X3FrckU?oc=5",
+              "sentiment": 0.859,
+              "relevance": 0.944,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Benz Mining Corp. (TSXV:BZ) Stock Advances 3.18%: Gold Exploration and Australian Resource Development Support Investor Confidence - kalkine.ca",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZGRxenhVQ0dlMTVELVJ4MnFyMUhNZjhfY3k4X1l0eXkyeS1OVzc0LTMzSndoYXN1MkZfUGJ6N09raEp2MGlMbFpPRURHLWs3ck9STENFSV9UbG1OZ0V5V1JEeG9xNjlUSV9qWGktY3RFUUxqcXhXSk9LWlFham1VeGJVWkhpZnB4ZnJ1Vnk3bUdPTW8xYUVOZnlmU1ZFb09mNHhidTE1VnRsZGlwaTdvNmJEN0dzeV9WWmVjZDlqX1RBTXNyZ3Z4MmMyMHZLSW5UUVF4T2psZS1kTkl5aG0wcGo2azh2bTAyTHc?oc=5",
+              "sentiment": 0.784,
+              "relevance": 0.914,
+              "event_type": "other"
+            },
+            {
+              "source": "googlenews_gold_miners",
+              "title": "Canada Aggressively Attracts Global Investment, Two Mining Stocks Present Attractive Entry Opportunities - NAI500",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPeHRnYTJTQnhGUFBvS1lyMzZIN2o5OVktZWhoV2p2MHJpZnA4MWJpSGdrY2xZSk9ISU1xdFlSc1NrLS1yVERQZnBGM3pXYVJ5eDRwcmhkeUc0MDQyNzhrYU1Nbi1Pb0VoRnU2MHNMZ19wVkp0S2pQWlhib2d3WDZ1WUUwXzgwTWt2UTlqOTdiNXV3YjEyWktQYjJxdmJHTXNhMngwYS1VeTZvQUxfMzB6QnVCbzJfWTl1TWx3TUFuTVM5ZUw1bk5jQkNKM2pPUVg0bGc?oc=5",
+              "sentiment": 0.71,
+              "relevance": 0.884,
+              "event_type": "other"
+            }
+          ],
+          "coverage": {
+            "count": 23,
+            "zscore": -0.53,
+            "spike": false
+          }
+        },
+        {
           "date": "2026-11-25",
           "return_pct": 3.53,
           "zscore": 1.12,
@@ -5986,45 +6025,6 @@
             "zscore": 2.4,
             "spike": false
           }
-        },
-        {
-          "date": "2026-11-16",
-          "return_pct": -3.29,
-          "zscore": -0.96,
-          "classification": "market-wide",
-          "severity": "major",
-          "market_return_pct": -1.92,
-          "events": [
-            {
-              "source": "googlenews_fed",
-              "title": "Is a December rate shock coming for Americans? Market expert warns of fresh pain - Firstpost",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVU9PcFZ0XzNmQXhPM3VhSFhjbDhQZzVwcncycjJ2YWVIdnBMbGxKVDlQODgyZmd3UG42cHdwSTgzczBrSTF4UWJxTlBWNlJWYkdmZ2RyRTBUamdfME5CVGZ6eXRySjZXTXZJX2I3Rk96c2ozQnZZMEE3bXFvNk8xNlJQSXVFZ2JRZTc4ZGVCVTJJVTBnZEZLWndLRkZ1OXN4LTlPSk13SWZNNTFCeXlNN2hrdzNJcW51WEpGeTdnUEo4STRYRzVv0gHMAUFVX3lxTFBZX1ZURUZ1WGs4Yl9zMGRVT2dPckZteVc4Q0s0b0pkcUs4c3E5Yi1uZC04T3dtT295aXg5UzNXYWdZNFdVYVRfNzJKRFQtV3dOUTJpWVl2UTdWb0xfb01ScHdnWEw4V2JtVEp3bWEwckplYS1RbGFUQ0djTWxRdEpsc0NudXc4NnFoMnZEcVdCUXZYcm5EeVFSenhlallmODlkSm1vTjhEXzVHV1c5NlN3S3pZUDRpQklJak5WNHVKd1NJX2Z0ZlJQakoydQ?oc=5",
-              "sentiment": -0.612,
-              "relevance": 0.845,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_gold_miners",
-              "title": "London Mining Stocks Face Pressure as China Demand Weakens - Kalkine Media",
-              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQWxuZTRJZGJfLXdtUVZ1b2Vxa2dKMzNMX0RyZ3BkeFpJRWZ5UnNIOC1pb3dzWGNXeGNLOFBqeGV0c3JRUWZnU1JVSk5jWW9PRHkyOEtUVlZCbGpCdjItQlJnejU4aFRqa0tfMDNEYWlSa2Q1ZDl1b1pfQjEyenVBQVBoR0hYb1pjRF9YbjdlMnpkMzJTanJFYnY2UU9LTnd6RTlUeHRHQU5GZXZpWXY0Yw?oc=5",
-              "sentiment": -0.612,
-              "relevance": 0.845,
-              "event_type": "other"
-            },
-            {
-              "source": "googlenews_macro",
-              "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fYThYM3dQc2hETEFwUHRIdFlpZXJ4QVdydUk0NV8zUnNJVFlWa0pRNEVsSFFRaFluNkxBRVhwT2hsN0ZGNDcwSDFFMDdDYXhreE1iVU14RHd1NG1vSjR6bmwyd0ktLVNRT0ZfcGZXUjRTcVpQYVZHb0syZnpaQQ?oc=5",
-              "sentiment": -0.572,
-              "relevance": 0.829,
-              "event_type": "fed"
-            }
-          ],
-          "coverage": {
-            "count": 36,
-            "zscore": 0.77,
-            "spike": false
-          }
         }
       ]
     }
@@ -6032,21 +6032,21 @@
   "market_pulse": {
     "crypto": {
       "date": "2026-11-27",
-      "return_pct": 1.58,
-      "zscore": 1.04,
+      "return_pct": -1.12,
+      "zscore": -0.08,
       "max_abs_z_recent": 1.82,
       "recent_days": 10,
       "benchmark": "BTC",
       "days_since_last_major": 7
     },
     "equity": {
-      "date": "2026-11-25",
-      "return_pct": -0.25,
-      "zscore": 0.0,
+      "date": "2026-11-27",
+      "return_pct": 0.89,
+      "zscore": 0.68,
       "max_abs_z_recent": 3.73,
       "recent_days": 10,
       "benchmark": "SPX",
-      "days_since_last_major": 2
+      "days_since_last_major": 0
     }
   }
 }
